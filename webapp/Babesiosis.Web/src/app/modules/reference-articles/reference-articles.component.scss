@@ -1,0 +1,41 @@
+:host {
+  display: block;
+}
+
+.fs-reference-articles {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+// Titles, journals and findings are long; let them wrap rather than clip.
+.fs-reference-articles__wrap {
+  display: block;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  min-width: 12ch;
+}
+
+// The title as a link out to the article's source. The icon sits on the first
+// line of a wrapped title, not centred down the cell.
+.fs-reference-articles__link {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 4px;
+  color: rgb(var(--fs-color-primary));
+  text-decoration: none;
+
+  &:hover,
+  &:focus-visible {
+    text-decoration: underline;
+  }
+
+  fs-symbol {
+    flex: none;
+    margin-top: 3px;
+  }
+}
+
+.fs-reference-articles__none {
+  color: rgb(var(--fs-color-ink-soft));
+}

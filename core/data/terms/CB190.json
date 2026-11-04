@@ -1,0 +1,950 @@
+{
+ "id": "CB190",
+ "document": "data/markdown/CB190.md",
+ "source_format": "pdf",
+ "translated": false,
+ "words": 2632,
+ "run_utc": "2026-10-30T05:35:04+00:00",
+ "threshold": 0.85,
+ "kept_types": [
+  "T019",
+  "T020",
+  "T037",
+  "T046",
+  "T047",
+  "T048",
+  "T049",
+  "T050",
+  "T184",
+  "T190",
+  "T191"
+ ],
+ "term_count": 53,
+ "terms": [
+  {
+   "term": "C0015624",
+   "concept": "Fanconi Syndrome",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 32,
+   "mentions_negated": 3,
+   "mentions_affirmed": 29,
+   "sections": {
+    "discussion": 15,
+    "unlabelled": 12,
+    "case": 4,
+    "title": 1
+   },
+   "forms": {
+    "fanconi syndrome": 31,
+    "human fanconi syndrome": 1
+   },
+   "best_score": 0.985
+  },
+  {
+   "term": "C0004576",
+   "concept": "Babesiosis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 10,
+   "mentions_negated": 0,
+   "mentions_affirmed": 10,
+   "sections": {
+    "unlabelled": 4,
+    "case": 4,
+    "discussion": 2
+   },
+   "forms": {
+    "babesia infection": 8,
+    "babesiosis": 2
+   },
+   "best_score": 0.972
+  },
+  {
+   "term": "C0220981",
+   "concept": "Metabolic acidosis",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 7,
+   "mentions_negated": 0,
+   "mentions_affirmed": 7,
+   "sections": {
+    "case": 4,
+    "discussion": 2,
+    "unlabelled": 1
+   },
+   "forms": {
+    "metabolic acidosis": 7
+   },
+   "best_score": 0.991
+  },
+  {
+   "term": "C0085682",
+   "concept": "Hypophosphatemia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 5,
+   "mentions_negated": 0,
+   "mentions_affirmed": 5,
+   "sections": {
+    "case": 4,
+    "discussion": 1
+   },
+   "forms": {
+    "hypophosphatemia": 5
+   },
+   "best_score": 0.988
+  },
+  {
+   "term": "C0009450",
+   "concept": "Communicable Diseases",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 4,
+   "mentions_negated": 0,
+   "mentions_affirmed": 4,
+   "sections": {
+    "discussion": 2,
+    "unlabelled": 1,
+    "case": 1
+   },
+   "forms": {
+    "infection": 4
+   },
+   "best_score": 0.962
+  },
+  {
+   "term": "C0032617",
+   "concept": "Polyuria",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 4,
+   "mentions_negated": 0,
+   "mentions_affirmed": 4,
+   "sections": {
+    "case": 2,
+    "unlabelled": 1,
+    "discussion": 1
+   },
+   "forms": {
+    "polyuria": 4
+   },
+   "best_score": 0.94
+  },
+  {
+   "term": "C0085602",
+   "concept": "Polydipsia",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 4,
+   "mentions_negated": 0,
+   "mentions_affirmed": 4,
+   "sections": {
+    "case": 2,
+    "unlabelled": 1,
+    "discussion": 1
+   },
+   "forms": {
+    "polydipsia": 4
+   },
+   "best_score": 0.967
+  },
+  {
+   "term": "C0342579",
+   "concept": "Electrolyte imbalance",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 4,
+   "mentions_negated": 0,
+   "mentions_affirmed": 4,
+   "sections": {
+    "discussion": 3,
+    "unlabelled": 1
+   },
+   "forms": {
+    "electrolyte imbalances": 3,
+    "electrolyte imbalance": 1
+   },
+   "best_score": 0.986
+  },
+  {
+   "term": "C0012634",
+   "concept": "Disease",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 3,
+   "mentions_negated": 1,
+   "mentions_affirmed": 2,
+   "sections": {
+    "unlabelled": 2,
+    "discussion": 1
+   },
+   "forms": {
+    "disease": 2,
+    "’s disease": 1
+   },
+   "best_score": 0.987
+  },
+  {
+   "term": "C0020626",
+   "concept": "Hypoparathyroidism",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 3,
+   "mentions_negated": 2,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 3
+   },
+   "forms": {
+    "hypoparathyroidism": 3
+   },
+   "best_score": 0.992
+  },
+  {
+   "term": "C0023380",
+   "concept": "Lethargy",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "case": 2,
+    "unlabelled": 1
+   },
+   "forms": {
+    "lethargy": 3
+   },
+   "best_score": 0.987
+  },
+  {
+   "term": "C0238621",
+   "concept": "Aminoaciduria",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "case": 2,
+    "discussion": 1
+   },
+   "forms": {
+    "aminoaciduria": 3
+   },
+   "best_score": 0.983
+  },
+  {
+   "term": "C0021368",
+   "concept": "Inflammation",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "case": 2
+   },
+   "forms": {
+    "inflammation": 2
+   },
+   "best_score": 0.958
+  },
+  {
+   "term": "C0023364",
+   "concept": "Leptospirosis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 2,
+   "mentions_affirmed": 0,
+   "sections": {
+    "case": 2
+   },
+   "forms": {
+    "leptospirosis": 2
+   },
+   "best_score": 0.991
+  },
+  {
+   "term": "C0023518",
+   "concept": "Leukocytosis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "case": 2
+   },
+   "forms": {
+    "leukocytosis": 2
+   },
+   "best_score": 0.979
+  },
+  {
+   "term": "C0027627",
+   "concept": "Neoplasm Metastasis",
+   "semantic_types": [
+    "Neoplastic Process"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "unlabelled": 1,
+    "discussion": 1
+   },
+   "forms": {
+    "secondary": 2
+   },
+   "best_score": 0.985
+  },
+  {
+   "term": "C0029442",
+   "concept": "Osteomalacia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "discussion": 2
+   },
+   "forms": {
+    "osteomalacia": 2
+   },
+   "best_score": 0.979
+  },
+  {
+   "term": "C0039082",
+   "concept": "Syndrome",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "discussion": 2
+   },
+   "forms": {
+    "syndrome": 2
+   },
+   "best_score": 0.994
+  },
+  {
+   "term": "C0341676",
+   "concept": "Pyelectasia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "case": 2
+   },
+   "forms": {
+    "dilated renal pelvis": 1,
+    "left renal pelvis dilation": 1
+   },
+   "best_score": 0.97
+  },
+  {
+   "term": "C1561643",
+   "concept": "Chronic Kidney Diseases",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "discussion": 2
+   },
+   "forms": {
+    "chronic kidney disease": 2
+   },
+   "best_score": 0.974
+  },
+  {
+   "term": "C1640363",
+   "concept": "Vector Borne Diseases",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "discussion": 2
+   },
+   "forms": {
+    "vector-borne diseases": 2
+   },
+   "best_score": 0.957
+  },
+  {
+   "term": "C3828476",
+   "concept": "Primary Hypoparathyroidism",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "unlabelled": 2
+   },
+   "forms": {
+    "primary hypoparathyroidism": 2
+   },
+   "best_score": 0.99
+  },
+  {
+   "term": "C0003467",
+   "concept": "Anxiety",
+   "semantic_types": [
+    "Mental or Behavioral Dysfunction"
+   ],
+   "mentions": 1,
+   "mentions_negated": 1,
+   "mentions_affirmed": 0,
+   "sections": {
+    "case": 1
+   },
+   "forms": {
+    "anxiety": 1
+   },
+   "best_score": 0.964
+  },
+  {
+   "term": "C0004093",
+   "concept": "Asthenia",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "weakness": 1
+   },
+   "best_score": 0.975
+  },
+  {
+   "term": "C0015376",
+   "concept": "Extravasation",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "unlabelled": 1
+   },
+   "forms": {
+    "leakage": 1
+   },
+   "best_score": 0.956
+  },
+  {
+   "term": "C0015967",
+   "concept": "Fever",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "case": 1
+   },
+   "forms": {
+    "hyperthermia": 1
+   },
+   "best_score": 0.989
+  },
+  {
+   "term": "C0016658",
+   "concept": "Fracture",
+   "semantic_types": [
+    "Injury or Poisoning"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "fractures": 1
+   },
+   "best_score": 0.989
+  },
+  {
+   "term": "C0016751",
+   "concept": "Hereditary fructose intolerance syndrome",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "unlabelled": 1
+   },
+   "forms": {
+    "hereditary fructose": 1
+   },
+   "best_score": 0.855
+  },
+  {
+   "term": "C0016952",
+   "concept": "Galactosemias",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "unlabelled": 1
+   },
+   "forms": {
+    "galactosemia": 1
+   },
+   "best_score": 0.987
+  },
+  {
+   "term": "C0018965",
+   "concept": "Hematuria",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "case": 1
+   },
+   "forms": {
+    "blood urine": 1
+   },
+   "best_score": 0.986
+  },
+  {
+   "term": "C0019202",
+   "concept": "Hepatolenticular Degeneration",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "unlabelled": 1
+   },
+   "forms": {
+    "wilson’s disease": 1
+   },
+   "best_score": 0.949
+  },
+  {
+   "term": "C0019247",
+   "concept": "Hereditary Diseases",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "unlabelled": 1
+   },
+   "forms": {
+    "genetic conditions": 1
+   },
+   "best_score": 0.904
+  },
+  {
+   "term": "C0023895",
+   "concept": "Liver diseases",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "hepatopathy": 1
+   },
+   "best_score": 0.994
+  },
+  {
+   "term": "C0026764",
+   "concept": "Multiple Myeloma",
+   "semantic_types": [
+    "Neoplastic Process"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "unlabelled": 1
+   },
+   "forms": {
+    "multiple myeloma": 1
+   },
+   "best_score": 0.987
+  },
+  {
+   "term": "C0028860",
+   "concept": "Oculocerebrorenal Syndrome",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "unlabelled": 1
+   },
+   "forms": {
+    "lowe syndrome": 1
+   },
+   "best_score": 0.957
+  },
+  {
+   "term": "C0030552",
+   "concept": "Paresis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "muscle weakness": 1
+   },
+   "best_score": 0.972
+  },
+  {
+   "term": "C0036679",
+   "concept": "Diastasis",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 1,
+   "mentions_affirmed": 0,
+   "sections": {
+    "case": 1
+   },
+   "forms": {
+    "separation": 1
+   },
+   "best_score": 0.963
+  },
+  {
+   "term": "C0040034",
+   "concept": "Thrombocytopenia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "case": 1
+   },
+   "forms": {
+    "thrombocytopenia": 1
+   },
+   "best_score": 0.98
+  },
+  {
+   "term": "C0042963",
+   "concept": "Vomiting",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "case": 1
+   },
+   "forms": {
+    "vomiting": 1
+   },
+   "best_score": 0.957
+  },
+  {
+   "term": "C0160420",
+   "concept": "Injury of kidney",
+   "semantic_types": [
+    "Injury or Poisoning"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "renal injuries": 1
+   },
+   "best_score": 0.969
+  },
+  {
+   "term": "C0162670",
+   "concept": "Mitochondrial Myopathies",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "unlabelled": 1
+   },
+   "forms": {
+    "mitochondrial cytopathy": 1
+   },
+   "best_score": 0.99
+  },
+  {
+   "term": "C0232462",
+   "concept": "Decrease in appetite",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "case": 1
+   },
+   "forms": {
+    "decreased appetite": 1
+   },
+   "best_score": 0.984
+  },
+  {
+   "term": "C0268483",
+   "concept": "Tyrosinemias",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "unlabelled": 1
+   },
+   "forms": {
+    "tyrosinemia": 1
+   },
+   "best_score": 0.984
+  },
+  {
+   "term": "C0274281",
+   "concept": "Injury due to exposure to external cause",
+   "semantic_types": [
+    "Injury or Poisoning"
+   ],
+   "mentions": 1,
+   "mentions_negated": 1,
+   "mentions_affirmed": 0,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "exposure": 1
+   },
+   "best_score": 0.964
+  },
+  {
+   "term": "C0341702",
+   "concept": "Acquired Fanconi syndrome",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "unlabelled": 1
+   },
+   "forms": {
+    "acquired fanconi syndrome": 1
+   },
+   "best_score": 0.974
+  },
+  {
+   "term": "C0599732",
+   "concept": "cell injury",
+   "semantic_types": [
+    "Cell or Molecular Dysfunction"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "damage cells": 1
+   },
+   "best_score": 0.985
+  },
+  {
+   "term": "C0748351",
+   "concept": "respiratory compensation",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "case": 1
+   },
+   "forms": {
+    "respiratory compensation": 1
+   },
+   "best_score": 0.966
+  },
+  {
+   "term": "C0851162",
+   "concept": "Infections of musculoskeletal system",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "infections": 1
+   },
+   "best_score": 0.971
+  },
+  {
+   "term": "C1397014",
+   "concept": "Imbalance",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "imbalance": 1
+   },
+   "best_score": 0.984
+  },
+  {
+   "term": "C1514893",
+   "concept": "physiologic resolution",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "case": 1
+   },
+   "forms": {
+    "resolved": 1
+   },
+   "best_score": 0.973
+  },
+  {
+   "term": "C1839603",
+   "concept": "Proximal tubulopathy",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "unlabelled": 1
+   },
+   "forms": {
+    "proximal tubular defect": 1
+   },
+   "best_score": 0.975
+  },
+  {
+   "term": "C4316899",
+   "concept": "Cystinosis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "unlabelled": 1
+   },
+   "forms": {
+    "cystinosis": 1
+   },
+   "best_score": 0.99
+  },
+  {
+   "term": "C5441521",
+   "concept": "Complaint (finding)",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "case": 1
+   },
+   "forms": {
+    "complaints": 1
+   },
+   "best_score": 0.98
+  }
+ ]
+}

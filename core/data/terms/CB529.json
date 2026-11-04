@@ -1,0 +1,128 @@
+{
+ "id": "CB529",
+ "document": "data/markdown/CB529.md",
+ "source_format": "pdf",
+ "translated": false,
+ "words": 1656,
+ "run_utc": "2026-10-30T05:36:50+00:00",
+ "threshold": 0.85,
+ "kept_types": [
+  "T019",
+  "T020",
+  "T037",
+  "T046",
+  "T047",
+  "T048",
+  "T049",
+  "T050",
+  "T184",
+  "T190",
+  "T191"
+ ],
+ "term_count": 6,
+ "terms": [
+  {
+   "term": "C0003123",
+   "concept": "Anorexia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 6,
+   "mentions_negated": 6,
+   "mentions_affirmed": 0,
+   "sections": {
+    "unlabelled": 6
+   },
+   "forms": {
+    "anorexia": 6
+   },
+   "best_score": 0.969
+  },
+  {
+   "term": "C0035268",
+   "concept": "Restriction fragment length polymorphism",
+   "semantic_types": [
+    "Cell or Molecular Dysfunction"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "unlabelled": 2
+   },
+   "forms": {
+    "rflp": 1,
+    "rflp 검사에서": 1
+   },
+   "best_score": 0.991
+  },
+  {
+   "term": "C0242723",
+   "concept": "Parasitemia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 1,
+   "mentions_affirmed": 1,
+   "sections": {
+    "unlabelled": 2
+   },
+   "forms": {
+    "parasitemia": 2
+   },
+   "best_score": 0.992
+  },
+  {
+   "term": "C0002871",
+   "concept": "Anemia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "unlabelled": 1
+   },
+   "forms": {
+    "anemia": 1
+   },
+   "best_score": 0.974
+  },
+  {
+   "term": "C0040034",
+   "concept": "Thrombocytopenia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "unlabelled": 1
+   },
+   "forms": {
+    "thrombocytopenia": 1
+   },
+   "best_score": 0.98
+  },
+  {
+   "term": "C0205695",
+   "concept": "Carcinoid, Goblet Cell",
+   "semantic_types": [
+    "Neoplastic Process"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "unlabelled": 1
+   },
+   "forms": {
+    "gcc": 1
+   },
+   "best_score": 0.988
+  }
+ ]
+}

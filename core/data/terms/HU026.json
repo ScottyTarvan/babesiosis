@@ -1,0 +1,519 @@
+{
+ "id": "HU026",
+ "document": "data/markdown/HU026.md",
+ "source_format": "jats_xml",
+ "translated": false,
+ "words": 3996,
+ "run_utc": "2026-10-30T05:37:24+00:00",
+ "threshold": 0.85,
+ "kept_types": [
+  "T019",
+  "T020",
+  "T037",
+  "T046",
+  "T047",
+  "T048",
+  "T049",
+  "T050",
+  "T184",
+  "T190",
+  "T191"
+ ],
+ "term_count": 28,
+ "terms": [
+  {
+   "term": "C0036690",
+   "concept": "Septicemia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 55,
+   "mentions_negated": 8,
+   "mentions_affirmed": 47,
+   "sections": {
+    "results": 17,
+    "discussion": 17,
+    "introduction": 7,
+    "abstract": 6,
+    "methods": 4,
+    "conclusion": 3,
+    "title": 1
+   },
+   "forms": {
+    "sepsis": 55
+   },
+   "best_score": 0.971
+  },
+  {
+   "term": "C0036974",
+   "concept": "Shock",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 20,
+   "mentions_negated": 1,
+   "mentions_affirmed": 19,
+   "sections": {
+    "results": 20
+   },
+   "forms": {
+    "shock": 20
+   },
+   "best_score": 0.998
+  },
+  {
+   "term": "C0036983",
+   "concept": "Septic Shock",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 19,
+   "mentions_negated": 0,
+   "mentions_affirmed": 19,
+   "sections": {
+    "results": 17,
+    "abstract": 1,
+    "methods": 1
+   },
+   "forms": {
+    "septic shock": 19
+   },
+   "best_score": 0.981
+  },
+  {
+   "term": "C0746730",
+   "concept": "myocardial injury",
+   "semantic_types": [
+    "Injury or Poisoning"
+   ],
+   "mentions": 7,
+   "mentions_negated": 1,
+   "mentions_affirmed": 6,
+   "sections": {
+    "discussion": 5,
+    "results": 2
+   },
+   "forms": {
+    "myocardial injury": 7
+   },
+   "best_score": 0.972
+  },
+  {
+   "term": "C1561643",
+   "concept": "Chronic Kidney Diseases",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 7,
+   "mentions_negated": 0,
+   "mentions_affirmed": 7,
+   "sections": {
+    "results": 7
+   },
+   "forms": {
+    "ckd": 5,
+    "chronic kidney disease": 2
+   },
+   "best_score": 0.994
+  },
+  {
+   "term": "C0024117",
+   "concept": "Chronic Obstructive Airway Disease",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 5,
+   "mentions_negated": 0,
+   "mentions_affirmed": 5,
+   "sections": {
+    "results": 5
+   },
+   "forms": {
+    "copd": 3,
+    "chronic obstructive pulmonary disease": 2
+   },
+   "best_score": 0.987
+  },
+  {
+   "term": "C0007222",
+   "concept": "Cardiovascular Diseases",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 4,
+   "mentions_negated": 0,
+   "mentions_affirmed": 4,
+   "sections": {
+    "results": 3,
+    "discussion": 1
+   },
+   "forms": {
+    "cardiovascular disease": 3,
+    "cvd": 1
+   },
+   "best_score": 0.987
+  },
+  {
+   "term": "C0020305",
+   "concept": "Hydrops Fetalis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "results": 3
+   },
+   "forms": {
+    "hf": 3
+   },
+   "best_score": 0.999
+  },
+  {
+   "term": "C0006826",
+   "concept": "Malignant Neoplasms",
+   "semantic_types": [
+    "Neoplastic Process"
+   ],
+   "mentions": 2,
+   "mentions_negated": 1,
+   "mentions_affirmed": 1,
+   "sections": {
+    "methods": 1,
+    "results": 1
+   },
+   "forms": {
+    "cancer": 1,
+    "malignancy": 1
+   },
+   "best_score": 0.991
+  },
+  {
+   "term": "C0009450",
+   "concept": "Communicable Diseases",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "introduction": 1,
+    "results": 1
+   },
+   "forms": {
+    "infection": 2
+   },
+   "best_score": 0.962
+  },
+  {
+   "term": "C0011849",
+   "concept": "Diabetes Mellitus",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "results": 2
+   },
+   "forms": {
+    "diabetes mellitus": 2
+   },
+   "best_score": 0.975
+  },
+  {
+   "term": "C0018801",
+   "concept": "Heart failure",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "results": 2
+   },
+   "forms": {
+    "heart failure": 2
+   },
+   "best_score": 0.977
+  },
+  {
+   "term": "C0020517",
+   "concept": "Hypersensitivity",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "discussion": 2
+   },
+   "forms": {
+    "sensitivity": 2
+   },
+   "best_score": 0.997
+  },
+  {
+   "term": "C0020538",
+   "concept": "Hypertensive disease",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "results": 2
+   },
+   "forms": {
+    "hypertension": 2
+   },
+   "best_score": 0.984
+  },
+  {
+   "term": "C0022660",
+   "concept": "Kidney Failure, Acute",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "results": 2
+   },
+   "forms": {
+    "acute kidney injury": 2
+   },
+   "best_score": 0.976
+  },
+  {
+   "term": "C0027051",
+   "concept": "Myocardial Infarction",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "discussion": 2
+   },
+   "forms": {
+    "myocardial infarction": 2
+   },
+   "best_score": 0.953
+  },
+  {
+   "term": "C0038454",
+   "concept": "Cerebrovascular accident",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "results": 2
+   },
+   "forms": {
+    "stroke": 2
+   },
+   "best_score": 0.959
+  },
+  {
+   "term": "C0155626",
+   "concept": "Acute myocardial infarction",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 1,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1,
+    "discussion": 1
+   },
+   "forms": {
+    "acute myocardial infarction": 2
+   },
+   "best_score": 0.959
+  },
+  {
+   "term": "C0877248",
+   "concept": "Adverse event",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "introduction": 1,
+    "discussion": 1
+   },
+   "forms": {
+    "adverse events": 2
+   },
+   "best_score": 0.978
+  },
+  {
+   "term": "C0010068",
+   "concept": "Coronary heart disease",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results": 1
+   },
+   "forms": {
+    "cad": 1
+   },
+   "best_score": 0.97
+  },
+  {
+   "term": "C0010957",
+   "concept": "Tissue damage",
+   "semantic_types": [
+    "Injury or Poisoning"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "damage": 1
+   },
+   "best_score": 0.987
+  },
+  {
+   "term": "C0021051",
+   "concept": "Immunologic Deficiency Syndromes",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results": 1
+   },
+   "forms": {
+    "immunodeficiency": 1
+   },
+   "best_score": 0.996
+  },
+  {
+   "term": "C0037088",
+   "concept": "Signs and Symptoms",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "finding": 1
+   },
+   "best_score": 0.994
+  },
+  {
+   "term": "C0231218",
+   "concept": "Malaise",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "ill": 1
+   },
+   "best_score": 0.989
+  },
+  {
+   "term": "C0272170",
+   "concept": "Shwachman syndrome",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "methods": 1
+   },
+   "forms": {
+    "sds": 1
+   },
+   "best_score": 0.978
+  },
+  {
+   "term": "C0684320",
+   "concept": "Disease regression",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "regressions": 1
+   },
+   "best_score": 0.978
+  },
+  {
+   "term": "C0729555",
+   "concept": "Infection of digestive system",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results": 1
+   },
+   "forms": {
+    "gastrointestinal infection": 1
+   },
+   "best_score": 0.979
+  },
+  {
+   "term": "C1514893",
+   "concept": "physiologic resolution",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "methods": 1
+   },
+   "forms": {
+    "resolved": 1
+   },
+   "best_score": 0.973
+  }
+ ]
+}

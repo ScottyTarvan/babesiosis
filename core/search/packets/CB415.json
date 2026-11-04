@@ -1,0 +1,122 @@
+{
+ "id": "CB415",
+ "filename": "CB415_2011_why-southern-african-babesiosis-so-virulent.md",
+ "key": "PMID:21489239",
+ "record": {
+  "pmid": "21489239",
+  "pmcid": "PMC3094394",
+  "doi": "10.1186/1756-3305-4-51",
+  "title": "Why is Southern African canine babesiosis so virulent? An evolutionary perspective.",
+  "authors": [
+   "Penzhorn BL"
+  ],
+  "journal": "Parasites & vectors",
+  "journal_abbrev": "Parasit Vectors",
+  "volume": "4",
+  "issue": null,
+  "pages": "51",
+  "language": [
+   "eng"
+  ],
+  "issue_date": "2011-04-13",
+  "issue_date_precision": "day",
+  "epub_date": "2011-04-13",
+  "pubmed_entry_date": "2011-04-15",
+  "first_pub_date": "2011-04-13",
+  "publication_types": [
+   "Journal Article",
+   "Review"
+  ],
+  "mesh": [
+   "Adaptation, Biological",
+   "Africa, Southern",
+   "Animals",
+   "Babesia",
+   "Babesiosis",
+   "Dog Diseases",
+   "Dogs",
+   "Virulence"
+  ],
+  "keywords": [],
+  "abstract": "Canine babesiosis is a common, highly virulent disease in Southern Africa with even pups and juveniles being severely affected. This contrasts with bovine babesiosis, for example, where host, parasite and vector co-evolved and young animals develop immunity after infection without showing clinical signs. Babesia rossi, the main causative organism of canine babesiosis in sub-Saharan Africa, was first described from a side-striped jackal (Canis adustus) in Kenya. Although data are meagre, there is evidence that indigenous African canids, such as jackals and wild dogs (Lycaon pictus), can harbour the parasite without showing untoward effects. Dogs are not indigenous to Africa. The vast majority of dogs presented at veterinary facilities in South Africa represent recently introduced European, Asian or American breeds. The contention is that B. rossi is a new challenge to which these dogs have not adapted. With intensive treatment of clinical cases, natural selection is effectively negated and the status quo will probably be maintained indefinitely. It is postulated that Babesia vogeli, which frequently results in unapparent infections or mild manifestations in dogs, represents or is closely related to the ancestral form of the canine parasite, possibly originating from wolves (Canis lupus).",
+  "corrections": [],
+  "epmc_first_pub_date": "2011-04-13",
+  "is_oa": "Y",
+  "has_suppl": "N",
+  "found_by": [
+   "EP1_broad",
+   "EP2_species",
+   "PM1_broad",
+   "PM2_species",
+   "PM3_mechanism",
+   "PM4_review"
+  ],
+  "in_window": true,
+  "key": "PMID:21489239",
+  "source_files": [
+   "candidates.jsonl"
+  ]
+ },
+ "screening": {
+  "key": "PMID:21489239",
+  "decision": "include",
+  "include_type": "review",
+  "exclude_reason": null,
+  "primary_category": "OXO",
+  "secondary_tags": [
+   "SEV"
+  ],
+  "species": "B. rossi (confirmed in text), B. vogeli discussed",
+  "rationale": "Narrative review on why B. rossi is so virulent in dogs, covering host-parasite adaptation and severity. This falls under virulence and clinical syndromes.",
+  "stage": "screen",
+  "batch": "r4_12.md",
+  "screening_round": "r4"
+ },
+ "fulltext_check": {
+  "key": "PMID:21489239",
+  "pmcid": "PMC3094394",
+  "checked": "2026-10-28",
+  "fulltext_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC3094394/fullTextXML",
+  "fulltext_status": 200,
+  "data_availability": [],
+  "supplementary": [],
+  "repository_links": [],
+  "section_titles": [
+   "Introduction",
+   "Clinical manifestation of B. rossi infection",
+   "Endemic stability in bovine babesiosis",
+   "Babesiosis in wildlife",
+   "Babesia rossi infection in African canids",
+   "Dogs not indigenous to Africa",
+   "Conclusion",
+   "Declaration of competing interests",
+   "Acknowledgements",
+   "References"
+  ],
+  "has_body": true
+ },
+ "duplicate_records": [
+  {
+   "key": "REF:whyissouthernafricancaninebabesiosissovirulentanevolutionary",
+   "basis": "Reference-list entry resolved to Penzhorn 2011, Parasit Vectors 4:51; PubMed record retained",
+   "record": {
+    "pmid": null,
+    "doi": null,
+    "title": "Why is Southern African canine babesiosis so virulent ? An evolutionary perspective Parasit Vectors",
+    "journal": null,
+    "first_pub_date": null,
+    "year": "2011",
+    "abstract": null,
+    "found_by": [
+     "citation:backward:29166283"
+    ],
+    "unresolved": true,
+    "source_id": "REF:whyissouthernafricancaninebabesiosissovirulentanevolutionary",
+    "key": "REF:whyissouthernafricancaninebabesiosissovirulentanevolutionary",
+    "source_files": [
+     "candidates_r2.jsonl"
+    ]
+   }
+  }
+ ]
+}

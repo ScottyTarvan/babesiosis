@@ -1,0 +1,251 @@
+{
+ "id": "CB378",
+ "document": "data/markdown/CB378.md",
+ "source_format": "pdf",
+ "translated": false,
+ "words": 3631,
+ "run_utc": "2026-10-30T05:36:16+00:00",
+ "threshold": 0.85,
+ "kept_types": [
+  "T019",
+  "T020",
+  "T037",
+  "T046",
+  "T047",
+  "T048",
+  "T049",
+  "T050",
+  "T184",
+  "T190",
+  "T191"
+ ],
+ "term_count": 12,
+ "terms": [
+  {
+   "term": "C0003123",
+   "concept": "Anorexia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 27,
+   "mentions_negated": 8,
+   "mentions_affirmed": 19,
+   "sections": {
+    "methods": 10,
+    "results": 8,
+    "discussion": 4,
+    "abstract": 3,
+    "introduction": 2
+   },
+   "forms": {
+    "anorexia": 25,
+    "anorexic": 2
+   },
+   "best_score": 0.969
+  },
+  {
+   "term": "C0004576",
+   "concept": "Babesiosis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 16,
+   "mentions_negated": 4,
+   "mentions_affirmed": 12,
+   "sections": {
+    "introduction": 4,
+    "abstract": 3,
+    "methods": 3,
+    "discussion": 3,
+    "results": 2,
+    "title": 1
+   },
+   "forms": {
+    "babesiosis": 16
+   },
+   "best_score": 0.972
+  },
+  {
+   "term": "C0151763",
+   "concept": "Liver damage",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 12,
+   "mentions_negated": 3,
+   "mentions_affirmed": 9,
+   "sections": {
+    "results": 4,
+    "discussion": 4,
+    "abstract": 2,
+    "methods": 2
+   },
+   "forms": {
+    "hepatocellular damage": 10,
+    "hepa­ tocellular damage": 1,
+    "hepatocellular dam­ age": 1
+   },
+   "best_score": 0.985
+  },
+  {
+   "term": "C0683278",
+   "concept": "Mental Suffering",
+   "semantic_types": [
+    "Mental or Behavioral Dysfunction"
+   ],
+   "mentions": 9,
+   "mentions_negated": 2,
+   "mentions_affirmed": 7,
+   "sections": {
+    "discussion": 3,
+    "abstract": 2,
+    "results": 2,
+    "title": 1,
+    "introduction": 1
+   },
+   "forms": {
+    "suffering": 9
+   },
+   "best_score": 0.94
+  },
+  {
+   "term": "C0023895",
+   "concept": "Liver diseases",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 7,
+   "mentions_negated": 1,
+   "mentions_affirmed": 6,
+   "sections": {
+    "introduction": 3,
+    "abstract": 2,
+    "discussion": 2
+   },
+   "forms": {
+    "liver disease": 7
+   },
+   "best_score": 0.984
+  },
+  {
+   "term": "C0012634",
+   "concept": "Disease",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 3,
+   "mentions_negated": 1,
+   "mentions_affirmed": 2,
+   "sections": {
+    "introduction": 2,
+    "discussion": 1
+   },
+   "forms": {
+    "disease": 3
+   },
+   "best_score": 0.987
+  },
+  {
+   "term": "C1861380",
+   "concept": "Syndactyly, Type I",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "results": 2
+   },
+   "forms": {
+    "sd1": 2
+   },
+   "best_score": 0.995
+  },
+  {
+   "term": "C0002871",
+   "concept": "Anemia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "methods": 1
+   },
+   "forms": {
+    "anaemia": 1
+   },
+   "best_score": 0.977
+  },
+  {
+   "term": "C0004698",
+   "concept": "Balkan Nephropathy",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 1,
+   "mentions_affirmed": 0,
+   "sections": {
+    "results": 1
+   },
+   "forms": {
+    "ben­": 1
+   },
+   "best_score": 0.867
+  },
+  {
+   "term": "C0020488",
+   "concept": "Hypernatremia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results": 1
+   },
+   "forms": {
+    "excess": 1
+   },
+   "best_score": 0.876
+  },
+  {
+   "term": "C0021368",
+   "concept": "Inflammation",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "inflammatory reaction": 1
+   },
+   "best_score": 0.969
+  },
+  {
+   "term": "C0221423",
+   "concept": "Illness (finding)",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 1,
+   "mentions_affirmed": 0,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "illnesses": 1
+   },
+   "best_score": 0.965
+  }
+ ]
+}

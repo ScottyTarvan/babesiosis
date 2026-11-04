@@ -1,0 +1,549 @@
+{
+ "id": "HU006",
+ "document": "data/markdown/HU006.md",
+ "source_format": "jats_xml",
+ "translated": false,
+ "words": 5764,
+ "run_utc": "2026-10-30T05:37:07+00:00",
+ "threshold": 0.85,
+ "kept_types": [
+  "T019",
+  "T020",
+  "T037",
+  "T046",
+  "T047",
+  "T048",
+  "T049",
+  "T050",
+  "T184",
+  "T190",
+  "T191"
+ ],
+ "term_count": 30,
+ "terms": [
+  {
+   "term": "C0036690",
+   "concept": "Septicemia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 85,
+   "mentions_negated": 0,
+   "mentions_affirmed": 85,
+   "sections": {
+    "discussion": 31,
+    "results": 24,
+    "introduction": 16,
+    "abstract": 8,
+    "methods": 5,
+    "title": 1
+   },
+   "forms": {
+    "sepsis": 85
+   },
+   "best_score": 0.971
+  },
+  {
+   "term": "C0004610",
+   "concept": "Bacteremia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 10,
+   "mentions_negated": 2,
+   "mentions_affirmed": 8,
+   "sections": {
+    "discussion": 6,
+    "results": 3,
+    "methods": 1
+   },
+   "forms": {
+    "bacteremia": 10
+   },
+   "best_score": 0.982
+  },
+  {
+   "term": "C0009450",
+   "concept": "Communicable Diseases",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 4,
+   "mentions_negated": 0,
+   "mentions_affirmed": 4,
+   "sections": {
+    "results": 2,
+    "introduction": 1,
+    "methods": 1
+   },
+   "forms": {
+    "infection": 4
+   },
+   "best_score": 0.962
+  },
+  {
+   "term": "C0036983",
+   "concept": "Septic Shock",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 4,
+   "mentions_negated": 0,
+   "mentions_affirmed": 4,
+   "sections": {
+    "results": 3,
+    "discussion": 1
+   },
+   "forms": {
+    "septic shock": 4
+   },
+   "best_score": 0.981
+  },
+  {
+   "term": "C0004623",
+   "concept": "Bacterial Infections",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "results": 2,
+    "discussion": 1
+   },
+   "forms": {
+    "bacterial infection": 2,
+    "bacterial co-infection": 1
+   },
+   "best_score": 0.973
+  },
+  {
+   "term": "C0042769",
+   "concept": "Virus Diseases",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "results": 2,
+    "discussion": 1
+   },
+   "forms": {
+    "viral infection": 3
+   },
+   "best_score": 0.967
+  },
+  {
+   "term": "C0376545",
+   "concept": "Hematologic Neoplasms",
+   "semantic_types": [
+    "Neoplastic Process"
+   ],
+   "mentions": 3,
+   "mentions_negated": 1,
+   "mentions_affirmed": 2,
+   "sections": {
+    "results": 2,
+    "discussion": 1
+   },
+   "forms": {
+    "hematologic malignancy": 3
+   },
+   "best_score": 0.99
+  },
+  {
+   "term": "C0011849",
+   "concept": "Diabetes Mellitus",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "results": 2
+   },
+   "forms": {
+    "diabetes mellitus": 2
+   },
+   "best_score": 0.975
+  },
+  {
+   "term": "C0032285",
+   "concept": "Pneumonia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "results": 2
+   },
+   "forms": {
+    "pneumonia": 2
+   },
+   "best_score": 0.983
+  },
+  {
+   "term": "C0004096",
+   "concept": "Asthma",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results": 1
+   },
+   "forms": {
+    "asthma": 1
+   },
+   "best_score": 0.971
+  },
+  {
+   "term": "C0006826",
+   "concept": "Malignant Neoplasms",
+   "semantic_types": [
+    "Neoplastic Process"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "malignancy": 1
+   },
+   "best_score": 0.991
+  },
+  {
+   "term": "C0010340",
+   "concept": "Critical Illness",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "critically ill": 1
+   },
+   "best_score": 0.982
+  },
+  {
+   "term": "C0012634",
+   "concept": "Disease",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results": 1
+   },
+   "forms": {
+    "diseases": 1
+   },
+   "best_score": 0.984
+  },
+  {
+   "term": "C0020488",
+   "concept": "Hypernatremia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "excess": 1
+   },
+   "best_score": 0.876
+  },
+  {
+   "term": "C0021368",
+   "concept": "Inflammation",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "inflammation": 1
+   },
+   "best_score": 0.958
+  },
+  {
+   "term": "C0022716",
+   "concept": "Menkes Kinky Hair Syndrome",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "methods": 1
+   },
+   "forms": {
+    "md": 1
+   },
+   "best_score": 0.997
+  },
+  {
+   "term": "C0035222",
+   "concept": "Respiratory Distress Syndrome, Adult",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "ards": 1
+   },
+   "best_score": 0.972
+  },
+  {
+   "term": "C0036679",
+   "concept": "Diastasis",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 1,
+   "mentions_affirmed": 0,
+   "sections": {
+    "results": 1
+   },
+   "forms": {
+    "separation": 1
+   },
+   "best_score": 0.963
+  },
+  {
+   "term": "C0040034",
+   "concept": "Thrombocytopenia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results": 1
+   },
+   "forms": {
+    "thrombocytopenia": 1
+   },
+   "best_score": 0.98
+  },
+  {
+   "term": "C0178468",
+   "concept": "Autoimmune thyroid disease",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results": 1
+   },
+   "forms": {
+    "autoimmune thyroid disease": 1
+   },
+   "best_score": 0.978
+  },
+  {
+   "term": "C0221103",
+   "concept": "Visual Suppression",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "suppression": 1
+   },
+   "best_score": 0.982
+  },
+  {
+   "term": "C0221423",
+   "concept": "Illness (finding)",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "illness": 1
+   },
+   "best_score": 0.967
+  },
+  {
+   "term": "C0221444",
+   "concept": "clinical syndromes",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "clinical syndrome": 1
+   },
+   "best_score": 0.985
+  },
+  {
+   "term": "C0349410",
+   "concept": "Single organ dysfunction",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "organ failure": 1
+   },
+   "best_score": 0.975
+  },
+  {
+   "term": "C0596402",
+   "concept": "cytotoxicity",
+   "semantic_types": [
+    "Cell or Molecular Dysfunction"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results": 1
+   },
+   "forms": {
+    "cytotoxicity": 1
+   },
+   "best_score": 0.993
+  },
+  {
+   "term": "C0683278",
+   "concept": "Mental Suffering",
+   "semantic_types": [
+    "Mental or Behavioral Dysfunction"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "suffering": 1
+   },
+   "best_score": 0.94
+  },
+  {
+   "term": "C0694549",
+   "concept": "Community acquired pneumonia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results": 1
+   },
+   "forms": {
+    "community-acquired pneumonia": 1
+   },
+   "best_score": 0.971
+  },
+  {
+   "term": "C0699748",
+   "concept": "Pathogenesis",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "pathogenesis": 1
+   },
+   "best_score": 0.983
+  },
+  {
+   "term": "C1514306",
+   "concept": "Predictive Cancer Model",
+   "semantic_types": [
+    "Experimental Model of Disease"
+   ],
+   "mentions": 1,
+   "mentions_negated": 1,
+   "mentions_affirmed": 0,
+   "sections": {
+    "results": 1
+   },
+   "forms": {
+    "predictive model": 1
+   },
+   "best_score": 0.86
+  },
+  {
+   "term": "C5203670",
+   "concept": "COVID19 (disease)",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "covid-19": 1
+   },
+   "best_score": 0.979
+  }
+ ]
+}

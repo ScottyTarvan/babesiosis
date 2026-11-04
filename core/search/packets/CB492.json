@@ -1,0 +1,130 @@
+{
+ "id": "CB492",
+ "filename": "CB492_2015_study-naturally-acquired-babesiosis-caused-single.md",
+ "key": "PMID:26682062",
+ "record": {
+  "pmid": "26682062",
+  "pmcid": "PMC4670660",
+  "doi": "10.1155/2015/985015",
+  "title": "A Study of Naturally Acquired Canine Babesiosis Caused by Single and Mixed Babesia Species in Zambia: Clinicopathological Findings and Case Management.",
+  "authors": [
+   "Nalubamba KS",
+   "Mudenda NB",
+   "Namwila MM",
+   "Mulenga CS",
+   "Bwalya EC",
+   "M'kandawire E",
+   "Saasa N",
+   "Hankanga C",
+   "Oparaocha E",
+   "Simuunza M"
+  ],
+  "journal": "Journal of parasitology research",
+  "journal_abbrev": "J Parasitol Res",
+  "volume": "2015",
+  "issue": null,
+  "pages": "985015",
+  "language": [
+   "eng"
+  ],
+  "issue_date": "2015-01-01",
+  "issue_date_precision": "year",
+  "epub_date": "2015-11-22",
+  "pubmed_entry_date": "2015-12-19",
+  "first_pub_date": "2015-01-01",
+  "publication_types": [
+   "Journal Article"
+  ],
+  "mesh": [],
+  "keywords": [],
+  "abstract": "A retrospective and prospective analysis of clinical records of dogs diagnosed with Babesia infections was carried out for the years 2000 to 2013 from practices in Lusaka, Zambia. Records of 363 dogs with confirmed Babesia infections were analysed using demographic factors including sex, breed, age, and clinical signs in relation to haematological findings and Babesia species. The clinical and laboratory findings observed are described as well as Babesia species identification. The study included 18 breeds and the highest proportion were mongrels (32.2%), males representing 64.5% of the population. The most common presenting problems were anorexia (65.3%) and lethargy/weakness (65.3%). The most common clinical signs were fever (87.3%), pallor (52.3%), lymphadenopathy (47.4%), and presence of ticks (44.9%). Anaemia (96.4%) and nucleated erythrocytes (42.2%) were the most common laboratory findings. A mixed infection of Babesia rossi and Babesia gibsoni was present in 59.7% of dogs, whilst 8% and 32.2% had B. rossi and B. gibsoni as a single infection, respectively. Case management mainly involved therapy with tetracyclines and imidocarb and was usually accompanied by clinical improvement. This study highlights, for the first time, the presence of B. gibsoni in natural dog populations in Zambia, where previously only B. rossi was reported.",
+  "corrections": [],
+  "epmc_first_pub_date": "2015-11-22",
+  "is_oa": "Y",
+  "has_suppl": "N",
+  "found_by": [
+   "EP1_broad",
+   "EP2_species",
+   "PM1_broad",
+   "PM2_species",
+   "PM3_mechanism"
+  ],
+  "in_window": true,
+  "date_discrepancy": "PubMed-derived 2015-01-01 vs Europe PMC firstPublicationDate 2015-11-22",
+  "online_vs_issue": "online 2015-11-22; issue 2015-01-01 (year)",
+  "key": "PMID:26682062",
+  "source_files": [
+   "candidates.jsonl"
+  ]
+ },
+ "screening": {
+  "key": "PMID:26682062",
+  "decision": "include",
+  "include_type": "primary",
+  "exclude_reason": null,
+  "primary_category": "ERY",
+  "secondary_tags": [
+   "SEV"
+  ],
+  "species": "B. rossi and B. gibsoni (single and mixed; confirmed)",
+  "rationale": "Clinicopathological case series of 363 infected dogs reporting haematology (anaemia in 96%, nucleated erythrocytes) in relation to species; a clinicopathological profile.",
+  "stage": "screen",
+  "batch": "r4_23.md",
+  "screening_round": "r4"
+ },
+ "fulltext_check": {
+  "key": "PMID:26682062",
+  "pmcid": "PMC4670660",
+  "checked": "2026-10-28",
+  "fulltext_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4670660/fullTextXML",
+  "fulltext_status": 200,
+  "data_availability": [],
+  "supplementary": [],
+  "repository_links": [],
+  "section_titles": [
+   "1. Introduction",
+   "2. Materials and Methods",
+   "2.1. Inclusion Criteria",
+   "2.2. Case Recruitment",
+   "2.2.1. Retrospective",
+   "2.2.2. Prospective",
+   "2.2.3. Blood Collection and PCV",
+   "2.3. DNA Extraction and Seminested PCR",
+   "2.4. Data Handling and Analysis",
+   "3. Results",
+   "3.1. Dog Breeds, Age, and Gender Distribution",
+   "3.2. History and Physical Examination Findings",
+   "3.3. Laboratory Findings",
+   "3.3.1. Parasite Identification",
+   "3.3.2. Haematological Findings",
+   "3.4. Case Management and Case Outcomes",
+   "4. Discussion",
+   "Conflict of Interests"
+  ],
+  "has_body": true
+ },
+ "duplicate_records": [
+  {
+   "key": "REF:astudyofnaturallyacquiredcaninebabesiosiscausedbysingleandmi",
+   "basis": "Reference-list entry of Nalubamba et al. 2015 (J Parasitol Res); title similarity 0.95; PubMed record retained",
+   "record": {
+    "pmid": null,
+    "doi": null,
+    "title": "A study of naturally acquired canine babesiosis caused by single and mixed Babesia species in Zambia: Clinicopathological findings and case management.J Parasitol Res",
+    "journal": null,
+    "first_pub_date": null,
+    "year": "2015",
+    "abstract": null,
+    "found_by": [
+     "citation:backward:34472506"
+    ],
+    "unresolved": true,
+    "source_id": "REF:astudyofnaturallyacquiredcaninebabesiosiscausedbysingleandmi",
+    "key": "REF:astudyofnaturallyacquiredcaninebabesiosiscausedbysingleandmi",
+    "source_files": [
+     "candidates_r2.jsonl"
+    ]
+   }
+  }
+ ]
+}

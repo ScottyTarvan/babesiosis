@@ -1,0 +1,270 @@
+{
+ "id": "CB022",
+ "document": "data/markdown/CB022.md",
+ "source_format": "pdf",
+ "translated": false,
+ "words": 1096,
+ "run_utc": "2026-10-30T05:33:11+00:00",
+ "threshold": 0.85,
+ "kept_types": [
+  "T019",
+  "T020",
+  "T037",
+  "T046",
+  "T047",
+  "T048",
+  "T049",
+  "T050",
+  "T184",
+  "T190",
+  "T191"
+ ],
+ "term_count": 14,
+ "terms": [
+  {
+   "term": "C0004576",
+   "concept": "Babesiosis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 16,
+   "mentions_negated": 1,
+   "mentions_affirmed": 15,
+   "sections": {
+    "unlabelled": 6,
+    "discussion": 6,
+    "methods": 2,
+    "results": 2
+   },
+   "forms": {
+    "babesiosis": 13,
+    "babesia sp. infection": 2,
+    "babesia infection": 1
+   },
+   "best_score": 0.972
+  },
+  {
+   "term": "C0040034",
+   "concept": "Thrombocytopenia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 8,
+   "mentions_negated": 0,
+   "mentions_affirmed": 8,
+   "sections": {
+    "unlabelled": 4,
+    "discussion": 4
+   },
+   "forms": {
+    "thrombocytopenia": 8
+   },
+   "best_score": 0.98
+  },
+  {
+   "term": "C0002871",
+   "concept": "Anemia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 6,
+   "mentions_negated": 0,
+   "mentions_affirmed": 6,
+   "sections": {
+    "discussion": 5,
+    "unlabelled": 1
+   },
+   "forms": {
+    "anemia": 6
+   },
+   "best_score": 0.974
+  },
+  {
+   "term": "C0020615",
+   "concept": "Hypoglycemia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "discussion": 2
+   },
+   "forms": {
+    "hypoglycemia": 2
+   },
+   "best_score": 0.99
+  },
+  {
+   "term": "C0019054",
+   "concept": "Hemolysis (disorder)",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 1,
+   "mentions_affirmed": 0,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "hemolysis": 1
+   },
+   "best_score": 0.991
+  },
+  {
+   "term": "C0020433",
+   "concept": "Hyperbilirubinemia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "unlabelled": 1
+   },
+   "forms": {
+    "bilirubinemia": 1
+   },
+   "best_score": 0.972
+  },
+  {
+   "term": "C0021368",
+   "concept": "Inflammation",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "unlabelled": 1
+   },
+   "forms": {
+    "inflammation": 1
+   },
+   "best_score": 0.958
+  },
+  {
+   "term": "C0027627",
+   "concept": "Neoplasm Metastasis",
+   "semantic_types": [
+    "Neoplastic Process"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "secondary": 1
+   },
+   "best_score": 0.985
+  },
+  {
+   "term": "C0037088",
+   "concept": "Signs and Symptoms",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "finding": 1
+   },
+   "best_score": 0.994
+  },
+  {
+   "term": "C0242184",
+   "concept": "Hypoxia",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "unlabelled": 1
+   },
+   "forms": {
+    "hypoxia": 1
+   },
+   "best_score": 0.978
+  },
+  {
+   "term": "C0276854",
+   "concept": "Infection by Babesia canis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "unlabelled": 1
+   },
+   "forms": {
+    "canine babesiosis": 1
+   },
+   "best_score": 0.969
+  },
+  {
+   "term": "C0683278",
+   "concept": "Mental Suffering",
+   "semantic_types": [
+    "Mental or Behavioral Dysfunction"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "suffering": 1
+   },
+   "best_score": 0.94
+  },
+  {
+   "term": "C0686346",
+   "concept": "Gender Dysphoria",
+   "semantic_types": [
+    "Mental or Behavioral Dysfunction"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "incongruence": 1
+   },
+   "best_score": 0.851
+  },
+  {
+   "term": "C0745178",
+   "concept": "Hypotensive Shock",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "unlabelled": 1
+   },
+   "forms": {
+    "hypotensive shock": 1
+   },
+   "best_score": 0.988
+  }
+ ]
+}

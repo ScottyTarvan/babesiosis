@@ -1,0 +1,95 @@
+{
+ "id": "CB410",
+ "filename": "CB410_2011_acute-respiratory-distress-syndrome-due-babesiosis.md",
+ "key": "https://openalex.org/W2232812342",
+ "record": {
+  "pmid": null,
+  "pmcid": null,
+  "doi": null,
+  "title": "Acute respiratory distress syndrome due to babesiosis in a dog",
+  "journal": "Research Journal of Animal Sciences",
+  "authors": [
+   "Joshua W. Aleri",
+   "Kipyegon An",
+   "John D. Mande",
+   "CM Mulei",
+   "DN Karanja"
+  ],
+  "first_pub_date": "2011-01-01",
+  "type": "article",
+  "language": [
+   "en"
+  ],
+  "abstract": null,
+  "abstract_source": "OpenAlex abstract_inverted_index (reconstructed)",
+  "source_id": "https://openalex.org/W2232812342",
+  "src": "OPENALEX",
+  "found_by": [
+   "OA:title_and_abstract"
+  ],
+  "in_window": true,
+  "key": "https://openalex.org/W2232812342",
+  "source_files": [
+   "candidates_r3.jsonl"
+  ]
+ },
+ "screening": {
+  "key": "https://openalex.org/W2232812342",
+  "decision": "include",
+  "include_type": "case_report",
+  "exclude_reason": null,
+  "primary_category": "PUL",
+  "secondary_tags": [
+   "SEV"
+  ],
+  "species": "Babesia sp. (unspecified; Kenya)",
+  "rationale": "From the title and OpenAlex metadata (Research Journal of Animal Sciences 5(2); no abstract): a case report of ARDS due to babesiosis in a dog, a distinct syndrome that meets the case-report rule. This is the journal version; W1169740358 is a repository duplicate of it.",
+  "stage": "adjudicated",
+  "batch": "r4_11.md",
+  "first_decision": "uncertain",
+  "screening_round": "r4"
+ },
+ "fulltext_check": {
+  "key": "https://openalex.org/W2232812342",
+  "pmcid": null,
+  "checked": "2026-10-28",
+  "fulltext_status": "no_pmcid"
+ },
+ "duplicate_records": [
+  {
+   "key": "https://openalex.org/W1169740358",
+   "basis": "Second OpenAlex record of the same ARDS case report (Research Journal of Animal Sciences 5(2), 2011); title similarity 0.91; record with journal metadata retained",
+   "record": {
+    "pmid": null,
+    "pmcid": null,
+    "doi": null,
+    "title": "Acute Respiratory Distress Syndrome Due to Babesiosis in a Dog: Case Report",
+    "journal": "University of Nairobi Research Archive (University of Nairobi)",
+    "authors": [
+     "Joshua W. Aleri",
+     "Charles Matiku Mulei",
+     "D N Karanja",
+     "John D. Mande",
+     "Ambrose Ng’eno Kipyegon"
+    ],
+    "first_pub_date": "2011-01-01",
+    "type": "article",
+    "language": [
+     "en"
+    ],
+    "abstract": null,
+    "abstract_source": "OpenAlex abstract_inverted_index (reconstructed)",
+    "source_id": "https://openalex.org/W1169740358",
+    "src": "OPENALEX",
+    "found_by": [
+     "OA:title_and_abstract"
+    ],
+    "in_window": true,
+    "key": "https://openalex.org/W1169740358",
+    "source_files": [
+     "candidates_r3.jsonl"
+    ]
+   }
+  }
+ ]
+}

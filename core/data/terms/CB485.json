@@ -1,0 +1,130 @@
+{
+ "id": "CB485",
+ "document": "data/markdown/CB485.md",
+ "source_format": "abstract",
+ "translated": false,
+ "words": 254,
+ "run_utc": "2026-10-30T05:36:36+00:00",
+ "threshold": 0.85,
+ "kept_types": [
+  "T019",
+  "T020",
+  "T037",
+  "T046",
+  "T047",
+  "T048",
+  "T049",
+  "T050",
+  "T184",
+  "T190",
+  "T191"
+ ],
+ "term_count": 6,
+ "terms": [
+  {
+   "term": "C0004576",
+   "concept": "Babesiosis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 4,
+   "mentions_negated": 0,
+   "mentions_affirmed": 4,
+   "sections": {
+    "abstract": 3,
+    "title": 1
+   },
+   "forms": {
+    "babesiosis": 4
+   },
+   "best_score": 0.972
+  },
+  {
+   "term": "C0020428",
+   "concept": "Hyperaldosteronism",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "abstract": 2,
+    "title": 1
+   },
+   "forms": {
+    "hyperaldosteronism": 3
+   },
+   "best_score": 0.972
+  },
+  {
+   "term": "C0242528",
+   "concept": "Azotemia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "abstract": 2,
+    "title": 1
+   },
+   "forms": {
+    "azotaemia": 3
+   },
+   "best_score": 0.977
+  },
+  {
+   "term": "C0009566",
+   "concept": "Complication",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "abstract": 1
+   },
+   "forms": {
+    "complications": 1
+   },
+   "best_score": 0.977
+  },
+  {
+   "term": "C0027627",
+   "concept": "Neoplasm Metastasis",
+   "semantic_types": [
+    "Neoplastic Process"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "abstract": 1
+   },
+   "forms": {
+    "secondary": 1
+   },
+   "best_score": 0.985
+  },
+  {
+   "term": "C0035078",
+   "concept": "Kidney Failure",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "abstract": 1
+   },
+   "forms": {
+    "renal failure": 1
+   },
+   "best_score": 0.96
+  }
+ ]
+}

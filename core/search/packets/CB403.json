@@ -1,0 +1,54 @@
+{
+ "id": "CB403",
+ "filename": "CB403_2011_parasitic-causes-anaemia-vom-nigeria.md",
+ "key": "DOI:10.5455/ijavms.20110408065112",
+ "record": {
+  "pmid": null,
+  "pmcid": null,
+  "doi": "10.5455/ijavms.20110408065112",
+  "title": "Parasitic Causes of Anaemia in Dogs in Vom, Nigeria",
+  "journal": "International Journal for Agro Veterinary and Medical Sciences",
+  "authors": [
+   "Joshua Kamani",
+   "Rebecca Weka",
+   "Daniel Sudan Gbise"
+  ],
+  "first_pub_date": "2011-01-01",
+  "type": "article",
+  "language": [
+   "en"
+  ],
+  "abstract": "Association of parasitic infection of dogs with packed cell volume (PCV) as an indication of anaemia was investigated using diagnostic records from May 2008 to April 2010. One hundred and fourteen blood and 84 fecal samples from owned dogs were used. Giemsa-stained thin blood smears were examined for haemoparasites. Fecal samples were processed by simple floatation, using saturated sodium chloride and formol ether concentration methods. An overall prevalence of 42% for haemoparasites and 31% for helminths were recorded. The prevalence was higher in local breeds than mixed and pure exotic breeds. Babesia canis sensu lato appears to be more prevalent (27%) than other haemoparasites and Toxocara canis (12%) more than other helminth parasites. 37% of the dogs examined were harbouring either haemo- or intestinal parasites or both. Dogs negative for haemo- and intestinal parasites had mean packed cell volume (PCV) values within the normal range (37-55%). Dogs infected with only haemoparasites or those with both haemo- and intestinal parasites had significantly lower (P",
+  "abstract_source": "OpenAlex abstract_inverted_index (reconstructed)",
+  "source_id": "https://openalex.org/W2120644866",
+  "src": "OPENALEX",
+  "found_by": [
+   "OA:title_and_abstract"
+  ],
+  "in_window": true,
+  "key": "DOI:10.5455/ijavms.20110408065112",
+  "source_files": [
+   "candidates_r3.jsonl"
+  ]
+ },
+ "screening": {
+  "key": "DOI:10.5455/ijavms.20110408065112",
+  "decision": "uncertain",
+  "include_type": null,
+  "exclude_reason": null,
+  "primary_category": "ERY",
+  "secondary_tags": [],
+  "species": "B. canis sensu lato (suspected, smear only)",
+  "rationale": "Based on the truncated abstract (OpenAlex; the full text is closed and the landing page was empty): it reports lower PCV in dogs with haemoparasites, and B. canis was the most common haemoparasite (27%). The abstract does not show whether PCV is reported for Babesia-infected dogs separately, so the full text must decide.",
+  "stage": "adjudicated",
+  "batch": "r4_10.md",
+  "first_decision": "uncertain",
+  "screening_round": "r4"
+ },
+ "fulltext_check": {
+  "key": "DOI:10.5455/ijavms.20110408065112",
+  "pmcid": null,
+  "checked": "2026-10-28",
+  "fulltext_status": "no_pmcid"
+ }
+}

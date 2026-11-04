@@ -1,0 +1,59 @@
+{
+ "id": "CB525",
+ "filename": "CB525_2016_medical-management-babesia-gibsoni-induced-hepatopathy.md",
+ "key": "https://openalex.org/W3193839417",
+ "record": {
+  "pmid": null,
+  "pmcid": null,
+  "doi": null,
+  "title": "Medical management of Babesia gibsoni induced hepatopathy and acute renal injury in a dog",
+  "journal": null,
+  "authors": [
+   "Dikshya Sharma",
+   "K Mahendran",
+   "Gollahalli Eregowda Chethan",
+   "Prithwish Banerjee",
+   "D. B. Mondal",
+   "Vijaykumar Gupta"
+  ],
+  "first_pub_date": "2016-01-01",
+  "type": "article",
+  "language": [
+   "en"
+  ],
+  "abstract": null,
+  "abstract_source": "OpenAlex abstract_inverted_index (reconstructed)",
+  "source_id": "https://openalex.org/W3193839417",
+  "src": "OPENALEX",
+  "found_by": [
+   "OA:title_and_abstract"
+  ],
+  "in_window": true,
+  "key": "https://openalex.org/W3193839417",
+  "source_files": [
+   "candidates_r3.jsonl"
+  ]
+ },
+ "screening": {
+  "key": "https://openalex.org/W3193839417",
+  "decision": "include",
+  "include_type": "case_report",
+  "exclude_reason": null,
+  "primary_category": "REN",
+  "secondary_tags": [
+   "MET"
+  ],
+  "species": "B. gibsoni (suspected/confirmed status not stated)",
+  "rationale": "Based on title and OpenAlex metadata only (ICAR repository PDF was unreachable). The title reports two organ complications, B. gibsoni-induced hepatopathy and acute renal injury, which count as a distinct complication syndrome under the case-report rule. Confirm the clinicopathological detail at extraction.",
+  "stage": "adjudicated",
+  "batch": "r4_27.md",
+  "first_decision": "uncertain",
+  "screening_round": "r4"
+ },
+ "fulltext_check": {
+  "key": "https://openalex.org/W3193839417",
+  "pmcid": null,
+  "checked": "2026-10-28",
+  "fulltext_status": "no_pmcid"
+ }
+}

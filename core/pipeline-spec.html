@@ -1,0 +1,757 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light only">
+<title>Babesiosis Review Pipeline</title>
+<style>
+  :root {
+    --bg: #ffffff;
+    --panel: #f7f8fa;
+    --ink: #1b1f24;
+    --ink-2: #4a525c;
+    --ink-3: #6b7480;
+    --rule: #e3e6ea;
+    --rule-2: #cfd4da;
+    --accent: #1f5f8b;
+    --accent-soft: #e8f1f7;
+    --warn: #8a5a00;
+    --warn-soft: #fdf4e3;
+    --ok: #26703f;
+    --ok-soft: #e8f4ec;
+    --mono: ui-monospace, "Cascadia Mono", Consolas, "SFMono-Regular", Menlo, monospace;
+    --sans: "Segoe UI", system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
+  }
+  * { box-sizing: border-box; }
+  html { background: var(--bg); color-scheme: light; }
+  body {
+    margin: 0; background: var(--bg); color: var(--ink);
+    font: 15px/1.6 var(--sans);
+    -webkit-text-size-adjust: 100%;
+  }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  code, .mono { font-family: var(--mono); font-size: 0.88em; }
+  code { background: var(--panel); border: 1px solid var(--rule); border-radius: 3px; padding: 0 4px; overflow-wrap: anywhere; }
+  pre {
+    font: 12.5px/1.55 var(--mono); background: var(--panel); border: 1px solid var(--rule);
+    border-radius: 4px; padding: 10px 12px; margin: 10px 0 14px;
+    white-space: pre-wrap; word-break: break-word;
+  }
+
+  .layout { display: grid; grid-template-columns: 240px minmax(0, 1fr); max-width: 1240px; margin: 0 auto; }
+  nav.toc {
+    position: sticky; top: 0; align-self: start; max-height: 100vh; overflow-y: auto;
+    padding: 28px 18px 28px 24px; border-right: 1px solid var(--rule); font-size: 13px;
+  }
+  nav.toc .toc-title { font-weight: 600; color: var(--ink-3); text-transform: uppercase; letter-spacing: .06em; font-size: 11px; margin-bottom: 10px; }
+  nav.toc ol { list-style: none; margin: 0; padding: 0; }
+  nav.toc li { margin: 2px 0; }
+  nav.toc a { color: var(--ink-2); display: flex; gap: 8px; padding: 2px 0; }
+  nav.toc a:hover { color: var(--accent); text-decoration: none; }
+  nav.toc .n { font-family: var(--mono); color: var(--ink-3); min-width: 26px; }
+
+  main { padding: 32px 40px 80px; min-width: 0; }
+  header.doc { border-bottom: 2px solid var(--ink); padding-bottom: 18px; margin-bottom: 28px; }
+  .doc-kicker { font: 600 11px/1.4 var(--sans); letter-spacing: .08em; text-transform: uppercase; color: var(--accent); }
+  h1 { font-size: 28px; line-height: 1.25; margin: 6px 0 10px; letter-spacing: -.01em; }
+  .meta { display: flex; flex-wrap: wrap; gap: 6px 22px; color: var(--ink-2); font-size: 13px; }
+  .meta b { color: var(--ink); font-weight: 600; }
+
+  section { margin: 0 0 40px; scroll-margin-top: 16px; }
+  h2 { font-size: 20px; margin: 0 0 4px; display: flex; align-items: baseline; gap: 10px; padding-top: 6px; border-top: 1px solid var(--rule); padding-top: 18px; }
+  h2 .sid { font: 600 13px var(--mono); color: var(--accent); background: var(--accent-soft); border-radius: 3px; padding: 1px 6px; }
+  h3 { font-size: 15.5px; margin: 22px 0 6px; }
+  .lede { color: var(--ink-2); margin: 2px 0 12px; }
+  p { margin: 8px 0; }
+  ul, ol.plain { margin: 6px 0 10px; padding-left: 20px; }
+  li { margin: 3px 0; }
+
+  .io { display: grid; grid-template-columns: 110px minmax(0, 1fr); gap: 4px 14px; font-size: 13.5px;
+        background: var(--panel); border: 1px solid var(--rule); border-radius: 4px; padding: 10px 14px; margin: 12px 0; }
+  .io dt { color: var(--ink-3); font-weight: 600; text-transform: uppercase; font-size: 11px; letter-spacing: .05em; padding-top: 2px; }
+  .io dd { margin: 0; }
+
+  .tbl { overflow-x: auto; margin: 10px 0 16px; border: 1px solid var(--rule); border-radius: 4px; }
+  table { border-collapse: collapse; width: 100%; font-size: 13px; }
+  th, td { text-align: left; vertical-align: top; padding: 6px 10px; border-bottom: 1px solid var(--rule); }
+  th { background: var(--panel); font-weight: 600; color: var(--ink-2); white-space: nowrap; }
+  tr:last-child td { border-bottom: 0; }
+  td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+  td code { white-space: normal; }
+
+  .kpis { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 10px; margin: 14px 0 6px; }
+  .kpi { border: 1px solid var(--rule); border-radius: 4px; padding: 10px 12px; }
+  .kpi .v { font-size: 22px; font-weight: 650; font-variant-numeric: tabular-nums; line-height: 1.2; }
+  .kpi .l { font-size: 12px; color: var(--ink-2); }
+
+  .flow { display: grid; grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); gap: 8px; margin: 14px 0; counter-reset: st; }
+  .flow a { display: block; border: 1px solid var(--rule-2); border-left: 3px solid var(--accent); border-radius: 3px;
+            padding: 8px 10px; color: var(--ink); background: var(--bg); }
+  .flow a:hover { background: var(--accent-soft); text-decoration: none; }
+  .flow .fid { font: 600 11px var(--mono); color: var(--accent); }
+  .flow .ft { font-weight: 600; font-size: 13.5px; display: block; }
+  .flow .fd { font-size: 12px; color: var(--ink-2); display: block; }
+  .flow a.agent { border-left-color: #7a4fa0; }
+  .flow a.agent .fid { color: #7a4fa0; }
+  .legend { font-size: 12px; color: var(--ink-2); display: flex; gap: 18px; flex-wrap: wrap; }
+  .sw { display: inline-block; width: 10px; height: 10px; border-radius: 2px; margin-right: 5px; vertical-align: -1px; }
+
+  .funnel { margin: 12px 0 16px; }
+  .frow { display: grid; grid-template-columns: 220px minmax(0, 1fr) 70px; gap: 10px; align-items: center; font-size: 13px; margin: 4px 0; }
+  .fbar { height: 14px; background: var(--accent); border-radius: 2px; min-width: 2px; }
+  .frow .c { text-align: right; font-variant-numeric: tabular-nums; font-weight: 600; }
+
+  .note { border-left: 3px solid var(--accent); background: var(--accent-soft); padding: 8px 12px; margin: 12px 0; font-size: 13.5px; border-radius: 0 4px 4px 0; }
+  .note.warn { border-left-color: var(--warn); background: var(--warn-soft); }
+  .tag { display: inline-block; font: 600 10.5px/1.6 var(--sans); letter-spacing: .04em; text-transform: uppercase; border-radius: 3px; padding: 0 6px; vertical-align: 1px; }
+  .tag.script { background: var(--accent-soft); color: var(--accent); }
+  .tag.agent { background: #f1eaf7; color: #6a3f90; }
+  .tag.manual { background: var(--warn-soft); color: var(--warn); }
+
+  .bars { margin: 10px 0 14px; }
+  .bar { display: grid; grid-template-columns: 52px minmax(0, 1fr) 40px; gap: 8px; align-items: center; font-size: 12.5px; margin: 3px 0; }
+  .bar .b { height: 12px; background: var(--accent); border-radius: 2px; }
+  .bar .k { font-family: var(--mono); font-weight: 600; }
+  .bar .c { text-align: right; font-variant-numeric: tabular-nums; }
+
+  footer { border-top: 1px solid var(--rule); margin-top: 40px; padding-top: 14px; font-size: 12.5px; color: var(--ink-3); }
+
+  @media (max-width: 900px) {
+    .layout { display: block; }
+    nav.toc { position: static; max-height: none; border-right: 0; border-bottom: 1px solid var(--rule); padding: 16px; }
+    nav.toc ol { columns: 2; column-gap: 16px; }
+    main { padding: 20px 16px 60px; }
+    h1 { font-size: 23px; }
+    .frow { grid-template-columns: 130px minmax(0, 1fr) 54px; }
+    .io { grid-template-columns: 1fr; }
+    .io dt { padding-top: 6px; }
+  }
+  @media (max-width: 480px) { nav.toc ol { columns: 1; } }
+  @media print {
+    nav.toc { display: none; }
+    .layout { display: block; }
+    main { padding: 0; }
+    section { break-inside: auto; }
+  }
+</style>
+</head>
+<body>
+<div class="layout">
+
+<nav class="toc" aria-label="Contents">
+  <div class="toc-title">Contents</div>
+  <ol>
+    <li><a href="#scope"><span class="n">0</span>Scope and status</a></li>
+    <li><a href="#overview"><span class="n">—</span>Pipeline overview</a></li>
+    <li><a href="#s1"><span class="n">S1</span>Database search</a></li>
+    <li><a href="#s2"><span class="n">S2</span>Supplementary discovery</a></li>
+    <li><a href="#s3"><span class="n">S3</span>Merge and deduplication</a></li>
+    <li><a href="#s4"><span class="n">S4</span>Title/abstract screening</a></li>
+    <li><a href="#s5"><span class="n">S5</span>IDs and packets</a></li>
+    <li><a href="#s6"><span class="n">S6</span>Full-text retrieval</a></li>
+    <li><a href="#s7"><span class="n">S7</span>Markdown conversion</a></li>
+    <li><a href="#s8"><span class="n">S8</span>Translation</a></li>
+    <li><a href="#s9"><span class="n">S9</span>Extraction and appraisal</a></li>
+    <li><a href="#s10"><span class="n">S10</span>Cohort linkage</a></li>
+    <li><a href="#s11"><span class="n">S11</span>Dataset discovery and download</a></li>
+    <li><a href="#s12"><span class="n">S12</span>NLP concept extraction</a></li>
+    <li><a href="#s13"><span class="n">S13</span>Categorisation</a></li>
+    <li><a href="#s14"><span class="n">S14</span>Severity associations</a></li>
+    <li><a href="#s15"><span class="n">S15</span>Synthesis and reports</a></li>
+    <li><a href="#s16"><span class="n">S16</span>Database and semantic search</a></li>
+    <li><a href="#products"><span class="n">—</span>Data products</a></li>
+    <li><a href="#limits"><span class="n">—</span>Limitations and open items</a></li>
+  </ol>
+</nav>
+
+<main>
+<header class="doc">
+  <div class="doc-kicker">Technical specification · work to date</div>
+  <h1>Canine babesiosis pathophysiology review: article acquisition and processing pipeline</h1>
+  <div class="meta">
+    <span><b>Review window</b> 2006-10-23 to 2026-10-23</span>
+    <span><b>Search runs</b> 2026-10-23 (rounds 1–3), 2026-10-27 (round 4)</span>
+    <span><b>Counts taken</b> 2026-11-04 from the structured files in <code>core/</code></span>
+  </div>
+</header>
+
+<!-- ================================================================ -->
+<section id="scope">
+  <h2><span class="sid">0</span>Scope and status</h2>
+  <p>The work is a <strong>rapid scoping review</strong> of the pathophysiology of canine babesiosis: the mechanisms that link <em>Babesia</em> infection to complications, severity and outcome in the dog. An article is eligible when it reports <strong>host-side data in dogs infected with <em>Babesia</em></strong>. The review is not an exhaustive systematic review. Screening and extraction were done by LLM agents against written criteria, with a second-screener check. There was no duplicate human screening and no formal risk-of-bias assessment.</p>
+  <p>The window was searched in two parts: rounds 1–3 cover 2016-10-23 to 2026-10-23, and round 4 covers 2006-10-23 to 2016-10-22. All four rounds are complete: searched, screened, extracted, cohort-linked, mapped to datasets, run through the NLP and synthesised.</p>
+
+  <div class="kpis">
+    <div class="kpi"><div class="v">3,028</div><div class="l">candidate records screened (4 rounds)</div></div>
+    <div class="kpi"><div class="v">540</div><div class="l">passed to extraction</div></div>
+    <div class="kpi"><div class="v">444</div><div class="l">canine articles included (CB)</div></div>
+    <div class="kpi"><div class="v">37</div><div class="l">supporting papers (27 HU, 10 BG)</div></div>
+    <div class="kpi"><div class="v">251</div><div class="l">full texts retrieved and converted</div></div>
+    <div class="kpi"><div class="v">57</div><div class="l">dataset records; 92 files downloaded</div></div>
+    <div class="kpi"><div class="v">38</div><div class="l">shared-cohort groups</div></div>
+    <div class="kpi"><div class="v">11</div><div class="l">pathophysiology categories</div></div>
+  </div>
+
+  <h3>Category codes</h3>
+  <div class="tbl"><table>
+    <tr><th>Code</th><th>Category</th><th>Code</th><th>Category</th></tr>
+    <tr><td class="mono">ERY</td><td>Erythrocyte injury, haemolysis, anaemia, immune-mediated processes</td><td class="mono">CAR</td><td>Cardiac injury and haemodynamics</td></tr>
+    <tr><td class="mono">INF</td><td>Inflammation, innate and adaptive immunity, immunopathology</td><td class="mono">MET</td><td>Hepatic, metabolic, endocrine and acid–base disturbances</td></tr>
+    <tr><td class="mono">END</td><td>Endothelium, microcirculation, perfusion, tissue hypoxia</td><td class="mono">OXO</td><td>Oxidative stress, host–parasite interaction, omics, virulence</td></tr>
+    <tr><td class="mono">COA</td><td>Coagulation, platelets, immunothrombosis, DIC</td><td class="mono">SEV</td><td>Multisystem clinical phenotype, severity and outcome</td></tr>
+    <tr><td class="mono">REN</td><td>Renal injury and renal function</td><td class="mono">NEU</td><td>Neurological and cerebral disease</td></tr>
+    <tr><td class="mono">PUL</td><td>Pulmonary injury and gas exchange</td><td></td><td></td></tr>
+  </table></div>
+</section>
+
+<!-- ================================================================ -->
+<section id="overview">
+  <h2><span class="sid">—</span>Pipeline overview</h2>
+  <p class="lede">Sixteen stages, in run order. Script stages are deterministic Python (standard library, except the PDF converter and the NLP). Agent stages were done by LLM agents run as orchestrated workflows, and they are not deterministic.</p>
+  <div class="legend"><span><span class="sw" style="background:var(--accent)"></span>Script stage</span><span><span class="sw" style="background:#7a4fa0"></span>Agent stage (with script checks)</span></div>
+  <div class="flow">
+    <a href="#s1"><span class="fid">S1</span><span class="ft">Database search</span><span class="fd">PubMed, Europe PMC</span></a>
+    <a href="#s2"><span class="fid">S2</span><span class="ft">Supplementary discovery</span><span class="fd">Citations, Crossref, OpenAlex</span></a>
+    <a href="#s3"><span class="fid">S3</span><span class="ft">Merge and dedupe</span><span class="fd">DOI → PMID → title</span></a>
+    <a href="#s4" class="agent"><span class="fid">S4</span><span class="ft">Screening</span><span class="fd">3-tier agents, 40-record batches</span></a>
+    <a href="#s5"><span class="fid">S5</span><span class="ft">IDs and packets</span><span class="fd">Append-only registry</span></a>
+    <a href="#s6"><span class="fid">S6</span><span class="ft">Full-text retrieval</span><span class="fd">3 tiers, type and title checks</span></a>
+    <a href="#s7"><span class="fid">S7</span><span class="ft">Markdown conversion</span><span class="fd">JATS, PDF, abstract</span></a>
+    <a href="#s8" class="agent"><span class="fid">S8</span><span class="ft">Translation</span><span class="fd">Number and length checks</span></a>
+    <a href="#s9" class="agent"><span class="fid">S9</span><span class="ft">Extraction</span><span class="fd">44-field record and note</span></a>
+    <a href="#s10" class="agent"><span class="fid">S10</span><span class="ft">Cohort linkage</span><span class="fd">Same dogs, CH01–CH38</span></a>
+    <a href="#s11" class="agent"><span class="fid">S11</span><span class="ft">Datasets</span><span class="fd">Search, download, assess</span></a>
+    <a href="#s12"><span class="fid">S12</span><span class="ft">NLP concepts</span><span class="fd">scispaCy and UMLS</span></a>
+    <a href="#s13"><span class="fid">S13</span><span class="ft">Categorisation</span><span class="fd">Weighted concept scores</span></a>
+    <a href="#s14" class="agent"><span class="fid">S14</span><span class="ft">Severity associations</span><span class="fd">Shortlist and pilot</span></a>
+    <a href="#s15" class="agent"><span class="fid">S15</span><span class="ft">Synthesis and reports</span><span class="fd">Research map</span></a>
+    <a href="#s16"><span class="fid">S16</span><span class="ft">Database load</span><span class="fd">SQL Server and embeddings</span></a>
+  </div>
+
+  <h3>Record funnel (all rounds)</h3>
+  <div class="funnel">
+    <div class="frow"><span>Candidates screened</span><div class="fbar" style="width:100%"></div><span class="c">3,028</span></div>
+    <div class="frow"><span>Include or uncertain at screening</span><div class="fbar" style="width:18.6%"></div><span class="c">560</span></div>
+    <div class="frow"><span>Passed to extraction (less duplicates)</span><div class="fbar" style="width:17.8%"></div><span class="c">540</span></div>
+    <div class="frow"><span>Included as canine evidence</span><div class="fbar" style="width:14.7%"></div><span class="c">444</span></div>
+    <div class="frow"><span>…with full text retrieved</span><div class="fbar" style="width:7.6%"></div><span class="c">230</span></div>
+  </div>
+  <p style="font-size:12.5px;color:var(--ink-3)">Of the 540: 444 included, 2 merged as duplicates, 33 excluded on full text or record, 61 unresolved. Full text: 230 of the 444 CB articles (52%); 251 of all 481 live articles, including HU and BG.</p>
+</section>
+
+<!-- ================================================================ -->
+<section id="s1">
+  <h2><span class="sid">S1</span>Database search</h2>
+  <p class="lede">Documented queries against PubMed (E-utilities) and Europe PMC (REST). Full PubMed records, with abstracts, are fetched for every hit.</p>
+  <dl class="io">
+    <dt>Script</dt><dd><code>scripts/search.py --start --end [--round rN]</code></dd>
+    <dt>Outputs</dt><dd><code>search/queries.jsonl</code>, <code>hits.jsonl</code> (4,159 query→PMID rows), <code>candidates.jsonl</code>; round 4 writes to <code>search/r4/</code></dd>
+    <dt>Throttle</dt><dd>≤ 3 requests/s to NCBI (no API key), with Europe PMC and OpenAlex rate limits respected</dd>
+  </dl>
+
+  <h3>Queries</h3>
+  <div class="tbl"><table>
+    <tr><th>ID</th><th>Source</th><th>Query (summary)</th><th class="num">Hits r1–3</th><th class="num">Hits r4</th></tr>
+    <tr><td class="mono">PM1_broad</td><td>PubMed</td><td>Babesia/babesiosis/piroplasm terms (MeSH and tiab) <b>AND</b> dog terms (MeSH and tiab)</td><td class="num">1,068</td><td class="num">768</td></tr>
+    <tr><td class="mono">PM2_species</td><td>PubMed</td><td>17 named canine <em>Babesia</em> species and synonyms in tiab (<em>B. rossi</em>, <em>B. vogeli</em>, <em>B. gibsoni</em>, <em>B. vulpes</em>, <em>Theileria annae</em>, …)</td><td class="num">753</td><td class="num">607</td></tr>
+    <tr><td class="mono">PM3_mechanism</td><td>PubMed</td><td>PM1 <b>AND</b> about 70 mechanism, organ, omics and outcome terms</td><td class="num">699</td><td class="num">481</td></tr>
+    <tr><td class="mono">PM4_review</td><td>PubMed</td><td>PM1 <b>AND</b> (<code>Review[pt]</code> OR <code>review[ti]</code>)</td><td class="num">57</td><td class="num">48</td></tr>
+    <tr><td class="mono">EP1_broad</td><td>Europe PMC</td><td>TITLE_ABS/KW Babesia terms <b>AND</b> dog terms, <code>FIRST_PDATE</code> in window</td><td class="num">976</td><td class="num">591</td></tr>
+    <tr><td class="mono">EP2_species</td><td>Europe PMC</td><td>TITLE_ABS named species, <code>FIRST_PDATE</code> in window</td><td class="num">606</td><td class="num">432</td></tr>
+    <tr><td class="mono">OA1/OA2</td><td>OpenAlex</td><td>Relevance search <code>babesia dog</code>, <code>canine babesiosis</code></td><td class="num" colspan="2">HTTP 401 (key now required); replaced in S2</td></tr>
+  </table></div>
+  <p>PM1 (exact string):</p>
+  <pre>(Babesia[MeSH Terms] OR Babesiosis[MeSH Terms] OR babesia*[tiab] OR babesiosis[tiab] OR babesioses[tiab]
+ OR babesiose*[tiab] OR piroplasm*[tiab])
+AND (Dogs[MeSH Terms] OR dog[tiab] OR dogs[tiab] OR canine[tiab] OR canines[tiab] OR canis[tiab]
+ OR puppy[tiab] OR puppies[tiab])</pre>
+
+  <h3>Date filter</h3>
+  <ul>
+    <li>PubMed queries are run with a padded publication-date range (<code>datetype=pdat</code>, 2015/01/01–2027/12/31 for r1–3; 2005/01/01–2017/12/31 for r4), then filtered on the computed <strong>first publication date</strong>.</li>
+    <li><strong>First publication date</strong> is the earlier of the electronic (online) and issue dates in the PubMed record; Europe PMC <code>FIRST_PDATE</code>; Crossref, the earliest of published-online, print and issued; OpenAlex <code>publication_date</code>.</li>
+    <li>Any difference between the online and issue dates is kept per article in <code>date_note</code>.</li>
+  </ul>
+  <h3>Sources not searched</h3>
+  <p>CAB Abstracts, Web of Science and Scopus (subscription only), Google Scholar (no API), Harvard Dataverse (HTTP 403). The OpenAlex relevance search was replaced by the keyless <code>title_and_abstract.search</code> filter.</p>
+</section>
+
+<!-- ================================================================ -->
+<section id="s2">
+  <h2><span class="sid">S2</span>Supplementary discovery</h2>
+  <p class="lede">Three routes for records that the curated indexes miss, mainly regional veterinary journals.</p>
+
+  <h3>S2.1 Citation searching <span class="tag script">script</span></h3>
+  <dl class="io">
+    <dt>Script</dt><dd><code>scripts/citations.py</code> (Europe PMC references and citations API)</dd>
+    <dt>Seeds</dt><dd>r1–3: the seed review (BG001) and all 121 round-1 inclusions. r4: <code>--registry-seeds</code>, every non-retired article in <code>articles.jsonl</code> that has a PMID</dd>
+    <dt>Keep rule</dt><dd>Not seen before, first publication date in the window, and Babesia/babesiosis/piroplasm in the title (or the abstract, for records with a PMID). Reference-list entries with no PMID are kept when the title names Babesia and the year is in the window, then resolved by a Crossref title search</dd>
+    <dt>Yield</dt><dd>r1–3: 5,299 linked records → 181 kept. r4: 8,217 linked records → 211 kept</dd>
+  </dl>
+
+  <h3>S2.2 Crossref <span class="tag script">script</span></h3>
+  <dl class="io">
+    <dt>Script</dt><dd><code>scripts/crossref_search.py</code></dd>
+    <dt>Queries</dt><dd>8 <code>query.bibliographic</code> strings (<code>canine babesiosis</code>, <code>babesia dogs</code>, <code>Babesia canis</code>, <code>Babesia rossi</code>, <code>Babesia gibsoni</code>, <code>Babesia vogeli</code>, <code>Babesia vulpes</code>, <code>babesiosis dogs pathogenesis</code>), with <code>type:journal-article</code> and the window dates. Only the first 1,000 relevance-ranked rows per query are read</dd>
+    <dt>Keep rule</dt><dd>The <strong>title</strong> contains a Babesia term and a canine term (or a canine Babesia species), and the record is not in the earlier candidate sets. Records whose Crossref dates span more than a year get the flag <code>date_spread</code> (often retro-digitised archives with deposit dates)</dd>
+    <dt>Yield</dt><dd>r1–3: 88. r4: 40</dd>
+  </dl>
+
+  <h3>S2.3 OpenAlex <span class="tag script">script</span></h3>
+  <dl class="io">
+    <dt>Script</dt><dd><code>scripts/openalex_search.py</code></dd>
+    <dt>Filter</dt><dd><code>title_and_abstract.search:(babesia OR babesiosis OR babesiose OR piroplasmosis) AND (dog OR dogs OR canine OR canis)</code> plus the window dates</dd>
+    <dt>Type/title rule</dt><dd>Type is <code>article</code> or <code>review</code> <b>and</b> (title matches <code>babesi*|piroplasm*</code> with a canine term in the title or abstract, <b>or</b> a canine term in the title with <code>babesi*</code> in the abstract)</dd>
+    <dt>Yield</dt><dd>r1–3: 2,015 records, 1,042 new → 596 kept. r4: 1,166 records, 571 new → 293 kept</dd>
+  </dl>
+  <div class="tbl"><table>
+    <tr><th>Dropped by the OpenAlex type rule</th><th class="num">r1–3</th><th class="num">r4</th></tr>
+    <tr><td>Dissertations</td><td class="num">153</td><td class="num">124</td></tr>
+    <tr><td>Conference papers and abstracts</td><td class="num">58</td><td class="num">19</td></tr>
+    <tr><td>Preprints</td><td class="num">21</td><td class="num" rowspan="1">—</td></tr>
+    <tr><td>Books and book chapters</td><td class="num">25</td><td class="num">—</td></tr>
+    <tr><td>Datasets (screened separately for data, S11)</td><td class="num">15</td><td class="num">—</td></tr>
+    <tr><td>Babesia and canine terms not in the title</td><td class="num">—</td><td class="num">105</td></tr>
+    <tr><td>Other types</td><td class="num">31</td><td class="num">30</td></tr>
+  </table></div>
+</section>
+
+<!-- ================================================================ -->
+<section id="s3">
+  <h2><span class="sid">S3</span>Merge and deduplication</h2>
+  <dl class="io">
+    <dt>Script</dt><dd><code>scripts/merge_candidates.py --round rN</code> (round 4); rounds 1–3 were deduplicated within <code>search.py</code> and each source script</dd>
+    <dt>Output</dt><dd><code>search/r4/candidates_all.jsonl</code>, the screening input; records already screened in rounds 1–3 go to <code>*_prior_overlap.jsonl</code></dd>
+  </dl>
+  <ol class="plain">
+    <li><strong>Match key order:</strong> DOI (lower-cased), then PMID, then normalised title (lower-case alphanumerics only).</li>
+    <li><strong>Precedence:</strong> PubMed records win. Europe PMC and OpenAlex records that carry a PMID are fetched again from PubMed. In a merge, earlier files win; empty fields are filled from later files; <code>found_by[]</code> is merged.</li>
+    <li><strong>Near-duplicates:</strong> titles among eligible records with a similarity ratio &gt; 0.8 were checked by hand. 3 duplicates were merged in rounds 1–3 and 17 at round-4 screening (<code>duplicates.json</code>).</li>
+    <li><strong>Record key:</strong> <code>PMID:…</code>, else <code>DOI:…</code>, else the source ID.</li>
+    <li><strong>Round 4 only:</strong> 21 records already screened were left out. Records that already hold an article ID (background papers now inside the window, retired IDs) were kept and flagged <code>existing_id</code>.</li>
+  </ol>
+  <div class="tbl"><table>
+    <tr><th>Round</th><th>Route</th><th class="num">Records to screening</th></tr>
+    <tr><td>r1</td><td>PubMed + Europe PMC (plus 164 outside the window by first publication date, dropped)</td><td class="num">1,006</td></tr>
+    <tr><td>r2</td><td>Citation searching 181 + Crossref 88</td><td class="num">269</td></tr>
+    <tr><td>r3</td><td>OpenAlex after the type/title rule</td><td class="num">596</td></tr>
+    <tr><td>r4</td><td>Databases 637 + citations 211 + Crossref 40 + OpenAlex 293, merged (24 found by two routes)</td><td class="num">1,157</td></tr>
+    <tr><th colspan="2">Total screened</th><th class="num">3,028</th></tr>
+  </table></div>
+</section>
+
+<!-- ================================================================ -->
+<section id="s4">
+  <h2><span class="sid">S4</span>Title/abstract screening <span class="tag agent">agent</span></h2>
+  <p class="lede">The same written criteria were used in every round; only the window changes. The criteria are restated in full in <code>search/r4/screening_criteria.md</code>.</p>
+
+  <h3>Process</h3>
+  <ol class="plain">
+    <li><strong>Batches:</strong> 40 records per batch (<code>scripts/build_screen_batches.py</code>), with notes on existing IDs, date discrepancies and unresolved citation records.</li>
+    <li><strong>Tier 1, first screener</strong> (Claude Sonnet): decides <code>include</code>, <code>exclude</code> or <code>uncertain</code> for each record.</li>
+    <li><strong>Tier 2, liberal rescue</strong> (Claude Haiku): re-checks every exclusion. It is told to rescue any record that has host pathophysiological data.</li>
+    <li><strong>Tier 3, senior adjudication</strong> (Claude Opus): decides the rescued and uncertain records. It may fetch a missing abstract from the DOI landing page.</li>
+    <li><strong>Assembly:</strong> <code>scripts/assemble_screening.py</code> combines the tiers from the workflow journal. It checks every key against <code>batches.json</code> and writes <code>screening.jsonl</code> with <code>decision</code>, <code>exclude_reason</code>, <code>rationale</code> and <code>stage</code>.</li>
+  </ol>
+
+  <h3>Eligibility</h3>
+  <div class="tbl"><table>
+    <tr><th>Dimension</th><th>Rule</th></tr>
+    <tr><td>Host</td><td>Domestic dog. Wild <em>Canis lupus</em> (grey or Iberian wolf) counts as canine. Red fox, jackal and other non-<em>Canis</em> canids are excluded unless dog data are present.</td></tr>
+    <tr><td>Parasite</td><td>Any canine <em>Babesia</em>: <em>B. rossi</em>, <em>B. canis</em> (including the older three-subspecies names), <em>B. vogeli</em>, <em>B. gibsoni</em>, <em>B. vulpes</em> (<em>T. annae</em>, <em>B. microti</em>-like), <em>B. conradae</em>, <em>B. negevi</em>, and unspecified large or small <em>Babesia</em>. A species named without PCR is not a reason to exclude.</td></tr>
+    <tr><td>Co-infection</td><td>Eligible only when Babesia-specific host data can be separated out.</td></tr>
+    <tr><td>Include</td><td>Mechanism studies (inflammation, coagulation, endothelium, haemolysis, oxidative stress, organ injury, metabolic and endocrine, omics, histopathology); biomarker, severity, prognosis and outcome studies; <strong>clinicopathological profiles</strong> (haematology or biochemistry case series, labelled <code>descriptive</code>); experimental infections that report host responses; <strong>case reports only with a distinct syndrome or mechanism</strong> (for example Evans syndrome, ARDS, cerebral involvement, pancreatitis); reviews of pathophysiology or complications.</td></tr>
+    <tr><td>Overriding rule</td><td>A prevalence, diagnostic or treatment study that <strong>also</strong> reports host pathophysiological data for infected dogs is included.</td></tr>
+    <tr><td>Venue</td><td>Regional journals not indexed in MEDLINE are kept. A record is never excluded for its venue.</td></tr>
+    <tr><td>Window</td><td>By first publication date. <code>out_of_window</code> is used only when the record shows that the original publication is outside the window (for example a retro-digitised archive with a deposit date inside it).</td></tr>
+    <tr><td>Uncertain</td><td>Used when the abstract is missing or too short, or it does not say whether Babesia-specific host data are reported.</td></tr>
+  </table></div>
+
+  <h3>Exclusion codes</h3>
+  <div class="tbl"><table>
+    <tr><th>Code</th><th>Use for</th><th class="num">r1</th><th class="num">r2</th><th class="num">r3</th><th class="num">r4</th></tr>
+    <tr><td class="mono">prevalence_epidemiology</td><td>Surveys, risk factors, distribution; no host data</td><td class="num">306</td><td class="num">48</td><td class="num">174</td><td class="num">236</td></tr>
+    <tr><td class="mono">not_canine_babesia</td><td>Other hosts or parasites; Babesia with no dog data</td><td class="num">214</td><td class="num">143</td><td class="num">36</td><td class="num">327</td></tr>
+    <tr><td class="mono">vector_tick</td><td>Tick and vector studies</td><td class="num">155</td><td class="num">10</td><td class="num">23</td><td class="num">104</td></tr>
+    <tr><td class="mono">diagnostic_test</td><td>Assay development or comparison; no host pathophysiology</td><td class="num">60</td><td class="num">14</td><td class="num">40</td><td class="num">56</td></tr>
+    <tr><td class="mono">treatment_efficacy</td><td>Endpoints are cure or clearance only</td><td class="num">50</td><td class="num">11</td><td class="num">55</td><td class="num">29</td></tr>
+    <tr><td class="mono">other_out_of_scope</td><td>Eligible topic, no usable content (for example a routine case report)</td><td class="num">35</td><td class="num">7</td><td class="num">75</td><td class="num">66</td></tr>
+    <tr><td class="mono">not_peer_reviewed</td><td>Theses, conference abstracts, preprints, chapters</td><td class="num">29</td><td class="num">4</td><td class="num">20</td><td class="num">19</td></tr>
+    <tr><td class="mono">parasite_biology_only</td><td>Parasite genetics, culture, antigens; no host data</td><td class="num">21</td><td class="num">4</td><td class="num">3</td><td class="num">56</td></tr>
+    <tr><td class="mono">not_research</td><td>Editorials, letters with no data, errata</td><td class="num">9</td><td class="num">1</td><td class="num">2</td><td class="num">17</td></tr>
+    <tr><td class="mono">out_of_window</td><td>Original publication outside the window (r4 only)</td><td class="num">—</td><td class="num">—</td><td class="num">—</td><td class="num">9</td></tr>
+  </table></div>
+
+  <h3>Screening results</h3>
+  <div class="tbl"><table>
+    <tr><th>Round</th><th class="num">Records</th><th class="num">Include</th><th class="num">Uncertain</th><th class="num">Exclude</th></tr>
+    <tr><td>r1</td><td class="num">1,006</td><td class="num">121</td><td class="num">6</td><td class="num">879</td></tr>
+    <tr><td>r2</td><td class="num">269</td><td class="num">22</td><td class="num">5</td><td class="num">242</td></tr>
+    <tr><td>r3</td><td class="num">596</td><td class="num">146</td><td class="num">22</td><td class="num">428</td></tr>
+    <tr><td>r4</td><td class="num">1,157</td><td class="num">180</td><td class="num">58</td><td class="num">919</td></tr>
+    <tr><th>Total</th><th class="num">3,028</th><th class="num">469</th><th class="num">91</th><th class="num">2,468</th></tr>
+  </table></div>
+</section>
+
+<!-- ================================================================ -->
+<section id="s5">
+  <h2><span class="sid">S5</span>Stable IDs and extraction packets <span class="tag script">script</span></h2>
+  <dl class="io">
+    <dt>Script</dt><dd><code>scripts/assign_ids.py</code>; later <code>scripts/retire_ids.py</code></dd>
+    <dt>Outputs</dt><dd><code>ids.json</code> (584 entries, 103 retired); <code>search/packets/&lt;ID&gt;.json</code> (541)</dd>
+  </dl>
+  <ul>
+    <li><strong>Format:</strong> <code>&lt;prefix&gt;&lt;3 digits&gt;</code>. <code>CB</code> = eligible canine article, <code>HU</code> = human comparator, <code>BG</code> = background (before 2006-10-23; <code>BG001</code> is the seed meta-analysis).</li>
+    <li><strong>Assignment:</strong> include or uncertain records get the next CB number in first-publication-date order. The registry is <strong>append-only</strong>: IDs never change and are never reused. An ID excluded later is retired (<code>"retired": true</code> with <code>retired_reason</code>), which leaves a gap in the numbers.</li>
+    <li><strong>Reclassification:</strong> a BG paper that falls inside the extended window gets a new CB ID (<code>replaces</code>). The BG entry is kept, retired, under <code>RETIRED:&lt;BG ID&gt;</code> with <code>replaced_by</code>. Seven papers moved this way (BG004/008/010/012/013/014/015 → CB323/446/435/438/504/517/481).</li>
+    <li><strong>Packet contents:</strong> the search record (title, authors, journal, dates, DOI, PMID, abstract, MeSH, keywords), the screening decision and rationale, the Europe PMC full-text check, and <code>replaces</code> and <code>duplicate_records</code>.</li>
+  </ul>
+</section>
+
+<!-- ================================================================ -->
+<section id="s6">
+  <h2><span class="sid">S6</span>Full-text retrieval <span class="tag script">script</span></h2>
+  <p class="lede">Tiered download of the article full text. In round 4 this ran <em>before</em> extraction, so the extraction agents could read the full text.</p>
+  <dl class="io">
+    <dt>Script</dt><dd><code>scripts/fetch_fulltext.py [--all] [--ids …] [--retry-failed]</code></dd>
+    <dt>Scope</dt><dd>Every article in <code>articles.jsonl</code>, plus assigned IDs not yet extracted. The default run tries open-access articles (OpenAlex <code>is_oa</code> or a PMCID); <code>--all</code> also tries closed articles</dd>
+    <dt>Outputs</dt><dd><code>data/fulltext/&lt;ID&gt;/fulltext.xml|.pdf</code> (git-ignored, original bytes, never executed); <code>data/fulltext_status.jsonl</code>; <code>data/fulltext_log.jsonl</code> (1,029 attempts); <code>data/fulltext_missing.md</code>; <code>data/fulltext_openalex.json</code> (OA records for 442 DOIs)</dd>
+  </dl>
+
+  <h3>Tiers (tried in order until one gives a valid file)</h3>
+  <div class="tbl"><table>
+    <tr><th>Tier</th><th>Source</th><th>Validity rule</th><th class="num">Articles</th></tr>
+    <tr><td class="mono">1</td><td>Europe PMC full-text XML (open-access subset) by PMCID; falls back to the Europe PMC PDF render for the same PMCID</td><td>XML must contain a <code>&lt;body&gt;</code>; front-matter-only records are rejected</td><td class="num">99</td></tr>
+    <tr><td class="mono">2</td><td>PDF links from OpenAlex open-access locations, best location first</td><td>Must start with the <code>%PDF</code> header</td><td class="num">119</td></tr>
+    <tr><td class="mono">3a</td><td>Links recorded during the review (<code>fulltext_url</code>, then <code>source_links</code>)</td><td>As tier 2. Index and API links (PubMed, Crossref, OpenAlex, DOAJ) are skipped</td><td class="num">16</td></tr>
+    <tr><td class="mono">3b</td><td>Publisher landing pages (OpenAlex landing page, then doi.org): the <code>citation_pdf_url</code> meta tag, PDF-like links, or the OJS view→download pattern</td><td>The page's <code>citation_title</code> must match the article (some DOIs are registered to the wrong article). Site-wide links (policies, templates, forms) are ignored</td><td class="num">17</td></tr>
+    <tr><td>—</td><td>No valid file</td><td>Abstract only (see S7)</td><td class="num">230</td></tr>
+  </table></div>
+
+  <h3>Acceptance criteria</h3>
+  <ul>
+    <li><strong>Type check:</strong> a response is kept only if it really is the claimed type (a <code>%PDF</code> header, or JATS XML). An HTML page served as "PDF" is searched once more for the real PDF link.</li>
+    <li><strong>Size caps:</strong> 50 MB per file and 1 GB in total across <code>data/fulltext/</code>.</li>
+    <li><strong>Title check after each run:</strong> the share of the article's title words (more than 3 letters, minus stop words such as <em>dogs</em>, <em>babesia</em>, <em>infected</em>) found in the JATS text or the first three PDF pages (<code>pdftotext</code>). An overlap of ≥ 0.6 is <code>ok</code>, lower is <code>low</code>. Mostly non-Latin text is <code>unchecked</code>. Files that fail are listed for checking by eye; they are not deleted.</li>
+    <li><strong>Access rules:</strong> no account creation, no paywall or bot-check bypass. A blocked page is recorded and skipped.</li>
+    <li><strong>Re-runnable:</strong> articles that already have a file are skipped. A file placed by hand in <code>data/fulltext/&lt;ID&gt;/</code> is recorded as <code>manual</code>.</li>
+  </ul>
+</section>
+
+<!-- ================================================================ -->
+<section id="s7">
+  <h2><span class="sid">S7</span>Markdown conversion <span class="tag script">script</span></h2>
+  <p class="lede">Every article gets exactly one sectioned Markdown file with YAML front matter. This is the text that extraction, translation and the NLP read.</p>
+  <dl class="io">
+    <dt>Scripts</dt><dd><code>scripts/to_markdown.py</code> (full text; needs <code>.venv</code> with pymupdf 2.x); <code>scripts/abstracts_to_markdown.py [--fetch]</code> (abstract only; standard library)</dd>
+    <dt>Outputs</dt><dd><code>data/markdown/&lt;ID&gt;.md</code> (git-ignored); <code>data/markdown_report.jsonl</code> and <code>.md</code></dd>
+  </dl>
+  <div class="tbl"><table>
+    <tr><th>Input</th><th>Method</th><th class="num">Live articles</th></tr>
+    <tr><td>JATS XML</td><td>Converted directly with ElementTree: sections, lists, tables as pipe tables (colspan and rowspan padded), figure and table captions, table footnotes</td><td class="num">99</td></tr>
+    <tr><td>PDF</td><td>pymupdf4llm (layout mode, no page headers or footers, no OCR), then cleaned: running heads and page numbers removed, hyphenation and split paragraphs re-joined, emphasis markers dropped, <code>&lt;sup&gt;</code>/<code>&lt;sub&gt;</code> rewritten</td><td class="num">152</td></tr>
+    <tr><td>Abstract</td><td>Title, the authors' abstract (structured abstracts split at their labels) and author keywords. Source order: search packet → background/comparator records → (with <code>--fetch</code>) PubMed or publisher meta tags, cached in <code>data/abstracts_fetched.json</code> (11). <strong>The review's own paraphrased summaries are never used.</strong></td><td class="num">230</td></tr>
+  </table></div>
+  <ul>
+    <li><strong>Headings:</strong> known sections become <code>## Abstract</code>, <code>## Methods</code>, <code>## Results</code> and so on; all other headings become <code>###</code>.</li>
+    <li><strong>Removed:</strong> references and administrative back matter (acknowledgements, funding, conflicts, author contributions, data availability, supplementary-file lists, footnotes). The removed sections are named in the front matter. Abbreviation glossaries are kept.</li>
+    <li><strong>Front matter:</strong> identifiers, source file and SHA-256, converter, language guess, sections found and removed, word and table counts, the fetcher's title check, <code>text_coverage</code> and <code>quality_flags</code> (for example <code>garbled_text</code>, <code>no_sections_detected</code>, <code>language:cyrillic</code>).</li>
+    <li><strong>Quality result (481 live):</strong> <code>ok</code> 207, <code>abstract_only</code> 226, <code>review</code> (to check) 44, <code>no_text</code> 4.</li>
+  </ul>
+</section>
+
+<!-- ================================================================ -->
+<section id="s8">
+  <h2><span class="sid">S8</span>Translation <span class="tag agent">agent</span> <span class="tag script">script</span></h2>
+  <ul>
+    <li><strong>Which:</strong> articles whose Markdown has a <code>language:*</code> quality flag, or whose packet language is not English and whose body is mostly non-English.</li>
+    <li><strong>Agent:</strong> a translation agent (Sonnet) writes the English body to <code>data/markdown/translations/&lt;ID&gt;.body.md</code>. It keeps headings, tables, numbers and order.</li>
+    <li><strong>Script:</strong> <code>scripts/finish_translations.py</code> applies the same heading and reference rules, then checks that <strong>numbers are kept</strong> and that the <strong>length ratio</strong> is plausible. It writes <code>&lt;ID&gt;.en.md</code> with translation fields in the front matter. Re-converting an original marks its translation stale.</li>
+    <li><strong>Result:</strong> 30 live articles have an English translation (33 files in total). Source languages: Portuguese 8, Russian 6, Ukrainian 6, Turkish 2, Romanian 2, Polish 1, French 1, Serbian 1, not identified 3. Every translation kept at least 98% of the source numbers.</li>
+    <li><strong>Downstream:</strong> extraction and the NLP read <code>&lt;ID&gt;.en.md</code> where it exists.</li>
+  </ul>
+</section>
+
+<!-- ================================================================ -->
+<section id="s9">
+  <h2><span class="sid">S9</span>Extraction, appraisal and retirement <span class="tag agent">agent</span> <span class="tag script">script</span></h2>
+  <p class="lede">Each article that passed screening goes through a three-step pipeline. Round 4 followed <code>search/r4/EXTRACTION_GUIDE.md</code>, which restates the rounds 1–3 practice field by field.</p>
+  <ol class="plain">
+    <li><strong>Extract</strong> (Sonnet): reads the packet and the Markdown (the full text where available). It writes the appraisal note <code>articles/&lt;ID&gt;_&lt;year&gt;_&lt;slug&gt;.md</code> and returns a <strong>44-field record</strong>, validated against a JSON schema.</li>
+    <li><strong>Check</strong> (Haiku): checks the note against its source on five dimensions: numbers, design, identifiers, verbatim runs of ≤ 8 words, and causal language. It fixes the note in place and returns <code>{id, ok, fixes}</code>.</li>
+    <li><strong>Script check:</strong> fields, ID and filename are valid, and a note exists if and only if <code>final_decision</code> is <code>include</code>.</li>
+  </ol>
+
+  <h3>Decision values</h3>
+  <div class="tbl"><table>
+    <tr><th>Value</th><th>When</th><th class="num">Count</th></tr>
+    <tr><td class="mono">include</td><td>Eligible on the abstract and the full text that could be read. Records screened <code>uncertain</code> are decided here</td><td class="num">444</td></tr>
+    <tr><td class="mono">exclude_fulltext</td><td>The full text or full record shows the article fails the criteria (no Babesia-specific host data, wrong host, treatment or prevalence only, original publication outside the window)</td><td class="num">33</td></tr>
+    <tr><td class="mono">unverifiable</td><td>The record cannot be confirmed as a published article, or no abstract or full text can be reached</td><td class="num">61</td></tr>
+    <tr><td>duplicate</td><td>Merged into another included record (CB380 → CB371, CB488 → CB468)</td><td class="num">2</td></tr>
+  </table></div>
+  <p><code>scripts/retire_ids.py</code> then retires every <code>exclude_fulltext</code> and <code>unverifiable</code> ID in <code>ids.json</code> with the reason (cut to 300 characters).</p>
+
+  <h3>Record fields (groups)</h3>
+  <div class="tbl"><table>
+    <tr><th>Group</th><th>Fields</th></tr>
+    <tr><td>Bibliographic</td><td><code>title</code>, <code>authors[]</code>, <code>journal</code>, <code>volume_issue_pages</code>, <code>doi</code>, <code>pmid</code>, <code>pmcid</code>, <code>language</code>, <code>corrections</code></td></tr>
+    <tr><td>Dates</td><td><code>first_pub_date</code>, <code>online_date</code>, <code>issue_date</code>, <code>date_note</code></td></tr>
+    <tr><td>Study</td><td><code>species[]</code> <code>{name, status, method}</code> (status <code>confirmed</code> / <code>suspected</code> / <code>mixed</code> / <code>unspecified</code>), <code>host</code>, <code>country</code>, <code>design</code>, <code>sample_size</code>, <code>n_infected_dogs</code>, <code>n_controls</code></td></tr>
+    <tr><td>Appraisal</td><td><code>evidence_type</code> (descriptive, associational, prognostic, mechanistic (experimental), review), <code>one_sentence_finding</code>, agent <code>primary_category</code> and <code>secondary_tags</code></td></tr>
+    <tr><td>Data leads</td><td><code>data_availability_statement</code>, <code>dataset_leads[]</code>, <code>supplement_checked</code>, <code>repository_checked</code></td></tr>
+    <tr><td>Cohort</td><td><code>cohort_description</code>, <code>related_publications[]</code> (inputs to S10)</td></tr>
+    <tr><td>Provenance</td><td><code>source_links[]</code>, <code>access_date</code>, <code>verification_notes</code></td></tr>
+  </table></div>
+  <p>The <strong>appraisal note</strong> has a metadata table, then <em>Abstract-derived summary</em>, <em>Critical interpretation</em> (evidence type, authors' conclusion, reviewer interpretation, key limitations) and <em>Evidence basis</em>. Most notes are abstract-level appraisals, not risk-of-bias assessments.</p>
+
+  <h3>Included articles</h3>
+  <div class="tbl"><table>
+    <tr><th>Type</th><th class="num">r1–3</th><th class="num">r4</th><th class="num">Total</th></tr>
+    <tr><td>Primary study</td><td class="num">213</td><td class="num">125</td><td class="num">338</td></tr>
+    <tr><td>Case report</td><td class="num">45</td><td class="num">21</td><td class="num">66</td></tr>
+    <tr><td>Review</td><td class="num">24</td><td class="num">16</td><td class="num">40</td></tr>
+    <tr><th>Total CB</th><th class="num">282</th><th class="num">162</th><th class="num">444</th></tr>
+  </table></div>
+
+  <h3>Supporting papers</h3>
+  <ul>
+    <li><strong>HU (27):</strong> human babesiosis, malaria and sepsis papers, chosen by the category agents for comparison. A second agent re-checked each against its PubMed XML.</li>
+    <li><strong>BG (10):</strong> older or foundational papers from before the window. They are not counted as canine evidence.</li>
+  </ul>
+</section>
+
+<!-- ================================================================ -->
+<section id="s10">
+  <h2><span class="sid">S10</span>Cohort linkage <span class="tag agent">agent</span></h2>
+  <p class="lede">Identifies articles that report the same dogs, so a re-analysis is not counted as a replication.</p>
+  <ul>
+    <li><strong>Inputs:</strong> <code>cohort_description</code> and <code>related_publications</code> from the extraction records.</li>
+    <li><strong>Blocking:</strong> code first groups candidates by institution, country and species, so each agent sees only plausible groups.</li>
+    <li><strong>Agents:</strong> Sonnet per group, then one Opus pass to reconcile.</li>
+    <li><strong>Rules:</strong> cohorts are never renumbered or deleted. A cohort is changed only with a stated basis.</li>
+    <li><strong>Result:</strong> <code>cohorts.json</code>, 38 groups (CH01–CH38), 3 <code>confirmed</code> by the authors and 35 <code>probable</code>. 101 CB articles belong to a cohort.</li>
+  </ul>
+</section>
+
+<!-- ================================================================ -->
+<section id="s11">
+  <h2><span class="sid">S11</span>Dataset discovery, download and assessment</h2>
+
+  <h3>S11.1 Discovery <span class="tag script">script</span></h3>
+  <ul>
+    <li><strong>Repository searches</strong> (<code>scripts/repo_search.py</code>, 16 queries, 906 hits): GEO DataSets, NCBI BioProject, Zenodo, Figshare (6 queries), Dryad, PRIDE, MetaboLights, BioStudies. Harvard Dataverse failed with HTTP 403.</li>
+    <li><strong>Article-linked checks</strong> (<code>scripts/fulltext_checks.py</code>): Europe PMC open-access XML parsed for data-availability statements, supplementary-material elements and repository links (154 checks in r1–3, 221 in r4). Extraction agents checked publisher pages for the other articles.</li>
+    <li><strong>Matching:</strong> hits are matched to articles by title, accession cross-references in the article, and data content (n, groups, variables).</li>
+  </ul>
+
+  <h3>S11.2 Download <span class="tag script">script</span></h3>
+  <dl class="io">
+    <dt>Script</dt><dd><code>scripts/fetch_datasets.py &lt;spec.json&gt;</code></dd>
+    <dt>Specs</dt><dd><code>data/fetch_spec_repos.json</code> (repository deposits, 9 datasets) and <code>data/fetch_spec_supp.json</code> (article supplements, from the Europe PMC <code>supplementaryFiles</code> endpoint)</dd>
+    <dt>Outputs</dt><dd><code>data/raw/&lt;dataset_id&gt;/</code> (unchanged bytes, read-only); <code>data/manifest.jsonl</code>; <code>data/fetch_log.jsonl</code></dd>
+  </dl>
+  <p><strong>Download criteria:</strong></p>
+  <ul>
+    <li>Only files listed in a spec (<code>dataset_id</code>, file URLs and names, expected size, source record, linked articles) are fetched.</li>
+    <li><strong>≤ 50 MB per file and ≤ 250 MB in total</strong> across <code>data/raw/</code> (files already there count). A file over the cap is skipped and logged, never truncated.</li>
+    <li>Files already present with a manifest row are skipped.</li>
+    <li>Every downloaded file gets a manifest row: <code>url</code>, <code>final_url</code>, <code>retrieved_utc</code>, <code>bytes</code>, <code>sha256</code>, <code>content_type</code>, <code>source_record</code>.</li>
+    <li>Downloaded files are data only. They are parsed read-only and never executed.</li>
+  </ul>
+  <p><strong>Result:</strong> 92 files in 36 dataset folders, 41.0 MB in total. All 92 attempts in the log succeeded.</p>
+
+  <h3>S11.3 Inspection and assessment <span class="tag script">script</span> <span class="tag agent">agent</span></h3>
+  <ul>
+    <li><code>scripts/inspect_files.py</code> writes structure summaries of xlsx, docx, csv, zip and gz files to <code>data/inspection/&lt;ID&gt;.json</code>: sheets, row and column counts, and a preview. <code>scripts/table_dump.py</code> is the read-only viewer the assessment agents used.</li>
+    <li>Agents scored each dataset 1–5 on <strong>mechanistic relevance</strong>, <strong>phenotype richness</strong>, <strong>documentation</strong> and <strong>feasibility</strong>. They also recorded granularity, n, groups, time points, features, outcomes, missingness, suitable questions and limitations.</li>
+    <li><code>scripts/build_datasets.py</code> and <code>render_datasets.py</code> assign priority ranks and independent-source groups (<code>SRC-A</code> to <code>SRC-O</code>; records with the same letter share animals), then write <code>datasets.jsonl</code> and <code>datasets.md</code>.</li>
+  </ul>
+
+  <h3>Status scale</h3>
+  <div class="tbl"><table>
+    <tr><th>Code</th><th>Meaning</th><th class="num">Dataset records</th><th class="num">CB articles</th></tr>
+    <tr><td class="mono">1</td><td>Public download verified</td><td class="num">35</td><td class="num">32</td></tr>
+    <tr><td class="mono">2</td><td>Public record verified; file retrieval unverified</td><td class="num">12</td><td class="num">1</td></tr>
+    <tr><td class="mono">3</td><td>Request-only or controlled access</td><td class="num">10</td><td class="num">10</td></tr>
+    <tr><td class="mono">4</td><td>Not located after documented checks</td><td class="num">—</td><td class="num">210</td></tr>
+    <tr><td class="mono">5</td><td>Not assessed or access blocked (no full text)</td><td class="num">—</td><td class="num">191</td></tr>
+  </table></div>
+  <p>Of the 35 status-1 records, 21 hold dog-level or sample-level data from 15 independent sources. The other 14 hold summary statistics or protein lists only. Every verified dataset is small for its number of features, so <code>datasets.md</code> advises against predictive ML.</p>
+</section>
+
+<!-- ================================================================ -->
+<section id="s12">
+  <h2><span class="sid">S12</span>NLP concept extraction <span class="tag script">script</span></h2>
+  <dl class="io">
+    <dt>Scripts</dt><dd><code>scripts/extract_syndromes.py</code> (combined mentions); <code>scripts/extract_terms.py</code> (per-article term files, added 2026-10-30)</dd>
+    <dt>Runtime</dt><dd>Python 3.12 in <code>.venv-nlp</code>; scispaCy 0.6.2, spaCy 3.7; UMLS linker (~1.5 GB download), ~7 GB RAM</dd>
+    <dt>Input</dt><dd><code>data/markdown/&lt;ID&gt;.en.md</code> where it exists, otherwise <code>&lt;ID&gt;.md</code>; split into blocks (prose, list items, table rows), each tagged with its section</dd>
+  </dl>
+  <h3>Pipeline</h3>
+  <ol class="plain">
+    <li><code>en_ner_bc5cdr_md</code> NER: DISEASE (and CHEMICAL) mentions.</li>
+    <li><code>en_core_sci_md</code> NER: every biomedical concept (ENTITY), filling gaps between the step-1 entities.</li>
+    <li>AbbreviationDetector (Schwartz &amp; Hearst), so "IMHA" links through its long form.</li>
+    <li>UMLS EntityLinker (char-3-gram TF-IDF with approximate nearest neighbours). The top concept is kept if its score is above the threshold, <strong>0.85</strong> (the scispaCy default is 0.7).</li>
+    <li>negspacy NegEx (the <code>en_clinical</code> termset plus post-negations such as "was absent" and "not detected") sets <code>negated</code>.</li>
+  </ol>
+  <h3>Keep rules</h3>
+  <ul>
+    <li><strong>extract_syndromes:</strong> DISEASE mentions (linked or not) and every UMLS-linked ENTITY mention. <code>disorder</code> is true for UMLS Disorders-group semantic types. Biomarker-type concepts are kept, because the mechanism categories are recognised from them. CHEMICAL mentions (drugs) are dropped. Negated mentions stay in the file but are left out of the summaries.</li>
+    <li><strong>extract_terms:</strong> linked concepts in the Disorders group only, <em>excluding</em> "Finding" (T033), which holds modifiers such as "Severe". Unlinked mentions are dropped. The kept types are T019, T020, T037, T046, T047, T048, T049, T050, T184, T190 and T191.</li>
+  </ul>
+  <div class="tbl"><table>
+    <tr><th>Output</th><th class="num">Rows</th><th>Grain</th></tr>
+    <tr><td><code>data/syndromes/mentions.jsonl</code></td><td class="num">239,733</td><td>One per mention: section, sentence, mention, abbreviation, CUI, score, negation</td></tr>
+    <tr><td><code>data/syndromes/article_concepts.csv</code></td><td class="num">20,745</td><td>Article × concept; <code>in_results_or_case</code> = studied, not only mentioned</td></tr>
+    <tr><td><code>data/syndromes/concept_summary.csv</code></td><td class="num">4,243</td><td>One per CUI, article counts split by full text and abstract only</td></tr>
+    <tr><td><code>data/terms/&lt;ID&gt;.json</code></td><td class="num">481 files</td><td>Per-article terms: mentions, negated and affirmed counts, sections, surface forms, best score. 1,215 distinct concepts, 35,408 mentions, median 14 terms per article (run 2026-10-30)</td></tr>
+  </table></div>
+  <div class="note warn"><strong>Checkout note.</strong> The <code>data/syndromes/</code> folder is not in this checkout (<code>C:\Workspaces\Babesiosis\core</code>). Its row counts above are taken from <code>core/CLAUDE.md</code> (counted 2026-10-28) and were not re-counted. The <code>data/terms/</code> figures were counted on 2026-11-04.</div>
+</section>
+
+<!-- ================================================================ -->
+<section id="s13">
+  <h2><span class="sid">S13</span>Article categorisation <span class="tag script">script</span></h2>
+  <p class="lede">The review's categories come from the NLP, with no human review (since 2026-10-28). The extraction agents' labels are kept for provenance and used only where the NLP finds no category.</p>
+  <dl class="io">
+    <dt>Script</dt><dd><code>scripts/categorise_articles.py</code>, then <code>scripts/build_outputs.py</code> copies <code>nlp_primary</code>/<code>nlp_secondary</code> into <code>articles.jsonl</code>, <code>index.md</code> and the notes</dd>
+    <dt>Outputs</dt><dd><code>data/syndromes/category_map.csv</code> (9,764 concepts; manual rows kept on regeneration), <code>article_categories.csv</code>, <code>category_comparison.md</code></dd>
+  </dl>
+  <h3>Algorithm</h3>
+  <ol class="plain">
+    <li><strong>Concept map:</strong> name rules, first match wins (so "immune-mediated haemolytic anaemia" maps to ERY before INF). Routine panel analytes and method terms are excluded ("being measured is not a finding"). Cells, organisms and generic qualifiers are never mapped.</li>
+    <li><strong>Score per article and category:</strong>
+      <pre>score(cat) = Σ over cat's concepts  idf(c) · ln(1 + Σ location weights of c's non-negated mentions)
+idf(c)     = ln((N + 1) / (df(c) + 1)) + 1</pre>
+      Only mentions with a UMLS link score ≥ <code>MIN_LINK</code> = 0.9 count. A leukogram family (neutrophilia, lymphopenia, …) counts once per article.</li>
+    <li><strong>Two scores:</strong> <em>studied</em> uses the weights title 6, abstract 3, results/case 2, conclusion 2, unlabelled 1.5, methods 1, other headings 1. <em>Mentioned</em> uses the introduction and discussion at weight 1 (these count as studied for reviews).</li>
+    <li><strong>Primary:</strong> no mapped evidence → none. If SEV is top, or ≥ 3 organ categories each reach <code>SEV_SPREAD</code> = 0.6 of the top organ score → SEV. Otherwise the top category. <code>confidence</code> is high when top/second ≥ <code>MARGIN</code> = 1.5.</li>
+    <li><strong>Secondary:</strong> categories ≥ <code>SECONDARY</code> = 0.35 of the top score. <strong>Mentioned:</strong> other categories with studied + mentioned ≥ <code>MENTIONED_MIN</code> = 4.0.</li>
+    <li><strong>Study aim:</strong> keyword rules on the title, then the abstract's objective sentence. The codes are PREV, DIAG, BIOM, CLIN, CASE, TRT, PREVN, EXP, MOL and REV.</li>
+  </ol>
+  <h3>Result (444 CB articles, primary category)</h3>
+  <div class="bars">
+    <div class="bar"><span class="k">ERY</span><div class="b" style="width:100%"></div><span class="c">96</span></div>
+    <div class="bar"><span class="k">INF</span><div class="b" style="width:94.8%"></div><span class="c">91</span></div>
+    <div class="bar"><span class="k">SEV</span><div class="b" style="width:61.5%"></div><span class="c">59</span></div>
+    <div class="bar"><span class="k">MET</span><div class="b" style="width:52.1%"></div><span class="c">50</span></div>
+    <div class="bar"><span class="k">COA</span><div class="b" style="width:41.7%"></div><span class="c">40</span></div>
+    <div class="bar"><span class="k">REN</span><div class="b" style="width:41.7%"></div><span class="c">40</span></div>
+    <div class="bar"><span class="k">OXO</span><div class="b" style="width:21.9%"></div><span class="c">21</span></div>
+    <div class="bar"><span class="k">CAR</span><div class="b" style="width:18.8%"></div><span class="c">18</span></div>
+    <div class="bar"><span class="k">END</span><div class="b" style="width:14.6%"></div><span class="c">14</span></div>
+    <div class="bar"><span class="k">NEU</span><div class="b" style="width:8.3%"></div><span class="c">8</span></div>
+    <div class="bar"><span class="k">PUL</span><div class="b" style="width:7.3%"></div><span class="c">7</span></div>
+  </div>
+  <ul>
+    <li>NLP category: 428 articles (284 high confidence, 144 low). Agent fallback (NLP found no category): 16.</li>
+    <li>The NLP and the agents agree on the primary category for 238 of 444 articles (54%). Neither is a gold standard.</li>
+    <li>Known mislinks exist (for example "MPO" linked to <em>Myeloperoxidase Deficiency</em>). Treat the categories as automatic labels.</li>
+  </ul>
+</section>
+
+<!-- ================================================================ -->
+<section id="s14">
+  <h2><span class="sid">S14</span>Marker–severity associations <span class="tag script">script</span> <span class="tag agent">agent</span> <span class="tag manual">pilot only</span></h2>
+  <p class="lede">Which markers were tested against clinical severity or outcome, and with what result.</p>
+  <h3>S14.1 Shortlist <span class="tag script">script</span></h3>
+  <ul>
+    <li><code>scripts/shortlist_severity.py</code> finds sentences in the article's own sections (title, abstract, results, case, conclusion) that name a severity or outcome. A sentence is "tested" when it also has an association or statistic (correlated, p &lt;, odds ratio, ROC, …).</li>
+    <li>Left out: human comparators, reviews and single-case reports.</li>
+    <li>Rank score = 2 × tested sentences + other outcome sentences + aim bonus (BIOM 3, CLIN 1) + studied SEV score.</li>
+    <li>Tier A: full text with ≥ 2 tested sentences. Tier B: full text with any outcome sentence, or abstract with a tested sentence. Tier C: the rest with any outcome sentence.</li>
+    <li><strong>Result:</strong> 196 articles: A 31, B 120, C 45. It also seeds the editable marker map, <code>data/severity/marker_map.csv</code>.</li>
+  </ul>
+  <h3>S14.2 Extraction and checks <span class="tag agent">agent</span> <span class="tag script">script</span></h3>
+  <ul>
+    <li>An LLM extractor writes <code>data/severity/extractions/&lt;ID&gt;.json</code> (severity definitions and associations, with verbatim quotes) to <code>association_schema.json</code>.</li>
+    <li><code>scripts/check_associations.py</code> checks: schema enums; <strong>quotes</strong> (exact, near ≥ 80% of 4-word shingles, partial ≥ 50%, or not found); <strong>numbers</strong> (every statistic must appear in the text); and marker normalisation through the map.</li>
+    <li><strong>Status:</strong> pilot of 10 articles (2026-10-26), 275 association rows, all with <code>quote_check</code> = exact. The full shortlist has not been extracted.</li>
+  </ul>
+</section>
+
+<!-- ================================================================ -->
+<section id="s15">
+  <h2><span class="sid">S15</span>Synthesis and reports <span class="tag agent">agent</span> <span class="tag script">script</span></h2>
+  <ul>
+    <li><code>scripts/synthesis_inputs.py</code> builds the inputs for each category: a one-line digest of each secondary-tagged article, and the primary notes condensed into parts of about 55,000 characters.</li>
+    <li>One Sonnet agent per category rewrites <code>search/synthesis/&lt;CAT&gt;.md</code>. Opus agents write <code>CROSS.md</code> (cross-cutting themes) and <code>QUESTIONS.md</code> (five research questions). The agents read the notes, not the full texts. All were rewritten on 2026-10-28 from the NLP categories, for 2006–2026.</li>
+    <li><code>scripts/assemble_research_map.py</code> writes <code>research-map.md</code>. Its category table (articles, independent cohorts, species, evidence types, datasets) is computed from <code>articles.jsonl</code>.</li>
+    <li><code>scripts/build_search_log.py</code> writes <code>search-log.md</code>; <code>build_outputs.py</code> writes <code>articles.jsonl</code> and <code>index.md</code>.</li>
+    <li><code>scripts/validate.py</code> checks syntax, duplicate IDs, scope labels, links and anchors, category totals, dataset-status consistency, checksums and absolute paths.</li>
+  </ul>
+  <pre>python -I scripts/build_datasets.py && python -I scripts/render_datasets.py && python -I scripts/build_outputs.py \
+ && python -I scripts/export_article_terms.py && python -I scripts/assemble_research_map.py \
+ && python -I scripts/build_search_log.py && python -I scripts/validate.py</pre>
+</section>
+
+<!-- ================================================================ -->
+<section id="s16">
+  <h2><span class="sid">S16</span>Database load and semantic search <span class="tag script">script</span></h2>
+  <dl class="io">
+    <dt>Loader</dt><dd><code>console/Babesiosis.Console</code> (.NET), <code>dotnet run -- --dry-run</code>, then <code>dotnet run</code></dd>
+    <dt>Inputs</dt><dd><code>articles.jsonl</code> and the <code>articles/*.md</code> notes. The database holds articles only: no datasets, NLP concepts or full texts</dd>
+    <dt>Schema</dt><dd><code>dbo.category</code> (11 codes); <code>dbo.article</code> (note sections split into columns, JSON columns, <code>embedding VECTOR(1536)</code>); <code>dbo.article_category</code> (secondary and comparator tags)</dd>
+  </dl>
+  <ul>
+    <li><strong>Embeddings:</strong> Azure OpenAI <code>text-embedding-3-small</code>, 1,536 dimensions. The text embedded is title, one-sentence finding, summary, authors' conclusion, interpretation, limitations and relevance.</li>
+    <li><strong>Change detection:</strong> content hash = SHA-256(model + embedding text). Only new or changed articles are embedded again; a changed article that is not re-embedded has its stale vector cleared.</li>
+    <li><strong>Search:</strong> <code>EXEC dbo.search_articles @question, @top, @category_code, @from_year, @to_year, @max_distance</code>, by cosine distance. A distance under about 0.6 is usually on topic.</li>
+    <li>The database is only as current as the last loader run. If it disagrees with <code>articles.jsonl</code>, the file is correct. <em>Row counts were not checked against the file for this page.</em></li>
+  </ul>
+</section>
+
+<!-- ================================================================ -->
+<section id="products">
+  <h2><span class="sid">—</span>Data products</h2>
+  <div class="tbl"><table>
+    <tr><th>File</th><th class="num">Rows</th><th>Use</th></tr>
+    <tr><td><code>articles.jsonl</code></td><td class="num">481</td><td>Main article table: CB 444, HU 27, BG 10</td></tr>
+    <tr><td><code>articles/&lt;ID&gt;_*.md</code></td><td class="num">481</td><td>Appraisal note per article</td></tr>
+    <tr><td><code>datasets.jsonl</code></td><td class="num">57</td><td>Main dataset table, with status, scores and limitations</td></tr>
+    <tr><td><code>cohorts.json</code></td><td class="num">38</td><td>Shared-animal groups</td></tr>
+    <tr><td><code>ids.json</code></td><td class="num">584</td><td>Source key → ID registry (103 retired)</td></tr>
+    <tr><td><code>data/fulltext_status.jsonl</code></td><td class="num">547</td><td>Retrieval state (481 live and 66 retired IDs)</td></tr>
+    <tr><td><code>data/markdown_report.jsonl</code></td><td class="num">540</td><td>Conversion front matter as a table</td></tr>
+    <tr><td><code>data/manifest.jsonl</code></td><td class="num">92</td><td>Downloaded dataset files with SHA-256</td></tr>
+    <tr><td><code>data/terms/&lt;ID&gt;.json</code></td><td class="num">481</td><td>Per-article disorder terms</td></tr>
+    <tr><td><code>data/severity/associations.csv</code></td><td class="num">275</td><td>Marker–severity rows (pilot, 10 articles)</td></tr>
+    <tr><td><code>index.md</code>, <code>datasets.md</code>, <code>research-map.md</code>, <code>search-log.md</code></td><td class="num">—</td><td>Rendered reports. Do not count or filter from them</td></tr>
+  </table></div>
+</section>
+
+<!-- ================================================================ -->
+<section id="limits">
+  <h2><span class="sid">—</span>Limitations and open items</h2>
+  <h3>Method limitations</h3>
+  <ul>
+    <li><strong>Coverage:</strong> no subscription indexes were searched. Regional literature is reached only through Crossref (capped at 1,000 rows per query) and OpenAlex, so further non-indexed papers almost certainly exist.</li>
+    <li><strong>Language:</strong> no language restriction in the search, but screening used English titles and abstracts. Records only on inaccessible platforms (for example eLIBRARY.ru) are unresolved, so Russian- and Chinese-language clinicopathology is likely under-represented.</li>
+    <li><strong>Access:</strong> 230 of the 481 articles have the abstract only. Most notes are abstract-level appraisals.</li>
+    <li><strong>Automation:</strong> screening, extraction and categories are LLM or NLP outputs. None was checked by a person.</li>
+    <li><strong>Independence:</strong> counts of articles are not counts of independent evidence. Use <code>cohort_id</code> and <code>independent_source</code>. Only 3 of the 38 cohorts are confirmed by the authors.</li>
+    <li><strong>Reproducibility:</strong> re-running the searches returns newer records, and the agent steps are not deterministic. The structured inputs and outputs of every agent step are kept in <code>search/</code>.</li>
+    <li><strong>Theses</strong> (153 in r3, 124 in r4) and conference abstracts were excluded as not peer-reviewed, although some underlie included papers and datasets.</li>
+  </ul>
+  <h3>Open items</h3>
+  <div class="tbl"><table>
+    <tr><th>Item</th><th>State</th></tr>
+    <tr><td>Severity association extraction for the 196-article shortlist</td><td>Pilot only (10 articles)</td></tr>
+    <tr><td><code>data/syndromes/</code> outputs (mentions, concepts, category map)</td><td>Missing from this checkout; <code>articles.jsonl</code> categories were built from them on 2026-10-28</td></tr>
+    <tr><td>61 unresolved records (23 from r1–3, 38 from r4)</td><td>Listed in <code>search-log.md</code>; not counted</td></tr>
+    <tr><td>Database row counts against <code>articles.jsonl</code></td><td>Not checked for this page</td></tr>
+    <tr><td>Status 2 and 3 datasets (22 records)</td><td>File retrieval unverified or request-only; not pursued</td></tr>
+  </table></div>
+</section>
+
+<footer>
+  Sources: <code>core/CLAUDE.md</code>, <code>core/scripts/README.md</code>, <code>core/search-log.md</code>, <code>core/search/r4/screening_criteria.md</code>, <code>core/search/r4/EXTRACTION_GUIDE.md</code>, <code>core/search/r4/PIPELINE.md</code>, script docstrings and constants, and the structured files (re-counted 2026-11-04). The counts reflect the files at that date.
+</footer>
+</main>
+</div>
+</body>
+</html>

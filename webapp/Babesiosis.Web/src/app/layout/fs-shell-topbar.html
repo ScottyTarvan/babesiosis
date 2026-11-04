@@ -1,0 +1,28 @@
+<header class="fs-shell-topbar">
+  <div class="fs-shell-topbar__start">
+    <!-- Opens the overlay drawer. Rendered at every width and hidden above the
+         shell's narrow boundary by media query, so it can never disagree with
+         the sidebar's own CSS-driven collapse. -->
+    <button
+      type="button"
+      class="fs-shell-topbar__icon-btn fs-shell-topbar__menu-btn"
+      [attr.aria-label]="menuButtonLabel()"
+      [attr.aria-expanded]="drawerOpen()"
+      (click)="onMenuToggle()">
+      <fs-symbol name="menu-2" size="md" ariaLabel="" />
+    </button>
+  </div>
+
+  <div class="fs-shell-topbar__end">
+    <!-- Owns its own anchor and state; the topbar holds no jobs state at all. -->
+    <fs-shell-jobs-bell />
+
+    <button
+      type="button"
+      class="fs-shell-topbar__icon-btn"
+      [attr.aria-label]="theme() === 'dark' ? 'Switch to light theme' : 'Switch to dark theme'"
+      (click)="changeTheme()">
+      <fs-symbol [name]="themeIcon()" size="md" ariaLabel="" />
+    </button>
+  </div>
+</header>

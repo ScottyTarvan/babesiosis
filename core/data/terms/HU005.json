@@ -1,0 +1,749 @@
+{
+ "id": "HU005",
+ "document": "data/markdown/HU005.md",
+ "source_format": "jats_xml",
+ "translated": false,
+ "words": 6515,
+ "run_utc": "2026-10-30T05:37:06+00:00",
+ "threshold": 0.85,
+ "kept_types": [
+  "T019",
+  "T020",
+  "T037",
+  "T046",
+  "T047",
+  "T048",
+  "T049",
+  "T050",
+  "T184",
+  "T190",
+  "T191"
+ ],
+ "term_count": 41,
+ "terms": [
+  {
+   "term": "C0024534",
+   "concept": "Malaria, Cerebral",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 36,
+   "mentions_negated": 1,
+   "mentions_affirmed": 35,
+   "sections": {
+    "introduction": 11,
+    "discussion": 11,
+    "abstract": 7,
+    "results": 5,
+    "methods": 2
+   },
+   "forms": {
+    "cm": 32,
+    "cerebral malaria": 4
+   },
+   "best_score": 0.985
+  },
+  {
+   "term": "C0024530",
+   "concept": "Malaria",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 17,
+   "mentions_negated": 0,
+   "mentions_affirmed": 17,
+   "sections": {
+    "discussion": 13,
+    "results": 4
+   },
+   "forms": {
+    "malaria": 17
+   },
+   "best_score": 0.996
+  },
+  {
+   "term": "C0042373",
+   "concept": "Vascular Diseases",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 10,
+   "mentions_negated": 1,
+   "mentions_affirmed": 9,
+   "sections": {
+    "discussion": 7,
+    "introduction": 2,
+    "title": 1
+   },
+   "forms": {
+    "vasculopathy": 9,
+    "vascular disease": 1
+   },
+   "best_score": 0.995
+  },
+  {
+   "term": "C0021368",
+   "concept": "Inflammation",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 9,
+   "mentions_negated": 0,
+   "mentions_affirmed": 9,
+   "sections": {
+    "results": 3,
+    "discussion": 3,
+    "abstract": 2,
+    "introduction": 1
+   },
+   "forms": {
+    "inflammation": 9
+   },
+   "best_score": 0.958
+  },
+  {
+   "term": "C0035309",
+   "concept": "Retinal Diseases",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 8,
+   "mentions_negated": 2,
+   "mentions_affirmed": 6,
+   "sections": {
+    "results": 4,
+    "discussion": 2,
+    "methods": 2
+   },
+   "forms": {
+    "retinopathy": 8
+   },
+   "best_score": 0.991
+  },
+  {
+   "term": "C0242723",
+   "concept": "Parasitemia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 8,
+   "mentions_negated": 0,
+   "mentions_affirmed": 8,
+   "sections": {
+    "results": 5,
+    "discussion": 2,
+    "methods": 1
+   },
+   "forms": {
+    "parasitemia": 8
+   },
+   "best_score": 0.992
+  },
+  {
+   "term": "C0087086",
+   "concept": "Thrombus",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 5,
+   "mentions_negated": 0,
+   "mentions_affirmed": 5,
+   "sections": {
+    "results": 4,
+    "discussion": 1
+   },
+   "forms": {
+    "thrombi": 5
+   },
+   "best_score": 0.969
+  },
+  {
+   "term": "C0009450",
+   "concept": "Communicable Diseases",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 4,
+   "mentions_negated": 0,
+   "mentions_affirmed": 4,
+   "sections": {
+    "discussion": 2,
+    "introduction": 1,
+    "methods": 1
+   },
+   "forms": {
+    "infection": 3,
+    "infectious": 1
+   },
+   "best_score": 0.97
+  },
+  {
+   "term": "C0013604",
+   "concept": "Edema",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 4,
+   "mentions_negated": 0,
+   "mentions_affirmed": 4,
+   "sections": {
+    "results": 4
+   },
+   "forms": {
+    "edema": 4
+   },
+   "best_score": 0.987
+  },
+  {
+   "term": "C0019080",
+   "concept": "Hemorrhage",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 4,
+   "mentions_negated": 0,
+   "mentions_affirmed": 4,
+   "sections": {
+    "results": 4
+   },
+   "forms": {
+    "hemorrhage": 4
+   },
+   "best_score": 0.99
+  },
+  {
+   "term": "C0009421",
+   "concept": "Comatose",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "introduction": 2,
+    "methods": 1
+   },
+   "forms": {
+    "coma": 3
+   },
+   "best_score": 0.994
+  },
+  {
+   "term": "C1155266",
+   "concept": "Inflammatory Response",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 3,
+   "mentions_negated": 1,
+   "mentions_affirmed": 2,
+   "sections": {
+    "discussion": 3
+   },
+   "forms": {
+    "inflammatory responses": 2,
+    "pro-inflammatory response": 1
+   },
+   "best_score": 0.983
+  },
+  {
+   "term": "C0007222",
+   "concept": "Cardiovascular Diseases",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "methods": 2
+   },
+   "forms": {
+    "human cardiovascular disease": 1,
+    "cvd": 1
+   },
+   "best_score": 0.982
+  },
+  {
+   "term": "C0023530",
+   "concept": "Leukopenia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "results": 1,
+    "discussion": 1
+   },
+   "forms": {
+    "neutropenia": 2
+   },
+   "best_score": 0.984
+  },
+  {
+   "term": "C0035268",
+   "concept": "Restriction fragment length polymorphism",
+   "semantic_types": [
+    "Cell or Molecular Dysfunction"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "methods": 2
+   },
+   "forms": {
+    "restriction fragment length polymorphism": 1,
+    "rflp": 1
+   },
+   "best_score": 0.969
+  },
+  {
+   "term": "C0036690",
+   "concept": "Septicemia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "discussion": 1,
+    "methods": 1
+   },
+   "forms": {
+    "sepsis": 2
+   },
+   "best_score": 0.971
+  },
+  {
+   "term": "C0221423",
+   "concept": "Illness (finding)",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "discussion": 2
+   },
+   "forms": {
+    "illness": 2
+   },
+   "best_score": 0.967
+  },
+  {
+   "term": "C0851162",
+   "concept": "Infections of musculoskeletal system",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "introduction": 1,
+    "discussion": 1
+   },
+   "forms": {
+    "infections": 2
+   },
+   "best_score": 0.971
+  },
+  {
+   "term": "C0002871",
+   "concept": "Anemia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results": 1
+   },
+   "forms": {
+    "anemia": 1
+   },
+   "best_score": 0.974
+  },
+  {
+   "term": "C0004943",
+   "concept": "Behcet Syndrome",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "methods": 1
+   },
+   "forms": {
+    "bd": 1
+   },
+   "best_score": 0.999
+  },
+  {
+   "term": "C0005779",
+   "concept": "Blood Coagulation Disorders",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "coagulopathy": 1
+   },
+   "best_score": 0.983
+  },
+  {
+   "term": "C0006114",
+   "concept": "Cerebral Edema",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "brain swelling": 1
+   },
+   "best_score": 0.961
+  },
+  {
+   "term": "C0009566",
+   "concept": "Complication",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "complication": 1
+   },
+   "best_score": 0.97
+  },
+  {
+   "term": "C0010957",
+   "concept": "Tissue damage",
+   "semantic_types": [
+    "Injury or Poisoning"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "damage": 1
+   },
+   "best_score": 0.987
+  },
+  {
+   "term": "C0012634",
+   "concept": "Disease",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "disease": 1
+   },
+   "best_score": 0.987
+  },
+  {
+   "term": "C0013146",
+   "concept": "Drug abuse",
+   "semantic_types": [
+    "Mental or Behavioral Dysfunction"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "harmful": 1
+   },
+   "best_score": 0.89
+  },
+  {
+   "term": "C0014544",
+   "concept": "Epilepsy",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "epilepsy": 1
+   },
+   "best_score": 0.993
+  },
+  {
+   "term": "C0020564",
+   "concept": "Hypertrophy",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results": 1
+   },
+   "forms": {
+    "hypertrophy": 1
+   },
+   "best_score": 0.984
+  },
+  {
+   "term": "C0024348",
+   "concept": "Lysis",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "methods": 1
+   },
+   "forms": {
+    "lysed": 1
+   },
+   "best_score": 0.979
+  },
+  {
+   "term": "C0030660",
+   "concept": "Pathologic Processes",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "pathological processes": 1
+   },
+   "best_score": 0.981
+  },
+  {
+   "term": "C0037088",
+   "concept": "Signs and Symptoms",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "finding": 1
+   },
+   "best_score": 0.994
+  },
+  {
+   "term": "C0085584",
+   "concept": "Encephalopathies",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "encephalopathy": 1
+   },
+   "best_score": 0.994
+  },
+  {
+   "term": "C0221444",
+   "concept": "clinical syndromes",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "clinical syndromes": 1
+   },
+   "best_score": 0.983
+  },
+  {
+   "term": "C0238469",
+   "concept": "Abscess of tonsil",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "methods": 1
+   },
+   "forms": {
+    "a tonsillar abscess": 1
+   },
+   "best_score": 0.955
+  },
+  {
+   "term": "C0242781",
+   "concept": "disease transmission",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "transmitted": 1
+   },
+   "best_score": 0.972
+  },
+  {
+   "term": "C0272183",
+   "concept": "Qualitative abnormality of granulocyte",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "neutrophil dysfunction": 1
+   },
+   "best_score": 0.963
+  },
+  {
+   "term": "C0333516",
+   "concept": "Tumor necrosis",
+   "semantic_types": [
+    "Neoplastic Process"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results": 1
+   },
+   "forms": {
+    "tumor necrosis": 1
+   },
+   "best_score": 0.986
+  },
+  {
+   "term": "C0333565",
+   "concept": "Fibrin deposition",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results": 1
+   },
+   "forms": {
+    "fibrin deposition": 1
+   },
+   "best_score": 0.969
+  },
+  {
+   "term": "C0858318",
+   "concept": "Plasmodium falciparum infection",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "plasmodium falciparum infection": 1
+   },
+   "best_score": 0.966
+  },
+  {
+   "term": "C3203359",
+   "concept": "Rupture",
+   "semantic_types": [
+    "Injury or Poisoning"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "rupture": 1
+   },
+   "best_score": 0.97
+  },
+  {
+   "term": "C4280709",
+   "concept": "Impaired neutrophil chemotaxis",
+   "semantic_types": [
+    "Cell or Molecular Dysfunction"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results": 1
+   },
+   "forms": {
+    "impaired neutrophil chemotaxis": 1
+   },
+   "best_score": 0.985
+  }
+ ]
+}

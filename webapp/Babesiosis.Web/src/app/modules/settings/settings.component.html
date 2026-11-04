@@ -1,0 +1,179 @@
+<section class="fs-settings">
+  <fs-page-header icon="settings" title="Account Settings" />
+
+  <div class="fs-settings__grid">
+
+    <!-- Identity card -->
+    <fs-card>
+      <header class="fs-settings__card-head">
+        <h2 class="fs-settings__card-title">Profile</h2>
+        <p class="fs-settings__card-sub">Signed in as the account below.</p>
+      </header>
+
+      @if ((currentUser$ | async); as user) {
+        <div class="fs-settings__profile">
+          <div class="fs-settings__avatar">
+            <fs-symbol name="user" size="lg" ariaLabel="" />
+          </div>
+          <div class="fs-settings__profile-text">
+            <div class="fs-settings__profile-name">
+              {{ user.firstName }} {{ user.lastName }}
+            </div>
+            <div class="fs-settings__profile-email">{{ user.email }}</div>
+          </div>
+        </div>
+      }
+
+      <div class="fs-settings__profile-actions">
+        <fs-button
+          variant="outline"
+          intent="danger"
+          icon="logout"
+          (click)="onLogout()">Log out</fs-button>
+      </div>
+    </fs-card>
+
+    <div class="fs-settings__stack">
+
+      <!-- Personal-details card -->
+      <fs-card>
+        <header class="fs-settings__card-head">
+          <h2 class="fs-settings__card-title">Personal details</h2>
+          <p class="fs-settings__card-sub">Update your name and email address.</p>
+        </header>
+
+        <form [formGroup]="profileForm" class="fs-settings__form" (ngSubmit)="onSaveProfile()">
+          @if (profileError(); as err) {
+            <div class="fs-settings__error" role="alert">
+              <fs-symbol name="alert-circle" size="sm" ariaLabel="" />
+              <span>{{ err }}</span>
+            </div>
+          }
+
+          <fs-form-field
+            label="First name"
+            [required]="true"
+            [error]="getFieldError(profileForm, 'firstName')">
+            <fs-text-input
+              type="text"
+              formControlName="firstName"
+              placeholder="Enter your first name"
+              autocomplete="given-name"
+              [invalid]="hasError(profileForm, 'firstName', 'required')" />
+          </fs-form-field>
+
+          <fs-form-field
+            label="Last name"
+            [required]="true"
+            [error]="getFieldError(profileForm, 'lastName')">
+            <fs-text-input
+              type="text"
+              formControlName="lastName"
+              placeholder="Enter your last name"
+              autocomplete="family-name"
+              [invalid]="hasError(profileForm, 'lastName', 'required')" />
+          </fs-form-field>
+
+          <fs-form-field
+            label="Email address"
+            [required]="true"
+            [error]="getFieldError(profileForm, 'email')">
+            <fs-text-input
+              type="email"
+              formControlName="email"
+              placeholder="you@example.com"
+              autocomplete="email"
+              [invalid]="hasError(profileForm, 'email', 'required') || hasError(profileForm, 'email', 'email')" />
+          </fs-form-field>
+
+          <div class="fs-settings__form-actions">
+            <fs-button
+              variant="solid"
+              intent="primary"
+              icon="device-floppy"
+              type="submit"
+              [loading]="isSavingProfile()"
+              [disabled]="isSavingProfile() || profileForm.invalid || profileForm.pristine"
+              (click)="onSaveProfile()">Save changes</fs-button>
+          </div>
+        </form>
+      </fs-card>
+
+      <!-- Change-password card -->
+      <fs-card>
+        <header class="fs-settings__card-head">
+          <h2 class="fs-settings__card-title">Change password</h2>
+          <p class="fs-settings__card-sub">Minimum 8 characters. Must not match your current password.</p>
+        </header>
+
+        <form [formGroup]="changePasswordForm" class="fs-settings__form" (ngSubmit)="onChangePassword()">
+          @if (formError(); as err) {
+            <div class="fs-settings__error" role="alert">
+              <fs-symbol name="alert-circle" size="sm" ariaLabel="" />
+              <span>{{ err }}</span>
+            </div>
+          }
+
+          <fs-form-field
+            label="Current password"
+            [required]="true"
+            [error]="getFieldError(changePasswordForm, 'currentPassword')">
+            <fs-text-input
+              type="password"
+              formControlName="currentPassword"
+              placeholder="Enter your current password"
+              autocomplete="current-password"
+              [invalid]="hasError(changePasswordForm, 'currentPassword', 'required')" />
+          </fs-form-field>
+
+          <fs-form-field
+            label="New password"
+            [required]="true"
+            [error]="getFieldError(changePasswordForm, 'newPassword')">
+            <fs-text-input
+              type="password"
+              formControlName="newPassword"
+              placeholder="Minimum 8 characters"
+              autocomplete="new-password"
+              [invalid]="hasError(changePasswordForm, 'newPassword', 'required') || hasError(changePasswordForm, 'newPassword', 'minlength')" />
+          </fs-form-field>
+
+          <fs-form-field
+            label="Confirm new password"
+            [required]="true"
+            [error]="getMismatchError() ?? getFieldError(changePasswordForm, 'confirmPassword')">
+            <fs-text-input
+              type="password"
+              formControlName="confirmPassword"
+              placeholder="Re-enter the new password"
+              autocomplete="new-password"
+              [invalid]="hasError(changePasswordForm, 'confirmPassword', 'required') || !!getMismatchError()" />
+          </fs-form-field>
+
+          <div class="fs-settings__form-actions">
+            <fs-button
+              variant="outline"
+              intent="secondary"
+              icon="mail"
+              [loading]="isResetting()"
+              [disabled]="isLoading() || isResetting()"
+              (click)="onResetPassword()">Send reset link</fs-button>
+            <fs-button
+              variant="solid"
+              intent="primary"
+              icon="lock"
+              type="submit"
+              [loading]="isLoading()"
+              [disabled]="isLoading() || isResetting() || changePasswordForm.invalid"
+              (click)="onChangePassword()">Change password</fs-button>
+          </div>
+        </form>
+      </fs-card>
+
+      <!-- MCP access tokens card (platform/mcp-server.md §3.13) -->
+      <fs-mcp-tokens-card />
+
+    </div>
+
+  </div>
+</section>

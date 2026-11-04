@@ -1,0 +1,61 @@
+{
+ "id": "CB427",
+ "filename": "CB427_2012_mogu-uloga-antioksidansa-glutationperoksidaze-u-patogenezi.md",
+ "key": "https://openalex.org/W2788827694",
+ "record": {
+  "pmid": null,
+  "pmcid": null,
+  "doi": null,
+  "title": "Moguća uloga antioksidansa Glutationperoksidaze u patogenezi babezioze u pasa invadiranih protozoonom Babesia canis canis",
+  "journal": "Zbornik radova Elektrotehnicki institut Nikola Tesla",
+  "authors": [
+   "Martina Crnogaj",
+   "Nada Kučer",
+   "Ivana Kiš",
+   "Mirna Brkljačić",
+   "Iva Šmit",
+   "Iva Mayer",
+   "Gabrijela Jurkić",
+   "Vladimir Mrljak"
+  ],
+  "first_pub_date": "2012-01-01",
+  "type": "article",
+  "language": [
+   "sr"
+  ],
+  "abstract": null,
+  "abstract_source": "OpenAlex abstract_inverted_index (reconstructed)",
+  "source_id": "https://openalex.org/W2788827694",
+  "src": "OPENALEX",
+  "found_by": [
+   "OA:title_and_abstract"
+  ],
+  "in_window": true,
+  "key": "https://openalex.org/W2788827694",
+  "source_files": [
+   "candidates_r3.jsonl"
+  ]
+ },
+ "screening": {
+  "key": "https://openalex.org/W2788827694",
+  "decision": "uncertain",
+  "include_type": null,
+  "exclude_reason": null,
+  "primary_category": "OXO",
+  "secondary_tags": [
+   "ERY"
+  ],
+  "species": "B. canis canis (stated in title)",
+  "rationale": "Title and OpenAlex metadata only; the CROSBI/CroRIS landing page is behind a bot check. It is a Mrljak-group study of glutathione peroxidase in the pathogenesis of B. canis canis infection, which would be eligible oxidative-stress evidence, but the 'Zbornik radova' source (first page 389) suggests conference proceedings, so peer-review status must be checked at full text.",
+  "stage": "adjudicated",
+  "batch": "r4_13.md",
+  "first_decision": "uncertain",
+  "screening_round": "r4"
+ },
+ "fulltext_check": {
+  "key": "https://openalex.org/W2788827694",
+  "pmcid": null,
+  "checked": "2026-10-28",
+  "fulltext_status": "no_pmcid"
+ }
+}

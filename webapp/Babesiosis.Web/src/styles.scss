@@ -1,0 +1,65 @@
+// Global stylesheet.
+//
+// Order matters: the vendor layer (Bootstrap and the app theme) first, then the
+// @fundstream-ai/gnome-ui global stylesheet, so its rules win where both set the same
+// thing. The package ships the design tokens (frozen; read-only under node_modules),
+// the layout utilities, the base reset, the html 14px root, body typography and colours,
+// the secondary/tertiary text mapping, CDK overlay stacking and the [fsModalFooter]
+// layout. Only rules specific to Babesiosis stay below.
+@use '../public/assets/scss/icons.scss';
+@use '../public/assets/scss/app.scss';
+@use '@fundstream-ai/gnome-ui/styles/gnome-ui';
+
+// Anchor the height chain to the viewport. app-root / fs-shell already use
+// height:100% and the shell content area is built to fill-and-scroll
+// (flex:1 1 auto + overflow-y:scroll), but without an explicit html/body
+// height that 100% resolved to auto and the whole shell collapsed to its
+// content height — leaving empty space below short pages. Anchoring here lets
+// the shell occupy the full viewport so feature content (e.g. data grids) can
+// stretch to the bottom of the screen.
+html,
+body {
+  height: 100%;
+}
+
+app-root {
+  height: 100%;
+  display: block;
+}
+
+// Category series palette: one hue per article category, by the category's
+// SortOrder (the order review-category-year-counts-get returns them in). The
+// gnome-ui chart palette has seven hues and cycles, which repeats colours once
+// there are more categories than that. Same triplet format as the gnome-ui
+// tokens, read through fsChartCssColor. The order is what keeps neighbouring
+// stacked segments apart for colour-blind readers; it was validated as a set in
+// both themes, so re-check it before reordering or adding a hue.
+:root {
+  --fs-color-category-1:   42 120 214;  // blue
+  --fs-color-category-2:  235 104  52;  // orange
+  --fs-color-category-3:   27 175 122;  // aqua
+  --fs-color-category-4:  237 161   0;  // yellow
+  --fs-color-category-5:  232 123 164;  // magenta
+  --fs-color-category-6:    0 131   0;  // green
+  --fs-color-category-7:   98  80 214;  // violet
+  --fs-color-category-8:  227  73  72;  // red
+  --fs-color-category-9:   22 163 196;  // cyan
+  --fs-color-category-10: 168 100  28;  // brown
+  --fs-color-category-11: 176  91 196;  // purple
+}
+
+// The same hues stepped for the dark surface, not a separate palette.
+html[data-bs-theme="dark"],
+[data-bs-theme="dark"] {
+  --fs-color-category-1:   57 135 229;
+  --fs-color-category-2:  217  89  38;
+  --fs-color-category-3:   25 158 112;
+  --fs-color-category-4:  201 133   0;
+  --fs-color-category-5:  213  81 129;
+  --fs-color-category-6:   46 154  46;
+  --fs-color-category-7:  144 133 233;
+  --fs-color-category-8:  230 103 103;
+  --fs-color-category-9:   28 159 192;
+  --fs-color-category-10: 176 113  46;
+  --fs-color-category-11: 185 104 204;
+}

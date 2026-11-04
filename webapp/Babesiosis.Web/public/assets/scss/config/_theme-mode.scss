@@ -1,0 +1,116 @@
+// 
+// _light-mode.scss
+// 
+
+
+/* Root Prefix Variable */
+:root {
+    --#{$prefix}logo-lg-height:                100px;
+    --#{$prefix}logo-sm-height:                100px;
+
+    --#{$prefix}main-nav-width:               230px;
+    --#{$prefix}main-nav-width-sm:             75px; 
+    --#{$prefix}main-nav-item-icon-size:       22px;
+    --#{$prefix}main-nav-item-font-size:       15px;
+    --#{$prefix}main-nav-item-padding-x:       25px;
+    --#{$prefix}main-nav-item-padding-y:       10px;
+
+    --#{$prefix}topbar-height:                 52px;
+    --#{$prefix}footer-height:                 30px;
+    
+    // Heading Variable
+    --#{$prefix}headings-color:                            #313b5e;
+
+    --#{$prefix}input-border-color:             #d8dfe7;
+    --#{$prefix}input-focus-border-color:       #b0b0bb;
+
+    // Custom semantic tokens (light)
+    --text-primary:      #313b5e;
+    --text-secondary:    #5d7186;
+    --border-light:      #d8dfe7;
+    --bg-primary:        #ffffff;
+    --bg-light:          #f8f9fa;
+    --card-shadow:       0 2px 8px rgba(0, 0, 0, 0.08);
+    --success-color:     #22c55e;
+    --error-color:       #ef5f5f;
+    --warning-color:     #f9b931;
+    --primary-color:     #ed6b2e;
+    --primary-light:     #f57d42;
+    --primary-dark:      #d2551a;
+    --primary-color-rgb: 237, 107, 46;
+    --error-color-rgb:   239, 95, 95;
+    --accent-color:      #ed6b2e;
+    --accent-color-rgb:  237, 107, 46;
+}
+
+
+/* Color system - Dark Mode only */
+html[data-bs-theme="dark"], [data-bs-theme="dark"] {
+
+    --#{$prefix}border-color:                   #2f3944;
+
+    --#{$prefix}light:                     #{$body-tertiary-bg-dark};
+    --#{$prefix}dark:                      #{$body-tertiary-color-dark};
+    
+    --#{$prefix}light-rgb:                 #{to-rgb($body-tertiary-bg-dark)};
+    --#{$prefix}dark-rgb:                  #{to-rgb($body-tertiary-color-dark)};
+
+    // Heading Variable
+    --#{$prefix}headings-color:            #{$body-color-dark};
+
+    --#{$prefix}input-border-color:             #3a4551;
+    --#{$prefix}input-focus-border-color:       #4a5663;
+
+    // Custom semantic tokens (dark)
+    --text-primary:      #f3f4f6;
+    --text-secondary:    #d1d5db;
+    --border-light:      #4b5563;
+    --bg-primary:        #111827;
+    --bg-light:          #1f2937;
+    --card-shadow:       0 2px 8px rgba(0, 0, 0, 0.3);
+    --success-color:     #10b981;
+    --error-color:       #ef4444;
+    --warning-color:     #f59e0b;
+    --primary-color:     #f57d42;
+    --primary-light:     #f89466;
+    --primary-dark:      #ed6b2e;
+    --primary-color-rgb: 245, 125, 66;
+    --error-color-rgb:   239, 68, 68;
+    --accent-color:      #f57d42;
+    --accent-color-rgb:  245, 125, 66;
+}
+
+
+/* Main Menu Light */
+html[data-menu-color="light"]{
+    --#{$prefix}main-nav-bg:                               #f8f5f1;
+    --#{$prefix}main-nav-item-color:                       #797b97;
+    --#{$prefix}main-nav-item-hover-bg:                    transparent;
+    --#{$prefix}main-nav-item-hover-color:                 #ed6b2e;
+    --#{$prefix}main-nav-border-color:                     #eaedf1;
+}
+
+/* Main Menu Dark */
+html[data-menu-color="dark"],
+html[data-bs-theme="dark"][data-menu-color="light"] {
+    --#{$prefix}main-nav-bg:                               #262d34;
+    --#{$prefix}main-nav-item-color:                       #9097a7;
+    --#{$prefix}main-nav-item-hover-bg:                    transparent;
+    --#{$prefix}main-nav-item-hover-color:                 #{$white};
+    --#{$prefix}main-nav-border-color:                     #2f3944;
+}
+
+/* Topbar Light */
+html[data-topbar-color="light"] {
+    --#{$prefix}topbar-bg:                                 #f9f7f7;
+    --#{$prefix}topbar-item-color:                         #707793;
+    --#{$prefix}topbar-search-bg:                          #eae8e8;
+}
+
+/* Topbar Dark */
+html[data-topbar-color="dark"], 
+html[data-bs-theme="dark"][data-topbar-color="light"]{
+    --#{$prefix}topbar-bg:                                 #22282e;
+    --#{$prefix}topbar-item-color:                         #dee2e6;
+    --#{$prefix}topbar-search-bg:                          #2c3238;
+}

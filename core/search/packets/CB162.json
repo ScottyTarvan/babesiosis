@@ -1,0 +1,50 @@
+{
+ "id": "CB162",
+ "filename": "CB162_2017_identification-potential-serum-biomarkers-kidney-dysfunction.md",
+ "key": "https://openalex.org/W2884075814",
+ "record": {
+  "pmid": null,
+  "pmcid": null,
+  "doi": null,
+  "title": "Identification of potential serum biomarkers for kidney dysfunction in canine babesiosis by label-based quantitative proteomic approach",
+  "journal": null,
+  "authors": [
+   "Anita Horvatić",
+   "Petra Nižić",
+   "Josipa Kuleš",
+   "Nicolas Guillemin",
+   "Vladimir Mrljak"
+  ],
+  "first_pub_date": "2017-01-01",
+  "type": "article",
+  "language": [
+   "en"
+  ],
+  "abstract": "Proteomic technology is a promising tool for the identification of diagnostic biomarkers. Clinical proteomics is mostly focused on body fluid proteome studies because of the non- invasive collection procedure. Furthermore, blood contains tissue leakage proteins which could indicate different pathological processes. These potential biomarkers are present in low concentrations, making the necessity for depletion of high abundant serum proteins. The aim of this study was to employ high-resolution quantitative shotgun proteomics using Tandem Mass Tag (TMT) isobaric labeling for proteomic profiling of depleted canine serum samples in order to get the insight into the pathophysiology of kidney dysfunction in babesiosis. Serum samples from 8 healthy dogs, 6 Babesia- infected dogs (UPC 140 μmol/L) were pooled, subsequently. After depletion using protein equalization technology (ProteoMiner), samples were subjected to desalting, reduction, alkylation, digestion and TMT labeling. Labelled peptides were analyzed using nanoLC System and Q Exactive Plus mass spectrometer. Identification and relative quantification were performed using Proteome Discoverer. Cytoscape and DAVID were used for functional annotation analyses. As a result, 49 proteins showed statistical significance (p<0.05) in deregulation with log2 fold change more than ±0.5 in azotemic Babesia- infected vs. healthy dogs. Deregulated proteins are involved in calcium ion and acute phase responses, myofibril assembly, proteasomal ubiquitin-independent degradation and interleukin-8 production. Furthermore, some of deregulated proteins in azotemic Babesia- infected dogs revealed the kidney injury when compared to Babesia-infected dogs. In conclusion, shotgun TMT-based high- resolution proteomic profiling combined with protein equalization technology allowed identification of proteins that could present potential serum biomarkers for diagnosis of kidney dysfunction in babesiosis.",
+  "abstract_source": "OpenAlex abstract_inverted_index (reconstructed)",
+  "source_id": "https://openalex.org/W2884075814",
+  "src": "OPENALEX",
+  "found_by": [
+   "OA:title_and_abstract"
+  ],
+  "in_window": true,
+  "key": "https://openalex.org/W2884075814"
+ },
+ "screening": {
+  "key": "https://openalex.org/W2884075814",
+  "decision": "include",
+  "include_type": "primary",
+  "exclude_reason": null,
+  "primary_category": "REN",
+  "secondary_tags": [
+   "OXO",
+   "INF"
+  ],
+  "species": "unspecified (likely B. canis, not stated)",
+  "rationale": "TMT serum proteomics of azotemic vs non-azotemic Babesia-infected dogs to explore kidney dysfunction pathophysiology; acute phase and IL-8 pathways.",
+  "stage": "screen",
+  "batch": "r3_07.md",
+  "screening_round": "r3"
+ },
+ "fulltext_check": null
+}

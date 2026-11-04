@@ -1,0 +1,145 @@
+:host {
+  display: block;
+  height: 100%;
+}
+
+.fs-shell {
+  display: flex;
+  height: 100%;
+  background-color: rgb(var(--fs-color-background));
+  color: rgb(var(--fs-color-ink));
+  font-family: var(--fs-font-body);
+}
+
+.fs-shell__sidebar {
+  flex: 0 0 auto;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  z-index: 10;
+}
+
+// ---------------------------------------------------------------------------
+// Narrow widths — the sidebar becomes an overlay drawer.
+//
+// This media query, not a TypeScript breakpoint signal, is what stops the
+// sidebar consuming layout width. `position: fixed` takes it out of the shell's
+// flex row entirely, so `.fs-shell__main` gets the whole viewport at 360/375
+// regardless of whether any JS has run or any resize event was delivered. (The
+// previous build gated the sidebar on a `BreakpointObserver` signal via `@if`;
+// a viewport that narrowed without a `matchMedia` change event reaching the app
+// left the full 15rem sidebar in flow, squeezing the content to ~165px at
+// 375px.) `FsShell` mirrors the same value in `NARROW_QUERY` for the behaviour
+// that genuinely needs to know — keep the two in step.
+//
+// A collapsed *rail* is not an option down here: 4.5rem of a 360px viewport is
+// still 18% of the screen for chrome the user isn't reading.
+// ---------------------------------------------------------------------------
+@media (max-width: 1023.98px) {
+  .fs-shell__sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    z-index: 1050;
+    // Slid fully over the content with a scrim behind it — the guideline's own
+    // "genuinely floats" case, so it takes the modal-weight shadow rather than
+    // the old flat `--fs-shadow-lg`.
+    box-shadow: var(--fs-guide-shadow-modal);
+    transform: translateX(-100%);
+    // Keeps the off-canvas nav out of the tab order and the accessibility tree
+    // while it's parked. Transitioned so it stays visible for the slide-out.
+    visibility: hidden;
+    transition:
+      transform var(--fs-motion-base) ease,
+      visibility var(--fs-motion-base) ease;
+  }
+
+  .fs-shell--drawer-open .fs-shell__sidebar {
+    transform: translateX(0);
+    visibility: visible;
+  }
+}
+
+.fs-shell__main {
+  display: flex;
+  min-width: 0;
+  flex: 1 1 auto;
+  flex-direction: column;
+  // Positioning context for the route-loading veil.
+  position: relative;
+}
+
+// Veil over the routed content while a navigation is pending (lazy chunk
+// download / route resolution). `top` matches the fixed topbar height so the
+// topbar stays interactive.
+.fs-shell__route-loading {
+  position: absolute;
+  top: 56px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(var(--fs-color-background) / 0.55);
+}
+
+.fs-shell__content {
+  flex: 1 1 auto;
+  // `scroll` (not `auto`) reserves the scrollbar slot permanently. With
+  // `auto`, the browser hides the scrollbar whenever content fits and
+  // intermittently fails to re-show it after a JS-driven content reflow
+  // (data refresh, side panel close, etc.) — observed on a calendar-style
+  // page where refreshing the data made the page scrollbar disappear
+  // until the user reloaded the whole browser. `scroll` also stops the
+  // horizontal layout from jumping by the scrollbar width when content
+  // crosses the overflow threshold.
+  overflow-y: scroll;
+  min-height: 0;
+  // Single source of truth for page-frame gutters. Feature components
+  // render directly into this main slot and MUST NOT re-roll their own
+  // `:host { padding }` — pages that skipped the override (reports, help,
+  // my-time) used to render flush against the sidebar/topbar.
+  padding: var(--fs-guide-space-8);
+
+  @media (max-width: 768px) {
+    padding: var(--fs-guide-space-7);
+  }
+
+  @media (max-width: 575.98px) {
+    padding: var(--fs-guide-space-6);
+  }
+}
+
+// Scrim behind the overlay drawer. Sits under the sidebar's z-index (1050) and
+// over everything else. Belt-and-braces `display: none` above the boundary: the
+// drawer can only be opened from a control that is itself hidden up there, but
+// a stale open flag must never dim a desktop layout.
+//
+// `--fs-color-scrim` (not a literal rgba(0,0,0,...)) — the guard blocks raw
+// colour literals in component SCSS, and this token exists precisely for a
+// neutral black overlay on top of arbitrary underlying content.
+.fs-shell__drawer-backdrop {
+  position: fixed;
+  inset: 0;
+  background-color: rgb(var(--fs-color-scrim) / 0.4);
+  z-index: 1040;
+  animation: fs-shell-fade-in var(--fs-motion-base) ease;
+}
+
+@media (min-width: 1024px) {
+  .fs-shell__drawer-backdrop { display: none; }
+}
+
+@keyframes fs-shell-fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fs-shell__sidebar { transition: none; }
+  .fs-shell__drawer-backdrop { animation: none; }
+}

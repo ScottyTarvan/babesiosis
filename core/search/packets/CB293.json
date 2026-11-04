@@ -1,0 +1,46 @@
+{
+ "id": "CB293",
+ "filename": "CB293_2026_clinicopathological-spectrum-tick-borne-viral-diseases.md",
+ "key": "DOI:10.22271/j.ento.2026.v14.i1a.9787",
+ "record": {
+  "pmid": null,
+  "pmcid": null,
+  "doi": "10.22271/j.ento.2026.v14.i1a.9787",
+  "title": "Clinicopathological spectrum of tick-borne and viral diseases in urban companion dogs: A multi-center observational assessment",
+  "journal": "Journal of Entomology and Zoology Studies",
+  "authors": [
+   "Lucas Monteiro"
+  ],
+  "first_pub_date": "2026-01-01",
+  "type": "article",
+  "language": [],
+  "abstract": "Tick-borne and viral diseases together account for over 40% of infectious disease presentations in companion dogs at veterinary hospitals across tropical and subtropical cities. This research investigated the clinic pathological features of ehrlichiosis, babesiosis, and canine parvovirus infection in 123 dogs presenting to three veterinary teaching hospitals in São Paulo State, Brazil, between January and October 2024. Dogs were diagnosed using a combination of rapid antigen/antibody kits, blood smear examination, and PCR confirmation. Ehrlichiosis was the most frequent diagnosis (38 cases, 30.9%), followed by parvovirus enteritis (31 cases, 25.2%) and babesiosis (24 cases, 19.5%). Thirty dogs with no infectious disease served as healthy controls. Packed cell volume was lowest in babesiosis cases (mean 18.3±5.1%), while leukopenia was most severe in parvoviral infection (mean WBC 3.1±1.5 × 10³/µL). Thrombocytopenia below 100 × 10³/µL occurred in 84.2% of ehrlichiosis cases. Multi-organ biochemical abnormalities including elevated ALT, BUN, and hypoalbuminemia were observed across all disease groups. These findings map the clinical and laboratory profile of three major infectious diseases affecting urban dogs in Brazil, supporting early diagnostic intervention and targeted treatment protocols.",
+  "abstract_source": "OpenAlex abstract_inverted_index (reconstructed)",
+  "source_id": "https://openalex.org/W7165735879",
+  "src": "OPENALEX",
+  "found_by": [
+   "OA:title_and_abstract"
+  ],
+  "in_window": true,
+  "key": "DOI:10.22271/j.ento.2026.v14.i1a.9787"
+ },
+ "screening": {
+  "key": "DOI:10.22271/j.ento.2026.v14.i1a.9787",
+  "decision": "include",
+  "exclude_reason": null,
+  "include_type": "primary",
+  "primary_category": "SEV",
+  "secondary_tags": [
+   "ERY",
+   "MET",
+   "REN"
+  ],
+  "species": "Babesia spp. (confirmed by PCR; species not stated in abstract)",
+  "rationale": "Multicentre cohort with a separate babesiosis group and healthy controls. Reports a disease-specific clinicopathological phenotype (severe anaemia, multi-organ biochemistry).",
+  "stage": "adjudicated",
+  "batch": "r3_14.md",
+  "first_decision": "uncertain",
+  "screening_round": "r3"
+ },
+ "fulltext_check": null
+}

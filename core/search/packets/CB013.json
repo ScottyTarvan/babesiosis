@@ -1,0 +1,190 @@
+{
+ "id": "CB013",
+ "filename": "CB013_2017_vector-borne-zoonotic-diseases-north-west.md",
+ "key": "PMID:28810870",
+ "record": {
+  "pmid": "28810870",
+  "pmcid": "PMC5558717",
+  "doi": "10.1186/s12917-017-1169-2",
+  "title": "Vector-borne and zoonotic diseases of dogs in North-west New South Wales and the Northern Territory, Australia.",
+  "authors": [
+   "Shapiro AJ",
+   "Brown G",
+   "Norris JM",
+   "Bosward KL",
+   "Marriot DJ",
+   "Balakrishnan N",
+   "Breitschwerdt EB",
+   "Malik R"
+  ],
+  "journal": "BMC veterinary research",
+  "journal_abbrev": "BMC Vet Res",
+  "volume": "13",
+  "issue": "1",
+  "pages": "238",
+  "language": [
+   "eng"
+  ],
+  "issue_date": "2017-08-15",
+  "issue_date_precision": "day",
+  "epub_date": "2017-08-15",
+  "pubmed_entry_date": "2017-08-16",
+  "first_pub_date": "2017-08-15",
+  "publication_types": [
+   "Journal Article"
+  ],
+  "mesh": [
+   "Anaplasma",
+   "Anemia",
+   "Animals",
+   "Babesia",
+   "Coxiella burnetii",
+   "DNA, Bacterial",
+   "DNA, Protozoan",
+   "Dog Diseases",
+   "Dogs",
+   "Humans",
+   "Mycoplasma",
+   "New South Wales",
+   "Northern Territory",
+   "Protozoan Infections, Animal",
+   "Real-Time Polymerase Chain Reaction",
+   "Thrombocytopenia",
+   "Zoonoses"
+  ],
+  "keywords": [
+   "Anaplasma spp.",
+   "Babesia spp.",
+   "Bartonella spp.",
+   "Brucella spp.",
+   "Coxiella burnetii",
+   "Dog",
+   "Haemotropic mycoplasmas"
+  ],
+  "abstract": "BACKGROUND: Vector-borne diseases of dogs in Australian Aboriginal communities are relatively unexplored. These dogs represent a unique group with variable ecto- and endo-parasitic burdens, nutritional stresses and a general lack of veterinary intervention. We investigated haemoprotozoal and bacterial pathogen prevalences in relation to erythrocyte and platelet numbers in dogs from North-West New South Wales (N-W NSW) and the Northern Territory (NT; Central Australia).\nMETHODS: Real-time PCR (qPCR) amplification of Anaplasma platys, Babesia vogeli, Mycoplasma haemocanis, Candidatus Mycoplasma haematoparvum and Bartonella spp., serological screening for Coxiella burnetii, and Bartonella spp. and haematological analyses were performed on dogs from the two cohorts (96 dogs in total). Brucella suis serology was determined additionally for the N-W NSW cohort.\nRESULTS: Anaplasma platys (n = 26 dogs), Babesia vogeli (n = 7), Candidatus Mycoplasma haematoparvum (n = 10 dogs), and Mycoplasma haemocanis (n = 14) were detected in the sample population (n = 96) using qPCR. There were significant associations between (i) A. platys and anaemia (OR 8.7, CI 2.4-31.7; P < 0.001), thrombocytopenia (OR 12.1, CI 3.4-43.2; P < 0.001) and breed (OR 16.1, CI 2.1-121.5; P = 0.007), and (ii) between B. vogeli and anaemia (OR 11.8, CI 2.3-61.6; P = 0.003). Neither protozoal nor bacterial DNA loads, estimated using qPCR, were positively correlated with anaemia or thrombocytopenia. Haemotropic mycoplasmas were not associated with any haematologic abnormality. Four dogs from the NT were seropositive for Coxiella burnetii, while no dogs were seropositive for Brucella suis or to a panel of Bartonella spp. antigens. Despite directed efforts, Bartonella DNA was not detected in blood from any of the cohorts studied. A sample of dogs from the NT recruited specifically for Bartonella α-proteobacteria growth medium enrichment blood culture were also Bartonella PCR negative.\nCONCLUSIONS: Vector-borne pathogens occur in dogs free ranging near Aboriginal communities, with higher detection rates in NT than N-W NSW. The preponderant haematologic abnormalities were anaemia and thrombocytopenia, likely attributable to A. platys and B. vogeli infections, but also probably affected by nutritional, parasitic, lactational and environmental stressors. The absence of Bartonella spp. is of importance to the Australian setting, and work needs to be extended to tropical coastal communities where fleas are present as well as ticks. Dogs living in and around Aboriginal communities may provide valuable sentinel information on disease infection status of human public health significance.",
+  "corrections": [],
+  "epmc_first_pub_date": "2017-08-15",
+  "is_oa": "Y",
+  "has_suppl": "Y",
+  "found_by": [
+   "EP1_broad",
+   "EP2_species",
+   "PM1_broad",
+   "PM2_species",
+   "PM3_mechanism"
+  ],
+  "in_window": true
+ },
+ "screening": {
+  "key": "PMID:28810870",
+  "decision": "include",
+  "exclude_reason": null,
+  "include_type": "primary",
+  "primary_category": "ERY",
+  "secondary_tags": [
+   "COA",
+   "pathogen_load"
+  ],
+  "species": "B. vogeli (confirmed, qPCR); co-infections with A. platys and haemoplasmas",
+  "rationale": "Explicitly relates B. vogeli infection and DNA load to anaemia (OR 11.8) and thrombocytopenia, which informs the load-cytopenia relationship.",
+  "stage": "adjudicated",
+  "batch": "r1_02.md",
+  "first_decision": "exclude",
+  "screening_round": "r1"
+ },
+ "fulltext_check": {
+  "key": "PMID:28810870",
+  "pmcid": "PMC5558717",
+  "checked": "2026-10-23",
+  "fulltext_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5558717/fullTextXML",
+  "fulltext_status": 200,
+  "data_availability": [
+   "Availability of data and materialsThe data supporting the findings in this article are available in a Microsoft Excel Spread sheet uploaded as Additional file 4.",
+   "Data Availability StatementThe data supporting the findings in this article are available in a Microsoft Excel Spread sheet uploaded as Additional file 4."
+  ],
+  "supplementary": [
+   {
+    "label": "",
+    "caption": "",
+    "file": "12917_2017_1169_MOESM1_ESM.png"
+   },
+   {
+    "label": "",
+    "caption": "",
+    "file": "12917_2017_1169_MOESM2_ESM.png"
+   },
+   {
+    "label": "",
+    "caption": "",
+    "file": "12917_2017_1169_MOESM3_ESM.png"
+   },
+   {
+    "label": "",
+    "caption": "",
+    "file": "12917_2017_1169_MOESM4_ESM.xlsx"
+   },
+   {
+    "label": "",
+    "caption": "",
+    "file": "12917_2017_1169_MOESM1_ESM.png"
+   },
+   {
+    "label": "",
+    "caption": "",
+    "file": "12917_2017_1169_MOESM2_ESM.png"
+   },
+   {
+    "label": "",
+    "caption": "",
+    "file": "12917_2017_1169_MOESM3_ESM.png"
+   },
+   {
+    "label": "",
+    "caption": "",
+    "file": "12917_2017_1169_MOESM4_ESM.xlsx"
+   }
+  ],
+  "repository_links": [],
+  "section_titles": [
+   "Background",
+   "Methods",
+   "Results",
+   "Conclusions",
+   "Electronic supplementary material",
+   "Background",
+   "Methods",
+   "Sample population and specimen collection",
+   "Haematology",
+   "PCR analysis of Anaplasma platys, Babesia vogeli, M. haemocanis and Candidatus M. haematoparvum and Bartonella spp",
+   "Specialised Bartonella testing",
+   "Indirect immunofluorescent antibody assay (IFA) for serological testing for Coxiella burnetii",
+   "Brucella testing",
+   "Numerical analysis",
+   "Results",
+   "PCR analysis of A. platys, B. vogeli, M. haemocanis and Candidatus M. haematoparvum in relation to haematology and population demographics",
+   "Bartonella multiplex qPCR, Bartonella serology and BAPGM enrichment culture",
+   "Coxiellosis serological testing",
+   "Brucellosis serological testing",
+   "Comparison of results between NT and Moree cohorts",
+   "Discussion",
+   "Conclusions",
+   "Additional files",
+   "Acknowledgements",
+   "Funding",
+   "Availability of data and materials",
+   "Abbreviations",
+   "Authors’ contributions",
+   "Ethics approval",
+   "Consent for publication",
+   "Competing interests",
+   "Publisher’s Note",
+   "Footnotes",
+   "Contributor Information",
+   "References",
+   "Associated Data",
+   "Supplementary Materials",
+   "Data Availability Statement"
+  ],
+  "has_body": true
+ }
+}

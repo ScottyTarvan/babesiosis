@@ -1,0 +1,18 @@
+{
+  "$schema": "https://aka.ms/azure/static-web-apps-cli/schema",
+  "configurations": {
+    "dev": {
+      "appLocation": ".",
+      "outputLocation": "dist/babesiosis-web/browser"
+    },
+    "prod": {
+      "appLocation": ".",
+      "outputLocation": "dist/babesiosis-web/browser"
+    },
+    "perpetua": {
+      "appLocation": ".",
+      "outputLocation": "dist/babesiosis-web/browser",
+      "deploymentToken": "f6b953dabeb30f5df2a73ada1ddbbf74644d96c677f2b49ab8c006db0fc26dec03-33d6da1e-75df-415c-a632-e205d67cc51400300150b6a65403"
+    }
+  }
+}

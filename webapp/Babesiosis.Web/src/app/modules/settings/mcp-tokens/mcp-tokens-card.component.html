@@ -1,0 +1,209 @@
+<fs-card>
+  <header class="fs-mcp-tokens__head">
+    <div>
+      <h2 class="fs-mcp-tokens__title">MCP Access Tokens</h2>
+      <p class="fs-mcp-tokens__sub">Personal tokens that let Claude Code read dataset designs through the Babesiosis MCP server.</p>
+    </div>
+    <fs-button
+      variant="solid"
+      intent="primary"
+      size="sm"
+      icon="key"
+      [disabled]="!can(keys.create) || loading()"
+      (click)="onGenerate()">Generate Token</fs-button>
+  </header>
+
+  <!-- Setup instructions (platform/mcp-server.md §3.13): no secrets, placeholders only -->
+  <fs-banner intent="info" icon="plug-connected" class="fs-mcp-tokens__banner">
+    <button
+      type="button"
+      class="fs-mcp-tokens__help-toggle"
+      aria-controls="mcp-setup-help"
+      [attr.aria-expanded]="helpOpen()"
+      (click)="helpOpen.set(!helpOpen())">
+      <span>How to Connect Claude Code</span>
+      <fs-symbol
+        class="fs-mcp-tokens__help-chev"
+        [class.fs-mcp-tokens__help-chev--open]="helpOpen()"
+        name="chevron-down"
+        size="xs"
+        ariaLabel="" />
+    </button>
+
+    @if (helpOpen()) {
+      <div id="mcp-setup-help" class="fs-mcp-tokens__help">
+        <ol class="fs-mcp-tokens__help-steps">
+          <li>
+            Click <strong>Generate Token</strong> on this card. The token is shown only once, so copy it straight away.
+            If the button is disabled, ask your system administrator for MCP Access.
+          </li>
+          <li>
+            Ask your system administrator for the <strong>functions key</strong> for this environment.
+            It is not shown anywhere in Babesiosis.
+            <em>Hosted environments only: skip this step when running Babesiosis locally.</em>
+          </li>
+          <li>
+            Add the server to Claude Code in one of two ways below. Replace <code>&lt;your-token&gt;</code>
+            and <code>&lt;functions-key&gt;</code> with your own values.
+            @if (!hasMcpUrl) {
+              No MCP server address is configured for this environment yet: replace
+              <code>&lt;mcp-server-url&gt;</code> with the address your system administrator gives you.
+            }
+          </li>
+          <li>
+            Run <code>claude mcp list</code> and check that <code>{{ serverName }}</code> shows as connected,
+            then start a new Claude Code session.
+          </li>
+        </ol>
+
+        <div class="fs-mcp-tokens__help-label">Option 1: Run a Command</div>
+        <p class="fs-mcp-tokens__help-text">In a terminal where Claude Code is installed:</p>
+        <div class="fs-mcp-tokens__copy-row fs-mcp-tokens__copy-row--top">
+          <pre class="fs-mcp-tokens__code">{{ helpCommand }}</pre>
+          <fs-button variant="outline" intent="secondary" size="sm" icon="copy" ariaLabel="Copy command"
+                     (click)="onCopy(helpCommand, 'Command')" />
+        </div>
+        <p class="fs-mcp-tokens__help-note">
+          The <code>x-functions-key</code> header is needed on hosted environments only. Leave out
+          <code>--header "x-functions-key: …"</code> when running locally.
+        </p>
+
+        <div class="fs-mcp-tokens__help-label">Option 2: Edit the Claude Code Config File</div>
+        <p class="fs-mcp-tokens__help-text">
+          Open <code>~/.claude.json</code> (on Windows <code>%USERPROFILE%\.claude.json</code>) and add this entry to
+          the top-level <code>mcpServers</code> object. If <code>mcpServers</code> already exists, add only the
+          <code>{{ serverName }}</code> entry inside it.
+        </p>
+        <div class="fs-mcp-tokens__copy-row fs-mcp-tokens__copy-row--top">
+          <pre class="fs-mcp-tokens__code">{{ helpJson }}</pre>
+          <fs-button variant="outline" intent="secondary" size="sm" icon="copy" ariaLabel="Copy JSON"
+                     (click)="onCopy(helpJson, 'JSON')" />
+        </div>
+        <p class="fs-mcp-tokens__help-note">
+          The <code>x-functions-key</code> line is needed on hosted environments only. Remove it (and the comma
+          before it) when running locally.
+        </p>
+
+        <p class="fs-mcp-tokens__help-text">
+          Keep your token in your own user configuration. Never put a real token in a project
+          <code>.mcp.json</code> file that is committed to source control.
+        </p>
+      </div>
+    }
+  </fs-banner>
+
+  @if (loadError(); as message) {
+    <fs-banner intent="danger" class="fs-mcp-tokens__banner">{{ message }}</fs-banner>
+  }
+
+  <div class="fs-mcp-tokens__grid">
+    <fs-data-grid
+      [data]="rows()"
+      [columns]="columns()"
+      keyExpr="instanceId"
+      [loading]="loading()"
+      [pageSize]="10"
+      [sorting]="sorting"
+      [toolbar]="toolbar()"
+      [searchPanel]="searchPanel"
+      [pager]="pager"
+      noDataText="You have no MCP access tokens." />
+  </div>
+</fs-card>
+
+<ng-template #statusTpl let-row>
+  <fs-badge variant="plain" [intent]="statusIntent(row.status)">{{ row.status }}</fs-badge>
+</ng-template>
+
+<ng-template #actionsTpl let-row>
+  <div class="fs-mcp-tokens__row-actions" (click)="$event.stopPropagation()">
+    @if (row.status === 'Active') {
+      <fs-button
+        variant="ghost"
+        intent="danger"
+        size="sm"
+        icon="ban"
+        ariaLabel="Revoke"
+        [disabled]="!canRevokeRow(row)"
+        (click)="onRevoke(row)" />
+    }
+  </div>
+</ng-template>
+
+<!-- Generate -->
+<fs-modal [open]="generateOpen()" title="Generate MCP Access Token" size="md" (close)="onCancelGenerate()">
+  <div class="d-flex flex-column gap-3">
+    @if (generateError(); as message) {
+      <fs-banner intent="danger">{{ message }}</fs-banner>
+    }
+    <fs-form-field label="Name" inputId="mcp-token-name" [required]="true" [error]="nameError()"
+                   hint="A label to recognise this token later, e.g. the machine it is used on.">
+      <fs-text-input
+        inputId="mcp-token-name"
+        placeholder="e.g. Work laptop"
+        [invalid]="!!nameError()"
+        [ngModel]="draftName()"
+        (ngModelChange)="draftName.set($event)"
+        (focusout)="nameTouched.set(true)" />
+    </fs-form-field>
+    <fs-form-field label="Expires After" inputId="mcp-token-expiry">
+      <fs-select
+        inputId="mcp-token-expiry"
+        [options]="expiryOptions"
+        [ngModel]="draftExpiry()"
+        (ngModelChange)="draftExpiry.set($event)" />
+    </fs-form-field>
+  </div>
+
+  <div fsModalFooter class="d-flex justify-content-end gap-2">
+    <fs-button variant="outline" intent="secondary" [disabled]="generating()" (click)="onCancelGenerate()">Cancel</fs-button>
+    <fs-button variant="solid" intent="primary" icon="key" [loading]="generating()"
+               [disabled]="generating() || !can(keys.create)" (click)="onSubmitGenerate()">Generate</fs-button>
+  </div>
+</fs-modal>
+
+<!-- One-time reveal -->
+<fs-modal [open]="!!revealedSecret()" title="Copy Your New Token" size="md"
+          [closeOnBackdrop]="false" (close)="onCloseReveal()">
+  @if (revealedSecret(); as secret) {
+    <div class="d-flex flex-column gap-3">
+      <fs-banner intent="warning">
+        This is the only time the token "{{ revealedName() }}" is shown. Copy it now — it cannot be retrieved later.
+      </fs-banner>
+
+      <fs-form-field label="Token" inputId="mcp-token-secret">
+        <div class="fs-mcp-tokens__copy-row">
+          <fs-text-input inputId="mcp-token-secret" [readonly]="true" [ngModel]="secret" />
+          <fs-button variant="outline" intent="secondary" icon="copy" ariaLabel="Copy token"
+                     (click)="onCopy(secret, 'Token')" />
+        </div>
+      </fs-form-field>
+
+      <fs-form-field label="Claude Code Command" inputId="mcp-token-command"
+                     [hint]="isHosted
+                       ? 'Replace <functions-key> with the functions key from your administrator before running it.'
+                       : 'Run this in a terminal to add the Babesiosis MCP server to Claude Code.'">
+        <div class="fs-mcp-tokens__copy-row fs-mcp-tokens__copy-row--top">
+          <fs-textarea inputId="mcp-token-command" [rows]="4" [readonly]="true" [ngModel]="claudeCommand()" />
+          <fs-button variant="outline" intent="secondary" icon="copy" ariaLabel="Copy command"
+                     (click)="onCopy(claudeCommand(), 'Command')" />
+        </div>
+      </fs-form-field>
+    </div>
+  }
+
+  <div fsModalFooter class="d-flex justify-content-end">
+    <fs-button variant="solid" intent="primary" (click)="onCloseReveal()">Done</fs-button>
+  </div>
+</fs-modal>
+
+<!-- Revoke -->
+<fs-confirm-dialog
+  [open]="!!pendingRevoke()"
+  title="Revoke Token?"
+  [message]="'Revoking &quot;' + (pendingRevoke()?.name ?? '') + '&quot; stops it working immediately. This cannot be undone.'"
+  confirmLabel="Revoke"
+  intent="danger"
+  [loading]="revoking()"
+  (confirm)="onConfirmRevoke()"
+  (cancel)="onCancelRevoke()" />

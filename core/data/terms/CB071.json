@@ -1,0 +1,996 @@
+{
+ "id": "CB071",
+ "document": "data/markdown/CB071.md",
+ "source_format": "jats_xml",
+ "translated": false,
+ "words": 9122,
+ "run_utc": "2026-10-30T05:33:42+00:00",
+ "threshold": 0.85,
+ "kept_types": [
+  "T019",
+  "T020",
+  "T037",
+  "T046",
+  "T047",
+  "T048",
+  "T049",
+  "T050",
+  "T184",
+  "T190",
+  "T191"
+ ],
+ "term_count": 55,
+ "terms": [
+  {
+   "term": "C0004576",
+   "concept": "Babesiosis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 88,
+   "mentions_negated": 0,
+   "mentions_affirmed": 88,
+   "sections": {
+    "discussion": 44,
+    "results": 24,
+    "introduction": 8,
+    "abstract": 6,
+    "methods": 5,
+    "title": 1
+   },
+   "forms": {
+    "babesiosis": 88
+   },
+   "best_score": 0.972
+  },
+  {
+   "term": "C0151746",
+   "concept": "Abnormal renal function",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 15,
+   "mentions_negated": 0,
+   "mentions_affirmed": 15,
+   "sections": {
+    "discussion": 10,
+    "results": 3,
+    "abstract": 1,
+    "introduction": 1
+   },
+   "forms": {
+    "kidney dysfunction": 15
+   },
+   "best_score": 0.961
+  },
+  {
+   "term": "C0242606",
+   "concept": "Oxidative Stress",
+   "semantic_types": [
+    "Cell or Molecular Dysfunction"
+   ],
+   "mentions": 15,
+   "mentions_negated": 0,
+   "mentions_affirmed": 15,
+   "sections": {
+    "discussion": 14,
+    "abstract": 1
+   },
+   "forms": {
+    "oxidative stress": 15
+   },
+   "best_score": 0.985
+  },
+  {
+   "term": "C0021368",
+   "concept": "Inflammation",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 14,
+   "mentions_negated": 0,
+   "mentions_affirmed": 14,
+   "sections": {
+    "discussion": 14
+   },
+   "forms": {
+    "inflammation": 14
+   },
+   "best_score": 0.958
+  },
+  {
+   "term": "C0012634",
+   "concept": "Disease",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 10,
+   "mentions_negated": 0,
+   "mentions_affirmed": 10,
+   "sections": {
+    "discussion": 4,
+    "introduction": 2,
+    "methods": 2,
+    "abstract": 1,
+    "results": 1
+   },
+   "forms": {
+    "disease": 5,
+    "diseases": 3,
+    "disease b": 1,
+    "disease c": 1
+   },
+   "best_score": 0.987
+  },
+  {
+   "term": "C0348801",
+   "concept": "Group B streptococcal pneumonia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 8,
+   "mentions_negated": 1,
+   "mentions_affirmed": 7,
+   "sections": {
+    "results": 7,
+    "methods": 1
+   },
+   "forms": {
+    "group b": 8
+   },
+   "best_score": 0.997
+  },
+  {
+   "term": "C1561643",
+   "concept": "Chronic Kidney Diseases",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 8,
+   "mentions_negated": 0,
+   "mentions_affirmed": 8,
+   "sections": {
+    "discussion": 6,
+    "introduction": 2
+   },
+   "forms": {
+    "ckd": 7,
+    "chronic kidney disease": 1
+   },
+   "best_score": 0.974
+  },
+  {
+   "term": "C0009450",
+   "concept": "Communicable Diseases",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 6,
+   "mentions_negated": 1,
+   "mentions_affirmed": 5,
+   "sections": {
+    "discussion": 4,
+    "introduction": 1,
+    "methods": 1
+   },
+   "forms": {
+    "infection": 6
+   },
+   "best_score": 0.962
+  },
+  {
+   "term": "C0022660",
+   "concept": "Kidney Failure, Acute",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 6,
+   "mentions_negated": 0,
+   "mentions_affirmed": 6,
+   "sections": {
+    "introduction": 4,
+    "abstract": 1,
+    "discussion": 1
+   },
+   "forms": {
+    "aki": 4,
+    "acute kidney injury": 2
+   },
+   "best_score": 0.976
+  },
+  {
+   "term": "C0242184",
+   "concept": "Hypoxia",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 6,
+   "mentions_negated": 0,
+   "mentions_affirmed": 6,
+   "sections": {
+    "discussion": 5,
+    "introduction": 1
+   },
+   "forms": {
+    "hypoxia": 6
+   },
+   "best_score": 0.978
+  },
+  {
+   "term": "C0011847",
+   "concept": "Diabetes",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "discussion": 2,
+    "introduction": 1
+   },
+   "forms": {
+    "diabetes": 3
+   },
+   "best_score": 0.975
+  },
+  {
+   "term": "C0011881",
+   "concept": "Diabetic Nephropathy",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "discussion": 3
+   },
+   "forms": {
+    "diabetic nephropathy": 2,
+    "diabetic kidney disease": 1
+   },
+   "best_score": 0.982
+  },
+  {
+   "term": "C0021390",
+   "concept": "Inflammatory Bowel Diseases",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "discussion": 3
+   },
+   "forms": {
+    "inflammatory bowel disease": 2,
+    "ibd": 1
+   },
+   "best_score": 0.979
+  },
+  {
+   "term": "C0085159",
+   "concept": "Seasonal Affective Disorder",
+   "semantic_types": [
+    "Mental or Behavioral Dysfunction"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "methods": 3
+   },
+   "forms": {
+    "sad": 3
+   },
+   "best_score": 0.969
+  },
+  {
+   "term": "C0220981",
+   "concept": "Metabolic acidosis",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "discussion": 3
+   },
+   "forms": {
+    "metabolic acidosis": 3
+   },
+   "best_score": 0.991
+  },
+  {
+   "term": "C1290884",
+   "concept": "Inflammatory disorder",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "discussion": 3
+   },
+   "forms": {
+    "inflammatory diseases": 3
+   },
+   "best_score": 0.982
+  },
+  {
+   "term": "C1510411",
+   "concept": "metaplastic cell transformation",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "results": 2,
+    "methods": 1
+   },
+   "forms": {
+    "transformed": 2,
+    "log transformed": 1
+   },
+   "best_score": 0.962
+  },
+  {
+   "term": "C0002878",
+   "concept": "Anemia, Hemolytic",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "discussion": 2
+   },
+   "forms": {
+    "hemolytic anemia": 2
+   },
+   "best_score": 0.978
+  },
+  {
+   "term": "C0009566",
+   "concept": "Complication",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "abstract": 1,
+    "introduction": 1
+   },
+   "forms": {
+    "complication": 2
+   },
+   "best_score": 0.97
+  },
+  {
+   "term": "C0022658",
+   "concept": "Kidney Diseases",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 1,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1,
+    "discussion": 1
+   },
+   "forms": {
+    "kidney diseases": 1,
+    "nephropathy": 1
+   },
+   "best_score": 0.99
+  },
+  {
+   "term": "C0043528",
+   "concept": "Zoonoses",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "abstract": 1,
+    "introduction": 1
+   },
+   "forms": {
+    "zoonosis": 1,
+    "zoonoses": 1
+   },
+   "best_score": 0.97
+  },
+  {
+   "term": "C0151747",
+   "concept": "Renal tubular disorder",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 1,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1,
+    "discussion": 1
+   },
+   "forms": {
+    "tubular": 2
+   },
+   "best_score": 0.986
+  },
+  {
+   "term": "C0160420",
+   "concept": "Injury of kidney",
+   "semantic_types": [
+    "Injury or Poisoning"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "discussion": 2
+   },
+   "forms": {
+    "kidney injury": 2
+   },
+   "best_score": 0.98
+  },
+  {
+   "term": "C0242528",
+   "concept": "Azotemia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "introduction": 2
+   },
+   "forms": {
+    "azotemia": 2
+   },
+   "best_score": 0.964
+  },
+  {
+   "term": "C1155266",
+   "concept": "Inflammatory Response",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "discussion": 2
+   },
+   "forms": {
+    "inflammatory response": 2
+   },
+   "best_score": 0.983
+  },
+  {
+   "term": "C0001349",
+   "concept": "Acute-Phase Reaction",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "acute phase response": 1
+   },
+   "best_score": 0.982
+  },
+  {
+   "term": "C0001511",
+   "concept": "Tissue Adhesions",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "adhesion": 1
+   },
+   "best_score": 0.955
+  },
+  {
+   "term": "C0002871",
+   "concept": "Anemia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "anemia": 1
+   },
+   "best_score": 0.974
+  },
+  {
+   "term": "C0003873",
+   "concept": "Rheumatoid Arthritis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "rheumatoid arthritis": 1
+   },
+   "best_score": 0.979
+  },
+  {
+   "term": "C0007222",
+   "concept": "Cardiovascular Diseases",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "cardiovascular diseases": 1
+   },
+   "best_score": 0.982
+  },
+  {
+   "term": "C0010957",
+   "concept": "Tissue damage",
+   "semantic_types": [
+    "Injury or Poisoning"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "damage": 1
+   },
+   "best_score": 0.987
+  },
+  {
+   "term": "C0018799",
+   "concept": "Heart Diseases",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "heart disease": 1
+   },
+   "best_score": 0.99
+  },
+  {
+   "term": "C0020456",
+   "concept": "Hyperglycemia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "hyperglycemia": 1
+   },
+   "best_score": 0.969
+  },
+  {
+   "term": "C0020488",
+   "concept": "Hypernatremia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "excess": 1
+   },
+   "best_score": 0.876
+  },
+  {
+   "term": "C0020615",
+   "concept": "Hypoglycemia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "hypoglycemia": 1
+   },
+   "best_score": 0.99
+  },
+  {
+   "term": "C0020676",
+   "concept": "Hypothyroidism",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "hypothyroidism": 1
+   },
+   "best_score": 0.993
+  },
+  {
+   "term": "C0022116",
+   "concept": "Ischemia",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "ischemia": 1
+   },
+   "best_score": 0.99
+  },
+  {
+   "term": "C0022661",
+   "concept": "Kidney Failure, Chronic",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "chronic kidney failure": 1
+   },
+   "best_score": 0.975
+  },
+  {
+   "term": "C0024530",
+   "concept": "Malaria",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "malaria": 1
+   },
+   "best_score": 0.996
+  },
+  {
+   "term": "C0025517",
+   "concept": "Metabolic Diseases",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "metabolic diseases": 1
+   },
+   "best_score": 0.985
+  },
+  {
+   "term": "C0027651",
+   "concept": "Neoplasms",
+   "semantic_types": [
+    "Neoplastic Process"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "tumor": 1
+   },
+   "best_score": 0.991
+  },
+  {
+   "term": "C0036679",
+   "concept": "Diastasis",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results": 1
+   },
+   "forms": {
+    "separation": 1
+   },
+   "best_score": 0.963
+  },
+  {
+   "term": "C0041948",
+   "concept": "Uremia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "uremia": 1
+   },
+   "best_score": 0.985
+  },
+  {
+   "term": "C0043251",
+   "concept": "Wounds and Injuries",
+   "semantic_types": [
+    "Injury or Poisoning"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "trauma": 1
+   },
+   "best_score": 0.966
+  },
+  {
+   "term": "C0162700",
+   "concept": "Tick-Borne Diseases",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "abstract": 1
+   },
+   "forms": {
+    "tick-borne disease": 1
+   },
+   "best_score": 0.949
+  },
+  {
+   "term": "C0175701",
+   "concept": "Aarskog syndrome",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "aas": 1
+   },
+   "best_score": 0.963
+  },
+  {
+   "term": "C0242656",
+   "concept": "Disease Progression",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "progression": 1
+   },
+   "best_score": 0.971
+  },
+  {
+   "term": "C0276854",
+   "concept": "Infection by Babesia canis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "abstract": 1
+   },
+   "forms": {
+    "canine babesiosis": 1
+   },
+   "best_score": 0.969
+  },
+  {
+   "term": "C0332472",
+   "concept": "abnormal fragmented structure",
+   "semantic_types": [
+    "Anatomical Abnormality"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "fragmentation": 1
+   },
+   "best_score": 0.954
+  },
+  {
+   "term": "C0333516",
+   "concept": "Tumor necrosis",
+   "semantic_types": [
+    "Neoplastic Process"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "tumor necrosis": 1
+   },
+   "best_score": 0.986
+  },
+  {
+   "term": "C0442867",
+   "concept": "malignant disease",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "malignant diseases": 1
+   },
+   "best_score": 0.985
+  },
+  {
+   "term": "C0752135",
+   "concept": "Pathological Conditions, Anatomical",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "pathological conditions": 1
+   },
+   "best_score": 0.868
+  },
+  {
+   "term": "C0856169",
+   "concept": "Endothelial dysfunction",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "endothelial dysfunction": 1
+   },
+   "best_score": 0.956
+  },
+  {
+   "term": "C1397014",
+   "concept": "Imbalance",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "imbalance": 1
+   },
+   "best_score": 0.984
+  },
+  {
+   "term": "C1817978",
+   "concept": "acute inflammatory response",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "inflammatory acute phase response": 1
+   },
+   "best_score": 0.896
+  }
+ ]
+}

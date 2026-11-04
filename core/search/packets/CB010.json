@@ -1,0 +1,144 @@
+{
+ "id": "CB010",
+ "filename": "CB010_2017_genome-wide-analysis-gene-expression-protein.md",
+ "key": "PMID:28611446",
+ "record": {
+  "pmid": "28611446",
+  "pmcid": "PMC5469757",
+  "doi": "10.1038/s41598-017-03445-x",
+  "title": "Genome-wide analysis of gene expression and protein secretion of Babesia canis during virulent infection identifies potential pathogenicity factors.",
+  "authors": [
+   "Eichenberger RM",
+   "Ramakrishnan C",
+   "Russo G",
+   "Deplazes P",
+   "Hehl AB"
+  ],
+  "journal": "Scientific reports",
+  "journal_abbrev": "Sci Rep",
+  "volume": "7",
+  "issue": "1",
+  "pages": "3357",
+  "language": [
+   "eng"
+  ],
+  "issue_date": "2017-06-13",
+  "issue_date_precision": "day",
+  "epub_date": "2017-06-13",
+  "pubmed_entry_date": "2017-06-15",
+  "first_pub_date": "2017-06-13",
+  "publication_types": [
+   "Journal Article",
+   "Research Support, Non-U.S. Gov't"
+  ],
+  "mesh": [
+   "Animals",
+   "Babesia",
+   "Babesiosis",
+   "Dog Diseases",
+   "Dogs",
+   "Erythrocytes",
+   "Gene Expression Regulation",
+   "Genome, Protozoan",
+   "Phylogeny",
+   "Proteomics",
+   "Protozoan Proteins",
+   "Transcriptome",
+   "Virulence Factors"
+  ],
+  "keywords": [],
+  "abstract": "Infections of dogs with virulent strains of Babesia canis are characterized by rapid onset and high mortality, comparable to complicated human malaria. As in other apicomplexan parasites, most Babesia virulence factors responsible for survival and pathogenicity are secreted to the host cell surface and beyond where they remodel and biochemically modify the infected cell interacting with host proteins in a very specific manner. Here, we investigated factors secreted by B. canis during acute infections in dogs and report on in silico predictions and experimental analysis of the parasite's exportome. As a backdrop, we generated a fully annotated B. canis genome sequence of a virulent Hungarian field isolate (strain BcH-CHIPZ) underpinned by extensive genome-wide RNA-seq analysis. We find evidence for conserved factors in apicomplexan hemoparasites involved in immune-evasion (e.g. VESA-protein family), proteins secreted across the iRBC membrane into the host bloodstream (e.g. SA- and Bc28 protein families), potential moonlighting proteins (e.g. profilin and histones), and uncharacterized antigens present during acute crisis in dogs. The combined data provides a first predicted and partially validated set of potential virulence factors exported during fatal infections, which can be exploited for urgently needed innovative intervention strategies aimed at facilitating diagnosis and management of canine babesiosis.",
+  "corrections": [],
+  "epmc_first_pub_date": "2017-06-13",
+  "is_oa": "Y",
+  "has_suppl": "Y",
+  "found_by": [
+   "EP1_broad",
+   "EP2_species",
+   "PM1_broad",
+   "PM2_species",
+   "PM3_mechanism"
+  ],
+  "in_window": true
+ },
+ "screening": {
+  "key": "PMID:28611446",
+  "decision": "include",
+  "include_type": "primary",
+  "exclude_reason": null,
+  "primary_category": "OXO",
+  "secondary_tags": [
+   "INF"
+  ],
+  "species": "B. canis (confirmed, genome/RNA-seq)",
+  "rationale": "Genome, transcriptome and exportome of virulent B. canis during acute canine infection; candidate virulence factors and immune evasion.",
+  "stage": "screen",
+  "batch": "r1_02.md",
+  "screening_round": "r1"
+ },
+ "fulltext_check": {
+  "key": "PMID:28611446",
+  "pmcid": "PMC5469757",
+  "checked": "2026-10-23",
+  "fulltext_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5469757/fullTextXML",
+  "fulltext_status": 200,
+  "data_availability": [
+   "Data AvailabilityThe annotated B. canis genome will be made accessible via PiroplasmaDB hosted﻿ by EuPathDB (http://piroplasmadb.org/piro/).",
+   "Data Availability StatementThe annotated B. canis genome will be made accessible via PiroplasmaDB hosted﻿ by EuPathDB (http://piroplasmadb.org/piro/)."
+  ],
+  "supplementary": [
+   {
+    "label": "",
+    "caption": "",
+    "file": "41598_2017_3445_MOESM1_ESM.pdf"
+   },
+   {
+    "label": "",
+    "caption": "",
+    "file": "41598_2017_3445_MOESM2_ESM.xls"
+   },
+   {
+    "label": "",
+    "caption": "",
+    "file": "41598_2017_3445_MOESM1_ESM.pdf"
+   },
+   {
+    "label": "",
+    "caption": "",
+    "file": "41598_2017_3445_MOESM2_ESM.xls"
+   }
+  ],
+  "repository_links": [
+   "PRJEB15861",
+   "PXD005117",
+   "ebi.ac.uk/ena"
+  ],
+  "section_titles": [
+   "Introduction",
+   "Results",
+   "Genome sequence of a virulent Babesia canis strain",
+   "Genome-wide comparison of B. canis gene models with those of other Apicomplexa reveals species-specific genes",
+   "Prediction of the B. canis exportome and analysis of mRNA expression levels",
+   "Expression levels of stage-specific genes identifies asexual and sexual Babesia blood stage parasites at acute crisis",
+   "Shotgun proteomics and transcriptomics identify potential B. canis-specific secreted virulence factors during severe disease",
+   "Discussion",
+   "Methods",
+   "Parasites",
+   "Genome sequencing, assembly, and annotation pipeline",
+   "RNA preparation and RNA-seq data analysis",
+   "Summary of computational genome analysis",
+   "Proteomic studies",
+   "Data Availability",
+   "Electronic supplementary material",
+   "Acknowledgements",
+   "Author Contributions",
+   "Competing Interests",
+   "Footnotes",
+   "References",
+   "Associated Data",
+   "Supplementary Materials",
+   "Data Availability Statement"
+  ],
+  "has_body": true
+ }
+}

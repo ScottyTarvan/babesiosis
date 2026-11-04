@@ -1,0 +1,89 @@
+{
+ "id": "CB105",
+ "filename": "CB105_2022_serial-changes-concentrations-cortisol-thyroid-hormones.md",
+ "key": "PMID:36535203",
+ "record": {
+  "pmid": "36535203",
+  "pmcid": null,
+  "doi": "10.1016/j.ttbdis.2022.102107",
+  "title": "Serial changes in the concentrations of cortisol and thyroid hormones in Beagle dogs infected with Babesia rossi.",
+  "authors": [
+   "van Zyl E",
+   "Leisewitz AL",
+   "Atkinson BK",
+   "Goddard A",
+   "Rautenbach Y",
+   "Thompson PN",
+   "Schoeman JP"
+  ],
+  "journal": "Ticks and tick-borne diseases",
+  "journal_abbrev": "Ticks Tick Borne Dis",
+  "volume": "14",
+  "issue": "2",
+  "pages": "102107",
+  "language": [
+   "eng"
+  ],
+  "issue_date": "2023-03-01",
+  "issue_date_precision": "month",
+  "epub_date": "2022-12-09",
+  "pubmed_entry_date": "2022-12-20",
+  "first_pub_date": "2022-12-09",
+  "publication_types": [
+   "Journal Article"
+  ],
+  "mesh": [
+   "Dogs",
+   "Animals",
+   "Male",
+   "Babesia",
+   "Hydrocortisone",
+   "Thyroxine",
+   "Thyrotropin",
+   "Canidae"
+  ],
+  "keywords": [
+   "Babesiosis",
+   "Critical illness",
+   "Hypothalamic-pituitary-adrenal axis",
+   "Hypothalamic-pituitary-thyroidal axis",
+   "Inflammation"
+  ],
+  "abstract": "An experimental infection using Babesia (B.) rossi was performed in healthy male Beagle dogs to assess the changes in endocrine variables during disease. Two dogs were infected with a low dose (LD) of parasite inoculum (104 parasites) and three dogs were infected with a high dose (HD) (108 parasites). Basal serum cortisol, thyroxine (T4), and thyrotropin (TSH) concentrations were measured every second day. Samples were analyzed using a solid- phase, competitive chemiluminescent enzyme immunoassay (Immulyte® 2000, Siemens). Variables were compared between groups and timepoints using linear mixed models. In both groups, the median cortisol concentration increased, whilst the median T4 concentration decreased after infection, with a return towards baseline concentration post treatment. The highest cortisol and the lowest T4 concentrations were reached at 96 h and 108 h post infection, respectively, in the HD group and slightly later at 108 and 144 h post-infection, respectively, in the LD group. A higher cortisol concentration with a more rapid increase, and a lower T4 concentration with a more rapid decline, were associated with disease severity and a higher dose of parasite inoculum. The TSH concentration remained within the reference interval throughout the study period. This study illustrated the temporal changes in endocrine parameters during experimental B. rossi infection and demonstrated that cortisol and T4 tracked the severity of disease, albeit in opposite directions.",
+  "corrections": [],
+  "epmc_first_pub_date": "2022-12-09",
+  "is_oa": "N",
+  "has_suppl": "N",
+  "found_by": [
+   "EP1_broad",
+   "EP2_species",
+   "PM1_broad",
+   "PM2_species",
+   "PM3_mechanism"
+  ],
+  "in_window": true,
+  "online_vs_issue": "online 2022-12-09; issue 2023-03-01 (month)"
+ },
+ "screening": {
+  "key": "PMID:36535203",
+  "decision": "include",
+  "include_type": "primary",
+  "exclude_reason": null,
+  "primary_category": "MET",
+  "secondary_tags": [
+   "SEV",
+   "INF"
+  ],
+  "species": "B. rossi (confirmed, experimental inoculation)",
+  "rationale": "Experimental B. rossi infection; serial cortisol and T4 changes tracking disease severity and inoculum dose.",
+  "stage": "screen",
+  "batch": "r1_16.md",
+  "screening_round": "r1"
+ },
+ "fulltext_check": {
+  "key": "PMID:36535203",
+  "pmcid": null,
+  "checked": "2026-10-23",
+  "fulltext_status": "no_pmcid"
+ }
+}

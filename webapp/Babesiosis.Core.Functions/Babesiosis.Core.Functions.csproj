@@ -1,0 +1,73 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <AzureFunctionsVersion>v4</AzureFunctionsVersion>
+    <OutputType>Exe</OutputType>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+    <LangVersion>12.0</LangVersion>
+    <RootNamespace>Babesiosis</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="Core.Functions\Auth\ClearPasswordResets.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\Configurations\debug-appsettings.json" Link="debug-appsettings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\Configurations\local.settings.json" Link="local.settings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="16.2.0" />
+    <PackageReference Include="AutoMapper.Collection" Version="13.0.0" />
+    <PackageReference Include="Microsoft.Identity.Client" Version="4.90.0" />
+    <PackageReference Include="Microsoft.Azure.Functions.Worker" Version="2.52.0" />
+    <PackageReference Include="Microsoft.Azure.Functions.Worker.Extensions.DurableTask" Version="1.19.0" />
+    <PackageReference Include="Microsoft.Azure.Functions.Worker.Extensions.EventGrid" Version="3.6.0" />
+    <PackageReference Include="Microsoft.Azure.Functions.Worker.Extensions.Http.AspNetCore" Version="2.1.1" />
+    <PackageReference Include="Microsoft.Azure.Functions.Worker.Sdk" Version="2.1.0" />
+    <PackageReference Include="Microsoft.Azure.Functions.Worker.Extensions.Http" Version="3.3.0" />
+    <PackageReference Include="Microsoft.Azure.Functions.Worker.Extensions.Timer" Version="4.3.1" />
+    <PackageReference Include="Microsoft.Azure.Functions.Worker.Extensions.ServiceBus" Version="5.24.0" />
+    <PackageReference Include="Microsoft.ApplicationInsights.WorkerService" Version="2.23.0" />
+    <PackageReference Include="Microsoft.Azure.Functions.Worker.ApplicationInsights" Version="2.51.0" />
+    <PackageReference Include="Microsoft.IdentityModel.Protocols" Version="8.23.0" />
+    <PackageReference Include="Microsoft.IdentityModel.Protocols.OpenIdConnect" Version="8.23.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".gitignore" />
+    <None Include="host.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Babesiosis.Core.Api\Babesiosis.Core.Api.csproj" />
+    <ProjectReference Include="..\Babesiosis.Core\Babesiosis.Core.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="host.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Using Include="System.Threading.ExecutionContext" Alias="ExecutionContext" />
+  </ItemGroup>
+  <!--
+    Stray build-output folders committed to the repo (bin-agent, and two siblings whose
+    names came from malformed `dotnet build -o` invocations) are not named exactly "bin",
+    so the default globs do NOT exclude them. That meant
+    bin-agent/obj/Debug/net8.0/Babesiosis.Core.Functions.GlobalUsings.g.cs was compiled
+    alongside the real one, giving two `global using ExecutionContext` aliases and
+    breaking the build with CS1537.
+
+    This guard makes the exclusion explicit rather than depending on folder naming. The
+    real fix is to delete those folders from the repository; this only stops them
+    breaking the build in the meantime.
+  -->
+  <ItemGroup>
+    <Compile Remove="bin-agent/**" />
+    <Compile Remove="bin-agent *//**" />
+    <None Remove="bin-agent/**" />
+    <None Remove="bin-agent *//**" />
+  </ItemGroup>
+</Project>

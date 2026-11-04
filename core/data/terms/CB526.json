@@ -1,0 +1,111 @@
+{
+ "id": "CB526",
+ "document": "data/markdown/CB526.md",
+ "source_format": "abstract",
+ "translated": false,
+ "words": 115,
+ "run_utc": "2026-10-30T05:36:49+00:00",
+ "threshold": 0.85,
+ "kept_types": [
+  "T019",
+  "T020",
+  "T037",
+  "T046",
+  "T047",
+  "T048",
+  "T049",
+  "T050",
+  "T184",
+  "T190",
+  "T191"
+ ],
+ "term_count": 5,
+ "terms": [
+  {
+   "term": "C0030486",
+   "concept": "Paraplegia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "abstract": 2,
+    "title": 1
+   },
+   "forms": {
+    "paraplegia": 3
+   },
+   "best_score": 0.98
+  },
+  {
+   "term": "C0004576",
+   "concept": "Babesiosis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "abstract": 1
+   },
+   "forms": {
+    "babesiosis": 1
+   },
+   "best_score": 0.972
+  },
+  {
+   "term": "C0015967",
+   "concept": "Fever",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "abstract": 1
+   },
+   "forms": {
+    "fever": 1
+   },
+   "best_score": 0.962
+  },
+  {
+   "term": "C0020615",
+   "concept": "Hypoglycemia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "abstract": 1
+   },
+   "forms": {
+    "hypoglycaemia": 1
+   },
+   "best_score": 0.987
+  },
+  {
+   "term": "C0232462",
+   "concept": "Decrease in appetite",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "abstract": 1
+   },
+   "forms": {
+    "inappetence": 1
+   },
+   "best_score": 0.978
+  }
+ ]
+}

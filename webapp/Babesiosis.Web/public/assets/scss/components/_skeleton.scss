@@ -1,0 +1,30 @@
+//
+// _skeleton.scss
+//
+
+/* Skeleton loading styles */
+.skeleton {
+  background: linear-gradient( 90deg, var(--bg-light) 25%, var(--border-light) 50%, var(--bg-light) 75% );
+  background-size: 200% 100%;
+  animation: loading 1.5s ease-in-out infinite;
+  border-radius: 4px;
+}
+
+.skeleton-circle {
+  border-radius: 50%;
+}
+
+.skeleton-text,
+.skeleton-icon {
+  border-radius: 4px;
+}
+
+@keyframes loading {
+  0% {
+    background-position: 200% 0;
+  }
+
+  100% {
+    background-position: -200% 0;
+  }
+}

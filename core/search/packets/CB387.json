@@ -1,0 +1,56 @@
+{
+ "id": "CB387",
+ "filename": "CB387_2010_analysis-haematological-abnormalities-observed-infected-large.md",
+ "key": "https://openalex.org/W842154334",
+ "record": {
+  "pmid": null,
+  "pmcid": null,
+  "doi": null,
+  "title": "Analysis of haematological abnormalities observed in dogs infected by a large Babesia.",
+  "journal": null,
+  "authors": [
+   "M. Fabisiak",
+   "Rafał A. Sapierzyński",
+   "W. Kluciński"
+  ],
+  "first_pub_date": "2010-01-01",
+  "type": "article",
+  "language": [
+   "en"
+  ],
+  "abstract": "The aim of presented study was a statistical analysis of haematological abnormalities in cases of canine babesiosis, especially according to age and breed of animals. Data submitted to analysis consisted of 350 haematological results from dogs that were diagnosed as Babesia positive, based on May-Grunwald-Giemsa stained blood smears. Haematology tests (erythrocyte, leukocyte, and platelet parameters) were performed on automated analyser. Haematological parameters that showed abnormalities were submitted to the statistical analysis with the group division based on animals’ age and breed. It was found that the most significant haematological abnormality in the course of babesiosis is thrombocytopoenia, less severe abnormalities included anaemia, leukopoenias (both neutropoenia and lymphopoenia), moreover bior pancytopoenia were noted more seldom. Additionally, significant differences of PCV value between the group of young animals and both groups of adult and old animals were observed, and also in case of WBC value significant difference between German shepherds and mongrels were noted.",
+  "abstract_source": "OpenAlex abstract_inverted_index (reconstructed)",
+  "source_id": "https://openalex.org/W842154334",
+  "src": "OPENALEX",
+  "found_by": [
+   "OA:title_and_abstract"
+  ],
+  "in_window": true,
+  "key": "https://openalex.org/W842154334",
+  "source_files": [
+   "candidates_r3.jsonl"
+  ]
+ },
+ "screening": {
+  "key": "https://openalex.org/W842154334",
+  "decision": "include",
+  "include_type": "primary",
+  "exclude_reason": null,
+  "primary_category": "ERY",
+  "secondary_tags": [
+   "COA",
+   "INF"
+  ],
+  "species": "Large Babesia (suspected, smear only)",
+  "rationale": "Analysis of 350 haematology results from smear-positive dogs: thrombocytopenia, anaemia, leukopenias and pancytopenia, by age and breed. This is a clinicopathological profile of infected dogs.",
+  "stage": "screen",
+  "batch": "r4_08.md",
+  "screening_round": "r4"
+ },
+ "fulltext_check": {
+  "key": "https://openalex.org/W842154334",
+  "pmcid": null,
+  "checked": "2026-10-28",
+  "fulltext_status": "no_pmcid"
+ }
+}

@@ -1,0 +1,68 @@
+{
+ "id": "CB394",
+ "filename": "CB394_2010_malondialdehyde-levels-serum-infected-babesia-canis.md",
+ "key": "DOI:10.17221/77/2010-vetmed",
+ "record": {
+  "pmid": null,
+  "doi": "10.17221/77/2010-vetmed",
+  "title": "Malondialdehyde levels in serum of dogs infected with Babesia canis",
+  "journal": "Veterinární medicína",
+  "first_pub_date": "2010-04-30",
+  "year": "2010",
+  "abstract": "Babesiosis is a common tick born disease of dogs in tropical and subtropical regions of the world caused by different species of Babesia. The aim of the present study was to confirm the presence of oxidative stress by examining serum malondialdehyde (MDA), an end product of lipid peroxidation, in 35 dogs naturally infected with Babesia canis (B. canis). MDA was examined in 14 healthy dogs as well. Blood smears were prepared from peripheral blood and they showed the presence of B. canis in infected dogs. B. canis was confirmed using the PCR (Polymerase chain reaction) method. On the basis of clinical and laboratory data the 35 infected dogs were clinically classified into two groups, complicated (seven dogs) and uncomplicated (28 dogs). The noted complications were renal dysfunction (5/7), hepatic dysfunction (3/7), muscular involvement (2/7) and ARDS (1/7). Levels of blood urea nitrogen concentration (BUN), creatinin, total bilirubin, alanin aminotranspherase (ALT), alkaline phosphatase (AP), and gammaglutamil aminotranspherase (GGT) were significantly increased in dogs with complicated versus uncomplicated babesiosis. Furthermore the uncomplicated group of dogs was, depending on the severity of anaemia, classified as suffering from severe, moderate or mild disease. Levels of serum MDA were significantly higher in sick dogs (36.90 μmol/l ± 13.95) than healthy animals (8.13 μmol/l ± 1.78). There was no significant statistical difference in serum MDA levels between dogs with complicated (38.48 μmol/l ± 12.11) and uncomplicated babesiosis (36.50 μmol/l ± 14.55). Comparison of the groups based on the severity of anaemia showed that there was no significant statistical difference in serum MDA levels between them. The study demonstrated the involvement of oxidative damage in dogs naturally infected with B. canis.",
+  "found_by": [
+   "OA:title_and_abstract",
+   "citation:backward:34472506",
+   "citation:backward:37643565"
+  ],
+  "unresolved": false,
+  "source_id": "REF:malondialdehydelevelsinserumofdogsinfectedwithbabesiacanis",
+  "key": "DOI:10.17221/77/2010-vetmed",
+  "source_files": [
+   "candidates_r2.jsonl",
+   "candidates_r3.jsonl"
+  ],
+  "authors": [
+   "Martina Crnogaj",
+   "Roberta Petlevski",
+   "Vladimir Mrljak",
+   "István Emil Kis",
+   "Marin Torti",
+   "Nada Kučer",
+   "Vesna Matijatko",
+   "I. Sacer",
+   "Igor Štoković"
+  ],
+  "type": "article",
+  "language": [
+   "cs"
+  ],
+  "abstract_source": "OpenAlex abstract_inverted_index (reconstructed)",
+  "src": "OPENALEX",
+  "in_window": true
+ },
+ "screening": {
+  "key": "DOI:10.17221/77/2010-vetmed",
+  "decision": "include",
+  "include_type": "primary",
+  "exclude_reason": null,
+  "primary_category": "OXO",
+  "secondary_tags": [
+   "SEV",
+   "REN",
+   "MET",
+   "ERY"
+  ],
+  "species": "B. canis (confirmed, smear and PCR)",
+  "rationale": "Serum malondialdehyde measured in 35 naturally infected dogs against 14 controls and compared across complicated, uncomplicated and anaemia-severity groups, showing oxidative damage.",
+  "stage": "screen",
+  "batch": "r4_09.md",
+  "screening_round": "r4"
+ },
+ "fulltext_check": {
+  "key": "DOI:10.17221/77/2010-vetmed",
+  "pmcid": null,
+  "checked": "2026-10-28",
+  "fulltext_status": "no_pmcid"
+ }
+}

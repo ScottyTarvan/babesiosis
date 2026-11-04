@@ -1,0 +1,129 @@
+{
+ "id": "HU016",
+ "document": "data/markdown/HU016.md",
+ "source_format": "abstract",
+ "translated": false,
+ "words": 295,
+ "run_utc": "2026-10-30T05:37:15+00:00",
+ "threshold": 0.85,
+ "kept_types": [
+  "T019",
+  "T020",
+  "T037",
+  "T046",
+  "T047",
+  "T048",
+  "T049",
+  "T050",
+  "T184",
+  "T190",
+  "T191"
+ ],
+ "term_count": 6,
+ "terms": [
+  {
+   "term": "C0035222",
+   "concept": "Respiratory Distress Syndrome, Adult",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 10,
+   "mentions_negated": 3,
+   "mentions_affirmed": 7,
+   "sections": {
+    "abstract": 10
+   },
+   "forms": {
+    "ards": 10
+   },
+   "best_score": 0.991
+  },
+  {
+   "term": "C0004576",
+   "concept": "Babesiosis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 4,
+   "mentions_negated": 0,
+   "mentions_affirmed": 4,
+   "sections": {
+    "abstract": 3,
+    "title": 1
+   },
+   "forms": {
+    "babesiosis": 4
+   },
+   "best_score": 0.972
+  },
+  {
+   "term": "C0476273",
+   "concept": "Respiratory distress",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "title": 1,
+    "abstract": 1
+   },
+   "forms": {
+    "respiratory distress": 2
+   },
+   "best_score": 0.991
+  },
+  {
+   "term": "C0009566",
+   "concept": "Complication",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "abstract": 1
+   },
+   "forms": {
+    "complication": 1
+   },
+   "best_score": 0.97
+  },
+  {
+   "term": "C0010340",
+   "concept": "Critical Illness",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "abstract": 1
+   },
+   "forms": {
+    "critically ill": 1
+   },
+   "best_score": 0.982
+  },
+  {
+   "term": "C1514893",
+   "concept": "physiologic resolution",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 1,
+   "mentions_affirmed": 0,
+   "sections": {
+    "abstract": 1
+   },
+   "forms": {
+    "resolution": 1
+   },
+   "best_score": 0.971
+  }
+ ]
+}

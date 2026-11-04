@@ -1,0 +1,94 @@
+{
+ "id": "CB413",
+ "filename": "CB413_2011_detection-anti-babesia-gibsoni-heat-shock.md",
+ "key": "PMID:21454016",
+ "record": {
+  "pmid": "21454016",
+  "pmcid": null,
+  "doi": "10.1016/j.vetpar.2011.03.006",
+  "title": "Detection of anti-Babesia gibsoni heat shock protein 70 antibody and anti-canine heat shock protein 70 antibody in sera from Babesia gibsoni-infected dogs.",
+  "authors": [
+   "Yamasaki M",
+   "Ishida M",
+   "Nakamura K",
+   "Sasaki N",
+   "Murakami M",
+   "Kumara WR",
+   "Tamura Y",
+   "Lim SY",
+   "Ohta H",
+   "Takiguchi M"
+  ],
+  "journal": "Veterinary parasitology",
+  "journal_abbrev": "Vet Parasitol",
+  "volume": "180",
+  "issue": "3-4",
+  "pages": "215-25",
+  "language": [
+   "eng"
+  ],
+  "issue_date": "2011-08-25",
+  "issue_date_precision": "day",
+  "epub_date": "2011-03-12",
+  "pubmed_entry_date": "2011-04-02",
+  "first_pub_date": "2011-03-12",
+  "publication_types": [
+   "Journal Article",
+   "Research Support, Non-U.S. Gov't"
+  ],
+  "mesh": [
+   "Amino Acid Sequence",
+   "Animals",
+   "Antibodies, Protozoan",
+   "Babesia",
+   "Babesiosis",
+   "Cloning, Molecular",
+   "Dog Diseases",
+   "Dogs",
+   "HSP70 Heat-Shock Proteins",
+   "Male",
+   "Molecular Sequence Data"
+  ],
+  "keywords": [],
+  "abstract": "Antibodies that recognized either Babesia gibsoni or canine red blood cell (RBC) 70-kilodalton (kDa) protein were detected in serum from acutely and chronically B. gibsoni-infected. In those sera, antibodies that reacted with recombinant B. gibsoni and canine heat shock protein 70 (rBgHsp70 and rcHsp70) were detected; therefore, B. gibsoni and canine RBC 70-kDa proteins seemed to be BgHsp70 and cHsp70, respectively. In infected dogs, the amounts of these antibodies increased after infection. Interestingly, polyclonal antibody raised against rBgHsp70 in two rabbits reacted not only with rBgHsp70 but also with rcHsp70 and native cHsp70 from canine RBCs. Because BgHsp70 showed high homology with cHsp70 (70.8%), anti-rBgHsp70 antibody might cross-react with cHsp70. Additionally, the localizations of both BgHsp70 and cHsp70 were observed by indirect fluorescence assay. As a result, cHsp70 was not found on the membrane surface of erythrocytes, suggesting that erythrocytes would not be targets of anti-cHsp70 antibody. Meanwhile, only exoerythrocytic parasites were stained by anti-rBgHsp70 antibody. This result showed that BgHsp70 would be expressed on the surface of parasites during the exoerythrocytic stage. These results indicated that BgHsp70 was a highly immunogenic protein in canine B. gibsoni infection, and that exoerythrocytic parasites might be targets of anti-BgHsp70 antibody.",
+  "corrections": [],
+  "epmc_first_pub_date": "2011-03-12",
+  "is_oa": "N",
+  "has_suppl": "N",
+  "found_by": [
+   "EP1_broad",
+   "EP2_species",
+   "PM1_broad",
+   "PM2_species",
+   "PM3_mechanism"
+  ],
+  "in_window": true,
+  "online_vs_issue": "online 2011-03-12; issue 2011-08-25 (day)",
+  "key": "PMID:21454016",
+  "source_files": [
+   "candidates.jsonl"
+  ]
+ },
+ "screening": {
+  "key": "PMID:21454016",
+  "decision": "include",
+  "include_type": "primary",
+  "exclude_reason": null,
+  "primary_category": "INF",
+  "secondary_tags": [
+   "ERY",
+   "OXO"
+  ],
+  "species": "B. gibsoni (confirmed, experimental and natural infection)",
+  "rationale": "Reports the antibody response against parasite and canine Hsp70 in acutely and chronically infected dogs, including possible autoantibody cross-reactivity; host immune-response data.",
+  "stage": "screen",
+  "batch": "r4_11.md",
+  "screening_round": "r4"
+ },
+ "fulltext_check": {
+  "key": "PMID:21454016",
+  "pmcid": null,
+  "checked": "2026-10-28",
+  "fulltext_status": "no_pmcid"
+ }
+}

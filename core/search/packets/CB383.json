@@ -1,0 +1,57 @@
+{
+ "id": "CB383",
+ "filename": "CB383_2010_cerebral-babesiosis-case-report.md",
+ "key": "https://openalex.org/W1483496485",
+ "record": {
+  "pmid": null,
+  "pmcid": null,
+  "doi": null,
+  "title": "Cerebral babesiosis in a dog: a case report.",
+  "journal": "The Indian journal of veterinary sciences and biotechnology",
+  "authors": [
+   "R. Suresh",
+   "A. Arun Prasad",
+   "Sushmeeka Nair Prathaban",
+   "M. Shiju Simon",
+   "Chidambaram Balachandran"
+  ],
+  "first_pub_date": "2010-01-01",
+  "type": "article",
+  "language": [
+   "en"
+  ],
+  "abstract": "Babesiosis is caused by intraerythrocytic protozoan parasites of the genus Babesia. A wide range of domestic and wild animals and occasionally man are affected by this disease which is transmitted by ticks and has a world wide distribution. B. gibsoni is a small (2.5 µm), ring-shaped organism and characteristically causes a chronic disease, with progressive anemia as the main sign, in most infected adult dogs and transmitted by brown dog tick Rhiphicephalus sangueinus which is common in Africa and Asia. Cerebral form of babesiosis is limited which involves multiorgan failure. The clinical management of a case of cerebral babesiosis in a dog is presented here.",
+  "abstract_source": "OpenAlex abstract_inverted_index (reconstructed)",
+  "source_id": "https://openalex.org/W1483496485",
+  "src": "OPENALEX",
+  "found_by": [
+   "OA:title_and_abstract"
+  ],
+  "in_window": true,
+  "key": "https://openalex.org/W1483496485",
+  "source_files": [
+   "candidates_r3.jsonl"
+  ]
+ },
+ "screening": {
+  "key": "https://openalex.org/W1483496485",
+  "decision": "include",
+  "include_type": "case_report",
+  "exclude_reason": null,
+  "primary_category": "NEU",
+  "secondary_tags": [
+   "SEV"
+  ],
+  "species": "B. gibsoni (suspected, from abstract text)",
+  "rationale": "Case report of cerebral babesiosis with multiorgan failure, a distinct syndrome named in the criteria. The abstract gives few details, so this is a borderline include.",
+  "stage": "screen",
+  "batch": "r4_08.md",
+  "screening_round": "r4"
+ },
+ "fulltext_check": {
+  "key": "https://openalex.org/W1483496485",
+  "pmcid": null,
+  "checked": "2026-10-28",
+  "fulltext_status": "no_pmcid"
+ }
+}

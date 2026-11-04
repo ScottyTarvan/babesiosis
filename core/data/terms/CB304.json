@@ -1,0 +1,767 @@
+{
+ "id": "CB304",
+ "document": "data/markdown/CB304.md",
+ "source_format": "pdf",
+ "translated": false,
+ "words": 4317,
+ "run_utc": "2026-10-30T05:35:58+00:00",
+ "threshold": 0.85,
+ "kept_types": [
+  "T019",
+  "T020",
+  "T037",
+  "T046",
+  "T047",
+  "T048",
+  "T049",
+  "T050",
+  "T184",
+  "T190",
+  "T191"
+ ],
+ "term_count": 42,
+ "terms": [
+  {
+   "term": "C0004576",
+   "concept": "Babesiosis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 47,
+   "mentions_negated": 2,
+   "mentions_affirmed": 45,
+   "sections": {
+    "results_discussion": 33,
+    "conclusion": 10,
+    "introduction": 3,
+    "abstract": 1
+   },
+   "forms": {
+    "babesiosis": 47
+   },
+   "best_score": 0.972
+  },
+  {
+   "term": "C0085399",
+   "concept": "Ehrlichiosis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 36,
+   "mentions_negated": 1,
+   "mentions_affirmed": 35,
+   "sections": {
+    "results_discussion": 30,
+    "conclusion": 4,
+    "abstract": 1,
+    "introduction": 1
+   },
+   "forms": {
+    "ehrlichiosis": 36
+   },
+   "best_score": 0.952
+  },
+  {
+   "term": "C0040034",
+   "concept": "Thrombocytopenia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 20,
+   "mentions_negated": 0,
+   "mentions_affirmed": 20,
+   "sections": {
+    "results_discussion": 14,
+    "conclusion": 3,
+    "introduction": 2,
+    "abstract": 1
+   },
+   "forms": {
+    "thrombocytopenia": 18,
+    "thrombocytopenic": 1,
+    "thrombocytopaenia": 1
+   },
+   "best_score": 0.98
+  },
+  {
+   "term": "C0015967",
+   "concept": "Fever",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 7,
+   "mentions_negated": 0,
+   "mentions_affirmed": 7,
+   "sections": {
+    "results_discussion": 6,
+    "abstract": 1
+   },
+   "forms": {
+    "fever": 5,
+    "pyrexia": 2
+   },
+   "best_score": 0.98
+  },
+  {
+   "term": "C0009450",
+   "concept": "Communicable Diseases",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 6,
+   "mentions_negated": 0,
+   "mentions_affirmed": 6,
+   "sections": {
+    "conclusion": 4,
+    "abstract": 2
+   },
+   "forms": {
+    "infection": 6
+   },
+   "best_score": 0.962
+  },
+  {
+   "term": "C0851162",
+   "concept": "Infections of musculoskeletal system",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 6,
+   "mentions_negated": 0,
+   "mentions_affirmed": 6,
+   "sections": {
+    "results_discussion": 3,
+    "conclusion": 2,
+    "abstract": 1
+   },
+   "forms": {
+    "infections": 6
+   },
+   "best_score": 0.971
+  },
+  {
+   "term": "C0012634",
+   "concept": "Disease",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 4,
+   "mentions_negated": 2,
+   "mentions_affirmed": 2,
+   "sections": {
+    "results_discussion": 3,
+    "introduction": 1
+   },
+   "forms": {
+    "disorder": 2,
+    "disease": 1,
+    "disorders": 1
+   },
+   "best_score": 0.995
+  },
+  {
+   "term": "C0014591",
+   "concept": "Epistaxis",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 4,
+   "mentions_negated": 0,
+   "mentions_affirmed": 4,
+   "sections": {
+    "results_discussion": 3,
+    "abstract": 1
+   },
+   "forms": {
+    "epistaxis": 4
+   },
+   "best_score": 0.976
+  },
+  {
+   "term": "C0022346",
+   "concept": "Icterus",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 4,
+   "mentions_negated": 0,
+   "mentions_affirmed": 4,
+   "sections": {
+    "results_discussion": 4
+   },
+   "forms": {
+    "icteric": 3,
+    "jaundice": 1
+   },
+   "best_score": 0.958
+  },
+  {
+   "term": "C0003123",
+   "concept": "Anorexia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "results_discussion": 2,
+    "introduction": 1
+   },
+   "forms": {
+    "anorexia": 3
+   },
+   "best_score": 0.969
+  },
+  {
+   "term": "C0023380",
+   "concept": "Lethargy",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "results_discussion": 2,
+    "introduction": 1
+   },
+   "forms": {
+    "lethargy": 3
+   },
+   "best_score": 0.987
+  },
+  {
+   "term": "C0497156",
+   "concept": "Lymphadenopathy",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "results_discussion": 3
+   },
+   "forms": {
+    "lymphadenopathy": 3
+   },
+   "best_score": 0.99
+  },
+  {
+   "term": "C0683278",
+   "concept": "Mental Suffering",
+   "semantic_types": [
+    "Mental or Behavioral Dysfunction"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "results_discussion": 2,
+    "methods": 1
+   },
+   "forms": {
+    "suffering": 3
+   },
+   "best_score": 0.94
+  },
+  {
+   "term": "C0002871",
+   "concept": "Anemia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "results_discussion": 2
+   },
+   "forms": {
+    "anemia": 2
+   },
+   "best_score": 0.974
+  },
+  {
+   "term": "C0005779",
+   "concept": "Blood Coagulation Disorders",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "introduction": 1,
+    "conclusion": 1
+   },
+   "forms": {
+    "hemostatic disorder": 1,
+    "bleeding disorders": 1
+   },
+   "best_score": 0.988
+  },
+  {
+   "term": "C0019080",
+   "concept": "Hemorrhage",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "introduction": 1,
+    "results_discussion": 1
+   },
+   "forms": {
+    "hemorrhage": 1,
+    "bleeding": 1
+   },
+   "best_score": 0.99
+  },
+  {
+   "term": "C0025222",
+   "concept": "Melena",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "results_discussion": 2
+   },
+   "forms": {
+    "melena": 2
+   },
+   "best_score": 0.988
+  },
+  {
+   "term": "C0151854",
+   "concept": "Abnormal platelets",
+   "semantic_types": [
+    "Cell or Molecular Dysfunction"
+   ],
+   "mentions": 2,
+   "mentions_negated": 2,
+   "mentions_affirmed": 0,
+   "sections": {
+    "results_discussion": 2
+   },
+   "forms": {
+    "platelet abnormalities": 2
+   },
+   "best_score": 0.988
+  },
+  {
+   "term": "C0278144",
+   "concept": "Dull pain",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "results_discussion": 2
+   },
+   "forms": {
+    "dull": 2
+   },
+   "best_score": 0.995
+  },
+  {
+   "term": "C0002878",
+   "concept": "Anemia, Hemolytic",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "haemolytic anaemia": 1
+   },
+   "best_score": 0.98
+  },
+  {
+   "term": "C0003962",
+   "concept": "Ascites",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results_discussion": 1
+   },
+   "forms": {
+    "ascites": 1
+   },
+   "best_score": 0.989
+  },
+  {
+   "term": "C0004093",
+   "concept": "Asthenia",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results_discussion": 1
+   },
+   "forms": {
+    "weakness": 1
+   },
+   "best_score": 0.975
+  },
+  {
+   "term": "C0008149",
+   "concept": "Chlamydia Infections",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "conclusion": 1
+   },
+   "forms": {
+    "chlamydial diseases": 1
+   },
+   "best_score": 0.897
+  },
+  {
+   "term": "C0009402",
+   "concept": "Colorectal Carcinoma",
+   "semantic_types": [
+    "Neoplastic Process"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "conclusion": 1
+   },
+   "forms": {
+    "crc": 1
+   },
+   "best_score": 0.966
+  },
+  {
+   "term": "C0011570",
+   "concept": "Mental Depression",
+   "semantic_types": [
+    "Mental or Behavioral Dysfunction"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results_discussion": 1
+   },
+   "forms": {
+    "depression": 1
+   },
+   "best_score": 0.97
+  },
+  {
+   "term": "C0011991",
+   "concept": "Diarrhea",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results_discussion": 1
+   },
+   "forms": {
+    "diarrhea": 1
+   },
+   "best_score": 0.983
+  },
+  {
+   "term": "C0018965",
+   "concept": "Hematuria",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results_discussion": 1
+   },
+   "forms": {
+    "hematuria": 1
+   },
+   "best_score": 0.994
+  },
+  {
+   "term": "C0019054",
+   "concept": "Hemolysis (disorder)",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results_discussion": 1
+   },
+   "forms": {
+    "haemolysis": 1
+   },
+   "best_score": 0.989
+  },
+  {
+   "term": "C0022661",
+   "concept": "Kidney Failure, Chronic",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "conclusion": 1
+   },
+   "forms": {
+    "chronic renal failure": 1
+   },
+   "best_score": 0.969
+  },
+  {
+   "term": "C0023530",
+   "concept": "Leukopenia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results_discussion": 1
+   },
+   "forms": {
+    "leucopenia": 1
+   },
+   "best_score": 0.987
+  },
+  {
+   "term": "C0035078",
+   "concept": "Kidney Failure",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results_discussion": 1
+   },
+   "forms": {
+    "renal failure": 1
+   },
+   "best_score": 0.96
+  },
+  {
+   "term": "C0035585",
+   "concept": "Rickettsia Infections",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "conclusion": 1
+   },
+   "forms": {
+    "rickettsioses": 1
+   },
+   "best_score": 0.974
+  },
+  {
+   "term": "C0080194",
+   "concept": "Muscle strain",
+   "semantic_types": [
+    "Injury or Poisoning"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "conclusion": 1
+   },
+   "forms": {
+    "strains": 1
+   },
+   "best_score": 0.991
+  },
+  {
+   "term": "C0162700",
+   "concept": "Tick-Borne Diseases",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results_discussion": 1
+   },
+   "forms": {
+    "tick-borne diseases": 1
+   },
+   "best_score": 0.951
+  },
+  {
+   "term": "C0232462",
+   "concept": "Decrease in appetite",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results_discussion": 1
+   },
+   "forms": {
+    "inappetence": 1
+   },
+   "best_score": 0.978
+  },
+  {
+   "term": "C0242781",
+   "concept": "disease transmission",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "transmitted": 1
+   },
+   "best_score": 0.972
+  },
+  {
+   "term": "C0341192",
+   "concept": "Uremic gastritis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results_discussion": 1
+   },
+   "forms": {
+    "uremic gastritis": 1
+   },
+   "best_score": 0.989
+  },
+  {
+   "term": "C0344315",
+   "concept": "Depressed mood",
+   "semantic_types": [
+    "Mental or Behavioral Dysfunction"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results_discussion": 1
+   },
+   "forms": {
+    "depressed": 1
+   },
+   "best_score": 0.981
+  },
+  {
+   "term": "C1260402",
+   "concept": "splenic sequestration",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "splenic sequestration": 1
+   },
+   "best_score": 0.962
+  },
+  {
+   "term": "C1260880",
+   "concept": "Rhinorrhea",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results_discussion": 1
+   },
+   "forms": {
+    "nasal discharge": 1
+   },
+   "best_score": 0.983
+  },
+  {
+   "term": "C4282165",
+   "concept": "Swollen Lymph Node",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results_discussion": 1
+   },
+   "forms": {
+    "enlarged lymph nodes": 1
+   },
+   "best_score": 0.971
+  },
+  {
+   "term": "C5545294",
+   "concept": "Chronic Condition",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "chronic conditions": 1
+   },
+   "best_score": 0.981
+  }
+ ]
+}

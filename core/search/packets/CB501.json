@@ -1,0 +1,55 @@
+{
+ "id": "CB501",
+ "filename": "CB501_2015_assessment-renal-function-using-cystatin-c.md",
+ "key": "DOI:10.1515/acve-2015-0004",
+ "record": {
+  "pmid": null,
+  "pmcid": null,
+  "doi": "10.1515/acve-2015-0004",
+  "title": "Assessment Of Renal Function Using Canine Cystatin-C Levels In Canine Babesiosis And Ehrlichiosis",
+  "journal": "Acta veterinaria",
+  "authors": [
+   "Didem Pekmezci",
+   "URAL Kerem",
+   "Nuran Aysul",
+   "Murat GÜZEL",
+   "Gülay Çiftçi"
+  ],
+  "first_pub_date": "2015-03-01",
+  "type": "article",
+  "language": [
+   "en"
+  ],
+  "abstract": "Abstract The purpose of the present study was to evaluate serum canine Cystatin-C (Cys-C) concentration for the prediction of renal function (RF) in dogs naturally infected with Babesia canis vogeli and Ehrlichia canis. A total of 46 dogs were enrolled into three groups. Group B included 16 dogs naturally infected with B. c. vogeli, group E 10 dogs naturally infected with E. canis [dogs diagnosed as canine monocytic ehrlichiosis (CME)], and group H involved 20 healthy controls (negative for B. c. vogeli and E. canis). Solely dogs presenting uncomplicated babesiosis caused by B. c. vogeli were enrolled. Serum urea and serum creatinine (Cre) levels with serum Urea:Cre ratios were analyzed. Canine serum Cys-C was determined with a species-specific commercially available and validated ELISA assay as a reference. Mean serum Cys-C levels were 5.28 mg/L, 3.02 mg/L, and 2.30 mg/L for groups B, E and H, respectively. RF in uncomplicated CB caused by B. c. vogeli seems to be affected based on serum Cys-C concentrations. To the author's knowledge, this is the first study reporting that mean serum canine Cys-C levels in dogs with CME demonstrated no elevation. Serum canine Cys-C as a novel RF marker could be used for early detection of renal injury in both babesiosis and CME.",
+  "abstract_source": "OpenAlex abstract_inverted_index (reconstructed)",
+  "source_id": "https://openalex.org/W2182834090",
+  "src": "OPENALEX",
+  "found_by": [
+   "OA:title_and_abstract"
+  ],
+  "in_window": true,
+  "key": "DOI:10.1515/acve-2015-0004",
+  "source_files": [
+   "candidates_r3.jsonl"
+  ]
+ },
+ "screening": {
+  "key": "DOI:10.1515/acve-2015-0004",
+  "decision": "include",
+  "include_type": "primary",
+  "exclude_reason": null,
+  "primary_category": "REN",
+  "secondary_tags": [],
+  "species": "B. canis vogeli (naturally infected, uncomplicated cases)",
+  "rationale": "Serum cystatin-C, urea and creatinine in 16 infected dogs against E. canis-infected dogs and healthy controls. Cystatin-C is raised in babesiosis, indicating renal injury.",
+  "stage": "screen",
+  "batch": "r4_24.md",
+  "screening_round": "r4"
+ },
+ "fulltext_check": {
+  "key": "DOI:10.1515/acve-2015-0004",
+  "pmcid": null,
+  "checked": "2026-10-28",
+  "fulltext_status": "no_pmcid"
+ }
+}

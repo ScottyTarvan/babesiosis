@@ -1,0 +1,202 @@
+{
+ "id": "CB135",
+ "document": "data/markdown/CB135.md",
+ "source_format": "jats_xml",
+ "translated": false,
+ "words": 4629,
+ "run_utc": "2026-10-30T05:34:34+00:00",
+ "threshold": 0.85,
+ "kept_types": [
+  "T019",
+  "T020",
+  "T037",
+  "T046",
+  "T047",
+  "T048",
+  "T049",
+  "T050",
+  "T184",
+  "T190",
+  "T191"
+ ],
+ "term_count": 10,
+ "terms": [
+  {
+   "term": "C0004576",
+   "concept": "Babesiosis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 4,
+   "mentions_negated": 0,
+   "mentions_affirmed": 4,
+   "sections": {
+    "introduction": 3,
+    "abstract": 1
+   },
+   "forms": {
+    "babesiosis": 4
+   },
+   "best_score": 0.972
+  },
+  {
+   "term": "C0009450",
+   "concept": "Communicable Diseases",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 4,
+   "mentions_negated": 0,
+   "mentions_affirmed": 4,
+   "sections": {
+    "introduction": 2,
+    "abstract": 1,
+    "results": 1
+   },
+   "forms": {
+    "infection": 3,
+    "infectious disease": 1
+   },
+   "best_score": 0.977
+  },
+  {
+   "term": "C0242606",
+   "concept": "Oxidative Stress",
+   "semantic_types": [
+    "Cell or Molecular Dysfunction"
+   ],
+   "mentions": 4,
+   "mentions_negated": 0,
+   "mentions_affirmed": 4,
+   "sections": {
+    "abstract": 2,
+    "title": 1,
+    "introduction": 1
+   },
+   "forms": {
+    "oxidative stress": 4
+   },
+   "best_score": 0.985
+  },
+  {
+   "term": "C0027627",
+   "concept": "Neoplasm Metastasis",
+   "semantic_types": [
+    "Neoplastic Process"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "discussion": 2
+   },
+   "forms": {
+    "secondary": 2
+   },
+   "best_score": 0.985
+  },
+  {
+   "term": "C0242781",
+   "concept": "disease transmission",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "introduction": 2
+   },
+   "forms": {
+    "transmitted": 2
+   },
+   "best_score": 0.972
+  },
+  {
+   "term": "C5392203",
+   "concept": "Oxidative Damage",
+   "semantic_types": [
+    "Cell or Molecular Dysfunction"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "abstract": 1,
+    "results": 1
+   },
+   "forms": {
+    "oxidative damage": 2
+   },
+   "best_score": 0.981
+  },
+  {
+   "term": "C0005658",
+   "concept": "bite injury",
+   "semantic_types": [
+    "Injury or Poisoning"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "bites": 1
+   },
+   "best_score": 0.982
+  },
+  {
+   "term": "C0012634",
+   "concept": "Disease",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "disease": 1
+   },
+   "best_score": 0.987
+  },
+  {
+   "term": "C0033770",
+   "concept": "Prune Belly Syndrome",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "abbreviations": 1
+   },
+   "forms": {
+    "pbs": 1
+   },
+   "best_score": 0.988
+  },
+  {
+   "term": "C1269955",
+   "concept": "Tumor Cell Invasion",
+   "semantic_types": [
+    "Neoplastic Process"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "invasion": 1
+   },
+   "best_score": 0.944
+  }
+ ]
+}

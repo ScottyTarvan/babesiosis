@@ -1,0 +1,441 @@
+{
+ "id": "CB202",
+ "document": "data/markdown/CB202.md",
+ "source_format": "pdf",
+ "translated": false,
+ "words": 3306,
+ "run_utc": "2026-10-30T05:35:10+00:00",
+ "threshold": 0.85,
+ "kept_types": [
+  "T019",
+  "T020",
+  "T037",
+  "T046",
+  "T047",
+  "T048",
+  "T049",
+  "T050",
+  "T184",
+  "T190",
+  "T191"
+ ],
+ "term_count": 23,
+ "terms": [
+  {
+   "term": "C0004576",
+   "concept": "Babesiosis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 27,
+   "mentions_negated": 0,
+   "mentions_affirmed": 27,
+   "sections": {
+    "results_discussion": 13,
+    "introduction": 5,
+    "methods": 5,
+    "abstract": 2,
+    "title": 1,
+    "conclusion": 1
+   },
+   "forms": {
+    "babesiosis": 20,
+    "babesia infection": 7
+   },
+   "best_score": 0.972
+  },
+  {
+   "term": "C0009450",
+   "concept": "Communicable Diseases",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 27,
+   "mentions_negated": 1,
+   "mentions_affirmed": 26,
+   "sections": {
+    "results_discussion": 17,
+    "methods": 5,
+    "abstract": 3,
+    "introduction": 1,
+    "conclusion": 1
+   },
+   "forms": {
+    "infection": 27
+   },
+   "best_score": 0.962
+  },
+  {
+   "term": "C0242606",
+   "concept": "Oxidative Stress",
+   "semantic_types": [
+    "Cell or Molecular Dysfunction"
+   ],
+   "mentions": 12,
+   "mentions_negated": 0,
+   "mentions_affirmed": 12,
+   "sections": {
+    "introduction": 4,
+    "results_discussion": 4,
+    "abstract": 2,
+    "methods": 1,
+    "conclusion": 1
+   },
+   "forms": {
+    "oxidative stress": 12
+   },
+   "best_score": 0.985
+  },
+  {
+   "term": "C0012634",
+   "concept": "Disease",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 8,
+   "mentions_negated": 0,
+   "mentions_affirmed": 8,
+   "sections": {
+    "results_discussion": 3,
+    "introduction": 2,
+    "conclusion": 2,
+    "abstract": 1
+   },
+   "forms": {
+    "disease": 7,
+    "diseases": 1
+   },
+   "best_score": 0.987
+  },
+  {
+   "term": "C0001349",
+   "concept": "Acute-Phase Reaction",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "results_discussion": 2,
+    "introduction": 1
+   },
+   "forms": {
+    "acute phase response": 3
+   },
+   "best_score": 0.982
+  },
+  {
+   "term": "C0020517",
+   "concept": "Hypersensitivity",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "results_discussion": 2,
+    "abstract": 1
+   },
+   "forms": {
+    "sensitivity": 3
+   },
+   "best_score": 0.997
+  },
+  {
+   "term": "C0021368",
+   "concept": "Inflammation",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "abstract": 1,
+    "results_discussion": 1,
+    "conclusion": 1
+   },
+   "forms": {
+    "inflammation": 2,
+    "inflammatory reaction": 1
+   },
+   "best_score": 0.969
+  },
+  {
+   "term": "C1155266",
+   "concept": "Inflammatory Response",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "introduction": 2,
+    "abstract": 1
+   },
+   "forms": {
+    "inflammatory response": 3
+   },
+   "best_score": 0.983
+  },
+  {
+   "term": "C0009566",
+   "concept": "Complication",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "methods": 1,
+    "results_discussion": 1
+   },
+   "forms": {
+    "complications": 2
+   },
+   "best_score": 0.977
+  },
+  {
+   "term": "C0027627",
+   "concept": "Neoplasm Metastasis",
+   "semantic_types": [
+    "Neoplastic Process"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "methods": 2
+   },
+   "forms": {
+    "secondary pcr": 2
+   },
+   "best_score": 0.853
+  },
+  {
+   "term": "C0851162",
+   "concept": "Infections of musculoskeletal system",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "introduction": 2
+   },
+   "forms": {
+    "infections": 2
+   },
+   "best_score": 0.971
+  },
+  {
+   "term": "C0002871",
+   "concept": "Anemia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 1,
+   "mentions_affirmed": 0,
+   "sections": {
+    "results_discussion": 1
+   },
+   "forms": {
+    "anaemia": 1
+   },
+   "best_score": 0.977
+  },
+  {
+   "term": "C0002878",
+   "concept": "Anemia, Hemolytic",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "haemolytic anaemia": 1
+   },
+   "best_score": 0.98
+  },
+  {
+   "term": "C0003123",
+   "concept": "Anorexia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "anorexia": 1
+   },
+   "best_score": 0.969
+  },
+  {
+   "term": "C0013491",
+   "concept": "Ecchymosis",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "methods": 1
+   },
+   "forms": {
+    "ecchymosis": 1
+   },
+   "best_score": 0.971
+  },
+  {
+   "term": "C0015967",
+   "concept": "Fever",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "methods": 1
+   },
+   "forms": {
+    "pyrexia": 1
+   },
+   "best_score": 0.98
+  },
+  {
+   "term": "C0018965",
+   "concept": "Hematuria",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "methods": 1
+   },
+   "forms": {
+    "haematuria": 1
+   },
+   "best_score": 0.989
+  },
+  {
+   "term": "C0019080",
+   "concept": "Hemorrhage",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "methods": 1
+   },
+   "forms": {
+    "haemorrhages": 1
+   },
+   "best_score": 0.987
+  },
+  {
+   "term": "C0025222",
+   "concept": "Melena",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "methods": 1
+   },
+   "forms": {
+    "melena": 1
+   },
+   "best_score": 0.988
+  },
+  {
+   "term": "C0242184",
+   "concept": "Hypoxia",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "hypoxia": 1
+   },
+   "best_score": 0.978
+  },
+  {
+   "term": "C0276854",
+   "concept": "Infection by Babesia canis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "canine babesiosis": 1
+   },
+   "best_score": 0.969
+  },
+  {
+   "term": "C0497156",
+   "concept": "Lymphadenopathy",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "methods": 1
+   },
+   "forms": {
+    "lymphadenopathy": 1
+   },
+   "best_score": 0.99
+  },
+  {
+   "term": "C0699748",
+   "concept": "Pathogenesis",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "conclusion": 1
+   },
+   "forms": {
+    "pathogenesis": 1
+   },
+   "best_score": 0.983
+  }
+ ]
+}

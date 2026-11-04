@@ -1,0 +1,367 @@
+{
+ "id": "CB076",
+ "document": "data/markdown/CB076.md",
+ "source_format": "pdf",
+ "translated": false,
+ "words": 2887,
+ "run_utc": "2026-10-30T05:33:44+00:00",
+ "threshold": 0.85,
+ "kept_types": [
+  "T019",
+  "T020",
+  "T037",
+  "T046",
+  "T047",
+  "T048",
+  "T049",
+  "T050",
+  "T184",
+  "T190",
+  "T191"
+ ],
+ "term_count": 19,
+ "terms": [
+  {
+   "term": "C0009450",
+   "concept": "Communicable Diseases",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 14,
+   "mentions_negated": 1,
+   "mentions_affirmed": 13,
+   "sections": {
+    "introduction": 4,
+    "methods": 3,
+    "unlabelled": 2,
+    "discussion": 2,
+    "title": 1,
+    "results": 1,
+    "conclusion": 1
+   },
+   "forms": {
+    "infection": 14
+   },
+   "best_score": 0.962
+  },
+  {
+   "term": "C0004576",
+   "concept": "Babesiosis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 8,
+   "mentions_negated": 1,
+   "mentions_affirmed": 7,
+   "sections": {
+    "discussion": 6,
+    "unlabelled": 2
+   },
+   "forms": {
+    "babesiosis": 8
+   },
+   "best_score": 0.972
+  },
+  {
+   "term": "C0002871",
+   "concept": "Anemia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 4,
+   "mentions_negated": 0,
+   "mentions_affirmed": 4,
+   "sections": {
+    "discussion": 2,
+    "unlabelled": 1,
+    "results": 1
+   },
+   "forms": {
+    "anemia": 4
+   },
+   "best_score": 0.974
+  },
+  {
+   "term": "C0019054",
+   "concept": "Hemolysis (disorder)",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 4,
+   "mentions_negated": 0,
+   "mentions_affirmed": 4,
+   "sections": {
+    "discussion": 2,
+    "unlabelled": 1,
+    "introduction": 1
+   },
+   "forms": {
+    "hemolysis": 4
+   },
+   "best_score": 0.991
+  },
+  {
+   "term": "C0242606",
+   "concept": "Oxidative Stress",
+   "semantic_types": [
+    "Cell or Molecular Dysfunction"
+   ],
+   "mentions": 4,
+   "mentions_negated": 0,
+   "mentions_affirmed": 4,
+   "sections": {
+    "discussion": 2,
+    "unlabelled": 1,
+    "introduction": 1
+   },
+   "forms": {
+    "oxidative stress": 4
+   },
+   "best_score": 0.985
+  },
+  {
+   "term": "C5392203",
+   "concept": "Oxidative Damage",
+   "semantic_types": [
+    "Cell or Molecular Dysfunction"
+   ],
+   "mentions": 4,
+   "mentions_negated": 0,
+   "mentions_affirmed": 4,
+   "sections": {
+    "discussion": 2,
+    "unlabelled": 1,
+    "introduction": 1
+   },
+   "forms": {
+    "oxidative damage": 2,
+    "oxidative injury": 2
+   },
+   "best_score": 0.981
+  },
+  {
+   "term": "C0040034",
+   "concept": "Thrombocytopenia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "unlabelled": 1,
+    "results": 1,
+    "discussion": 1
+   },
+   "forms": {
+    "thrombocytopenia": 3
+   },
+   "best_score": 0.98
+  },
+  {
+   "term": "C0001349",
+   "concept": "Acute-Phase Reaction",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "introduction": 2
+   },
+   "forms": {
+    "apr": 2
+   },
+   "best_score": 0.982
+  },
+  {
+   "term": "C0012634",
+   "concept": "Disease",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "introduction": 2
+   },
+   "forms": {
+    "disease": 2
+   },
+   "best_score": 0.987
+  },
+  {
+   "term": "C0699748",
+   "concept": "Pathogenesis",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 2,
+   "mentions_negated": 1,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1,
+    "discussion": 1
+   },
+   "forms": {
+    "pathogenesis": 2
+   },
+   "best_score": 0.983
+  },
+  {
+   "term": "C0010957",
+   "concept": "Tissue damage",
+   "semantic_types": [
+    "Injury or Poisoning"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "damage": 1
+   },
+   "best_score": 0.987
+  },
+  {
+   "term": "C0014130",
+   "concept": "Endocrine System Diseases",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 1,
+   "mentions_affirmed": 0,
+   "sections": {
+    "methods": 1
+   },
+   "forms": {
+    "endocrinopathies": 1
+   },
+   "best_score": 0.983
+  },
+  {
+   "term": "C0020488",
+   "concept": "Hypernatremia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "excess": 1
+   },
+   "best_score": 0.876
+  },
+  {
+   "term": "C0027651",
+   "concept": "Neoplasms",
+   "semantic_types": [
+    "Neoplastic Process"
+   ],
+   "mentions": 1,
+   "mentions_negated": 1,
+   "mentions_affirmed": 0,
+   "sections": {
+    "methods": 1
+   },
+   "forms": {
+    "neoplasms": 1
+   },
+   "best_score": 0.972
+  },
+  {
+   "term": "C0030499",
+   "concept": "Parasitic Diseases",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "parasitic diseases": 1
+   },
+   "best_score": 0.988
+  },
+  {
+   "term": "C0039753",
+   "concept": "Theileriasis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "theileriosis": 1
+   },
+   "best_score": 0.97
+  },
+  {
+   "term": "C0851162",
+   "concept": "Infections of musculoskeletal system",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "infections": 1
+   },
+   "best_score": 0.971
+  },
+  {
+   "term": "C1269955",
+   "concept": "Tumor Cell Invasion",
+   "semantic_types": [
+    "Neoplastic Process"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "invasion": 1
+   },
+   "best_score": 0.944
+  },
+  {
+   "term": "C3825353",
+   "concept": "Protozoan diseases",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "protozoan diseases": 1
+   },
+   "best_score": 0.956
+  }
+ ]
+}

@@ -1,0 +1,96 @@
+{
+ "id": "CB528",
+ "filename": "CB528_2016_plasma-biomarkers-sirs-mods-associated-babesiosis.md",
+ "key": "PMID:27033937",
+ "record": {
+  "pmid": "27033937",
+  "pmcid": null,
+  "doi": "10.1016/j.rvsc.2016.02.011",
+  "title": "Plasma biomarkers of SIRS and MODS associated with canine babesiosis.",
+  "authors": [
+   "Kuleš J",
+   "de Torre-Minguela C",
+   "Barić Rafaj R",
+   "Gotić J",
+   "Nižić P",
+   "Ceron JJ",
+   "Mrljak V"
+  ],
+  "journal": "Research in veterinary science",
+  "journal_abbrev": "Res Vet Sci",
+  "volume": "105",
+  "issue": null,
+  "pages": "222-8",
+  "language": [
+   "eng"
+  ],
+  "issue_date": "2016-04-01",
+  "issue_date_precision": "month",
+  "epub_date": "2016-02-23",
+  "pubmed_entry_date": "2016-04-02",
+  "first_pub_date": "2016-02-23",
+  "publication_types": [
+   "Journal Article",
+   "Research Support, Non-U.S. Gov't"
+  ],
+  "mesh": [
+   "Animals",
+   "Babesia",
+   "Babesiosis",
+   "Biomarkers",
+   "Chromatography, Liquid",
+   "Dog Diseases",
+   "Dogs",
+   "Electrophoresis, Gel, Two-Dimensional",
+   "Multiple Organ Failure",
+   "Systemic Inflammatory Response Syndrome",
+   "Tandem Mass Spectrometry"
+  ],
+  "keywords": [
+   "Babesiosis",
+   "Multiple organ dysfunction syndrome (MODS)",
+   "Proteomics",
+   "Systemic inflammatory response syndrome (SIRS)"
+  ],
+  "abstract": "Canine babesiosis is a tick-borne disease caused by the haemoprotozoan parasites of the genus Babesia. Early detection of systemic inflammatory response syndrome (SIRS) and multiple organ dysfunction syndrome (MODS) is of major importance in clinical practice for providing information about severity and outcomes of the disease and therapy. Plasma samples were taken at admission from five dogs with uncomplicated babesiosis caused by B. canis canis, five dogs with babesiosis and SIRS, five dogs with babesiosis and MODS, and five healthy dogs. After two-dimensional electrophoresis and capillary reversed - phase liquid chromatography coupled online with tandem mass spectrometry, 68 differentially expressed spots with level of significance P<0.05 were detected between groups. SIRS in babesiosis was characterised by increases in paraoxonase 1 and apoA-I, whereas MODS with decrease of complement inhibitors leading to prolonged complement activation and decrease of vitamin D binding protein due to haemolysis and activation of the coagulation cascade.",
+  "corrections": [],
+  "epmc_first_pub_date": "2016-02-23",
+  "is_oa": "N",
+  "has_suppl": "N",
+  "found_by": [
+   "EP1_broad",
+   "PM1_broad",
+   "PM3_mechanism"
+  ],
+  "in_window": true,
+  "online_vs_issue": "online 2016-02-23; issue 2016-04-01 (month)",
+  "key": "PMID:27033937",
+  "source_files": [
+   "candidates.jsonl"
+  ]
+ },
+ "screening": {
+  "key": "PMID:27033937",
+  "decision": "include",
+  "include_type": "primary",
+  "exclude_reason": null,
+  "primary_category": "INF",
+  "secondary_tags": [
+   "COA",
+   "ERY",
+   "OXO",
+   "SEV"
+  ],
+  "species": "B. canis canis (confirmed)",
+  "rationale": "Plasma proteomics at admission in dogs with uncomplicated babesiosis, SIRS or MODS versus healthy dogs, identifying differentially expressed proteins (complement inhibitors, paraoxonase 1, apoA-I).",
+  "stage": "screen",
+  "batch": "r4_27.md",
+  "screening_round": "r4"
+ },
+ "fulltext_check": {
+  "key": "PMID:27033937",
+  "pmcid": null,
+  "checked": "2026-10-28",
+  "fulltext_status": "no_pmcid"
+ }
+}

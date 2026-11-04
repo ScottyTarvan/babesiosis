@@ -1,0 +1,56 @@
+{
+ "id": "CB388",
+ "filename": "CB388_2010_epileptiform-events-two-babesiosis.md",
+ "key": "https://openalex.org/W957708131",
+ "record": {
+  "pmid": null,
+  "pmcid": null,
+  "doi": null,
+  "title": "Epileptiform events in two dogs with babesiosis.",
+  "journal": null,
+  "authors": [
+   "A. Ionescu",
+   "Maria Crivineanu",
+   "Cristina Fernoaga"
+  ],
+  "first_pub_date": "2010-01-01",
+  "type": "article",
+  "language": [
+   "ro"
+  ],
+  "abstract": null,
+  "abstract_source": "OpenAlex abstract_inverted_index (reconstructed)",
+  "source_id": "https://openalex.org/W957708131",
+  "src": "OPENALEX",
+  "found_by": [
+   "OA:title_and_abstract"
+  ],
+  "in_window": true,
+  "key": "https://openalex.org/W957708131",
+  "source_files": [
+   "candidates_r3.jsonl"
+  ]
+ },
+ "screening": {
+  "key": "https://openalex.org/W957708131",
+  "decision": "uncertain",
+  "include_type": null,
+  "exclude_reason": null,
+  "primary_category": "NEU",
+  "secondary_tags": [
+   "MET"
+  ],
+  "species": "Babesia sp. (unspecified)",
+  "rationale": "I had the title only. OpenAlex lists no abstract and the CAB landing page returned 403. Epileptiform events in two dogs (Lucr. Stiint. Med. Vet. 56(2), 2010, in window) may describe a distinct cerebral syndrome, so the record goes to full-text review.",
+  "stage": "adjudicated",
+  "batch": "r4_09.md",
+  "first_decision": "uncertain",
+  "screening_round": "r4"
+ },
+ "fulltext_check": {
+  "key": "https://openalex.org/W957708131",
+  "pmcid": null,
+  "checked": "2026-10-28",
+  "fulltext_status": "no_pmcid"
+ }
+}

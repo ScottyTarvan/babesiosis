@@ -1,0 +1,327 @@
+{
+ "id": "CB143",
+ "document": "data/markdown/CB143.md",
+ "source_format": "jats_xml",
+ "translated": false,
+ "words": 3149,
+ "run_utc": "2026-10-30T05:34:41+00:00",
+ "threshold": 0.85,
+ "kept_types": [
+  "T019",
+  "T020",
+  "T037",
+  "T046",
+  "T047",
+  "T048",
+  "T049",
+  "T050",
+  "T184",
+  "T190",
+  "T191"
+ ],
+ "term_count": 17,
+ "terms": [
+  {
+   "term": "C0004576",
+   "concept": "Babesiosis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 27,
+   "mentions_negated": 5,
+   "mentions_affirmed": 22,
+   "sections": {
+    "discussion": 8,
+    "introduction": 7,
+    "abstract": 6,
+    "methods": 3,
+    "results": 2,
+    "title": 1
+   },
+   "forms": {
+    "babesiosis": 20,
+    "babesia infection": 5,
+    "piroplasmoses": 1,
+    "babesial infection": 1
+   },
+   "best_score": 0.988
+  },
+  {
+   "term": "C0009450",
+   "concept": "Communicable Diseases",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 5,
+   "mentions_negated": 3,
+   "mentions_affirmed": 2,
+   "sections": {
+    "discussion": 4,
+    "introduction": 1
+   },
+   "forms": {
+    "infection": 5
+   },
+   "best_score": 0.962
+  },
+  {
+   "term": "C0024530",
+   "concept": "Malaria",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 4,
+   "mentions_negated": 0,
+   "mentions_affirmed": 4,
+   "sections": {
+    "introduction": 4
+   },
+   "forms": {
+    "malaria": 3,
+    "plasmodium infections": 1
+   },
+   "best_score": 0.996
+  },
+  {
+   "term": "C0002871",
+   "concept": "Anemia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "introduction": 3
+   },
+   "forms": {
+    "anaemia": 3
+   },
+   "best_score": 0.977
+  },
+  {
+   "term": "C0851162",
+   "concept": "Infections of musculoskeletal system",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 3,
+   "mentions_negated": 1,
+   "mentions_affirmed": 2,
+   "sections": {
+    "abstract": 1,
+    "introduction": 1,
+    "discussion": 1
+   },
+   "forms": {
+    "infections": 3
+   },
+   "best_score": 0.971
+  },
+  {
+   "term": "C0002878",
+   "concept": "Anemia, Hemolytic",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "abstract": 1,
+    "introduction": 1
+   },
+   "forms": {
+    "haemolytic anaemia": 2
+   },
+   "best_score": 0.98
+  },
+  {
+   "term": "C0274435",
+   "concept": "Transfusion Reaction",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "introduction": 2
+   },
+   "forms": {
+    "transfusion reactions": 2
+   },
+   "best_score": 0.957
+  },
+  {
+   "term": "C0003123",
+   "concept": "Anorexia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "methods": 1
+   },
+   "forms": {
+    "anorexia": 1
+   },
+   "best_score": 0.969
+  },
+  {
+   "term": "C0005806",
+   "concept": "Blood Group Incompatibility",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "blood incompatibility": 1
+   },
+   "best_score": 0.896
+  },
+  {
+   "term": "C0012634",
+   "concept": "Disease",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "disease": 1
+   },
+   "best_score": 0.987
+  },
+  {
+   "term": "C0015967",
+   "concept": "Fever",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "methods": 1
+   },
+   "forms": {
+    "fever": 1
+   },
+   "best_score": 0.962
+  },
+  {
+   "term": "C0022346",
+   "concept": "Icterus",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "methods": 1
+   },
+   "forms": {
+    "jaundice": 1
+   },
+   "best_score": 0.947
+  },
+  {
+   "term": "C0023449",
+   "concept": "Acute lymphocytic leukemia",
+   "semantic_types": [
+    "Neoplastic Process"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results": 1
+   },
+   "forms": {
+    "all": 1
+   },
+   "best_score": 0.999
+  },
+  {
+   "term": "C0030499",
+   "concept": "Parasitic Diseases",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "methods": 1
+   },
+   "forms": {
+    "infestation": 1
+   },
+   "best_score": 0.946
+  },
+  {
+   "term": "C0162534",
+   "concept": "Prion Diseases",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "human disease": 1
+   },
+   "best_score": 0.864
+  },
+  {
+   "term": "C0559546",
+   "concept": "Adverse reactions",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "adverse reactions": 1
+   },
+   "best_score": 0.963
+  },
+  {
+   "term": "C0699748",
+   "concept": "Pathogenesis",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "pathogenesis": 1
+   },
+   "best_score": 0.983
+  }
+ ]
+}

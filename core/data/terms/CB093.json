@@ -1,0 +1,489 @@
+{
+ "id": "CB093",
+ "document": "data/markdown/CB093.md",
+ "source_format": "jats_xml",
+ "translated": false,
+ "words": 2982,
+ "run_utc": "2026-10-30T05:33:55+00:00",
+ "threshold": 0.85,
+ "kept_types": [
+  "T019",
+  "T020",
+  "T037",
+  "T046",
+  "T047",
+  "T048",
+  "T049",
+  "T050",
+  "T184",
+  "T190",
+  "T191"
+ ],
+ "term_count": 26,
+ "terms": [
+  {
+   "term": "C0004576",
+   "concept": "Babesiosis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 25,
+   "mentions_negated": 2,
+   "mentions_affirmed": 23,
+   "sections": {
+    "discussion": 15,
+    "abstract": 3,
+    "methods": 3,
+    "introduction": 2,
+    "title": 1,
+    "conclusion": 1
+   },
+   "forms": {
+    "babesiosis": 24,
+    "babesia infection": 1
+   },
+   "best_score": 0.972
+  },
+  {
+   "term": "C0242528",
+   "concept": "Azotemia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 10,
+   "mentions_negated": 0,
+   "mentions_affirmed": 10,
+   "sections": {
+    "introduction": 3,
+    "discussion": 3,
+    "abstract": 2,
+    "methods": 1,
+    "results": 1
+   },
+   "forms": {
+    "azotaemia": 10
+   },
+   "best_score": 0.977
+  },
+  {
+   "term": "C0160420",
+   "concept": "Injury of kidney",
+   "semantic_types": [
+    "Injury or Poisoning"
+   ],
+   "mentions": 7,
+   "mentions_negated": 0,
+   "mentions_affirmed": 7,
+   "sections": {
+    "discussion": 6,
+    "introduction": 1
+   },
+   "forms": {
+    "kidney injury": 4,
+    "renal injury": 3
+   },
+   "best_score": 0.98
+  },
+  {
+   "term": "C0009450",
+   "concept": "Communicable Diseases",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 6,
+   "mentions_negated": 1,
+   "mentions_affirmed": 5,
+   "sections": {
+    "methods": 4,
+    "introduction": 2
+   },
+   "forms": {
+    "infection": 6
+   },
+   "best_score": 0.962
+  },
+  {
+   "term": "C0348801",
+   "concept": "Group B streptococcal pneumonia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 6,
+   "mentions_negated": 1,
+   "mentions_affirmed": 5,
+   "sections": {
+    "methods": 2,
+    "results": 2,
+    "tables and figures": 2
+   },
+   "forms": {
+    "group b": 6
+   },
+   "best_score": 0.997
+  },
+  {
+   "term": "C0035078",
+   "concept": "Kidney Failure",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 5,
+   "mentions_negated": 0,
+   "mentions_affirmed": 5,
+   "sections": {
+    "abstract": 2,
+    "tables and figures": 2,
+    "methods": 1
+   },
+   "forms": {
+    "renal failure": 5
+   },
+   "best_score": 0.96
+  },
+  {
+   "term": "C0012634",
+   "concept": "Disease",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 4,
+   "mentions_negated": 0,
+   "mentions_affirmed": 4,
+   "sections": {
+    "introduction": 2,
+    "methods": 1,
+    "discussion": 1
+   },
+   "forms": {
+    "disease": 3,
+    "diseases": 1
+   },
+   "best_score": 0.987
+  },
+  {
+   "term": "C0009566",
+   "concept": "Complication",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "discussion": 3
+   },
+   "forms": {
+    "complication": 2,
+    "complications": 1
+   },
+   "best_score": 0.977
+  },
+  {
+   "term": "C0160390",
+   "concept": "Injury of liver",
+   "semantic_types": [
+    "Injury or Poisoning"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "discussion": 2
+   },
+   "forms": {
+    "liver injury": 2
+   },
+   "best_score": 0.972
+  },
+  {
+   "term": "C0275524",
+   "concept": "Coinfection",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "methods": 1,
+    "discussion": 1
+   },
+   "forms": {
+    "co-infection": 2
+   },
+   "best_score": 0.939
+  },
+  {
+   "term": "C0002871",
+   "concept": "Anemia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "anemia": 1
+   },
+   "best_score": 0.974
+  },
+  {
+   "term": "C0003460",
+   "concept": "Anuria",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 1,
+   "mentions_affirmed": 0,
+   "sections": {
+    "methods": 1
+   },
+   "forms": {
+    "anuria": 1
+   },
+   "best_score": 0.968
+  },
+  {
+   "term": "C0008679",
+   "concept": "Chronic disease",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "methods": 1
+   },
+   "forms": {
+    "chronic diseases": 1
+   },
+   "best_score": 0.987
+  },
+  {
+   "term": "C0011849",
+   "concept": "Diabetes Mellitus",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "methods": 1
+   },
+   "forms": {
+    "diabetes mellitus": 1
+   },
+   "best_score": 0.975
+  },
+  {
+   "term": "C0014130",
+   "concept": "Endocrine System Diseases",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "endocrine disorders": 1
+   },
+   "best_score": 0.985
+  },
+  {
+   "term": "C0017181",
+   "concept": "Gastrointestinal Hemorrhage",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "gastrointestinal bleeding": 1
+   },
+   "best_score": 0.979
+  },
+  {
+   "term": "C0019054",
+   "concept": "Hemolysis (disorder)",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "hemolysis": 1
+   },
+   "best_score": 0.991
+  },
+  {
+   "term": "C0020676",
+   "concept": "Hypothyroidism",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "methods": 1
+   },
+   "forms": {
+    "hypothyroidism": 1
+   },
+   "best_score": 0.993
+  },
+  {
+   "term": "C0030305",
+   "concept": "Pancreatitis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "pancreatitis": 1
+   },
+   "best_score": 0.986
+  },
+  {
+   "term": "C0035410",
+   "concept": "Rhabdomyolysis",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "rhabdomyolysis": 1
+   },
+   "best_score": 0.976
+  },
+  {
+   "term": "C0036679",
+   "concept": "Diastasis",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "methods": 1
+   },
+   "forms": {
+    "separation": 1
+   },
+   "best_score": 0.963
+  },
+  {
+   "term": "C0036983",
+   "concept": "Septic Shock",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "septic shock": 1
+   },
+   "best_score": 0.981
+  },
+  {
+   "term": "C0151763",
+   "concept": "Liver damage",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 1,
+   "mentions_affirmed": 0,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "liver damage": 1
+   },
+   "best_score": 0.98
+  },
+  {
+   "term": "C0235446",
+   "concept": "Azotemia due to intrarenal disease",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "title": 1
+   },
+   "forms": {
+    "renal azotaemia": 1
+   },
+   "best_score": 0.96
+  },
+  {
+   "term": "C0276854",
+   "concept": "Infection by Babesia canis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "canine babesiosis": 1
+   },
+   "best_score": 0.969
+  },
+  {
+   "term": "C0851341",
+   "concept": "Infestation",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "infestations": 1
+   },
+   "best_score": 0.957
+  }
+ ]
+}

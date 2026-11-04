@@ -1,0 +1,525 @@
+{
+ "id": "CB101",
+ "document": "data/markdown/CB101.md",
+ "source_format": "jats_xml",
+ "translated": false,
+ "words": 4852,
+ "run_utc": "2026-10-30T05:34:02+00:00",
+ "threshold": 0.85,
+ "kept_types": [
+  "T019",
+  "T020",
+  "T037",
+  "T046",
+  "T047",
+  "T048",
+  "T049",
+  "T050",
+  "T184",
+  "T190",
+  "T191"
+ ],
+ "term_count": 28,
+ "terms": [
+  {
+   "term": "C0009450",
+   "concept": "Communicable Diseases",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 25,
+   "mentions_negated": 0,
+   "mentions_affirmed": 25,
+   "sections": {
+    "experimental design, materials and methods": 8,
+    "value of the data": 7,
+    "experimental design": 4,
+    "specifications table": 2,
+    "title": 1,
+    "abstract": 1,
+    "data description": 1,
+    "ethics statements": 1
+   },
+   "forms": {
+    "infection": 23,
+    "infectious diseases": 2
+   },
+   "best_score": 0.976
+  },
+  {
+   "term": "C0012634",
+   "concept": "Disease",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 5,
+   "mentions_negated": 0,
+   "mentions_affirmed": 5,
+   "sections": {
+    "value of the data": 4,
+    "specifications table": 1
+   },
+   "forms": {
+    "disease": 4,
+    "diseases": 1
+   },
+   "best_score": 0.987
+  },
+  {
+   "term": "C0021368",
+   "concept": "Inflammation",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 4,
+   "mentions_negated": 0,
+   "mentions_affirmed": 4,
+   "sections": {
+    "value of the data": 2,
+    "abstract": 1,
+    "specifications table": 1
+   },
+   "forms": {
+    "inflammation": 4
+   },
+   "best_score": 0.958
+  },
+  {
+   "term": "C0023380",
+   "concept": "Lethargy",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 4,
+   "mentions_negated": 2,
+   "mentions_affirmed": 2,
+   "sections": {
+    "specifications table": 2,
+    "experimental design": 2
+   },
+   "forms": {
+    "lethargic": 4
+   },
+   "best_score": 0.989
+  },
+  {
+   "term": "C0851162",
+   "concept": "Infections of musculoskeletal system",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 4,
+   "mentions_negated": 0,
+   "mentions_affirmed": 4,
+   "sections": {
+    "value of the data": 3,
+    "experimental design": 1
+   },
+   "forms": {
+    "infections": 4
+   },
+   "best_score": 0.971
+  },
+  {
+   "term": "C0030499",
+   "concept": "Parasitic Diseases",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "experimental design, materials and methods": 2,
+    "specifications table": 1
+   },
+   "forms": {
+    "blood parasitic infections": 3
+   },
+   "best_score": 0.873
+  },
+  {
+   "term": "C0242656",
+   "concept": "Disease Progression",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "abstract": 1,
+    "specifications table": 1,
+    "value of the data": 1
+   },
+   "forms": {
+    "progression": 3
+   },
+   "best_score": 0.971
+  },
+  {
+   "term": "C0275524",
+   "concept": "Coinfection",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "experimental design, materials and methods": 2,
+    "specifications table": 1
+   },
+   "forms": {
+    "co-infection": 3
+   },
+   "best_score": 0.939
+  },
+  {
+   "term": "C1155266",
+   "concept": "Inflammatory Response",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "title": 1,
+    "specifications table": 1,
+    "value of the data": 1
+   },
+   "forms": {
+    "inflammatory response": 3
+   },
+   "best_score": 0.983
+  },
+  {
+   "term": "C0004576",
+   "concept": "Babesiosis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "value of the data": 2
+   },
+   "forms": {
+    "babesiosis": 2
+   },
+   "best_score": 0.972
+  },
+  {
+   "term": "C0012979",
+   "concept": "Dog Diseases",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "abstract": 1,
+    "value of the data": 1
+   },
+   "forms": {
+    "canine disease": 2
+   },
+   "best_score": 0.987
+  },
+  {
+   "term": "C0020517",
+   "concept": "Hypersensitivity",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "experimental design": 2
+   },
+   "forms": {
+    "sensitivity": 2
+   },
+   "best_score": 0.997
+  },
+  {
+   "term": "C0027651",
+   "concept": "Neoplasms",
+   "semantic_types": [
+    "Neoplastic Process"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "experimental design": 2
+   },
+   "forms": {
+    "tumour": 2
+   },
+   "best_score": 0.999
+  },
+  {
+   "term": "C0033740",
+   "concept": "Protozoan Infections",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "value of the data": 2
+   },
+   "forms": {
+    "protozoal infections": 1,
+    "protozoal disease": 1
+   },
+   "best_score": 0.945
+  },
+  {
+   "term": "C0242723",
+   "concept": "Parasitemia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "abstract": 1,
+    "experimental design": 1
+   },
+   "forms": {
+    "parasitemia": 2
+   },
+   "best_score": 0.992
+  },
+  {
+   "term": "C0342895",
+   "concept": "Fish-Eye Disease",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "specifications table": 1,
+    "experimental design": 1
+   },
+   "forms": {
+    "fed": 2
+   },
+   "best_score": 0.94
+  },
+  {
+   "term": "C1263988",
+   "concept": "Hemolytic disorder",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "value of the data": 2
+   },
+   "forms": {
+    "haemolytic disease": 2
+   },
+   "best_score": 0.98
+  },
+  {
+   "term": "C0002871",
+   "concept": "Anemia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "abstract": 1
+   },
+   "forms": {
+    "anaemia": 1
+   },
+   "best_score": 0.977
+  },
+  {
+   "term": "C0010046",
+   "concept": "Corn of toe",
+   "semantic_types": [
+    "Acquired Abnormality"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "experimental design": 1
+   },
+   "forms": {
+    "corning": 1
+   },
+   "best_score": 0.974
+  },
+  {
+   "term": "C0019054",
+   "concept": "Hemolysis (disorder)",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "experimental design": 1
+   },
+   "forms": {
+    "haemolysis": 1
+   },
+   "best_score": 0.989
+  },
+  {
+   "term": "C0022575",
+   "concept": "Keratoconjunctivitis Sicca",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "experimental design": 1
+   },
+   "forms": {
+    "kc": 1
+   },
+   "best_score": 0.994
+  },
+  {
+   "term": "C0024530",
+   "concept": "Malaria",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "value of the data": 1
+   },
+   "forms": {
+    "malaria": 1
+   },
+   "best_score": 0.996
+  },
+  {
+   "term": "C0035222",
+   "concept": "Respiratory Distress Syndrome, Adult",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "experimental design": 1
+   },
+   "forms": {
+    "acute respiratory distress syndrome": 1
+   },
+   "best_score": 0.991
+  },
+  {
+   "term": "C0036572",
+   "concept": "Seizures",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "experimental design": 1
+   },
+   "forms": {
+    "seizure": 1
+   },
+   "best_score": 0.955
+  },
+  {
+   "term": "C0235573",
+   "concept": "Hemoglobinemia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "experimental design": 1
+   },
+   "forms": {
+    "haemoglobinaemia": 1
+   },
+   "best_score": 0.988
+  },
+  {
+   "term": "C0333516",
+   "concept": "Tumor necrosis",
+   "semantic_types": [
+    "Neoplastic Process"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "data description": 1
+   },
+   "forms": {
+    "tumor necrosis": 1
+   },
+   "best_score": 0.986
+  },
+  {
+   "term": "C0342311",
+   "concept": "Neuroglycopenia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "experimental design": 1
+   },
+   "forms": {
+    "neuroglycopenia": 1
+   },
+   "best_score": 0.992
+  },
+  {
+   "term": "C3554550",
+   "concept": "Systemic inflammatory response",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "value of the data": 1
+   },
+   "forms": {
+    "systemic inflammatory response": 1
+   },
+   "best_score": 0.985
+  }
+ ]
+}

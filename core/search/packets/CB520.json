@@ -1,0 +1,53 @@
+{
+ "id": "CB520",
+ "filename": "CB520_2016_clinical-management-acute-renal-failure-due.md",
+ "key": "https://openalex.org/W2550317329",
+ "record": {
+  "pmid": null,
+  "pmcid": null,
+  "doi": null,
+  "title": "Clinical Management of Acute Renal Failure due to Babesiosis in a Dog",
+  "journal": "INTAS POLIVET",
+  "authors": [
+   "Joice P. Joseph",
+   "Atul Patel",
+   "Jay S. Patel"
+  ],
+  "first_pub_date": "2016-01-01",
+  "type": "article",
+  "language": [
+   "en"
+  ],
+  "abstract": "A Golden retriever dog was presented in recumbent condition. Different diagnostic techniques revealed that animal was having acute renal failure due to Babesia canis and Babesia gibsoni infections. Condition of animal was successfully managed with aggressive fluid therapy and chemotherapeutics against Babesia canis and Babesia gibsoni.",
+  "abstract_source": "OpenAlex abstract_inverted_index (reconstructed)",
+  "source_id": "https://openalex.org/W2550317329",
+  "src": "OPENALEX",
+  "found_by": [
+   "OA:title_and_abstract"
+  ],
+  "in_window": true,
+  "key": "https://openalex.org/W2550317329",
+  "source_files": [
+   "candidates_r3.jsonl"
+  ]
+ },
+ "screening": {
+  "key": "https://openalex.org/W2550317329",
+  "decision": "include",
+  "include_type": "case_report",
+  "exclude_reason": null,
+  "primary_category": "REN",
+  "secondary_tags": [],
+  "species": "B. canis and B. gibsoni (reported co-infection, method not stated)",
+  "rationale": "Case report of acute renal failure as a babesiosis complication, a distinct organ-injury syndrome; the abstract is brief but the renal syndrome is the focus.",
+  "stage": "screen",
+  "batch": "r4_27.md",
+  "screening_round": "r4"
+ },
+ "fulltext_check": {
+  "key": "https://openalex.org/W2550317329",
+  "pmcid": null,
+  "checked": "2026-10-28",
+  "fulltext_status": "no_pmcid"
+ }
+}

@@ -1,0 +1,55 @@
+{
+ "id": "CB475",
+ "filename": "CB475_2014_forms-piroplasmosis-domestic-various-stages-ontogenesis.md",
+ "key": "https://openalex.org/W2968434542",
+ "record": {
+  "pmid": null,
+  "pmcid": null,
+  "doi": null,
+  "title": "FORMS PIROPLASMOSIS DOMESTIC DOGS ON VARIOUS STAGES OF ONTOGENESIS",
+  "journal": "Международный научно-исследовательский журнал",
+  "authors": [
+   "Dmitriy Yu. Akimov",
+   "Ludmila Shadyeva",
+   "A E Schegolenkova",
+   "T А Indiryakova"
+  ],
+  "first_pub_date": "2014-03-08",
+  "type": "article",
+  "language": [
+   "ru"
+  ],
+  "abstract": "В работе рассматриваются особенности проявления пироплазмоза у собак разных возрастных групп города Ульяновска.",
+  "abstract_source": "OpenAlex abstract_inverted_index (reconstructed)",
+  "source_id": "https://openalex.org/W2968434542",
+  "src": "OPENALEX",
+  "found_by": [
+   "OA:title_and_abstract"
+  ],
+  "in_window": true,
+  "key": "https://openalex.org/W2968434542",
+  "source_files": [
+   "candidates_r3.jsonl"
+  ]
+ },
+ "screening": {
+  "key": "https://openalex.org/W2968434542",
+  "decision": "uncertain",
+  "include_type": null,
+  "exclude_reason": null,
+  "primary_category": "SEV",
+  "secondary_tags": [],
+  "species": "Piroplasma/Babesia sp. (unspecified; Russia)",
+  "rationale": "Based on the one-sentence OpenAlex abstract and title only, because the journal landing page returned 404. The paper describes how piroplasmosis presents in dogs of different ages, which suggests clinical or clinicopathological profiles, but whether host data are reported cannot be judged without the full text.",
+  "stage": "adjudicated",
+  "batch": "r4_20.md",
+  "first_decision": "uncertain",
+  "screening_round": "r4"
+ },
+ "fulltext_check": {
+  "key": "https://openalex.org/W2968434542",
+  "pmcid": null,
+  "checked": "2026-10-28",
+  "fulltext_status": "no_pmcid"
+ }
+}

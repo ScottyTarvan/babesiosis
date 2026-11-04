@@ -1,0 +1,54 @@
+{
+ "id": "CB161",
+ "filename": "CB161_2017_potential-serum-biomarkers-renal-dysfunction-babesiosis.md",
+ "key": "https://openalex.org/W2801214164",
+ "record": {
+  "pmid": null,
+  "pmcid": null,
+  "doi": null,
+  "title": "Potential serum biomarkers of renal dysfunction in canine babesiosis identified by two- dimensional difference gel electrophoresis",
+  "journal": null,
+  "authors": [
+   "Petra Bilić",
+   "Anita Horvatić",
+   "Josipa Kuleš",
+   "Nicolas Guillemin",
+   "Asier Galán",
+   "Renata Barić Rafaj",
+   "Lucia Pulzová",
+   "Mangesh Ramesh Bhide",
+   "Vladimir Mrljak"
+  ],
+  "first_pub_date": "2017-01-01",
+  "type": "article",
+  "language": [
+   "en"
+  ],
+  "abstract": "Proteinuria (measured by urine protein to creatinine ratio, UPCR) is a common finding in canine babesiosis, indicating some degree of renal dysfunction, even when serum levels of creatinine stay within normal range. In order to discover potential novel biomarkers and mechanisms involved in renal dysfunction in canine babesiosis, differences between serum proteome of healthy dogs and Babesia canis- infected dogs with or without proteinuria were examined using two-dimensional difference gel electrophoresis approach (2D DIGE). There were 3 groups of dogs included in the study: the first group consisted of 6 healthy control dogs, the second group of 6 dogs with babesiosis and normal UPCR ( 0.5). Serum samples were pooled into groups, followed by depletion of highly abundant albumin and immunoglobulin and determination of protein concentration. Protein pools were then labelled with two different infrared dyes, CF680 or CF770 (Biotium) and processed using 2D Clean-up kit (GE Healthcare). Labelled protein samples were combined in pairs in 1:1 ratio and separated using isoelectric focusing in gel strips and SDS polyacrylamide electrophoresis. Proteins were visualised by silver staining and gel images analysed using Melanie and Delta2D software. Differentially expressed serum proteins between the groups were identified using MALDI-TOF mass spectrometer. This approach resulted in recognition of 5 differential serum proteins between controls and B. canis-infected dogs without proteinuria, 11 differential proteins between controls and B. canis-infected dogs with proteinuria and 7 differential proteins between the two groups of dogs with babesiosis. Identified proteins have roles in immune system response, complement cascade activation, blood coagulation and tissue remodelling, demonstrating these pathways are modified in canine babesiosis. Among discovered proteins, there are some which could serve as potential serum biomarkers of renal dysfunction in babesiosis, such as clusterin, complement factor H and membrane cofactor protein. Further validation of proposed biomarkers using specific immunoassays and larger sample size is required. The 2D DIGE protocol using infrared dyes described herein can serve as useful technology to uncover proteins with biomarker potential.",
+  "abstract_source": "OpenAlex abstract_inverted_index (reconstructed)",
+  "source_id": "https://openalex.org/W2801214164",
+  "src": "OPENALEX",
+  "found_by": [
+   "OA:title_and_abstract"
+  ],
+  "in_window": true,
+  "key": "https://openalex.org/W2801214164"
+ },
+ "screening": {
+  "key": "https://openalex.org/W2801214164",
+  "decision": "include",
+  "include_type": "primary",
+  "exclude_reason": null,
+  "primary_category": "REN",
+  "secondary_tags": [
+   "INF",
+   "COA"
+  ],
+  "species": "B. canis (suspected; natural infection)",
+  "rationale": "Serum proteomics (2D DIGE) of infected dogs with and without proteinuria; complement, coagulation and immune pathways, renal biomarkers.",
+  "stage": "screen",
+  "batch": "r3_06.md",
+  "screening_round": "r3"
+ },
+ "fulltext_check": null
+}

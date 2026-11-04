@@ -1,0 +1,125 @@
+{
+ "id": "CB101",
+ "filename": "CB101_2022_dataset-inflammatory-response-during-experimental-infection.md",
+ "key": "PMID:36164305",
+ "record": {
+  "pmid": "36164305",
+  "pmcid": "PMC9508437",
+  "doi": "10.1016/j.dib.2022.108475",
+  "title": "The dataset for the inflammatory response during experimental infection and treatment of dogs with Babesia rossi.",
+  "authors": [
+   "Atkinson BK",
+   "Thompson P",
+   "Van Zyl E",
+   "Goddard A",
+   "Rautenbach Y",
+   "Schoeman JP",
+   "Mukorera V",
+   "Leisewitz A"
+  ],
+  "journal": "Data in brief",
+  "journal_abbrev": "Data Brief",
+  "volume": "45",
+  "issue": null,
+  "pages": "108475",
+  "language": [
+   "eng"
+  ],
+  "issue_date": "2022-12-01",
+  "issue_date_precision": "month",
+  "epub_date": "2022-07-19",
+  "pubmed_entry_date": "2022-09-28",
+  "first_pub_date": "2022-07-19",
+  "publication_types": [
+   "Journal Article"
+  ],
+  "mesh": [],
+  "keywords": [
+   "Anaemia.",
+   "C-reactive protein",
+   "Cytokines",
+   "Leukocytes",
+   "Parasitemia",
+   "Treatment"
+  ],
+  "abstract": "Babesia rossi causes severe morbidity and mortality in dogs in sub-Saharan Africa. This was an experimental study designed to observe systemic changes caused by Babesia rossi infection within a canine disease model as well as investigate the influence of inoculum dose and treatment on the progression of inflammation and clinical disease. Six healthy male beagle dogs formed the study population, one dog was splenectomised and used to raise the infectious inoculum, three were administered a high B. rossi infectious dose and two a low infectious dose. Clinical examination, complete blood count (CBC) and C-reactive protein (CRP) were determined daily. Cytokines were quantified on stored plasma collected during the study, using a canine specific cytokine magnetic bead panel (Milliplex©). The experiment was terminated, and treatment administered once predetermined experimental or humane endpoints were reached. The data and information provided in the following article is the summary of all data points collected over the course of the eight-day experimental infection.",
+  "corrections": [],
+  "epmc_first_pub_date": "2022-07-19",
+  "is_oa": "Y",
+  "has_suppl": "N",
+  "found_by": [
+   "EP1_broad",
+   "EP2_species",
+   "PM1_broad",
+   "PM2_species",
+   "PM3_mechanism"
+  ],
+  "in_window": true,
+  "online_vs_issue": "online 2022-07-19; issue 2022-12-01 (month)"
+ },
+ "screening": {
+  "key": "PMID:36164305",
+  "decision": "include",
+  "include_type": "primary",
+  "exclude_reason": null,
+  "primary_category": "INF",
+  "secondary_tags": [
+   "SEV"
+  ],
+  "species": "B. rossi (experimental infection, presumed confirmed)",
+  "rationale": "Data article of experimental B. rossi cytokine, CRP and CBC dataset informing inflammatory response; peer-reviewed companion dataset.",
+  "stage": "screen",
+  "batch": "r1_15.md",
+  "screening_round": "r1"
+ },
+ "fulltext_check": {
+  "key": "PMID:36164305",
+  "pmcid": "PMC9508437",
+  "checked": "2026-10-23",
+  "fulltext_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9508437/fullTextXML",
+  "fulltext_status": 200,
+  "data_availability": [
+   "Data availability Experimental Babesia rossi infection data (Original Data) (Mendeley Data).",
+   "Data Availability Statement Experimental Babesia rossi infection data (Original Data) (Mendeley Data)."
+  ],
+  "supplementary": [],
+  "repository_links": [
+   "data.mendeley",
+   "https://data.mendeley.com/datasets/zyhy8z69kt/1"
+  ],
+  "section_titles": [
+   "Specifications Table",
+   "Value of the Data",
+   "Data Description",
+   "Experimental Design, Materials and Methods",
+   "Study design",
+   "Study setting",
+   "Study population",
+   "Sample method",
+   "Sample size",
+   "Experimental design",
+   "Phase 1",
+   "Creation of B. rossi cryopreservate [1]",
+   "Procedure",
+   "Phase 2: Determination of baseline data and creation of infectious inoculum [1]",
+   "Phase 3: Infection of the experimental dogs [1]",
+   "The experimental endpoints (any one criterium determined the point of treatment) [1]",
+   "Experimental procedures",
+   "Sample collection schedule and volumes [1]",
+   "Observational/analytical procedures [1]",
+   "Cytokine Analysis [1]",
+   "Data management and analysis",
+   "Data management",
+   "Statistical analysis",
+   "Ethics Statements",
+   "CRediT Author Statement",
+   "Declaration of Competing Interest",
+   "Acknowledgments",
+   "Data availability",
+   "References",
+   "Associated Data",
+   "Data Availability Statement"
+  ],
+  "has_body": true
+ }
+}

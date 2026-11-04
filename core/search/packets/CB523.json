@@ -1,0 +1,58 @@
+{
+ "id": "CB523",
+ "filename": "CB523_2016_bioinformatic-approach-identification-mirna-potential-markers.md",
+ "key": "https://openalex.org/W2756191032",
+ "record": {
+  "pmid": null,
+  "pmcid": null,
+  "doi": null,
+  "title": "Bioinformatic approach for identification of miRNA potential markers of canine babesiosis from proteomics data",
+  "journal": null,
+  "authors": [
+   "Nicolas Guillemin",
+   "Josipa Kuleš",
+   "Anita Horvatić",
+   "Asier Galán",
+   "Vladimir Mrljak",
+   "Mangesh Ramesh Bhide"
+  ],
+  "first_pub_date": "2016-01-01",
+  "type": "article",
+  "language": [
+   "en"
+  ],
+  "abstract": "During the last years, miRNA analyses and identifications constitute a new field in molecular biology. miRNA belong to the non- coding RNA family, and are involved in the expression silencing mechanism, by the destruction of the targeted mRNA through interaction with its 3’UTR[1]. miRNA can be exported in blood, and they are more stable than mRNA. They are an important messenger between tissues and cells, considered as non- invasive markers in different diseases, like cancer, and other phenotypes[2]. To date, more than 2500 miRNA have been identified in humans notably with next-generation sequencing. Their biological functions and role in disease remains largely unknown, making their studies an exciting new field. Regarding babesiosis, vector-borne zoonosis, there is an obvious need to identify such non-invasive markers in blood to better understand host-pathogen interaction. Herein we present the methodology used to predict miRNA involved in babesiosis in dogs from our previous proteomics data[3], to be able to quickly quantify them by PCR. A list of 17 serum proteins involved in babesiosis, identified by 2D-electrophoresis and LC-MS/MS, has been considered. Using the software Cytoscape[4] and its BisoGenet plugin, 166 miRNA involved in the regulation of the expression of the 17 proteins have been identified. Selected 40 miRNA were more interesting as they interact with more than 1 gene. From those, 21 were identified in dogs, 4 in different species but not in dogs, and 15 only in humans or primates. Out of the 25 (21+4) miRNA, 14 were identified in blood or exosome. Those 14 miRNA are the best candidates for the identification of miRNA markers of babesiosis in blood. By combining already available proteomics data and bioinformatics (with miRNA database), it will be possible to identify potential miRNA related to babesiosis at low cost, and then engage qPCR quantification, rather than to pre- screen all the miRNA with next-generation sequencing with associated costs.",
+  "abstract_source": "OpenAlex abstract_inverted_index (reconstructed)",
+  "source_id": "https://openalex.org/W2756191032",
+  "src": "OPENALEX",
+  "found_by": [
+   "OA:title_and_abstract"
+  ],
+  "in_window": true,
+  "key": "https://openalex.org/W2756191032",
+  "source_files": [
+   "candidates_r3.jsonl"
+  ]
+ },
+ "screening": {
+  "key": "https://openalex.org/W2756191032",
+  "decision": "include",
+  "include_type": "primary",
+  "exclude_reason": null,
+  "primary_category": "OXO",
+  "secondary_tags": [
+   "INF"
+  ],
+  "species": "Babesia sp. (canine babesiosis, species not stated)",
+  "rationale": "Bioinformatic analysis of the host serum proteome of dogs with babesiosis to predict regulatory miRNA markers; an omics study of the host response.",
+  "stage": "screen",
+  "batch": "r4_27.md",
+  "screening_round": "r4"
+ },
+ "fulltext_check": {
+  "key": "https://openalex.org/W2756191032",
+  "pmcid": null,
+  "checked": "2026-10-28",
+  "fulltext_status": "no_pmcid"
+ }
+}

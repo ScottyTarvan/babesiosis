@@ -1,0 +1,1184 @@
+{
+ "id": "CB189",
+ "document": "data/markdown/CB189.en.md",
+ "source_format": "pdf",
+ "translated": true,
+ "words": 3778,
+ "run_utc": "2026-10-30T05:35:01+00:00",
+ "threshold": 0.85,
+ "kept_types": [
+  "T019",
+  "T020",
+  "T037",
+  "T046",
+  "T047",
+  "T048",
+  "T049",
+  "T050",
+  "T184",
+  "T190",
+  "T191"
+ ],
+ "term_count": 65,
+ "terms": [
+  {
+   "term": "C0004576",
+   "concept": "Babesiosis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 21,
+   "mentions_negated": 2,
+   "mentions_affirmed": 19,
+   "sections": {
+    "introduction": 6,
+    "discussion": 6,
+    "results": 4,
+    "abstract": 3,
+    "methods": 1,
+    "conclusion": 1
+   },
+   "forms": {
+    "babesiosis": 21
+   },
+   "best_score": 0.972
+  },
+  {
+   "term": "C0012634",
+   "concept": "Disease",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 16,
+   "mentions_negated": 6,
+   "mentions_affirmed": 10,
+   "sections": {
+    "discussion": 12,
+    "introduction": 2,
+    "conclusion": 2
+   },
+   "forms": {
+    "disease": 15,
+    "diseases": 1
+   },
+   "best_score": 0.987
+  },
+  {
+   "term": "C0019080",
+   "concept": "Hemorrhage",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 9,
+   "mentions_negated": 0,
+   "mentions_affirmed": 9,
+   "sections": {
+    "results": 4,
+    "discussion": 3,
+    "abstract": 2
+   },
+   "forms": {
+    "haemorrhage": 5,
+    "hemorrhage": 2,
+    "haemorrhages": 2
+   },
+   "best_score": 0.992
+  },
+  {
+   "term": "C0022346",
+   "concept": "Icterus",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 8,
+   "mentions_negated": 0,
+   "mentions_affirmed": 8,
+   "sections": {
+    "abstract": 4,
+    "results": 2,
+    "discussion": 2
+   },
+   "forms": {
+    "icterus": 6,
+    "jaundice": 2
+   },
+   "best_score": 0.958
+  },
+  {
+   "term": "C0025289",
+   "concept": "Meningitis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 6,
+   "mentions_negated": 0,
+   "mentions_affirmed": 6,
+   "sections": {
+    "abstract": 3,
+    "results": 2,
+    "discussion": 1
+   },
+   "forms": {
+    "meningitis": 6
+   },
+   "best_score": 0.976
+  },
+  {
+   "term": "C0282548",
+   "concept": "Leukostasis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 6,
+   "mentions_negated": 0,
+   "mentions_affirmed": 6,
+   "sections": {
+    "results": 3,
+    "abstract": 2,
+    "discussion": 1
+   },
+   "forms": {
+    "leukostasis": 6
+   },
+   "best_score": 0.957
+  },
+  {
+   "term": "C0037088",
+   "concept": "Signs and Symptoms",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 4,
+   "mentions_negated": 1,
+   "mentions_affirmed": 3,
+   "sections": {
+    "results": 2,
+    "discussion": 2
+   },
+   "forms": {
+    "finding": 2,
+    "clinical findings": 1,
+    "clinical finding": 1
+   },
+   "best_score": 0.994
+  },
+  {
+   "term": "C0040053",
+   "concept": "Thrombosis",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 4,
+   "mentions_negated": 0,
+   "mentions_affirmed": 4,
+   "sections": {
+    "discussion": 2,
+    "abstract": 1,
+    "results": 1
+   },
+   "forms": {
+    "thrombosis": 4
+   },
+   "best_score": 0.98
+  },
+  {
+   "term": "C0042384",
+   "concept": "Vasculitis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 4,
+   "mentions_negated": 0,
+   "mentions_affirmed": 4,
+   "sections": {
+    "results": 2,
+    "abstract": 1,
+    "introduction": 1
+   },
+   "forms": {
+    "vasculitis": 4
+   },
+   "best_score": 0.989
+  },
+  {
+   "term": "C0002871",
+   "concept": "Anemia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 3,
+   "mentions_negated": 1,
+   "mentions_affirmed": 2,
+   "sections": {
+    "abstract": 1,
+    "introduction": 1,
+    "discussion": 1
+   },
+   "forms": {
+    "anaemia": 2,
+    "anemia": 1
+   },
+   "best_score": 0.977
+  },
+  {
+   "term": "C0012754",
+   "concept": "Distemper",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "abstract": 1,
+    "results": 1,
+    "discussion": 1
+   },
+   "forms": {
+    "distemper": 3
+   },
+   "best_score": 0.969
+  },
+  {
+   "term": "C0014457",
+   "concept": "Eosinophilia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "abstract": 1,
+    "results": 1,
+    "discussion": 1
+   },
+   "forms": {
+    "eosinophilia": 3
+   },
+   "best_score": 0.976
+  },
+  {
+   "term": "C0015967",
+   "concept": "Fever",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "introduction": 2,
+    "abstract": 1
+   },
+   "forms": {
+    "fever": 3
+   },
+   "best_score": 0.962
+  },
+  {
+   "term": "C0020564",
+   "concept": "Hypertrophy",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "results": 2,
+    "abstract": 1
+   },
+   "forms": {
+    "hypertrophy": 3
+   },
+   "best_score": 0.984
+  },
+  {
+   "term": "C0023364",
+   "concept": "Leptospirosis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "discussion": 2,
+    "abstract": 1
+   },
+   "forms": {
+    "leptospirosis": 3
+   },
+   "best_score": 0.991
+  },
+  {
+   "term": "C0036572",
+   "concept": "Seizures",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "discussion": 2,
+    "abstract": 1
+   },
+   "forms": {
+    "convulsions": 3
+   },
+   "best_score": 0.947
+  },
+  {
+   "term": "C0268736",
+   "concept": "Hemoglobinuric nephrosis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "discussion": 2,
+    "results": 1
+   },
+   "forms": {
+    "haemoglobinuric nephrosis": 3
+   },
+   "best_score": 0.986
+  },
+  {
+   "term": "C0700148",
+   "concept": "Congestion",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "results": 2,
+    "abstract": 1
+   },
+   "forms": {
+    "congestion": 3
+   },
+   "best_score": 0.967
+  },
+  {
+   "term": "C0851341",
+   "concept": "Infestation",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "abstract": 1,
+    "results": 1,
+    "discussion": 1
+   },
+   "forms": {
+    "parasitic infestation": 3
+   },
+   "best_score": 0.966
+  },
+  {
+   "term": "C1263988",
+   "concept": "Hemolytic disorder",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "introduction": 2,
+    "abstract": 1
+   },
+   "forms": {
+    "haemolytic disease": 2,
+    "hemolytic disease": 1
+   },
+   "best_score": 0.981
+  },
+  {
+   "term": "C0003123",
+   "concept": "Anorexia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "abstract": 1,
+    "results": 1
+   },
+   "forms": {
+    "anorexia/hyporexia": 2
+   },
+   "best_score": 0.861
+  },
+  {
+   "term": "C0004134",
+   "concept": "Ataxia",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "discussion": 2
+   },
+   "forms": {
+    "ataxia": 2
+   },
+   "best_score": 0.974
+  },
+  {
+   "term": "C0009566",
+   "concept": "Complication",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 2,
+   "mentions_negated": 1,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 2
+   },
+   "forms": {
+    "complications": 1,
+    "complication": 1
+   },
+   "best_score": 0.977
+  },
+  {
+   "term": "C0011071",
+   "concept": "Sudden death",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "abstract": 1,
+    "conclusion": 1
+   },
+   "forms": {
+    "sudden death": 2
+   },
+   "best_score": 0.948
+  },
+  {
+   "term": "C0013404",
+   "concept": "Dyspnea",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "results": 1,
+    "discussion": 1
+   },
+   "forms": {
+    "dyspnoea": 2
+   },
+   "best_score": 0.985
+  },
+  {
+   "term": "C0013491",
+   "concept": "Ecchymosis",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "abstract": 1,
+    "discussion": 1
+   },
+   "forms": {
+    "ecchymosis": 1,
+    "ecchymoses": 1
+   },
+   "best_score": 0.978
+  },
+  {
+   "term": "C0013604",
+   "concept": "Edema",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "results": 1,
+    "discussion": 1
+   },
+   "forms": {
+    "swelling": 2
+   },
+   "best_score": 0.954
+  },
+  {
+   "term": "C0026961",
+   "concept": "Mydriasis",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "results": 1,
+    "discussion": 1
+   },
+   "forms": {
+    "mydriasis": 2
+   },
+   "best_score": 0.975
+  },
+  {
+   "term": "C0031256",
+   "concept": "Petechiae",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "abstract": 1,
+    "discussion": 1
+   },
+   "forms": {
+    "petechiae": 2
+   },
+   "best_score": 0.983
+  },
+  {
+   "term": "C0178324",
+   "concept": "Vascular System Injuries",
+   "semantic_types": [
+    "Injury or Poisoning"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "discussion": 2
+   },
+   "forms": {
+    "vascular injury": 2
+   },
+   "best_score": 0.98
+  },
+  {
+   "term": "C0242184",
+   "concept": "Hypoxia",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "introduction": 1,
+    "discussion": 1
+   },
+   "forms": {
+    "hypoxia": 2
+   },
+   "best_score": 0.978
+  },
+  {
+   "term": "C0699748",
+   "concept": "Pathogenesis",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "introduction": 1,
+    "discussion": 1
+   },
+   "forms": {
+    "pathogenesis": 2
+   },
+   "best_score": 0.983
+  },
+  {
+   "term": "C0002878",
+   "concept": "Anemia, Hemolytic",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "haemolytic anaemia": 1
+   },
+   "best_score": 0.98
+  },
+  {
+   "term": "C0008370",
+   "concept": "Cholestasis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results": 1
+   },
+   "forms": {
+    "cholestasis": 1
+   },
+   "best_score": 0.992
+  },
+  {
+   "term": "C0011127",
+   "concept": "Pressure Ulcer",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "abstract": 1
+   },
+   "forms": {
+    "decubitus": 1
+   },
+   "best_score": 0.968
+  },
+  {
+   "term": "C0011164",
+   "concept": "Abnormal degeneration",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "degenerative": 1
+   },
+   "best_score": 0.968
+  },
+  {
+   "term": "C0011304",
+   "concept": "Demyelination",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "demyelination": 1
+   },
+   "best_score": 0.939
+  },
+  {
+   "term": "C0018965",
+   "concept": "Hematuria",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "haematuria": 1
+   },
+   "best_score": 0.989
+  },
+  {
+   "term": "C0019158",
+   "concept": "Hepatitis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "hepatitis": 1
+   },
+   "best_score": 0.984
+  },
+  {
+   "term": "C0019191",
+   "concept": "Infectious Canine Hepatitis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "abstract": 1
+   },
+   "forms": {
+    "infectious canine hepatitis": 1
+   },
+   "best_score": 0.979
+  },
+  {
+   "term": "C0020452",
+   "concept": "Hyperemia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results": 1
+   },
+   "forms": {
+    "engorgement": 1
+   },
+   "best_score": 0.968
+  },
+  {
+   "term": "C0022658",
+   "concept": "Kidney Diseases",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "renal disease": 1
+   },
+   "best_score": 0.981
+  },
+  {
+   "term": "C0022660",
+   "concept": "Kidney Failure, Acute",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "acute kidney injury": 1
+   },
+   "best_score": 0.976
+  },
+  {
+   "term": "C0023895",
+   "concept": "Liver diseases",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "hepatopathy": 1
+   },
+   "best_score": 0.994
+  },
+  {
+   "term": "C0027066",
+   "concept": "Myoclonus",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results": 1
+   },
+   "forms": {
+    "myoclonus": 1
+   },
+   "best_score": 0.978
+  },
+  {
+   "term": "C0027707",
+   "concept": "Nephritis, Interstitial",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "interstitial nephritis": 1
+   },
+   "best_score": 0.975
+  },
+  {
+   "term": "C0027765",
+   "concept": "nervous system disorder",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "abstract": 1
+   },
+   "forms": {
+    "neurological disorders": 1
+   },
+   "best_score": 0.986
+  },
+  {
+   "term": "C0028738",
+   "concept": "Nystagmus",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "abstract": 1
+   },
+   "forms": {
+    "nystagmus": 1
+   },
+   "best_score": 0.954
+  },
+  {
+   "term": "C0036679",
+   "concept": "Diastasis",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "methods": 1
+   },
+   "forms": {
+    "separation": 1
+   },
+   "best_score": 0.963
+  },
+  {
+   "term": "C0037036",
+   "concept": "Sialorrhea",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "hypersalivation": 1
+   },
+   "best_score": 0.971
+  },
+  {
+   "term": "C0041582",
+   "concept": "Ulcer",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "ulcers": 1
+   },
+   "best_score": 0.987
+  },
+  {
+   "term": "C0041948",
+   "concept": "Uremia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "uraemia": 1
+   },
+   "best_score": 0.984
+  },
+  {
+   "term": "C0042963",
+   "concept": "Vomiting",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "vomiting": 1
+   },
+   "best_score": 0.957
+  },
+  {
+   "term": "C0087086",
+   "concept": "Thrombus",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results": 1
+   },
+   "forms": {
+    "thrombi": 1
+   },
+   "best_score": 0.969
+  },
+  {
+   "term": "C0151763",
+   "concept": "Liver damage",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "hepatic damage": 1
+   },
+   "best_score": 0.976
+  },
+  {
+   "term": "C0151798",
+   "concept": "Hepatic necrosis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "abstract": 1
+   },
+   "forms": {
+    "liver necrosis": 1
+   },
+   "best_score": 0.982
+  },
+  {
+   "term": "C0160390",
+   "concept": "Injury of liver",
+   "semantic_types": [
+    "Injury or Poisoning"
+   ],
+   "mentions": 1,
+   "mentions_negated": 1,
+   "mentions_affirmed": 0,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "hepatic injury": 1
+   },
+   "best_score": 0.97
+  },
+  {
+   "term": "C0162530",
+   "concept": "Porphyria, Erythropoietic",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "abstract": 1
+   },
+   "forms": {
+    "cep": 1
+   },
+   "best_score": 0.978
+  },
+  {
+   "term": "C0206061",
+   "concept": "Pneumonia, Interstitial",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "interstitial pneumonia": 1
+   },
+   "best_score": 0.972
+  },
+  {
+   "term": "C0302486",
+   "concept": "Erythrophagocytosis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results": 1
+   },
+   "forms": {
+    "erythrophagocytosis": 1
+   },
+   "best_score": 0.981
+  },
+  {
+   "term": "C0333138",
+   "concept": "Stasis",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "stasis": 1
+   },
+   "best_score": 0.987
+  },
+  {
+   "term": "C0333386",
+   "concept": "Chronic lymphocytic inflammation",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results": 1
+   },
+   "forms": {
+    "lymphocytic infiltrate": 1
+   },
+   "best_score": 0.974
+  },
+  {
+   "term": "C0702266",
+   "concept": "Basophilia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results": 1
+   },
+   "forms": {
+    "basophilia": 1
+   },
+   "best_score": 0.988
+  },
+  {
+   "term": "C3670630",
+   "concept": "Nasal hyperkeratosis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "nasal hyperkeratosis": 1
+   },
+   "best_score": 0.967
+  },
+  {
+   "term": "C3672440",
+   "concept": "Bile duct hyperplasia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results": 1
+   },
+   "forms": {
+    "bile duct hyperplasia": 1
+   },
+   "best_score": 0.986
+  }
+ ]
+}

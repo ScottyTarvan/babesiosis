@@ -1,0 +1,247 @@
+{
+ "id": "CB132",
+ "document": "data/markdown/CB132.md",
+ "source_format": "abstract",
+ "translated": false,
+ "words": 236,
+ "run_utc": "2026-10-30T05:34:30+00:00",
+ "threshold": 0.85,
+ "kept_types": [
+  "T019",
+  "T020",
+  "T037",
+  "T046",
+  "T047",
+  "T048",
+  "T049",
+  "T050",
+  "T184",
+  "T190",
+  "T191"
+ ],
+ "term_count": 13,
+ "terms": [
+  {
+   "term": "C0002871",
+   "concept": "Anemia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "abstract": 3
+   },
+   "forms": {
+    "anaemia": 3
+   },
+   "best_score": 0.977
+  },
+  {
+   "term": "C0024291",
+   "concept": "Lymphohistiocytosis, Hemophagocytic",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "abstract": 2,
+    "title": 1
+   },
+   "forms": {
+    "haemophagocytic syndrome": 3
+   },
+   "best_score": 0.98
+  },
+  {
+   "term": "C0040034",
+   "concept": "Thrombocytopenia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "abstract": 2
+   },
+   "forms": {
+    "thrombocytopenia": 2
+   },
+   "best_score": 0.98
+  },
+  {
+   "term": "C0004576",
+   "concept": "Babesiosis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 1,
+   "mentions_affirmed": 0,
+   "sections": {
+    "abstract": 1
+   },
+   "forms": {
+    "babesiosis": 1
+   },
+   "best_score": 0.972
+  },
+  {
+   "term": "C0009450",
+   "concept": "Communicable Diseases",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "abstract": 1
+   },
+   "forms": {
+    "infectious diseases": 1
+   },
+   "best_score": 0.976
+  },
+  {
+   "term": "C0015967",
+   "concept": "Fever",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "abstract": 1
+   },
+   "forms": {
+    "hyperthermic": 1
+   },
+   "best_score": 0.99
+  },
+  {
+   "term": "C0020433",
+   "concept": "Hyperbilirubinemia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "abstract": 1
+   },
+   "forms": {
+    "hyperbilirubinaemia": 1
+   },
+   "best_score": 0.978
+  },
+  {
+   "term": "C0020507",
+   "concept": "Hyperplasia",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "abstract": 1
+   },
+   "forms": {
+    "hyperplasia": 1
+   },
+   "best_score": 0.983
+  },
+  {
+   "term": "C0020557",
+   "concept": "Hypertriglyceridemia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "abstract": 1
+   },
+   "forms": {
+    "hypertriglyceridaemia": 1
+   },
+   "best_score": 0.977
+  },
+  {
+   "term": "C0302486",
+   "concept": "Erythrophagocytosis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "abstract": 1
+   },
+   "forms": {
+    "erythrophagia": 1
+   },
+   "best_score": 0.984
+  },
+  {
+   "term": "C0729233",
+   "concept": "Dissecting aneurysm of the thoracic aorta",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "abstract": 1
+   },
+   "forms": {
+    "thoracic": 1
+   },
+   "best_score": 0.989
+  },
+  {
+   "term": "C1514893",
+   "concept": "physiologic resolution",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "abstract": 1
+   },
+   "forms": {
+    "resolved": 1
+   },
+   "best_score": 0.973
+  },
+  {
+   "term": "C3854388",
+   "concept": "Hyperferritinemia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "abstract": 1
+   },
+   "forms": {
+    "hyperferritinaemia": 1
+   },
+   "best_score": 0.981
+  }
+ ]
+}

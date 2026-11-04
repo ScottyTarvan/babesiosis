@@ -1,0 +1,1454 @@
+{
+ "id": "HU023",
+ "document": "data/markdown/HU023.md",
+ "source_format": "jats_xml",
+ "translated": false,
+ "words": 3561,
+ "run_utc": "2026-10-30T05:37:22+00:00",
+ "threshold": 0.85,
+ "kept_types": [
+  "T019",
+  "T020",
+  "T037",
+  "T046",
+  "T047",
+  "T048",
+  "T049",
+  "T050",
+  "T184",
+  "T190",
+  "T191"
+ ],
+ "term_count": 81,
+ "terms": [
+  {
+   "term": "C0004576",
+   "concept": "Babesiosis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 42,
+   "mentions_negated": 3,
+   "mentions_affirmed": 39,
+   "sections": {
+    "discussion": 16,
+    "abstract": 14,
+    "results": 9,
+    "methods": 2,
+    "title": 1
+   },
+   "forms": {
+    "babesiosis": 42
+   },
+   "best_score": 0.972
+  },
+  {
+   "term": "C0242723",
+   "concept": "Parasitemia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 31,
+   "mentions_negated": 2,
+   "mentions_affirmed": 29,
+   "sections": {
+    "results": 20,
+    "methods": 6,
+    "discussion": 3,
+    "abstract": 2
+   },
+   "forms": {
+    "parasitemia": 31
+   },
+   "best_score": 0.992
+  },
+  {
+   "term": "C0235031",
+   "concept": "Neurologic Symptoms",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 23,
+   "mentions_negated": 3,
+   "mentions_affirmed": 20,
+   "sections": {
+    "methods": 9,
+    "results": 9,
+    "discussion": 3,
+    "abstract": 2
+   },
+   "forms": {
+    "neurologic symptoms": 18,
+    "neurologic symptom": 5
+   },
+   "best_score": 0.985
+  },
+  {
+   "term": "C0235029",
+   "concept": "neurological complication",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 16,
+   "mentions_negated": 1,
+   "mentions_affirmed": 15,
+   "sections": {
+    "discussion": 8,
+    "abstract": 7,
+    "results": 1
+   },
+   "forms": {
+    "neurologic complications": 14,
+    "1 neurologic complication": 1,
+    "neurologic complication": 1
+   },
+   "best_score": 0.981
+  },
+  {
+   "term": "C0018681",
+   "concept": "Headache",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 13,
+   "mentions_negated": 0,
+   "mentions_affirmed": 13,
+   "sections": {
+    "results": 8,
+    "methods": 3,
+    "abstract": 2
+   },
+   "forms": {
+    "headache": 13
+   },
+   "best_score": 0.99
+  },
+  {
+   "term": "C0011849",
+   "concept": "Diabetes Mellitus",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 9,
+   "mentions_negated": 0,
+   "mentions_affirmed": 9,
+   "sections": {
+    "results": 5,
+    "discussion": 2,
+    "abstract": 1,
+    "methods": 1
+   },
+   "forms": {
+    "diabetes mellitus": 9
+   },
+   "best_score": 0.975
+  },
+  {
+   "term": "C0009450",
+   "concept": "Communicable Diseases",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 8,
+   "mentions_negated": 0,
+   "mentions_affirmed": 8,
+   "sections": {
+    "abstract": 4,
+    "discussion": 3,
+    "methods": 1
+   },
+   "forms": {
+    "infection": 8
+   },
+   "best_score": 0.962
+  },
+  {
+   "term": "C0036572",
+   "concept": "Seizures",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 6,
+   "mentions_negated": 0,
+   "mentions_affirmed": 6,
+   "sections": {
+    "methods": 3,
+    "results": 2,
+    "discussion": 1
+   },
+   "forms": {
+    "seizure": 6
+   },
+   "best_score": 0.955
+  },
+  {
+   "term": "C0038454",
+   "concept": "Cerebrovascular accident",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 6,
+   "mentions_negated": 0,
+   "mentions_affirmed": 6,
+   "sections": {
+    "results": 3,
+    "discussion": 2,
+    "methods": 1
+   },
+   "forms": {
+    "stroke": 6
+   },
+   "best_score": 0.959
+  },
+  {
+   "term": "C0009566",
+   "concept": "Complication",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 5,
+   "mentions_negated": 0,
+   "mentions_affirmed": 5,
+   "sections": {
+    "methods": 2,
+    "title": 1,
+    "results": 1,
+    "discussion": 1
+   },
+   "forms": {
+    "complications": 5
+   },
+   "best_score": 0.977
+  },
+  {
+   "term": "C0009676",
+   "concept": "Confusion",
+   "semantic_types": [
+    "Mental or Behavioral Dysfunction"
+   ],
+   "mentions": 5,
+   "mentions_negated": 0,
+   "mentions_affirmed": 5,
+   "sections": {
+    "results": 3,
+    "methods": 2
+   },
+   "forms": {
+    "confusion": 3,
+    "disorientation": 1,
+    "bewilderment": 1
+   },
+   "best_score": 0.981
+  },
+  {
+   "term": "C0020538",
+   "concept": "Hypertensive disease",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 5,
+   "mentions_negated": 0,
+   "mentions_affirmed": 5,
+   "sections": {
+    "results": 4,
+    "methods": 1
+   },
+   "forms": {
+    "hypertension": 5
+   },
+   "best_score": 0.984
+  },
+  {
+   "term": "C0085628",
+   "concept": "Stupor",
+   "semantic_types": [
+    "Mental or Behavioral Dysfunction"
+   ],
+   "mentions": 5,
+   "mentions_negated": 0,
+   "mentions_affirmed": 5,
+   "sections": {
+    "methods": 4,
+    "results": 1
+   },
+   "forms": {
+    "obtundation": 2,
+    "stupor": 2,
+    "obtunded": 1
+   },
+   "best_score": 0.972
+  },
+  {
+   "term": "C0006826",
+   "concept": "Malignant Neoplasms",
+   "semantic_types": [
+    "Neoplastic Process"
+   ],
+   "mentions": 4,
+   "mentions_negated": 0,
+   "mentions_affirmed": 4,
+   "sections": {
+    "results": 2,
+    "abstract": 1,
+    "methods": 1
+   },
+   "forms": {
+    "malignancy": 3,
+    "cancer": 1
+   },
+   "best_score": 0.991
+  },
+  {
+   "term": "C0023380",
+   "concept": "Lethargy",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 4,
+   "mentions_negated": 0,
+   "mentions_affirmed": 4,
+   "sections": {
+    "methods": 2,
+    "results": 2
+   },
+   "forms": {
+    "lethargy": 2,
+    "lethargic": 1,
+    "stuporous": 1
+   },
+   "best_score": 0.989
+  },
+  {
+   "term": "C0039070",
+   "concept": "Syncope",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 4,
+   "mentions_negated": 0,
+   "mentions_affirmed": 4,
+   "sections": {
+    "methods": 2,
+    "abstract": 1,
+    "results": 1
+   },
+   "forms": {
+    "syncope": 4
+   },
+   "best_score": 0.983
+  },
+  {
+   "term": "C0149931",
+   "concept": "Migraine Disorders",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 4,
+   "mentions_negated": 0,
+   "mentions_affirmed": 4,
+   "sections": {
+    "results": 3,
+    "methods": 1
+   },
+   "forms": {
+    "migraine": 4
+   },
+   "best_score": 0.963
+  },
+  {
+   "term": "C1565489",
+   "concept": "Renal Insufficiency",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 4,
+   "mentions_negated": 0,
+   "mentions_affirmed": 4,
+   "sections": {
+    "discussion": 4
+   },
+   "forms": {
+    "renal impairment": 3,
+    "impaired renal function": 1
+   },
+   "best_score": 0.97
+  },
+  {
+   "term": "C0009421",
+   "concept": "Comatose",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "methods": 3
+   },
+   "forms": {
+    "coma": 3
+   },
+   "best_score": 0.994
+  },
+  {
+   "term": "C0018799",
+   "concept": "Heart Diseases",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "results": 3
+   },
+   "forms": {
+    "cardiac disorder": 3
+   },
+   "best_score": 0.987
+  },
+  {
+   "term": "C0024198",
+   "concept": "Lyme Disease",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "abstract": 1,
+    "results": 1,
+    "discussion": 1
+   },
+   "forms": {
+    "lyme disease": 3
+   },
+   "best_score": 0.988
+  },
+  {
+   "term": "C0038525",
+   "concept": "Subarachnoid Hemorrhage",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "results": 3
+   },
+   "forms": {
+    "subarachnoid hemorrhage": 3
+   },
+   "best_score": 0.984
+  },
+  {
+   "term": "C0040822",
+   "concept": "Tremor",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "methods": 2,
+    "results": 1
+   },
+   "forms": {
+    "tremor": 3
+   },
+   "best_score": 0.993
+  },
+  {
+   "term": "C1096458",
+   "concept": "Vascular occlusion",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "discussion": 3
+   },
+   "forms": {
+    "vascular obstruction": 3
+   },
+   "best_score": 0.978
+  },
+  {
+   "term": "C1561643",
+   "concept": "Chronic Kidney Diseases",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "results": 3
+   },
+   "forms": {
+    "chronic kidney disease": 3
+   },
+   "best_score": 0.974
+  },
+  {
+   "term": "C0002871",
+   "concept": "Anemia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "results": 2
+   },
+   "forms": {
+    "anemia": 2
+   },
+   "best_score": 0.974
+  },
+  {
+   "term": "C0011265",
+   "concept": "Presenile dementia",
+   "semantic_types": [
+    "Mental or Behavioral Dysfunction"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "methods": 1,
+    "results": 1
+   },
+   "forms": {
+    "dementia": 2
+   },
+   "best_score": 0.97
+  },
+  {
+   "term": "C0014740",
+   "concept": "Erythema Chronicum Migrans",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "results": 1,
+    "discussion": 1
+   },
+   "forms": {
+    "erythema migrans rash": 2
+   },
+   "best_score": 0.873
+  },
+  {
+   "term": "C0015967",
+   "concept": "Fever",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "results": 2
+   },
+   "forms": {
+    "fever": 2
+   },
+   "best_score": 0.962
+  },
+  {
+   "term": "C0021051",
+   "concept": "Immunologic Deficiency Syndromes",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "results": 2
+   },
+   "forms": {
+    "immunodeficiency": 1,
+    "immunodeficient": 1
+   },
+   "best_score": 0.996
+  },
+  {
+   "term": "C0028754",
+   "concept": "Obesity",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "results": 2
+   },
+   "forms": {
+    "obesity": 2
+   },
+   "best_score": 0.989
+  },
+  {
+   "term": "C0035078",
+   "concept": "Kidney Failure",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "abstract": 2
+   },
+   "forms": {
+    "renal failure": 2
+   },
+   "best_score": 0.96
+  },
+  {
+   "term": "C0242781",
+   "concept": "disease transmission",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "abstract": 2
+   },
+   "forms": {
+    "transmitted": 2
+   },
+   "best_score": 0.972
+  },
+  {
+   "term": "C0751372",
+   "concept": "Nerve Pain",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "methods": 2
+   },
+   "forms": {
+    "nerve pain": 2
+   },
+   "best_score": 0.986
+  },
+  {
+   "term": "C1512433",
+   "concept": "High Grade Cervical Squamous Intraepithelial Neoplasia",
+   "semantic_types": [
+    "Neoplastic Process"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "abstract": 2
+   },
+   "forms": {
+    "high-grade": 2
+   },
+   "best_score": 0.893
+  },
+  {
+   "term": "C3697219",
+   "concept": "Focal motor weakness",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "methods": 2
+   },
+   "forms": {
+    "focal weakness": 2
+   },
+   "best_score": 0.857
+  },
+  {
+   "term": "C0000768",
+   "concept": "Congenital Abnormality",
+   "semantic_types": [
+    "Congenital Abnormality"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results": 1
+   },
+   "forms": {
+    "cns abnormalities": 1
+   },
+   "best_score": 0.89
+  },
+  {
+   "term": "C0001175",
+   "concept": "Acquired Immunodeficiency Syndrome",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "abstract": 1
+   },
+   "forms": {
+    "hiv/aids": 1
+   },
+   "best_score": 0.958
+  },
+  {
+   "term": "C0002878",
+   "concept": "Anemia, Hemolytic",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "abstract": 1
+   },
+   "forms": {
+    "hemolytic anemia": 1
+   },
+   "best_score": 0.978
+  },
+  {
+   "term": "C0003537",
+   "concept": "Aphasia",
+   "semantic_types": [
+    "Mental or Behavioral Dysfunction"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results": 1
+   },
+   "forms": {
+    "aphasia": 1
+   },
+   "best_score": 0.986
+  },
+  {
+   "term": "C0004093",
+   "concept": "Asthenia",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results": 1
+   },
+   "forms": {
+    "weakness": 1
+   },
+   "best_score": 0.975
+  },
+  {
+   "term": "C0005658",
+   "concept": "bite injury",
+   "semantic_types": [
+    "Injury or Poisoning"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "abstract": 1
+   },
+   "forms": {
+    "bite": 1
+   },
+   "best_score": 0.982
+  },
+  {
+   "term": "C0007282",
+   "concept": "Carotid Stenosis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results": 1
+   },
+   "forms": {
+    "carotid artery stenosis": 1
+   },
+   "best_score": 0.989
+  },
+  {
+   "term": "C0008679",
+   "concept": "Chronic disease",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results": 1
+   },
+   "forms": {
+    "chronic disease": 1
+   },
+   "best_score": 0.989
+  },
+  {
+   "term": "C0011168",
+   "concept": "Deglutition Disorders",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results": 1
+   },
+   "forms": {
+    "dysphagia": 1
+   },
+   "best_score": 0.98
+  },
+  {
+   "term": "C0011847",
+   "concept": "Diabetes",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results": 1
+   },
+   "forms": {
+    "diabetes": 1
+   },
+   "best_score": 0.975
+  },
+  {
+   "term": "C0012634",
+   "concept": "Disease",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "abstract": 1
+   },
+   "forms": {
+    "disease": 1
+   },
+   "best_score": 0.987
+  },
+  {
+   "term": "C0012833",
+   "concept": "Dizziness",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results": 1
+   },
+   "forms": {
+    "dizziness": 1
+   },
+   "best_score": 0.942
+  },
+  {
+   "term": "C0015403",
+   "concept": "Eye Infection",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 1,
+   "mentions_affirmed": 0,
+   "sections": {
+    "results": 1
+   },
+   "forms": {
+    "ocular infection": 1
+   },
+   "best_score": 0.971
+  },
+  {
+   "term": "C0015672",
+   "concept": "Fatigue",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results": 1
+   },
+   "forms": {
+    "fatigue": 1
+   },
+   "best_score": 0.971
+  },
+  {
+   "term": "C0018674",
+   "concept": "Craniocerebral Trauma",
+   "semantic_types": [
+    "Injury or Poisoning"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results": 1
+   },
+   "forms": {
+    "head injury": 1
+   },
+   "best_score": 0.98
+  },
+  {
+   "term": "C0018802",
+   "concept": "Congestive heart failure",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "abstract": 1
+   },
+   "forms": {
+    "congestive heart failure": 1
+   },
+   "best_score": 0.977
+  },
+  {
+   "term": "C0021368",
+   "concept": "Inflammation",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 1,
+   "mentions_affirmed": 0,
+   "sections": {
+    "results": 1
+   },
+   "forms": {
+    "inflammation": 1
+   },
+   "best_score": 0.958
+  },
+  {
+   "term": "C0022346",
+   "concept": "Icterus",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results": 1
+   },
+   "forms": {
+    "jaundice": 1
+   },
+   "best_score": 0.947
+  },
+  {
+   "term": "C0022658",
+   "concept": "Kidney Diseases",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "methods": 1
+   },
+   "forms": {
+    "kidney disease": 1
+   },
+   "best_score": 0.973
+  },
+  {
+   "term": "C0023895",
+   "concept": "Liver diseases",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "abstract": 1
+   },
+   "forms": {
+    "liver disease": 1
+   },
+   "best_score": 0.984
+  },
+  {
+   "term": "C0024534",
+   "concept": "Malaria, Cerebral",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "cerebral malaria": 1
+   },
+   "best_score": 0.985
+  },
+  {
+   "term": "C0026766",
+   "concept": "Multiple Organ Failure",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results": 1
+   },
+   "forms": {
+    "multiorgan failure": 1
+   },
+   "best_score": 0.979
+  },
+  {
+   "term": "C0035220",
+   "concept": "Respiratory Distress Syndrome, Newborn",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "abstract": 1
+   },
+   "forms": {
+    "respiratory distress syndrome": 1
+   },
+   "best_score": 0.991
+  },
+  {
+   "term": "C0035309",
+   "concept": "Retinal Diseases",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "retinopathy": 1
+   },
+   "best_score": 0.991
+  },
+  {
+   "term": "C0041948",
+   "concept": "Uremia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "uremia": 1
+   },
+   "best_score": 0.985
+  },
+  {
+   "term": "C0042571",
+   "concept": "Vertigo",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "methods": 1
+   },
+   "forms": {
+    "vertigo": 1
+   },
+   "best_score": 0.984
+  },
+  {
+   "term": "C0085605",
+   "concept": "Liver Failure",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results": 1
+   },
+   "forms": {
+    "liver failure": 1
+   },
+   "best_score": 0.969
+  },
+  {
+   "term": "C0151857",
+   "concept": "Pleocytosis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results": 1
+   },
+   "forms": {
+    "pleocytosis": 1
+   },
+   "best_score": 0.984
+  },
+  {
+   "term": "C0160420",
+   "concept": "Injury of kidney",
+   "semantic_types": [
+    "Injury or Poisoning"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "renal injury": 1
+   },
+   "best_score": 0.963
+  },
+  {
+   "term": "C0162534",
+   "concept": "Prion Diseases",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "abstract": 1
+   },
+   "forms": {
+    "human disease": 1
+   },
+   "best_score": 0.864
+  },
+  {
+   "term": "C0231218",
+   "concept": "Malaise",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results": 1
+   },
+   "forms": {
+    "malaise": 1
+   },
+   "best_score": 0.962
+  },
+  {
+   "term": "C0275524",
+   "concept": "Coinfection",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results": 1
+   },
+   "forms": {
+    "co-infection": 1
+   },
+   "best_score": 0.939
+  },
+  {
+   "term": "C0349410",
+   "concept": "Single organ dysfunction",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "abstract": 1
+   },
+   "forms": {
+    "organ failure": 1
+   },
+   "best_score": 0.975
+  },
+  {
+   "term": "C0392171",
+   "concept": "Influenza-like symptoms",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "abstract": 1
+   },
+   "forms": {
+    "influenza-like symptoms": 1
+   },
+   "best_score": 0.977
+  },
+  {
+   "term": "C0427055",
+   "concept": "Facial Paresis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "methods": 1
+   },
+   "forms": {
+    "facial droop": 1
+   },
+   "best_score": 0.963
+  },
+  {
+   "term": "C0442874",
+   "concept": "Neuropathy",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "abstract": 1
+   },
+   "forms": {
+    "neuropathy": 1
+   },
+   "best_score": 0.995
+  },
+  {
+   "term": "C0600031",
+   "concept": "Congenital absence of spleen",
+   "semantic_types": [
+    "Congenital Abnormality"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "abstract": 1
+   },
+   "forms": {
+    "asplenia": 1
+   },
+   "best_score": 0.99
+  },
+  {
+   "term": "C0699748",
+   "concept": "Pathogenesis",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "pathogenesis": 1
+   },
+   "best_score": 0.983
+  },
+  {
+   "term": "C0740392",
+   "concept": "Infarction, Middle Cerebral Artery",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results": 1
+   },
+   "forms": {
+    "left-middle cerebral artery stroke": 1
+   },
+   "best_score": 0.854
+  },
+  {
+   "term": "C0751843",
+   "concept": "Infarction, Anterior Cerebral Artery",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "cerebral artery stroke": 1
+   },
+   "best_score": 0.873
+  },
+  {
+   "term": "C0810006",
+   "concept": "Acute cerebrovascular disease",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "methods": 1
+   },
+   "forms": {
+    "acute cerebrovascular disease": 1
+   },
+   "best_score": 0.985
+  },
+  {
+   "term": "C0851162",
+   "concept": "Infections of musculoskeletal system",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "infections": 1
+   },
+   "best_score": 0.971
+  },
+  {
+   "term": "C0948008",
+   "concept": "Ischemic stroke",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results": 1
+   },
+   "forms": {
+    "ischemic stroke": 1
+   },
+   "best_score": 0.973
+  },
+  {
+   "term": "C1457887",
+   "concept": "Symptoms",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 1,
+   "mentions_affirmed": 0,
+   "sections": {
+    "results": 1
+   },
+   "forms": {
+    "symptom": 1
+   },
+   "best_score": 0.986
+  },
+  {
+   "term": "C1640363",
+   "concept": "Vector Borne Diseases",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "biography": 1
+   },
+   "forms": {
+    "vector-borne diseases": 1
+   },
+   "best_score": 0.957
+  }
+ ]
+}

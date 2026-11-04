@@ -1,0 +1,61 @@
+{
+ "id": "CB346",
+ "filename": "CB346_2008_leukotriene-b4-prostaglandin-e2-babesiosis.md",
+ "key": "https://openalex.org/W2497839161",
+ "record": {
+  "pmid": null,
+  "pmcid": null,
+  "doi": null,
+  "title": "Leukotriene B4 and prostaglandin E2 in dogs with babesiosis",
+  "journal": null,
+  "authors": [
+   "Nada Kučer",
+   "Vesna Matijatko",
+   "Ivana Kiš",
+   "Renata Barić Rafaj",
+   "Mirna Brkljačić",
+   "Martina Crnogaj",
+   "Iva Mayer",
+   "Darko Grden",
+   "Vladimir Mrljak"
+  ],
+  "first_pub_date": "2008-01-01",
+  "type": "article",
+  "language": [
+   "en"
+  ],
+  "abstract": "Canine babesiosis is a tick-borne disease of worldwide importance. Babesiosis can cause severe tissue hypoxia with consequent widespread tissue damage and probable release of inflammatory mediators. Leukotrienes and prostaglandins are potent eicosanoid lipid mediators. The aim of this study was to investigate the levels of leukotriene B4 (LTB4) and prostaglandin E2 (PGE2) in the sera of the patients with babesiosis. Twentysix dogs presented at the Veterinary Hospital with clinical signs of acute babesiosis were prospectively studied. In all cases Babesia canis infection was confirmed by detection of the parasite using Romanowsky-stained thin blood smears. The control group consisted of 17 healthy dogs, which had no signs of any disease. The levels of LTB4 and PGE2 in serum samples were measured using a competitive enzyme immunoassay test kit (Leukotriene B4 EIA Kit ; Prostaglandin E2 EIA Kit, Cayman Chemical Company). Optical densities were measured at 420 nm in a Multiscan MS (Labsystems). Statistical analysis of the data were carried out by the Mann-Whitney U test at p<0, 05 significance level. Naturally infected dogs showed significant higher levels of leukotrienes B4 than healthy dogs while no significant differences of prostaglandin E2 levels were found. Results obtained in this study suggested that eicosanoids play important roles in pathophysiological events, and babesial symptoms are thought to be mediated by eicosanoids.",
+  "abstract_source": "OpenAlex abstract_inverted_index (reconstructed)",
+  "source_id": "https://openalex.org/W2497839161",
+  "src": "OPENALEX",
+  "found_by": [
+   "OA:title_and_abstract"
+  ],
+  "in_window": true,
+  "key": "https://openalex.org/W2497839161",
+  "source_files": [
+   "candidates_r3.jsonl"
+  ]
+ },
+ "screening": {
+  "key": "https://openalex.org/W2497839161",
+  "decision": "include",
+  "include_type": "primary",
+  "exclude_reason": null,
+  "primary_category": "INF",
+  "secondary_tags": [
+   "OXO"
+  ],
+  "species": "B. canis (confirmed by smear)",
+  "rationale": "Serum LTB4 and PGE2 in 26 dogs with acute babesiosis against 17 controls; eicosanoid inflammatory mediators in the host.",
+  "stage": "screen",
+  "batch": "r4_04.md",
+  "screening_round": "r4"
+ },
+ "fulltext_check": {
+  "key": "https://openalex.org/W2497839161",
+  "pmcid": null,
+  "checked": "2026-10-28",
+  "fulltext_status": "no_pmcid"
+ }
+}

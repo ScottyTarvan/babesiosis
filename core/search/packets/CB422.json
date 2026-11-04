@@ -1,0 +1,92 @@
+{
+ "id": "CB422",
+ "filename": "CB422_2011_therapeutic-efficacy-two-antibabesial-strategies-against.md",
+ "key": "PMID:22222008",
+ "record": {
+  "pmid": "22222008",
+  "pmcid": null,
+  "doi": "10.1016/j.vetpar.2011.11.073",
+  "title": "The therapeutic efficacy of two antibabesial strategies against Babesia gibsoni.",
+  "authors": [
+   "Lin EC",
+   "Chueh LL",
+   "Lin CN",
+   "Hsieh LE",
+   "Su BL"
+  ],
+  "journal": "Veterinary parasitology",
+  "journal_abbrev": "Vet Parasitol",
+  "volume": "186",
+  "issue": "3-4",
+  "pages": "159-64",
+  "language": [
+   "eng"
+  ],
+  "issue_date": "2012-05-25",
+  "issue_date_precision": "day",
+  "epub_date": "2011-12-06",
+  "pubmed_entry_date": "2012-01-10",
+  "first_pub_date": "2011-12-06",
+  "publication_types": [
+   "Clinical Trial",
+   "Journal Article"
+  ],
+  "mesh": [
+   "Animals",
+   "Antiprotozoal Agents",
+   "Babesia",
+   "Cytochromes b",
+   "Dog Diseases",
+   "Dogs",
+   "Drug Therapy, Combination",
+   "Female",
+   "Gene Expression Regulation, Enzymologic",
+   "Genotype",
+   "Male",
+   "Polymerase Chain Reaction",
+   "Protozoan Proteins",
+   "RNA, Ribosomal, 18S"
+  ],
+  "keywords": [],
+  "abstract": "Various combination strategies for treating Babesia gibsoni have been described. However, relapses after administering some combinations of antibabesial drugs and the presence of drug-resistant B. gibsoni still pose significant challenges to veterinarians. To compare the efficacy of a combination of clindamycin, diminazene, and imidocarb (CDI) to that of a combination of atovaquone and azithromycin (AA) for the treatment of B. gibsoni and to correlate drug efficacy with B. gibsoni mutations, 30 client-owned dogs with natural B. gibsoni infections were collected in the study. 17 dogs were treated with AA, and 13 dogs were treated with CDI combination. Hematological parameters were recorded on the day that the dogs were presented for treatment and during treatment. To detect the parasitic DNA, the B. gibsoni 18S rRNA gene was amplified, and to analyze the mutations, the cytochrome b (CYTb) gene was sequenced. The therapy duration for all of the dogs that recovered was 23.3±7.8 days in the AA group and 41.7±12.4 days in the CDI group. Nine of the 17 dogs in the AA group and 11 of the 13 dogs in the CDI group completely recovered. Seven dogs in the AA group and 2 dogs in the CDI group relapsed after treatment. The M121I mutation in the B. gibsoni CYTb gene was detected in all of the samples that were collected from AA-relapsed and AA-nonremission dogs. The dogs in the CDI group exhibited higher recovery rates and lower relapse rates during treatment for B. gibsoni infection. In addition, the detected M121I mutation was associated with AA treatment. The CDI combination is a promising alternative treatment strategy for B. gibsoni.",
+  "corrections": [],
+  "epmc_first_pub_date": "2011-12-06",
+  "is_oa": "N",
+  "has_suppl": "N",
+  "found_by": [
+   "EP1_broad",
+   "EP2_species",
+   "PM1_broad",
+   "PM2_species"
+  ],
+  "in_window": true,
+  "online_vs_issue": "online 2011-12-06; issue 2012-05-25 (day)",
+  "key": "PMID:22222008",
+  "source_files": [
+   "candidates.jsonl"
+  ]
+ },
+ "screening": {
+  "key": "PMID:22222008",
+  "decision": "uncertain",
+  "include_type": null,
+  "exclude_reason": null,
+  "primary_category": "ERY",
+  "secondary_tags": [
+   "SEV"
+  ],
+  "species": "B. gibsoni (confirmed, PCR)",
+  "rationale": "From the abstract: a treatment trial in 30 naturally infected dogs that recorded haematological parameters at presentation and during treatment, but the abstract reports no values. The full text may give a clinicopathological profile of infected dogs, so it should be checked at full-text review.",
+  "stage": "adjudicated",
+  "batch": "r4_13.md",
+  "first_decision": "exclude",
+  "rescue_reason": "Treatment trial in naturally infected B. gibsoni dogs states that haematological parameters were recorded at presentation and during treatment, so host haematology may be reported in the full text. The first screener's treatment_efficacy reason looks wrong.",
+  "screening_round": "r4"
+ },
+ "fulltext_check": {
+  "key": "PMID:22222008",
+  "pmcid": null,
+  "checked": "2026-10-28",
+  "fulltext_status": "no_pmcid"
+ }
+}

@@ -1,0 +1,16 @@
+{
+  "/api/core": {
+    "target": "http://localhost:6060",
+    "pathRewrite": { "^/api/core": "/api" },
+    "changeOrigin": true,
+    "secure": false,
+    "logLevel": "debug"
+  },
+  "/api/reports": {
+    "target": "http://localhost:7070",
+    "pathRewrite": { "^/api/reports": "/api" },
+    "changeOrigin": true,
+    "secure": false,
+    "logLevel": "debug"
+  }
+}

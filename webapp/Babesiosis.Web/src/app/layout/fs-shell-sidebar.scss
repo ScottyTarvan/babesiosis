@@ -1,0 +1,142 @@
+:host {
+  display: block;
+  height: 100%;
+}
+
+.fs-shell-sidebar {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: rgb(var(--fs-color-surface));
+  box-shadow: var(--fs-shadow-sm);
+  transition: width var(--fs-motion-default) ease;
+  overflow: hidden;
+}
+
+.fs-shell-sidebar__brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1.125rem 1rem;
+  flex-shrink: 0;
+}
+
+.fs-shell-sidebar--collapsed .fs-shell-sidebar__brand {
+  justify-content: center;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+// The wordmark is about 3:1, so it fills the open sidebar's width (232px less
+// padding) rather than a fixed height — that lands it near the legacy 65px.
+// It bakes a white background in, so the corners are rounded to sit cleanly on
+// the dark theme's surface as well as the light one.
+.fs-shell-sidebar__brand-logo-img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+.fs-shell-sidebar__brand-mark-img {
+  height: 50px;
+  width: auto;
+  border-radius: 50%;
+}
+
+// Collapse/expand handle — a small circular arrow docked on the seam between the
+// sidebar and the content. Positioned against the host (sticky on desktop), it
+// straddles the sidebar's right border so it reads as a handle on the divider.
+.fs-shell-sidebar__collapse-handle {
+  position: absolute;
+  top: 16px;
+  right: -14px;
+  z-index: 11; // above the sidebar host (z-index: 10) and the content/top bar
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--fs-guide-control-height);
+  height: var(--fs-guide-control-height);
+  padding: 0;
+  border-radius: var(--fs-radius-pill);
+  border: 1px solid rgb(var(--fs-color-line));
+  background-color: rgb(var(--fs-color-surface));
+  color: rgb(var(--fs-color-ink-soft));
+  box-shadow: var(--fs-shadow-sm);
+  cursor: pointer;
+  transition: none;
+
+  &:hover {
+    background-color: rgb(var(--fs-color-primary) / 0.10);
+    color: rgb(var(--fs-color-ink-strong));
+    border-color: rgb(var(--fs-color-primary) / 0.40);
+  }
+
+  &:focus-visible {
+    outline: 2px solid rgb(var(--fs-color-primary));
+    outline-offset: 2px;
+  }
+}
+
+// Below the shell's narrow boundary the sidebar is an overlay drawer, not a
+// column that can be narrowed — collapsing it to a rail there would just make
+// the overlay smaller. Hidden by media query rather than by an input so it can
+// never disagree with the layout in `fs-shell.scss`.
+@media (max-width: 1023.98px) {
+  .fs-shell-sidebar__collapse-handle {
+    display: none;
+  }
+}
+
+.fs-shell-sidebar__nav {
+  flex: 1 1 auto;
+  overflow-y: auto;
+  padding: 4px var(--fs-nav-gutter) 24px;
+
+  // Subtle scrollbar
+  scrollbar-width: thin;
+  scrollbar-color: rgb(var(--fs-color-ink-soft) / 0.4) transparent;
+
+  &::-webkit-scrollbar { width: 6px; }
+  &::-webkit-scrollbar-thumb {
+    background-color: rgb(var(--fs-color-ink-soft) / 0.4);
+    border-radius: 3px;
+  }
+}
+
+.fs-shell-sidebar__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.125rem;
+}
+
+// Section titles ("Manage", "Setup"). The guideline sets them at the same size,
+// weight and colour as the rows they head — they are separated by the group gap
+// alone, with no uppercase, no letter-spacing and no fainter ink. The previous
+// 13px/400/uppercase treatment is exactly the "shouted label" the guideline
+// removes, and `text-transform: uppercase` on a label is an fs-* anti-pattern
+// independently of it.
+.fs-shell-sidebar__section {
+  margin: 16px 0 2px;
+  padding: 0 var(--fs-nav-item-inset);
+  font-size: var(--fs-nav-font-size);
+  font-weight: var(--fs-nav-font-weight);
+  line-height: var(--fs-nav-line-height);
+  letter-spacing: var(--fs-guide-tracking);
+  color: rgb(var(--fs-color-ink));
+
+  &:first-child {
+    margin-top: 4px;
+  }
+}
+
+.fs-shell-sidebar__divider {
+  margin: 10px var(--fs-nav-item-inset);
+  height: 1px;
+  background-color: rgb(var(--fs-color-line));
+  list-style: none;
+}
+

@@ -1,0 +1,59 @@
+{
+ "id": "CB349",
+ "filename": "CB349_2008_aktuelles-zu-babesia-canis-infektionen-bei.md",
+ "key": "https://openalex.org/W3144087869",
+ "record": {
+  "pmid": null,
+  "pmcid": null,
+  "doi": null,
+  "title": "Aktuelles zu Babesia-canis-Infektionen bei Hunden in Bayern und Baden-Württemberg",
+  "journal": "Kleintierpraxis",
+  "authors": [
+   "P Beelitz",
+   "D Wild",
+   "Stefan Wild",
+   "K Pfister"
+  ],
+  "first_pub_date": "2008-02-01",
+  "type": "article",
+  "language": [
+   "de"
+  ],
+  "abstract": null,
+  "abstract_source": "OpenAlex abstract_inverted_index (reconstructed)",
+  "source_id": "https://openalex.org/W3144087869",
+  "src": "OPENALEX",
+  "found_by": [
+   "OA:title_and_abstract"
+  ],
+  "in_window": true,
+  "key": "https://openalex.org/W3144087869",
+  "source_files": [
+   "candidates_r3.jsonl"
+  ]
+ },
+ "screening": {
+  "key": "https://openalex.org/W3144087869",
+  "decision": "uncertain",
+  "include_type": null,
+  "exclude_reason": null,
+  "primary_category": "SEV",
+  "secondary_tags": [
+   "ERY",
+   "COA"
+  ],
+  "species": "B. canis (unspecified)",
+  "rationale": "Title only: OpenAlex has no abstract, and web and Europe PMC searches did not find one (Beelitz et al., Kleintierpraxis 53, 2008). An update on B. canis infections in dogs in southern Germany may describe clinical and laboratory findings of cases or may be purely epidemiological, so eligibility cannot be judged without the full text.",
+  "stage": "adjudicated",
+  "batch": "r4_04.md",
+  "first_decision": "exclude",
+  "rescue_reason": "German practitioner article ('Aktuelles zu Babesia-canis-Infektionen') with no abstract. The title does not rule out a clinical review with haematology or clinical picture, so the adjudicator should check the full text.",
+  "screening_round": "r4"
+ },
+ "fulltext_check": {
+  "key": "https://openalex.org/W3144087869",
+  "pmcid": null,
+  "checked": "2026-10-28",
+  "fulltext_status": "no_pmcid"
+ }
+}

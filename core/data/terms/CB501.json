@@ -1,0 +1,673 @@
+{
+ "id": "CB501",
+ "document": "data/markdown/CB501.md",
+ "source_format": "pdf",
+ "translated": false,
+ "words": 3011,
+ "run_utc": "2026-10-30T05:36:41+00:00",
+ "threshold": 0.85,
+ "kept_types": [
+  "T019",
+  "T020",
+  "T037",
+  "T046",
+  "T047",
+  "T048",
+  "T049",
+  "T050",
+  "T184",
+  "T190",
+  "T191"
+ ],
+ "term_count": 36,
+ "terms": [
+  {
+   "term": "C0276854",
+   "concept": "Infection by Babesia canis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 14,
+   "mentions_negated": 4,
+   "mentions_affirmed": 10,
+   "sections": {
+    "discussion": 9,
+    "introduction": 4,
+    "unlabelled": 1
+   },
+   "forms": {
+    "cb": 13,
+    "canine babesiosis": 1
+   },
+   "best_score": 0.969
+  },
+  {
+   "term": "C0004576",
+   "concept": "Babesiosis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 12,
+   "mentions_negated": 0,
+   "mentions_affirmed": 12,
+   "sections": {
+    "introduction": 4,
+    "methods": 3,
+    "unlabelled": 2,
+    "discussion": 2,
+    "title": 1
+   },
+   "forms": {
+    "babesiosis": 12
+   },
+   "best_score": 0.972
+  },
+  {
+   "term": "C0348801",
+   "concept": "Group B streptococcal pneumonia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 9,
+   "mentions_negated": 2,
+   "mentions_affirmed": 7,
+   "sections": {
+    "results": 4,
+    "discussion": 3,
+    "unlabelled": 1,
+    "methods": 1
+   },
+   "forms": {
+    "group b": 9
+   },
+   "best_score": 0.997
+  },
+  {
+   "term": "C0009450",
+   "concept": "Communicable Diseases",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 6,
+   "mentions_negated": 1,
+   "mentions_affirmed": 5,
+   "sections": {
+    "introduction": 5,
+    "methods": 1
+   },
+   "forms": {
+    "infection": 5,
+    "infectious disease": 1
+   },
+   "best_score": 0.977
+  },
+  {
+   "term": "C0012634",
+   "concept": "Disease",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 6,
+   "mentions_negated": 0,
+   "mentions_affirmed": 6,
+   "sections": {
+    "introduction": 3,
+    "methods": 2,
+    "results": 1
+   },
+   "forms": {
+    "disease": 3,
+    "diseases": 3
+   },
+   "best_score": 0.987
+  },
+  {
+   "term": "C1565489",
+   "concept": "Renal Insufficiency",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 5,
+   "mentions_negated": 0,
+   "mentions_affirmed": 5,
+   "sections": {
+    "introduction": 3,
+    "discussion": 2
+   },
+   "forms": {
+    "renal dysfunction": 5
+   },
+   "best_score": 0.943
+  },
+  {
+   "term": "C0003123",
+   "concept": "Anorexia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 4,
+   "mentions_negated": 0,
+   "mentions_affirmed": 4,
+   "sections": {
+    "introduction": 2,
+    "results": 2
+   },
+   "forms": {
+    "anorexia": 4
+   },
+   "best_score": 0.969
+  },
+  {
+   "term": "C0009566",
+   "concept": "Complication",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 4,
+   "mentions_negated": 0,
+   "mentions_affirmed": 4,
+   "sections": {
+    "introduction": 2,
+    "discussion": 2
+   },
+   "forms": {
+    "complication": 3,
+    "complications": 1
+   },
+   "best_score": 0.977
+  },
+  {
+   "term": "C0015967",
+   "concept": "Fever",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 4,
+   "mentions_negated": 0,
+   "mentions_affirmed": 4,
+   "sections": {
+    "introduction": 2,
+    "results": 2
+   },
+   "forms": {
+    "fever": 2,
+    "hyperthermia": 1,
+    "pyrexia": 1
+   },
+   "best_score": 0.989
+  },
+  {
+   "term": "C0019054",
+   "concept": "Hemolysis (disorder)",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 4,
+   "mentions_negated": 1,
+   "mentions_affirmed": 3,
+   "sections": {
+    "discussion": 4
+   },
+   "forms": {
+    "haemolysis": 4
+   },
+   "best_score": 0.989
+  },
+  {
+   "term": "C0085399",
+   "concept": "Ehrlichiosis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 4,
+   "mentions_negated": 0,
+   "mentions_affirmed": 4,
+   "sections": {
+    "introduction": 2,
+    "title": 1,
+    "discussion": 1
+   },
+   "forms": {
+    "ehrlichiosis": 4
+   },
+   "best_score": 0.952
+  },
+  {
+   "term": "C0022658",
+   "concept": "Kidney Diseases",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "discussion": 2,
+    "introduction": 1
+   },
+   "forms": {
+    "renal disease": 2,
+    "renal diseases": 1
+   },
+   "best_score": 0.981
+  },
+  {
+   "term": "C0275524",
+   "concept": "Coinfection",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 3,
+   "mentions_negated": 1,
+   "mentions_affirmed": 2,
+   "sections": {
+    "methods": 2,
+    "introduction": 1
+   },
+   "forms": {
+    "co-infections": 2,
+    "co-infection": 1
+   },
+   "best_score": 0.952
+  },
+  {
+   "term": "C0002878",
+   "concept": "Anemia, Hemolytic",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "introduction": 1,
+    "methods": 1
+   },
+   "forms": {
+    "hemolytic anaemia": 1,
+    "hemolytic anemia": 1
+   },
+   "best_score": 0.979
+  },
+  {
+   "term": "C0004093",
+   "concept": "Asthenia",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "results": 1,
+    "discussion": 1
+   },
+   "forms": {
+    "weakness": 2
+   },
+   "best_score": 0.975
+  },
+  {
+   "term": "C0011570",
+   "concept": "Mental Depression",
+   "semantic_types": [
+    "Mental or Behavioral Dysfunction"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "results": 2
+   },
+   "forms": {
+    "depression": 2
+   },
+   "best_score": 0.97
+  },
+  {
+   "term": "C0022346",
+   "concept": "Icterus",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "introduction": 1,
+    "discussion": 1
+   },
+   "forms": {
+    "icterus": 2
+   },
+   "best_score": 0.958
+  },
+  {
+   "term": "C0023380",
+   "concept": "Lethargy",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "introduction": 1,
+    "results": 1
+   },
+   "forms": {
+    "lethargy": 2
+   },
+   "best_score": 0.987
+  },
+  {
+   "term": "C0160420",
+   "concept": "Injury of kidney",
+   "semantic_types": [
+    "Injury or Poisoning"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "unlabelled": 1,
+    "discussion": 1
+   },
+   "forms": {
+    "renal injury": 2
+   },
+   "best_score": 0.963
+  },
+  {
+   "term": "C0268731",
+   "concept": "Renal glomerular disease",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 1,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 2
+   },
+   "forms": {
+    "glomerulopathy": 1,
+    "glomerular disease": 1
+   },
+   "best_score": 0.992
+  },
+  {
+   "term": "C0497156",
+   "concept": "Lymphadenopathy",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "introduction": 1,
+    "results": 1
+   },
+   "forms": {
+    "lymphadenopathy": 2
+   },
+   "best_score": 0.99
+  },
+  {
+   "term": "C1847593",
+   "concept": "EPIPHYSEAL DYSPLASIA, MULTIPLE, 4",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "methods": 2
+   },
+   "forms": {
+    "rmed": 2
+   },
+   "best_score": 0.94
+  },
+  {
+   "term": "C0002797",
+   "concept": "Anaplasmosis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 1,
+   "mentions_affirmed": 0,
+   "sections": {
+    "methods": 1
+   },
+   "forms": {
+    "anaplasmosis": 1
+   },
+   "best_score": 0.974
+  },
+  {
+   "term": "C0013911",
+   "concept": "Emaciation",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "emaciation": 1
+   },
+   "best_score": 0.964
+  },
+  {
+   "term": "C0017181",
+   "concept": "Gastrointestinal Hemorrhage",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 1,
+   "mentions_affirmed": 0,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "gastro-intestinal hemorrhage": 1
+   },
+   "best_score": 0.886
+  },
+  {
+   "term": "C0019080",
+   "concept": "Hemorrhage",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "bleeding": 1
+   },
+   "best_score": 0.968
+  },
+  {
+   "term": "C0022660",
+   "concept": "Kidney Failure, Acute",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "acute renal failure": 1
+   },
+   "best_score": 0.967
+  },
+  {
+   "term": "C0023281",
+   "concept": "Leishmaniasis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 1,
+   "mentions_affirmed": 0,
+   "sections": {
+    "methods": 1
+   },
+   "forms": {
+    "leishmaniasis": 1
+   },
+   "best_score": 0.966
+  },
+  {
+   "term": "C0024198",
+   "concept": "Lyme Disease",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 1,
+   "mentions_affirmed": 0,
+   "sections": {
+    "methods": 1
+   },
+   "forms": {
+    "lyme disease": 1
+   },
+   "best_score": 0.988
+  },
+  {
+   "term": "C0026766",
+   "concept": "Multiple Organ Failure",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "multiple organ dysfunction syndrome": 1
+   },
+   "best_score": 0.971
+  },
+  {
+   "term": "C0035078",
+   "concept": "Kidney Failure",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "renal insuffi ciency": 1
+   },
+   "best_score": 0.865
+  },
+  {
+   "term": "C0160390",
+   "concept": "Injury of liver",
+   "semantic_types": [
+    "Injury or Poisoning"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "injury of the liver": 1
+   },
+   "best_score": 0.869
+  },
+  {
+   "term": "C0235446",
+   "concept": "Azotemia due to intrarenal disease",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "renal azotemia": 1
+   },
+   "best_score": 0.955
+  },
+  {
+   "term": "C0242528",
+   "concept": "Azotemia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "azotemia": 1
+   },
+   "best_score": 0.964
+  },
+  {
+   "term": "C0242781",
+   "concept": "disease transmission",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "transmitted": 1
+   },
+   "best_score": 0.972
+  },
+  {
+   "term": "C1640363",
+   "concept": "Vector Borne Diseases",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "vector-borne disease": 1
+   },
+   "best_score": 0.955
+  }
+ ]
+}

@@ -1,0 +1,280 @@
+{
+ "id": "CB342",
+ "document": "data/markdown/CB342.md",
+ "source_format": "pdf",
+ "translated": false,
+ "words": 2941,
+ "run_utc": "2026-10-30T05:36:09+00:00",
+ "threshold": 0.85,
+ "kept_types": [
+  "T019",
+  "T020",
+  "T037",
+  "T046",
+  "T047",
+  "T048",
+  "T049",
+  "T050",
+  "T184",
+  "T190",
+  "T191"
+ ],
+ "term_count": 14,
+ "terms": [
+  {
+   "term": "C0004576",
+   "concept": "Babesiosis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 23,
+   "mentions_negated": 2,
+   "mentions_affirmed": 21,
+   "sections": {
+    "results": 10,
+    "introduction": 6,
+    "abstract": 4,
+    "methods": 2,
+    "title": 1
+   },
+   "forms": {
+    "babesiosis": 22,
+    "babesiosis1": 1
+   },
+   "best_score": 0.972
+  },
+  {
+   "term": "C0020615",
+   "concept": "Hypoglycemia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 17,
+   "mentions_negated": 4,
+   "mentions_affirmed": 13,
+   "sections": {
+    "results": 9,
+    "introduction": 8
+   },
+   "forms": {
+    "hypoglycaemia": 17
+   },
+   "best_score": 0.987
+  },
+  {
+   "term": "C0022346",
+   "concept": "Icterus",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 10,
+   "mentions_negated": 5,
+   "mentions_affirmed": 5,
+   "sections": {
+    "results": 5,
+    "methods": 4,
+    "introduction": 1
+   },
+   "forms": {
+    "icterus": 9,
+    "icteric": 1
+   },
+   "best_score": 0.958
+  },
+  {
+   "term": "C0024530",
+   "concept": "Malaria",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 8,
+   "mentions_negated": 2,
+   "mentions_affirmed": 6,
+   "sections": {
+    "introduction": 7,
+    "results": 1
+   },
+   "forms": {
+    "malaria": 8
+   },
+   "best_score": 0.996
+  },
+  {
+   "term": "C0221423",
+   "concept": "Illness (finding)",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 5,
+   "mentions_negated": 1,
+   "mentions_affirmed": 4,
+   "sections": {
+    "methods": 2,
+    "results": 2,
+    "introduction": 1
+   },
+   "forms": {
+    "illness": 5
+   },
+   "best_score": 0.967
+  },
+  {
+   "term": "C0012634",
+   "concept": "Disease",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 4,
+   "mentions_negated": 0,
+   "mentions_affirmed": 4,
+   "sections": {
+    "introduction": 2,
+    "methods": 2
+   },
+   "forms": {
+    "disease": 4
+   },
+   "best_score": 0.987
+  },
+  {
+   "term": "C0036974",
+   "concept": "Shock",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 3,
+   "mentions_negated": 1,
+   "mentions_affirmed": 2,
+   "sections": {
+    "introduction": 1,
+    "methods": 1,
+    "results": 1
+   },
+   "forms": {
+    "collapse": 3
+   },
+   "best_score": 0.979
+  },
+  {
+   "term": "C0001623",
+   "concept": "Adrenal gland hypofunction",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 1,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1,
+    "results": 1
+   },
+   "forms": {
+    "adrenal insufficiency": 1,
+    "adrenal failure": 1
+   },
+   "best_score": 0.97
+  },
+  {
+   "term": "C0006826",
+   "concept": "Malignant Neoplasms",
+   "semantic_types": [
+    "Neoplastic Process"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "methods": 1
+   },
+   "forms": {
+    "malignancies": 1
+   },
+   "best_score": 0.986
+  },
+  {
+   "term": "C0020456",
+   "concept": "Hyperglycemia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results": 1
+   },
+   "forms": {
+    "hyperglycaemia": 1
+   },
+   "best_score": 0.969
+  },
+  {
+   "term": "C0020517",
+   "concept": "Hypersensitivity",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 1,
+   "mentions_affirmed": 0,
+   "sections": {
+    "methods": 1
+   },
+   "forms": {
+    "sensitivity": 1
+   },
+   "best_score": 0.997
+  },
+  {
+   "term": "C0032002",
+   "concept": "Pituitary Diseases",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 1,
+   "mentions_affirmed": 0,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "pituitary": 1
+   },
+   "best_score": 0.981
+  },
+  {
+   "term": "C0683278",
+   "concept": "Mental Suffering",
+   "semantic_types": [
+    "Mental or Behavioral Dysfunction"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "abstract": 1
+   },
+   "forms": {
+    "suffering": 1
+   },
+   "best_score": 0.94
+  },
+  {
+   "term": "C0858318",
+   "concept": "Plasmodium falciparum infection",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "plasmodium falciparum infection": 1
+   },
+   "best_score": 0.966
+  }
+ ]
+}

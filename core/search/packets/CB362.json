@@ -1,0 +1,55 @@
+{
+ "id": "CB362",
+ "filename": "CB362_2009_babesiosis.md",
+ "key": "https://openalex.org/W104153905",
+ "record": {
+  "pmid": null,
+  "pmcid": null,
+  "doi": null,
+  "title": "Babesiosis in a dog.",
+  "journal": "Der Praktische Tierarzt",
+  "authors": [
+   "Birte Hellwig",
+   "Ines Langbein‐Detsch",
+   "J Hübner",
+   "V. Hach"
+  ],
+  "first_pub_date": "2009-01-01",
+  "type": "article",
+  "language": [
+   "de"
+  ],
+  "abstract": null,
+  "abstract_source": "OpenAlex abstract_inverted_index (reconstructed)",
+  "source_id": "https://openalex.org/W104153905",
+  "src": "OPENALEX",
+  "found_by": [
+   "OA:title_and_abstract"
+  ],
+  "in_window": true,
+  "key": "https://openalex.org/W104153905",
+  "source_files": [
+   "candidates_r3.jsonl"
+  ]
+ },
+ "screening": {
+  "key": "https://openalex.org/W104153905",
+  "decision": "uncertain",
+  "include_type": null,
+  "exclude_reason": null,
+  "primary_category": "SEV",
+  "secondary_tags": [],
+  "species": "Babesia sp. (unspecified)",
+  "rationale": "Based on the title and OpenAlex metadata only: a German case report, Der Praktische Tierarzt 90(4):296-302, 2009, in window. CAB Direct gave no abstract, and a 7-page report could describe a distinct syndrome, so it goes to full-text review.",
+  "stage": "adjudicated",
+  "batch": "r4_06.md",
+  "first_decision": "uncertain",
+  "screening_round": "r4"
+ },
+ "fulltext_check": {
+  "key": "https://openalex.org/W104153905",
+  "pmcid": null,
+  "checked": "2026-10-28",
+  "fulltext_status": "no_pmcid"
+ }
+}

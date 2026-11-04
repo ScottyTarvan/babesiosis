@@ -1,0 +1,565 @@
+{
+ "id": "CB181",
+ "document": "data/markdown/CB181.md",
+ "source_format": "pdf",
+ "translated": false,
+ "words": 1537,
+ "run_utc": "2026-10-30T05:34:58+00:00",
+ "threshold": 0.85,
+ "kept_types": [
+  "T019",
+  "T020",
+  "T037",
+  "T046",
+  "T047",
+  "T048",
+  "T049",
+  "T050",
+  "T184",
+  "T190",
+  "T191"
+ ],
+ "term_count": 31,
+ "terms": [
+  {
+   "term": "C0004576",
+   "concept": "Babesiosis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 14,
+   "mentions_negated": 0,
+   "mentions_affirmed": 14,
+   "sections": {
+    "results_discussion": 6,
+    "abstract": 3,
+    "introduction": 3,
+    "title": 1,
+    "unlabelled": 1
+   },
+   "forms": {
+    "babesiosis": 14
+   },
+   "best_score": 0.972
+  },
+  {
+   "term": "C0002871",
+   "concept": "Anemia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 8,
+   "mentions_negated": 0,
+   "mentions_affirmed": 8,
+   "sections": {
+    "introduction": 4,
+    "results_discussion": 4
+   },
+   "forms": {
+    "anemia": 7,
+    "anaemia": 1
+   },
+   "best_score": 0.977
+  },
+  {
+   "term": "C0851162",
+   "concept": "Infections of musculoskeletal system",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 5,
+   "mentions_negated": 0,
+   "mentions_affirmed": 5,
+   "sections": {
+    "introduction": 5
+   },
+   "forms": {
+    "infections": 5
+   },
+   "best_score": 0.971
+  },
+  {
+   "term": "C0009450",
+   "concept": "Communicable Diseases",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 4,
+   "mentions_negated": 1,
+   "mentions_affirmed": 3,
+   "sections": {
+    "introduction": 4
+   },
+   "forms": {
+    "infection": 4
+   },
+   "best_score": 0.962
+  },
+  {
+   "term": "C0003123",
+   "concept": "Anorexia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "abstract": 1,
+    "methods": 1,
+    "results_discussion": 1
+   },
+   "forms": {
+    "anorexia": 2,
+    "loss of appetite": 1
+   },
+   "best_score": 0.981
+  },
+  {
+   "term": "C0015967",
+   "concept": "Fever",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "introduction": 1,
+    "methods": 1,
+    "results_discussion": 1
+   },
+   "forms": {
+    "fever": 3
+   },
+   "best_score": 0.962
+  },
+  {
+   "term": "C0023380",
+   "concept": "Lethargy",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "introduction": 2,
+    "results_discussion": 1
+   },
+   "forms": {
+    "lethargy": 3
+   },
+   "best_score": 0.987
+  },
+  {
+   "term": "C0040034",
+   "concept": "Thrombocytopenia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "introduction": 2,
+    "results_discussion": 1
+   },
+   "forms": {
+    "thrombocytopenia": 3
+   },
+   "best_score": 0.98
+  },
+  {
+   "term": "C0242723",
+   "concept": "Parasitemia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "introduction": 3
+   },
+   "forms": {
+    "parasitemia": 3
+   },
+   "best_score": 0.992
+  },
+  {
+   "term": "C0012634",
+   "concept": "Disease",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "introduction": 2
+   },
+   "forms": {
+    "disease": 2
+   },
+   "best_score": 0.987
+  },
+  {
+   "term": "C0002878",
+   "concept": "Anemia, Hemolytic",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "hemolytic anemia": 1
+   },
+   "best_score": 0.978
+  },
+  {
+   "term": "C0010957",
+   "concept": "Tissue damage",
+   "semantic_types": [
+    "Injury or Poisoning"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results_discussion": 1
+   },
+   "forms": {
+    "damage": 1
+   },
+   "best_score": 0.987
+  },
+  {
+   "term": "C0011164",
+   "concept": "Abnormal degeneration",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results_discussion": 1
+   },
+   "forms": {
+    "degenerative": 1
+   },
+   "best_score": 0.968
+  },
+  {
+   "term": "C0011570",
+   "concept": "Mental Depression",
+   "semantic_types": [
+    "Mental or Behavioral Dysfunction"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "methods": 1
+   },
+   "forms": {
+    "depression": 1
+   },
+   "best_score": 0.97
+  },
+  {
+   "term": "C0013491",
+   "concept": "Ecchymosis",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results_discussion": 1
+   },
+   "forms": {
+    "ecchymosis": 1
+   },
+   "best_score": 0.971
+  },
+  {
+   "term": "C0017658",
+   "concept": "Glomerulonephritis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "glomerulonephritis": 1
+   },
+   "best_score": 0.986
+  },
+  {
+   "term": "C0019054",
+   "concept": "Hemolysis (disorder)",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results_discussion": 1
+   },
+   "forms": {
+    "haemolysis": 1
+   },
+   "best_score": 0.989
+  },
+  {
+   "term": "C0020615",
+   "concept": "Hypoglycemia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results_discussion": 1
+   },
+   "forms": {
+    "hypoglycaemia": 1
+   },
+   "best_score": 0.987
+  },
+  {
+   "term": "C0022346",
+   "concept": "Icterus",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "abstract": 1
+   },
+   "forms": {
+    "icteric": 1
+   },
+   "best_score": 0.958
+  },
+  {
+   "term": "C0022660",
+   "concept": "Kidney Failure, Acute",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results_discussion": 1
+   },
+   "forms": {
+    "acute renal failure": 1
+   },
+   "best_score": 0.967
+  },
+  {
+   "term": "C0030499",
+   "concept": "Parasitic Diseases",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "methods": 1
+   },
+   "forms": {
+    "infestation": 1
+   },
+   "best_score": 0.946
+  },
+  {
+   "term": "C0151317",
+   "concept": "Chronic Infection",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "chronic infections": 1
+   },
+   "best_score": 0.98
+  },
+  {
+   "term": "C0162323",
+   "concept": "Polyarthritis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "polyarthritis": 1
+   },
+   "best_score": 0.966
+  },
+  {
+   "term": "C0242648",
+   "concept": "Vertical Disease Transmission",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "vertical transmission": 1
+   },
+   "best_score": 0.968
+  },
+  {
+   "term": "C0242781",
+   "concept": "disease transmission",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "transmitted": 1
+   },
+   "best_score": 0.972
+  },
+  {
+   "term": "C0243088",
+   "concept": "sequelae aspects",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "sequelae": 1
+   },
+   "best_score": 0.979
+  },
+  {
+   "term": "C0275518",
+   "concept": "Acute infectious disease",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "acute infections": 1
+   },
+   "best_score": 0.977
+  },
+  {
+   "term": "C0276854",
+   "concept": "Infection by Babesia canis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results_discussion": 1
+   },
+   "forms": {
+    "canine babesiosis": 1
+   },
+   "best_score": 0.969
+  },
+  {
+   "term": "C0302486",
+   "concept": "Erythrophagocytosis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "erythrophagocytosis": 1
+   },
+   "best_score": 0.981
+  },
+  {
+   "term": "C0683278",
+   "concept": "Mental Suffering",
+   "semantic_types": [
+    "Mental or Behavioral Dysfunction"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results_discussion": 1
+   },
+   "forms": {
+    "suffering": 1
+   },
+   "best_score": 0.94
+  },
+  {
+   "term": "C5392203",
+   "concept": "Oxidative Damage",
+   "semantic_types": [
+    "Cell or Molecular Dysfunction"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "oxidative damage": 1
+   },
+   "best_score": 0.981
+  }
+ ]
+}

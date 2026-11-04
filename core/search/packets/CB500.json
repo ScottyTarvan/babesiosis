@@ -1,0 +1,56 @@
+{
+ "id": "CB500",
+ "filename": "CB500_2015_causes-anemia-taiwan-five-year-retrospective.md",
+ "key": "DOI:10.1142/s1682648515500031",
+ "record": {
+  "pmid": null,
+  "pmcid": null,
+  "doi": "10.1142/s1682648515500031",
+  "title": "CAUSES OF CANINE ANEMIA IN TAIWAN: A FIVE-YEAR RETROSPECTIVE SURVEY",
+  "journal": "Taiwan Veterinary Journal",
+  "authors": [
+   "Pin-Chen Liu",
+   "Bi-Ling Su"
+  ],
+  "first_pub_date": "2015-03-01",
+  "type": "article",
+  "language": [
+   "en"
+  ],
+  "abstract": "Anemia is a common hematologic disorder in dogs, however, few data are available regarding epidemiology and causes in Taiwan. To investigate the causes of anemia, 3174 anemic cases (hematocrit < 37%) collected between January 2008 and December 2012 at National Taiwan University Veterinary Hospital (NTUVH) were analyzed. Most dogs (48.5%, n = 1540) presented with a mild form (30% ≤ hematocrit < 37%), which was followed by a moderate form (20% ≤ hematocrit < 30%; 36.4%, n = 1155), a severe form (13% ≤ hematocrit < 20%; 10.5%, n = 332) and a very severe form (hematocrit < 13%; 4.6%, n = 147). Among the 2037 dogs with identifiable causes, 70.4% (1435 dogs) were induced by single cause, whereas 29.6% (602 dogs) by multiple causes. Cancer-related anemia (CRA, n = 460), infectious pathogens-related anemia (n = 287), renal disease-related anemia (n = 251) and post-surgery/trauma-related anemia (n = 182) account for 32.1%, 20.0%, 17.6% and 12.7% of single-cause cases, respectively. Furthermore, 255 of the total (17.8.0%) presented with severe and very severe anemia. 72 dogs with very severe anemia primarily resulted from infectious disease-related anemia (59.7%), followed by immune-mediated hemolytic anemia (13.9%), and other disease-related anemia (9.7%). Of the 43 infectious disease-related very severe anemic dogs, the most commonly diagnosed pathogen was Babesia gibsoni (83.7%, n = 36), followed by Ehrlichia canis (11.6%, n = 5), Babesia canis (2.3%, n = 1) and Leptospira spp. (2.3%, n = 1). Taken together, cancer, infectious diseases, and renal failure are the most frequent causes of canine anemia in Taiwan, and B. gibsoni appeared to be the most important infectious pathogen causing very severe anemia.",
+  "abstract_source": "OpenAlex abstract_inverted_index (reconstructed)",
+  "source_id": "https://openalex.org/W2002061085",
+  "src": "OPENALEX",
+  "found_by": [
+   "OA:title_and_abstract"
+  ],
+  "in_window": true,
+  "key": "DOI:10.1142/s1682648515500031",
+  "source_files": [
+   "candidates_r3.jsonl"
+  ]
+ },
+ "screening": {
+  "key": "DOI:10.1142/s1682648515500031",
+  "decision": "include",
+  "include_type": "primary",
+  "exclude_reason": null,
+  "primary_category": "ERY",
+  "secondary_tags": [
+   "SEV"
+  ],
+  "species": "B. gibsoni (confirmed per abstract, method not stated); B. canis (1 dog)",
+  "rationale": "Based on the abstract: a retrospective series of anaemic dogs graded by haematocrit, in which B. gibsoni caused 36 of the 43 infectious very severe anaemia cases. This gives Babesia-specific data on anaemia severity in infected dogs, so I agree with the second screener's rescue.",
+  "stage": "adjudicated",
+  "batch": "r4_24.md",
+  "first_decision": "exclude",
+  "rescue_reason": "Taiwan anaemia causes in dogs: B. gibsoni was the pathogen in 36 of 43 infectious-disease very severe anaemia cases, so this is Babesia-specific anaemia severity data in infected dogs. The first-screener exclusion (prevalence) is wrong. Category ERY, secondary SEV.",
+  "screening_round": "r4"
+ },
+ "fulltext_check": {
+  "key": "DOI:10.1142/s1682648515500031",
+  "pmcid": null,
+  "checked": "2026-10-28",
+  "fulltext_status": "no_pmcid"
+ }
+}

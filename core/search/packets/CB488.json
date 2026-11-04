@@ -1,0 +1,62 @@
+{
+ "id": "CB488",
+ "filename": "CB488_2014_concentrations-inflammatory-markers-amino-terminal-portion.md",
+ "key": "https://openalex.org/W2108202462",
+ "record": {
+  "pmid": null,
+  "pmcid": null,
+  "doi": null,
+  "title": "The concentrations of the inflammatory markers the amino-terminal portion of C-type pronatriuretic peptide and procalcitonin in canine babesiosis caused by Babesia canis.",
+  "journal": "Hrčak Portal of scientific journals of Croatia (University Computing Centre)",
+  "authors": [
+   "Mirna Brkljačić",
+   "Marin Torti",
+   "Jelka Pleadin",
+   "Vladimir Mrljak",
+   "Iva Šmit",
+   "Ivana Kiš",
+   "Iva Mayer",
+   "Martina Crnogaj",
+   "Vesna Matijatko"
+  ],
+  "first_pub_date": "2014-12-05",
+  "type": "article",
+  "language": [
+   "en"
+  ],
+  "abstract": "BRKLJAČIĆ, M., M",
+  "abstract_source": "OpenAlex abstract_inverted_index (reconstructed)",
+  "source_id": "https://openalex.org/W2108202462",
+  "src": "OPENALEX",
+  "found_by": [
+   "OA:title_and_abstract"
+  ],
+  "in_window": true,
+  "key": "https://openalex.org/W2108202462",
+  "source_files": [
+   "candidates_r3.jsonl"
+  ]
+ },
+ "screening": {
+  "key": "https://openalex.org/W2108202462",
+  "decision": "include",
+  "include_type": "primary",
+  "exclude_reason": null,
+  "primary_category": "INF",
+  "secondary_tags": [
+   "SEV"
+  ],
+  "species": "B. canis (confirmed per authors; method not stated)",
+  "rationale": "Based on the Hrčak landing page abstract (Vet Arhiv 84(6):575-589, 2014): 72 dogs with babesiosis vs 25 controls. PCT differed between infected and healthy dogs, and NT-proCNP differed between survivors and non-survivors, so these are host inflammatory and prognostic markers.",
+  "stage": "adjudicated",
+  "batch": "r4_22.md",
+  "first_decision": "uncertain",
+  "screening_round": "r4"
+ },
+ "fulltext_check": {
+  "key": "https://openalex.org/W2108202462",
+  "pmcid": null,
+  "checked": "2026-10-28",
+  "fulltext_status": "no_pmcid"
+ }
+}

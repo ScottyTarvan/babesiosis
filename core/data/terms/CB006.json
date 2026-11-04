@@ -1,0 +1,715 @@
+{
+ "id": "CB006",
+ "document": "data/markdown/CB006.md",
+ "source_format": "jats_xml",
+ "translated": false,
+ "words": 4037,
+ "run_utc": "2026-10-30T05:32:59+00:00",
+ "threshold": 0.85,
+ "kept_types": [
+  "T019",
+  "T020",
+  "T037",
+  "T046",
+  "T047",
+  "T048",
+  "T049",
+  "T050",
+  "T184",
+  "T190",
+  "T191"
+ ],
+ "term_count": 38,
+ "terms": [
+  {
+   "term": "C0004576",
+   "concept": "Babesiosis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 66,
+   "mentions_negated": 4,
+   "mentions_affirmed": 62,
+   "sections": {
+    "results": 18,
+    "introduction": 14,
+    "discussion": 13,
+    "methods": 12,
+    "abstract": 8,
+    "conclusion": 1
+   },
+   "forms": {
+    "babesiosis": 66
+   },
+   "best_score": 0.972
+  },
+  {
+   "term": "C0009566",
+   "concept": "Complication",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 22,
+   "mentions_negated": 9,
+   "mentions_affirmed": 13,
+   "sections": {
+    "methods": 11,
+    "results": 8,
+    "abstract": 2,
+    "introduction": 1
+   },
+   "forms": {
+    "complication": 17,
+    "complications": 4,
+    "complication***": 1
+   },
+   "best_score": 0.977
+  },
+  {
+   "term": "C0242606",
+   "concept": "Oxidative Stress",
+   "semantic_types": [
+    "Cell or Molecular Dysfunction"
+   ],
+   "mentions": 18,
+   "mentions_negated": 0,
+   "mentions_affirmed": 18,
+   "sections": {
+    "results": 6,
+    "discussion": 6,
+    "introduction": 4,
+    "abstract": 1,
+    "conclusion": 1
+   },
+   "forms": {
+    "oxidative stress": 18
+   },
+   "best_score": 0.985
+  },
+  {
+   "term": "C0026766",
+   "concept": "Multiple Organ Failure",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 17,
+   "mentions_negated": 4,
+   "mentions_affirmed": 13,
+   "sections": {
+    "results": 9,
+    "discussion": 3,
+    "abstract": 2,
+    "introduction": 2,
+    "methods": 1
+   },
+   "forms": {
+    "mods": 16,
+    "multiple organ dysfunction syndrome - mods": 1
+   },
+   "best_score": 0.971
+  },
+  {
+   "term": "C0002871",
+   "concept": "Anemia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 16,
+   "mentions_negated": 1,
+   "mentions_affirmed": 15,
+   "sections": {
+    "discussion": 6,
+    "results": 5,
+    "abstract": 3,
+    "introduction": 1,
+    "methods": 1
+   },
+   "forms": {
+    "anaemia": 16
+   },
+   "best_score": 0.977
+  },
+  {
+   "term": "C0683278",
+   "concept": "Mental Suffering",
+   "semantic_types": [
+    "Mental or Behavioral Dysfunction"
+   ],
+   "mentions": 8,
+   "mentions_negated": 0,
+   "mentions_affirmed": 8,
+   "sections": {
+    "discussion": 5,
+    "abstract": 2,
+    "conclusion": 1
+   },
+   "forms": {
+    "suffering": 8
+   },
+   "best_score": 0.94
+  },
+  {
+   "term": "C0012634",
+   "concept": "Disease",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 6,
+   "mentions_negated": 0,
+   "mentions_affirmed": 6,
+   "sections": {
+    "abstract": 2,
+    "introduction": 2,
+    "results": 1,
+    "discussion": 1
+   },
+   "forms": {
+    "disease": 6
+   },
+   "best_score": 0.987
+  },
+  {
+   "term": "C0242966",
+   "concept": "Systemic Inflammatory Response Syndrome",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 6,
+   "mentions_negated": 0,
+   "mentions_affirmed": 6,
+   "sections": {
+    "introduction": 4,
+    "methods": 1,
+    "discussion": 1
+   },
+   "forms": {
+    "sirs": 5,
+    "systemic inflammatory response syndrome": 1
+   },
+   "best_score": 0.987
+  },
+  {
+   "term": "C0009450",
+   "concept": "Communicable Diseases",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 5,
+   "mentions_negated": 1,
+   "mentions_affirmed": 4,
+   "sections": {
+    "introduction": 2,
+    "methods": 1,
+    "results": 1,
+    "discussion": 1
+   },
+   "forms": {
+    "infection": 5
+   },
+   "best_score": 0.962
+  },
+  {
+   "term": "C0699748",
+   "concept": "Pathogenesis",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 5,
+   "mentions_negated": 0,
+   "mentions_affirmed": 5,
+   "sections": {
+    "introduction": 3,
+    "discussion": 2
+   },
+   "forms": {
+    "pathogenesis": 5
+   },
+   "best_score": 0.983
+  },
+  {
+   "term": "C0030305",
+   "concept": "Pancreatitis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 4,
+   "mentions_negated": 2,
+   "mentions_affirmed": 2,
+   "sections": {
+    "methods": 4
+   },
+   "forms": {
+    "pancreatitis": 4
+   },
+   "best_score": 0.986
+  },
+  {
+   "term": "C1155266",
+   "concept": "Inflammatory Response",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "introduction": 3
+   },
+   "forms": {
+    "inflammatory response": 1,
+    "inflammatory responses": 1,
+    "pro-inflammatory response": 1
+   },
+   "best_score": 0.983
+  },
+  {
+   "term": "C1397014",
+   "concept": "Imbalance",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "introduction": 2,
+    "discussion": 1
+   },
+   "forms": {
+    "imbalance": 3
+   },
+   "best_score": 0.984
+  },
+  {
+   "term": "C5392203",
+   "concept": "Oxidative Damage",
+   "semantic_types": [
+    "Cell or Molecular Dysfunction"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "introduction": 2,
+    "discussion": 1
+   },
+   "forms": {
+    "oxidative injury": 2,
+    "oxidative damage": 1
+   },
+   "best_score": 0.981
+  },
+  {
+   "term": "C0009421",
+   "concept": "Comatose",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 2,
+   "mentions_affirmed": 0,
+   "sections": {
+    "methods": 2
+   },
+   "forms": {
+    "coma": 2
+   },
+   "best_score": 0.994
+  },
+  {
+   "term": "C0010957",
+   "concept": "Tissue damage",
+   "semantic_types": [
+    "Injury or Poisoning"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "introduction": 1,
+    "discussion": 1
+   },
+   "forms": {
+    "tissue damage": 2
+   },
+   "best_score": 0.988
+  },
+  {
+   "term": "C0024312",
+   "concept": "Lymphopenia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 1,
+   "mentions_affirmed": 1,
+   "sections": {
+    "methods": 1,
+    "results": 1
+   },
+   "forms": {
+    "lymphopenia": 2
+   },
+   "best_score": 0.991
+  },
+  {
+   "term": "C0027627",
+   "concept": "Neoplasm Metastasis",
+   "semantic_types": [
+    "Neoplastic Process"
+   ],
+   "mentions": 2,
+   "mentions_negated": 1,
+   "mentions_affirmed": 1,
+   "sections": {
+    "methods": 1,
+    "results": 1
+   },
+   "forms": {
+    "secondary": 2
+   },
+   "best_score": 0.985
+  },
+  {
+   "term": "C1565489",
+   "concept": "Renal Insufficiency",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 1,
+   "mentions_affirmed": 1,
+   "sections": {
+    "methods": 1,
+    "results": 1
+   },
+   "forms": {
+    "renal dysfunction": 2
+   },
+   "best_score": 0.943
+  },
+  {
+   "term": "C0002878",
+   "concept": "Anemia, Hemolytic",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "hemolytic anaemia": 1
+   },
+   "best_score": 0.979
+  },
+  {
+   "term": "C0003123",
+   "concept": "Anorexia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results": 1
+   },
+   "forms": {
+    "anorexia": 1
+   },
+   "best_score": 0.969
+  },
+  {
+   "term": "C0010340",
+   "concept": "Critical Illness",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "critically ill": 1
+   },
+   "best_score": 0.982
+  },
+  {
+   "term": "C0011570",
+   "concept": "Mental Depression",
+   "semantic_types": [
+    "Mental or Behavioral Dysfunction"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results": 1
+   },
+   "forms": {
+    "depression": 1
+   },
+   "best_score": 0.97
+  },
+  {
+   "term": "C0013404",
+   "concept": "Dyspnea",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 1,
+   "mentions_affirmed": 0,
+   "sections": {
+    "methods": 1
+   },
+   "forms": {
+    "dyspnoea": 1
+   },
+   "best_score": 0.985
+  },
+  {
+   "term": "C0015967",
+   "concept": "Fever",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results": 1
+   },
+   "forms": {
+    "fever": 1
+   },
+   "best_score": 0.962
+  },
+  {
+   "term": "C0021368",
+   "concept": "Inflammation",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "inflammation": 1
+   },
+   "best_score": 0.958
+  },
+  {
+   "term": "C0023530",
+   "concept": "Leukopenia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 1,
+   "mentions_affirmed": 0,
+   "sections": {
+    "methods": 1
+   },
+   "forms": {
+    "neutropenia": 1
+   },
+   "best_score": 0.984
+  },
+  {
+   "term": "C0024530",
+   "concept": "Malaria",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "malaria": 1
+   },
+   "best_score": 0.996
+  },
+  {
+   "term": "C0034063",
+   "concept": "Pulmonary Edema",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 1,
+   "mentions_affirmed": 0,
+   "sections": {
+    "methods": 1
+   },
+   "forms": {
+    "pulmonary oedema": 1
+   },
+   "best_score": 0.977
+  },
+  {
+   "term": "C0036690",
+   "concept": "Septicemia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "sepsis": 1
+   },
+   "best_score": 0.971
+  },
+  {
+   "term": "C0039753",
+   "concept": "Theileriasis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "theileriosis": 1
+   },
+   "best_score": 0.97
+  },
+  {
+   "term": "C0242656",
+   "concept": "Disease Progression",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "progression": 1
+   },
+   "best_score": 0.971
+  },
+  {
+   "term": "C0276854",
+   "concept": "Infection by Babesia canis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "canine babesiosis": 1
+   },
+   "best_score": 0.969
+  },
+  {
+   "term": "C0342953",
+   "concept": "Organ dysfunction syndrome",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "organ dysfunction syndrome": 1
+   },
+   "best_score": 0.966
+  },
+  {
+   "term": "C0442886",
+   "concept": "Secondary Infections",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 1,
+   "mentions_affirmed": 0,
+   "sections": {
+    "methods": 1
+   },
+   "forms": {
+    "secondary infection": 1
+   },
+   "best_score": 0.97
+  },
+  {
+   "term": "C1260880",
+   "concept": "Rhinorrhea",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 1,
+   "mentions_affirmed": 0,
+   "sections": {
+    "methods": 1
+   },
+   "forms": {
+    "nasal discharge": 1
+   },
+   "best_score": 0.983
+  },
+  {
+   "term": "C3263722",
+   "concept": "Traumatic AND/OR non-traumatic injury",
+   "semantic_types": [
+    "Injury or Poisoning"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "injury": 1
+   },
+   "best_score": 0.971
+  },
+  {
+   "term": "C4552279",
+   "concept": "Tissue injury",
+   "semantic_types": [
+    "Injury or Poisoning"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "tissue injury": 1
+   },
+   "best_score": 0.981
+  }
+ ]
+}

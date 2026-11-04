@@ -1,0 +1,382 @@
+{
+ "id": "CB158",
+ "document": "data/markdown/CB158.en.md",
+ "source_format": "pdf",
+ "translated": true,
+ "words": 3381,
+ "run_utc": "2026-10-30T05:34:53+00:00",
+ "threshold": 0.85,
+ "kept_types": [
+  "T019",
+  "T020",
+  "T037",
+  "T046",
+  "T047",
+  "T048",
+  "T049",
+  "T050",
+  "T184",
+  "T190",
+  "T191"
+ ],
+ "term_count": 20,
+ "terms": [
+  {
+   "term": "C0012634",
+   "concept": "Disease",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 14,
+   "mentions_negated": 2,
+   "mentions_affirmed": 12,
+   "sections": {
+    "results_discussion": 6,
+    "conclusion": 4,
+    "unlabelled": 3,
+    "introduction": 1
+   },
+   "forms": {
+    "disease": 13,
+    "diseases": 1
+   },
+   "best_score": 0.987
+  },
+  {
+   "term": "C0009450",
+   "concept": "Communicable Diseases",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 11,
+   "mentions_negated": 1,
+   "mentions_affirmed": 10,
+   "sections": {
+    "results_discussion": 8,
+    "unlabelled": 1,
+    "introduction": 1,
+    "conclusion": 1
+   },
+   "forms": {
+    "infection": 11
+   },
+   "best_score": 0.962
+  },
+  {
+   "term": "C0004576",
+   "concept": "Babesiosis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 6,
+   "mentions_negated": 0,
+   "mentions_affirmed": 6,
+   "sections": {
+    "unlabelled": 2,
+    "conclusion": 2,
+    "introduction": 1,
+    "results_discussion": 1
+   },
+   "forms": {
+    "babesiosis": 5,
+    "babesioses": 1
+   },
+   "best_score": 0.977
+  },
+  {
+   "term": "C0010957",
+   "concept": "Tissue damage",
+   "semantic_types": [
+    "Injury or Poisoning"
+   ],
+   "mentions": 6,
+   "mentions_negated": 0,
+   "mentions_affirmed": 6,
+   "sections": {
+    "results_discussion": 6
+   },
+   "forms": {
+    "damage": 6
+   },
+   "best_score": 0.987
+  },
+  {
+   "term": "C1269955",
+   "concept": "Tumor Cell Invasion",
+   "semantic_types": [
+    "Neoplastic Process"
+   ],
+   "mentions": 5,
+   "mentions_negated": 0,
+   "mentions_affirmed": 5,
+   "sections": {
+    "results_discussion": 2,
+    "unlabelled": 1,
+    "introduction": 1,
+    "conclusion": 1
+   },
+   "forms": {
+    "invasion": 5
+   },
+   "best_score": 0.944
+  },
+  {
+   "term": "C0005658",
+   "concept": "bite injury",
+   "semantic_types": [
+    "Injury or Poisoning"
+   ],
+   "mentions": 4,
+   "mentions_negated": 0,
+   "mentions_affirmed": 4,
+   "sections": {
+    "unlabelled": 1,
+    "introduction": 1,
+    "results_discussion": 1,
+    "conclusion": 1
+   },
+   "forms": {
+    "bite": 4
+   },
+   "best_score": 0.982
+  },
+  {
+   "term": "C0851162",
+   "concept": "Infections of musculoskeletal system",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 3,
+   "mentions_negated": 1,
+   "mentions_affirmed": 2,
+   "sections": {
+    "results_discussion": 3
+   },
+   "forms": {
+    "infections": 3
+   },
+   "best_score": 0.971
+  },
+  {
+   "term": "C0002871",
+   "concept": "Anemia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results_discussion": 1
+   },
+   "forms": {
+    "anaemia": 1
+   },
+   "best_score": 0.977
+  },
+  {
+   "term": "C0003047",
+   "concept": "Animal Diseases",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results_discussion": 1
+   },
+   "forms": {
+    "diseased animals": 1
+   },
+   "best_score": 0.891
+  },
+  {
+   "term": "C0011164",
+   "concept": "Abnormal degeneration",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "conclusion": 1
+   },
+   "forms": {
+    "degenerative": 1
+   },
+   "best_score": 0.968
+  },
+  {
+   "term": "C0013604",
+   "concept": "Edema",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "waterlogged": 1
+   },
+   "best_score": 0.943
+  },
+  {
+   "term": "C0014457",
+   "concept": "Eosinophilia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results_discussion": 1
+   },
+   "forms": {
+    "eosinophilia": 1
+   },
+   "best_score": 0.976
+  },
+  {
+   "term": "C0017097",
+   "concept": "Gardner Syndrome",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results_discussion": 1
+   },
+   "forms": {
+    "gs": 1
+   },
+   "best_score": 0.997
+  },
+  {
+   "term": "C0019054",
+   "concept": "Hemolysis (disorder)",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results_discussion": 1
+   },
+   "forms": {
+    "haemolysis": 1
+   },
+   "best_score": 0.989
+  },
+  {
+   "term": "C0030660",
+   "concept": "Pathologic Processes",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results_discussion": 1
+   },
+   "forms": {
+    "pathological processes": 1
+   },
+   "best_score": 0.981
+  },
+  {
+   "term": "C0036974",
+   "concept": "Shock",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "collapse": 1
+   },
+   "best_score": 0.979
+  },
+  {
+   "term": "C0231218",
+   "concept": "Malaise",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "unlabelled": 1
+   },
+   "forms": {
+    "ill": 1
+   },
+   "best_score": 0.989
+  },
+  {
+   "term": "C0242184",
+   "concept": "Hypoxia",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results_discussion": 1
+   },
+   "forms": {
+    "hypoxia": 1
+   },
+   "best_score": 0.978
+  },
+  {
+   "term": "C0600688",
+   "concept": "Toxic effect",
+   "semantic_types": [
+    "Injury or Poisoning"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results_discussion": 1
+   },
+   "forms": {
+    "toxic": 1
+   },
+   "best_score": 0.972
+  },
+  {
+   "term": "C0702266",
+   "concept": "Basophilia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results_discussion": 1
+   },
+   "forms": {
+    "basophilia": 1
+   },
+   "best_score": 0.988
+  }
+ ]
+}

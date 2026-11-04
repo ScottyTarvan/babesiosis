@@ -1,0 +1,823 @@
+{
+ "id": "CB445",
+ "document": "data/markdown/CB445.md",
+ "source_format": "jats_xml",
+ "translated": false,
+ "words": 7457,
+ "run_utc": "2026-10-30T05:36:31+00:00",
+ "threshold": 0.85,
+ "kept_types": [
+  "T019",
+  "T020",
+  "T037",
+  "T046",
+  "T047",
+  "T048",
+  "T049",
+  "T050",
+  "T184",
+  "T190",
+  "T191"
+ ],
+ "term_count": 45,
+ "terms": [
+  {
+   "term": "C0851162",
+   "concept": "Infections of musculoskeletal system",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 30,
+   "mentions_negated": 2,
+   "mentions_affirmed": 28,
+   "sections": {
+    "discussion": 19,
+    "results": 5,
+    "abstract": 4,
+    "introduction": 2
+   },
+   "forms": {
+    "infections": 30
+   },
+   "best_score": 0.971
+  },
+  {
+   "term": "C0009450",
+   "concept": "Communicable Diseases",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 24,
+   "mentions_negated": 2,
+   "mentions_affirmed": 22,
+   "sections": {
+    "discussion": 15,
+    "results": 8,
+    "introduction": 1
+   },
+   "forms": {
+    "infection": 24
+   },
+   "best_score": 0.962
+  },
+  {
+   "term": "C0040034",
+   "concept": "Thrombocytopenia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 19,
+   "mentions_negated": 2,
+   "mentions_affirmed": 17,
+   "sections": {
+    "results": 12,
+    "discussion": 6,
+    "introduction": 1
+   },
+   "forms": {
+    "thrombocytopenia": 14,
+    "thrombocytopenic": 5
+   },
+   "best_score": 0.98
+  },
+  {
+   "term": "C0162700",
+   "concept": "Tick-Borne Diseases",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 17,
+   "mentions_negated": 3,
+   "mentions_affirmed": 14,
+   "sections": {
+    "results": 10,
+    "discussion": 3,
+    "abstract": 2,
+    "introduction": 1,
+    "methods": 1
+   },
+   "forms": {
+    "tick-borne disease": 14,
+    "tick-borne diseases": 3
+   },
+   "best_score": 0.951
+  },
+  {
+   "term": "C0007134",
+   "concept": "Renal Cell Carcinoma",
+   "semantic_types": [
+    "Neoplastic Process"
+   ],
+   "mentions": 14,
+   "mentions_negated": 0,
+   "mentions_affirmed": 14,
+   "sections": {
+    "results": 14
+   },
+   "forms": {
+    "rcc": 14
+   },
+   "best_score": 0.997
+  },
+  {
+   "term": "C0012634",
+   "concept": "Disease",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 9,
+   "mentions_negated": 0,
+   "mentions_affirmed": 9,
+   "sections": {
+    "discussion": 9
+   },
+   "forms": {
+    "disease": 9
+   },
+   "best_score": 0.987
+  },
+  {
+   "term": "C0002871",
+   "concept": "Anemia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 8,
+   "mentions_negated": 1,
+   "mentions_affirmed": 7,
+   "sections": {
+    "results": 6,
+    "discussion": 2
+   },
+   "forms": {
+    "anemia": 8
+   },
+   "best_score": 0.974
+  },
+  {
+   "term": "C0023530",
+   "concept": "Leukopenia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 7,
+   "mentions_negated": 1,
+   "mentions_affirmed": 6,
+   "sections": {
+    "results": 5,
+    "discussion": 2
+   },
+   "forms": {
+    "leukopenia": 7
+   },
+   "best_score": 0.958
+  },
+  {
+   "term": "C0080194",
+   "concept": "Muscle strain",
+   "semantic_types": [
+    "Injury or Poisoning"
+   ],
+   "mentions": 7,
+   "mentions_negated": 0,
+   "mentions_affirmed": 7,
+   "sections": {
+    "discussion": 5,
+    "methods": 2
+   },
+   "forms": {
+    "strains": 7
+   },
+   "best_score": 0.991
+  },
+  {
+   "term": "C0015967",
+   "concept": "Fever",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 4,
+   "mentions_negated": 0,
+   "mentions_affirmed": 4,
+   "sections": {
+    "discussion": 2,
+    "introduction": 1,
+    "methods": 1
+   },
+   "forms": {
+    "fever": 4
+   },
+   "best_score": 0.962
+  },
+  {
+   "term": "C0274281",
+   "concept": "Injury due to exposure to external cause",
+   "semantic_types": [
+    "Injury or Poisoning"
+   ],
+   "mentions": 4,
+   "mentions_negated": 1,
+   "mentions_affirmed": 3,
+   "sections": {
+    "results": 2,
+    "discussion": 2
+   },
+   "forms": {
+    "exposure": 4
+   },
+   "best_score": 0.964
+  },
+  {
+   "term": "C0004576",
+   "concept": "Babesiosis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 3,
+   "mentions_negated": 1,
+   "mentions_affirmed": 2,
+   "sections": {
+    "title": 1,
+    "results": 1,
+    "discussion": 1
+   },
+   "forms": {
+    "babesiosis": 3
+   },
+   "best_score": 0.972
+  },
+  {
+   "term": "C0019080",
+   "concept": "Hemorrhage",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "discussion": 2,
+    "methods": 1
+   },
+   "forms": {
+    "bleeding": 3
+   },
+   "best_score": 0.968
+  },
+  {
+   "term": "C0030312",
+   "concept": "Pancytopenia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "results": 2,
+    "discussion": 1
+   },
+   "forms": {
+    "pancytopenia": 3
+   },
+   "best_score": 0.99
+  },
+  {
+   "term": "C0205339",
+   "concept": "Reinfection",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 3,
+   "mentions_negated": 1,
+   "mentions_affirmed": 2,
+   "sections": {
+    "discussion": 3
+   },
+   "forms": {
+    "reinfection": 2,
+    "reinfected": 1
+   },
+   "best_score": 0.975
+  },
+  {
+   "term": "C0239981",
+   "concept": "Hypoalbuminemia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "results": 3
+   },
+   "forms": {
+    "hypoalbuminemia": 2,
+    "hypoalbuminemic": 1
+   },
+   "best_score": 0.974
+  },
+  {
+   "term": "C0497156",
+   "concept": "Lymphadenopathy",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "discussion": 2,
+    "methods": 1
+   },
+   "forms": {
+    "lymphadenopathy": 2,
+    "lymphadenomegaly": 1
+   },
+   "best_score": 0.99
+  },
+  {
+   "term": "C0000768",
+   "concept": "Congenital Abnormality",
+   "semantic_types": [
+    "Congenital Abnormality"
+   ],
+   "mentions": 2,
+   "mentions_negated": 1,
+   "mentions_affirmed": 1,
+   "sections": {
+    "methods": 1,
+    "discussion": 1
+   },
+   "forms": {
+    "abnormalities": 2
+   },
+   "best_score": 0.987
+  },
+  {
+   "term": "C0003123",
+   "concept": "Anorexia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "discussion": 2
+   },
+   "forms": {
+    "anorexia": 2
+   },
+   "best_score": 0.969
+  },
+  {
+   "term": "C0013911",
+   "concept": "Emaciation",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "results": 1,
+    "discussion": 1
+   },
+   "forms": {
+    "emaciation": 2
+   },
+   "best_score": 0.964
+  },
+  {
+   "term": "C0020517",
+   "concept": "Hypersensitivity",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "methods": 1,
+    "discussion": 1
+   },
+   "forms": {
+    "sensitivity": 2
+   },
+   "best_score": 0.997
+  },
+  {
+   "term": "C0027651",
+   "concept": "Neoplasms",
+   "semantic_types": [
+    "Neoplastic Process"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "results": 2
+   },
+   "forms": {
+    "neoplasia": 2
+   },
+   "best_score": 0.989
+  },
+  {
+   "term": "C0030499",
+   "concept": "Parasitic Diseases",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "methods": 1,
+    "results": 1
+   },
+   "forms": {
+    "infestation": 2
+   },
+   "best_score": 0.946
+  },
+  {
+   "term": "C0037088",
+   "concept": "Signs and Symptoms",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "results": 1,
+    "discussion": 1
+   },
+   "forms": {
+    "finding": 2
+   },
+   "best_score": 0.994
+  },
+  {
+   "term": "C0175754",
+   "concept": "Agenesis of corpus callosum",
+   "semantic_types": [
+    "Congenital Abnormality"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "methods": 2
+   },
+   "forms": {
+    "acc": 2
+   },
+   "best_score": 0.976
+  },
+  {
+   "term": "C0231218",
+   "concept": "Malaise",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "results": 2
+   },
+   "forms": {
+    "ill": 2
+   },
+   "best_score": 0.989
+  },
+  {
+   "term": "C0276846",
+   "concept": "Infection by Hepatozoon",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "title": 1,
+    "results": 1
+   },
+   "forms": {
+    "hepatozoonosis": 2
+   },
+   "best_score": 0.968
+  },
+  {
+   "term": "C0000833",
+   "concept": "Abscess",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results": 1
+   },
+   "forms": {
+    "abscess": 1
+   },
+   "best_score": 0.983
+  },
+  {
+   "term": "C0002797",
+   "concept": "Anaplasmosis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "title": 1
+   },
+   "forms": {
+    "anaplasmosis": 1
+   },
+   "best_score": 0.974
+  },
+  {
+   "term": "C0003486",
+   "concept": "Aortic Aneurysm",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "methods": 1
+   },
+   "forms": {
+    "taa": 1
+   },
+   "best_score": 0.967
+  },
+  {
+   "term": "C0016542",
+   "concept": "Foreign Bodies",
+   "semantic_types": [
+    "Injury or Poisoning"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results": 1
+   },
+   "forms": {
+    "foreign body": 1
+   },
+   "best_score": 0.982
+  },
+  {
+   "term": "C0016658",
+   "concept": "Fracture",
+   "semantic_types": [
+    "Injury or Poisoning"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results": 1
+   },
+   "forms": {
+    "fracture": 1
+   },
+   "best_score": 0.991
+  },
+  {
+   "term": "C0042963",
+   "concept": "Vomiting",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results": 1
+   },
+   "forms": {
+    "vomiting": 1
+   },
+   "best_score": 0.957
+  },
+  {
+   "term": "C0043251",
+   "concept": "Wounds and Injuries",
+   "semantic_types": [
+    "Injury or Poisoning"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "trauma": 1
+   },
+   "best_score": 0.966
+  },
+  {
+   "term": "C0085399",
+   "concept": "Ehrlichiosis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "title": 1
+   },
+   "forms": {
+    "ehrlichiosis": 1
+   },
+   "best_score": 0.952
+  },
+  {
+   "term": "C0085762",
+   "concept": "Alcohol abuse",
+   "semantic_types": [
+    "Mental or Behavioral Dysfunction"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "methods": 1
+   },
+   "forms": {
+    "aca": 1
+   },
+   "best_score": 0.989
+  },
+  {
+   "term": "C0206698",
+   "concept": "Cholangiocarcinoma",
+   "semantic_types": [
+    "Neoplastic Process"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "methods": 1
+   },
+   "forms": {
+    "cca": 1
+   },
+   "best_score": 0.994
+  },
+  {
+   "term": "C0259797",
+   "concept": "Dog Bite",
+   "semantic_types": [
+    "Injury or Poisoning"
+   ],
+   "mentions": 1,
+   "mentions_negated": 1,
+   "mentions_affirmed": 0,
+   "sections": {
+    "results": 1
+   },
+   "forms": {
+    "dog bite": 1
+   },
+   "best_score": 0.98
+  },
+  {
+   "term": "C0275524",
+   "concept": "Coinfection",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results": 1
+   },
+   "forms": {
+    "coinfection": 1
+   },
+   "best_score": 0.956
+  },
+  {
+   "term": "C0276854",
+   "concept": "Infection by Babesia canis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "canine babesiosis": 1
+   },
+   "best_score": 0.969
+  },
+  {
+   "term": "C0599156",
+   "concept": "Transition Mutation",
+   "semantic_types": [
+    "Cell or Molecular Dysfunction"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "methods": 1
+   },
+   "forms": {
+    "transition": 1
+   },
+   "best_score": 0.981
+  },
+  {
+   "term": "C1510411",
+   "concept": "metaplastic cell transformation",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "methods": 1
+   },
+   "forms": {
+    "transformed": 1
+   },
+   "best_score": 0.962
+  },
+  {
+   "term": "C1832232",
+   "concept": "Peroxisome Biogenesis Disorder, Complementation Group C",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "methods": 1
+   },
+   "forms": {
+    "cgc": 1
+   },
+   "best_score": 1.0
+  },
+  {
+   "term": "C1864172",
+   "concept": "Peroxisome Biogenesis Disorder, Complementation Group G",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "methods": 1
+   },
+   "forms": {
+    "cgg": 1
+   },
+   "best_score": 0.975
+  },
+  {
+   "term": "C5194182",
+   "concept": "Microcytic anemia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results": 1
+   },
+   "forms": {
+    "microcytic anemia": 1
+   },
+   "best_score": 0.982
+  }
+ ]
+}

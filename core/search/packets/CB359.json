@@ -1,0 +1,98 @@
+{
+ "id": "CB359",
+ "filename": "CB359_2009_evaluation-efficacy-bruceine-natural-quassinoid-compound.md",
+ "key": "PMID:19194074",
+ "record": {
+  "pmid": "19194074",
+  "pmcid": null,
+  "doi": "10.1292/jvms.71.33",
+  "title": "Evaluation of efficacy of bruceine A, a natural quassinoid compound extracted from a medicinal plant, Brucea javanica, for canine babesiosis.",
+  "authors": [
+   "Nakao R",
+   "Mizukami C",
+   "Kawamura Y",
+   "Subeki",
+   "Bawm S",
+   "Yamasaki M",
+   "Maede Y",
+   "Matsuura H",
+   "Nabeta K",
+   "Nonaka N",
+   "Oku Y",
+   "Katakura K"
+  ],
+  "journal": "The Journal of veterinary medical science",
+  "journal_abbrev": "J Vet Med Sci",
+  "volume": "71",
+  "issue": "1",
+  "pages": "33-41",
+  "language": [
+   "eng"
+  ],
+  "issue_date": "2009-01-01",
+  "issue_date_precision": "month",
+  "epub_date": null,
+  "pubmed_entry_date": "2009-02-06",
+  "first_pub_date": "2009-01-01",
+  "publication_types": [
+   "Clinical Trial",
+   "Comparative Study",
+   "Journal Article",
+   "Research Support, Non-U.S. Gov't"
+  ],
+  "mesh": [
+   "Administration, Oral",
+   "Animals",
+   "Babesia",
+   "Babesiosis",
+   "Brucea",
+   "Dog Diseases",
+   "Dogs",
+   "Kinetics",
+   "Parasitemia",
+   "Polymerase Chain Reaction",
+   "Quassins"
+  ],
+  "keywords": [],
+  "abstract": "Bruceine A, a natural quassinoid compound extracted from the dried fruits of Brucea javanica (L.) Merr., was evaluated for its antibabesial activity in vitro and in vivo. Bruceine A inhibited the in vitro growth of Babesia gibsoni in canine erythrocytes at lower concentration compared with the standard antibabesial drug diminazene aceturate and killed the parasites within 24 hr at a concentration of 25 nM. Oral administration of bruceine A at a dosage of 6.4 mg/kg/day for 5 days resulted in no clinical findings in a dog with normal ranges of hematological and biochemical values in the blood. Three dogs were infected with B. gibsoni and two of them were treated with bruceine A at a dosage of 6.4 mg/kg/day for 6 days from day 5 post-infection. An untreated dog developed typical acute babesiosis symptoms including severe anemia, high fever, and complete loss of appetite and movement. However, the two bruceine A-treated dogs maintained their healthy conditions throughout the experimental period of 4 weeks although complete elimination of parasites from the peripheral blood was not achieved and decreases in the packed cell volume and the erythrocyte and platelet counts were observed. Since natural quassinoid compounds have been used as traditional medicines for the treatment of various ailments including cancer and malaria, the present results suggest that bruceine A or other related compounds are potential candidates for the treatment of canine babesiosis.",
+  "corrections": [],
+  "epmc_first_pub_date": "2009-01-01",
+  "is_oa": "N",
+  "has_suppl": "N",
+  "found_by": [
+   "EP1_broad",
+   "EP2_species",
+   "PM1_broad",
+   "PM2_species",
+   "PM3_mechanism"
+  ],
+  "in_window": true,
+  "key": "PMID:19194074",
+  "source_files": [
+   "candidates.jsonl"
+  ]
+ },
+ "screening": {
+  "key": "PMID:19194074",
+  "decision": "include",
+  "include_type": "primary",
+  "exclude_reason": null,
+  "primary_category": "ERY",
+  "secondary_tags": [
+   "COA"
+  ],
+  "species": "B. gibsoni (confirmed, experimental infection; PCR)",
+  "rationale": "Based on the abstract. This is an experimental infection that reports host responses: the untreated dog developed severe anaemia, and treated dogs had falls in PCV, erythrocyte and platelet counts. The criteria include experimental infections with host data even when the design is a treatment trial.",
+  "stage": "adjudicated",
+  "batch": "r4_06.md",
+  "first_decision": "exclude",
+  "rescue_reason": "Treatment study that reports haematology in infected dogs: an untreated dog had severe anaemia, and treated dogs showed falls in PCV, erythrocyte and platelet counts. Host data in infected dogs fall inside the rescue rule even though the design is a treatment trial.",
+  "screening_round": "r4"
+ },
+ "fulltext_check": {
+  "key": "PMID:19194074",
+  "pmcid": null,
+  "checked": "2026-10-28",
+  "fulltext_status": "no_pmcid"
+ }
+}

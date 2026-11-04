@@ -1,0 +1,386 @@
+{
+ "id": "CB213",
+ "document": "data/markdown/CB213.en.md",
+ "source_format": "pdf",
+ "translated": true,
+ "words": 3153,
+ "run_utc": "2026-10-30T05:35:14+00:00",
+ "threshold": 0.85,
+ "kept_types": [
+  "T019",
+  "T020",
+  "T037",
+  "T046",
+  "T047",
+  "T048",
+  "T049",
+  "T050",
+  "T184",
+  "T190",
+  "T191"
+ ],
+ "term_count": 20,
+ "terms": [
+  {
+   "term": "C0004576",
+   "concept": "Babesiosis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 19,
+   "mentions_negated": 0,
+   "mentions_affirmed": 19,
+   "sections": {
+    "introduction": 9,
+    "unlabelled": 7,
+    "conclusion": 2,
+    "title": 1
+   },
+   "forms": {
+    "babesiosis": 19
+   },
+   "best_score": 0.972
+  },
+  {
+   "term": "C0036974",
+   "concept": "Shock",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 19,
+   "mentions_negated": 0,
+   "mentions_affirmed": 19,
+   "sections": {
+    "introduction": 9,
+    "unlabelled": 8,
+    "conclusion": 2
+   },
+   "forms": {
+    "shock": 19
+   },
+   "best_score": 0.998
+  },
+  {
+   "term": "C0009566",
+   "concept": "Complication",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 15,
+   "mentions_negated": 0,
+   "mentions_affirmed": 15,
+   "sections": {
+    "unlabelled": 10,
+    "introduction": 3,
+    "conclusion": 2
+   },
+   "forms": {
+    "complications": 15
+   },
+   "best_score": 0.977
+  },
+  {
+   "term": "C0012739",
+   "concept": "Disseminated Intravascular Coagulation",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 14,
+   "mentions_negated": 0,
+   "mentions_affirmed": 14,
+   "sections": {
+    "unlabelled": 6,
+    "introduction": 6,
+    "conclusion": 2
+   },
+   "forms": {
+    "dic": 13,
+    "dic syndrome": 1
+   },
+   "best_score": 0.99
+  },
+  {
+   "term": "C0040034",
+   "concept": "Thrombocytopenia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 10,
+   "mentions_negated": 0,
+   "mentions_affirmed": 10,
+   "sections": {
+    "unlabelled": 6,
+    "introduction": 3,
+    "conclusion": 1
+   },
+   "forms": {
+    "thrombocytopenia": 10
+   },
+   "best_score": 0.98
+  },
+  {
+   "term": "C0087086",
+   "concept": "Thrombus",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 6,
+   "mentions_negated": 0,
+   "mentions_affirmed": 6,
+   "sections": {
+    "introduction": 4,
+    "unlabelled": 2
+   },
+   "forms": {
+    "thrombus": 3,
+    "thrombi": 2,
+    "blood clots": 1
+   },
+   "best_score": 0.986
+  },
+  {
+   "term": "C0019080",
+   "concept": "Hemorrhage",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 5,
+   "mentions_negated": 2,
+   "mentions_affirmed": 3,
+   "sections": {
+    "introduction": 5
+   },
+   "forms": {
+    "blood loss": 2,
+    "haemorrhages": 1,
+    "bleeding": 1,
+    "haemorrhage": 1
+   },
+   "best_score": 0.997
+  },
+  {
+   "term": "C0012634",
+   "concept": "Disease",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 4,
+   "mentions_negated": 0,
+   "mentions_affirmed": 4,
+   "sections": {
+    "unlabelled": 2,
+    "introduction": 2
+   },
+   "forms": {
+    "disorders": 2,
+    "diseases": 1,
+    "disease": 1
+   },
+   "best_score": 0.994
+  },
+  {
+   "term": "C0030660",
+   "concept": "Pathologic Processes",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "introduction": 2
+   },
+   "forms": {
+    "pathological processes": 2
+   },
+   "best_score": 0.981
+  },
+  {
+   "term": "C0039082",
+   "concept": "Syndrome",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "unlabelled": 2
+   },
+   "forms": {
+    "syndrome": 2
+   },
+   "best_score": 0.994
+  },
+  {
+   "term": "C0013604",
+   "concept": "Edema",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 1,
+   "mentions_affirmed": 0,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "oedema": 1
+   },
+   "best_score": 0.98
+  },
+  {
+   "term": "C0020488",
+   "concept": "Hypernatremia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "excess": 1
+   },
+   "best_score": 0.876
+  },
+  {
+   "term": "C0040053",
+   "concept": "Thrombosis",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "thromboses": 1
+   },
+   "best_score": 0.982
+  },
+  {
+   "term": "C0085616",
+   "concept": "Vasospasm",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "vasospasm": 1
+   },
+   "best_score": 0.991
+  },
+  {
+   "term": "C0242781",
+   "concept": "disease transmission",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "pathogen transmission": 1
+   },
+   "best_score": 0.97
+  },
+  {
+   "term": "C0599156",
+   "concept": "Transition Mutation",
+   "semantic_types": [
+    "Cell or Molecular Dysfunction"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "transition": 1
+   },
+   "best_score": 0.981
+  },
+  {
+   "term": "C0699748",
+   "concept": "Pathogenesis",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "pathogenesis": 1
+   },
+   "best_score": 0.983
+  },
+  {
+   "term": "C0752135",
+   "concept": "Pathological Conditions, Anatomical",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "pathological conditions": 1
+   },
+   "best_score": 0.868
+  },
+  {
+   "term": "C1868263",
+   "concept": "Platelet Aggregation, Spontaneous",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "spa": 1
+   },
+   "best_score": 0.856
+  },
+  {
+   "term": "C3534575",
+   "concept": "Animal Health",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "animal health": 1
+   },
+   "best_score": 0.971
+  }
+ ]
+}

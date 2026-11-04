@@ -1,0 +1,739 @@
+{
+ "id": "CB228",
+ "document": "data/markdown/CB228.md",
+ "source_format": "pdf",
+ "translated": false,
+ "words": 2121,
+ "run_utc": "2026-10-30T05:35:21+00:00",
+ "threshold": 0.85,
+ "kept_types": [
+  "T019",
+  "T020",
+  "T037",
+  "T046",
+  "T047",
+  "T048",
+  "T049",
+  "T050",
+  "T184",
+  "T190",
+  "T191"
+ ],
+ "term_count": 40,
+ "terms": [
+  {
+   "term": "C0022660",
+   "concept": "Kidney Failure, Acute",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 43,
+   "mentions_negated": 0,
+   "mentions_affirmed": 43,
+   "sections": {
+    "results_discussion": 15,
+    "unlabelled": 10,
+    "abstract": 10,
+    "conclusion": 7,
+    "title": 1
+   },
+   "forms": {
+    "aki": 34,
+    "acute kidney injury": 9
+   },
+   "best_score": 0.976
+  },
+  {
+   "term": "C0004576",
+   "concept": "Babesiosis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 18,
+   "mentions_negated": 0,
+   "mentions_affirmed": 18,
+   "sections": {
+    "results_discussion": 8,
+    "unlabelled": 4,
+    "abstract": 3,
+    "conclusion": 2,
+    "title": 1
+   },
+   "forms": {
+    "babesiosis": 18
+   },
+   "best_score": 0.972
+  },
+  {
+   "term": "C0023364",
+   "concept": "Leptospirosis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 17,
+   "mentions_negated": 0,
+   "mentions_affirmed": 17,
+   "sections": {
+    "results_discussion": 7,
+    "unlabelled": 4,
+    "abstract": 3,
+    "conclusion": 2,
+    "title": 1
+   },
+   "forms": {
+    "leptospirosis": 16,
+    "leptospira infection": 1
+   },
+   "best_score": 0.991
+  },
+  {
+   "term": "C0009450",
+   "concept": "Communicable Diseases",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 4,
+   "mentions_negated": 0,
+   "mentions_affirmed": 4,
+   "sections": {
+    "results_discussion": 2,
+    "abstract": 1,
+    "unlabelled": 1
+   },
+   "forms": {
+    "infectious diseases": 2,
+    "infection": 1,
+    "infectious": 1
+   },
+   "best_score": 0.976
+  },
+  {
+   "term": "C0242528",
+   "concept": "Azotemia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 4,
+   "mentions_negated": 0,
+   "mentions_affirmed": 4,
+   "sections": {
+    "unlabelled": 2,
+    "abstract": 1,
+    "results_discussion": 1
+   },
+   "forms": {
+    "azotemia": 4
+   },
+   "best_score": 0.964
+  },
+  {
+   "term": "C0003486",
+   "concept": "Aortic Aneurysm",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "unlabelled": 3
+   },
+   "forms": {
+    "aaa": 2,
+    "taa": 1
+   },
+   "best_score": 0.999
+  },
+  {
+   "term": "C0012634",
+   "concept": "Disease",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "abstract": 1,
+    "unlabelled": 1,
+    "results_discussion": 1
+   },
+   "forms": {
+    "diseases": 2,
+    "disease": 1
+   },
+   "best_score": 0.987
+  },
+  {
+   "term": "C0009566",
+   "concept": "Complication",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "abstract": 1,
+    "unlabelled": 1
+   },
+   "forms": {
+    "complication": 1,
+    "complications": 1
+   },
+   "best_score": 0.977
+  },
+  {
+   "term": "C0011175",
+   "concept": "Dehydration",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "unlabelled": 1,
+    "results_discussion": 1
+   },
+   "forms": {
+    "dehydration": 2
+   },
+   "best_score": 0.957
+  },
+  {
+   "term": "C0015967",
+   "concept": "Fever",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "unlabelled": 1,
+    "results_discussion": 1
+   },
+   "forms": {
+    "pyrexia": 2
+   },
+   "best_score": 0.98
+  },
+  {
+   "term": "C0023380",
+   "concept": "Lethargy",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "unlabelled": 1,
+    "results_discussion": 1
+   },
+   "forms": {
+    "lethargy": 2
+   },
+   "best_score": 0.987
+  },
+  {
+   "term": "C0030499",
+   "concept": "Parasitic Diseases",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "unlabelled": 1,
+    "results_discussion": 1
+   },
+   "forms": {
+    "infestation": 2
+   },
+   "best_score": 0.946
+  },
+  {
+   "term": "C0033770",
+   "concept": "Prune Belly Syndrome",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "unlabelled": 2
+   },
+   "forms": {
+    "pbs": 2
+   },
+   "best_score": 0.988
+  },
+  {
+   "term": "C0042963",
+   "concept": "Vomiting",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "unlabelled": 1,
+    "results_discussion": 1
+   },
+   "forms": {
+    "vomiting": 2
+   },
+   "best_score": 0.957
+  },
+  {
+   "term": "C0242184",
+   "concept": "Hypoxia",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "unlabelled": 1,
+    "results_discussion": 1
+   },
+   "forms": {
+    "hypoxia": 2
+   },
+   "best_score": 0.978
+  },
+  {
+   "term": "C0683278",
+   "concept": "Mental Suffering",
+   "semantic_types": [
+    "Mental or Behavioral Dysfunction"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "title": 1,
+    "unlabelled": 1
+   },
+   "forms": {
+    "suffering": 2
+   },
+   "best_score": 0.94
+  },
+  {
+   "term": "C1561643",
+   "concept": "Chronic Kidney Diseases",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "results_discussion": 2
+   },
+   "forms": {
+    "ckd": 1,
+    "chronic kidney disease": 1
+   },
+   "best_score": 0.994
+  },
+  {
+   "term": "C0002871",
+   "concept": "Anemia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results_discussion": 1
+   },
+   "forms": {
+    "anaemia": 1
+   },
+   "best_score": 0.977
+  },
+  {
+   "term": "C0002878",
+   "concept": "Anemia, Hemolytic",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results_discussion": 1
+   },
+   "forms": {
+    "haemolytic anaemia": 1
+   },
+   "best_score": 0.98
+  },
+  {
+   "term": "C0003123",
+   "concept": "Anorexia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "unlabelled": 1
+   },
+   "forms": {
+    "anorexia": 1
+   },
+   "best_score": 0.969
+  },
+  {
+   "term": "C0003460",
+   "concept": "Anuria",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "unlabelled": 1
+   },
+   "forms": {
+    "anuria": 1
+   },
+   "best_score": 0.968
+  },
+  {
+   "term": "C0010957",
+   "concept": "Tissue damage",
+   "semantic_types": [
+    "Injury or Poisoning"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results_discussion": 1
+   },
+   "forms": {
+    "damage": 1
+   },
+   "best_score": 0.987
+  },
+  {
+   "term": "C0011991",
+   "concept": "Diarrhea",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results_discussion": 1
+   },
+   "forms": {
+    "diarrhoea": 1
+   },
+   "best_score": 0.98
+  },
+  {
+   "term": "C0022346",
+   "concept": "Icterus",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results_discussion": 1
+   },
+   "forms": {
+    "icterus": 1
+   },
+   "best_score": 0.958
+  },
+  {
+   "term": "C0022658",
+   "concept": "Kidney Diseases",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results_discussion": 1
+   },
+   "forms": {
+    "kidney disease": 1
+   },
+   "best_score": 0.973
+  },
+  {
+   "term": "C0023518",
+   "concept": "Leukocytosis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results_discussion": 1
+   },
+   "forms": {
+    "leukocytosis": 1
+   },
+   "best_score": 0.979
+  },
+  {
+   "term": "C0028961",
+   "concept": "Oliguria",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results_discussion": 1
+   },
+   "forms": {
+    "oliguria": 1
+   },
+   "best_score": 0.966
+  },
+  {
+   "term": "C0034186",
+   "concept": "Pyelonephritis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "unlabelled": 1
+   },
+   "forms": {
+    "pyelonephritis": 1
+   },
+   "best_score": 0.971
+  },
+  {
+   "term": "C0035078",
+   "concept": "Kidney Failure",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "unlabelled": 1
+   },
+   "forms": {
+    "renal failure": 1
+   },
+   "best_score": 0.96
+  },
+  {
+   "term": "C0040034",
+   "concept": "Thrombocytopenia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results_discussion": 1
+   },
+   "forms": {
+    "thrombocytopenia": 1
+   },
+   "best_score": 0.98
+  },
+  {
+   "term": "C0080194",
+   "concept": "Muscle strain",
+   "semantic_types": [
+    "Injury or Poisoning"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "unlabelled": 1
+   },
+   "forms": {
+    "strains": 1
+   },
+   "best_score": 0.991
+  },
+  {
+   "term": "C0178879",
+   "concept": "Urinary tract obstruction",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "unlabelled": 1
+   },
+   "forms": {
+    "urinary tract obstruction": 1
+   },
+   "best_score": 0.981
+  },
+  {
+   "term": "C0221423",
+   "concept": "Illness (finding)",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "abstract": 1
+   },
+   "forms": {
+    "ailments": 1
+   },
+   "best_score": 0.968
+  },
+  {
+   "term": "C0232462",
+   "concept": "Decrease in appetite",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results_discussion": 1
+   },
+   "forms": {
+    "inappetence": 1
+   },
+   "best_score": 0.978
+  },
+  {
+   "term": "C0242656",
+   "concept": "Disease Progression",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results_discussion": 1
+   },
+   "forms": {
+    "disease progression": 1
+   },
+   "best_score": 0.977
+  },
+  {
+   "term": "C0451641",
+   "concept": "Urolithiasis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "unlabelled": 1
+   },
+   "forms": {
+    "urolithiasis": 1
+   },
+   "best_score": 0.99
+  },
+  {
+   "term": "C0920645",
+   "concept": "renal hypoxia",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results_discussion": 1
+   },
+   "forms": {
+    "renal hypoxia": 1
+   },
+   "best_score": 0.965
+  },
+  {
+   "term": "C1155266",
+   "concept": "Inflammatory Response",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "unlabelled": 1
+   },
+   "forms": {
+    "inflammatory response": 1
+   },
+   "best_score": 0.983
+  },
+  {
+   "term": "C1565489",
+   "concept": "Renal Insufficiency",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "abstract": 1
+   },
+   "forms": {
+    "renal dysfunction": 1
+   },
+   "best_score": 0.943
+  },
+  {
+   "term": "C1864172",
+   "concept": "Peroxisome Biogenesis Disorder, Complementation Group G",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "unlabelled": 1
+   },
+   "forms": {
+    "cgg": 1
+   },
+   "best_score": 0.975
+  }
+ ]
+}

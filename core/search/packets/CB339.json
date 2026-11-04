@@ -1,0 +1,92 @@
+{
+ "id": "CB339",
+ "filename": "CB339_2007_parasitological-molecular-characterization-venezuelan-isolate-babesia.md",
+ "key": "https://openalex.org/W1486145338",
+ "record": {
+  "pmid": null,
+  "pmcid": null,
+  "doi": null,
+  "title": "PARASITOLOGICAL AND MOLECULAR CHARACTERIZATION OF A VENEZUELAN ISOLATE OF Babesia canis",
+  "journal": "Revista Científica de la Facultad de Ciencias Veterinarias",
+  "authors": [
+   "Catalina Rey-Valeirón",
+   "Angel Criado-Fornelio",
+   "Erika Zavala",
+   "Rosario Granados"
+  ],
+  "first_pub_date": "2007-07-15",
+  "type": "article",
+  "language": [
+   "es"
+  ],
+  "abstract": "Babesiosis is one of the most important tick-borne hemoprotozoan diseases that affects dogs worldwide. In the last years, there has been a sharp increase in positive cases of Babesia canis infection in the Falcon State, Venezuela. Although recent studies conducted in South America suggest that B. canis vogeli might be the species present in Venezuela, no data on the pathogenesis and molecular characteristics of Venezuelan piroplasms are available at this moment. By this reason the present work was undertaken to describe the evolution of an experimental infection induced in dogs, as well as the first molecular characterization of the 18S rRNA gene of the Venezuelan B. canis isolate used for inoculating the experimental animals. Experimental infection was carried out in four dogs, two of them splenectomized. The animals were inoculated with 1 x 106 B. canis infected-red blood cells. Parasitemia, packed cell volume and body temperature were measured daily. Prepatent period of the infection oscillated between 2-6 days. All of the inoculated dogs developed a mild-type disease. Symptoms of canine piroplasmosis were moderate, and main clinical findings consisted in low parasitemia, short febrile period and slight anaemia. Imidocarb dipropionate showed to be the treatment of choice, since it cleared parasites from blood, as demonstrated by PCR assays. The partial sequence of the ssu Rrna gene of the Venezuelan piroplasm showed 100% identity with a Brazilian isolate of Babesia canis vogeli, which is in full concordance with the clinical signs caused by this subspecies in the experimental animals, as well as those reported previously by other authors.",
+  "abstract_source": "OpenAlex abstract_inverted_index (reconstructed)",
+  "source_id": "https://openalex.org/W1486145338",
+  "src": "OPENALEX",
+  "found_by": [
+   "OA:title_and_abstract"
+  ],
+  "in_window": true,
+  "key": "https://openalex.org/W1486145338",
+  "source_files": [
+   "candidates_r3.jsonl"
+  ]
+ },
+ "screening": {
+  "key": "https://openalex.org/W1486145338",
+  "decision": "include",
+  "include_type": "primary",
+  "exclude_reason": null,
+  "primary_category": "ERY",
+  "secondary_tags": [
+   "SEV"
+  ],
+  "species": "B. canis vogeli (confirmed, 18S rRNA sequence; experimental)",
+  "rationale": "Experimental infection of four dogs (two splenectomised) with parasitaemia, PCV, temperature and anaemia follow-up. It reports host responses, and the disease was mild. The molecular characterisation is secondary.",
+  "stage": "screen",
+  "batch": "r4_02.md",
+  "screening_round": "r4"
+ },
+ "fulltext_check": {
+  "key": "https://openalex.org/W1486145338",
+  "pmcid": null,
+  "checked": "2026-10-28",
+  "fulltext_status": "no_pmcid"
+ },
+ "duplicate_records": [
+  {
+   "key": "https://openalex.org/W1485046003",
+   "basis": "Spanish-title OpenAlex record of the same Venezuelan isolate study (same four authors); flagged as a duplicate at screening",
+   "record": {
+    "pmid": null,
+    "pmcid": null,
+    "doi": null,
+    "title": "Caracterización parasitológica y molecular de un aislado venezolano de Babesia canis",
+    "journal": null,
+    "authors": [
+     "Catalina Rey-Valeirón",
+     "Angel Criado-Fornelio",
+     "Erika Zavala",
+     "Rosario Granados"
+    ],
+    "first_pub_date": "2007-02-01",
+    "type": "article",
+    "language": [
+     "es"
+    ],
+    "abstract": null,
+    "abstract_source": "OpenAlex abstract_inverted_index (reconstructed)",
+    "source_id": "https://openalex.org/W1485046003",
+    "src": "OPENALEX",
+    "found_by": [
+     "OA:title_and_abstract"
+    ],
+    "in_window": true,
+    "key": "https://openalex.org/W1485046003",
+    "source_files": [
+     "candidates_r3.jsonl"
+    ]
+   }
+  }
+ ]
+}

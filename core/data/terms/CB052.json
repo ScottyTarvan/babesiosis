@@ -1,0 +1,536 @@
+{
+ "id": "CB052",
+ "document": "data/markdown/CB052.md",
+ "source_format": "pdf",
+ "translated": false,
+ "words": 6767,
+ "run_utc": "2026-10-30T05:33:31+00:00",
+ "threshold": 0.85,
+ "kept_types": [
+  "T019",
+  "T020",
+  "T037",
+  "T046",
+  "T047",
+  "T048",
+  "T049",
+  "T050",
+  "T184",
+  "T190",
+  "T191"
+ ],
+ "term_count": 29,
+ "terms": [
+  {
+   "term": "C0004576",
+   "concept": "Babesiosis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 26,
+   "mentions_negated": 10,
+   "mentions_affirmed": 16,
+   "sections": {
+    "results": 9,
+    "discussion": 8,
+    "introduction": 4,
+    "methods": 4,
+    "abstract": 1
+   },
+   "forms": {
+    "babesiosis": 26
+   },
+   "best_score": 0.972
+  },
+  {
+   "term": "C0009450",
+   "concept": "Communicable Diseases",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 22,
+   "mentions_negated": 4,
+   "mentions_affirmed": 18,
+   "sections": {
+    "discussion": 11,
+    "results": 6,
+    "introduction": 5
+   },
+   "forms": {
+    "infection": 22
+   },
+   "best_score": 0.962
+  },
+  {
+   "term": "C0037088",
+   "concept": "Signs and Symptoms",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 10,
+   "mentions_negated": 6,
+   "mentions_affirmed": 4,
+   "sections": {
+    "results": 6,
+    "introduction": 2,
+    "discussion": 2
+   },
+   "forms": {
+    "clinical findings": 7,
+    "finding": 3
+   },
+   "best_score": 0.994
+  },
+  {
+   "term": "C0274281",
+   "concept": "Injury due to exposure to external cause",
+   "semantic_types": [
+    "Injury or Poisoning"
+   ],
+   "mentions": 9,
+   "mentions_negated": 1,
+   "mentions_affirmed": 8,
+   "sections": {
+    "discussion": 7,
+    "abstract": 1,
+    "introduction": 1
+   },
+   "forms": {
+    "exposure": 9
+   },
+   "best_score": 0.964
+  },
+  {
+   "term": "C0851162",
+   "concept": "Infections of musculoskeletal system",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 8,
+   "mentions_negated": 1,
+   "mentions_affirmed": 7,
+   "sections": {
+    "abstract": 3,
+    "discussion": 3,
+    "introduction": 2
+   },
+   "forms": {
+    "infections": 8
+   },
+   "best_score": 0.971
+  },
+  {
+   "term": "C0024530",
+   "concept": "Malaria",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 7,
+   "mentions_negated": 0,
+   "mentions_affirmed": 7,
+   "sections": {
+    "discussion": 6,
+    "abstract": 1
+   },
+   "forms": {
+    "malaria": 7
+   },
+   "best_score": 0.996
+  },
+  {
+   "term": "C0012634",
+   "concept": "Disease",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 5,
+   "mentions_negated": 1,
+   "mentions_affirmed": 4,
+   "sections": {
+    "introduction": 3,
+    "results": 1,
+    "discussion": 1
+   },
+   "forms": {
+    "disease": 5
+   },
+   "best_score": 0.987
+  },
+  {
+   "term": "C0205339",
+   "concept": "Reinfection",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 4,
+   "mentions_negated": 0,
+   "mentions_affirmed": 4,
+   "sections": {
+    "discussion": 4
+   },
+   "forms": {
+    "re-infection": 3,
+    "re-infections": 1
+   },
+   "best_score": 0.953
+  },
+  {
+   "term": "C0002871",
+   "concept": "Anemia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 1,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 2
+   },
+   "forms": {
+    "anaemia": 2
+   },
+   "best_score": 0.977
+  },
+  {
+   "term": "C0242781",
+   "concept": "disease transmission",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "introduction": 1,
+    "discussion": 1
+   },
+   "forms": {
+    "transmitted": 2
+   },
+   "best_score": 0.972
+  },
+  {
+   "term": "C0003123",
+   "concept": "Anorexia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "anorexia": 1
+   },
+   "best_score": 0.969
+  },
+  {
+   "term": "C0003507",
+   "concept": "Aortic Valve Stenosis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results": 1
+   },
+   "forms": {
+    "as": 1
+   },
+   "best_score": 1.0
+  },
+  {
+   "term": "C0004093",
+   "concept": "Asthenia",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "weakness": 1
+   },
+   "best_score": 0.975
+  },
+  {
+   "term": "C0005658",
+   "concept": "bite injury",
+   "semantic_types": [
+    "Injury or Poisoning"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "bite": 1
+   },
+   "best_score": 0.982
+  },
+  {
+   "term": "C0010957",
+   "concept": "Tissue damage",
+   "semantic_types": [
+    "Injury or Poisoning"
+   ],
+   "mentions": 1,
+   "mentions_negated": 1,
+   "mentions_affirmed": 0,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "tissue damage": 1
+   },
+   "best_score": 0.988
+  },
+  {
+   "term": "C0011570",
+   "concept": "Mental Depression",
+   "semantic_types": [
+    "Mental or Behavioral Dysfunction"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "depression": 1
+   },
+   "best_score": 0.97
+  },
+  {
+   "term": "C0014412",
+   "concept": "Environmental Exposure",
+   "semantic_types": [
+    "Injury or Poisoning"
+   ],
+   "mentions": 1,
+   "mentions_negated": 1,
+   "mentions_affirmed": 0,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "environmental exposure": 1
+   },
+   "best_score": 0.953
+  },
+  {
+   "term": "C0015967",
+   "concept": "Fever",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "fever": 1
+   },
+   "best_score": 0.962
+  },
+  {
+   "term": "C0019054",
+   "concept": "Hemolysis (disorder)",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "haemolysis": 1
+   },
+   "best_score": 0.989
+  },
+  {
+   "term": "C0020517",
+   "concept": "Hypersensitivity",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "methods": 1
+   },
+   "forms": {
+    "sensitivity": 1
+   },
+   "best_score": 0.997
+  },
+  {
+   "term": "C0034494",
+   "concept": "Rabies (disorder)",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "methods": 1
+   },
+   "forms": {
+    "rabies": 1
+   },
+   "best_score": 0.97
+  },
+  {
+   "term": "C0036974",
+   "concept": "Shock",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "shock": 1
+   },
+   "best_score": 0.998
+  },
+  {
+   "term": "C0040034",
+   "concept": "Thrombocytopenia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "thrombocytopenia": 1
+   },
+   "best_score": 0.98
+  },
+  {
+   "term": "C0162700",
+   "concept": "Tick-Borne Diseases",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results": 1
+   },
+   "forms": {
+    "tick-borne disease": 1
+   },
+   "best_score": 0.949
+  },
+  {
+   "term": "C0242184",
+   "concept": "Hypoxia",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "hypoxia": 1
+   },
+   "best_score": 0.978
+  },
+  {
+   "term": "C0242656",
+   "concept": "Disease Progression",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "progression": 1
+   },
+   "best_score": 0.971
+  },
+  {
+   "term": "C0795965",
+   "concept": "X-linked mental retardation Gustavson type",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "methods": 1
+   },
+   "forms": {
+    "gust": 1
+   },
+   "best_score": 0.992
+  },
+  {
+   "term": "C1155266",
+   "concept": "Inflammatory Response",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "pro-inflammatory response": 1
+   },
+   "best_score": 0.869
+  },
+  {
+   "term": "C3263722",
+   "concept": "Traumatic AND/OR non-traumatic injury",
+   "semantic_types": [
+    "Injury or Poisoning"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results": 1
+   },
+   "forms": {
+    "injury": 1
+   },
+   "best_score": 0.971
+  }
+ ]
+}

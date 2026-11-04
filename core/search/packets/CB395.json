@@ -1,0 +1,57 @@
+{
+ "id": "CB395",
+ "filename": "CB395_2010_babesia-gibsoni-emerging-challenge-pediatric-practice.md",
+ "key": "https://openalex.org/W2181471054",
+ "record": {
+  "pmid": null,
+  "pmcid": null,
+  "doi": null,
+  "title": "Babesia Gibsoni – An Emerging Challenge In Canine Pediatric Practice In Chennai",
+  "journal": "Tamilnadu Journal of Veterinary and Animal Sciences",
+  "authors": [
+   "Palanisamy Selvaraj",
+   "Kuppusamy Senthilkumar",
+   "Subbiah Vairamuthu",
+   "Sushmeeka Nair Prathaban",
+   "Sujatha Srinivasan"
+  ],
+  "first_pub_date": "2010-05-01",
+  "type": "article",
+  "language": [
+   "en"
+  ],
+  "abstract": "Canine Babesiosis caused by Babesia gibsoni was more prevalent in canine pediatric population of Chennai. In puppies it causes a fatal disease with complicating signs. Though Diminazene aceturate was used in successful management of babesiosis, in some cases it fails to effect cure in puppies. In such cases Clindamycin was found to be successful in the clinical management of pediatric babesiosis.",
+  "abstract_source": "OpenAlex abstract_inverted_index (reconstructed)",
+  "source_id": "https://openalex.org/W2181471054",
+  "src": "OPENALEX",
+  "found_by": [
+   "OA:title_and_abstract"
+  ],
+  "in_window": true,
+  "key": "https://openalex.org/W2181471054",
+  "source_files": [
+   "candidates_r3.jsonl"
+  ]
+ },
+ "screening": {
+  "key": "https://openalex.org/W2181471054",
+  "decision": "uncertain",
+  "include_type": null,
+  "exclude_reason": null,
+  "primary_category": "SEV",
+  "secondary_tags": [],
+  "species": "B. gibsoni (suspected; method not stated)",
+  "rationale": "Based on the short abstract (the OpenAlex and KrishiKosh pages give no more). The 3-page note (Tamilnadu J Vet Anim Sci 6(3):122-124, 2010) describes fatal disease with complicating signs in puppies. The treatment focus may hide clinical or haematological data on the puppies, so it goes to full-text review.",
+  "stage": "adjudicated",
+  "batch": "r4_09.md",
+  "first_decision": "exclude",
+  "rescue_reason": "Short abstract reports that B. gibsoni causes a fatal disease with complicating signs in puppies, and that clindamycin succeeded after diminazene failure. The criteria cannot rule out a severity or outcome observation in infected dogs, and the full text may hold clinicopathology.",
+  "screening_round": "r4"
+ },
+ "fulltext_check": {
+  "key": "https://openalex.org/W2181471054",
+  "pmcid": null,
+  "checked": "2026-10-28",
+  "fulltext_status": "no_pmcid"
+ }
+}

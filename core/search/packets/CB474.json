@@ -1,0 +1,60 @@
+{
+ "id": "CB474",
+ "filename": "CB474_2014_clinico-biochemical-responses-experimental-infection-babesia.md",
+ "key": "DOI:10.14202/vetworld.2014.113-118",
+ "record": {
+  "pmid": null,
+  "doi": "10.14202/vetworld.2014.113-118",
+  "title": "Clinico-biochemical responses of dogs to experimental infection with Babesia canis",
+  "journal": "Veterinary World",
+  "authors": [
+   "Konto M",
+   "Biu A",
+   "Ahmed M",
+   "Mbaya A",
+   "Luka J"
+  ],
+  "first_pub_date": "2014-03-01",
+  "crossref_dates": {
+   "published-online": "2014-03-04",
+   "published-print": "2014-03-01",
+   "issued": "2014-03-01"
+  },
+  "abstract": null,
+  "language": [],
+  "found_by": [
+   "CR:Babesia gibsoni",
+   "CR:Babesia vogeli"
+  ],
+  "in_window": true,
+  "src": "CROSSREF",
+  "key": "DOI:10.14202/vetworld.2014.113-118",
+  "source_files": [
+   "candidates_crossref.jsonl"
+  ]
+ },
+ "screening": {
+  "key": "DOI:10.14202/vetworld.2014.113-118",
+  "decision": "include",
+  "include_type": "primary",
+  "exclude_reason": null,
+  "primary_category": "MET",
+  "secondary_tags": [
+   "SEV",
+   "REN",
+   "ERY"
+  ],
+  "species": "B. canis (unspecified; experimental inoculum, Nigeria)",
+  "rationale": "Based on the abstract on the Veterinary World landing page, reached via the DOI: an experimental infection of 5 dogs against 5 uninfected controls. It reports the clinical course (haemoglobinuria, respiratory distress, oedema, one death) and biochemistry, with ALP and ALT higher and glucose and creatinine lower than in controls, so it qualifies as an experimental infection that reports host responses.",
+  "stage": "adjudicated",
+  "batch": "r4_20.md",
+  "first_decision": "uncertain",
+  "screening_round": "r4"
+ },
+ "fulltext_check": {
+  "key": "DOI:10.14202/vetworld.2014.113-118",
+  "pmcid": null,
+  "checked": "2026-10-28",
+  "fulltext_status": "no_pmcid"
+ }
+}

@@ -1,0 +1,575 @@
+{
+ "id": "CB440",
+ "document": "data/markdown/CB440.md",
+ "source_format": "pdf",
+ "translated": false,
+ "words": 1921,
+ "run_utc": "2026-10-30T05:36:28+00:00",
+ "threshold": 0.85,
+ "kept_types": [
+  "T019",
+  "T020",
+  "T037",
+  "T046",
+  "T047",
+  "T048",
+  "T049",
+  "T050",
+  "T184",
+  "T190",
+  "T191"
+ ],
+ "term_count": 31,
+ "terms": [
+  {
+   "term": "C0004576",
+   "concept": "Babesiosis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 7,
+   "mentions_negated": 0,
+   "mentions_affirmed": 7,
+   "sections": {
+    "discussion": 3,
+    "methods": 2,
+    "abstract": 1,
+    "results": 1
+   },
+   "forms": {
+    "babesiosis": 7
+   },
+   "best_score": 0.972
+  },
+  {
+   "term": "C0085399",
+   "concept": "Ehrlichiosis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 7,
+   "mentions_negated": 0,
+   "mentions_affirmed": 7,
+   "sections": {
+    "discussion": 5,
+    "methods": 1,
+    "results": 1
+   },
+   "forms": {
+    "ehrlichiosis": 7
+   },
+   "best_score": 0.952
+  },
+  {
+   "term": "C0012634",
+   "concept": "Disease",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 6,
+   "mentions_negated": 0,
+   "mentions_affirmed": 6,
+   "sections": {
+    "discussion": 3,
+    "methods": 2,
+    "abstract": 1
+   },
+   "forms": {
+    "disease": 4,
+    "diseases": 1,
+    "disorders": 1
+   },
+   "best_score": 0.994
+  },
+  {
+   "term": "C0030499",
+   "concept": "Parasitic Diseases",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 5,
+   "mentions_negated": 0,
+   "mentions_affirmed": 5,
+   "sections": {
+    "discussion": 3,
+    "abstract": 2
+   },
+   "forms": {
+    "parasitic infections": 2,
+    "parasitic infection": 2,
+    "parasitic diseases": 1
+   },
+   "best_score": 0.988
+  },
+  {
+   "term": "C0002871",
+   "concept": "Anemia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "abstract": 2,
+    "methods": 1
+   },
+   "forms": {
+    "anaemia": 3
+   },
+   "best_score": 0.977
+  },
+  {
+   "term": "C0040034",
+   "concept": "Thrombocytopenia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "discussion": 2,
+    "abstract": 1
+   },
+   "forms": {
+    "thrombocytopenia": 3
+   },
+   "best_score": 0.98
+  },
+  {
+   "term": "C0151773",
+   "concept": "Bone marrow depression",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "methods": 2,
+    "discussion": 1
+   },
+   "forms": {
+    "bone marrow hypoplasia": 3
+   },
+   "best_score": 0.982
+  },
+  {
+   "term": "C0242656",
+   "concept": "Disease Progression",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "abstract": 1,
+    "methods": 1,
+    "discussion": 1
+   },
+   "forms": {
+    "progression": 3
+   },
+   "best_score": 0.971
+  },
+  {
+   "term": "C0002797",
+   "concept": "Anaplasmosis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "results": 1,
+    "discussion": 1
+   },
+   "forms": {
+    "anaplasmosis": 2
+   },
+   "best_score": 0.974
+  },
+  {
+   "term": "C0009450",
+   "concept": "Communicable Diseases",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "abstract": 1,
+    "discussion": 1
+   },
+   "forms": {
+    "infection": 2
+   },
+   "best_score": 0.962
+  },
+  {
+   "term": "C0021368",
+   "concept": "Inflammation",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "abstract": 1,
+    "discussion": 1
+   },
+   "forms": {
+    "inflammation": 2
+   },
+   "best_score": 0.958
+  },
+  {
+   "term": "C0023530",
+   "concept": "Leukopenia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "abstract": 1,
+    "methods": 1
+   },
+   "forms": {
+    "leukopenia": 2
+   },
+   "best_score": 0.958
+  },
+  {
+   "term": "C0851162",
+   "concept": "Infections of musculoskeletal system",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "abstract": 1,
+    "discussion": 1
+   },
+   "forms": {
+    "infections": 2
+   },
+   "best_score": 0.971
+  },
+  {
+   "term": "C1269955",
+   "concept": "Tumor Cell Invasion",
+   "semantic_types": [
+    "Neoplastic Process"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "title": 1,
+    "abstract": 1
+   },
+   "forms": {
+    "invasion": 2
+   },
+   "best_score": 0.944
+  },
+  {
+   "term": "C0004093",
+   "concept": "Asthenia",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "abstract": 1
+   },
+   "forms": {
+    "weakness": 1
+   },
+   "best_score": 0.975
+  },
+  {
+   "term": "C0005779",
+   "concept": "Blood Coagulation Disorders",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "coagulation disorders": 1
+   },
+   "best_score": 0.965
+  },
+  {
+   "term": "C0009806",
+   "concept": "Constipation",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "abstract": 1
+   },
+   "forms": {
+    "constipation": 1
+   },
+   "best_score": 0.953
+  },
+  {
+   "term": "C0011991",
+   "concept": "Diarrhea",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "abstract": 1
+   },
+   "forms": {
+    "diarrhoea": 1
+   },
+   "best_score": 0.98
+  },
+  {
+   "term": "C0012739",
+   "concept": "Disseminated Intravascular Coagulation",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "dic": 1
+   },
+   "best_score": 0.968
+  },
+  {
+   "term": "C0015967",
+   "concept": "Fever",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "abstract": 1
+   },
+   "forms": {
+    "fever": 1
+   },
+   "best_score": 0.962
+  },
+  {
+   "term": "C0024312",
+   "concept": "Lymphopenia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "methods": 1
+   },
+   "forms": {
+    "lymphopenia": 1
+   },
+   "best_score": 0.991
+  },
+  {
+   "term": "C0024348",
+   "concept": "Lysis",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "lysis": 1
+   },
+   "best_score": 0.986
+  },
+  {
+   "term": "C0030312",
+   "concept": "Pancytopenia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "pancytopenia": 1
+   },
+   "best_score": 0.99
+  },
+  {
+   "term": "C0033740",
+   "concept": "Protozoan Infections",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "protozoan infections": 1
+   },
+   "best_score": 0.95
+  },
+  {
+   "term": "C0036946",
+   "concept": "Sheep Diseases",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "unlabelled": 1
+   },
+   "forms": {
+    "sheep disease": 1
+   },
+   "best_score": 0.971
+  },
+  {
+   "term": "C0085632",
+   "concept": "Apathy",
+   "semantic_types": [
+    "Mental or Behavioral Dysfunction"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "methods": 1
+   },
+   "forms": {
+    "apathy": 1
+   },
+   "best_score": 0.99
+  },
+  {
+   "term": "C0275518",
+   "concept": "Acute infectious disease",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "acute infections": 1
+   },
+   "best_score": 0.977
+  },
+  {
+   "term": "C0302106",
+   "concept": "Platelet destruction",
+   "semantic_types": [
+    "Cell or Molecular Dysfunction"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "platelet destruction": 1
+   },
+   "best_score": 0.985
+  },
+  {
+   "term": "C0334094",
+   "concept": "Proliferation (morphologic abnormality)",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "proliferation": 1
+   },
+   "best_score": 0.97
+  },
+  {
+   "term": "C4025731",
+   "concept": "Abnormal thrombosis",
+   "semantic_types": [
+    "Anatomical Abnormality"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "abnormal blood clotting": 1
+   },
+   "best_score": 0.979
+  },
+  {
+   "term": "C4082764",
+   "concept": "Gastrointestinal infection",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "abstract": 1
+   },
+   "forms": {
+    "infections of the gastrointestinal tract": 1
+   },
+   "best_score": 0.912
+  }
+ ]
+}

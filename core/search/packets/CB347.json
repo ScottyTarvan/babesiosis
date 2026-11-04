@@ -1,0 +1,63 @@
+{
+ "id": "CB347",
+ "filename": "CB347_2008_ocorr-ncia-e-caracteriza-o-molecular.md",
+ "key": "https://openalex.org/W2520783107",
+ "record": {
+  "pmid": null,
+  "pmcid": null,
+  "doi": null,
+  "title": "OCORRÊNCIA E CARACTERIZAÇÃO MOLECULAR DE ESPÉCIES DE Babesia EM CÃES DE UMA POPULAÇÃO HOSPITALAR DA REGIÃO DE LONDRINA, PR.",
+  "journal": "Revista Brasileira de Parasitologia Veterinária/Brazilian Journal of Veterinary Parasitology",
+  "authors": [
+   "Flávio Shigueru Jojima",
+   "João Luís Garcia",
+   "Marilda Carlos Vidotto",
+   "Mara Regina Stipp Balarin",
+   "Andrei Kelliton Fabretti",
+   "Marcela Ribeiro Gasparini",
+   "Adriana Letícia Mendes Coelho",
+   "Odilon Vidotto"
+  ],
+  "first_pub_date": "2008-01-01",
+  "type": "article",
+  "language": [
+   "pt"
+  ],
+  "abstract": "Canine babesiosis is a worldwide disease caused by the protozoan of Babesia genus. Babesia canis and B.gibsoni are both species that naturally infect dogs. T...",
+  "abstract_source": "OpenAlex abstract_inverted_index (reconstructed)",
+  "source_id": "https://openalex.org/W2520783107",
+  "src": "OPENALEX",
+  "found_by": [
+   "OA:title_and_abstract"
+  ],
+  "in_window": true,
+  "key": "https://openalex.org/W2520783107",
+  "source_files": [
+   "candidates_r3.jsonl"
+  ]
+ },
+ "screening": {
+  "key": "https://openalex.org/W2520783107",
+  "decision": "include",
+  "include_type": "primary",
+  "exclude_reason": null,
+  "primary_category": "ERY",
+  "secondary_tags": [
+   "COA",
+   "INF"
+  ],
+  "species": "B. vogeli and B. gibsoni (confirmed, PCR-RFLP)",
+  "rationale": "Based on the full text (Redalyc PDF; RBPV 17 Suppl 1:277-283, full article): 282 hospital dogs with cytopenias were screened by PCR. The paper tabulates anaemia, thrombocytopenia and leukopenia patterns in PCR-positive vs PCR-negative dogs and by species, so this survey also reports haematology of infected dogs.",
+  "stage": "adjudicated",
+  "batch": "r4_04.md",
+  "first_decision": "exclude",
+  "rescue_reason": "Occurrence and molecular characterisation of Babesia in a hospital dog population, with a truncated abstract. The title suggests a molecular survey, but the abstract cannot rule out haematology or clinical data from hospital cases, so the adjudicator should check the full text.",
+  "screening_round": "r4"
+ },
+ "fulltext_check": {
+  "key": "https://openalex.org/W2520783107",
+  "pmcid": null,
+  "checked": "2026-10-28",
+  "fulltext_status": "no_pmcid"
+ }
+}

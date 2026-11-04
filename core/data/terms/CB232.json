@@ -1,0 +1,574 @@
+{
+ "id": "CB232",
+ "document": "data/markdown/CB232.md",
+ "source_format": "pdf",
+ "translated": false,
+ "words": 3273,
+ "run_utc": "2026-10-30T05:35:23+00:00",
+ "threshold": 0.85,
+ "kept_types": [
+  "T019",
+  "T020",
+  "T037",
+  "T046",
+  "T047",
+  "T048",
+  "T049",
+  "T050",
+  "T184",
+  "T190",
+  "T191"
+ ],
+ "term_count": 31,
+ "terms": [
+  {
+   "term": "C0012754",
+   "concept": "Distemper",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 19,
+   "mentions_negated": 1,
+   "mentions_affirmed": 18,
+   "sections": {
+    "abstract": 4,
+    "results": 4,
+    "discussion": 4,
+    "introduction": 3,
+    "methods": 3,
+    "title": 1
+   },
+   "forms": {
+    "distemper": 19
+   },
+   "best_score": 0.969
+  },
+  {
+   "term": "C0012634",
+   "concept": "Disease",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 13,
+   "mentions_negated": 1,
+   "mentions_affirmed": 12,
+   "sections": {
+    "discussion": 10,
+    "introduction": 2,
+    "title": 1
+   },
+   "forms": {
+    "diseases": 7,
+    "disease": 6
+   },
+   "best_score": 0.987
+  },
+  {
+   "term": "C0001349",
+   "concept": "Acute-Phase Reaction",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 5,
+   "mentions_negated": 0,
+   "mentions_affirmed": 5,
+   "sections": {
+    "introduction": 5
+   },
+   "forms": {
+    "apr": 3,
+    "acute phase response": 1,
+    "acute phase reactions": 1
+   },
+   "best_score": 0.982
+  },
+  {
+   "term": "C0021368",
+   "concept": "Inflammation",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 4,
+   "mentions_negated": 0,
+   "mentions_affirmed": 4,
+   "sections": {
+    "discussion": 3,
+    "introduction": 1
+   },
+   "forms": {
+    "inflammation": 3,
+    "inflammatory reaction": 1
+   },
+   "best_score": 0.969
+  },
+  {
+   "term": "C0205740",
+   "concept": "Canine Distemper",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 4,
+   "mentions_negated": 1,
+   "mentions_affirmed": 3,
+   "sections": {
+    "results": 2,
+    "abstract": 1,
+    "discussion": 1
+   },
+   "forms": {
+    "canine distemper": 4
+   },
+   "best_score": 0.974
+  },
+  {
+   "term": "C0242723",
+   "concept": "Parasitemia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 4,
+   "mentions_negated": 0,
+   "mentions_affirmed": 4,
+   "sections": {
+    "introduction": 2,
+    "discussion": 2
+   },
+   "forms": {
+    "parasitemia": 4
+   },
+   "best_score": 0.992
+  },
+  {
+   "term": "C0242781",
+   "concept": "disease transmission",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 4,
+   "mentions_negated": 0,
+   "mentions_affirmed": 4,
+   "sections": {
+    "introduction": 2,
+    "discussion": 2
+   },
+   "forms": {
+    "transmitted": 4
+   },
+   "best_score": 0.972
+  },
+  {
+   "term": "C0004576",
+   "concept": "Babesiosis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "discussion": 2,
+    "introduction": 1
+   },
+   "forms": {
+    "babesiosis": 3
+   },
+   "best_score": 0.972
+  },
+  {
+   "term": "C0009450",
+   "concept": "Communicable Diseases",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "introduction": 2,
+    "discussion": 1
+   },
+   "forms": {
+    "infection": 3
+   },
+   "best_score": 0.962
+  },
+  {
+   "term": "C0010957",
+   "concept": "Tissue damage",
+   "semantic_types": [
+    "Injury or Poisoning"
+   ],
+   "mentions": 3,
+   "mentions_negated": 1,
+   "mentions_affirmed": 2,
+   "sections": {
+    "introduction": 2,
+    "discussion": 1
+   },
+   "forms": {
+    "tissue damage": 2,
+    "damage": 1
+   },
+   "best_score": 0.988
+  },
+  {
+   "term": "C0002871",
+   "concept": "Anemia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "introduction": 2
+   },
+   "forms": {
+    "anemia": 2
+   },
+   "best_score": 0.974
+  },
+  {
+   "term": "C0003123",
+   "concept": "Anorexia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "introduction": 2
+   },
+   "forms": {
+    "anorexia": 2
+   },
+   "best_score": 0.969
+  },
+  {
+   "term": "C0015967",
+   "concept": "Fever",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "introduction": 2
+   },
+   "forms": {
+    "fever": 1,
+    "hyperthermia": 1
+   },
+   "best_score": 0.989
+  },
+  {
+   "term": "C0042769",
+   "concept": "Virus Diseases",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "introduction": 1,
+    "discussion": 1
+   },
+   "forms": {
+    "viral disease": 2
+   },
+   "best_score": 0.982
+  },
+  {
+   "term": "C0003486",
+   "concept": "Aortic Aneurysm",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "methods": 1
+   },
+   "forms": {
+    "taa": 1
+   },
+   "best_score": 0.967
+  },
+  {
+   "term": "C0004623",
+   "concept": "Bacterial Infections",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "bacterial infection": 1
+   },
+   "best_score": 0.973
+  },
+  {
+   "term": "C0019054",
+   "concept": "Hemolysis (disorder)",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "hemolysis": 1
+   },
+   "best_score": 0.991
+  },
+  {
+   "term": "C0023380",
+   "concept": "Lethargy",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "lethargy": 1
+   },
+   "best_score": 0.987
+  },
+  {
+   "term": "C0024348",
+   "concept": "Lysis",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "lysis": 1
+   },
+   "best_score": 0.986
+  },
+  {
+   "term": "C0027627",
+   "concept": "Neoplasm Metastasis",
+   "semantic_types": [
+    "Neoplastic Process"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "secondary": 1
+   },
+   "best_score": 0.985
+  },
+  {
+   "term": "C0039483",
+   "concept": "Giant Cell Arteritis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "methods": 1
+   },
+   "forms": {
+    "gca": 1
+   },
+   "best_score": 0.973
+  },
+  {
+   "term": "C0043251",
+   "concept": "Wounds and Injuries",
+   "semantic_types": [
+    "Injury or Poisoning"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "trauma": 1
+   },
+   "best_score": 0.966
+  },
+  {
+   "term": "C0080194",
+   "concept": "Muscle strain",
+   "semantic_types": [
+    "Injury or Poisoning"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "strain": 1
+   },
+   "best_score": 0.985
+  },
+  {
+   "term": "C0162569",
+   "concept": "Hepatoerythropoietic Porphyria",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "methods": 1
+   },
+   "forms": {
+    "hep f": 1
+   },
+   "best_score": 0.852
+  },
+  {
+   "term": "C0221423",
+   "concept": "Illness (finding)",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results": 1
+   },
+   "forms": {
+    "sick": 1
+   },
+   "best_score": 0.995
+  },
+  {
+   "term": "C0276854",
+   "concept": "Infection by Babesia canis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "canine babesiosis": 1
+   },
+   "best_score": 0.969
+  },
+  {
+   "term": "C0423006",
+   "concept": "Discharge from eye",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "ocular discharge": 1
+   },
+   "best_score": 0.989
+  },
+  {
+   "term": "C1260880",
+   "concept": "Rhinorrhea",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "methods": 1
+   },
+   "forms": {
+    "nasal discharge": 1
+   },
+   "best_score": 0.983
+  },
+  {
+   "term": "C3263722",
+   "concept": "Traumatic AND/OR non-traumatic injury",
+   "semantic_types": [
+    "Injury or Poisoning"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "injury": 1
+   },
+   "best_score": 0.971
+  },
+  {
+   "term": "C3714514",
+   "concept": "Infection",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "cdv infections": 1
+   },
+   "best_score": 0.852
+  },
+  {
+   "term": "C5392203",
+   "concept": "Oxidative Damage",
+   "semantic_types": [
+    "Cell or Molecular Dysfunction"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "oxidative damage": 1
+   },
+   "best_score": 0.981
+  }
+ ]
+}

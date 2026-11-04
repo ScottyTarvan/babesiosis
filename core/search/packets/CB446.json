@@ -1,0 +1,101 @@
+{
+ "id": "CB446",
+ "filename": "CB446_2013_markers-coagulation-activation-endothelial-stimulation-inflammation.md",
+ "key": "PMID:23875771",
+ "record": {
+  "pmid": "23875771",
+  "pmcid": null,
+  "doi": "10.1111/jvim.12146",
+  "title": "Markers of coagulation activation, endothelial stimulation, and inflammation in dogs with babesiosis.",
+  "authors": [
+   "Barić Rafaj R",
+   "Kuleš J",
+   "Selanec J",
+   "Vrkić N",
+   "Zovko V",
+   "Zupančič M",
+   "Trampuš Bakija A",
+   "Matijatko V",
+   "Crnogaj M",
+   "Mrljak V"
+  ],
+  "journal": "Journal of veterinary internal medicine",
+  "journal_abbrev": "J Vet Intern Med",
+  "volume": "27",
+  "issue": "5",
+  "pages": "1172-8",
+  "language": [
+   "eng"
+  ],
+  "issue_date": "2013-01-01",
+  "issue_date_precision": "year",
+  "epub_date": "2013-07-22",
+  "pubmed_entry_date": "2013-07-24",
+  "first_pub_date": "2013-01-01",
+  "publication_types": [
+   "Journal Article",
+   "Research Support, Non-U.S. Gov't"
+  ],
+  "mesh": [
+   "Animals",
+   "Antiparasitic Agents",
+   "Babesiosis",
+   "Blood Coagulation",
+   "Dog Diseases",
+   "Dogs",
+   "Endothelium, Vascular",
+   "Gene Expression Regulation",
+   "Imidocarb",
+   "Inflammation",
+   "Intercellular Adhesion Molecule-1"
+  ],
+  "keywords": [
+   "Hemostasis",
+   "Inflammatory markers",
+   "Intercellular adhesion molecule",
+   "von Willebrand factor"
+  ],
+  "abstract": "BACKGROUND: Babesia infections in dogs can result in a wide range of clinical and laboratory presentations, including coagulopathy. Expression of intercellular adhesion molecule-1 (ICAM-1) and von Willebrand factor (vWF) in dogs with babesiosis is unknown.\nOBJECTIVES: Whether inflammation in babesiosis triggers activation of ICAM-1 and the coagulation system.\nANIMALS: Twelve and 10 dogs with naturally occurring babesiosis before and after antiparasitic treatment, respectively, were compared with 10 healthy dogs.\nMETHODS: In this prospective study, diagnosis was made by blood smear examination and confirmed by PCR. C-reactive protein (CRP), soluble intercellular adhesion molecule 1 (sICAM-1), and von Willebrand factor (vWF) levels were measured by a canine ELISA kit, fibrinogen (FIB) and factor VIII activity levels were measured by coagulometric methods, and blood cell counts (WBC, RBC, PLT) were determined with an automatic analyzer.\nRESULTS: Compared to healthy dogs, the CRP, sICAM-1, and FIB concentrations were significantly increased before therapy and remained high for 3 days after therapy in dogs with babesiosis. vWF activity was significantly decreased in dogs with babesiosis before treatment. FVIII activity did not differ between dogs with babesiosis and healthy dogs. WBC; RBC and PLT were significantly lower before treatment and normalized by 3 days after treatment.\nCONCLUSION AND CLINICAL IMPORTANCE: A proinflammatory condition in babesiosis appears to influence endothelial dysfunction and hemostatic activity. Although clearly beneficial for the parasite, sequestered blood cells can obstruct blood flow in small vessels, promote an inflammatory state, and could increase the severity of babesiosis.",
+  "corrections": [],
+  "epmc_first_pub_date": "2013-07-22",
+  "is_oa": "N",
+  "has_suppl": "N",
+  "found_by": [
+   "EP1_broad",
+   "PM1_broad",
+   "PM3_mechanism"
+  ],
+  "in_window": true,
+  "date_discrepancy": "PubMed-derived 2013-01-01 vs Europe PMC firstPublicationDate 2013-07-22",
+  "online_vs_issue": "online 2013-07-22; issue 2013-01-01 (year)",
+  "existing_id": "BG008",
+  "existing_retired": false,
+  "key": "PMID:23875771",
+  "source_files": [
+   "candidates.jsonl"
+  ]
+ },
+ "screening": {
+  "key": "PMID:23875771",
+  "decision": "include",
+  "include_type": "primary",
+  "exclude_reason": null,
+  "primary_category": "COA",
+  "secondary_tags": [
+   "INF",
+   "END"
+  ],
+  "species": "Babesia sp. (confirmed, smear and PCR; species not stated)",
+  "rationale": "Prospective study of 12 infected dogs against 10 healthy controls reporting CRP, sICAM-1, vWF, fibrinogen and FVIII, relating inflammation to endothelial and haemostatic changes. Already in the review as BG008.",
+  "stage": "screen",
+  "batch": "r4_16.md",
+  "screening_round": "r4"
+ },
+ "fulltext_check": {
+  "key": "PMID:23875771",
+  "pmcid": null,
+  "checked": "2026-10-28",
+  "fulltext_status": "no_pmcid"
+ },
+ "replaces": "BG008"
+}

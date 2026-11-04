@@ -1,0 +1,1395 @@
+{
+ "id": "CB090",
+ "document": "data/markdown/CB090.md",
+ "source_format": "jats_xml",
+ "translated": false,
+ "words": 6984,
+ "run_utc": "2026-10-30T05:33:52+00:00",
+ "threshold": 0.85,
+ "kept_types": [
+  "T019",
+  "T020",
+  "T037",
+  "T046",
+  "T047",
+  "T048",
+  "T049",
+  "T050",
+  "T184",
+  "T190",
+  "T191"
+ ],
+ "term_count": 76,
+ "terms": [
+  {
+   "term": "C0004576",
+   "concept": "Babesiosis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 55,
+   "mentions_negated": 2,
+   "mentions_affirmed": 53,
+   "sections": {
+    "3. human babesiosis": 17,
+    "4. bovine babesiosis": 10,
+    "introduction": 9,
+    "5. canine babesiosis": 6,
+    "conclusion": 5,
+    "6. babesiosis in cervids": 3,
+    "abstract": 2,
+    "2. babesia species in north america": 2,
+    "title": 1
+   },
+   "forms": {
+    "babesiosis": 54,
+    "piroplasmosis": 1
+   },
+   "best_score": 0.987
+  },
+  {
+   "term": "C0009450",
+   "concept": "Communicable Diseases",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 17,
+   "mentions_negated": 0,
+   "mentions_affirmed": 17,
+   "sections": {
+    "3. human babesiosis": 4,
+    "8. theileriosis in cattle": 4,
+    "7. equine piroplasmosis": 3,
+    "introduction": 2,
+    "4. bovine babesiosis": 2,
+    "2. babesia species in north america": 1,
+    "5. canine babesiosis": 1
+   },
+   "forms": {
+    "infection": 16,
+    "infectious diseases": 1
+   },
+   "best_score": 0.976
+  },
+  {
+   "term": "C0022346",
+   "concept": "Icterus",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 15,
+   "mentions_negated": 0,
+   "mentions_affirmed": 15,
+   "sections": {
+    "4. bovine babesiosis": 3,
+    "6. babesiosis in cervids": 3,
+    "3. human babesiosis": 2,
+    "5. canine babesiosis": 2,
+    "8. theileriosis in cattle": 2,
+    "abstract": 1,
+    "2. babesia species in north america": 1,
+    "7. equine piroplasmosis": 1
+   },
+   "forms": {
+    "jaundice": 10,
+    "icterus": 5
+   },
+   "best_score": 0.958
+  },
+  {
+   "term": "C0015967",
+   "concept": "Fever",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 12,
+   "mentions_negated": 1,
+   "mentions_affirmed": 11,
+   "sections": {
+    "4. bovine babesiosis": 3,
+    "7. equine piroplasmosis": 2,
+    "8. theileriosis in cattle": 2,
+    "abstract": 1,
+    "2. babesia species in north america": 1,
+    "3. human babesiosis": 1,
+    "5. canine babesiosis": 1,
+    "6. babesiosis in cervids": 1
+   },
+   "forms": {
+    "fever": 10,
+    "pyrexia": 2
+   },
+   "best_score": 0.98
+  },
+  {
+   "term": "C0012634",
+   "concept": "Disease",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 10,
+   "mentions_negated": 1,
+   "mentions_affirmed": 9,
+   "sections": {
+    "abstract": 2,
+    "3. human babesiosis": 2,
+    "7. equine piroplasmosis": 2,
+    "introduction": 1,
+    "2. babesia species in north america": 1,
+    "4. bovine babesiosis": 1,
+    "8. theileriosis in cattle": 1
+   },
+   "forms": {
+    "disease": 8,
+    "diseases": 2
+   },
+   "best_score": 0.987
+  },
+  {
+   "term": "C0242781",
+   "concept": "disease transmission",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 10,
+   "mentions_negated": 0,
+   "mentions_affirmed": 10,
+   "sections": {
+    "4. bovine babesiosis": 2,
+    "8. theileriosis in cattle": 2,
+    "abstract": 1,
+    "introduction": 1,
+    "2. babesia species in north america": 1,
+    "3. human babesiosis": 1,
+    "6. babesiosis in cervids": 1,
+    "7. equine piroplasmosis": 1
+   },
+   "forms": {
+    "transmitted": 10
+   },
+   "best_score": 0.972
+  },
+  {
+   "term": "C0002871",
+   "concept": "Anemia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 9,
+   "mentions_negated": 0,
+   "mentions_affirmed": 9,
+   "sections": {
+    "5. canine babesiosis": 3,
+    "8. theileriosis in cattle": 2,
+    "abstract": 1,
+    "4. bovine babesiosis": 1,
+    "6. babesiosis in cervids": 1,
+    "7. equine piroplasmosis": 1
+   },
+   "forms": {
+    "anemia": 9
+   },
+   "best_score": 0.974
+  },
+  {
+   "term": "C0242723",
+   "concept": "Parasitemia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 9,
+   "mentions_negated": 2,
+   "mentions_affirmed": 7,
+   "sections": {
+    "4. bovine babesiosis": 3,
+    "5. canine babesiosis": 2,
+    "8. theileriosis in cattle": 2,
+    "3. human babesiosis": 1,
+    "7. equine piroplasmosis": 1
+   },
+   "forms": {
+    "parasitemia": 9
+   },
+   "best_score": 0.992
+  },
+  {
+   "term": "C0851162",
+   "concept": "Infections of musculoskeletal system",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 7,
+   "mentions_negated": 0,
+   "mentions_affirmed": 7,
+   "sections": {
+    "7. equine piroplasmosis": 3,
+    "8. theileriosis in cattle": 2,
+    "3. human babesiosis": 1,
+    "4. bovine babesiosis": 1
+   },
+   "forms": {
+    "infections": 7
+   },
+   "best_score": 0.971
+  },
+  {
+   "term": "C0002878",
+   "concept": "Anemia, Hemolytic",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 6,
+   "mentions_negated": 0,
+   "mentions_affirmed": 6,
+   "sections": {
+    "2. babesia species in north america": 2,
+    "abstract": 1,
+    "4. bovine babesiosis": 1,
+    "5. canine babesiosis": 1,
+    "7. equine piroplasmosis": 1
+   },
+   "forms": {
+    "hemolytic anemia": 6
+   },
+   "best_score": 0.978
+  },
+  {
+   "term": "C0039753",
+   "concept": "Theileriasis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 5,
+   "mentions_negated": 0,
+   "mentions_affirmed": 5,
+   "sections": {
+    "8. theileriosis in cattle": 2,
+    "title": 1,
+    "abstract": 1,
+    "introduction": 1
+   },
+   "forms": {
+    "theileriosis": 5
+   },
+   "best_score": 0.97
+  },
+  {
+   "term": "C0699748",
+   "concept": "Pathogenesis",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 4,
+   "mentions_negated": 0,
+   "mentions_affirmed": 4,
+   "sections": {
+    "abstract": 1,
+    "introduction": 1,
+    "2. babesia species in north america": 1,
+    "conclusion": 1
+   },
+   "forms": {
+    "pathogenesis": 4
+   },
+   "best_score": 0.983
+  },
+  {
+   "term": "C0003123",
+   "concept": "Anorexia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "3. human babesiosis": 1,
+    "4. bovine babesiosis": 1,
+    "5. canine babesiosis": 1
+   },
+   "forms": {
+    "anorexia": 3
+   },
+   "best_score": 0.969
+  },
+  {
+   "term": "C0004093",
+   "concept": "Asthenia",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "8. theileriosis in cattle": 2,
+    "5. canine babesiosis": 1
+   },
+   "forms": {
+    "weakness": 3
+   },
+   "best_score": 0.975
+  },
+  {
+   "term": "C0005658",
+   "concept": "bite injury",
+   "semantic_types": [
+    "Injury or Poisoning"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "5. canine babesiosis": 1,
+    "8. theileriosis in cattle": 1
+   },
+   "forms": {
+    "bites": 1,
+    "bite": 1
+   },
+   "best_score": 0.982
+  },
+  {
+   "term": "C0013604",
+   "concept": "Edema",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "4. bovine babesiosis": 1,
+    "7. equine piroplasmosis": 1
+   },
+   "forms": {
+    "edema": 2
+   },
+   "best_score": 0.987
+  },
+  {
+   "term": "C0020517",
+   "concept": "Hypersensitivity",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "5. canine babesiosis": 1,
+    "7. equine piroplasmosis": 1
+   },
+   "forms": {
+    "sensitivity": 2
+   },
+   "best_score": 0.997
+  },
+  {
+   "term": "C0023380",
+   "concept": "Lethargy",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "4. bovine babesiosis": 1,
+    "6. babesiosis in cervids": 1
+   },
+   "forms": {
+    "lethargic": 1,
+    "lethargy": 1
+   },
+   "best_score": 0.989
+  },
+  {
+   "term": "C0232462",
+   "concept": "Decrease in appetite",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "7. equine piroplasmosis": 2
+   },
+   "forms": {
+    "inappetence": 2
+   },
+   "best_score": 0.978
+  },
+  {
+   "term": "C0700148",
+   "concept": "Congestion",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "4. bovine babesiosis": 2
+   },
+   "forms": {
+    "congestion": 2
+   },
+   "best_score": 0.967
+  },
+  {
+   "term": "C3203359",
+   "concept": "Rupture",
+   "semantic_types": [
+    "Injury or Poisoning"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "5. canine babesiosis": 1,
+    "7. equine piroplasmosis": 1
+   },
+   "forms": {
+    "rupture": 2
+   },
+   "best_score": 0.97
+  },
+  {
+   "term": "C0000737",
+   "concept": "Abdominal Pain",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "3. human babesiosis": 1
+   },
+   "forms": {
+    "abdominal pain": 1
+   },
+   "best_score": 0.97
+  },
+  {
+   "term": "C0001314",
+   "concept": "Acute Disease",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "4. bovine babesiosis": 1
+   },
+   "forms": {
+    "acute disease": 1
+   },
+   "best_score": 0.987
+  },
+  {
+   "term": "C0003862",
+   "concept": "Arthralgia",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "3. human babesiosis": 1
+   },
+   "forms": {
+    "arthralgia": 1
+   },
+   "best_score": 0.963
+  },
+  {
+   "term": "C0005443",
+   "concept": "Bilirubinuria",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "7. equine piroplasmosis": 1
+   },
+   "forms": {
+    "bilirubinuria": 1
+   },
+   "best_score": 0.974
+  },
+  {
+   "term": "C0006826",
+   "concept": "Malignant Neoplasms",
+   "semantic_types": [
+    "Neoplastic Process"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "3. human babesiosis": 1
+   },
+   "forms": {
+    "malignancy": 1
+   },
+   "best_score": 0.991
+  },
+  {
+   "term": "C0009421",
+   "concept": "Comatose",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "4. bovine babesiosis": 1
+   },
+   "forms": {
+    "coma": 1
+   },
+   "best_score": 0.994
+  },
+  {
+   "term": "C0009806",
+   "concept": "Constipation",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "4. bovine babesiosis": 1
+   },
+   "forms": {
+    "constipation": 1
+   },
+   "best_score": 0.953
+  },
+  {
+   "term": "C0010200",
+   "concept": "Coughing",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "3. human babesiosis": 1
+   },
+   "forms": {
+    "coughing": 1
+   },
+   "best_score": 0.939
+  },
+  {
+   "term": "C0011175",
+   "concept": "Dehydration",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "4. bovine babesiosis": 1
+   },
+   "forms": {
+    "dehydration": 1
+   },
+   "best_score": 0.957
+  },
+  {
+   "term": "C0011570",
+   "concept": "Mental Depression",
+   "semantic_types": [
+    "Mental or Behavioral Dysfunction"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "3. human babesiosis": 1
+   },
+   "forms": {
+    "depression": 1
+   },
+   "best_score": 0.97
+  },
+  {
+   "term": "C0011991",
+   "concept": "Diarrhea",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "7. equine piroplasmosis": 1
+   },
+   "forms": {
+    "diarrhea": 1
+   },
+   "best_score": 0.983
+  },
+  {
+   "term": "C0012359",
+   "concept": "Pathological Dilatation",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "4. bovine babesiosis": 1
+   },
+   "forms": {
+    "distention": 1
+   },
+   "best_score": 0.985
+  },
+  {
+   "term": "C0013404",
+   "concept": "Dyspnea",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "3. human babesiosis": 1
+   },
+   "forms": {
+    "shortness of breath": 1
+   },
+   "best_score": 0.965
+  },
+  {
+   "term": "C0013911",
+   "concept": "Emaciation",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "6. babesiosis in cervids": 1
+   },
+   "forms": {
+    "emaciation": 1
+   },
+   "best_score": 0.964
+  },
+  {
+   "term": "C0015672",
+   "concept": "Fatigue",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "3. human babesiosis": 1
+   },
+   "forms": {
+    "fatigue": 1
+   },
+   "best_score": 0.971
+  },
+  {
+   "term": "C0018681",
+   "concept": "Headache",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "3. human babesiosis": 1
+   },
+   "forms": {
+    "headache": 1
+   },
+   "best_score": 0.99
+  },
+  {
+   "term": "C0018932",
+   "concept": "Hematochezia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "6. babesiosis in cervids": 1
+   },
+   "forms": {
+    "hematochezia": 1
+   },
+   "best_score": 0.949
+  },
+  {
+   "term": "C0019054",
+   "concept": "Hemolysis (disorder)",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "5. canine babesiosis": 1
+   },
+   "forms": {
+    "hemolysis": 1
+   },
+   "best_score": 0.991
+  },
+  {
+   "term": "C0019080",
+   "concept": "Hemorrhage",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "4. bovine babesiosis": 1
+   },
+   "forms": {
+    "hemorrhages": 1
+   },
+   "best_score": 0.985
+  },
+  {
+   "term": "C0020453",
+   "concept": "Hyperesthesia",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "3. human babesiosis": 1
+   },
+   "forms": {
+    "hyperesthesia": 1
+   },
+   "best_score": 0.986
+  },
+  {
+   "term": "C0021308",
+   "concept": "Infarction",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "3. human babesiosis": 1
+   },
+   "forms": {
+    "infarcts": 1
+   },
+   "best_score": 0.971
+  },
+  {
+   "term": "C0024198",
+   "concept": "Lyme Disease",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "lyme disease": 1
+   },
+   "best_score": 0.988
+  },
+  {
+   "term": "C0026846",
+   "concept": "Muscular Atrophy",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "4. bovine babesiosis": 1
+   },
+   "forms": {
+    "muscle wasting": 1
+   },
+   "best_score": 0.979
+  },
+  {
+   "term": "C0027497",
+   "concept": "Nausea",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "3. human babesiosis": 1
+   },
+   "forms": {
+    "nausea": 1
+   },
+   "best_score": 0.995
+  },
+  {
+   "term": "C0030499",
+   "concept": "Parasitic Diseases",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 1,
+   "mentions_affirmed": 0,
+   "sections": {
+    "5. canine babesiosis": 1
+   },
+   "forms": {
+    "infestation": 1
+   },
+   "best_score": 0.946
+  },
+  {
+   "term": "C0031350",
+   "concept": "Pharyngitis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "3. human babesiosis": 1
+   },
+   "forms": {
+    "sore throat": 1
+   },
+   "best_score": 0.994
+  },
+  {
+   "term": "C0035309",
+   "concept": "Retinal Diseases",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "3. human babesiosis": 1
+   },
+   "forms": {
+    "retinopathy": 1
+   },
+   "best_score": 0.991
+  },
+  {
+   "term": "C0040034",
+   "concept": "Thrombocytopenia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "5. canine babesiosis": 1
+   },
+   "forms": {
+    "thrombocytopenia": 1
+   },
+   "best_score": 0.98
+  },
+  {
+   "term": "C0040456",
+   "concept": "Impacted tooth",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "conclusion": 1
+   },
+   "forms": {
+    "impacted": 1
+   },
+   "best_score": 0.978
+  },
+  {
+   "term": "C0040822",
+   "concept": "Tremor",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "4. bovine babesiosis": 1
+   },
+   "forms": {
+    "tremors": 1
+   },
+   "best_score": 0.994
+  },
+  {
+   "term": "C0042963",
+   "concept": "Vomiting",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "3. human babesiosis": 1
+   },
+   "forms": {
+    "vomiting,": 1
+   },
+   "best_score": 0.87
+  },
+  {
+   "term": "C0085593",
+   "concept": "Chills",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "3. human babesiosis": 1
+   },
+   "forms": {
+    "chills": 1
+   },
+   "best_score": 0.99
+  },
+  {
+   "term": "C0085632",
+   "concept": "Apathy",
+   "semantic_types": [
+    "Mental or Behavioral Dysfunction"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "5. canine babesiosis": 1
+   },
+   "forms": {
+    "apathy": 1
+   },
+   "best_score": 0.99
+  },
+  {
+   "term": "C0085636",
+   "concept": "Photophobia",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "3. human babesiosis": 1
+   },
+   "forms": {
+    "photophobia": 1
+   },
+   "best_score": 0.979
+  },
+  {
+   "term": "C0085649",
+   "concept": "Peripheral edema",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "7. equine piroplasmosis": 1
+   },
+   "forms": {
+    "peripheral edema": 1
+   },
+   "best_score": 0.966
+  },
+  {
+   "term": "C0151315",
+   "concept": "Neck stiffness",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "3. human babesiosis": 1
+   },
+   "forms": {
+    "neck stiffness": 1
+   },
+   "best_score": 0.959
+  },
+  {
+   "term": "C0151317",
+   "concept": "Chronic Infection",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "7. equine piroplasmosis": 1
+   },
+   "forms": {
+    "chronic infections": 1
+   },
+   "best_score": 0.98
+  },
+  {
+   "term": "C0162700",
+   "concept": "Tick-Borne Diseases",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 1,
+   "mentions_affirmed": 0,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "tick-borne diseases": 1
+   },
+   "best_score": 0.951
+  },
+  {
+   "term": "C0231528",
+   "concept": "Myalgia",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "3. human babesiosis": 1
+   },
+   "forms": {
+    "myalgia": 1
+   },
+   "best_score": 0.974
+  },
+  {
+   "term": "C0235573",
+   "concept": "Hemoglobinemia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "4. bovine babesiosis": 1
+   },
+   "forms": {
+    "hemoglobinemia": 1
+   },
+   "best_score": 0.988
+  },
+  {
+   "term": "C0242184",
+   "concept": "Hypoxia",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "8. theileriosis in cattle": 1
+   },
+   "forms": {
+    "hypoxia": 1
+   },
+   "best_score": 0.978
+  },
+  {
+   "term": "C0268596",
+   "concept": "Multiple Acyl Coenzyme A Dehydrogenase Deficiency",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "7. equine piroplasmosis": 1
+   },
+   "forms": {
+    "ema": 1
+   },
+   "best_score": 0.991
+  },
+  {
+   "term": "C0275524",
+   "concept": "Coinfection",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "5. canine babesiosis": 1
+   },
+   "forms": {
+    "coinfections": 1
+   },
+   "best_score": 0.967
+  },
+  {
+   "term": "C0275615",
+   "concept": "Infection due to Clostridium haemolyticum",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "4. bovine babesiosis": 1
+   },
+   "forms": {
+    "red water disease": 1
+   },
+   "best_score": 0.966
+  },
+  {
+   "term": "C0276852",
+   "concept": "Infection by Babesia bigemina",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "4. bovine babesiosis": 1
+   },
+   "forms": {
+    "texas fever": 1
+   },
+   "best_score": 0.96
+  },
+  {
+   "term": "C0276854",
+   "concept": "Infection by Babesia canis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "5. canine babesiosis": 1
+   },
+   "forms": {
+    "canine babesiosis": 1
+   },
+   "best_score": 0.969
+  },
+  {
+   "term": "C0302086",
+   "concept": "Erythrocyte destruction",
+   "semantic_types": [
+    "Cell or Molecular Dysfunction"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "8. theileriosis in cattle": 1
+   },
+   "forms": {
+    "erythrocyte destruction": 1
+   },
+   "best_score": 0.977
+  },
+  {
+   "term": "C0333286",
+   "concept": "Splinter hemorrhage",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "3. human babesiosis": 1
+   },
+   "forms": {
+    "splinter hemorrhages": 1
+   },
+   "best_score": 0.969
+  },
+  {
+   "term": "C0334094",
+   "concept": "Proliferation (morphologic abnormality)",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "3. human babesiosis": 1
+   },
+   "forms": {
+    "proliferation": 1
+   },
+   "best_score": 0.97
+  },
+  {
+   "term": "C0497156",
+   "concept": "Lymphadenopathy",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "5. canine babesiosis": 1
+   },
+   "forms": {
+    "enlargement of lymph nodes": 1
+   },
+   "best_score": 0.964
+  },
+  {
+   "term": "C0600031",
+   "concept": "Congenital absence of spleen",
+   "semantic_types": [
+    "Congenital Abnormality"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "3. human babesiosis": 1
+   },
+   "forms": {
+    "asplenia": 1
+   },
+   "best_score": 0.99
+  },
+  {
+   "term": "C0851341",
+   "concept": "Infestation",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "8. theileriosis in cattle": 1
+   },
+   "forms": {
+    "infestations": 1
+   },
+   "best_score": 0.957
+  },
+  {
+   "term": "C1112157",
+   "concept": "intrauterine infection",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "7. equine piroplasmosis": 1
+   },
+   "forms": {
+    "intrauterine infection": 1
+   },
+   "best_score": 0.964
+  },
+  {
+   "term": "C1263988",
+   "concept": "Hemolytic disorder",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "6. babesiosis in cervids": 1
+   },
+   "forms": {
+    "hemolytic disease": 1
+   },
+   "best_score": 0.981
+  },
+  {
+   "term": "C3534575",
+   "concept": "Animal Health",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "animal health": 1
+   },
+   "best_score": 0.971
+  }
+ ]
+}

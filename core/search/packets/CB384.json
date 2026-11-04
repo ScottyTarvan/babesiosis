@@ -1,0 +1,59 @@
+{
+ "id": "CB384",
+ "filename": "CB384_2010_c-reactive-protein-soluble-intercellular-adhesion.md",
+ "key": "https://openalex.org/W2749885724",
+ "record": {
+  "pmid": null,
+  "pmcid": null,
+  "doi": null,
+  "title": "C-reactive protein and soluble intercellular adhesion molecule–1 levels in Canine babesiosis",
+  "journal": null,
+  "authors": [
+   "Josipa Kuleš",
+   "Martina Crnogaj",
+   "Mirna Brkljačić",
+   "Iva Mayer",
+   "Marin Torti",
+   "Renata Barić Rafaj",
+   "Vladimir Mrljak"
+  ],
+  "first_pub_date": "2010-01-01",
+  "type": "article",
+  "language": [
+   "en"
+  ],
+  "abstract": "CRP is an acute-phase protein that has been identified as an important biomarker for inflammation and infection. Endothelial cell-expressed ICAM-1 is markedly upregulated in response to a variety of inflammatory mediators, with a role in mediating the interaction between the parasitized red blood cell and the vascular endothelium. To test the hypothesis that inflammation might be associated with an increase in the level of sICAM-1, we measured CRP concentration as a plasma marker of inflammation and the sICAM-1 level as a marker of endothelial disturbances in dogs with babesiosis before and after treatment. Twelve dogs with clinical signs of acute babesiosis were prospectively studied. Blood was collected before treatment with imidocarb dipropionate and on the 6th day after treatment. The plasma concentrations of sICAM-1 and CRP were measured using an ELISA test. Results were compared with healthy dogs. Statistical analysis of data were carried out by the t-test, at p < 0.05 significance level. Dogs with babesiosis had significantly increased CRP before the treatment compared with healthy dogs. Six days after, CRP concentrations fell, but remained significantly elevated. sICAM-1 concentrations didn't significantly differ from before treatment levels, but showed significant decreases on day 6, compared with healthy dogs. This study demonstrated the systemic elevation of CRP concentrations in canine babesiosis followed by a decrease in sICAM-1 following treatment.",
+  "abstract_source": "OpenAlex abstract_inverted_index (reconstructed)",
+  "source_id": "https://openalex.org/W2749885724",
+  "src": "OPENALEX",
+  "found_by": [
+   "OA:title_and_abstract"
+  ],
+  "in_window": true,
+  "key": "https://openalex.org/W2749885724",
+  "source_files": [
+   "candidates_r3.jsonl"
+  ]
+ },
+ "screening": {
+  "key": "https://openalex.org/W2749885724",
+  "decision": "include",
+  "include_type": "primary",
+  "exclude_reason": null,
+  "primary_category": "INF",
+  "secondary_tags": [
+   "END"
+  ],
+  "species": "Babesia sp. (unspecified; imidocarb-treated clinical cases)",
+  "rationale": "Measures CRP and soluble ICAM-1 in 12 dogs with acute babesiosis before and after treatment, compared with healthy dogs, as markers of inflammation and endothelial disturbance.",
+  "stage": "screen",
+  "batch": "r4_08.md",
+  "screening_round": "r4"
+ },
+ "fulltext_check": {
+  "key": "https://openalex.org/W2749885724",
+  "pmcid": null,
+  "checked": "2026-10-28",
+  "fulltext_status": "no_pmcid"
+ }
+}

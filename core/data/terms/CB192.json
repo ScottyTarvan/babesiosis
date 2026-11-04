@@ -1,0 +1,698 @@
+{
+ "id": "CB192",
+ "document": "data/markdown/CB192.en.md",
+ "source_format": "pdf",
+ "translated": true,
+ "words": 3047,
+ "run_utc": "2026-10-30T05:35:06+00:00",
+ "threshold": 0.85,
+ "kept_types": [
+  "T019",
+  "T020",
+  "T037",
+  "T046",
+  "T047",
+  "T048",
+  "T049",
+  "T050",
+  "T184",
+  "T190",
+  "T191"
+ ],
+ "term_count": 38,
+ "terms": [
+  {
+   "term": "C0004576",
+   "concept": "Babesiosis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 44,
+   "mentions_negated": 2,
+   "mentions_affirmed": 42,
+   "sections": {
+    "introduction": 31,
+    "unlabelled": 9,
+    "conclusion": 3,
+    "title": 1
+   },
+   "forms": {
+    "babesiosis": 44
+   },
+   "best_score": 0.972
+  },
+  {
+   "term": "C0002878",
+   "concept": "Anemia, Hemolytic",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 8,
+   "mentions_negated": 0,
+   "mentions_affirmed": 8,
+   "sections": {
+    "unlabelled": 4,
+    "introduction": 4
+   },
+   "forms": {
+    "haemolytic anaemia": 5,
+    "hemolytic anemia": 2,
+    "haemolytic anaemias": 1
+   },
+   "best_score": 0.983
+  },
+  {
+   "term": "C0012634",
+   "concept": "Disease",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 8,
+   "mentions_negated": 1,
+   "mentions_affirmed": 7,
+   "sections": {
+    "unlabelled": 4,
+    "introduction": 4
+   },
+   "forms": {
+    "disease": 7,
+    "diseases": 1
+   },
+   "best_score": 0.987
+  },
+  {
+   "term": "C0023895",
+   "concept": "Liver diseases",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 7,
+   "mentions_negated": 0,
+   "mentions_affirmed": 7,
+   "sections": {
+    "unlabelled": 4,
+    "introduction": 3
+   },
+   "forms": {
+    "hepatopathy": 6,
+    "liver diseases": 1
+   },
+   "best_score": 0.994
+  },
+  {
+   "term": "C0036974",
+   "concept": "Shock",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 7,
+   "mentions_negated": 0,
+   "mentions_affirmed": 7,
+   "sections": {
+    "unlabelled": 4,
+    "introduction": 3
+   },
+   "forms": {
+    "shock": 7
+   },
+   "best_score": 0.998
+  },
+  {
+   "term": "C1269955",
+   "concept": "Tumor Cell Invasion",
+   "semantic_types": [
+    "Neoplastic Process"
+   ],
+   "mentions": 6,
+   "mentions_negated": 0,
+   "mentions_affirmed": 6,
+   "sections": {
+    "unlabelled": 3,
+    "introduction": 2,
+    "conclusion": 1
+   },
+   "forms": {
+    "invasion": 6
+   },
+   "best_score": 0.944
+  },
+  {
+   "term": "C0000744",
+   "concept": "Abetalipoproteinemia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 5,
+   "mentions_negated": 0,
+   "mentions_affirmed": 5,
+   "sections": {
+    "introduction": 3,
+    "unlabelled": 2
+   },
+   "forms": {
+    "acanthocytosis": 5
+   },
+   "best_score": 0.989
+  },
+  {
+   "term": "C0009566",
+   "concept": "Complication",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 5,
+   "mentions_negated": 0,
+   "mentions_affirmed": 5,
+   "sections": {
+    "introduction": 3,
+    "unlabelled": 2
+   },
+   "forms": {
+    "complications": 5
+   },
+   "best_score": 0.977
+  },
+  {
+   "term": "C0010957",
+   "concept": "Tissue damage",
+   "semantic_types": [
+    "Injury or Poisoning"
+   ],
+   "mentions": 4,
+   "mentions_negated": 0,
+   "mentions_affirmed": 4,
+   "sections": {
+    "unlabelled": 2,
+    "introduction": 1,
+    "conclusion": 1
+   },
+   "forms": {
+    "damage": 4
+   },
+   "best_score": 0.987
+  },
+  {
+   "term": "C0012739",
+   "concept": "Disseminated Intravascular Coagulation",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 4,
+   "mentions_negated": 0,
+   "mentions_affirmed": 4,
+   "sections": {
+    "unlabelled": 2,
+    "introduction": 2
+   },
+   "forms": {
+    "dic": 4
+   },
+   "best_score": 0.968
+  },
+  {
+   "term": "C0035078",
+   "concept": "Kidney Failure",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 4,
+   "mentions_negated": 0,
+   "mentions_affirmed": 4,
+   "sections": {
+    "unlabelled": 2,
+    "introduction": 2
+   },
+   "forms": {
+    "renal failure": 3,
+    "kidney failure": 1
+   },
+   "best_score": 0.982
+  },
+  {
+   "term": "C0027059",
+   "concept": "Myocarditis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "unlabelled": 2,
+    "introduction": 1
+   },
+   "forms": {
+    "myocarditis": 3
+   },
+   "best_score": 0.979
+  },
+  {
+   "term": "C0302810",
+   "concept": "Uremia syndrome",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "unlabelled": 2,
+    "introduction": 1
+   },
+   "forms": {
+    "uraemic syndrome": 2,
+    "uremic syndrome": 1
+   },
+   "best_score": 0.991
+  },
+  {
+   "term": "C0878544",
+   "concept": "Cardiomyopathies",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "unlabelled": 2,
+    "introduction": 1
+   },
+   "forms": {
+    "cardiomyopathy": 3
+   },
+   "best_score": 0.985
+  },
+  {
+   "term": "C0000921",
+   "concept": "Accidental Falls",
+   "semantic_types": [
+    "Injury or Poisoning"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "unlabelled": 2
+   },
+   "forms": {
+    "falls": 2
+   },
+   "best_score": 0.986
+  },
+  {
+   "term": "C0022660",
+   "concept": "Kidney Failure, Acute",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "unlabelled": 2
+   },
+   "forms": {
+    "acute renal insufficiency": 1,
+    "acute renal failure": 1
+   },
+   "best_score": 0.967
+  },
+  {
+   "term": "C0039082",
+   "concept": "Syndrome",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "unlabelled": 1,
+    "introduction": 1
+   },
+   "forms": {
+    "syndrome": 2
+   },
+   "best_score": 0.994
+  },
+  {
+   "term": "C0746556",
+   "concept": "metabolic disturbance",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "unlabelled": 1,
+    "introduction": 1
+   },
+   "forms": {
+    "metabolic disturbance": 2
+   },
+   "best_score": 0.973
+  },
+  {
+   "term": "C1457887",
+   "concept": "Symptoms",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "unlabelled": 2
+   },
+   "forms": {
+    "symptom": 2
+   },
+   "best_score": 0.986
+  },
+  {
+   "term": "C0003047",
+   "concept": "Animal Diseases",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 1,
+   "mentions_affirmed": 0,
+   "sections": {
+    "unlabelled": 1
+   },
+   "forms": {
+    "animal disease": 1
+   },
+   "best_score": 0.972
+  },
+  {
+   "term": "C0015967",
+   "concept": "Fever",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "fever": 1
+   },
+   "best_score": 0.962
+  },
+  {
+   "term": "C0017658",
+   "concept": "Glomerulonephritis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "glomerulonephritis": 1
+   },
+   "best_score": 0.986
+  },
+  {
+   "term": "C0022346",
+   "concept": "Icterus",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "jaundice": 1
+   },
+   "best_score": 0.947
+  },
+  {
+   "term": "C0025517",
+   "concept": "Metabolic Diseases",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "unlabelled": 1
+   },
+   "forms": {
+    "metabolic disorders": 1
+   },
+   "best_score": 0.99
+  },
+  {
+   "term": "C0030499",
+   "concept": "Parasitic Diseases",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "unlabelled": 1
+   },
+   "forms": {
+    "infestation": 1
+   },
+   "best_score": 0.946
+  },
+  {
+   "term": "C0030554",
+   "concept": "Paresthesia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "paraesthesias": 1
+   },
+   "best_score": 0.981
+  },
+  {
+   "term": "C0030660",
+   "concept": "Pathologic Processes",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "pathological processes": 1
+   },
+   "best_score": 0.981
+  },
+  {
+   "term": "C0036572",
+   "concept": "Seizures",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "convulsions": 1
+   },
+   "best_score": 0.947
+  },
+  {
+   "term": "C0041948",
+   "concept": "Uremia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "uraemia": 1
+   },
+   "best_score": 0.984
+  },
+  {
+   "term": "C0085605",
+   "concept": "Liver Failure",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "hepatic failure": 1
+   },
+   "best_score": 0.967
+  },
+  {
+   "term": "C0151630",
+   "concept": "Erythrocyte vacuolization",
+   "semantic_types": [
+    "Cell or Molecular Dysfunction"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "erythrocyte vacuolisation": 1
+   },
+   "best_score": 0.959
+  },
+  {
+   "term": "C0231239",
+   "concept": "Fluctuation",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "fluctuations": 1
+   },
+   "best_score": 0.969
+  },
+  {
+   "term": "C0242723",
+   "concept": "Parasitemia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "unlabelled": 1
+   },
+   "forms": {
+    "parasitemia": 1
+   },
+   "best_score": 0.992
+  },
+  {
+   "term": "C0272048",
+   "concept": "stomatocytic anemia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "stomatocytosis": 1
+   },
+   "best_score": 0.991
+  },
+  {
+   "term": "C0276854",
+   "concept": "Infection by Babesia canis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "canine babesiosis": 1
+   },
+   "best_score": 0.969
+  },
+  {
+   "term": "C0699748",
+   "concept": "Pathogenesis",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "pathogenesis": 1
+   },
+   "best_score": 0.983
+  },
+  {
+   "term": "C0741949",
+   "concept": "Cardiovascular Pathology",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "cardiovascular pathologies": 1
+   },
+   "best_score": 0.854
+  },
+  {
+   "term": "C3534575",
+   "concept": "Animal Health",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "animal health": 1
+   },
+   "best_score": 0.971
+  }
+ ]
+}

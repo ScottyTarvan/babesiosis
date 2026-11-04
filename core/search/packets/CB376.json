@@ -1,0 +1,93 @@
+{
+ "id": "CB376",
+ "filename": "CB376_2009_c-reactive-protein-babesiosis-caused-babesia.md",
+ "key": "PMID:19831269",
+ "record": {
+  "pmid": "19831269",
+  "pmcid": null,
+  "doi": "10.4102/jsava.v80i2.177",
+  "title": "C-reactive protein in canine babesiosis caused by Babesia rossi and its association with outcome.",
+  "authors": [
+   "Köster LS",
+   "Van Schoor M",
+   "Goddard A",
+   "Thompson PN",
+   "Matjila PT",
+   "Kjelgaard-Hansen M"
+  ],
+  "journal": "Journal of the South African Veterinary Association",
+  "journal_abbrev": "J S Afr Vet Assoc",
+  "volume": "80",
+  "issue": "2",
+  "pages": "87-91",
+  "language": [
+   "eng"
+  ],
+  "issue_date": "2009-06-01",
+  "issue_date_precision": "month",
+  "epub_date": null,
+  "pubmed_entry_date": "2009-10-17",
+  "first_pub_date": "2009-06-01",
+  "publication_types": [
+   "Journal Article",
+   "Research Support, Non-U.S. Gov't"
+  ],
+  "mesh": [
+   "Animals",
+   "Antiprotozoal Agents",
+   "Babesiosis",
+   "Biomarkers",
+   "C-Reactive Protein",
+   "Cross-Sectional Studies",
+   "Dog Diseases",
+   "Dogs",
+   "Female",
+   "Length of Stay",
+   "Logistic Models",
+   "Male",
+   "Predictive Value of Tests",
+   "Prognosis",
+   "Severity of Illness Index",
+   "Treatment Outcome"
+  ],
+  "keywords": [],
+  "abstract": "C-reactive protein (CRP) is a positive major acute-phase protein in dogs and can be used as a predictive marker for risk of disease and to monitor the response to treatment. Increased concentrations in certain diseases are associated with poor outcome. This cross-sectional, observational study of 75 dogs naturally infected with Babesia rossi was designed to examine the relationship between outcome and CRP concentration at admission and the magnitude of CRP change 24 hours after admission. Diagnosis was confirmed by polymerase chain reaction (PCR) and reverse line blot. CRP concentrations were determined by an automated human CRP Turbidometric Immunoassay, previously validated for use in dogs. There was no significant difference in mean CRP concentration between survivors (n = 57), 107.5 +/- 49.5 mg/l and non-survivors (n = 11), 122.1 +/- 64.6 mg/l at admission and using the exact logistic regression, adjusting for age and sex, there was no association with outcome (P = 0.53). Multiple regression analysis failed to show a significant relationship between admission CRP concentration and number of days of hospitalisation in the survivors, adjusting for age and sex (P = 0.65). Similarly, no significance was found in the relationship between the magnitude of change in CRP concentration 24 hours after admission, and the number of days of hospitalisation in survivors, (P = 0.34). It is concluded that CRP concentration, as a measure of the acute phase response, is not associated with outcome in canine babesiosis, and inflammation is unlikely to be the only cause of severity of disease.",
+  "corrections": [],
+  "epmc_first_pub_date": "2009-06-01",
+  "is_oa": "N",
+  "has_suppl": "N",
+  "found_by": [
+   "EP1_broad",
+   "EP2_species",
+   "PM1_broad",
+   "PM2_species",
+   "PM3_mechanism"
+  ],
+  "in_window": true,
+  "key": "PMID:19831269",
+  "source_files": [
+   "candidates.jsonl"
+  ]
+ },
+ "screening": {
+  "key": "PMID:19831269",
+  "decision": "include",
+  "include_type": "primary",
+  "exclude_reason": null,
+  "primary_category": "INF",
+  "secondary_tags": [
+   "SEV"
+  ],
+  "species": "B. rossi (confirmed, PCR/RLB)",
+  "rationale": "CRP as acute-phase marker related to outcome in 75 naturally infected dogs; reports host response and prognosis, with a negative result on outcome.",
+  "stage": "screen",
+  "batch": "r4_07.md",
+  "screening_round": "r4"
+ },
+ "fulltext_check": {
+  "key": "PMID:19831269",
+  "pmcid": null,
+  "checked": "2026-10-28",
+  "fulltext_status": "no_pmcid"
+ }
+}

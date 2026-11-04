@@ -1,0 +1,62 @@
+{
+ "id": "CB433",
+ "filename": "CB433_2012_report-theileria-annulata-babesia-canis-infections.md",
+ "key": "DOI:10.1007/s00580-012-1505-7",
+ "record": {
+  "pmid": null,
+  "doi": "10.1007/s00580-012-1505-7",
+  "title": "Report of Theileria annulata and Babesia canis infections in dogs",
+  "journal": "Comparative Clinical Pathology",
+  "first_pub_date": "2012-05-13",
+  "year": "2012",
+  "abstract": null,
+  "found_by": [
+   "CR:Babesia gibsoni",
+   "CR:Babesia vogeli",
+   "CR:Babesia vulpes",
+   "citation:backward:39306051"
+  ],
+  "unresolved": false,
+  "source_id": "REF:reportoftheileriaannulataandbabesiacanisinfectionsindogs",
+  "key": "DOI:10.1007/s00580-012-1505-7",
+  "source_files": [
+   "candidates_r2.jsonl",
+   "candidates_crossref.jsonl"
+  ],
+  "authors": [
+   "Bigdeli M",
+   "Rafie S",
+   "Namavari M",
+   "Jamshidi S"
+  ],
+  "crossref_dates": {
+   "published-online": "2012-05-13",
+   "published-print": "2012-06-01",
+   "issued": "2012-05-13"
+  },
+  "in_window": true,
+  "src": "CROSSREF"
+ },
+ "screening": {
+  "key": "DOI:10.1007/s00580-012-1505-7",
+  "decision": "uncertain",
+  "include_type": null,
+  "exclude_reason": null,
+  "primary_category": "ERY",
+  "secondary_tags": [
+   "SEV"
+  ],
+  "species": "B. canis (detection method unknown; blood smear/18S PCR per metadata); with T. annulata",
+  "rationale": "Title and metadata only: the doi.org/Springer page needs sign-in, OpenAlex has no abstract and Europe PMC has no record. It is a 3-page Comparative Clinical Pathology report (Bigdeli et al., 2012, Iran) that may contain haematology of infected dogs, so eligibility cannot be judged without the full text.",
+  "stage": "adjudicated",
+  "batch": "r4_14.md",
+  "first_decision": "uncertain",
+  "screening_round": "r4"
+ },
+ "fulltext_check": {
+  "key": "DOI:10.1007/s00580-012-1505-7",
+  "pmcid": null,
+  "checked": "2026-10-28",
+  "fulltext_status": "no_pmcid"
+ }
+}

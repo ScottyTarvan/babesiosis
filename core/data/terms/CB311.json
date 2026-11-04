@@ -1,0 +1,862 @@
+{
+ "id": "CB311",
+ "document": "data/markdown/CB311.md",
+ "source_format": "pdf",
+ "translated": false,
+ "words": 2063,
+ "run_utc": "2026-10-30T05:36:03+00:00",
+ "threshold": 0.85,
+ "kept_types": [
+  "T019",
+  "T020",
+  "T037",
+  "T046",
+  "T047",
+  "T048",
+  "T049",
+  "T050",
+  "T184",
+  "T190",
+  "T191"
+ ],
+ "term_count": 48,
+ "terms": [
+  {
+   "term": "C0085649",
+   "concept": "Peripheral edema",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 25,
+   "mentions_negated": 1,
+   "mentions_affirmed": 24,
+   "sections": {
+    "abstract": 11,
+    "results_discussion": 8,
+    "conclusion": 3,
+    "title": 1,
+    "unlabelled": 1,
+    "methods": 1
+   },
+   "forms": {
+    "peripheral oedema": 25
+   },
+   "best_score": 0.955
+  },
+  {
+   "term": "C0013604",
+   "concept": "Edema",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 13,
+   "mentions_negated": 0,
+   "mentions_affirmed": 13,
+   "sections": {
+    "results_discussion": 7,
+    "abstract": 5,
+    "methods": 1
+   },
+   "forms": {
+    "oedema": 13
+   },
+   "best_score": 0.98
+  },
+  {
+   "term": "C0009450",
+   "concept": "Communicable Diseases",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 5,
+   "mentions_negated": 0,
+   "mentions_affirmed": 5,
+   "sections": {
+    "results_discussion": 4,
+    "abstract": 1
+   },
+   "forms": {
+    "infectious": 4,
+    "infection": 1
+   },
+   "best_score": 0.97
+  },
+  {
+   "term": "C0018799",
+   "concept": "Heart Diseases",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 5,
+   "mentions_negated": 0,
+   "mentions_affirmed": 5,
+   "sections": {
+    "methods": 2,
+    "abstract": 1,
+    "results_discussion": 1,
+    "conclusion": 1
+   },
+   "forms": {
+    "cardiac diseases": 4,
+    "cardiac disease": 1
+   },
+   "best_score": 0.986
+  },
+  {
+   "term": "C0042384",
+   "concept": "Vasculitis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 5,
+   "mentions_negated": 0,
+   "mentions_affirmed": 5,
+   "sections": {
+    "results_discussion": 3,
+    "abstract": 2
+   },
+   "forms": {
+    "vasculitis": 5
+   },
+   "best_score": 0.989
+  },
+  {
+   "term": "C0007193",
+   "concept": "Cardiomyopathy, Dilated",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "results_discussion": 2,
+    "methods": 1
+   },
+   "forms": {
+    "dilated cardiomyopathy": 3
+   },
+   "best_score": 0.98
+  },
+  {
+   "term": "C0021368",
+   "concept": "Inflammation",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "results_discussion": 2,
+    "abstract": 1
+   },
+   "forms": {
+    "inflammation": 3
+   },
+   "best_score": 0.958
+  },
+  {
+   "term": "C0004576",
+   "concept": "Babesiosis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "abstract": 1,
+    "results_discussion": 1
+   },
+   "forms": {
+    "babesiosis": 2
+   },
+   "best_score": 0.972
+  },
+  {
+   "term": "C0012634",
+   "concept": "Disease",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "results_discussion": 2
+   },
+   "forms": {
+    "diseases": 1,
+    "disorders": 1
+   },
+   "best_score": 0.994
+  },
+  {
+   "term": "C0020452",
+   "concept": "Hyperemia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "results_discussion": 2
+   },
+   "forms": {
+    "vascular engorgement": 1,
+    "engorgement": 1
+   },
+   "best_score": 0.976
+  },
+  {
+   "term": "C0020517",
+   "concept": "Hypersensitivity",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "results_discussion": 2
+   },
+   "forms": {
+    "sensitivity": 2
+   },
+   "best_score": 0.997
+  },
+  {
+   "term": "C0020639",
+   "concept": "Hypoproteinemia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "abstract": 2
+   },
+   "forms": {
+    "hypoproteinaemia": 2
+   },
+   "best_score": 0.976
+  },
+  {
+   "term": "C0029166",
+   "concept": "Oral Manifestations",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "results_discussion": 1,
+    "conclusion": 1
+   },
+   "forms": {
+    "manifestation": 2
+   },
+   "best_score": 0.875
+  },
+  {
+   "term": "C0037088",
+   "concept": "Signs and Symptoms",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "abstract": 2
+   },
+   "forms": {
+    "clinical finding": 2
+   },
+   "best_score": 0.985
+  },
+  {
+   "term": "C0240278",
+   "concept": "Lymphatic obstruction",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "abstract": 1,
+    "results_discussion": 1
+   },
+   "forms": {
+    "lymphatic obstruction": 2
+   },
+   "best_score": 0.975
+  },
+  {
+   "term": "C1561643",
+   "concept": "Chronic Kidney Diseases",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "results_discussion": 2
+   },
+   "forms": {
+    "chronic kidney disease": 2
+   },
+   "best_score": 0.974
+  },
+  {
+   "term": "C1640363",
+   "concept": "Vector Borne Diseases",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "abstract": 2
+   },
+   "forms": {
+    "vector-borne diseases": 2
+   },
+   "best_score": 0.957
+  },
+  {
+   "term": "C0002797",
+   "concept": "Anaplasmosis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "abstract": 1
+   },
+   "forms": {
+    "anaplasmosis": 1
+   },
+   "best_score": 0.974
+  },
+  {
+   "term": "C0002871",
+   "concept": "Anemia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results_discussion": 1
+   },
+   "forms": {
+    "anaemia": 1
+   },
+   "best_score": 0.977
+  },
+  {
+   "term": "C0003123",
+   "concept": "Anorexia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results_discussion": 1
+   },
+   "forms": {
+    "anorexia": 1
+   },
+   "best_score": 0.969
+  },
+  {
+   "term": "C0003962",
+   "concept": "Ascites",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results_discussion": 1
+   },
+   "forms": {
+    "ascites": 1
+   },
+   "best_score": 0.989
+  },
+  {
+   "term": "C0006035",
+   "concept": "Borrelia Infections",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "abstract": 1
+   },
+   "forms": {
+    "borreliosis": 1
+   },
+   "best_score": 0.984
+  },
+  {
+   "term": "C0011603",
+   "concept": "Dermatitis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results_discussion": 1
+   },
+   "forms": {
+    "dermatitis": 1
+   },
+   "best_score": 0.991
+  },
+  {
+   "term": "C0013687",
+   "concept": "effusion",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "methods": 1
+   },
+   "forms": {
+    "effusions": 1
+   },
+   "best_score": 0.968
+  },
+  {
+   "term": "C0015967",
+   "concept": "Fever",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results_discussion": 1
+   },
+   "forms": {
+    "pyrexia": 1
+   },
+   "best_score": 0.98
+  },
+  {
+   "term": "C0019054",
+   "concept": "Hemolysis (disorder)",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results_discussion": 1
+   },
+   "forms": {
+    "haemolysis": 1
+   },
+   "best_score": 0.989
+  },
+  {
+   "term": "C0019158",
+   "concept": "Hepatitis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results_discussion": 1
+   },
+   "forms": {
+    "hepatitis": 1
+   },
+   "best_score": 0.984
+  },
+  {
+   "term": "C0023380",
+   "concept": "Lethargy",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results_discussion": 1
+   },
+   "forms": {
+    "lethargy": 1
+   },
+   "best_score": 0.987
+  },
+  {
+   "term": "C0023518",
+   "concept": "Leukocytosis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "abstract": 1
+   },
+   "forms": {
+    "leucocytosis": 1
+   },
+   "best_score": 0.988
+  },
+  {
+   "term": "C0024225",
+   "concept": "Lymphangitis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results_discussion": 1
+   },
+   "forms": {
+    "lymphangitis": 1
+   },
+   "best_score": 0.988
+  },
+  {
+   "term": "C0026266",
+   "concept": "Mitral Valve Insufficiency",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results_discussion": 1
+   },
+   "forms": {
+    "mitral valve regurgitation": 1
+   },
+   "best_score": 0.961
+  },
+  {
+   "term": "C0039240",
+   "concept": "Supraventricular tachycardia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results_discussion": 1
+   },
+   "forms": {
+    "supraventricular tachycardia": 1
+   },
+   "best_score": 0.977
+  },
+  {
+   "term": "C0040034",
+   "concept": "Thrombocytopenia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results_discussion": 1
+   },
+   "forms": {
+    "thrombocytopenia": 1
+   },
+   "best_score": 0.98
+  },
+  {
+   "term": "C0042484",
+   "concept": "Venous Engorgement",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results_discussion": 1
+   },
+   "forms": {
+    "venous congestion": 1
+   },
+   "best_score": 0.97
+  },
+  {
+   "term": "C0085399",
+   "concept": "Ehrlichiosis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "abstract": 1
+   },
+   "forms": {
+    "ehrlichiosis": 1
+   },
+   "best_score": 0.952
+  },
+  {
+   "term": "C0151609",
+   "concept": "Edema of scrotum",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results_discussion": 1
+   },
+   "forms": {
+    "scrotal oedema": 1
+   },
+   "best_score": 0.963
+  },
+  {
+   "term": "C0178324",
+   "concept": "Vascular System Injuries",
+   "semantic_types": [
+    "Injury or Poisoning"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "abstract": 1
+   },
+   "forms": {
+    "vascular injury": 1
+   },
+   "best_score": 0.98
+  },
+  {
+   "term": "C0232197",
+   "concept": "Fibrillation",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results_discussion": 1
+   },
+   "forms": {
+    "fibrillation": 1
+   },
+   "best_score": 0.963
+  },
+  {
+   "term": "C0239981",
+   "concept": "Hypoalbuminemia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results_discussion": 1
+   },
+   "forms": {
+    "hypoalbuminemia": 1
+   },
+   "best_score": 0.974
+  },
+  {
+   "term": "C0264733",
+   "concept": "Ventricular dilatation (disorder)",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results_discussion": 1
+   },
+   "forms": {
+    "ventricular dilatation": 1
+   },
+   "best_score": 0.982
+  },
+  {
+   "term": "C0276846",
+   "concept": "Infection by Hepatozoon",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "abstract": 1
+   },
+   "forms": {
+    "hepatozoonosis": 1
+   },
+   "best_score": 0.968
+  },
+  {
+   "term": "C0442893",
+   "concept": "Systemic disease",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results_discussion": 1
+   },
+   "forms": {
+    "systemic disease": 1
+   },
+   "best_score": 0.991
+  },
+  {
+   "term": "C0497156",
+   "concept": "Lymphadenopathy",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results_discussion": 1
+   },
+   "forms": {
+    "lymphadenopathy": 1
+   },
+   "best_score": 0.99
+  },
+  {
+   "term": "C0741276",
+   "concept": "ATRIAL ENLARGEMENT",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results_discussion": 1
+   },
+   "forms": {
+    "atrial enlargement": 1
+   },
+   "best_score": 0.958
+  },
+  {
+   "term": "C0851162",
+   "concept": "Infections of musculoskeletal system",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 1,
+   "mentions_affirmed": 0,
+   "sections": {
+    "results_discussion": 1
+   },
+   "forms": {
+    "infections": 1
+   },
+   "best_score": 0.971
+  },
+  {
+   "term": "C0878544",
+   "concept": "Cardiomyopathies",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results_discussion": 1
+   },
+   "forms": {
+    "myocardial disease": 1
+   },
+   "best_score": 0.975
+  },
+  {
+   "term": "C1514893",
+   "concept": "physiologic resolution",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "methods": 1
+   },
+   "forms": {
+    "resolution": 1
+   },
+   "best_score": 0.971
+  },
+  {
+   "term": "C3658220",
+   "concept": "Atrial Remodeling",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results_discussion": 1
+   },
+   "forms": {
+    "atrial remodelling": 1
+   },
+   "best_score": 0.887
+  }
+ ]
+}

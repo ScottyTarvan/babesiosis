@@ -1,0 +1,1193 @@
+{
+ "id": "CB145",
+ "document": "data/markdown/CB145.md",
+ "source_format": "jats_xml",
+ "translated": false,
+ "words": 6145,
+ "run_utc": "2026-10-30T05:34:43+00:00",
+ "threshold": 0.85,
+ "kept_types": [
+  "T019",
+  "T020",
+  "T037",
+  "T046",
+  "T047",
+  "T048",
+  "T049",
+  "T050",
+  "T184",
+  "T190",
+  "T191"
+ ],
+ "term_count": 66,
+ "terms": [
+  {
+   "term": "C5544452",
+   "concept": "Thromboinflammation",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 25,
+   "mentions_negated": 1,
+   "mentions_affirmed": 24,
+   "sections": {
+    "discussion": 11,
+    "abstract": 7,
+    "introduction": 6,
+    "title": 1
+   },
+   "forms": {
+    "thromboinflammation": 19,
+    "immunothrombosis": 6
+   },
+   "best_score": 0.988
+  },
+  {
+   "term": "C0004576",
+   "concept": "Babesiosis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 18,
+   "mentions_negated": 0,
+   "mentions_affirmed": 18,
+   "sections": {
+    "discussion": 9,
+    "methods": 3,
+    "abstract": 2,
+    "introduction": 2,
+    "title": 1,
+    "results": 1
+   },
+   "forms": {
+    "babesiosis": 18
+   },
+   "best_score": 0.972
+  },
+  {
+   "term": "C0021368",
+   "concept": "Inflammation",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 13,
+   "mentions_negated": 0,
+   "mentions_affirmed": 13,
+   "sections": {
+    "discussion": 7,
+    "abstract": 3,
+    "introduction": 3
+   },
+   "forms": {
+    "inflammation": 13
+   },
+   "best_score": 0.958
+  },
+  {
+   "term": "C0009450",
+   "concept": "Communicable Diseases",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 11,
+   "mentions_negated": 1,
+   "mentions_affirmed": 10,
+   "sections": {
+    "introduction": 4,
+    "discussion": 3,
+    "abstract": 2,
+    "methods": 2
+   },
+   "forms": {
+    "infection": 10,
+    "infectious": 1
+   },
+   "best_score": 0.97
+  },
+  {
+   "term": "C0012739",
+   "concept": "Disseminated Intravascular Coagulation",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 8,
+   "mentions_negated": 0,
+   "mentions_affirmed": 8,
+   "sections": {
+    "introduction": 4,
+    "discussion": 3,
+    "abstract": 1
+   },
+   "forms": {
+    "dic": 5,
+    "consumptive coagulopathy": 3
+   },
+   "best_score": 0.972
+  },
+  {
+   "term": "C0040034",
+   "concept": "Thrombocytopenia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 8,
+   "mentions_negated": 0,
+   "mentions_affirmed": 8,
+   "sections": {
+    "discussion": 5,
+    "abstract": 2,
+    "introduction": 1
+   },
+   "forms": {
+    "thrombocytopenia": 8
+   },
+   "best_score": 0.98
+  },
+  {
+   "term": "C0087086",
+   "concept": "Thrombus",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 8,
+   "mentions_negated": 0,
+   "mentions_affirmed": 8,
+   "sections": {
+    "introduction": 4,
+    "discussion": 3,
+    "abstract": 1
+   },
+   "forms": {
+    "thrombus": 6,
+    "thrombotic": 2
+   },
+   "best_score": 0.978
+  },
+  {
+   "term": "C0019080",
+   "concept": "Hemorrhage",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 6,
+   "mentions_negated": 2,
+   "mentions_affirmed": 4,
+   "sections": {
+    "results": 3,
+    "discussion": 2,
+    "introduction": 1
+   },
+   "forms": {
+    "bleeding": 3,
+    "hemorrhage": 3
+   },
+   "best_score": 0.99
+  },
+  {
+   "term": "C0009566",
+   "concept": "Complication",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 5,
+   "mentions_negated": 0,
+   "mentions_affirmed": 5,
+   "sections": {
+    "introduction": 2,
+    "methods": 2,
+    "results": 1
+   },
+   "forms": {
+    "complications": 5
+   },
+   "best_score": 0.977
+  },
+  {
+   "term": "C0000768",
+   "concept": "Congenital Abnormality",
+   "semantic_types": [
+    "Congenital Abnormality"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "introduction": 1,
+    "results": 1,
+    "discussion": 1
+   },
+   "forms": {
+    "abnormalities": 3
+   },
+   "best_score": 0.987
+  },
+  {
+   "term": "C0012634",
+   "concept": "Disease",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "discussion": 2,
+    "introduction": 1
+   },
+   "forms": {
+    "disease": 3
+   },
+   "best_score": 0.987
+  },
+  {
+   "term": "C1155266",
+   "concept": "Inflammatory Response",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "discussion": 3
+   },
+   "forms": {
+    "inflammatory response": 2,
+    "proinflammatory response": 1
+   },
+   "best_score": 0.983
+  },
+  {
+   "term": "C5203670",
+   "concept": "COVID19 (disease)",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "introduction": 2,
+    "discussion": 1
+   },
+   "forms": {
+    "covid-19": 2,
+    "sars-cov-2 infection": 1
+   },
+   "best_score": 0.979
+  },
+  {
+   "term": "C0002871",
+   "concept": "Anemia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "results": 1,
+    "discussion": 1
+   },
+   "forms": {
+    "anemia": 2
+   },
+   "best_score": 0.974
+  },
+  {
+   "term": "C0002878",
+   "concept": "Anemia, Hemolytic",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 1,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1,
+    "results": 1
+   },
+   "forms": {
+    "hemolytic anemia": 2
+   },
+   "best_score": 0.978
+  },
+  {
+   "term": "C0004144",
+   "concept": "Atelectasis",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "results": 2
+   },
+   "forms": {
+    "atelectasis": 2
+   },
+   "best_score": 0.988
+  },
+  {
+   "term": "C0013604",
+   "concept": "Edema",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "results": 2
+   },
+   "forms": {
+    "edema": 2
+   },
+   "best_score": 0.987
+  },
+  {
+   "term": "C0020615",
+   "concept": "Hypoglycemia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 1,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results": 2
+   },
+   "forms": {
+    "hypoglycemia": 2
+   },
+   "best_score": 0.99
+  },
+  {
+   "term": "C0022346",
+   "concept": "Icterus",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "introduction": 1,
+    "results": 1
+   },
+   "forms": {
+    "icterus": 2
+   },
+   "best_score": 0.958
+  },
+  {
+   "term": "C0022660",
+   "concept": "Kidney Failure, Acute",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 1,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1,
+    "results": 1
+   },
+   "forms": {
+    "acute kidney injury": 2
+   },
+   "best_score": 0.976
+  },
+  {
+   "term": "C0030305",
+   "concept": "Pancreatitis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "introduction": 1,
+    "discussion": 1
+   },
+   "forms": {
+    "pancreatitis": 2
+   },
+   "best_score": 0.986
+  },
+  {
+   "term": "C0043251",
+   "concept": "Wounds and Injuries",
+   "semantic_types": [
+    "Injury or Poisoning"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "introduction": 1,
+    "methods": 1
+   },
+   "forms": {
+    "trauma": 2
+   },
+   "best_score": 0.966
+  },
+  {
+   "term": "C0242723",
+   "concept": "Parasitemia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "introduction": 1,
+    "methods": 1
+   },
+   "forms": {
+    "parasitemia": 2
+   },
+   "best_score": 0.992
+  },
+  {
+   "term": "C0349410",
+   "concept": "Single organ dysfunction",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "abstract": 1,
+    "discussion": 1
+   },
+   "forms": {
+    "organ failure": 2
+   },
+   "best_score": 0.975
+  },
+  {
+   "term": "C0398623",
+   "concept": "Thrombophilia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "discussion": 2
+   },
+   "forms": {
+    "hypercoagulability": 1,
+    "hypercoagulable": 1
+   },
+   "best_score": 0.984
+  },
+  {
+   "term": "C0699748",
+   "concept": "Pathogenesis",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "discussion": 2
+   },
+   "forms": {
+    "pathogenesis": 2
+   },
+   "best_score": 0.983
+  },
+  {
+   "term": "C0851162",
+   "concept": "Infections of musculoskeletal system",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "abstract": 1,
+    "methods": 1
+   },
+   "forms": {
+    "infections": 2
+   },
+   "best_score": 0.971
+  },
+  {
+   "term": "C0919890",
+   "concept": "Hyperfibrinogenemia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "discussion": 2
+   },
+   "forms": {
+    "hyperfibrinogenemia": 2
+   },
+   "best_score": 0.981
+  },
+  {
+   "term": "C1290884",
+   "concept": "Inflammatory disorder",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "methods": 1,
+    "discussion": 1
+   },
+   "forms": {
+    "inflammatory disease": 2
+   },
+   "best_score": 0.983
+  },
+  {
+   "term": "C1514893",
+   "concept": "physiologic resolution",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "introduction": 2
+   },
+   "forms": {
+    "resolution": 2
+   },
+   "best_score": 0.971
+  },
+  {
+   "term": "C3554550",
+   "concept": "Systemic inflammatory response",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "abstract": 1,
+    "introduction": 1
+   },
+   "forms": {
+    "systemic inflammatory response": 2
+   },
+   "best_score": 0.985
+  },
+  {
+   "term": "C0002880",
+   "concept": "Autoimmune hemolytic anemia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "immune-mediated hemolytic anemia": 1
+   },
+   "best_score": 0.916
+  },
+  {
+   "term": "C0004943",
+   "concept": "Behcet Syndrome",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "methods": 1
+   },
+   "forms": {
+    "bd": 1
+   },
+   "best_score": 0.999
+  },
+  {
+   "term": "C0006826",
+   "concept": "Malignant Neoplasms",
+   "semantic_types": [
+    "Neoplastic Process"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "methods": 1
+   },
+   "forms": {
+    "cancer": 1
+   },
+   "best_score": 0.991
+  },
+  {
+   "term": "C0007222",
+   "concept": "Cardiovascular Diseases",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "cardiovascular disease": 1
+   },
+   "best_score": 0.982
+  },
+  {
+   "term": "C0009421",
+   "concept": "Comatose",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results": 1
+   },
+   "forms": {
+    "coma": 1
+   },
+   "best_score": 0.994
+  },
+  {
+   "term": "C0014335",
+   "concept": "Enteritis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "enteritis": 1
+   },
+   "best_score": 0.983
+  },
+  {
+   "term": "C0018799",
+   "concept": "Heart Diseases",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "methods": 1
+   },
+   "forms": {
+    "cardiac disease": 1
+   },
+   "best_score": 0.986
+  },
+  {
+   "term": "C0021308",
+   "concept": "Infarction",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results": 1
+   },
+   "forms": {
+    "infarcts": 1
+   },
+   "best_score": 0.971
+  },
+  {
+   "term": "C0022658",
+   "concept": "Kidney Diseases",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "nephropathy": 1
+   },
+   "best_score": 0.99
+  },
+  {
+   "term": "C0023895",
+   "concept": "Liver diseases",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "hepatopathy": 1
+   },
+   "best_score": 0.994
+  },
+  {
+   "term": "C0026766",
+   "concept": "Multiple Organ Failure",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "multiple organ failure": 1
+   },
+   "best_score": 0.981
+  },
+  {
+   "term": "C0027627",
+   "concept": "Neoplasm Metastasis",
+   "semantic_types": [
+    "Neoplastic Process"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "secondary": 1
+   },
+   "best_score": 0.985
+  },
+  {
+   "term": "C0034063",
+   "concept": "Pulmonary Edema",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "pulmonary edema": 1
+   },
+   "best_score": 0.984
+  },
+  {
+   "term": "C0036572",
+   "concept": "Seizures",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results": 1
+   },
+   "forms": {
+    "seizures": 1
+   },
+   "best_score": 0.945
+  },
+  {
+   "term": "C0040053",
+   "concept": "Thrombosis",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "thrombosis": 1
+   },
+   "best_score": 0.98
+  },
+  {
+   "term": "C0151317",
+   "concept": "Chronic Infection",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "chronic infectious": 1
+   },
+   "best_score": 0.866
+  },
+  {
+   "term": "C0155919",
+   "concept": "Acute pulmonary edema",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 1,
+   "mentions_affirmed": 0,
+   "sections": {
+    "results": 1
+   },
+   "forms": {
+    "acute pulmonary edema": 1
+   },
+   "best_score": 0.982
+  },
+  {
+   "term": "C0162700",
+   "concept": "Tick-Borne Diseases",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "tick-borne disease": 1
+   },
+   "best_score": 0.949
+  },
+  {
+   "term": "C0221423",
+   "concept": "Illness (finding)",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "illness": 1
+   },
+   "best_score": 0.967
+  },
+  {
+   "term": "C0238190",
+   "concept": "Myositis, Inclusion Body",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "methods": 1
+   },
+   "forms": {
+    "ibm": 1
+   },
+   "best_score": 0.983
+  },
+  {
+   "term": "C0242073",
+   "concept": "Pulmonary congestion",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results": 1
+   },
+   "forms": {
+    "pulmonary congestion": 1
+   },
+   "best_score": 0.973
+  },
+  {
+   "term": "C0242656",
+   "concept": "Disease Progression",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "progression": 1
+   },
+   "best_score": 0.971
+  },
+  {
+   "term": "C0275524",
+   "concept": "Coinfection",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results": 1
+   },
+   "forms": {
+    "coinfection": 1
+   },
+   "best_score": 0.956
+  },
+  {
+   "term": "C0276854",
+   "concept": "Infection by Babesia canis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "canine babesiosis": 1
+   },
+   "best_score": 0.969
+  },
+  {
+   "term": "C0277355",
+   "concept": "Flea Infestation",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results": 1
+   },
+   "forms": {
+    "flea infestation": 1
+   },
+   "best_score": 0.956
+  },
+  {
+   "term": "C0282548",
+   "concept": "Leukostasis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results": 1
+   },
+   "forms": {
+    "leukostasis": 1
+   },
+   "best_score": 0.957
+  },
+  {
+   "term": "C0543419",
+   "concept": "Sequela of disorder",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "sequela": 1
+   },
+   "best_score": 0.982
+  },
+  {
+   "term": "C0564444",
+   "concept": "Wound of skin",
+   "semantic_types": [
+    "Injury or Poisoning"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results": 1
+   },
+   "forms": {
+    "skin wounds": 1
+   },
+   "best_score": 0.982
+  },
+  {
+   "term": "C0678222",
+   "concept": "Breast Carcinoma",
+   "semantic_types": [
+    "Neoplastic Process"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "mammary carcinoma": 1
+   },
+   "best_score": 0.985
+  },
+  {
+   "term": "C0795692",
+   "concept": "Hyperlactatemia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results": 1
+   },
+   "forms": {
+    "hyperlactatemia": 1
+   },
+   "best_score": 0.97
+  },
+  {
+   "term": "C0947751",
+   "concept": "vascular inflammations",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "vascular inflammation": 1
+   },
+   "best_score": 0.971
+  },
+  {
+   "term": "C1817978",
+   "concept": "acute inflammatory response",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "acute phase inflammatory response": 1
+   },
+   "best_score": 0.896
+  },
+  {
+   "term": "C4505065",
+   "concept": "Noncommunicable Diseases",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "non-infectious disease states": 1
+   },
+   "best_score": 0.853
+  },
+  {
+   "term": "C4511578",
+   "concept": "Fibrin strand",
+   "semantic_types": [
+    "Anatomical Abnormality"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results": 1
+   },
+   "forms": {
+    "fibrin strand": 1
+   },
+   "best_score": 0.977
+  },
+  {
+   "term": "C4721411",
+   "concept": "Osteolysis",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "dissolution": 1
+   },
+   "best_score": 0.853
+  }
+ ]
+}

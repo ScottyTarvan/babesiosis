@@ -1,0 +1,59 @@
+{
+ "id": "CB522",
+ "filename": "CB522_2016_septic-shock-similarities-differences-postmortem-findings.md",
+ "key": "https://openalex.org/W2755822926",
+ "record": {
+  "pmid": null,
+  "pmcid": null,
+  "doi": null,
+  "title": "Septic shock - similarities and differences of postmortem findings in canine babesiosis and leptospirosis",
+  "journal": null,
+  "authors": [
+   "Ana Raquel Medeiros Beck",
+   "Doroteja Huber",
+   "Silvio Špičić",
+   "Relja Beck"
+  ],
+  "first_pub_date": "2016-01-01",
+  "type": "article",
+  "language": [
+   "en"
+  ],
+  "abstract": "Leptospiroza i babezioza pasa mogu pokrenuti fenomen septickog soka koji najcesce zavrsava uginucem. Bolesti se međusobno tesko razlikuju sa klinickog i sa patoloskog aspekta, stoga su nužne mikroskopske, molekularne i seroloske pretrage da se potvrdi je li febrilnu hemoliticku bolest kompliciranu sa septickim sokom pokrenula infekcija protozoonom B. canis ili nekim od serovara bakterije L. interogans. Cilj ovog rada bio je istražiti patoanatomske i histopatoloske podudarnosti i razlike usporedbom nalaza između pet pasa uginulih od babezioze i pet pasa uginulih od leptospiroze. U patoanatomskom nalazu obje skupine hepatomegalija uz edem pluca najcesce je utvrđeni nalaz. Difuzno nekongestivno povecanje slezene neizostavno je u babeziozi dok je renomegalija izazvana akutnom kortikalnom nekrozom potvrđena u svih leptospiroznih pasa. Anemija i blagi ikterus izraženije su u babezioznoj skupini, dok je ikterus jaceg intenziteta uz izostanak anemije potvrđen u leptospiroznoj skupini. U makroskopskom nalazu babezioznih pasa dominirao je edem uz transudaciju u tjelesne supljine dok je leptospirozna skupina u ovom istraživanju pokazala vecu sklonost poremecajima koagulacije sa popratnim krvarenjima. Mikroskopski se babezioza razlikuje od leptospiroze po nalazu merozoita B. canis u eritrocitima, ukoliko psi nisu lijeceni. Također je u babezioznih pasa dokazana znacajnija intravaskularna monocitno- histiocitna leukocitostaza te naglasenija ekstravaskularna hemoliza. Leptospirozni psi u bubrezima razvijaju karakteristicni limfocitno- histiocitni infiltrat na prijelazu kore u srž. Sve ostale lezije u organima vrlo su slicne i temelje se na promjenama u perifernoj redistribuciji krvi uslijed septicnog soka i posljedicnim razvojem hipoksicne nekroze te pojavi diseminirane intravaskularne koagulopatije i krvarenja.",
+  "abstract_source": "OpenAlex abstract_inverted_index (reconstructed)",
+  "source_id": "https://openalex.org/W2755822926",
+  "src": "OPENALEX",
+  "found_by": [
+   "OA:title_and_abstract"
+  ],
+  "in_window": true,
+  "key": "https://openalex.org/W2755822926",
+  "source_files": [
+   "candidates_r3.jsonl"
+  ]
+ },
+ "screening": {
+  "key": "https://openalex.org/W2755822926",
+  "decision": "include",
+  "include_type": "primary",
+  "exclude_reason": null,
+  "primary_category": "END",
+  "secondary_tags": [
+   "COA",
+   "PUL",
+   "ERY",
+   "SEV"
+  ],
+  "species": "B. canis (confirmed, microscopy of tissue)",
+  "rationale": "Post-mortem and histopathological comparison of five dogs dead from babesiosis with five from leptospirosis, describing septic shock, pulmonary oedema, haemolysis, DIC and hypoxic necrosis.",
+  "stage": "screen",
+  "batch": "r4_27.md",
+  "screening_round": "r4"
+ },
+ "fulltext_check": {
+  "key": "https://openalex.org/W2755822926",
+  "pmcid": null,
+  "checked": "2026-10-28",
+  "fulltext_status": "no_pmcid"
+ }
+}

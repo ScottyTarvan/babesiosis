@@ -1,0 +1,167 @@
+{
+ "id": "CB071",
+ "filename": "CB071_2021_combined-untargeted-targeted-metabolomics-approaches-reveal.md",
+ "key": "PMID:34603243",
+ "record": {
+  "pmid": "34603243",
+  "pmcid": "PMC8484968",
+  "doi": "10.3389/fmicb.2021.715701",
+  "title": "Combined Untargeted and Targeted Metabolomics Approaches Reveal Urinary Changes of Amino Acids and Energy Metabolism in Canine Babesiosis With Different Levels of Kidney Function.",
+  "authors": [
+   "Kuleš J",
+   "Rubić I",
+   "Beer Ljubić B",
+   "Bilić P",
+   "Barić Rafaj R",
+   "Brkljačić M",
+   "Burchmore R",
+   "Eckersall D",
+   "Mrljak V"
+  ],
+  "journal": "Frontiers in microbiology",
+  "journal_abbrev": "Front Microbiol",
+  "volume": "12",
+  "issue": null,
+  "pages": "715701",
+  "language": [
+   "eng"
+  ],
+  "issue_date": "2021-01-01",
+  "issue_date_precision": "year",
+  "epub_date": "2021-09-17",
+  "pubmed_entry_date": "2021-10-05",
+  "first_pub_date": "2021-01-01",
+  "publication_types": [
+   "Journal Article"
+  ],
+  "mesh": [],
+  "keywords": [
+   "babesiosis",
+   "kidney function",
+   "mass spectrometry",
+   "metabolomics",
+   "urine metabolomics",
+   "zoonosis"
+  ],
+  "abstract": "Canine babesiosis is a tick-borne disease with a worldwide distribution, caused by the haemoprotozoan parasites of the genus Babesia. One of the most prevalent complication is acute kidney injury, and an early diagnosis of altered kidney function remains a challenge for veterinary practice. The aim of this study was to assess the urine metabolic profile from dogs with babesiosis and different degree of kidney function using untargeted and targeted MS-based metabolomics approaches. In this study, 22 dogs naturally infected with Babesia canis and 12 healthy dogs were included. Untargeted metabolomics approach identified 601 features with a differential abundance between the healthy group and groups of dogs with babesiosis and different level of kidney function, with 27 of them identified as a match to known standards; while targeted approach identified 17 metabolites with significantly different concentrations between the groups. A pattern of significantly altered metabolites referring to the inflammatory host response, oxidative stress, and energy metabolism modulation in babesiosis was presented. Our findings have demonstrated that kidney dysfunction accompanying canine babesiosis was associated with changes in amino acid metabolism, energy metabolism, fatty acid metabolism, and biochemical pathways such as urea cycle and ammonia detoxication. These findings will enable the inclusion of urinary markers for the detection and monitoring of renal damage in babesiosis, as well as in other similar diseases.",
+  "corrections": [],
+  "epmc_first_pub_date": "2021-09-17",
+  "is_oa": "Y",
+  "has_suppl": "Y",
+  "found_by": [
+   "EP1_broad",
+   "EP2_species",
+   "PM1_broad",
+   "PM2_species",
+   "PM3_mechanism"
+  ],
+  "in_window": true,
+  "date_discrepancy": "PubMed-derived 2021-01-01 vs Europe PMC firstPublicationDate 2021-09-17",
+  "online_vs_issue": "online 2021-09-17; issue 2021-01-01 (year)"
+ },
+ "screening": {
+  "key": "PMID:34603243",
+  "decision": "include",
+  "include_type": "primary",
+  "exclude_reason": null,
+  "primary_category": "REN",
+  "secondary_tags": [
+   "MET",
+   "OXO",
+   "INF"
+  ],
+  "species": "B. canis (stated; confirmation method not given in abstract)",
+  "rationale": "Urinary metabolomics in B. canis dogs with differing kidney function; reveals amino acid/energy metabolism, oxidative stress and inflammatory changes in AKI.",
+  "stage": "screen",
+  "batch": "r1_11.md",
+  "screening_round": "r1"
+ },
+ "fulltext_check": {
+  "key": "PMID:34603243",
+  "pmcid": "PMC8484968",
+  "checked": "2026-10-23",
+  "fulltext_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8484968/fullTextXML",
+  "fulltext_status": 200,
+  "data_availability": [
+   "Data Availability StatementThe original contributions presented in the study are included in the article/Supplementary Material, further inquiries can be directed to the corresponding author."
+  ],
+  "supplementary": [
+   {
+    "label": "Supplementary Table 1",
+    "caption": "Untargeted metabolomics of urine in dogs with babesiosis and different level of kidney function. (A) Peak intensity table. (B) All features (identified and annotated) with differential abundance between groups identified by one-way analysis of variance (ANOVA) and Fisher’s LSD post hoc test. (C) Significant features identified based on retention times/masses or masses of detected peaks match to th",
+    "file": "Table_1.XLSX"
+   },
+   {
+    "label": "Supplementary Table 2",
+    "caption": "Targeted metabolomics of urine in dogs with babesiosis and different level of kidney function. (A) Concentrations of all valid analytes obtained by AbsoluteIDQ® p400 HR Kit (Biocrates Life Sciences AG, Innsbruck, Austria). (B) Metabolites with differential abundance between groups identified by ANOVA and Fisher’s LSD post hoc test.",
+    "file": "Table_2.xlsx"
+   },
+   {
+    "label": "Supplementary Table 3",
+    "caption": "Correlations between metabolites identified by targeted approach and urinary protein to creatinine ratio (UPC) showing: (A) Pearson’s correlation coefficients and (B) p values.",
+    "file": "Table_3.XLSX"
+   },
+   {
+    "label": "Supplementary Table 4",
+    "caption": "Pathway analysis of significant metabolites identified by untargeted and targeted MS-based metabolomics approaches.",
+    "file": "Table_4.xlsx"
+   },
+   {
+    "label": "Supplementary Table 1",
+    "caption": "Untargeted metabolomics of urine in dogs with babesiosis and different level of kidney function. (A) Peak intensity table. (B) All features (identified and annotated) with differential abundance between groups identified by one-way analysis of variance (ANOVA) and Fisher’s LSD post hoc test. (C) Significant features identified based on retention times/masses or masses of detected peaks match to th",
+    "file": "Table_1.XLSX"
+   },
+   {
+    "label": "Supplementary Table 2",
+    "caption": "Targeted metabolomics of urine in dogs with babesiosis and different level of kidney function. (A) Concentrations of all valid analytes obtained by AbsoluteIDQ® p400 HR Kit (Biocrates Life Sciences AG, Innsbruck, Austria). (B) Metabolites with differential abundance between groups identified by ANOVA and Fisher’s LSD post hoc test.",
+    "file": "Table_2.xlsx"
+   },
+   {
+    "label": "Supplementary Table 3",
+    "caption": "Correlations between metabolites identified by targeted approach and urinary protein to creatinine ratio (UPC) showing: (A) Pearson’s correlation coefficients and (B) p values.",
+    "file": "Table_3.XLSX"
+   },
+   {
+    "label": "Supplementary Table 4",
+    "caption": "Pathway analysis of significant metabolites identified by untargeted and targeted MS-based metabolomics approaches.",
+    "file": "Table_4.xlsx"
+   }
+  ],
+  "repository_links": [],
+  "section_titles": [
+   "Introduction",
+   "Materials and Methods",
+   "Study Design",
+   "Animals",
+   "Experimental Procedures",
+   "Sample Preparation",
+   "Untargeted LC-MS/MS Analysis",
+   "Metabolite extraction",
+   "LC-MS/MS analysis",
+   "Data processing",
+   "Targeted Metabolomics Analyses",
+   "Metabolite extraction",
+   "LC-MS/MS analysis",
+   "Data processing",
+   "Statistical Analysis",
+   "Results",
+   "Assessment of Biochemistry and Urinalysis",
+   "Untargeted Metabolomics",
+   "Targeted Metabolomics",
+   "Pathway Analysis and Enrichment Analysis",
+   "Discussion",
+   "Data Availability Statement",
+   "Ethics Statement",
+   "Author Contributions",
+   "Conflict of Interest",
+   "Publisher’s Note",
+   "Funding",
+   "Supplementary Material",
+   "References",
+   "Associated Data",
+   "Supplementary Materials",
+   "Data Availability Statement"
+  ],
+  "has_body": true
+ }
+}

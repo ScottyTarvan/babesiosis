@@ -1,0 +1,106 @@
+{
+ "data/raw/S-CB139/PMC12152594_supplementaryFiles.zip": {
+  "format": "zip",
+  "members": [
+   {
+    "name": "mmc1.docx",
+    "bytes": 16535
+   },
+   {
+    "name": "gr3.jpg",
+    "bytes": 161308
+   },
+   {
+    "name": "gr1.gif",
+    "bytes": 82489
+   },
+   {
+    "name": "gr1.jpg",
+    "bytes": 634485
+   },
+   {
+    "name": "gr3.gif",
+    "bytes": 69735
+   },
+   {
+    "name": "gr2.gif",
+    "bytes": 83963
+   },
+   {
+    "name": "gr2.jpg",
+    "bytes": 898990
+   },
+   {
+    "name": "fx1.gif",
+    "bytes": 69901
+   },
+   {
+    "name": "ga1.gif",
+    "bytes": 76283
+   },
+   {
+    "name": "ga1.jpg",
+    "bytes": 341386
+   }
+  ],
+  "inspected": {
+   "mmc1.docx": {
+    "format": "docx",
+    "n_tables": 1,
+    "tables": [
+     {
+      "n_rows": 1,
+      "preview": [
+       [
+        "Call:  glm(formula = hepatozoon ~ year +"
+       ]
+      ]
+     }
+    ],
+    "first_text": [
+     "Supplementary Material ",
+     "Figure 1. R output for independent variables (sex, age and year) associated with pathogen infection. ",
+     "Call:  glm(formula = hepatozoon ~ year + sex + age, family = \"binomial\", ",
+     "    data = data)",
+     "Coefficients:"
+    ]
+   },
+   "gr3.jpg": {
+    "format": "other",
+    "head_bytes": "ffd8ffe000104a4649460001010101f401f40000ffed150850686f746f73686f7020332e30003842494d0425000000000010000000000000000000000000000000003842494d043a0000000000e50000"
+   },
+   "gr1.gif": {
+    "format": "other",
+    "head_bytes": "47494638396183005000f700000808081413131c1b1b181616160f0c2a1809331b09251b192d130f28231d3827173827101a1a283119271d25282423232b2c2b292725362b2839332b28263a2d333433"
+   },
+   "gr1.jpg": {
+    "format": "other",
+    "head_bytes": "ffd8ffe000104a4649460001010101f401f40000ffed274e50686f746f73686f7020332e30003842494d0425000000000010000000000000000000000000000000003842494d043a0000000000e50000"
+   },
+   "gr3.gif": {
+    "format": "other",
+    "head_bytes": "4749463839619a005000f700003636365b5b5b5353536969696464647c7c7c737373f2da7d4c83841d82fd3e98fd6cb2fd33e9eb77d5d770d8da6cc3f27dcbf45dedef53ecee6ceff073f0f17bf1f283"
+   },
+   "gr2.gif": {
+    "format": "other",
+    "head_bytes": "4749463839616d005000f700000202032c2936392f554e4b5b58526f675b776f6d73493c5c3333b2726a8e514dba6857bd6a619f3637d92a2cd51c1ad14939d7602ece3945d45859c64948da5658db50"
+   },
+   "gr2.jpg": {
+    "format": "other",
+    "head_bytes": "ffd8ffe000104a4649460001010101f401f40000ffed338a50686f746f73686f7020332e30003842494d0425000000000010000000000000000000000000000000003842494d043a0000000000e50000"
+   },
+   "fx1.gif": {
+    "format": "other",
+    "head_bytes": "47494638396164006700f700000000000101010202020303030404040505050606060707070808080909090a0a0a0b0b0b0c0c0c0d0d0d0e0e0e0f0f0f10101011111112121213131314141415151516"
+   },
+   "ga1.gif": {
+    "format": "other",
+    "head_bytes": "47494638396189005000f7000001010108090b1818192626263638392f32341b232b3e403c6f5a017d680151453b4748494a545b59595756524c69594c6963587868587a6552515b625a646c68686875"
+   },
+   "ga1.jpg": {
+    "format": "other",
+    "head_bytes": "ffd8ffe000104a4649460001010101f401f40000ffed225e50686f746f73686f7020332e30003842494d04040000000000341c015a00031b25471c015a00031b25471c015a00031b25471c015a00031b"
+   }
+  }
+ }
+}

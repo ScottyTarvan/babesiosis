@@ -1,0 +1,57 @@
+{
+ "id": "CB498",
+ "filename": "CB498_2015_cutaneous-lesions-due-babesiosis.md",
+ "key": "DOI:10.1007/s00580-015-2063-6",
+ "record": {
+  "pmid": null,
+  "pmcid": null,
+  "doi": "10.1007/s00580-015-2063-6",
+  "title": "Cutaneous lesions due to babesiosis in a dog",
+  "journal": "Comparative Clinical Pathology",
+  "authors": [
+   "Bhavanam Sudhakara Reddy",
+   "S. Sivajothi",
+   "Vukka Chengalva Rayulu"
+  ],
+  "first_pub_date": "2015-01-15",
+  "type": "article",
+  "language": [
+   "en"
+  ],
+  "abstract": null,
+  "abstract_source": "OpenAlex abstract_inverted_index (reconstructed)",
+  "source_id": "https://openalex.org/W2024135708",
+  "src": "OPENALEX",
+  "found_by": [
+   "OA:title_and_abstract"
+  ],
+  "in_window": true,
+  "key": "DOI:10.1007/s00580-015-2063-6",
+  "source_files": [
+   "candidates_r3.jsonl"
+  ]
+ },
+ "screening": {
+  "key": "DOI:10.1007/s00580-015-2063-6",
+  "decision": "include",
+  "include_type": "case_report",
+  "exclude_reason": null,
+  "primary_category": "END",
+  "secondary_tags": [
+   "INF",
+   "SEV"
+  ],
+  "species": "Babesia sp. (unspecified, blood smear)",
+  "rationale": "Based on the title and the Semantic Scholar summary (the Springer landing page redirected to an access flow and the abstract is withheld): a dog with recurrent skin lesions, fever and weight loss linked to babesiosis on blood smear. This is an atypical cutaneous syndrome (likely vascular or ischaemic), so it qualifies as a distinct-syndrome case report; published 2015-01, in window.",
+  "stage": "adjudicated",
+  "batch": "r4_24.md",
+  "first_decision": "uncertain",
+  "screening_round": "r4"
+ },
+ "fulltext_check": {
+  "key": "DOI:10.1007/s00580-015-2063-6",
+  "pmcid": null,
+  "checked": "2026-10-28",
+  "fulltext_status": "no_pmcid"
+ }
+}

@@ -1,0 +1,58 @@
+{
+ "id": "CB521",
+ "filename": "CB521_2016_emergence-blood-parasite-babesia-gibsoni-slovakia.md",
+ "key": "https://openalex.org/W2744141597",
+ "record": {
+  "pmid": null,
+  "pmcid": null,
+  "doi": null,
+  "title": "Emergence of canine blood parasite Babesia gibsoni in Slovakia, clinical and molecular genetic study",
+  "journal": "Annals of Parasitology/Wiadomości Parazytologiczne",
+  "authors": [
+   "Bronislava Víchová",
+   "Lucia Blaňarová",
+   "Martina Komjáti-Nagyová",
+   "Mária Horská",
+   "Milan Švihran"
+  ],
+  "first_pub_date": "2016-01-01",
+  "type": "article",
+  "language": [
+   "pl"
+  ],
+  "abstract": null,
+  "abstract_source": "OpenAlex abstract_inverted_index (reconstructed)",
+  "source_id": "https://openalex.org/W2744141597",
+  "src": "OPENALEX",
+  "found_by": [
+   "OA:title_and_abstract"
+  ],
+  "in_window": true,
+  "key": "https://openalex.org/W2744141597",
+  "source_files": [
+   "candidates_r3.jsonl"
+  ]
+ },
+ "screening": {
+  "key": "https://openalex.org/W2744141597",
+  "decision": "uncertain",
+  "include_type": null,
+  "exclude_reason": null,
+  "primary_category": "ERY",
+  "secondary_tags": [
+   "SEV"
+  ],
+  "species": "B. gibsoni (confirmed, PCR)",
+  "rationale": "Based on title and OpenAlex metadata only (Ann Parasitol vol 62, no pages; the landing page returned 403). This is probably a congress abstract that goes with PMID:26304014 (Vichova et al.). It may report clinicopathological data, but neither its format nor its content can be judged.",
+  "stage": "adjudicated",
+  "batch": "r4_27.md",
+  "first_decision": "uncertain",
+  "screening_round": "r4"
+ },
+ "fulltext_check": {
+  "key": "https://openalex.org/W2744141597",
+  "pmcid": null,
+  "checked": "2026-10-28",
+  "fulltext_status": "no_pmcid"
+ }
+}

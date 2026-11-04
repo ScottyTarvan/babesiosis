@@ -1,0 +1,62 @@
+{
+ "id": "CB510",
+ "filename": "CB510_2015_serum-levels-chemokines-keratinocyte-chemoattractant-interleukin.md",
+ "key": "https://openalex.org/W2287618507",
+ "record": {
+  "pmid": null,
+  "pmcid": null,
+  "doi": null,
+  "title": "Serum levels of the chemokines keratinocyte chemoattractant and interleukin-8 in dogs naturally infected with Babesia canis canis",
+  "journal": "Hrčak Portal of scientific journals of Croatia (University Computing Centre)",
+  "authors": [
+   "Iva Mayer",
+   "Krešo Bendelja",
+   "Mirna Brkljačić",
+   "Martina Crnogaj",
+   "Iva Šmit",
+   "Marin Torti",
+   "Velimir Sušić",
+   "Renata Barić Rafaj",
+   "Vladimir Mrljak"
+  ],
+  "first_pub_date": "2015-09-02",
+  "type": "article",
+  "language": [
+   "en"
+  ],
+  "abstract": "Canine babesiosis caused by Babesia canis canis is one of the commonest canine diseases in Croatia. It is known that systemic inflammatory syndrome (SIRS), which is a hallmark of babesiosis, is regulated by the host production of several proinflammatory and antiinflammatory cytokines that have been implicated as playing a critical role in the pathogenesis of the disease. In the course of larger research serum concentration of CXC chemokines keratinocyte chemoattractant (KC) and interleukine 8 (IL-8) was determined. The aim of the present study was to determinate serum chemokine concentration and to compare values between healthy and dogs with babesiosis. Additional aim was to determine if KC and IL-8 serum concentration is an important contributing factor in development of complicated babesiosis and does it affect the outcome of the disease. Serum chemokine activity was assessed by a canine- specific multiplex assay (CCYTO-90K, Millipore, Billerica, MA) with an automated analyzer (Luminex 200, Luminex Corporation, Austin, TX). Results are suggesting that higher serum concentration of KC-like is conected with severity of anemia, leukocytosis and developing of complicated type of babesiosis. IL-8 concentration positively correlates with granulocyte- lymphocyte ratio. In addition concentration of both chemokines was higher in dogs with complicated babesiosis. Therefore, concentration of observed chemokines could be considered as important factor in pathogenesis of canine babesiosis",
+  "abstract_source": "OpenAlex abstract_inverted_index (reconstructed)",
+  "source_id": "https://openalex.org/W2287618507",
+  "src": "OPENALEX",
+  "found_by": [
+   "OA:title_and_abstract"
+  ],
+  "in_window": true,
+  "key": "https://openalex.org/W2287618507",
+  "source_files": [
+   "candidates_r3.jsonl"
+  ]
+ },
+ "screening": {
+  "key": "https://openalex.org/W2287618507",
+  "decision": "include",
+  "include_type": "primary",
+  "exclude_reason": null,
+  "primary_category": "INF",
+  "secondary_tags": [
+   "SEV",
+   "ERY"
+  ],
+  "species": "B. canis canis (naturally infected; confirmation method not stated)",
+  "rationale": "Compares serum KC and IL-8 chemokines between healthy and babesia-infected dogs and relates them to anaemia, complicated disease and outcome, which is immunopathology and severity evidence.",
+  "stage": "screen",
+  "batch": "r4_25.md",
+  "screening_round": "r4"
+ },
+ "fulltext_check": {
+  "key": "https://openalex.org/W2287618507",
+  "pmcid": null,
+  "checked": "2026-10-28",
+  "fulltext_status": "no_pmcid"
+ }
+}

@@ -1,0 +1,341 @@
+{
+ "id": "CB413",
+ "document": "data/markdown/CB413.md",
+ "source_format": "pdf",
+ "translated": false,
+ "words": 6605,
+ "run_utc": "2026-10-30T05:36:23+00:00",
+ "threshold": 0.85,
+ "kept_types": [
+  "T019",
+  "T020",
+  "T037",
+  "T046",
+  "T047",
+  "T048",
+  "T049",
+  "T050",
+  "T184",
+  "T190",
+  "T191"
+ ],
+ "term_count": 18,
+ "terms": [
+  {
+   "term": "C0036974",
+   "concept": "Shock",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 20,
+   "mentions_negated": 0,
+   "mentions_affirmed": 20,
+   "sections": {
+    "discussion": 12,
+    "abstract": 3,
+    "title": 2,
+    "methods": 2,
+    "introduction": 1
+   },
+   "forms": {
+    "shock": 20
+   },
+   "best_score": 0.998
+  },
+  {
+   "term": "C0033770",
+   "concept": "Prune Belly Syndrome",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 7,
+   "mentions_negated": 0,
+   "mentions_affirmed": 7,
+   "sections": {
+    "methods": 7
+   },
+   "forms": {
+    "pbs": 7
+   },
+   "best_score": 0.988
+  },
+  {
+   "term": "C0009450",
+   "concept": "Communicable Diseases",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 6,
+   "mentions_negated": 0,
+   "mentions_affirmed": 6,
+   "sections": {
+    "discussion": 4,
+    "abstract": 1,
+    "results": 1
+   },
+   "forms": {
+    "infection": 6
+   },
+   "best_score": 0.962
+  },
+  {
+   "term": "C0041296",
+   "concept": "Tuberculosis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 6,
+   "mentions_negated": 0,
+   "mentions_affirmed": 6,
+   "sections": {
+    "introduction": 3,
+    "discussion": 3
+   },
+   "forms": {
+    "tuberculosis": 6
+   },
+   "best_score": 0.988
+  },
+  {
+   "term": "C0004576",
+   "concept": "Babesiosis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 3,
+   "mentions_negated": 1,
+   "mentions_affirmed": 2,
+   "sections": {
+    "discussion": 2,
+    "introduction": 1
+   },
+   "forms": {
+    "babesiosis": 3
+   },
+   "best_score": 0.972
+  },
+  {
+   "term": "C0019054",
+   "concept": "Hemolysis (disorder)",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 3,
+   "mentions_negated": 1,
+   "mentions_affirmed": 2,
+   "sections": {
+    "discussion": 3
+   },
+   "forms": {
+    "hemolysis": 3
+   },
+   "best_score": 0.991
+  },
+  {
+   "term": "C0024530",
+   "concept": "Malaria",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "discussion": 2,
+    "introduction": 1
+   },
+   "forms": {
+    "malaria": 3
+   },
+   "best_score": 0.996
+  },
+  {
+   "term": "C0002878",
+   "concept": "Anemia, Hemolytic",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 1,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 2
+   },
+   "forms": {
+    "hemolytic anemia": 2
+   },
+   "best_score": 0.978
+  },
+  {
+   "term": "C0002880",
+   "concept": "Autoimmune hemolytic anemia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "methods": 1,
+    "discussion": 1
+   },
+   "forms": {
+    "imha": 2
+   },
+   "best_score": 0.916
+  },
+  {
+   "term": "C0024348",
+   "concept": "Lysis",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "methods": 2
+   },
+   "forms": {
+    "lysed": 2
+   },
+   "best_score": 0.979
+  },
+  {
+   "term": "C0002871",
+   "concept": "Anemia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "methods": 1
+   },
+   "forms": {
+    "anemia": 1
+   },
+   "best_score": 0.974
+  },
+  {
+   "term": "C0023343",
+   "concept": "Leprosy",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "leprosy": 1
+   },
+   "best_score": 0.97
+  },
+  {
+   "term": "C0080194",
+   "concept": "Muscle strain",
+   "semantic_types": [
+    "Injury or Poisoning"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "methods": 1
+   },
+   "forms": {
+    "strain": 1
+   },
+   "best_score": 0.985
+  },
+  {
+   "term": "C0242723",
+   "concept": "Parasitemia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "methods": 1
+   },
+   "forms": {
+    "parasitemia": 1
+   },
+   "best_score": 0.992
+  },
+  {
+   "term": "C0272170",
+   "concept": "Shwachman syndrome",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "methods": 1
+   },
+   "forms": {
+    "sds": 1
+   },
+   "best_score": 0.978
+  },
+  {
+   "term": "C0334094",
+   "concept": "Proliferation (morphologic abnormality)",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "proliferation": 1
+   },
+   "best_score": 0.97
+  },
+  {
+   "term": "C0851162",
+   "concept": "Infections of musculoskeletal system",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "infections": 1
+   },
+   "best_score": 0.971
+  },
+  {
+   "term": "C3825524",
+   "concept": "Veterinary parasitology",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "unlabelled": 1
+   },
+   "forms": {
+    "veterinary parasitology": 1
+   },
+   "best_score": 0.979
+  }
+ ]
+}

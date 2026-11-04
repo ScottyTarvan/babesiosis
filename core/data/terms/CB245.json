@@ -1,0 +1,611 @@
+{
+ "id": "CB245",
+ "document": "data/markdown/CB245.md",
+ "source_format": "pdf",
+ "translated": false,
+ "words": 3495,
+ "run_utc": "2026-10-30T05:35:30+00:00",
+ "threshold": 0.85,
+ "kept_types": [
+  "T019",
+  "T020",
+  "T037",
+  "T046",
+  "T047",
+  "T048",
+  "T049",
+  "T050",
+  "T184",
+  "T190",
+  "T191"
+ ],
+ "term_count": 32,
+ "terms": [
+  {
+   "term": "C0040034",
+   "concept": "Thrombocytopenia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 17,
+   "mentions_negated": 2,
+   "mentions_affirmed": 15,
+   "sections": {
+    "results": 6,
+    "discussion": 5,
+    "unlabelled": 3,
+    "methods": 2,
+    "introduction": 1
+   },
+   "forms": {
+    "thrombocytopenia": 17
+   },
+   "best_score": 0.98
+  },
+  {
+   "term": "C0009450",
+   "concept": "Communicable Diseases",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 12,
+   "mentions_negated": 0,
+   "mentions_affirmed": 12,
+   "sections": {
+    "discussion": 11,
+    "unlabelled": 1
+   },
+   "forms": {
+    "infection": 12
+   },
+   "best_score": 0.962
+  },
+  {
+   "term": "C0002871",
+   "concept": "Anemia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 11,
+   "mentions_negated": 1,
+   "mentions_affirmed": 10,
+   "sections": {
+    "results": 6,
+    "methods": 2,
+    "discussion": 2,
+    "unlabelled": 1
+   },
+   "forms": {
+    "anemia": 11
+   },
+   "best_score": 0.974
+  },
+  {
+   "term": "C0005658",
+   "concept": "bite injury",
+   "semantic_types": [
+    "Injury or Poisoning"
+   ],
+   "mentions": 6,
+   "mentions_negated": 3,
+   "mentions_affirmed": 3,
+   "sections": {
+    "methods": 2,
+    "discussion": 2,
+    "unlabelled": 1,
+    "introduction": 1
+   },
+   "forms": {
+    "bites": 4,
+    "biting": 1,
+    "bite": 1
+   },
+   "best_score": 0.984
+  },
+  {
+   "term": "C0002880",
+   "concept": "Autoimmune hemolytic anemia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 5,
+   "mentions_negated": 0,
+   "mentions_affirmed": 5,
+   "sections": {
+    "results": 3,
+    "unlabelled": 1,
+    "discussion": 1
+   },
+   "forms": {
+    "imha": 3,
+    "immune-mediated hemolytic anemia": 2
+   },
+   "best_score": 0.916
+  },
+  {
+   "term": "C0242723",
+   "concept": "Parasitemia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 5,
+   "mentions_negated": 0,
+   "mentions_affirmed": 5,
+   "sections": {
+    "discussion": 3,
+    "unlabelled": 1,
+    "results": 1
+   },
+   "forms": {
+    "parasitemia": 5
+   },
+   "best_score": 0.992
+  },
+  {
+   "term": "C0012634",
+   "concept": "Disease",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 4,
+   "mentions_negated": 1,
+   "mentions_affirmed": 3,
+   "sections": {
+    "introduction": 2,
+    "discussion": 2
+   },
+   "forms": {
+    "disease": 3,
+    "diseases": 1
+   },
+   "best_score": 0.987
+  },
+  {
+   "term": "C0023380",
+   "concept": "Lethargy",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 4,
+   "mentions_negated": 1,
+   "mentions_affirmed": 3,
+   "sections": {
+    "methods": 2,
+    "introduction": 1,
+    "results": 1
+   },
+   "forms": {
+    "lethargy": 3,
+    "lethargic": 1
+   },
+   "best_score": 0.989
+  },
+  {
+   "term": "C0002878",
+   "concept": "Anemia, Hemolytic",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "unlabelled": 1,
+    "introduction": 1,
+    "discussion": 1
+   },
+   "forms": {
+    "hemolytic anemia": 3
+   },
+   "best_score": 0.978
+  },
+  {
+   "term": "C0004576",
+   "concept": "Babesiosis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "unlabelled": 2,
+    "introduction": 1
+   },
+   "forms": {
+    "babesiosis": 3
+   },
+   "best_score": 0.972
+  },
+  {
+   "term": "C0013404",
+   "concept": "Dyspnea",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 3,
+   "mentions_negated": 1,
+   "mentions_affirmed": 2,
+   "sections": {
+    "methods": 2,
+    "results": 1
+   },
+   "forms": {
+    "dyspnea": 2,
+    "difficulty breathing": 1
+   },
+   "best_score": 0.984
+  },
+  {
+   "term": "C0015967",
+   "concept": "Fever",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 3,
+   "mentions_negated": 1,
+   "mentions_affirmed": 2,
+   "sections": {
+    "methods": 2,
+    "introduction": 1
+   },
+   "forms": {
+    "fever": 2,
+    "pyrexia": 1
+   },
+   "best_score": 0.98
+  },
+  {
+   "term": "C0020517",
+   "concept": "Hypersensitivity",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "discussion": 3
+   },
+   "forms": {
+    "sensitivity": 2,
+    "hypersensitivity": 1
+   },
+   "best_score": 0.997
+  },
+  {
+   "term": "C0030312",
+   "concept": "Pancytopenia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "methods": 1,
+    "results": 1,
+    "discussion": 1
+   },
+   "forms": {
+    "pancytopenia": 3
+   },
+   "best_score": 0.99
+  },
+  {
+   "term": "C0080194",
+   "concept": "Muscle strain",
+   "semantic_types": [
+    "Injury or Poisoning"
+   ],
+   "mentions": 3,
+   "mentions_negated": 1,
+   "mentions_affirmed": 2,
+   "sections": {
+    "introduction": 2,
+    "discussion": 1
+   },
+   "forms": {
+    "strains": 2,
+    "strain": 1
+   },
+   "best_score": 0.991
+  },
+  {
+   "term": "C0851162",
+   "concept": "Infections of musculoskeletal system",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "introduction": 2,
+    "discussion": 1
+   },
+   "forms": {
+    "infections": 3
+   },
+   "best_score": 0.971
+  },
+  {
+   "term": "C0008679",
+   "concept": "Chronic disease",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 2,
+   "mentions_affirmed": 0,
+   "sections": {
+    "methods": 2
+   },
+   "forms": {
+    "chronic illness": 2
+   },
+   "best_score": 0.966
+  },
+  {
+   "term": "C0023530",
+   "concept": "Leukopenia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "methods": 2
+   },
+   "forms": {
+    "neutropenia": 2
+   },
+   "best_score": 0.984
+  },
+  {
+   "term": "C0024439",
+   "concept": "Macular corneal dystrophy",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "methods": 1,
+    "results": 1
+   },
+   "forms": {
+    "mcd": 2
+   },
+   "best_score": 0.987
+  },
+  {
+   "term": "C0085702",
+   "concept": "Monocytosis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "unlabelled": 1,
+    "results": 1
+   },
+   "forms": {
+    "monocytosis": 2
+   },
+   "best_score": 0.99
+  },
+  {
+   "term": "C0232462",
+   "concept": "Decrease in appetite",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 2,
+   "mentions_negated": 1,
+   "mentions_affirmed": 1,
+   "sections": {
+    "methods": 2
+   },
+   "forms": {
+    "decreased appetite": 2
+   },
+   "best_score": 0.984
+  },
+  {
+   "term": "C0275518",
+   "concept": "Acute infectious disease",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "results": 1,
+    "discussion": 1
+   },
+   "forms": {
+    "acute infection": 2
+   },
+   "best_score": 0.971
+  },
+  {
+   "term": "C0275524",
+   "concept": "Coinfection",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "unlabelled": 1,
+    "methods": 1
+   },
+   "forms": {
+    "co-infection": 1,
+    "coinfection": 1
+   },
+   "best_score": 0.956
+  },
+  {
+   "term": "C1155266",
+   "concept": "Inflammatory Response",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "discussion": 2
+   },
+   "forms": {
+    "inflammatory response": 2
+   },
+   "best_score": 0.983
+  },
+  {
+   "term": "C1561643",
+   "concept": "Chronic Kidney Diseases",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "results": 2
+   },
+   "forms": {
+    "chronic kidney disease": 1,
+    "ckd": 1
+   },
+   "best_score": 0.974
+  },
+  {
+   "term": "C0015672",
+   "concept": "Fatigue",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results": 1
+   },
+   "forms": {
+    "fatigue": 1
+   },
+   "best_score": 0.971
+  },
+  {
+   "term": "C0022346",
+   "concept": "Icterus",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "icterus": 1
+   },
+   "best_score": 0.958
+  },
+  {
+   "term": "C0026766",
+   "concept": "Multiple Organ Failure",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "multiorgan failure": 1
+   },
+   "best_score": 0.979
+  },
+  {
+   "term": "C0040761",
+   "concept": "Transposition of Great Vessels",
+   "semantic_types": [
+    "Congenital Abnormality"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "methods": 1
+   },
+   "forms": {
+    "tga": 1
+   },
+   "best_score": 0.991
+  },
+  {
+   "term": "C0085632",
+   "concept": "Apathy",
+   "semantic_types": [
+    "Mental or Behavioral Dysfunction"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results": 1
+   },
+   "forms": {
+    "apathy": 1
+   },
+   "best_score": 0.99
+  },
+  {
+   "term": "C0242528",
+   "concept": "Azotemia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 1,
+   "mentions_affirmed": 0,
+   "sections": {
+    "results": 1
+   },
+   "forms": {
+    "azotemia": 1
+   },
+   "best_score": 0.964
+  },
+  {
+   "term": "C1640363",
+   "concept": "Vector Borne Diseases",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "vector-borne diseases": 1
+   },
+   "best_score": 0.957
+  }
+ ]
+}

@@ -1,0 +1,882 @@
+{
+ "id": "CB157",
+ "document": "data/markdown/CB157.en.md",
+ "source_format": "pdf",
+ "translated": true,
+ "words": 4823,
+ "run_utc": "2026-10-30T05:34:52+00:00",
+ "threshold": 0.85,
+ "kept_types": [
+  "T019",
+  "T020",
+  "T037",
+  "T046",
+  "T047",
+  "T048",
+  "T049",
+  "T050",
+  "T184",
+  "T190",
+  "T191"
+ ],
+ "term_count": 50,
+ "terms": [
+  {
+   "term": "C0004576",
+   "concept": "Babesiosis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 54,
+   "mentions_negated": 6,
+   "mentions_affirmed": 48,
+   "sections": {
+    "unlabelled": 53,
+    "title": 1
+   },
+   "forms": {
+    "babesiosis": 54
+   },
+   "best_score": 0.972
+  },
+  {
+   "term": "C0242528",
+   "concept": "Azotemia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 22,
+   "mentions_negated": 3,
+   "mentions_affirmed": 19,
+   "sections": {
+    "unlabelled": 22
+   },
+   "forms": {
+    "azotaemia": 17,
+    "azotemia": 5
+   },
+   "best_score": 0.977
+  },
+  {
+   "term": "C0009450",
+   "concept": "Communicable Diseases",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 15,
+   "mentions_negated": 1,
+   "mentions_affirmed": 14,
+   "sections": {
+    "unlabelled": 15
+   },
+   "forms": {
+    "infection": 15
+   },
+   "best_score": 0.962
+  },
+  {
+   "term": "C0012634",
+   "concept": "Disease",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 10,
+   "mentions_negated": 1,
+   "mentions_affirmed": 9,
+   "sections": {
+    "unlabelled": 10
+   },
+   "forms": {
+    "disease": 10
+   },
+   "best_score": 0.987
+  },
+  {
+   "term": "C0040196",
+   "concept": "Tick Infestations",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 9,
+   "mentions_negated": 1,
+   "mentions_affirmed": 8,
+   "sections": {
+    "unlabelled": 9
+   },
+   "forms": {
+    "ticks": 9
+   },
+   "best_score": 0.962
+  },
+  {
+   "term": "C0002871",
+   "concept": "Anemia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 7,
+   "mentions_negated": 1,
+   "mentions_affirmed": 6,
+   "sections": {
+    "unlabelled": 7
+   },
+   "forms": {
+    "anaemia": 7
+   },
+   "best_score": 0.977
+  },
+  {
+   "term": "C0851162",
+   "concept": "Infections of musculoskeletal system",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 6,
+   "mentions_negated": 0,
+   "mentions_affirmed": 6,
+   "sections": {
+    "unlabelled": 6
+   },
+   "forms": {
+    "infections": 6
+   },
+   "best_score": 0.971
+  },
+  {
+   "term": "C0851341",
+   "concept": "Infestation",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 5,
+   "mentions_negated": 0,
+   "mentions_affirmed": 5,
+   "sections": {
+    "unlabelled": 5
+   },
+   "forms": {
+    "infestations": 5
+   },
+   "best_score": 0.957
+  },
+  {
+   "term": "C0020625",
+   "concept": "Hyponatremia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 4,
+   "mentions_negated": 0,
+   "mentions_affirmed": 4,
+   "sections": {
+    "unlabelled": 4
+   },
+   "forms": {
+    "hyponatraemia": 3,
+    "hyponatremia": 1
+   },
+   "best_score": 0.99
+  },
+  {
+   "term": "C0035078",
+   "concept": "Kidney Failure",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 4,
+   "mentions_negated": 2,
+   "mentions_affirmed": 2,
+   "sections": {
+    "unlabelled": 4
+   },
+   "forms": {
+    "kidney failure": 2,
+    "renal failure": 2
+   },
+   "best_score": 0.982
+  },
+  {
+   "term": "C0019054",
+   "concept": "Hemolysis (disorder)",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "unlabelled": 3
+   },
+   "forms": {
+    "haemolysis": 3
+   },
+   "best_score": 0.989
+  },
+  {
+   "term": "C0020428",
+   "concept": "Hyperaldosteronism",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "unlabelled": 3
+   },
+   "forms": {
+    "hyperaldosteronism": 3
+   },
+   "best_score": 0.972
+  },
+  {
+   "term": "C0020615",
+   "concept": "Hypoglycemia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 3,
+   "mentions_negated": 1,
+   "mentions_affirmed": 2,
+   "sections": {
+    "unlabelled": 3
+   },
+   "forms": {
+    "hypoglycaemia": 2,
+    "hypoglycemia": 1
+   },
+   "best_score": 0.99
+  },
+  {
+   "term": "C0032002",
+   "concept": "Pituitary Diseases",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "unlabelled": 3
+   },
+   "forms": {
+    "pituitary": 3
+   },
+   "best_score": 0.981
+  },
+  {
+   "term": "C0242184",
+   "concept": "Hypoxia",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "unlabelled": 3
+   },
+   "forms": {
+    "hypoxia": 3
+   },
+   "best_score": 0.978
+  },
+  {
+   "term": "C0014130",
+   "concept": "Endocrine System Diseases",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "unlabelled": 2
+   },
+   "forms": {
+    "endocrine disorders": 2
+   },
+   "best_score": 0.985
+  },
+  {
+   "term": "C0015190",
+   "concept": "Euthyroid Sick Syndromes",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "unlabelled": 2
+   },
+   "forms": {
+    "euthyroid sick syndrome": 2
+   },
+   "best_score": 0.99
+  },
+  {
+   "term": "C0027627",
+   "concept": "Neoplasm Metastasis",
+   "semantic_types": [
+    "Neoplastic Process"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "unlabelled": 2
+   },
+   "forms": {
+    "secondary": 2
+   },
+   "best_score": 0.985
+  },
+  {
+   "term": "C0037088",
+   "concept": "Signs and Symptoms",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "unlabelled": 2
+   },
+   "forms": {
+    "finding": 2
+   },
+   "best_score": 0.994
+  },
+  {
+   "term": "C0040034",
+   "concept": "Thrombocytopenia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "unlabelled": 2
+   },
+   "forms": {
+    "thrombocytopenia": 2
+   },
+   "best_score": 0.98
+  },
+  {
+   "term": "C0162700",
+   "concept": "Tick-Borne Diseases",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "unlabelled": 2
+   },
+   "forms": {
+    "tick-borne disease": 2
+   },
+   "best_score": 0.949
+  },
+  {
+   "term": "C0235446",
+   "concept": "Azotemia due to intrarenal disease",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "unlabelled": 2
+   },
+   "forms": {
+    "renal azotaemia": 2
+   },
+   "best_score": 0.96
+  },
+  {
+   "term": "C0239981",
+   "concept": "Hypoalbuminemia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "unlabelled": 2
+   },
+   "forms": {
+    "hypoalbuminemia": 1,
+    "hypoalbuminaemia": 1
+   },
+   "best_score": 0.975
+  },
+  {
+   "term": "C0276854",
+   "concept": "Infection by Babesia canis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "unlabelled": 2
+   },
+   "forms": {
+    "canine babesiosis": 2
+   },
+   "best_score": 0.969
+  },
+  {
+   "term": "C0920646",
+   "concept": "Ischemia of kidney",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "unlabelled": 2
+   },
+   "forms": {
+    "renal ischemia": 1,
+    "renal ischaemia": 1
+   },
+   "best_score": 0.978
+  },
+  {
+   "term": "C1510411",
+   "concept": "metaplastic cell transformation",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "unlabelled": 2
+   },
+   "forms": {
+    "transforming": 2
+   },
+   "best_score": 0.96
+  },
+  {
+   "term": "C0005658",
+   "concept": "bite injury",
+   "semantic_types": [
+    "Injury or Poisoning"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "unlabelled": 1
+   },
+   "forms": {
+    "bite": 1
+   },
+   "best_score": 0.982
+  },
+  {
+   "term": "C0005779",
+   "concept": "Blood Coagulation Disorders",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "unlabelled": 1
+   },
+   "forms": {
+    "blood coagulation disorders": 1
+   },
+   "best_score": 0.971
+  },
+  {
+   "term": "C0011175",
+   "concept": "Dehydration",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "unlabelled": 1
+   },
+   "forms": {
+    "dehydration": 1
+   },
+   "best_score": 0.957
+  },
+  {
+   "term": "C0012359",
+   "concept": "Pathological Dilatation",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "unlabelled": 1
+   },
+   "forms": {
+    "dilation": 1
+   },
+   "best_score": 0.962
+  },
+  {
+   "term": "C0014061",
+   "concept": "Tick-Borne Encephalitis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "unlabelled": 1
+   },
+   "forms": {
+    "tick-borne encephalitis": 1
+   },
+   "best_score": 0.955
+  },
+  {
+   "term": "C0022660",
+   "concept": "Kidney Failure, Acute",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "unlabelled": 1
+   },
+   "forms": {
+    "acute kidney failure": 1
+   },
+   "best_score": 0.976
+  },
+  {
+   "term": "C0022672",
+   "concept": "Acute Kidney Tubular Necrosis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "unlabelled": 1
+   },
+   "forms": {
+    "dogs renal tubular necrosis": 1
+   },
+   "best_score": 0.893
+  },
+  {
+   "term": "C0023530",
+   "concept": "Leukopenia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "unlabelled": 1
+   },
+   "forms": {
+    "leucopenia": 1
+   },
+   "best_score": 0.987
+  },
+  {
+   "term": "C0024348",
+   "concept": "Lysis",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "unlabelled": 1
+   },
+   "forms": {
+    "lysis": 1
+   },
+   "best_score": 0.986
+  },
+  {
+   "term": "C0026766",
+   "concept": "Multiple Organ Failure",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "unlabelled": 1
+   },
+   "forms": {
+    "multiple organ dysfunction syndrome": 1
+   },
+   "best_score": 0.971
+  },
+  {
+   "term": "C0030499",
+   "concept": "Parasitic Diseases",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "unlabelled": 1
+   },
+   "forms": {
+    "infestation": 1
+   },
+   "best_score": 0.946
+  },
+  {
+   "term": "C0036679",
+   "concept": "Diastasis",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "unlabelled": 1
+   },
+   "forms": {
+    "separation": 1
+   },
+   "best_score": 0.963
+  },
+  {
+   "term": "C0036690",
+   "concept": "Septicemia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "unlabelled": 1
+   },
+   "forms": {
+    "sepsis": 1
+   },
+   "best_score": 0.971
+  },
+  {
+   "term": "C0036983",
+   "concept": "Septic Shock",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "unlabelled": 1
+   },
+   "forms": {
+    "septic shock": 1
+   },
+   "best_score": 0.981
+  },
+  {
+   "term": "C0151763",
+   "concept": "Liver damage",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "unlabelled": 1
+   },
+   "forms": {
+    "liver damage": 1
+   },
+   "best_score": 0.98
+  },
+  {
+   "term": "C0221103",
+   "concept": "Visual Suppression",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "unlabelled": 1
+   },
+   "forms": {
+    "suppression": 1
+   },
+   "best_score": 0.982
+  },
+  {
+   "term": "C0235573",
+   "concept": "Hemoglobinemia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "unlabelled": 1
+   },
+   "forms": {
+    "haemoglobinaemia": 1
+   },
+   "best_score": 0.988
+  },
+  {
+   "term": "C0242656",
+   "concept": "Disease Progression",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "unlabelled": 1
+   },
+   "forms": {
+    "disease course": 1
+   },
+   "best_score": 0.978
+  },
+  {
+   "term": "C0242966",
+   "concept": "Systemic Inflammatory Response Syndrome",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "unlabelled": 1
+   },
+   "forms": {
+    "systemic inflammatory response syndrome": 1
+   },
+   "best_score": 0.987
+  },
+  {
+   "term": "C0275524",
+   "concept": "Coinfection",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "unlabelled": 1
+   },
+   "forms": {
+    "co-infection": 1
+   },
+   "best_score": 0.939
+  },
+  {
+   "term": "C0554309",
+   "concept": "Prerenal azotemia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "unlabelled": 1
+   },
+   "forms": {
+    "prerenal azotaemia": 1
+   },
+   "best_score": 0.959
+  },
+  {
+   "term": "C0600688",
+   "concept": "Toxic effect",
+   "semantic_types": [
+    "Injury or Poisoning"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "unlabelled": 1
+   },
+   "forms": {
+    "toxic effect": 1
+   },
+   "best_score": 0.976
+  },
+  {
+   "term": "C0699748",
+   "concept": "Pathogenesis",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "unlabelled": 1
+   },
+   "forms": {
+    "pathogenesis": 1
+   },
+   "best_score": 0.983
+  },
+  {
+   "term": "C1112157",
+   "concept": "intrauterine infection",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "unlabelled": 1
+   },
+   "forms": {
+    "intrauterine infection": 1
+   },
+   "best_score": 0.964
+  }
+ ]
+}

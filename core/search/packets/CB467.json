@@ -1,0 +1,56 @@
+{
+ "id": "CB467",
+ "filename": "CB467_2014_evaluation-drugs-combinations-against-babesiosis.md",
+ "key": "https://openalex.org/W2266798131",
+ "record": {
+  "pmid": null,
+  "pmcid": null,
+  "doi": null,
+  "title": "Evaluation of drugs combinations against canine babesiosis",
+  "journal": "BIOINFOLET - A Quarterly Journal of Life Sciences",
+  "authors": [
+   "Sonal Shrivastava",
+   "P.C. Shukla",
+   "Kabita Roy"
+  ],
+  "first_pub_date": "2014-01-01",
+  "type": "article",
+  "language": [
+   "en"
+  ],
+  "abstract": "In India, canine babesiosis is caused by B. canis or B. gibsoni. No drugs, including diminazine aceturate and imidocarb diproprionate, have been demonstrated to clear B. gibsoni infections from dogs. The objective of the study was to evaluate the therapeutic efficacy of newer combinations of drugs against the disease. Eighteen dogs, positive for babesiosis on blood smear examination, were placed in 3 groups having six animals in each. Each group was treated with, doxycycline (10 mg/kg b.wt, q 12 hours)-enrofloxacin (2 mg/kg b.wt., q 12 hours)-metronidazole(10 mg/kg b.wt., q 12 hours) combination, doxycycline (10 mg/kg b.wt, q 12 hours)-norfloxacin(10 mg/kg b.wt., q 12 hours)-metronidazole(10 mg/kg b.wt., q 12 hours) combination, and doxycycline (10 mg/kg b.wt, q 12 hours)-ciprofloxacin(10 mg/kg b.wt., q 12 hours)-metronidazole(10 mg/kg b.wt., q 12 hours) combination, respectively, PO, for 6 weeks. For evaluation of the efficacy of the treatment blood samples were collected on day 0, 15, 30 and 45 of therapy, and haemato-biochemical alterations were recorded. Blood was also collected from 6 healthy dogs with no haemoprotozoa infection, to be used as control. In all the three groups, all the animals recovered after the completion of the therapy. Doxycyclineenrofloxacin-metronidazole combination was found to be superior, as more number of animals were recovered 15 days after treatment.",
+  "abstract_source": "OpenAlex abstract_inverted_index (reconstructed)",
+  "source_id": "https://openalex.org/W2266798131",
+  "src": "OPENALEX",
+  "found_by": [
+   "OA:title_and_abstract"
+  ],
+  "in_window": true,
+  "key": "https://openalex.org/W2266798131",
+  "source_files": [
+   "candidates_r3.jsonl"
+  ]
+ },
+ "screening": {
+  "key": "https://openalex.org/W2266798131",
+  "decision": "uncertain",
+  "include_type": null,
+  "exclude_reason": null,
+  "primary_category": "ERY",
+  "secondary_tags": [
+   "MET"
+  ],
+  "species": "B. canis / B. gibsoni (smear only, unspecified)",
+  "rationale": "Abstract: a drug-combination trial in 18 infected dogs that recorded haemato-biochemical alterations against 6 healthy controls, but no host results are given. Infected-versus-control host data would make it eligible, so it goes to full-text review.",
+  "stage": "adjudicated",
+  "batch": "r4_19.md",
+  "first_decision": "uncertain",
+  "screening_round": "r4"
+ },
+ "fulltext_check": {
+  "key": "https://openalex.org/W2266798131",
+  "pmcid": null,
+  "checked": "2026-10-28",
+  "fulltext_status": "no_pmcid"
+ }
+}

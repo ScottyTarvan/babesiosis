@@ -1,0 +1,65 @@
+<fs-popover
+  [anchor]="anchor()"
+  [(open)]="open"
+  placement="bottom-end"
+  dismiss="backdrop"
+  [width]="360"
+  [maxWidth]="360"
+  [push]="true">
+
+  <div class="fs-shell-jobs-panel" role="dialog" aria-label="Background jobs">
+
+    <div class="fs-shell-jobs-panel__header">
+      <span class="fs-shell-jobs-panel__title">Waiting for approval</span>
+      <fs-button
+        variant="ghost"
+        intent="secondary"
+        size="sm"
+        [iconOnly]="true"
+        icon="refresh"
+        ariaLabel="Refresh background jobs"
+        (click)="onRetry()" />
+    </div>
+
+    @if (service.state() === 'error') {
+      <fs-banner intent="danger">
+        {{ service.lastError() ?? 'Could not read background jobs.' }}
+        <fs-button fsBannerAction variant="ghost" intent="secondary" size="sm"
+                   (click)="onRetry()">Retry</fs-button>
+      </fs-banner>
+    } @else if (service.state() === 'loading' && !service.jobs().length) {
+      <p class="fs-shell-jobs-panel__muted">Checking…</p>
+    } @else if (!service.jobs().length) {
+      <div class="fs-shell-jobs-panel__empty">
+        <fs-symbol name="bell-off" size="lg" ariaLabel="" />
+        <p class="fs-shell-jobs-panel__muted">Nothing needs your approval.</p>
+      </div>
+    } @else {
+      <ul class="fs-shell-jobs-panel__list">
+        @for (job of service.jobs(); track job.id) {
+          <li>
+            <div class="fs-shell-jobs-panel__row">
+              <span class="fs-shell-jobs-panel__text">
+                <span class="fs-shell-jobs-panel__name">{{ job.title }}</span>
+                @if (job.subtitle) {
+                  <span class="fs-shell-jobs-panel__meta">{{ job.subtitle }}</span>
+                }
+              </span>
+              <fs-badge variant="tonal" [intent]="job.needsAction ? 'danger' : 'secondary'">
+                {{ job.statusLabel }}
+              </fs-badge>
+            </div>
+          </li>
+        }
+      </ul>
+
+      <!-- The feed is capped rather than paged; say so instead of implying the
+           list is everything. -->
+      @if (service.hasMore()) {
+        <p class="fs-shell-jobs-panel__muted fs-shell-jobs-panel__footer">
+          More are waiting than can be shown here.
+        </p>
+      }
+    }
+  </div>
+</fs-popover>

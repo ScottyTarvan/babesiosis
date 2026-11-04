@@ -1,0 +1,783 @@
+{
+ "id": "HU002",
+ "document": "data/markdown/HU002.md",
+ "source_format": "jats_xml",
+ "translated": false,
+ "words": 5824,
+ "run_utc": "2026-10-30T05:37:01+00:00",
+ "threshold": 0.85,
+ "kept_types": [
+  "T019",
+  "T020",
+  "T037",
+  "T046",
+  "T047",
+  "T048",
+  "T049",
+  "T050",
+  "T184",
+  "T190",
+  "T191"
+ ],
+ "term_count": 42,
+ "terms": [
+  {
+   "term": "C0022660",
+   "concept": "Kidney Failure, Acute",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 95,
+   "mentions_negated": 22,
+   "mentions_affirmed": 73,
+   "sections": {
+    "results": 56,
+    "methods": 12,
+    "discussion": 11,
+    "abstract": 7,
+    "introduction": 4,
+    "conclusion": 2,
+    "abbreviations": 2,
+    "title": 1
+   },
+   "forms": {
+    "aki": 81,
+    "acute kidney injury": 14
+   },
+   "best_score": 0.976
+  },
+  {
+   "term": "C0024530",
+   "concept": "Malaria",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 55,
+   "mentions_negated": 0,
+   "mentions_affirmed": 55,
+   "sections": {
+    "results": 19,
+    "discussion": 10,
+    "abstract": 8,
+    "introduction": 8,
+    "methods": 6,
+    "conclusion": 3,
+    "title": 1
+   },
+   "forms": {
+    "malaria": 55
+   },
+   "best_score": 0.996
+  },
+  {
+   "term": "C0242606",
+   "concept": "Oxidative Stress",
+   "semantic_types": [
+    "Cell or Molecular Dysfunction"
+   ],
+   "mentions": 15,
+   "mentions_negated": 1,
+   "mentions_affirmed": 14,
+   "sections": {
+    "discussion": 5,
+    "results": 4,
+    "introduction": 3,
+    "title": 1,
+    "abstract": 1,
+    "conclusion": 1
+   },
+   "forms": {
+    "oxidative stress": 15
+   },
+   "best_score": 0.985
+  },
+  {
+   "term": "C0019054",
+   "concept": "Hemolysis (disorder)",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 6,
+   "mentions_negated": 0,
+   "mentions_affirmed": 6,
+   "sections": {
+    "abstract": 2,
+    "introduction": 2,
+    "results": 1,
+    "discussion": 1
+   },
+   "forms": {
+    "hemolysis": 6
+   },
+   "best_score": 0.991
+  },
+  {
+   "term": "C0242723",
+   "concept": "Parasitemia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 6,
+   "mentions_negated": 1,
+   "mentions_affirmed": 5,
+   "sections": {
+    "methods": 4,
+    "results": 2
+   },
+   "forms": {
+    "parasitemia": 6
+   },
+   "best_score": 0.992
+  },
+  {
+   "term": "C0009421",
+   "concept": "Comatose",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 4,
+   "mentions_negated": 1,
+   "mentions_affirmed": 3,
+   "sections": {
+    "methods": 3,
+    "results": 1
+   },
+   "forms": {
+    "coma": 4
+   },
+   "best_score": 0.994
+  },
+  {
+   "term": "C0015967",
+   "concept": "Fever",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 4,
+   "mentions_negated": 1,
+   "mentions_affirmed": 3,
+   "sections": {
+    "introduction": 2,
+    "results": 1,
+    "discussion": 1
+   },
+   "forms": {
+    "fever": 4
+   },
+   "best_score": 0.962
+  },
+  {
+   "term": "C0036690",
+   "concept": "Septicemia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 4,
+   "mentions_negated": 0,
+   "mentions_affirmed": 4,
+   "sections": {
+    "results": 2,
+    "abstract": 1,
+    "methods": 1
+   },
+   "forms": {
+    "sepsis": 4
+   },
+   "best_score": 0.971
+  },
+  {
+   "term": "C0085077",
+   "concept": "Sweet Syndrome",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 4,
+   "mentions_negated": 0,
+   "mentions_affirmed": 4,
+   "sections": {
+    "methods": 2,
+    "results": 2
+   },
+   "forms": {
+    "ss": 4
+   },
+   "best_score": 0.978
+  },
+  {
+   "term": "C0022658",
+   "concept": "Kidney Diseases",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 3,
+   "mentions_negated": 1,
+   "mentions_affirmed": 2,
+   "sections": {
+    "methods": 1,
+    "results": 1,
+    "abbreviations": 1
+   },
+   "forms": {
+    "kidney disease": 2,
+    "kidney diseases": 1
+   },
+   "best_score": 0.974
+  },
+  {
+   "term": "C5392203",
+   "concept": "Oxidative Damage",
+   "semantic_types": [
+    "Cell or Molecular Dysfunction"
+   ],
+   "mentions": 3,
+   "mentions_negated": 1,
+   "mentions_affirmed": 2,
+   "sections": {
+    "introduction": 2,
+    "discussion": 1
+   },
+   "forms": {
+    "oxidative injury": 2,
+    "oxidative damage": 1
+   },
+   "best_score": 0.981
+  },
+  {
+   "term": "C0001122",
+   "concept": "Acidosis",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "methods": 1,
+    "results": 1
+   },
+   "forms": {
+    "acidosis": 2
+   },
+   "best_score": 0.997
+  },
+  {
+   "term": "C0003460",
+   "concept": "Anuria",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "introduction": 1,
+    "methods": 1
+   },
+   "forms": {
+    "anuria": 2
+   },
+   "best_score": 0.968
+  },
+  {
+   "term": "C0007222",
+   "concept": "Cardiovascular Diseases",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 2,
+   "mentions_affirmed": 0,
+   "sections": {
+    "results": 2
+   },
+   "forms": {
+    "cardiovascular disease": 1,
+    "cardiovascular disease^c": 1
+   },
+   "best_score": 0.982
+  },
+  {
+   "term": "C0012634",
+   "concept": "Disease",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "results": 1,
+    "discussion": 1
+   },
+   "forms": {
+    "disease": 1,
+    "diseases": 1
+   },
+   "best_score": 0.987
+  },
+  {
+   "term": "C0020538",
+   "concept": "Hypertensive disease",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 2,
+   "mentions_affirmed": 0,
+   "sections": {
+    "results": 2
+   },
+   "forms": {
+    "hypertension": 1,
+    "hypertension^c": 1
+   },
+   "best_score": 0.984
+  },
+  {
+   "term": "C0026837",
+   "concept": "Muscle Rigidity",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "abstract": 1,
+    "discussion": 1
+   },
+   "forms": {
+    "rigidity": 2
+   },
+   "best_score": 0.978
+  },
+  {
+   "term": "C0151746",
+   "concept": "Abnormal renal function",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "introduction": 1,
+    "discussion": 1
+   },
+   "forms": {
+    "kidney dysfunction": 2
+   },
+   "best_score": 0.961
+  },
+  {
+   "term": "C0699748",
+   "concept": "Pathogenesis",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "discussion": 1,
+    "conclusion": 1
+   },
+   "forms": {
+    "pathogenesis": 2
+   },
+   "best_score": 0.983
+  },
+  {
+   "term": "C3203359",
+   "concept": "Rupture",
+   "semantic_types": [
+    "Injury or Poisoning"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "introduction": 1,
+    "discussion": 1
+   },
+   "forms": {
+    "rupture": 2
+   },
+   "best_score": 0.97
+  },
+  {
+   "term": "C0002871",
+   "concept": "Anemia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "methods": 1
+   },
+   "forms": {
+    "anemia": 1
+   },
+   "best_score": 0.974
+  },
+  {
+   "term": "C0004623",
+   "concept": "Bacterial Infections",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "methods": 1
+   },
+   "forms": {
+    "bacterial infection": 1
+   },
+   "best_score": 0.973
+  },
+  {
+   "term": "C0011847",
+   "concept": "Diabetes",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 1,
+   "mentions_affirmed": 0,
+   "sections": {
+    "results": 1
+   },
+   "forms": {
+    "diabetes": 1
+   },
+   "best_score": 0.975
+  },
+  {
+   "term": "C0011860",
+   "concept": "Diabetes Mellitus, Non-Insulin-Dependent",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 1,
+   "mentions_affirmed": 0,
+   "sections": {
+    "results": 1
+   },
+   "forms": {
+    "type 2 diabetes^c": 1
+   },
+   "best_score": 0.869
+  },
+  {
+   "term": "C0011991",
+   "concept": "Diarrhea",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 1,
+   "mentions_affirmed": 0,
+   "sections": {
+    "results": 1
+   },
+   "forms": {
+    "diarrhea": 1
+   },
+   "best_score": 0.983
+  },
+  {
+   "term": "C0020488",
+   "concept": "Hypernatremia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 1,
+   "mentions_affirmed": 0,
+   "sections": {
+    "results": 1
+   },
+   "forms": {
+    "excess": 1
+   },
+   "best_score": 0.876
+  },
+  {
+   "term": "C0020615",
+   "concept": "Hypoglycemia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "methods": 1
+   },
+   "forms": {
+    "hypoglycemia": 1
+   },
+   "best_score": 0.99
+  },
+  {
+   "term": "C0022116",
+   "concept": "Ischemia",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "conclusion": 1
+   },
+   "forms": {
+    "ischemia": 1
+   },
+   "best_score": 0.99
+  },
+  {
+   "term": "C0022346",
+   "concept": "Icterus",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "methods": 1
+   },
+   "forms": {
+    "jaundice": 1
+   },
+   "best_score": 0.947
+  },
+  {
+   "term": "C0034063",
+   "concept": "Pulmonary Edema",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "methods": 1
+   },
+   "forms": {
+    "pulmonary edema": 1
+   },
+   "best_score": 0.984
+  },
+  {
+   "term": "C0035078",
+   "concept": "Kidney Failure",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "renal insufficiency": 1
+   },
+   "best_score": 0.963
+  },
+  {
+   "term": "C0035410",
+   "concept": "Rhabdomyolysis",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "rhabdomyolysis": 1
+   },
+   "best_score": 0.976
+  },
+  {
+   "term": "C0036572",
+   "concept": "Seizures",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "methods": 1
+   },
+   "forms": {
+    "convulsions": 1
+   },
+   "best_score": 0.947
+  },
+  {
+   "term": "C0036974",
+   "concept": "Shock",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "methods": 1
+   },
+   "forms": {
+    "shock": 1
+   },
+   "best_score": 0.998
+  },
+  {
+   "term": "C0042963",
+   "concept": "Vomiting",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 1,
+   "mentions_affirmed": 0,
+   "sections": {
+    "results": 1
+   },
+   "forms": {
+    "vomiting": 1
+   },
+   "best_score": 0.957
+  },
+  {
+   "term": "C0221423",
+   "concept": "Illness (finding)",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 1,
+   "mentions_affirmed": 0,
+   "sections": {
+    "methods": 1
+   },
+   "forms": {
+    "illness": 1
+   },
+   "best_score": 0.967
+  },
+  {
+   "term": "C0242656",
+   "concept": "Disease Progression",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results": 1
+   },
+   "forms": {
+    "progression": 1
+   },
+   "best_score": 0.971
+  },
+  {
+   "term": "C0268030",
+   "concept": "Acidemia",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results": 1
+   },
+   "forms": {
+    "acidemia": 1
+   },
+   "best_score": 0.977
+  },
+  {
+   "term": "C0684256",
+   "concept": "Bacterial sepsis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "bacterial sepsis": 1
+   },
+   "best_score": 0.967
+  },
+  {
+   "term": "C0795692",
+   "concept": "Hyperlactatemia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "methods": 1
+   },
+   "forms": {
+    "hyperlactatemia": 1
+   },
+   "best_score": 0.97
+  },
+  {
+   "term": "C1565489",
+   "concept": "Renal Insufficiency",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "renal dysfunction": 1
+   },
+   "best_score": 0.943
+  },
+  {
+   "term": "C3263722",
+   "concept": "Traumatic AND/OR non-traumatic injury",
+   "semantic_types": [
+    "Injury or Poisoning"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "injury": 1
+   },
+   "best_score": 0.971
+  }
+ ]
+}

@@ -1,0 +1,724 @@
+{
+ "id": "CB282",
+ "document": "data/markdown/CB282.md",
+ "source_format": "pdf",
+ "translated": false,
+ "words": 4772,
+ "run_utc": "2026-10-30T05:35:50+00:00",
+ "threshold": 0.85,
+ "kept_types": [
+  "T019",
+  "T020",
+  "T037",
+  "T046",
+  "T047",
+  "T048",
+  "T049",
+  "T050",
+  "T184",
+  "T190",
+  "T191"
+ ],
+ "term_count": 39,
+ "terms": [
+  {
+   "term": "C0004576",
+   "concept": "Babesiosis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 41,
+   "mentions_negated": 3,
+   "mentions_affirmed": 38,
+   "sections": {
+    "results_discussion": 24,
+    "introduction": 13,
+    "unlabelled": 2,
+    "title": 1,
+    "methods": 1
+   },
+   "forms": {
+    "babesiosis": 36,
+    "babesia infection": 4,
+    "babesia infections": 1
+   },
+   "best_score": 0.972
+  },
+  {
+   "term": "C0040034",
+   "concept": "Thrombocytopenia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 18,
+   "mentions_negated": 2,
+   "mentions_affirmed": 16,
+   "sections": {
+    "results_discussion": 16,
+    "unlabelled": 1,
+    "introduction": 1
+   },
+   "forms": {
+    "thrombocytopenia": 18
+   },
+   "best_score": 0.98
+  },
+  {
+   "term": "C0002871",
+   "concept": "Anemia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 17,
+   "mentions_negated": 2,
+   "mentions_affirmed": 15,
+   "sections": {
+    "results_discussion": 14,
+    "unlabelled": 1,
+    "introduction": 1,
+    "methods": 1
+   },
+   "forms": {
+    "anemia": 16,
+    "anaemia": 1
+   },
+   "best_score": 0.977
+  },
+  {
+   "term": "C0009450",
+   "concept": "Communicable Diseases",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 17,
+   "mentions_negated": 2,
+   "mentions_affirmed": 15,
+   "sections": {
+    "results_discussion": 11,
+    "unlabelled": 3,
+    "introduction": 3
+   },
+   "forms": {
+    "infection": 16,
+    "infectious": 1
+   },
+   "best_score": 0.97
+  },
+  {
+   "term": "C0023530",
+   "concept": "Leukopenia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 12,
+   "mentions_negated": 1,
+   "mentions_affirmed": 11,
+   "sections": {
+    "results_discussion": 11,
+    "unlabelled": 1
+   },
+   "forms": {
+    "leukopenia": 12
+   },
+   "best_score": 0.958
+  },
+  {
+   "term": "C0012634",
+   "concept": "Disease",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 11,
+   "mentions_negated": 1,
+   "mentions_affirmed": 10,
+   "sections": {
+    "introduction": 4,
+    "methods": 3,
+    "results_discussion": 3,
+    "unlabelled": 1
+   },
+   "forms": {
+    "disease": 10,
+    "diseases": 1
+   },
+   "best_score": 0.987
+  },
+  {
+   "term": "C0242723",
+   "concept": "Parasitemia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 6,
+   "mentions_negated": 0,
+   "mentions_affirmed": 6,
+   "sections": {
+    "introduction": 2,
+    "results_discussion": 2,
+    "unlabelled": 1,
+    "methods": 1
+   },
+   "forms": {
+    "parasitemia": 6
+   },
+   "best_score": 0.992
+  },
+  {
+   "term": "C0021368",
+   "concept": "Inflammation",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 5,
+   "mentions_negated": 1,
+   "mentions_affirmed": 4,
+   "sections": {
+    "results_discussion": 3,
+    "introduction": 2
+   },
+   "forms": {
+    "inflammation": 5
+   },
+   "best_score": 0.958
+  },
+  {
+   "term": "C0024312",
+   "concept": "Lymphopenia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 5,
+   "mentions_negated": 0,
+   "mentions_affirmed": 5,
+   "sections": {
+    "results_discussion": 4,
+    "unlabelled": 1
+   },
+   "forms": {
+    "lymphopenia": 5
+   },
+   "best_score": 0.991
+  },
+  {
+   "term": "C0242656",
+   "concept": "Disease Progression",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 4,
+   "mentions_negated": 0,
+   "mentions_affirmed": 4,
+   "sections": {
+    "results_discussion": 3,
+    "introduction": 1
+   },
+   "forms": {
+    "disease progression": 4
+   },
+   "best_score": 0.977
+  },
+  {
+   "term": "C1640363",
+   "concept": "Vector Borne Diseases",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 4,
+   "mentions_negated": 0,
+   "mentions_affirmed": 4,
+   "sections": {
+    "results_discussion": 3,
+    "unlabelled": 1
+   },
+   "forms": {
+    "vector-borne diseases": 3,
+    "vector-borne disease": 1
+   },
+   "best_score": 0.957
+  },
+  {
+   "term": "C0002878",
+   "concept": "Anemia, Hemolytic",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 3,
+   "mentions_negated": 1,
+   "mentions_affirmed": 2,
+   "sections": {
+    "introduction": 1,
+    "methods": 1,
+    "results_discussion": 1
+   },
+   "forms": {
+    "hemolytic anemia": 3
+   },
+   "best_score": 0.978
+  },
+  {
+   "term": "C0019054",
+   "concept": "Hemolysis (disorder)",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "results_discussion": 2,
+    "introduction": 1
+   },
+   "forms": {
+    "hemolysis": 3
+   },
+   "best_score": 0.991
+  },
+  {
+   "term": "C0302086",
+   "concept": "Erythrocyte destruction",
+   "semantic_types": [
+    "Cell or Molecular Dysfunction"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "results_discussion": 3
+   },
+   "forms": {
+    "erythrocyte destruction": 3
+   },
+   "best_score": 0.977
+  },
+  {
+   "term": "C0699748",
+   "concept": "Pathogenesis",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "introduction": 2,
+    "results_discussion": 1
+   },
+   "forms": {
+    "pathogenesis": 3
+   },
+   "best_score": 0.983
+  },
+  {
+   "term": "C0015967",
+   "concept": "Fever",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "introduction": 1,
+    "methods": 1
+   },
+   "forms": {
+    "fever": 2
+   },
+   "best_score": 0.962
+  },
+  {
+   "term": "C0020517",
+   "concept": "Hypersensitivity",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "introduction": 2
+   },
+   "forms": {
+    "sensitivity": 2
+   },
+   "best_score": 0.997
+  },
+  {
+   "term": "C0022346",
+   "concept": "Icterus",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "introduction": 1,
+    "methods": 1
+   },
+   "forms": {
+    "jaundice": 1,
+    "icteric": 1
+   },
+   "best_score": 0.958
+  },
+  {
+   "term": "C0030312",
+   "concept": "Pancytopenia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "results_discussion": 2
+   },
+   "forms": {
+    "pancytopenia": 2
+   },
+   "best_score": 0.99
+  },
+  {
+   "term": "C0280962",
+   "concept": "Bone Marrow Suppression",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 1,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results_discussion": 2
+   },
+   "forms": {
+    "bone marrow suppression": 1,
+    "marrow suppression": 1
+   },
+   "best_score": 0.977
+  },
+  {
+   "term": "C0851162",
+   "concept": "Infections of musculoskeletal system",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 1,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 2
+   },
+   "forms": {
+    "infections": 2
+   },
+   "best_score": 0.971
+  },
+  {
+   "term": "C3686749",
+   "concept": "Physiologic leukocytosis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "results_discussion": 2
+   },
+   "forms": {
+    "stress leukogram": 2
+   },
+   "best_score": 0.957
+  },
+  {
+   "term": "C0003123",
+   "concept": "Anorexia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "methods": 1
+   },
+   "forms": {
+    "loss of appetite": 1
+   },
+   "best_score": 0.981
+  },
+  {
+   "term": "C0004093",
+   "concept": "Asthenia",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "weakness": 1
+   },
+   "best_score": 0.975
+  },
+  {
+   "term": "C0005658",
+   "concept": "bite injury",
+   "semantic_types": [
+    "Injury or Poisoning"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "bites": 1
+   },
+   "best_score": 0.982
+  },
+  {
+   "term": "C0005779",
+   "concept": "Blood Coagulation Disorders",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "coagulation disorders": 1
+   },
+   "best_score": 0.965
+  },
+  {
+   "term": "C0009566",
+   "concept": "Complication",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "complications": 1
+   },
+   "best_score": 0.977
+  },
+  {
+   "term": "C0010828",
+   "concept": "Cytopenia",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results_discussion": 1
+   },
+   "forms": {
+    "cytopenia": 1
+   },
+   "best_score": 0.992
+  },
+  {
+   "term": "C0012739",
+   "concept": "Disseminated Intravascular Coagulation",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "consumptive coagulopathy": 1
+   },
+   "best_score": 0.972
+  },
+  {
+   "term": "C0023380",
+   "concept": "Lethargy",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "methods": 1
+   },
+   "forms": {
+    "lethargy": 1
+   },
+   "best_score": 0.987
+  },
+  {
+   "term": "C0024530",
+   "concept": "Malaria",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "malaria": 1
+   },
+   "best_score": 0.996
+  },
+  {
+   "term": "C0026766",
+   "concept": "Multiple Organ Failure",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "multiple organ failure": 1
+   },
+   "best_score": 0.981
+  },
+  {
+   "term": "C0037088",
+   "concept": "Signs and Symptoms",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results_discussion": 1
+   },
+   "forms": {
+    "finding": 1
+   },
+   "best_score": 0.994
+  },
+  {
+   "term": "C0205339",
+   "concept": "Reinfection",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "reinfections": 1
+   },
+   "best_score": 0.967
+  },
+  {
+   "term": "C0242606",
+   "concept": "Oxidative Stress",
+   "semantic_types": [
+    "Cell or Molecular Dysfunction"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "oxidative stress": 1
+   },
+   "best_score": 0.985
+  },
+  {
+   "term": "C0242781",
+   "concept": "disease transmission",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "unlabelled": 1
+   },
+   "forms": {
+    "transmitted": 1
+   },
+   "best_score": 0.972
+  },
+  {
+   "term": "C0276854",
+   "concept": "Infection by Babesia canis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "unlabelled": 1
+   },
+   "forms": {
+    "canine babesiosis": 1
+   },
+   "best_score": 0.969
+  },
+  {
+   "term": "C0442886",
+   "concept": "Secondary Infections",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results_discussion": 1
+   },
+   "forms": {
+    "secondary infections": 1
+   },
+   "best_score": 0.976
+  },
+  {
+   "term": "C1817978",
+   "concept": "acute inflammatory response",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results_discussion": 1
+   },
+   "forms": {
+    "acute inflammatory responses": 1
+   },
+   "best_score": 0.935
+  }
+ ]
+}

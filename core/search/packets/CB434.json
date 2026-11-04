@@ -1,0 +1,107 @@
+{
+ "id": "CB434",
+ "filename": "CB434_2012_nt-probnp-cardiac-troponin-i-virulent.md",
+ "key": "PMID:22884910",
+ "record": {
+  "pmid": "22884910",
+  "pmcid": null,
+  "doi": "10.1016/j.vetpar.2012.07.021",
+  "title": "NT-ProBNP and cardiac troponin I in virulent canine babesiosis.",
+  "authors": [
+   "Lobetti R",
+   "Kirberger R",
+   "Keller N",
+   "Kettner F",
+   "Dvir E"
+  ],
+  "journal": "Veterinary parasitology",
+  "journal_abbrev": "Vet Parasitol",
+  "volume": "190",
+  "issue": "3-4",
+  "pages": "333-9",
+  "language": [
+   "eng"
+  ],
+  "issue_date": "2012-12-21",
+  "issue_date_precision": "day",
+  "epub_date": "2012-07-26",
+  "pubmed_entry_date": "2012-08-14",
+  "first_pub_date": "2012-07-26",
+  "publication_types": [
+   "Journal Article"
+  ],
+  "mesh": [
+   "Anemia, Hemolytic, Autoimmune",
+   "Animals",
+   "Babesiosis",
+   "Biomarkers",
+   "Dog Diseases",
+   "Dogs",
+   "Natriuretic Peptide, Brain",
+   "Peptide Fragments",
+   "Troponin I"
+  ],
+  "keywords": [],
+  "abstract": "Although cardiac pathology and consequently elevated serum cardiac troponin I (cTnI) have been reported, clinically it remains difficult to diagnose cardiac involvement in canine babesiosis. Thus the use of cardiac biomarkers would be useful in determining if a dog with babesiosis also has concurrent cardiac dysfunction. The objectives of this study were to determine plasma N terminal brain natriuretic peptide (NT-proBNP) in canine babesiosis and if it is correlated with cTnI. Three groups of dogs with babesiosis were used: mild uncomplicated (Group 1), severe uncomplicated (Group 2), and complicated (Group 3), and a control group (Group 4) with 15 dogs per group. Each animal had the following determined: serum urea and creatinine, urea: creatinine ratio, cystatin-C, cTnI, blood lactate, plasma NT-proBNP, fractional shortening (FS), and blood pressure. The median NT-proBNP value in Groups 1-4 was 246, 650, 638, and 106 pmol/l. All 3 babesiosis groups had a statistically elevated NT-proBNP level compared to the control group and Groups 2 and 3 showed significantly higher values compared to Group 1. Median cTnI in Group 1-3 was 0.39, 0.4, and 1.45 ng/ml, respectively with the control group having concentrations below the detection limit (0.2 ng/ml). There was a significant difference in cTnI concentration between the control group and group 3 but no statistical difference between the other babesiosis groups. The study concluded that dogs with babesiosis showed elevated levels NT-proBNP and the more severe the disease process the greater the elevation. This elevation is earlier or independent of the increased cTnI.",
+  "corrections": [],
+  "epmc_first_pub_date": "2012-07-26",
+  "is_oa": "N",
+  "has_suppl": "N",
+  "found_by": [
+   "EP1_broad",
+   "PM1_broad",
+   "PM3_mechanism"
+  ],
+  "in_window": true,
+  "online_vs_issue": "online 2012-07-26; issue 2012-12-21 (day)",
+  "key": "PMID:22884910",
+  "source_files": [
+   "candidates.jsonl"
+  ]
+ },
+ "screening": {
+  "key": "PMID:22884910",
+  "decision": "include",
+  "include_type": "primary",
+  "exclude_reason": null,
+  "primary_category": "CAR",
+  "secondary_tags": [
+   "SEV"
+  ],
+  "species": "B. rossi (virulent canine babesiosis, South Africa)",
+  "rationale": "NT-proBNP and cTnI measured in 45 babesiosis dogs of three severity grades versus 15 controls, with echocardiographic and renal/lactate data; a cardiac biomarker and severity study.",
+  "stage": "screen",
+  "batch": "r4_15.md",
+  "screening_round": "r4"
+ },
+ "fulltext_check": {
+  "key": "PMID:22884910",
+  "pmcid": null,
+  "checked": "2026-10-28",
+  "fulltext_status": "no_pmcid"
+ },
+ "duplicate_records": [
+  {
+   "key": "REF:ntcardiactroponininvirulentcaninebabesiosis",
+   "basis": "Reference-list entry resolved to Lobetti et al. 2012 (NT-proBNP and cardiac troponin I); PubMed record retained",
+   "record": {
+    "pmid": null,
+    "doi": null,
+    "title": "NT cardiac troponin in virulent canine babesiosis",
+    "journal": null,
+    "first_pub_date": null,
+    "year": "2012",
+    "abstract": null,
+    "found_by": [
+     "citation:backward:29166283"
+    ],
+    "unresolved": true,
+    "source_id": "REF:ntcardiactroponininvirulentcaninebabesiosis",
+    "key": "REF:ntcardiactroponininvirulentcaninebabesiosis",
+    "source_files": [
+     "candidates_r2.jsonl"
+    ]
+   }
+  }
+ ]
+}

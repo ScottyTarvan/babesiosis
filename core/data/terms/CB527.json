@@ -1,0 +1,410 @@
+{
+ "id": "CB527",
+ "document": "data/markdown/CB527.md",
+ "source_format": "jats_xml",
+ "translated": false,
+ "words": 2230,
+ "run_utc": "2026-10-30T05:36:50+00:00",
+ "threshold": 0.85,
+ "kept_types": [
+  "T019",
+  "T020",
+  "T037",
+  "T046",
+  "T047",
+  "T048",
+  "T049",
+  "T050",
+  "T184",
+  "T190",
+  "T191"
+ ],
+ "term_count": 22,
+ "terms": [
+  {
+   "term": "C0004576",
+   "concept": "Babesiosis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 9,
+   "mentions_negated": 1,
+   "mentions_affirmed": 8,
+   "sections": {
+    "conclusion": 6,
+    "abstract": 1,
+    "introduction": 1,
+    "case": 1
+   },
+   "forms": {
+    "babesiosis": 9
+   },
+   "best_score": 0.972
+  },
+  {
+   "term": "C0002871",
+   "concept": "Anemia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 4,
+   "mentions_negated": 1,
+   "mentions_affirmed": 3,
+   "sections": {
+    "case": 2,
+    "introduction": 1,
+    "conclusion": 1
+   },
+   "forms": {
+    "anemia": 4
+   },
+   "best_score": 0.974
+  },
+  {
+   "term": "C0024312",
+   "concept": "Lymphopenia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 4,
+   "mentions_negated": 0,
+   "mentions_affirmed": 4,
+   "sections": {
+    "case": 4
+   },
+   "forms": {
+    "lymphocytopenia": 4
+   },
+   "best_score": 0.993
+  },
+  {
+   "term": "C0851162",
+   "concept": "Infections of musculoskeletal system",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 4,
+   "mentions_negated": 0,
+   "mentions_affirmed": 4,
+   "sections": {
+    "conclusion": 4
+   },
+   "forms": {
+    "infections": 4
+   },
+   "best_score": 0.971
+  },
+  {
+   "term": "C0009450",
+   "concept": "Communicable Diseases",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "introduction": 2,
+    "case": 1
+   },
+   "forms": {
+    "infection": 3
+   },
+   "best_score": 0.962
+  },
+  {
+   "term": "C0023380",
+   "concept": "Lethargy",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "case": 3
+   },
+   "forms": {
+    "lethargy": 2,
+    "lethargic": 1
+   },
+   "best_score": 0.989
+  },
+  {
+   "term": "C0040034",
+   "concept": "Thrombocytopenia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "abstract": 1,
+    "introduction": 1,
+    "case": 1
+   },
+   "forms": {
+    "thrombocytopenia": 3
+   },
+   "best_score": 0.98
+  },
+  {
+   "term": "C0015967",
+   "concept": "Fever",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "introduction": 1,
+    "conclusion": 1
+   },
+   "forms": {
+    "fever": 2
+   },
+   "best_score": 0.962
+  },
+  {
+   "term": "C0036572",
+   "concept": "Seizures",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "case": 2
+   },
+   "forms": {
+    "seizures": 2
+   },
+   "best_score": 0.945
+  },
+  {
+   "term": "C0232462",
+   "concept": "Decrease in appetite",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "introduction": 1,
+    "conclusion": 1
+   },
+   "forms": {
+    "inappetence": 2
+   },
+   "best_score": 0.978
+  },
+  {
+   "term": "C0003123",
+   "concept": "Anorexia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "case": 1
+   },
+   "forms": {
+    "lack of appetite": 1
+   },
+   "best_score": 0.98
+  },
+  {
+   "term": "C0011175",
+   "concept": "Dehydration",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 1,
+   "mentions_affirmed": 0,
+   "sections": {
+    "case": 1
+   },
+   "forms": {
+    "dehydration": 1
+   },
+   "best_score": 0.957
+  },
+  {
+   "term": "C0012634",
+   "concept": "Disease",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "conclusion": 1
+   },
+   "forms": {
+    "disease": 1
+   },
+   "best_score": 0.987
+  },
+  {
+   "term": "C0014591",
+   "concept": "Epistaxis",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "case": 1
+   },
+   "forms": {
+    "epistaxis": 1
+   },
+   "best_score": 0.976
+  },
+  {
+   "term": "C0023530",
+   "concept": "Leukopenia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "case": 1
+   },
+   "forms": {
+    "leukopenia": 1
+   },
+   "best_score": 0.958
+  },
+  {
+   "term": "C0024348",
+   "concept": "Lysis",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "case": 1
+   },
+   "forms": {
+    "lysed": 1
+   },
+   "best_score": 0.979
+  },
+  {
+   "term": "C0029463",
+   "concept": "Osteosarcoma",
+   "semantic_types": [
+    "Neoplastic Process"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "case": 1
+   },
+   "forms": {
+    "osteosarcoma": 1
+   },
+   "best_score": 0.985
+  },
+  {
+   "term": "C0030193",
+   "concept": "Pain",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "case": 1
+   },
+   "forms": {
+    "pain": 1
+   },
+   "best_score": 0.975
+  },
+  {
+   "term": "C0037088",
+   "concept": "Signs and Symptoms",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 1,
+   "mentions_affirmed": 0,
+   "sections": {
+    "case": 1
+   },
+   "forms": {
+    "finding": 1
+   },
+   "best_score": 0.994
+  },
+  {
+   "term": "C0038353",
+   "concept": "Gastric Dilatation",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "case": 1
+   },
+   "forms": {
+    "gastric dilatation": 1
+   },
+   "best_score": 0.978
+  },
+  {
+   "term": "C0276854",
+   "concept": "Infection by Babesia canis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "canine babesiosis": 1
+   },
+   "best_score": 0.969
+  },
+  {
+   "term": "C5441521",
+   "concept": "Complaint (finding)",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "case": 1
+   },
+   "forms": {
+    "complaints": 1
+   },
+   "best_score": 0.98
+  }
+ ]
+}

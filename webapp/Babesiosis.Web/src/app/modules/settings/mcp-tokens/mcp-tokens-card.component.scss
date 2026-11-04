@@ -1,0 +1,146 @@
+:host {
+  display: block;
+  min-width: 0;
+}
+
+.fs-mcp-tokens__head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.fs-mcp-tokens__title {
+  margin: 0;
+  font: var(--fs-guide-text-title);
+  letter-spacing: var(--fs-guide-tracking);
+  color: rgb(var(--fs-color-ink-strong));
+}
+
+.fs-mcp-tokens__sub {
+  margin: 4px 0 0;
+  // 12px text: ink, not ink-soft (ink-soft is disallowed at this size).
+  font: var(--fs-guide-text-micro);
+  letter-spacing: var(--fs-guide-tracking);
+  color: rgb(var(--fs-color-ink));
+}
+
+.fs-mcp-tokens__banner {
+  display: block;
+  margin-bottom: 12px;
+}
+
+// Setup instructions disclosure inside the info banner (§3.13).
+.fs-mcp-tokens__help-toggle {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  background: none;
+  text-align: left;
+  font: var(--fs-guide-text-body-strong);
+  letter-spacing: var(--fs-guide-tracking);
+  color: rgb(var(--fs-color-info-fg));
+  cursor: pointer;
+
+  &:focus-visible {
+    outline: 2px solid rgb(var(--fs-color-info-fg) / 0.5);
+    outline-offset: 2px;
+    border-radius: var(--fs-radius-sm);
+  }
+}
+
+.fs-mcp-tokens__help-chev {
+  transition: transform var(--fs-motion-default) ease;
+
+  &--open {
+    transform: rotate(180deg);
+  }
+}
+
+.fs-mcp-tokens__help {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.fs-mcp-tokens__help-steps {
+  margin: 0;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.fs-mcp-tokens__help-label {
+  margin-top: 4px;
+  font: var(--fs-guide-text-label);
+  letter-spacing: var(--fs-guide-tracking);
+  color: rgb(var(--fs-color-ink-strong));
+}
+
+.fs-mcp-tokens__help-text {
+  margin: 0;
+}
+
+// Hosted-only caveat under each example (§3.13): smaller step, ink not ink-soft at 12px.
+.fs-mcp-tokens__help-note {
+  margin: 0;
+  font: var(--fs-guide-text-micro);
+  letter-spacing: var(--fs-guide-tracking);
+  color: rgb(var(--fs-color-ink));
+}
+
+// Bootstrap paints <code> in its pink accent; inside the info banner it reads as ink.
+.fs-mcp-tokens__help code {
+  font-family: var(--fs-font-mono);
+  font-size: 13px;
+  color: rgb(var(--fs-color-ink-strong));
+}
+
+.fs-mcp-tokens__help-note code {
+  font-size: 12px;
+}
+
+.fs-mcp-tokens__code {
+  margin: 0;
+  padding: 8px 10px;
+  border: 1px solid rgb(var(--fs-color-line));
+  border-radius: var(--fs-radius-md);
+  background-color: rgb(var(--fs-color-surface));
+  color: rgb(var(--fs-color-ink));
+  font-family: var(--fs-font-mono);
+  font-size: 13px;
+  line-height: 1.5;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+// A handful of rows: the grid sizes to its content instead of filling the viewport.
+.fs-mcp-tokens__grid {
+  min-width: 0;
+}
+
+.fs-mcp-tokens__row-actions {
+  display: flex;
+  justify-content: center;
+}
+
+.fs-mcp-tokens__copy-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  > :first-child {
+    flex: 1 1 auto;
+    min-width: 0;
+  }
+
+  &--top {
+    align-items: flex-start;
+  }
+}

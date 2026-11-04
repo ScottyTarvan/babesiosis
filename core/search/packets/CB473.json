@@ -1,0 +1,124 @@
+{
+ "id": "CB473",
+ "filename": "CB473_2014_increased-concentration-serum-tnf-alpha-correlations.md",
+ "key": "PMID:24553975",
+ "record": {
+  "pmid": "24553975",
+  "pmcid": "PMC3951886",
+  "doi": "10.1007/s00436-014-3792-1",
+  "title": "Increased concentration of serum TNF alpha and its correlations with arterial blood pressure and indices of renal damage in dogs infected with Babesia canis.",
+  "authors": [
+   "Zygner W",
+   "Gójska-Zygner O",
+   "Bąska P",
+   "Długosz E"
+  ],
+  "journal": "Parasitology research",
+  "journal_abbrev": "Parasitol Res",
+  "volume": "113",
+  "issue": "4",
+  "pages": "1499-503",
+  "language": [
+   "eng"
+  ],
+  "issue_date": "2014-04-01",
+  "issue_date_precision": "month",
+  "epub_date": "2014-02-20",
+  "pubmed_entry_date": "2014-02-21",
+  "first_pub_date": "2014-02-20",
+  "publication_types": [
+   "Journal Article"
+  ],
+  "mesh": [
+   "Animals",
+   "Babesia",
+   "Babesiosis",
+   "Blood Pressure",
+   "Creatinine",
+   "Dog Diseases",
+   "Dogs",
+   "Female",
+   "Kidney",
+   "Kidney Diseases",
+   "Kidney Function Tests",
+   "Male",
+   "Tumor Necrosis Factor-alpha"
+  ],
+  "keywords": [],
+  "abstract": "Canine babesiosis is a tick-borne disease caused by parasites of the genus Babesia. Tumour necrosis factor alpha (TNF-α) is a cytokine that plays a role in the pathogenesis of canine babesiosis. In this study, the authors determined the concentration of serum TNF-α in 11 dogs infected with Babesia canis and calculated Spearman's rank correlations between the concentration of TNF-α and blood pressure, and between TNF-α and indices of renal damage such as: fractional excretion of sodium (FE(Na(+))), urinary creatinine to serum creatinine ratio (UCr/SCr), renal failure index (RFI), urine specific gravity (USG) and urinary protein to urinary creatinine ratio (UPC). The results demonstrated statistically significant strong negative correlations between TNF-α and systolic arterial pressure (r = -0.7246), diastolic arterial pressure (r = -0.6642) and mean arterial pressure (r = -0.7151). Serum TNF-α concentration was also statistically significantly correlated with FE(Na(+)) (r = 0.7056), UCr/SCr (r = -0.8199), USG (r = -0.8075) and duration of the disease (r = 0.6767). The results of this study show there is an increase of serum TNF-α concentration during canine babesiosis, and the increased TNF-α concentration has an influence on the development of hypotension and renal failure in canine babesiosis. This probably results from the fact that TNF-α is involved in the production of nitric oxide and induction of vasodilation and hypotension, which may cause renal ischaemia and hypoxia, and finally acute tubular necrosis and renal failure.",
+  "corrections": [],
+  "epmc_first_pub_date": "2014-02-20",
+  "is_oa": "Y",
+  "has_suppl": "N",
+  "found_by": [
+   "EP1_broad",
+   "EP2_species",
+   "PM1_broad",
+   "PM2_species",
+   "PM3_mechanism"
+  ],
+  "in_window": true,
+  "online_vs_issue": "online 2014-02-20; issue 2014-04-01 (month)",
+  "key": "PMID:24553975",
+  "source_files": [
+   "candidates.jsonl"
+  ]
+ },
+ "screening": {
+  "key": "PMID:24553975",
+  "decision": "include",
+  "include_type": "primary",
+  "exclude_reason": null,
+  "primary_category": "REN",
+  "secondary_tags": [
+   "INF",
+   "CAR"
+  ],
+  "species": "B. canis (naturally infected)",
+  "rationale": "Serum TNF-alpha correlated with arterial pressure and renal damage indices (FENa, UCr/SCr, RFI, USG, UPC) in 11 infected dogs. Mechanistic link between cytokine, hypotension and renal failure.",
+  "stage": "screen",
+  "batch": "r4_20.md",
+  "screening_round": "r4"
+ },
+ "fulltext_check": {
+  "key": "PMID:24553975",
+  "pmcid": "PMC3951886",
+  "checked": "2026-10-28",
+  "fulltext_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC3951886/fullTextXML",
+  "fulltext_status": 200,
+  "data_availability": [],
+  "supplementary": [],
+  "repository_links": [],
+  "section_titles": [
+   "Introduction",
+   "Materials and methods",
+   "Results",
+   "Discussion"
+  ],
+  "has_body": true
+ },
+ "duplicate_records": [
+  {
+   "key": "REF:increasedconcentrationofserumtnfalphaanditscorrelationswitha",
+   "basis": "Reference-list entry resolved to Zygner et al. 2014, Parasitol Res 113:1499-503; PubMed record retained",
+   "record": {
+    "pmid": null,
+    "doi": null,
+    "title": "Increased concentration of serum TNF alpha and its correlations with arterial blood pressure and indices of renal damage in dogs infect with Babesia canis",
+    "journal": null,
+    "first_pub_date": null,
+    "year": "2014",
+    "abstract": null,
+    "found_by": [
+     "citation:backward:29558219"
+    ],
+    "unresolved": true,
+    "source_id": "REF:increasedconcentrationofserumtnfalphaanditscorrelationswitha",
+    "key": "REF:increasedconcentrationofserumtnfalphaanditscorrelationswitha",
+    "source_files": [
+     "candidates_r2.jsonl"
+    ]
+   }
+  }
+ ]
+}

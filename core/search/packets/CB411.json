@@ -1,0 +1,58 @@
+{
+ "id": "CB411",
+ "filename": "CB411_2011_tnf-il-6-il-10-babesia.md",
+ "key": "https://openalex.org/W3205397742",
+ "record": {
+  "pmid": null,
+  "pmcid": null,
+  "doi": null,
+  "title": "TNF–α, IL–6, and IL–10 in dogs with Babesia canis infection",
+  "journal": null,
+  "authors": [
+   "Iva Mayer",
+   "Ivana Kiš",
+   "Igor Štoković",
+   "Krešimir Bendelja",
+   "Vladimir Mrljak"
+  ],
+  "first_pub_date": "2011-01-01",
+  "type": "article",
+  "language": [
+   "en"
+  ],
+  "abstract": null,
+  "abstract_source": "OpenAlex abstract_inverted_index (reconstructed)",
+  "source_id": "https://openalex.org/W3205397742",
+  "src": "OPENALEX",
+  "found_by": [
+   "OA:title_and_abstract"
+  ],
+  "in_window": true,
+  "key": "https://openalex.org/W3205397742",
+  "source_files": [
+   "candidates_r3.jsonl"
+  ]
+ },
+ "screening": {
+  "key": "https://openalex.org/W3205397742",
+  "decision": "uncertain",
+  "include_type": null,
+  "exclude_reason": null,
+  "primary_category": "INF",
+  "secondary_tags": [
+   "SEV"
+  ],
+  "species": "B. canis (status unspecified)",
+  "rationale": "From the title and OpenAlex metadata (Mayer, Kis, Stokovic, Bendelja, Mrljak; CROSBI record 556443, which sits behind a bot check, so there is no abstract): measuring host cytokines TNF-alpha, IL-6 and IL-10 in B. canis-infected dogs is squarely on topic. The record may be a congress abstract rather than a peer-reviewed paper, so publication type needs checking at full text.",
+  "stage": "adjudicated",
+  "batch": "r4_11.md",
+  "first_decision": "uncertain",
+  "screening_round": "r4"
+ },
+ "fulltext_check": {
+  "key": "https://openalex.org/W3205397742",
+  "pmcid": null,
+  "checked": "2026-10-28",
+  "fulltext_status": "no_pmcid"
+ }
+}

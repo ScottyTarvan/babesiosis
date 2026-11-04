@@ -1,0 +1,767 @@
+{
+ "id": "CB131",
+ "document": "data/markdown/CB131.md",
+ "source_format": "jats_xml",
+ "translated": false,
+ "words": 3318,
+ "run_utc": "2026-10-30T05:34:30+00:00",
+ "threshold": 0.85,
+ "kept_types": [
+  "T019",
+  "T020",
+  "T037",
+  "T046",
+  "T047",
+  "T048",
+  "T049",
+  "T050",
+  "T184",
+  "T190",
+  "T191"
+ ],
+ "term_count": 41,
+ "terms": [
+  {
+   "term": "C0004576",
+   "concept": "Babesiosis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 16,
+   "mentions_negated": 1,
+   "mentions_affirmed": 15,
+   "sections": {
+    "abstract": 5,
+    "introduction": 5,
+    "discussion": 4,
+    "methods": 1,
+    "conclusion": 1
+   },
+   "forms": {
+    "babesiosis": 11,
+    "babesia infection": 4,
+    "babesia sp. infection": 1
+   },
+   "best_score": 0.972
+  },
+  {
+   "term": "C0040034",
+   "concept": "Thrombocytopenia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 16,
+   "mentions_negated": 2,
+   "mentions_affirmed": 14,
+   "sections": {
+    "discussion": 6,
+    "results": 5,
+    "abstract": 2,
+    "introduction": 1,
+    "methods": 1,
+    "conclusion": 1
+   },
+   "forms": {
+    "thrombocytopenia": 16
+   },
+   "best_score": 0.98
+  },
+  {
+   "term": "C0023530",
+   "concept": "Leukopenia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 8,
+   "mentions_negated": 2,
+   "mentions_affirmed": 6,
+   "sections": {
+    "results": 3,
+    "discussion": 3,
+    "introduction": 2
+   },
+   "forms": {
+    "neutropenia": 5,
+    "leukopenia": 2,
+    "leucopenia": 1
+   },
+   "best_score": 0.987
+  },
+  {
+   "term": "C0002871",
+   "concept": "Anemia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 7,
+   "mentions_negated": 3,
+   "mentions_affirmed": 4,
+   "sections": {
+    "discussion": 5,
+    "abstract": 1,
+    "conclusion": 1
+   },
+   "forms": {
+    "anemia": 7
+   },
+   "best_score": 0.974
+  },
+  {
+   "term": "C0021345",
+   "concept": "Infectious Mononucleosis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 6,
+   "mentions_negated": 0,
+   "mentions_affirmed": 6,
+   "sections": {
+    "results": 6
+   },
+   "forms": {
+    "mono": 6
+   },
+   "best_score": 0.998
+  },
+  {
+   "term": "C0003123",
+   "concept": "Anorexia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 5,
+   "mentions_negated": 1,
+   "mentions_affirmed": 4,
+   "sections": {
+    "results": 2,
+    "introduction": 1,
+    "methods": 1,
+    "discussion": 1
+   },
+   "forms": {
+    "anorexia": 5
+   },
+   "best_score": 0.969
+  },
+  {
+   "term": "C0022346",
+   "concept": "Icterus",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 5,
+   "mentions_negated": 1,
+   "mentions_affirmed": 4,
+   "sections": {
+    "results": 2,
+    "introduction": 1,
+    "methods": 1,
+    "discussion": 1
+   },
+   "forms": {
+    "jaundice": 3,
+    "icterus": 1,
+    "icteric": 1
+   },
+   "best_score": 0.958
+  },
+  {
+   "term": "C0024312",
+   "concept": "Lymphopenia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 5,
+   "mentions_negated": 1,
+   "mentions_affirmed": 4,
+   "sections": {
+    "results": 2,
+    "discussion": 2,
+    "introduction": 1
+   },
+   "forms": {
+    "lymphopenia": 5
+   },
+   "best_score": 0.991
+  },
+  {
+   "term": "C0085632",
+   "concept": "Apathy",
+   "semantic_types": [
+    "Mental or Behavioral Dysfunction"
+   ],
+   "mentions": 5,
+   "mentions_negated": 1,
+   "mentions_affirmed": 4,
+   "sections": {
+    "results": 2,
+    "introduction": 1,
+    "methods": 1,
+    "discussion": 1
+   },
+   "forms": {
+    "apathy": 5
+   },
+   "best_score": 0.99
+  },
+  {
+   "term": "C0085702",
+   "concept": "Monocytosis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 5,
+   "mentions_negated": 2,
+   "mentions_affirmed": 3,
+   "sections": {
+    "results": 3,
+    "abstract": 1,
+    "discussion": 1
+   },
+   "forms": {
+    "monocytosis": 5
+   },
+   "best_score": 0.99
+  },
+  {
+   "term": "C0272195",
+   "concept": "Eosinopenia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 5,
+   "mentions_negated": 2,
+   "mentions_affirmed": 3,
+   "sections": {
+    "results": 3,
+    "abstract": 1,
+    "discussion": 1
+   },
+   "forms": {
+    "eosinopenia": 5
+   },
+   "best_score": 0.973
+  },
+  {
+   "term": "C0023518",
+   "concept": "Leukocytosis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 4,
+   "mentions_negated": 2,
+   "mentions_affirmed": 2,
+   "sections": {
+    "results": 2,
+    "discussion": 2
+   },
+   "forms": {
+    "leukocytosis": 4
+   },
+   "best_score": 0.979
+  },
+  {
+   "term": "C0272192",
+   "concept": "Familial eosinophilia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 4,
+   "mentions_negated": 0,
+   "mentions_affirmed": 4,
+   "sections": {
+    "results": 4
+   },
+   "forms": {
+    "eos": 4
+   },
+   "best_score": 0.991
+  },
+  {
+   "term": "C0009450",
+   "concept": "Communicable Diseases",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "discussion": 2,
+    "introduction": 1
+   },
+   "forms": {
+    "infection": 3
+   },
+   "best_score": 0.962
+  },
+  {
+   "term": "C0012634",
+   "concept": "Disease",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "discussion": 2,
+    "conclusion": 1
+   },
+   "forms": {
+    "disease": 3
+   },
+   "best_score": 0.987
+  },
+  {
+   "term": "C0015967",
+   "concept": "Fever",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "introduction": 1,
+    "methods": 1,
+    "discussion": 1
+   },
+   "forms": {
+    "fever": 3
+   },
+   "best_score": 0.962
+  },
+  {
+   "term": "C0000768",
+   "concept": "Congenital Abnormality",
+   "semantic_types": [
+    "Congenital Abnormality"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "abstract": 1,
+    "introduction": 1
+   },
+   "forms": {
+    "abnormalities": 2
+   },
+   "best_score": 0.987
+  },
+  {
+   "term": "C0004093",
+   "concept": "Asthenia",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "introduction": 1,
+    "methods": 1
+   },
+   "forms": {
+    "weakness": 2
+   },
+   "best_score": 0.975
+  },
+  {
+   "term": "C0020517",
+   "concept": "Hypersensitivity",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "introduction": 1,
+    "discussion": 1
+   },
+   "forms": {
+    "sensitivity": 2
+   },
+   "best_score": 0.997
+  },
+  {
+   "term": "C0024282",
+   "concept": "Lymphocytosis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 1,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results": 2
+   },
+   "forms": {
+    "lymphocytosis": 2
+   },
+   "best_score": 0.992
+  },
+  {
+   "term": "C0242723",
+   "concept": "Parasitemia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "introduction": 1,
+    "discussion": 1
+   },
+   "forms": {
+    "parasitemia": 2
+   },
+   "best_score": 0.992
+  },
+  {
+   "term": "C0497156",
+   "concept": "Lymphadenopathy",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "introduction": 1,
+    "methods": 1
+   },
+   "forms": {
+    "swollen lymph nodes": 2
+   },
+   "best_score": 0.969
+  },
+  {
+   "term": "C0851162",
+   "concept": "Infections of musculoskeletal system",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "introduction": 1,
+    "discussion": 1
+   },
+   "forms": {
+    "infections": 2
+   },
+   "best_score": 0.971
+  },
+  {
+   "term": "C0002878",
+   "concept": "Anemia, Hemolytic",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "hemolytic anemia": 1
+   },
+   "best_score": 0.978
+  },
+  {
+   "term": "C0011991",
+   "concept": "Diarrhea",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "diarrhea": 1
+   },
+   "best_score": 0.983
+  },
+  {
+   "term": "C0014457",
+   "concept": "Eosinophilia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "eosinophilia": 1
+   },
+   "best_score": 0.976
+  },
+  {
+   "term": "C0015672",
+   "concept": "Fatigue",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "fatigue": 1
+   },
+   "best_score": 0.971
+  },
+  {
+   "term": "C0019054",
+   "concept": "Hemolysis (disorder)",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "hemolysis": 1
+   },
+   "best_score": 0.991
+  },
+  {
+   "term": "C0022658",
+   "concept": "Kidney Diseases",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "renal disease": 1
+   },
+   "best_score": 0.981
+  },
+  {
+   "term": "C0023380",
+   "concept": "Lethargy",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "lethargy": 1
+   },
+   "best_score": 0.987
+  },
+  {
+   "term": "C0030499",
+   "concept": "Parasitic Diseases",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "methods": 1
+   },
+   "forms": {
+    "infestation": 1
+   },
+   "best_score": 0.946
+  },
+  {
+   "term": "C0042963",
+   "concept": "Vomiting",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "vomiting": 1
+   },
+   "best_score": 0.957
+  },
+  {
+   "term": "C0080194",
+   "concept": "Muscle strain",
+   "semantic_types": [
+    "Injury or Poisoning"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "strains": 1
+   },
+   "best_score": 0.991
+  },
+  {
+   "term": "C0162835",
+   "concept": "Hypopigmentation disorder",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results": 1
+   },
+   "forms": {
+    "depigmentation": 1
+   },
+   "best_score": 0.953
+  },
+  {
+   "term": "C0178324",
+   "concept": "Vascular System Injuries",
+   "semantic_types": [
+    "Injury or Poisoning"
+   ],
+   "mentions": 1,
+   "mentions_negated": 1,
+   "mentions_affirmed": 0,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "vascular injury": 1
+   },
+   "best_score": 0.98
+  },
+  {
+   "term": "C0242781",
+   "concept": "disease transmission",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "conclusion": 1
+   },
+   "forms": {
+    "transmitted": 1
+   },
+   "best_score": 0.972
+  },
+  {
+   "term": "C0271899",
+   "concept": "Normocytic normochromic anemia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "abstract": 1
+   },
+   "forms": {
+    "normocytic normochromic anemia": 1
+   },
+   "best_score": 0.975
+  },
+  {
+   "term": "C0302106",
+   "concept": "Platelet destruction",
+   "semantic_types": [
+    "Cell or Molecular Dysfunction"
+   ],
+   "mentions": 1,
+   "mentions_negated": 1,
+   "mentions_affirmed": 0,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "platelet destruction": 1
+   },
+   "best_score": 0.985
+  },
+  {
+   "term": "C1260402",
+   "concept": "splenic sequestration",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 1,
+   "mentions_affirmed": 0,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "splenic sequestration": 1
+   },
+   "best_score": 0.962
+  },
+  {
+   "term": "C1263988",
+   "concept": "Hemolytic disorder",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "hemolytic disease": 1
+   },
+   "best_score": 0.981
+  },
+  {
+   "term": "C1640363",
+   "concept": "Vector Borne Diseases",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "abstract": 1
+   },
+   "forms": {
+    "vector-borne disease": 1
+   },
+   "best_score": 0.955
+  }
+ ]
+}

@@ -1,0 +1,87 @@
+{
+ "id": "CB367",
+ "filename": "CB367_2009_case-report-babesia-canis-infection.md",
+ "key": "https://openalex.org/W273512075",
+ "record": {
+  "pmid": null,
+  "pmcid": null,
+  "doi": null,
+  "title": "Case report: Babesia canis infection in a dog.",
+  "journal": null,
+  "authors": [
+   "Maria Louhelainen",
+   "Thomas Spillmann"
+  ],
+  "first_pub_date": "2009-01-01",
+  "type": "article",
+  "language": [
+   "en"
+  ],
+  "abstract": null,
+  "abstract_source": "OpenAlex abstract_inverted_index (reconstructed)",
+  "source_id": "https://openalex.org/W273512075",
+  "src": "OPENALEX",
+  "found_by": [
+   "OA:title_and_abstract"
+  ],
+  "in_window": true,
+  "key": "https://openalex.org/W273512075",
+  "source_files": [
+   "candidates_r3.jsonl"
+  ]
+ },
+ "screening": {
+  "key": "https://openalex.org/W273512075",
+  "decision": "uncertain",
+  "include_type": null,
+  "exclude_reason": null,
+  "primary_category": "SEV",
+  "secondary_tags": [],
+  "species": "B. canis (per title; status unspecified)",
+  "rationale": "Based on the title and OpenAlex metadata only: Louhelainen & Spillmann, 115(3):143-148, 2009, a Finnish-journal case report. The abstract could not be reached (CAB/Doria blocked), so whether it is routine or a distinct syndrome cannot be judged.",
+  "stage": "adjudicated",
+  "batch": "r4_06.md",
+  "first_decision": "uncertain",
+  "screening_round": "r4"
+ },
+ "fulltext_check": {
+  "key": "https://openalex.org/W273512075",
+  "pmcid": null,
+  "checked": "2026-10-28",
+  "fulltext_status": "no_pmcid"
+ },
+ "duplicate_records": [
+  {
+   "key": "https://openalex.org/W97557095",
+   "basis": "Doria repository copy of the same Louhelainen & Spillmann 2009 case report; flagged at screening",
+   "record": {
+    "pmid": null,
+    "pmcid": null,
+    "doi": null,
+    "title": "Tapausselostus : Babesia canis -tartunta koiralla",
+    "journal": "Doria (University of Helsinki)",
+    "authors": [
+     "Maria Louhelainen",
+     "Thomas Spillmann"
+    ],
+    "first_pub_date": "2009-01-01",
+    "type": "article",
+    "language": [
+     "fi"
+    ],
+    "abstract": null,
+    "abstract_source": "OpenAlex abstract_inverted_index (reconstructed)",
+    "source_id": "https://openalex.org/W97557095",
+    "src": "OPENALEX",
+    "found_by": [
+     "OA:title_and_abstract"
+    ],
+    "in_window": true,
+    "key": "https://openalex.org/W97557095",
+    "source_files": [
+     "candidates_r3.jsonl"
+    ]
+   }
+  }
+ ]
+}

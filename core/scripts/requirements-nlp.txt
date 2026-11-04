@@ -1,0 +1,15 @@
+# scispaCy environment for syndrome extraction (Python 3.12; scispaCy 0.6.2 does not support 3.13).
+# Create with:  uv venv .venv-nlp --python 3.12  &&  uv pip install --python .venv-nlp/Scripts/python.exe -r scripts/requirements-nlp.txt
+scispacy==0.6.2
+spacy==3.7.5
+# spaCy 3.7 on Windows fails ("OverflowError ... _reset_cache") with newer builds of these:
+preshed==3.0.9
+cymem==2.0.8
+murmurhash==1.0.10
+# spaCy 3.7's CLI imports click; current typer no longer installs it
+click
+# Models (v0.5.4, built for spaCy 3.7)
+en_core_sci_md @ https://s3-us-west-2.amazonaws.com/ai2-s2-scispacy/releases/v0.5.4/en_core_sci_md-0.5.4.tar.gz
+en_ner_bc5cdr_md @ https://s3-us-west-2.amazonaws.com/ai2-s2-scispacy/releases/v0.5.4/en_ner_bc5cdr_md-0.5.4.tar.gz
+# negation (NegEx); 1.1.x requires spaCy 3.8
+negspacy==1.0.4

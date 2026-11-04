@@ -1,0 +1,181 @@
+{
+ "id": "CB306",
+ "document": "data/markdown/CB306.md",
+ "source_format": "abstract",
+ "translated": false,
+ "words": 165,
+ "run_utc": "2026-10-30T05:35:58+00:00",
+ "threshold": 0.85,
+ "kept_types": [
+  "T019",
+  "T020",
+  "T037",
+  "T046",
+  "T047",
+  "T048",
+  "T049",
+  "T050",
+  "T184",
+  "T190",
+  "T191"
+ ],
+ "term_count": 9,
+ "terms": [
+  {
+   "term": "C0334044",
+   "concept": "Dysplasia",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 4,
+   "mentions_negated": 1,
+   "mentions_affirmed": 3,
+   "sections": {
+    "abstract": 3,
+    "title": 1
+   },
+   "forms": {
+    "dysplasia": 4
+   },
+   "best_score": 0.978
+  },
+  {
+   "term": "C0002880",
+   "concept": "Autoimmune hemolytic anemia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "abstract": 2
+   },
+   "forms": {
+    "immune-mediated hemolytic anemia": 1,
+    "imha": 1
+   },
+   "best_score": 0.916
+  },
+  {
+   "term": "C0009450",
+   "concept": "Communicable Diseases",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "abstract": 2
+   },
+   "forms": {
+    "infectious": 1,
+    "infection": 1
+   },
+   "best_score": 0.97
+  },
+  {
+   "term": "C0027627",
+   "concept": "Neoplasm Metastasis",
+   "semantic_types": [
+    "Neoplastic Process"
+   ],
+   "mentions": 2,
+   "mentions_negated": 1,
+   "mentions_affirmed": 1,
+   "sections": {
+    "abstract": 2
+   },
+   "forms": {
+    "secondary": 2
+   },
+   "best_score": 0.985
+  },
+  {
+   "term": "C0002871",
+   "concept": "Anemia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "abstract": 1
+   },
+   "forms": {
+    "anemia": 1
+   },
+   "best_score": 0.974
+  },
+  {
+   "term": "C0002878",
+   "concept": "Anemia, Hemolytic",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "title": 1
+   },
+   "forms": {
+    "haemolytic anaemia": 1
+   },
+   "best_score": 0.98
+  },
+  {
+   "term": "C0005956",
+   "concept": "Bone Marrow Diseases",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "abstract": 1
+   },
+   "forms": {
+    "bone marrow disorders": 1
+   },
+   "best_score": 0.917
+  },
+  {
+   "term": "C0014800",
+   "concept": "Erythroid hyperplasia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "abstract": 1
+   },
+   "forms": {
+    "erythroid hyperplasia": 1
+   },
+   "best_score": 0.986
+  },
+  {
+   "term": "C0221143",
+   "concept": "Dyserythropoiesis",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "abstract": 1
+   },
+   "forms": {
+    "dyserythropoiesis": 1
+   },
+   "best_score": 0.977
+  }
+ ]
+}

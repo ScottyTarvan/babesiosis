@@ -1,0 +1,58 @@
+{
+ "id": "CB532",
+ "filename": "CB532_2016_possible-vertical-transmission-babesia-canis-canis.md",
+ "key": "DOI:10.17221/8881-vetmed",
+ "record": {
+  "pmid": null,
+  "pmcid": null,
+  "doi": "10.17221/8881-vetmed",
+  "title": "Possible vertical transmission of Babesia canis canis from a bitch to her puppies: a case report",
+  "journal": "Veterinární Medicína",
+  "authors": [
+   "Łukasz Adaszek",
+   "J. Obara-Galek",
+   "Tomasz Piech",
+   "Mateusz Winiarczyk",
+   "MARCIN KALINOWSKI",
+   "S. Winiarczyk"
+  ],
+  "first_pub_date": "2016-05-25",
+  "type": "article",
+  "language": [
+   "en"
+  ],
+  "abstract": "The present study reports the possible vertical transmission of Babesia canis canis from an infected bitch to her puppies. The study concerns a bitch that had developed babesiosis in week seven of pregnancy and her litter, three puppies that exhibited symptoms of the disease in Weeks 8-9 post-partum. In all animals, the infection with protozoa was confirmed by the results of a PCR blood test. The identity of the nucleotide sequences of the amplified fragment of the gene (18S RNA) isolated from the blood of the puppies and the bitch was 100%, which indicates that all the dogs were infected with the same strain of protozoa. This result, together with the exclusion of other possible routes of babesiosis transmission in puppies, suggests that they were infected with Babesia canis canis in utero.",
+  "abstract_source": "OpenAlex abstract_inverted_index (reconstructed)",
+  "source_id": "https://openalex.org/W2402510006",
+  "src": "OPENALEX",
+  "found_by": [
+   "OA:title_and_abstract"
+  ],
+  "in_window": true,
+  "key": "DOI:10.17221/8881-vetmed",
+  "source_files": [
+   "candidates_r3.jsonl"
+  ]
+ },
+ "screening": {
+  "key": "DOI:10.17221/8881-vetmed",
+  "decision": "include",
+  "include_type": "case_report",
+  "exclude_reason": null,
+  "primary_category": "SEV",
+  "secondary_tags": [],
+  "species": "B. canis canis (confirmed, PCR and 18S sequencing)",
+  "rationale": "Based on the abstract: a case report of probable in utero transmission. The bitch was infected in week 7 of pregnancy and her three puppies developed clinical disease at 8-9 weeks, with identical sequences. Congenital infection is a distinct presentation and a mechanistic observation, so it is more than a routine case.",
+  "stage": "adjudicated",
+  "batch": "r4_28.md",
+  "first_decision": "exclude",
+  "rescue_reason": "Case report of probable in utero transmission of B. canis canis from a bitch to her puppies, with clinical disease in the puppies and PCR confirmation. The vertical or congenital transmission route is a mechanistic observation and a distinct presentation, so the first screener's routine-case reason does not hold.",
+  "screening_round": "r4"
+ },
+ "fulltext_check": {
+  "key": "DOI:10.17221/8881-vetmed",
+  "pmcid": null,
+  "checked": "2026-10-28",
+  "fulltext_status": "no_pmcid"
+ }
+}

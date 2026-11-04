@@ -1,0 +1,57 @@
+{
+ "id": "CB417",
+ "filename": "CB417_2011_epistaxis-infected-babesia-gibsoni.md",
+ "key": "https://openalex.org/W3118535775",
+ "record": {
+  "pmid": null,
+  "pmcid": null,
+  "doi": null,
+  "title": "Epistaxis in a Dog Infected with Babesia gibsoni",
+  "journal": null,
+  "authors": [
+   "N. Rani",
+   "Gnanajothy Ponnudurai",
+   "Tirunelveli Jayagopal Harikrishnan",
+   "E. Venkatesh Kumar"
+  ],
+  "first_pub_date": "2011-08-01",
+  "type": "article",
+  "language": [
+   "en"
+  ],
+  "abstract": null,
+  "abstract_source": "OpenAlex abstract_inverted_index (reconstructed)",
+  "source_id": "https://openalex.org/W3118535775",
+  "src": "OPENALEX",
+  "found_by": [
+   "OA:title_and_abstract"
+  ],
+  "in_window": true,
+  "key": "https://openalex.org/W3118535775",
+  "source_files": [
+   "candidates_r3.jsonl"
+  ]
+ },
+ "screening": {
+  "key": "https://openalex.org/W3118535775",
+  "decision": "uncertain",
+  "include_type": null,
+  "exclude_reason": null,
+  "primary_category": "COA",
+  "secondary_tags": [
+   "SEV"
+  ],
+  "species": "B. gibsoni (status unknown; title only)",
+  "rationale": "Title only: the OpenAlex record, the KrishiKosh landing page, PubMed and Europe PMC gave no abstract or journal details. Epistaxis as the presenting sign may be a distinct bleeding or platelet complication, so the record goes to full-text review; nothing shows a date outside the window.",
+  "stage": "adjudicated",
+  "batch": "r4_12.md",
+  "first_decision": "uncertain",
+  "screening_round": "r4"
+ },
+ "fulltext_check": {
+  "key": "https://openalex.org/W3118535775",
+  "pmcid": null,
+  "checked": "2026-10-28",
+  "fulltext_status": "no_pmcid"
+ }
+}

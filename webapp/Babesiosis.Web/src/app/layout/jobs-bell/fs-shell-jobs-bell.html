@@ -1,0 +1,24 @@
+<span class="fs-shell-jobs-bell">
+  <button
+    #bellAnchor
+    type="button"
+    class="fs-shell-jobs-bell__btn"
+    [class.fs-shell-jobs-bell__btn--alert]="count() > 0"
+    [attr.aria-label]="ariaLabel()"
+    aria-haspopup="dialog"
+    [attr.aria-expanded]="open()"
+    (click)="toggle()">
+    <fs-symbol [name]="icon()" size="md" ariaLabel="" />
+
+    @if (count() > 0) {
+      <span class="fs-shell-jobs-bell__dot">{{ badgeText() }}</span>
+    }
+  </button>
+
+  <fs-shell-jobs-panel [anchor]="bellAnchor" [(open)]="open" />
+</span>
+
+<!-- Separate from the button's own aria-label: the label is what a user hears
+     when they land on the control, this is what interrupts them when something
+     new arrives. See liveMessage() for why it is written only on an increase. -->
+<span class="visually-hidden" aria-live="polite">{{ liveMessage() }}</span>

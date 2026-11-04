@@ -1,0 +1,100 @@
+/* The host is a flex item of `.fs-shell-topbar__end`. Left as the default
+   `display: block` it wraps the inline-flex wrapper in a line box and measures
+   29px rather than 28, which centres the bell a pixel above the theme toggle
+   beside it. */
+:host {
+  display: inline-flex;
+  align-items: center;
+}
+
+.fs-shell-jobs-bell {
+  position: relative;
+  display: inline-flex;
+}
+
+/* Mirrors `.fs-shell-topbar__icon-btn` so the bell sits flush beside the theme
+   toggle.
+
+   It cannot simply wear that class: the rule lives in `fs-shell-topbar.scss` and
+   Angular's emulated encapsulation scopes it to the topbar's own template, so on
+   a button rendered by THIS component the selector never matches and the browser
+   falls back to the UA default — a 2px outset border and a grey fill. Keep these
+   values in step with the topbar's if that button is ever restyled.
+
+   `position: relative` is the one addition: it anchors the badge to the button
+   rather than to the topbar. */
+.fs-shell-jobs-bell__btn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--fs-guide-control-height);
+  height: var(--fs-guide-control-height);
+  border-radius: var(--fs-radius-md);
+  border: 0;
+  background: transparent;
+  color: rgb(var(--fs-color-ink));
+  cursor: pointer;
+  transition: none;
+
+  &:hover {
+    background-color: rgb(var(--fs-color-fill-hover));
+    color: rgb(var(--fs-color-ink-strong));
+  }
+
+  &:focus-visible {
+    outline: 2px solid rgb(var(--fs-color-primary));
+    outline-offset: 0;
+  }
+}
+
+/* The icon itself turns danger-coloured, not just the badge — at 16px a small
+   red dot alone is easy to miss in peripheral vision, which is exactly where
+   this control lives. Hover is restated so the base rule's ink-strong does not
+   wash the alert colour out on the way past. */
+.fs-shell-jobs-bell__btn--alert {
+  color: rgb(var(--fs-color-danger));
+
+  &:hover {
+    color: rgb(var(--fs-color-danger));
+  }
+}
+
+.fs-shell-jobs-bell__dot {
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  min-width: 14px;
+  height: 14px;
+  padding: 0 3px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--fs-radius-pill);
+  /* Rings the badge in the surface colour so it reads as separate from the
+     glyph underneath it — the same trick fs-avatar's status dot uses. */
+  border: 1.5px solid rgb(var(--fs-color-surface));
+  font-size: 9px;
+  line-height: 1;
+  font-weight: 600;
+  background-color: rgb(var(--fs-color-danger));
+  color: rgb(var(--fs-color-on-accent));
+  animation: fs-jobs-bell-pulse 2s ease-in-out infinite;
+}
+
+/* 0.5 Hz — one cycle every two seconds.
+   WCAG 2.3.1 forbids anything above three flashes per second; this is six times
+   under that. It is also a scale/opacity breathe rather than a luminance flash,
+   so it draws the eye without the strobing that guideline exists to prevent. */
+@keyframes fs-jobs-bell-pulse {
+  0%, 100% { transform: scale(1);    opacity: 1; }
+  50%      { transform: scale(1.25); opacity: 0.65; }
+}
+
+/* Nothing is lost by holding still: the colour and the count carry the whole
+   message, and the motion was only ever the attention-getter. */
+@media (prefers-reduced-motion: reduce) {
+  .fs-shell-jobs-bell__dot {
+    animation: none;
+  }
+}

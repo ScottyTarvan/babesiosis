@@ -1,0 +1,528 @@
+{
+ "id": "CB177",
+ "document": "data/markdown/CB177.md",
+ "source_format": "pdf",
+ "translated": false,
+ "words": 4214,
+ "run_utc": "2026-10-30T05:34:56+00:00",
+ "threshold": 0.85,
+ "kept_types": [
+  "T019",
+  "T020",
+  "T037",
+  "T046",
+  "T047",
+  "T048",
+  "T049",
+  "T050",
+  "T184",
+  "T190",
+  "T191"
+ ],
+ "term_count": 28,
+ "terms": [
+  {
+   "term": "C0004576",
+   "concept": "Babesiosis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 36,
+   "mentions_negated": 2,
+   "mentions_affirmed": 34,
+   "sections": {
+    "results": 15,
+    "unlabelled": 6,
+    "discussion": 6,
+    "introduction": 5,
+    "conclusion": 3,
+    "title": 1
+   },
+   "forms": {
+    "babesiosis": 36
+   },
+   "best_score": 0.972
+  },
+  {
+   "term": "C0019054",
+   "concept": "Hemolysis (disorder)",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 17,
+   "mentions_negated": 1,
+   "mentions_affirmed": 16,
+   "sections": {
+    "results": 11,
+    "methods": 4,
+    "unlabelled": 1,
+    "conclusion": 1
+   },
+   "forms": {
+    "hemolysis": 17
+   },
+   "best_score": 0.991
+  },
+  {
+   "term": "C0012634",
+   "concept": "Disease",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 10,
+   "mentions_negated": 0,
+   "mentions_affirmed": 10,
+   "sections": {
+    "discussion": 5,
+    "introduction": 3,
+    "unlabelled": 2
+   },
+   "forms": {
+    "disease": 9,
+    "diseases": 1
+   },
+   "best_score": 0.987
+  },
+  {
+   "term": "C0002871",
+   "concept": "Anemia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 7,
+   "mentions_negated": 0,
+   "mentions_affirmed": 7,
+   "sections": {
+    "results": 3,
+    "discussion": 2,
+    "unlabelled": 1,
+    "introduction": 1
+   },
+   "forms": {
+    "anemia": 7
+   },
+   "best_score": 0.974
+  },
+  {
+   "term": "C0221395",
+   "concept": "Erythropenia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 5,
+   "mentions_negated": 0,
+   "mentions_affirmed": 5,
+   "sections": {
+    "results": 3,
+    "unlabelled": 1,
+    "discussion": 1
+   },
+   "forms": {
+    "oligocythemia": 5
+   },
+   "best_score": 0.98
+  },
+  {
+   "term": "C0010957",
+   "concept": "Tissue damage",
+   "semantic_types": [
+    "Injury or Poisoning"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "unlabelled": 1,
+    "introduction": 1,
+    "discussion": 1
+   },
+   "forms": {
+    "tissue damage": 2,
+    "damage": 1
+   },
+   "best_score": 0.988
+  },
+  {
+   "term": "C0085662",
+   "concept": "Macrocytosis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "unlabelled": 1,
+    "discussion": 1,
+    "conclusion": 1
+   },
+   "forms": {
+    "macrocytosis": 3
+   },
+   "best_score": 0.989
+  },
+  {
+   "term": "C0600688",
+   "concept": "Toxic effect",
+   "semantic_types": [
+    "Injury or Poisoning"
+   ],
+   "mentions": 3,
+   "mentions_negated": 1,
+   "mentions_affirmed": 2,
+   "sections": {
+    "results": 3
+   },
+   "forms": {
+    "toxic": 2,
+    "toxic effects": 1
+   },
+   "best_score": 0.972
+  },
+  {
+   "term": "C0699748",
+   "concept": "Pathogenesis",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "discussion": 3
+   },
+   "forms": {
+    "pathogenesis": 3
+   },
+   "best_score": 0.983
+  },
+  {
+   "term": "C1269955",
+   "concept": "Tumor Cell Invasion",
+   "semantic_types": [
+    "Neoplastic Process"
+   ],
+   "mentions": 3,
+   "mentions_negated": 1,
+   "mentions_affirmed": 2,
+   "sections": {
+    "introduction": 1,
+    "results": 1,
+    "conclusion": 1
+   },
+   "forms": {
+    "invasion": 3
+   },
+   "best_score": 0.944
+  },
+  {
+   "term": "C0002884",
+   "concept": "Hypochromic anemia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "unlabelled": 1,
+    "introduction": 1
+   },
+   "forms": {
+    "hypochromic anemia": 2
+   },
+   "best_score": 0.979
+  },
+  {
+   "term": "C0022346",
+   "concept": "Icterus",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "discussion": 2
+   },
+   "forms": {
+    "jaundice": 2
+   },
+   "best_score": 0.947
+  },
+  {
+   "term": "C0042166",
+   "concept": "Uveitis, Intermediate",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "methods": 2
+   },
+   "forms": {
+    "iu": 2
+   },
+   "best_score": 1.0
+  },
+  {
+   "term": "C0242184",
+   "concept": "Hypoxia",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "results": 1,
+    "discussion": 1
+   },
+   "forms": {
+    "hypoxia": 2
+   },
+   "best_score": 0.978
+  },
+  {
+   "term": "C0745178",
+   "concept": "Hypotensive Shock",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "unlabelled": 1,
+    "introduction": 1
+   },
+   "forms": {
+    "hypotensive shock": 2
+   },
+   "best_score": 0.988
+  },
+  {
+   "term": "C0002896",
+   "concept": "Sideroblastic anemia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results": 1
+   },
+   "forms": {
+    "hypersideremia": 1
+   },
+   "best_score": 0.864
+  },
+  {
+   "term": "C0008370",
+   "concept": "Cholestasis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "cholestasis": 1
+   },
+   "best_score": 0.992
+  },
+  {
+   "term": "C0009450",
+   "concept": "Communicable Diseases",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "infection": 1
+   },
+   "best_score": 0.962
+  },
+  {
+   "term": "C0015967",
+   "concept": "Fever",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results": 1
+   },
+   "forms": {
+    "hyperthermia": 1
+   },
+   "best_score": 0.989
+  },
+  {
+   "term": "C0016658",
+   "concept": "Fracture",
+   "semantic_types": [
+    "Injury or Poisoning"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "fractures": 1
+   },
+   "best_score": 0.989
+  },
+  {
+   "term": "C0018995",
+   "concept": "Hemochromatosis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "hemochromatosis": 1
+   },
+   "best_score": 0.987
+  },
+  {
+   "term": "C0023895",
+   "concept": "Liver diseases",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "liver disease": 1
+   },
+   "best_score": 0.984
+  },
+  {
+   "term": "C0028961",
+   "concept": "Oliguria",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results": 1
+   },
+   "forms": {
+    "oliguria": 1
+   },
+   "best_score": 0.966
+  },
+  {
+   "term": "C0030499",
+   "concept": "Parasitic Diseases",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "infestation": 1
+   },
+   "best_score": 0.946
+  },
+  {
+   "term": "C0037061",
+   "concept": "Siderosis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "siderosis": 1
+   },
+   "best_score": 0.99
+  },
+  {
+   "term": "C0038454",
+   "concept": "Cerebrovascular accident",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results": 1
+   },
+   "forms": {
+    "stroke": 1
+   },
+   "best_score": 0.959
+  },
+  {
+   "term": "C0040034",
+   "concept": "Thrombocytopenia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "thrombocytopenia": 1
+   },
+   "best_score": 0.98
+  },
+  {
+   "term": "C0233660",
+   "concept": "Mental blocking",
+   "semantic_types": [
+    "Mental or Behavioral Dysfunction"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results": 1
+   },
+   "forms": {
+    "blocking": 1
+   },
+   "best_score": 0.973
+  }
+ ]
+}

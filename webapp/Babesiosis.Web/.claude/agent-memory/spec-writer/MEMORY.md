@@ -1,0 +1,5 @@
+- [Sub-agent return checks](subagent_return_checks.md) — write truth reports the validator failed to save; grep question IDs before registering; heredoc trips guard hook
+- [SQL applied state goes stale](sql_applied_state_goes_stale.md) — check ledger.json applied map vs spec 'not applied' wording on every sync
+- [Sibling pointer goes stale](sibling_pointer_goes_stale.md) — after a level 4 revise, grep the level 3 pointer section (e.g. mappings.md §3.6) for the changed term
+- [Planned feature source addenda](planned_feature_source_addenda.md) — relayed user decisions go in answers/<module>.md as dated addenda; dedupe sibling glossaries
+- [Foreground sub-agents in sync](foreground_subagents_in_sync.md) — run_in_background false for validators/writers, else hand-back before verdicts

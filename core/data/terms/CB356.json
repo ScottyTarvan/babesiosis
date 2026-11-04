@@ -1,0 +1,943 @@
+{
+ "id": "CB356",
+ "document": "data/markdown/CB356.md",
+ "source_format": "pdf",
+ "translated": false,
+ "words": 5583,
+ "run_utc": "2026-10-30T05:36:11+00:00",
+ "threshold": 0.85,
+ "kept_types": [
+  "T019",
+  "T020",
+  "T037",
+  "T046",
+  "T047",
+  "T048",
+  "T049",
+  "T050",
+  "T184",
+  "T190",
+  "T191"
+ ],
+ "term_count": 52,
+ "terms": [
+  {
+   "term": "C0524702",
+   "concept": "Pulmonary Thromboembolisms",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 29,
+   "mentions_negated": 6,
+   "mentions_affirmed": 23,
+   "sections": {
+    "discussion": 13,
+    "introduction": 9,
+    "abstract": 5,
+    "results": 2
+   },
+   "forms": {
+    "pte": 25,
+    "pulmonary thromboembolism": 4
+   },
+   "best_score": 0.976
+  },
+  {
+   "term": "C0004576",
+   "concept": "Babesiosis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 14,
+   "mentions_negated": 1,
+   "mentions_affirmed": 13,
+   "sections": {
+    "abstract": 4,
+    "discussion": 4,
+    "introduction": 3,
+    "results": 2,
+    "title": 1
+   },
+   "forms": {
+    "babesiosis": 14
+   },
+   "best_score": 0.972
+  },
+  {
+   "term": "C0276854",
+   "concept": "Infection by Babesia canis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 12,
+   "mentions_negated": 1,
+   "mentions_affirmed": 11,
+   "sections": {
+    "introduction": 5,
+    "discussion": 4,
+    "abstract": 2,
+    "results": 1
+   },
+   "forms": {
+    "cb": 12
+   },
+   "best_score": 0.969
+  },
+  {
+   "term": "C0087086",
+   "concept": "Thrombus",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 8,
+   "mentions_negated": 2,
+   "mentions_affirmed": 6,
+   "sections": {
+    "introduction": 3,
+    "discussion": 3,
+    "results": 2
+   },
+   "forms": {
+    "thrombi": 5,
+    "thrombus": 2,
+    "blood clots": 1
+   },
+   "best_score": 0.986
+  },
+  {
+   "term": "C0012739",
+   "concept": "Disseminated Intravascular Coagulation",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 4,
+   "mentions_negated": 0,
+   "mentions_affirmed": 4,
+   "sections": {
+    "introduction": 4
+   },
+   "forms": {
+    "dic": 3,
+    "disseminated intravascular coagulation": 1
+   },
+   "best_score": 0.968
+  },
+  {
+   "term": "C0020517",
+   "concept": "Hypersensitivity",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 4,
+   "mentions_negated": 0,
+   "mentions_affirmed": 4,
+   "sections": {
+    "introduction": 2,
+    "methods": 1,
+    "discussion": 1
+   },
+   "forms": {
+    "sensitivity": 3,
+    "hypersensitivity": 1
+   },
+   "best_score": 0.997
+  },
+  {
+   "term": "C0398623",
+   "concept": "Thrombophilia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 4,
+   "mentions_negated": 0,
+   "mentions_affirmed": 4,
+   "sections": {
+    "introduction": 3,
+    "discussion": 1
+   },
+   "forms": {
+    "hypercoagulability": 3,
+    "hypercoagulable": 1
+   },
+   "best_score": 0.984
+  },
+  {
+   "term": "C0002064",
+   "concept": "Alkalosis, Respiratory",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 3,
+   "mentions_negated": 1,
+   "mentions_affirmed": 2,
+   "sections": {
+    "discussion": 3
+   },
+   "forms": {
+    "respiratory alkalosis": 3
+   },
+   "best_score": 0.973
+  },
+  {
+   "term": "C0002871",
+   "concept": "Anemia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "discussion": 2,
+    "introduction": 1
+   },
+   "forms": {
+    "anaemia": 3
+   },
+   "best_score": 0.977
+  },
+  {
+   "term": "C0009566",
+   "concept": "Complication",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 3,
+   "mentions_negated": 1,
+   "mentions_affirmed": 2,
+   "sections": {
+    "results": 2,
+    "methods": 1
+   },
+   "forms": {
+    "complications": 3
+   },
+   "best_score": 0.977
+  },
+  {
+   "term": "C0010340",
+   "concept": "Critical Illness",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 3,
+   "mentions_negated": 1,
+   "mentions_affirmed": 2,
+   "sections": {
+    "discussion": 2,
+    "introduction": 1
+   },
+   "forms": {
+    "critically ill": 3
+   },
+   "best_score": 0.982
+  },
+  {
+   "term": "C0012634",
+   "concept": "Disease",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 3,
+   "mentions_negated": 1,
+   "mentions_affirmed": 2,
+   "sections": {
+    "introduction": 2,
+    "discussion": 1
+   },
+   "forms": {
+    "disease": 3
+   },
+   "best_score": 0.987
+  },
+  {
+   "term": "C0040038",
+   "concept": "Thromboembolism",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 3,
+   "mentions_negated": 2,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1,
+    "results": 1,
+    "discussion": 1
+   },
+   "forms": {
+    "thromboemboli": 2,
+    "thromboembolism29": 1
+   },
+   "best_score": 0.872
+  },
+  {
+   "term": "C0000768",
+   "concept": "Congenital Abnormality",
+   "semantic_types": [
+    "Congenital Abnormality"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "methods": 1,
+    "discussion": 1
+   },
+   "forms": {
+    "abnormalities": 2
+   },
+   "best_score": 0.987
+  },
+  {
+   "term": "C0001122",
+   "concept": "Acidosis",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "discussion": 2
+   },
+   "forms": {
+    "acidosis": 2
+   },
+   "best_score": 0.997
+  },
+  {
+   "term": "C0009450",
+   "concept": "Communicable Diseases",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "introduction": 1,
+    "discussion": 1
+   },
+   "forms": {
+    "infectious diseases": 1,
+    "infection": 1
+   },
+   "best_score": 0.976
+  },
+  {
+   "term": "C0013404",
+   "concept": "Dyspnea",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "abstract": 1,
+    "discussion": 1
+   },
+   "forms": {
+    "dyspnoea": 2
+   },
+   "best_score": 0.985
+  },
+  {
+   "term": "C0023264",
+   "concept": "Leigh Disease",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "methods": 2
+   },
+   "forms": {
+    "ls": 2
+   },
+   "best_score": 0.982
+  },
+  {
+   "term": "C0040034",
+   "concept": "Thrombocytopenia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 1,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results": 2
+   },
+   "forms": {
+    "thrombocytopaenia": 2
+   },
+   "best_score": 0.98
+  },
+  {
+   "term": "C0683278",
+   "concept": "Mental Suffering",
+   "semantic_types": [
+    "Mental or Behavioral Dysfunction"
+   ],
+   "mentions": 2,
+   "mentions_negated": 1,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results": 1,
+    "discussion": 1
+   },
+   "forms": {
+    "suffering": 2
+   },
+   "best_score": 0.94
+  },
+  {
+   "term": "C4551518",
+   "concept": "Venous stasis",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "introduction": 1,
+    "discussion": 1
+   },
+   "forms": {
+    "venous stasis": 2
+   },
+   "best_score": 0.982
+  },
+  {
+   "term": "C0003123",
+   "concept": "Anorexia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "anorexia": 1
+   },
+   "best_score": 0.969
+  },
+  {
+   "term": "C0011570",
+   "concept": "Mental Depression",
+   "semantic_types": [
+    "Mental or Behavioral Dysfunction"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "depression": 1
+   },
+   "best_score": 0.97
+  },
+  {
+   "term": "C0013922",
+   "concept": "Embolism",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "embolism": 1
+   },
+   "best_score": 0.991
+  },
+  {
+   "term": "C0015967",
+   "concept": "Fever",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "pyrexia": 1
+   },
+   "best_score": 0.98
+  },
+  {
+   "term": "C0016542",
+   "concept": "Foreign Bodies",
+   "semantic_types": [
+    "Injury or Poisoning"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results": 1
+   },
+   "forms": {
+    "foreign material": 1
+   },
+   "best_score": 0.964
+  },
+  {
+   "term": "C0020488",
+   "concept": "Hypernatremia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "methods": 1
+   },
+   "forms": {
+    "excess": 1
+   },
+   "best_score": 0.876
+  },
+  {
+   "term": "C0020542",
+   "concept": "Pulmonary Hypertension",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "methods": 1
+   },
+   "forms": {
+    "pulmonary hypertension": 1
+   },
+   "best_score": 0.983
+  },
+  {
+   "term": "C0020564",
+   "concept": "Hypertrophy",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "enlargement": 1
+   },
+   "best_score": 0.956
+  },
+  {
+   "term": "C0022346",
+   "concept": "Icterus",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 1,
+   "mentions_affirmed": 0,
+   "sections": {
+    "results": 1
+   },
+   "forms": {
+    "icterus": 1
+   },
+   "best_score": 0.958
+  },
+  {
+   "term": "C0023380",
+   "concept": "Lethargy",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "methods": 1
+   },
+   "forms": {
+    "lethargic": 1
+   },
+   "best_score": 0.989
+  },
+  {
+   "term": "C0023895",
+   "concept": "Liver diseases",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "hepatic disease": 1
+   },
+   "best_score": 0.982
+  },
+  {
+   "term": "C0024117",
+   "concept": "Chronic Obstructive Airway Disease",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "chronic obstructive pulmonary disease5": 1
+   },
+   "best_score": 0.95
+  },
+  {
+   "term": "C0027651",
+   "concept": "Neoplasms",
+   "semantic_types": [
+    "Neoplastic Process"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "neoplastic disease": 1
+   },
+   "best_score": 0.989
+  },
+  {
+   "term": "C0029166",
+   "concept": "Oral Manifestations",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "manifestation": 1
+   },
+   "best_score": 0.875
+  },
+  {
+   "term": "C0032227",
+   "concept": "Pleural effusion disorder",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "pleural effusion": 1
+   },
+   "best_score": 0.959
+  },
+  {
+   "term": "C0034065",
+   "concept": "Pulmonary Embolism",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "pulmonary emboli": 1
+   },
+   "best_score": 0.867
+  },
+  {
+   "term": "C0035204",
+   "concept": "Respiration Disorders",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "respiratory disease": 1
+   },
+   "best_score": 0.987
+  },
+  {
+   "term": "C0036690",
+   "concept": "Septicemia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "sepsis": 1
+   },
+   "best_score": 0.971
+  },
+  {
+   "term": "C0037088",
+   "concept": "Signs and Symptoms",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "clinical findings": 1
+   },
+   "best_score": 0.97
+  },
+  {
+   "term": "C0040053",
+   "concept": "Thrombosis",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "thrombosis7": 1
+   },
+   "best_score": 0.868
+  },
+  {
+   "term": "C0085399",
+   "concept": "Ehrlichiosis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 1,
+   "mentions_affirmed": 0,
+   "sections": {
+    "methods": 1
+   },
+   "forms": {
+    "ehrlichiosis": 1
+   },
+   "best_score": 0.952
+  },
+  {
+   "term": "C0085632",
+   "concept": "Apathy",
+   "semantic_types": [
+    "Mental or Behavioral Dysfunction"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "listlessness": 1
+   },
+   "best_score": 0.959
+  },
+  {
+   "term": "C0085679",
+   "concept": "Hyperchloremia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "hyperchloraemic": 1
+   },
+   "best_score": 0.861
+  },
+  {
+   "term": "C0085681",
+   "concept": "Hyperphosphatemia (disorder)",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "hyperphosphataemic": 1
+   },
+   "best_score": 0.885
+  },
+  {
+   "term": "C0221423",
+   "concept": "Illness (finding)",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "methods": 1
+   },
+   "forms": {
+    "illness": 1
+   },
+   "best_score": 0.967
+  },
+  {
+   "term": "C0233494",
+   "concept": "Tension",
+   "semantic_types": [
+    "Mental or Behavioral Dysfunction"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "tension": 1
+   },
+   "best_score": 0.982
+  },
+  {
+   "term": "C0333138",
+   "concept": "Stasis",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "stasis": 1
+   },
+   "best_score": 0.987
+  },
+  {
+   "term": "C0342895",
+   "concept": "Fish-Eye Disease",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "methods": 1
+   },
+   "forms": {
+    "fed": 1
+   },
+   "best_score": 0.94
+  },
+  {
+   "term": "C0729233",
+   "concept": "Dissecting aneurysm of the thoracic aorta",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "methods": 1
+   },
+   "forms": {
+    "thoracic": 1
+   },
+   "best_score": 0.989
+  },
+  {
+   "term": "C2882221",
+   "concept": "Acute pulmonary embolism",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "acute pulmonary embolism": 1
+   },
+   "best_score": 0.987
+  },
+  {
+   "term": "C4721411",
+   "concept": "Osteolysis",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "dissolution": 1
+   },
+   "best_score": 0.853
+  }
+ ]
+}

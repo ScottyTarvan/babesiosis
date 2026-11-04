@@ -1,0 +1,735 @@
+{
+ "id": "HU003",
+ "document": "data/markdown/HU003.md",
+ "source_format": "jats_xml",
+ "translated": false,
+ "words": 4484,
+ "run_utc": "2026-10-30T05:37:02+00:00",
+ "threshold": 0.85,
+ "kept_types": [
+  "T019",
+  "T020",
+  "T037",
+  "T046",
+  "T047",
+  "T048",
+  "T049",
+  "T050",
+  "T184",
+  "T190",
+  "T191"
+ ],
+ "term_count": 40,
+ "terms": [
+  {
+   "term": "C0024534",
+   "concept": "Malaria, Cerebral",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 37,
+   "mentions_negated": 1,
+   "mentions_affirmed": 36,
+   "sections": {
+    "results": 17,
+    "discussion": 10,
+    "abstract": 4,
+    "abbreviations": 3,
+    "introduction": 2,
+    "methods": 1
+   },
+   "forms": {
+    "cm": 29,
+    "cerebral malaria": 8
+   },
+   "best_score": 0.985
+  },
+  {
+   "term": "C0024530",
+   "concept": "Malaria",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 27,
+   "mentions_negated": 1,
+   "mentions_affirmed": 26,
+   "sections": {
+    "abstract": 8,
+    "discussion": 5,
+    "results": 4,
+    "introduction": 3,
+    "methods": 3,
+    "abbreviations": 2,
+    "title": 1,
+    "conclusion": 1
+   },
+   "forms": {
+    "malaria": 27
+   },
+   "best_score": 0.996
+  },
+  {
+   "term": "C0009450",
+   "concept": "Communicable Diseases",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 22,
+   "mentions_negated": 2,
+   "mentions_affirmed": 20,
+   "sections": {
+    "results": 13,
+    "discussion": 6,
+    "methods": 3
+   },
+   "forms": {
+    "infection": 22
+   },
+   "best_score": 0.962
+  },
+  {
+   "term": "C2747816",
+   "concept": "Complicated malaria",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 20,
+   "mentions_negated": 2,
+   "mentions_affirmed": 18,
+   "sections": {
+    "results": 8,
+    "discussion": 7,
+    "introduction": 3,
+    "methods": 1,
+    "abbreviations": 1
+   },
+   "forms": {
+    "sm": 20
+   },
+   "best_score": 0.985
+  },
+  {
+   "term": "C0019054",
+   "concept": "Hemolysis (disorder)",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 7,
+   "mentions_negated": 0,
+   "mentions_affirmed": 7,
+   "sections": {
+    "introduction": 2,
+    "discussion": 2,
+    "abstract": 1,
+    "results": 1,
+    "conclusion": 1
+   },
+   "forms": {
+    "haemolysis": 7
+   },
+   "best_score": 0.989
+  },
+  {
+   "term": "C0036572",
+   "concept": "Seizures",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 4,
+   "mentions_negated": 1,
+   "mentions_affirmed": 3,
+   "sections": {
+    "methods": 4
+   },
+   "forms": {
+    "seizures": 4
+   },
+   "best_score": 0.945
+  },
+  {
+   "term": "C0699748",
+   "concept": "Pathogenesis",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 4,
+   "mentions_negated": 0,
+   "mentions_affirmed": 4,
+   "sections": {
+    "discussion": 2,
+    "introduction": 1,
+    "conclusion": 1
+   },
+   "forms": {
+    "pathogenesis": 4
+   },
+   "best_score": 0.983
+  },
+  {
+   "term": "C0009421",
+   "concept": "Comatose",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 3,
+   "mentions_negated": 1,
+   "mentions_affirmed": 2,
+   "sections": {
+    "methods": 3
+   },
+   "forms": {
+    "coma": 3
+   },
+   "best_score": 0.994
+  },
+  {
+   "term": "C0856169",
+   "concept": "Endothelial dysfunction",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "discussion": 3
+   },
+   "forms": {
+    "endothelial dysfunction": 3
+   },
+   "best_score": 0.956
+  },
+  {
+   "term": "C0002895",
+   "concept": "Anemia, Sickle Cell",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "results": 1,
+    "discussion": 1
+   },
+   "forms": {
+    "sickle cell disease": 2
+   },
+   "best_score": 0.973
+  },
+  {
+   "term": "C0012634",
+   "concept": "Disease",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "discussion": 1,
+    "conclusion": 1
+   },
+   "forms": {
+    "disease": 2
+   },
+   "best_score": 0.987
+  },
+  {
+   "term": "C0019061",
+   "concept": "Hemolytic-Uremic Syndrome",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "discussion": 1,
+    "abbreviations": 1
+   },
+   "forms": {
+    "haemolytic uremic syndrome": 2
+   },
+   "best_score": 0.886
+  },
+  {
+   "term": "C0021368",
+   "concept": "Inflammation",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "introduction": 2
+   },
+   "forms": {
+    "inflammation": 2
+   },
+   "best_score": 0.958
+  },
+  {
+   "term": "C0851162",
+   "concept": "Infections of musculoskeletal system",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "abstract": 1,
+    "discussion": 1
+   },
+   "forms": {
+    "infections": 2
+   },
+   "best_score": 0.971
+  },
+  {
+   "term": "C2931788",
+   "concept": "Atypical Hemolytic Uremic Syndrome",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "discussion": 1,
+    "abbreviations": 1
+   },
+   "forms": {
+    "ahus": 2
+   },
+   "best_score": 0.901
+  },
+  {
+   "term": "C0001125",
+   "concept": "Acidosis, Lactic",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 1,
+   "mentions_affirmed": 0,
+   "sections": {
+    "methods": 1
+   },
+   "forms": {
+    "lactic acidosis": 1
+   },
+   "best_score": 0.994
+  },
+  {
+   "term": "C0001175",
+   "concept": "Acquired Immunodeficiency Syndrome",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "methods": 1
+   },
+   "forms": {
+    "hiv/aids": 1
+   },
+   "best_score": 0.958
+  },
+  {
+   "term": "C0015967",
+   "concept": "Fever",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "methods": 1
+   },
+   "forms": {
+    "febrile": 1
+   },
+   "best_score": 0.967
+  },
+  {
+   "term": "C0019045",
+   "concept": "Hemoglobinopathies",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 1,
+   "mentions_affirmed": 0,
+   "sections": {
+    "methods": 1
+   },
+   "forms": {
+    "haemoglobinopathy": 1
+   },
+   "best_score": 0.995
+  },
+  {
+   "term": "C0020488",
+   "concept": "Hypernatremia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "excess": 1
+   },
+   "best_score": 0.876
+  },
+  {
+   "term": "C0020615",
+   "concept": "Hypoglycemia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 1,
+   "mentions_affirmed": 0,
+   "sections": {
+    "methods": 1
+   },
+   "forms": {
+    "hypoglycemia": 1
+   },
+   "best_score": 0.99
+  },
+  {
+   "term": "C0036690",
+   "concept": "Septicemia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "conclusion": 1
+   },
+   "forms": {
+    "sepsis": 1
+   },
+   "best_score": 0.971
+  },
+  {
+   "term": "C0037054",
+   "concept": "Sickle Cell Trait",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results": 1
+   },
+   "forms": {
+    "sickle cell trait": 1
+   },
+   "best_score": 0.968
+  },
+  {
+   "term": "C0080194",
+   "concept": "Muscle strain",
+   "semantic_types": [
+    "Injury or Poisoning"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results": 1
+   },
+   "forms": {
+    "strains": 1
+   },
+   "best_score": 0.991
+  },
+  {
+   "term": "C0085437",
+   "concept": "Meningitis, Bacterial",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 1,
+   "mentions_affirmed": 0,
+   "sections": {
+    "methods": 1
+   },
+   "forms": {
+    "bacterial meningitis": 1
+   },
+   "best_score": 0.978
+  },
+  {
+   "term": "C0151699",
+   "concept": "Intracranial Hemorrhage",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 1,
+   "mentions_affirmed": 0,
+   "sections": {
+    "methods": 1
+   },
+   "forms": {
+    "intracranial haemorrhage": 1
+   },
+   "best_score": 0.979
+  },
+  {
+   "term": "C0155765",
+   "concept": "Disease of capillaries",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "microangiopathy": 1
+   },
+   "best_score": 0.99
+  },
+  {
+   "term": "C0162429",
+   "concept": "Malnutrition",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "methods": 1
+   },
+   "forms": {
+    "malnutrition": 1
+   },
+   "best_score": 0.935
+  },
+  {
+   "term": "C0231218",
+   "concept": "Malaise",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results": 1
+   },
+   "forms": {
+    "ill": 1
+   },
+   "best_score": 0.989
+  },
+  {
+   "term": "C0242184",
+   "concept": "Hypoxia",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 1,
+   "mentions_affirmed": 0,
+   "sections": {
+    "methods": 1
+   },
+   "forms": {
+    "hypoxia": 1
+   },
+   "best_score": 0.978
+  },
+  {
+   "term": "C0242606",
+   "concept": "Oxidative Stress",
+   "semantic_types": [
+    "Cell or Molecular Dysfunction"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "oxidative stress": 1
+   },
+   "best_score": 0.985
+  },
+  {
+   "term": "C0268487",
+   "concept": "Tyrosine Transaminase Deficiency Disease",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "deficiencies": 1
+   },
+   "best_score": 0.919
+  },
+  {
+   "term": "C0349410",
+   "concept": "Single organ dysfunction",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "organ failure": 1
+   },
+   "best_score": 0.975
+  },
+  {
+   "term": "C0393639",
+   "concept": "Hashimoto's encephalitis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "autoimmune encephalitis": 1
+   },
+   "best_score": 0.978
+  },
+  {
+   "term": "C0476273",
+   "concept": "Respiratory distress",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 1,
+   "mentions_affirmed": 0,
+   "sections": {
+    "methods": 1
+   },
+   "forms": {
+    "respiratory distress": 1
+   },
+   "best_score": 0.991
+  },
+  {
+   "term": "C0497552",
+   "concept": "Congenital neurologic anomalies",
+   "semantic_types": [
+    "Congenital Abnormality"
+   ],
+   "mentions": 1,
+   "mentions_negated": 1,
+   "mentions_affirmed": 0,
+   "sections": {
+    "methods": 1
+   },
+   "forms": {
+    "neurologic abnormalities": 1
+   },
+   "best_score": 0.987
+  },
+  {
+   "term": "C0600688",
+   "concept": "Toxic effect",
+   "semantic_types": [
+    "Injury or Poisoning"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "toxic effects": 1
+   },
+   "best_score": 0.862
+  },
+  {
+   "term": "C0677607",
+   "concept": "Hashimoto Disease",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results": 1
+   },
+   "forms": {
+    "ht": 1
+   },
+   "best_score": 0.96
+  },
+  {
+   "term": "C1263988",
+   "concept": "Hemolytic disorder",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "haemolytic disorders": 1
+   },
+   "best_score": 0.984
+  },
+  {
+   "term": "C3263722",
+   "concept": "Traumatic AND/OR non-traumatic injury",
+   "semantic_types": [
+    "Injury or Poisoning"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "injury": 1
+   },
+   "best_score": 0.971
+  }
+ ]
+}

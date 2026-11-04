@@ -1,0 +1,1443 @@
+{
+ "id": "CB111",
+ "document": "data/markdown/CB111.md",
+ "source_format": "pdf",
+ "translated": false,
+ "words": 7422,
+ "run_utc": "2026-10-30T05:34:17+00:00",
+ "threshold": 0.85,
+ "kept_types": [
+  "T019",
+  "T020",
+  "T037",
+  "T046",
+  "T047",
+  "T048",
+  "T049",
+  "T050",
+  "T184",
+  "T190",
+  "T191"
+ ],
+ "term_count": 80,
+ "terms": [
+  {
+   "term": "C0019080",
+   "concept": "Hemorrhage",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 34,
+   "mentions_negated": 4,
+   "mentions_affirmed": 30,
+   "sections": {
+    "results": 20,
+    "discussion": 12,
+    "unlabelled": 1,
+    "conclusion": 1
+   },
+   "forms": {
+    "haemorrhage": 28,
+    "haemorrhages": 5,
+    "bleeding": 1
+   },
+   "best_score": 0.992
+  },
+  {
+   "term": "C0035222",
+   "concept": "Respiratory Distress Syndrome, Adult",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 28,
+   "mentions_negated": 2,
+   "mentions_affirmed": 26,
+   "sections": {
+    "introduction": 11,
+    "discussion": 10,
+    "conclusion": 4,
+    "unlabelled": 3
+   },
+   "forms": {
+    "ards": 26,
+    "acute respiratory distress syndrome": 2
+   },
+   "best_score": 0.991
+  },
+  {
+   "term": "C0013604",
+   "concept": "Edema",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 20,
+   "mentions_negated": 3,
+   "mentions_affirmed": 17,
+   "sections": {
+    "results": 12,
+    "discussion": 6,
+    "conclusion": 2
+   },
+   "forms": {
+    "oedema": 19,
+    "interstitial oedema": 1
+   },
+   "best_score": 0.98
+  },
+  {
+   "term": "C0004576",
+   "concept": "Babesiosis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 18,
+   "mentions_negated": 0,
+   "mentions_affirmed": 18,
+   "sections": {
+    "discussion": 12,
+    "introduction": 3,
+    "conclusion": 2,
+    "unlabelled": 1
+   },
+   "forms": {
+    "babesiosis": 18
+   },
+   "best_score": 0.972
+  },
+  {
+   "term": "C0242488",
+   "concept": "Acute Lung Injury",
+   "semantic_types": [
+    "Injury or Poisoning"
+   ],
+   "mentions": 18,
+   "mentions_negated": 1,
+   "mentions_affirmed": 17,
+   "sections": {
+    "introduction": 11,
+    "unlabelled": 3,
+    "discussion": 3,
+    "conclusion": 1
+   },
+   "forms": {
+    "ali": 16,
+    "acute lung injury": 2
+   },
+   "best_score": 0.976
+  },
+  {
+   "term": "C0034063",
+   "concept": "Pulmonary Edema",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 14,
+   "mentions_negated": 1,
+   "mentions_affirmed": 13,
+   "sections": {
+    "discussion": 8,
+    "results": 3,
+    "introduction": 2,
+    "conclusion": 1
+   },
+   "forms": {
+    "pulmonary oedema": 14
+   },
+   "best_score": 0.977
+  },
+  {
+   "term": "C0009450",
+   "concept": "Communicable Diseases",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 10,
+   "mentions_negated": 1,
+   "mentions_affirmed": 9,
+   "sections": {
+    "introduction": 4,
+    "discussion": 3,
+    "unlabelled": 1,
+    "methods": 1,
+    "results": 1
+   },
+   "forms": {
+    "infection": 10
+   },
+   "best_score": 0.962
+  },
+  {
+   "term": "C0748168",
+   "concept": "Pulmonary Pathology",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 7,
+   "mentions_negated": 0,
+   "mentions_affirmed": 7,
+   "sections": {
+    "introduction": 4,
+    "discussion": 2,
+    "unlabelled": 1
+   },
+   "forms": {
+    "pulmonary pathology": 7
+   },
+   "best_score": 0.99
+  },
+  {
+   "term": "C0021368",
+   "concept": "Inflammation",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 6,
+   "mentions_negated": 4,
+   "mentions_affirmed": 2,
+   "sections": {
+    "results": 3,
+    "discussion": 2,
+    "conclusion": 1
+   },
+   "forms": {
+    "inflammation": 6
+   },
+   "best_score": 0.958
+  },
+  {
+   "term": "C0012634",
+   "concept": "Disease",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 5,
+   "mentions_negated": 0,
+   "mentions_affirmed": 5,
+   "sections": {
+    "introduction": 3,
+    "discussion": 2
+   },
+   "forms": {
+    "disease": 4,
+    "diseases": 1
+   },
+   "best_score": 0.987
+  },
+  {
+   "term": "C0206061",
+   "concept": "Pneumonia, Interstitial",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 5,
+   "mentions_negated": 0,
+   "mentions_affirmed": 5,
+   "sections": {
+    "unlabelled": 2,
+    "introduction": 2,
+    "discussion": 1
+   },
+   "forms": {
+    "interstitial pneumonia": 5
+   },
+   "best_score": 0.972
+  },
+  {
+   "term": "C0273115",
+   "concept": "Lung Injury",
+   "semantic_types": [
+    "Injury or Poisoning"
+   ],
+   "mentions": 5,
+   "mentions_negated": 0,
+   "mentions_affirmed": 5,
+   "sections": {
+    "discussion": 2,
+    "unlabelled": 1,
+    "introduction": 1,
+    "conclusion": 1
+   },
+   "forms": {
+    "lung injury": 3,
+    "pulmonary injury": 2
+   },
+   "best_score": 0.979
+  },
+  {
+   "term": "C1262020",
+   "concept": "Diffuse alveolar damage",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 5,
+   "mentions_negated": 1,
+   "mentions_affirmed": 4,
+   "sections": {
+    "introduction": 2,
+    "conclusion": 2,
+    "unlabelled": 1
+   },
+   "forms": {
+    "dad": 4,
+    "diffuse alveolar damage": 1
+   },
+   "best_score": 0.978
+  },
+  {
+   "term": "C0040053",
+   "concept": "Thrombosis",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 4,
+   "mentions_negated": 2,
+   "mentions_affirmed": 2,
+   "sections": {
+    "results": 2,
+    "discussion": 1,
+    "conclusion": 1
+   },
+   "forms": {
+    "thrombosis": 4
+   },
+   "best_score": 0.98
+  },
+  {
+   "term": "C0699748",
+   "concept": "Pathogenesis",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 4,
+   "mentions_negated": 0,
+   "mentions_affirmed": 4,
+   "sections": {
+    "discussion": 3,
+    "introduction": 1
+   },
+   "forms": {
+    "pathogenesis": 4
+   },
+   "best_score": 0.983
+  },
+  {
+   "term": "C0002871",
+   "concept": "Anemia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 3,
+   "mentions_negated": 1,
+   "mentions_affirmed": 2,
+   "sections": {
+    "introduction": 2,
+    "results": 1
+   },
+   "forms": {
+    "anaemia": 3
+   },
+   "best_score": 0.977
+  },
+  {
+   "term": "C0003165",
+   "concept": "Anthracosis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 3,
+   "mentions_negated": 1,
+   "mentions_affirmed": 2,
+   "sections": {
+    "results": 3
+   },
+   "forms": {
+    "anthracosis": 3
+   },
+   "best_score": 0.978
+  },
+  {
+   "term": "C0009566",
+   "concept": "Complication",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "discussion": 2,
+    "unlabelled": 1
+   },
+   "forms": {
+    "complication": 2,
+    "complications": 1
+   },
+   "best_score": 0.977
+  },
+  {
+   "term": "C0024530",
+   "concept": "Malaria",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "introduction": 2,
+    "discussion": 1
+   },
+   "forms": {
+    "malaria": 3
+   },
+   "best_score": 0.996
+  },
+  {
+   "term": "C0037088",
+   "concept": "Signs and Symptoms",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 3,
+   "mentions_negated": 1,
+   "mentions_affirmed": 2,
+   "sections": {
+    "discussion": 2,
+    "results": 1
+   },
+   "forms": {
+    "finding": 3
+   },
+   "best_score": 0.994
+  },
+  {
+   "term": "C3263722",
+   "concept": "Traumatic AND/OR non-traumatic injury",
+   "semantic_types": [
+    "Injury or Poisoning"
+   ],
+   "mentions": 3,
+   "mentions_negated": 2,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 3
+   },
+   "forms": {
+    "injury": 3
+   },
+   "best_score": 0.971
+  },
+  {
+   "term": "C0000921",
+   "concept": "Accidental Falls",
+   "semantic_types": [
+    "Injury or Poisoning"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "results": 2
+   },
+   "forms": {
+    "falls": 2
+   },
+   "best_score": 0.986
+  },
+  {
+   "term": "C0002878",
+   "concept": "Anemia, Hemolytic",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "introduction": 1,
+    "discussion": 1
+   },
+   "forms": {
+    "haemolytic anaemia": 2
+   },
+   "best_score": 0.98
+  },
+  {
+   "term": "C0013404",
+   "concept": "Dyspnea",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "introduction": 2
+   },
+   "forms": {
+    "dyspnoea": 2
+   },
+   "best_score": 0.985
+  },
+  {
+   "term": "C0015376",
+   "concept": "Extravasation",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "discussion": 2
+   },
+   "forms": {
+    "extravasation": 1,
+    "spillage": 1
+   },
+   "best_score": 0.973
+  },
+  {
+   "term": "C0039082",
+   "concept": "Syndrome",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "introduction": 2
+   },
+   "forms": {
+    "syndrome": 1,
+    "syndromes": 1
+   },
+   "best_score": 0.994
+  },
+  {
+   "term": "C0151701",
+   "concept": "Pulmonary hemorrhage",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "discussion": 2
+   },
+   "forms": {
+    "pulmonary haemorrhages": 1,
+    "intrapulmonary haemorrhages": 1
+   },
+   "best_score": 0.928
+  },
+  {
+   "term": "C0332448",
+   "concept": "Infiltration",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "discussion": 1,
+    "conclusion": 1
+   },
+   "forms": {
+    "infiltration": 1,
+    "infiltrates": 1
+   },
+   "best_score": 0.959
+  },
+  {
+   "term": "C0333732",
+   "concept": "Karyorrhexis",
+   "semantic_types": [
+    "Cell or Molecular Dysfunction"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "results": 2
+   },
+   "forms": {
+    "karyorrhexis": 1,
+    "karyolysis": 1
+   },
+   "best_score": 0.98
+  },
+  {
+   "term": "C0398623",
+   "concept": "Thrombophilia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "discussion": 2
+   },
+   "forms": {
+    "hypercoagulability": 2
+   },
+   "best_score": 0.984
+  },
+  {
+   "term": "C0700148",
+   "concept": "Congestion",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 2,
+   "mentions_negated": 1,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results": 1,
+    "discussion": 1
+   },
+   "forms": {
+    "congestion": 2
+   },
+   "best_score": 0.967
+  },
+  {
+   "term": "C0851162",
+   "concept": "Infections of musculoskeletal system",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "introduction": 1,
+    "discussion": 1
+   },
+   "forms": {
+    "infections": 2
+   },
+   "best_score": 0.971
+  },
+  {
+   "term": "C0001748",
+   "concept": "African Horse Sickness",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "african horse sickness": 1
+   },
+   "best_score": 0.975
+  },
+  {
+   "term": "C0002064",
+   "concept": "Alkalosis, Respiratory",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "respiratory alkalosis": 1
+   },
+   "best_score": 0.973
+  },
+  {
+   "term": "C0004144",
+   "concept": "Atelectasis",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results": 1
+   },
+   "forms": {
+    "atelectasis": 1
+   },
+   "best_score": 0.988
+  },
+  {
+   "term": "C0004623",
+   "concept": "Bacterial Infections",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "bacterial infection": 1
+   },
+   "best_score": 0.973
+  },
+  {
+   "term": "C0004626",
+   "concept": "Pneumonia, Bacterial",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "bacterial pneumonia": 1
+   },
+   "best_score": 0.972
+  },
+  {
+   "term": "C0005959",
+   "concept": "Bone marrow hyperplasia",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 1,
+   "mentions_affirmed": 0,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "bone-marrow hyperplasia": 1
+   },
+   "best_score": 0.89
+  },
+  {
+   "term": "C0010957",
+   "concept": "Tissue damage",
+   "semantic_types": [
+    "Injury or Poisoning"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "damage": 1
+   },
+   "best_score": 0.987
+  },
+  {
+   "term": "C0014068",
+   "concept": "Encephalomalacia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "encephalomalacia": 1
+   },
+   "best_score": 0.992
+  },
+  {
+   "term": "C0015967",
+   "concept": "Fever",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "pyrexia": 1
+   },
+   "best_score": 0.98
+  },
+  {
+   "term": "C0018802",
+   "concept": "Congestive heart failure",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 1,
+   "mentions_affirmed": 0,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "congestive heart failure": 1
+   },
+   "best_score": 0.977
+  },
+  {
+   "term": "C0019123",
+   "concept": "Hemothorax",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results": 1
+   },
+   "forms": {
+    "subpleural haemorrhage": 1
+   },
+   "best_score": 0.864
+  },
+  {
+   "term": "C0020452",
+   "concept": "Hyperemia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "hyperaemia": 1
+   },
+   "best_score": 0.978
+  },
+  {
+   "term": "C0020507",
+   "concept": "Hyperplasia",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "hyperplastic": 1
+   },
+   "best_score": 0.981
+  },
+  {
+   "term": "C0020542",
+   "concept": "Pulmonary Hypertension",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 1,
+   "mentions_affirmed": 0,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "pulmonary hypertension": 1
+   },
+   "best_score": 0.983
+  },
+  {
+   "term": "C0020564",
+   "concept": "Hypertrophy",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results": 1
+   },
+   "forms": {
+    "hypertrophy": 1
+   },
+   "best_score": 0.984
+  },
+  {
+   "term": "C0021308",
+   "concept": "Infarction",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "conclusion": 1
+   },
+   "forms": {
+    "infarction": 1
+   },
+   "best_score": 0.933
+  },
+  {
+   "term": "C0022346",
+   "concept": "Icterus",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "icterus": 1
+   },
+   "best_score": 0.958
+  },
+  {
+   "term": "C0022660",
+   "concept": "Kidney Failure, Acute",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "acute renal failure": 1
+   },
+   "best_score": 0.967
+  },
+  {
+   "term": "C0023380",
+   "concept": "Lethargy",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "lethargy": 1
+   },
+   "best_score": 0.987
+  },
+  {
+   "term": "C0027051",
+   "concept": "Myocardial Infarction",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "myocardial infarction": 1
+   },
+   "best_score": 0.953
+  },
+  {
+   "term": "C0030305",
+   "concept": "Pancreatitis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "pancreatitis": 1
+   },
+   "best_score": 0.986
+  },
+  {
+   "term": "C0032285",
+   "concept": "Pneumonia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "pneumonia": 1
+   },
+   "best_score": 0.983
+  },
+  {
+   "term": "C0033770",
+   "concept": "Prune Belly Syndrome",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "methods": 1
+   },
+   "forms": {
+    "pbs": 1
+   },
+   "best_score": 0.988
+  },
+  {
+   "term": "C0035220",
+   "concept": "Respiratory Distress Syndrome, Newborn",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "respiratory distress syndrome": 1
+   },
+   "best_score": 0.991
+  },
+  {
+   "term": "C0036690",
+   "concept": "Septicemia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "sepsis": 1
+   },
+   "best_score": 0.971
+  },
+  {
+   "term": "C0036974",
+   "concept": "Shock",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "shock": 1
+   },
+   "best_score": 0.998
+  },
+  {
+   "term": "C0036983",
+   "concept": "Septic Shock",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "septic shock": 1
+   },
+   "best_score": 0.981
+  },
+  {
+   "term": "C0040034",
+   "concept": "Thrombocytopenia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "thrombocytopaenia": 1
+   },
+   "best_score": 0.98
+  },
+  {
+   "term": "C0043251",
+   "concept": "Wounds and Injuries",
+   "semantic_types": [
+    "Injury or Poisoning"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "trauma": 1
+   },
+   "best_score": 0.966
+  },
+  {
+   "term": "C0087086",
+   "concept": "Thrombus",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results": 1
+   },
+   "forms": {
+    "thrombus": 1
+   },
+   "best_score": 0.964
+  },
+  {
+   "term": "C0220981",
+   "concept": "Metabolic acidosis",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "metabolic acidosis": 1
+   },
+   "best_score": 0.991
+  },
+  {
+   "term": "C0221423",
+   "concept": "Illness (finding)",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "methods": 1
+   },
+   "forms": {
+    "sick": 1
+   },
+   "best_score": 0.995
+  },
+  {
+   "term": "C0221444",
+   "concept": "clinical syndromes",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "clinical syndromes": 1
+   },
+   "best_score": 0.983
+  },
+  {
+   "term": "C0243026",
+   "concept": "Sepsis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 1,
+   "mentions_affirmed": 0,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "systemic infections": 1
+   },
+   "best_score": 0.981
+  },
+  {
+   "term": "C0264393",
+   "concept": "Panacinar Emphysema",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results": 1
+   },
+   "forms": {
+    "alveolar emphysema": 1
+   },
+   "best_score": 0.878
+  },
+  {
+   "term": "C0282548",
+   "concept": "Leukostasis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results": 1
+   },
+   "forms": {
+    "leukostasis": 1
+   },
+   "best_score": 0.957
+  },
+  {
+   "term": "C0333387",
+   "concept": "Lymphoreticular cell infiltration",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "conclusion": 1
+   },
+   "forms": {
+    "lymphohistiocytic infiltrate": 1
+   },
+   "best_score": 0.961
+  },
+  {
+   "term": "C0334094",
+   "concept": "Proliferation (morphologic abnormality)",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "proliferative": 1
+   },
+   "best_score": 0.982
+  },
+  {
+   "term": "C0349410",
+   "concept": "Single organ dysfunction",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "organ failure": 1
+   },
+   "best_score": 0.975
+  },
+  {
+   "term": "C0442860",
+   "concept": "Intravascular thrombosis",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 1,
+   "mentions_affirmed": 0,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "intravascular thrombosis": 1
+   },
+   "best_score": 0.977
+  },
+  {
+   "term": "C0476273",
+   "concept": "Respiratory distress",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "respiratory distress": 1
+   },
+   "best_score": 0.991
+  },
+  {
+   "term": "C0524702",
+   "concept": "Pulmonary Thromboembolisms",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "pulmonary thromboembolism": 1
+   },
+   "best_score": 0.976
+  },
+  {
+   "term": "C0919747",
+   "concept": "Cytokine Storm",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "cytokine storm": 1
+   },
+   "best_score": 0.97
+  },
+  {
+   "term": "C1145670",
+   "concept": "Respiratory Failure",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "respiratory failure": 1
+   },
+   "best_score": 0.975
+  },
+  {
+   "term": "C1155266",
+   "concept": "Inflammatory Response",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "inflammatory response": 1
+   },
+   "best_score": 0.983
+  },
+  {
+   "term": "C1817978",
+   "concept": "acute inflammatory response",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "acute inflammatory response": 1
+   },
+   "best_score": 0.984
+  },
+  {
+   "term": "C3241936",
+   "concept": "Non-cardiogenic pulmonary edema",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "non-cardiogenic pulmonary oedema": 1
+   },
+   "best_score": 0.977
+  },
+  {
+   "term": "C4721411",
+   "concept": "Osteolysis",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "dissolution": 1
+   },
+   "best_score": 0.853
+  }
+ ]
+}

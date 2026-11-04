@@ -1,0 +1,93 @@
+{
+ "id": "CB122",
+ "filename": "CB122_2024_characterization-lc-ms-ms-based-proteomic.md",
+ "key": "PMID:38653059",
+ "record": {
+  "pmid": "38653059",
+  "pmcid": null,
+  "doi": "10.1016/j.vetpar.2024.110188",
+  "title": "Characterization and LC-MS/MS based proteomic analysis of extracellular vesicles separated from blood serum of healthy and dogs naturally infected by Babesia canis. A preliminary study.",
+  "authors": [
+   "Rešetar Maslov D",
+   "Rubić I",
+   "Farkaš V",
+   "Kuleš J",
+   "Beer Ljubić B",
+   "Beletić A",
+   "Samardžija M",
+   "Kovačić M",
+   "Jurkić Krsteska G",
+   "Mrljak V"
+  ],
+  "journal": "Veterinary parasitology",
+  "journal_abbrev": "Vet Parasitol",
+  "volume": "328",
+  "issue": null,
+  "pages": "110188",
+  "language": [
+   "eng"
+  ],
+  "issue_date": "2024-06-01",
+  "issue_date_precision": "month",
+  "epub_date": "2024-04-17",
+  "pubmed_entry_date": "2024-04-24",
+  "first_pub_date": "2024-04-17",
+  "publication_types": [
+   "Journal Article"
+  ],
+  "mesh": [
+   "Animals",
+   "Dogs",
+   "Babesia",
+   "Babesiosis",
+   "Dog Diseases",
+   "Extracellular Vesicles",
+   "Liquid Chromatography-Mass Spectrometry",
+   "Proteomics",
+   "Tandem Mass Spectrometry"
+  ],
+  "keywords": [
+   "Babesia canis",
+   "Babesiosis",
+   "Dog",
+   "Extracellular vesicles",
+   "Proteins"
+  ],
+  "abstract": "Canine babesiosis is a rapidly spreading tick-borne disease in Europe, which entails protozoan parasites invading red blood cells. Small extracellular vesicles (EVs) (< 200 nm) were isolated from the serum of 15 healthy and 15 by Babesia canis naturally infected dogs aimed to distinguish EV characteristics and protein profiles. There were no significant differences (P = 0.05) observed in the mean sizes and concentrations of serum EVs between the healthy and canine babesiosis groups. Despite a higher number of Canis lupus proteins detected in EVs from serum of diseased dogs, there were no statistically significant differences (P < 0.05) in the number of protein IDs between the experimental groups. We successfully identified 211 Canis lupus proteins across both experimental groups, of which 147 Canis lupus proteins were validated as being EV-associated. This data set is accessible via the ProteomeXchange PXD047647. EVs isolated from serum of B. canis infected dogs were Cd9+, Cd63+, Cd81+, and Cd82+. Furthermore, 73 Canis lupus proteins were validated as EV-associated and specific for EVs isolated from serum of B. canis-infected dogs. These were predominantly membrane and cytosolic proteins, and innate and adaptive immune system-related proteins, especially those involved in adhesion and proteoglycan mechanisms like integrins. Enrichment was also observed for proteins involved in vascular and cellular responses, including signalling pathways such as VEGF, VEGFR, and the LKB1 network. When only blood-related sites of EV expression were evaluated, the origins of EV proteins were mostly cells of immune system. These were dendritic cells, neutrophils, B cells, monocytes and platelets. In general, proteins were enriched in pathways that collectively regulate various cellular processes, including immune responses, communication, signal transduction, membrane trafficking, and apoptosis. Serum EVs and their protein cargo may have an important role in both the invasion of B. canis and the host's response to the parasitic infection, nevertheless, additional experimental research is warranted. The overall count of identified EV proteins of parasitic origin, meeting cut off criteria of two peptides and 1 % FDR, was relatively low.",
+  "corrections": [],
+  "epmc_first_pub_date": "2024-04-17",
+  "is_oa": "N",
+  "has_suppl": "N",
+  "found_by": [
+   "EP1_broad",
+   "EP2_species",
+   "PM1_broad",
+   "PM2_species",
+   "PM3_mechanism"
+  ],
+  "in_window": true,
+  "online_vs_issue": "online 2024-04-17; issue 2024-06-01 (month)"
+ },
+ "screening": {
+  "key": "PMID:38653059",
+  "decision": "include",
+  "include_type": "primary",
+  "exclude_reason": null,
+  "primary_category": "OXO",
+  "secondary_tags": [
+   "INF",
+   "END"
+  ],
+  "species": "B. canis (suspected)",
+  "rationale": "Serum EV proteomics in naturally infected dogs; host-response omics showing immune, vascular and signalling pathway enrichment informing host-parasite interaction.",
+  "stage": "screen",
+  "batch": "r1_20.md",
+  "screening_round": "r1"
+ },
+ "fulltext_check": {
+  "key": "PMID:38653059",
+  "pmcid": null,
+  "checked": "2026-10-23",
+  "fulltext_status": "no_pmcid"
+ }
+}

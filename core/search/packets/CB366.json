@@ -1,0 +1,51 @@
+{
+ "id": "CB366",
+ "filename": "CB366_2009_informational-activity-indicating-liver-enzyme-during.md",
+ "key": "https://openalex.org/W2620077354",
+ "record": {
+  "pmid": null,
+  "pmcid": null,
+  "doi": null,
+  "title": "Informational activity indicating liver enzyme in dogs during babesiosis",
+  "journal": "Науковий вісник Львівського національного університету ветеринарної медицини та біотехнологій імені С.З. Ґжицького",
+  "authors": [
+   "I U Horalska"
+  ],
+  "first_pub_date": "2009-01-01",
+  "type": "article",
+  "language": [
+   "uk"
+  ],
+  "abstract": "The paper describes ferment diagnosis of the dogs’ liver pathology during acute course of babesiosis. Our investigations revealed that the first manifestation of clinical signs of disease is accompanied by increased activity of GOT, GPT and moderate fermentemy. Sustained increase in activity of GOT, LDH and GPT indicates progressive development of disease. After 2-3rd day of the clinical manifestations of disease cholestatic signs of high blood elimination in GGT and LB includes.",
+  "abstract_source": "OpenAlex abstract_inverted_index (reconstructed)",
+  "source_id": "https://openalex.org/W2620077354",
+  "src": "OPENALEX",
+  "found_by": [
+   "OA:title_and_abstract"
+  ],
+  "in_window": true,
+  "key": "https://openalex.org/W2620077354",
+  "source_files": [
+   "candidates_r3.jsonl"
+  ]
+ },
+ "screening": {
+  "key": "https://openalex.org/W2620077354",
+  "decision": "include",
+  "include_type": "primary",
+  "exclude_reason": null,
+  "primary_category": "MET",
+  "secondary_tags": [],
+  "species": "Babesia sp. (unspecified; Ukrainian study)",
+  "rationale": "Describes the time course of liver enzymes (AST, ALT, LDH, GGT, bilirubin) and a cholestatic pattern in dogs with acute babesiosis. It reports host hepatic injury data.",
+  "stage": "screen",
+  "batch": "r4_06.md",
+  "screening_round": "r4"
+ },
+ "fulltext_check": {
+  "key": "https://openalex.org/W2620077354",
+  "pmcid": null,
+  "checked": "2026-10-28",
+  "fulltext_status": "no_pmcid"
+ }
+}

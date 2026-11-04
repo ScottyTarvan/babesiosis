@@ -1,0 +1,80 @@
+{
+ "id": "CB030",
+ "filename": "CB030_2019_analysis-amino-acid-sequences-18s-rna.md",
+ "key": "PMID:31376344",
+ "record": {
+  "pmid": "31376344",
+  "pmcid": null,
+  "doi": "10.17420/ap6502.194",
+  "title": "Analysis of the amino acid sequences of 18S RNA strains of Babesia canis isolated from dogs, including the analysis of serum proteome of protozoa infected dogs.",
+  "authors": [
+   "Łyp P",
+   "Winiarczyk S",
+   "Rogalski J",
+   "Adaszek Ł"
+  ],
+  "journal": "Annals of parasitology",
+  "journal_abbrev": "Ann Parasitol",
+  "volume": "65",
+  "issue": "2",
+  "pages": "145-149",
+  "language": [
+   "eng"
+  ],
+  "issue_date": "2019-01-01",
+  "issue_date_precision": "year",
+  "epub_date": null,
+  "pubmed_entry_date": "2019-08-04",
+  "first_pub_date": "2019-01-01",
+  "publication_types": [
+   "Journal Article"
+  ],
+  "mesh": [
+   "Amino Acid Sequence",
+   "Animals",
+   "Babesia",
+   "Babesiosis",
+   "Dog Diseases",
+   "Dogs",
+   "Proteome",
+   "Protozoan Proteins",
+   "RNA, Protozoan",
+   "RNA, Ribosomal, 18S"
+  ],
+  "keywords": [],
+  "abstract": "The aim of this paper was to analyse the amino acid sequences of the 18S rRNA gene of Babesia canis strains and the proteomic analysis of the serum of dogs infected with three various genotypes: 18S rRNA B. canis. Material for the research was DNA B. canis obtained from dogs with babesiosis. In total, 60 DNA tested samples were divided into three groups (20 samples each). The groups were formed by DNA samples of the sequences marked as 18S RNA-A (group 1), 18S RNA-B (group 2), and 18S RNA-C (group 3). The basis for the classification of protozoa to a specific group was the location of relevant nucleotides (GA, AG, or TT) in position 150-151 of the tested nucleotide sequence 18S rRNA. Nucleotide sequences were transcribed into amino acid sequences and then analysed using DNASTAR software. From all 60 infected and ten healthy dogs (control group), the serum was taken to make proteomic tests using MALDI-TOF mass spectrometer. It was demonstrated that the mutations found in position 150 and 151 of the nucleotide sequence, result in a change of amino acid sequences. Moreover, it was also demonstrated that the disease course in dogs infected with different strains of protozoa is different. Each of the analysed strains of protozoa induced in the serum of infected animals the appearance of a protein fraction of mass 51 kDa, which may then be treated as a nonspecific disease marker used for the diagnosis of this disease but not to differentiate the protozoa strains.",
+  "corrections": [],
+  "epmc_first_pub_date": "2019-01-01",
+  "is_oa": "N",
+  "has_suppl": "N",
+  "found_by": [
+   "EP1_broad",
+   "EP2_species",
+   "PM1_broad",
+   "PM2_species",
+   "PM3_mechanism"
+  ],
+  "in_window": true
+ },
+ "screening": {
+  "key": "PMID:31376344",
+  "decision": "include",
+  "include_type": "primary",
+  "exclude_reason": null,
+  "primary_category": "OXO",
+  "secondary_tags": [
+   "INF"
+  ],
+  "species": "B. canis (confirmed, 18S sequencing)",
+  "rationale": "B. canis 18S genotypes compared with differing disease course and serum proteome in infected dogs; parasite genotype and host-response omics.",
+  "stage": "screen",
+  "batch": "r1_05.md",
+  "screening_round": "r1"
+ },
+ "fulltext_check": {
+  "key": "PMID:31376344",
+  "pmcid": null,
+  "checked": "2026-10-23",
+  "fulltext_status": "no_pmcid"
+ }
+}

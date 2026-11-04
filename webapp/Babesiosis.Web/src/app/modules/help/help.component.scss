@@ -1,0 +1,275 @@
+:host {
+  display: block;
+}
+
+.fs-help {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+// Tree on the left, content on the right; stacked on narrow screens.
+.fs-help__layout {
+  display: grid;
+  grid-template-columns: minmax(220px, 280px) minmax(0, 1fr);
+  gap: 16px;
+  align-items: start;
+}
+
+@media (max-width: 991.98px) {
+  .fs-help__layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+.fs-help__nav {
+  position: sticky;
+  top: 16px;
+  min-width: 0;
+}
+
+// Stacked: the article leads and the tree follows, so a deep link doesn't
+// land the reader above a screenful of navigation.
+@media (max-width: 991.98px) {
+  .fs-help__nav {
+    position: static;
+    order: 2;
+  }
+}
+
+.fs-help__main {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  min-width: 0;
+}
+
+// ---- Search -----------------------------------------------------------------
+.fs-help__search {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-bottom: 12px;
+
+  fs-text-input {
+    flex: 1 1 auto;
+    min-width: 0;
+  }
+}
+
+// ---- Navigation tree --------------------------------------------------------
+.fs-help__tree,
+.fs-help__tree-topics {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.fs-help__tree > li + li {
+  margin-top: 2px;
+}
+
+.fs-help__tree-module,
+.fs-help__tree-topic {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-radius: 6px;
+  text-decoration: none;
+  color: rgb(var(--fs-color-ink));
+  font: var(--fs-guide-text-body);
+  letter-spacing: var(--fs-guide-tracking);
+
+  &:hover {
+    background: rgb(var(--fs-color-primary-bg));
+    color: rgb(var(--fs-color-ink-strong));
+  }
+
+  &:focus-visible {
+    outline: 2px solid rgb(var(--fs-color-primary));
+    outline-offset: 1px;
+  }
+
+  &.is-active {
+    background: rgb(var(--fs-color-primary-bg));
+    color: rgb(var(--fs-color-primary));
+  }
+}
+
+.fs-help__tree-module {
+  padding: 6px 8px;
+  font: var(--fs-guide-text-body-strong);
+}
+
+.fs-help__tree-label {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.fs-help__tree-section {
+  margin: 8px 0 2px 32px;
+  font: var(--fs-guide-text-label);
+  color: rgb(var(--fs-color-ink-soft));
+  letter-spacing: var(--fs-guide-tracking);
+}
+
+.fs-help__tree-topic {
+  padding: 4px 8px 4px 32px;
+}
+
+// ---- Landing cards ----------------------------------------------------------
+.fs-help__cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 16px;
+}
+
+.fs-help__card-link {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+  border-radius: 8px;
+
+  fs-card {
+    display: block;
+    height: 100%;
+  }
+
+  &:hover .fs-help__h2 {
+    color: rgb(var(--fs-color-primary));
+  }
+
+  &:focus-visible {
+    outline: 2px solid rgb(var(--fs-color-primary));
+    outline-offset: 2px;
+  }
+}
+
+.fs-help__card-head {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.fs-help__card-head--spread {
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.fs-help__card-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  background: rgb(var(--fs-color-primary-bg));
+  color: rgb(var(--fs-color-primary));
+}
+
+.fs-help__card-head .fs-help__h2 {
+  flex: 1 1 auto;
+}
+
+// ---- Typography -------------------------------------------------------------
+.fs-help__h2 {
+  margin: 0;
+  font: var(--fs-guide-text-body-strong);
+  color: rgb(var(--fs-color-ink-strong));
+  letter-spacing: var(--fs-guide-tracking);
+}
+
+.fs-help__lead,
+.fs-help__p {
+  margin: 0 0 12px;
+  font: var(--fs-guide-text-body);
+  color: rgb(var(--fs-color-ink));
+  letter-spacing: var(--fs-guide-tracking);
+}
+
+.fs-help__lead {
+  color: rgb(var(--fs-color-ink-strong));
+}
+
+.fs-help__summary,
+.fs-help__meta {
+  margin: 0;
+  font: var(--fs-guide-text-body);
+  color: rgb(var(--fs-color-ink-soft));
+  letter-spacing: var(--fs-guide-tracking);
+}
+
+.fs-help__meta {
+  margin-top: 8px;
+  font: var(--fs-guide-text-label);
+}
+
+.fs-help__list {
+  margin: 0 0 12px;
+  padding-left: 20px;
+  font: var(--fs-guide-text-body);
+  color: rgb(var(--fs-color-ink));
+}
+
+.fs-help__article .fs-help__h2 {
+  margin: 16px 0 8px;
+}
+
+// ---- Module overview --------------------------------------------------------
+.fs-help__overview-section + .fs-help__overview-section {
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid rgb(var(--fs-color-line));
+}
+
+.fs-help__overview-topics {
+  list-style: none;
+  margin: 8px 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  li {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  a {
+    font: var(--fs-guide-text-body-strong);
+    color: rgb(var(--fs-color-primary));
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+// ---- Contact form -----------------------------------------------------------
+.fs-help__form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.fs-help__form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+@media (max-width: 575.98px) {
+  .fs-help__form-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.fs-help__form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-top: 4px;
+}

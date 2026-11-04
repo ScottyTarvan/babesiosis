@@ -1,0 +1,312 @@
+{
+ "id": "CB200",
+ "document": "data/markdown/CB200.en.md",
+ "source_format": "pdf",
+ "translated": true,
+ "words": 3532,
+ "run_utc": "2026-10-30T05:35:09+00:00",
+ "threshold": 0.85,
+ "kept_types": [
+  "T019",
+  "T020",
+  "T037",
+  "T046",
+  "T047",
+  "T048",
+  "T049",
+  "T050",
+  "T184",
+  "T190",
+  "T191"
+ ],
+ "term_count": 16,
+ "terms": [
+  {
+   "term": "C0036974",
+   "concept": "Shock",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 46,
+   "mentions_negated": 0,
+   "mentions_affirmed": 46,
+   "sections": {
+    "introduction": 25,
+    "unlabelled": 15,
+    "conclusion": 5,
+    "title": 1
+   },
+   "forms": {
+    "shock": 45,
+    "shocked": 1
+   },
+   "best_score": 0.998
+  },
+  {
+   "term": "C0004576",
+   "concept": "Babesiosis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 17,
+   "mentions_negated": 0,
+   "mentions_affirmed": 17,
+   "sections": {
+    "introduction": 10,
+    "unlabelled": 5,
+    "title": 1,
+    "conclusion": 1
+   },
+   "forms": {
+    "babesiosis": 17
+   },
+   "best_score": 0.972
+  },
+  {
+   "term": "C0019080",
+   "concept": "Hemorrhage",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 9,
+   "mentions_negated": 2,
+   "mentions_affirmed": 7,
+   "sections": {
+    "introduction": 6,
+    "unlabelled": 3
+   },
+   "forms": {
+    "blood loss": 4,
+    "blood": 3,
+    "haemorrhage": 1,
+    "haemorrhages": 1
+   },
+   "best_score": 0.997
+  },
+  {
+   "term": "C0009566",
+   "concept": "Complication",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 5,
+   "mentions_negated": 0,
+   "mentions_affirmed": 5,
+   "sections": {
+    "introduction": 3,
+    "unlabelled": 2
+   },
+   "forms": {
+    "complications": 3,
+    "complication": 2
+   },
+   "best_score": 0.977
+  },
+  {
+   "term": "C0012739",
+   "concept": "Disseminated Intravascular Coagulation",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 4,
+   "mentions_negated": 0,
+   "mentions_affirmed": 4,
+   "sections": {
+    "introduction": 3,
+    "conclusion": 1
+   },
+   "forms": {
+    "dic": 4
+   },
+   "best_score": 0.968
+  },
+  {
+   "term": "C0599156",
+   "concept": "Transition Mutation",
+   "semantic_types": [
+    "Cell or Molecular Dysfunction"
+   ],
+   "mentions": 4,
+   "mentions_negated": 0,
+   "mentions_affirmed": 4,
+   "sections": {
+    "unlabelled": 4
+   },
+   "forms": {
+    "transition": 4
+   },
+   "best_score": 0.981
+  },
+  {
+   "term": "C0012634",
+   "concept": "Disease",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "unlabelled": 2
+   },
+   "forms": {
+    "disease": 2
+   },
+   "best_score": 0.987
+  },
+  {
+   "term": "C0013604",
+   "concept": "Edema",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "introduction": 2
+   },
+   "forms": {
+    "interstitial oedema": 1,
+    "oedematous": 1
+   },
+   "best_score": 0.96
+  },
+  {
+   "term": "C0037763",
+   "concept": "Spasm",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "introduction": 2
+   },
+   "forms": {
+    "spasm": 2
+   },
+   "best_score": 0.968
+  },
+  {
+   "term": "C0004943",
+   "concept": "Behcet Syndrome",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "symptom complex": 1
+   },
+   "best_score": 0.859
+  },
+  {
+   "term": "C0026766",
+   "concept": "Multiple Organ Failure",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "multiple organ failure": 1
+   },
+   "best_score": 0.981
+  },
+  {
+   "term": "C0029166",
+   "concept": "Oral Manifestations",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "manifestation": 1
+   },
+   "best_score": 0.875
+  },
+  {
+   "term": "C0039082",
+   "concept": "Syndrome",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "syndrome": 1
+   },
+   "best_score": 0.994
+  },
+  {
+   "term": "C0683278",
+   "concept": "Mental Suffering",
+   "semantic_types": [
+    "Mental or Behavioral Dysfunction"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "suffering": 1
+   },
+   "best_score": 0.94
+  },
+  {
+   "term": "C0699748",
+   "concept": "Pathogenesis",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "pathogenesis": 1
+   },
+   "best_score": 0.983
+  },
+  {
+   "term": "C1868263",
+   "concept": "Platelet Aggregation, Spontaneous",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "spa": 1
+   },
+   "best_score": 0.963
+  }
+ ]
+}

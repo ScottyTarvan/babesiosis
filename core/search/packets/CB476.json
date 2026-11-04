@@ -1,0 +1,137 @@
+{
+ "id": "CB476",
+ "filename": "CB476_2014_identification-serum-biomarkers-naturally-infected-babesia.md",
+ "key": "PMID:24885808",
+ "record": {
+  "pmid": "24885808",
+  "pmcid": "PMC4045879",
+  "doi": "10.1186/1746-6148-10-111",
+  "title": "Identification of serum biomarkers in dogs naturally infected with Babesia canis canis using a proteomic approach.",
+  "authors": [
+   "Kuleš J",
+   "Mrljak V",
+   "Barić Rafaj R",
+   "Selanec J",
+   "Burchmore R",
+   "Eckersall PD"
+  ],
+  "journal": "BMC veterinary research",
+  "journal_abbrev": "BMC Vet Res",
+  "volume": "10",
+  "issue": null,
+  "pages": "111",
+  "language": [
+   "eng"
+  ],
+  "issue_date": "2014-05-12",
+  "issue_date_precision": "day",
+  "epub_date": "2014-05-12",
+  "pubmed_entry_date": "2014-06-03",
+  "first_pub_date": "2014-05-12",
+  "publication_types": [
+   "Journal Article",
+   "Research Support, Non-U.S. Gov't"
+  ],
+  "mesh": [
+   "Animals",
+   "Babesia",
+   "Babesiosis",
+   "Biomarkers",
+   "Case-Control Studies",
+   "Dogs",
+   "Female",
+   "Male",
+   "Proteomics"
+  ],
+  "keywords": [],
+  "abstract": "BACKGROUND: Canine babesiosis is a tick-borne disease that is caused by the haemoprotozoan parasites of the genus Babesia. There are limited data on serum proteomics in dogs, and none of the effect of babesiosis on the serum proteome. The aim of this study was to identify the potential serum biomarkers of babesiosis using proteomic techniques in order to increase our understanding about disease pathogenesis.\nRESULTS: Serum samples were collected from 25 dogs of various breeds and sex with naturally occurring babesiosis caused by B. canis canis. Blood was collected on the day of admission (day 0), and subsequently on the 1st and 6th day of treatment. Two-dimensional electrophoresis (2DE) of pooled serum samples of dogs with naturally occurring babesiosis (day 0, day 1 and day 6) and healthy dogs were run in triplicate. 2DE image analysis showed 64 differentially expressed spots with p ≤ 0.05 and 49 spots with fold change ≥2. Six selected spots were excised manually and subjected to trypsin digest prior to identification by electrospray ionisation mass spectrometry on an Amazon ion trap tandem mass spectrometry (MS/MS). Mass spectrometry data was processed using Data Analysis software and the automated Matrix Science Mascot Daemon server. Protein identifications were assigned using the Mascot search engine to interrogate protein sequences in the NCBI Genbank database. A number of differentially expressed serum proteins involved in inflammation mediated acute phase response, complement and coagulation cascades, apolipoproteins and vitamin D metabolism pathway were identified in dogs with babesiosis.\nCONCLUSIONS: Our findings confirmed two dominant pathogenic mechanisms of babesiosis, haemolysis and acute phase response. These results may provide possible serum biomarker candidates for clinical monitoring of babesiosis and this study could serve as the basis for further proteomic investigations in canine babesiosis.",
+  "corrections": [],
+  "epmc_first_pub_date": "2014-05-12",
+  "is_oa": "Y",
+  "has_suppl": "Y",
+  "found_by": [
+   "EP1_broad",
+   "EP2_species",
+   "PM1_broad",
+   "PM2_species",
+   "PM3_mechanism"
+  ],
+  "in_window": true,
+  "key": "PMID:24885808",
+  "source_files": [
+   "candidates.jsonl"
+  ]
+ },
+ "screening": {
+  "key": "PMID:24885808",
+  "decision": "include",
+  "include_type": "primary",
+  "exclude_reason": null,
+  "primary_category": "INF",
+  "secondary_tags": [
+   "OXO",
+   "ERY",
+   "COA"
+  ],
+  "species": "B. canis canis (confirmed by the authors; naturally infected dogs)",
+  "rationale": "Serum proteomics in 25 naturally infected dogs against healthy controls, with serial samples. It identifies acute-phase, complement, coagulation and haemolysis-related proteins as pathogenic mechanisms.",
+  "stage": "screen",
+  "batch": "r4_21.md",
+  "screening_round": "r4"
+ },
+ "fulltext_check": {
+  "key": "PMID:24885808",
+  "pmcid": "PMC4045879",
+  "checked": "2026-10-28",
+  "fulltext_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4045879/fullTextXML",
+  "fulltext_status": 200,
+  "data_availability": [],
+  "supplementary": [
+   {
+    "label": "",
+    "caption": "Additional file 1List of proteins identified in serum of dogs with B. canis canis at the day of admission. a) Number refer to protein spots indicated in Figure 1b) Accesion number from NCBI Genbank database for Canis lupus familiaris.",
+    "file": "1746-6148-10-111-S1.docx"
+   },
+   {
+    "label": "",
+    "caption": "Additional file 2List of proteins identified in serum of dogs with B. canis canis on the first day. a) Number refer to protein spots indicated in Figure 1b) Accesion number from NCBI Genbank database for Canis lupus familiaris.",
+    "file": "1746-6148-10-111-S2.docx"
+   },
+   {
+    "label": "",
+    "caption": "Additional file 3List of proteins identified in serum of dogs with B. canis canis on the 6th day. a) Number refer to protein spots indicated in Figure 1b) Accesion number from NCBI Genbank database for Canis lupus familiaris.",
+    "file": "1746-6148-10-111-S3.docx"
+   },
+   {
+    "label": "",
+    "caption": "Additional file 4List of proteins identified in serum of healthy dogs. a) Number refer to protein spots indicated in Figure 1b) Accesion number from NCBI Genbank database for Canis lupus familiaris.",
+    "file": "1746-6148-10-111-S4.docx"
+   }
+  ],
+  "repository_links": [],
+  "section_titles": [
+   "Background",
+   "Results",
+   "Conclusions",
+   "Background",
+   "Methods",
+   "Sample collection",
+   "Two-dimensional electrophoresis (2DE) and 2DE analysis",
+   "Trypsin digestion and MS analysis",
+   "Protein identification",
+   "APP assays",
+   "Statistical analysis",
+   "Results",
+   "Proteomic profile of canine babesiosis",
+   "APPs in canine babesiosis",
+   "Discussion",
+   "Conclusions",
+   "Abbreviations",
+   "Competing interests",
+   "Authors’ contributions",
+   "Supplementary Material",
+   "Acknowledgements"
+  ],
+  "has_body": true
+ }
+}

@@ -1,0 +1,2124 @@
+{
+ "id": "CB493",
+ "document": "data/markdown/CB493.md",
+ "source_format": "jats_xml",
+ "translated": false,
+ "words": 4959,
+ "run_utc": "2026-10-30T05:36:40+00:00",
+ "threshold": 0.85,
+ "kept_types": [
+  "T019",
+  "T020",
+  "T037",
+  "T046",
+  "T047",
+  "T048",
+  "T049",
+  "T050",
+  "T184",
+  "T190",
+  "T191"
+ ],
+ "term_count": 119,
+ "terms": [
+  {
+   "term": "C0004576",
+   "concept": "Babesiosis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 64,
+   "mentions_negated": 4,
+   "mentions_affirmed": 60,
+   "sections": {
+    "clinical biomarkers": 24,
+    "clinical signs": 22,
+    "diagnostic imaging": 7,
+    "introduction": 3,
+    "prophylaxis": 3,
+    "abstract": 2,
+    "treatment": 2,
+    "title": 1
+   },
+   "forms": {
+    "babesiosis": 64
+   },
+   "best_score": 0.972
+  },
+  {
+   "term": "C0002871",
+   "concept": "Anemia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 19,
+   "mentions_negated": 2,
+   "mentions_affirmed": 17,
+   "sections": {
+    "clinical signs": 8,
+    "taxonomy and geographic distribution": 5,
+    "diagnostic imaging": 2,
+    "clinical biomarkers": 2,
+    "abstract": 1,
+    "treatment": 1
+   },
+   "forms": {
+    "anemia": 18,
+    "anemias": 1
+   },
+   "best_score": 0.979
+  },
+  {
+   "term": "C0851162",
+   "concept": "Infections of musculoskeletal system",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 17,
+   "mentions_negated": 1,
+   "mentions_affirmed": 16,
+   "sections": {
+    "clinical signs": 5,
+    "introduction": 4,
+    "clinical biomarkers": 3,
+    "treatment": 3,
+    "taxonomy and geographic distribution": 1,
+    "prophylaxis": 1
+   },
+   "forms": {
+    "infections": 17
+   },
+   "best_score": 0.971
+  },
+  {
+   "term": "C0009566",
+   "concept": "Complication",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 16,
+   "mentions_negated": 1,
+   "mentions_affirmed": 15,
+   "sections": {
+    "clinical signs": 9,
+    "introduction": 2,
+    "taxonomy and geographic distribution": 2,
+    "treatment": 2,
+    "clinical biomarkers": 1
+   },
+   "forms": {
+    "complications": 10,
+    "complication": 6
+   },
+   "best_score": 0.977
+  },
+  {
+   "term": "C0012634",
+   "concept": "Disease",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 8,
+   "mentions_negated": 2,
+   "mentions_affirmed": 6,
+   "sections": {
+    "clinical biomarkers": 4,
+    "clinical signs": 2,
+    "abstract": 1,
+    "prophylaxis": 1
+   },
+   "forms": {
+    "disease": 7,
+    "diseases": 1
+   },
+   "best_score": 0.987
+  },
+  {
+   "term": "C0022660",
+   "concept": "Kidney Failure, Acute",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 8,
+   "mentions_negated": 0,
+   "mentions_affirmed": 8,
+   "sections": {
+    "clinical signs": 6,
+    "diagnostic imaging": 2
+   },
+   "forms": {
+    "aki": 7,
+    "acute kidney injury": 1
+   },
+   "best_score": 0.976
+  },
+  {
+   "term": "C0242723",
+   "concept": "Parasitemia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 8,
+   "mentions_negated": 1,
+   "mentions_affirmed": 7,
+   "sections": {
+    "clinical biomarkers": 4,
+    "clinical signs": 3,
+    "taxonomy and geographic distribution": 1
+   },
+   "forms": {
+    "parasitemia": 8
+   },
+   "best_score": 0.992
+  },
+  {
+   "term": "C0242781",
+   "concept": "disease transmission",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 8,
+   "mentions_negated": 0,
+   "mentions_affirmed": 8,
+   "sections": {
+    "taxonomy and geographic distribution": 6,
+    "prophylaxis": 2
+   },
+   "forms": {
+    "transmitted": 8
+   },
+   "best_score": 0.972
+  },
+  {
+   "term": "C0009450",
+   "concept": "Communicable Diseases",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 7,
+   "mentions_negated": 1,
+   "mentions_affirmed": 6,
+   "sections": {
+    "clinical signs": 3,
+    "clinical biomarkers": 2,
+    "prophylaxis": 2
+   },
+   "forms": {
+    "infection": 7
+   },
+   "best_score": 0.962
+  },
+  {
+   "term": "C0019054",
+   "concept": "Hemolysis (disorder)",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 7,
+   "mentions_negated": 0,
+   "mentions_affirmed": 7,
+   "sections": {
+    "clinical signs": 3,
+    "clinical biomarkers": 2,
+    "abstract": 1,
+    "taxonomy and geographic distribution": 1
+   },
+   "forms": {
+    "hemolysis": 7
+   },
+   "best_score": 0.991
+  },
+  {
+   "term": "C0036974",
+   "concept": "Shock",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 7,
+   "mentions_negated": 0,
+   "mentions_affirmed": 7,
+   "sections": {
+    "clinical biomarkers": 5,
+    "clinical signs": 2
+   },
+   "forms": {
+    "collapse": 3,
+    "shock": 3,
+    "circulatory collapse": 1
+   },
+   "best_score": 0.998
+  },
+  {
+   "term": "C0002878",
+   "concept": "Anemia, Hemolytic",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 6,
+   "mentions_negated": 1,
+   "mentions_affirmed": 5,
+   "sections": {
+    "clinical signs": 4,
+    "introduction": 1,
+    "taxonomy and geographic distribution": 1
+   },
+   "forms": {
+    "hemolytic anemia": 6
+   },
+   "best_score": 0.978
+  },
+  {
+   "term": "C0022346",
+   "concept": "Icterus",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 6,
+   "mentions_negated": 0,
+   "mentions_affirmed": 6,
+   "sections": {
+    "clinical signs": 3,
+    "clinical biomarkers": 2,
+    "taxonomy and geographic distribution": 1
+   },
+   "forms": {
+    "icterus": 5,
+    "jaundice": 1
+   },
+   "best_score": 0.958
+  },
+  {
+   "term": "C0019080",
+   "concept": "Hemorrhage",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 5,
+   "mentions_negated": 1,
+   "mentions_affirmed": 4,
+   "sections": {
+    "clinical signs": 4,
+    "clinical biomarkers": 1
+   },
+   "forms": {
+    "hemorrhage": 5
+   },
+   "best_score": 0.99
+  },
+  {
+   "term": "C0040034",
+   "concept": "Thrombocytopenia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 5,
+   "mentions_negated": 0,
+   "mentions_affirmed": 5,
+   "sections": {
+    "taxonomy and geographic distribution": 3,
+    "clinical signs": 1,
+    "clinical biomarkers": 1
+   },
+   "forms": {
+    "thrombocytopenia": 5
+   },
+   "best_score": 0.98
+  },
+  {
+   "term": "C0002880",
+   "concept": "Autoimmune hemolytic anemia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 4,
+   "mentions_negated": 0,
+   "mentions_affirmed": 4,
+   "sections": {
+    "clinical signs": 3,
+    "clinical biomarkers": 1
+   },
+   "forms": {
+    "imha": 4
+   },
+   "best_score": 0.978
+  },
+  {
+   "term": "C0015967",
+   "concept": "Fever",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 4,
+   "mentions_negated": 1,
+   "mentions_affirmed": 3,
+   "sections": {
+    "clinical signs": 3,
+    "taxonomy and geographic distribution": 1
+   },
+   "forms": {
+    "fever": 4
+   },
+   "best_score": 0.962
+  },
+  {
+   "term": "C0021368",
+   "concept": "Inflammation",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 4,
+   "mentions_negated": 0,
+   "mentions_affirmed": 4,
+   "sections": {
+    "clinical signs": 3,
+    "abstract": 1
+   },
+   "forms": {
+    "inflammatory reaction": 2,
+    "inflammatory reactions": 1,
+    "inflammation": 1
+   },
+   "best_score": 0.969
+  },
+  {
+   "term": "C0030305",
+   "concept": "Pancreatitis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 4,
+   "mentions_negated": 0,
+   "mentions_affirmed": 4,
+   "sections": {
+    "clinical signs": 3,
+    "diagnostic imaging": 1
+   },
+   "forms": {
+    "pancreatitis": 4
+   },
+   "best_score": 0.986
+  },
+  {
+   "term": "C0035222",
+   "concept": "Respiratory Distress Syndrome, Adult",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 4,
+   "mentions_negated": 0,
+   "mentions_affirmed": 4,
+   "sections": {
+    "clinical signs": 3,
+    "clinical biomarkers": 1
+   },
+   "forms": {
+    "ards": 3,
+    "acute respiratory distress syndrome": 1
+   },
+   "best_score": 0.991
+  },
+  {
+   "term": "C0242184",
+   "concept": "Hypoxia",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 4,
+   "mentions_negated": 1,
+   "mentions_affirmed": 3,
+   "sections": {
+    "clinical signs": 3,
+    "clinical biomarkers": 1
+   },
+   "forms": {
+    "hypoxia": 4
+   },
+   "best_score": 0.978
+  },
+  {
+   "term": "C0003123",
+   "concept": "Anorexia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "clinical signs": 2,
+    "taxonomy and geographic distribution": 1
+   },
+   "forms": {
+    "anorexia": 3
+   },
+   "best_score": 0.969
+  },
+  {
+   "term": "C0005779",
+   "concept": "Blood Coagulation Disorders",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "clinical biomarkers": 2,
+    "taxonomy and geographic distribution": 1
+   },
+   "forms": {
+    "coagulopathies": 2,
+    "coagulopathy": 1
+   },
+   "best_score": 0.983
+  },
+  {
+   "term": "C0020615",
+   "concept": "Hypoglycemia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "clinical biomarkers": 3
+   },
+   "forms": {
+    "hypoglycemia": 3
+   },
+   "best_score": 0.99
+  },
+  {
+   "term": "C0023380",
+   "concept": "Lethargy",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "clinical signs": 3
+   },
+   "forms": {
+    "lethargy": 3
+   },
+   "best_score": 0.987
+  },
+  {
+   "term": "C0242966",
+   "concept": "Systemic Inflammatory Response Syndrome",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "clinical biomarkers": 3
+   },
+   "forms": {
+    "sirs": 2,
+    "systemic inflammatory response syndrome": 1
+   },
+   "best_score": 0.987
+  },
+  {
+   "term": "C0340515",
+   "concept": "Myocardial dysfunction",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "clinical biomarkers": 2,
+    "clinical signs": 1
+   },
+   "forms": {
+    "myocardial dysfunction": 2,
+    "myocardial depression": 1
+   },
+   "best_score": 0.969
+  },
+  {
+   "term": "C0677607",
+   "concept": "Hashimoto Disease",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "clinical biomarkers": 2,
+    "clinical signs": 1
+   },
+   "forms": {
+    "ht": 3
+   },
+   "best_score": 0.96
+  },
+  {
+   "term": "C0699748",
+   "concept": "Pathogenesis",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 3,
+   "mentions_negated": 1,
+   "mentions_affirmed": 2,
+   "sections": {
+    "introduction": 1,
+    "clinical biomarkers": 1,
+    "prophylaxis": 1
+   },
+   "forms": {
+    "pathogenesis": 3
+   },
+   "best_score": 0.983
+  },
+  {
+   "term": "C0000768",
+   "concept": "Congenital Abnormality",
+   "semantic_types": [
+    "Congenital Abnormality"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "clinical signs": 1,
+    "clinical biomarkers": 1
+   },
+   "forms": {
+    "abnormalities": 2
+   },
+   "best_score": 0.987
+  },
+  {
+   "term": "C0004134",
+   "concept": "Ataxia",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "clinical signs": 2
+   },
+   "forms": {
+    "ataxia": 2
+   },
+   "best_score": 0.974
+  },
+  {
+   "term": "C0011991",
+   "concept": "Diarrhea",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "clinical signs": 1,
+    "treatment": 1
+   },
+   "forms": {
+    "diarrhea": 2
+   },
+   "best_score": 0.983
+  },
+  {
+   "term": "C0013604",
+   "concept": "Edema",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "clinical signs": 1,
+    "treatment": 1
+   },
+   "forms": {
+    "edema": 2
+   },
+   "best_score": 0.987
+  },
+  {
+   "term": "C0022658",
+   "concept": "Kidney Diseases",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 1,
+   "mentions_affirmed": 1,
+   "sections": {
+    "clinical signs": 2
+   },
+   "forms": {
+    "nephropathy": 2
+   },
+   "best_score": 0.99
+  },
+  {
+   "term": "C0024530",
+   "concept": "Malaria",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 1,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1,
+    "clinical signs": 1
+   },
+   "forms": {
+    "malaria": 2
+   },
+   "best_score": 0.996
+  },
+  {
+   "term": "C0035078",
+   "concept": "Kidney Failure",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "clinical signs": 1,
+    "clinical biomarkers": 1
+   },
+   "forms": {
+    "renal insufficiency": 2
+   },
+   "best_score": 0.963
+  },
+  {
+   "term": "C0035410",
+   "concept": "Rhabdomyolysis",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "clinical signs": 2
+   },
+   "forms": {
+    "rhabdomyolysis": 2
+   },
+   "best_score": 0.976
+  },
+  {
+   "term": "C0039082",
+   "concept": "Syndrome",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "clinical signs": 2
+   },
+   "forms": {
+    "syndrome": 2
+   },
+   "best_score": 0.994
+  },
+  {
+   "term": "C0040822",
+   "concept": "Tremor",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "clinical signs": 2
+   },
+   "forms": {
+    "tremors": 2
+   },
+   "best_score": 0.994
+  },
+  {
+   "term": "C0042514",
+   "concept": "Tachycardia, Ventricular",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "clinical biomarkers": 2
+   },
+   "forms": {
+    "ventricular tachycardia": 2
+   },
+   "best_score": 0.977
+  },
+  {
+   "term": "C0042963",
+   "concept": "Vomiting",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "clinical signs": 1,
+    "treatment": 1
+   },
+   "forms": {
+    "vomiting": 2
+   },
+   "best_score": 0.957
+  },
+  {
+   "term": "C0160420",
+   "concept": "Injury of kidney",
+   "semantic_types": [
+    "Injury or Poisoning"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "clinical signs": 2
+   },
+   "forms": {
+    "kidney injury": 1,
+    "renal injury": 1
+   },
+   "best_score": 0.98
+  },
+  {
+   "term": "C0239981",
+   "concept": "Hypoalbuminemia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "clinical biomarkers": 2
+   },
+   "forms": {
+    "hypoalbuminemic": 1,
+    "hypoalbuminemia": 1
+   },
+   "best_score": 0.974
+  },
+  {
+   "term": "C0242528",
+   "concept": "Azotemia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "taxonomy and geographic distribution": 1,
+    "clinical signs": 1
+   },
+   "forms": {
+    "azotemia": 2
+   },
+   "best_score": 0.964
+  },
+  {
+   "term": "C0302086",
+   "concept": "Erythrocyte destruction",
+   "semantic_types": [
+    "Cell or Molecular Dysfunction"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "clinical signs": 2
+   },
+   "forms": {
+    "erythrocyte destruction": 2
+   },
+   "best_score": 0.977
+  },
+  {
+   "term": "C0497156",
+   "concept": "Lymphadenopathy",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 1,
+   "mentions_affirmed": 1,
+   "sections": {
+    "clinical signs": 2
+   },
+   "forms": {
+    "lymphadenopathy": 1,
+    "lymphadenomegaly": 1
+   },
+   "best_score": 0.99
+  },
+  {
+   "term": "C0746730",
+   "concept": "myocardial injury",
+   "semantic_types": [
+    "Injury or Poisoning"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "clinical biomarkers": 2
+   },
+   "forms": {
+    "myocardial injury": 2
+   },
+   "best_score": 0.972
+  },
+  {
+   "term": "C0795692",
+   "concept": "Hyperlactatemia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "clinical biomarkers": 2
+   },
+   "forms": {
+    "hyperlactatemia": 2
+   },
+   "best_score": 0.97
+  },
+  {
+   "term": "C0000737",
+   "concept": "Abdominal Pain",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "diagnostic imaging": 1
+   },
+   "forms": {
+    "abdominal pain": 1
+   },
+   "best_score": 0.97
+  },
+  {
+   "term": "C0001349",
+   "concept": "Acute-Phase Reaction",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "clinical biomarkers": 1
+   },
+   "forms": {
+    "acute phase response": 1
+   },
+   "best_score": 0.982
+  },
+  {
+   "term": "C0001364",
+   "concept": "Massive Hepatic Necrosis",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "treatment": 1
+   },
+   "forms": {
+    "massive liver necrosis": 1
+   },
+   "best_score": 0.966
+  },
+  {
+   "term": "C0002063",
+   "concept": "Alkalosis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "clinical biomarkers": 1
+   },
+   "forms": {
+    "alkalosis": 1
+   },
+   "best_score": 0.967
+  },
+  {
+   "term": "C0002064",
+   "concept": "Alkalosis, Respiratory",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "clinical biomarkers": 1
+   },
+   "forms": {
+    "respiratory alkalosis": 1
+   },
+   "best_score": 0.973
+  },
+  {
+   "term": "C0002170",
+   "concept": "Alopecia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "clinical signs": 1
+   },
+   "forms": {
+    "alopecia": 1
+   },
+   "best_score": 0.993
+  },
+  {
+   "term": "C0003460",
+   "concept": "Anuria",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "clinical signs": 1
+   },
+   "forms": {
+    "anuria": 1
+   },
+   "best_score": 0.968
+  },
+  {
+   "term": "C0003811",
+   "concept": "Cardiac Arrhythmia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "clinical biomarkers": 1
+   },
+   "forms": {
+    "arrhythmias": 1
+   },
+   "best_score": 0.984
+  },
+  {
+   "term": "C0004093",
+   "concept": "Asthenia",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "clinical signs": 1
+   },
+   "forms": {
+    "weakness": 1
+   },
+   "best_score": 0.975
+  },
+  {
+   "term": "C0004245",
+   "concept": "Atrioventricular Block",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "clinical biomarkers": 1
+   },
+   "forms": {
+    "atrioventricular block": 1
+   },
+   "best_score": 0.982
+  },
+  {
+   "term": "C0005443",
+   "concept": "Bilirubinuria",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "clinical signs": 1
+   },
+   "forms": {
+    "bilirubinuria": 1
+   },
+   "best_score": 0.974
+  },
+  {
+   "term": "C0007758",
+   "concept": "Cerebellar Ataxia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "clinical signs": 1
+   },
+   "forms": {
+    "cerebellar ataxia": 1
+   },
+   "best_score": 0.976
+  },
+  {
+   "term": "C0011175",
+   "concept": "Dehydration",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "clinical biomarkers": 1
+   },
+   "forms": {
+    "dehydration": 1
+   },
+   "best_score": 0.957
+  },
+  {
+   "term": "C0011570",
+   "concept": "Mental Depression",
+   "semantic_types": [
+    "Mental or Behavioral Dysfunction"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "taxonomy and geographic distribution": 1
+   },
+   "forms": {
+    "depression": 1
+   },
+   "best_score": 0.97
+  },
+  {
+   "term": "C0012739",
+   "concept": "Disseminated Intravascular Coagulation",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "clinical biomarkers": 1
+   },
+   "forms": {
+    "consumptive coagulopathy": 1
+   },
+   "best_score": 0.972
+  },
+  {
+   "term": "C0013404",
+   "concept": "Dyspnea",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "clinical signs": 1
+   },
+   "forms": {
+    "dyspnea": 1
+   },
+   "best_score": 0.984
+  },
+  {
+   "term": "C0017181",
+   "concept": "Gastrointestinal Hemorrhage",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "clinical biomarkers": 1
+   },
+   "forms": {
+    "gastrointestinal hemorrhage": 1
+   },
+   "best_score": 0.983
+  },
+  {
+   "term": "C0017658",
+   "concept": "Glomerulonephritis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "diagnostic imaging": 1
+   },
+   "forms": {
+    "glomerulonephritis": 1
+   },
+   "best_score": 0.986
+  },
+  {
+   "term": "C0017662",
+   "concept": "Glomerulonephritis, Membranoproliferative",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "clinical signs": 1
+   },
+   "forms": {
+    "membranoproliferative glomerulonephritis": 1
+   },
+   "best_score": 0.983
+  },
+  {
+   "term": "C0018801",
+   "concept": "Heart failure",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "clinical signs": 1
+   },
+   "forms": {
+    "heart failure": 1
+   },
+   "best_score": 0.977
+  },
+  {
+   "term": "C0018926",
+   "concept": "Hematemesis",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "clinical signs": 1
+   },
+   "forms": {
+    "hematemesis": 1
+   },
+   "best_score": 0.99
+  },
+  {
+   "term": "C0019693",
+   "concept": "HIV Infections",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "prophylaxis": 1
+   },
+   "forms": {
+    "seropositivity": 1
+   },
+   "best_score": 0.871
+  },
+  {
+   "term": "C0023895",
+   "concept": "Liver diseases",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "clinical signs": 1
+   },
+   "forms": {
+    "hepatopathy": 1
+   },
+   "best_score": 0.994
+  },
+  {
+   "term": "C0024348",
+   "concept": "Lysis",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "clinical biomarkers": 1
+   },
+   "forms": {
+    "lysis": 1
+   },
+   "best_score": 0.986
+  },
+  {
+   "term": "C0025222",
+   "concept": "Melena",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "clinical signs": 1
+   },
+   "forms": {
+    "melena": 1
+   },
+   "best_score": 0.988
+  },
+  {
+   "term": "C0025517",
+   "concept": "Metabolic Diseases",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "treatment": 1
+   },
+   "forms": {
+    "metabolic derangements": 1
+   },
+   "best_score": 0.919
+  },
+  {
+   "term": "C0026766",
+   "concept": "Multiple Organ Failure",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "clinical biomarkers": 1
+   },
+   "forms": {
+    "multiple organ dysfunction syndrome": 1
+   },
+   "best_score": 0.971
+  },
+  {
+   "term": "C0027051",
+   "concept": "Myocardial Infarction",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "clinical biomarkers": 1
+   },
+   "forms": {
+    "myocardial infarction": 1
+   },
+   "best_score": 0.953
+  },
+  {
+   "term": "C0027627",
+   "concept": "Neoplasm Metastasis",
+   "semantic_types": [
+    "Neoplastic Process"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "clinical biomarkers": 1
+   },
+   "forms": {
+    "secondary": 1
+   },
+   "best_score": 0.985
+  },
+  {
+   "term": "C0028738",
+   "concept": "Nystagmus",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "clinical signs": 1
+   },
+   "forms": {
+    "nystagmus": 1
+   },
+   "best_score": 0.954
+  },
+  {
+   "term": "C0028961",
+   "concept": "Oliguria",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "clinical signs": 1
+   },
+   "forms": {
+    "oliguria": 1
+   },
+   "best_score": 0.966
+  },
+  {
+   "term": "C0029166",
+   "concept": "Oral Manifestations",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "clinical signs": 1
+   },
+   "forms": {
+    "manifestation": 1
+   },
+   "best_score": 0.875
+  },
+  {
+   "term": "C0030193",
+   "concept": "Pain",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "treatment": 1
+   },
+   "forms": {
+    "pain": 1
+   },
+   "best_score": 0.975
+  },
+  {
+   "term": "C0030552",
+   "concept": "Paresis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "clinical signs": 1
+   },
+   "forms": {
+    "paresis": 1
+   },
+   "best_score": 0.992
+  },
+  {
+   "term": "C0030660",
+   "concept": "Pathologic Processes",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 1,
+   "mentions_affirmed": 0,
+   "sections": {
+    "prophylaxis": 1
+   },
+   "forms": {
+    "pathologic processes": 1
+   },
+   "best_score": 0.985
+  },
+  {
+   "term": "C0031039",
+   "concept": "Pericardial effusion",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "clinical signs": 1
+   },
+   "forms": {
+    "pericardial effusion": 1
+   },
+   "best_score": 0.958
+  },
+  {
+   "term": "C0034063",
+   "concept": "Pulmonary Edema",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "clinical biomarkers": 1
+   },
+   "forms": {
+    "pulmonary edema": 1
+   },
+   "best_score": 0.984
+  },
+  {
+   "term": "C0036572",
+   "concept": "Seizures",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "clinical signs": 1
+   },
+   "forms": {
+    "seizures": 1
+   },
+   "best_score": 0.945
+  },
+  {
+   "term": "C0036983",
+   "concept": "Septic Shock",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "clinical biomarkers": 1
+   },
+   "forms": {
+    "septic shock": 1
+   },
+   "best_score": 0.981
+  },
+  {
+   "term": "C0037088",
+   "concept": "Signs and Symptoms",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "clinical biomarkers": 1
+   },
+   "forms": {
+    "finding": 1
+   },
+   "best_score": 0.994
+  },
+  {
+   "term": "C0042384",
+   "concept": "Vasculitis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "clinical signs": 1
+   },
+   "forms": {
+    "vasculitis": 1
+   },
+   "best_score": 0.989
+  },
+  {
+   "term": "C0080194",
+   "concept": "Muscle strain",
+   "semantic_types": [
+    "Injury or Poisoning"
+   ],
+   "mentions": 1,
+   "mentions_negated": 1,
+   "mentions_affirmed": 0,
+   "sections": {
+    "prophylaxis": 1
+   },
+   "forms": {
+    "strains": 1
+   },
+   "best_score": 0.991
+  },
+  {
+   "term": "C0151636",
+   "concept": "Premature ventricular contractions",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "clinical biomarkers": 1
+   },
+   "forms": {
+    "ventricular premature depolarizations": 1
+   },
+   "best_score": 0.947
+  },
+  {
+   "term": "C0220981",
+   "concept": "Metabolic acidosis",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "clinical biomarkers": 1
+   },
+   "forms": {
+    "metabolic acidosis": 1
+   },
+   "best_score": 0.991
+  },
+  {
+   "term": "C0221106",
+   "concept": "Alkalemia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "clinical biomarkers": 1
+   },
+   "forms": {
+    "alkalemia": 1
+   },
+   "best_score": 0.974
+  },
+  {
+   "term": "C0221208",
+   "concept": "Traumatic injection site",
+   "semantic_types": [
+    "Injury or Poisoning"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "treatment": 1
+   },
+   "forms": {
+    "injection site": 1
+   },
+   "best_score": 0.973
+  },
+  {
+   "term": "C0221423",
+   "concept": "Illness (finding)",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 1,
+   "mentions_affirmed": 0,
+   "sections": {
+    "clinical biomarkers": 1
+   },
+   "forms": {
+    "illness": 1
+   },
+   "best_score": 0.967
+  },
+  {
+   "term": "C0231218",
+   "concept": "Malaise",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "clinical signs": 1
+   },
+   "forms": {
+    "malaise": 1
+   },
+   "best_score": 0.962
+  },
+  {
+   "term": "C0231528",
+   "concept": "Myalgia",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "clinical signs": 1
+   },
+   "forms": {
+    "muscle pain": 1
+   },
+   "best_score": 0.985
+  },
+  {
+   "term": "C0235957",
+   "concept": "myonecrosis",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "clinical signs": 1
+   },
+   "forms": {
+    "muscle necrosis": 1
+   },
+   "best_score": 0.988
+  },
+  {
+   "term": "C0242656",
+   "concept": "Disease Progression",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "clinical signs": 1
+   },
+   "forms": {
+    "progression": 1
+   },
+   "best_score": 0.971
+  },
+  {
+   "term": "C0262988",
+   "concept": "Cutaneous Vasculitis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "clinical signs": 1
+   },
+   "forms": {
+    "cutaneous vasculitis": 1
+   },
+   "best_score": 0.986
+  },
+  {
+   "term": "C0268030",
+   "concept": "Acidemia",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "clinical biomarkers": 1
+   },
+   "forms": {
+    "acidemia": 1
+   },
+   "best_score": 0.977
+  },
+  {
+   "term": "C0276854",
+   "concept": "Infection by Babesia canis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "abstract": 1
+   },
+   "forms": {
+    "canine babesiosis": 1
+   },
+   "best_score": 0.969
+  },
+  {
+   "term": "C0302148",
+   "concept": "Blood Clot",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "clinical biomarkers": 1
+   },
+   "forms": {
+    "clots": 1
+   },
+   "best_score": 0.977
+  },
+  {
+   "term": "C0302486",
+   "concept": "Erythrophagocytosis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "clinical signs": 1
+   },
+   "forms": {
+    "erythrophagocytosis": 1
+   },
+   "best_score": 0.981
+  },
+  {
+   "term": "C0332687",
+   "concept": "Second degree burn injury",
+   "semantic_types": [
+    "Injury or Poisoning"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "clinical biomarkers": 1
+   },
+   "forms": {
+    "second-degree": 1
+   },
+   "best_score": 0.859
+  },
+  {
+   "term": "C0333307",
+   "concept": "Superficial ulcer",
+   "semantic_types": [
+    "Acquired Abnormality"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "clinical signs": 1
+   },
+   "forms": {
+    "erosions": 1
+   },
+   "best_score": 0.985
+  },
+  {
+   "term": "C0342895",
+   "concept": "Fish-Eye Disease",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "clinical signs": 1
+   },
+   "forms": {
+    "fed": 1
+   },
+   "best_score": 0.94
+  },
+  {
+   "term": "C0342953",
+   "concept": "Organ dysfunction syndrome",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "clinical biomarkers": 1
+   },
+   "forms": {
+    "organ dysfunction syndrome": 1
+   },
+   "best_score": 0.966
+  },
+  {
+   "term": "C0344315",
+   "concept": "Depressed mood",
+   "semantic_types": [
+    "Mental or Behavioral Dysfunction"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "clinical signs": 1
+   },
+   "forms": {
+    "depressed": 1
+   },
+   "best_score": 0.981
+  },
+  {
+   "term": "C0349410",
+   "concept": "Single organ dysfunction",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "taxonomy and geographic distribution": 1
+   },
+   "forms": {
+    "organ failure": 1
+   },
+   "best_score": 0.975
+  },
+  {
+   "term": "C0524702",
+   "concept": "Pulmonary Thromboembolisms",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "diagnostic imaging": 1
+   },
+   "forms": {
+    "pulmonary thromboembolism": 1
+   },
+   "best_score": 0.976
+  },
+  {
+   "term": "C0541782",
+   "concept": "Atrial standstill",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "clinical biomarkers": 1
+   },
+   "forms": {
+    "sinus arrest": 1
+   },
+   "best_score": 0.983
+  },
+  {
+   "term": "C0559546",
+   "concept": "Adverse reactions",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "treatment": 1
+   },
+   "forms": {
+    "no adverse reactions": 1
+   },
+   "best_score": 0.908
+  },
+  {
+   "term": "C0600688",
+   "concept": "Toxic effect",
+   "semantic_types": [
+    "Injury or Poisoning"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "clinical signs": 1
+   },
+   "forms": {
+    "toxic": 1
+   },
+   "best_score": 0.972
+  },
+  {
+   "term": "C0856169",
+   "concept": "Endothelial dysfunction",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "clinical biomarkers": 1
+   },
+   "forms": {
+    "endothelial dysfunction": 1
+   },
+   "best_score": 0.956
+  },
+  {
+   "term": "C1155266",
+   "concept": "Inflammatory Response",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "clinical signs": 1
+   },
+   "forms": {
+    "inflammatory response": 1
+   },
+   "best_score": 0.983
+  },
+  {
+   "term": "C1518005",
+   "concept": "Low Grade Cervical Squamous Intraepithelial Neoplasia",
+   "semantic_types": [
+    "Neoplastic Process"
+   ],
+   "mentions": 1,
+   "mentions_negated": 1,
+   "mentions_affirmed": 0,
+   "sections": {
+    "clinical signs": 1
+   },
+   "forms": {
+    "low-grade": 1
+   },
+   "best_score": 0.883
+  },
+  {
+   "term": "C1565489",
+   "concept": "Renal Insufficiency",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "clinical biomarkers": 1
+   },
+   "forms": {
+    "renal dysfunction": 1
+   },
+   "best_score": 0.943
+  },
+  {
+   "term": "C1640363",
+   "concept": "Vector Borne Diseases",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "abstract": 1
+   },
+   "forms": {
+    "vector-borne disease": 1
+   },
+   "best_score": 0.955
+  }
+ ]
+}

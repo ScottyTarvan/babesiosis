@@ -1,0 +1,224 @@
+{
+ "id": "CB191",
+ "document": "data/markdown/CB191.md",
+ "source_format": "pdf",
+ "translated": false,
+ "words": 2470,
+ "run_utc": "2026-10-30T05:35:05+00:00",
+ "threshold": 0.85,
+ "kept_types": [
+  "T019",
+  "T020",
+  "T037",
+  "T046",
+  "T047",
+  "T048",
+  "T049",
+  "T050",
+  "T184",
+  "T190",
+  "T191"
+ ],
+ "term_count": 11,
+ "terms": [
+  {
+   "term": "C0029927",
+   "concept": "Ovarian Cysts",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 18,
+   "mentions_negated": 2,
+   "mentions_affirmed": 16,
+   "sections": {
+    "results_discussion": 12,
+    "introduction": 3,
+    "abstract": 2,
+    "methods": 1
+   },
+   "forms": {
+    "ovarian cysts": 7,
+    "cystic ovaries": 3,
+    "ovarian cyst": 3,
+    "cystic ovaries\n\n": 3,
+    "cystic ovarian": 1,
+    "cystic ovary": 1
+   },
+   "best_score": 0.99
+  },
+  {
+   "term": "C0016427",
+   "concept": "Follicular cyst",
+   "semantic_types": [
+    "Acquired Abnormality"
+   ],
+   "mentions": 4,
+   "mentions_negated": 1,
+   "mentions_affirmed": 3,
+   "sections": {
+    "results_discussion": 2,
+    "abstract": 1,
+    "methods": 1
+   },
+   "forms": {
+    "follicular cysts": 4
+   },
+   "best_score": 0.988
+  },
+  {
+   "term": "C0016429",
+   "concept": "Follicular cyst of ovary",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "results_discussion": 2,
+    "introduction": 1
+   },
+   "forms": {
+    "ovarian follicular cysts": 3
+   },
+   "best_score": 0.989
+  },
+  {
+   "term": "C0010709",
+   "concept": "Cyst",
+   "semantic_types": [
+    "Anatomical Abnormality"
+   ],
+   "mentions": 2,
+   "mentions_negated": 2,
+   "mentions_affirmed": 0,
+   "sections": {
+    "introduction": 1,
+    "results_discussion": 1
+   },
+   "forms": {
+    "cyst": 2
+   },
+   "best_score": 0.992
+  },
+  {
+   "term": "C0004576",
+   "concept": "Babesiosis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "title": 1
+   },
+   "forms": {
+    "babesiosis": 1
+   },
+   "best_score": 0.972
+  },
+  {
+   "term": "C0020305",
+   "concept": "Hydrops Fetalis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "methods": 1
+   },
+   "forms": {
+    "hf": 1
+   },
+   "best_score": 0.999
+  },
+  {
+   "term": "C0236099",
+   "concept": "Disorder of male reproductive system",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "reproductive disorder": 1
+   },
+   "best_score": 0.9
+  },
+  {
+   "term": "C0268060",
+   "concept": "Juvenile hemochromatosis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "unlabelled": 1
+   },
+   "forms": {
+    "jh": 1
+   },
+   "best_score": 0.994
+  },
+  {
+   "term": "C0684320",
+   "concept": "Disease regression",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results_discussion": 1
+   },
+   "forms": {
+    "regression": 1
+   },
+   "best_score": 0.969
+  },
+  {
+   "term": "C0699748",
+   "concept": "Pathogenesis",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 1,
+   "mentions_affirmed": 0,
+   "sections": {
+    "results_discussion": 1
+   },
+   "forms": {
+    "pathogenesis": 1
+   },
+   "best_score": 0.983
+  },
+  {
+   "term": "C1514893",
+   "concept": "physiologic resolution",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 1,
+   "mentions_affirmed": 0,
+   "sections": {
+    "results_discussion": 1
+   },
+   "forms": {
+    "resolution": 1
+   },
+   "best_score": 0.971
+  }
+ ]
+}

@@ -1,0 +1,86 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "association_schema.json",
+  "title": "Marker-severity associations extracted from one article",
+  "description": "One file per article: data/severity/extractions/<ID>.json. An association is one marker tested (or reported per group) against one severity definition, in one population or subgroup, with one analysis. If a paper reports the same marker with a group comparison and a ROC analysis, that is two rows. Extract only the article's own results (abstract, results, tables, case-series results), never findings cited from other studies in the introduction or discussion. Comparisons of infected dogs with healthy controls are NOT severity associations and are not extracted; count them in skipped_infected_vs_healthy instead. Record non-significant results as rows too (significant = no): null results matter as much as positive ones.",
+  "type": "object",
+  "required": ["id", "text_used", "extracted_by", "severity_definitions", "associations"],
+  "additionalProperties": false,
+  "properties": {
+    "id": {"type": "string", "description": "Article ID, e.g. CB040"},
+    "text_used": {"type": "string", "description": "The Markdown file read, e.g. data/markdown/CB040.md or data/markdown/CB017.en.md. Quotes must come from this file."},
+    "extracted_by": {"type": "string", "description": "Model or person, e.g. claude-opus-5-5 pilot"},
+    "extracted_utc": {"type": "string"},
+    "article_notes": {"type": "string", "description": "Anything a reader of the rows needs: overlap with other cohorts, unclear group sizes, tables garbled by PDF conversion, outcome follow-up horizon, what was left out and why."},
+    "skipped_infected_vs_healthy": {"type": "integer", "minimum": 0, "description": "Approximate number of markers compared only between infected and healthy dogs (not extracted)."},
+    "severity_definitions": {
+      "type": "array",
+      "description": "Each way the article splits or grades dogs by severity or outcome. Associations refer to these by key.",
+      "items": {
+        "type": "object",
+        "required": ["key", "outcome_class", "label", "definition", "quote"],
+        "additionalProperties": false,
+        "properties": {
+          "key": {"type": "string", "pattern": "^S[0-9]+$", "description": "S1, S2, ..."},
+          "outcome_class": {
+            "enum": ["mortality", "complicated", "organ_dysfunction", "specific_complication", "severity_grade", "treatment_intensity", "anaemia_grade", "parasitaemia_level", "other"],
+            "description": "mortality: died or euthanised vs survived. complicated: complicated vs uncomplicated babesiosis. organ_dysfunction: number of dysfunctional organs, MODS present vs absent. specific_complication: one named complication (AKI, ARDS, cerebral, IMHA, hepatopathy, pancreatitis, DIC, hypoglycaemia, shock...) vs dogs without it. severity_grade: the authors' mild/moderate/severe grading or a clinical severity score (SIRS, APPLE...). treatment_intensity: hospitalised vs outpatient, length of stay, transfusion needed. anaemia_grade: severity defined by degree of anaemia. parasitaemia_level: groups defined by parasitaemia. other: describe in definition."
+          },
+          "complication": {"type": ["string", "null"], "description": "For specific_complication: the complication, e.g. acute kidney injury"},
+          "label": {"type": "string", "description": "The authors' own group names, e.g. 'non-survivors vs survivors'"},
+          "definition": {"type": "string", "description": "How the authors defined it: criteria, follow-up horizon, who was excluded."},
+          "severe_group": {"type": ["string", "null"], "description": "Which group is the worse outcome, e.g. 'non-survivors (n=12)'"},
+          "comparison_group": {"type": ["string", "null"], "description": "e.g. 'survivors (n=85)'"},
+          "quote": {"type": "string", "description": "Verbatim text from text_used that defines the groups (copy exactly, 1-2 sentences)."}
+        }
+      }
+    },
+    "associations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["marker_as_reported", "marker", "marker_class", "severity_key", "analysis", "direction", "significant", "quote", "location"],
+        "additionalProperties": false,
+        "properties": {
+          "marker_as_reported": {"type": "string", "description": "The marker as the paper names it, with unit if given, e.g. 'serum CRP (mg/L)'"},
+          "marker": {"type": "string", "description": "Canonical marker name from data/severity/marker_map.csv (the 'marker' column of a source=seed row). If none fits, propose a short new name; the checker flags it for the map."},
+          "marker_class": {
+            "enum": ["haematology", "parasitology", "immunology", "acute phase protein", "cytokine", "endothelial", "coagulation", "biochemistry", "electrolyte", "acid-base and perfusion", "urine", "cardiac", "endocrine", "oxidative stress", "clinical sign", "clinical score", "clinical history", "signalment", "imaging", "omics", "treatment", "other"]
+          },
+          "specimen": {"type": ["string", "null"], "description": "serum, plasma, whole blood, urine, CSF, tissue, clinical examination, signalment record..."},
+          "timepoint": {"type": ["string", "null"], "description": "admission/pre-treatment, day N of hospitalisation, peak during stay, serial change, day N post experimental infection..."},
+          "severity_key": {"type": "string", "pattern": "^S[0-9]+$"},
+          "species": {"type": ["string", "null"], "description": "Babesia species in this population, e.g. B. rossi; 'mixed' or 'unspecified' when so."},
+          "species_confirmation": {"enum": ["PCR or sequencing", "smear only", "serology", "mixed methods", "not stated", null]},
+          "subgroup": {"type": ["string", "null"], "description": "Only if the row applies to a subset (e.g. 'dogs with AKI', 'B. canis only')."},
+          "n_total": {"type": ["integer", "null"], "description": "Dogs in this comparison"},
+          "n_severe": {"type": ["integer", "null"]},
+          "n_comparison": {"type": ["integer", "null"]},
+          "analysis": {
+            "enum": ["group_comparison", "proportion_comparison", "correlation", "univariable_regression", "multivariable_regression", "roc", "survival_analysis", "descriptive_only"],
+            "description": "group_comparison: continuous marker compared between groups (t, Mann-Whitney, ANOVA, Kruskal-Wallis). proportion_comparison: categorical marker or finding present/absent between groups (chi-square, Fisher). correlation: with a continuous severity measure. descriptive_only: values per group given but no test."
+          },
+          "direction": {
+            "enum": ["higher_in_severe", "lower_in_severe", "more_frequent_in_severe", "less_frequent_in_severe", "positive_association", "negative_association", "no_difference", "mixed", "not_stated"],
+            "description": "Relative to the worse outcome. positive_association: higher marker goes with worse severity (correlation, OR > 1, AUC for higher values). no_difference: the paper reports no difference or no association. For a non-significant result where the numbers still point one way, use that direction and significant = no."
+          },
+          "significant": {"enum": ["yes", "no", "not_tested", "unclear"]},
+          "statistic": {"type": ["string", "null"], "description": "Values as reported, e.g. 'median 6.1 (IQR 3.2-9.8) vs 2.0 (1.1-3.4) mmol/L; Mann-Whitney'"},
+          "p_value": {"type": ["string", "null"], "description": "As reported, e.g. '<0.001', '0.03', 'NS'"},
+          "effect_type": {"enum": ["OR", "HR", "RR", "r", "rho", "AUC", "mean_difference", "median_difference", "other", null]},
+          "effect_value": {"type": ["string", "null"]},
+          "effect_ci": {"type": ["string", "null"], "description": "e.g. '1.2-4.8'"},
+          "cutoff": {"type": ["string", "null"], "description": "With unit, e.g. '> 4.5 mmol/L'"},
+          "sensitivity": {"type": ["string", "null"]},
+          "specificity": {"type": ["string", "null"]},
+          "adjusted_for": {"type": ["string", "null"], "description": "Covariates for multivariable models; null otherwise"},
+          "quote": {"type": "string", "description": "Verbatim text from text_used that supports the row: the result sentence, or the table row as it appears in the file (copy exactly, including numbers; table cells may keep their | separators). Keep it short: the shortest span that carries the numbers."},
+          "location": {"type": "string", "description": "Where the quote is, e.g. 'Results, para 3', 'Table 2', 'Abstract'"},
+          "source_type": {"enum": ["text", "table", "figure", "abstract"]},
+          "confidence": {"enum": ["high", "medium", "low"], "description": "low when numbers had to be read from a garbled table or a figure, or the group sizes are unclear"},
+          "note": {"type": ["string", "null"]}
+        }
+      }
+    }
+  }
+}

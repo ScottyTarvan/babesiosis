@@ -1,0 +1,95 @@
+{
+ "id": "CB324",
+ "filename": "CB324_2006_importance-pcr-diagnostics-babesiosis.md",
+ "key": "PMID:17263080",
+ "record": {
+  "pmid": "17263080",
+  "pmcid": null,
+  "doi": "10.1024/0036-7281.148.12.633",
+  "title": "[Importance of PCR for the diagnostics of canine babesiosis].",
+  "authors": [
+   "Schaarschmidt D",
+   "Trächsel M",
+   "Achermann R",
+   "Hartelt K",
+   "Oehme R",
+   "Müller W"
+  ],
+  "journal": "Schweizer Archiv fur Tierheilkunde",
+  "journal_abbrev": "Schweiz Arch Tierheilkd",
+  "volume": "148",
+  "issue": "12",
+  "pages": "633-40",
+  "language": [
+   "ger"
+  ],
+  "issue_date": "2006-12-01",
+  "issue_date_precision": "month",
+  "epub_date": null,
+  "pubmed_entry_date": "2007-02-01",
+  "first_pub_date": "2006-12-01",
+  "publication_types": [
+   "Case Reports",
+   "English Abstract",
+   "Journal Article"
+  ],
+  "mesh": [
+   "Animals",
+   "Antibodies, Protozoan",
+   "Antiprotozoal Agents",
+   "Babesia",
+   "Babesiosis",
+   "DNA, Protozoan",
+   "Diagnosis, Differential",
+   "Dog Diseases",
+   "Dogs",
+   "Female",
+   "Male",
+   "Polymerase Chain Reaction",
+   "Sensitivity and Specificity",
+   "Treatment Outcome"
+  ],
+  "keywords": [],
+  "abstract": "Clinical standards to confirm babesiosis in dogs include the direct identification of the infectious agent in blood smears and serological assays for Babesia canis-specific antibodies. Here, we demonstrate in seven cases (with data on anamnesis, clinics, laboratory diagnostics, and therapeutic outcomes) that a new diagnostic procedure is required. This is the molecular-genetic identification of babesia by real time PCR allowing an unequivocal identification of the infectious agents. Indeed, all seven patients presenting severe clinical symptoms were PCR-positive, but only two of them had specific antibodies and showed babesia in their bloodstream. Six of the dogs appeared to have acquired babesiosis while travelling abroad, and one in the Swiss canton of Schaffhausen.",
+  "corrections": [],
+  "epmc_first_pub_date": "2006-12-01",
+  "is_oa": "N",
+  "has_suppl": "N",
+  "found_by": [
+   "EP1_broad",
+   "EP2_species",
+   "PM1_broad",
+   "PM2_species",
+   "PM3_mechanism"
+  ],
+  "in_window": true,
+  "key": "PMID:17263080",
+  "source_files": [
+   "candidates.jsonl"
+  ]
+ },
+ "screening": {
+  "key": "PMID:17263080",
+  "decision": "uncertain",
+  "include_type": null,
+  "exclude_reason": null,
+  "primary_category": "SEV",
+  "secondary_tags": [
+   "ERY",
+   "COA"
+  ],
+  "species": "Babesia sp. (confirmed, real-time PCR; mostly imported)",
+  "rationale": "From the abstract: a 7-case series of severely ill dogs, with clinical, laboratory and outcome data for each case. The aim is diagnostic, but the full text may hold a clinicopathological profile of severe cases, which counts as an eligible case series.",
+  "stage": "adjudicated",
+  "batch": "r4_01.md",
+  "first_decision": "exclude",
+  "rescue_reason": "Borderline rescue. Seven dogs with laboratory data and severe clinical signs were all PCR-positive, while most were smear-negative and seronegative; this dissociation of severity from parasitaemia may be a host-response observation, so the routine-case exclusion looks questionable.",
+  "screening_round": "r4"
+ },
+ "fulltext_check": {
+  "key": "PMID:17263080",
+  "pmcid": null,
+  "checked": "2026-10-28",
+  "fulltext_status": "no_pmcid"
+ }
+}

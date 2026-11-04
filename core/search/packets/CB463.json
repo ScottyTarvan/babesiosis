@@ -1,0 +1,85 @@
+{
+ "id": "CB463",
+ "filename": "CB463_2014_association-between-decreased-blood-pressure-azotaemia.md",
+ "key": "PMID:24724487",
+ "record": {
+  "pmid": "24724487",
+  "pmcid": null,
+  "doi": "10.2478/pjvs-2014-0024",
+  "title": "Association between decreased blood pressure and azotaemia in canine babesiosis.",
+  "authors": [
+   "Zygner W",
+   "Gójska-Zygner O"
+  ],
+  "journal": "Polish journal of veterinary sciences",
+  "journal_abbrev": "Pol J Vet Sci",
+  "volume": "17",
+  "issue": "1",
+  "pages": "173-5",
+  "language": [
+   "eng"
+  ],
+  "issue_date": "2014-01-01",
+  "issue_date_precision": "year",
+  "epub_date": null,
+  "pubmed_entry_date": "2014-04-15",
+  "first_pub_date": "2014-01-01",
+  "publication_types": [
+   "Journal Article"
+  ],
+  "mesh": [
+   "Animals",
+   "Antiprotozoal Agents",
+   "Azotemia",
+   "Babesiosis",
+   "Dog Diseases",
+   "Dogs",
+   "Hypotension",
+   "Imidocarb"
+  ],
+  "keywords": [],
+  "abstract": "Acute tubular necrosis (ATN) was described in canine babesiosis. Hypotension is considered as one of the factors which influence the development of hypoxic renal damage. In this study hypotension defined as mean arterial pressure (MAP) < 80 mmHg was detected in 7 out of 48 dogs (14.6%) infected with Babesia canis. Lower systolic arterial pressure (SAP), diastolic arterial pressure (DAP) and MAP were detected in azotaemic dogs infected with B. canis. Statistically significant negative correlations between blood pressures (SAP, DAP and MAP) and serum creatinine and urea concentrations showed the influence of decreased blood pressure on the development of azotaemia and is probably also associated with ATN in canine babesiosis.",
+  "corrections": [],
+  "epmc_first_pub_date": "2014-01-01",
+  "is_oa": "N",
+  "has_suppl": "N",
+  "found_by": [
+   "EP1_broad",
+   "EP2_species",
+   "PM1_broad",
+   "PM2_species",
+   "PM3_mechanism"
+  ],
+  "source_id": "AGR:IND605205813",
+  "src": "AGR",
+  "in_epmc": "N",
+  "has_data": "N",
+  "in_window": true,
+  "key": "PMID:24724487",
+  "source_files": [
+   "candidates.jsonl"
+  ]
+ },
+ "screening": {
+  "key": "PMID:24724487",
+  "decision": "include",
+  "include_type": "primary",
+  "exclude_reason": null,
+  "primary_category": "REN",
+  "secondary_tags": [
+   "END",
+   "CAR"
+  ],
+  "species": "B. canis (infected dogs, species method not stated in abstract)",
+  "rationale": "Blood pressure measured in 48 infected dogs; hypotension correlated with creatinine and urea, linking haemodynamics to azotaemia and acute tubular necrosis.",
+  "stage": "screen",
+  "batch": "r4_19.md",
+  "screening_round": "r4"
+ },
+ "fulltext_check": {
+  "key": "PMID:24724487",
+  "pmcid": null,
+  "checked": "2026-10-28",
+  "fulltext_status": "no_pmcid"
+ }
+}

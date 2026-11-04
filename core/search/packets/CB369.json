@@ -1,0 +1,88 @@
+{
+ "id": "CB369",
+ "filename": "CB369_2009_detection-erythrocyte-binding-igm-igg-flow.md",
+ "key": "PMID:19269745",
+ "record": {
+  "pmid": "19269745",
+  "pmcid": null,
+  "doi": "10.1016/j.vetpar.2009.02.002",
+  "title": "Detection of erythrocyte binding IgM and IgG by flow cytometry in sick dogs with Babesia canis canis or Babesia canis vogeli infection.",
+  "authors": [
+   "Carli E",
+   "Tasca S",
+   "Trotta M",
+   "Furlanello T",
+   "Caldin M",
+   "Solano-Gallego L"
+  ],
+  "journal": "Veterinary parasitology",
+  "journal_abbrev": "Vet Parasitol",
+  "volume": "162",
+  "issue": "1-2",
+  "pages": "51-7",
+  "language": [
+   "eng"
+  ],
+  "issue_date": "2009-05-26",
+  "issue_date_precision": "day",
+  "epub_date": "2009-02-12",
+  "pubmed_entry_date": "2009-03-10",
+  "first_pub_date": "2009-02-12",
+  "publication_types": [
+   "Journal Article"
+  ],
+  "mesh": [
+   "Animals",
+   "Babesia",
+   "Babesiosis",
+   "Dog Diseases",
+   "Dogs",
+   "Erythrocytes",
+   "Flow Cytometry",
+   "Immunoglobulin G",
+   "Immunoglobulin M",
+   "Sensitivity and Specificity",
+   "Species Specificity"
+  ],
+  "keywords": [],
+  "abstract": "The aim of this study was to examine by means of flow cytometry immunophenotyping (FCI) if sick dogs infected with Babesia canis canis (B. c. canis) or Babesia canis vogeli (B. c. vogeli) had anti-erythrocyte membrane binding IgG and/or IgM at the time of diagnosis. Diagnosis of Babesia infection was assessed by blood smear and by PCR-restriction fragment length polymorphism analysis in 30 sick dogs. Signalment, clinical history, physical examination and laboratory tests of B. c. canis (n=24) and of B. c. vogeli (n=6) infected dogs were studied. The majority of B. c. canis infected dogs showed anemia (92%) predominantly non-regenerative (94%), while the B. c. vogeli infected dogs had a regenerative anemia (67%). Eccentrocytosis was present in 33% of the B. c. canis infections. Four of six B. c. vogeli infected dogs had erythrocytes membrane antibodies. One dog resulted uncertain and one resulted negative to FCI. In contrast, all the B. c. canis infected dogs were negative for erythrocytes membrane binding immunoglobulins detection. In addition, the mean percentages of erythrocytes binding IgG and IgM were statistically much lower in B. c. canis than in B. c. vogeli infected dogs. At the time of the diagnosis, the formation of erythrocyte membrane binding IgG and IgM by immune mechanisms appears not to be involved in B. c. canis infections while it is present in the majority of B. c. vogeli infections.",
+  "corrections": [],
+  "epmc_first_pub_date": "2009-02-12",
+  "is_oa": "N",
+  "has_suppl": "N",
+  "found_by": [
+   "EP1_broad",
+   "EP2_species",
+   "PM1_broad",
+   "PM2_species",
+   "PM3_mechanism"
+  ],
+  "in_window": true,
+  "online_vs_issue": "online 2009-02-12; issue 2009-05-26 (day)",
+  "key": "PMID:19269745",
+  "source_files": [
+   "candidates.jsonl"
+  ]
+ },
+ "screening": {
+  "key": "PMID:19269745",
+  "decision": "include",
+  "include_type": "primary",
+  "exclude_reason": null,
+  "primary_category": "ERY",
+  "secondary_tags": [
+   "INF"
+  ],
+  "species": "B. canis canis (n=24) and B. canis vogeli (n=6) (confirmed, PCR-RFLP)",
+  "rationale": "Flow cytometry shows erythrocyte-bound IgG and IgM in B. c. vogeli but not B. c. canis infections. It also reports anaemia type, so it bears on immune-mediated haemolysis.",
+  "stage": "screen",
+  "batch": "r4_06.md",
+  "screening_round": "r4"
+ },
+ "fulltext_check": {
+  "key": "PMID:19269745",
+  "pmcid": null,
+  "checked": "2026-10-28",
+  "fulltext_status": "no_pmcid"
+ }
+}

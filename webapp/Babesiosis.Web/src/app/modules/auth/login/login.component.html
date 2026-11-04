@@ -1,0 +1,80 @@
+<div class="fs-login">
+  <div class="fs-login__card">
+    <header class="fs-login__brand">
+      <img class="fs-login__brand-logo" src="assets/images/fundstream-logo-light.png" alt="Fundstream" />
+    </header>
+
+    <h1 class="fs-login__title">Sign in to Babesiosis</h1>
+    <p class="fs-login__subtitle">Welcome back — sign in to continue.</p>
+
+    @if (errorMessage(); as err) {
+      <div class="fs-login__error" role="alert">
+        <fs-symbol name="alert-circle" size="sm" ariaLabel="" />
+        <span>{{ err }}</span>
+      </div>
+    }
+
+    @if (allowEntraLogin) {
+      <div class="fs-login__sso">
+        <fs-button
+          variant="outline"
+          intent="secondary"
+          size="md"
+          icon="brand-windows"
+          type="button"
+          (click)="onEntraLogin()">Sign in with Microsoft</fs-button>
+      </div>
+    }
+
+    @if (allowEntraLogin && allowEmailLogin) {
+      <div class="fs-login__divider" aria-hidden="true"><span>or</span></div>
+    }
+
+    @if (allowEmailLogin) {
+      <form [formGroup]="form" class="fs-login__form" (ngSubmit)="onSubmit()">
+        <fs-form-field
+          label="Email address"
+          [required]="true"
+          [error]="getErrorMessage('email')">
+          <div class="fs-login__input">
+            <fs-symbol name="mail" size="sm" ariaLabel="" class="fs-login__input-icon" />
+            <fs-text-input
+              type="email"
+              formControlName="email"
+              placeholder="you@example.com"
+              autocomplete="email"
+              [invalid]="hasError('email', 'required') || hasError('email', 'email')" />
+          </div>
+        </fs-form-field>
+
+        <fs-form-field
+          label="Password"
+          [required]="true"
+          [error]="getErrorMessage('password')">
+          <div class="fs-login__input fs-login__input--password">
+            <fs-symbol name="lock" size="sm" ariaLabel="" class="fs-login__input-icon" />
+            <fs-text-input
+              type="password"
+              formControlName="password"
+              placeholder="Enter your password"
+              autocomplete="current-password"
+              [invalid]="hasError('password', 'required') || hasError('password', 'minlength')" />
+          </div>
+        </fs-form-field>
+
+        <div class="fs-login__forgot">
+          <a class="fs-login__forgot-link" routerLink="/forgot-password">Forgot password?</a>
+        </div>
+
+        <fs-button
+          variant="solid"
+          intent="primary"
+          size="md"
+          icon="login"
+          type="submit"
+          [loading]="loading()"
+          [disabled]="loading()">{{ loading() ? 'Signing in…' : 'Log In' }}</fs-button>
+      </form>
+    }
+  </div>
+</div>

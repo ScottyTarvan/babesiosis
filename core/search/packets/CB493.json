@@ -1,0 +1,141 @@
+{
+ "id": "CB493",
+ "filename": "CB493_2015_babesiosis-perspective-clinical-complications-biomarkers-treatment.md",
+ "key": "PMID:30155438",
+ "record": {
+  "pmid": "30155438",
+  "pmcid": "PMC6065580",
+  "doi": "10.2147/vmrr.s60431",
+  "title": "Canine babesiosis: a perspective on clinical complications, biomarkers, and treatment.",
+  "authors": [
+   "Köster LS",
+   "Lobetti RG",
+   "Kelly P"
+  ],
+  "journal": "Veterinary medicine (Auckland, N.Z.)",
+  "journal_abbrev": "Vet Med (Auckl)",
+  "volume": "6",
+  "issue": null,
+  "pages": "119-128",
+  "language": [
+   "eng"
+  ],
+  "issue_date": "2015-01-01",
+  "issue_date_precision": "year",
+  "epub_date": "2015-04-10",
+  "pubmed_entry_date": "2015-04-10",
+  "first_pub_date": "2015-01-01",
+  "publication_types": [
+   "Journal Article",
+   "Review"
+  ],
+  "mesh": [],
+  "keywords": [
+   "babesiosis",
+   "dog",
+   "vector-borne disease"
+  ],
+  "abstract": "Canine babesiosis is a common tick transmitted disease of dogs worldwide. A number of Babesia sp. can infect dogs and the spectrum is increasing as molecular methods are developed to differentiate organisms. Clinical signs are generally attributed to hemolysis caused by the organisms in the erythrocytes but in some animals with some Babesia spp. there can be an immune mediated component to the anemia and/or a severe inflammatory reaction associated. This complicated form of canine babesiosis is associated with high morbidity and mortality. A variety of clinical markers has been investigated to enable clinicians to provide more accurate prognoses and adapt their treatments which vary according to the infecting species. In this review, we discuss the taxonomy, clinical signs, diagnostic imaging, clinical biomarkers, treatment, and prophylaxis of one of the most common and important diseases of dogs worldwide.",
+  "corrections": [],
+  "epmc_first_pub_date": "2015-04-10",
+  "is_oa": "Y",
+  "has_suppl": "N",
+  "found_by": [
+   "EP1_broad",
+   "PM1_broad",
+   "PM3_mechanism",
+   "PM4_review"
+  ],
+  "in_window": true,
+  "date_discrepancy": "PubMed-derived 2015-01-01 vs Europe PMC firstPublicationDate 2015-04-10",
+  "online_vs_issue": "online 2015-04-10; issue 2015-01-01 (year)",
+  "key": "PMID:30155438",
+  "source_files": [
+   "candidates.jsonl"
+  ]
+ },
+ "screening": {
+  "key": "PMID:30155438",
+  "decision": "include",
+  "include_type": "review",
+  "exclude_reason": null,
+  "primary_category": "SEV",
+  "secondary_tags": [
+   "ERY",
+   "INF"
+  ],
+  "species": "Canine Babesia spp. (multiple)",
+  "rationale": "Review of clinical complications, biomarkers and prognosis in canine babesiosis, including immune-mediated anaemia and the inflammatory response.",
+  "stage": "screen",
+  "batch": "r4_23.md",
+  "screening_round": "r4"
+ },
+ "fulltext_check": {
+  "key": "PMID:30155438",
+  "pmcid": "PMC6065580",
+  "checked": "2026-10-28",
+  "fulltext_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6065580/fullTextXML",
+  "fulltext_status": 200,
+  "data_availability": [],
+  "supplementary": [],
+  "repository_links": [],
+  "section_titles": [
+   "Introduction",
+   "Taxonomy and geographic distribution",
+   "Clinical signs",
+   "Infections with B. vogeli",
+   "Infections with B. canis and B. rossi",
+   "Hepatopathy",
+   "AKI",
+   "Cerebral babesiosis",
+   "ARDS",
+   "“Red biliary”",
+   "Rhabdomyolysis",
+   "Pancreatitis",
+   "Cardiac dysfunction",
+   "Infections with B. gibsoni",
+   "Diagnostic imaging",
+   "Clinical biomarkers",
+   "Blood cell parameters",
+   "Coagulation profiles",
+   "Cytokines",
+   "Acid–base values",
+   "Metabolic abnormalities",
+   "Endocrine predictors",
+   "Renal parameters",
+   "Central nervous system signs",
+   "Respiratory signs",
+   "Liver markers",
+   "Hemodynamic and cardiovascular changes",
+   "Treatment",
+   "Prophylaxis",
+   "Footnotes",
+   "References"
+  ],
+  "has_body": true
+ },
+ "duplicate_records": [
+  {
+   "key": "REF:caninebabesiosisaperspectiveonpathogenesisclinicalbiomarkers",
+   "basis": "Reference-list title variant of Koster, Lobetti & Kelly 2015 (Vet Med Res Rep); PubMed record retained",
+   "record": {
+    "pmid": null,
+    "doi": null,
+    "title": "Canine babesiosis: a perspective on pathogenesis, clinical biomarkers and treatment",
+    "journal": null,
+    "first_pub_date": null,
+    "year": "2015",
+    "abstract": null,
+    "found_by": [
+     "citation:backward:29604992"
+    ],
+    "unresolved": true,
+    "source_id": "REF:caninebabesiosisaperspectiveonpathogenesisclinicalbiomarkers",
+    "key": "REF:caninebabesiosisaperspectiveonpathogenesisclinicalbiomarkers",
+    "source_files": [
+     "candidates_r2.jsonl"
+    ]
+   }
+  }
+ ]
+}

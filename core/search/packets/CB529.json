@@ -1,0 +1,92 @@
+{
+ "id": "CB529",
+ "filename": "CB529_2016_therapeutic-effects-atovaquone-proguanil-combination-azithromycin.md",
+ "key": "DOI:10.17555/jvc.2016.02.33.1.16",
+ "record": {
+  "pmid": null,
+  "doi": "10.17555/jvc.2016.02.33.1.16",
+  "title": "Therapeutic Effects of Atovaquone/Proguanil in Combination with Azithromycin in Dogs Naturally Infected with Babesia gibsoni",
+  "journal": "Journal of Veterinary Clinics",
+  "authors": [
+   "Lee D",
+   "Kim Y",
+   "Yun Y",
+   "Lee K"
+  ],
+  "first_pub_date": "2016-02-29",
+  "crossref_dates": {
+   "published-print": "2016-02-29",
+   "issued": "2016-02-29"
+  },
+  "abstract": null,
+  "language": [],
+  "found_by": [
+   "CR:Babesia gibsoni"
+  ],
+  "in_window": true,
+  "src": "CROSSREF",
+  "key": "DOI:10.17555/jvc.2016.02.33.1.16",
+  "source_files": [
+   "candidates_crossref.jsonl"
+  ]
+ },
+ "screening": {
+  "key": "DOI:10.17555/jvc.2016.02.33.1.16",
+  "decision": "uncertain",
+  "include_type": null,
+  "exclude_reason": null,
+  "primary_category": "ERY",
+  "secondary_tags": [
+   "COA"
+  ],
+  "species": "B. gibsoni (confirmed, PCR)",
+  "rationale": "Duplicate record of https://openalex.org/W2370925246, the English title of the same atovaquone/proguanil plus azithromycin trial, so it gets the same decision. The full text needs checking for haematology data in the infected dogs.",
+  "stage": "adjudicated",
+  "batch": "r4_27.md",
+  "first_decision": "exclude",
+  "rescue_reason": "Duplicate record of https://openalex.org/W2370925246: the English title of the same atovaquone/proguanil trial in naturally infected B. gibsoni dogs, with the same rescue decision.",
+  "screening_round": "r4"
+ },
+ "fulltext_check": {
+  "key": "DOI:10.17555/jvc.2016.02.33.1.16",
+  "pmcid": null,
+  "checked": "2026-10-28",
+  "fulltext_status": "no_pmcid"
+ },
+ "duplicate_records": [
+  {
+   "key": "https://openalex.org/W2370925246",
+   "basis": "English-title OpenAlex record of the same atovaquone/proguanil plus azithromycin trial; DOI record retained",
+   "record": {
+    "pmid": null,
+    "pmcid": null,
+    "doi": null,
+    "title": "Babesia gibsoni 자연 감염개에서의 Atovaquone/Proguanil 합제와 Azithromycin 병용투여에 따른 치료효과",
+    "journal": null,
+    "authors": [
+     "이대근",
+     "김윤기",
+     "윤영민",
+     "이경갑"
+    ],
+    "first_pub_date": "2016-02-01",
+    "type": "article",
+    "language": [
+     "ko"
+    ],
+    "abstract": "This study was performed to estimate the clinical use of combination therapy with atovaquone/proguanil and azithromycin as a effective treatment in dogs infected with Babesia gibsoni. Eight mixed-breed dogs that were infected naturally with B. gibsoni were used in this study. Four dogs (No. 1-4) as experimental group received atovaquone/proguanil and azithromycin therapy. As for the other four dogs as the control group (No. 5-8) were administered diminazene aceturate and tetracycline/clindamycin. All the dogs in this study showed mild to severe anemia and thrombocytopenia. After initiating the treatment B. gibsoni in blood smears disappeared. PCR analysis of the experimental group showed negative results during the observation period, but more than one dog from the control groups showed continuous positive results. Atovaquone/proguanil and azithromycin combination therapy can significantly lower the B. gibsoni parasitemia levels and the results suggested that this combination therapy should be a new protocol for an effective treatment in dogs infected with B. gibsoni.",
+    "abstract_source": "OpenAlex abstract_inverted_index (reconstructed)",
+    "source_id": "https://openalex.org/W2370925246",
+    "src": "OPENALEX",
+    "found_by": [
+     "OA:title_and_abstract"
+    ],
+    "in_window": true,
+    "key": "https://openalex.org/W2370925246",
+    "source_files": [
+     "candidates_r3.jsonl"
+    ]
+   }
+  }
+ ]
+}

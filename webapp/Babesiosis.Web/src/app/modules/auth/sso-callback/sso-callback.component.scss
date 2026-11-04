@@ -1,0 +1,101 @@
+// Mirrors the login / forgot-password / reset-password card so the SSO hop is
+// visually continuous with the page the user just left.
+:host {
+  display: block;
+  min-height: 100vh;
+}
+
+.fs-sso {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem;
+  // `--fs-color-app-background` was never a defined token — the whole
+  // `background` shorthand was silently invalid and this screen rendered with
+  // no fill at all behind the card. `--fs-color-background` is the real "page
+  // bg — the whole window" token; fixed while converting this file.
+  background:
+    radial-gradient(circle at 20% 20%, rgb(var(--fs-color-primary) / 0.06), transparent 40%),
+    radial-gradient(circle at 80% 70%, rgb(var(--fs-color-primary) / 0.04), transparent 40%),
+    rgb(var(--fs-color-background));
+}
+
+.fs-sso__card {
+  width: 100%;
+  max-width: 420px;
+  padding: 2.25rem;
+  background-color: rgb(var(--fs-color-surface));
+  border: 1px solid rgb(var(--fs-color-line));
+  border-radius: var(--fs-radius-lg);
+  // This card is the entire page's content — nothing else sits on the canvas
+  // around it — so it genuinely floats rather than sitting in a list of peers.
+  // That is the guideline's own carve-out for using a shadow instead of (here,
+  // in addition to) the hairline: modal-weight elevation for a modal-like card.
+  box-shadow: var(--fs-guide-shadow-modal);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+}
+
+.fs-sso__brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+// Brand glyph. White text on solid --fs-color-primary at 18px/700 measures
+// ~3.1:1, below the 4.5:1 floor for text under the 18.66px-bold large-text
+// threshold. This span is aria-hidden and reads as a decorative logo glyph,
+// but the project already declined to claim a logotype exemption for this
+// same brand cluster's 18px size ceiling (see .fs-sso__brand-name below),
+// so it isn't claimed here either — fixed the pair instead: ink-strong text
+// on a light wash of primary, the same alpha-over-token pattern already used
+// for the page background above.
+.fs-sso__brand-mark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: var(--fs-radius-md);
+  background-color: rgb(var(--fs-color-primary) / 0.12);
+  color: rgb(var(--fs-color-ink-strong));
+  font-family: var(--fs-font-brand);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1;
+  box-shadow: var(--fs-shadow-primary);
+}
+
+// Brand wordmark. No sanctioned logotype exemption from the 18px chrome
+// ceiling, so the size sits at --fs-guide-text-section's 18px; family/weight
+// stay brand-specific since the guideline's type ramp is silent on typeface.
+.fs-sso__brand-name {
+  font-family: var(--fs-font-brand);
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: -0.01em;
+  color: rgb(var(--fs-color-ink-strong));
+}
+
+.fs-sso__title {
+  margin: 0;
+  // Page title. The guideline's ceiling is 18px chrome type — mapped to
+  // --fs-guide-text-section (18/28/500) as the loudest register this screen's
+  // single heading is allowed, down from the old 22px/600.
+  font: var(--fs-guide-text-section);
+  letter-spacing: var(--fs-guide-tracking);
+  color: rgb(var(--fs-color-ink-strong));
+}
+
+.fs-sso__subtitle {
+  margin: 0;
+  font: var(--fs-guide-text-body);
+  letter-spacing: var(--fs-guide-tracking);
+  color: rgb(var(--fs-color-ink-soft));
+}

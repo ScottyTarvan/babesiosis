@@ -1,0 +1,541 @@
+{
+ "id": "CB537",
+ "document": "data/markdown/CB537.en.md",
+ "source_format": "pdf",
+ "translated": true,
+ "words": 4114,
+ "run_utc": "2026-10-30T05:36:55+00:00",
+ "threshold": 0.85,
+ "kept_types": [
+  "T019",
+  "T020",
+  "T037",
+  "T046",
+  "T047",
+  "T048",
+  "T049",
+  "T050",
+  "T184",
+  "T190",
+  "T191"
+ ],
+ "term_count": 29,
+ "terms": [
+  {
+   "term": "C0004576",
+   "concept": "Babesiosis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 64,
+   "mentions_negated": 5,
+   "mentions_affirmed": 59,
+   "sections": {
+    "results_discussion": 33,
+    "conclusion": 13,
+    "unlabelled": 10,
+    "introduction": 6,
+    "title": 1,
+    "methods": 1
+   },
+   "forms": {
+    "babesiosis": 64
+   },
+   "best_score": 0.972
+  },
+  {
+   "term": "C0012634",
+   "concept": "Disease",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 15,
+   "mentions_negated": 0,
+   "mentions_affirmed": 15,
+   "sections": {
+    "results_discussion": 10,
+    "introduction": 2,
+    "conclusion": 2,
+    "unlabelled": 1
+   },
+   "forms": {
+    "disease": 15
+   },
+   "best_score": 0.987
+  },
+  {
+   "term": "C0242723",
+   "concept": "Parasitemia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 13,
+   "mentions_negated": 0,
+   "mentions_affirmed": 13,
+   "sections": {
+    "results_discussion": 5,
+    "unlabelled": 4,
+    "conclusion": 4
+   },
+   "forms": {
+    "parasitemia": 13
+   },
+   "best_score": 0.992
+  },
+  {
+   "term": "C0009566",
+   "concept": "Complication",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 6,
+   "mentions_negated": 1,
+   "mentions_affirmed": 5,
+   "sections": {
+    "results_discussion": 3,
+    "conclusion": 2,
+    "unlabelled": 1
+   },
+   "forms": {
+    "complications": 5,
+    "complication": 1
+   },
+   "best_score": 0.977
+  },
+  {
+   "term": "C0030499",
+   "concept": "Parasitic Diseases",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 4,
+   "mentions_negated": 0,
+   "mentions_affirmed": 4,
+   "sections": {
+    "results_discussion": 2,
+    "introduction": 1,
+    "conclusion": 1
+   },
+   "forms": {
+    "infestation": 3,
+    "parasitic diseases": 1
+   },
+   "best_score": 0.988
+  },
+  {
+   "term": "C0023518",
+   "concept": "Leukocytosis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "unlabelled": 1,
+    "results_discussion": 1,
+    "conclusion": 1
+   },
+   "forms": {
+    "leukocytosis": 3
+   },
+   "best_score": 0.979
+  },
+  {
+   "term": "C0221395",
+   "concept": "Erythropenia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "unlabelled": 1,
+    "results_discussion": 1,
+    "conclusion": 1
+   },
+   "forms": {
+    "erythropenia": 3
+   },
+   "best_score": 0.986
+  },
+  {
+   "term": "C1269955",
+   "concept": "Tumor Cell Invasion",
+   "semantic_types": [
+    "Neoplastic Process"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "unlabelled": 1,
+    "results_discussion": 1,
+    "conclusion": 1
+   },
+   "forms": {
+    "invasion": 3
+   },
+   "best_score": 0.944
+  },
+  {
+   "term": "C1845118",
+   "concept": "SHORT STATURE, IDIOPATHIC, X-LINKED",
+   "semantic_types": [
+    "Congenital Abnormality"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "unlabelled": 2,
+    "conclusion": 1
+   },
+   "forms": {
+    "iss": 3
+   },
+   "best_score": 0.997
+  },
+  {
+   "term": "C0009450",
+   "concept": "Communicable Diseases",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "results_discussion": 2
+   },
+   "forms": {
+    "infection": 2
+   },
+   "best_score": 0.962
+  },
+  {
+   "term": "C0004134",
+   "concept": "Ataxia",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results_discussion": 1
+   },
+   "forms": {
+    "ataxia": 1
+   },
+   "best_score": 0.974
+  },
+  {
+   "term": "C0006285",
+   "concept": "Bronchopneumonia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results_discussion": 1
+   },
+   "forms": {
+    "bronchopneumonia": 1
+   },
+   "best_score": 0.974
+  },
+  {
+   "term": "C0010957",
+   "concept": "Tissue damage",
+   "semantic_types": [
+    "Injury or Poisoning"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "damage": 1
+   },
+   "best_score": 0.987
+  },
+  {
+   "term": "C0011570",
+   "concept": "Mental Depression",
+   "semantic_types": [
+    "Mental or Behavioral Dysfunction"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results_discussion": 1
+   },
+   "forms": {
+    "depression": 1
+   },
+   "best_score": 0.97
+  },
+  {
+   "term": "C0013604",
+   "concept": "Edema",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results_discussion": 1
+   },
+   "forms": {
+    "swelling": 1
+   },
+   "best_score": 0.954
+  },
+  {
+   "term": "C0020517",
+   "concept": "Hypersensitivity",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 1,
+   "mentions_affirmed": 0,
+   "sections": {
+    "results_discussion": 1
+   },
+   "forms": {
+    "allergic reactions": 1
+   },
+   "best_score": 0.978
+  },
+  {
+   "term": "C0024348",
+   "concept": "Lysis",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results_discussion": 1
+   },
+   "forms": {
+    "lysis": 1
+   },
+   "best_score": 0.986
+  },
+  {
+   "term": "C0029166",
+   "concept": "Oral Manifestations",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results_discussion": 1
+   },
+   "forms": {
+    "manifestation": 1
+   },
+   "best_score": 0.875
+  },
+  {
+   "term": "C0036572",
+   "concept": "Seizures",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results_discussion": 1
+   },
+   "forms": {
+    "convulsions": 1
+   },
+   "best_score": 0.947
+  },
+  {
+   "term": "C0041849",
+   "concept": "Unspecified infectious and parasitic diseases",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "infectious and parasitic diseases": 1
+   },
+   "best_score": 0.98
+  },
+  {
+   "term": "C0042963",
+   "concept": "Vomiting",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results_discussion": 1
+   },
+   "forms": {
+    "vomiting": 1
+   },
+   "best_score": 0.957
+  },
+  {
+   "term": "C0221208",
+   "concept": "Traumatic injection site",
+   "semantic_types": [
+    "Injury or Poisoning"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results_discussion": 1
+   },
+   "forms": {
+    "injection site": 1
+   },
+   "best_score": 0.973
+  },
+  {
+   "term": "C0232910",
+   "concept": "Teratogenesis",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 1,
+   "mentions_affirmed": 0,
+   "sections": {
+    "results_discussion": 1
+   },
+   "forms": {
+    "teratogenic effect": 1
+   },
+   "best_score": 0.97
+  },
+  {
+   "term": "C0235082",
+   "concept": "Tremor, Muscle",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results_discussion": 1
+   },
+   "forms": {
+    "muscle tremor": 1
+   },
+   "best_score": 0.993
+  },
+  {
+   "term": "C0276807",
+   "concept": "Infection by Cystoisospora",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results_discussion": 1
+   },
+   "forms": {
+    "cystoisosporosis": 1
+   },
+   "best_score": 0.981
+  },
+  {
+   "term": "C0277785",
+   "concept": "Functional disorder",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results_discussion": 1
+   },
+   "forms": {
+    "functional disturbances": 1
+   },
+   "best_score": 0.903
+  },
+  {
+   "term": "C0851341",
+   "concept": "Infestation",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results_discussion": 1
+   },
+   "forms": {
+    "infestations": 1
+   },
+   "best_score": 0.957
+  },
+  {
+   "term": "C0853813",
+   "concept": "Local Reaction",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results_discussion": 1
+   },
+   "forms": {
+    "local reactions": 1
+   },
+   "best_score": 0.971
+  },
+  {
+   "term": "C1640363",
+   "concept": "Vector Borne Diseases",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "vector-borne diseases": 1
+   },
+   "best_score": 0.957
+  }
+ ]
+}

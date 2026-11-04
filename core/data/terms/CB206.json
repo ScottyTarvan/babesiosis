@@ -1,0 +1,646 @@
+{
+ "id": "CB206",
+ "document": "data/markdown/CB206.md",
+ "source_format": "pdf",
+ "translated": false,
+ "words": 2962,
+ "run_utc": "2026-10-30T05:35:11+00:00",
+ "threshold": 0.85,
+ "kept_types": [
+  "T019",
+  "T020",
+  "T037",
+  "T046",
+  "T047",
+  "T048",
+  "T049",
+  "T050",
+  "T184",
+  "T190",
+  "T191"
+ ],
+ "term_count": 34,
+ "terms": [
+  {
+   "term": "C0004576",
+   "concept": "Babesiosis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 32,
+   "mentions_negated": 0,
+   "mentions_affirmed": 32,
+   "sections": {
+    "results_discussion": 14,
+    "introduction": 7,
+    "unlabelled": 6,
+    "conclusion": 3,
+    "methods": 2
+   },
+   "forms": {
+    "babesiosis": 32
+   },
+   "best_score": 0.972
+  },
+  {
+   "term": "C0012634",
+   "concept": "Disease",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 7,
+   "mentions_negated": 0,
+   "mentions_affirmed": 7,
+   "sections": {
+    "introduction": 3,
+    "methods": 2,
+    "results_discussion": 2
+   },
+   "forms": {
+    "disease": 7
+   },
+   "best_score": 0.987
+  },
+  {
+   "term": "C1269955",
+   "concept": "Tumor Cell Invasion",
+   "semantic_types": [
+    "Neoplastic Process"
+   ],
+   "mentions": 7,
+   "mentions_negated": 0,
+   "mentions_affirmed": 7,
+   "sections": {
+    "introduction": 2,
+    "results_discussion": 2,
+    "conclusion": 2,
+    "methods": 1
+   },
+   "forms": {
+    "invasion": 7
+   },
+   "best_score": 0.944
+  },
+  {
+   "term": "C0002871",
+   "concept": "Anemia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 6,
+   "mentions_negated": 0,
+   "mentions_affirmed": 6,
+   "sections": {
+    "introduction": 2,
+    "results_discussion": 2,
+    "unlabelled": 1,
+    "methods": 1
+   },
+   "forms": {
+    "anemia": 6
+   },
+   "best_score": 0.974
+  },
+  {
+   "term": "C0040034",
+   "concept": "Thrombocytopenia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 6,
+   "mentions_negated": 0,
+   "mentions_affirmed": 6,
+   "sections": {
+    "results_discussion": 3,
+    "unlabelled": 2,
+    "conclusion": 1
+   },
+   "forms": {
+    "thrombocytopenia": 6
+   },
+   "best_score": 0.98
+  },
+  {
+   "term": "C0023530",
+   "concept": "Leukopenia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 5,
+   "mentions_negated": 0,
+   "mentions_affirmed": 5,
+   "sections": {
+    "results_discussion": 3,
+    "unlabelled": 1,
+    "conclusion": 1
+   },
+   "forms": {
+    "leukopenia": 5
+   },
+   "best_score": 0.958
+  },
+  {
+   "term": "C0221395",
+   "concept": "Erythropenia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 5,
+   "mentions_negated": 0,
+   "mentions_affirmed": 5,
+   "sections": {
+    "results_discussion": 2,
+    "unlabelled": 1,
+    "introduction": 1,
+    "conclusion": 1
+   },
+   "forms": {
+    "erythrocytopenia": 4,
+    "oligocythemia": 1
+   },
+   "best_score": 0.989
+  },
+  {
+   "term": "C0418391",
+   "concept": "Assault by stabbing",
+   "semantic_types": [
+    "Injury or Poisoning"
+   ],
+   "mentions": 5,
+   "mentions_negated": 0,
+   "mentions_affirmed": 5,
+   "sections": {
+    "results_discussion": 3,
+    "unlabelled": 1,
+    "conclusion": 1
+   },
+   "forms": {
+    "stab": 5
+   },
+   "best_score": 0.991
+  },
+  {
+   "term": "C0699748",
+   "concept": "Pathogenesis",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 5,
+   "mentions_negated": 0,
+   "mentions_affirmed": 5,
+   "sections": {
+    "introduction": 2,
+    "unlabelled": 1,
+    "results_discussion": 1,
+    "conclusion": 1
+   },
+   "forms": {
+    "pathogenesis": 5
+   },
+   "best_score": 0.983
+  },
+  {
+   "term": "C0085702",
+   "concept": "Monocytosis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 4,
+   "mentions_negated": 0,
+   "mentions_affirmed": 4,
+   "sections": {
+    "results_discussion": 2,
+    "unlabelled": 1,
+    "conclusion": 1
+   },
+   "forms": {
+    "monocytosis": 4
+   },
+   "best_score": 0.99
+  },
+  {
+   "term": "C0702266",
+   "concept": "Basophilia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 4,
+   "mentions_negated": 0,
+   "mentions_affirmed": 4,
+   "sections": {
+    "results_discussion": 2,
+    "unlabelled": 1,
+    "conclusion": 1
+   },
+   "forms": {
+    "basophilia": 4
+   },
+   "best_score": 0.988
+  },
+  {
+   "term": "C0009566",
+   "concept": "Complication",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "unlabelled": 1,
+    "introduction": 1,
+    "conclusion": 1
+   },
+   "forms": {
+    "complications": 3
+   },
+   "best_score": 0.977
+  },
+  {
+   "term": "C0010957",
+   "concept": "Tissue damage",
+   "semantic_types": [
+    "Injury or Poisoning"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "introduction": 3
+   },
+   "forms": {
+    "damage": 2,
+    "tissue damage": 1
+   },
+   "best_score": 0.988
+  },
+  {
+   "term": "C0029166",
+   "concept": "Oral Manifestations",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "unlabelled": 1,
+    "results_discussion": 1,
+    "conclusion": 1
+   },
+   "forms": {
+    "manifestation": 3
+   },
+   "best_score": 0.875
+  },
+  {
+   "term": "C0015967",
+   "concept": "Fever",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "unlabelled": 1,
+    "introduction": 1
+   },
+   "forms": {
+    "fever": 2
+   },
+   "best_score": 0.962
+  },
+  {
+   "term": "C0018939",
+   "concept": "Hematological Disease",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "unlabelled": 1,
+    "conclusion": 1
+   },
+   "forms": {
+    "blood disease": 2
+   },
+   "best_score": 0.988
+  },
+  {
+   "term": "C0020639",
+   "concept": "Hypoproteinemia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "unlabelled": 1,
+    "conclusion": 1
+   },
+   "forms": {
+    "hypoproteinemia": 2
+   },
+   "best_score": 0.975
+  },
+  {
+   "term": "C0022346",
+   "concept": "Icterus",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "unlabelled": 1,
+    "introduction": 1
+   },
+   "forms": {
+    "jaundice": 2
+   },
+   "best_score": 0.947
+  },
+  {
+   "term": "C0022658",
+   "concept": "Kidney Diseases",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "unlabelled": 1,
+    "conclusion": 1
+   },
+   "forms": {
+    "nephropathy": 2
+   },
+   "best_score": 0.99
+  },
+  {
+   "term": "C0025517",
+   "concept": "Metabolic Diseases",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "unlabelled": 1,
+    "introduction": 1
+   },
+   "forms": {
+    "metabolic disorders": 2
+   },
+   "best_score": 0.99
+  },
+  {
+   "term": "C0030660",
+   "concept": "Pathologic Processes",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "introduction": 1,
+    "results_discussion": 1
+   },
+   "forms": {
+    "pathological process": 2
+   },
+   "best_score": 0.984
+  },
+  {
+   "term": "C0221423",
+   "concept": "Illness (finding)",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "introduction": 1,
+    "conclusion": 1
+   },
+   "forms": {
+    "sick": 2
+   },
+   "best_score": 0.995
+  },
+  {
+   "term": "C0239981",
+   "concept": "Hypoalbuminemia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "results_discussion": 1,
+    "conclusion": 1
+   },
+   "forms": {
+    "hypoalbuminemia": 2
+   },
+   "best_score": 0.974
+  },
+  {
+   "term": "C0242184",
+   "concept": "Hypoxia",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "results_discussion": 2
+   },
+   "forms": {
+    "hypoxia": 2
+   },
+   "best_score": 0.978
+  },
+  {
+   "term": "C0009450",
+   "concept": "Communicable Diseases",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results_discussion": 1
+   },
+   "forms": {
+    "infection": 1
+   },
+   "best_score": 0.962
+  },
+  {
+   "term": "C0019054",
+   "concept": "Hemolysis (disorder)",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "hemolysis": 1
+   },
+   "best_score": 0.991
+  },
+  {
+   "term": "C0020517",
+   "concept": "Hypersensitivity",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results_discussion": 1
+   },
+   "forms": {
+    "sensitivity": 1
+   },
+   "best_score": 0.997
+  },
+  {
+   "term": "C0026766",
+   "concept": "Multiple Organ Failure",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "multiple organ failure": 1
+   },
+   "best_score": 0.981
+  },
+  {
+   "term": "C0085662",
+   "concept": "Macrocytosis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "macrocytosis": 1
+   },
+   "best_score": 0.989
+  },
+  {
+   "term": "C0235378",
+   "concept": "Hepatotoxicity",
+   "semantic_types": [
+    "Injury or Poisoning"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results_discussion": 1
+   },
+   "forms": {
+    "hepatotoxicity": 1
+   },
+   "best_score": 0.99
+  },
+  {
+   "term": "C0242656",
+   "concept": "Disease Progression",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results_discussion": 1
+   },
+   "forms": {
+    "progression": 1
+   },
+   "best_score": 0.971
+  },
+  {
+   "term": "C0276854",
+   "concept": "Infection by Babesia canis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "unlabelled": 1
+   },
+   "forms": {
+    "canine babesiosis": 1
+   },
+   "best_score": 0.969
+  },
+  {
+   "term": "C0600688",
+   "concept": "Toxic effect",
+   "semantic_types": [
+    "Injury or Poisoning"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results_discussion": 1
+   },
+   "forms": {
+    "toxic effects": 1
+   },
+   "best_score": 0.862
+  },
+  {
+   "term": "C0745178",
+   "concept": "Hypotensive Shock",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "hypotensive shock": 1
+   },
+   "best_score": 0.988
+  }
+ ]
+}

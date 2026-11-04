@@ -1,0 +1,37 @@
+# Visual Studio / IDE state
+.vs/
+.idea/
+*.user
+*.suo
+
+# .NET build output
+bin/
+obj/
+*.binlog
+
+# Node / Angular
+node_modules/
+dist/
+.angular/
+
+# Python
+__pycache__/
+.venv/
+.venv-nlp/
+venv/
+
+# Local caches / databases
+*.db
+*.db-journal
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Local and client environment settings: connection strings, storage and
+# Service Bus keys. The Functions project links debug-appsettings.json and
+# local.settings.json from here, so a fresh clone needs copies made by hand.
+webapp/Configurations/
+
+# Session worktrees the desktop app creates
+.claude/worktrees/

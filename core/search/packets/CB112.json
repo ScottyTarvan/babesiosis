@@ -1,0 +1,127 @@
+{
+ "id": "CB112",
+ "filename": "CB112_2023_serum-proteome-profiling-naturally-acquired-babesia.md",
+ "key": "PMID:37353646",
+ "record": {
+  "pmid": "37353646",
+  "pmcid": "PMC10290096",
+  "doi": "10.1038/s41598-023-37312-9",
+  "title": "Serum proteome profiling of naturally acquired Babesia rossi infection in dogs.",
+  "authors": [
+   "Kuleš J",
+   "Rubić I",
+   "Farkaš V",
+   "Barić Rafaj R",
+   "Gotić J",
+   "Crnogaj M",
+   "Burchmore R",
+   "Eckersall D",
+   "Mrljak V",
+   "Leisewitz AL"
+  ],
+  "journal": "Scientific reports",
+  "journal_abbrev": "Sci Rep",
+  "volume": "13",
+  "issue": "1",
+  "pages": "10249",
+  "language": [
+   "eng"
+  ],
+  "issue_date": "2023-06-23",
+  "issue_date_precision": "day",
+  "epub_date": "2023-06-23",
+  "pubmed_entry_date": "2023-06-24",
+  "first_pub_date": "2023-06-23",
+  "publication_types": [
+   "Journal Article",
+   "Research Support, Non-U.S. Gov't"
+  ],
+  "mesh": [
+   "Dogs",
+   "Animals",
+   "Babesiosis",
+   "Proteome",
+   "Proteomics",
+   "Babesia",
+   "Inflammation"
+  ],
+  "keywords": [],
+  "abstract": "Babesiosis is a disease of significant medically and veterinary importance with worldwide distribution. It is caused by intra-erythrocyte protozoal parasites, with Babesia rossi causing the most severe clinical signs of all the large Babesia parasites infecting dogs. The disease can be clinically classified into uncomplicated and complicated forms with a wide range of clinical presentations from a mild, subclinical illness to complicated forms and death. The aim of this study was to assess serum proteomic profiles from dogs with babesiosis and healthy dogs using a label-based proteomics approach. Altogether 32 dogs naturally infected with B. rossi (subdivided into 18 uncomplicated cases and 14 complicated cases of babesiosis) and 20 healthy dogs were included. There were 78 proteins with significantly different abundances between the three groups of dogs. Elucidation of proteins and pathways involved in canine babesiosis caused by B. rossi have revealed key differences associated with haemostasis, innate immune system, lipid metabolism and inflammation. Shotgun proteomic profiling allowed identification of potential serum biomarkers for differentiation of disease severity in canine babesiosis caused by B. rossi. These findings may be applicable to the study of host-parasite interactions and the development of novel therapeutic targets.",
+  "corrections": [],
+  "epmc_first_pub_date": "2023-06-23",
+  "is_oa": "Y",
+  "has_suppl": "Y",
+  "found_by": [
+   "EP1_broad",
+   "EP2_species",
+   "PM1_broad",
+   "PM2_species",
+   "PM3_mechanism"
+  ],
+  "source_id": "PPR:PPR631937",
+  "src": "PPR",
+  "in_epmc": "N",
+  "has_data": "N",
+  "in_window": true
+ },
+ "screening": {
+  "key": "PMID:37353646",
+  "decision": "include",
+  "include_type": "primary",
+  "exclude_reason": null,
+  "primary_category": "OXO",
+  "secondary_tags": [
+   "COA",
+   "INF",
+   "MET",
+   "SEV"
+  ],
+  "species": "B. rossi (suspected)",
+  "rationale": "Serum proteomics in uncomplicated versus complicated natural B. rossi infection: haemostasis, innate immunity, lipid metabolism, severity biomarkers.",
+  "stage": "screen",
+  "batch": "r1_17.md",
+  "screening_round": "r1"
+ },
+ "fulltext_check": {
+  "key": "PMID:37353646",
+  "pmcid": "PMC10290096",
+  "checked": "2026-10-23",
+  "fulltext_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10290096/fullTextXML",
+  "fulltext_status": 200,
+  "data_availability": [
+   "Data availabilityThe mass spectrometry proteomics data have been deposited to the ProteomeXchange Consortium via the PRIDE78 partner repository with the dataset identifier PXD039022 (https://www.ebi.ac.uk/pride/archive)."
+  ],
+  "supplementary": [
+   {
+    "label": "",
+    "caption": "",
+    "file": "41598_2023_37312_MOESM1_ESM.xlsx"
+   }
+  ],
+  "repository_links": [
+   "https://www.ebi.ac.uk/pride/archive"
+  ],
+  "section_titles": [
+   "Introduction",
+   "Results",
+   "Proteomic profiling between the control group, uncomplicated and complicated babesiosis",
+   "Proteomic profiling between uncomplicated and complicated babesiosis",
+   "Validation",
+   "Discussion",
+   "Proteomic profiling between control group, uncomplicated and complicated babesiosis",
+   "Proteomic profiling between uncomplicated and complicated babesiosis",
+   "Limitations",
+   "Conclusions",
+   "Materials and methods",
+   "Animals",
+   "Sample collection and analysis for clinical pathology",
+   "Sample preparation for proteome analysis",
+   "LC–MS/MS analysis",
+   "Statistics and bioinformatics",
+   "Validation",
+   "Supplementary Information",
+   "Supplementary Information"
+  ],
+  "has_body": true
+ }
+}

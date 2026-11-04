@@ -1,0 +1,57 @@
+{
+ "id": "CB469",
+ "filename": "CB469_2014_biomarkers-haemostasis-endothelial-disfunction-inflammation-babesiosis.md",
+ "key": "https://openalex.org/W2779209219",
+ "record": {
+  "pmid": null,
+  "pmcid": null,
+  "doi": null,
+  "title": "Biomarkers of haemostasis, endothelial disfunction and inflammation in babesiosis of dogs caused by Babesia canis canis",
+  "journal": null,
+  "authors": [
+   "Josipa Kuleš",
+   "Jelena Selanec",
+   "Vladimir Mrljak",
+   "Renata Barić Rafaj"
+  ],
+  "first_pub_date": "2014-01-01",
+  "type": "article",
+  "language": [
+   "en"
+  ],
+  "abstract": "Canine babesiosis is a tick-borne disease caused by the haemoprotozoan parasites of the genus Babesia. The aim of this study was to determine changes in coagulation and fibrinolytic parameters, and their association with proinflammatory mediators and endothelium activation. In this study 30 dogs naturally infected with Babesia canis canis and 10 healthy dogs were included. Blood samples from dogs with babesiosis were taken at the day of admission before treatment, and on the 6th day after treatment. Levels of thrombomodulin (TM), high mobility group box-1 protein (HMGB-1), soluble intercellular adhesive molecule-1 (ICAM-1), and soluble urokinase receptor of plasminogen activator (suPAR) were determined using a specific canine ELISA. Level of antithrombin III (AT III) was determined using chromogenic substrate test. Concentrations of TM, HMGB-1 and suPAR were increased in dogs with babesiosis at admission day comparing with healthy dogs, while AT III level was decreased. On the 6th day of disease, levels of AT III and TM were decreased comparing with healthy dogs. Comparing first and 6th day of disease, we found increased levels of TM, ICAM-1 and HMGB-1, and decreased level of AT III on first day of disease. Inflammation caused by parasite and host response to parasite leads to activation of haemostatic system. Results of this study clarify bimodal interplay between coagulation and inflammation, leading to different clinical presentations in babesiosis and presents novel potential biomarkers in veterinary medicine.",
+  "abstract_source": "OpenAlex abstract_inverted_index (reconstructed)",
+  "source_id": "https://openalex.org/W2779209219",
+  "src": "OPENALEX",
+  "found_by": [
+   "OA:title_and_abstract"
+  ],
+  "in_window": true,
+  "key": "https://openalex.org/W2779209219",
+  "source_files": [
+   "candidates_r3.jsonl"
+  ]
+ },
+ "screening": {
+  "key": "https://openalex.org/W2779209219",
+  "decision": "include",
+  "include_type": "primary",
+  "exclude_reason": null,
+  "primary_category": "COA",
+  "secondary_tags": [
+   "END",
+   "INF"
+  ],
+  "species": "B. canis canis (naturally infected)",
+  "rationale": "30 infected dogs vs 10 controls with thrombomodulin, HMGB-1, ICAM-1, suPAR and AT III measured at admission and day 6, linking coagulation, endothelial activation and inflammation.",
+  "stage": "screen",
+  "batch": "r4_20.md",
+  "screening_round": "r4"
+ },
+ "fulltext_check": {
+  "key": "https://openalex.org/W2779209219",
+  "pmcid": null,
+  "checked": "2026-10-28",
+  "fulltext_status": "no_pmcid"
+ }
+}

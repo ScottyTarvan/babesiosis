@@ -1,0 +1,104 @@
+{
+ "id": "CB397",
+ "filename": "CB397_2010_babesia-gibsoni-detection-blood-smears-formalin.md",
+ "key": "PMID:20637756",
+ "record": {
+  "pmid": "20637756",
+  "pmcid": null,
+  "doi": "10.1016/j.exppara.2010.07.004",
+  "title": "Babesia gibsoni: detection in blood smears and formalin-fixed, paraffin-embedded tissues using deoxyribonucleic acid in situ hybridization analysis.",
+  "authors": [
+   "Yamasaki M",
+   "Kobayashi Y",
+   "Nakamura K",
+   "Sasaki N",
+   "Murakami M",
+   "Rajapakshage BK",
+   "Ohta H",
+   "Yamato O",
+   "Maede Y",
+   "Takiguchi M"
+  ],
+  "journal": "Experimental parasitology",
+  "journal_abbrev": "Exp Parasitol",
+  "volume": "127",
+  "issue": "1",
+  "pages": "119-26",
+  "language": [
+   "eng"
+  ],
+  "issue_date": "2011-01-01",
+  "issue_date_precision": "month",
+  "epub_date": "2010-07-15",
+  "pubmed_entry_date": "2010-07-20",
+  "first_pub_date": "2010-07-15",
+  "publication_types": [
+   "Journal Article",
+   "Research Support, Non-U.S. Gov't"
+  ],
+  "mesh": [
+   "Animals",
+   "Babesia",
+   "Babesiosis",
+   "Base Sequence",
+   "DNA Probes",
+   "DNA, Protozoan",
+   "DNA, Ribosomal",
+   "Digoxigenin",
+   "Dog Diseases",
+   "Dogs",
+   "Erythrocytes",
+   "Female",
+   "HSP70 Heat-Shock Proteins",
+   "In Situ Hybridization",
+   "Kidney",
+   "Liver",
+   "Lymph Nodes",
+   "RNA, Ribosomal, 18S",
+   "Reverse Transcriptase Polymerase Chain Reaction",
+   "Spleen"
+  ],
+  "keywords": [],
+  "abstract": "In this study, we attempted to detect Babesia gibsoni in blood smears and formalin-fixed, paraffin-embedded tissues obtained from B. gibsoni-infected dogs using in situ hybridization. Using a digoxigenin-conjugated deoxyribonucleic acid (DNA) probe, both intraerythrocytic and exoerythrocytic parasites in the culture could be specifically stained in blood smears fixed with 4% phosphate-buffered paraformaldehyde. This indicated that genomic DNA extracted from the parasites could be detected using in situ hybridization. Moreover, the parasite could be specifically stained in paraffin-embedded spleen, lymph node, and kidney sections using in situ hybridization. Infected erythrocytes in blood vessels in the spleen and kidney, hemosiderin-laden macrophages in the spleen, and phagocytized erythrocytes, which seemed to be infected with the parasites, in lymph nodes were also specifically stained. This suggests that in situ hybridization can be utilized to investigate both the life cycle of B. gibsoni and the pathological condition of canine babesiosis.",
+  "corrections": [],
+  "epmc_first_pub_date": "2010-07-15",
+  "is_oa": "N",
+  "has_suppl": "N",
+  "found_by": [
+   "EP1_broad",
+   "EP2_species",
+   "PM1_broad",
+   "PM2_species",
+   "PM3_mechanism"
+  ],
+  "in_window": true,
+  "online_vs_issue": "online 2010-07-15; issue 2011-01-01 (month)",
+  "key": "PMID:20637756",
+  "source_files": [
+   "candidates.jsonl"
+  ]
+ },
+ "screening": {
+  "key": "PMID:20637756",
+  "decision": "include",
+  "include_type": "primary",
+  "exclude_reason": null,
+  "primary_category": "ERY",
+  "secondary_tags": [
+   "END",
+   "INF"
+  ],
+  "species": "B. gibsoni (confirmed, ISH/PCR)",
+  "rationale": "Based on the abstract: although the aim is a detection method, it reports tissue findings in infected dogs (infected erythrocytes in splenic and renal vessels, haemosiderin-laden splenic macrophages, erythrophagocytosis in lymph nodes). Those findings count as host histopathology, so the diagnostic_test exclusion does not apply.",
+  "stage": "adjudicated",
+  "batch": "r4_10.md",
+  "first_decision": "uncertain",
+  "screening_round": "r4"
+ },
+ "fulltext_check": {
+  "key": "PMID:20637756",
+  "pmcid": null,
+  "checked": "2026-10-28",
+  "fulltext_status": "no_pmcid"
+ }
+}

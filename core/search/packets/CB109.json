@@ -1,0 +1,109 @@
+{
+ "id": "CB109",
+ "filename": "CB109_2023_haematological-indices-immune-response-profiles-naturally.md",
+ "key": "PMID:36739305",
+ "record": {
+  "pmid": "36739305",
+  "pmcid": "PMC9899214",
+  "doi": "10.1038/s41598-023-29011-2",
+  "title": "Haematological indices and immune response profiles in dogs naturally infected and co-infected with Dirofilaria repens and Babesia canis.",
+  "authors": [
+   "Wężyk D",
+   "Romanczuk K",
+   "Rodo A",
+   "Kavalevich D",
+   "Bajer A"
+  ],
+  "journal": "Scientific reports",
+  "journal_abbrev": "Sci Rep",
+  "volume": "13",
+  "issue": "1",
+  "pages": "2028",
+  "language": [
+   "eng"
+  ],
+  "issue_date": "2023-02-04",
+  "issue_date_precision": "day",
+  "epub_date": "2023-02-04",
+  "pubmed_entry_date": "2023-02-05",
+  "first_pub_date": "2023-02-04",
+  "publication_types": [
+   "Journal Article",
+   "Research Support, Non-U.S. Gov't"
+  ],
+  "mesh": [
+   "Dogs",
+   "Animals",
+   "Babesia",
+   "Babesiosis",
+   "Dirofilaria repens",
+   "Interleukin-10",
+   "Coinfection",
+   "Interleukin-13",
+   "Dog Diseases"
+  ],
+  "keywords": [],
+  "abstract": "Co-infections with Dirofilaria repens and Babesia canis are rarely reported in the literature and there is very limited knowledge of their impact on canine health. Central Poland is endemic for both parasites, posing a risk of co-infections in dogs. To evaluate the impact of co-infection with B. canis and D. repens on canine health, four groups of dogs were examined: healthy dogs, dogs infected with B. canis, dogs infected with D. repens and dogs co-infected with both species. Blood parameters indicative of anaemia, kidney and liver damage were analysed statistically. Additionally, expression levels of immune response genes were quantified and compared, to define the type of immune response typically encountered in single- and co-infections. In dogs infected with D. repens, no major alterations in blood parameters were observed. Dogs infected with B. canis suffered from anaemia, kidney and liver insufficiency. In contrast, dogs co-infected with D. repens and B. canis showed milder alternation in blood biochemical parameters associated with liver (ALP activity) and kidney (serum urea and creatinine levels) dysfunction, compared to dogs infected only with B. canis. The expression of genes associated with cellular (Th1-mediated) (STAT4 and INF-γ), humoral (Th2-mediated) (STAT6, GATA3, SOCS3, IL-13) and regulatory (IL-10) responses was quantified. For this analysis, dogs infected with B. canis were divided into two groups-'Babesia 1' (mild babesiosis), 'Babesia 2' (severe babesiosis). All the tested factors, except INF-γ, were found to be expressed in dogs infected with D. repens. In 'Babesia 1' dogs, expression of GATA3 was highest, while in 'Babesia 2'-INF-γ and SOCS3 dominated. IL-13 expression was predominant in dogs infected with D. repens, and STAT6 and IL-10 predominated in dogs with co-infections.",
+  "corrections": [],
+  "epmc_first_pub_date": "2023-02-04",
+  "is_oa": "Y",
+  "has_suppl": "N",
+  "found_by": [
+   "EP1_broad",
+   "EP2_species",
+   "PM1_broad",
+   "PM2_species",
+   "PM3_mechanism"
+  ],
+  "in_window": true
+ },
+ "screening": {
+  "key": "PMID:36739305",
+  "decision": "include",
+  "include_type": "primary",
+  "exclude_reason": null,
+  "primary_category": "INF",
+  "secondary_tags": [
+   "ERY",
+   "REN",
+   "MET",
+   "SEV"
+  ],
+  "species": "B. canis (mixed with D. repens in co-infection group)",
+  "rationale": "Natural infection cohort: haematology, kidney/liver indices and Th1/Th2/regulatory gene expression by babesiosis severity and co-infection.",
+  "stage": "screen",
+  "batch": "r1_17.md",
+  "screening_round": "r1"
+ },
+ "fulltext_check": {
+  "key": "PMID:36739305",
+  "pmcid": "PMC9899214",
+  "checked": "2026-10-23",
+  "fulltext_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9899214/fullTextXML",
+  "fulltext_status": 200,
+  "data_availability": [
+   "Data availabilityThe datasets used and/or analysed during the current study are available from the corresponding author (AB) on reasonable request."
+  ],
+  "supplementary": [],
+  "repository_links": [],
+  "section_titles": [
+   "Introduction",
+   "Methods",
+   "Material",
+   "RNA extraction, reverse transcription and qPCR",
+   "Statistical analysis",
+   "Ethics approval and consent to participate",
+   "Results",
+   "Prevalence of Dirofilaria repens",
+   "Effect of parasite infection on haematological parameters",
+   "Immune response in dogs infected with B. canis, D. repens and co-infected with B. canis and D. repens",
+   "Expression of cytokine genes and transcription factors related to cellular response (Th1-mediated)",
+   "Expression of genes of cytokines and transcription factors associated with humoral response (Th2-mediated)",
+   "Expression of the regulatory cytokine IL-10 gene",
+   "Summary of immune response in dogs infected with B. canis, D. repens and co-infected with B. canis and D. repens",
+   "Discussion",
+   "Conclusions"
+  ],
+  "has_body": true
+ }
+}

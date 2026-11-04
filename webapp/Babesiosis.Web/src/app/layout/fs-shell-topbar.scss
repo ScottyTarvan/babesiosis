@@ -1,0 +1,76 @@
+:host {
+  display: block;
+}
+
+.fs-shell-topbar {
+  display: flex;
+  align-items: center;
+  gap: var(--fs-guide-space-6);
+  height: 56px;
+  padding: 0 var(--fs-guide-space-7);
+  background-color: rgb(var(--fs-color-surface));
+  border-bottom: 1px solid rgb(var(--fs-color-line));
+  flex-shrink: 0;
+}
+
+.fs-shell-topbar__start,
+.fs-shell-topbar__end {
+  display: flex;
+  align-items: center;
+  gap: var(--fs-guide-space-4);
+}
+
+.fs-shell-topbar__start {
+  flex: 0 0 auto;
+}
+
+// margin-left carries the right alignment on its own — the removed notify strip
+// used to be the growing spacer, and nothing needs to take its place.
+.fs-shell-topbar__end {
+  flex: 0 0 auto;
+  margin-left: auto;
+}
+
+// 28px square — the guideline's control unit for icon buttons, down from the
+// old 36px. Hover is the neutral control-hover fill rather than a primary
+// tint: this is plain chrome, not an intent-coloured control, and the
+// guideline's fill vocabulary gives neutral chrome its own hover token.
+.fs-shell-topbar__icon-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--fs-guide-control-height);
+  height: var(--fs-guide-control-height);
+  border-radius: var(--fs-radius-md);
+  border: 0;
+  background: transparent;
+  color: rgb(var(--fs-color-ink));
+  cursor: pointer;
+  transition: none;
+
+  &:hover {
+    background-color: rgb(var(--fs-color-fill-hover));
+    color: rgb(var(--fs-color-ink-strong));
+  }
+
+  &:focus-visible {
+    outline: 2px solid rgb(var(--fs-color-primary));
+    outline-offset: 0;
+  }
+}
+
+/* Drawer opener — see the note in fs-shell.scss. Above the shell's narrow
+   boundary the sidebar is a column with its own seam handle, so this control
+   has nothing to open. Declared after `.fs-shell-topbar__icon-btn` (which the
+   button also carries) so it wins on source order at equal specificity. */
+@media (min-width: 1024px) {
+  .fs-shell-topbar__menu-btn {
+    display: none;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .fs-shell-topbar {
+    padding: 0 var(--fs-guide-space-6);
+  }
+}

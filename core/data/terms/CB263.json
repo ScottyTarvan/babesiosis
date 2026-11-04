@@ -1,0 +1,733 @@
+{
+ "id": "CB263",
+ "document": "data/markdown/CB263.md",
+ "source_format": "pdf",
+ "translated": false,
+ "words": 1560,
+ "run_utc": "2026-10-30T05:35:41+00:00",
+ "threshold": 0.85,
+ "kept_types": [
+  "T019",
+  "T020",
+  "T037",
+  "T046",
+  "T047",
+  "T048",
+  "T049",
+  "T050",
+  "T184",
+  "T190",
+  "T191"
+ ],
+ "term_count": 40,
+ "terms": [
+  {
+   "term": "C0004576",
+   "concept": "Babesiosis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 21,
+   "mentions_negated": 1,
+   "mentions_affirmed": 20,
+   "sections": {
+    "unlabelled": 12,
+    "results_discussion": 8,
+    "conclusion": 1
+   },
+   "forms": {
+    "babesiosis": 21
+   },
+   "best_score": 0.972
+  },
+  {
+   "term": "C0036690",
+   "concept": "Septicemia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 17,
+   "mentions_negated": 0,
+   "mentions_affirmed": 17,
+   "sections": {
+    "unlabelled": 9,
+    "methods": 5,
+    "results_discussion": 3
+   },
+   "forms": {
+    "sepsis": 17
+   },
+   "best_score": 0.971
+  },
+  {
+   "term": "C0520863",
+   "concept": "Diastolic dysfunction",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 8,
+   "mentions_negated": 0,
+   "mentions_affirmed": 8,
+   "sections": {
+    "unlabelled": 5,
+    "results_discussion": 2,
+    "methods": 1
+   },
+   "forms": {
+    "diastolic dysfunction": 7,
+    "systolic diastolic dysfunction": 1
+   },
+   "best_score": 0.957
+  },
+  {
+   "term": "C0036983",
+   "concept": "Septic Shock",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 4,
+   "mentions_negated": 1,
+   "mentions_affirmed": 3,
+   "sections": {
+    "methods": 3,
+    "unlabelled": 1
+   },
+   "forms": {
+    "septic shock": 4
+   },
+   "best_score": 0.981
+  },
+  {
+   "term": "C1273070",
+   "concept": "Left ventricular diastolic dysfunction",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 4,
+   "mentions_negated": 0,
+   "mentions_affirmed": 4,
+   "sections": {
+    "results_discussion": 3,
+    "conclusion": 1
+   },
+   "forms": {
+    "lv diastolic dysfunction": 2,
+    "left ventricular diastolic dysfunction": 1,
+    "ventricular diastolic dysfunction": 1
+   },
+   "best_score": 0.968
+  },
+  {
+   "term": "C0015967",
+   "concept": "Fever",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "results_discussion": 2,
+    "methods": 1
+   },
+   "forms": {
+    "pyrexia": 1,
+    "hyperthermia": 1,
+    "fever": 1
+   },
+   "best_score": 0.989
+  },
+  {
+   "term": "C0031039",
+   "concept": "Pericardial effusion",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "results_discussion": 3
+   },
+   "forms": {
+    "pericardial effusion": 3
+   },
+   "best_score": 0.958
+  },
+  {
+   "term": "C0035222",
+   "concept": "Respiratory Distress Syndrome, Adult",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "unlabelled": 2,
+    "methods": 1
+   },
+   "forms": {
+    "acute respiratory distress syndrome": 2,
+    "ards": 1
+   },
+   "best_score": 0.991
+  },
+  {
+   "term": "C0340515",
+   "concept": "Myocardial dysfunction",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "unlabelled": 3
+   },
+   "forms": {
+    "myocardial dysfunction": 2,
+    "myocardial depression": 1
+   },
+   "best_score": 0.969
+  },
+  {
+   "term": "C0749225",
+   "concept": "Systolic dysfunction",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "unlabelled": 2,
+    "methods": 1
+   },
+   "forms": {
+    "systolic dysfunction": 3
+   },
+   "best_score": 0.958
+  },
+  {
+   "term": "C1277187",
+   "concept": "Left ventricular systolic dysfunction",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "results_discussion": 2,
+    "conclusion": 1
+   },
+   "forms": {
+    "left ventricular systolic dysfunction": 2,
+    "lv systolic dysfunction": 1
+   },
+   "best_score": 0.969
+  },
+  {
+   "term": "C0002871",
+   "concept": "Anemia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "methods": 1,
+    "results_discussion": 1
+   },
+   "forms": {
+    "anemia": 2
+   },
+   "best_score": 0.974
+  },
+  {
+   "term": "C0002878",
+   "concept": "Anemia, Hemolytic",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "unlabelled": 2
+   },
+   "forms": {
+    "hemolytic anemia": 2
+   },
+   "best_score": 0.978
+  },
+  {
+   "term": "C0018799",
+   "concept": "Heart Diseases",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "methods": 1,
+    "results_discussion": 1
+   },
+   "forms": {
+    "cardiac disease": 2
+   },
+   "best_score": 0.986
+  },
+  {
+   "term": "C0022346",
+   "concept": "Icterus",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "unlabelled": 1,
+    "results_discussion": 1
+   },
+   "forms": {
+    "icterus": 1,
+    "icteric": 1
+   },
+   "best_score": 0.958
+  },
+  {
+   "term": "C0026766",
+   "concept": "Multiple Organ Failure",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 2,
+   "mentions_affirmed": 0,
+   "sections": {
+    "results_discussion": 2
+   },
+   "forms": {
+    "multi organ dysfunction syndrome": 1,
+    "mods": 1
+   },
+   "best_score": 0.885
+  },
+  {
+   "term": "C0027059",
+   "concept": "Myocarditis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "unlabelled": 2
+   },
+   "forms": {
+    "myocarditis": 2
+   },
+   "best_score": 0.979
+  },
+  {
+   "term": "C0030499",
+   "concept": "Parasitic Diseases",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "methods": 2
+   },
+   "forms": {
+    "infestation": 1,
+    "blood parasitic infection": 1
+   },
+   "best_score": 0.946
+  },
+  {
+   "term": "C0242966",
+   "concept": "Systemic Inflammatory Response Syndrome",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "methods": 2
+   },
+   "forms": {
+    "systemic inflammatory response syndrome": 1,
+    "sirs": 1
+   },
+   "best_score": 0.987
+  },
+  {
+   "term": "C0497156",
+   "concept": "Lymphadenopathy",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "methods": 1,
+    "results_discussion": 1
+   },
+   "forms": {
+    "lymphadenopathy": 2
+   },
+   "best_score": 0.99
+  },
+  {
+   "term": "C0001122",
+   "concept": "Acidosis",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results_discussion": 1
+   },
+   "forms": {
+    "acidosis": 1
+   },
+   "best_score": 0.997
+  },
+  {
+   "term": "C0004238",
+   "concept": "Atrial Fibrillation",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "unlabelled": 1
+   },
+   "forms": {
+    "atrial fibrillation": 1
+   },
+   "best_score": 0.968
+  },
+  {
+   "term": "C0009450",
+   "concept": "Communicable Diseases",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 1,
+   "mentions_affirmed": 0,
+   "sections": {
+    "results_discussion": 1
+   },
+   "forms": {
+    "infection": 1
+   },
+   "best_score": 0.962
+  },
+  {
+   "term": "C0010054",
+   "concept": "Coronary Arteriosclerosis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results_discussion": 1
+   },
+   "forms": {
+    "myocardial ischemia": 1
+   },
+   "best_score": 0.98
+  },
+  {
+   "term": "C0011175",
+   "concept": "Dehydration",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results_discussion": 1
+   },
+   "forms": {
+    "dehydration": 1
+   },
+   "best_score": 0.957
+  },
+  {
+   "term": "C0011847",
+   "concept": "Diabetes",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "methods": 1
+   },
+   "forms": {
+    "diabetes": 1
+   },
+   "best_score": 0.975
+  },
+  {
+   "term": "C0013491",
+   "concept": "Ecchymosis",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results_discussion": 1
+   },
+   "forms": {
+    "ecchymosis": 1
+   },
+   "best_score": 0.971
+  },
+  {
+   "term": "C0019080",
+   "concept": "Hemorrhage",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results_discussion": 1
+   },
+   "forms": {
+    "hemorrhages": 1
+   },
+   "best_score": 0.985
+  },
+  {
+   "term": "C0022661",
+   "concept": "Kidney Failure, Chronic",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "methods": 1
+   },
+   "forms": {
+    "chronic renal disease": 1
+   },
+   "best_score": 0.985
+  },
+  {
+   "term": "C0023895",
+   "concept": "Liver diseases",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "unlabelled": 1
+   },
+   "forms": {
+    "hepatopathy": 1
+   },
+   "best_score": 0.994
+  },
+  {
+   "term": "C0025222",
+   "concept": "Melena",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results_discussion": 1
+   },
+   "forms": {
+    "melena": 1
+   },
+   "best_score": 0.988
+  },
+  {
+   "term": "C0027051",
+   "concept": "Myocardial Infarction",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results_discussion": 1
+   },
+   "forms": {
+    "myocardial necrosis": 1
+   },
+   "best_score": 0.976
+  },
+  {
+   "term": "C0031256",
+   "concept": "Petechiae",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results_discussion": 1
+   },
+   "forms": {
+    "petechia": 1
+   },
+   "best_score": 0.981
+  },
+  {
+   "term": "C0039239",
+   "concept": "Sinus Tachycardia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "unlabelled": 1
+   },
+   "forms": {
+    "sinus tachycardia": 1
+   },
+   "best_score": 0.975
+  },
+  {
+   "term": "C0040034",
+   "concept": "Thrombocytopenia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "methods": 1
+   },
+   "forms": {
+    "thrombocytopenia": 1
+   },
+   "best_score": 0.98
+  },
+  {
+   "term": "C0220981",
+   "concept": "Metabolic acidosis",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results_discussion": 1
+   },
+   "forms": {
+    "metabolic acidosis": 1
+   },
+   "best_score": 0.991
+  },
+  {
+   "term": "C0239981",
+   "concept": "Hypoalbuminemia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results_discussion": 1
+   },
+   "forms": {
+    "hypoalbuminemia": 1
+   },
+   "best_score": 0.974
+  },
+  {
+   "term": "C0920715",
+   "concept": "myocardial hypoxia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results_discussion": 1
+   },
+   "forms": {
+    "myocardial hypoxia": 1
+   },
+   "best_score": 0.974
+  },
+  {
+   "term": "C2609414",
+   "concept": "Acute kidney injury",
+   "semantic_types": [
+    "Injury or Poisoning"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "unlabelled": 1
+   },
+   "forms": {
+    "acute renal injury": 1
+   },
+   "best_score": 0.971
+  },
+  {
+   "term": "C4062443",
+   "concept": "Disseminated intravascular coagulopathy",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "unlabelled": 1
+   },
+   "forms": {
+    "dic": 1
+   },
+   "best_score": 0.977
+  }
+ ]
+}

@@ -1,0 +1,88 @@
+{
+ "id": "CB334",
+ "filename": "CB334_2007_clinical-management-babesiosis-homeopathic-crotalus-horridus.md",
+ "key": "PMID:17437935",
+ "record": {
+  "pmid": "17437935",
+  "pmcid": null,
+  "doi": "10.1016/j.homp.2007.02.010",
+  "title": "Clinical management of babesiosis in dogs with homeopathic Crotalus horridus 200C.",
+  "authors": [
+   "Chaudhuri S",
+   "Varshney JP"
+  ],
+  "journal": "Homeopathy : the journal of the Faculty of Homeopathy",
+  "journal_abbrev": "Homeopathy",
+  "volume": "96",
+  "issue": "2",
+  "pages": "90-4",
+  "language": [
+   "eng"
+  ],
+  "issue_date": "2007-04-01",
+  "issue_date_precision": "month",
+  "epub_date": null,
+  "pubmed_entry_date": "2007-04-18",
+  "first_pub_date": "2007-04-01",
+  "publication_types": [
+   "Comparative Study",
+   "Controlled Clinical Trial",
+   "Journal Article"
+  ],
+  "mesh": [
+   "Animals",
+   "Babesia",
+   "Babesiosis",
+   "Crotalid Venoms",
+   "Diminazene",
+   "Dog Diseases",
+   "Dogs",
+   "Dose-Response Relationship, Drug",
+   "Homeopathy",
+   "Research Design",
+   "Treatment Outcome",
+   "Trypanocidal Agents"
+  ],
+  "keywords": [],
+  "abstract": "Homeopathic Crotalus horridus 200C was evaluated in 13 clinical cases of babesiosis in dogs, compared with another 20 clinical cases treated with diminazine. Babesiosis is an important tropical tick-borne haemoprotozoan disease in dogs clinically manifested by anorexia, dehydration, temperature, dullness/depression, diarrhoea/constipation, pale mucosa, hepatomegaly, vomiting/nausea, splenomegaly, distended abdomen/ascites, yellow coloured urine, emaciation/weight loss, and occular discharge. The diagnosis of babesiosis was based on cytological evidence of Babesia gibsoni in freshly prepared blood smears. The dogs were treated with oral C. horridus 200C, 4 pills four times daily for 14 days (n=13) or diminazine aceturate 5 mg/kg single intramuscularly dose (n=20). All the dogs were administered 5% Dextrose normal saline at 60 ml/kg intravenously for 4 days. Initial clinical scores were similar in both groups and showed similar progressive improvement with the two treatments over 14 days. Parasitaemia also improved in both groups, but haematological values showed no change. No untoward reactions were observed. It appears that C. horridus is as effective in causing clinical recovery in moderate cases of canine babesiosis caused by Babesia gibsoni as the standard drug diminazine. Large scale randomized trials are indicated for more conclusive results.",
+  "corrections": [],
+  "epmc_first_pub_date": "2007-04-01",
+  "is_oa": "N",
+  "has_suppl": "N",
+  "found_by": [
+   "EP1_broad",
+   "EP2_species",
+   "PM1_broad",
+   "PM2_species",
+   "PM3_mechanism"
+  ],
+  "in_window": true,
+  "key": "PMID:17437935",
+  "source_files": [
+   "candidates.jsonl"
+  ]
+ },
+ "screening": {
+  "key": "PMID:17437935",
+  "decision": "uncertain",
+  "include_type": null,
+  "exclude_reason": null,
+  "primary_category": "ERY",
+  "secondary_tags": [
+   "SEV"
+  ],
+  "species": "B. gibsoni (suspected, smear only)",
+  "rationale": "Based on abstract: a treatment comparison in 33 naturally infected dogs that measured haematological values and clinical signs; the full text may give a usable baseline clinicopathological profile, which the abstract does not show.",
+  "stage": "adjudicated",
+  "batch": "r4_02.md",
+  "first_decision": "exclude",
+  "rescue_reason": "Homeopathic versus diminazene trial in infected dogs reports haematological values, which showed no change. Haematology in infected dogs meets the rescue rule even inside a treatment study, so the adjudicator should confirm whether any values are given.",
+  "screening_round": "r4"
+ },
+ "fulltext_check": {
+  "key": "PMID:17437935",
+  "pmcid": null,
+  "checked": "2026-10-28",
+  "fulltext_status": "no_pmcid"
+ }
+}

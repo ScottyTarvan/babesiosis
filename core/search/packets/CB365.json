@@ -1,0 +1,78 @@
+{
+ "id": "CB365",
+ "filename": "CB365_2009_influence-anaemia-azotaemia-infected-babesia-canis.md",
+ "key": "https://openalex.org/W1986787952",
+ "record": {
+  "pmid": null,
+  "pmcid": null,
+  "doi": null,
+  "title": "INFLUENCE OF ANAEMIA ON AZOTAEMIA IN DOGS INFECTED WITH BABESIA CANIS IN POLAND",
+  "journal": null,
+  "authors": [
+   "Wojciech Zygner",
+   "H. Wędrychowicz"
+  ],
+  "first_pub_date": "2009-01-01",
+  "type": "article",
+  "language": [
+   "en"
+  ],
+  "abstract": "Samples of blood and serum from 127 dogs infected with Babesia canis were divided into two groups: A (without anaemia) and B (with anaemia). Additionally, Group B was divided into two subgroups: B1 (with increased MCHC) and B2 (without increased MCHC). Erythrocyte parameters, such as red blood cell count, haematocrit, concentration of haemoglobin, and mean corpuscular haemoglobin concentration, were estimated by using an automatic haematologic analyser. Creatinine and serum urea were determined in samples of blood serum with a clinical chemistry analyser. Student’s t-test was used to compare the concentration of creatinine and serum urea in groups A and B, and subgroups B1 and B2. The differences in mean serum urea and creatinine concentration between these groups and subgroups were not statistically significant. The results of this study did not show any correlations between anaemia and azotaemia, or between increased MCHC and azotaemia. These results suggest that anaemia, as the only factor, has no influence on azotaemia in canine babesiosis.",
+  "abstract_source": "OpenAlex abstract_inverted_index (reconstructed)",
+  "source_id": "https://openalex.org/W1986787952",
+  "src": "OPENALEX",
+  "found_by": [
+   "OA:title_and_abstract"
+  ],
+  "in_window": true,
+  "key": "https://openalex.org/W1986787952",
+  "source_files": [
+   "candidates_r3.jsonl"
+  ]
+ },
+ "screening": {
+  "key": "https://openalex.org/W1986787952",
+  "decision": "include",
+  "include_type": "primary",
+  "exclude_reason": null,
+  "primary_category": "REN",
+  "secondary_tags": [
+   "ERY"
+  ],
+  "species": "B. canis (naturally infected; Poland)",
+  "rationale": "Compares urea and creatinine in 127 infected dogs with and without anaemia and with or without raised MCHC. It reports host renal and erythrocyte data.",
+  "stage": "screen",
+  "batch": "r4_06.md",
+  "screening_round": "r4"
+ },
+ "fulltext_check": {
+  "key": "https://openalex.org/W1986787952",
+  "pmcid": null,
+  "checked": "2026-10-28",
+  "fulltext_status": "no_pmcid"
+ },
+ "duplicate_records": [
+  {
+   "key": "REF:influenceofanemiaonazotemiaindogsinfectedwithbabesiacanisinp",
+   "basis": "Reference-list entry of Zygner & Wedrychowicz 2009; title similarity 0.99; OpenAlex record with authors retained",
+   "record": {
+    "pmid": null,
+    "doi": null,
+    "title": "Influence of anemia on azotemia in dogs infected with Babesia canis in Poland",
+    "journal": null,
+    "first_pub_date": null,
+    "year": "2009",
+    "abstract": null,
+    "found_by": [
+     "citation:backward:29558219"
+    ],
+    "unresolved": true,
+    "source_id": "REF:influenceofanemiaonazotemiaindogsinfectedwithbabesiacanisinp",
+    "key": "REF:influenceofanemiaonazotemiaindogsinfectedwithbabesiacanisinp",
+    "source_files": [
+     "candidates_r2.jsonl"
+    ]
+   }
+  }
+ ]
+}

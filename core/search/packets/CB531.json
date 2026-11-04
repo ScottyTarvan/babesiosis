@@ -1,0 +1,55 @@
+{
+ "id": "CB531",
+ "filename": "CB531_2016_anticoagulant-pathways-babesiosis-caused-babesia-canis.md",
+ "key": "https://openalex.org/W2911562881",
+ "record": {
+  "pmid": null,
+  "pmcid": null,
+  "doi": null,
+  "title": "ANTICOAGULANT PATHWAYS IN CANINE BABESIOSIS CAUSED BY BABESIA CANIS CANIS",
+  "journal": null,
+  "authors": [
+   "Josipa Kuleš",
+   "Jelena Gotić",
+   "Vladimir Mrljak",
+   "Renata Barić Rafaj"
+  ],
+  "first_pub_date": "2016-04-14",
+  "type": "article",
+  "language": [
+   "en"
+  ],
+  "abstract": null,
+  "abstract_source": "OpenAlex abstract_inverted_index (reconstructed)",
+  "source_id": "https://openalex.org/W2911562881",
+  "src": "OPENALEX",
+  "found_by": [
+   "OA:title_and_abstract"
+  ],
+  "in_window": true,
+  "key": "https://openalex.org/W2911562881",
+  "source_files": [
+   "candidates_r3.jsonl"
+  ]
+ },
+ "screening": {
+  "key": "https://openalex.org/W2911562881",
+  "decision": "uncertain",
+  "include_type": null,
+  "exclude_reason": null,
+  "primary_category": "COA",
+  "secondary_tags": [],
+  "species": "B. canis canis (per title)",
+  "rationale": "Based on the title and OpenAlex record (Kuleš, Gotić, Mrljak, Barić Rafaj; CroRIS repository, no DOI, venue or abstract): the topic, anticoagulant pathways in B. canis babesiosis, is eligible. The CroRIS page has a bot check, so the publication type could not be seen; it may be a conference abstract. Full-text check needed.",
+  "stage": "adjudicated",
+  "batch": "r4_28.md",
+  "first_decision": "uncertain",
+  "screening_round": "r4"
+ },
+ "fulltext_check": {
+  "key": "https://openalex.org/W2911562881",
+  "pmcid": null,
+  "checked": "2026-10-28",
+  "fulltext_status": "no_pmcid"
+ }
+}

@@ -1,0 +1,433 @@
+{
+ "id": "HU018",
+ "document": "data/markdown/HU018.md",
+ "source_format": "jats_xml",
+ "translated": false,
+ "words": 5285,
+ "run_utc": "2026-10-30T05:37:17+00:00",
+ "threshold": 0.85,
+ "kept_types": [
+  "T019",
+  "T020",
+  "T037",
+  "T046",
+  "T047",
+  "T048",
+  "T049",
+  "T050",
+  "T184",
+  "T190",
+  "T191"
+ ],
+ "term_count": 23,
+ "terms": [
+  {
+   "term": "C0024530",
+   "concept": "Malaria",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 211,
+   "mentions_negated": 16,
+   "mentions_affirmed": 195,
+   "sections": {
+    "results": 126,
+    "discussion": 34,
+    "abstract": 22,
+    "introduction": 16,
+    "methods": 12,
+    "title": 1
+   },
+   "forms": {
+    "malaria": 211
+   },
+   "best_score": 0.996
+  },
+  {
+   "term": "C0024534",
+   "concept": "Malaria, Cerebral",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 30,
+   "mentions_negated": 1,
+   "mentions_affirmed": 29,
+   "sections": {
+    "results": 24,
+    "discussion": 6
+   },
+   "forms": {
+    "cerebral malaria": 30
+   },
+   "best_score": 0.985
+  },
+  {
+   "term": "C0022716",
+   "concept": "Menkes Kinky Hair Syndrome",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 17,
+   "mentions_negated": 3,
+   "mentions_affirmed": 14,
+   "sections": {
+    "results": 15,
+    "abstract": 2
+   },
+   "forms": {
+    "md": 17
+   },
+   "best_score": 0.997
+  },
+  {
+   "term": "C0009566",
+   "concept": "Complication",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 9,
+   "mentions_negated": 2,
+   "mentions_affirmed": 7,
+   "sections": {
+    "discussion": 5,
+    "results": 3,
+    "introduction": 1
+   },
+   "forms": {
+    "complications": 9
+   },
+   "best_score": 0.977
+  },
+  {
+   "term": "C0242723",
+   "concept": "Parasitemia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 9,
+   "mentions_negated": 0,
+   "mentions_affirmed": 9,
+   "sections": {
+    "results": 7,
+    "methods": 2
+   },
+   "forms": {
+    "parasitemia": 9
+   },
+   "best_score": 0.992
+  },
+  {
+   "term": "C0002871",
+   "concept": "Anemia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 6,
+   "mentions_negated": 0,
+   "mentions_affirmed": 6,
+   "sections": {
+    "results": 5,
+    "introduction": 1
+   },
+   "forms": {
+    "anemia": 6
+   },
+   "best_score": 0.974
+  },
+  {
+   "term": "C0795692",
+   "concept": "Hyperlactatemia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 5,
+   "mentions_negated": 1,
+   "mentions_affirmed": 4,
+   "sections": {
+    "introduction": 2,
+    "discussion": 2,
+    "results": 1
+   },
+   "forms": {
+    "hyperlactatemia": 5
+   },
+   "best_score": 0.97
+  },
+  {
+   "term": "C0220981",
+   "concept": "Metabolic acidosis",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 4,
+   "mentions_negated": 0,
+   "mentions_affirmed": 4,
+   "sections": {
+    "introduction": 3,
+    "results": 1
+   },
+   "forms": {
+    "metabolic acidosis": 4
+   },
+   "best_score": 0.991
+  },
+  {
+   "term": "C0001125",
+   "concept": "Acidosis, Lactic",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "abstract": 1,
+    "introduction": 1,
+    "discussion": 1
+   },
+   "forms": {
+    "lactic acidosis": 3
+   },
+   "best_score": 0.994
+  },
+  {
+   "term": "C0026847",
+   "concept": "Spinal Muscular Atrophy",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "results": 3
+   },
+   "forms": {
+    "sma": 3
+   },
+   "best_score": 0.992
+  },
+  {
+   "term": "C0553580",
+   "concept": "Ewings sarcoma",
+   "semantic_types": [
+    "Neoplastic Process"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "results": 3
+   },
+   "forms": {
+    "es": 3
+   },
+   "best_score": 0.972
+  },
+  {
+   "term": "C0036974",
+   "concept": "Shock",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "introduction": 2
+   },
+   "forms": {
+    "shock": 1,
+    "circulatory failure": 1
+   },
+   "best_score": 0.998
+  },
+  {
+   "term": "C0746864",
+   "concept": "Neurologic sequelae",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 2,
+   "mentions_negated": 1,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results": 2
+   },
+   "forms": {
+    "neurologic sequelae": 2
+   },
+   "best_score": 0.981
+  },
+  {
+   "term": "C0001122",
+   "concept": "Acidosis",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "acidosis": 1
+   },
+   "best_score": 0.997
+  },
+  {
+   "term": "C0009450",
+   "concept": "Communicable Diseases",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 1,
+   "mentions_affirmed": 0,
+   "sections": {
+    "results": 1
+   },
+   "forms": {
+    "infection": 1
+   },
+   "best_score": 0.962
+  },
+  {
+   "term": "C0019080",
+   "concept": "Hemorrhage",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "bleeding": 1
+   },
+   "best_score": 0.968
+  },
+  {
+   "term": "C0020615",
+   "concept": "Hypoglycemia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "hypoglycemia": 1
+   },
+   "best_score": 0.99
+  },
+  {
+   "term": "C0022346",
+   "concept": "Icterus",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "jaundice": 1
+   },
+   "best_score": 0.947
+  },
+  {
+   "term": "C0024536",
+   "concept": "Quartan malaria",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "malariae": 1
+   },
+   "best_score": 0.961
+  },
+  {
+   "term": "C0034063",
+   "concept": "Pulmonary Edema",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "pulmonary edema": 1
+   },
+   "best_score": 0.984
+  },
+  {
+   "term": "C0036572",
+   "concept": "Seizures",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "convulsions": 1
+   },
+   "best_score": 0.947
+  },
+  {
+   "term": "C0277794",
+   "concept": "Extreme exhaustion",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "prostration": 1
+   },
+   "best_score": 0.987
+  },
+  {
+   "term": "C1565489",
+   "concept": "Renal Insufficiency",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "renal impairment": 1
+   },
+   "best_score": 0.966
+  }
+ ]
+}

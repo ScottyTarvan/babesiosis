@@ -1,0 +1,60 @@
+{
+ "id": "CB350",
+ "filename": "CB350_2008_peritoneal-dialysis-acute-renal-failure-caused.md",
+ "key": "DOI:10.2478/v10020-008-0020-4",
+ "record": {
+  "pmid": null,
+  "doi": "10.2478/v10020-008-0020-4",
+  "title": "Peritoneal Dialysis in A Dog with Acute Renal Failure Caused by the Infection with &lt;i&gt;Babesia Canis&lt;/i&gt;",
+  "journal": "Polish Journal of Natural Science",
+  "authors": [
+   "Pomianowski A",
+   "Lew S",
+   "Kuleta Z",
+   "Snarska A",
+   "Kasprowicz A"
+  ],
+  "first_pub_date": "2008-03-01",
+  "crossref_dates": {
+   "published-online": "2008-03-21",
+   "published-print": "2008-03-01",
+   "issued": "2008-03-01"
+  },
+  "abstract": null,
+  "language": [],
+  "found_by": [
+   "CR:Babesia canis",
+   "CR:Babesia gibsoni",
+   "CR:Babesia vogeli",
+   "CR:Babesia vulpes"
+  ],
+  "in_window": true,
+  "src": "CROSSREF",
+  "key": "DOI:10.2478/v10020-008-0020-4",
+  "source_files": [
+   "candidates_crossref.jsonl"
+  ]
+ },
+ "screening": {
+  "key": "DOI:10.2478/v10020-008-0020-4",
+  "decision": "include",
+  "include_type": "case_report",
+  "exclude_reason": null,
+  "primary_category": "REN",
+  "secondary_tags": [
+   "SEV"
+  ],
+  "species": "B. canis (suspected)",
+  "rationale": "Based on the title and Crossref metadata; no abstract was reachable because the publisher link (metapress) is defunct. This is an 11-page case report (Pomianowski et al., Pol J Nat Sci 23(1):257-267, 2008) of B. canis-associated acute renal failure needing peritoneal dialysis, a distinct renal complication that earlier rounds included.",
+  "stage": "adjudicated",
+  "batch": "r4_04.md",
+  "first_decision": "uncertain",
+  "screening_round": "r4"
+ },
+ "fulltext_check": {
+  "key": "DOI:10.2478/v10020-008-0020-4",
+  "pmcid": null,
+  "checked": "2026-10-28",
+  "fulltext_status": "no_pmcid"
+ }
+}

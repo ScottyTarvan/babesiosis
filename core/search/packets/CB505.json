@@ -1,0 +1,84 @@
+{
+ "id": "CB505",
+ "filename": "CB505_2015_clinical-babesiosis-molecular-identification-babesia-canis.md",
+ "key": "PMID:26051258",
+ "record": {
+  "pmid": "26051258",
+  "pmcid": null,
+  "doi": "10.1556/avet.2015.017",
+  "title": "Clinical babesiosis and molecular identification of Babesia canis and Babesia gibsoni infections in dogs from Serbia.",
+  "authors": [
+   "Davitkov D",
+   "Vucicevic M",
+   "Stevanovic J",
+   "Krstic V",
+   "Tomanovic S",
+   "Glavinic U",
+   "Stanimirovic Z"
+  ],
+  "journal": "Acta veterinaria Hungarica",
+  "journal_abbrev": "Acta Vet Hung",
+  "volume": "63",
+  "issue": "2",
+  "pages": "199-208",
+  "language": [
+   "eng"
+  ],
+  "issue_date": "2015-06-01",
+  "issue_date_precision": "month",
+  "epub_date": null,
+  "pubmed_entry_date": "2015-06-09",
+  "first_pub_date": "2015-06-01",
+  "publication_types": [
+   "Journal Article"
+  ],
+  "mesh": [],
+  "keywords": [
+   "Babesia canis/gibsoni",
+   "PCR-RFLP",
+   "Serbia",
+   "clinical signs",
+   "dogs",
+   "sequencing"
+  ],
+  "abstract": "Canine babesiosis is a frequent and clinically significant tick-borne disease. Sixty symptomatic dogs with clinical findings compatible with babesiosis were included in this study conducted in Serbia. After clinical examination, blood samples were taken for microscopic examination, complete blood count (CBC), Canine SNAP 4Dx Test, DNA analyses and sequencing. The main clinical signs included apathy, anorexia, fever, brown/red discoloration of urine, pale mucous membranes, icterus, splenomegaly, and vomiting. The main clinicopathological findings in Babesia infections were a slight to severe thrombocytopenia and a mild to very severe normocytic normochromic anaemia. Microscopic evaluation revealed 58 positive samples with the presence of large and small intraerythrocytic piroplasms in 57 and 1 sample(s), respectively. No co-infections were found using SNAP test. Two Babesia species, B. canis (58/60) and B. gibsoni (2/60), were differentiated by polymerase chain reaction-restriction fragment length polymorphism (PCR-RFLP). Species identification was further confirmed by sequencing PCR products of B. gibsoni samples and six randomly selected B. canis samples. All dogs were treated with imidocarb dipropionate (6.6 mg/kg of body weight), given intramuscularly twice at an interval of 14 days. This report presents the first molecular evidence of the occurrence of B. gibsoni and B. canis, confirmed by DNA sequencing, in sick dogs from Serbia.",
+  "corrections": [],
+  "epmc_first_pub_date": "2015-06-01",
+  "is_oa": "N",
+  "has_suppl": "N",
+  "found_by": [
+   "EP1_broad",
+   "EP2_species",
+   "PM1_broad",
+   "PM2_species",
+   "PM3_mechanism"
+  ],
+  "in_window": true,
+  "key": "PMID:26051258",
+  "source_files": [
+   "candidates.jsonl"
+  ]
+ },
+ "screening": {
+  "key": "PMID:26051258",
+  "decision": "include",
+  "include_type": "primary",
+  "exclude_reason": null,
+  "primary_category": "ERY",
+  "secondary_tags": [
+   "COA",
+   "SEV"
+  ],
+  "species": "B. canis (58/60) and B. gibsoni (2/60), confirmed by PCR-RFLP and sequencing",
+  "rationale": "Clinicopathological profile of 60 symptomatic dogs with CBC findings of thrombocytopenia and normocytic normochromic anaemia, so it counts as descriptive host evidence despite the molecular identification focus.",
+  "stage": "screen",
+  "batch": "r4_25.md",
+  "screening_round": "r4"
+ },
+ "fulltext_check": {
+  "key": "PMID:26051258",
+  "pmcid": null,
+  "checked": "2026-10-28",
+  "fulltext_status": "no_pmcid"
+ }
+}

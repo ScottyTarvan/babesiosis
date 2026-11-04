@@ -1,0 +1,65 @@
+{
+ "id": "CB364",
+ "filename": "CB364_2009_complicated-form-babesiosis-case-report.md",
+ "key": "https://openalex.org/W1840701393",
+ "record": {
+  "pmid": null,
+  "pmcid": null,
+  "doi": null,
+  "title": "Complicated form of canine babesiosis in a dog - a case report.",
+  "journal": "Tierärztliche Umschau",
+  "authors": [
+   "Marin Torti",
+   "Vesna Matijatko",
+   "Ivana Kiš",
+   "Mirna Brkljačić",
+   "Martina Crnogaj",
+   "Vladimir Mrljak",
+   "Ljiljana Pinter",
+   "Željko Grabarević",
+   "Zdravko Žvorc"
+  ],
+  "first_pub_date": "2009-01-01",
+  "type": "article",
+  "language": [
+   "de"
+  ],
+  "abstract": "In diesem Artikel wird der Fall einer 9 jahrigen, Mischlingshundin beschrieben, die an einer komplizierten Form der Babesiose erkrankt ist. Die Hundin wurde im komatosen Zustand in die Ambulanz der Klinik fur Innere Krankheiten eingeliefert. Beim Tier wurde eine schwere Form der Babesiose mit einer generalisierten systemischen Entzundungsantwort (SIRS) und mit multiplen Organversagen diagnostiziert. Es folgte eine aggressive Therapie mit den gangigen gegen Babesia wirksamen Medikamenten sowie Breitbandantibiotika, eine kombinierte Gabe von kristalloiden und kolloidalen Infusionslosungen und eine Vollbluttransfusion. Einige Stunden nach der Aufnahme des Patienten entwickelte sich eine klinisch manifeste Form der disseminierten intravasalen Koagulopathie (DIC). Die Erkrankung fuhrte 12 Stunden nach der Aufnahme des Patienten in die Klinik zum Tode. Die Obduktion ergab einen generalisierten Rubinikterus, hamorrhagisches Lungenodem, parenchymatose Leberdystrophie, multiple Infarkte der parenchymatosen Organe, epikardiale Blutungen, makroskopische Blutungen sowie fokale Nekrosen des Groshirns, akute Tubulusnekrosen und eine disseminierte intravasale Koagulopathie (DIC).",
+  "abstract_source": "OpenAlex abstract_inverted_index (reconstructed)",
+  "source_id": "https://openalex.org/W1840701393",
+  "src": "OPENALEX",
+  "found_by": [
+   "OA:title_and_abstract"
+  ],
+  "in_window": true,
+  "key": "https://openalex.org/W1840701393",
+  "source_files": [
+   "candidates_r3.jsonl"
+  ]
+ },
+ "screening": {
+  "key": "https://openalex.org/W1840701393",
+  "decision": "include",
+  "include_type": "case_report",
+  "exclude_reason": null,
+  "primary_category": "SEV",
+  "secondary_tags": [
+   "COA",
+   "INF",
+   "PUL",
+   "REN",
+   "NEU"
+  ],
+  "species": "Babesia canis (suspected; no PCR stated)",
+  "rationale": "Case of complicated babesiosis with SIRS, multiple organ failure and clinical DIC, with necropsy findings (haemorrhagic pulmonary oedema, hepatic dystrophy, cerebral necrosis, tubular necrosis). It shows a distinct multisystem syndrome with histopathology.",
+  "stage": "screen",
+  "batch": "r4_06.md",
+  "screening_round": "r4"
+ },
+ "fulltext_check": {
+  "key": "https://openalex.org/W1840701393",
+  "pmcid": null,
+  "checked": "2026-10-28",
+  "fulltext_status": "no_pmcid"
+ }
+}

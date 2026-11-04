@@ -1,0 +1,17 @@
+{
+ "filter": "type in (article, review) AND title matches babesi*/piroplasm* with canine term in title or abstract, OR canine term in title with babesi* in abstract",
+ "kept": 293,
+ "dropped": {
+  "type:conference-paper": 18,
+  "type:reference-entry": 11,
+  "type:dissertation": 124,
+  "type:book-chapter": 7,
+  "type:other": 5,
+  "type:book": 3,
+  "not babesia+canine in title": 105,
+  "type:book-review": 1,
+  "type:paratext": 2,
+  "type:conference-abstract": 1,
+  "type:editorial": 1
+ }
+}

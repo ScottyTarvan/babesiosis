@@ -1,0 +1,132 @@
+{
+ "id": "CB091",
+ "filename": "CB091_2022_multi-platforms-strategies-metabolomics-approaches-investigation.md",
+ "key": "PMID:35163517",
+ "record": {
+  "pmid": "35163517",
+  "pmcid": "PMC8835742",
+  "doi": "10.3390/ijms23031575",
+  "title": "Multi Platforms Strategies and Metabolomics Approaches for the Investigation of Comprehensive Metabolite Profile in Dogs with Babesia canis Infection.",
+  "authors": [
+   "Rubić I",
+   "Burchmore R",
+   "Weidt S",
+   "Regnault C",
+   "Kuleš J",
+   "Barić Rafaj R",
+   "Mašek T",
+   "Horvatić A",
+   "Crnogaj M",
+   "Eckersall PD",
+   "Novak P",
+   "Mrljak V"
+  ],
+  "journal": "International journal of molecular sciences",
+  "journal_abbrev": "Int J Mol Sci",
+  "volume": "23",
+  "issue": "3",
+  "pages": null,
+  "language": [
+   "eng"
+  ],
+  "issue_date": "2022-01-29",
+  "issue_date_precision": "day",
+  "epub_date": "2022-01-29",
+  "pubmed_entry_date": "2022-02-16",
+  "first_pub_date": "2022-01-29",
+  "publication_types": [
+   "Journal Article"
+  ],
+  "mesh": [
+   "Animals",
+   "Babesia",
+   "Babesiosis",
+   "Case-Control Studies",
+   "Chromatography, Liquid",
+   "Dog Diseases",
+   "Dogs",
+   "Gas Chromatography-Mass Spectrometry",
+   "Host-Pathogen Interactions",
+   "Metabolic Networks and Pathways",
+   "Metabolomics",
+   "Tandem Mass Spectrometry"
+  ],
+  "keywords": [
+   "Babesia canis",
+   "chromatography",
+   "mass spectrometry",
+   "metabolomics",
+   "serum"
+  ],
+  "abstract": "Canine babesiosis is an important tick-borne disease worldwide, caused by parasites of the Babesia genus. Although the disease process primarily affects erythrocytes, it may also have multisystemic consequences. The goal of this study was to explore and characterize the serum metabolome, by identifying potential metabolites and metabolic pathways in dogs naturally infected with Babesia canis using liquid and gas chromatography coupled to mass spectrometry. The study included 12 dogs naturally infected with B. canis and 12 healthy dogs. By combining three different analytical platforms using untargeted and targeted approaches, 295 metabolites were detected. The untargeted ultra-high performance liquid chromatography-tandem mass spectrometry (UHPLC-MS/MS) metabolomics approach identified 64 metabolites, the targeted UHPLC-MS/MS metabolomics approach identified 205 metabolites, and the GC-MS metabolomics approach identified 26 metabolites. Biological functions of differentially abundant metabolites indicate the involvement of various pathways in canine babesiosis including the following: glutathione metabolism; alanine, aspartate, and glutamate metabolism; glyoxylate and dicarboxylate metabolism; cysteine and methionine metabolism; and phenylalanine, tyrosine, and tryptophan biosynthesis. This study confirmed that host-pathogen interactions could be studied by metabolomics to assess chemical changes in the host, such that the differences in serum metabolome between dogs with B. canis infection and healthy dogs can be detected with liquid chromatography-mass spectrometry (LC-MS) and gas chromatography-mass spectrometry (GC-MS) methods. Our study provides novel insight into pathophysiological mechanisms of B. canis infection.",
+  "corrections": [],
+  "epmc_first_pub_date": "2022-01-29",
+  "is_oa": "Y",
+  "has_suppl": "Y",
+  "found_by": [
+   "EP1_broad",
+   "EP2_species",
+   "PM1_broad",
+   "PM2_species",
+   "PM3_mechanism"
+  ],
+  "in_window": true
+ },
+ "screening": {
+  "key": "PMID:35163517",
+  "decision": "include",
+  "include_type": "primary",
+  "exclude_reason": null,
+  "primary_category": "OXO",
+  "secondary_tags": [
+   "MET",
+   "SEV"
+  ],
+  "species": "B. canis (suspected; natural infection)",
+  "rationale": "Serum metabolomics in naturally infected dogs identifying pathways (glutathione etc.) offering pathophysiological insight; host-response omics.",
+  "stage": "screen",
+  "batch": "r1_14.md",
+  "screening_round": "r1"
+ },
+ "fulltext_check": {
+  "key": "PMID:35163517",
+  "pmcid": "PMC8835742",
+  "checked": "2026-10-23",
+  "fulltext_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8835742/fullTextXML",
+  "fulltext_status": 200,
+  "data_availability": [
+   "Data Availability StatementThe mass spectrometry metabolomics raw data are available on request to the correspondence author. All results are presented within the manuscript and/or Supplementary Materials."
+  ],
+  "supplementary": [
+   {
+    "label": "",
+    "caption": "",
+    "file": "ijms-23-01575-s001.zip"
+   }
+  ],
+  "repository_links": [],
+  "section_titles": [
+   "1. Introduction",
+   "2. Results",
+   "2.1. The Metabolomics Dataset in Dogs Infected with B. canis",
+   "2.2. Untargeted LC-MS Metabolomics Analysis",
+   "2.3. Targeted LC-MS Metabolomics Analysis (Biocrates Analysis)",
+   "2.4. GC-MS Metabolomics Analysis",
+   "2.5. Principal Component Analysis",
+   "2.6. Hierarchical Clustering Analysis",
+   "2.7. Discriminant Metabolite Identification",
+   "2.8. Pathway Analysis and Enrichment Analysis",
+   "3. Discussion",
+   "4. Materials and Methods",
+   "4.1. Ethics Statement",
+   "4.2. Experimental Design",
+   "4.3. Blood Sample Preparation and Analysis",
+   "4.4. Untargeted LC-MS Metabolomics Analysis",
+   "4.5. Targeted LC-MS Metabolomics Analysis",
+   "4.6. GC-MS Metabolomics Analysis",
+   "4.7. Statistical Analyses",
+   "5. Conclusions"
+  ],
+  "has_body": true
+ }
+}

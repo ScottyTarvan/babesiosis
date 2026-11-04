@@ -1,0 +1,158 @@
+{
+ "id": "CB019",
+ "filename": "CB019_2018_lc-ms-ms-analysis-serum-phosphoproteome.md",
+ "key": "PMID:30485286",
+ "record": {
+  "pmid": "30485286",
+  "pmcid": "PMC6261647",
+  "doi": "10.1371/journal.pone.0207245",
+  "title": "LC-MS/MS analysis of the dog serum phosphoproteome reveals novel and conserved phosphorylation sites: Phosphoprotein patterns in babesiosis caused by Babesia canis, a case study.",
+  "authors": [
+   "Galán A",
+   "Horvatić A",
+   "Kuleš J",
+   "Bilić P",
+   "Gotić J",
+   "Mrljak V"
+  ],
+  "journal": "PloS one",
+  "journal_abbrev": "PLoS One",
+  "volume": "13",
+  "issue": "11",
+  "pages": "e0207245",
+  "language": [
+   "eng"
+  ],
+  "issue_date": "2018-01-01",
+  "issue_date_precision": "year",
+  "epub_date": "2018-11-28",
+  "pubmed_entry_date": "2018-11-30",
+  "first_pub_date": "2018-01-01",
+  "publication_types": [
+   "Journal Article",
+   "Research Support, Non-U.S. Gov't"
+  ],
+  "mesh": [
+   "Amino Acid Sequence",
+   "Animals",
+   "Babesia",
+   "Babesiosis",
+   "Blood Chemical Analysis",
+   "Blood Proteins",
+   "Chromatography, Liquid",
+   "Dog Diseases",
+   "Dogs",
+   "Female",
+   "Male",
+   "Phosphopeptides",
+   "Phosphoproteins",
+   "Phosphorylation",
+   "Proteome",
+   "Proteomics",
+   "Tandem Mass Spectrometry"
+  ],
+  "keywords": [],
+  "abstract": "Phosphorylation is the most commonly studied protein post-translational modification (PTM) in biological systems due to its importance in controlling cell division, survival, growth, etc. Despite the thorough research in phosphoproteomics of cells and tissues there is little information on circulating phosphoproteins. We compared serum from 10 healthy dogs and 10 dogs affected by B. canis-caused babesiosis with no organ dysfunctions by employing gel-free LC-MS/MS analysis of individual samples and tandem mass tag (TMT) label-based quantitative analyses of pools, both supported by phosphopeptide enrichment. Results showed a moderate number of phosphorylated proteins (50-55), with 89 phosphorylation sites not previously published for dogs although a number of them matched phosphorylation sites found in mammalian orthologs. Three phosphopeptides showed significant variation in babesiosis-affected dog sera compared to controls: Serum amyloid A (SAA) phosphorylated at serine 101 (up-regulation), kininogen 1 phosphorylated at threonine 326, and fibrinogen α phosphorylated at both threonine 20 and serine 22 (down-regulation). 71.9% of the detected phosphorylated sites were phosphoserine, 16.8% phosphothreonine and only 11.2% phosphotyrosine residues. TMT label-based quantitative analysis showed α-2-HS-glycoprotein / Fetuin A to be the most abundant phosphoprotein (50-70% of all phosphoproteins) followed by kininogen-1 (10-20%). The alterations of phosphorylated proteins observed in canine babesiosis caused by Babesia canis suggest new insights into the largely neglected role of extracellular protein phosphorylation in health and disease, encouraging urgent further research on this area. To the best of our knowledge the present study represents the first attempt to characterize canine serum phosphoproteome.",
+  "corrections": [],
+  "epmc_first_pub_date": "2018-11-28",
+  "is_oa": "Y",
+  "has_suppl": "Y",
+  "found_by": [
+   "EP1_broad",
+   "EP2_species",
+   "PM1_broad",
+   "PM2_species",
+   "PM3_mechanism"
+  ],
+  "in_window": true,
+  "date_discrepancy": "PubMed-derived 2018-01-01 vs Europe PMC firstPublicationDate 2018-11-28",
+  "online_vs_issue": "online 2018-11-28; issue 2018-01-01 (year)"
+ },
+ "screening": {
+  "key": "PMID:30485286",
+  "decision": "include",
+  "include_type": "primary",
+  "exclude_reason": null,
+  "primary_category": "INF",
+  "secondary_tags": [
+   "OXO",
+   "COA"
+  ],
+  "species": "B. canis (reported; method not stated in abstract)",
+  "rationale": "Serum phosphoproteomics in B. canis dogs showing SAA, kininogen and fibrinogen changes; host-response omics, acute phase.",
+  "stage": "screen",
+  "batch": "r1_03.md",
+  "screening_round": "r1"
+ },
+ "fulltext_check": {
+  "key": "PMID:30485286",
+  "pmcid": "PMC6261647",
+  "checked": "2026-10-23",
+  "fulltext_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6261647/fullTextXML",
+  "fulltext_status": 200,
+  "data_availability": [
+   "Data AvailabilityAll relevant data are within the paper and its Supporting Information files as well as the mass spectrometry data loaded into PRIDE database (PXD010894).",
+   "Data Availability StatementAll relevant data are within the paper and its Supporting Information files as well as the mass spectrometry data loaded into PRIDE database (PXD010894)."
+  ],
+  "supplementary": [
+   {
+    "label": "S1 Table",
+    "caption": "Clinical values and significantly varying phosphopeptides.(XLSX)",
+    "file": "pone.0207245.s001.xlsx"
+   },
+   {
+    "label": "S2 Table",
+    "caption": "Phosphopeptides: MS parameters individual samples and TMT-labeled pools.(XLSX)",
+    "file": "pone.0207245.s002.xlsx"
+   },
+   {
+    "label": "S1 Fig",
+    "caption": "Phosphopeptides: MS spectra.(DOCX)",
+    "file": "pone.0207245.s003.docx"
+   },
+   {
+    "label": "S1 Table",
+    "caption": "Clinical values and significantly varying phosphopeptides.(XLSX)",
+    "file": "pone.0207245.s001.xlsx"
+   },
+   {
+    "label": "S2 Table",
+    "caption": "Phosphopeptides: MS parameters individual samples and TMT-labeled pools.(XLSX)",
+    "file": "pone.0207245.s002.xlsx"
+   },
+   {
+    "label": "S1 Fig",
+    "caption": "Phosphopeptides: MS spectra.(DOCX)",
+    "file": "pone.0207245.s003.docx"
+   }
+  ],
+  "repository_links": [
+   "PXD010894"
+  ],
+  "section_titles": [
+   "Introduction",
+   "Materials and methods",
+   "Animals",
+   "Blood sample analysis",
+   "Protein incubation and digestion",
+   "Peptide mixture desalting",
+   "TMT labeling of pooled serum samples",
+   "Phosphopeptide enrichment",
+   "LC-MS/MS analysis",
+   "Data analysis and phosphorylation/kinase database search",
+   "Results",
+   "Discussion",
+   "Conclusions",
+   "Supporting information",
+   "Acknowledgments",
+   "Abbreviations",
+   "Data Availability",
+   "Funding Statement",
+   "References",
+   "Associated Data",
+   "Supplementary Materials",
+   "Data Availability Statement"
+  ],
+  "has_body": true
+ }
+}

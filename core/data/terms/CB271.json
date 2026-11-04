@@ -1,0 +1,376 @@
+{
+ "id": "CB271",
+ "document": "data/markdown/CB271.md",
+ "source_format": "pdf",
+ "translated": false,
+ "words": 879,
+ "run_utc": "2026-10-30T05:35:45+00:00",
+ "threshold": 0.85,
+ "kept_types": [
+  "T019",
+  "T020",
+  "T037",
+  "T046",
+  "T047",
+  "T048",
+  "T049",
+  "T050",
+  "T184",
+  "T190",
+  "T191"
+ ],
+ "term_count": 20,
+ "terms": [
+  {
+   "term": "C0340985",
+   "concept": "Torsion of spleen",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 7,
+   "mentions_negated": 1,
+   "mentions_affirmed": 6,
+   "sections": {
+    "abstract": 2,
+    "introduction": 2,
+    "title": 1,
+    "case": 1,
+    "discussion": 1
+   },
+   "forms": {
+    "splenic torsion": 7
+   },
+   "best_score": 0.967
+  },
+  {
+   "term": "C0021308",
+   "concept": "Infarction",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "discussion": 2,
+    "introduction": 1
+   },
+   "forms": {
+    "infarction": 3
+   },
+   "best_score": 0.933
+  },
+  {
+   "term": "C0000737",
+   "concept": "Abdominal Pain",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "abstract": 1,
+    "discussion": 1
+   },
+   "forms": {
+    "abdominal pain": 2
+   },
+   "best_score": 0.97
+  },
+  {
+   "term": "C0002064",
+   "concept": "Alkalosis, Respiratory",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "case": 1,
+    "discussion": 1
+   },
+   "forms": {
+    "respiratory alkalosis": 2
+   },
+   "best_score": 0.973
+  },
+  {
+   "term": "C0004576",
+   "concept": "Babesiosis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "abstract": 1,
+    "discussion": 1
+   },
+   "forms": {
+    "babesiosis": 2
+   },
+   "best_score": 0.972
+  },
+  {
+   "term": "C0015967",
+   "concept": "Fever",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "case": 1,
+    "discussion": 1
+   },
+   "forms": {
+    "hyperthermia": 1,
+    "fever": 1
+   },
+   "best_score": 0.989
+  },
+  {
+   "term": "C0232462",
+   "concept": "Decrease in appetite",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "abstract": 1,
+    "case": 1
+   },
+   "forms": {
+    "inappetence": 2
+   },
+   "best_score": 0.978
+  },
+  {
+   "term": "C0001511",
+   "concept": "Tissue Adhesions",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "adhesion": 1
+   },
+   "best_score": 0.955
+  },
+  {
+   "term": "C0002871",
+   "concept": "Anemia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "case": 1
+   },
+   "forms": {
+    "anaemia": 1
+   },
+   "best_score": 0.977
+  },
+  {
+   "term": "C0019080",
+   "concept": "Hemorrhage",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "bleeding": 1
+   },
+   "best_score": 0.968
+  },
+  {
+   "term": "C0020538",
+   "concept": "Hypertensive disease",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "hypertension": 1
+   },
+   "best_score": 0.984
+  },
+  {
+   "term": "C0023380",
+   "concept": "Lethargy",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "abstract": 1
+   },
+   "forms": {
+    "lethargy": 1
+   },
+   "best_score": 0.987
+  },
+  {
+   "term": "C0023518",
+   "concept": "Leukocytosis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "case": 1
+   },
+   "forms": {
+    "leukocytosis": 1
+   },
+   "best_score": 0.979
+  },
+  {
+   "term": "C0030193",
+   "concept": "Pain",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "case": 1
+   },
+   "forms": {
+    "pain": 1
+   },
+   "best_score": 0.975
+  },
+  {
+   "term": "C0038353",
+   "concept": "Gastric Dilatation",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "gastric dilatation": 1
+   },
+   "best_score": 0.978
+  },
+  {
+   "term": "C0042961",
+   "concept": "Intestinal Volvulus",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "volvulus": 1
+   },
+   "best_score": 0.964
+  },
+  {
+   "term": "C0042963",
+   "concept": "Vomiting",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "abstract": 1
+   },
+   "forms": {
+    "vomiting": 1
+   },
+   "best_score": 0.957
+  },
+  {
+   "term": "C0232491",
+   "concept": "Chronic abdominal pain",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "chronic abdominal pain": 1
+   },
+   "best_score": 0.978
+  },
+  {
+   "term": "C0442856",
+   "concept": "Hypoperfusion",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "case": 1
+   },
+   "forms": {
+    "hypoperfusion": 1
+   },
+   "best_score": 0.959
+  },
+  {
+   "term": "C0919648",
+   "concept": "Congestion of spleen",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "splenic congestion": 1
+   },
+   "best_score": 0.969
+  }
+ ]
+}

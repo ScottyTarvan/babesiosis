@@ -1,0 +1,84 @@
+{
+ "id": "CB499",
+ "filename": "CB499_2015_lipid-peroxidation-naturally-infected-babesia-canis.md",
+ "key": "https://openalex.org/W2304426453",
+ "record": {
+  "pmid": null,
+  "pmcid": null,
+  "doi": null,
+  "title": "Lipid peroxidation in dogs naturally infected with Babesia canis canis.",
+  "journal": "Hrčak Portal of scientific journals of Croatia (University Computing Centre)",
+  "authors": [
+   "Martina Crnogaj",
+   "Ivana Kiš",
+   "Nada Kučer",
+   "Iva Šmit",
+   "Iva Mayer",
+   "Mirna Brkljačić",
+   "Jelena Selanec",
+   "Vladimir Mrljak"
+  ],
+  "first_pub_date": "2015-02-23",
+  "type": "article",
+  "language": [
+   "en"
+  ],
+  "abstract": "ABSTRACT The possible role of oxidative stress in the pathogenesis of infections caused by parasites has been an active area of research in recent years. The aim of this study was to assess changes in activity concentrations of malondialdehyde (MDA), a commonly used biomarker for assessing lipid peroxidation, in dogs infected with Babesia canis canis , after therapy with imidocarb dipropionate, and to compare them with MDA concentrations prior to treatment and to healthy controls. The study was conducted on a sample of 30 dogs suffering from babesiosis and 25 healthy dogs (control group). Blood was taken before treatment, on the ﬁ rst day (all dogs) and on the second, third, and seventh days of the research (affected dogs and ten healthy dogs). Application of imidocarb diproprionate in ten healthy dogs did not affect the values of MDA, so in our study all healthy dogs were used as controls. On the ﬁ rst day of the research the MDA concentrations were signiﬁ cantly increased in dogs with babesiosis (P<0.001) in comparison with the control group. On the seventh day MDA decreased, but was still signiﬁ cantly higher compared to the control group (P<0.001). Concentrations of MDA on the ﬁ rst day were signiﬁ cantly increased in dogs with uncomplicated (P<0.001) and complicated babesiosis (P<0.001) compared to controls. On the seventh day the concentration of MDA was signiﬁ cantly higher in the group of dogs with complicated babesiosis (P = 0.003) than in the uncomplicated group. Furthermore, dogs in the multiple organ dysfunction syndrome group had signiﬁ cantly increased MDA concentrations compared to dogs in the uncomplicated (P = 0.006) and single complication groups (P = 0.025). There was a signiﬁ cant positive correlation between MDA concentration and the outcome of the disease (Tau-b 0.309; P = 0.005). The present study concludes that, on the seventh day, increased lipid peroxidation was still present in the affected group of dogs. The results indicate that oxidative stress could have a possible causative role in the clinical severity of the disease._______________________________________________________________Key words: oxidative stress, malondialdehyde, uncomplicated babesiosis, c_________________________omplicated babesiosis",
+  "abstract_source": "OpenAlex abstract_inverted_index (reconstructed)",
+  "source_id": "https://openalex.org/W2304426453",
+  "src": "OPENALEX",
+  "found_by": [
+   "OA:title_and_abstract"
+  ],
+  "in_window": true,
+  "key": "https://openalex.org/W2304426453",
+  "source_files": [
+   "candidates_r3.jsonl"
+  ]
+ },
+ "screening": {
+  "key": "https://openalex.org/W2304426453",
+  "decision": "include",
+  "include_type": "primary",
+  "exclude_reason": null,
+  "primary_category": "OXO",
+  "secondary_tags": [
+   "SEV"
+  ],
+  "species": "B. canis canis (naturally infected; method not stated in abstract)",
+  "rationale": "Malondialdehyde as a lipid peroxidation marker in 30 infected dogs against healthy controls. Levels are higher in complicated disease and MODS and correlate with outcome.",
+  "stage": "screen",
+  "batch": "r4_24.md",
+  "screening_round": "r4"
+ },
+ "fulltext_check": {
+  "key": "https://openalex.org/W2304426453",
+  "pmcid": null,
+  "checked": "2026-10-28",
+  "fulltext_status": "no_pmcid"
+ },
+ "duplicate_records": [
+  {
+   "key": "REF:lipidperoxidationindogsnaturallyinfectedwithbabesiacaniscani",
+   "basis": "Reference-list entry of Crnogaj et al. 2015 (Hrcak); title similarity 0.97; OpenAlex record retained",
+   "record": {
+    "pmid": null,
+    "doi": null,
+    "title": "Lipid peroxidation in dogs naturally infected with Babesia canis canis. Vet",
+    "journal": null,
+    "first_pub_date": null,
+    "year": "2015",
+    "abstract": null,
+    "found_by": [
+     "citation:backward:37643565"
+    ],
+    "unresolved": true,
+    "source_id": "REF:lipidperoxidationindogsnaturallyinfectedwithbabesiacaniscani",
+    "key": "REF:lipidperoxidationindogsnaturallyinfectedwithbabesiacaniscani",
+    "source_files": [
+     "candidates_r2.jsonl"
+    ]
+   }
+  }
+ ]
+}

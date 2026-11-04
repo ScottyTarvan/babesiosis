@@ -1,0 +1,99 @@
+{
+ "id": "CB530",
+ "filename": "CB530_2016_infectious-diseases-rescued-during-dogfighting-investigations.md",
+ "key": "PMID:27056107",
+ "record": {
+  "pmid": "27056107",
+  "pmcid": "PMC5646355",
+  "doi": "10.1016/j.tvjl.2016.02.012",
+  "title": "Infectious diseases in dogs rescued during dogfighting investigations.",
+  "authors": [
+   "Cannon SH",
+   "Levy JK",
+   "Kirk SK",
+   "Crawford PC",
+   "Leutenegger CM",
+   "Shuster JJ",
+   "Liu J",
+   "Chandrashekar R"
+  ],
+  "journal": "Veterinary journal (London, England : 1997)",
+  "journal_abbrev": "Vet J",
+  "volume": "211",
+  "issue": null,
+  "pages": "64-9",
+  "language": [
+   "eng"
+  ],
+  "issue_date": "2016-05-01",
+  "issue_date_precision": "month",
+  "epub_date": "2016-03-04",
+  "pubmed_entry_date": "2016-04-09",
+  "first_pub_date": "2016-03-04",
+  "publication_types": [
+   "Journal Article"
+  ],
+  "mesh": [
+   "Animals",
+   "Communicable Diseases",
+   "Dog Diseases",
+   "Dogs",
+   "Feces",
+   "Female",
+   "Hematocrit",
+   "Male",
+   "Polymerase Chain Reaction",
+   "Prevalence",
+   "Serologic Tests",
+   "Southeastern United States",
+   "Species Specificity",
+   "Texas"
+  ],
+  "keywords": [
+   "Anemia",
+   "Babesia gibsoni",
+   "Canine",
+   "Dogfighting",
+   "Hemotropic mycoplasma",
+   "Pit bull"
+  ],
+  "abstract": "Dogs used for dogfighting often receive minimal preventive health care, and the potential for spread of infectious diseases is high. The purpose of this study was to describe the prevalence of infectious diseases in dogs rescued from fighting operations to guide medical protocols for their immediate and long-term care. A total of 269 pit bull-type dogs were seized in a multi-state investigation. Fleas were present on most dogs, but few ticks were observed. Testing performed at intake included packed cell volume (PCV), serology and PCR for vector-borne pathogens, and fecal analysis. The most common infections were Babesia gibsoni (39%), 'Candidatus Mycoplasma haematoparvum' (32%), Mycoplasma haemocanis (30%), Dirofilaria immitis (12%), and Ancylostoma (23%). Anemia was associated with B. gibsoni infection (63% of infected dogs, odds ratio = 2.5, P <0.001), but not with hemotropic mycoplasmas or Ancylostoma. Pit bull heritage and dogfighting are known risk factors for B. gibsoni infection, possibly via blood transmission from bites and vertical transmission. Hemotropic mycoplasmas have a similar risk pattern. Empirical care for dogs from dogfighting cases should include broad-spectrum internal and external parasiticides and monitoring for anemia. Dogfighting case responders should be prepared for mass screening and treatment of B. gibsoni and heartworm infections and should implement protocols to prevent transmission of infectious and zoonotic diseases in the shelter and following adoption. Former fighting dogs and dogs with possible dog bite scars should not be used as blood donors due to the risk of vector-borne pathogens that can escape detection and for which curative treatment is difficult to document.",
+  "corrections": [],
+  "epmc_first_pub_date": "2016-03-04",
+  "is_oa": "N",
+  "has_suppl": "N",
+  "found_by": [
+   "EP1_broad",
+   "EP2_species",
+   "PM1_broad",
+   "PM2_species",
+   "PM3_mechanism"
+  ],
+  "in_window": true,
+  "online_vs_issue": "online 2016-03-04; issue 2016-05-01 (month)",
+  "key": "PMID:27056107",
+  "source_files": [
+   "candidates.jsonl"
+  ]
+ },
+ "screening": {
+  "key": "PMID:27056107",
+  "decision": "include",
+  "include_type": "primary",
+  "exclude_reason": null,
+  "primary_category": "ERY",
+  "secondary_tags": [],
+  "species": "B. gibsoni (confirmed, PCR)",
+  "rationale": "Prevalence study in dogfighting dogs that also reports PCV and anaemia in infected dogs, with anaemia associated with B. gibsoni infection (OR 2.5). It meets the rule that a survey with host haematology is included.",
+  "stage": "screen",
+  "batch": "r4_28.md",
+  "screening_round": "r4"
+ },
+ "fulltext_check": {
+  "key": "PMID:27056107",
+  "pmcid": "PMC5646355",
+  "checked": "2026-10-28",
+  "fulltext_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5646355/fullTextXML",
+  "fulltext_status": 500
+ }
+}

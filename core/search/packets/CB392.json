@@ -1,0 +1,103 @@
+{
+ "id": "CB392",
+ "filename": "CB392_2010_babesiosis-northern-portugal-molecular-characterization-vector.md",
+ "key": "PMID:20377861",
+ "record": {
+  "pmid": "20377861",
+  "pmcid": "PMC2865458",
+  "doi": "10.1186/1756-3305-3-27",
+  "title": "Canine babesiosis in northern Portugal and molecular characterization of vector-borne co-infections.",
+  "authors": [
+   "Cardoso L",
+   "Yisaschar-Mekuzas Y",
+   "Rodrigues FT",
+   "Costa A",
+   "Machado J",
+   "Diz-Lopes D",
+   "Baneth G"
+  ],
+  "journal": "Parasites & vectors",
+  "journal_abbrev": "Parasit Vectors",
+  "volume": "3",
+  "issue": "1",
+  "pages": "27",
+  "language": [
+   "eng"
+  ],
+  "issue_date": "2010-04-08",
+  "issue_date_precision": "day",
+  "epub_date": "2010-04-08",
+  "pubmed_entry_date": "2010-04-10",
+  "first_pub_date": "2010-04-08",
+  "publication_types": [
+   "Journal Article"
+  ],
+  "mesh": [],
+  "keywords": [],
+  "abstract": "BACKGROUND: Protozoa and bacteria transmitted by arthropods, including ticks and phlebotomine sand flies, may cause a wide range of canine vector-borne diseases. Dogs can be simultaneously or sequentially infected with multiple pathogens. Canine babesiosis caused by Babesia canis canis and Babesia canis vogeli is known to occur in Portugal. This study assessed, by means of blood smear examination, PCR and DNA nucleotide sequencing, the presence of Babesia spp. and co-infecting agents Leishmania, Anaplasma/Ehrlichia and Hepatozoon in 45 dogs from northern Portugal clinically suspected of babesiosis.\nRESULTS: Forty-four dogs (98%) had infection with B. canis canis and one with B. canis vogeli. Co-infections were detected in nine animals (20%). Eight dogs were found infected with two vector-borne agents: six with B. canis canis and Leishmania infantum; one with B. canis canis and Ehrlichia canis; and one with B. canis canis and Hepatozoon canis. Another dog was infected with three vector-borne pathogens: B. canis vogeli, E. canis and L. infantum. Overall, L. infantum was found in seven (16%), E. canis in two (4%), and H. canis in one (2%) out of the 45 dogs with babesiosis. Almost 90% of the 45 cases of canine babesiosis were diagnosed in the colder months of October (18%), November (27%), December (20%), February (13%) and March (9%). Co-infections were detected in February, March, April, May, October and November. Twenty-two (50%) out of 44 dogs infected with B. canis were found infested by ticks including Dermacentor spp., Ixodes spp. and Rhipicephalus sanguineus. Mortality (9%) included two co-infected dogs that died spontaneously and two with single infections that were euthanized.\nCONCLUSIONS: Babesia canis canis is the main etiological agent of canine babesiosis in northern Portugal. A higher sensitivity of Babesia spp. detection was obtained with PCR assays, compared to the observation of blood smears. Twenty percent of the dogs were co-infected with L. infantum, E. canis or H. canis. Furthermore, this is the first molecular identification of H. canis in dogs from northern Portugal.",
+  "corrections": [],
+  "epmc_first_pub_date": "2010-04-08",
+  "is_oa": "Y",
+  "has_suppl": "N",
+  "found_by": [
+   "EP1_broad",
+   "EP2_species",
+   "PM1_broad",
+   "PM2_species",
+   "PM3_mechanism"
+  ],
+  "in_window": true,
+  "key": "PMID:20377861",
+  "source_files": [
+   "candidates.jsonl"
+  ]
+ },
+ "screening": {
+  "key": "PMID:20377861",
+  "decision": "include",
+  "include_type": "primary",
+  "exclude_reason": null,
+  "primary_category": "SEV",
+  "secondary_tags": [
+   "ERY"
+  ],
+  "species": "B. canis canis (confirmed, PCR); one B. canis vogeli; co-infections with L. infantum, E. canis, H. canis",
+  "rationale": "Based on the Europe PMC open-access full text (PMC2865458). It reports clinical sign frequencies in 38 dogs and anaemia in 26 of 33 (HCT), compares HCT between co-infected and singly infected dogs, and gives per-dog outcome for the co-infected dogs. This is Babesia-specific host clinicopathological data beyond prevalence.",
+  "stage": "adjudicated",
+  "batch": "r4_09.md",
+  "first_decision": "exclude",
+  "rescue_reason": "Babesia canis canis infection in 45 dogs with co-infections; the abstract reports deaths in infected dogs (including two co-infected dogs), which is an outcome observation. Clinicopathology is not reported, so the adjudicator should check the full text.",
+  "screening_round": "r4"
+ },
+ "fulltext_check": {
+  "key": "PMID:20377861",
+  "pmcid": "PMC2865458",
+  "checked": "2026-10-28",
+  "fulltext_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC2865458/fullTextXML",
+  "fulltext_status": 200,
+  "data_availability": [],
+  "supplementary": [],
+  "repository_links": [],
+  "section_titles": [
+   "Background",
+   "Results",
+   "Conclusions",
+   "Background",
+   "Methods",
+   "Animals and samples",
+   "DNA extraction",
+   "PCR assays for Babesia, Anaplasma/Ehrlichia, Hepatozoon and Leishmania",
+   "Sequencing",
+   "Statistical analysis",
+   "Results",
+   "Discussion",
+   "Conclusions",
+   "Competing interests",
+   "Authors' contributions",
+   "Contributor Information",
+   "Acknowledgements",
+   "References"
+  ],
+  "has_body": true
+ }
+}

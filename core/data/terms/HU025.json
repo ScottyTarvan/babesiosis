@@ -1,0 +1,592 @@
+{
+ "id": "HU025",
+ "document": "data/markdown/HU025.md",
+ "source_format": "jats_xml",
+ "translated": false,
+ "words": 3413,
+ "run_utc": "2026-10-30T05:37:22+00:00",
+ "threshold": 0.85,
+ "kept_types": [
+  "T019",
+  "T020",
+  "T037",
+  "T046",
+  "T047",
+  "T048",
+  "T049",
+  "T050",
+  "T184",
+  "T190",
+  "T191"
+ ],
+ "term_count": 32,
+ "terms": [
+  {
+   "term": "C2747816",
+   "concept": "Complicated malaria",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 36,
+   "mentions_negated": 4,
+   "mentions_affirmed": 32,
+   "sections": {
+    "discussion": 15,
+    "results": 13,
+    "abstract": 4,
+    "methods": 2,
+    "conclusion": 2
+   },
+   "forms": {
+    "sm": 36
+   },
+   "best_score": 0.985
+  },
+  {
+   "term": "C0024530",
+   "concept": "Malaria",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 20,
+   "mentions_negated": 1,
+   "mentions_affirmed": 19,
+   "sections": {
+    "abstract": 12,
+    "methods": 4,
+    "discussion": 2,
+    "title": 1,
+    "results": 1
+   },
+   "forms": {
+    "malaria": 20
+   },
+   "best_score": 0.996
+  },
+  {
+   "term": "C0002871",
+   "concept": "Anemia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 12,
+   "mentions_negated": 1,
+   "mentions_affirmed": 11,
+   "sections": {
+    "discussion": 6,
+    "abstract": 2,
+    "methods": 2,
+    "results": 2
+   },
+   "forms": {
+    "anemia": 12
+   },
+   "best_score": 0.974
+  },
+  {
+   "term": "C0036974",
+   "concept": "Shock",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 7,
+   "mentions_negated": 0,
+   "mentions_affirmed": 7,
+   "sections": {
+    "discussion": 6,
+    "abstract": 1
+   },
+   "forms": {
+    "shock": 6,
+    "collapse": 1
+   },
+   "best_score": 0.998
+  },
+  {
+   "term": "C0036690",
+   "concept": "Septicemia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 6,
+   "mentions_negated": 1,
+   "mentions_affirmed": 5,
+   "sections": {
+    "discussion": 6
+   },
+   "forms": {
+    "sepsis": 6
+   },
+   "best_score": 0.971
+  },
+  {
+   "term": "C0340515",
+   "concept": "Myocardial dysfunction",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 4,
+   "mentions_negated": 2,
+   "mentions_affirmed": 2,
+   "sections": {
+    "abstract": 2,
+    "discussion": 1,
+    "conclusion": 1
+   },
+   "forms": {
+    "myocardial dysfunction": 4
+   },
+   "best_score": 0.956
+  },
+  {
+   "term": "C0009421",
+   "concept": "Comatose",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "methods": 3
+   },
+   "forms": {
+    "coma": 3
+   },
+   "best_score": 0.994
+  },
+  {
+   "term": "C0344315",
+   "concept": "Depressed mood",
+   "semantic_types": [
+    "Mental or Behavioral Dysfunction"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "discussion": 3
+   },
+   "forms": {
+    "depressed": 3
+   },
+   "best_score": 0.981
+  },
+  {
+   "term": "C0001122",
+   "concept": "Acidosis",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "abstract": 1,
+    "discussion": 1
+   },
+   "forms": {
+    "acidosis": 2
+   },
+   "best_score": 0.997
+  },
+  {
+   "term": "C0004623",
+   "concept": "Bacterial Infections",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 2,
+   "mentions_affirmed": 0,
+   "sections": {
+    "discussion": 2
+   },
+   "forms": {
+    "bacterial infection": 1,
+    "bacterial coinfection": 1
+   },
+   "best_score": 0.973
+  },
+  {
+   "term": "C0009566",
+   "concept": "Complication",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 2,
+   "mentions_negated": 1,
+   "mentions_affirmed": 1,
+   "sections": {
+    "abstract": 1,
+    "discussion": 1
+   },
+   "forms": {
+    "complication": 2
+   },
+   "best_score": 0.97
+  },
+  {
+   "term": "C0010340",
+   "concept": "Critical Illness",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "discussion": 2
+   },
+   "forms": {
+    "critical illness": 2
+   },
+   "best_score": 0.957
+  },
+  {
+   "term": "C0024534",
+   "concept": "Malaria, Cerebral",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "methods": 1,
+    "results": 1
+   },
+   "forms": {
+    "cerebral malaria": 2
+   },
+   "best_score": 0.985
+  },
+  {
+   "term": "C0034063",
+   "concept": "Pulmonary Edema",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 2,
+   "mentions_negated": 1,
+   "mentions_affirmed": 1,
+   "sections": {
+    "abstract": 1,
+    "results": 1
+   },
+   "forms": {
+    "pulmonary edema": 2
+   },
+   "best_score": 0.984
+  },
+  {
+   "term": "C0038454",
+   "concept": "Cerebrovascular accident",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "abstract": 1,
+    "methods": 1
+   },
+   "forms": {
+    "stroke": 2
+   },
+   "best_score": 0.959
+  },
+  {
+   "term": "C0162429",
+   "concept": "Malnutrition",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "discussion": 2
+   },
+   "forms": {
+    "malnutrition": 2
+   },
+   "best_score": 0.935
+  },
+  {
+   "term": "C0242698",
+   "concept": "Ventricular Dysfunction, Left",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "discussion": 2
+   },
+   "forms": {
+    "lv dysfunction": 2
+   },
+   "best_score": 0.939
+  },
+  {
+   "term": "C0442856",
+   "concept": "Hypoperfusion",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 2,
+   "mentions_negated": 1,
+   "mentions_affirmed": 1,
+   "sections": {
+    "abstract": 1,
+    "discussion": 1
+   },
+   "forms": {
+    "hypoperfusion": 2
+   },
+   "best_score": 0.959
+  },
+  {
+   "term": "C0746730",
+   "concept": "myocardial injury",
+   "semantic_types": [
+    "Injury or Poisoning"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "abstract": 1,
+    "discussion": 1
+   },
+   "forms": {
+    "myocardial injury": 2
+   },
+   "best_score": 0.972
+  },
+  {
+   "term": "C0011570",
+   "concept": "Mental Depression",
+   "semantic_types": [
+    "Mental or Behavioral Dysfunction"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "depression": 1
+   },
+   "best_score": 0.97
+  },
+  {
+   "term": "C0015967",
+   "concept": "Fever",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "methods": 1
+   },
+   "forms": {
+    "fever": 1
+   },
+   "best_score": 0.962
+  },
+  {
+   "term": "C0036572",
+   "concept": "Seizures",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "methods": 1
+   },
+   "forms": {
+    "seizure": 1
+   },
+   "best_score": 0.955
+  },
+  {
+   "term": "C0036980",
+   "concept": "Shock, Cardiogenic",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "abstract": 1
+   },
+   "forms": {
+    "cardiogenic shock tce": 1
+   },
+   "best_score": 0.902
+  },
+  {
+   "term": "C0036983",
+   "concept": "Septic Shock",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "abstract": 1
+   },
+   "forms": {
+    "septic shock": 1
+   },
+   "best_score": 0.981
+  },
+  {
+   "term": "C0206146",
+   "concept": "Myocardial Stunning",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 1,
+   "mentions_affirmed": 0,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "myocardial stunning": 1
+   },
+   "best_score": 0.964
+  },
+  {
+   "term": "C0476273",
+   "concept": "Respiratory distress",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "methods": 1
+   },
+   "forms": {
+    "respiratory distress": 1
+   },
+   "best_score": 0.991
+  },
+  {
+   "term": "C0546817",
+   "concept": "Fluid overload",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 1,
+   "mentions_affirmed": 0,
+   "sections": {
+    "abstract": 1
+   },
+   "forms": {
+    "fluid overload": 1
+   },
+   "best_score": 0.981
+  },
+  {
+   "term": "C0684256",
+   "concept": "Bacterial sepsis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "abstract": 1
+   },
+   "forms": {
+    "bacterial sepsis": 1
+   },
+   "best_score": 0.967
+  },
+  {
+   "term": "C0685095",
+   "concept": "Biventricular congestive heart failure",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "abstract": 1
+   },
+   "forms": {
+    "biventricular failure": 1
+   },
+   "best_score": 0.962
+  },
+  {
+   "term": "C0699748",
+   "concept": "Pathogenesis",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "abstract": 1
+   },
+   "forms": {
+    "pathogenesis": 1
+   },
+   "best_score": 0.983
+  },
+  {
+   "term": "C0743841",
+   "concept": "Disorder characterized by fever",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 1,
+   "mentions_affirmed": 0,
+   "sections": {
+    "abstract": 1
+   },
+   "forms": {
+    "febrile illness": 1
+   },
+   "best_score": 0.967
+  },
+  {
+   "term": "C3263722",
+   "concept": "Traumatic AND/OR non-traumatic injury",
+   "semantic_types": [
+    "Injury or Poisoning"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "title": 1
+   },
+   "forms": {
+    "injury": 1
+   },
+   "best_score": 0.971
+  }
+ ]
+}

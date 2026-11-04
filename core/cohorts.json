@@ -1,0 +1,369 @@
+{
+ "CH01": {
+  "label": "Lublin B. canis urinary/renal cohort, 10 infected + 10 controls (Winiarczyk/Adaszek)",
+  "certainty": "probable",
+  "basis": "Same first author and Lublin group, both urine-based kidney studies with identical 10 infected + 10 healthy design; CB046 takes its inclusion criteria from an earlier publication (ref. 47), most likely CB001. Overlap of dogs is not explicitly stated.",
+  "members": [
+   "CB001",
+   "CB046"
+  ]
+ },
+ "CH02": {
+  "label": "Anand (Gujarat) canine babesiosis thesis cohort, 2015-2016 (Bilwal/Mandali)",
+  "certainty": "probable",
+  "basis": "Three 2017 papers by the same authors at the same college in Anand. CB007 (24 infected, 8 healthy) and CB015 (16 small-Babesia dogs, 8 healthy controls, Jul 2015-Mar 2016) share an identical control group of 8, and the 16 B. gibsoni dogs fit within the 24. CB002 is a haematology paper by the same authors in the same journal (n not reported). This looks like one thesis dataset split across papers.",
+  "members": [
+   "CB002",
+   "CB007",
+   "CB015"
+  ]
+ },
+ "CH03": {
+  "label": "Onderstepoort prospective B. rossi natural-infection cohort, Oct 2011-Apr 2013",
+  "certainty": "probable",
+  "basis": "CB050 states that its cohort 1 (96 infected, 15 controls, OVAH, Oct 2011-Apr 2013) is the Goddard et al. 2016 cytokine cohort. CB145 reports the same hospital, the same period and 15 controls, with 97 analysed dogs. CB050's cohort 2 (44 dogs, 2014) is the CB008 (Rautenbach 2017) cohort, which CB050 confirms explicitly; CB008 is therefore included here as a confirmed partial overlap. Round 4 (2006-2016) linkage: CB517 (Goddard 2016 cytokines; 97 infected, 15 controls, OVAH, Oct 2011-Apr 2013) is the cohort-1 paper that CB050 names as its source, and its n matches CB145 (97 analysed, 15 controls), so this link is confirmed. CB513 (platelet indices; 96 infected, 12 died, 15 controls; Goddard, Leisewitz, Kristensen, Schoeman; University of Pretoria affiliation) matches CB050's cohort 1 (96 infected, 15 controls) and the 12 non-survivors of CB145/CB517, but it states no period, so it is probable. CB504 (platelet activation; 36 infected, 7 died, 15 controls; same four authors, published May 2015) is probably a subset with the same 15 controls; no period is stated, so it is the weakest member. CB145 and CB517 report the same 97 dogs. The cohort certainty stays probable because CB145, CB513 and CB504 are linked by inference, not by an explicit statement.",
+  "members": [
+   "CB008",
+   "CB050",
+   "CB145",
+   "CB504",
+   "CB513",
+   "CB517"
+  ]
+ },
+ "CH04": {
+  "label": "Onderstepoort B. rossi necropsy tissue bank (spleen, lung, bone marrow, liver)",
+  "certainty": "confirmed",
+  "basis": "CB147 (liver) states its dogs are the same cohort used in the group's earlier spleen, lung and bone marrow histopathology studies. Those are CB054, CB111 and CB129: the same Clift/Leisewitz group, fatal B. rossi mono-infections and healthy euthanised controls. Group sizes differ by tissue available (9+4, n/r, 6+5, 10+4).",
+  "members": [
+   "CB054",
+   "CB111",
+   "CB129",
+   "CB147"
+  ]
+ },
+ "CH05": {
+  "label": "Kosice (UVMP Small Animal Clinic) B. canis serum protein/APP cohort, ~2016-2020 (Tothova group)",
+  "certainty": "probable",
+  "basis": "Same clinic and the same serum protein/acute-phase group (Tothova co-author on all three). The recruitment periods overlap: CB178 is 2017, CB222 is 2016-2020 and CB065's period is not stated. Babesiosis n is nearly identical (37, 39, 40). Overlap is not explicitly stated.",
+  "members": [
+   "CB065",
+   "CB178",
+   "CB222"
+  ]
+ },
+ "CH06": {
+  "label": "Zagreb MetaDog project B. canis omics cohort (ethics approval 19 Sep 2018)",
+  "certainty": "probable",
+  "basis": "CB091 (serum metabolomics) and CB137 (salivary metabolomics) cite the same Zagreb ethics approval dated 19 Sep 2018. CB071 (urine metabolomics) is funded by the MetaDog project. CB103 (serum/urine TMT proteomics of renal dysfunction) has the same 22 infected dogs as CB071. The later papers cite the earlier serum/urine studies, but none states that the dogs overlap.",
+  "members": [
+   "CB071",
+   "CB091",
+   "CB103",
+   "CB137"
+  ]
+ },
+ "CH07": {
+  "label": "Belgrade client-owned acute B. canis clinical cohort (Janjic/Beletic/Spariosu/Radakovic)",
+  "certainty": "probable",
+  "basis": "Three papers by the same Belgrade author core on client-owned dogs with acute natural B. canis infection. Their sizes (54, 63, 61) fit one accruing thesis cohort: CB089 and CB123 share a first author and are nearly the same n. Recruitment periods are not reported and no overlap is stated.",
+  "members": [
+   "CB073",
+   "CB089",
+   "CB123"
+  ]
+ },
+ "CH08": {
+  "label": "Madras Veterinary College babesiosis prognostic/anaemia cohort (Rajamanickam Kandasamy, Leela V)",
+  "certainty": "probable",
+  "basis": "Same author team, with names in alternate order (Kandasamy R = Rajamanickam K; Venkatasubramanian L = Leela V), plus Loganathasamy K and Latha BR, at MVC Chennai. CB074 and CB286 both report 108 symptomatic client-owned dogs. CB202 (32 PCR-confirmed, survivors vs non-survivors, prognostic) looks like a subset of the same prognostic study. Overlap is not stated.",
+  "members": [
+   "CB074",
+   "CB202",
+   "CB286"
+  ]
+ },
+ "CH09": {
+  "label": "Onderstepoort experimental B. rossi Beagle infection (6 male Beagles: 1 donor, 3 high-dose, 2 low-dose)",
+  "certainty": "probable",
+  "basis": "CB101 (Data in Brief) explicitly states it is the same experiment as CB098 (confirmed). CB082 and CB105 describe the identical design (male purpose-bred Beagles, splenectomised donor, 3 dogs at 1e8 and 2 at 1e4, Onderstepoort). CB115 adds 5 experimentally infected dogs from the same group. Ethics numbers differ (V003-18 in CB082, REC048-19 in CB101), probably animal vs research ethics committees. CB115 also includes 103 retrospective natural cases that cannot be linked to a specific cohort.",
+  "members": [
+   "CB082",
+   "CB098",
+   "CB101",
+   "CB105",
+   "CB115"
+  ]
+ },
+ "CH10": {
+  "label": "KVASU (Kerala) AKI in babesiosis/leptospirosis thesis cohort (Idrees/Deepa/Vinodkumar/Rathish)",
+  "certainty": "probable",
+  "basis": "Same authors (Asma Idress M = Idrees A, with Deepa PM, Vinodkumar K and Rathish RL) on the same topic: AKI and kidney markers in dogs with babesiosis or leptospirosis. Published 5 months apart, consistent with one thesis dataset. n and period are not reported in either paper.",
+  "members": [
+   "CB124",
+   "CB228"
+  ]
+ },
+ "CH11": {
+  "label": "Laboklin prospective German B. canis cohort, Apr-Dec 2024 (23 acute PCR-positive dogs)",
+  "certainty": "probable",
+  "basis": "Same authors and laboratory (Laboklin, Bad Kissingen) with an overlapping prospective enrolment window (CB133 Apr-Dec 2024, CB148 Apr-Nov 2024). Both report exactly 23 acute PCR-positive B. canis dogs. These dogs probably also overlap the 342-dog retrospective cohort (CH12, Jan 2018-Dec 2024), but neither paper says so.",
+  "members": [
+   "CB133",
+   "CB148"
+  ]
+ },
+ "CH12": {
+  "label": "Laboklin retrospective German B. canis cohort, Jan 2018-Dec 2024 (342 dogs)",
+  "certainty": "confirmed",
+  "basis": "CB149 explicitly states that its 342 dogs (Jan 2018-Dec 2024, Laboklin submissions) are the same cohort previously analysed by von Hohnhorst et al. 2025 (CB141), which uses the identical n, period and inclusion criteria. Round 4 (2006-2016) linkage: Overlap note, not a merge: the 23 dogs of CH11 (CB133, CB148; enrolled Apr-Nov/Dec 2024 via Laboklin) fall inside the Jan 2018-Dec 2024 window of this 342-dog cohort and are probably a subset of it (CB148 and CB149 name each other as related cohorts). Neither paper states this, so CH11 and CH12 stay separate.",
+  "members": [
+   "CB141",
+   "CB149"
+  ]
+ },
+ "CH13": {
+  "label": "Zhytomyr acute spontaneous canine babesiosis clinic cohort, ~2017-2018 (Dubova/Feshchenko)",
+  "certainty": "probable",
+  "basis": "Same Ukrainian group re-publishing one clinical model in several journals. CB199 (Zhytomyr clinic, 2017-2018, 100 dogs = 50 infected + 50 controls, 10-40 kg, 2-7 y) and CB217 (100 dogs, 20-40 kg, 2-4 y, infected/control/treatment groups) match in n and profile. CB200 and CB217 both report the same anti-shock/plasma-replacement infusion therapy comparison. No overlap is stated.",
+  "members": [
+   "CB199",
+   "CB200",
+   "CB217"
+  ]
+ },
+ "CH14": {
+  "label": "Van (Turkiye) stray-dog B. canis seropositive case-control, 7 + 7 (Deger/Oguz/Ozdek/Tarhan)",
+  "certainty": "probable",
+  "basis": "Same authors and institution (Van Yuzuncu Yil University), both with exactly 7 naturally infected and 7 healthy dogs, measuring different biochemical analytes, apparently in the same samples. Overlap is not stated.",
+  "members": [
+   "CB229",
+   "CB242"
+  ]
+ },
+ "CH15": {
+  "label": "Igdir University Animal Hospital PCR-positive B. canis cohort, 15 dogs (Ayvazoglu/Kiziltepe)",
+  "certainty": "probable",
+  "basis": "Same authors and hospital (Igdir University, PCR via Kafkas University), both with 15 PCR-positive B. canis dogs. Healthy controls differ (15 vs 10). Overlap is not stated.",
+  "members": [
+   "CB232",
+   "CB261"
+  ]
+ },
+ "CH16": {
+  "label": "Proddatur (SVVU, Andhra Pradesh) babesiosis thesis cohort, Oct 2023-Sep 2024 (620 screened, 136 smear-positive)",
+  "certainty": "probable",
+  "basis": "CB246, CB300 and CB313 (Nagarjuna, Reddy, Saritha, Sivajothi) report identical denominators (620 examined, 136 smear-positive) for the same period and college; CB300 notes it is part of the first author's thesis. CB279 (same group, one-year study) reports the same 136 babesiosis dogs, but counts 24 cerebral cases against 11 in CB300/CB313.",
+  "members": [
+   "CB246",
+   "CB279",
+   "CB300",
+   "CB313"
+  ]
+ },
+ "CH17": {
+  "label": "Hebbal (Bengaluru) B. gibsoni IMHA thesis cohort, 18 dogs + 6 controls (Soundarya T.C. Reddy)",
+  "certainty": "probable",
+  "basis": "Same author team (Soundarya TC = Reddy STC; Anil Kumar MC = Chandrashekhariah AKM; Kshama MA = Appaiah KM) at Veterinary College Hospital, Hebbal. CB247 and CB257 both use 18 B. gibsoni IMHA-positive dogs and 6 healthy controls. CB248 selects the same 18 dogs that were positive on all three IMHA tests from its 64 positives.",
+  "members": [
+   "CB247",
+   "CB248",
+   "CB257"
+  ]
+ },
+ "CH18": {
+  "label": "MVC Chennai Critical Care Unit cardiac dysfunction in babesiosis, 2021 (Gowtham/Gowri/Kavitha)",
+  "certainty": "probable",
+  "basis": "Same authors and unit. The myocardial-dysfunction case report CB284 was received in Jan 2022, right after the Apr-Dec 2021 echocardiography series of 92 suspected babesiosis dogs (CB263), so the case is very probably one of those dogs. Not stated.",
+  "members": [
+   "CB263",
+   "CB284"
+  ]
+ },
+ "CH19": {
+  "label": "Lviv acute canine babesiosis clinic cohort from Sep 2023 (Girskyy/Hirskyi SI)",
+  "certainty": "probable",
+  "basis": "Same first author (Girskyy SI = Hirskyi SI, alternate transliteration), all from Lviv (LNU clinic plus three private clinics). Recruitment starts Sep 2023 in all three and runs to Jan 2025 (CB273, n=56), May 2025 (CB280, n=55) and Dec 2025 (CB308, n=125), consistent with a single accruing cohort.",
+  "members": [
+   "CB273",
+   "CB280",
+   "CB308"
+  ]
+ },
+ "CH20": {
+  "label": "Hebbal (Bengaluru) PCR-confirmed babesiosis thesis cohort, 24 dogs (Vinay YN/Chetan Kumar GK)",
+  "certainty": "probable",
+  "basis": "Same first two authors, all 2026. CB294 (Hebbal) and CB302 both report 24 PCR-confirmed dogs. CB297 (serum erythropoietin, ~22 infected dogs derived from percentages) is very probably a subset of the same thesis dogs. Overlap is not stated.",
+  "members": [
+   "CB294",
+   "CB297",
+   "CB302"
+  ]
+ },
+ "CH21": {
+  "label": "Zurich experimental B. canis Beagle infection cohort, ~2012-2013 (Eichenberger/Deplazes)",
+  "certainty": "probable",
+  "basis": "Both papers are from the Zurich group (Eichenberger RM and Deplazes P author both) and describe three adult Beagles inoculated intravenously with the same B. canis isolate, from a Bernese mountain dog that had travelled to Hungary (CB516 permit 122/2012; CB010 proteomics on 3 Beagles). Neither paper states that the Beagles are the same animals. CB516 also reports 15 natural clinical cases that are not shared, and it is placed here for its experimental Beagles.",
+  "members": [
+   "CB010",
+   "CB516"
+  ]
+ },
+ "CH22": {
+  "label": "Zagreb Clinic for Internal Diseases B. canis canis natural-infection proteomic/haemostasis cohort, 25 infected + 10 controls, period not stated (Kuleš/Mrljak/Barić Rafaj)",
+  "certainty": "probable",
+  "basis": "CB476 (Zagreb Clinic, 25 B. canis canis dogs, 10 healthy mixed-breed controls) and CB011 (25 uncomplicated B. canis dogs, 10 healthy controls) have identical infected and control group sizes and shared authors Kuleš, Mrljak and Barić Rafaj, and both study natural infection. Neither states a recruitment period, and CB011's institution is inferred from the author team. Overlap is not explicitly stated.",
+  "members": [
+   "CB011",
+   "CB476"
+  ]
+ },
+ "CH23": {
+  "label": "Zagreb B. canis canis KC/IL-8 chemokine natural-infection cohort, period not stated (Mayer/Bendelja/Galán)",
+  "certainty": "probable",
+  "basis": "CB510 (English) and CB511 (Croatian) have identical authors, publication date and title, so they are one study published twice (Zagreb Faculty of Veterinary Medicine). CB510 says the chemokines were measured within a larger research programme. CB017 (Zagreb Clinic, retrospective, 31 B. canis dogs plus 16 controls, KC-like and IL-8) shares authors Mayer, Bendelja and Barić Rafaj and measures the same two chemokines, so the same stored sera are likely. Periods and CB510's n are not stated, so the cohort is probable.",
+  "members": [
+   "CB017",
+   "CB510",
+   "CB511"
+  ]
+ },
+ "CH24": {
+  "label": "Mannuthy (KVASU, Kerala) B. gibsoni natural-infection client-owned cohort, 2018-2019 (Vismaya/Thomas, Ajith Kumar S)",
+  "certainty": "probable",
+  "basis": "CB049 (Teaching Veterinary Clinical Complex, Mannuthy, Apr 2018-Oct 2019, 113 PCR-detected babesiosis cases, B. gibsoni and B. vogeli) and CB183 (KVASU hospitals at Mannuthy and Kokkalai, Mar-Sep 2018, 15 smear-positive B. gibsoni dogs) share the institution, overlapping recruitment months, natural client-owned B. gibsoni cases and the author Ajith Kumar S. CB183's 15 dogs fit as a subset of CB049's cases, but neither article states this.",
+  "members": [
+   "CB049",
+   "CB183"
+  ]
+ },
+ "CH25": {
+  "label": "Lublin/Istanbul-Cerrahpasa B. canis natural-infection antioxidant/trace-element cohort, 2020 (Teodorowski/Adaszek)",
+  "certainty": "probable",
+  "basis": "CB077 (Lublin University of Life Sciences, Istanbul University-Cerrahpasa and the Teodorowscy clinic, Mikołów; Mar-Jun 2020; 15 infected + 7 healthy) and CB069 share first author Teodorowski and the co-author team (Adaszek, Erman Or, Dokuzeylül, Ercan, Tarhan). Both measure serum minerals in naturally infected dogs, and both have 7 healthy controls. CB069's institution and period are not stated, so its 7 early-babesiosis dogs are only inferred to be a subset of CB077's 15.",
+  "members": [
+   "CB069",
+   "CB077"
+  ]
+ },
+ "CH26": {
+  "label": "Kharkiv-region domestic dog babesiosis pathomorphology thesis series, period not stated (Torianyk)",
+  "certainty": "probable",
+  "basis": "CB070, CB087 and CB208 are single-author 2021 papers by Torianyk II on the pathomorphology of natural canine babesiosis in domestic dogs. Only CB087 states an institution (Mechnikov Institute, Kharkiv). CB070 (18 dogs; Kharkiv, Poltava and Sumy regions) and CB208 (91 infected animals from those regions and others; dog/rodent split not given) share source regions, and the counts (18, 91, 187) fit nested subsets of one thesis series. No period or overlap is stated.",
+  "members": [
+   "CB070",
+   "CB087",
+   "CB208"
+  ]
+ },
+ "CH27": {
+  "label": "Labros/Arswet Warsaw B. canis hospitalised natural-infection cohort, Mar 2013-May 2017 (Zygner/Gójska-Zygner)",
+  "certainty": "probable",
+  "basis": "CB080 covers 272 hospitalised babesiosis cases at the Labros and Arswet clinics, Warsaw, from Mar 2013 to May 2017. CB093 analyses 39 dogs from the Labros Clinic over an unspecified one-year period. The two share authors Zygner, Gójska-Zygner and Bartosik and study the same natural B. canis population. Because CB093's year is not stated, overlap of individual dogs is not confirmed.",
+  "members": [
+   "CB080",
+   "CB093"
+  ]
+ },
+ "CH28": {
+  "label": "Belgrade FVM Small Animal Clinic multi-disease systemic inflammation cohort incl. acute B. canis, 2017-2019 (Ilić/Ilić Božović/Spariosu)",
+  "certainty": "probable",
+  "basis": "CB233 (Small Animal Clinic, FVM Belgrade, Feb 2017-Dec 2019; 12 acute B. canis, 31 D. immitis, 8 pyometra, 6 healthy) and CB225 (FVM Belgrade with collaborating practices, Mar 2018-Nov 2019; 29 babesiosis plus dirofilariosis, pyometra, parvovirosis, distemper and healthy groups) have the same institution, overlapping periods, near-identical comparator groups and a shared author (Spariosu K). The 12 babesiosis dogs of CB233 fit within the 29 of CB225. Some babesiosis dogs may also overlap CH07 (same Belgrade group, no period stated), but neither article says so. The multi-disease design differs, so these are not added to CH07.",
+  "members": [
+   "CB225",
+   "CB233"
+  ]
+ },
+ "CH29": {
+  "label": "Onderstepoort (OVAH) canine babesiosis serum urea:creatinine cohort, 25 anaemic dogs + 13 controls, period not stated (de Scally/Lobetti)",
+  "certainty": "probable",
+  "basis": "CB325 (OVAH, University of Pretoria: 25 smear-positive severely anaemic dogs, 13 healthy reference dogs; Lobetti co-author) and CB412 (Lobetti, South Africa: 25 babesiosis dogs, 13 controls) have identical group sizes, the same topic and a shared author. CB325 cites unpublished haemoglobin-infusion data, which matches the experimental haemoglobinaemia groups in CB412. CB412 states no institution or period, so its OVAH origin is inferred from the identical groups and is not stated.",
+  "members": [
+   "CB325",
+   "CB412"
+  ]
+ },
+ "CH30": {
+  "label": "Warsaw Agricultural University large-Babesia (B. canis) natural-infection cohort, period not stated (Zygner/Gójska-Zygner/Wedrychowicz)",
+  "certainty": "probable",
+  "basis": "CB326 (248 dogs in Warsaw naturally infected with large Babesia; haematology) and CB330 (202 sera selected from 2023 positive samples, Division of Parasitology, Warsaw Agricultural University) are consecutive papers (2006, 2007) by the same Warsaw parasitology group with four shared authors. Neither states a period, and the 2023-sample pool fits as including the 248 dogs. Overlap is not stated and the evidence is abstract-only, so this is the weakest Polish link.",
+  "members": [
+   "CB326",
+   "CB330"
+  ]
+ },
+ "CH31": {
+  "label": "Onderstepoort B. rossi natural-infection biomarker/endocrine cohort, 2005 (Schoeman, Köster)",
+  "certainty": "probable",
+  "basis": "CB508 states that its serum and clinical data come from a prospective OVAH biomarker/outcome study run in 2005 (protocol V074/05; 98 recruited, 87 analysed), and it cites Schoeman's endocrine mortality work. CB338 (95 dogs, admission samples, 7 died), CB340 (94 dogs, prospective cross-sectional) and CB352 (68 infected, 15 controls, admission samples) are Schoeman/Herrtage/Rees University of Pretoria Onderstepoort studies of natural B. rossi babesiosis. Their n is consistent and they state no period. No article explicitly states that the dogs overlap. CB352 and CB508 are the weakest members.",
+  "members": [
+   "CB338",
+   "CB340",
+   "CB352",
+   "CB508"
+  ]
+ },
+ "CH32": {
+  "label": "Italian B. canis canis / B. c. vogeli natural-infection sick-dog cohort, period not stated (Solano-Gallego/Carli/Trotta/Furlanello/Caldin)",
+  "certainty": "probable",
+  "basis": "CB357 and CB369 share five authors (Solano-Gallego, Trotta, Carli, Furlanello, Caldin), and both study sick Italian dogs with natural B. c. canis or B. c. vogeli infection diagnosed by PCR-RFLP. CB369's 30 dogs (24 B. c. canis, 6 B. c. vogeli) fit inside CB357's 45 PCR-positive dogs (34 and 11). Neither abstract states the institution or period, so this link rests on the identical author team and nested species counts.",
+  "members": [
+   "CB357",
+   "CB369"
+  ]
+ },
+ "CH33": {
+  "label": "Zagreb Clinic for Internal Diseases B. canis natural-infection admissions cohort, 2007 (Crnogaj/Matijatko)",
+  "certainty": "probable",
+  "basis": "CB394 states that its 35 B. canis dogs were sampled on admission in 2007 at the Zagreb Clinic for Internal Diseases. CB372 reviewed 86 babesiosis admissions to the same clinic from Jan-Dec 2007 (10 septic-shock dogs). They have the same institution and year, the same natural client-owned B. canis population and shared authors (Kiš, Torti, Kučer, Brkljačić), but no article states that the dogs overlap.",
+  "members": [
+   "CB372",
+   "CB394"
+  ]
+ },
+ "CH34": {
+  "label": "Multiwet Warsaw B. canis natural-infection cohort, 230 dogs, pre-treatment samples (Zygner/Gójska-Zygner)",
+  "certainty": "confirmed",
+  "basis": "CB424 states that its samples were taken before treatment from the 230 B. canis-infected dogs of the earlier liver-enzyme study (Zygner et al. 2011, CB409), with 48 excluded to leave 182. The same dog series is therefore named explicitly. The site is the Multiwet Small Animal Health Clinic, Warsaw (stated in CB424).",
+  "members": [
+   "CB409",
+   "CB424"
+  ]
+ },
+ "CH35": {
+  "label": "Multiwet Warsaw B. canis pre-treatment azotaemic vs non-azotaemic cohort, period not stated (Zygner/Gójska-Zygner/Wedrychowicz)",
+  "certainty": "probable",
+  "basis": "CB425 and CB441 both sample naturally B. canis-infected dogs at the Multiwet Small Animal Health Clinic, Warsaw, before treatment. They have the same three authors and the same azotaemic/non-azotaemic split, and their n (17 and 23) fits one overlapping series. Neither states a recruitment period. Overlap with the 230-dog Multiwet series (CB409/CB424) is possible but not stated, so the two are kept as separate cohorts.",
+  "members": [
+   "CB425",
+   "CB441"
+  ]
+ },
+ "CH36": {
+  "label": "University of Pretoria uncomplicated B. rossi natural-infection cohort, period not stated (Liebenberg/Defauw/Goddard)",
+  "certainty": "probable",
+  "basis": "CB439 (19 uncomplicated B. rossi dogs plus 10 controls, Dept of Companion Animal Clinical Studies, University of Pretoria) and CB435 (18 uncomplicated B. rossi dogs plus 8 controls) were both published in mid-to-late 2012. They share authors Goddard, Liebenberg and Schoeman, both enrolled only the uncomplicated disease group, and their n is consistent. Neither states a recruitment period. CB435's institution is inferred from the shared author team.",
+  "members": [
+   "CB435",
+   "CB439"
+  ]
+ },
+ "CH37": {
+  "label": "Warsaw B. canis TNF-alpha/IL-6 pre-treatment natural-infection cohort, period not stated (Zygner/Gójska-Zygner/Bąska/Długosz)",
+  "certainty": "probable",
+  "basis": "CB473 (11 infected, 8 healthy; TNF-alpha, blood pressure, renal indices) and CB503 (13 infected, 10 healthy; IL-6 and T3) have the same four authors, the same design (pre-treatment sampling at first clinic visit vs healthy controls) and group sizes that fit one expanding series. Neither states the institution or period, so both are inferred from the Warsaw author team, and overlap is not stated.",
+  "members": [
+   "CB473",
+   "CB503"
+  ]
+ },
+ "CH38": {
+  "label": "Croatian B. canis fatal complicated-babesiosis necropsy series, period not stated (Beck/Huber)",
+  "certainty": "probable",
+  "basis": "CB497 (20 Croatian dogs that died or were euthanised with complicated B. canis infection) and CB522 (5 dogs that died of babesiosis; necropsy and histology) share authors Beck A, Huber D and Beck R. They were published one year apart, and the 5 dogs fit as a subset of the 20. Neither abstract states the institution or period, and overlap is not stated.",
+  "members": [
+   "CB497",
+   "CB522"
+  ]
+ }
+}

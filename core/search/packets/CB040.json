@@ -1,0 +1,90 @@
+{
+ "id": "CB040",
+ "filename": "CB040_2019_clinical-pathological-description-320-cases-naturally.md",
+ "key": "PMID:31303199",
+ "record": {
+  "pmid": "31303199",
+  "pmcid": null,
+  "doi": "10.1016/j.vetpar.2019.06.005",
+  "title": "A clinical and pathological description of 320 cases of naturally acquired Babesia rossi infection in dogs.",
+  "authors": [
+   "Leisewitz AL",
+   "Goddard A",
+   "Clift S",
+   "Thompson PN",
+   "de Gier J",
+   "Van Engelshoven JMAJAJ",
+   "Schoeman JP"
+  ],
+  "journal": "Veterinary parasitology",
+  "journal_abbrev": "Vet Parasitol",
+  "volume": "271",
+  "issue": null,
+  "pages": "22-30",
+  "language": [
+   "eng"
+  ],
+  "issue_date": "2019-07-01",
+  "issue_date_precision": "month",
+  "epub_date": "2019-06-10",
+  "pubmed_entry_date": "2019-07-16",
+  "first_pub_date": "2019-06-10",
+  "publication_types": [
+   "Journal Article"
+  ],
+  "mesh": [
+   "Animals",
+   "Babesia",
+   "Babesiosis",
+   "Dog Diseases",
+   "Dogs",
+   "Odds Ratio",
+   "South Africa"
+  ],
+  "keywords": [
+   "Dog",
+   "Haemoprotozoa",
+   "Morbidity",
+   "Mortality",
+   "Multisystemic"
+  ],
+  "abstract": "Babesia rossi causes the most severe clinical disease in dogs of all the babesia parasites. We included 320 naturally-infected dogs that presented for care at the Onderstepoort Veterinary Academic Hospital between 2006 and 2016. All dogs had mono-infections confirmed by multiplex PCR. The data allowed more accurate clinical classification of the disease and identified parameters that were associated with disease severity and death. Odds ratios for dying were significant (P < 0.05) for increased band neutrophil count, collapse at presentation; presence of cerebral signs; hypoglycaemia; hyperlactatemia; high urea, high creatinine; hyperbilirubinaemia; hypercortisolaemia; and hypothyroxinaemia. Joint component analysis confirmed that the variables with significant odds ratios grouped together with death. Yet, multivariate logistic regression was unable to identify a group of significant independent predictors of death. Receiver Operator Characteristic curves indicated that low total thyroid hormone, high bilirubin, high serum urea and high cortisol concentrations were the variables with the highest sensitivity and specificity for death. These data provide both the clinician and researcher with a set of easily-measured laboratory and clinical assessments to classify cases into those that are uncomplicated and those that are complicated. The disease is complex and multisystemic and probably involves mechanisms more proximal in the pathogenesis than those that have been evaluated.",
+  "corrections": [],
+  "epmc_first_pub_date": "2019-06-10",
+  "is_oa": "N",
+  "has_suppl": "N",
+  "found_by": [
+   "EP1_broad",
+   "EP2_species",
+   "PM1_broad",
+   "PM2_species",
+   "PM3_mechanism"
+  ],
+  "in_window": true,
+  "online_vs_issue": "online 2019-06-10; issue 2019-07-01 (month)"
+ },
+ "screening": {
+  "key": "PMID:31303199",
+  "decision": "include",
+  "include_type": "primary",
+  "exclude_reason": null,
+  "primary_category": "SEV",
+  "secondary_tags": [
+   "NEU",
+   "MET",
+   "REN",
+   "END"
+  ],
+  "species": "B. rossi (confirmed, multiplex PCR)",
+  "rationale": "320 natural B. rossi cases; clinical/pathological parameters associated with severity and death; multisystemic disease.",
+  "stage": "screen",
+  "batch": "r1_07.md",
+  "screening_round": "r1"
+ },
+ "fulltext_check": {
+  "key": "PMID:31303199",
+  "pmcid": null,
+  "checked": "2026-10-23",
+  "fulltext_status": "no_pmcid"
+ }
+}

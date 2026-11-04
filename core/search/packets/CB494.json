@@ -1,0 +1,55 @@
+{
+ "id": "CB494",
+ "filename": "CB494_2015_babesia-canis.md",
+ "key": "https://openalex.org/W2260412209",
+ "record": {
+  "pmid": null,
+  "pmcid": null,
+  "doi": null,
+  "title": "Клинические признаки и изменения морфологии эритроцитов при спонтанной инвазии собак Babesia canis",
+  "journal": "Теория и практика паразитарных болезней животных",
+  "authors": [
+   "A I Shabuldo",
+   "О. А. Панова",
+   "Игорь Геннадьевич Гламаздин"
+  ],
+  "first_pub_date": "2015-01-01",
+  "type": "article",
+  "language": [
+   "ru"
+  ],
+  "abstract": "One recorded the following clinical signs of B. canis infection in dogs: elevation of temperature, fever in 100% of cases, hemoglobinuria in 70% of cases, increase of pulse in 60% of cases, tachycardia in 50% of cases, anorexia in 40% of cases, respiratory disturbances in 20% of cases, nerve disorders in 20% of cases and finally anuria in 10% of cases. The morphology erythrocyte changes are manifested in variation of their size, shape, intensity and mode of staining and presence of pathological inclusions in them.",
+  "abstract_source": "OpenAlex abstract_inverted_index (reconstructed)",
+  "source_id": "https://openalex.org/W2260412209",
+  "src": "OPENALEX",
+  "found_by": [
+   "OA:title_and_abstract"
+  ],
+  "in_window": true,
+  "key": "https://openalex.org/W2260412209",
+  "source_files": [
+   "candidates_r3.jsonl"
+  ]
+ },
+ "screening": {
+  "key": "https://openalex.org/W2260412209",
+  "decision": "include",
+  "include_type": "primary",
+  "exclude_reason": null,
+  "primary_category": "ERY",
+  "secondary_tags": [
+   "SEV"
+  ],
+  "species": "B. canis (spontaneous infection; method not stated)",
+  "rationale": "Clinical signs and erythrocyte morphological changes in naturally infected dogs (haemoglobinuria, anuria, nervous signs, inclusions); a clinical and haematological profile.",
+  "stage": "screen",
+  "batch": "r4_23.md",
+  "screening_round": "r4"
+ },
+ "fulltext_check": {
+  "key": "https://openalex.org/W2260412209",
+  "pmcid": null,
+  "checked": "2026-10-28",
+  "fulltext_status": "no_pmcid"
+ }
+}

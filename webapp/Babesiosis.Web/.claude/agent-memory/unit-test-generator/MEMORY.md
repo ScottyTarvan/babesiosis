@@ -1,0 +1,1 @@
+- [Core.Api.Test build lock](core-api-test-build-lock.md) — MSB3021 via Mcp.Functions; use -p:BuildProjectReferences=false, not --no-dependencies

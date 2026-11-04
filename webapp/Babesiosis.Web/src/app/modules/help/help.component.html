@@ -1,0 +1,193 @@
+<section class="fs-help">
+  <fs-page-header
+    [icon]="headerIcon()"
+    [title]="headerTitle()"
+    [breadcrumb]="breadcrumb()"
+    [subtitle]="view() === 'landing' ? 'Guides for every part of Babesiosis.' : null">
+    @if (headerPlanned()) {
+      <fs-badge variant="tonal" intent="secondary">Planned</fs-badge>
+    }
+  </fs-page-header>
+
+  <div class="fs-help__layout">
+    <!-- =============================================== Navigation tree -->
+    <aside class="fs-help__nav">
+      <fs-card>
+        <div class="fs-help__search">
+          <fs-text-input
+            placeholder="Search help…"
+            ariaLabel="Search help topics"
+            [formControl]="searchControl" />
+          @if (searching()) {
+            <fs-button variant="ghost" intent="secondary" size="sm" icon="x"
+                       ariaLabel="Clear search" [iconOnly]="true"
+                       (click)="clearSearch()" />
+          }
+        </div>
+
+        @if (tree().length === 0) {
+          <fs-empty-state
+            icon="search-off"
+            title="No matching topics"
+            subtitle="Try a different search term."
+            size="compact" />
+        } @else {
+          <nav aria-label="Help topics">
+            <ul class="fs-help__tree">
+              @for (module of tree(); track module.key) {
+                <li>
+                  <a class="fs-help__tree-module"
+                     [routerLink]="['/help', module.key]"
+                     [class.is-active]="module.key === moduleKey() && !topicKey()"
+                     [attr.aria-current]="module.key === moduleKey() && !topicKey() ? 'page' : null">
+                    <fs-symbol [name]="module.icon" size="sm" ariaLabel="" />
+                    <span class="fs-help__tree-label">{{ module.label }}</span>
+                    @if (module.status === 'planned') {
+                      <fs-badge variant="tonal" intent="secondary">Planned</fs-badge>
+                    }
+                  </a>
+
+                  @if (isExpanded(module)) {
+                    @for (section of module.sections; track section.key) {
+                      <div class="fs-help__tree-section">{{ section.label }}</div>
+                      <ul class="fs-help__tree-topics">
+                        @for (topic of section.topics; track topic.key) {
+                          <li>
+                            <a class="fs-help__tree-topic"
+                               [routerLink]="['/help', module.key, topic.key]"
+                               [class.is-active]="module.key === moduleKey() && topic.key === topicKey()"
+                               [attr.aria-current]="module.key === moduleKey() && topic.key === topicKey() ? 'page' : null">
+                              {{ topic.title }}
+                            </a>
+                          </li>
+                        }
+                      </ul>
+                    }
+                  }
+                </li>
+              }
+            </ul>
+          </nav>
+        }
+      </fs-card>
+    </aside>
+
+    <!-- =============================================== Content pane -->
+    <div class="fs-help__main">
+      @switch (view()) {
+        @case ('landing') {
+          <div class="fs-help__cards">
+            @for (module of modules; track module.key) {
+              <a class="fs-help__card-link" [routerLink]="['/help', module.key]">
+                <fs-card>
+                  <div class="fs-help__card-head">
+                    <span class="fs-help__card-icon">
+                      <fs-symbol [name]="module.icon" size="md" ariaLabel="" />
+                    </span>
+                    <h2 class="fs-help__h2">{{ module.label }}</h2>
+                    @if (module.status === 'planned') {
+                      <fs-badge variant="tonal" intent="secondary">Planned</fs-badge>
+                    }
+                  </div>
+                  <p class="fs-help__summary">{{ module.summary }}</p>
+                  <p class="fs-help__meta">{{ topicCount(module) }} {{ topicCount(module) === 1 ? 'topic' : 'topics' }}</p>
+                </fs-card>
+              </a>
+            }
+          </div>
+
+          <!-- Contact form: landing page only (spec §3.3, §3.8) -->
+          <fs-card>
+            <header class="fs-help__card-head fs-help__card-head--spread">
+              <h2 class="fs-help__h2">Contact us</h2>
+              <fs-badge variant="tonal" intent="success">Replies within 1 business day</fs-badge>
+            </header>
+
+            @if (contactSubmitted()) {
+              <fs-banner intent="success" [dismissible]="true" (dismiss)="contactSubmitted.set(false)">
+                Your message has been received. We'll reply to the email address you provided.
+              </fs-banner>
+            }
+
+            <form class="fs-help__form" (submit)="$event.preventDefault(); submitContact()" novalidate>
+              <div class="fs-help__form-grid">
+                <fs-form-field label="Your name" [required]="true" [error]="nameError()">
+                  <fs-text-input [formControl]="contactName" placeholder="Ada Lovelace" />
+                </fs-form-field>
+                <fs-form-field label="Email" [required]="true" [error]="emailError()">
+                  <fs-text-input type="email" [formControl]="contactEmail" placeholder="ada@example.com" />
+                </fs-form-field>
+              </div>
+              <fs-form-field label="What can we help with?" [required]="true" [error]="messageError()">
+                <fs-textarea
+                  [formControl]="contactMessage"
+                  placeholder="Describe the issue, include screenshots in your reply email if helpful…"
+                  [rows]="5" />
+              </fs-form-field>
+
+              <div class="fs-help__form-actions">
+                <fs-button type="submit"
+                           intent="primary"
+                           icon="send"
+                           [loading]="contactSending()">Send message</fs-button>
+              </div>
+            </form>
+          </fs-card>
+        }
+
+        @case ('module') {
+          @let module = activeModule()!;
+          <fs-card>
+            <p class="fs-help__lead">{{ module.summary }}</p>
+            @for (section of module.sections; track section.key) {
+              <section class="fs-help__overview-section">
+                <h2 class="fs-help__h2">{{ section.label }}</h2>
+                <ul class="fs-help__overview-topics">
+                  @for (topic of section.topics; track topic.key) {
+                    <li>
+                      <a [routerLink]="['/help', module.key, topic.key]">{{ topic.title }}</a>
+                      <span class="fs-help__summary">{{ topic.summary }}</span>
+                    </li>
+                  }
+                </ul>
+              </section>
+            }
+          </fs-card>
+        }
+
+        @case ('topic') {
+          <fs-card>
+            <article class="fs-help__article">
+              <p class="fs-help__lead">{{ activeTopic()!.topic.summary }}</p>
+              @if (body(); as b) {
+                @for (block of b.blocks; track $index) {
+                  @switch (block.kind) {
+                    @case ('heading') { <h2 class="fs-help__h2">{{ block.text }}</h2> }
+                    @case ('paragraph') { <p class="fs-help__p">{{ block.text }}</p> }
+                    @case ('list') {
+                      <ul class="fs-help__list">
+                        @for (item of block.items; track $index) { <li>{{ item }}</li> }
+                      </ul>
+                    }
+                    @case ('note') { <fs-banner [intent]="block.intent">{{ block.text }}</fs-banner> }
+                  }
+                }
+              }
+            </article>
+          </fs-card>
+        }
+
+        @case ('not-found') {
+          <fs-card>
+            <fs-empty-state
+              icon="file-unknown"
+              title="Help topic not found"
+              subtitle="The page you followed doesn't match any help topic.">
+              <a routerLink="/help">Back to Help & Support</a>
+            </fs-empty-state>
+          </fs-card>
+        }
+      }
+    </div>
+  </div>
+</section>

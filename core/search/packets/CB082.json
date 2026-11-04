@@ -1,0 +1,191 @@
+{
+ "id": "CB082",
+ "filename": "CB082_2021_experimental-babesia-rossi-infection-induces-hemolytic.md",
+ "key": "PMID:34399690",
+ "record": {
+  "pmid": "34399690",
+  "pmcid": "PMC8369750",
+  "doi": "10.1186/s12864-021-07889-4",
+  "title": "Experimental Babesia rossi infection induces hemolytic, metabolic, and viral response pathways in the canine host.",
+  "authors": [
+   "Smith RL",
+   "Goddard A",
+   "Boddapati A",
+   "Brooks S",
+   "Schoeman JP",
+   "Lack J",
+   "Leisewitz A",
+   "Ackerman H"
+  ],
+  "journal": "BMC genomics",
+  "journal_abbrev": "BMC Genomics",
+  "volume": "22",
+  "issue": "1",
+  "pages": "619",
+  "language": [
+   "eng"
+  ],
+  "issue_date": "2021-08-16",
+  "issue_date_precision": "day",
+  "epub_date": "2021-08-16",
+  "pubmed_entry_date": "2021-08-18",
+  "first_pub_date": "2021-08-16",
+  "publication_types": [
+   "Journal Article"
+  ],
+  "mesh": [
+   "Africa South of the Sahara",
+   "Animals",
+   "Babesia",
+   "Babesiosis",
+   "Dog Diseases",
+   "Dogs",
+   "Hemolysis"
+  ],
+  "keywords": [
+   "Babesia rossi",
+   "Canine host",
+   "Hemoprotozoan parasite",
+   "Host response to infection",
+   "Time course RNA-seq"
+  ],
+  "abstract": "BACKGROUND: Babesia rossi is a leading cause of morbidity and mortality among the canine population of sub-Saharan Africa, but pathogenesis remains poorly understood. Previous studies of B. rossi infection were derived from clinical cases, in which neither the onset of infection nor the infectious inoculum was known. Here, we performed controlled B. rossi inoculations in canines and evaluated disease progression through clinical tests and whole blood transcriptomic profiling.\nRESULTS: Two subjects were administered a low inoculum (104 parasites) while three received a high (108 parasites). Subjects were monitored for 8 consecutive days; anti-parasite treatment with diminazene aceturate was administered on day 4. Blood was drawn prior to inoculation as well as every experimental day for assessment of clinical parameters and transcriptomic profiles. The model recapitulated natural disease manifestations including anemia, acidosis, inflammation and behavioral changes. Rate of disease onset and clinical severity were proportional to the inoculum. To analyze the temporal dynamics of the transcriptomic host response, we sequenced mRNA extracted from whole blood drawn on days 0, 1, 3, 4, 6, and 8. Differential gene expression, hierarchical clustering, and pathway enrichment analyses identified genes and pathways involved in response to hemolysis, metabolic changes, and several arms of the immune response including innate immunity, adaptive immunity, and response to viral infection.\nCONCLUSIONS: This work comprehensively characterizes the clinical and transcriptomic progression of B. rossi infection in canines, thus establishing a large mammalian model of severe hemoprotozoal disease to facilitate the study of host-parasite biology and in which to test novel anti-disease therapeutics. The knowledge gained from the study of B. rossi in canines will not only improve our understanding of this emerging infectious disease threat in domestic dogs, but also provide insight into the pathobiology of human diseases caused by Babesia and Plasmodium species.",
+  "corrections": [],
+  "epmc_first_pub_date": "2021-08-16",
+  "is_oa": "Y",
+  "has_suppl": "Y",
+  "found_by": [
+   "EP1_broad",
+   "EP2_species",
+   "PM1_broad",
+   "PM2_species",
+   "PM3_mechanism"
+  ],
+  "source_id": "PPR:PPR292493",
+  "src": "PPR",
+  "in_epmc": "N",
+  "has_data": "N",
+  "in_window": true
+ },
+ "screening": {
+  "key": "PMID:34399690",
+  "decision": "include",
+  "include_type": "primary",
+  "exclude_reason": null,
+  "primary_category": "OXO",
+  "secondary_tags": [
+   "ERY",
+   "INF",
+   "MET"
+  ],
+  "species": "B. rossi (experimental inoculation)",
+  "rationale": "Experimental B. rossi infection with whole-blood transcriptomics showing haemolysis, metabolic and immune response pathways; host-response omics.",
+  "stage": "screen",
+  "batch": "r1_13.md",
+  "screening_round": "r1"
+ },
+ "fulltext_check": {
+  "key": "PMID:34399690",
+  "pmcid": "PMC8369750",
+  "checked": "2026-10-23",
+  "fulltext_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8369750/fullTextXML",
+  "fulltext_status": 200,
+  "data_availability": [
+   "Availability of data and materialsThe datasets supporting the conclusions of this article are available on the NCBI Gene Expression Omnibus (GEO) database as Series GSEI67201 [https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE167201]. The code generated for this analysis is available at the GitHub repository Babesia_RNAseq [https://github.com/rlsmith1/Babesia_RNAseq].",
+   "Data Availability StatementThe datasets supporting the conclusions of this article are available on the NCBI Gene Expression Omnibus (GEO) database as Series GSEI67201 [https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE167201]. The code generated for this analysis is available at the GitHub repository Babesia_RNAseq [https://github.com/rlsmith1/Babesia_RNAseq]."
+  ],
+  "supplementary": [
+   {
+    "label": "",
+    "caption": "",
+    "file": "12864_2021_7889_MOESM1_ESM.pdf"
+   },
+   {
+    "label": "",
+    "caption": "",
+    "file": "12864_2021_7889_MOESM2_ESM.pdf"
+   },
+   {
+    "label": "",
+    "caption": "",
+    "file": "12864_2021_7889_MOESM3_ESM.pdf"
+   },
+   {
+    "label": "",
+    "caption": "",
+    "file": "12864_2021_7889_MOESM4_ESM.pdf"
+   },
+   {
+    "label": "",
+    "caption": "",
+    "file": "12864_2021_7889_MOESM1_ESM.pdf"
+   },
+   {
+    "label": "",
+    "caption": "",
+    "file": "12864_2021_7889_MOESM2_ESM.pdf"
+   },
+   {
+    "label": "",
+    "caption": "",
+    "file": "12864_2021_7889_MOESM3_ESM.pdf"
+   },
+   {
+    "label": "",
+    "caption": "",
+    "file": "12864_2021_7889_MOESM4_ESM.pdf"
+   }
+  ],
+  "repository_links": [
+   "GSE167201",
+   "github.com",
+   "https://github.com/CCBR/Pipeliner",
+   "https://github.com/rlsmith1/Babesia_RNAseq",
+   "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE167201",
+   "ncbi.nlm.nih.gov/geo"
+  ],
+  "section_titles": [
+   "Background",
+   "Results",
+   "Conclusions",
+   "Supplementary Information",
+   "Background",
+   "Results",
+   "Clinical time course correlated with infectious inoculum",
+   "Hematological parameters indicated severe hemolytic anemia",
+   "Biochemical parameters revealed impact on multiple organ systems",
+   "Cytokine concentrations increased during infection and recovery",
+   "Quality control assessment reported high quality sequencing data",
+   "Global expression profiles correlated with parasite density",
+   "Differentially expressed genes (DEGs) were significantly upregulated throughout infection and recovery",
+   "Gene ontology (GO)- and Reactome-annotated functional enrichment of DEGs",
+   "Cluster analysis revealed temporal expression trajectories of DEGs",
+   "Discussion",
+   "Hemolysis",
+   "Metabolism",
+   "Immune response",
+   "Innate immunity",
+   "Adaptive immunity",
+   "Viral response",
+   "Limitations",
+   "Conclusions",
+   "Methods",
+   "Animals",
+   "Creation of a Babesia rossi cryopreservate",
+   "Experimental infection",
+   "Biospecimen collection",
+   "Clinical and laboratory data collection",
+   "RNA isolation",
+   "RNAseq library preparation and sequencing",
+   "Data analysis",
+   "Supplementary Information",
+   "Acknowledgements",
+   "Abbreviations",
+   "Authors’ contributions",
+   "Funding",
+   "Availability of data and materials",
+   "Declarations"
+  ],
+  "has_body": true
+ }
+}

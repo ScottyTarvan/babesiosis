@@ -1,0 +1,53 @@
+{
+ "id": "CB524",
+ "filename": "CB524_2016_babesiosis-review.md",
+ "key": "https://openalex.org/W3014446769",
+ "record": {
+  "pmid": null,
+  "pmcid": null,
+  "doi": null,
+  "title": "Canine babesiosis: review.",
+  "journal": "PubVet",
+  "authors": [
+   "V. A. C. M. Dias",
+   "F. L. A. Ferreira"
+  ],
+  "first_pub_date": "2016-01-01",
+  "type": "article",
+  "language": [
+   "en"
+  ],
+  "abstract": null,
+  "abstract_source": "OpenAlex abstract_inverted_index (reconstructed)",
+  "source_id": "https://openalex.org/W3014446769",
+  "src": "OPENALEX",
+  "found_by": [
+   "OA:title_and_abstract"
+  ],
+  "in_window": true,
+  "key": "https://openalex.org/W3014446769",
+  "source_files": [
+   "candidates_r3.jsonl"
+  ]
+ },
+ "screening": {
+  "key": "https://openalex.org/W3014446769",
+  "decision": "uncertain",
+  "include_type": null,
+  "exclude_reason": null,
+  "primary_category": "SEV",
+  "secondary_tags": [],
+  "species": "Canine Babesia spp. (review)",
+  "rationale": "Based on title and OpenAlex metadata only (PubVet 10(12):886-888; the CAB landing page is gone). This 3-page general review may or may not cover pathophysiology or clinical syndromes.",
+  "stage": "adjudicated",
+  "batch": "r4_27.md",
+  "first_decision": "uncertain",
+  "screening_round": "r4"
+ },
+ "fulltext_check": {
+  "key": "https://openalex.org/W3014446769",
+  "pmcid": null,
+  "checked": "2026-10-28",
+  "fulltext_status": "no_pmcid"
+ }
+}

@@ -1,0 +1,94 @@
+:host {
+  display: block;
+}
+
+// ---------------------------------------------------------------------------
+// A left-hand menu row.
+//
+// Styled to the 2026-08-21 style guideline in .claude/style/. Three things in
+// here are the guideline rather than taste, and should not be "improved" back:
+//
+//  * The row is exactly 28px tall with 6px of inset and a 6px icon gap. That
+//    28px control unit is the guideline's strongest visual signature — the menu
+//    is denser than it was (it used to be a padded 15px row) on purpose.
+//  * Hierarchy is carried by weight and fill, not size. Every row is 14px/500,
+//    including the selected one.
+//  * Tracking is -0.003em, uniform across every size in the guideline.
+// ---------------------------------------------------------------------------
+.fs-shell-sidebar-item {
+  display: flex;
+  align-items: center;
+  gap: var(--fs-nav-item-gap);
+  height: var(--fs-nav-item-height);
+  padding: 0 var(--fs-nav-item-inset);
+  border-radius: var(--fs-radius-md);
+  font-size: var(--fs-nav-font-size);
+  font-weight: var(--fs-nav-font-weight);
+  line-height: var(--fs-nav-line-height);
+  letter-spacing: var(--fs-guide-tracking);
+  color: rgb(var(--fs-color-ink));
+  text-decoration: none;
+  // No background transition, deliberately. A nav row's fill is theme-dependent
+  // in two directions — it gains one when it becomes active and loses one when
+  // the router moves on — and a transition on a var()-backed colour does not
+  // survive the custom property changing mid-flight: flip the theme while an
+  // outgoing fill is still fading and the row stays pinned at the pre-flip
+  // colour indefinitely. Reproduced in the browser: the token read `68 68 88`
+  // while the computed background sat at `rgb(229 232 235)`.
+  //
+  // `transition: none` on the active state alone is NOT enough — the pinning
+  // happens on rows that have just STOPPED being active, which no longer match
+  // that selector. Removing the fade outright is the only treatment that covers
+  // both edges, and the guideline asks for a background change on hover, not a
+  // background animation.
+  background-color: transparent;
+  transition: none;
+
+  &:hover:not(.fs-shell-sidebar-item--active) {
+    background-color: rgb(var(--fs-color-fill-hover));
+  }
+
+  // Flush against the row rather than the previous 2px-offset ring, so the
+  // outline follows the 6px radius the way the guideline's focus treatment
+  // does. Width stays 2px — the guideline specifies 1px, which is below what
+  // WCAG 2.2 asks of a focus indicator, and the menu is a keyboard-reachable
+  // primary surface.
+  &:focus-visible {
+    outline: 2px solid rgb(var(--fs-color-primary));
+    outline-offset: 0;
+  }
+
+  // Icon inherits currentColor, so it tracks the label in every state.
+  ::ng-deep fs-symbol {
+    flex-shrink: 0;
+  }
+}
+
+// Selection is a background fill and nothing else — no colour change, no weight
+// change, no accent bar. This is the guideline's deliberate restraint, and it
+// also fixes the contrast problem the previous treatment had: colouring the
+// active label with the brand orange put a 3.4:1 label in the column, below AA.
+// `aria-current="page"` on the anchor is what carries the state non-visually.
+.fs-shell-sidebar-item--active {
+  background-color: rgb(var(--fs-color-fill-selected));
+  color: rgb(var(--fs-color-ink));
+  // `transition: none`, for the same reason `color` is left out of the base
+  // rule's transition list. A running background-color transition does not
+  // restart when the *custom property* behind its endpoint changes, so flipping
+  // the theme left the selected row pinned at the light-theme fill — verified in
+  // the browser: the element's --fs-color-fill-selected read 68 68 88 while its
+  // computed background stayed rgb(229 232 235). Idle rows are unaffected
+  // (transparent is transparent in both themes), so hover keeps its 120ms fade.
+  transition: none;
+}
+
+.fs-shell-sidebar-item--collapsed {
+  justify-content: center;
+  padding: 0;
+}
+
+.fs-shell-sidebar-item__label {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

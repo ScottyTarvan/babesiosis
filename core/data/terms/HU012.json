@@ -1,0 +1,849 @@
+{
+ "id": "HU012",
+ "document": "data/markdown/HU012.md",
+ "source_format": "jats_xml",
+ "translated": false,
+ "words": 5706,
+ "run_utc": "2026-10-30T05:37:12+00:00",
+ "threshold": 0.85,
+ "kept_types": [
+  "T019",
+  "T020",
+  "T037",
+  "T046",
+  "T047",
+  "T048",
+  "T049",
+  "T050",
+  "T184",
+  "T190",
+  "T191"
+ ],
+ "term_count": 45,
+ "terms": [
+  {
+   "term": "C0022660",
+   "concept": "Kidney Failure, Acute",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 132,
+   "mentions_negated": 26,
+   "mentions_affirmed": 106,
+   "sections": {
+    "results": 66,
+    "discussion": 22,
+    "abstract": 14,
+    "methods": 14,
+    "introduction": 10,
+    "conclusion": 3,
+    "abbreviations": 2,
+    "title": 1
+   },
+   "forms": {
+    "aki": 125,
+    "acute kidney injury": 7
+   },
+   "best_score": 0.976
+  },
+  {
+   "term": "C0036690",
+   "concept": "Septicemia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 58,
+   "mentions_negated": 3,
+   "mentions_affirmed": 55,
+   "sections": {
+    "discussion": 17,
+    "results": 13,
+    "abstract": 11,
+    "introduction": 8,
+    "methods": 5,
+    "conclusion": 3,
+    "title": 1
+   },
+   "forms": {
+    "sepsis": 58
+   },
+   "best_score": 0.971
+  },
+  {
+   "term": "C3263722",
+   "concept": "Traumatic AND/OR non-traumatic injury",
+   "semantic_types": [
+    "Injury or Poisoning"
+   ],
+   "mentions": 29,
+   "mentions_negated": 1,
+   "mentions_affirmed": 28,
+   "sections": {
+    "abstract": 7,
+    "discussion": 7,
+    "results": 6,
+    "introduction": 5,
+    "methods": 2,
+    "conclusion": 2
+   },
+   "forms": {
+    "injury": 29
+   },
+   "best_score": 0.971
+  },
+  {
+   "term": "C0856169",
+   "concept": "Endothelial dysfunction",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 28,
+   "mentions_negated": 1,
+   "mentions_affirmed": 27,
+   "sections": {
+    "abstract": 7,
+    "results": 6,
+    "discussion": 6,
+    "introduction": 5,
+    "methods": 2,
+    "conclusion": 2
+   },
+   "forms": {
+    "endothelial dysfunction": 28
+   },
+   "best_score": 0.956
+  },
+  {
+   "term": "C0035222",
+   "concept": "Respiratory Distress Syndrome, Adult",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 15,
+   "mentions_negated": 6,
+   "mentions_affirmed": 9,
+   "sections": {
+    "results": 8,
+    "methods": 4,
+    "abbreviations": 2,
+    "discussion": 1
+   },
+   "forms": {
+    "ards": 12,
+    "acute respiratory distress syndrome": 3
+   },
+   "best_score": 0.991
+  },
+  {
+   "term": "C0010340",
+   "concept": "Critical Illness",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 10,
+   "mentions_negated": 1,
+   "mentions_affirmed": 9,
+   "sections": {
+    "introduction": 3,
+    "discussion": 3,
+    "results": 2,
+    "abstract": 1,
+    "methods": 1
+   },
+   "forms": {
+    "critically ill": 10
+   },
+   "best_score": 0.982
+  },
+  {
+   "term": "C1145670",
+   "concept": "Respiratory Failure",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 10,
+   "mentions_negated": 2,
+   "mentions_affirmed": 8,
+   "sections": {
+    "discussion": 7,
+    "title": 1,
+    "methods": 1,
+    "results": 1
+   },
+   "forms": {
+    "respiratory failure": 10
+   },
+   "best_score": 0.975
+  },
+  {
+   "term": "C1561643",
+   "concept": "Chronic Kidney Diseases",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 10,
+   "mentions_negated": 2,
+   "mentions_affirmed": 8,
+   "sections": {
+    "results": 6,
+    "methods": 2,
+    "abbreviations": 2
+   },
+   "forms": {
+    "chronic kidney disease": 6,
+    "ckd": 3,
+    "chronic kidney diseases": 1
+   },
+   "best_score": 0.975
+  },
+  {
+   "term": "C0085605",
+   "concept": "Liver Failure",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 8,
+   "mentions_negated": 2,
+   "mentions_affirmed": 6,
+   "sections": {
+    "results": 6,
+    "methods": 1,
+    "conclusion": 1
+   },
+   "forms": {
+    "hepatic failure": 7,
+    "a hepatic failure": 1
+   },
+   "best_score": 0.967
+  },
+  {
+   "term": "C0349410",
+   "concept": "Single organ dysfunction",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 6,
+   "mentions_negated": 0,
+   "mentions_affirmed": 6,
+   "sections": {
+    "results": 3,
+    "discussion": 2,
+    "methods": 1
+   },
+   "forms": {
+    "organ failures": 6
+   },
+   "best_score": 0.972
+  },
+  {
+   "term": "C0009450",
+   "concept": "Communicable Diseases",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 4,
+   "mentions_negated": 1,
+   "mentions_affirmed": 3,
+   "sections": {
+    "discussion": 2,
+    "introduction": 1,
+    "results": 1
+   },
+   "forms": {
+    "infection": 4
+   },
+   "best_score": 0.962
+  },
+  {
+   "term": "C0036974",
+   "concept": "Shock",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 4,
+   "mentions_negated": 0,
+   "mentions_affirmed": 4,
+   "sections": {
+    "abstract": 1,
+    "methods": 1,
+    "results": 1,
+    "conclusion": 1
+   },
+   "forms": {
+    "circulatory failure": 4
+   },
+   "best_score": 0.974
+  },
+  {
+   "term": "C0015376",
+   "concept": "Extravasation",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "discussion": 2,
+    "introduction": 1
+   },
+   "forms": {
+    "leakage": 3
+   },
+   "best_score": 0.956
+  },
+  {
+   "term": "C0022658",
+   "concept": "Kidney Diseases",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "abstract": 1,
+    "methods": 1,
+    "abbreviations": 1
+   },
+   "forms": {
+    "kidney disease": 3
+   },
+   "best_score": 0.973
+  },
+  {
+   "term": "C0242488",
+   "concept": "Acute Lung Injury",
+   "semantic_types": [
+    "Injury or Poisoning"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "abstract": 1,
+    "methods": 1,
+    "abbreviations": 1
+   },
+   "forms": {
+    "acute lung injury": 3
+   },
+   "best_score": 0.976
+  },
+  {
+   "term": "C0264490",
+   "concept": "Acute respiratory failure",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "abstract": 3
+   },
+   "forms": {
+    "arf": 2,
+    "acute respiratory failure": 1
+   },
+   "best_score": 0.977
+  },
+  {
+   "term": "C0699748",
+   "concept": "Pathogenesis",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 3,
+   "mentions_negated": 1,
+   "mentions_affirmed": 2,
+   "sections": {
+    "abstract": 1,
+    "introduction": 1,
+    "discussion": 1
+   },
+   "forms": {
+    "pathogenesis": 3
+   },
+   "best_score": 0.983
+  },
+  {
+   "term": "C0021368",
+   "concept": "Inflammation",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "discussion": 2
+   },
+   "forms": {
+    "inflammation": 2
+   },
+   "best_score": 0.958
+  },
+  {
+   "term": "C0026766",
+   "concept": "Multiple Organ Failure",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "discussion": 2
+   },
+   "forms": {
+    "multiple organ failures": 1,
+    "multiple organ dysfunction": 1
+   },
+   "best_score": 0.978
+  },
+  {
+   "term": "C0043251",
+   "concept": "Wounds and Injuries",
+   "semantic_types": [
+    "Injury or Poisoning"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "methods": 1,
+    "discussion": 1
+   },
+   "forms": {
+    "trauma": 2
+   },
+   "best_score": 0.966
+  },
+  {
+   "term": "C0221423",
+   "concept": "Illness (finding)",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "discussion": 2
+   },
+   "forms": {
+    "illness": 2
+   },
+   "best_score": 0.967
+  },
+  {
+   "term": "C0231218",
+   "concept": "Malaise",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "discussion": 2
+   },
+   "forms": {
+    "ill": 2
+   },
+   "best_score": 0.989
+  },
+  {
+   "term": "C0002940",
+   "concept": "Aneurysm",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "vascular dilatation": 1
+   },
+   "best_score": 0.975
+  },
+  {
+   "term": "C0009566",
+   "concept": "Complication",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "complications": 1
+   },
+   "best_score": 0.977
+  },
+  {
+   "term": "C0013604",
+   "concept": "Edema",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "interstitial edema": 1
+   },
+   "best_score": 0.965
+  },
+  {
+   "term": "C0018790",
+   "concept": "Cardiac Arrest",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "methods": 1
+   },
+   "forms": {
+    "cardiac arrest": 1
+   },
+   "best_score": 0.986
+  },
+  {
+   "term": "C0022661",
+   "concept": "Kidney Failure, Chronic",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "methods": 1
+   },
+   "forms": {
+    "end-stage renal disease": 1
+   },
+   "best_score": 0.955
+  },
+  {
+   "term": "C0024141",
+   "concept": "Lupus Erythematosus, Systemic",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "systemic lupus erythematosus": 1
+   },
+   "best_score": 0.964
+  },
+  {
+   "term": "C0024143",
+   "concept": "Lupus Nephritis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "lupus nephritis": 1
+   },
+   "best_score": 0.964
+  },
+  {
+   "term": "C0029944",
+   "concept": "Drug Overdose",
+   "semantic_types": [
+    "Injury or Poisoning"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "methods": 1
+   },
+   "forms": {
+    "overdose": 1
+   },
+   "best_score": 0.976
+  },
+  {
+   "term": "C0032285",
+   "concept": "Pneumonia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "methods": 1
+   },
+   "forms": {
+    "pneumonia": 1
+   },
+   "best_score": 0.983
+  },
+  {
+   "term": "C0034063",
+   "concept": "Pulmonary Edema",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "pulmonary edema": 1
+   },
+   "best_score": 0.984
+  },
+  {
+   "term": "C0036983",
+   "concept": "Septic Shock",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "septic shock": 1
+   },
+   "best_score": 0.981
+  },
+  {
+   "term": "C0039082",
+   "concept": "Syndrome",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "syndrome": 1
+   },
+   "best_score": 0.994
+  },
+  {
+   "term": "C0040053",
+   "concept": "Thrombosis",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "thrombosis": 1
+   },
+   "best_score": 0.98
+  },
+  {
+   "term": "C0238190",
+   "concept": "Myositis, Inclusion Body",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "methods": 1
+   },
+   "forms": {
+    "ibm": 1
+   },
+   "best_score": 0.983
+  },
+  {
+   "term": "C0242656",
+   "concept": "Disease Progression",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "progression": 1
+   },
+   "best_score": 0.971
+  },
+  {
+   "term": "C0442856",
+   "concept": "Hypoperfusion",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "hypoperfusion": 1
+   },
+   "best_score": 0.959
+  },
+  {
+   "term": "C0546817",
+   "concept": "Fluid overload",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "fluid overload": 1
+   },
+   "best_score": 0.981
+  },
+  {
+   "term": "C0740451",
+   "concept": "Granulomatous disorder",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "granulomatous disease": 1
+   },
+   "best_score": 0.976
+  },
+  {
+   "term": "C0746102",
+   "concept": "Chronic lung disease",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "methods": 1
+   },
+   "forms": {
+    "chronic lung disease": 1
+   },
+   "best_score": 0.983
+  },
+  {
+   "term": "C0851162",
+   "concept": "Infections of musculoskeletal system",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "infections": 1
+   },
+   "best_score": 0.971
+  },
+  {
+   "term": "C1510411",
+   "concept": "metaplastic cell transformation",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results": 1
+   },
+   "forms": {
+    "transformed": 1
+   },
+   "best_score": 0.962
+  },
+  {
+   "term": "C1514893",
+   "concept": "physiologic resolution",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results": 1
+   },
+   "forms": {
+    "resolution": 1
+   },
+   "best_score": 0.971
+  },
+  {
+   "term": "C2717865",
+   "concept": "Anti-Neutrophil Cytoplasmic Antibody-Associated Vasculitis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "anca-associated vasculitis": 1
+   },
+   "best_score": 0.972
+  }
+ ]
+}

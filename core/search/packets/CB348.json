@@ -1,0 +1,58 @@
+{
+ "id": "CB348",
+ "filename": "CB348_2008_asymptomatic-babesiosis-cause-splenomegaly-splenectomy.md",
+ "key": "https://openalex.org/W326060747",
+ "record": {
+  "pmid": null,
+  "pmcid": null,
+  "doi": null,
+  "title": "Asymptomatic babesiosis as a cause of splenomegaly and splenectomy in a dog.",
+  "journal": "Medycyna Weterynaryjna",
+  "authors": [
+   "Anna Bajer",
+   "Anna Rodo",
+   "Renata Welc-Falęciak",
+   "E. Siński"
+  ],
+  "first_pub_date": "2008-01-01",
+  "type": "article",
+  "language": [
+   "en"
+  ],
+  "abstract": null,
+  "abstract_source": "OpenAlex abstract_inverted_index (reconstructed)",
+  "source_id": "https://openalex.org/W326060747",
+  "src": "OPENALEX",
+  "found_by": [
+   "OA:title_and_abstract"
+  ],
+  "in_window": true,
+  "key": "https://openalex.org/W326060747",
+  "source_files": [
+   "candidates_r3.jsonl"
+  ]
+ },
+ "screening": {
+  "key": "https://openalex.org/W326060747",
+  "decision": "include",
+  "include_type": "case_report",
+  "exclude_reason": null,
+  "primary_category": "SEV",
+  "secondary_tags": [
+   "ERY",
+   "INF"
+  ],
+  "species": "B. canis (suspected)",
+  "rationale": "Based on the journal summary page (Bajer et al., Med Weter 64(4):441-443, 2008): splenomegaly from presumed chronic asymptomatic B. canis infection led to splenic rupture and splenectomy, and clinical babesiosis followed the surgery. This is a distinct splenic complication, consistent with earlier splenopathy case inclusions.",
+  "stage": "adjudicated",
+  "batch": "r4_04.md",
+  "first_decision": "uncertain",
+  "screening_round": "r4"
+ },
+ "fulltext_check": {
+  "key": "https://openalex.org/W326060747",
+  "pmcid": null,
+  "checked": "2026-10-28",
+  "fulltext_status": "no_pmcid"
+ }
+}

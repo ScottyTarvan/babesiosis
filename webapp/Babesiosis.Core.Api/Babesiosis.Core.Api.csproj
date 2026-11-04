@@ -1,0 +1,38 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <RootNamespace>Babesiosis</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Collection" Version="13.0.0" />
+    <PackageReference Include="AutoMapper" Version="16.2.0" />
+    <PackageReference Include="DevExtreme.AspNet.Data" Version="5.1.0" />
+    <PackageReference Include="Microsoft.Identity.Client" Version="4.90.0" />
+    <PackageReference Include="Logging.Memory" Version="3.1.0" />
+    <PackageReference Include="Microsoft.IdentityModel.Protocols" Version="8.23.0" />
+    <PackageReference Include="Microsoft.IdentityModel.Protocols.OpenIdConnect" Version="8.23.0" />
+    <PackageReference Include="System.CodeDom" Version="10.0.12" />
+    <PackageReference Include="Microsoft.Azure.WebJobs" Version="3.0.47" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Babesiosis.Core\Babesiosis.Core.csproj" />
+    <!-- The MCP kernel: token check, caller, tool result, confirmation tokens, module registry. -->
+    <!-- Dataset Link reflects and analyses through the V2 data factory. -->
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349b6-6b84-4df5-91f0-309beebad82d}" />
+  </ItemGroup>
+  <ItemGroup>
+    <!-- Same arrangement Babesiosis.Core already uses for its own test project: the link
+         concurrency and retry helpers are internal, and their classification rules are worth
+         testing directly rather than only through the endpoints that happen to call them. -->
+    <InternalsVisibleTo Include="Babesiosis.Core.Api.Test" />
+    <!-- The system-dataset teardown finalise step (ExecuteStepActivity, in
+         Babesiosis.Core.Functions, which already project-references this assembly) reuses
+         DeploymentRunRelease so the run-release logic behind dismissing a tombstone has exactly
+         one implementation instead of a second copy grown in the Functions host. -->
+    <InternalsVisibleTo Include="Babesiosis.Core.Functions" />
+    <!-- The dedicated MCP function app hosts the data module's tools (platform/mcp-server.md §3.1). -->
+    <InternalsVisibleTo Include="Babesiosis.Mcp.Functions" />
+  </ItemGroup>
+</Project>

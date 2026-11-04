@@ -1,0 +1,154 @@
+{
+ "id": "CB463",
+ "document": "data/markdown/CB463.md",
+ "source_format": "pdf",
+ "translated": false,
+ "words": 796,
+ "run_utc": "2026-10-30T05:36:33+00:00",
+ "threshold": 0.85,
+ "kept_types": [
+  "T019",
+  "T020",
+  "T037",
+  "T046",
+  "T047",
+  "T048",
+  "T049",
+  "T050",
+  "T184",
+  "T190",
+  "T191"
+ ],
+ "term_count": 7,
+ "terms": [
+  {
+   "term": "C0004576",
+   "concept": "Babesiosis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 8,
+   "mentions_negated": 0,
+   "mentions_affirmed": 8,
+   "sections": {
+    "abstract": 3,
+    "results_discussion": 3,
+    "title": 1,
+    "methods": 1
+   },
+   "forms": {
+    "babesiosis": 8
+   },
+   "best_score": 0.972
+  },
+  {
+   "term": "C0022672",
+   "concept": "Acute Kidney Tubular Necrosis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 7,
+   "mentions_negated": 0,
+   "mentions_affirmed": 7,
+   "sections": {
+    "abstract": 3,
+    "methods": 3,
+    "results_discussion": 1
+   },
+   "forms": {
+    "atn": 5,
+    "acute tubular necrosis": 2
+   },
+   "best_score": 0.984
+  },
+  {
+   "term": "C0242528",
+   "concept": "Azotemia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 6,
+   "mentions_negated": 0,
+   "mentions_affirmed": 6,
+   "sections": {
+    "abstract": 2,
+    "results_discussion": 2,
+    "title": 1,
+    "methods": 1
+   },
+   "forms": {
+    "azotaemia": 6
+   },
+   "best_score": 0.977
+  },
+  {
+   "term": "C0009450",
+   "concept": "Communicable Diseases",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "methods": 1,
+    "results_discussion": 1
+   },
+   "forms": {
+    "infection": 2
+   },
+   "best_score": 0.962
+  },
+  {
+   "term": "C0002871",
+   "concept": "Anemia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "methods": 1
+   },
+   "forms": {
+    "anaemia": 1
+   },
+   "best_score": 0.977
+  },
+  {
+   "term": "C0348801",
+   "concept": "Group B streptococcal pneumonia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "methods": 1
+   },
+   "forms": {
+    "group b": 1
+   },
+   "best_score": 0.997
+  },
+  {
+   "term": "C0595916",
+   "concept": "Toxic nephropathy",
+   "semantic_types": [
+    "Injury or Poisoning"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "methods": 1
+   },
+   "forms": {
+    "nephrotoxicity": 1
+   },
+   "best_score": 0.987
+  }
+ ]
+}

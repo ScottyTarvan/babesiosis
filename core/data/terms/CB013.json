@@ -1,0 +1,804 @@
+{
+ "id": "CB013",
+ "document": "data/markdown/CB013.md",
+ "source_format": "jats_xml",
+ "translated": false,
+ "words": 6627,
+ "run_utc": "2026-10-30T05:33:03+00:00",
+ "threshold": 0.85,
+ "kept_types": [
+  "T019",
+  "T020",
+  "T037",
+  "T046",
+  "T047",
+  "T048",
+  "T049",
+  "T050",
+  "T184",
+  "T190",
+  "T191"
+ ],
+ "term_count": 43,
+ "terms": [
+  {
+   "term": "C0002871",
+   "concept": "Anemia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 33,
+   "mentions_negated": 6,
+   "mentions_affirmed": 27,
+   "sections": {
+    "results": 17,
+    "introduction": 5,
+    "discussion": 5,
+    "abstract": 4,
+    "conclusion": 2
+   },
+   "forms": {
+    "anaemia": 32,
+    "’ anaemia": 1
+   },
+   "best_score": 0.977
+  },
+  {
+   "term": "C0040034",
+   "concept": "Thrombocytopenia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 30,
+   "mentions_negated": 3,
+   "mentions_affirmed": 27,
+   "sections": {
+    "results": 16,
+    "discussion": 4,
+    "abstract": 3,
+    "introduction": 3,
+    "conclusion": 3,
+    "abbreviations": 1
+   },
+   "forms": {
+    "thrombocytopenia": 25,
+    "thrombocytopenic": 5
+   },
+   "best_score": 0.98
+  },
+  {
+   "term": "C0275524",
+   "concept": "Coinfection",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 16,
+   "mentions_negated": 3,
+   "mentions_affirmed": 13,
+   "sections": {
+    "results": 12,
+    "introduction": 2,
+    "discussion": 1,
+    "conclusion": 1
+   },
+   "forms": {
+    "polymicrobial infections": 8,
+    "co-infections": 7,
+    "co-infection": 1
+   },
+   "best_score": 0.972
+  },
+  {
+   "term": "C0009450",
+   "concept": "Communicable Diseases",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 12,
+   "mentions_negated": 4,
+   "mentions_affirmed": 8,
+   "sections": {
+    "discussion": 6,
+    "methods": 2,
+    "abstract": 1,
+    "introduction": 1,
+    "results": 1,
+    "conclusion": 1
+   },
+   "forms": {
+    "infection": 11,
+    "infectious disease": 1
+   },
+   "best_score": 0.977
+  },
+  {
+   "term": "C0034362",
+   "concept": "Q Fever",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 7,
+   "mentions_negated": 0,
+   "mentions_affirmed": 7,
+   "sections": {
+    "introduction": 3,
+    "discussion": 3,
+    "conclusion": 1
+   },
+   "forms": {
+    "coxiellosis": 5,
+    "q fever": 2
+   },
+   "best_score": 0.958
+  },
+  {
+   "term": "C0162700",
+   "concept": "Tick-Borne Diseases",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 7,
+   "mentions_negated": 0,
+   "mentions_affirmed": 7,
+   "sections": {
+    "introduction": 4,
+    "discussion": 3
+   },
+   "forms": {
+    "tick-borne diseases": 5,
+    "tick-borne disease": 2
+   },
+   "best_score": 0.951
+  },
+  {
+   "term": "C0012634",
+   "concept": "Disease",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 6,
+   "mentions_negated": 1,
+   "mentions_affirmed": 5,
+   "sections": {
+    "introduction": 2,
+    "discussion": 2,
+    "abstract": 1,
+    "conclusion": 1
+   },
+   "forms": {
+    "disease": 4,
+    "diseases": 2
+   },
+   "best_score": 0.987
+  },
+  {
+   "term": "C0242781",
+   "concept": "disease transmission",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 6,
+   "mentions_negated": 0,
+   "mentions_affirmed": 6,
+   "sections": {
+    "introduction": 6
+   },
+   "forms": {
+    "transmitted": 5,
+    "disease transmission": 1
+   },
+   "best_score": 0.972
+  },
+  {
+   "term": "C0851162",
+   "concept": "Infections of musculoskeletal system",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 6,
+   "mentions_negated": 2,
+   "mentions_affirmed": 4,
+   "sections": {
+    "introduction": 3,
+    "results": 2,
+    "discussion": 1
+   },
+   "forms": {
+    "infections": 6
+   },
+   "best_score": 0.971
+  },
+  {
+   "term": "C0004576",
+   "concept": "Babesiosis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 4,
+   "mentions_negated": 0,
+   "mentions_affirmed": 4,
+   "sections": {
+    "introduction": 4
+   },
+   "forms": {
+    "babesiosis": 4
+   },
+   "best_score": 0.972
+  },
+  {
+   "term": "C0019080",
+   "concept": "Hemorrhage",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 4,
+   "mentions_negated": 0,
+   "mentions_affirmed": 4,
+   "sections": {
+    "discussion": 3,
+    "introduction": 1
+   },
+   "forms": {
+    "bleeding": 3,
+    "bleed": 1
+   },
+   "best_score": 0.974
+  },
+  {
+   "term": "C0080194",
+   "concept": "Muscle strain",
+   "semantic_types": [
+    "Injury or Poisoning"
+   ],
+   "mentions": 4,
+   "mentions_negated": 2,
+   "mentions_affirmed": 2,
+   "sections": {
+    "discussion": 3,
+    "methods": 1
+   },
+   "forms": {
+    "strains": 3,
+    "strain": 1
+   },
+   "best_score": 0.991
+  },
+  {
+   "term": "C1640363",
+   "concept": "Vector Borne Diseases",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 4,
+   "mentions_negated": 0,
+   "mentions_affirmed": 4,
+   "sections": {
+    "results": 2,
+    "abstract": 1,
+    "introduction": 1
+   },
+   "forms": {
+    "vector-borne diseases": 4
+   },
+   "best_score": 0.957
+  },
+  {
+   "term": "C0004771",
+   "concept": "Bartonella Infections",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 3,
+   "mentions_negated": 1,
+   "mentions_affirmed": 2,
+   "sections": {
+    "discussion": 3
+   },
+   "forms": {
+    "bartonellosis": 3
+   },
+   "best_score": 0.985
+  },
+  {
+   "term": "C0043528",
+   "concept": "Zoonoses",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 3,
+   "mentions_negated": 1,
+   "mentions_affirmed": 2,
+   "sections": {
+    "discussion": 2,
+    "title": 1
+   },
+   "forms": {
+    "zoonotic diseases": 1,
+    "zoonotic infectious diseases": 1,
+    "zoonoses": 1
+   },
+   "best_score": 0.97
+  },
+  {
+   "term": "C0274281",
+   "concept": "Injury due to exposure to external cause",
+   "semantic_types": [
+    "Injury or Poisoning"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "discussion": 2,
+    "results": 1
+   },
+   "forms": {
+    "exposure": 3
+   },
+   "best_score": 0.964
+  },
+  {
+   "term": "C0002878",
+   "concept": "Anemia, Hemolytic",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 1,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1,
+    "discussion": 1
+   },
+   "forms": {
+    "haemolytic anaemia": 2
+   },
+   "best_score": 0.98
+  },
+  {
+   "term": "C0006309",
+   "concept": "Brucellosis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "discussion": 2
+   },
+   "forms": {
+    "brucellosis": 2
+   },
+   "best_score": 0.982
+  },
+  {
+   "term": "C0019693",
+   "concept": "HIV Infections",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 1,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results": 2
+   },
+   "forms": {
+    "seropositivity": 2
+   },
+   "best_score": 0.871
+  },
+  {
+   "term": "C0024131",
+   "concept": "Lupus Vulgaris",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "methods": 2
+   },
+   "forms": {
+    "lupus": 2
+   },
+   "best_score": 0.951
+  },
+  {
+   "term": "C0162429",
+   "concept": "Malnutrition",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "introduction": 1,
+    "results": 1
+   },
+   "forms": {
+    "malnutrition": 1,
+    "poor nutrition": 1
+   },
+   "best_score": 0.949
+  },
+  {
+   "term": "C0231617",
+   "concept": "Catch - Finding of sensory dimension of pain",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "methods": 2
+   },
+   "forms": {
+    "catch": 1,
+    "catching": 1
+   },
+   "best_score": 0.971
+  },
+  {
+   "term": "C0275594",
+   "concept": "Infection due to Brucella suis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 1,
+   "mentions_affirmed": 1,
+   "sections": {
+    "abstract": 2
+   },
+   "forms": {
+    "brucella suis": 2
+   },
+   "best_score": 0.959
+  },
+  {
+   "term": "C0004610",
+   "concept": "Bacteremia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 1,
+   "mentions_affirmed": 0,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "bacteraemia": 1
+   },
+   "best_score": 0.968
+  },
+  {
+   "term": "C0004623",
+   "concept": "Bacterial Infections",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "conclusion": 1
+   },
+   "forms": {
+    "bacterial infection": 1
+   },
+   "best_score": 0.973
+  },
+  {
+   "term": "C0005658",
+   "concept": "bite injury",
+   "semantic_types": [
+    "Injury or Poisoning"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "methods": 1
+   },
+   "forms": {
+    "bite": 1
+   },
+   "best_score": 0.982
+  },
+  {
+   "term": "C0008679",
+   "concept": "Chronic disease",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results": 1
+   },
+   "forms": {
+    "chronic disease": 1
+   },
+   "best_score": 0.989
+  },
+  {
+   "term": "C0009676",
+   "concept": "Confusion",
+   "semantic_types": [
+    "Mental or Behavioral Dysfunction"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "methods": 1
+   },
+   "forms": {
+    "confusion": 1
+   },
+   "best_score": 0.953
+  },
+  {
+   "term": "C0012602",
+   "concept": "Dirofilariasis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "dirofilariasis": 1
+   },
+   "best_score": 0.973
+  },
+  {
+   "term": "C0018939",
+   "concept": "Hematological Disease",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "conclusion": 1
+   },
+   "forms": {
+    "haematologic disorders": 1
+   },
+   "best_score": 0.936
+  },
+  {
+   "term": "C0029191",
+   "concept": "Orchitis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results": 1
+   },
+   "forms": {
+    "orchitis": 1
+   },
+   "best_score": 0.972
+  },
+  {
+   "term": "C0030193",
+   "concept": "Pain",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "painful": 1
+   },
+   "best_score": 0.971
+  },
+  {
+   "term": "C0030499",
+   "concept": "Parasitic Diseases",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 1,
+   "mentions_affirmed": 0,
+   "sections": {
+    "methods": 1
+   },
+   "forms": {
+    "infestation": 1
+   },
+   "best_score": 0.946
+  },
+  {
+   "term": "C0033770",
+   "concept": "Prune Belly Syndrome",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "methods": 1
+   },
+   "forms": {
+    "pbs": 1
+   },
+   "best_score": 0.988
+  },
+  {
+   "term": "C0037088",
+   "concept": "Signs and Symptoms",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "finding": 1
+   },
+   "best_score": 0.994
+  },
+  {
+   "term": "C0040715",
+   "concept": "Chromosomal translocation",
+   "semantic_types": [
+    "Cell or Molecular Dysfunction"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "translocation": 1
+   },
+   "best_score": 0.952
+  },
+  {
+   "term": "C0085399",
+   "concept": "Ehrlichiosis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "ehrlichiosis": 1
+   },
+   "best_score": 0.952
+  },
+  {
+   "term": "C0221423",
+   "concept": "Illness (finding)",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "conclusion": 1
+   },
+   "forms": {
+    "sick": 1
+   },
+   "best_score": 0.995
+  },
+  {
+   "term": "C0276854",
+   "concept": "Infection by Babesia canis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "canine babesiosis": 1
+   },
+   "best_score": 0.969
+  },
+  {
+   "term": "C0342895",
+   "concept": "Fish-Eye Disease",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "methods": 1
+   },
+   "forms": {
+    "fed": 1
+   },
+   "best_score": 0.94
+  },
+  {
+   "term": "C1096117",
+   "concept": "Off-Label Treatment",
+   "semantic_types": [
+    "Injury or Poisoning"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "off-label": 1
+   },
+   "best_score": 0.962
+  },
+  {
+   "term": "C1299880",
+   "concept": "Diskospondylitis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results": 1
+   },
+   "forms": {
+    "discospondylitis": 1
+   },
+   "best_score": 0.981
+  },
+  {
+   "term": "C3263722",
+   "concept": "Traumatic AND/OR non-traumatic injury",
+   "semantic_types": [
+    "Injury or Poisoning"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "injury": 1
+   },
+   "best_score": 0.971
+  }
+ ]
+}

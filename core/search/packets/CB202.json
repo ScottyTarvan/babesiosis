@@ -1,0 +1,52 @@
+{
+ "id": "CB202",
+ "filename": "CB202_2020_serum-hepcidin-clinical-prognostic-marker-discriminate.md",
+ "key": "DOI:10.18805/ijar.b-4222",
+ "record": {
+  "pmid": null,
+  "pmcid": null,
+  "doi": "10.18805/ijar.b-4222",
+  "title": "Serum Hepcidin as a Clinical Prognostic Marker to Discriminate the Outcome of Canine Babesiosis",
+  "journal": "Indian Journal of Animal Research",
+  "authors": [
+   "Kandasamy Rajamanickam",
+   "Venkatasubramanian Leela",
+   "K. Loganathasamy",
+   "Bhaskaran Ravi Latha",
+   "Mani Balagangatharathilagar"
+  ],
+  "first_pub_date": "2020-12-23",
+  "type": "article",
+  "language": [
+   "en"
+  ],
+  "abstract": "Background: We aimed to identify the prognostic value of hepcidin in discriminating against the survival outcome of canine babesiosis. Methods: Semi-nested polymerase chain reaction was performed to confirm the presence of infection. Existence of oxidative stress and inflammatory response, changes in systemic iron status and hepcidin level were assessed in the study population. Based on the outcome Babesia infected dogs were classified into survivors (n=18) and non-survivors (n=14) of infection. 32 healthy dogs formed the control group. Conclusion: In non-survivors of infection, serum hepcidin was positively associated with C-reactive protein (P less than 0.01), serum iron (P less than 0.01), transferrin iron-binding capacity (P less than 0.05), unsaturated iron-binding capacity (P less than 0.01), thiobarbituric acid reactive substance (P less than 0.05) and negatively associated with catalase (P less than 0.01), zinc (P less than 0.01) and low haemoglobin density (P less than 0.01). The prognostic cut-off value of hepcidin in discriminating the survivability of infected dogs was 32.32 ng/mL with 100.00% specificity and 92.86 % sensitivity. The area under the curve of hepcidin in discriminating survivability was about 0.984 and Youden’s index was 0.928. Hence, hepcidin can predict the survival outcome of the disease enabling intensive care for animals with a cut-off value of hepcidin more than 32.32 ng/mL.",
+  "abstract_source": "OpenAlex abstract_inverted_index (reconstructed)",
+  "source_id": "https://openalex.org/W3114355769",
+  "src": "OPENALEX",
+  "found_by": [
+   "OA:title_and_abstract"
+  ],
+  "in_window": true,
+  "key": "DOI:10.18805/ijar.b-4222"
+ },
+ "screening": {
+  "key": "DOI:10.18805/ijar.b-4222",
+  "decision": "include",
+  "include_type": "primary",
+  "exclude_reason": null,
+  "primary_category": "INF",
+  "secondary_tags": [
+   "OXO",
+   "SEV",
+   "ERY",
+   "MET"
+  ],
+  "species": "unspecified (Babesia, semi-nested PCR confirmed)",
+  "rationale": "Survivor vs non-survivor study linking hepcidin, iron status, oxidative stress and CRP to outcome; pathophysiology and prognosis.",
+  "stage": "screen",
+  "batch": "r3_05.md",
+  "screening_round": "r3"
+ },
+ "fulltext_check": null
+}

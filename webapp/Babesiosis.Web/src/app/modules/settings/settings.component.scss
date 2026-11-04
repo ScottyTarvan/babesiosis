@@ -1,0 +1,131 @@
+:host {
+  display: block;
+}
+
+.fs-settings {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.fs-settings__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+@media (min-width: 768px) {
+  .fs-settings__grid {
+    grid-template-columns: minmax(0, 320px) minmax(0, 1fr);
+    align-items: start;
+  }
+}
+
+.fs-settings__stack {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  min-width: 0;
+}
+
+.fs-settings__card-head {
+  margin-bottom: 12px;
+}
+
+.fs-settings__card-title {
+  margin: 0;
+  // Guideline's page/section title step — 500 weight, not 600.
+  font: var(--fs-guide-text-title);
+  letter-spacing: var(--fs-guide-tracking);
+  color: rgb(var(--fs-color-ink-strong));
+}
+
+.fs-settings__card-sub {
+  margin: 4px 0 0;
+  // 12px text: ink, not ink-soft — ink-soft is disallowed at this size.
+  font: var(--fs-guide-text-micro);
+  letter-spacing: var(--fs-guide-tracking);
+  color: rgb(var(--fs-color-ink));
+}
+
+.fs-settings__profile {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 0;
+}
+
+.fs-settings__avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: rgb(var(--fs-color-primary) / 0.12);
+  color: rgb(var(--fs-color-primary-fg));
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.fs-settings__profile-text { min-width: 0; }
+
+.fs-settings__profile-name {
+  // 500, not 600 — hierarchy comes from the ink ramp, not extra weight.
+  font: var(--fs-guide-text-body-strong);
+  letter-spacing: var(--fs-guide-tracking);
+  color: rgb(var(--fs-color-ink-strong));
+}
+
+.fs-settings__profile-email {
+  // 12px text: ink, not ink-soft — ink-soft is disallowed at this size.
+  font: var(--fs-guide-text-micro);
+  letter-spacing: var(--fs-guide-tracking);
+  color: rgb(var(--fs-color-ink));
+  margin-top: 2px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.fs-settings__profile-actions {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 8px;
+  border-top: 1px solid rgb(var(--fs-color-line));
+}
+
+.fs-settings__form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+// Solid-foreground-on-wash pattern (fs-banner §4.9) — the danger fg/bg pair,
+// not an alpha of the solid --danger swatch reserved for white-text fills.
+.fs-settings__error {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  border-radius: var(--fs-radius-md);
+  background-color: rgb(var(--fs-color-danger-bg));
+  color: rgb(var(--fs-color-danger-fg));
+  border: 1px solid rgb(var(--fs-color-danger-fg) / 0.3);
+  font: var(--fs-guide-text-control);
+  letter-spacing: var(--fs-guide-tracking);
+}
+
+.fs-settings__form-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 8px;
+  padding-top: 8px;
+  border-top: 1px solid rgb(var(--fs-color-line));
+}
+
+@media (max-width: 575.98px) {
+  .fs-settings__form-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}

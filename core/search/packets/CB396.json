@@ -1,0 +1,61 @@
+{
+ "id": "CB396",
+ "filename": "CB396_2010_dual-infection-rabies-virus-babesia-canis.md",
+ "key": "DOI:10.17221/2989-vetmed",
+ "record": {
+  "pmid": null,
+  "pmcid": null,
+  "doi": "10.17221/2989-vetmed",
+  "title": "Dual infection of rabies virus and Babesia canis in a dog: a case report",
+  "journal": "Veterinární Medicína",
+  "authors": [
+   "Josipa Habuš",
+   "Zrinka Štritof",
+   "Vladimir Stevanović",
+   "Krešimir Martinković",
+   "Zoran Milas",
+   "Vilim Starešina",
+   "Nenad Turk"
+  ],
+  "first_pub_date": "2010-06-30",
+  "type": "article",
+  "language": [
+   "cs"
+  ],
+  "abstract": "A young adult labrador was presented for evaluation of hind leg weakness, depression, vomiting and severe icterus of skin and mucosa. Physical examination and laboratory findings suggested cerebral babesiosis. Unresponsiveness to treatment and unknown vaccinal status aroused suspicion of rabies which was confirmed post mortem.",
+  "abstract_source": "OpenAlex abstract_inverted_index (reconstructed)",
+  "source_id": "https://openalex.org/W2160275259",
+  "src": "OPENALEX",
+  "found_by": [
+   "OA:title_and_abstract"
+  ],
+  "in_window": true,
+  "key": "DOI:10.17221/2989-vetmed",
+  "source_files": [
+   "candidates_r3.jsonl"
+  ]
+ },
+ "screening": {
+  "key": "DOI:10.17221/2989-vetmed",
+  "decision": "uncertain",
+  "include_type": null,
+  "exclude_reason": null,
+  "primary_category": "NEU",
+  "secondary_tags": [
+   "ERY",
+   "MET"
+  ],
+  "species": "B. canis (suspected, smear; co-infection with rabies virus)",
+  "rationale": "Based on the abstract: a case report of severe icterus and neurological signs first taken as cerebral babesiosis, with rabies confirmed post mortem. The abstract does not show whether the necropsy or histopathology separates Babesia-specific cerebral or hepatic findings from the rabies, so the full text must decide.",
+  "stage": "adjudicated",
+  "batch": "r4_10.md",
+  "first_decision": "uncertain",
+  "screening_round": "r4"
+ },
+ "fulltext_check": {
+  "key": "DOI:10.17221/2989-vetmed",
+  "pmcid": null,
+  "checked": "2026-10-28",
+  "fulltext_status": "no_pmcid"
+ }
+}

@@ -1,0 +1,499 @@
+{
+ "id": "CB130",
+ "document": "data/markdown/CB130.md",
+ "source_format": "jats_xml",
+ "translated": false,
+ "words": 5147,
+ "run_utc": "2026-10-30T05:34:29+00:00",
+ "threshold": 0.85,
+ "kept_types": [
+  "T019",
+  "T020",
+  "T037",
+  "T046",
+  "T047",
+  "T048",
+  "T049",
+  "T050",
+  "T184",
+  "T190",
+  "T191"
+ ],
+ "term_count": 26,
+ "terms": [
+  {
+   "term": "C0178650",
+   "concept": "Gammopathy",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 37,
+   "mentions_negated": 7,
+   "mentions_affirmed": 30,
+   "sections": {
+    "discussion": 15,
+    "results": 11,
+    "introduction": 6,
+    "abstract": 3,
+    "methods": 2
+   },
+   "forms": {
+    "gammopathy": 33,
+    "gammopathies": 4
+   },
+   "best_score": 0.993
+  },
+  {
+   "term": "C0027651",
+   "concept": "Neoplasms",
+   "semantic_types": [
+    "Neoplastic Process"
+   ],
+   "mentions": 17,
+   "mentions_negated": 5,
+   "mentions_affirmed": 12,
+   "sections": {
+    "discussion": 8,
+    "abstract": 3,
+    "results": 3,
+    "introduction": 2,
+    "conclusion": 1
+   },
+   "forms": {
+    "neoplasia": 10,
+    "neoplasm": 7
+   },
+   "best_score": 0.992
+  },
+  {
+   "term": "C1640363",
+   "concept": "Vector Borne Diseases",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 16,
+   "mentions_negated": 3,
+   "mentions_affirmed": 13,
+   "sections": {
+    "introduction": 7,
+    "discussion": 6,
+    "abstract": 2,
+    "results": 1
+   },
+   "forms": {
+    "vbds": 15,
+    "vector‐borne disease": 1
+   },
+   "best_score": 0.937
+  },
+  {
+   "term": "C0259744",
+   "concept": "dysproteinemia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 9,
+   "mentions_negated": 0,
+   "mentions_affirmed": 9,
+   "sections": {
+    "introduction": 4,
+    "abstract": 3,
+    "results": 1,
+    "discussion": 1
+   },
+   "forms": {
+    "dysproteinemias": 5,
+    "dysproteinemia": 4
+   },
+   "best_score": 0.968
+  },
+  {
+   "term": "C0009450",
+   "concept": "Communicable Diseases",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 5,
+   "mentions_negated": 1,
+   "mentions_affirmed": 4,
+   "sections": {
+    "introduction": 2,
+    "discussion": 2,
+    "abstract": 1
+   },
+   "forms": {
+    "infectious disease": 2,
+    "infectious": 2,
+    "infection": 1
+   },
+   "best_score": 0.977
+  },
+  {
+   "term": "C0086438",
+   "concept": "Hypogammaglobulinemia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 5,
+   "mentions_negated": 2,
+   "mentions_affirmed": 3,
+   "sections": {
+    "methods": 3,
+    "results": 2
+   },
+   "forms": {
+    "hypogammaglobulinemia": 5
+   },
+   "best_score": 0.986
+  },
+  {
+   "term": "C0026470",
+   "concept": "Monoclonal Gammopathy of Undetermined Significance",
+   "semantic_types": [
+    "Neoplastic Process"
+   ],
+   "mentions": 4,
+   "mentions_negated": 0,
+   "mentions_affirmed": 4,
+   "sections": {
+    "discussion": 3,
+    "methods": 1
+   },
+   "forms": {
+    "mgus": 3,
+    "monoclonal/biclonal gammopathy": 1
+   },
+   "best_score": 0.977
+  },
+  {
+   "term": "C0023281",
+   "concept": "Leishmaniasis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "introduction": 1,
+    "methods": 1,
+    "discussion": 1
+   },
+   "forms": {
+    "leishmaniosis": 2,
+    "leishmaniasis": 1
+   },
+   "best_score": 0.966
+  },
+  {
+   "term": "C0012634",
+   "concept": "Disease",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "discussion": 2
+   },
+   "forms": {
+    "diseases": 1,
+    "disease": 1
+   },
+   "best_score": 0.987
+  },
+  {
+   "term": "C0030489",
+   "concept": "Paraproteinemias",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "abstract": 1,
+    "introduction": 1
+   },
+   "forms": {
+    "paraproteinemia": 1,
+    "paraproteinemias": 1
+   },
+   "best_score": 0.977
+  },
+  {
+   "term": "C0037088",
+   "concept": "Signs and Symptoms",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "results": 1,
+    "discussion": 1
+   },
+   "forms": {
+    "finding": 2
+   },
+   "best_score": 0.994
+  },
+  {
+   "term": "C0001349",
+   "concept": "Acute-Phase Reaction",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results": 1
+   },
+   "forms": {
+    "acute phase response": 1
+   },
+   "best_score": 0.982
+  },
+  {
+   "term": "C0018889",
+   "concept": "Helminthiasis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "helminth infections": 1
+   },
+   "best_score": 0.967
+  },
+  {
+   "term": "C0019054",
+   "concept": "Hemolysis (disorder)",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 1,
+   "mentions_affirmed": 0,
+   "sections": {
+    "results": 1
+   },
+   "forms": {
+    "hemolysis": 1
+   },
+   "best_score": 0.991
+  },
+  {
+   "term": "C0020517",
+   "concept": "Hypersensitivity",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "sensitivity": 1
+   },
+   "best_score": 0.997
+  },
+  {
+   "term": "C0024198",
+   "concept": "Lyme Disease",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "b. burgdorferi": 1
+   },
+   "best_score": 0.858
+  },
+  {
+   "term": "C0032927",
+   "concept": "Precancerous Conditions",
+   "semantic_types": [
+    "Neoplastic Process"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "pre‐malignant state": 1
+   },
+   "best_score": 0.907
+  },
+  {
+   "term": "C0036572",
+   "concept": "Seizures",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "fits": 1
+   },
+   "best_score": 0.98
+  },
+  {
+   "term": "C0239981",
+   "concept": "Hypoalbuminemia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "hypoalbuminemia": 1
+   },
+   "best_score": 0.974
+  },
+  {
+   "term": "C0242656",
+   "concept": "Disease Progression",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "progression": 1
+   },
+   "best_score": 0.971
+  },
+  {
+   "term": "C0267988",
+   "concept": "Hyperproteinemia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "hyperproteinemia": 1
+   },
+   "best_score": 0.969
+  },
+  {
+   "term": "C0268314",
+   "concept": "Cholestasis-edema syndrome, Norwegian type",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "lcs": 1
+   },
+   "best_score": 0.98
+  },
+  {
+   "term": "C0272247",
+   "concept": "Biclonal gammopathy",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "results": 1
+   },
+   "forms": {
+    "biclonal gammopathy": 1
+   },
+   "best_score": 0.98
+  },
+  {
+   "term": "C0272248",
+   "concept": "Triclonal gammopathy",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "triclonal gammopathy": 1
+   },
+   "best_score": 0.982
+  },
+  {
+   "term": "C0274281",
+   "concept": "Injury due to exposure to external cause",
+   "semantic_types": [
+    "Injury or Poisoning"
+   ],
+   "mentions": 1,
+   "mentions_negated": 1,
+   "mentions_affirmed": 0,
+   "sections": {
+    "discussion": 1
+   },
+   "forms": {
+    "exposure": 1
+   },
+   "best_score": 0.964
+  },
+  {
+   "term": "C0442893",
+   "concept": "Systemic disease",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 1,
+   "mentions_affirmed": 0,
+   "sections": {
+    "results": 1
+   },
+   "forms": {
+    "systemic disease": 1
+   },
+   "best_score": 0.991
+  }
+ ]
+}

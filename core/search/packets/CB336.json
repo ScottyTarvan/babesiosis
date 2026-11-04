@@ -1,0 +1,90 @@
+{
+ "id": "CB336",
+ "filename": "CB336_2007_possible-treatment-strategy-clinical-factors-estimate.md",
+ "key": "PMID:17551236",
+ "record": {
+  "pmid": "17551236",
+  "pmcid": null,
+  "doi": "10.1292/jvms.69.563",
+  "title": "A Possible treatment strategy and clinical factors to estimate the treatment response in Bebesia gibsoni infection.",
+  "authors": [
+   "Suzuki K",
+   "Wakabayashi H",
+   "Takahashi M",
+   "Fukushima K",
+   "Yabuki A",
+   "Endo Y"
+  ],
+  "journal": "The Journal of veterinary medical science",
+  "journal_abbrev": "J Vet Med Sci",
+  "volume": "69",
+  "issue": "5",
+  "pages": "563-8",
+  "language": [
+   "eng"
+  ],
+  "issue_date": "2007-05-01",
+  "issue_date_precision": "month",
+  "epub_date": null,
+  "pubmed_entry_date": "2007-06-07",
+  "first_pub_date": "2007-05-01",
+  "publication_types": [
+   "Clinical Trial",
+   "Comparative Study",
+   "Journal Article"
+  ],
+  "mesh": [
+   "Animals",
+   "Babesia",
+   "Babesiosis",
+   "C-Reactive Protein",
+   "Clindamycin",
+   "Dog Diseases",
+   "Dogs",
+   "Doxycycline",
+   "Drug Therapy, Combination",
+   "Metronidazole",
+   "Platelet Count"
+  ],
+  "keywords": [],
+  "abstract": "The effectiveness of combination therapy using clindamycin, metronidazole and doxycycline against canine babesiosis, and the usefulness of platelet count and the plasma C-reactive protein (CRP) concentration as an estimation factor for treatment, were evaluated in four dogs experimentally infected with Babesia gibsoni. The combination therapy successfully eliminated B. gibsoni in peripheral blood in 3 of 4 dogs, however the remaining dog showed obvious uncontrolled relapse after a temporary recovery. In addition, it was shown that CRP levels decreased in an inverse relationship to the recovery of packed cell volume and therefore CRP levels could be used as an optional clinical marker to estimate the response to treatment.",
+  "corrections": [],
+  "epmc_first_pub_date": "2007-05-01",
+  "is_oa": "N",
+  "has_suppl": "N",
+  "found_by": [
+   "EP1_broad",
+   "EP2_species",
+   "PM1_broad",
+   "PM2_species",
+   "PM3_mechanism"
+  ],
+  "in_window": true,
+  "key": "PMID:17551236",
+  "source_files": [
+   "candidates.jsonl"
+  ]
+ },
+ "screening": {
+  "key": "PMID:17551236",
+  "decision": "include",
+  "include_type": "primary",
+  "exclude_reason": null,
+  "primary_category": "INF",
+  "secondary_tags": [
+   "ERY",
+   "COA"
+  ],
+  "species": "B. gibsoni (confirmed, experimental infection)",
+  "rationale": "Experimentally infected dogs. Although a treatment study, it reports host data: CRP decreased as PCV recovered, and platelet count was assessed as a marker of treatment response.",
+  "stage": "screen",
+  "batch": "r4_02.md",
+  "screening_round": "r4"
+ },
+ "fulltext_check": {
+  "key": "PMID:17551236",
+  "pmcid": null,
+  "checked": "2026-10-28",
+  "fulltext_status": "no_pmcid"
+ }
+}

@@ -1,0 +1,56 @@
+{
+ "id": "CB449",
+ "filename": "CB449_2013_hemato-biochemical-alterations-naturally-occurring-cases.md",
+ "key": "https://openalex.org/W2217966774",
+ "record": {
+  "pmid": null,
+  "pmcid": null,
+  "doi": null,
+  "title": "Hemato-biochemical alterations in naturally occurring cases of canine babesiosis.",
+  "journal": null,
+  "authors": [
+   "Sonal Shrivastava",
+   "P.C. Shukla",
+   "Madhu Swamy"
+  ],
+  "first_pub_date": "2013-01-01",
+  "type": "article",
+  "language": [
+   "en"
+  ],
+  "abstract": null,
+  "abstract_source": "OpenAlex abstract_inverted_index (reconstructed)",
+  "source_id": "https://openalex.org/W2217966774",
+  "src": "OPENALEX",
+  "found_by": [
+   "OA:title_and_abstract"
+  ],
+  "in_window": true,
+  "key": "https://openalex.org/W2217966774",
+  "source_files": [
+   "candidates_r3.jsonl"
+  ]
+ },
+ "screening": {
+  "key": "https://openalex.org/W2217966774",
+  "decision": "include",
+  "include_type": "primary",
+  "exclude_reason": null,
+  "primary_category": "ERY",
+  "secondary_tags": [
+   "MET"
+  ],
+  "species": "Babesia sp. (unspecified)",
+  "rationale": "Based on the title and OpenAlex metadata (Shrivastava, Shukla and Swamy, Environment and Ecology 31:342-343; no abstract available): the title explicitly describes a haemato-biochemical profile of naturally infected dogs, which is an eligible clinicopathological case series in a regional journal.",
+  "stage": "adjudicated",
+  "batch": "r4_16.md",
+  "first_decision": "uncertain",
+  "screening_round": "r4"
+ },
+ "fulltext_check": {
+  "key": "https://openalex.org/W2217966774",
+  "pmcid": null,
+  "checked": "2026-10-28",
+  "fulltext_status": "no_pmcid"
+ }
+}

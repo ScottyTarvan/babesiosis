@@ -1,0 +1,58 @@
+{
+ "id": "CB405",
+ "filename": "CB405_2011_abnormalities-serum-proteins-course-babesiosis.md",
+ "key": "REF:abnormalitiesinserumproteinsinthecourseofbabesiosisindogs",
+ "record": {
+  "pmid": null,
+  "doi": null,
+  "title": "Abnormalities in serum proteins in the course of babesiosis in dogs",
+  "journal": null,
+  "first_pub_date": "2011-01-01",
+  "year": "2011",
+  "abstract": "The objectives of this study were to evaluate the serum protein electrophoresis pattern in dogs infected with B. canis, and correlation between haematocrit and albumin/globulin ratio. The infection with B. canis was confirmed by PCR and sequencing of PCR products. Total serum protein concentrations were determined by a clinical chemistry analyser. Albumin, α1-, α2-, β1-, β2-, and γ-globulin concentrations were assayed by densitometric analysis after electrophoretic separation of serum proteins on agarose gel. The most common disorders in affected dogs were decreased α-globulin fractions, increased β-globulin concentration, increased albumin/globulin (A/G) ratio, and hypoglobulinaemia. A decrease in α1- and α2-globulin concentration was detected accordingly in 54.8% and 32.3% of dogs. An increase in β1- and β2-globulin concentration, and increased A/G ratio was detected accordingly in 38.7%, 51.6%, and 38.7% of dogs. Hypoglobulinaemia was detected in 32.3% dogs. Changes detected in this study probably result from haemolysis, hypertransferrinaemia, increased C3a protein concentration (complement), and dehydration.",
+  "found_by": [
+   "OA:title_and_abstract",
+   "citation:backward:28802807"
+  ],
+  "unresolved": true,
+  "source_id": "REF:abnormalitiesinserumproteinsinthecourseofbabesiosisindogs",
+  "key": "REF:abnormalitiesinserumproteinsinthecourseofbabesiosisindogs",
+  "source_files": [
+   "candidates_r2.jsonl",
+   "candidates_r3.jsonl"
+  ],
+  "authors": [
+   "Wojciech Zygner",
+   "Olga Gójska-Zygner",
+   "H. Wędrychowicz"
+  ],
+  "type": "article",
+  "language": [
+   "en"
+  ],
+  "abstract_source": "OpenAlex abstract_inverted_index (reconstructed)",
+  "src": "OPENALEX",
+  "in_window": true
+ },
+ "screening": {
+  "key": "REF:abnormalitiesinserumproteinsinthecourseofbabesiosisindogs",
+  "decision": "include",
+  "include_type": "primary",
+  "exclude_reason": null,
+  "primary_category": "INF",
+  "secondary_tags": [
+   "ERY"
+  ],
+  "species": "B. canis (confirmed, PCR and sequencing)",
+  "rationale": "Serum protein electrophoresis in infected dogs with globulin fraction changes attributed to haemolysis, complement and dehydration; a host clinicopathological and acute-phase profile.",
+  "stage": "screen",
+  "batch": "r4_11.md",
+  "screening_round": "r4"
+ },
+ "fulltext_check": {
+  "key": "REF:abnormalitiesinserumproteinsinthecourseofbabesiosisindogs",
+  "pmcid": null,
+  "checked": "2026-10-28",
+  "fulltext_status": "no_pmcid"
+ }
+}

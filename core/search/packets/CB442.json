@@ -1,0 +1,60 @@
+{
+ "id": "CB442",
+ "filename": "CB442_2013_babesiosis-treatment-three-different-medicines.md",
+ "key": "DOI:10.2298/avb1303279t",
+ "record": {
+  "pmid": null,
+  "pmcid": null,
+  "doi": "10.2298/avb1303279t",
+  "title": "Canine babesiosis treatment with three different medicines",
+  "journal": "Acta veterinaria",
+  "authors": [
+   "G. Torbica",
+   "Ljiljana Bedrica",
+   "Marko Samardžija",
+   "Marija Lipar",
+   "Dubravka Ljubojević",
+   "Mario Kreszinger",
+   "Dražen Đuričić",
+   "Ivica Harapin"
+  ],
+  "first_pub_date": "2013-01-01",
+  "type": "article",
+  "language": [
+   "en"
+  ],
+  "abstract": "Canine babesiosis is a relatively frequent disease in Croatia. Elevated body temperature, anemia and haemoglobinuria are the most common signs. Diagnosis is rapidly obtained by employing blood smears, as B. canis is present in the red blood cells of affected dogs. Treatment is favourable and without consequences. Blood work was performed initialy, prior to treatment, and on the 1st and the 7th day following treatment. Following history and examination of the dogs blood and urine samples were taken. After confirmation of B. canis in the red blood cells, alltogether 226 dogs were tretated. Out of them 80 were tretaed with Berenil® (diminazen aceturate, Hoechst), 72 were tretated with Imizol® (imidocarb dipropionate, Schering-Plough-Animal-Health) and 74 with Oxopirvedin® (fenamidine dizetionate, Merial). Clinical findings, haematological analysis and urine analysis are given and statistically assesed. After tretment with Berenil®, symptoms of babesiosis regressed within 24 hours. Health improved more slowly in the group treated with Oxopirvedin® in comparioson with the group treated with Berenil®. Contrary to the above, Imizol® displayed the slowest regression of the disease and reinfestation with B. canis within 30 days was not noted. That is not the case if treatment was provided by Berenil® and Oxopirvedin®. In all 226 cases of canine babesiosis side effects were not noted, except topically inflammed tissue at the site of subcutaneous application.",
+  "abstract_source": "OpenAlex abstract_inverted_index (reconstructed)",
+  "source_id": "https://openalex.org/W1987283581",
+  "src": "OPENALEX",
+  "found_by": [
+   "OA:title_and_abstract"
+  ],
+  "in_window": true,
+  "key": "DOI:10.2298/avb1303279t",
+  "source_files": [
+   "candidates_r3.jsonl"
+  ]
+ },
+ "screening": {
+  "key": "DOI:10.2298/avb1303279t",
+  "decision": "include",
+  "include_type": "primary",
+  "exclude_reason": null,
+  "primary_category": "ERY",
+  "secondary_tags": [
+   "SEV"
+  ],
+  "species": "B. canis (confirmed on blood smear, 226 dogs)",
+  "rationale": "Treatment comparison that also reports clinical findings, haematology and urinalysis of 226 infected dogs before and after treatment (anaemia, haemoglobinuria); this host data meets the inclusion rule for treatment studies.",
+  "stage": "screen",
+  "batch": "r4_16.md",
+  "screening_round": "r4"
+ },
+ "fulltext_check": {
+  "key": "DOI:10.2298/avb1303279t",
+  "pmcid": null,
+  "checked": "2026-10-28",
+  "fulltext_status": "no_pmcid"
+ }
+}

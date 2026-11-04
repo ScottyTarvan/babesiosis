@@ -1,0 +1,168 @@
+:host {
+  display: block;
+  min-height: 100vh;
+}
+
+.fs-login {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem;
+  // `--fs-color-app-background` was never a defined token — the whole
+  // `background` shorthand was silently invalid and this screen rendered with
+  // no fill at all behind the card. `--fs-color-background` is the real "page
+  // bg — the whole window" token; fixed while converting this file.
+  background:
+    radial-gradient(circle at 20% 20%, rgb(var(--fs-color-primary) / 0.06), transparent 40%),
+    radial-gradient(circle at 80% 70%, rgb(var(--fs-color-primary) / 0.04), transparent 40%),
+    rgb(var(--fs-color-background));
+}
+
+.fs-login__card {
+  width: 100%;
+  max-width: 420px;
+  padding: 2.25rem;
+  background-color: rgb(var(--fs-color-surface));
+  border: 1px solid rgb(var(--fs-color-line));
+  border-radius: var(--fs-radius-lg);
+  // This card is the entire page's content — nothing else sits on the canvas
+  // around it — so it genuinely floats rather than sitting in a list of peers.
+  // That is the guideline's own carve-out for using a shadow instead of (here,
+  // in addition to) the hairline: modal-weight elevation for a modal-like card.
+  box-shadow: var(--fs-guide-shadow-modal);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.fs-login__brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+// Light-background variant of the sidebar brand logo: same artwork, but dark
+// lettering on transparency instead of white lettering on the navy sidebar
+// fill. The plate is fixed white in both themes so the dark lettering stays
+// legible when the card surface itself goes dark — `--fs-color-on-accent` is
+// reused here for that literal white, since it is the one frozen token
+// guaranteed to be 255/255/255 in both the light and dark ramp.
+.fs-login__brand-logo {
+  // content-box so the 65px matches the sidebar brand image exactly rather than
+  // being eaten by the plate padding.
+  box-sizing: content-box;
+  height: 65px;
+  width: auto;
+  padding: 0.5rem 1rem;
+  border-radius: var(--fs-radius-md);
+  background-color: rgb(var(--fs-color-on-accent));
+}
+
+.fs-login__title {
+  margin: 0;
+  // Page title. The guideline's ceiling is 18px chrome type — mapped to
+  // --fs-guide-text-section (18/28/500) as the loudest register this screen's
+  // single heading is allowed, down from the old 22px/600.
+  font: var(--fs-guide-text-section);
+  letter-spacing: var(--fs-guide-tracking);
+  color: rgb(var(--fs-color-ink-strong));
+}
+
+.fs-login__subtitle {
+  margin: 0;
+  font: var(--fs-guide-text-body);
+  letter-spacing: var(--fs-guide-tracking);
+  color: rgb(var(--fs-color-ink-soft));
+}
+
+.fs-login__form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 0.25rem;
+}
+
+// Entra / Microsoft sign-in panel. Stretches its button to the card width so it
+// reads as a peer of the password form's submit, not a secondary affordance.
+.fs-login__sso {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.25rem;
+}
+
+// "or" rule separating the two sign-in methods, drawn with the same hairline
+// token as the card edge so the two read as one system. No longer uppercase —
+// an fs-* anti-pattern the guideline also forbids independently — so the
+// letter-spacing that existed to keep the caps legible is gone too.
+.fs-login__divider {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: rgb(var(--fs-color-ink-soft));
+  font: var(--fs-guide-text-control);
+  letter-spacing: var(--fs-guide-tracking);
+
+  &::before,
+  &::after {
+    content: '';
+    flex: 1 1 auto;
+    height: 1px;
+    background-color: rgb(var(--fs-color-line));
+  }
+}
+
+.fs-login__input {
+  position: relative;
+  display: block;
+
+  fs-text-input { display: block; }
+}
+
+.fs-login__input-icon {
+  position: absolute;
+  left: 0.625rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: rgb(var(--fs-color-ink-soft));
+  pointer-events: none;
+  z-index: 1;
+
+  ~ ::ng-deep fs-text-input .fs-text-input {
+    padding-left: 2.25rem;
+  }
+}
+
+.fs-login__forgot {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: -0.25rem;
+}
+
+.fs-login__forgot-link {
+  font: var(--fs-guide-text-control);
+  letter-spacing: var(--fs-guide-tracking);
+  color: rgb(var(--fs-color-primary-fg));
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+// Solid foreground on a wash of itself, no border — the same danger-intent
+// pattern as the converted fs-banner (style guideline §4.9), not a bordered
+// alpha tint of the old solid --fs-color-danger.
+.fs-login__error {
+  display: flex;
+  align-items: center;
+  gap: var(--fs-guide-space-4);
+  padding: var(--fs-guide-space-4) var(--fs-guide-space-6);
+  border-radius: var(--fs-radius-md);
+  background-color: rgb(var(--fs-color-danger-bg));
+  color: rgb(var(--fs-color-danger-fg));
+  font: var(--fs-guide-text-body);
+  letter-spacing: var(--fs-guide-tracking);
+}

@@ -1,0 +1,78 @@
+{
+ "id": "CB378",
+ "filename": "CB378_2009_effect-pyridoxal-5-phosphate-serum-alanine.md",
+ "key": "PMID:21105601",
+ "record": {
+  "pmid": "21105601",
+  "pmcid": null,
+  "doi": "10.4102/ojvr.v76i3.38",
+  "title": "The effect of pyridoxal-5-phosphate on serum alanine aminotransferase activity in dogs suffering from canine babesiosis.",
+  "authors": [
+   "Myburgh EC",
+   "Goddard A"
+  ],
+  "journal": "The Onderstepoort journal of veterinary research",
+  "journal_abbrev": "Onderstepoort J Vet Res",
+  "volume": "76",
+  "issue": "3",
+  "pages": "327-33",
+  "language": [
+   "eng"
+  ],
+  "issue_date": "2009-09-01",
+  "issue_date_precision": "month",
+  "epub_date": null,
+  "pubmed_entry_date": "2009-09-01",
+  "first_pub_date": "2009-09-01",
+  "publication_types": [
+   "Journal Article",
+   "Research Support, Non-U.S. Gov't"
+  ],
+  "mesh": [
+   "Alanine Transaminase",
+   "Animals",
+   "Anorexia",
+   "Babesiosis",
+   "Biomarkers",
+   "Dog Diseases",
+   "Dogs",
+   "Enzyme Activation",
+   "Pyridoxal Phosphate"
+  ],
+  "keywords": [],
+  "abstract": "Accurate measurements of serum aminotransferase (ALT) activity in dogs relies on the endogenous pro-enzyme pyridoxal 5-phosphate (P5P). The purpose of this study was to determine whether the exclusion of P5P from the analytical method causes an underestimation of serum ALT activity in dogs suffering from babesiosis and in those manifesting evidence of hepatocellular damage, and to determine if anorexia causes sufficient P5P depletion to affect in vitro serum ALT activity. One-hundred-and-twenty healthy control dogs and 105 Babesia-infected dogs were included in the study. Two methods for ALT measurement were used: Method 1 included P5P, and Method 2 excluded P5P from the reaction mixture. Higher serum ALT activity was measured with Method 1 in the Babesia-infected dogs (P < 0.001), as well as in 14 dogs with suspected hepatocellular damage (P = 0.03). Duration of anorexia had no effect, irrespective of the method used. Although inclusion of P5P to the reaction mixture consistently resulted in higher measured serum ALT activity, the differences were too small to have led to incorrect diagnoses in the Babesia-infected dogs suspected of liver disease.",
+  "corrections": [],
+  "epmc_first_pub_date": "2009-09-01",
+  "is_oa": "N",
+  "has_suppl": "N",
+  "found_by": [
+   "EP1_broad",
+   "PM1_broad",
+   "PM3_mechanism"
+  ],
+  "in_window": true,
+  "key": "PMID:21105601",
+  "source_files": [
+   "candidates.jsonl"
+  ]
+ },
+ "screening": {
+  "key": "PMID:21105601",
+  "decision": "include",
+  "include_type": "primary",
+  "exclude_reason": null,
+  "primary_category": "MET",
+  "secondary_tags": [],
+  "species": "Babesia sp. (unspecified in abstract; South African dogs)",
+  "rationale": "105 infected dogs vs 120 controls with serum ALT measured with and without P5P, including dogs with suspected hepatocellular damage. Reports hepatic enzyme data in infected dogs.",
+  "stage": "screen",
+  "batch": "r4_07.md",
+  "screening_round": "r4"
+ },
+ "fulltext_check": {
+  "key": "PMID:21105601",
+  "pmcid": null,
+  "checked": "2026-10-28",
+  "fulltext_status": "no_pmcid"
+ }
+}

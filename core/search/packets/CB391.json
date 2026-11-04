@@ -1,0 +1,59 @@
+{
+ "id": "CB391",
+ "filename": "CB391_2010_note-incidence-babesia-canis-10-day.md",
+ "key": "https://openalex.org/W595777223",
+ "record": {
+  "pmid": null,
+  "pmcid": null,
+  "doi": null,
+  "title": "A Note on the Incidence of Babesia Canis in A 10 Day Old Pup on Postmortem Examination in Chennai, Tamil Nadu",
+  "journal": "Indian Journal of Animal Research",
+  "authors": [
+   "Chidambaram Balachandran",
+   "R. Sridhar",
+   "N. Pazhanivel",
+   "R. Anoopraj"
+  ],
+  "first_pub_date": "2010-03-01",
+  "type": "article",
+  "language": [
+   "en"
+  ],
+  "abstract": "A 10 day old female Great Dane pup carcass was brought with the history of dull, depressed and sudden death. External examination revealed pale conjunctival mucous membrane and slight prescapular lymph node enlargement. Grossly, subepicardial petechial haemorrhages, congested lungs, intestine and meningeal blood vessels, enlarged pale liver, slightly enlarged dark reddish kidney and swollen haemorrhagic mesenteric lymph nodes. Peripheral and heart blood smears stained with Leishman & Giemsa (L&G) stain and revealed the presence of large pleomorphic single, paired and multiple pear shaped forms of Babesia canis in the erythrocytes.",
+  "abstract_source": "OpenAlex abstract_inverted_index (reconstructed)",
+  "source_id": "https://openalex.org/W595777223",
+  "src": "OPENALEX",
+  "found_by": [
+   "OA:title_and_abstract"
+  ],
+  "in_window": true,
+  "key": "https://openalex.org/W595777223",
+  "source_files": [
+   "candidates_r3.jsonl"
+  ]
+ },
+ "screening": {
+  "key": "https://openalex.org/W595777223",
+  "decision": "include",
+  "include_type": "case_report",
+  "exclude_reason": null,
+  "primary_category": "SEV",
+  "secondary_tags": [
+   "COA",
+   "PUL",
+   "NEU",
+   "ERY"
+  ],
+  "species": "B. canis (confirmed by smear, large form)",
+  "rationale": "Fatal babesiosis in a 10-day-old pup with necropsy findings (petechial haemorrhages, congested lungs and meninges, hepatic and nodal changes), a distinct neonatal presentation with gross pathology.",
+  "stage": "screen",
+  "batch": "r4_09.md",
+  "screening_round": "r4"
+ },
+ "fulltext_check": {
+  "key": "https://openalex.org/W595777223",
+  "pmcid": null,
+  "checked": "2026-10-28",
+  "fulltext_status": "no_pmcid"
+ }
+}

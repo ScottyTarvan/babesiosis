@@ -1,0 +1,59 @@
+{
+ "id": "CB534",
+ "filename": "CB534_2016_disturbance-thyroid-function-ehrlichiosis-babesiosis-associated.md",
+ "key": "DOI:10.1007/s00580-016-2291-4",
+ "record": {
+  "pmid": null,
+  "doi": "10.1007/s00580-016-2291-4",
+  "title": "Disturbance of thyroid function in canine ehrlichiosis and babesiosis associated with oxidative stress",
+  "journal": "Comparative Clinical Pathology",
+  "first_pub_date": "2016-06-23",
+  "year": "2016",
+  "abstract": null,
+  "found_by": [
+   "OA:title_and_abstract",
+   "citation:backward:37643565"
+  ],
+  "unresolved": false,
+  "source_id": "REF:disturbanceofthyroidfunctionincanineehrlichiosisandbabesiosi",
+  "key": "DOI:10.1007/s00580-016-2291-4",
+  "source_files": [
+   "candidates_r2.jsonl",
+   "candidates_r3.jsonl"
+  ],
+  "authors": [
+   "Gollahalli Eregowda Chethan",
+   "Jugal Garkhal",
+   "Ujjwal Kumar De"
+  ],
+  "type": "article",
+  "language": [
+   "en"
+  ],
+  "abstract_source": "OpenAlex abstract_inverted_index (reconstructed)",
+  "src": "OPENALEX",
+  "in_window": true
+ },
+ "screening": {
+  "key": "DOI:10.1007/s00580-016-2291-4",
+  "decision": "uncertain",
+  "include_type": null,
+  "exclude_reason": null,
+  "primary_category": "END",
+  "secondary_tags": [
+   "OXO"
+  ],
+  "species": "Babesia sp. (unspecified)",
+  "rationale": "Title only: there is no abstract in OpenAlex, Semantic Scholar, Crossref or Europe PMC, and the Springer page is behind a sign-in redirect. The title points to thyroid and oxidative-stress data in dogs with babesiosis, probably as a group separate from ehrlichiosis, but the full text must confirm that the Babesia data can be separated.",
+  "stage": "adjudicated",
+  "batch": "r4_29.md",
+  "first_decision": "uncertain",
+  "screening_round": "r4"
+ },
+ "fulltext_check": {
+  "key": "DOI:10.1007/s00580-016-2291-4",
+  "pmcid": null,
+  "checked": "2026-10-28",
+  "fulltext_status": "no_pmcid"
+ }
+}

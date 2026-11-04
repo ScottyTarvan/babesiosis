@@ -1,0 +1,85 @@
+{
+ "id": "CB352",
+ "filename": "CB352_2008_adrenal-response-low-dose-acth-stimulation.md",
+ "key": "PMID:18468798",
+ "record": {
+  "pmid": "18468798",
+  "pmcid": null,
+  "doi": "10.1016/j.vetpar.2008.03.023",
+  "title": "Adrenal response to the low dose ACTH stimulation test and the cortisol-to-adrenocorticotrophic hormone ratio in canine babesiosis.",
+  "authors": [
+   "Schoeman JP",
+   "Herrtage ME"
+  ],
+  "journal": "Veterinary parasitology",
+  "journal_abbrev": "Vet Parasitol",
+  "volume": "154",
+  "issue": "3-4",
+  "pages": "205-13",
+  "language": [
+   "eng"
+  ],
+  "issue_date": "2008-07-04",
+  "issue_date_precision": "day",
+  "epub_date": "2008-04-07",
+  "pubmed_entry_date": "2008-05-13",
+  "first_pub_date": "2008-04-07",
+  "publication_types": [
+   "Journal Article",
+   "Research Support, Non-U.S. Gov't"
+  ],
+  "mesh": [
+   "Adrenal Glands",
+   "Adrenocorticotropic Hormone",
+   "Animals",
+   "Babesiosis",
+   "Dog Diseases",
+   "Dogs",
+   "Dose-Response Relationship, Drug",
+   "Female",
+   "Hydrocortisone",
+   "Male",
+   "Stress, Physiological"
+  ],
+  "keywords": [],
+  "abstract": "This prospective, interventional, case-controlled study sought to determine the association between adrenocortical function and mortality in dogs with naturally occurring Babesia rossi babesiosis. Sixty-eight dogs with canine babesiosis were studied and fifteen normal dogs were used as controls. Blood samples were obtained from the jugular vein in each dog prior to treatment, at admission to hospital, for the measurement of basal plasma ACTH (adrenocorticotrophic hormone) and serum cortisol concentrations. Immediately thereafter, each dog was injected intravenously with 5 microg/kg of ACTH (tetracosactrin). A second blood sample was taken 1h later for serum ACTH-stimulated cortisol measurement and the resultant calculation of delta cortisol by subtracting basal from ACTH-stimulated cortisol. Diagnosis of babesiosis was confirmed by polymerase chain reaction (PCR) and reverse line blot (RLB). Three outcomes were defined: hospitalization with subsequent death (n=4); hospitalization followed by recovery (n=48); and treatment as an outpatient (n=16). Basal cortisol, but not ACTH-stimulated cortisol, was significantly higher in patients compared to control dogs. Basal- and ACTH-stimulated serum cortisol concentrations were significantly higher in the dogs that died, compared to hospitalized dogs that survived and compared to dogs treated as outpatients. There was no significant difference in delta cortisol concentrations or cortisol to ACTH ratios across outcome groups in dogs suffering from B. rossi babesiosis However, dogs with delta cortisol concentrations below 83 nmol/l had significantly higher cortisol to ACTH ratios compared to dogs with delta cortisol concentrations above 83 nmol/l. These findings of increased basal- and ACTH-stimulated cortisol and increased cortisol to ACTH ratios confirm the absence of adrenal insufficiency and concur with those in human malaria.",
+  "corrections": [],
+  "epmc_first_pub_date": "2008-04-07",
+  "is_oa": "N",
+  "has_suppl": "N",
+  "found_by": [
+   "EP1_broad",
+   "EP2_species",
+   "PM1_broad",
+   "PM2_species",
+   "PM3_mechanism"
+  ],
+  "in_window": true,
+  "online_vs_issue": "online 2008-04-07; issue 2008-07-04 (day)",
+  "key": "PMID:18468798",
+  "source_files": [
+   "candidates.jsonl"
+  ]
+ },
+ "screening": {
+  "key": "PMID:18468798",
+  "decision": "include",
+  "include_type": "primary",
+  "exclude_reason": null,
+  "primary_category": "MET",
+  "secondary_tags": [
+   "SEV"
+  ],
+  "species": "B. rossi (confirmed, PCR/RLB)",
+  "rationale": "Adrenal function (basal and ACTH-stimulated cortisol, cortisol-to-ACTH ratio) in 68 infected dogs against controls, related to outcome.",
+  "stage": "screen",
+  "batch": "r4_04.md",
+  "screening_round": "r4"
+ },
+ "fulltext_check": {
+  "key": "PMID:18468798",
+  "pmcid": null,
+  "checked": "2026-10-28",
+  "fulltext_status": "no_pmcid"
+ }
+}

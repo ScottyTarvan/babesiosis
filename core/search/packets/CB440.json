@@ -1,0 +1,59 @@
+{
+ "id": "CB440",
+ "filename": "CB440_2012_influence-invasion-intracellular-parasites-platelet-response.md",
+ "key": "DOI:10.2478/v10213-012-0091-4",
+ "record": {
+  "pmid": null,
+  "pmcid": null,
+  "doi": "10.2478/v10213-012-0091-4",
+  "title": "Influence of Invasion of Intracellular Parasites on Platelet Response in Dogs Based on Clinical Cases",
+  "journal": "Journal of Veterinary Research",
+  "authors": [
+   "Anna Snarska",
+   "A. Pomianowski",
+   "Wioletta Krystkiewicz",
+   "Przemysław Sobiech",
+   "Sylwia Lew",
+   "Dariusz Bednarek"
+  ],
+  "first_pub_date": "2012-12-01",
+  "type": "article",
+  "language": [
+   "en"
+  ],
+  "abstract": "Abstract Blood morphology in dogs infected with intracellular parasites of the genera Babesia and Ehrlichia was examined. The parasites were detected in peripheral blood smears stained by the May-Grünwald-Giemsa method. During the parasitic invasion, a decrease in thrombocyte counts was observed. This was connected with forming platelet aggregates. It was noted that the number of giant platelets simultaneously increased.",
+  "abstract_source": "OpenAlex abstract_inverted_index (reconstructed)",
+  "source_id": "https://openalex.org/W2152950308",
+  "src": "OPENALEX",
+  "found_by": [
+   "OA:title_and_abstract"
+  ],
+  "in_window": true,
+  "key": "DOI:10.2478/v10213-012-0091-4",
+  "source_files": [
+   "candidates_r3.jsonl"
+  ]
+ },
+ "screening": {
+  "key": "DOI:10.2478/v10213-012-0091-4",
+  "decision": "uncertain",
+  "include_type": null,
+  "exclude_reason": null,
+  "primary_category": "COA",
+  "secondary_tags": [
+   "ERY"
+  ],
+  "species": "Babesia sp. (suspected, smear only); mixed cohort with Ehrlichia",
+  "rationale": "Based on the abstract (OpenAlex and the publisher landing page). It reports thrombocytopenia, platelet aggregates and giant platelets in dogs with Babesia or Ehrlichia, but the landing page gives no methods, so it is unknown whether the Babesia dogs are reported separately. Full-text review is needed.",
+  "stage": "adjudicated",
+  "batch": "r4_15.md",
+  "first_decision": "uncertain",
+  "screening_round": "r4"
+ },
+ "fulltext_check": {
+  "key": "DOI:10.2478/v10213-012-0091-4",
+  "pmcid": null,
+  "checked": "2026-10-28",
+  "fulltext_status": "no_pmcid"
+ }
+}

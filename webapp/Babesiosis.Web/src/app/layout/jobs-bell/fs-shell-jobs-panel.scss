@@ -1,0 +1,115 @@
+/* `fs-popover` renders with ViewEncapsulation.None, so every selector here must
+   stay prefixed — an unprefixed `.row` would leak to the whole application. */
+
+.fs-shell-jobs-panel {
+  display: flex;
+  flex-direction: column;
+  gap: var(--fs-guide-space-2);
+  padding: var(--fs-guide-space-2);
+}
+
+.fs-shell-jobs-panel__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--fs-guide-space-4);
+  padding: var(--fs-guide-space-2) var(--fs-guide-space-4);
+}
+
+.fs-shell-jobs-panel__title {
+  font: var(--fs-guide-text-control);
+  font-weight: 600;
+  letter-spacing: var(--fs-guide-tracking);
+  color: rgb(var(--fs-color-ink-strong));
+}
+
+.fs-shell-jobs-panel__muted {
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.4;
+  color: rgb(var(--fs-color-ink-soft));
+}
+
+.fs-shell-jobs-panel__empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--fs-guide-space-2);
+  padding: var(--fs-guide-space-6) var(--fs-guide-space-4);
+  color: rgb(var(--fs-color-ink-soft));
+}
+
+.fs-shell-jobs-panel__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--fs-guide-space-1);
+  /* Roughly six rows before it scrolls — past that the bell is the wrong
+     surface and the deployment log is where the user should be. */
+  max-height: 20rem;
+  overflow-y: auto;
+}
+
+.fs-shell-jobs-panel__row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--fs-guide-space-4);
+  padding: var(--fs-guide-space-2) var(--fs-guide-space-4);
+  border: 0;
+  border-radius: var(--fs-radius-sm);
+  background: transparent;
+  text-align: left;
+  transition: none;
+}
+
+/* No leading accent bar: the danger badge on the right already says the row is
+   waiting on you, and a 2px rule clipped by the row's own corner radius read as
+   a rendering artefact rather than as an accent. */
+.fs-shell-jobs-panel__row--actionable {
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgb(var(--fs-color-fill-subtle));
+  }
+
+  &:focus-visible {
+    outline: 2px solid rgb(var(--fs-color-primary));
+    outline-offset: -1px;
+  }
+}
+
+/* Not `opacity: 0.5` — a row the user cannot approve is still information they
+   are entitled to read, so it stays legible and simply is not a control. */
+.fs-shell-jobs-panel__row[disabled] {
+  cursor: default;
+}
+
+.fs-shell-jobs-panel__text {
+  display: flex;
+  flex-direction: column;
+  gap: var(--fs-guide-space-1);
+  min-width: 0;
+}
+
+.fs-shell-jobs-panel__name {
+  font: var(--fs-guide-text-control);
+  color: rgb(var(--fs-color-ink-strong));
+  /* A long dataset name truncates rather than widening a fixed-width panel. */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.fs-shell-jobs-panel__meta {
+  font-size: 11px;
+  line-height: 1.35;
+  color: rgb(var(--fs-color-ink-soft));
+}
+
+.fs-shell-jobs-panel__footer {
+  padding: var(--fs-guide-space-2) var(--fs-guide-space-4);
+}

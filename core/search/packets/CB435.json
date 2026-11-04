@@ -1,0 +1,94 @@
+{
+ "id": "CB435",
+ "filename": "CB435_2012_assessment-renal-dysfunction-using-urinary-markers.md",
+ "key": "PMID:22884913",
+ "record": {
+  "pmid": "22884913",
+  "pmcid": null,
+  "doi": "10.1016/j.vetpar.2012.07.023",
+  "title": "Assessment of renal dysfunction using urinary markers in canine babesiosis caused by Babesia rossi.",
+  "authors": [
+   "Defauw P",
+   "Schoeman JP",
+   "Smets P",
+   "Goddard A",
+   "Meyer E",
+   "Liebenberg C",
+   "Daminet S"
+  ],
+  "journal": "Veterinary parasitology",
+  "journal_abbrev": "Vet Parasitol",
+  "volume": "190",
+  "issue": "3-4",
+  "pages": "326-32",
+  "language": [
+   "eng"
+  ],
+  "issue_date": "2012-12-21",
+  "issue_date_precision": "day",
+  "epub_date": "2012-07-27",
+  "pubmed_entry_date": "2012-08-14",
+  "first_pub_date": "2012-07-27",
+  "publication_types": [
+   "Journal Article"
+  ],
+  "mesh": [
+   "Aging",
+   "Animals",
+   "Babesia",
+   "Babesiosis",
+   "Biomarkers",
+   "C-Reactive Protein",
+   "Dog Diseases",
+   "Dogs",
+   "Female",
+   "Immunoglobulin G",
+   "Kidney Diseases",
+   "Male",
+   "Retinol-Binding Proteins"
+  ],
+  "keywords": [],
+  "abstract": "Renal damage is deemed a common, yet poorly documented, complication in canine babesiosis. Serum urea and creatinine are insensitive and non-specific markers of early renal dysfunction and their measurements are influenced by hemolysis caused by babesiosis. Therefore, the aim of this study was to use urinary markers to assess the localization and degree of renal dysfunction in dogs with Babesia rossi infection. Urinary immunoglobulin G (uIgG) and urinary C-reactive protein (uCRP) were measured as markers for glomerular dysfunction, while urinary retinol-binding protein (uRBP) was used as a marker for tubular dysfunction. Eighteen dogs presenting with uncomplicated babesiosis were included and compared with eight clinically healthy dogs. Previously validated commercial ELISA kits were used for the measurement of uIgG, uCRP, and uRBP. Results were related to urinary creatinine concentrations (c). Dogs with babesiosis had significantly higher concentrations of all three measured urinary markers compared to healthy dogs. Except for urinary protein/c ratio (UPC), routine urinary and serum markers for renal function (urine specific gravity (USG), serum urea and creatinine (sCr)) were not significantly different between dogs with babesiosis and healthy dogs. All three urinary markers were positively correlated with each other and with UPC. The data supports the presence of both glomerular and tubular dysfunction in dogs suffering from uncomplicated B. rossi infection. Urinary markers were superior to USG, serum urea and creatinine concentrations for the early detection of renal dysfunction in dogs with babesiosis.",
+  "corrections": [],
+  "epmc_first_pub_date": "2012-07-27",
+  "is_oa": "N",
+  "has_suppl": "N",
+  "found_by": [
+   "EP1_broad",
+   "EP2_species",
+   "PM1_broad",
+   "PM2_species",
+   "PM3_mechanism"
+  ],
+  "in_window": true,
+  "online_vs_issue": "online 2012-07-27; issue 2012-12-21 (day)",
+  "existing_id": "BG010",
+  "existing_retired": false,
+  "key": "PMID:22884913",
+  "source_files": [
+   "candidates.jsonl"
+  ]
+ },
+ "screening": {
+  "key": "PMID:22884913",
+  "decision": "include",
+  "include_type": "primary",
+  "exclude_reason": null,
+  "primary_category": "REN",
+  "secondary_tags": [
+   "INF"
+  ],
+  "species": "B. rossi (confirmed)",
+  "rationale": "Urinary IgG, CRP and RBP show glomerular and tubular dysfunction in dogs with uncomplicated B. rossi infection versus healthy dogs; this is host renal pathophysiology.",
+  "stage": "screen",
+  "batch": "r4_15.md",
+  "screening_round": "r4"
+ },
+ "fulltext_check": {
+  "key": "PMID:22884913",
+  "pmcid": null,
+  "checked": "2026-10-28",
+  "fulltext_status": "no_pmcid"
+ },
+ "replaces": "BG010"
+}

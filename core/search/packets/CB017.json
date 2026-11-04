@@ -1,0 +1,114 @@
+{
+ "id": "CB017",
+ "filename": "CB017_2018_mcp-1-kc-like-il-8.md",
+ "key": "PMID:29304171",
+ "record": {
+  "pmid": "29304171",
+  "pmcid": "PMC5756041",
+  "doi": "10.1371/journal.pone.0190474",
+  "title": "MCP-1, KC-like and IL-8 as critical mediators of pathogenesis caused by Babesia canis.",
+  "authors": [
+   "Galán A",
+   "Mayer I",
+   "Rafaj RB",
+   "Bendelja K",
+   "Sušić V",
+   "Cerón JJ",
+   "Mrljak V"
+  ],
+  "journal": "PloS one",
+  "journal_abbrev": "PLoS One",
+  "volume": "13",
+  "issue": "1",
+  "pages": "e0190474",
+  "language": [
+   "eng"
+  ],
+  "issue_date": "2018-01-01",
+  "issue_date_precision": "year",
+  "epub_date": "2018-01-05",
+  "pubmed_entry_date": "2018-01-06",
+  "first_pub_date": "2018-01-01",
+  "publication_types": [
+   "Journal Article",
+   "Research Support, Non-U.S. Gov't"
+  ],
+  "mesh": [
+   "Animals",
+   "Babesia",
+   "Babesiosis",
+   "Chemokine CCL2",
+   "Chemokines",
+   "Dog Diseases",
+   "Dogs",
+   "Granulocyte-Macrophage Colony-Stimulating Factor",
+   "Interleukin-8",
+   "Longitudinal Studies",
+   "Retrospective Studies"
+  ],
+  "keywords": [],
+  "abstract": "Canine babesiosis caused by the intraerythrocytic protozoan parasite Babesia canis is a tick-borne disease characterized by a host response that involves both cellular and humoral immunity. This study focuses on the secretion of cytokines Granulocyte-Macrophage Colony-Stimulating Factor (GM-CSF), Keratinocyte Chemotactic-like (KC-like), Interleukins (IL)-2, IL-7, IL-8, IL-10, IL-15, IL-18 and Monocyte Chemotactic Protein-1 (MCP-1) in babesiosis caused by Babesia canis upon treatment with Imizol®. We assessed time dependent changes in cytokine levels and tested whether these changes correlate with pathogenesis of the disease. Sixteen healthy dogs and 31 dogs infected with Babesia canis, of which 18 showed complications, were treated with Imizol®. One dog died during the study (3.2%). Longitudinal study was perfomed by monitoring dogs at the first day of presentation (day 1) and 6 days later (day 7). Our results show that higher MCP-1 levels on day 1 are positively associated with the occurrence of complications, (complicated vs. uncomplicated; p = 0.00016). A similar pattern was observed for KC-like on day 1 (p = 0.0326) and day 7 (p = 0.044). Moreover, babesiosis caused by B. canis produced a steady increase in IL-8 levels with a moderate to strong negative correlation with erythrocyte counts and hematocrit in uncomplicated diseased dogs only (Spearman's rank correlation coefficient rs = -0.582 and rs = -0.598 respectively). Like for MCP-1, KC-like levels also differed in complicated and uncomplicated diseased dogs on day 1 (p = 0.03236) and day 7 (p = 0.044). Furthermore, KC-like levels were strongly correlated with IL-8 levels (rs = 0.663-0.7) and non-segmented neutrophil counts (rs = 0.572-0.732) in both diseased groups. Analysis of ROC suggests the use of serum levels of MCP-1 and IL-7 as predictors of the occurrence of complications with an AUC of 0.906 and 0.896 respectively and linear combinations of MCP-1, KC-Like, IL-7 and GM-CSF with values up to AUC = 0.983. Cytokine cluster analysis presented in this study can contribute to a better understanding of the pathogenesis of babesiosis and serve as a prognostic tool for the early detection of cases with highest likelihood of developing complications. Overall, our studies show that infection by B. canis elicits a cytokine pattern that is distinct from that observed with B. rossi, and that some of the inflammatory mediators can be useful to predict complications. Our results also suggest targets for the development of novel therapeutic strategies in babesiosis caused by B. canis.",
+  "corrections": [],
+  "epmc_first_pub_date": "2018-01-05",
+  "is_oa": "Y",
+  "has_suppl": "Y",
+  "found_by": [
+   "EP1_broad",
+   "EP2_species",
+   "PM1_broad",
+   "PM2_species",
+   "PM3_mechanism"
+  ],
+  "in_window": true,
+  "date_discrepancy": "PubMed-derived 2018-01-01 vs Europe PMC firstPublicationDate 2018-01-05",
+  "online_vs_issue": "online 2018-01-05; issue 2018-01-01 (year)"
+ },
+ "screening": {
+  "key": "PMID:29304171",
+  "decision": "include",
+  "include_type": "primary",
+  "exclude_reason": null,
+  "primary_category": "INF",
+  "secondary_tags": [
+   "ERY",
+   "SEV"
+  ],
+  "species": "B. canis (reported; method not stated in abstract)",
+  "rationale": "Cytokine/chemokine profiles (MCP-1, KC-like, IL-8) in complicated versus uncomplicated B. canis cases; pathogenesis and complication prediction.",
+  "stage": "screen",
+  "batch": "r1_03.md",
+  "screening_round": "r1"
+ },
+ "fulltext_check": {
+  "key": "PMID:29304171",
+  "pmcid": "PMC5756041",
+  "checked": "2026-10-23",
+  "fulltext_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5756041/fullTextXML",
+  "fulltext_status": 200,
+  "data_availability": [
+   "Data AvailabilityAll relevant data are within the paper and its Supporting Information files."
+  ],
+  "supplementary": [
+   {
+    "label": "S1 Table",
+    "caption": "Cytokine levels, hematologic data for all samples and reference ranges used in this study.(XLSX)",
+    "file": "pone.0190474.s001.xlsx"
+   }
+  ],
+  "repository_links": [],
+  "section_titles": [
+   "Introduction",
+   "Materials and methods",
+   "Animals",
+   "Blood samples",
+   "Hematological analysis",
+   "Quantification of cytokines in serum",
+   "Statistical analysis",
+   "Results",
+   "Discussion",
+   "Conclusion",
+   "Supporting information"
+  ],
+  "has_body": true
+ }
+}

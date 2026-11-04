@@ -1,0 +1,97 @@
+{
+ "id": "CB504",
+ "filename": "CB504_2015_platelet-activation-platelet-leukocyte-interaction-naturally.md",
+ "key": "PMID:26088270",
+ "record": {
+  "pmid": "26088270",
+  "pmcid": null,
+  "doi": "10.1016/j.tvjl.2015.05.008",
+  "title": "Platelet activation and platelet-leukocyte interaction in dogs naturally infected with Babesia rossi.",
+  "authors": [
+   "Goddard A",
+   "Leisewitz AL",
+   "Kristensen AT",
+   "Schoeman JP"
+  ],
+  "journal": "Veterinary journal (London, England : 1997)",
+  "journal_abbrev": "Vet J",
+  "volume": "205",
+  "issue": "3",
+  "pages": "387-92",
+  "language": [
+   "eng"
+  ],
+  "issue_date": "2015-09-01",
+  "issue_date_precision": "month",
+  "epub_date": "2015-05-20",
+  "pubmed_entry_date": "2015-06-20",
+  "first_pub_date": "2015-05-20",
+  "publication_types": [
+   "Journal Article",
+   "Research Support, Non-U.S. Gov't"
+  ],
+  "mesh": [
+   "Animals",
+   "Babesia",
+   "Babesiosis",
+   "Blood Platelets",
+   "Cell Aggregation",
+   "Dog Diseases",
+   "Dogs",
+   "Leukocytes",
+   "Male",
+   "Platelet Activation",
+   "Treatment Outcome"
+  ],
+  "keywords": [
+   "Babesia rossi",
+   "Dog",
+   "Platelet activation",
+   "Platelet–leukocyte interaction",
+   "Platelet–monocyte aggregation"
+  ],
+  "abstract": "Using flow cytometry, platelet-leukocyte aggregate (PLA) formation has previously been documented in dogs with a variety of systemic inflammatory disorders and immune-mediated haemolytic anaemia. Platelet activation and subsequent interaction between platelets and leukocytes are important for regulating innate immunity and systemic inflammation. The objective of this study was to investigate PLA formation in canine babesiosis and to determine whether it was associated with outcome. Blood was collected from 36 client-owned dogs diagnosed with Babesia rossi infection and 15 healthy controls using EDTA as anticoagulant. Activated platelets and PLA formation were detected by measuring surface expression of P-selectin (CD62P) on platelets, monocytes and neutrophils. Of the Babesia-infected dogs, 29 survived and seven died. The percentage of CD62P-positive monocytes was significantly higher (P = 0.036) in the Babesia-infected dogs (54%) than in healthy control dogs (35.3%). However, there were no significant differences between the Babesia-infected and control groups for CD62P-positive platelets (4.9% and 1.2%, respectively) and CD62P-positive neutrophils (28.3% and 17.9%, respectively). The percentage of CD62P-positive monocytes was significantly higher (P = 0.019) in the survivors (58.9%) than in healthy control dogs; however, there were no significant differences between the non-survivors (39.2%) and the controls or between survivors and non-survivors. There were no significant differences between groups for the percentage of CD62P-positive platelets (survivors 4.8%; non-survivors 5.3%; controls 1.2%) or CD62P-positive neutrophils (survivors 31.6%; non-survivors 5.6%; controls 17.9%). In conclusion, Babesia-infected dogs, specifically dogs that survived, had a significantly increased percentage of platelet-monocyte aggregates compared to healthy control dogs.",
+  "corrections": [],
+  "epmc_first_pub_date": "2015-05-20",
+  "is_oa": "N",
+  "has_suppl": "N",
+  "found_by": [
+   "EP1_broad",
+   "EP2_species",
+   "PM1_broad",
+   "PM2_species",
+   "PM3_mechanism"
+  ],
+  "in_window": true,
+  "online_vs_issue": "online 2015-05-20; issue 2015-09-01 (month)",
+  "existing_id": "BG013",
+  "existing_retired": false,
+  "key": "PMID:26088270",
+  "source_files": [
+   "candidates.jsonl"
+  ]
+ },
+ "screening": {
+  "key": "PMID:26088270",
+  "decision": "include",
+  "include_type": "primary",
+  "exclude_reason": null,
+  "primary_category": "COA",
+  "secondary_tags": [
+   "INF",
+   "SEV"
+  ],
+  "species": "B. rossi (confirmed)",
+  "rationale": "Flow cytometric study of platelet activation and platelet-leukocyte aggregates in 36 B. rossi-infected dogs versus controls, with survival analysis. Already in the review as BG013 and screened as a new record.",
+  "stage": "screen",
+  "batch": "r4_25.md",
+  "screening_round": "r4"
+ },
+ "fulltext_check": {
+  "key": "PMID:26088270",
+  "pmcid": null,
+  "checked": "2026-10-28",
+  "fulltext_status": "no_pmcid"
+ },
+ "replaces": "BG013"
+}

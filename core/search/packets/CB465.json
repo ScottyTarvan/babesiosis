@@ -1,0 +1,65 @@
+{
+ "id": "CB465",
+ "filename": "CB465_2014_importance-haematological-changes-diagnosing-babesiosis.md",
+ "key": "REF:importanceofhaematologicalchangesindiagnosingcaninebabesiosi",
+ "record": {
+  "pmid": null,
+  "doi": null,
+  "title": "Importance of haematological changes in diagnosing canine babesiosis",
+  "journal": "Lithuanian University of Health Sciences",
+  "first_pub_date": "2014-01-01",
+  "year": "2014",
+  "abstract": "Over the past ten years, canine babesiosis spread widely in Lithuania. In this retrospective study during 2003–2012, blood of 300 dogs with babesiosis was investigated at the Veterinary Academy of Lithuanian University of Health Sciences (LUHS) and Dr. L. Kriaučeliūnas Small Animal Clinic. Morphological changes (RBC, HCT, Hb, PLT, WBC, leukogram and core shift) of blood were tested searching for regularities, which may be enough to reasonably suspect that the dog is suffering from babesiosis. Blood tests were carried out in 300 dogs: 186 dogs with haematological abnormalities and 114 dogs with normal haematological findings. This study shows that babesiosis can be characterized by marked thrombocytopenia (30.90±4.97 x 109/l, P<0.05), neutrophilic leukogram profile change to lymphocytic-plasmocytic and monocytosis (16.20±1.30 %, P<0.05). Also there is often a tendency to anemia and leukopenia. Haemolysis of erythrocytes often cause renal failure and azotemia develops (UREA 29.32±3.75 mmol/l, P<0.05). Complication such as renal failure is of particular importance in predicting epicrisis. Less common babesiosis is accompanied by liver failure.",
+  "found_by": [
+   "OA:title_and_abstract",
+   "citation:backward:33666974"
+  ],
+  "unresolved": true,
+  "source_id": "REF:importanceofhaematologicalchangesindiagnosingcaninebabesiosi",
+  "key": "REF:importanceofhaematologicalchangesindiagnosingcaninebabesiosi",
+  "source_files": [
+   "candidates_r2.jsonl",
+   "candidates_r3.jsonl"
+  ],
+  "authors": [
+   "Gintaras Zamokas",
+   "Aidas Grigonis",
+   "Birutė Karvelienė",
+   "Gintaras Daunoras",
+   "Lina Babickaitė",
+   "Ingrida Šapalienė"
+  ],
+  "type": "article",
+  "language": [
+   "en"
+  ],
+  "abstract_source": "OpenAlex abstract_inverted_index (reconstructed)",
+  "src": "OPENALEX",
+  "in_window": true
+ },
+ "screening": {
+  "key": "REF:importanceofhaematologicalchangesindiagnosingcaninebabesiosi",
+  "decision": "include",
+  "include_type": "primary",
+  "exclude_reason": null,
+  "primary_category": "ERY",
+  "secondary_tags": [
+   "COA",
+   "INF",
+   "REN",
+   "MET"
+  ],
+  "species": "Babesia sp. (unspecified; Lithuania, likely B. canis)",
+  "rationale": "Abstract via OpenAlex: a retrospective haematology and biochemistry series of 300 infected dogs (thrombocytopenia, monocytosis, anaemia, azotaemia and renal failure), which is an eligible clinicopathological profile. The OpenAlex record (Zamokas et al. 2014) points only to the LSMU repository copy of a journal article; the source journal was not confirmed, so check it at extraction.",
+  "stage": "adjudicated",
+  "batch": "r4_19.md",
+  "first_decision": "uncertain",
+  "screening_round": "r4"
+ },
+ "fulltext_check": {
+  "key": "REF:importanceofhaematologicalchangesindiagnosingcaninebabesiosi",
+  "pmcid": null,
+  "checked": "2026-10-28",
+  "fulltext_status": "no_pmcid"
+ }
+}

@@ -1,0 +1,121 @@
+{
+ "id": "CB517",
+ "filename": "CB517_2016_excessive-pro-inflammatory-serum-cytokine-concentrations.md",
+ "key": "PMID:26953797",
+ "record": {
+  "pmid": "26953797",
+  "pmcid": "PMC4783066",
+  "doi": "10.1371/journal.pone.0150113",
+  "title": "Excessive Pro-Inflammatory Serum Cytokine Concentrations in Virulent Canine Babesiosis.",
+  "authors": [
+   "Goddard A",
+   "Leisewitz AL",
+   "Kjelgaard-Hansen M",
+   "Kristensen AT",
+   "Schoeman JP"
+  ],
+  "journal": "PloS one",
+  "journal_abbrev": "PLoS One",
+  "volume": "11",
+  "issue": "3",
+  "pages": "e0150113",
+  "language": [
+   "eng"
+  ],
+  "issue_date": "2016-01-01",
+  "issue_date_precision": "year",
+  "epub_date": "2016-03-08",
+  "pubmed_entry_date": "2016-03-10",
+  "first_pub_date": "2016-01-01",
+  "publication_types": [
+   "Journal Article",
+   "Research Support, Non-U.S. Gov't"
+  ],
+  "mesh": [
+   "Animals",
+   "Babesia",
+   "Babesiosis",
+   "Cytokines",
+   "Dog Diseases",
+   "Dogs",
+   "Inflammation"
+  ],
+  "keywords": [],
+  "abstract": "Babesia rossi infection causes a severe inflammatory response in the dog, which is the result of the balance between pro- and anti-inflammatory cytokine secretion. The aim of this study was to determine whether changes in cytokine concentrations were present in dogs with babesiosis and whether it was associated with disease outcome. Ninety-seven dogs naturally infected with B. rossi were studied and fifteen healthy dogs were included as controls. Diagnosis of babesiosis was confirmed by polymerase chain reaction and reverse line blot. Blood samples were collected from the jugular vein at admission, prior to any treatment. Cytokine concentrations were assessed using a canine-specific multiplex assay on an automated analyser. Serum concentrations of interleukin (IL)-2, IL-6, IL-8, IL-10, IL-18, granulocyte-macrophage colony stimulating factor (GM-CSF) and monocyte chemotactic protein-1 (MCP-1) were measured. Twelve of the Babesia-infected dogs died (12%) and 85 survived (88%). Babesia-infected dogs were also divided into those that presented within 48 hours from displaying clinical signs, and those that presented more than 48 hours after displaying clinical signs. Cytokine concentrations were compared between the different groups using the Mann-Whitney U test. IL-10 and MCP-1 concentrations were significantly elevated for the Babesia-infected dogs compared to the healthy controls. In contrast, the IL-8 concentration was significantly decreased in the Babesia-infected dogs compared to the controls. Concentrations of IL-6 and MCP-1 were significantly increased in the non-survivors compared to the survivors. Concentrations for IL-2, IL-6, IL-18 and GM-CSF were significantly higher in those cases that presented during the more acute stage of the disease. These findings suggest that a mixed cytokine response is present in dogs with babesiosis caused by B. rossi, and that an excessive pro-inflammatory response may result in a poor outcome.",
+  "corrections": [],
+  "epmc_first_pub_date": "2016-03-08",
+  "is_oa": "Y",
+  "has_suppl": "Y",
+  "found_by": [
+   "EP1_broad",
+   "EP2_species",
+   "PM1_broad",
+   "PM2_species",
+   "PM3_mechanism"
+  ],
+  "in_window": true,
+  "date_discrepancy": "PubMed-derived 2016-01-01 vs Europe PMC firstPublicationDate 2016-03-08",
+  "online_vs_issue": "online 2016-03-08; issue 2016-01-01 (year)",
+  "existing_id": "BG014",
+  "existing_retired": false,
+  "key": "PMID:26953797",
+  "source_files": [
+   "candidates.jsonl"
+  ]
+ },
+ "screening": {
+  "key": "PMID:26953797",
+  "decision": "include",
+  "include_type": "primary",
+  "exclude_reason": null,
+  "primary_category": "INF",
+  "secondary_tags": [
+   "SEV"
+  ],
+  "species": "B. rossi (confirmed, PCR/RLB)",
+  "rationale": "Serum cytokine concentrations in 97 B. rossi-infected dogs against 15 controls, linked to outcome. This is a record already in the review as BG014, screened as a new record on content.",
+  "stage": "screen",
+  "batch": "r4_26.md",
+  "screening_round": "r4"
+ },
+ "fulltext_check": {
+  "key": "PMID:26953797",
+  "pmcid": "PMC4783066",
+  "checked": "2026-10-28",
+  "fulltext_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4783066/fullTextXML",
+  "fulltext_status": 200,
+  "data_availability": [
+   "Data AvailabilityAll relevant data are within the paper and its Supporting Information files."
+  ],
+  "supplementary": [
+   {
+    "label": "S1 File",
+    "caption": "Cytokine Concentrations in Virulent Canine Babesiosis—Leukocyte Data.(PDF)",
+    "file": "pone.0150113.s001.pdf"
+   },
+   {
+    "label": "S2 File",
+    "caption": "Cytokine Concentrations in Virulent Canine Babesiosis—APP and Cytokine Data.(PDF)",
+    "file": "pone.0150113.s002.pdf"
+   }
+  ],
+  "repository_links": [],
+  "section_titles": [
+   "Introduction",
+   "Materials and Methods",
+   "Study population",
+   "Patient sampling",
+   "DNA extraction and PCR",
+   "Analyses",
+   "Statistical analysis",
+   "Results",
+   "Study population characteristics",
+   "Cytokine, acute phase protein and leukocyte analyses",
+   "Discussion",
+   "Conclusions",
+   "Supporting Information"
+  ],
+  "has_body": true
+ },
+ "replaces": "BG014"
+}

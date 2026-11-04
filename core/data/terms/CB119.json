@@ -1,0 +1,1472 @@
+{
+ "id": "CB119",
+ "document": "data/markdown/CB119.md",
+ "source_format": "jats_xml",
+ "translated": false,
+ "words": 6512,
+ "run_utc": "2026-10-30T05:34:23+00:00",
+ "threshold": 0.85,
+ "kept_types": [
+  "T019",
+  "T020",
+  "T037",
+  "T046",
+  "T047",
+  "T048",
+  "T049",
+  "T050",
+  "T184",
+  "T190",
+  "T191"
+ ],
+ "term_count": 81,
+ "terms": [
+  {
+   "term": "C0009450",
+   "concept": "Communicable Diseases",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 57,
+   "mentions_negated": 9,
+   "mentions_affirmed": 48,
+   "sections": {
+    "3. contrasting features of the disease caused by babesia species": 24,
+    "introduction": 19,
+    "2. comparing the clinical presentations babesia infections in dogs have in common": 12,
+    "abstract": 1,
+    "conclusion": 1
+   },
+   "forms": {
+    "infection": 57
+   },
+   "best_score": 0.962
+  },
+  {
+   "term": "C0851162",
+   "concept": "Infections of musculoskeletal system",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 51,
+   "mentions_negated": 2,
+   "mentions_affirmed": 49,
+   "sections": {
+    "3. contrasting features of the disease caused by babesia species": 30,
+    "2. comparing the clinical presentations babesia infections in dogs have in common": 12,
+    "introduction": 6,
+    "abstract": 2,
+    "conclusion": 1
+   },
+   "forms": {
+    "infections": 51
+   },
+   "best_score": 0.971
+  },
+  {
+   "term": "C0012634",
+   "concept": "Disease",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 33,
+   "mentions_negated": 1,
+   "mentions_affirmed": 32,
+   "sections": {
+    "introduction": 14,
+    "3. contrasting features of the disease caused by babesia species": 12,
+    "abstract": 4,
+    "2. comparing the clinical presentations babesia infections in dogs have in common": 2,
+    "conclusion": 1
+   },
+   "forms": {
+    "disease": 25,
+    "diseases": 8
+   },
+   "best_score": 0.987
+  },
+  {
+   "term": "C0002871",
+   "concept": "Anemia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 25,
+   "mentions_negated": 0,
+   "mentions_affirmed": 25,
+   "sections": {
+    "2. comparing the clinical presentations babesia infections in dogs have in common": 13,
+    "introduction": 11,
+    "conclusion": 1
+   },
+   "forms": {
+    "anemia": 25
+   },
+   "best_score": 0.974
+  },
+  {
+   "term": "C0015967",
+   "concept": "Fever",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 20,
+   "mentions_negated": 2,
+   "mentions_affirmed": 18,
+   "sections": {
+    "introduction": 12,
+    "2. comparing the clinical presentations babesia infections in dogs have in common": 7,
+    "3. contrasting features of the disease caused by babesia species": 1
+   },
+   "forms": {
+    "pyrexia": 13,
+    "fever": 4,
+    "fever’": 2,
+    "febrile": 1
+   },
+   "best_score": 0.98
+  },
+  {
+   "term": "C0026766",
+   "concept": "Multiple Organ Failure",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 16,
+   "mentions_negated": 2,
+   "mentions_affirmed": 14,
+   "sections": {
+    "3. contrasting features of the disease caused by babesia species": 14,
+    "introduction": 2
+   },
+   "forms": {
+    "mods": 13,
+    "multiple organ dysfunction syndrome": 3
+   },
+   "best_score": 0.971
+  },
+  {
+   "term": "C0004576",
+   "concept": "Babesiosis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 15,
+   "mentions_negated": 3,
+   "mentions_affirmed": 12,
+   "sections": {
+    "introduction": 6,
+    "3. contrasting features of the disease caused by babesia species": 6,
+    "2. comparing the clinical presentations babesia infections in dogs have in common": 2,
+    "abstract": 1
+   },
+   "forms": {
+    "babesiosis": 10,
+    "babesia infections": 3,
+    "babesia infection": 2
+   },
+   "best_score": 0.972
+  },
+  {
+   "term": "C0022346",
+   "concept": "Icterus",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 14,
+   "mentions_negated": 1,
+   "mentions_affirmed": 13,
+   "sections": {
+    "3. contrasting features of the disease caused by babesia species": 14
+   },
+   "forms": {
+    "icterus": 12,
+    "icteric": 2
+   },
+   "best_score": 0.958
+  },
+  {
+   "term": "C0242966",
+   "concept": "Systemic Inflammatory Response Syndrome",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 13,
+   "mentions_negated": 1,
+   "mentions_affirmed": 12,
+   "sections": {
+    "3. contrasting features of the disease caused by babesia species": 13
+   },
+   "forms": {
+    "sirs": 11,
+    "systemic inflammatory response syndrome": 2
+   },
+   "best_score": 0.987
+  },
+  {
+   "term": "C0019054",
+   "concept": "Hemolysis (disorder)",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 11,
+   "mentions_negated": 1,
+   "mentions_affirmed": 10,
+   "sections": {
+    "2. comparing the clinical presentations babesia infections in dogs have in common": 7,
+    "introduction": 3,
+    "abstract": 1
+   },
+   "forms": {
+    "hemolysis": 11
+   },
+   "best_score": 0.991
+  },
+  {
+   "term": "C0021368",
+   "concept": "Inflammation",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 11,
+   "mentions_negated": 1,
+   "mentions_affirmed": 10,
+   "sections": {
+    "3. contrasting features of the disease caused by babesia species": 9,
+    "introduction": 1,
+    "conclusion": 1
+   },
+   "forms": {
+    "inflammation": 11
+   },
+   "best_score": 0.958
+  },
+  {
+   "term": "C0003123",
+   "concept": "Anorexia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 10,
+   "mentions_negated": 0,
+   "mentions_affirmed": 10,
+   "sections": {
+    "introduction": 6,
+    "2. comparing the clinical presentations babesia infections in dogs have in common": 4
+   },
+   "forms": {
+    "anorexia": 8,
+    "anorexic": 2
+   },
+   "best_score": 0.969
+  },
+  {
+   "term": "C0242723",
+   "concept": "Parasitemia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 10,
+   "mentions_negated": 3,
+   "mentions_affirmed": 7,
+   "sections": {
+    "3. contrasting features of the disease caused by babesia species": 4,
+    "introduction": 3,
+    "2. comparing the clinical presentations babesia infections in dogs have in common": 3
+   },
+   "forms": {
+    "parasitemia": 10
+   },
+   "best_score": 0.992
+  },
+  {
+   "term": "C0023380",
+   "concept": "Lethargy",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 9,
+   "mentions_negated": 0,
+   "mentions_affirmed": 9,
+   "sections": {
+    "2. comparing the clinical presentations babesia infections in dogs have in common": 5,
+    "introduction": 4
+   },
+   "forms": {
+    "lethargy": 8,
+    "lethargic": 1
+   },
+   "best_score": 0.989
+  },
+  {
+   "term": "C0030305",
+   "concept": "Pancreatitis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 9,
+   "mentions_negated": 1,
+   "mentions_affirmed": 8,
+   "sections": {
+    "3. contrasting features of the disease caused by babesia species": 9
+   },
+   "forms": {
+    "pancreatitis": 9
+   },
+   "best_score": 0.986
+  },
+  {
+   "term": "C0221423",
+   "concept": "Illness (finding)",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 7,
+   "mentions_negated": 0,
+   "mentions_affirmed": 7,
+   "sections": {
+    "3. contrasting features of the disease caused by babesia species": 4,
+    "2. comparing the clinical presentations babesia infections in dogs have in common": 2,
+    "introduction": 1
+   },
+   "forms": {
+    "illness": 7
+   },
+   "best_score": 0.967
+  },
+  {
+   "term": "C0035222",
+   "concept": "Respiratory Distress Syndrome, Adult",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 6,
+   "mentions_negated": 0,
+   "mentions_affirmed": 6,
+   "sections": {
+    "3. contrasting features of the disease caused by babesia species": 6
+   },
+   "forms": {
+    "ards": 6
+   },
+   "best_score": 0.991
+  },
+  {
+   "term": "C0037088",
+   "concept": "Signs and Symptoms",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 6,
+   "mentions_negated": 2,
+   "mentions_affirmed": 4,
+   "sections": {
+    "introduction": 2,
+    "2. comparing the clinical presentations babesia infections in dogs have in common": 2,
+    "3. contrasting features of the disease caused by babesia species": 2
+   },
+   "forms": {
+    "finding": 5,
+    "clinical finding": 1
+   },
+   "best_score": 0.994
+  },
+  {
+   "term": "C0012739",
+   "concept": "Disseminated Intravascular Coagulation",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 5,
+   "mentions_negated": 0,
+   "mentions_affirmed": 5,
+   "sections": {
+    "3. contrasting features of the disease caused by babesia species": 5
+   },
+   "forms": {
+    "dic": 4,
+    "disseminated intravascular coagulation": 1
+   },
+   "best_score": 0.968
+  },
+  {
+   "term": "C0019080",
+   "concept": "Hemorrhage",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 5,
+   "mentions_negated": 1,
+   "mentions_affirmed": 4,
+   "sections": {
+    "3. contrasting features of the disease caused by babesia species": 5
+   },
+   "forms": {
+    "hemorrhage": 4,
+    "hemorrhages": 1
+   },
+   "best_score": 0.99
+  },
+  {
+   "term": "C0020615",
+   "concept": "Hypoglycemia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 5,
+   "mentions_negated": 1,
+   "mentions_affirmed": 4,
+   "sections": {
+    "3. contrasting features of the disease caused by babesia species": 5
+   },
+   "forms": {
+    "hypoglycemia": 5
+   },
+   "best_score": 0.99
+  },
+  {
+   "term": "C0042963",
+   "concept": "Vomiting",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 5,
+   "mentions_negated": 0,
+   "mentions_affirmed": 5,
+   "sections": {
+    "introduction": 3,
+    "2. comparing the clinical presentations babesia infections in dogs have in common": 2
+   },
+   "forms": {
+    "vomiting": 5
+   },
+   "best_score": 0.957
+  },
+  {
+   "term": "C0242528",
+   "concept": "Azotemia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 5,
+   "mentions_negated": 1,
+   "mentions_affirmed": 4,
+   "sections": {
+    "3. contrasting features of the disease caused by babesia species": 5
+   },
+   "forms": {
+    "azotemia": 5
+   },
+   "best_score": 0.964
+  },
+  {
+   "term": "C0795692",
+   "concept": "Hyperlactatemia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 5,
+   "mentions_negated": 0,
+   "mentions_affirmed": 5,
+   "sections": {
+    "3. contrasting features of the disease caused by babesia species": 5
+   },
+   "forms": {
+    "hyperlactatemia": 5
+   },
+   "best_score": 0.97
+  },
+  {
+   "term": "C0005779",
+   "concept": "Blood Coagulation Disorders",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 4,
+   "mentions_negated": 1,
+   "mentions_affirmed": 3,
+   "sections": {
+    "3. contrasting features of the disease caused by babesia species": 4
+   },
+   "forms": {
+    "coagulopathy": 4
+   },
+   "best_score": 0.983
+  },
+  {
+   "term": "C0010957",
+   "concept": "Tissue damage",
+   "semantic_types": [
+    "Injury or Poisoning"
+   ],
+   "mentions": 4,
+   "mentions_negated": 2,
+   "mentions_affirmed": 2,
+   "sections": {
+    "3. contrasting features of the disease caused by babesia species": 3,
+    "abstract": 1
+   },
+   "forms": {
+    "damage": 4
+   },
+   "best_score": 0.987
+  },
+  {
+   "term": "C0022660",
+   "concept": "Kidney Failure, Acute",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 4,
+   "mentions_negated": 0,
+   "mentions_affirmed": 4,
+   "sections": {
+    "3. contrasting features of the disease caused by babesia species": 4
+   },
+   "forms": {
+    "acute renal failure": 3,
+    "acute kidney injury": 1
+   },
+   "best_score": 0.976
+  },
+  {
+   "term": "C0024530",
+   "concept": "Malaria",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 4,
+   "mentions_negated": 1,
+   "mentions_affirmed": 3,
+   "sections": {
+    "introduction": 2,
+    "2. comparing the clinical presentations babesia infections in dogs have in common": 2
+   },
+   "forms": {
+    "malaria": 4
+   },
+   "best_score": 0.996
+  },
+  {
+   "term": "C0039082",
+   "concept": "Syndrome",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 4,
+   "mentions_negated": 0,
+   "mentions_affirmed": 4,
+   "sections": {
+    "3. contrasting features of the disease caused by babesia species": 4
+   },
+   "forms": {
+    "syndrome": 4
+   },
+   "best_score": 0.994
+  },
+  {
+   "term": "C0231218",
+   "concept": "Malaise",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 4,
+   "mentions_negated": 0,
+   "mentions_affirmed": 4,
+   "sections": {
+    "3. contrasting features of the disease caused by babesia species": 3,
+    "introduction": 1
+   },
+   "forms": {
+    "ill": 4
+   },
+   "best_score": 0.989
+  },
+  {
+   "term": "C0242488",
+   "concept": "Acute Lung Injury",
+   "semantic_types": [
+    "Injury or Poisoning"
+   ],
+   "mentions": 4,
+   "mentions_negated": 0,
+   "mentions_affirmed": 4,
+   "sections": {
+    "3. contrasting features of the disease caused by babesia species": 4
+   },
+   "forms": {
+    "acute lung injury": 2,
+    "ali": 2
+   },
+   "best_score": 0.976
+  },
+  {
+   "term": "C0476273",
+   "concept": "Respiratory distress",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 4,
+   "mentions_negated": 0,
+   "mentions_affirmed": 4,
+   "sections": {
+    "3. contrasting features of the disease caused by babesia species": 4
+   },
+   "forms": {
+    "respiratory distress": 4
+   },
+   "best_score": 0.991
+  },
+  {
+   "term": "C0699748",
+   "concept": "Pathogenesis",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 4,
+   "mentions_negated": 0,
+   "mentions_affirmed": 4,
+   "sections": {
+    "3. contrasting features of the disease caused by babesia species": 2,
+    "abstract": 1,
+    "2. comparing the clinical presentations babesia infections in dogs have in common": 1
+   },
+   "forms": {
+    "pathogenesis": 4
+   },
+   "best_score": 0.983
+  },
+  {
+   "term": "C1514893",
+   "concept": "physiologic resolution",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 4,
+   "mentions_negated": 1,
+   "mentions_affirmed": 3,
+   "sections": {
+    "3. contrasting features of the disease caused by babesia species": 3,
+    "introduction": 1
+   },
+   "forms": {
+    "resolution": 3,
+    "resolved": 1
+   },
+   "best_score": 0.973
+  },
+  {
+   "term": "C0001622",
+   "concept": "Adrenal Gland Hyperfunction",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 3,
+   "mentions_negated": 2,
+   "mentions_affirmed": 1,
+   "sections": {
+    "3. contrasting features of the disease caused by babesia species": 3
+   },
+   "forms": {
+    "hypercortisolemia": 3
+   },
+   "best_score": 0.99
+  },
+  {
+   "term": "C0011991",
+   "concept": "Diarrhea",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "introduction": 2,
+    "2. comparing the clinical presentations babesia infections in dogs have in common": 1
+   },
+   "forms": {
+    "diarrhea": 3
+   },
+   "best_score": 0.983
+  },
+  {
+   "term": "C0020433",
+   "concept": "Hyperbilirubinemia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "3. contrasting features of the disease caused by babesia species": 3
+   },
+   "forms": {
+    "hyperbilirubinemia": 3
+   },
+   "best_score": 0.977
+  },
+  {
+   "term": "C0020456",
+   "concept": "Hyperglycemia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 3,
+   "mentions_negated": 1,
+   "mentions_affirmed": 2,
+   "sections": {
+    "3. contrasting features of the disease caused by babesia species": 3
+   },
+   "forms": {
+    "hyperglycemia": 3
+   },
+   "best_score": 0.969
+  },
+  {
+   "term": "C0242656",
+   "concept": "Disease Progression",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "3. contrasting features of the disease caused by babesia species": 2,
+    "conclusion": 1
+   },
+   "forms": {
+    "disease progression": 3
+   },
+   "best_score": 0.977
+  },
+  {
+   "term": "C0275524",
+   "concept": "Coinfection",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "introduction": 2,
+    "2. comparing the clinical presentations babesia infections in dogs have in common": 1
+   },
+   "forms": {
+    "co-infection": 2,
+    "co-infections": 1
+   },
+   "best_score": 0.952
+  },
+  {
+   "term": "C0344315",
+   "concept": "Depressed mood",
+   "semantic_types": [
+    "Mental or Behavioral Dysfunction"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "3. contrasting features of the disease caused by babesia species": 2,
+    "introduction": 1
+   },
+   "forms": {
+    "depressed": 3
+   },
+   "best_score": 0.981
+  },
+  {
+   "term": "C0919747",
+   "concept": "Cytokine Storm",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "3. contrasting features of the disease caused by babesia species": 3
+   },
+   "forms": {
+    "cytokine storm": 3
+   },
+   "best_score": 0.97
+  },
+  {
+   "term": "C3263722",
+   "concept": "Traumatic AND/OR non-traumatic injury",
+   "semantic_types": [
+    "Injury or Poisoning"
+   ],
+   "mentions": 3,
+   "mentions_negated": 1,
+   "mentions_affirmed": 2,
+   "sections": {
+    "3. contrasting features of the disease caused by babesia species": 3
+   },
+   "forms": {
+    "injury": 3
+   },
+   "best_score": 0.971
+  },
+  {
+   "term": "C0001314",
+   "concept": "Acute Disease",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "introduction": 2
+   },
+   "forms": {
+    "acute disease": 2
+   },
+   "best_score": 0.987
+  },
+  {
+   "term": "C0002878",
+   "concept": "Anemia, Hemolytic",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "2. comparing the clinical presentations babesia infections in dogs have in common": 1,
+    "3. contrasting features of the disease caused by babesia species": 1
+   },
+   "forms": {
+    "hemolytic anemia": 2
+   },
+   "best_score": 0.978
+  },
+  {
+   "term": "C0009566",
+   "concept": "Complication",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "3. contrasting features of the disease caused by babesia species": 2
+   },
+   "forms": {
+    "complications": 1,
+    "complication": 1
+   },
+   "best_score": 0.977
+  },
+  {
+   "term": "C0011570",
+   "concept": "Mental Depression",
+   "semantic_types": [
+    "Mental or Behavioral Dysfunction"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "introduction": 2
+   },
+   "forms": {
+    "depression": 2
+   },
+   "best_score": 0.97
+  },
+  {
+   "term": "C0013604",
+   "concept": "Edema",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "3. contrasting features of the disease caused by babesia species": 2
+   },
+   "forms": {
+    "edematous": 1,
+    "edema": 1
+   },
+   "best_score": 0.987
+  },
+  {
+   "term": "C0017658",
+   "concept": "Glomerulonephritis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 1,
+   "mentions_affirmed": 1,
+   "sections": {
+    "3. contrasting features of the disease caused by babesia species": 2
+   },
+   "forms": {
+    "glomerulonephritis": 2
+   },
+   "best_score": 0.986
+  },
+  {
+   "term": "C0017662",
+   "concept": "Glomerulonephritis, Membranoproliferative",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "3. contrasting features of the disease caused by babesia species": 2
+   },
+   "forms": {
+    "membranoproliferative glomerulonephritis": 1,
+    "igm-positive membranoproliferative glomerulonephritis": 1
+   },
+   "best_score": 0.983
+  },
+  {
+   "term": "C0020517",
+   "concept": "Hypersensitivity",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "3. contrasting features of the disease caused by babesia species": 2
+   },
+   "forms": {
+    "hypersensitivity": 2
+   },
+   "best_score": 0.994
+  },
+  {
+   "term": "C0022658",
+   "concept": "Kidney Diseases",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "3. contrasting features of the disease caused by babesia species": 2
+   },
+   "forms": {
+    "nephropathy": 2
+   },
+   "best_score": 0.99
+  },
+  {
+   "term": "C0023518",
+   "concept": "Leukocytosis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "3. contrasting features of the disease caused by babesia species": 2
+   },
+   "forms": {
+    "leukocytosis": 2
+   },
+   "best_score": 0.979
+  },
+  {
+   "term": "C0024312",
+   "concept": "Lymphopenia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "3. contrasting features of the disease caused by babesia species": 2
+   },
+   "forms": {
+    "lymphopenia": 2
+   },
+   "best_score": 0.991
+  },
+  {
+   "term": "C0035078",
+   "concept": "Kidney Failure",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "3. contrasting features of the disease caused by babesia species": 2
+   },
+   "forms": {
+    "renal failure": 2
+   },
+   "best_score": 0.96
+  },
+  {
+   "term": "C0036974",
+   "concept": "Shock",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "2. comparing the clinical presentations babesia infections in dogs have in common": 1,
+    "3. contrasting features of the disease caused by babesia species": 1
+   },
+   "forms": {
+    "shock": 1,
+    "collapse": 1
+   },
+   "best_score": 0.998
+  },
+  {
+   "term": "C0160420",
+   "concept": "Injury of kidney",
+   "semantic_types": [
+    "Injury or Poisoning"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "3. contrasting features of the disease caused by babesia species": 2
+   },
+   "forms": {
+    "renal injury": 1,
+    "kidney injury": 1
+   },
+   "best_score": 0.98
+  },
+  {
+   "term": "C0206061",
+   "concept": "Pneumonia, Interstitial",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "3. contrasting features of the disease caused by babesia species": 2
+   },
+   "forms": {
+    "interstitial pneumonia": 2
+   },
+   "best_score": 0.972
+  },
+  {
+   "term": "C0220981",
+   "concept": "Metabolic acidosis",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "3. contrasting features of the disease caused by babesia species": 2
+   },
+   "forms": {
+    "metabolic acidosis": 2
+   },
+   "best_score": 0.991
+  },
+  {
+   "term": "C0349410",
+   "concept": "Single organ dysfunction",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "3. contrasting features of the disease caused by babesia species": 1,
+    "conclusion": 1
+   },
+   "forms": {
+    "organ failure": 2
+   },
+   "best_score": 0.975
+  },
+  {
+   "term": "C1155266",
+   "concept": "Inflammatory Response",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "abstract": 1,
+    "3. contrasting features of the disease caused by babesia species": 1
+   },
+   "forms": {
+    "inflammatory response": 2
+   },
+   "best_score": 0.983
+  },
+  {
+   "term": "C0001511",
+   "concept": "Tissue Adhesions",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "adhesion": 1
+   },
+   "best_score": 0.955
+  },
+  {
+   "term": "C0002880",
+   "concept": "Autoimmune hemolytic anemia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "immune-mediated hemolytic anemia": 1
+   },
+   "best_score": 0.916
+  },
+  {
+   "term": "C0003860",
+   "concept": "Arteritis",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "3. contrasting features of the disease caused by babesia species": 1
+   },
+   "forms": {
+    "arteritis": 1
+   },
+   "best_score": 0.986
+  },
+  {
+   "term": "C0008370",
+   "concept": "Cholestasis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "3. contrasting features of the disease caused by babesia species": 1
+   },
+   "forms": {
+    "bile stasis": 1
+   },
+   "best_score": 0.985
+  },
+  {
+   "term": "C0023895",
+   "concept": "Liver diseases",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "3. contrasting features of the disease caused by babesia species": 1
+   },
+   "forms": {
+    "hepatopathy": 1
+   },
+   "best_score": 0.994
+  },
+  {
+   "term": "C0027720",
+   "concept": "Nephrosis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "3. contrasting features of the disease caused by babesia species": 1
+   },
+   "forms": {
+    "nephrosis": 1
+   },
+   "best_score": 0.982
+  },
+  {
+   "term": "C0033740",
+   "concept": "Protozoan Infections",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "3. contrasting features of the disease caused by babesia species": 1
+   },
+   "forms": {
+    "protozoal infection": 1
+   },
+   "best_score": 0.936
+  },
+  {
+   "term": "C0036690",
+   "concept": "Septicemia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "3. contrasting features of the disease caused by babesia species": 1
+   },
+   "forms": {
+    "sepsis": 1
+   },
+   "best_score": 0.971
+  },
+  {
+   "term": "C0040034",
+   "concept": "Thrombocytopenia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "3. contrasting features of the disease caused by babesia species": 1
+   },
+   "forms": {
+    "thrombocytopenia": 1
+   },
+   "best_score": 0.98
+  },
+  {
+   "term": "C0041948",
+   "concept": "Uremia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "3. contrasting features of the disease caused by babesia species": 1
+   },
+   "forms": {
+    "uremia": 1
+   },
+   "best_score": 0.985
+  },
+  {
+   "term": "C0160390",
+   "concept": "Injury of liver",
+   "semantic_types": [
+    "Injury or Poisoning"
+   ],
+   "mentions": 1,
+   "mentions_negated": 1,
+   "mentions_affirmed": 0,
+   "sections": {
+    "3. contrasting features of the disease caused by babesia species": 1
+   },
+   "forms": {
+    "liver injury": 1
+   },
+   "best_score": 0.972
+  },
+  {
+   "term": "C0235573",
+   "concept": "Hemoglobinemia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "3. contrasting features of the disease caused by babesia species": 1
+   },
+   "forms": {
+    "hemoglobinemia": 1
+   },
+   "best_score": 0.988
+  },
+  {
+   "term": "C0242184",
+   "concept": "Hypoxia",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "3. contrasting features of the disease caused by babesia species": 1
+   },
+   "forms": {
+    "hypoxia": 1
+   },
+   "best_score": 0.978
+  },
+  {
+   "term": "C0276854",
+   "concept": "Infection by Babesia canis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "canine babesiosis": 1
+   },
+   "best_score": 0.969
+  },
+  {
+   "term": "C0333386",
+   "concept": "Chronic lymphocytic inflammation",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "3. contrasting features of the disease caused by babesia species": 1
+   },
+   "forms": {
+    "lymphocytic inflammation": 1
+   },
+   "best_score": 0.88
+  },
+  {
+   "term": "C0554309",
+   "concept": "Prerenal azotemia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "3. contrasting features of the disease caused by babesia species": 1
+   },
+   "forms": {
+    "prerenal azotemia": 1
+   },
+   "best_score": 0.954
+  },
+  {
+   "term": "C0877372",
+   "concept": "hepatosis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "3. contrasting features of the disease caused by babesia species": 1
+   },
+   "forms": {
+    "hepatosis": 1
+   },
+   "best_score": 0.988
+  },
+  {
+   "term": "C1565489",
+   "concept": "Renal Insufficiency",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "3. contrasting features of the disease caused by babesia species": 1
+   },
+   "forms": {
+    "renal dysfunction": 1
+   },
+   "best_score": 0.943
+  },
+  {
+   "term": "C1817978",
+   "concept": "acute inflammatory response",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "3. contrasting features of the disease caused by babesia species": 1
+   },
+   "forms": {
+    "acute systemic inflammatory response": 1
+   },
+   "best_score": 0.856
+  },
+  {
+   "term": "C2609414",
+   "concept": "Acute kidney injury",
+   "semantic_types": [
+    "Injury or Poisoning"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "3. contrasting features of the disease caused by babesia species": 1
+   },
+   "forms": {
+    "acute renal injury": 1
+   },
+   "best_score": 0.971
+  }
+ ]
+}

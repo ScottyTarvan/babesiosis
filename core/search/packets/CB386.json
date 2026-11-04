@@ -1,0 +1,97 @@
+{
+ "id": "CB386",
+ "filename": "CB386_2010_estudio-de-la-babesiosis-canina-producida.md",
+ "key": "https://openalex.org/W56121794",
+ "record": {
+  "pmid": null,
+  "pmcid": null,
+  "doi": null,
+  "title": "Estudio de la babesiosis canina producida por Babesia canis en Galicia: aportaciones clínicas",
+  "journal": "Consulta de difusión veterinaria",
+  "authors": [
+   "João Luís Garcia",
+   "Ivonne Melissa Vargas Rodríguez",
+   "Ana María Goicoa Valdevira",
+   "E. Fraga",
+   "G. Fraga",
+   "Analía Seoane"
+  ],
+  "first_pub_date": "2010-01-01",
+  "type": "article",
+  "language": [
+   "es"
+  ],
+  "abstract": null,
+  "abstract_source": "OpenAlex abstract_inverted_index (reconstructed)",
+  "source_id": "https://openalex.org/W56121794",
+  "src": "OPENALEX",
+  "found_by": [
+   "OA:title_and_abstract"
+  ],
+  "in_window": true,
+  "key": "https://openalex.org/W56121794",
+  "source_files": [
+   "candidates_r3.jsonl"
+  ]
+ },
+ "screening": {
+  "key": "https://openalex.org/W56121794",
+  "decision": "uncertain",
+  "include_type": null,
+  "exclude_reason": null,
+  "primary_category": "SEV",
+  "secondary_tags": [
+   "ERY"
+  ],
+  "species": "B. canis (unspecified method; Galicia, Spain)",
+  "rationale": "Title only, checked on the OpenAlex record (Consulta de difusion veterinaria 17(166):75-82, 2010); the Dialnet page did not load. 'Aportaciones clinicas' suggests a clinical and clinicopathological case series, but this cannot be confirmed without the text.",
+  "stage": "adjudicated",
+  "batch": "r4_08.md",
+  "first_decision": "uncertain",
+  "screening_round": "r4"
+ },
+ "fulltext_check": {
+  "key": "https://openalex.org/W56121794",
+  "pmcid": null,
+  "checked": "2026-10-28",
+  "fulltext_status": "no_pmcid"
+ },
+ "duplicate_records": [
+  {
+   "key": "https://openalex.org/W3209230141",
+   "basis": "Same authors and citation (Consulta de difusion veterinaria 17(166):75-82, 2010); flagged at screening; title similarity 0.86",
+   "record": {
+    "pmid": null,
+    "pmcid": null,
+    "doi": null,
+    "title": "Estudio de la babesiosis canina producida por Babesia canis en Galicia",
+    "journal": "Consulta de difusión veterinaria",
+    "authors": [
+     "João Luís Garcia",
+     "Ivonne Melissa Vargas Rodríguez",
+     "Ana María Goicoa Valdevira",
+     "E. Fraga",
+     "G. Fraga",
+     "Analía Seoane"
+    ],
+    "first_pub_date": "2010-01-01",
+    "type": "article",
+    "language": [
+     "es"
+    ],
+    "abstract": null,
+    "abstract_source": "OpenAlex abstract_inverted_index (reconstructed)",
+    "source_id": "https://openalex.org/W3209230141",
+    "src": "OPENALEX",
+    "found_by": [
+     "OA:title_and_abstract"
+    ],
+    "in_window": true,
+    "key": "https://openalex.org/W3209230141",
+    "source_files": [
+     "candidates_r3.jsonl"
+    ]
+   }
+  }
+ ]
+}

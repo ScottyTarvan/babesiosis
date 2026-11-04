@@ -1,0 +1,57 @@
+<section class="fs-reference-articles">
+  <fs-page-header icon="article" title="Reference Articles">
+    <fs-button variant="outline" intent="secondary" size="sm" icon="refresh"
+               [loading]="loading()" [disabled]="loading()"
+               (click)="reload()">Refresh</fs-button>
+  </fs-page-header>
+
+  @if (loadError(); as message) {
+    <fs-banner intent="danger">
+      {{ message }}
+      <fs-button fsBannerAction variant="ghost" intent="secondary" size="sm"
+                 (click)="reload()">Retry</fs-button>
+    </fs-banner>
+  }
+
+  <fs-card>
+    <fs-data-grid [data]="rows()" [columns]="columns()" keyExpr="id"
+                  [loading]="loading()" [remoteOperations]="true" [totalCount]="totalCount()"
+                  [filterRow]="filterRow" [pager]="pager" [pageSize]="pageSize"
+                  noDataText="No articles match."
+                  (remoteLoad)="onRemoteLoad($event)" />
+  </fs-card>
+</section>
+
+<!-- DatePipe reads a bare yyyy-MM-dd as a local date, so no time zone argument:
+     passing 'UTC' would shift it back a day east of Greenwich. -->
+<ng-template #pubDateCell let-row>
+  @if (row.pubDate) {
+    {{ row.pubDate | date: dateFormat(row.pubDatePrecision) }}
+  }
+</ng-template>
+
+<ng-template #categoryCell let-row>
+  @if (row.categoryName) {
+    <span class="fs-reference-articles__wrap">{{ row.categoryName }}</span>
+  } @else {
+    <span class="fs-reference-articles__none">Uncategorised</span>
+  }
+</ng-template>
+
+<!-- The title opens the article at its source (publisher, PubMed or a recorded
+     landing page) in a new window; it never opens inside this application. -->
+<ng-template #titleCell let-row>
+  @if (row.sourceUrl) {
+    <a class="fs-reference-articles__link" [href]="row.sourceUrl" target="_blank" rel="noopener noreferrer"
+       title="Open the article at its source in a new window">
+      <span class="fs-reference-articles__wrap">{{ row.title }}</span>
+      <fs-symbol name="external-link" size="xs" ariaLabel="Opens in a new window" />
+    </a>
+  } @else {
+    <span class="fs-reference-articles__wrap">{{ row.title }}</span>
+  }
+</ng-template>
+
+<ng-template #wrapCell let-value="value">
+  <span class="fs-reference-articles__wrap">{{ value }}</span>
+</ng-template>

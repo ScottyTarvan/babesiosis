@@ -1,0 +1,83 @@
+{
+ "id": "CB393",
+ "filename": "CB393_2010_erythrocyte-platelet-indices-babesiosis.md",
+ "key": "REF:erythrocyteandplateletindicesinbabesiosisofdogs",
+ "record": {
+  "pmid": null,
+  "doi": null,
+  "title": "Erythrocyte and platelet indices in babesiosis of dogs",
+  "journal": "University of Zagreb University Computing Centre (SRCE)",
+  "first_pub_date": "2010-04-26",
+  "year": "2010",
+  "abstract": "In the present study we evaluated the haematological changes in samples of blood obtained from 30 dogs In the present study we evaluated the haematological changes in samples of blood obtained from 30 dogs naturally infected with large naturally infected with large Babesia Babesia, before and after therapy with imidocarb dipropionate.The results were , before and after therapy with imidocarb dipropionate.The results were compared with those obtained from 50 healthy dogs.The evaluation included red blood cell count (RBC), compared with those obtained from 50 healthy dogs.The evaluation included red blood cell count (RBC), mean corpuscular volume (MCV), haematocrit (HTC), red distribution width (RDW), platelet counts (PLT), mean corpuscular volume (MCV), haematocrit (HTC), red distribution width (RDW), platelet counts (PLT), mean platelet volume (MPV) and plateletcrit (PCT).Analyses were performed with an automated blood cell mean platelet volume (MPV) and plateletcrit (PCT).Analyses were performed with an automated blood cell counter (Abbott Cell-Dyn CD 3500).The most common disorders in affected dogs were thrombocytopenia with counter (Abbott Cell-Dyn CD 3500).The most common disorders in affected dogs were thrombocytopenia with decreased PCT and increased MPV (suggested activation of platelets).Since RDW did not show any changes decreased PCT and increased MPV (suggested activation of platelets).Since RDW did not show any changes in babesiosis (suggested uniform population of RBC's), decreased RBC, MCV and HCT were present in the in babesiosis (suggested uniform population of RBC's), decreased RBC, MCV and HCT were present in the majority of dogs with babesiosis, before and after therapy.Our results suggest that erythrocyte and platelet majority of dogs with babesiosis, before and after therapy.Our results suggest that erythrocyte and platelet indices could provide clinical information about the underlying conditions of anaemia and thrombocytopenia.indices could provide clinical information about the underlying conditions of anaemia and thrombocytopenia.",
+  "found_by": [
+   "OA:title_and_abstract",
+   "citation:backward:23875771"
+  ],
+  "unresolved": true,
+  "source_id": "REF:erythrocyteandplateletindicesinbabesiosisofdogs",
+  "key": "REF:erythrocyteandplateletindicesinbabesiosisofdogs",
+  "source_files": [
+   "candidates_r2.jsonl",
+   "candidates_r3.jsonl"
+  ],
+  "authors": [
+   "Zdravko Žvorc",
+   "Renata Barić Rafaj",
+   "Josipa Kuleš",
+   "Vladimir Mrljak"
+  ],
+  "type": "article",
+  "language": [
+   "en"
+  ],
+  "abstract_source": "OpenAlex abstract_inverted_index (reconstructed)",
+  "src": "OPENALEX",
+  "in_window": true
+ },
+ "screening": {
+  "key": "REF:erythrocyteandplateletindicesinbabesiosisofdogs",
+  "decision": "include",
+  "include_type": "primary",
+  "exclude_reason": null,
+  "primary_category": "ERY",
+  "secondary_tags": [
+   "COA"
+  ],
+  "species": "Large Babesia (B. canis, unspecified, smear)",
+  "rationale": "Haematology (RBC indices, platelet indices including MPV and PCT) of 30 naturally infected dogs before and after imidocarb versus 50 healthy controls; the abstract is present although the record is a reference-list entry. It reports anaemia and thrombocytopenia with suggested platelet activation.",
+  "stage": "screen",
+  "batch": "r4_09.md",
+  "screening_round": "r4"
+ },
+ "fulltext_check": {
+  "key": "REF:erythrocyteandplateletindicesinbabesiosisofdogs",
+  "pmcid": null,
+  "checked": "2026-10-28",
+  "fulltext_status": "no_pmcid"
+ },
+ "duplicate_records": [
+  {
+   "key": "REF:erythrocyteandplateletindicesinbabesiosiofdogs",
+   "basis": "Misspelt reference-list entry of Zvorc et al. 2010; title similarity 0.99; the entry with SRCE metadata retained",
+   "record": {
+    "pmid": null,
+    "doi": null,
+    "title": "Erythrocyte and platelet indices in babesiosi of dogs",
+    "journal": null,
+    "first_pub_date": null,
+    "year": "2010",
+    "abstract": null,
+    "found_by": [
+     "citation:backward:34472506"
+    ],
+    "unresolved": true,
+    "source_id": "REF:erythrocyteandplateletindicesinbabesiosiofdogs",
+    "key": "REF:erythrocyteandplateletindicesinbabesiosiofdogs",
+    "source_files": [
+     "candidates_r2.jsonl"
+    ]
+   }
+  }
+ ]
+}

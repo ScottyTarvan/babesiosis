@@ -1,0 +1,56 @@
+{
+ "id": "CB421",
+ "filename": "CB421_2011_experimental-infection-babesia-microti.md",
+ "key": "https://openalex.org/W419298012",
+ "record": {
+  "pmid": null,
+  "pmcid": null,
+  "doi": null,
+  "title": "Experimental infection of dogs with Babesia microti",
+  "journal": "Obihiro University of Agriculture and Veterinary Medicine Institutional Repository",
+  "authors": [
+   "Takashi Ohmori",
+   "Koji Uetsuka",
+   "Tetsuo Nunoya"
+  ],
+  "first_pub_date": "2011-12-01",
+  "type": "article",
+  "language": [
+   "en"
+  ],
+  "abstract": null,
+  "abstract_source": "OpenAlex abstract_inverted_index (reconstructed)",
+  "source_id": "https://openalex.org/W419298012",
+  "src": "OPENALEX",
+  "found_by": [
+   "OA:title_and_abstract"
+  ],
+  "in_window": true,
+  "key": "https://openalex.org/W419298012",
+  "source_files": [
+   "candidates_r3.jsonl"
+  ]
+ },
+ "screening": {
+  "key": "https://openalex.org/W419298012",
+  "decision": "include",
+  "include_type": "primary",
+  "exclude_reason": null,
+  "primary_category": "ERY",
+  "secondary_tags": [
+   "SEV"
+  ],
+  "species": "B. microti (experimental inoculation; confirmed by PCR and IFA)",
+  "rationale": "From the OpenAlex record and the repository PDF summary (Ohmori, Uetsuka and Nunoya, J Protozool Res 21:78-84, 2011): two dogs were inoculated experimentally and followed for parasitaemia, with a transient fall in red cell counts and no clinical signs. An experimental infection that reports host responses meets the criteria, and the review already holds B. microti in dogs (CB127).",
+  "stage": "adjudicated",
+  "batch": "r4_13.md",
+  "first_decision": "uncertain",
+  "screening_round": "r4"
+ },
+ "fulltext_check": {
+  "key": "https://openalex.org/W419298012",
+  "pmcid": null,
+  "checked": "2026-10-28",
+  "fulltext_status": "no_pmcid"
+ }
+}

@@ -1,0 +1,62 @@
+{
+ "id": "CB511",
+ "filename": "CB511_2015_razine-kemokina-kc-i-il-8.md",
+ "key": "https://openalex.org/W2780407019",
+ "record": {
+  "pmid": null,
+  "pmcid": null,
+  "doi": null,
+  "title": "Razine kemokina KC i IL-8 u serumu pasa prirodno zaraženih vrstom Babesia canis canis.",
+  "journal": "Veterinarski arhiv",
+  "authors": [
+   "Iva Mayer",
+   "Krešo Bendelja",
+   "Mirna Brkljačić",
+   "Martina Crnogaj",
+   "Iva Šmit",
+   "Marin Torti",
+   "Velimir Sušić",
+   "Renata Barić Rafaj",
+   "Vladimir Mrljak"
+  ],
+  "first_pub_date": "2015-09-02",
+  "type": "article",
+  "language": [
+   "hr"
+  ],
+  "abstract": null,
+  "abstract_source": "OpenAlex abstract_inverted_index (reconstructed)",
+  "source_id": "https://openalex.org/W2780407019",
+  "src": "OPENALEX",
+  "found_by": [
+   "OA:title_and_abstract"
+  ],
+  "in_window": true,
+  "key": "https://openalex.org/W2780407019",
+  "source_files": [
+   "candidates_r3.jsonl"
+  ]
+ },
+ "screening": {
+  "key": "https://openalex.org/W2780407019",
+  "decision": "include",
+  "include_type": "primary",
+  "exclude_reason": null,
+  "primary_category": "INF",
+  "secondary_tags": [
+   "SEV"
+  ],
+  "species": "B. canis canis (stated in title; method not available)",
+  "rationale": "From the title and the OpenAlex record (Mayer et al., Veterinarski arhiv 85(4):369-383, 2015, a full research article; keywords IL-8, IFN-gamma, serum cytokines): it measures serum chemokines KC and IL-8 in naturally infected dogs, which is host inflammatory data. No abstract was available.",
+  "stage": "adjudicated",
+  "batch": "r4_26.md",
+  "first_decision": "uncertain",
+  "screening_round": "r4"
+ },
+ "fulltext_check": {
+  "key": "https://openalex.org/W2780407019",
+  "pmcid": null,
+  "checked": "2026-10-28",
+  "fulltext_status": "no_pmcid"
+ }
+}

@@ -1,0 +1,60 @@
+{
+ "id": "CB426",
+ "filename": "CB426_2012_new-knowledge-babesiosis.md",
+ "key": "https://openalex.org/W248763648",
+ "record": {
+  "pmid": null,
+  "pmcid": null,
+  "doi": null,
+  "title": "New knowledge on canine babesiosis.",
+  "journal": "Veterinarska stanica",
+  "authors": [
+   "Jelena Selanec",
+   "Marin Torti",
+   "Iva Šmit",
+   "Iva Mayer",
+   "Josipa Kuleš",
+   "I. Jovic",
+   "Vladimir Mrljak"
+  ],
+  "first_pub_date": "2012-01-01",
+  "type": "article",
+  "language": [
+   "en"
+  ],
+  "abstract": null,
+  "abstract_source": "OpenAlex abstract_inverted_index (reconstructed)",
+  "source_id": "https://openalex.org/W248763648",
+  "src": "OPENALEX",
+  "found_by": [
+   "OA:title_and_abstract"
+  ],
+  "in_window": true,
+  "key": "https://openalex.org/W248763648",
+  "source_files": [
+   "candidates_r3.jsonl"
+  ]
+ },
+ "screening": {
+  "key": "https://openalex.org/W248763648",
+  "decision": "include",
+  "include_type": "review",
+  "exclude_reason": null,
+  "primary_category": "SEV",
+  "secondary_tags": [
+   "INF"
+  ],
+  "species": "Babesia spp. (review; B. canis canis focus likely)",
+  "rationale": "Title and OpenAlex metadata only; no abstract was reachable. It is a narrative review of canine babesiosis by the Zagreb Mrljak group (Veterinarska stanica 43(6):497-505, 2012), whose work centres on pathogenesis and complications, so it is included as a review, with a full-text check of scope.",
+  "stage": "adjudicated",
+  "batch": "r4_13.md",
+  "first_decision": "uncertain",
+  "screening_round": "r4"
+ },
+ "fulltext_check": {
+  "key": "https://openalex.org/W248763648",
+  "pmcid": null,
+  "checked": "2026-10-28",
+  "fulltext_status": "no_pmcid"
+ }
+}

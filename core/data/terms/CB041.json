@@ -1,0 +1,580 @@
+{
+ "id": "CB041",
+ "document": "data/markdown/CB041.md",
+ "source_format": "jats_xml",
+ "translated": false,
+ "words": 4501,
+ "run_utc": "2026-10-30T05:33:24+00:00",
+ "threshold": 0.85,
+ "kept_types": [
+  "T019",
+  "T020",
+  "T037",
+  "T046",
+  "T047",
+  "T048",
+  "T049",
+  "T050",
+  "T184",
+  "T190",
+  "T191"
+ ],
+ "term_count": 31,
+ "terms": [
+  {
+   "term": "C0009450",
+   "concept": "Communicable Diseases",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 21,
+   "mentions_negated": 0,
+   "mentions_affirmed": 21,
+   "sections": {
+    "6. compensated hypotension": 4,
+    "7. acute phase response-coagulation": 4,
+    "introduction": 3,
+    "2. experimental infection models": 3,
+    "5. babesia infection induces hypotension": 3,
+    "10. role of soluble proteins from b. canis-infected erythrocytes": 2,
+    "3. blood circulation problems": 1,
+    "8. parasite sequestration": 1
+   },
+   "forms": {
+    "infection": 21
+   },
+   "best_score": 0.962
+  },
+  {
+   "term": "C0004576",
+   "concept": "Babesiosis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 10,
+   "mentions_negated": 2,
+   "mentions_affirmed": 8,
+   "sections": {
+    "3. blood circulation problems": 3,
+    "6. compensated hypotension": 3,
+    "2. experimental infection models": 2,
+    "introduction": 1,
+    "8. parasite sequestration": 1
+   },
+   "forms": {
+    "babesiosis": 6,
+    "babesia infection": 3,
+    "babesia infections": 1
+   },
+   "best_score": 0.972
+  },
+  {
+   "term": "C0001349",
+   "concept": "Acute-Phase Reaction",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 5,
+   "mentions_negated": 0,
+   "mentions_affirmed": 5,
+   "sections": {
+    "10. role of soluble proteins from b. canis-infected erythrocytes": 3,
+    "6. compensated hypotension": 1,
+    "7. acute phase response-coagulation": 1
+   },
+   "forms": {
+    "acute phase response": 4,
+    "acute phase responses": 1
+   },
+   "best_score": 0.983
+  },
+  {
+   "term": "C0024530",
+   "concept": "Malaria",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 5,
+   "mentions_negated": 0,
+   "mentions_affirmed": 5,
+   "sections": {
+    "6. compensated hypotension": 2,
+    "9. local proliferation": 2,
+    "8. parasite sequestration": 1
+   },
+   "forms": {
+    "malaria": 5
+   },
+   "best_score": 0.996
+  },
+  {
+   "term": "C0334094",
+   "concept": "Proliferation (morphologic abnormality)",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 4,
+   "mentions_negated": 0,
+   "mentions_affirmed": 4,
+   "sections": {
+    "10. role of soluble proteins from b. canis-infected erythrocytes": 3,
+    "5. babesia infection induces hypotension": 1
+   },
+   "forms": {
+    "proliferation": 4
+   },
+   "best_score": 0.97
+  },
+  {
+   "term": "C1155266",
+   "concept": "Inflammatory Response",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 4,
+   "mentions_negated": 1,
+   "mentions_affirmed": 3,
+   "sections": {
+    "10. role of soluble proteins from b. canis-infected erythrocytes": 4
+   },
+   "forms": {
+    "inflammatory response": 2,
+    "inflammatory responses": 1,
+    "proinflammatory responses": 1
+   },
+   "best_score": 0.983
+  },
+  {
+   "term": "C0012634",
+   "concept": "Disease",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "introduction": 2,
+    "2. experimental infection models": 1
+   },
+   "forms": {
+    "disease": 3
+   },
+   "best_score": 0.987
+  },
+  {
+   "term": "C0021368",
+   "concept": "Inflammation",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "abstract": 1,
+    "9. local proliferation": 1,
+    "10. role of soluble proteins from b. canis-infected erythrocytes": 1
+   },
+   "forms": {
+    "inflammation": 2,
+    "inflammatory reactions": 1
+   },
+   "best_score": 0.958
+  },
+  {
+   "term": "C0233660",
+   "concept": "Mental blocking",
+   "semantic_types": [
+    "Mental or Behavioral Dysfunction"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "3. blood circulation problems": 2,
+    "4. mechanisms of obstruction of capillaries": 1
+   },
+   "forms": {
+    "blocking": 3
+   },
+   "best_score": 0.973
+  },
+  {
+   "term": "C0005658",
+   "concept": "bite injury",
+   "semantic_types": [
+    "Injury or Poisoning"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "2. experimental infection models": 2
+   },
+   "forms": {
+    "bite": 2
+   },
+   "best_score": 0.982
+  },
+  {
+   "term": "C0012739",
+   "concept": "Disseminated Intravascular Coagulation",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "7. acute phase response-coagulation": 2
+   },
+   "forms": {
+    "consumptive coagulopathy": 2
+   },
+   "best_score": 0.972
+  },
+  {
+   "term": "C0036974",
+   "concept": "Shock",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "abstract": 1,
+    "introduction": 1
+   },
+   "forms": {
+    "shock": 2
+   },
+   "best_score": 0.998
+  },
+  {
+   "term": "C0851162",
+   "concept": "Infections of musculoskeletal system",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "7. acute phase response-coagulation": 1,
+    "9. local proliferation": 1
+   },
+   "forms": {
+    "infections": 2
+   },
+   "best_score": 0.971
+  },
+  {
+   "term": "C0003123",
+   "concept": "Anorexia",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "3. blood circulation problems": 1
+   },
+   "forms": {
+    "anorexia": 1
+   },
+   "best_score": 0.969
+  },
+  {
+   "term": "C0009566",
+   "concept": "Complication",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "complications": 1
+   },
+   "best_score": 0.977
+  },
+  {
+   "term": "C0012359",
+   "concept": "Pathological Dilatation",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 1,
+   "mentions_affirmed": 0,
+   "sections": {
+    "3. blood circulation problems": 1
+   },
+   "forms": {
+    "dilatation": 1
+   },
+   "best_score": 0.969
+  },
+  {
+   "term": "C0012833",
+   "concept": "Dizziness",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "6. compensated hypotension": 1
+   },
+   "forms": {
+    "dizzy": 1
+   },
+   "best_score": 0.96
+  },
+  {
+   "term": "C0013604",
+   "concept": "Edema",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "3. blood circulation problems": 1
+   },
+   "forms": {
+    "oedema": 1
+   },
+   "best_score": 0.98
+  },
+  {
+   "term": "C0020651",
+   "concept": "Hypotension, Orthostatic",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "6. compensated hypotension": 1
+   },
+   "forms": {
+    "orthostatic hypotension": 1
+   },
+   "best_score": 0.982
+  },
+  {
+   "term": "C0023380",
+   "concept": "Lethargy",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "3. blood circulation problems": 1
+   },
+   "forms": {
+    "lethargy": 1
+   },
+   "best_score": 0.987
+  },
+  {
+   "term": "C0037088",
+   "concept": "Signs and Symptoms",
+   "semantic_types": [
+    "Sign or Symptom"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "10. role of soluble proteins from b. canis-infected erythrocytes": 1
+   },
+   "forms": {
+    "finding": 1
+   },
+   "best_score": 0.994
+  },
+  {
+   "term": "C0087086",
+   "concept": "Thrombus",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "10. role of soluble proteins from b. canis-infected erythrocytes": 1
+   },
+   "forms": {
+    "blood clots": 1
+   },
+   "best_score": 0.986
+  },
+  {
+   "term": "C0205339",
+   "concept": "Reinfection",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "8. parasite sequestration": 1
+   },
+   "forms": {
+    "re-infection": 1
+   },
+   "best_score": 0.94
+  },
+  {
+   "term": "C0242781",
+   "concept": "disease transmission",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "2. experimental infection models": 1
+   },
+   "forms": {
+    "transmitted": 1
+   },
+   "best_score": 0.972
+  },
+  {
+   "term": "C0302148",
+   "concept": "Blood Clot",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "10. role of soluble proteins from b. canis-infected erythrocytes": 1
+   },
+   "forms": {
+    "clots": 1
+   },
+   "best_score": 0.977
+  },
+  {
+   "term": "C0333056",
+   "concept": "protrusion",
+   "semantic_types": [
+    "Anatomical Abnormality"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "8. parasite sequestration": 1
+   },
+   "forms": {
+    "protrusions": 1
+   },
+   "best_score": 0.98
+  },
+  {
+   "term": "C0333138",
+   "concept": "Stasis",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "6. compensated hypotension": 1
+   },
+   "forms": {
+    "stasis": 1
+   },
+   "best_score": 0.987
+  },
+  {
+   "term": "C0521530",
+   "concept": "Lung consolidation",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "abstract": 1
+   },
+   "forms": {
+    "consolidation": 1
+   },
+   "best_score": 0.963
+  },
+  {
+   "term": "C0683278",
+   "concept": "Mental Suffering",
+   "semantic_types": [
+    "Mental or Behavioral Dysfunction"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "6. compensated hypotension": 1
+   },
+   "forms": {
+    "suffering": 1
+   },
+   "best_score": 0.94
+  },
+  {
+   "term": "C0700148",
+   "concept": "Congestion",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "3. blood circulation problems": 1
+   },
+   "forms": {
+    "congestion": 1
+   },
+   "best_score": 0.967
+  },
+  {
+   "term": "C1514893",
+   "concept": "physiologic resolution",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "7. acute phase response-coagulation": 1
+   },
+   "forms": {
+    "resolution": 1
+   },
+   "best_score": 0.971
+  }
+ ]
+}

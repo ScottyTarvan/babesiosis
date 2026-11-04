@@ -1,0 +1,64 @@
+{
+ "id": "CB358",
+ "filename": "CB358_2008_white-blood-cell-count-neutrophil-lymphocyte.md",
+ "key": "REF:whitebloodcellcountandneutrophiltolymphocyteratioinuncomplic",
+ "record": {
+  "pmid": null,
+  "doi": null,
+  "title": "White blood cell count and neutrophil to lymphocyte ratio in uncomplicated and complicated canine babesiosis caused by Babesia canis canis",
+  "journal": "University of Zagreb University Computing Centre (SRCE)",
+  "first_pub_date": "2008-08-20",
+  "year": "2008",
+  "abstract": "KučeR, N., V. MatijatKo, i. Kiš, D. GRDeN, M. BRKljačić, j.FoRšeK, Z. ŽVoRc, R. BaRić RaFaj: White blood cell count and neutrophil to lymphocyte ratio in uncomplicated and complicated canine babesiosis caused by Babesia canis canis.",
+  "found_by": [
+   "OA:title_and_abstract",
+   "citation:backward:28543264"
+  ],
+  "unresolved": true,
+  "source_id": "REF:whitebloodcellcountandneutrophiltolymphocyteratioinuncomplic",
+  "key": "REF:whitebloodcellcountandneutrophiltolymphocyteratioinuncomplic",
+  "source_files": [
+   "candidates_r2.jsonl",
+   "candidates_r3.jsonl"
+  ],
+  "authors": [
+   "Nada Kučer",
+   "Vesna Matijatko",
+   "Ivana Kiš",
+   "Darko Grden",
+   "Mirna Brkljačić",
+   "Jadranka Foršek",
+   "Zdravko Žvorc",
+   "Renata Barić Rafaj"
+  ],
+  "type": "article",
+  "language": [
+   "en"
+  ],
+  "abstract_source": "OpenAlex abstract_inverted_index (reconstructed)",
+  "src": "OPENALEX",
+  "in_window": true
+ },
+ "screening": {
+  "key": "REF:whitebloodcellcountandneutrophiltolymphocyteratioinuncomplic",
+  "decision": "include",
+  "include_type": "primary",
+  "exclude_reason": null,
+  "primary_category": "SEV",
+  "secondary_tags": [
+   "INF"
+  ],
+  "species": "B. canis canis (confirmed per title; natural infection, Croatia)",
+  "rationale": "Based on the hrcak.srce.hr landing page abstract (Kučer et al., Veterinarski arhiv 78(4):321-330, 2008, in window): 60 naturally infected dogs (30 uncomplicated, 30 complicated) were sampled serially. In the complicated group, WBC, neutrophil percentage and NLR were higher and lymphocytes lower, and NLR is proposed as a severity and prognostic marker.",
+  "stage": "adjudicated",
+  "batch": "r4_05.md",
+  "first_decision": "uncertain",
+  "screening_round": "r4"
+ },
+ "fulltext_check": {
+  "key": "REF:whitebloodcellcountandneutrophiltolymphocyteratioinuncomplic",
+  "pmcid": null,
+  "checked": "2026-10-28",
+  "fulltext_status": "no_pmcid"
+ }
+}

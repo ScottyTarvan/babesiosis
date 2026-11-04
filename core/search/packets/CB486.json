@@ -1,0 +1,65 @@
+{
+ "id": "CB486",
+ "filename": "CB486_2014_serum-cortisol-insulin-concentrations-naturally-infected.md",
+ "key": "REF:serumcortisolandinsulinconcentrationsindogsnaturallyinfected",
+ "record": {
+  "pmid": null,
+  "doi": null,
+  "title": "Serum cortisol and insulin concentrations in dogs naturally infected with Babesia canis",
+  "journal": "Veterinar – Repository of the Faculty of Veterinary Medicine, University of Belgrade (University of Belgrade, Faculty of Veterinary Medicine)",
+  "first_pub_date": "2014-12-05",
+  "year": "2014",
+  "abstract": "Babesiosis is an emerging tick-transmitted infectious disease of vertebrates that occurs worldwide. In Europe the predominant cause of canine babesiosis is Babesia canis. The disease can be clinically classified into uncomplicated and complicated forms. Both uncomplicated and complicated babesiosis due to Babesia canis appear to be the result of host inflammatory responses. The main aim of this study was to investigate the endocrine anti-inflammatory response in dogs naturally infected with Babesia canis. It was demonstrated that a marked endocrine response occurs in dogs naturally infected with Babesia canis, with significant increases in the concentration of cortisol and insulin. Statistically significant differences were found between the studied groups for all variables (cortisol, insulin and glucose) before the antibabesial treatment. The day after treatment a statistically significant difference was found between healthy dogs and the dogs that survived, as well as the dogs that died, for cortisol and glucose, but not for insulin. In all of the studied dog groups the median value of glucose was within the reference range, but one animal within the group of dogs that survived was hypoglycemic before the antibabesial treatment. After the antibabesial treatment all the studied animals had glucose values within the reference range. A statistically significant positive correlation was found between cortisol and insulin. The results of this study showed that concentrations of cortisol and insulin can be used to predict mortality in canine babesiosis caused by B. canis.",
+  "found_by": [
+   "OA:title_and_abstract",
+   "citation:backward:32877354"
+  ],
+  "unresolved": true,
+  "source_id": "REF:serumcortisolandinsulinconcentrationsindogsnaturallyinfected",
+  "key": "REF:serumcortisolandinsulinconcentrationsindogsnaturallyinfected",
+  "source_files": [
+   "candidates_r2.jsonl",
+   "candidates_r3.jsonl"
+  ],
+  "authors": [
+   "Vesna Matijatko",
+   "Marin Torti",
+   "Ivana Kiš",
+   "Iva Šmit",
+   "Igor Štoković",
+   "Sanja Vranješ‐Đurić",
+   "Svetlana Milanović",
+   "Vladimir Mrljak",
+   "Mirna Brkljačić"
+  ],
+  "type": "article",
+  "language": [
+   "en"
+  ],
+  "abstract_source": "OpenAlex abstract_inverted_index (reconstructed)",
+  "src": "OPENALEX",
+  "in_window": true
+ },
+ "screening": {
+  "key": "REF:serumcortisolandinsulinconcentrationsindogsnaturallyinfected",
+  "decision": "include",
+  "include_type": "primary",
+  "exclude_reason": null,
+  "primary_category": "MET",
+  "secondary_tags": [
+   "INF",
+   "SEV"
+  ],
+  "species": "B. canis (natural infection, smear-confirmed)",
+  "rationale": "Cortisol, insulin and glucose in infected dogs before and after treatment, compared with healthy dogs and between survivors and non-survivors. It gives endocrine response and prognostic evidence.",
+  "stage": "screen",
+  "batch": "r4_22.md",
+  "screening_round": "r4"
+ },
+ "fulltext_check": {
+  "key": "REF:serumcortisolandinsulinconcentrationsindogsnaturallyinfected",
+  "pmcid": null,
+  "checked": "2026-10-28",
+  "fulltext_status": "no_pmcid"
+ }
+}

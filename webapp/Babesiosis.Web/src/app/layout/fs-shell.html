@@ -1,0 +1,42 @@
+<div class="fs-shell" [class.fs-shell--drawer-open]="drawerOpen()">
+  <!-- One sidebar instance at every width. Below the shell's narrow boundary
+       `fs-shell.scss` takes it out of flow and slides it in over the content,
+       so the content area is full-width there without the template having to
+       know how wide the window is. -->
+  <fs-shell-sidebar
+    class="fs-shell__sidebar"
+    [activePath]="activePath()"
+    [collapsed]="railCollapsed()"
+    [cdkTrapFocus]="drawerOpen()"
+    [cdkTrapFocusAutoCapture]="drawerOpen()"
+    [attr.role]="drawerOpen() ? 'dialog' : null"
+    [attr.aria-modal]="drawerOpen() ? 'true' : null"
+    [attr.aria-label]="drawerOpen() ? 'Navigation' : null"
+    (keydown)="onSidebarKeydown($event)"
+    (collapseToggled)="toggleCollapsed()" />
+
+  <div class="fs-shell__main">
+    <fs-shell-topbar
+      [drawerOpen]="drawerOpen()"
+      (menuToggled)="toggleDrawer()" />
+
+    <main class="fs-shell__content">
+      <router-outlet />
+    </main>
+
+    @if (navigating()) {
+      <div class="fs-shell__route-loading">
+        <fs-spinner variant="dots" size="lg" ariaLabel="Loading page" />
+      </div>
+    }
+  </div>
+</div>
+
+@if (drawerOpen()) {
+  <div
+    class="fs-shell__drawer-backdrop"
+    aria-hidden="true"
+    (click)="closeDrawer()"></div>
+}
+
+<fs-toast-container />

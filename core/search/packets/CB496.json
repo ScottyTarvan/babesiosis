@@ -1,0 +1,55 @@
+{
+ "id": "CB496",
+ "filename": "CB496_2015_hemodialysis-key-treatment-babesiosis-case-report.md",
+ "key": "https://openalex.org/W2410849915",
+ "record": {
+  "pmid": null,
+  "pmcid": null,
+  "doi": null,
+  "title": "Hemodialysis - key treatment in a dog with babesiosis - case report.",
+  "journal": "Lucrari Stiintifice - Universitatea de Stiinte Agricole a Banatului Timisoara, Medicina Veterinara",
+  "authors": [
+   "Alexandru Bogdan Viţălaru",
+   "Radu Costea"
+  ],
+  "first_pub_date": "2015-01-01",
+  "type": "article",
+  "language": [
+   "en"
+  ],
+  "abstract": null,
+  "abstract_source": "OpenAlex abstract_inverted_index (reconstructed)",
+  "source_id": "https://openalex.org/W2410849915",
+  "src": "OPENALEX",
+  "found_by": [
+   "OA:title_and_abstract"
+  ],
+  "in_window": true,
+  "key": "https://openalex.org/W2410849915",
+  "source_files": [
+   "candidates_r3.jsonl"
+  ]
+ },
+ "screening": {
+  "key": "https://openalex.org/W2410849915",
+  "decision": "uncertain",
+  "include_type": null,
+  "exclude_reason": null,
+  "primary_category": "REN",
+  "secondary_tags": [
+   "SEV"
+  ],
+  "species": "Babesia sp. (unspecified)",
+  "rationale": "Title and OpenAlex metadata only; no abstract could be found (the CAB Direct page has been removed). A case of babesiosis that needed haemodialysis suggests a severe acute kidney injury complication, which may be a distinct renal syndrome, so the full text is needed.",
+  "stage": "adjudicated",
+  "batch": "r4_23.md",
+  "first_decision": "uncertain",
+  "screening_round": "r4"
+ },
+ "fulltext_check": {
+  "key": "https://openalex.org/W2410849915",
+  "pmcid": null,
+  "checked": "2026-10-28",
+  "fulltext_status": "no_pmcid"
+ }
+}

@@ -1,0 +1,51 @@
+{
+ "id": "CB495",
+ "filename": "CB495_2015_diagnosis-treatment-immune-mediated-hemolytic-anemia.md",
+ "key": "https://openalex.org/W2381924318",
+ "record": {
+  "pmid": null,
+  "pmcid": null,
+  "doi": null,
+  "title": "Diagnosis and Treatment of Canine Immune-mediated Hemolytic Anemia Induced by Babesia gibsoni",
+  "journal": "Progress in Veterinary Medicine",
+  "authors": [
+   "Linlin Wei"
+  ],
+  "first_pub_date": "2015-01-01",
+  "type": "article",
+  "language": [
+   "en"
+  ],
+  "abstract": "Canine immune-mediated hemolytic anemia(IMHA)is a kind of hemolytic anemia associated with self-erythrocyte antibodies,the etiology can be divided into primary and secondary causes.This article focused on diagnosis,treatment and prognosis of canine a case of IMHA induced by Babesia gibsoni.",
+  "abstract_source": "OpenAlex abstract_inverted_index (reconstructed)",
+  "source_id": "https://openalex.org/W2381924318",
+  "src": "OPENALEX",
+  "found_by": [
+   "OA:title_and_abstract"
+  ],
+  "in_window": true,
+  "key": "https://openalex.org/W2381924318",
+  "source_files": [
+   "candidates_r3.jsonl"
+  ]
+ },
+ "screening": {
+  "key": "https://openalex.org/W2381924318",
+  "decision": "include",
+  "include_type": "case_report",
+  "exclude_reason": null,
+  "primary_category": "ERY",
+  "secondary_tags": [],
+  "species": "B. gibsoni (confirmed by case diagnosis; method not stated)",
+  "rationale": "Case of immune-mediated haemolytic anaemia secondary to B. gibsoni, a distinct immune-mediated syndrome, with discussion of diagnosis, treatment and prognosis.",
+  "stage": "screen",
+  "batch": "r4_23.md",
+  "screening_round": "r4"
+ },
+ "fulltext_check": {
+  "key": "https://openalex.org/W2381924318",
+  "pmcid": null,
+  "checked": "2026-10-28",
+  "fulltext_status": "no_pmcid"
+ }
+}

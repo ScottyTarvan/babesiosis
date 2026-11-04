@@ -1,0 +1,13 @@
+<a
+  class="fs-shell-sidebar-item"
+  [class.fs-shell-sidebar-item--active]="active()"
+  [class.fs-shell-sidebar-item--collapsed]="collapsed()"
+  [routerLink]="path()"
+  [attr.aria-current]="active() ? 'page' : null"
+  [attr.aria-label]="ariaLabel()"
+  [attr.title]="title()">
+  <fs-symbol [name]="icon()" size="xs" ariaLabel="" />
+  @if (!collapsed()) {
+    <span class="fs-shell-sidebar-item__label">{{ label() }}</span>
+  }
+</a>

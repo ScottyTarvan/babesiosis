@@ -1,0 +1,103 @@
+{
+ "id": "CB484",
+ "filename": "CB484_2014_application-mass-spectrometry-maldi-tof-technique.md",
+ "key": "PMID:25238794",
+ "record": {
+  "pmid": "25238794",
+  "pmcid": "PMC4200353",
+  "doi": "10.1007/s00436-014-4124-1",
+  "title": "Application the mass spectrometry MALDI-TOF technique for detection of Babesia canis canis infection in dogs.",
+  "authors": [
+   "Adaszek Ł",
+   "Banach T",
+   "Bartnicki M",
+   "Winiarczyk D",
+   "Łyp P",
+   "Winiarczyk S"
+  ],
+  "journal": "Parasitology research",
+  "journal_abbrev": "Parasitol Res",
+  "volume": "113",
+  "issue": "11",
+  "pages": "4293-5",
+  "language": [
+   "eng"
+  ],
+  "issue_date": "2014-11-01",
+  "issue_date_precision": "month",
+  "epub_date": "2014-09-20",
+  "pubmed_entry_date": "2014-09-23",
+  "first_pub_date": "2014-09-20",
+  "publication_types": [
+   "Journal Article"
+  ],
+  "mesh": [
+   "Animals",
+   "Babesia",
+   "Babesiosis",
+   "Biomarkers",
+   "Dog Diseases",
+   "Dogs",
+   "Female",
+   "Male",
+   "Proteomics",
+   "Sensitivity and Specificity",
+   "Spectrometry, Mass, Matrix-Assisted Laser Desorption-Ionization"
+  ],
+  "keywords": [],
+  "abstract": "The aim of this study was to use rapid mass spectrometry (MS)-based proteomics analyses for diagnosis of Babesia canis canis infections in dogs. The study was conducted on two groups of dogs--healthy dogs and dogs infected with B. canis canis which demonstrated symptoms of babesiosis. The matrix-assisted laser desorption ionization time-of-flight (MALDI-TOF) MS technique revealed the presence of a protein fraction of 51-52 kDa in the blood serum of all the animals infected with the protozoa, which was not found in the serum of healthy dogs. The proteins are suspected to be disease markers, whereas the MALDI-TOF technique itself has high specificity and sensitivity and can be applied in analytical laboratories in the diagnosis of canine babesiosis.",
+  "corrections": [],
+  "epmc_first_pub_date": "2014-09-20",
+  "is_oa": "Y",
+  "has_suppl": "N",
+  "found_by": [
+   "EP1_broad",
+   "EP2_species",
+   "PM1_broad",
+   "PM2_species",
+   "PM3_mechanism"
+  ],
+  "in_window": true,
+  "online_vs_issue": "online 2014-09-20; issue 2014-11-01 (month)",
+  "key": "PMID:25238794",
+  "source_files": [
+   "candidates.jsonl"
+  ]
+ },
+ "screening": {
+  "key": "PMID:25238794",
+  "decision": "uncertain",
+  "include_type": null,
+  "exclude_reason": null,
+  "primary_category": "OXO",
+  "secondary_tags": [
+   "INF"
+  ],
+  "species": "B. canis canis (confirmed per authors; method not stated in abstract)",
+  "rationale": "Based on the abstract: a diagnostic MALDI-TOF study. It reports a 51-52 kDa serum protein fraction found only in infected dogs, but the abstract does not say whether this is a host protein (e.g. an acute-phase reactant) or a parasite antigen. Sent to full text to check for host-proteome data.",
+  "stage": "adjudicated",
+  "batch": "r4_22.md",
+  "first_decision": "exclude",
+  "rescue_reason": "MALDI-TOF study comparing infected and healthy dogs. A 51-52 kDa serum protein present in all infected dogs is proposed as a disease marker, which is a host biomarker finding in infected dogs inside a diagnostic study. Its identity is not established, but the record is not ruled out.",
+  "screening_round": "r4"
+ },
+ "fulltext_check": {
+  "key": "PMID:25238794",
+  "pmcid": "PMC4200353",
+  "checked": "2026-10-28",
+  "fulltext_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4200353/fullTextXML",
+  "fulltext_status": 200,
+  "data_availability": [],
+  "supplementary": [],
+  "repository_links": [],
+  "section_titles": [
+   "Introduction",
+   "Materials and methods",
+   "Animals used in the study",
+   "MALDI-TOF MS",
+   "Results and discussion",
+   "References"
+  ],
+  "has_body": true
+ }
+}

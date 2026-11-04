@@ -1,0 +1,59 @@
+{
+ "id": "CB363",
+ "filename": "CB363_2009_severe-babesiosis-cholestatic-jaundice.md",
+ "key": "https://openalex.org/W1550129474",
+ "record": {
+  "pmid": null,
+  "pmcid": null,
+  "doi": null,
+  "title": "Severe babesiosis in dog with cholestatic jaundice.",
+  "journal": null,
+  "authors": [
+   "Łukasz Adaszek",
+   "Piotr Listos",
+   "Marta Górna",
+   "Jerzy Ziętek",
+   "D. Capiga"
+  ],
+  "first_pub_date": "2009-01-01",
+  "type": "article",
+  "language": [
+   "en"
+  ],
+  "abstract": null,
+  "abstract_source": "OpenAlex abstract_inverted_index (reconstructed)",
+  "source_id": "https://openalex.org/W1550129474",
+  "src": "OPENALEX",
+  "found_by": [
+   "OA:title_and_abstract"
+  ],
+  "in_window": true,
+  "key": "https://openalex.org/W1550129474",
+  "source_files": [
+   "candidates_r3.jsonl"
+  ]
+ },
+ "screening": {
+  "key": "https://openalex.org/W1550129474",
+  "decision": "include",
+  "include_type": "case_report",
+  "exclude_reason": null,
+  "primary_category": "MET",
+  "secondary_tags": [
+   "ERY",
+   "SEV"
+  ],
+  "species": "B. canis (suspected; Adaszek group, Poland)",
+  "rationale": "Based on the title and OpenAlex metadata only (Adaszek et al. 2009, 84(3):227-230; CAB abstract not reachable). The title names a distinct hepatic complication, cholestatic jaundice in severe babesiosis, which fits the case-report rule for a distinct syndrome.",
+  "stage": "adjudicated",
+  "batch": "r4_06.md",
+  "first_decision": "uncertain",
+  "screening_round": "r4"
+ },
+ "fulltext_check": {
+  "key": "https://openalex.org/W1550129474",
+  "pmcid": null,
+  "checked": "2026-10-28",
+  "fulltext_status": "no_pmcid"
+ }
+}

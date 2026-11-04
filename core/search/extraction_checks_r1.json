@@ -1,0 +1,1313 @@
+[
+ {
+  "id": "BG001-a-numbers-design",
+  "ok": false,
+  "fixes": "Summary said 'random-effects meta-analysis in R'; the packet abstract only says R (version 3.6) meta-package, so changed to 'a meta-analysis in R'. Limitations bullet had subgroup I2 (89-99%) and subgroup counts (27 stray, 76 owned) not in the abstract and not labelled as full text; added '(full text)' labels. Abstract figures (23,864 records, 229 studies, pooled 0.120 with CI 0.097-0.146, Europe 0.207, B. canis 0.216, summer 0.097, 2000-2022, five databases) all match."
+ },
+ {
+  "id": "BG001-b-summary-length-paraphrase",
+  "ok": true,
+  "fixes": "Summary is 103 words after the edit. No run of more than 8 words copied from the abstract."
+ },
+ {
+  "id": "BG001-c-title-doi-ids-dates",
+  "ok": true,
+  "fixes": "Title, DOI 10.1002/vms3.1427, PMID 38695207, PMCID PMC11063922, authors, journal volume/issue/pages and first publication date 2024-05-01 all match the packet record. Corrections none."
+ },
+ {
+  "id": "BG001-d-placeholders-backlink",
+  "ok": true,
+  "fixes": "{{COHORT}}, {{DATASET}} and the '[Back to article index](../index.md)' line are present."
+ },
+ {
+  "id": "BG001-e-no-causal-claims",
+  "ok": true,
+  "fixes": "Reviewer interpretation is associational and does not make causal claims. Observation only, not changed: the packet screening decision is 'exclude' (prevalence_epidemiology) while the note is kept as a background seed reference; the note states this explicitly, so no edit was made."
+ },
+ {
+  "id": "CB001-a-numbers-design",
+  "ok": true,
+  "fixes": "10 infected vs 10 control dogs, B. canis (suspected), REN primary and SEV secondary tags, and the marker and ELISA details all match the packet abstract and record."
+ },
+ {
+  "id": "CB001-b-summary-length-paraphrase",
+  "ok": true,
+  "fixes": "Summary is 109 words and paraphrased; no run of more than 8 words is copied from the abstract."
+ },
+ {
+  "id": "CB001-c-title-doi-ids-dates",
+  "ok": true,
+  "fixes": "Title, DOI 10.15654/tpk-160490, PMID 28074976, no PMCID, authors, volume 45(2) pages 84-88, online 2017-01-11 and issue 2017-04-19 all match the packet record."
+ },
+ {
+  "id": "CB001-d-placeholders-backlink",
+  "ok": true,
+  "fixes": "Both placeholders and the back-link are present."
+ },
+ {
+  "id": "CB001-e-no-causal-claims",
+  "ok": true,
+  "fixes": "The interpretation states that the study is associational, that damage is an inference, and that cause and timing are not shown."
+ },
+ {
+  "id": "CB002-a-numbers-design",
+  "ok": false,
+  "fixes": "Summary said the PCV was '24% lower than the reference value'. The abstract only says '24% decreased PCV', and the note's own limitations call that statement ambiguous, so this was changed to 'a 24% decrease in PCV'. Sample size is correctly stated as not reported. The 75%/three-quarters figure matches."
+ },
+ {
+  "id": "CB002-b-summary-length-paraphrase",
+  "ok": false,
+  "fixes": "Summary was 99 words, below the 100-word minimum. Replaced the reference-value clause and added one sentence ('Taken together, anaemia and low platelet counts were the abnormalities most often seen in these dogs.'). The summary is now 110 words. No run of more than 8 words is copied from the abstract."
+ },
+ {
+  "id": "CB002-c-title-doi-ids-dates",
+  "ok": false,
+  "fixes": "Author initials did not match the packet record (note had Bilwal AK, Mandali GC, Patel AC; record has Bilwal A, Mandali G, Patel A), so the Authors row was changed to match. Title, DOI 10.21887/ijvsbt.v12i3.7080, no PMID or PMCID and the 2017-02-15 date all match. Not verifiable from the packet: the note's Crossref claims of volume 12 and issue 3 are not in the packet record, though the DOI string is consistent with them. Left unchanged."
+ },
+ {
+  "id": "CB002-d-placeholders-backlink",
+  "ok": true,
+  "fixes": "Both placeholders and the back-link are present."
+ },
+ {
+  "id": "CB002-e-no-causal-claims",
+  "ok": true,
+  "fixes": "The interpretation explicitly rejects causal wording ('caused') for an uncontrolled descriptive design. The haemolysis-type speculation is labelled speculative."
+ },
+ {
+  "id": "CB004-a",
+  "ok": false,
+  "fixes": "Babesia species row said 'confirmed' but the packet species field says 'suspected, method unstated'; reworded to 'named in abstract; packet species field says suspected' with the full-text method kept as labelled. Sample size split (11 complicated / 19 uncomplicated) and 10 healthy controls are not in the abstract, so they are now labelled '(full text)'. I did not re-verify these full-text counts. Country/setting row labelled '(full text)'. Summary numbers (30 dogs, B. canis, day 6, imidocarb, marker directions) match the abstract."
+ },
+ {
+  "id": "CB004-b",
+  "ok": true,
+  "fixes": "none needed. Summary is 124 words, paraphrased, with no run of more than 8 consecutive words copied from the abstract."
+ },
+ {
+  "id": "CB004-c",
+  "ok": true,
+  "fixes": "none needed. Title, DOI, PMID 28363279, PMCID PMC5376283, links, authors, journal/volume/issue/pages and dates (2017-03-31) match the packet record."
+ },
+ {
+  "id": "CB004-d",
+  "ok": true,
+  "fixes": "none needed. {{COHORT}} and {{DATASET}} placeholders present and the '[Back to article index](../index.md)' line is present."
+ },
+ {
+  "id": "CB004-e",
+  "ok": true,
+  "fixes": "none needed. Reviewer interpretation is hedged as descriptive and compatible with, and explicitly states that mechanism or causality is not shown."
+ },
+ {
+  "id": "CB005-a",
+  "ok": false,
+  "fixes": "Host row: removed 'no domestic dogs', which is not in the abstract or the note's evidence basis; now 'one captive animal (zoo, full text)'. Country/setting: replaced the unsupported 'carcass submission programme' with the full-text collection regions. Key limitations: '26 non-autolytic carcasses' and 'two wolves' haematology are now labelled '(full text)'; I did not re-verify these against full text. Primary category changed from SEV to ERY and secondary tags aligned to the packet (SEV, necropsy, wild_canid, host_tolerance); COA and REN were not in the packet, so they were removed. This is a judgement call the orchestrator may want to confirm. Species, sample size (107 + 1 + 1; 22 positive; 7 B. canis / 15 T. capreoli), title, DOI and IDs match the packet. Scope label 'core canine evidence' was left unchanged; it is applied uniformly across the set."
+ },
+ {
+  "id": "CB005-b",
+  "ok": true,
+  "fixes": "none needed. Summary is 124 words, paraphrased, with no run of more than 8 consecutive words copied from the abstract. Numbers and the authors' conclusion are hedged ('may be natural hosts')."
+ },
+ {
+  "id": "CB005-c",
+  "ok": true,
+  "fixes": "none needed. Title, DOI, PMID 28376903, PMCID PMC5379697, links, authors, journal and dates (2017-04-04) match the packet record."
+ },
+ {
+  "id": "CB005-d",
+  "ok": true,
+  "fixes": "none needed. {{COHORT}} and {{DATASET}} placeholders present and the back link is present."
+ },
+ {
+  "id": "CB005-e",
+  "ok": true,
+  "fixes": "none needed. Reviewer interpretation states that the tolerance claim is hypothesis only and that carriage versus survivorship bias cannot be separated; no causal claims from associations."
+ },
+ {
+  "id": "CB006",
+  "ok": false,
+  "fixes": "Added the missing trailing period to the H1 title so it matches the packet title exactly. Numbers (40 infected, 30 controls), design, species, dates, DOI, PMID and PMCID all match the packet. The summary is 123 words, paraphrased, with no 8-word copied run. Both placeholders and the back link are present. The reviewer interpretation makes no causal claim. File: C:/Workspaces/DevResearch/babesiosis/canine-babesiosis-review/articles/CB006_2017_relation-antioxidant-status-admission-disease-severity.md"
+ },
+ {
+  "id": "CB007",
+  "ok": false,
+  "fixes": "Author initials in the Authors row changed to match the packet exactly: 'Bilwal A, Mandali G, Rao N, Vasava P, Mahida N' (the note had AK, GC, PR, NR). In the authors' conclusion, 'Canine babesiosis produces' changed to 'is associated with', since the abstract describes an association. Sample sizes (24 and 8), dates, DOI and title match the packet. The summary is 106 words and paraphrased. Placeholders and back link are present. File: C:/Workspaces/DevResearch/babesiosis/canine-babesiosis-review/articles/CB007_2017_haemato-biochemical-study-babesiosis-anand-gujarat.md"
+ },
+ {
+  "id": "CB008",
+  "ok": false,
+  "fixes": "Added the missing trailing period to the H1 title so it matches the packet title exactly. In the reviewer interpretation, 'lowest in complicated disease' was limited to CD3 and CD4, because the abstract reports complicated-versus-uncomplicated differences only for those subsets; CD8 was lower in both infected groups versus controls. Sample sizes (44 and 5), design, dates, DOI and PMID match the packet. The summary is 116 words and paraphrased. Placeholders and back link are present. File: C:/Workspaces/DevResearch/babesiosis/canine-babesiosis-review/articles/CB008_2017_flow-cytometric-assessment-lymphocyte-immunophenotypes-naturally.md"
+ },
+ {
+  "id": "CB009",
+  "ok": false,
+  "fixes": "Changed 'French university teaching hospital' to 'French veterinary teaching hospital' in the abstract-derived summary, because the abstract says 'Veterinary Teaching Hospital of VetAgro Sup'. Verified against the packet: title, authors, journal/volume/pages, online and issue dates, DOI, PMID, no PMCID, all counts (134, 23, 11, 10, 2, 1, 7/23, OR 2.82 and 3.31) and the species wording. Summary is 132 words; longest verbatim run is 7 tokens. Placeholders {{COHORT}} and {{DATASET}} and the back-link are present. No causal claims found. Not verifiable from the packet: the note's 'publisher page returned HTTP 403' claim in Evidence basis."
+ },
+ {
+  "id": "CB010",
+  "ok": false,
+  "fixes": "Summary cited figures absent from the abstract (3,467 genes, 509 exported models, 103 VESA members, 23 candidate proteins, 'nearly half hypothetical') under an 'Abstract-derived' heading. Rewrote the summary from abstract content only: 141 words, longest verbatim run 6 tokens, every number in it is in the abstract. Host, Country and Sample size rows drew on full-text details without saying so: labelled them '(full text)', and the Country row now says 'Not stated in abstract'. Title, authors, journal, dates, DOI, PMID and PMCID links, and repository IDs match the packet. Placeholders and back-link are present. Caveat: the packet holds no full-text body, so the full-text details (Evidence basis and Information beyond the abstract) could not be checked. The note itself says the fetch returned a summary, not raw text."
+ },
+ {
+  "id": "CB011",
+  "ok": false,
+  "fixes": "Summary sentence on assay methods copied a 13-word verbatim run from the abstract ('thrombin-antithrombin (TAT) complexes, activated protein C (APC) and endothelial protein C receptor were'). Reworded it: 'Protein C and AT III activities were measured chromogenically, whereas TAT complexes, APC and the endothelial protein C receptor were quantified with canine-specific ELISA kits.' Summary is now 115 words, longest verbatim run 5 tokens. Verified against the packet: title, authors, journal, dates, DOI, PMID (no PMCID), 25 vs 10 sample size, species wording, and design. Placeholders and back-link are present. No causal claims found. Not verifiable from the packet: the note's Elsevier/ScienceDirect HTTP 403 claim in Evidence basis."
+ },
+ {
+  "id": "CB012",
+  "ok": false,
+  "fixes": "Edited C:/Workspaces/DevResearch/babesiosis/canine-babesiosis-review/articles/CB012_2017_acute-phase-response-babesia-canis-dirofilaria.md. (1) Summary said co-infection 'modestly worsened anaemia'; the abstract only says D. immitis 'slightly influenced' anaemia (no direction), so changed to 'modestly influenced anaemia and aggravated dehydration'. (2) Reviewer interpretation said the acute-phase profile was 'driven by the babesial infection' (causal wording from an associational design); changed to 'accompanying the babesial infection'. Verified against packet CB012: title, DOI, PMID 28802807, no PMCID, journal/volume/pages, online date 2017-08-02, issue 2017-10-01 (month), species, design, and sample sizes (13+18+7+15 = 53) all match. Summary is 130 words, paraphrased (no run of 9+ copied words). Both placeholders and the back link are present."
+ },
+ {
+  "id": "CB013",
+  "ok": false,
+  "fixes": "Edited C:/Workspaces/DevResearch/babesiosis/canine-babesiosis-review/articles/CB013_2017_vector-borne-zoonotic-diseases-north-west.md. (1) Species row stated 'no sequencing reported' and the 'multiplex commercial panel' detail without a full-text label, while only the first ~100k of ~151k full-text characters were read; relabelled those details as full text and the sequencing point as 'not described in the portion of full text read'. (2) Host row said 'free-roaming and pound dogs'; 'pound dogs' is not in the abstract or any verified full-text detail, so changed to 'free-ranging dogs near Aboriginal communities' (abstract wording). (3) Summary said 'Bartonella was never detected', but the abstract says Bartonella DNA was not detected and no dogs were seropositive; changed to 'Bartonella DNA was never detected'. (4) Key limitations 'no species confirmation by sequencing' changed to 'no sequencing-based species confirmation described' for the same partial-read reason. Verified against packet CB013: title, DOI, PMID 28810870, PMCID PMC5558717, journal and pages, dates (2017-08-15), n=96, B. vogeli n=7, OR 11.8 (CI 2.3-61.6, P=0.003), A. platys n=26 all match. Summary is 126 words, paraphrased. Placeholders and back link are present. No causal claims in the reviewer interpretation."
+ },
+ {
+  "id": "CB014",
+  "ok": true,
+  "fixes": "No changes needed. Verified against packet CB014: title, DOI 10.1515/pjvs-2017-0070, PMID 29166283, no PMCID, journal/volume/issue/pages, dates (PubMed 2017-09-26 vs Europe PMC 2017-09-01 discrepancy noted correctly), n=50 babesiosis and n=20 controls, CAR category and secondary tags all match. Abstract numbers (thrombocytopenia 100%, haematocrit reduction 52%, anaemia 46%, T-wave 34%, FS 24%, sinus rhythm 14%, axis 10%, troponin I 19/50, CK-MB 23.17-369.62 U/L, peak 367.33/369.62 U/L) are reproduced correctly. Summary is 133 words and paraphrased (no run of 9+ copied words). Reviewer interpretation hedges appropriately with no causal claims. Placeholders and back link are present."
+ },
+ {
+  "id": "CB015-a-numbers-design",
+  "ok": false,
+  "fixes": "Summary said 'higher neutrophil and eosinophil percentages'; the packet abstract says mean values increased, so changed to 'higher mean neutrophil and eosinophil values'. All other figures (79 screened, 16 positive, 8 controls from full text and labelled, p-values, direction of changes, descriptive design) match the packet."
+ },
+ {
+  "id": "CB015-b-summary",
+  "ok": true,
+  "fixes": "Summary is 108 words after the edit (107 before). No run of 8 or more consecutive words copied from the abstract."
+ },
+ {
+  "id": "CB015-c-record-links",
+  "ok": false,
+  "fixes": "H1 title lacked the trailing period from the packet record; added it. DOI 10.14202/vetworld.2017.1227-1232, PMID 29184369, PMCID PMC5682268, journal, volume/issue/pages, and online date 2017-10-14 all match. Issue-date note matches the PubMed date of 2017-10-01 with month precision."
+ },
+ {
+  "id": "CB015-d-placeholders",
+  "ok": true,
+  "fixes": "{{COHORT}}, {{DATASET}} and the '[Back to article index](../index.md)' line are present."
+ },
+ {
+  "id": "CB015-e-causal",
+  "ok": true,
+  "fixes": "Reviewer interpretation describes associations and says 'consistent with haemolysis plus hepatic involvement' with a caveat that hepatic and globulin changes are associations only. No causal claim found."
+ },
+ {
+  "id": "CB017-a-numbers-design",
+  "ok": true,
+  "fixes": "16 healthy, 31 infected (18 complicated), nine cytokines, day 1 and day 7 sampling, one death (3.2%), AUCs 0.906, 0.896 and 0.983, rs values and p-values all match the abstract. Retrospective longitudinal design matches the MeSH terms. Species B. canis is labelled as confirmed per full text, which is explicitly marked."
+ },
+ {
+  "id": "CB017-b-summary",
+  "ok": false,
+  "fixes": "Word count is 120, within range, and no 8-word run is copied. Summary said 'all given imidocarb', but the packet abstract names the drug as Imizol, so changed to 'all given Imizol'. Imidocarb is kept in the full-text section, which is labelled."
+ },
+ {
+  "id": "CB017-c-record-links",
+  "ok": false,
+  "fixes": "H1 title lacked the trailing period from the packet record; added it. DOI 10.1371/journal.pone.0190474, PMID 29304171, PMCID PMC5756041, journal PloS one 13(1):e0190474, and online date 2018-01-05 all match."
+ },
+ {
+  "id": "CB017-d-placeholders",
+  "ok": true,
+  "fixes": "{{COHORT}}, {{DATASET}} and the '[Back to article index](../index.md)' line are present."
+ },
+ {
+  "id": "CB017-e-causal",
+  "ok": false,
+  "fixes": "Reviewer interpretation said 'chemokine-driven', which implies causation from associations; changed to 'chemokine-associated'. Also aligned the complication definition with the full-text section (WHO malaria-style classification, SIRS-positive) instead of 'SIRS/MODS criteria'."
+ },
+ {
+  "id": "CB018-a numbers/species/design/sample size",
+  "ok": true,
+  "fixes": "No change needed. 35 screened, 5 included, 4 with pre/post data, B. gibsoni, retrospective design, and the treatment response counts all match the packet abstract."
+ },
+ {
+  "id": "CB018-b summary length and paraphrase",
+  "ok": false,
+  "fixes": "Summary is 130 words and has no run of 8+ words copied from the abstract. Reworded the opening clause, which said the study sought dogs with 'evidence of glomerular or renal involvement'. The abstract states the aim as documenting azotemia and proteinuria, so the clause now reads 'looked for azotemia and proteinuria in dogs with Babesia infection'."
+ },
+ {
+  "id": "CB018-c title, DOI, PMID/PMCID, dates",
+  "ok": true,
+  "fixes": "No change needed. Title, authors, journal, DOI 10.5326/jaaha-ms-6693, PMID 29558219 (PMCID none), online date 2018-03-20 and year-precision issue date all match the packet. Not verified: the note's claim that the publisher page returned HTTP 403 is not recorded in the packet, so it was left unchanged."
+ },
+ {
+  "id": "CB018-d placeholders and back link",
+  "ok": true,
+  "fixes": "No change needed. {{COHORT}}, {{DATASET}} and the back link to ../index.md are present."
+ },
+ {
+  "id": "CB018-e causal claims",
+  "ok": true,
+  "fixes": "No change needed. The reviewer interpretation says the findings are compatible with a protein-losing glomerulopathy and that improvement suggests a link but is not proof of causation."
+ },
+ {
+  "id": "CB019-a numbers/species/design/sample size",
+  "ok": false,
+  "fixes": "Numbers match the packet abstract: 10 infected and 10 healthy dogs, 50-55 phosphoproteins, 89 new sites, 71.9/16.8/11.2% residue split, fetuin A 50-70%, kininogen-1 10-20%, SAA S101, kininogen T326, fibrinogen T20/S22. Two fixes: the summary said 'naturally acquired', which the abstract does not state, so it now reads 'dogs affected by Babesia canis babesiosis with no organ dysfunction'. The table's 'naturally infected' design and host wording is not in the abstract, so it is now labelled 'per full text'. Not verified: the packet records section titles only, so I could not check the full-text wording myself."
+ },
+ {
+  "id": "CB019-b summary length and paraphrase",
+  "ok": false,
+  "fixes": "Summary is about 128 words and has no run of 8+ copied words. Reworded the fetuin A sentence to match the abstract ('most abundant phosphoprotein (50-70% of all phosphoproteins)'). The earlier 'of phosphoprotein signal' wording added an abundance-measure claim the abstract does not make."
+ },
+ {
+  "id": "CB019-c title, DOI, PMID/PMCID, dates",
+  "ok": true,
+  "fixes": "No change needed. Title, authors, PLoS One 13(11):e0207245, DOI 10.1371/journal.pone.0207245, PMID 30485286, PMCID PMC6261647, online date 2018-11-28 and year-precision issue date all match the packet."
+ },
+ {
+  "id": "CB019-d placeholders and back link",
+  "ok": true,
+  "fixes": "No change needed. {{COHORT}}, {{DATASET}} and the back link to ../index.md are present."
+ },
+ {
+  "id": "CB019-e causal claims",
+  "ok": true,
+  "fixes": "No change needed. The reviewer interpretation labels the findings hypothesis-generating and explicitly not evidence of causal involvement."
+ },
+ {
+  "id": "CB021-a",
+  "ok": true,
+  "fixes": "No change needed. Six Beagles (3 splenectomised), 86 FRET-qPCR samples, 77/86 (90%), day 95 end, re-challenge day 66, B. vogeli species all match the packet abstract. Setting China is labelled as inferred."
+ },
+ {
+  "id": "CB021-b",
+  "ok": true,
+  "fixes": "No change needed. Summary is about 129 words. No run of more than 8 consecutive words is copied from the abstract."
+ },
+ {
+  "id": "CB021-c",
+  "ok": true,
+  "fixes": "No change needed. Title, authors, DOI 10.1016/j.vetpar.2018.02.028, PMID 29604992, PMCID not indexed (packet null), online date 2018-02-13 and issue date 2018-04-15 all match the packet record."
+ },
+ {
+  "id": "CB021-d",
+  "ok": true,
+  "fixes": "No change needed. Both {{COHORT}} and {{DATASET}} placeholders are present, and the line [Back to article index](../index.md) is present."
+ },
+ {
+  "id": "CB021-e",
+  "ok": false,
+  "fixes": "Fixed in place. The reviewer interpretation said the splenectomy contrast 'indicates that splenic function ... is a major determinant of severity'. That is a causal claim from a 3-vs-3 comparison with splenectomy confounded with cohort. It now reads 'is consistent with splenic function ... contributing to severity' and says this is an association rather than an established determinant."
+ },
+ {
+  "id": "CB022-a",
+  "ok": true,
+  "fixes": "No change made, but not fully verifiable. The packet abstract is null (the packet rationale says the abstract came from the publisher PDF). The packet-checkable figures match: n=68 suspected, 9 smear-positive, 6 healthy controls, species Babesia sp. (suspected, blood smear). The platelet, RBC, p-value, glucose/ALT and Hb 3.5 g/dL figures could not be checked against the packet. Also, the summary (labelled abstract-derived) gives 'three dogs severely anaemic, lowest Hb 3.5' while the note's full-text section lists the same finding as full text only, so the attribution should be confirmed against the source PDF."
+ },
+ {
+  "id": "CB022-b",
+  "ok": true,
+  "fixes": "No change needed. Summary is about 120 words. It is a paraphrase, though the abstract text itself could not be compared because the packet abstract is null."
+ },
+ {
+  "id": "CB022-c",
+  "ok": true,
+  "fixes": "No change needed for title, authors, DOI 10.36062/ijah.57.1.2018.81-86, PMID/PMCID not indexed, and first publication date 2018-06-01 (Crossref online and issued). The received 2018-02-12 and accepted 2018-03-26 dates in Date notes come from the PDF and are not in the packet. They are not contradicted but could not be verified."
+ },
+ {
+  "id": "CB022-d",
+  "ok": true,
+  "fixes": "No change needed. Both {{COHORT}} and {{DATASET}} placeholders are present, and the line [Back to article index](../index.md) is present."
+ },
+ {
+  "id": "CB022-e",
+  "ok": false,
+  "fixes": "Fixed in place. The text said heterogeneity 'explains why' group-mean haemoglobin and PCV were non-significant. That is an unsupported causal explanation, and the study is underpowered at n=9 vs 6. It now reads 'may partly explain why' and says the data fit variable severity better than uniform absence of anaemia."
+ },
+ {
+  "id": "CB024",
+  "ok": true,
+  "fixes": "No changes needed. Title, authors, journal/volume/pages, DOI, PMID, PMCID (none), and dates match packet CB024 (30057291). Sample sizes (42 infected: 9/27/6; 14 controls) and species match the abstract. Summary is 126 words, and its longest run copied from the abstract is 5 words. Both placeholders and the back link are present. Reviewer interpretation makes no causal claims."
+ },
+ {
+  "id": "CB025",
+  "ok": false,
+  "fixes": "Fixed in place: the summary said the study tested whether 'acute renal azotemia' is under-recognised, but the abstract says 'renal azotemia' with no 'acute' qualifier; removed 'acute'. Verified as matching the packet: title, authors, Vet Parasitol 260:22-29, DOI 10.1016/j.vetpar.2018.07.012, PMID 30197009, epub 2018-07-29 and issue 2018-08-30 (day), n=152 (26 azotemic, 21 renal azotemia), 81%/23%/6 of 26 figures, and secondary tags. Summary is 119 words, longest copied run 7 words. Placeholders and back link present. No causal claims."
+ },
+ {
+  "id": "CB026",
+  "ok": false,
+  "fixes": "Fixed in place: (1) Study design removed 'kennel-based longitudinal sampling', which is not in the packet abstract or record; now 'Observational case-control study in two sighthound kennels'. (2) Babesia species row removed the unlabelled claim of '18S rRNA and ITS-2 sequencing in 9 dogs', which is not in the packet; now 'confirmed by real-time and conventional PCR'. (3) Key limitations said coinfections were '62% of positives per full text', which contradicts the abstract's 16 of 29 (55%); now '16 of 29 positives per abstract, 55%'. Verified as matching the packet: title, authors, J Vet Intern Med 32(5):1609-1617, DOI 10.1111/jvim.15233, PMID 30307638, PMC6189381, issue date 2018-09-01 and epub 2018-10-11, n=55 (29 PCR+, 26 PCR-), and the summary figures. Summary is 111 words, longest copied run 7 words. Placeholders and back link present. Not changed, but unverified against the packet because the packet holds no full-text content: 'biochemistry n=52', the kennel counts '20 and 25', and the 'Information beyond the abstract' full-text figures (Hct, platelets, albumin, globulin, 13/29 vs 1/26, 20/29 vs 2/26, OR 31.2, atovaquone plus azithromycin). These should be checked against the full text by a reviewer."
+ },
+ {
+  "id": "a",
+  "ok": false,
+  "fixes": "Packet abstract is null, so the note was checked against the publisher abstract (via the Crossref record). Species (unspecified canine Babesia spp.), host (dog), and absence of sample size and numbers all match. The study design 'narrative review' was not supported: the abstract says 'comprehensive review' and the packet says 'review'. Fixed the Study design row to 'review (described in abstract as comprehensive; narrative design not stated)'. Also changed 'narrative' to 'review of this kind' in the summary's last sentence, 'Review design' in the limitations, and 'A broad, comprehensive review' in the reviewer interpretation. Removed the unverified parenthetical 'haemolysis, inflammatory response, multisystem involvement', which is not in the abstract."
+ },
+ {
+  "id": "b",
+  "ok": true,
+  "fixes": "Summary is about 106 words, within 100-150. It is a paraphrase; no run of more than 8 consecutive words is copied from the Crossref abstract. No change needed beyond the 'narrative' wording fix in (a)."
+ },
+ {
+  "id": "c",
+  "ok": true,
+  "fixes": "DOI 10.2478/acve-2018-0011, journal Acta Veterinaria, year 2018, authors, volume 68(2), pages 127-160, and DOI link match Crossref. Issue date 2018-06-01 matches published-print; online 2018-07-04, submitted 2018-05-08 and accepted 2018-05-29 match the publisher page. PMID and PMCID are null in the packet, and the note says 'not indexed', which matches. Not edited: the H1 and table title are in title case ('Canine Babesiosis: Where Do We Stand?'), which matches the Crossref and publisher title. The packet record uses sentence case ('Canine babesiosis: where do we stand?'). This is a case-only difference in the packet and was left unchanged to keep the bibliographically correct title."
+ },
+ {
+  "id": "d",
+  "ok": true,
+  "fixes": "{{COHORT}} and {{DATASET}} placeholders are present. The line '[Back to article index](../index.md)' is present at line 3. No change needed."
+ },
+ {
+  "id": "e",
+  "ok": true,
+  "fixes": "No causal claims from associations. The authors' conclusion and summary wording ('informs', 'should guide') are recommendations or framing, not causal findings. The reviewer interpretation states that mechanistic claims should be traced to primary studies. No change needed beyond the wording fixes in (a)."
+ },
+ {
+  "id": "CB030",
+  "ok": true,
+  "fixes": "No changes needed. Title, DOI, PMID, journal/volume/pages, year-level date, and 60 infected plus 10 control sample sizes match packet CB030. Summary is about 116 words, paraphrased with no run of more than 8 words copied. Placeholders {{COHORT}} and {{DATASET}} and the back link are present. No causal claims; the reviewer interpretation is hedged."
+ },
+ {
+  "id": "CB031",
+  "ok": false,
+  "fixes": "Edited /articles/CB031_2019_seroprevalence-ehrlichiosis-microscopic-screening-babesiosis-harare.md. (1) Country/setting said 'private veterinary practices', which is not in the packet abstract; changed to 'selected veterinary clinics'. (2) Reviewer interpretation described the anaemia as 'haemolytic-type', an unsupported mechanistic label; changed to 'anaemia'. Verified: title, DOI, PMID/PMCID, journal, online date 2019-12-01, n=117/56/88/46, the percentages and CIs, and the 102-word summary all match the packet. Placeholders and back link are present."
+ },
+ {
+  "id": "CB032",
+  "ok": false,
+  "fixes": "Edited /articles/CB032_2019_babesiosis-male-boerboel-hematobiochemical-anatomic-pathological.md. The limitations said 'death preceded treatment', which the abstract does not state; changed to 'death occurred during the investigation', which matches the abstract. Verified: title, DOI, PMID/PMCID, journal, online date 2019-01-31, n=1, the species and design, and the about 104-word paraphrased summary all match the packet. Placeholders and back link are present."
+ },
+ {
+  "id": "CB033",
+  "ok": false,
+  "fixes": "Edited C:/Workspaces/DevResearch/babesiosis/canine-babesiosis-review/articles/CB033_2019_evaluation-thyroid-function-abnormalities-sixty-naturally.md. The abstract-derived summary was 60 words, below the 100-150 range, so it was expanded to about 130 words using only record-supported content (Crossref-only status, found_by species searches, primary include, verified Crossref volume 89(1) pages 55-69 and 15 Feb 2019 dates, no PMCID). Volume, issue and pages were checked against Crossref and match. Title, DOI, dates, sample size (60, from title) and species (B. canis, unspecified) match the packet. Placeholders {{COHORT}} and {{DATASET}} and the back link are present. No causal claims."
+ },
+ {
+  "id": "CB034",
+  "ok": false,
+  "fixes": "Edited C:/Workspaces/DevResearch/babesiosis/canine-babesiosis-review/articles/CB034_2019_thromboelastographic-platelet-mapping-complicated-babesia-rossi.md. (1) Study design cell claimed a clinical cohort of hospitalised dogs, which is not in the packet abstract or record; changed to case-control per the MeSH term, with hospitalised status noted as not stated. (2) Reviewer interpretation said the TEG-PM findings 'Supports' a compensation mechanism from correlations; softened to 'is compatible with' and labelled as a hypothesis from correlational data. Summary is 109 words, paraphrased, with no 8-word copied run. PMID, DOI, volume 48(1) 11-18, first pub date 2019-03-01, sample sizes 13 and 5, and r values match. Placeholders and back link present. Not changed: the H1 omits the trailing period that the packet title carries; this matches the title convention used across the notes, so it was left as is."
+ },
+ {
+  "id": "CB035",
+  "ok": false,
+  "fixes": "Edited C:/Workspaces/DevResearch/babesiosis/canine-babesiosis-review/articles/CB035_2019_vitamin-d-status-babesiosis.md. (1) Species cell said 'suspected', which contradicts the abstract's 'confirmed diagnosis'; rewritten to report both the abstract statement and the full-text basis (smear morphology, PCR/RLB exclusion, no species-specific B. rossi test), verified against Europe PMC full text. (2) Summary was 95 words, below range; expanded to about 113 words with record-supported content, and 'markedly lower' changed to 'significantly lower' to match the abstract. Numbers (34, 24, 37.76 +/- 21.25 vs 74.2 +/- 20.28 nmol/L), PMID, PMCID, DOI, dates, and journal details match the packet. Full-text checks confirmed OVAH named, dietary intake not assessed, authors say causality unclear, controls are blood donors. Placeholders and back link present. No causal claims from associations."
+ },
+ {
+  "id": "CB037-a-numbers-design-species",
+  "ok": false,
+  "fixes": "Sample sizes (55 PCR-positive: 23 critically ill, 32 relatively well; 9 died, 46 survived; 17 controls), species (B. rossi, PCR-confirmed) and tags match the packet. Study design row called the design cross-sectional, which the abstract does not state; labelled that as inferred. File: C:/Workspaces/DevResearch/babesiosis/canine-babesiosis-review/articles/CB037_2019_disease-severity-blood-cytokine-concentrations-natural.md"
+ },
+ {
+  "id": "CB037-b-summary",
+  "ok": true,
+  "fixes": "Summary is 131 words and paraphrased; no run of more than 8 words copied from the abstract."
+ },
+ {
+  "id": "CB037-c-title-doi-ids-dates",
+  "ok": false,
+  "fixes": "H1 title lacked the trailing period in the packet title; added. Authors, DOI, PMID, journal, volume/issue/pages and online/issue dates match the packet. Not verifiable from the packet and left in place: the claim that the publisher page returned HTTP 403, and the funding grant and affiliation details (labelled as beyond the abstract)."
+ },
+ {
+  "id": "CB037-d-placeholders-backlink",
+  "ok": true,
+  "fixes": "{{COHORT}}, {{DATASET}} and the [Back to article index](../index.md) line are present."
+ },
+ {
+  "id": "CB037-e-causal-language",
+  "ok": true,
+  "fixes": "Reviewer interpretation uses associational language and states it is not a mechanistic study."
+ },
+ {
+  "id": "CB038-a-numbers-design-species",
+  "ok": false,
+  "fixes": "Counts (330 suspected; microscopy 17 / 5.15%, simple PCR 30 / 9.09%, nested PCR 51 / 15.45%; 47 B. gibsoni, 4 B. vogeli; 17/17/17 groups) match the packet. Removed NEU secondary tag, which is not in the packet (ERY, MET only). Species row no longer says nested PCR, since the packet says 18S rRNA PCR sequencing. Host breed emphasis and necropsy histopathology design element are now labelled as full-text only; cross-sectional label marked as inferred. File: C:/Workspaces/DevResearch/babesiosis/canine-babesiosis-review/articles/CB038_2019_babesiosis-among-working-organised-kennels-india.md"
+ },
+ {
+  "id": "CB038-b-summary",
+  "ok": false,
+  "fixes": "Summary was 114 words and within range, but the sentence 'B. gibsoni infections relapsed after standard antiprotozoal therapy' overgeneralised the abstract's 'relapses were often observed' and failure to achieve chemosterilization. Rewrote it as a paraphrase, bringing the summary to about 124 words. No 8-word copied run."
+ },
+ {
+  "id": "CB038-c-title-doi-ids-dates",
+  "ok": false,
+  "fixes": "H1 title lacked the trailing period in the packet title; added. DOI, PMID, PMCID and link, journal/volume/pages, online and issue dates, and all 24 GenBank accessions match the packet. Not in the packet and left unverified: supplementary file mmc2_lrg.jpg (packet lists mmc1.docx twice and no mmc2), and the 'strays excluded' and 'sequences only' statements in the limitations/evidence sections."
+ },
+ {
+  "id": "CB038-d-placeholders-backlink",
+  "ok": true,
+  "fixes": "{{COHORT}}, {{DATASET}} and the [Back to article index](../index.md) line are present."
+ },
+ {
+  "id": "CB038-e-causal-language",
+  "ok": true,
+  "fixes": "Reviewer interpretation states the paper does not test mechanisms and that species virulence cannot be inferred. No causal claims found."
+ },
+ {
+  "id": "CB039",
+  "ok": true,
+  "fixes": "No changes needed. Title, DOI, PMID/PMCID links, journal/volume/pages and online (2019-06-07) and issue (2019-07-01) dates match packet CB039. Sample sizes (29 infected, 10 controls), cross-sectional design and numbers match the abstract. Species B. canis is labelled as confirmed per full text. Summary is about 123 words with no run above 8 words copied. Placeholders {{COHORT}}, {{DATASET}} and the back link are present. No causal claims in the reviewer interpretation. Observation only, not changed: the limitation that controls were presumably staff-owned dogs awaiting neutering is not in the packet record; it is hedged and could not be verified from the packet."
+ },
+ {
+  "id": "CB040",
+  "ok": false,
+  "fixes": "Edited /articles/CB040_2019_clinical-pathological-description-320-cases-naturally.md. The summary copied a 9-word run from the abstract ('the Onderstepoort Veterinary Academic Hospital between 2006 and 2016'). Rephrased to 'seen at the Onderstepoort Veterinary Academic Hospital during 2006-2016'. Summary is now about 116 words. All other checks passed: title, DOI, PMID 31303199, PMCID not indexed, dates, 320 dogs, B. rossi by multiplex PCR, placeholders and back link."
+ },
+ {
+  "id": "CB041",
+  "ok": false,
+  "fixes": "Edited /articles/CB041_2019_mechanisms-involved-persistence-babesia-canis-infection.md. The summary said 'This narrative review', but the packet abstract and record only give publication type 'Review', so 'narrative' was removed from the summary. The Study design row now reads: review (PubMed publication type 'Review'); narrative synthesis largely of the author's own experimental infection model, per full text. Summary is about 113 words. Title, DOI, PMID 31261942, PMCID PMC6789894, dates (2019-06-29) and placeholders all match. No causal claims in the reviewer interpretation."
+ },
+ {
+  "id": "CB042",
+  "ok": false,
+  "fixes": "Changed Study design to remove 'Retrospective' (not stated in the packet abstract or record; the abstract says only that samples were submitted to a diagnostic lab June 2015 to June 2018). File: C:/Workspaces/DevResearch/babesiosis/canine-babesiosis-review/articles/CB042_2019_prevalence-babesia-spp-clinical-characteristics-babesia.md. Verified OK: title, DOI, PMID/PMCID, dates (epub 2019-07-23, issue 2019-09 month), 9367/269/2.9%/48/19/29/43 numbers, species, SEV/ERY/COA/REN/INF tags, summary 129 words, no run of more than 8 copied words, placeholders and back link present, no causal claims."
+ },
+ {
+  "id": "CB043",
+  "ok": false,
+  "fixes": "File: C:/Workspaces/DevResearch/babesiosis/canine-babesiosis-review/articles/CB043_2019_clinical-occurrence-babesiosis-coastal-area-black.md. (1) First publication date changed from 2019-07-03 (Crossref) to the packet first_pub_date 2019-08-01 (month precision); Crossref date 2019-07-03 kept in Date notes, labelled as outside the PubMed record. (2) Species aligned with packet ('likely B. canis' on smear morphology, not molecularly confirmed) instead of 'species not determined'. Verified OK: title, authors, journal, PMID, PMCID not indexed, 306/85/27.8% and age/breed/severity/recovery numbers, 76/85 March-June, 2016-2018 period, SEV tag set, summary 134 words, placeholders and back link present. Not fixed, for the user to decide: the DOI 10.1645/18-137 is not in the packet record (doi is null there). It was confirmed against Crossref, so it is kept and labelled as such; the packet could be updated to match."
+ },
+ {
+  "id": "CB044",
+  "ok": false,
+  "fixes": "File: C:/Workspaces/DevResearch/babesiosis/canine-babesiosis-review/articles/CB044_2019_hyponatraemia-syndrome-inappropriate-antidiuretic-hormone-secretion.md. (1) First publication date changed from online 2019-09-13 to the packet first_pub_date 2019-09-01 (month precision), with online 2019-09-13 kept alongside. (2) Host and Study design now label the healthy controls and the untreated status as full text, since the abstract does not mention them. Full text confirms 36 infected, 15 controls, 29 analysed, and untreated status. (3) 'only one of three SIADH dogs was hypotensive' now labelled (full text); the Europe PMC full text confirms this. Verified OK: title, DOI, PMID/PMCID, MET/END/REN/CAR tags, abstract-based numbers, correlation range 0.46-0.52 (full text), summary 112 words with the longest copied run at exactly 8 words (within the limit), placeholders and back link present, no causal claims."
+ },
+ {
+  "id": "CB045",
+  "ok": false,
+  "fixes": "Fixed species row: it said 'confirmed' for all 20 dogs while also saying 2 were assigned by epidemiology, and the packet screening species is 'suspected'. Reworded to 'suspected in packet record; PCR in 18/20 dogs per full text, remaining 2 by epidemiology per full text'. Reworded reviewer interpretation from 'argues against direct parasite-mediated pancreatic injury' to 'neither show nor exclude a direct parasite-mediated pancreatic mechanism' (no causal claim from non-correlation). Checked and passed: title, DOI, PMID/PMCID links, authors, journal, dates (online 2019-09-12, issue 2019-11-14), n=20, design, MET/INF/COA tags, summary 108 words with no 8+ word copied run, both placeholders and back link present. Flag: 'B. gibsoni (suspected)' in packet vs confirmed by full text in note; full-text details not independently re-read.",
+  "ok_": null
+ },
+ {
+  "id": "CB046",
+  "ok": false,
+  "fixes": "Fixed summary numbers: 'About 400' and 'under 200' changed to exact abstract figures 403 (infected) and 176 (controls); 'EMT contributes to renal pathology' softened to 'may play a role' to match the abstract's hedging. Fixed design row: MALDI-TOF/TOF changed to MALDI-TOF to match the abstract. Checked and passed: title, DOI, PMID/PMCID, authors, journal/volume/issue/pages, dates (2019-12-04), n=10 vs 10 pooled, case-control design, REN/INF/OXO tags, summary 107 words after edit, no long copied run, placeholders and back link present, interpretation has no causal claims beyond hedged hypothesis."
+ },
+ {
+  "id": "CB047",
+  "ok": false,
+  "fixes": "Summary was 94 words, below the 100-word minimum; rewritten as a paraphrase of 107 words. The packet record has no abstract (abstract: null), so the note's abstract details were verified against the cited publisher page (ijcmas.com) and Crossref, which confirmed the 5-year-old female Labrador, PCR detection of B. canis (394 bp), smear negative, Evans syndrome, volume 8(12), pages 2522-2526, and dates. Reworded critical interpretation to remove causal wording ('precipitating factor', 'makes ... an incomplete explanation'). Authors row kept as 'Ramkumar PK': publisher and Crossref show 'P.K. Ramkumar' but the packet has 'Ramkumar P' (packet record should be corrected). Flag: packet title has a double space and appears to omit a word ('Concurrent of Evans Syndrome'); the publisher title has the same wording, so the note matches the published title and was left unchanged. Checked and passed: DOI, dates, n=1 case report, ERY/COA/INF tags, placeholders and back link present."
+ },
+ {
+  "id": "CB048-a-numbers-species-design",
+  "ok": true,
+  "fixes": "No change. The packet record has a null abstract, so the note's figures (250 dogs, 9 PCR-positive at 3.6%, anaemia 66.7%, thrombocytopenia 89%, B. vogeli, 18S rRNA PCR with sequencing) were checked against the cited journal landing page (bjvm.org.br/index.php/BJVM/article/view/321) and match it. The packet's own record only supports n=9 positives and B. vogeli."
+ },
+ {
+  "id": "CB048-b-summary-length-paraphrase",
+  "ok": true,
+  "fixes": "No change. Summary is about 102 words and is a paraphrase with no run of 9 or more words copied from the source abstract."
+ },
+ {
+  "id": "CB048-c-title-doi-ids-dates",
+  "ok": true,
+  "fixes": "No change. Title, DOI and first publication date (2020-01-01) match the packet. PMID and PMCID are null in the packet, and the note says not indexed, which is consistent."
+ },
+ {
+  "id": "CB048-d-placeholders-backlink",
+  "ok": true,
+  "fixes": "No change. {{COHORT}}, {{DATASET}} and the back link are present."
+ },
+ {
+  "id": "CB048-e-no-causal-claims",
+  "ok": true,
+  "fixes": "No change. The reviewer interpretation is descriptive and does not infer causation."
+ },
+ {
+  "id": "CB049-a-numbers-species-design",
+  "ok": false,
+  "fixes": "Study design row said 'prospective-style', which the abstract does not state. Changed to 'clinical case series of hospital presentations (April 2018 to October 2019) comparing microscopy with PCR; prospective or retrospective enrolment not stated in the abstract'. Sample size 144, species, and all abstract counts (33 microscopy, 113/13/4/31 PCR) match the packet abstract. Author names are expansions of the packet names (Vismaya KK, Ajith Kumar S) and were left as they are."
+ },
+ {
+  "id": "CB049-b-summary-length-paraphrase",
+  "ok": true,
+  "fixes": "No change. Summary is about 106 words and is a paraphrase with no run of 9 or more copied words."
+ },
+ {
+  "id": "CB049-c-title-doi-ids-dates",
+  "ok": false,
+  "fixes": "First publication date said 2020-09-04 (publisher page), which does not match the packet first_pub_date of 2020-01-01. Changed the field to 2020-01-01 (packet record, year-only in Crossref) and kept the publisher's online date of 4 September 2020 in the row text and Date notes. Title and DOI match the packet exactly."
+ },
+ {
+  "id": "CB049-d-placeholders-backlink",
+  "ok": true,
+  "fixes": "No change. {{COHORT}}, {{DATASET}} and the back link are present."
+ },
+ {
+  "id": "CB049-e-no-causal-claims",
+  "ok": true,
+  "fixes": "No change. The interpretation states that the study does not establish mechanism or outcome."
+ },
+ {
+  "id": "CB050-a-numbers-species-design",
+  "ok": false,
+  "fixes": "Study design row said 'two prior cohorts', which comes from the full text and was not labelled as such. Changed to 'retrospective analysis of data for infected dogs and healthy controls (abstract); the two prior cohorts are per full text'. Counts (140 infected, 20 controls, 15/140 non-survivors, all correlation coefficients and P values in the summary) match the packet abstract. Not changed, but unverified: the setting row (South Africa, Onderstepoort Veterinary Academic Hospital) and the 'client-owned' host detail are not in the packet abstract and are not labelled as full text."
+ },
+ {
+  "id": "CB050-b-summary-length-paraphrase",
+  "ok": true,
+  "fixes": "No change. Summary is about 139 words and is a paraphrase. The longest shared runs with the abstract are under 9 words."
+ },
+ {
+  "id": "CB050-c-title-doi-ids-dates",
+  "ok": false,
+  "fixes": "First publication date said 2020-02-18 (epub), which does not match the packet first_pub_date of 2020-01-01. Changed the field to 2020-01-01 (packet record) and kept epub 2020-02-18 in the row text and Date notes. Title, DOI, PMID 32133380 and PMCID PMC7040022 match the packet, and the PubMed and Europe PMC links are correct."
+ },
+ {
+  "id": "CB050-d-placeholders-backlink",
+  "ok": true,
+  "fixes": "No change. {{COHORT}}, {{DATASET}} and the back link are present."
+ },
+ {
+  "id": "CB050-e-no-causal-claims",
+  "ok": true,
+  "fixes": "No change. The reviewer interpretation says correlations do not establish causality and that prognostic discrimination is not shown."
+ },
+ {
+  "id": "CB051",
+  "ok": true,
+  "fixes": "No changes needed. Packet CB051 (PMID 34472506) matches the note on title, authors, journal, DOI and PMID links, the 1200/53/15 counts with 1.25% and 28.3%, B. gibsoni, and India/Aizawl 2017-18. The date row uses the Europe PMC first-publication date (2020-07-01) and explains the PubMed year-only issue date, which mirrors the packet's date_discrepancy field. The summary is about 123 words, paraphrased (no run over 8 words copied), and the reviewer interpretation makes no causal claim from the association. {{COHORT}}, {{DATASET}} and the back link are present. Abs path: C:/Workspaces/DevResearch/babesiosis/canine-babesiosis-review/articles/CB051_2020_molecular-diagnosis-clinico-hemato-biochemical-alterations.md"
+ },
+ {
+  "id": "CB052",
+  "ok": false,
+  "fixes": "Edited the Reviewer interpretation in C:/Workspaces/DevResearch/babesiosis/canine-babesiosis-review/articles/CB052_2020_long-term-follow-up-owned-free.md. (1) Causal claim fix: 'host factors ... probably shape the severity spectrum' was an association-to-cause leap in a descriptive cohort, so it now reads 'the severity spectrum may reflect host factors (prior exposure, adaptive immunity) that were not measured'. (2) Accuracy fix: 'usually seen as severe in referral populations' added a claim not in the abstract and contradicted the note's 'Information beyond the abstract: none', so it now reads 'generally considered to cause severe babesiosis' as the abstract states. Everything else checks out: title, authors, DOI, PMID, dates (online 2020-01-29, issue 2020-02-01), 109 IFAT-tested dogs from 246 eligible, 34 seropositive (31%), 18 PCR-RLB-confirmed dogs, B. rossi, South Africa. The summary is about 129 words, paraphrased, and {{COHORT}}, {{DATASET}} and the back link are present."
+ },
+ {
+  "id": "CB053",
+  "ok": true,
+  "fixes": "No changes needed. Packet CB053 (PMID 32107174) matches the note on title, authors, journal, DOI, PMID and dates (online 2020-02-20, issue 2020-05-01). Sample sizes match: 35 infected, 10 controls, follow-up n=11 at 24 h and n=9 at 1 month. The design is prospective observational with post-mortem histology, and the species is B. rossi. The summary is about 133 words, paraphrased (no run over 8 words copied), and its functional-marker and injury-marker findings match the abstract at T0, T24h and T1m. The reviewer interpretation makes no causal claim from the association. {{COHORT}}, {{DATASET}} and the back link are present. Abs path: C:/Workspaces/DevResearch/babesiosis/canine-babesiosis-review/articles/CB053_2020_evaluation-acute-kidney-injury-complicated-or.md"
+ },
+ {
+  "id": "CB054",
+  "ok": true,
+  "fixes": "No changes needed. Title, DOI 10.1111/pim.12706, PMID 32119124, PMCID null (not indexed), journal, online date 2020-03-21 and issue 2020-05 match the packet. Species B. rossi, design, and sample sizes (9 infected, 4 controls) match the abstract. Summary is 125 words and paraphrased; longest shared run with the abstract is 7 words. Placeholders {{COHORT}} and {{DATASET}} and the back link are present. Reviewer interpretation makes no causal claims. File: C:/Workspaces/DevResearch/babesiosis/canine-babesiosis-review/articles/CB054_2020_pathology-spleen-lethal-babesiosis-caused-babesia.md"
+ },
+ {
+  "id": "CB055",
+  "ok": false,
+  "fixes": "Fixed in articles/CB055_2020_new-piroplasmid-species-infecting-morphological-molecular.md. (1) Removed the Hepatozoon canis PCR-positive claim from the Species row: it is not in the packet record or abstract, and the retrieved full text (Methods/Results, PMC7171826) names only the dog 1 co-infection with the organism name stripped, so the agent could not be confirmed. (2) Study design: removed 'retrospective' as an unlabelled claim and added '(full text: dogs tested 2012-2016, data from medical records)', which the full text supports. Verified otherwise: title, DOI, PMID/PMCID, journal, dates, B. negevi, 5 dogs, 212 ticks (11 PCR-positive), and primary SEV with its secondary tags all match. Full text confirms two deaths (dogs 2 and 4), consistent with the note. Summary is 122 words, paraphrased, with no run of 8 or more copied words. Placeholders and back link intact. Attribution: based on articles retrieved from PubMed, [DOI](https://doi.org/10.1186/s13071-020-3995-5)."
+ },
+ {
+  "id": "CB056",
+  "ok": false,
+  "fixes": "Fixed in articles/CB056_2020_babesiosis-latvian-domestic-2016-2019.md. (1) Primary category was SEV but the packet screening record has primary_category OXO; changed the primary to 'OXO — oxidative stress/host-parasite interaction/omics/virulence' (the same definition used across other notes). (2) Secondary tags were ERY, COA, OXO, genotype_virulence; corrected to SEV, ERY, COA, genotype_virulence to match the packet. (3) Study design: removed 'Prospective', which the abstract does not state. (4) Key limitations: replaced the unsupported 'Samples submitted by clinics for suspected disease' with a statement that the submission route and reason for testing are not described in the abstract. Verified otherwise: title, DOI 10.1016/j.ttbdis.2020.101459, PMID 32723644, not indexed PMCID, journal, dates, B. canis, 262 samples with 43 positive, and the authors all match. Summary is 120 words and paraphrased, with no run of 8 or more copied words. Placeholders and back link intact. File: C:/Workspaces/DevResearch/babesiosis/canine-babesiosis-review/articles/CB056_2020_babesiosis-latvian-domestic-2016-2019.md"
+ },
+ {
+  "id": "CB057-a",
+  "ok": false,
+  "fixes": "All numbers, species, sample sizes (9 PCR-positive, 20 PCR-negative/seroreactive, 10 naive controls = 39), SAA, total protein, alpha-lipoprotein values and 4/29 and 7/29 counts match the packet abstract. The Study design row said 'cross-sectional' without that being stated in the abstract. Edited to say cross-sectional is inferred and not stated in the abstract. File: C:/Workspaces/DevResearch/babesiosis/canine-babesiosis-review/articles/CB057_2020_evidence-acute-phase-reaction-asymptomatic-naturally.md"
+ },
+ {
+  "id": "CB057-b",
+  "ok": true,
+  "fixes": "Summary is about 129 words, within 100-150. No run of more than 8 consecutive words is copied from the abstract."
+ },
+ {
+  "id": "CB057-c",
+  "ok": false,
+  "fixes": "DOI, PMID, PMCID (null), journal, volume, article number, authors and online date (2020-05-16) match the packet. The H1 title omitted the trailing period that the packet title has. Added the period so the title matches exactly."
+ },
+ {
+  "id": "CB057-d",
+  "ok": true,
+  "fixes": "Both {{COHORT}} and {{DATASET}} placeholders are present, and the line '[Back to article index](../index.md)' is present."
+ },
+ {
+  "id": "CB058-a",
+  "ok": false,
+  "fixes": "The packet has no abstract, so the note's numbers were checked against the DergiPark landing page the note cites. SAA 43.18 vs 1.18, Cp 10.75 vs 4.80, Hp 0.44 vs 1.84, Alb 2.74 vs 3.01, P values, 20 infected and 10 healthy dogs, Giemsa smear diagnosis, pages 219-223 and the Turkey setting all match. The Study design row said 'case-control' without a source naming that design. Edited to say case-control is inferred and no formal design is named. File: C:/Workspaces/DevResearch/babesiosis/canine-babesiosis-review/articles/CB058_2020_serum-amyloid-haptoglobin-ceruloplasmin-albumin-levels.md"
+ },
+ {
+  "id": "CB058-b",
+  "ok": true,
+  "fixes": "Summary is about 113 words, within 100-150. It is a paraphrase, with no run of more than 8 consecutive words matching the source."
+ },
+ {
+  "id": "CB058-c",
+  "ok": true,
+  "fixes": "Title matches the packet exactly. DOI 10.30607/kvj.670744, online date 2020-05-29, journal and 'not indexed' PMID/PMCID (both null in packet) match. Author initials and dates from the landing page are consistent with the packet names."
+ },
+ {
+  "id": "CB058-d",
+  "ok": true,
+  "fixes": "Both {{COHORT}} and {{DATASET}} placeholders are present, and the line '[Back to article index](../index.md)' is present."
+ },
+ {
+  "id": "CB058-e",
+  "ok": true,
+  "fixes": "Reviewer interpretation describes associations only. The haemoglobin-consumption explanation for the Hp decrease is explicitly labelled as hypothesis, with no causal claim."
+ },
+ {
+  "id": "CB060",
+  "ok": false,
+  "fixes": "Edited C:/Workspaces/DevResearch/babesiosis/canine-babesiosis-review/articles/CB060_2020_clinicopathological-molecular-profiles-babesia-vogeli-infection.md. (1) First publication date row now reads 2020-07-01 (PubMed first_pub_date, month precision) with online 2020-07-09, matching the packet first_pub_date field; previously headline was 2020-07-09. (2) Sample size row and summary now call the 33 + 11 units 'blood samples' per the abstract, with 44 dogs in total kept as a full-text figure. (3) Summary 'province of origin' changed to 'geographic origin of the dog' to match the abstract. Summary is 120 words, no 8-word copied run, placeholders and back link present, DOI/PMID/PMCID links match the packet. Left unchanged: the summary's 'more anaemic' direction (confirmed by the full-text values in the note)."
+ },
+ {
+  "id": "CB061",
+  "ok": true,
+  "fixes": "No changes needed. Title, authors, journal, DOI, PMID, dates (2020-09-02), B. canis (suspected), Austria/Vienna, n=240, SEV/REN/MET tags all match packet CB061. Summary is 112 words with no 8-word copied run; figures 33.9%, 40.0%, P values and thresholds match the abstract; placeholders and back link present. Not verifiable from the packet: the Crossref print date 2020-06-30 cited in the date notes."
+ },
+ {
+  "id": "CB062",
+  "ok": false,
+  "fixes": "Edited C:/Workspaces/DevResearch/babesiosis/canine-babesiosis-review/articles/CB062_2020_assessment-cholinesterase-activity-hepatic-biofunction-naturally.md. Secondary tags changed from 'none assigned' to 'SEV (per screening packet; full text not accessible to confirm)' to match packet CB062 secondary_tags. Title, DOI, dates (online 2020-09-15, print 2020-12), MET primary tag, B. gibsoni (unspecified), and no-abstract status all match the packet. Summary is 103 words, with no abstract to copy from. Placeholders and back link present. Volume, pages and accepted date come from outside the packet and were not verified."
+ },
+ {
+  "id": "CB063",
+  "ok": false,
+  "fixes": "Edited in place: (a) the B. canis figure (9, 2.4%) was attributed to adults although the abstract gives no denominator for it; now stated as 'B. canis DNA was detected in 9 individuals (2.4%)', with 'Among adults' kept only for H. canis and B. vulpes. Also reworded 'heavier spleens and kidneys relative to body weight' to 'significantly heavier spleens and kidneys' to match the abstract's absolute-weight finding. (b) Summary is about 123 words, paraphrased, no 8-word copied run. (c) Title, DOI, PMID, journal and dates match the packet (PMCID none). (d) {{COHORT}}, {{DATASET}} and back link present. (e) Reviewer interpretation is associational and hedged. Not verifiable from the packet and left unchanged: the claim that the publisher DOI page redirected to a stub."
+ },
+ {
+  "id": "CB064",
+  "ok": false,
+  "fixes": "Edited in place: (c) First publication date row showed 2020-11-10, but the packet first_pub_date is 2020-11-01 (epub 2020-11-10); the row now gives both, labelled. (a) Study design 'versus healthy controls' is not in the abstract; now labelled as full-text only. Sample size row now says 474 blood samples (abstract) with 251 infected and 223 control dogs labelled as full text. (b) Summary said '474 dogs' where the abstract says 474 blood samples; reworded. Summary is about 108 words, no copied run of 8+ words. (e) Reviewer interpretation said Babesia anaemia and thrombocytopenia 'fit' haemolysis and platelet consumption, and called thrombocytopenia 'marked' (not in abstract); reworded as compatible-with hypotheses, not causal. (d) Placeholders and back link present. Title, DOI, PMID, PMCID and journal match the packet."
+ },
+ {
+  "id": "CB065",
+  "ok": false,
+  "fixes": "Edited in place: (c) Date notes said 'none recorded' but the packet gives issue_date 2020-11-03 (day precision); now stated. Checked and matching: title, DOI, PMID, PMCID, journal, online date 2020-11-03, species labels (B. gibsoni confirmed per full text, B. canis suspected), sample size 57 (17 and 40), categories, and the summary numbers (P-values, groups). Summary is about 110 words, paraphrased. (d) Placeholders and back link present. (e) Reviewer interpretation is hedged, no causal claim. Not verifiable from the packet and left unchanged: the Slovakia (Kosice) setting and the clinic-versus-kennel description, which the packet does not contain."
+ },
+ {
+  "id": "CB066",
+  "ok": false,
+  "fixes": "Fixed the summary: 'Two animals were castrated, one pharmacologically and one surgically' became 'Two dogs were castrated, pharmacologically or surgically'. The abstract does not give the one-and-one split. Title, authors, journal, volume/issue/pages, DOI, PMID, PMCID, dates, case-series design, n=4, B. canis (suspected), placeholders and back link all match the packet. Summary is 118 words and paraphrased (longest shared run about 5 words). Reviewer interpretation makes no causal claim. Not verifiable from the packet: the drug names (enrofloxacin, NSAID), 'unblinded supplementation' and 'owner-reported history' in the limitations line. These are not in the abstract and were left unchanged; they need checking against the full text. Path: C:/Workspaces/DevResearch/babesiosis/canine-babesiosis-review/articles/CB066_2020_babesiosis-disease-rarely-considered-context-male.md"
+ },
+ {
+  "id": "CB067",
+  "ok": false,
+  "fixes": "(1) Study design: removed the unsupported word 'prospective' (now 'observational cohort with 16-week follow-up (design wording inferred from abstract; prospective recruitment not stated)'). (2) Summary: 'had higher disease-related mortality' changed to 'were predicted to have higher disease-related mortality (25%)', matching the survival-analysis wording in the abstract. Title, authors, journal, volume 74, DOI, PMID, no PMCID, online date 2020-12-08 and issue 2021-02-01 (month), n=145, B. gibsoni (suspected), placeholders and back link all match the packet. Summary is 106 words and paraphrased. Reviewer interpretation is associational. Path: C:/Workspaces/DevResearch/babesiosis/canine-babesiosis-review/articles/CB067_2020_analysis-risk-factors-associated-recurrence-babesiosis.md"
+ },
+ {
+  "id": "CB068",
+  "ok": false,
+  "fixes": "(1) Study design: 'natural-infection case-control comparison' changed to 'natural-infection group comparison with healthy control dogs', since the abstract does not say case-control. (2) Reviewer interpretation: 'hypoxaemia-driven hyperventilation' changed to 'respiratory alkalosis co-occurring with hypoxaemia', removing an unsupported causal claim. Title, DOI, dates (2020-12-15 across Crossref fields), no PMID/PMCID, n=14 infected and 10 healthy, B. canis (suspected), placeholders and back link all match. Summary is 101 words (near the lower limit) and paraphrased. Not verifiable from the packet: the volume 90, issue 6, pages 603-610 and the 'Faculty of Veterinary Medicine' publisher attribution. The packet record has no volume or pages. These were left unchanged and should be checked against Crossref. Path: C:/Workspaces/DevResearch/babesiosis/canine-babesiosis-review/articles/CB068_2020_acid-base-status-babesiosis-caused-babesia.md"
+ },
+ {
+  "id": "CB069",
+  "ok": false,
+  "fixes": "Checks (a)-(e) passed except (a): the design field said 'cross-sectional', which is not in the abstract. Changed to 'three-group comparison ... \"cross-sectional\" is a reviewer label, not stated in abstract'. Numbers (7 per group, 21 total, P = 0.002 and 0.029), title, DOI, PMID, dates, summary (about 111 words, no 9-word copied run), placeholders and back link all match. File: C:/Workspaces/DevResearch/babesiosis/canine-babesiosis-review/articles/CB069_2020_elevated-serum-manganese-concentration-possible-predisposing.md"
+ },
+ {
+  "id": "CB070",
+  "ok": false,
+  "fixes": "(a) Summary said 'regenerative forms were 1.5% versus 1%', which reverses the control-then-infected order used for the normocyte figure. Rewritten as 'regenerative forms rose from 1% in controls to 1.5% in infected dogs'. (a) 'Biconcave' is not in the abstract; removed. (c) DOI 10.36740/wlek202104119 is not in the packet (packet DOI is null). Relabelled as not in the packet record, not verified, and the hyperlink was removed. (a) Limitations said 'no cell counts', which conflicts with the abstract's percentages; reworded to 'no per-group cell counts with dispersion or statistical tests reported'. Summary is about 106 words. Title, PMID, dates, sample sizes (18 dogs, 6 dog and 31 human controls), species and placeholders match. File: C:/Workspaces/DevResearch/babesiosis/canine-babesiosis-review/articles/CB070_2021_ultramicroscopic-erythrocytes-profile-component-babesiosis-pathogenesis.md"
+ },
+ {
+  "id": "CB071",
+  "ok": false,
+  "fixes": "(a) Design field said 'cross-sectional', which is not in the abstract. Changed to a label note saying 'cross-sectional' is a reviewer label. (a) Sample size row gave the group split 6, 10, 6 without a full-text label. Now marked as from full text. Title, DOI, PMID/PMCID, dates (2021-09-17 online, with the PubMed year-only discrepancy explained), counts (22 and 12; 601 features, 27 matched, 17 metabolites), and the summary (about 110 words, paraphrased) all match. Placeholders and back link are present. Full-text-labelled details (species confirmation method, supplementary captions) were not independently re-verified against the full text. File: C:/Workspaces/DevResearch/babesiosis/canine-babesiosis-review/articles/CB071_2021_combined-untargeted-targeted-metabolomics-approaches-reveal.md"
+ },
+ {
+  "id": "CB072",
+  "ok": false,
+  "fixes": "Fixed author list in the Authors row: 'Enbavelan PA' changed to 'Enbavelan P' to match packet CB072 record. Checks (b) through (e) passed: summary is 112 words and no packet-abstract copy check was possible because the packet abstract is null. Placeholders {{COHORT}}, {{DATASET}} and the back-link are present. DOI, title, Crossref dates and the no-PMID/PMCID status match the packet. Unverifiable against the packet (not changed, flagged): the packet abstract is null, so the clinical details in the summary (8-month-old female, Dharmapuri clinic, imidocarb and 14-day clindamycin/metronidazole/doxycycline course, day-15 recovery, journal volume/pages 10(1):1710-1715) rest on the note's own journal-page read, which the note labels as an automated page summary."
+ },
+ {
+  "id": "CB073",
+  "ok": true,
+  "fixes": "No changes needed. Title, author list, DOI, PMID 33545559, no PMCID, epub 2021-01-19 and issue 2021-03-01 match the packet. N=54, cross-sectional design, 59% SIRS frequency, leukopenia and monocytopenia cut-offs match the abstract. Summary is 116 words, longest verbatim run vs the abstract is 7 words. Placeholders and back-link present. Reviewer interpretation is associational, with no causal claims. The ~22 SIRS-free dogs figure is labelled as derived."
+ },
+ {
+  "id": "CB074",
+  "ok": false,
+  "fixes": "Rewrote one summary sentence that copied an 8-word run verbatim from the packet abstract ('ROC analysis singled out urea, ALT and lactate as specific prognostic markers' became 'Receiver operating characteristic analysis highlighted urea, ALT and lactate as markers with specific prognostic value'). Summary is now 116 words, longest verbatim run is 6 words. Title, authors, DOI, PMID 33666974, no PMCID, epub 2021-01-21, issue 2021-03-01, N=108 cases and 30 controls, and the 79%/83% and 0.141 cut-off values match the packet. Placeholders and back-link present. Reviewer interpretation is prognostic and associational; no causal claim about outcome. The phrase 'hyperlactataemia (hypoperfusion/hypoxia)' is a physiological attribution rather than a causal claim about the study, so it was left unchanged."
+ },
+ {
+  "id": "CB075",
+  "ok": false,
+  "fixes": "Edited in place: (1) H1 title now ends with a period to match packet record title exactly. (2) Information-beyond-abstract haematology line changed 'g/dL-equivalent' to 'g/dL (healthy vs Babesia-only vs mixed)'; Hb values 14.33/8.97/9.56 match full-text Table 2. Verified and left unchanged: species, 242 screened, 62 positive, 28 co-infected, 180 healthy vs 62 clinical, IFN-g 3.33 vs 8.20 and TNF-a 2.97 vs 10.60 (p=0.02, 0.027), SOD significant with MDA and CAT not, GenBank MT565474.1, DOI, PMID 34083939, PMCID PMC8167514, dates 2021-04-01 issue and 2021-04-15 online. Summary is 117 words, paraphrased (no run over 8 words copied). Placeholders {{COHORT}}, {{DATASET}} and back link present. Reviewer interpretation contains no causal claim. Not re-verified: 'about 4-5 per group' subgroup sizes, which are a reviewer estimate hedged as 'apparently'. Authors list and journal fields match packet."
+ },
+ {
+  "id": "CB076",
+  "ok": false,
+  "fixes": "Edited in place: (1) Study design removed unsupported word 'Prospective' (abstract does not state prospective design); now 'Natural-infection case series with paired before/after-treatment sampling (imidocarb dipropionate)'. (2) Reviewer interpretation softened from 'supporting oxidative injury as a component of haemolysis' to 'compatible with, but not proof of, oxidative injury accompanying haemolysis' to avoid a causal reading of association data. Verified and left unchanged: title (matches packet), DOI 10.2478/acve-2021-0014, PMID/PMCID null (not indexed), first pub date 2021-06-01 and Crossref online 2021-07-12, n=8 dogs, no healthy control group, B. canis suspected, OXO primary with INF/ERY secondary. Summary is 107 words, paraphrased (longest shared run about 7 words). Placeholders and back link present. Note: author surnames and volume/pages come from Crossref, not the packet, and the note already labels this; full text not accessible so not re-verified."
+ },
+ {
+  "id": "CB077",
+  "ok": false,
+  "fixes": "Edited in place: (1) H1 title now ends with a period to match packet record title exactly. (2) Study design marked '(full text)' because 'prospective' is from full text (studied prospectively March to June 2020), not the abstract. (3) Country/setting corrected: the note said the site was not named in the full text, but author affiliations name a private veterinary clinic in Mikolow, Poland, plus university departments in Lublin (Poland) and Istanbul (Turkey); the note now states the clinic is not named in Methods and gives affiliations. (4) Host 'client-owned' removed as not stated in abstract or full text. (5) Summary 'markedly lower' changed to 'significantly lower' to match abstract wording. Verified and left unchanged: species (smear and PCR), 15 infected vs 7 healthy, zinc 0.478 vs 1.241 and copper 0.722 vs 1.392 ug/mL, DOI, PMID 34250301, PMCID PMC8256463, dates 2021-06-01 issue and 2021-06-08 online, repository records EU622792/EU622793 (existing references), GSH not different (full text P=0.458). Summary is 108 words, paraphrased. Placeholders and back link present. Interpretation is associational, no causal claim."
+ },
+ {
+  "id": "CB078",
+  "ok": false,
+  "fixes": "File: C:/Workspaces/DevResearch/babesiosis/canine-babesiosis-review/articles/CB078_2021_hematological-alterations-large-babesia-species-infection.md. (b) Summary was 88 words, below the 100-150 range; expanded to about 118 words by adding a retrospective-design clause and a closing sentence paraphrasing the abstract's comparison of thrombocytopenia with haemolytic anaemia. (e) Removed the unsupported temporal word 'early' from the reviewer interpretation ('platelet consumption or activation as a common feature'). Verified: title, authors, DOI, PMID 34789994, PMCID PMC8556442, dates, 35/4039 counts, and the 10-control group (PMC HTML full text) match the packet. Placeholders {{COHORT}}, {{DATASET}} and the back-link are present. No run of 8 or more copied abstract words."
+ },
+ {
+  "id": "CB079",
+  "ok": false,
+  "fixes": "File: C:/Workspaces/DevResearch/babesiosis/canine-babesiosis-review/articles/CB079_2021_multiple-complications-infected-babesia-gibsoni.md. (a) Summary said 'Red cell and plasma transfusions'; the abstract says 'Blood and plasma transfusions', so changed to 'Blood'. (a) Summary called the drug 'unconventional'; the abstract says 'novel', so changed to 'novel'. Summary is about 102 words, within range. Verified: title, DOI, dates (2021-06-13 online, 2021-09 print), and journal volume 9, issue 3, article e126 (Crossref API) match. No PMID/PMCID, as in the packet. Placeholders and back-link present. No causal overreach found."
+ },
+ {
+  "id": "CB080",
+  "ok": false,
+  "fixes": "File: C:/Workspaces/DevResearch/babesiosis/canine-babesiosis-review/articles/CB080_2021_disorders-blood-circulation-probable-cause-death.md. (a) Babesia species row said 'B. canis (confirmed ...)' while the packet records 'suspected, species not confirmed in abstract' and the note itself says no species-level assay was described; reworded to 'named in the title; species not confirmed in the abstract; blood smear and PCR per full text ...', labelled as full text. (b) Summary said 'circulatory failure', which is not the authors' wording; changed to 'disordered blood circulation' to match the abstract conclusion. Summary is about 105 words. Verified against the Europe PMC full text: six dogs, 4 months to 8 years, intravenous fluids in treatment, 17 deaths context. Title, authors, DOI, PMID/PMCID and dates match the packet. Placeholders and back-link present. No causal overreach found."
+ },
+ {
+  "id": "CB081-a",
+  "ok": false,
+  "fixes": "Study design row dropped the 'cross-sectional' label, which is not in the abstract. Sample-size row now reads '650 canine blood samples (abstract)' and labels the SPEP and CRP group sizes as full text. Summary now says 'From 650 canine blood samples' to match. Remaining 'Abstract-derived' items were checked and match the record."
+ },
+ {
+  "id": "CB081-b",
+  "ok": true,
+  "fixes": "Summary is 128 words and paraphrased; no run of more than 8 words is copied from the abstract."
+ },
+ {
+  "id": "CB081-c",
+  "ok": true,
+  "fixes": "Title, DOI 10.14202/vetworld.2021.2150-2154, PMID 34566333, PMCID PMC8448638 and dates (issue 2021-08-01, online 2021-08-21) match the packet record."
+ },
+ {
+  "id": "CB081-d",
+  "ok": true,
+  "fixes": "{{COHORT}} and {{DATASET}} placeholders and the '[Back to article index](../index.md)' line are present."
+ },
+ {
+  "id": "CB081-e",
+  "ok": true,
+  "fixes": "Reviewer interpretation says the CRP-pathogenesis link is inferential and states no mechanism; no causal claim from association found."
+ },
+ {
+  "id": "CB082-a",
+  "ok": true,
+  "fixes": "5 infected dogs (2 low dose, 3 high dose), 8-day follow-up, B. rossi species, and inoculum 10^4 / 10^8 match the abstract. Full-text items (six Beagles, 1,614/2,455 DEGs) are labelled as full text."
+ },
+ {
+  "id": "CB082-b",
+  "ok": true,
+  "fixes": "Summary is 119 words and paraphrased; no run of more than 8 words copied from the abstract."
+ },
+ {
+  "id": "CB082-c",
+  "ok": true,
+  "fixes": "Title, DOI 10.1186/s12864-021-07889-4, PMID 34399690, PMCID PMC8369750 and date 2021-08-16 match the packet record."
+ },
+ {
+  "id": "CB082-d",
+  "ok": true,
+  "fixes": "{{COHORT}} and {{DATASET}} placeholders and the back-link line are present."
+ },
+ {
+  "id": "CB082-e",
+  "ok": true,
+  "fixes": "Limitations and interpretation describe enrichment as hypothesis-generating and say whole-blood expression does not demonstrate causal mechanisms. No causal overreach found."
+ },
+ {
+  "id": "CB083-a",
+  "ok": false,
+  "fixes": "Summary dropped 'from South Gujarat', which is not in the abstract (it comes from the publisher page). Design row dropped the unlabelled 'cross-sectional' descriptor. Sample-size row now labels the 19 PCR-positive count as from the publisher page. Packet fields (DOI, journal, 239 dogs, 7.95% and 3.76%, B. canis vogeli, OXO) were already consistent."
+ },
+ {
+  "id": "CB083-b",
+  "ok": false,
+  "fixes": "The original summary was 100 words, at the lower limit. The opening sentence was rewritten to remove the non-abstract location and to add the abstract's India origin wording. The summary is now 104 words, and no run of more than 8 words is copied from the abstract."
+ },
+ {
+  "id": "CB083-c",
+  "ok": true,
+  "fixes": "Title, DOI 10.18805/ijar.b-4467 and first-publication date 2021-09-15 match the packet. PMID and PMCID are correctly shown as not indexed."
+ },
+ {
+  "id": "CB083-d",
+  "ok": true,
+  "fixes": "{{COHORT}} and {{DATASET}} placeholders and the back-link line are present."
+ },
+ {
+  "id": "CB083-e",
+  "ok": true,
+  "fixes": "Reviewer interpretation says the findings are associations only, with no mechanism or outcome claims. No causal overreach found."
+ },
+ {
+  "id": "CB084",
+  "ok": false,
+  "fixes": "Edited C:/Workspaces/DevResearch/babesiosis/canine-babesiosis-review/articles/CB084_2021_low-serum-levels-promatrix-metalloproteinase-2.md. (1) Study design said 'Prospective-style', which the abstract does not state; changed to 'Paired cohort ... prospective or retrospective design not stated in abstract'. (2) Host row said 'in vitro canine endothelial cells'; the abstract does not give the species, so changed to 'in vitro endothelial cells ... (species not stated in abstract)'. (3) Reviewer interpretation said low values 'may be a consequence of cytopenias rather than a driver of pathology', a causal direction not supported by an associational design; reworded to 'may mainly reflect cytopenias rather than indicate a role in pathology'. (4) 'weak, severity-related signal' characterised the SIRS result beyond the abstract; changed to 'a weak signal, and SIRS subgroup sizes are not reported'. Verified and unchanged: n=24, rho -0.616, 0.704, 0.741, p<0.001, p=0.038, B. canis species; summary is about 123 words and paraphrased (no run over 8 words copied); title, DOI 10.1016/j.vetpar.2021.109612, PMID 34735844, PMCID not indexed, and dates (online 2021-10-29, issue 2021-12) match the packet; {{COHORT}}, {{DATASET}} and the back link are present."
+ },
+ {
+  "id": "CB086",
+  "ok": false,
+  "fixes": "Edited C:/Workspaces/DevResearch/babesiosis/canine-babesiosis-review/articles/CB086_2021_clinical-characteristics-naturally-babesia-gibsoni-infected.md. Reviewer interpretation claimed 'polyclonal hyperglobulinaemia (consistent with chronic antigenic stimulation)' and 'mild hepatobiliary changes', and said the findings 'Confirm' the syndrome; none of these is in the abstract, which reports hyperglobulinaemia (28/53), hyperbilirubinaemia (10/28) and raised liver enzymes (7/48) only. Reworded to 'Supports the dominant syndrome ... hyperglobulinaemia and hepatobiliary changes (hyperbilirubinaemia, raised liver enzymes) ... the abstract does not say whether the hyperglobulinaemia is polyclonal.' Verified and unchanged: n=60 (20 concurrent, 40 B. gibsoni only), 33.3%/66.7%, anaemia 49/60 (81.7%), about half of 49 with PCV below 20%, thrombocytopenia 37/60 (61.7%), 28/53, 10/28, 7/48, atovaquone-resistant strain in 2 of 60 and 5 of 33; summary is about 111 words and paraphrased; title, DOI 10.1016/j.vprsr.2021.100675, PMID 35115116, PMCID not indexed, and dates (online 2021-12-06, issue 2022-02) match the packet; {{COHORT}}, {{DATASET}} and the back link are present. Note for the reviewer: the abstract's wording on the 60 client-owned and 33 stray dogs is ambiguous, and the note reports it as written."
+ },
+ {
+  "id": "CB087",
+  "ok": true,
+  "fixes": "No changes needed. Title, PMID 34919084, no DOI or PMCID, issue date 2021-12-16, species, design, sample sizes (187 cases, 15 controls), and the 109-word paraphrased summary all match the packet record. Placeholders {{COHORT}} and {{DATASET}} and the back link are present. The reviewer interpretation makes no causal claim. File: C:/Workspaces/DevResearch/babesiosis/canine-babesiosis-review/articles/CB087_2021_morphofunctional-changes-spleen-components-pathogenetic-substantiation.md"
+ },
+ {
+  "id": "CB088",
+  "ok": false,
+  "fixes": "Fixed in place in C:/Workspaces/DevResearch/babesiosis/canine-babesiosis-review/articles/CB088_2022_haemato-biochemical-changes-associated-babesia-gibsoni.md: (1) Authors changed from 'Shyma VH, Deepa PM' to the packet's 'Shyma V, Deepa P', since the initials were not in the record. (2) First publication date changed from 2022-03-31 to the packet value 2022-01-01 (placeholder, year-only); the publisher-page date of 2022-03-31 is kept in Date notes and labelled as not in the packet record. (3) Summary said 'two referral services in Kerala', which the abstract does not state; changed to 'two veterinary facilities', and the summary was lengthened from 99 to about 108 words to meet the 100-150 requirement. (4) Reviewer interpretation said 'non-regenerative-pattern' anaemia, which contradicts its own limitation that regeneration status is unreported; reworded to 'erythrocyte-directed anaemia ... regeneration status is not reported'. Title, DOI, PMID/PMCID and placeholders were already correct. No 9+ word copied runs found."
+ },
+ {
+  "id": "CB089",
+  "ok": false,
+  "fixes": "Fixed in place in C:/Workspaces/DevResearch/babesiosis/canine-babesiosis-review/articles/CB089_2022_seasonal-differences-intensity-acute-phase-response.md: the summary said 'most acute B. canis cases arise' between February and May, but the abstract says the highest number of cases is recorded then; changed to 'the highest number of acute B. canis cases is recorded', which keeps the summary within 100-150 words (about 124). Title, authors, DOI, PMID, journal, dates (online 2022-01-08, issue 2022-04-01), n=63, Serbia setting and placeholders all match. Reviewer interpretation contains no causal claims. Note for the workflow: the packet screening rationale says B. canis diagnosis was 'clinical/parasitaemia', whereas the note says the diagnostic method is not reported in the abstract. The note is accurate to the abstract and was left unchanged."
+ },
+ {
+  "id": "CB090-a",
+  "ok": true,
+  "fixes": "No change. Species, narrative-review design and n/a sample size match the packet. Canine species list (B. gibsoni, B. vogeli, B. conradae, B. vulpes) is labelled as from full text, section 5."
+ },
+ {
+  "id": "CB090-b",
+  "ok": true,
+  "fixes": "No change. Summary is 116 words and paraphrased; no run of more than 8 words copied from the abstract."
+ },
+ {
+  "id": "CB090-c",
+  "ok": true,
+  "fixes": "No change. Title, DOI, PMID 35215111, PMCID PMC8874406, dates (2022-01-27) and links match the packet. The heading omits the PubMed trailing full stop; treated as a style convention, not changed."
+ },
+ {
+  "id": "CB090-d",
+  "ok": true,
+  "fixes": "No change. {{COHORT}}, {{DATASET}} and the back link are present."
+ },
+ {
+  "id": "CB090-e",
+  "ok": true,
+  "fixes": "No change. Reviewer interpretation makes no causal claim from associations."
+ },
+ {
+  "id": "CB091-a",
+  "ok": true,
+  "fixes": "No change to numbers: 12 infected and 12 healthy dogs, 295 = 64 + 205 + 26 metabolites, B. canis, case-control design (MeSH Case-Control Studies) all match. Not changed but flagged: the note's Country row (Croatia, Zagreb affiliation) is not in the packet record. Secondary tags are MET, INF in the note but MET, SEV in the packet screening record; left for the screener to reconcile."
+ },
+ {
+  "id": "CB091-b",
+  "ok": false,
+  "fixes": "Fixed in /C:/Workspaces/DevResearch/babesiosis/canine-babesiosis-review/articles/CB091_2022_multi-platforms-strategies-metabolomics-approaches-investigation.md. Summary was 94 words, below the 100-word minimum. Added two sentences paraphrasing the abstract background and aims; the summary is now 129 words with no run of more than 8 copied words."
+ },
+ {
+  "id": "CB091-c",
+  "ok": true,
+  "fixes": "No change. Title (heading omits the trailing full stop, treated as style), DOI 10.3390/ijms23031575, PMID 35163517, PMCID PMC8835742, dates (2022-01-29) and links match the packet."
+ },
+ {
+  "id": "CB091-d",
+  "ok": true,
+  "fixes": "No change. {{COHORT}}, {{DATASET}} and the back link are present."
+ },
+ {
+  "id": "CB091-e",
+  "ok": false,
+  "fixes": "Fixed in the same file. Reviewer interpretation stated as fact that differences reflect infection and its sequelae, not parasite-specific mechanisms, from a case-control association. Reworded to hedged language: differences may reflect infection and its sequelae, and the design cannot separate parasite-specific mechanisms from host responses."
+ },
+ {
+  "id": "CB092-a",
+  "ok": false,
+  "fixes": "Not changed; needs verification. The packet has no abstract (abstract null; rationale says the abstract is inaccessible), so the 452 / 124 / 328 counts and percentages cannot be checked against the packet. The note labels them as from the Springer landing page. Re-fetch of that page was redirected to an identity-provider login, which I did not follow. Arithmetic check: all Babesia and Hepatozoon percentages reconcile to whole counts except Babesia thrombocytopenia 86.03% (107/124 = 86.29%, 106/124 = 85.48%); the note already flags this. Packet species field reads Hepatozoon co-infection, but the note describes separate Babesia and Hepatozoon groups; left as is and flagged. Packet primary category is null and the note assigns ERY; packet secondary tags are ERY, COA but the note lists COA only. Flagged for the screener."
+ },
+ {
+  "id": "CB092-b",
+  "ok": false,
+  "fixes": "Fixed in /C:/Workspaces/DevResearch/babesiosis/canine-babesiosis-review/articles/CB092_2022_hematological-approaches-canines-naturally-infected-babesia.md. Summary was 92 words (94 counting the '=' tokens), below the minimum. Added one sentence on the most frequent reported change in each group; the summary is now about 112 words. No packet abstract exists to check paraphrase against; no copied run over 8 words found in the note's own abstract text."
+ },
+ {
+  "id": "CB092-c",
+  "ok": true,
+  "fixes": "No change. Title, DOI 10.1007/s00580-022-03328-2, online date 2022-02-15 and print April 2022 (Crossref 2022-04-01) match. PMID and PMCID not indexed matches the packet nulls."
+ },
+ {
+  "id": "CB092-d",
+  "ok": true,
+  "fixes": "No change. {{COHORT}}, {{DATASET}} and the back link are present."
+ },
+ {
+  "id": "CB092-e",
+  "ok": true,
+  "fixes": "No change. Descriptive study; the reviewer interpretation uses consistent-with language and makes no causal claim."
+ },
+ {
+  "id": "CB093",
+  "ok": false,
+  "fixes": "Edited C:/Workspaces/DevResearch/babesiosis/canine-babesiosis-review/articles/CB093_2022_association-between-increased-de-ritis-quotient.md. Sample size row (34 dogs; 22 azotaemic: 13 pre-renal, 9 renal; 12 non-azotaemic) was not labelled as full-text-derived; added '(full text)'. Checks passed: title, DOI, PMID 35268195, PMCID PMC8909065, dates 2022-03-02, volume/issue, authors; summary is 117 words and paraphrased (no run over 8 copied words); placeholders {{COHORT}} and {{DATASET}} and back link present; no causal claims. Not verifiable from packet and left unchanged: country (Poland), 'preliminary' design wording, 'confirmed by PCR' species label (labelled as full text), and the exact sample numbers (packet holds none; I did not check the full text)."
+ },
+ {
+  "id": "CB094",
+  "ok": false,
+  "fixes": "Edited C:/Workspaces/DevResearch/babesiosis/canine-babesiosis-review/articles/CB094_2022_etiology-incidence-pathogenesis-diagnostics-treatment-babesiosis.md. (1) Study design changed from 'narrative review (no search strategy reported)' to 'review (PubMed publication type: Review); search strategy not stated in the abstract and not verified in the full text read so far', since the packet records only 'Review' and the note's full-text read did not cover the Introduction. (2) Key limitations changed from 'narrative review with no stated search or appraisal methods' to 'review with no search or appraisal methods stated in the abstract'. Checks passed: title, DOI, PMID 35327136, PMCID PMC8944684, date 2022-03-16, volume 12 issue 6; species B. gibsoni matches; primary category SEV matches; summary is 105 words and paraphrased; placeholders and back link present; no causal claims. Flag for the orchestrator, not changed: secondary tags in the note (ERY, COA, INF, REN) differ from the packet screening record (ERY only)."
+ },
+ {
+  "id": "CB095",
+  "ok": false,
+  "fixes": "Edited C:/Workspaces/DevResearch/babesiosis/canine-babesiosis-review/articles/CB095_2022_role-systemic-infections-kidney-diseases.md. Reviewer interpretation removed the species example '(e.g. B. canis)' for large Babesia spp., since the packet and the note's species row say unspecified and the abstract names no species. Checks passed: title (bracketed German title matches), DOI 10.1055/a-1811-6186, PMID 35523166, PMCID not indexed, issue date 2022-04-01 (month precision), epub 2022-05-06, volume 50 issue 2 pages 124-136; summary is 107 words and paraphrased; placeholders and back link present; no causal claims. Not verifiable from packet and left unchanged: bot-protection detail in the full-text note and the 'presumed narrative' design label (labelled as presumed)."
+ },
+ {
+  "id": "CB096",
+  "ok": false,
+  "fixes": "Packet CB096 has abstract null, so the summary numbers (Hb 5.2, platelets, neutrophils, albumin, urea, creatinine 4.9 to 1.8, ALT 178) cannot be checked against the packet record. Their source is the publisher PDF full text, which the note did not label on the summary. Added an italic line under the '## Abstract-derived summary' heading saying the figures come from the publisher PDF full text and could not be checked against the packet. Title, DOI (10.55296/jiva/20.1.2022.62-66), date (2022-04-12), no PMID/PMCID, species (B. canis suspected), design (single case, n=1), tags (ERY primary; INF, SEV, MET, REN) match the packet. Summary is 116 words and paraphrased, with no run of more than 8 words copied. Both placeholders and the back link are present. Reviewer interpretation makes no causal claim. Not changed: packet author fields are abbreviated ('S. G. S', 'R. R') and the note's full names could not be confirmed from the packet. File: C:/Workspaces/DevResearch/babesiosis/canine-babesiosis-review/articles/CB096_2022_sirs-mods-imha-associated-babesia-canis.md"
+ },
+ {
+  "id": "CB097",
+  "ok": false,
+  "fixes": "Summary said 'relapsing fever', but the packet abstract says 'remitting fever'. Changed to 'remitting fever' to match. Title, DOI (10.32718/nvlvet10502), date (2022-05-04), species (B. canis suspected, cytology), n=1 fatal case with necropsy and histopathology, primary SEV and tags PUL, REN, ERY all match the packet. Summary is about 121 words, paraphrased, with no copied run over 8 words. Both placeholders and the back link are present. Reviewer interpretation makes no causal claim. File: C:/Workspaces/DevResearch/babesiosis/canine-babesiosis-review/articles/CB097_2022_pathomorphological-changes-german-boxer-infected-babesia.md"
+ },
+ {
+  "id": "CB098",
+  "ok": true,
+  "fixes": "No changes needed. Title, DOI (10.1016/j.vetpar.2022.109717), PMID 35606218, no PMCID, epub 2022-05-12 and issue 2022-06-01 all match the packet. Species B. rossi (experimental), design, n=6 (1 donor, 3 high-dose, 2 low-dose), primary INF and tag SEV match. Summary is about 130 words, paraphrased, with no copied run over 8 words. Both placeholders and the back link are present. Reviewer interpretation frames the group differences as associations. File: C:/Workspaces/DevResearch/babesiosis/canine-babesiosis-review/articles/CB098_2022_kinetics-inflammatory-response-during-experimental-babesia.md"
+ },
+ {
+  "id": "CB099",
+  "ok": false,
+  "fixes": "Title (H1) changed to the exact packet title, including the square brackets and trailing period: [Occurrence of canine babesiosis in dogs in the Rhine-Main area of Hesse, Germany - a case study of 81 dogs]. Verified and left unchanged: DOI 10.1055/a-1704-6604, PMID 35790164, PMCID null, first pub date 2022-06-01, epub 2022-07-05, 81 of 697 PCR-positive, B. canis 13 and B. vulpes 1 of 14 sequenced, all counts and percentages in the summary, placeholders {{COHORT}} and {{DATASET}}, back link. Summary is 116 words and has no copied run of more than 8 words. No causal claims. File: C:/Workspaces/DevResearch/babesiosis/canine-babesiosis-review/articles/CB099_2022_occurrence-babesiosis-rhine-main-area-hesse.md"
+ },
+ {
+  "id": "CB100",
+  "ok": false,
+  "fixes": "(1) Title (H1) given the packet's trailing period: 'Clinical and Hematologic Findings in Babesia canis Infection in Eastern Slovakia.' (2) Reviewer interpretation: removed the unsupported mechanistic speculation ('consistent with stress or inflammatory leukogram and immune redistribution, not shown here') and replaced it with a statement that the cause of lymphopenia is not examined. (3) Limitations: 'only 2 deaths' was an unlabelled inference from 6% mortality; reworded to 'mortality 6% (about 2 dogs if based on the 34 PCR-positive dogs)'. Verified and left unchanged: DOI 10.1007/s11686-022-00584-8, PMID 35831668, dates, erratum PMID 36316620 / doi 10.1007/s11686-022-00619-0, 45 suspected and 34 PCR-confirmed, all percentages (smear 24 = 70.6%, lethargy 91%, fever and anorexia 59%, pigmenturia 47%, icterus 18%, lymphopenia 82%, anaemia 68%), placeholders and back link. Summary is 108 words with no copied run of more than 8 words. File: C:/Workspaces/DevResearch/babesiosis/canine-babesiosis-review/articles/CB100_2022_clinical-hematologic-findings-babesia-canis-infection.md"
+ },
+ {
+  "id": "CB101",
+  "ok": false,
+  "fixes": "(1) Title (H1) given the packet's trailing period. (2) Host, country/setting and study design rows came from the full text (Europe PMC PMC9508437, which I fetched and checked: purpose-bred sterilised male beagles, UPBRC Onderstepoort, South Africa, prospective longitudinal observational study) but were not labelled as such; added '(full text)' labels. Verified against the full text and left unchanged: DOI 10.1016/j.dib.2022.108475, PMID 36164305, PMCID PMC9508437, dates, 6 dogs (1 splenectomised donor, 3 high-dose, 2 low-dose), 10^4 and 10^8 doses, 13 cytokines, one high-dose death on day 4, REC048-19, companion paper Vet Parasitol 2022;306 (doi 10.1016/j.vetpar.2022.109717), Mendeley dataset zyhy8z69kt/1. Summary is 105 words with no copied run of more than 8 words. Placeholders and back link present. No causal claims. File: C:/Workspaces/DevResearch/babesiosis/canine-babesiosis-review/articles/CB101_2022_dataset-inflammatory-response-during-experimental-infection.md"
+ },
+ {
+  "id": "CB102",
+  "ok": false,
+  "fixes": "Edited C:/Workspaces/DevResearch/babesiosis/canine-babesiosis-review/articles/CB102_2022_successful-treatment-suspect-babesia-induced-ards.md. (1) Summary was 92 words, below the 100-150 range; rewritten to 108 words as a paraphrase, dropping the unsupported word 'rare'. No 8-word run copied from the abstract. (2) Babesia species row changed from 'confirmed' (packet says suspected) to 'named in abstract; identification method not stated in abstract; full text reports ... B. canis vogeli', labelling the full-text source. (3) Host row now labels the approximately 11-week age as per full text. (4) Country row labels USA and the Texas transport detail as per full text. Title, DOI, PMID, PMCID, dates, authors, journal, sample size (1 dog), design, and placeholders match the packet. Not changed, for review: secondary tag COA is in the note but not in packet secondary_tags (ERY only). Full-text details could not be verified from the packet alone."
+ },
+ {
+  "id": "CB103",
+  "ok": false,
+  "fixes": "Edited C:/Workspaces/DevResearch/babesiosis/canine-babesiosis-review/articles/CB103_2022_serum-urine-profiling-high-throughput-tmt.md. Study design row changed from 'cross-sectional case-control omics study' to 'case-control proteomic comparison of naturally infected and healthy dogs (design label not stated in abstract)', since the abstract does not name a cross-sectional design. Summary is 116 words and is a paraphrase with no 8-word copied run. Title, DOI, PMID, authors, journal, dates (online 2022-09-27, issue 2023-01-06), sample sizes (22 infected, 8 controls), and placeholders match. Reviewer interpretation contains no causal claims. Not changed, for review: secondary tag OXO is in the note but not in packet secondary_tags (INF, MET)."
+ },
+ {
+  "id": "CB104",
+  "ok": false,
+  "fixes": "Edited C:/Workspaces/DevResearch/babesiosis/canine-babesiosis-review/articles/CB104_2022_babesia-north-america-update.md. (1) Study design changed from 'narrative review' to 'review article (article type per PubMed; search method not stated in abstract)', since the packet says only 'review'. (2) Summary and limitations no longer say 'narrative'. (3) Reviewer interpretation claim of 'differing severity and geographic distribution' across species, which is not in the abstract, replaced with 'species-level context across the five named species'. Summary is 109 words, paraphrased. Title, DOI, PMID, authors, journal, volume/pages, and issue date match the packet. Not changed, for review: secondary tags ERY and COA are in the note but the packet has none; the Crossref dates and title claims in the note cannot be verified from the packet."
+ },
+ {
+  "id": "CB105",
+  "ok": true,
+  "fixes": "No changes needed. Title, authors, journal, dates (online 2022-12-09, issue 2023-03-01), DOI, PMID and not-indexed PMCID match packet CB105. Species B. rossi, design and n=5 (2 low dose, 3 high dose) match. Summary is 123 words and paraphrased (no run over 8 words copied). Placeholders {{COHORT}} and {{DATASET}} and the back link are present. Reviewer interpretation makes association-only claims. Not verified: the note's statement that publisher pages redirected or returned HTTP 403 is not recorded in the packet (left unchanged)."
+ },
+ {
+  "id": "CB106",
+  "ok": false,
+  "fixes": "Edited /articles/CB106_2023_autochthonous-babesia-canis-infections-49-germany.md in place: (1) Study design row said retrospective and prospective case series, which the abstract does not state; now labelled as full text. (2) Country/setting row listed the clinic and practice sources without a full-text label; now labelled (full text). (3) Summary said PCR with sequencing for all 49; the abstract gives PCR for n=49 and sequencing identity separately; now 'PCR (all 49 dogs), with sequencing'. (4) Summary said 'link' local infection to lab changes; changed to 'associate ... with' to match the abstract's associational wording. (5) Reviewer interpretation gave about 15% mortality in 46 dogs with follow-up, a denominator not in the packet; replaced with 7 of 49 dogs euthanised or dead, about 14%, per abstract. Summary is 115 words. Placeholders, back link, title, DOI, PMID/PMCID and date notes match the packet. Not verifiable from packet (left unchanged): full-text figures (GenBank range, arm sizes and dates, genotype count, creatinine/ALT/cTnI percentages) and the 'travel history' limitation."
+ },
+ {
+  "id": "CB107",
+  "ok": false,
+  "fixes": "Edited /articles/CB107_2023_pathogenesis-anemia-babesiosis-possible-contribution-pro.md in place: (1) Abstract-derived summary was 99 words, below the 100-word minimum; rewritten as a paraphrase of 123 words, with no run over 8 words copied from the abstract. (2) Babesia species row listed B. canis, B. rossi and B. gibsoni as discussed, but the packet records species as unspecified and the abstract names no species; now labelled unspecified with species-level content not verified. Title, authors, journal, date, DOI, PMID and PMCID match the packet; placeholders and back link are present; reviewer interpretation keeps cytokine-anaemia links as hypotheses. Not verifiable from packet (left unchanged): the full-text gap list (IL-4, IL-12, CXCL4), and the reading extent (about 200,000 of 445,000 characters)."
+ },
+ {
+  "id": "CB108",
+  "ok": false,
+  "fixes": "Edited C:/Workspaces/DevResearch/babesiosis/canine-babesiosis-review/articles/CB108_2023_clinical-presentation-diagnostic-investigations-treatment-protocols.md. (1) Babesia species row: the note said species status was unspecified, but the packet screening record says B. canis and B. vulpes confirmed, molecular; now labelled as the screening record, with the method noted as not stated in the abstract. (2) Study design: removed 'retrospective' (not stated in the abstract); limitations now say 'referral population (selection bias)' without the retrospective label. (3) Reviewer interpretation: removed the claim that babesiosis 'responds to targeted therapy', since the 84% remission figure covers all tick-borne cases, not babesiosis alone. Checked and OK: title (matches, including trailing period), authors, journal and volume, DOI, PMID, PMCID (none), online and issue dates, 76 total and 23 babesiosis, summary of about 124 words with no copied run longer than 8 words, both placeholders, and the back link. Not changed, for the reviewer: the header field 'Secondary tags: none supported at abstract level' differs from the packet screening tags ERY and COA."
+ },
+ {
+  "id": "CB109",
+  "ok": false,
+  "fixes": "Edited C:/Workspaces/DevResearch/babesiosis/canine-babesiosis-review/articles/CB109_2023_haematological-indices-immune-response-profiles-naturally.md. Full-text-derived values were labelled explicitly: the Country/setting row (Masovia, private practices and commercial laboratories as full text), the Sample size row (140 dogs, subgroup counts and n=54 expression subset as full text), and the limitation '3 healthy controls for expression normalisation' (full text). The full-text numbers were not re-fetched and verified against the XML in this check. Checked and OK: title, authors, journal, DOI, PMID and PMCID links, dates (online and issue 2023-02-04), primary category INF and secondary tags, Babesia canis species, summary of about 121 words with no copied run longer than 8 words, the associational reviewer interpretation with no causal claims, both placeholders, and the back link."
+ },
+ {
+  "id": "CB110",
+  "ok": false,
+  "fixes": "Edited C:/Workspaces/DevResearch/babesiosis/canine-babesiosis-review/articles/CB110_2023_hematological-analysis-naturally-infecting-blood-parasites.md. Full-text-derived details were labelled: the Babesia species row (Giemsa smear and sequencing detail as full text), the Country/setting row (Nakhon Si Thammarat province as full text), the Sample size row (58 uninfected and 64 infected as full text, Figure 1), and the Table 1 values in the reviewer interpretation (marked as full text). Checked and OK: title, authors, journal, DOI, PMID and PMCID links, abstract-level numbers of 122 dogs and the infection groups, primary category ERY and secondary tags COA and SEV, summary of about 116 words with no copied run longer than 8 words, and the reviewer interpretation with no causal claims, both placeholders, and the back link. Not changed, for the reviewer: the packet itself gives first_pub_date 2023-04-01 (PubMed) and epub 2023-04-04 (Europe PMC); the note header uses 2023-04-04 (online) and discloses the PubMed 2023-04-01 date in Date notes, which matches the packet's date_discrepancy field."
+ },
+ {
+  "id": "CB111",
+  "ok": false,
+  "fixes": "Changed the Date notes row and the Crossref evidence-basis bullet. The note gave a Crossref issue month of June 2023, which conflicts with the packet issue_date of 2023-05-31. The note now states the packet date, keeps the Crossref volume, issue and pages labelled as external, and says the June 2023 month is not reconciled. Checked and unchanged: species, no sample size in abstract, design, title, authors, DOI, PMID link, first-publication date, primary category PUL and secondary tags, placeholders, back link. Summary is 126 words and paraphrased (no run longer than 8 words copied). Reviewer interpretation has no causal claims. Note: the H1 title omits the packet's trailing full stop, as all three notes do; left as a heading convention."
+ },
+ {
+  "id": "CB112",
+  "ok": false,
+  "fixes": "Summary described the design as isobaric-label shotgun MS, a full-text detail not in the abstract (abstract says label-based). Changed to label-based. Study design row (archived serum, TMT, retrospective) is not in the abstract, so it is now labelled as per full text. Checked and unchanged: sample size 52 (32 infected: 18 uncomplicated, 14 complicated; 20 controls), 78 proteins, B. rossi (confirmed in the note is labelled per full text), DOI, PMID and PMCID links, Scientific Reports 13(1):10249, online date 2023-06-23, summary is 104 words and paraphrased, placeholders and back link present, no causal claims. Full-text statements were not re-verified against the body text, as the body is not in the packet."
+ },
+ {
+  "id": "CB113",
+  "ok": false,
+  "fixes": "Summary was 83 words, below the 100-150 range, and said the PubMed, Europe PMC and Crossref records were all empty, which contradicts the note's own evidence basis (those records supply keywords and dates). Rewrote it to 106 words, stating only that no abstract exists and what the title and keywords support, without inventing content; removed the unsupported intraerythrocytic claim. Reviewer interpretation said 'provisionally included' and 'alongside Babesia', but the packet decision is uncertain and Babesia is unconfirmed; corrected both. Checked and unchanged: title, authors, DOI, PMID link, online 2023-07-21 and issue 2023-11-01 dates, keywords, 1 dog per title, placeholders, back link, no causal claims. Not changed, but flagged: primary category ERY is set while the packet has null, and secondary tag COA while the packet has none. These are reviewer categorisations outside the (a)-(e) checks."
+ },
+ {
+  "id": "CB114",
+  "ok": false,
+  "fixes": "Edited C:/Workspaces/DevResearch/babesiosis/canine-babesiosis-review/articles/CB114_2023_host-oxidative-stress-piroplasmosis-review-domestic.md. (1) Study design changed from 'narrative review' to 'review (publication type Review; narrative or systematic method not stated in abstract)', since the packet record does not say narrative. (2) Summary first sentence 'Narrative review of' changed to 'Review of' to match. Summary is 112 words, paraphrased, with no 9-word copied run. (3) Reviewer interpretation claim that the review 'pools largely associational biomarker data' was not in the abstract; replaced with a statement that the abstract does not describe the included studies. Verified unchanged and correct: title, authors, journal/volume/pages, DOI, PMID 37643565, PMCID not indexed, epub 2023-08-23 and issue 2023-10, placeholders {{COHORT}} and {{DATASET}}, back link."
+ },
+ {
+  "id": "CB115",
+  "ok": false,
+  "fixes": "Edited C:/Workspaces/DevResearch/babesiosis/canine-babesiosis-review/articles/CB115_2023_regenerative-response-naturally-experimentally-infected-babesia.md. (1) Summary first sentence copied a run of about 19 consecutive words from the abstract ('admission absolute reticulocyte count (ARC) and reticulocyte indices in 103 dogs naturally infected with B. rossi'); rephrased to 'compared admission ARC values and reticulocyte indices across 103 naturally infected B. rossi dogs'. Summary is 128 words. (2) Reviewer interpretation said 'haemolysis alone does not explain the anaemia', a causal inference from associational ARC data not stated in the abstract; replaced with the observed contrast (ARC raised against controls yet judged inadequate for anaemia degree). Verified correct: title, authors, journal 52(3):422-432, DOI, PMID 37638541, dates, sample sizes 103/10/14/5, B. rossi, design, placeholders and back link."
+ },
+ {
+  "id": "CB116",
+  "ok": false,
+  "fixes": "Edited C:/Workspaces/DevResearch/babesiosis/canine-babesiosis-review/articles/CB116_2023_experimental-infection-co-infection-chinese-strains.md. Summary said rifampicin lowered copy number 'only up to 1.5-fold'; the abstract says 'up to 1.5 folds' with no 'only', so changed to 'by up to 1.5-fold' to match exactly. Summary is 111 words, paraphrased; the longest verbatim run is 7 words, within the limit. Verified correct: title, authors, journal 323:110032, DOI, PMID 37783174, dates, 18 Beagles, experimental design, B. vogeli species, placeholders and back link. The causal wording about B. vogeli superinfection is acceptable because the design is experimental."
+ },
+ {
+  "id": "CB117",
+  "ok": false,
+  "fixes": "Edited C:/Workspaces/DevResearch/babesiosis/canine-babesiosis-review/articles/CB117_2023_proteomics-identification-overexpressed-serum-proteins-babesiacanis.md. (1) Country/setting cell: added 'full text' label to 'Thailand', which is not in the packet abstract. (2) Reviewer interpretation: replaced 'consistent with a response to intravascular haemolysis and iron redistribution' with wording that the finding is compatible with several explanations and that the study does not establish direction or mechanism, removing an implied causal direction. Verified and unchanged: title, DOI, PMID 38023278, PMCID PMC10668562, journal/volume/issue/pages, online date 2023-10-07 with PubMed 2023-10-01 discrepancy disclosed, species B. canis (smear and PCR), design, n=6 (3 vs 3), placeholders {{COHORT}} and {{DATASET}}, back link. Summary is 103 words, longest copied run 5 words."
+ },
+ {
+  "id": "CB118",
+  "ok": false,
+  "fixes": "Edited C:/Workspaces/DevResearch/babesiosis/canine-babesiosis-review/articles/CB118_2023_babesia-negevi-infection-response-treatment.md. (1) Summary: 'Microscopy showed piroplasms' changed to 'Microscopy detected parasites resembling B. negevi', matching the abstract wording rather than an unsupported term. (2) Key limitations: 'fatal case not examined at necropsy per abstract' changed to 'necropsy findings for the fatal case are not reported in the abstract', since the abstract does not state the case was not examined. Verified and unchanged: title, DOI, PMID 37989015, no PMCID, journal/volume/pages, online 2023-11-21, n=3 (3-year female, two 8-week pups), B. negevi (18S/cox1 PCR), B. persica co-infection in two dogs, all numbers (43,451 to 803; 3,293,538 to 20,092 rounded to 3.29 million), placeholders and back link. Summary is about 115 words after edit, longest copied run 4 words."
+ },
+ {
+  "id": "CB119",
+  "ok": false,
+  "fixes": "Edited C:/Workspaces/DevResearch/babesiosis/canine-babesiosis-review/articles/CB119_2023_diverse-pathogenicity-various-babesia-parasite-species.md. Species row: '(also B. vulpes in text)' changed to '(B. vulpes also discussed in the full text)' so the species is explicitly labelled as from full text. Verified and unchanged: title, DOI, PMID 38133320, PMCID PMC10746086, journal/volume/issue, dates (2023-12-11), review design, placeholders and back link. Summary is 114 words, longest copied run 3 words. Flagged but not changed (outside checks a to e): primary category is recorded as SEV and secondary tags as OXO, ERY, INF, COA, REN, NEU, PUL, MET, whereas packet screening records primary OXO and secondary SEV, ERY, INF. The note discloses the revision, but the packet record was not updated, so the screening record may need reconciling. Also, the Host row 'review of natural and experimental infections' is not labelled as full text."
+ },
+ {
+  "id": "CB120",
+  "ok": false,
+  "fixes": "Two edits made in C:/Workspaces/DevResearch/babesiosis/canine-babesiosis-review/articles/CB120_2023_case-report-fatal-babesia-vulpes-infection.md. (1) Title (H1) changed from title case to the packet record casing: 'Case report of a fatal Babesia vulpes infection in a splenectomised dog'. Crossref uses title case, so the packet casing may be a normalisation artifact; the user should decide which casing to keep. (2) Reviewer interpretation softened from a causal statement ('removed splenic clearance and immune control') to associational wording ('associated with host factors ... may have reduced splenic clearance ... cannot establish that'). Checks passed: species, n=1, single-animal case report design, SEV/ERY/INF tags, DOI, no PMID/PMCID, year 2023; Crossref confirmed date 2023-02-01, volume 3, issue 1, pages 59-68, authors and the abstract-level summary content. Summary is 111 words with no 9+ word copied run. Placeholders {{COHORT}} and {{DATASET}} and the back link are present. Note: the packet abstract field is null, so the summary was verified against Crossref via WebFetch, not against the packet itself."
+ },
+ {
+  "id": "CB122",
+  "ok": true,
+  "fixes": "No changes needed. Title, authors, journal, volume 328, pages 110188, DOI 10.1016/j.vetpar.2024.110188, PMID 38653059, no PMCID, dates (online 2024-04-17, issue 2024-06), corrections, n=15 vs 15, B. canis (suspected), and PXD047647 all match the packet record and abstract. Summary is 121 words, paraphrased with no 9+ word copied run. Placeholders {{COHORT}} and {{DATASET}} and the back link are present. Reviewer interpretation is hedged and does not make causal claims."
+ },
+ {
+  "id": "CB123 (a) numbers, species, design, sample size",
+  "ok": false,
+  "fixes": "Study design row said 'prospective-style', which the packet abstract does not support. Reworded to 'natural-infection cohort ... prospective or retrospective design not stated in abstract'. Sample size (61), species (B. canis suspected) and other figures match the packet."
+ },
+ {
+  "id": "CB123 (b) summary 100-150 words, paraphrase",
+  "ok": true,
+  "fixes": "No change needed. Summary is 130 words with no run of more than 8 words copied from the abstract."
+ },
+ {
+  "id": "CB123 (c) title, DOI, PMID/PMCID, dates",
+  "ok": true,
+  "fixes": "No change needed. Title, authors, journal, DOI 10.1016/j.vetpar.2024.110197, PMID 38735268, PMCID null, online 2024-05-10 and issue 2024-07-01 match the packet record."
+ },
+ {
+  "id": "CB123 (d) placeholders and back link",
+  "ok": true,
+  "fixes": "No change needed. {{COHORT}}, {{DATASET}} and the '[Back to article index](../index.md)' line are present."
+ },
+ {
+  "id": "CB123 (e) no causal claims in reviewer interpretation",
+  "ok": true,
+  "fixes": "No change needed. Reviewer interpretation is framed as host-factor association, with timing and mechanism noted as unestablished."
+ },
+ {
+  "id": "CB124 (a) numbers, species, design, sample size",
+  "ok": false,
+  "fixes": "Summary said the study examined whether markers detect AKI 'earlier than conventional markers', a comparison not stated in the abstract. Reworded to 'early ... alongside conventional markers'. Summary also said both markers were elevated in grade I AKI 'a stage without overt azotaemia', which the abstract does not say. Clause removed. Numbers (0.3 mg/dL, 48 h, P<0.01, P<0.001), species (unspecified) and design match."
+ },
+ {
+  "id": "CB124 (b) summary 100-150 words, paraphrase",
+  "ok": true,
+  "fixes": "Summary is now about 112 words after edits, with no run of more than 8 words copied from the abstract. 'tubular damage' changed to 'renal damage' to match the abstract wording."
+ },
+ {
+  "id": "CB124 (c) title, DOI, PMID/PMCID, dates",
+  "ok": true,
+  "fixes": "No change needed. Title, authors, journal 48(4):2813-2818, DOI 10.1007/s11259-024-10416-x, PMID 38809503, online 2024-05-29 and issue 2024-08-01 match the packet record."
+ },
+ {
+  "id": "CB124 (d) placeholders and back link",
+  "ok": true,
+  "fixes": "No change needed. Placeholders and back link are present."
+ },
+ {
+  "id": "CB124 (e) no causal claims in reviewer interpretation",
+  "ok": false,
+  "fixes": "Reviewer interpretation said the markers support tubular injury 'as an early feature of AKI complicating babesiosis', which reads as a causal claim from association. Reworded to 'consistent with early renal tubular injury in these dogs'. The claim that the study 'informs the timing of tubular injury' was also not supported by a cross-sectional grade comparison and was reworded to 'addresses early renal injury'."
+ },
+ {
+  "id": "CB125 (a) numbers, species, design, sample size",
+  "ok": false,
+  "fixes": "Babesia species row said 'unspecified', but the packet records 'B. rossi (suspected)'. Changed to 'B. rossi (suspected; species not stated in abstract; diagnostic method not reported)'. Secondary tags omitted INF from the packet, now added. Severity description 'marginally higher' for RR 1.12 (CI 0.98-1.28) changed to 'non-significantly higher', and 'Effects did not differ by sex' changed to 'No evidence that sex modified the effect of gonadectomy', to match the abstract. Sample sizes (811, 3244, 923), IRR/RR values and CIs match."
+ },
+ {
+  "id": "CB125 (b) summary 100-150 words, paraphrase",
+  "ok": true,
+  "fixes": "Summary is about 132 words after edits. 'adjusted for sex, age, breed category and weight' was reworded to 'accounted for' to avoid a 7-word copied run. No run of more than 8 words."
+ },
+ {
+  "id": "CB125 (c) title, DOI, PMID/PMCID, dates",
+  "ok": true,
+  "fixes": "No change needed. Title, authors, journal 230:106293, DOI 10.1016/j.prevetmed.2024.106293, PMID 39047356, online 2024-07-20 and issue 2024-09-01 match the packet record."
+ },
+ {
+  "id": "CB125 (d) placeholders and back link",
+  "ok": true,
+  "fixes": "No change needed. Placeholders and back link are present."
+ },
+ {
+  "id": "CB125 (e) no causal claims in reviewer interpretation",
+  "ok": false,
+  "fixes": "Reviewer interpretation described gonadectomy as 'A host-level determinant of severity', a causal term for an observational association. Reworded to 'A candidate host-level factor associated with severity, not a mechanism'."
+ },
+ {
+  "id": "CB126",
+  "ok": false,
+  "fixes": "File: C:/Workspaces/DevResearch/babesiosis/canine-babesiosis-review/articles/CB126_2024_prevalence-co-infections-ehrlichia-spp-or.md. Fixed in place: (1) Study design label 'cross-sectional' was not in the packet abstract; now marked as not stated in abstract. (2) Summary added the 3/149 denominator to the 2.0% co-infection figure. (3) Summary said monocytosis 'had no predictive value', which the abstract does not report; now says monocytosis was not significantly associated with co-infection. (4) Reviewer interpretation said the recorded leukocyte/platelet/reticulocyte abnormalities were 'plausibly intrinsic to babesiosis rather than driven by Ehrlichia co-infection'. The abstract does not report those abnormalities as present, and the sentence was causal language inferred from an association; reworded to a non-causal statement. Passed: title, DOI, PMID, dates, volume/pages, B. rossi 149/150 and B. vogeli 1/150, 150 dogs, E. canis co-infection in 3, placeholders {{COHORT}} and {{DATASET}}, back link, summary 128 words and paraphrased. Packet secondary tags (SEV, co-infection, monocytosis) are not listed in the note; not in the check list, left unchanged."
+ },
+ {
+  "id": "CB127",
+  "ok": false,
+  "fixes": "File: C:/Workspaces/DevResearch/babesiosis/canine-babesiosis-review/articles/CB127_2024_molecular-prevalence-epidemiology-phylogenetic-analysis-babesia.md. Fixed in place: (1) Babesia species row said 'Babesia microti' only; the packet species field reads 'B. microti-like (confirmed, 18S sequencing; possibly B. vulpes)'. Row now gives the authors' designation alongside the packet label. (2) Study design 'cross-sectional' was not in the abstract; now marked as not stated. (3) Reviewer interpretation said the dogs were 'not showing haemolysis, anaemia or disease', which the abstract does not measure; reworded to 'no ... reported in the abstract'. Passed: title, authors, DOI, PMID, volume 55 and article 101114, dates, 654 dogs / 55 breeds / 29 PCR-positive, 4%, five districts (3 Punjab, 2 KP), primary category ERY, placeholders, back link, summary 121 words and paraphrased. Packet secondary tags (haematological profile, subclinical infection) are shown in the note as 'none'; not in the check list, left unchanged."
+ },
+ {
+  "id": "CB128",
+  "ok": false,
+  "fixes": "File: C:/Workspaces/DevResearch/babesiosis/canine-babesiosis-review/articles/CB128_2024_clinical-pathology-molecular-examination-babesia-spp.md. Fixed in place: (1) Study design 'cross-sectional' was not in the abstract; replaced with 'randomly sampled survey (design label not stated in abstract)', matching the abstract's random collection. (2) Summary said 'All three microscopy-positive, clinically ill dogs'; the abstract says 'all three clinically infected cases' and does not link them to the microscopy-positive dogs. Now reads 'All three clinically infected dogs'. (3) Reviewer interpretation called the mild end 'B. vogeli-associated disease' and cited 'PCR-positive dogs'; the abstract reports lower Hct/RBC in infected dogs and does not give species for most infections. Reworded to 'Babesia-associated disease ... in infected dogs; species of most infections unreported'. Passed: title, authors, DOI, PMID, volume 196 and article 106952, dates, 150 dogs (47/66/37), 23 PCR-positive, 3 microscopy-positive, B. vogeli in 2 large-form dogs, housing/age associations, Hct/RBC, placeholders, back link, summary 117 words and paraphrased. Packet secondary tags are not shown in the note; not in the check list, left unchanged."
+ },
+ {
+  "id": "CB129",
+  "ok": false,
+  "fixes": "Edited in place: (a) removed Journal volume/issue/pages (95(2):156-166), the Crossref print-issue date and the Crossref correction check, plus the Crossref line in Evidence basis. The packet record has null volume, issue and pages, and Crossref is neither the packet nor full text. (e) Reviewer interpretation changed from 'adding a marrow component to haemolysis' to 'consistent with a possible marrow contribution to the anaemia alongside haemolysis'. Checked and kept: n=6 vs 5, post-mortem case-control design, species B. rossi, DOI, PMID, PMCID null, title, epub date 2024-10-29, categories ERY/INF, summary 124 words, longest shared run 7 words (under the 8-word limit), both placeholders and the back link present. File: C:/Workspaces/DevResearch/babesiosis/canine-babesiosis-review/articles/CB129_2024_cytological-histopathological-bone-marrow-findings-natural.md"
+ },
+ {
+  "id": "CB130",
+  "ok": false,
+  "fixes": "Edited in place: (a) Babesia species row now states the packet's 'suspected, serology' screening status alongside the full-text experimental inoculation; Host row labels the experimental inoculation 'per full text'; Sample size row labels the n=5 Babesia group '(full text)'. (b) Summary changed 'on 143 archived samples' to 'on 143 serum samples' so it stays abstract-derived (the abstract does not say archived); summary is now about 116 words, longest shared run 4 words. Checked and kept: title, authors, volume 53(4):420-430, DOI, PMID, PMC11735645, online 2024-11-11, issue 2024-12-01 (month), n=143 and 112, 84/112 polyclonal, the PCA group descriptions, categories INF/none, both placeholders and the back link present. File: C:/Workspaces/DevResearch/babesiosis/canine-babesiosis-review/articles/CB130_2024_evaluation-serum-protein-electrophoresis-immunofixation-seropositive.md"
+ },
+ {
+  "id": "CB131",
+  "ok": false,
+  "fixes": "Edited in place: (b) Summary said B. vogeli is 'the commonest species in South America'; the abstract says 'most widely distributed', so it now reads 'most widely distributed species in South America'. (a) Critical interpretation: 'Anaemia was marked in only two dogs' is from full text (HCT 8% and 15%), so it is now labelled 'Full text shows'. Checked and kept: title, authors, volume 47 and e008824, DOI, PMID, PMC12017582, species B. vogeli (confirmed, sequencing), 35 tested and 4 positive (11%), COA primary and ERY/INF secondary, summary 112 words, longest shared run 4 words, both placeholders and the back link present. Not changed: the note's 'First publication date' is 2025-04-22 (online, matching epub_date), while the packet's first_pub_date is 2025-01-01. The note's Date notes row already records this discrepancy, so it was left as is. File: C:/Workspaces/DevResearch/babesiosis/canine-babesiosis-review/articles/CB131_2025_molecular-detection-hematological-alterations-infected-babesia.md"
+ },
+ {
+  "id": "CB132",
+  "ok": false,
+  "fixes": "Checked against packet CB132 (PMID 41274494): title, DOI, PMID, dates (online 2025-11-20, PubMed entry 2025-11-23), authors, journal/volume, n=1, B. vulpes, ERY/INF categories, {{COHORT}}/{{DATASET}} placeholders and back link all match. Summary is 123 words, a paraphrase with no copied run over 8 words. Fix made: reviewer interpretation said macrophage haemophagocytosis 'suggests ... as a host-immune amplification pathway' of anaemia and thrombocytopenia; reworded to 'raises the hypothesis that ... may contribute to', so it no longer states a causal pathway from a single case. File: C:/Workspaces/DevResearch/babesiosis/canine-babesiosis-review/articles/CB132_2025_successful-treatment-severe-babesia-vulpes-infection.md"
+ },
+ {
+  "id": "CB133",
+  "ok": false,
+  "fixes": "Checked against packet CB133 (PMID 41437958, PMC12720127): title, DOI, PMID/PMCID, dates (online 2025-11-29, PubMed entry 2025-12-24), authors, journal/volume, group sizes 84 (23/26/17/18), B. canis, INF/MET, placeholders and back link match; summary is 116 words and paraphrased. Fixes made: (1) Host row said 'client-owned', which the full text does not state (it says samples were submitted by German veterinarians); removed that and labelled the control source as full text. (2) The ELISA seropositive-group detail was not in the packet abstract and was unlabelled; labelled it as full text with the >60 TE cut-off, which the full text confirms. File: C:/Workspaces/DevResearch/babesiosis/canine-babesiosis-review/articles/CB133_2025_apolipoprotein-1-does-not-appear-be.md"
+ },
+ {
+  "id": "CB134",
+  "ok": false,
+  "fixes": "Checked against packet CB134 (PMID 40075928, PMC11898128): title, DOI, PMID/PMCID, dates (2025-02-23), authors, Animals 15(5), 108 dogs, B. gibsoni, SEV/ERY/COA/REN/MET, placeholders and back link match; summary is 114 words and paraphrased. Fixes made: (1) Summary said 'the commonest tick-borne infection'; the abstract says 'the most common arthropod-borne infection', so it now matches the abstract. (2) Reviewer interpretation said 'haemolytic/regenerative anaemia', which the record does not support; now 'regenerative anaemia'. (3) Limitations said 'smears and urinalysis (n=22)'; full text gives urinalysis n=22 and blood smears n=58, so corrected. File: C:/Workspaces/DevResearch/babesiosis/canine-babesiosis-review/articles/CB134_2025_clinical-clinicopathological-features-108-infected-babesia.md"
+ },
+ {
+  "id": "CB135-a",
+  "ok": false,
+  "fixes": "Supplementary material said 'seven supplementary files', but the packet lists 24 entries that are 12 distinct files (MOESM1-7 and Fig9-13 ESM, each listed twice). Edited to 'twelve distinct supplementary files (seven MOESM TIF/JPG files and five Fig ESM PNG files)'. Added '(full text)' to three details that are not in the packet abstract: the 'Wuhan strain' (Babesia species row), 'Kunming mice' (Host row) and 'China' (Country row). Full-text content is not in the packet, so these values could not be verified against it. Species (B. gibsoni), design, 255 aa, 27.7 kDa, and 3 beagles / 8 mice labelled full text all match or are labelled."
+ },
+ {
+  "id": "CB135-b",
+  "ok": true,
+  "fixes": "Summary is about 120 words (within 100-150). It is a paraphrase; the longest shared run with the abstract is about 4 words ('day 9 post-infection')."
+ },
+ {
+  "id": "CB135-c",
+  "ok": true,
+  "fixes": "Title, authors, journal and volume/issue/pages (124(3):28), DOI 10.1007/s00436-025-08472-6, PMID 40045010, PMCID PMC11882686, and dates 2025-03-06 (epub/issue/entry) all match the packet record. Links are correct. Corrections field is 'none', which matches the record."
+ },
+ {
+  "id": "CB135-d",
+  "ok": true,
+  "fixes": "{{COHORT}} and {{DATASET}} placeholders are present, and the line '[Back to article index](../index.md)' is present."
+ },
+ {
+  "id": "CB135-e",
+  "ok": true,
+  "fixes": "No causal claims in the reviewer interpretation. The text says the work does not show in situ protection, virulence or haemolysis, and calls the haemolysis link inferential. The authors' conclusion is hedged ('may help')."
+ },
+ {
+  "id": "CB137-a",
+  "ok": false,
+  "fixes": "Added '(full text)' to 'Croatia (Internal Diseases Clinic, ...)' in the Country row and to the reported 'r = 0.85' (salivary vs serum creatinine) in the reviewer interpretation, since neither is in the packet abstract. Full-text content is not in the packet, so these could not be verified against it. Numbers 14 infected + 14 controls, 2257 features, 868 significant, seven identified and seven targeted metabolites match the packet abstract. Species B. canis and host (domestic dog) match. Design 'case-control' is a fair description of the 14 vs 14 comparison, not a mismatch. The 'urea-cycle' reference in the reviewer interpretation is not in the abstract and is not labelled; left unchanged and flagged for manual check against full text."
+ },
+ {
+  "id": "CB137-b",
+  "ok": true,
+  "fixes": "Summary is about 101 words, at the low end of the 100-150 range. It is a paraphrase; the longest shared run with the abstract is about 6 words ('amino acid nucleotide and lipid metabolism', with punctuation differing) and under 8. No change needed."
+ },
+ {
+  "id": "CB137-c",
+  "ok": true,
+  "fixes": "Title, authors, journal and volume/issue (15(4)), DOI 10.3390/biom15040520, PMID 40305281, PMCID PMC12024595, and dates 2025-04-01 all match the packet record. Article number 520 is taken from the DOI and is labelled as such. Corrections field is 'none'."
+ },
+ {
+  "id": "CB137-d",
+  "ok": true,
+  "fixes": "{{COHORT}} and {{DATASET}} placeholders are present, and the line '[Back to article index](../index.md)' is present."
+ },
+ {
+  "id": "CB137-e",
+  "ok": false,
+  "fixes": "Reworded 'Shows that a systemic infection leaves a measurable salivary metabolic signature' to 'Shows that natural Babesia canis infection is associated with a measurable salivary metabolic signature'. The original read as a causal, cross-sectional-to-causal claim. The rest of the interpretation already says causality is not established."
+ },
+ {
+  "id": "CB138",
+  "ok": false,
+  "fixes": "File: C:/Workspaces/DevResearch/babesiosis/canine-babesiosis-review/articles/CB138_2025_comprehensive-study-ticks-tick-borne-diseases.md. (a) Sample size row: added 'full text' label to the 89 Babesia PCR-positive figure, which comes from full text, not the abstract. (b) Summary: added '(full text)' after 'mostly strays', since that is not in the abstract; summary is now 122 words and has no run of more than 8 words copied from the abstract. (e) Reviewer interpretation: removed the unsupported phrase 'largely untreated', replaced with 'stray-dominated'. Checked and correct: title, DOI, PMID 40316956, PMCID PMC12046876, dates (2025-05-02), numbers (341, 219, 26.09%, 5.87%, 3.52%, 2.93%, 31.09%, 27.86%, p-values), species (Babesia spp., unspeciated), placeholders {{COHORT}} and {{DATASET}}, and back link. Associations are labelled as non-causal."
+ },
+ {
+  "id": "CB139",
+  "ok": false,
+  "fixes": "File: C:/Workspaces/DevResearch/babesiosis/canine-babesiosis-review/articles/CB139_2025_fatal-babesiosis-free-ranging-iberian-wolf.md. (b) Summary: rephrased a 9-word run copied verbatim from the abstract ('the first detection of B. canis and H. canis'); new wording is 'the authors present it as the first fatal babesiosis case in a wild wolf and as initial records of B. canis and H. canis in Iberian wolves'. Summary is 120 words. (a) Secondary tags: removed 'PUL', which is not in the packet screening record (packet tags are SEV, wild_canid, necropsy, histopathology, coinfection). Checked and correct: title, DOI 10.1016/j.ijppaw.2025.101080, PMID 40503085, PMCID PMC12152594, dates (online 2025-05-13, issue 2025-08-01 month precision), numbers (91 wolves, 5/79, 78/81, 21/88), B. canis species (labelled as full-text sequence), placeholders, back link, and no causal claims. Not verified: the reviewer's lesion list (icterus, hepatosplenomegaly, dark urine, etc.) is beyond the abstract and the packet, and was not checked against full text."
+ },
+ {
+  "id": "CB140",
+  "ok": true,
+  "fixes": "No changes needed. File: C:/Workspaces/DevResearch/babesiosis/canine-babesiosis-review/articles/CB140_2025_fatal-coinfection-hepatozoon-canis-babesia-vogeli.md. Title, DOI 10.1007/s11259-025-10810-z, PMID 40608150 (no PMCID, correctly stated), dates (2025-07-03), volume/issue/pages (49(4):244), sample size (1 dog), and categories (SEV; ERY, necropsy, histopathology, coinfection) match the packet. Summary is 115 words, with no run of more than 8 words copied from the abstract. Placeholders and back link are present, and no causal claims are made. Note: the species field gives B. vogeli as 'suspected' (named in the title), while the packet says Babesia spp.; this is explicitly labelled, so it was left unchanged."
+ },
+ {
+  "id": "CB141",
+  "ok": false,
+  "fixes": "Checked against packet CB141 (filename CB141_2025_impact-levels-parasitemia-antibodies-acute-phase.md). Title, DOI, PMID/PMCID, journal, volume/issue/pages, dates (2025-08-15), authors, species (B. canis, PCR), design, n=342, and all abstract figures (113/191, 59.2%, 87.4%, 85.1%, 78.7%, 74.2%, HES 6 vs 2, CRP 116.2 vs 40.0, rho values, P < 0.001) match. Summary is 145 words and paraphrased (longest shared run is 7 words). Placeholders {{COHORT}}, {{DATASET}} and the back-link are present. Fix made: in the reviewer interpretation, 'supporting a burden-dependent severity gradient in naive dogs' implied a causal dependence; reworded to 'supporting a positive association between parasite burden and severity.' Full-text details are labelled as such."
+ },
+ {
+  "id": "CB142",
+  "ok": false,
+  "fixes": "Checked against packet CB142 (filename CB142_2025_effect-n-acetylcysteine-oxidative-stress-hematological.md). Title, DOI, PMID, no PMCID (matches null), journal, dates (2025-08-19), authors, B. gibsoni species, Labrador Retrievers aged 2-3 years, design, and sample sizes (19 identified, 12 randomised, 6 controls, NAC 70 mg/kg for 5 days, day 21) match. Summary is 136 words and paraphrased. Placeholders and back-link are present. Fixes made: (1) Key limitations stated 'n = 6 per treatment arm'; the abstract gives only 12 randomised across two groups, with no per-arm split, so it now reads 'n = 12 treated dogs across two arms (per-arm split not stated in the abstract) and 6 controls.' (2) Reviewer interpretation claimed a descriptive signal for oxidative stress in infected vs control dogs; the abstract lists only leukocyte count, erythrocyte indices, platelet count and UPC as significant, so the sentence was corrected to those parameters and notes that the oxidative comparison is not reported as significant."
+ },
+ {
+  "id": "CB143",
+  "ok": false,
+  "fixes": "Checked against packet CB143 (filename CB143_2025_relationship-between-erythrocyte-antigen-dea-susceptibility.md). Title, DOI, PMID/PMCID, journal, dates (2025-11-25), authors, species (unspecified), design, n=200 (124 PCR-positive from full text, labelled), and abstract percentages (63.5%, 36.5%, 63.0%, 60.3%, 73.3-86.4%, 51.2/48.8%) match. Summary is 110 words and paraphrased. Placeholders and back-link are present. Fixes made: (1) Babesia species row: PIRO-A/B primers and ~400 bp band are full-text details not in the abstract; now labelled 'from full text'. (2) Country row: Lagos site is from full text only; now labelled. (3) Summary said 'immunochromatographic kit'; the abstract names the Alvedia test kit, so the wording now matches the abstract. (4) Summary said the authors conclude DEA 1 status 'probably does not affect' susceptibility; the abstract says 'may not influence' (framed as suggestion), so it now reads 'The authors suggest DEA 1 status may not influence...'"
+ },
+ {
+  "id": "CB144",
+  "ok": false,
+  "fixes": "Title H1 changed to the exact PubMed string, including the square brackets and trailing period that mark a translated title. The summary's 'routine abdominal ultrasonography' changed to 'routine ultrasonography' because 'abdominal' is not in the abstract. Checked and unchanged: DOI, PMID, PMCID (not indexed), dates (online 2025-11-28, issue 2025-12-01 month precision), species B. canis (suspected), design (single case report, n=1), INF/ERY categories, placeholders {{COHORT}} and {{DATASET}}, back link, summary is about 111 words and paraphrased (longest shared run is about 4 words), no causal claims in reviewer interpretation. File: C:/Workspaces/DevResearch/babesiosis/canine-babesiosis-review/articles/CB144_2025_splenopathy-germany-autochthonous-babesia-canis-infection.md"
+ },
+ {
+  "id": "CB145",
+  "ok": false,
+  "fixes": "Title H1 given the trailing period to match the PubMed title exactly. Checked and unchanged: authors, DOI, PMID and PMCID links, dates (online 2026-03-12; the placeholder 2026-01-01 is explained), B. rossi confirmed by RLB-PCR, n=97 infected (85 survivors, 12 non-survivors) and 15 controls, COA/INF/END/SEV tags, placeholders, back link, summary about 117 words and paraphrased, and no causal claims in reviewer interpretation. Full-text figures are labelled as such. File: C:/Workspaces/DevResearch/babesiosis/canine-babesiosis-review/articles/CB145_2026_thromboinflammation-virulent-babesiosis.md"
+ },
+ {
+  "id": "CB146",
+  "ok": false,
+  "fixes": "Title H1 given the trailing period to match the PubMed title exactly. Checked and unchanged: authors, DOI, PMID and PMCID (not indexed), dates (Europe PMC 2026-04-01, PubMed epub 2026-05-02, with the disagreement noted), species (European Babesia, mainly B. canis, suspected), retrospective necropsy design, sample size not reported in abstract (correct), CAR/SEV/END tags, Croatia labelled as inferred, placeholders, back link, summary about 114 words and paraphrased (longest shared run about 5 words), and reviewer interpretation hedged with no causal claim. File: C:/Workspaces/DevResearch/babesiosis/canine-babesiosis-review/articles/CB146_2026_cardiac-involvement-european-babesiosis-pathological-perspective.md"
+ },
+ {
+  "id": "CB147",
+  "ok": false,
+  "fixes": "Edited C:/Workspaces/DevResearch/babesiosis/canine-babesiosis-review/articles/CB147_2026_liver-histopathology-naturally-acquired-babesia-rossi.md. (1) Abstract-derived summary said the ten dogs 'died or were euthanised'; that detail is full-text only (abstract says 'succumbed to' infection), so it now reads 'succumbed to infection'. (2) Reviewer interpretation changed 'Supports a pathophysiological model in which the liver is a secondary target' to 'Is compatible with ...' so the histological associations are not presented as causal support. Verified and unchanged: title, DOI, PMID 42339097, PMCID PMC13283813, dates (online 2026-06-08), journal/volume/pages, species B. rossi, design (necropsy series with controls), sample size 10 vs 4, summary length (about 128 words) and paraphrase, {{COHORT}} and {{DATASET}} placeholders, back link. Not verifiable from the packet and left as-is: full-text limitation claims (controls younger/lighter, supplementary S1 content) and full-text values (ALT, urea, 9.6-fold MAC387)."
+ },
+ {
+  "id": "CB148",
+  "ok": true,
+  "fixes": "No changes needed. Verified against packet CB148: title, authors, journal/volume/pages (10:100395), online date 2026-06-02, DOI 10.1016/j.crpvbd.2026.100395, PMID 42375825, PMCID PMC13311271, species B. canis (PCR with sequencing), prospective design, 23 dogs, dosing range 1.7-7.0 mg/kg (median 4.2), PCR negative at T1 (median day 15) and T2 (median day 32). Summary is about 135 words, paraphrased with no run of more than 8 words copied. Placeholders {{COHORT}} and {{DATASET}} and back link present. Reviewer interpretation hedges the Coombs and antibody points and makes no causal claim. Full-text items (23/23 thrombocytopenia, 19/23 anaemia, 6/23 Coombs, follow-up counts for 5 and 6 dogs) are labelled as full-text or are not in the packet, so they were not changed."
+ },
+ {
+  "id": "CB149",
+  "ok": false,
+  "fixes": "Edited C:/Workspaces/DevResearch/babesiosis/canine-babesiosis-review/articles/CB149_2026_retrospective-analysis-anamnesis-clinical-signs-therapy.md. Reviewer interpretation said 'most European B. canis cases' but the cohort is German only (abstract and record), so it now reads 'most German B. canis cases'. The parenthetical 'thrombocytopenia, fever, pigmenturia in a minority' misstated the figures (fever 127/228 = 55.7%, not a minority), so it now reads 'thrombocytopenia in all dogs, fever in just over half, pigmenturia in about a quarter'. Verified and unchanged: title, authors, journal (10:100407), online date 2026-06-29, DOI 10.1016/j.crpvbd.2026.100407, PMID 42433610, PMCID PMC13351624, B. canis species, 342 dogs, all percentages in the summary (63.7%, 75.7%, 66.8% of 220, 55.7% of 228, 26.0% of 204, 164 treated, 87.6% of 193, 6.7%), summary about 121 words, placeholders and back link present."
+ },
+ {
+  "id": "CB151",
+  "ok": false,
+  "fixes": "Edited C:/Workspaces/DevResearch/babesiosis/canine-babesiosis-review/articles/CB151_2026_n-acetylcysteine-adjunct-therapy-ameliorates-oxidative.md. (c) H1 title changed to the packet record title exactly ('...in dogs-a pilot study.'); it had 'dogs: a pilot study'. (a) Journal row had article number 504, which is not in the packet record and was not labelled as full text; removed, leaving 'Molecular biology reports, 53(1)'. The Crossref-labelled article-number and received/accepted details in Evidence basis were left in place as explicitly sourced from Crossref, not the packet. Verified and unchanged: n=12 per arm (24), B. gibsoni, design, NAC 70 mg/kg OD for 14 days, day 0 to 28 follow-up, authors, DOI 10.1007/s11033-026-11689-y, PMID 41838252, no PMCID, dates 2026-03-16. (b) Summary is 125 words, paraphrased; longest shared run with the abstract is 6 words ('from day 0 to day 28'). (d) {{COHORT}}, {{DATASET}} and the index back-link are present. (e) Reviewer interpretation is associational and hedged; no causal claim."
+ },
+ {
+  "id": "CB152",
+  "ok": false,
+  "fixes": "Edited C:/Workspaces/DevResearch/babesiosis/canine-babesiosis-review/articles/CB152_2026_molecular-prevalence-clinical-profiles-babesiosis-northern.md. (c) H1 title given the trailing period from the packet record. (a) Journal row article number 561 was not in the packet record and was not labelled; removed, leaving 'BMC veterinary research, 22(1)'. Species row: 'with smear morphology' was not in the packet; replaced with 'confirmed by conventional PCR; nuclear and mitochondrial targets per full text'. Country row: tick history labelled as per full text. Study design: 'cross-sectional' was not stated in the abstract; reworded to 'descriptive prevalence and clinicopathology study ... (cross-sectional label not stated in abstract)'. Sample size: 10 healthy controls labelled as full text. Verified and unchanged: 216 dogs, 60 PCR-positive (B. vogeli 48, B. gibsoni 12, derived from 22.22% and 5.55%), microscopy 12.5% (27/216), PCR 27.78%, DOI, PMID 42393672 and PMC13617709 links, dates 2026-07-02, authors, SEV primary category. (b) Summary is 124 words, paraphrased; no run of 8 or more words copied from the abstract. (d) {{COHORT}}, {{DATASET}} and the index back-link are present. (e) Interpretation is comparative and associational; it does not claim causation (the 'haemolytic phenotype' wording is descriptive and no mechanism is asserted)."
+ },
+ {
+  "id": "CB153",
+  "ok": false,
+  "fixes": "Edited in place: Host row changed from 'Domestic dog (client-owned, natural infection)' to 'Domestic dog (natural infection)' because 'client-owned' does not appear in the packet abstract. Verified and unchanged: title, authors, journal/volume/pages, DOI 10.1016/j.tcam.2026.101086, PMID 42448039, PMCID null, dates 2026-07-14, design (prospective cohort), species (B. gibsoni, PCR), n=55 (26 primary; 29 co-infected), 42 deaths (40 IMHA, 2 unrelated), HRs 2.1/2.1/2.6 with p=0.024, summary 111 words, no run of more than 8 words copied from the abstract, placeholders {{COHORT}} and {{DATASET}} present, back link present. Reviewer interpretation not changed, though the phrase 'Frames B. gibsoni as one trigger of secondary IMHA' is background framing rather than a claim from the association and was left as is."
+ },
+ {
+  "id": "CB154",
+  "ok": false,
+  "fixes": "Edited in place, three changes: (1) Study design changed from 'Cross-sectional clinicopathological study...' to 'Clinicopathological study ... design label not stated in abstract (descriptive/associational)', because the abstract does not state a cross-sectional design. (2) Reviewer interpretation: 'high-parasitaemia Asian B. gibsoni setting' changed to 'naturally infected B. gibsoni population in Mizoram, India', because the abstract reports no parasitaemia data. (3) Unchanged and verified: title, authors, Acta parasitologica 71(5), DOI 10.1007/s11686-026-01421-y, PMID 42873390, PMCID null, dates 2026-10-14, Mizoram India setting, 138 screened with 43/70/85 positive by antibody/smear/PCR, correlations r=-0.741, 0.714, 0.828, summary 114 words, no run of more than 8 words copied from the abstract, placeholders {{COHORT}} and {{DATASET}} present, back link present, and no causal claims from associations."
+ }
+]

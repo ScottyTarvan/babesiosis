@@ -1,0 +1,98 @@
+{
+ "id": "CB379",
+ "filename": "CB379_2009_preliminary-evaluation-brema1-gene-tool-associating.md",
+ "key": "PMID:19741079",
+ "record": {
+  "pmid": "19741079",
+  "pmcid": "PMC2772643",
+  "doi": "10.1128/jcm.01110-08",
+  "title": "Preliminary evaluation of the BrEMA1 gene as a tool for associating babesia rossi genotypes and clinical manifestation of canine Babesiosis.",
+  "authors": [
+   "Matjila PT",
+   "Carcy B",
+   "Leisewitz AL",
+   "Schetters T",
+   "Jongejan F",
+   "Gorenflot A",
+   "Penzhorn BL"
+  ],
+  "journal": "Journal of clinical microbiology",
+  "journal_abbrev": "J Clin Microbiol",
+  "volume": "47",
+  "issue": "11",
+  "pages": "3586-92",
+  "language": [
+   "eng"
+  ],
+  "issue_date": "2009-11-01",
+  "issue_date_precision": "month",
+  "epub_date": "2009-09-09",
+  "pubmed_entry_date": "2009-09-11",
+  "first_pub_date": "2009-09-09",
+  "publication_types": [
+   "Evaluation Study",
+   "Journal Article",
+   "Research Support, Non-U.S. Gov't"
+  ],
+  "mesh": [
+   "Animals",
+   "Antigens, Protozoan",
+   "Babesia",
+   "Babesiosis",
+   "Cluster Analysis",
+   "DNA, Protozoan",
+   "Dog Diseases",
+   "Dogs",
+   "Genotype",
+   "Molecular Epidemiology",
+   "Molecular Sequence Data",
+   "Parasitology",
+   "Polymerase Chain Reaction",
+   "Polymorphism, Genetic",
+   "Sequence Analysis, DNA",
+   "Sequence Homology",
+   "South Africa"
+  ],
+  "keywords": [],
+  "abstract": "Babesia rossi, an intraerythrocytic protozoan, causes a severe, often life-threatening disease of domestic dogs. Dogs treated early for B. rossi infection usually recover from the disease, but dogs left untreated or treated at a later stage of infection seldom survive. Dogs infected with B. rossi have varied clinical manifestations that can be categorized as uncomplicated (with a good prognosis) or complicated (with a poor prognosis). One hundred twenty-one blood samples were collected from dogs presented to the Onderstepoort Veterinary Academic Hospital and diagnosed with babesiosis by the use of a thin blood smear. An additional 20 samples were obtained from Babesia-infected dogs from private clinics around the Onderstepoort, Johannesburg, Durban, White River, and Cape Town areas. The samples were screened by PCR targeting the Babesia rossi erythrocyte membrane antigen gene (BrEMA1) and by sequencing of the polymorphic region (i.e., region with a variable number of hexapeptide repeats). Analysis of PCR products revealed 11 different gene profiles, visualized by gel electrophoresis. Twelve distinct BrEMA1 genotypes were identified by sequencing, but the numbers of hexapeptide repeats varied from 6 to 31 (classified as genotype6 to genotype31). The genotypes were retrospectively compared to the clinical case data. The most frequently encountered B. rossi parasites were those attributed to genotype19 (36.2%), genotype28 and genotype29 (20.6% each), and genotype11 (12.7%). These genotypes were also the ones associated with the poorest prognosis. This preliminary finding suggests clinically important differences between the various B. rossi genotypes identified.",
+  "corrections": [],
+  "epmc_first_pub_date": "2009-09-09",
+  "is_oa": "N",
+  "has_suppl": "N",
+  "found_by": [
+   "EP1_broad",
+   "EP2_species",
+   "PM1_broad",
+   "PM2_species",
+   "PM3_mechanism"
+  ],
+  "in_window": true,
+  "online_vs_issue": "online 2009-09-09; issue 2009-11-01 (month)",
+  "key": "PMID:19741079",
+  "source_files": [
+   "candidates.jsonl"
+  ]
+ },
+ "screening": {
+  "key": "PMID:19741079",
+  "decision": "include",
+  "include_type": "primary",
+  "exclude_reason": null,
+  "primary_category": "OXO",
+  "secondary_tags": [
+   "SEV"
+  ],
+  "species": "B. rossi (confirmed, PCR/sequencing)",
+  "rationale": "Parasite BrEMA1 genotypes compared with clinical case data and prognosis in naturally infected dogs. It addresses virulence and its link to outcome, so it includes host clinical data.",
+  "stage": "screen",
+  "batch": "r4_07.md",
+  "screening_round": "r4"
+ },
+ "fulltext_check": {
+  "key": "PMID:19741079",
+  "pmcid": "PMC2772643",
+  "checked": "2026-10-28",
+  "fulltext_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC2772643/fullTextXML",
+  "fulltext_status": 500
+ }
+}

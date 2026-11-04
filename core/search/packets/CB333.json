@@ -1,0 +1,62 @@
+{
+ "id": "CB333",
+ "filename": "CB333_2007_protein-c-activity-babesiosis.md",
+ "key": "REF:proteincactivityinbabesiosisofdogs",
+ "record": {
+  "pmid": null,
+  "doi": null,
+  "title": "Protein C activity in babesiosis of dogs",
+  "journal": "University of Zagreb University Computing Centre (SRCE)",
+  "first_pub_date": "2007-02-20",
+  "year": "2007",
+  "abstract": "One of the numerous complications which could occur in babesiosis of dogs is disturbance in the coagulation system.The protein C pathway is one of the three major anticoagulant mechanisms and its activity was investigated in dogs with babesiosis, before and after therapy.We determined the decrease of protein C activity, which could be the consequence of inflammatory cytokines releasing, reduced synthesis in the liver, or increased erythropoietin production.Decrease in number of red blood cells and haematocrit could be due to mechanical, immuno-mediated or toxic-mediated haemolysis.Activity of aspartate-aminotransferase and alanine-aminotransferase and total bilirubin concentration was increased, indicating cellular damage of the liver. Key words: protein C, coagulation, babesiosis, dog introductionCanine babesiosis is caused by tick-borne haemoprotozoan parasites Babesia canis and Babesia gibsoni.In addition to fever and haemolytic anaemia, which are characteristic of babesiosis, other numerous complications occur in association with virulent parasites.One such is disturbance in the coagulation system (SCHETTERS et al., 998).Blood coagulation is a complex process of enzymatic interactions which finally results in clot formation by conversion of fibrinogen into insoluble fibrin.Haemostasis involves the concerted action of the vascular wall, platelets, coagulation and fibrinolytic pathways in the formation of a blood clot following vascular damage.Three major anticoagulant mechanisms appear to be involved: antithrombin/heparin, tissue factor pathway inhibitor (TFPI) and the protein C (PC) pathway (ESMON, 999).When thrombin binds to",
+  "found_by": [
+   "OA:title_and_abstract",
+   "citation:backward:28750862"
+  ],
+  "unresolved": true,
+  "source_id": "REF:proteincactivityinbabesiosisofdogs",
+  "key": "REF:proteincactivityinbabesiosisofdogs",
+  "source_files": [
+   "candidates_r2.jsonl",
+   "candidates_r3.jsonl"
+  ],
+  "authors": [
+   "Renata Barić Rafaj",
+   "Vladimir Mrljak",
+   "Nada Kučer",
+   "Mirna Brkljačić",
+   "Vesna Matijatko"
+  ],
+  "type": "article",
+  "language": [
+   "en"
+  ],
+  "abstract_source": "OpenAlex abstract_inverted_index (reconstructed)",
+  "src": "OPENALEX",
+  "in_window": true
+ },
+ "screening": {
+  "key": "REF:proteincactivityinbabesiosisofdogs",
+  "decision": "include",
+  "include_type": "primary",
+  "exclude_reason": null,
+  "primary_category": "COA",
+  "secondary_tags": [
+   "MET",
+   "ERY",
+   "INF"
+  ],
+  "species": "B. canis (unspecified, large Babesia)",
+  "rationale": "Protein C activity in dogs with babesiosis before and after therapy. It reports decreased protein C, anaemia and raised liver enzymes and bilirubin, which are host coagulation and organ-injury data.",
+  "stage": "screen",
+  "batch": "r4_02.md",
+  "screening_round": "r4"
+ },
+ "fulltext_check": {
+  "key": "REF:proteincactivityinbabesiosisofdogs",
+  "pmcid": null,
+  "checked": "2026-10-28",
+  "fulltext_status": "no_pmcid"
+ }
+}

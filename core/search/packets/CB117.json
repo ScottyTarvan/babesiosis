@@ -1,0 +1,107 @@
+{
+ "id": "CB117",
+ "filename": "CB117_2023_proteomics-identification-overexpressed-serum-proteins-babesiacanis.md",
+ "key": "PMID:38023278",
+ "record": {
+  "pmid": "38023278",
+  "pmcid": "PMC10668562",
+  "doi": "10.14202/vetworld.2023.2042-2048",
+  "title": "Proteomics identification of overexpressed serum proteins in dogs with Babesiacanis infection.",
+  "authors": [
+   "Ritchoo S",
+   "Havanapan PO",
+   "Sussadee M",
+   "Maneeruttanarungroj C",
+   "Rucksaken R"
+  ],
+  "journal": "Veterinary world",
+  "journal_abbrev": "Vet World",
+  "volume": "16",
+  "issue": "10",
+  "pages": "2042-2048",
+  "language": [
+   "eng"
+  ],
+  "issue_date": "2023-10-01",
+  "issue_date_precision": "month",
+  "epub_date": "2023-10-07",
+  "pubmed_entry_date": "2023-11-29",
+  "first_pub_date": "2023-10-01",
+  "publication_types": [
+   "Journal Article"
+  ],
+  "mesh": [],
+  "keywords": [
+   "Babesia canis",
+   "blood parasite",
+   "diagnosis",
+   "proteomics"
+  ],
+  "abstract": "BACKGROUND AND AIM: Canine babesiosis, caused by the protozoan parasite Babesia canis, is characterized by clinical manifestations, including hemolytic anemia, thrombocytopenia, multiple organ failure, and may result in death. This disease is detected using conventional blood smears, which are time-consuming and have low sensitivity. This study aimed to investigate a more rapid and sensitive method for detecting B. canis infection in dogs by examining the expressed serum protein profiles using proteomics.\nMATERIALS AND METHODS: We collected six sera samples from three healthy and three B. canis-infected dogs diagnosed using blood smear and polymerase chain reaction. We analyzed the proteins using two-dimensional gel electrophoresis. The candidate spots from the gel were subjected to protein identification using a nano-liquid chromatography system coupled to an ion-trap mass spectrometer equipped with an electrospray ionization nano-sprayer.\nRESULTS: We found that 10 protein spots were overexpressed in the serum samples from infected dogs compared with healthy dogs, which corresponded to three proteins: serotransferrin, serotransferrin isoforms X1, and hemopexin. Furthermore, analysis of the protein-protein interaction network confirmed that they strongly interacted with each other.\nCONCLUSION: This study suggests that high levels of serotransferrin and hemopexin are related to B. canis infection, making these proteins potential candidates for the development of diagnostic molecules or vaccines.",
+  "corrections": [],
+  "epmc_first_pub_date": "2023-10-07",
+  "is_oa": "Y",
+  "has_suppl": "N",
+  "found_by": [
+   "EP1_broad",
+   "EP2_species",
+   "PM1_broad",
+   "PM2_species",
+   "PM3_mechanism"
+  ],
+  "in_window": true,
+  "date_discrepancy": "PubMed-derived 2023-10-01 vs Europe PMC firstPublicationDate 2023-10-07",
+  "online_vs_issue": "online 2023-10-07; issue 2023-10-01 (month)"
+ },
+ "screening": {
+  "key": "PMID:38023278",
+  "decision": "include",
+  "include_type": "primary",
+  "exclude_reason": null,
+  "primary_category": "INF",
+  "secondary_tags": [
+   "ERY",
+   "OXO"
+  ],
+  "species": "B. canis (confirmed, smear and PCR)",
+  "rationale": "Serum proteomics in infected dogs showing raised serotransferrin and hemopexin, informing acute-phase and haem-handling host response despite diagnostic framing.",
+  "stage": "screen",
+  "batch": "r1_18.md",
+  "screening_round": "r1"
+ },
+ "fulltext_check": {
+  "key": "PMID:38023278",
+  "pmcid": "PMC10668562",
+  "checked": "2026-10-23",
+  "fulltext_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10668562/fullTextXML",
+  "fulltext_status": 200,
+  "data_availability": [],
+  "supplementary": [],
+  "repository_links": [],
+  "section_titles": [
+   "Background and Aim:",
+   "Materials and Methods:",
+   "Results:",
+   "Conclusion:",
+   "Introduction",
+   "Materials and Methods",
+   "Ethical approval",
+   "Study period and location",
+   "Animals",
+   "Polymerase chain reaction assay",
+   "Two-dimensional electrophoresis (2-DE)",
+   "Mass spectrometry",
+   "Protein-protein interaction network analysis",
+   "Statistical analysis",
+   "Results",
+   "Discussion",
+   "Conclusion",
+   "Authors’ Contributions",
+   "Acknowledgments",
+   "Competing Interests",
+   "Publisher’s Note",
+   "References"
+  ],
+  "has_body": true
+ }
+}

@@ -1,0 +1,94 @@
+{
+ "id": "CB335",
+ "filename": "CB335_2007_babesia-gibsoni-detection-during-experimental-infections.md",
+ "key": "PMID:17543304",
+ "record": {
+  "pmid": "17543304",
+  "pmcid": null,
+  "doi": "10.1016/j.exppara.2007.03.016",
+  "title": "Babesia gibsoni: detection during experimental infections and after combined atovaquone and azithromycin therapy.",
+  "authors": [
+   "Jefferies R",
+   "Ryan UM",
+   "Jardine J",
+   "Robertson ID",
+   "Irwin PJ"
+  ],
+  "journal": "Experimental parasitology",
+  "journal_abbrev": "Exp Parasitol",
+  "volume": "117",
+  "issue": "2",
+  "pages": "115-23",
+  "language": [
+   "eng"
+  ],
+  "issue_date": "2007-10-01",
+  "issue_date_precision": "month",
+  "epub_date": "2007-04-03",
+  "pubmed_entry_date": "2007-06-05",
+  "first_pub_date": "2007-04-03",
+  "publication_types": [
+   "Journal Article"
+  ],
+  "mesh": [
+   "Acute Disease",
+   "Animals",
+   "Anti-Infective Agents",
+   "Antibodies, Protozoan",
+   "Atovaquone",
+   "Azithromycin",
+   "Babesia",
+   "Babesiosis",
+   "Chronic Disease",
+   "DNA, Protozoan",
+   "Dog Diseases",
+   "Dogs",
+   "Drug Resistance",
+   "Female",
+   "Fluorescent Antibody Technique",
+   "Parasitemia",
+   "Polymerase Chain Reaction"
+  ],
+  "keywords": [],
+  "abstract": "Babesia gibsoni is a protozoan parasite of dogs worldwide yet both an effective treatment and a reliable method for detecting subclinical cases of this emerging infection remain elusive. Experimental B. gibsoni infections were established in vivo to investigate the efficacy of combined atovaquone and azithromycin drug therapy and to determine the detection limits of a nested-PCR, IFAT and microscopy during various stages of infection. While atovaquone and azithromycin produced a reduction in parasitaemia, it did not eliminate the parasite and drug resistance appeared to develop in one dog. Polymerase chain reaction was found to be most useful in detecting infection in the pre-acute and acute stages, while IFAT was most reliable during chronic infections. Microscopy is suggested to be only effective for detecting acute stage infections. This study also describes the detection of B. gibsoni in tissue samples during chronic infections for the first time, suggesting possible sequestration of this parasite.",
+  "corrections": [],
+  "epmc_first_pub_date": "2007-04-03",
+  "is_oa": "N",
+  "has_suppl": "N",
+  "found_by": [
+   "EP1_broad",
+   "EP2_species",
+   "PM1_broad",
+   "PM2_species"
+  ],
+  "in_window": true,
+  "online_vs_issue": "online 2007-04-03; issue 2007-10-01 (month)",
+  "key": "PMID:17543304",
+  "source_files": [
+   "candidates.jsonl"
+  ]
+ },
+ "screening": {
+  "key": "PMID:17543304",
+  "decision": "include",
+  "include_type": "primary",
+  "exclude_reason": null,
+  "primary_category": "OXO",
+  "secondary_tags": [
+   "END"
+  ],
+  "species": "B. gibsoni (confirmed, nested PCR, experimental)",
+  "rationale": "Based on abstract: experimental infections in dogs that first detected B. gibsoni in host tissues during chronic infection, suggesting sequestration; this is a host-parasite mechanistic observation, beyond the treatment and diagnostic endpoints.",
+  "stage": "adjudicated",
+  "batch": "r4_02.md",
+  "first_decision": "exclude",
+  "rescue_reason": "Experimental B. gibsoni infections report detection of the parasite in tissue during chronic infection, suggesting sequestration. That is a possible host-tissue mechanistic observation, and the adjudicator should check the full text for any host data.",
+  "screening_round": "r4"
+ },
+ "fulltext_check": {
+  "key": "PMID:17543304",
+  "pmcid": null,
+  "checked": "2026-10-28",
+  "fulltext_status": "no_pmcid"
+ }
+}

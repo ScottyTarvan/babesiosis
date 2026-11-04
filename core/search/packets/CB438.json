@@ -1,0 +1,88 @@
+{
+ "id": "CB438",
+ "filename": "CB438_2012_mortality-virulent-babesiosis-associated-consumptive-coagulopathy.md",
+ "key": "PMID:23098634",
+ "record": {
+  "pmid": "23098634",
+  "pmcid": null,
+  "doi": "10.1016/j.tvjl.2012.09.009",
+  "title": "Mortality in virulent canine babesiosis is associated with a consumptive coagulopathy.",
+  "authors": [
+   "Goddard A",
+   "Wiinberg B",
+   "Schoeman JP",
+   "Kristensen AT",
+   "Kjelgaard-Hansen M"
+  ],
+  "journal": "Veterinary journal (London, England : 1997)",
+  "journal_abbrev": "Vet J",
+  "volume": "196",
+  "issue": "2",
+  "pages": "213-7",
+  "language": [
+   "eng"
+  ],
+  "issue_date": "2013-05-01",
+  "issue_date_precision": "month",
+  "epub_date": "2012-10-23",
+  "pubmed_entry_date": "2012-10-27",
+  "first_pub_date": "2012-10-23",
+  "publication_types": [
+   "Journal Article",
+   "Research Support, Non-U.S. Gov't"
+  ],
+  "mesh": [
+   "Animals",
+   "Babesiosis",
+   "Disseminated Intravascular Coagulation",
+   "Dog Diseases",
+   "Dogs",
+   "Female",
+   "Male"
+  ],
+  "keywords": [],
+  "abstract": "The inflammatory response to infection can activate the coagulation system via complex interactions. If uncontrolled, this may lead to a consumptive coagulopathy, a major risk factor for a poor clinical outcome. This prospective observational study was conducted to determine whether consumptive coagulopathy in dogs with Babesia rossi infection is related to mortality. Seventy-two client-owned dogs diagnosed with canine babesiosis were included. Diagnosis was confirmed by polymerase chain reaction and reverse line blot and dogs co-infected with Babesia vogeli or Ehrlichia canis were excluded. Blood samples were collected at admission. Coagulation factor-, antithrombin (AT)-, and protein C (PC)-activity, prothrombin time (PT), activated partial thromboplastin time (aPTT), fibrinogen and D-dimer concentrations were measured. The mortality rate was 18% (13/72 dogs) and the median activities of all the coagulation factors were significantly lower in the non-survivors compared to the survivors. Median PT and aPTT were significantly longer in the non-survivors compared to the survivors. Median AT activity was not significantly different but median PC activity was significantly decreased in the non-survivors. Median D-dimer concentrations were significantly higher in non-survivors compared to survivors. This study showed that dogs that died from B. rossi infection had a more severe consumptive coagulopathy compared to survivors, characterized by procoagulant activation, inhibitor consumption, and increased fibrinolytic activity.",
+  "corrections": [],
+  "epmc_first_pub_date": "2012-10-23",
+  "is_oa": "N",
+  "has_suppl": "N",
+  "found_by": [
+   "EP1_broad",
+   "EP2_species",
+   "PM1_broad",
+   "PM2_species",
+   "PM3_mechanism"
+  ],
+  "in_window": true,
+  "online_vs_issue": "online 2012-10-23; issue 2013-05-01 (month)",
+  "existing_id": "BG012",
+  "existing_retired": false,
+  "key": "PMID:23098634",
+  "source_files": [
+   "candidates.jsonl"
+  ]
+ },
+ "screening": {
+  "key": "PMID:23098634",
+  "decision": "include",
+  "include_type": "primary",
+  "exclude_reason": null,
+  "primary_category": "COA",
+  "secondary_tags": [
+   "SEV",
+   "INF"
+  ],
+  "species": "B. rossi (confirmed, PCR/RLB)",
+  "rationale": "Prospective study of 72 dogs showing that non-survivors had a more severe consumptive coagulopathy (low factors and protein C, high D-dimer); a mortality and mechanism study.",
+  "stage": "screen",
+  "batch": "r4_15.md",
+  "screening_round": "r4"
+ },
+ "fulltext_check": {
+  "key": "PMID:23098634",
+  "pmcid": null,
+  "checked": "2026-10-28",
+  "fulltext_status": "no_pmcid"
+ },
+ "replaces": "BG012"
+}

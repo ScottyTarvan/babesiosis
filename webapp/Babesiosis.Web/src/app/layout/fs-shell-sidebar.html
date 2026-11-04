@@ -1,0 +1,49 @@
+<aside
+  class="fs-shell-sidebar"
+  [class.fs-shell-sidebar--collapsed]="collapsed()"
+  [style.width]="widthRem()"
+  aria-label="Primary navigation">
+  <div class="fs-shell-sidebar__brand">
+    @if (collapsed()) {
+      <img class="fs-shell-sidebar__brand-mark-img" src="assets/images/babesiosis-mark.png" alt="Canine Babesiosis" />
+    } @else {
+      <img class="fs-shell-sidebar__brand-logo-img" src="assets/images/babesiosis-logo-sidebar.png" alt="Canine Babesiosis" />
+    }
+  </div>
+
+  <nav class="fs-shell-sidebar__nav">
+    <ul class="fs-shell-sidebar__list">
+      @for (item of menu(); track item.key) {
+        @if (item.isTitle) {
+          @if (!collapsed()) {
+            <li class="fs-shell-sidebar__section" [class]="'fs-shell-sidebar__section--' + item.key">{{ item.label }}</li>
+          } @else {
+            <li class="fs-shell-sidebar__divider" aria-hidden="true"></li>
+          }
+        } @else {
+          <li>
+            <fs-shell-sidebar-item
+              [icon]="item.icon!"
+              [label]="item.label!"
+              [path]="item.link!"
+              [active]="isActive(item)"
+              [collapsed]="collapsed()" />
+          </li>
+        }
+      }
+    </ul>
+  </nav>
+</aside>
+
+<!-- Collapse/expand handle — a small arrow docked on the seam between the
+     sidebar and the content, straddling the right border to save space.
+     Hidden below the shell's narrow boundary by media query, where the sidebar
+     is an overlay rather than a column. -->
+<button
+  type="button"
+  class="fs-shell-sidebar__collapse-handle"
+  [attr.aria-label]="collapseLabel()"
+  [attr.aria-pressed]="collapsed()"
+  (click)="onCollapseToggle()">
+  <fs-symbol [name]="collapseIcon()" size="xs" ariaLabel="" />
+</button>

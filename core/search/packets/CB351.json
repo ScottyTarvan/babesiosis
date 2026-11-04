@@ -1,0 +1,86 @@
+{
+ "id": "CB351",
+ "filename": "CB351_2008_unusual-form-babesiosis.md",
+ "key": "PMID:18390102",
+ "record": {
+  "pmid": "18390102",
+  "pmcid": "PMC2249724",
+  "doi": null,
+  "title": "An unusual form of canine babesiosis.",
+  "authors": [
+   "Van de Maele I",
+   "Savary-Bataille K",
+   "Gielen I",
+   "Daminet S"
+  ],
+  "journal": "The Canadian veterinary journal = La revue veterinaire canadienne",
+  "journal_abbrev": "Can Vet J",
+  "volume": "49",
+  "issue": "3",
+  "pages": "283-6",
+  "language": [
+   "eng"
+  ],
+  "issue_date": "2008-03-01",
+  "issue_date_precision": "month",
+  "epub_date": null,
+  "pubmed_entry_date": "2008-04-09",
+  "first_pub_date": "2008-03-01",
+  "publication_types": [
+   "Case Reports",
+   "Journal Article"
+  ],
+  "mesh": [
+   "Animals",
+   "Antiprotozoal Agents",
+   "Babesia",
+   "Babesiosis",
+   "Dog Diseases",
+   "Dogs",
+   "Imidocarb",
+   "Male",
+   "Pancytopenia",
+   "Treatment Outcome"
+  ],
+  "keywords": [],
+  "abstract": "An Akita Inu, living in Belgium, was presented with unusual clinical manifestations of acute babesiosis that included neurological signs and pancytopenia. Diagnosis was made by identifying Babesia canis in the blood smear. Neurological signs resolved after treatment with imidocarb diproprionate. Normalization of hematological abnormalities was gradual over 5 months.",
+  "corrections": [],
+  "epmc_first_pub_date": "2008-03-01",
+  "is_oa": "N",
+  "has_suppl": "N",
+  "found_by": [
+   "EP1_broad",
+   "EP2_species",
+   "PM1_broad",
+   "PM2_species",
+   "PM3_mechanism"
+  ],
+  "in_window": true,
+  "key": "PMID:18390102",
+  "source_files": [
+   "candidates.jsonl"
+  ]
+ },
+ "screening": {
+  "key": "PMID:18390102",
+  "decision": "include",
+  "include_type": "case_report",
+  "exclude_reason": null,
+  "primary_category": "NEU",
+  "secondary_tags": [
+   "ERY"
+  ],
+  "species": "B. canis (confirmed, blood smear)",
+  "rationale": "A case report of an unusual presentation with neurological signs and pancytopenia that resolved with treatment: a distinct syndrome (cerebral involvement).",
+  "stage": "screen",
+  "batch": "r4_04.md",
+  "screening_round": "r4"
+ },
+ "fulltext_check": {
+  "key": "PMID:18390102",
+  "pmcid": "PMC2249724",
+  "checked": "2026-10-28",
+  "fulltext_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC2249724/fullTextXML",
+  "fulltext_status": 500
+ }
+}

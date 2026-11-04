@@ -1,0 +1,139 @@
+{
+ "id": "CB137",
+ "filename": "CB137_2025_metabolomics-insights-into-salivary-profile-babesia.md",
+ "key": "PMID:40305281",
+ "record": {
+  "pmid": "40305281",
+  "pmcid": "PMC12024595",
+  "doi": "10.3390/biom15040520",
+  "title": "Metabolomics Insights into Salivary Profile in Dogs with Babesia canis Infection.",
+  "authors": [
+   "Kuleš J",
+   "Rubić I",
+   "Rešetar Maslov D",
+   "Efendić M",
+   "Martinković K",
+   "Pongrac E",
+   "Šmit I",
+   "Potočnjak D",
+   "Barić Rafaj R",
+   "Mrljak V"
+  ],
+  "journal": "Biomolecules",
+  "journal_abbrev": "Biomolecules",
+  "volume": "15",
+  "issue": "4",
+  "pages": null,
+  "language": [
+   "eng"
+  ],
+  "issue_date": "2025-04-01",
+  "issue_date_precision": "day",
+  "epub_date": "2025-04-01",
+  "pubmed_entry_date": "2025-04-30",
+  "first_pub_date": "2025-04-01",
+  "publication_types": [
+   "Journal Article",
+   "Research Support, Non-U.S. Gov't"
+  ],
+  "mesh": [
+   "Animals",
+   "Dogs",
+   "Babesiosis",
+   "Babesia",
+   "Saliva",
+   "Metabolomics",
+   "Dog Diseases",
+   "Female",
+   "Male",
+   "Metabolome"
+  ],
+  "keywords": [
+   "dog",
+   "saliva metabolome",
+   "vector-borne diseases"
+  ],
+  "abstract": "Babesiosis is a significant vector-borne zoonotic disease with major global economic and health implications, affecting various vertebrate hosts. Babesia parasites are auxotrophic for essential nutrients, relying on their hosts for metabolic support. This study investigated salivary metabolomic changes in dogs naturally infected with Babesia canis (N = 14) compared to healthy controls (N = 14) using untargeted and targeted mass spectrometry-based approaches. Saliva, a biofluid rich in metabolites, undergoes alterations in response to systemic diseases, making it a promising medium for studying host-pathogen interactions. Metabolomic profiling was performed using a Dionex UltiMate 3000 UHPLC system coupled with a Thermo Orbitrap Q Exactive mass spectrometer. An untargeted analysis detected 2257 salivary features, of which, 868 were significantly altered, with seven metabolites identified by reference to standards. A targeted analysis revealed significant changes in seven metabolites. Functional bioinformatics indicated disruptions in amino acid, nucleotide, and lipid metabolism, alongside alterations in energy production pathways, and purine metabolism. These findings provide critical insights into the metabolic shifts underlying canine babesiosis, supporting the development of advanced diagnostic and therapeutic strategies in the future. This study highlights the intricate interplay between host and pathogen, particularly in nutrient acquisition and metabolic regulation.",
+  "corrections": [],
+  "epmc_first_pub_date": "2025-04-01",
+  "is_oa": "Y",
+  "has_suppl": "Y",
+  "found_by": [
+   "EP1_broad",
+   "EP2_species",
+   "PM1_broad",
+   "PM2_species",
+   "PM3_mechanism"
+  ],
+  "in_window": true
+ },
+ "screening": {
+  "key": "PMID:40305281",
+  "decision": "include",
+  "include_type": "primary",
+  "exclude_reason": null,
+  "primary_category": "OXO",
+  "secondary_tags": [
+   "MET"
+  ],
+  "species": "B. canis (natural infection; identification method not stated in abstract)",
+  "rationale": "Salivary metabolomics in naturally infected dogs shows amino acid, lipid, nucleotide and energy metabolism disruption; host-response omics.",
+  "stage": "screen",
+  "batch": "r1_22.md",
+  "screening_round": "r1"
+ },
+ "fulltext_check": {
+  "key": "PMID:40305281",
+  "pmcid": "PMC12024595",
+  "checked": "2026-10-23",
+  "fulltext_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12024595/fullTextXML",
+  "fulltext_status": 200,
+  "data_availability": [
+   "Data Availability StatementThe original contributions presented in the study are included in the article/Supplementary Materials, further inquiries can be directed to the corresponding author."
+  ],
+  "supplementary": [
+   {
+    "label": "",
+    "caption": "",
+    "file": "biomolecules-15-00520-s001.zip"
+   },
+   {
+    "label": "",
+    "caption": "",
+    "file": "biomolecules-15-00520-s001.zip"
+   }
+  ],
+  "repository_links": [],
+  "section_titles": [
+   "1. Introduction",
+   "2. Materials and Methods",
+   "2.1. Animals and Sample Collection",
+   "2.2. Untargeted Metabolomics Analysis",
+   "2.2.1. Sample Preparation and LC-MS/MS Analysis",
+   "2.2.2. Data Processing for Untargeted Metabolomics",
+   "2.3. Targeted Metabolomics Analysis",
+   "2.3.1. Sample Preparation and Mass Spectroscopy Analysis (FIA-MS/MS and LC-MS/MS)",
+   "2.3.2. Data Processing for Targeted Metabolomics",
+   "2.4. Statistical and Bioinformatic Analysis",
+   "3. Results",
+   "3.1. Untargeted Metabolomics",
+   "3.2. Targeted Metabolomics",
+   "4. Discussion",
+   "5. Conclusions",
+   "Acknowledgments",
+   "Supplementary Materials",
+   "Author Contributions",
+   "Institutional Review Board Statement",
+   "Informed Consent Statement",
+   "Data Availability Statement",
+   "Conflicts of Interest",
+   "Funding Statement",
+   "Footnotes",
+   "References",
+   "Associated Data",
+   "Supplementary Materials",
+   "Data Availability Statement"
+  ],
+  "has_body": true
+ }
+}

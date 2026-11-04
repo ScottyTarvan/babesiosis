@@ -1,0 +1,52 @@
+{
+ "id": "CB466",
+ "filename": "CB466_2014_babesiosis-veterinary-teaching-hospital-airlangga-university.md",
+ "key": "https://openalex.org/W2158893925",
+ "record": {
+  "pmid": null,
+  "pmcid": null,
+  "doi": null,
+  "title": "Babesiosis in Dogs in Veterinary Teaching Hospital Airlangga University",
+  "journal": null,
+  "authors": [
+   "Nusdianto Triakoso"
+  ],
+  "first_pub_date": "2014-01-01",
+  "type": "article",
+  "language": [
+   "en"
+  ],
+  "abstract": null,
+  "abstract_source": "OpenAlex abstract_inverted_index (reconstructed)",
+  "source_id": "https://openalex.org/W2158893925",
+  "src": "OPENALEX",
+  "found_by": [
+   "OA:title_and_abstract"
+  ],
+  "in_window": true,
+  "key": "https://openalex.org/W2158893925",
+  "source_files": [
+   "candidates_r3.jsonl"
+  ]
+ },
+ "screening": {
+  "key": "https://openalex.org/W2158893925",
+  "decision": "uncertain",
+  "include_type": null,
+  "exclude_reason": null,
+  "primary_category": "SEV",
+  "secondary_tags": [],
+  "species": "B. canis (keyword; status unspecified)",
+  "rationale": "Landing page (VetMedika J Klin Vet 2014;2(2):32-36): the abstract is one sentence that only defines babesiosis. The hospital case-series title could hold a clinicopathological profile or only occurrence data, which cannot be judged without the full text.",
+  "stage": "adjudicated",
+  "batch": "r4_19.md",
+  "first_decision": "uncertain",
+  "screening_round": "r4"
+ },
+ "fulltext_check": {
+  "key": "https://openalex.org/W2158893925",
+  "pmcid": null,
+  "checked": "2026-10-28",
+  "fulltext_status": "no_pmcid"
+ }
+}

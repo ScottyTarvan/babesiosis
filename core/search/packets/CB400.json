@@ -1,0 +1,59 @@
+{
+ "id": "CB400",
+ "filename": "CB400_2010_systemic-venous-thrombosis-babesia-canis-canis.md",
+ "key": "DOI:10.1016/j.jcpa.2010.09.057",
+ "record": {
+  "pmid": null,
+  "doi": "10.1016/j.jcpa.2010.09.057",
+  "title": "Systemic Venous Thrombosis in Babesia canis canis Infection of Two Dogs",
+  "journal": "Journal of Comparative Pathology",
+  "authors": [
+   "Beck A",
+   "Beck R",
+   "Mrljak V",
+   "Kurilj A",
+   "Artuković B",
+   "Grabarević Z"
+  ],
+  "first_pub_date": "2010-11-01",
+  "crossref_dates": {
+   "published-print": "2010-11-01",
+   "issued": "2010-11-01"
+  },
+  "abstract": null,
+  "language": [],
+  "found_by": [
+   "CR:Babesia gibsoni",
+   "CR:Babesia vogeli",
+   "CR:Babesia vulpes"
+  ],
+  "in_window": true,
+  "src": "CROSSREF",
+  "key": "DOI:10.1016/j.jcpa.2010.09.057",
+  "source_files": [
+   "candidates_crossref.jsonl"
+  ]
+ },
+ "screening": {
+  "key": "DOI:10.1016/j.jcpa.2010.09.057",
+  "decision": "uncertain",
+  "include_type": null,
+  "exclude_reason": null,
+  "primary_category": "COA",
+  "secondary_tags": [
+   "END"
+  ],
+  "species": "B. canis canis (stated in title; method unknown)",
+  "rationale": "Based on the title and Crossref metadata (no abstract; the Elsevier landing page did not load): systemic venous thrombosis in two infected dogs would be a distinct syndrome. However, the record is a single page (J Comp Pathol 143(4):327) and may be a meeting abstract (not_peer_reviewed), so the full text must confirm the publication type.",
+  "stage": "adjudicated",
+  "batch": "r4_10.md",
+  "first_decision": "uncertain",
+  "screening_round": "r4"
+ },
+ "fulltext_check": {
+  "key": "DOI:10.1016/j.jcpa.2010.09.057",
+  "pmcid": null,
+  "checked": "2026-10-28",
+  "fulltext_status": "no_pmcid"
+ }
+}

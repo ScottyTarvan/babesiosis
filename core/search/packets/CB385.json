@@ -1,0 +1,59 @@
+{
+ "id": "CB385",
+ "filename": "CB385_2010_von-willebrand-factor-antigen-f-viii.md",
+ "key": "https://openalex.org/W2976083089",
+ "record": {
+  "pmid": null,
+  "pmcid": null,
+  "doi": null,
+  "title": "Von Willebrand factor antigen, F VIII activity and fibrinogen concentration in babesiosis of dogs",
+  "journal": null,
+  "authors": [
+   "Josipa Kuleš",
+   "Renata Barić Rafaj",
+   "Nada Vrkić",
+   "Vlasta Zovko",
+   "Goran Abramović",
+   "Vladimir Mrljak"
+  ],
+  "first_pub_date": "2010-01-01",
+  "type": "article",
+  "language": [
+   "en"
+  ],
+  "abstract": null,
+  "abstract_source": "OpenAlex abstract_inverted_index (reconstructed)",
+  "source_id": "https://openalex.org/W2976083089",
+  "src": "OPENALEX",
+  "found_by": [
+   "OA:title_and_abstract"
+  ],
+  "in_window": true,
+  "key": "https://openalex.org/W2976083089",
+  "source_files": [
+   "candidates_r3.jsonl"
+  ]
+ },
+ "screening": {
+  "key": "https://openalex.org/W2976083089",
+  "decision": "uncertain",
+  "include_type": null,
+  "exclude_reason": null,
+  "primary_category": "COA",
+  "secondary_tags": [
+   "END"
+  ],
+  "species": "Canine Babesia, presumed B. canis (unspecified; Croatia)",
+  "rationale": "Title only, checked on the OpenAlex record (Kules, Baric Rafaj, Mrljak et al., 2010): no venue and no pages, and the CroRIS landing page is behind a bot check. The topic is eligible coagulation data, but this may be a congress abstract (compare Baric Rafaj et al., JVIM 2013), so the document type needs a full-text check.",
+  "stage": "adjudicated",
+  "batch": "r4_08.md",
+  "first_decision": "uncertain",
+  "screening_round": "r4"
+ },
+ "fulltext_check": {
+  "key": "https://openalex.org/W2976083089",
+  "pmcid": null,
+  "checked": "2026-10-28",
+  "fulltext_status": "no_pmcid"
+ }
+}

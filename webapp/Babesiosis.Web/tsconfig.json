@@ -1,0 +1,42 @@
+/* To learn more about Typescript configuration file: https://www.typescriptlang.org/docs/handbook/tsconfig-json.html. */
+/* To learn more about Angular compiler options: https://angular.dev/reference/configs/angular-compiler-options. */
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "outDir": "./dist/out-tsc",
+    "strict": false,
+    "strictNullChecks": false,
+    "noImplicitOverride": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "skipLibCheck": true,
+    /* Lets specs import the shared FE/BE parity fixtures (report-parity.*.json)
+       so one committed file is the single source of truth for both suites. */
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "moduleResolution": "bundler",
+    "importHelpers": true,
+    "target": "ES2022",
+    "module": "ES2022",
+    "paths": {
+      "app/*": [ "./src/app/*" ],
+      "@auth/*": [ "./src/app/modules/auth/*" ],
+      "@settings/*": [ "./src/app/modules/settings/*" ],
+      "@core": [ "./src/app/core/index.ts" ],
+      "@core/commands/*": [ "./src/app/core/commands/*" ],
+      "@core/guards/*": [ "./src/app/core/guards/*" ],
+      "@core/services/*": [ "./src/app/core/services/*" ],
+      "@core/viewmodels/*": [ "./src/app/core/viewmodels/*" ],
+      "@layouts/*": [ "./src/app/layout/*" ]
+    }
+  },
+  "angularCompilerOptions": {
+    "enableI18nLegacyMessageIdFormat": false,
+    "strictInjectionParameters": true,
+    "strictInputAccessModifiers": true,
+    "strictTemplates": true
+  }
+}

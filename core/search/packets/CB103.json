@@ -1,0 +1,94 @@
+{
+ "id": "CB103",
+ "filename": "CB103_2022_serum-urine-profiling-high-throughput-tmt.md",
+ "key": "PMID:36174949",
+ "record": {
+  "pmid": "36174949",
+  "pmcid": null,
+  "doi": "10.1016/j.jprot.2022.104735",
+  "title": "Serum and urine profiling by high-throughput TMT-based proteomics for the investigation of renal dysfunction in canine babesiosis.",
+  "authors": [
+   "Bilić P",
+   "Horvatić A",
+   "Kuleš J",
+   "Gelemanović A",
+   "Beer Ljubić B",
+   "Mũnoz-Prieto A",
+   "Gotić J",
+   "Žubčić D",
+   "Barić Rafaj R",
+   "Mrljak V"
+  ],
+  "journal": "Journal of proteomics",
+  "journal_abbrev": "J Proteomics",
+  "volume": "270",
+  "issue": null,
+  "pages": "104735",
+  "language": [
+   "eng"
+  ],
+  "issue_date": "2023-01-06",
+  "issue_date_precision": "day",
+  "epub_date": "2022-09-27",
+  "pubmed_entry_date": "2022-09-30",
+  "first_pub_date": "2022-09-27",
+  "publication_types": [
+   "Journal Article",
+   "Research Support, Non-U.S. Gov't"
+  ],
+  "mesh": [
+   "Dogs",
+   "Animals",
+   "Babesiosis",
+   "Proteomics",
+   "Proteome",
+   "Dog Diseases",
+   "Biomarkers",
+   "Kidney Diseases"
+  ],
+  "keywords": [
+   "Babesiosis",
+   "Kidney dysfunction",
+   "Quantitative proteomics",
+   "Serum",
+   "Tandem mass tag",
+   "Urine"
+  ],
+  "abstract": "Canine babesiosis is a tick-borne disease caused by Babesia canis, with acute kidney injury as one of the common complications. In the study 8 healthy control dogs and 22 dogs with naturally occurring babesiosis were enrolled, with the aim to analyse differences in serum and urinary proteomes between healthy dogs and dogs with different degree of renal dysfunction in babesiosis using a label-based high-throughput quantitative proteomic approach. In serum, 58 proteins were found differentially abundant between healthy controls and groups of dogs with different degrees of renal dysfunction in babesiosis, while in urine there were 259 differentially abundant proteins. In addition, altered biological pathways were detected in the diseased dogs using bioinformatics tools and validation of several candidate biomarkers was performed. SIGNIFICANCE: The main aim of this comprehensive study was to perform analyses of serum and urinary proteomes of dogs with renal dysfunction in babesiosis compared to healthy dogs using, for the first time, a high-throughput proteomic method and functional enrichment analyses. Serum and urine samples of the same dogs were investigated in order to gain a more complete picture of pathologic changes taking place in renal dysfunction in babesiosis. We highlighted two putative biomarkers validated herein which could be of importance for early diagnosis of renal dysfunction in canine babesiosis, as they are easily accessible from urine and their concentration rises before the appearance of azotaemia: urinary neutrophil gelatinase-associated lipocalin (NGAL) and urinary liver-type fatty acid-binding protein (L-FABP).",
+  "corrections": [],
+  "epmc_first_pub_date": "2022-09-27",
+  "is_oa": "N",
+  "has_suppl": "N",
+  "found_by": [
+   "EP1_broad",
+   "EP2_species",
+   "PM1_broad",
+   "PM2_species",
+   "PM3_mechanism"
+  ],
+  "in_window": true,
+  "online_vs_issue": "online 2022-09-27; issue 2023-01-06 (day)"
+ },
+ "screening": {
+  "key": "PMID:36174949",
+  "decision": "include",
+  "include_type": "primary",
+  "exclude_reason": null,
+  "primary_category": "REN",
+  "secondary_tags": [
+   "INF",
+   "MET"
+  ],
+  "species": "B. canis (suspected, stated causative agent; identification method not given)",
+  "rationale": "Serum/urine proteomics in naturally infected dogs with babesiosis-associated renal dysfunction; pathways and early AKI biomarkers (NGAL, L-FABP).",
+  "stage": "screen",
+  "batch": "r1_16.md",
+  "screening_round": "r1"
+ },
+ "fulltext_check": {
+  "key": "PMID:36174949",
+  "pmcid": null,
+  "checked": "2026-10-23",
+  "fulltext_status": "no_pmcid"
+ }
+}

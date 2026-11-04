@@ -1,0 +1,569 @@
+{
+ "id": "CB218",
+ "document": "data/markdown/CB218.en.md",
+ "source_format": "pdf",
+ "translated": true,
+ "words": 970,
+ "run_utc": "2026-10-30T05:35:14+00:00",
+ "threshold": 0.85,
+ "kept_types": [
+  "T019",
+  "T020",
+  "T037",
+  "T046",
+  "T047",
+  "T048",
+  "T049",
+  "T050",
+  "T184",
+  "T190",
+  "T191"
+ ],
+ "term_count": 31,
+ "terms": [
+  {
+   "term": "C0024198",
+   "concept": "Lyme Disease",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 12,
+   "mentions_negated": 0,
+   "mentions_affirmed": 12,
+   "sections": {
+    "introduction": 8,
+    "unlabelled": 4
+   },
+   "forms": {
+    "lyme disease": 12
+   },
+   "best_score": 0.988
+  },
+  {
+   "term": "C0085399",
+   "concept": "Ehrlichiosis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 12,
+   "mentions_negated": 0,
+   "mentions_affirmed": 12,
+   "sections": {
+    "introduction": 8,
+    "unlabelled": 4
+   },
+   "forms": {
+    "ehrlichiosis": 12
+   },
+   "best_score": 0.952
+  },
+  {
+   "term": "C0002797",
+   "concept": "Anaplasmosis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 8,
+   "mentions_negated": 0,
+   "mentions_affirmed": 8,
+   "sections": {
+    "unlabelled": 4,
+    "introduction": 4
+   },
+   "forms": {
+    "anaplasmosis": 8
+   },
+   "best_score": 0.974
+  },
+  {
+   "term": "C0004576",
+   "concept": "Babesiosis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 8,
+   "mentions_negated": 0,
+   "mentions_affirmed": 8,
+   "sections": {
+    "unlabelled": 4,
+    "introduction": 4
+   },
+   "forms": {
+    "babesiosis": 8
+   },
+   "best_score": 0.972
+  },
+  {
+   "term": "C0029134",
+   "concept": "Optic Neuritis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 7,
+   "mentions_negated": 0,
+   "mentions_affirmed": 7,
+   "sections": {
+    "unlabelled": 4,
+    "introduction": 3
+   },
+   "forms": {
+    "optic disc neuritis": 6,
+    "optic neuritis": 1
+   },
+   "best_score": 0.99
+  },
+  {
+   "term": "C0042164",
+   "concept": "Uveitis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 7,
+   "mentions_negated": 0,
+   "mentions_affirmed": 7,
+   "sections": {
+    "unlabelled": 4,
+    "introduction": 3
+   },
+   "forms": {
+    "uveitis": 7
+   },
+   "best_score": 0.953
+  },
+  {
+   "term": "C0009763",
+   "concept": "Conjunctivitis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 6,
+   "mentions_negated": 0,
+   "mentions_affirmed": 6,
+   "sections": {
+    "unlabelled": 4,
+    "introduction": 2
+   },
+   "forms": {
+    "conjunctivitis": 6
+   },
+   "best_score": 0.972
+  },
+  {
+   "term": "C0005658",
+   "concept": "bite injury",
+   "semantic_types": [
+    "Injury or Poisoning"
+   ],
+   "mentions": 5,
+   "mentions_negated": 1,
+   "mentions_affirmed": 4,
+   "sections": {
+    "unlabelled": 2,
+    "conclusion": 2,
+    "introduction": 1
+   },
+   "forms": {
+    "bites": 4,
+    "bite": 1
+   },
+   "best_score": 0.982
+  },
+  {
+   "term": "C0012634",
+   "concept": "Disease",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 5,
+   "mentions_negated": 0,
+   "mentions_affirmed": 5,
+   "sections": {
+    "unlabelled": 2,
+    "conclusion": 2,
+    "introduction": 1
+   },
+   "forms": {
+    "diseases": 5
+   },
+   "best_score": 0.984
+  },
+  {
+   "term": "C0035305",
+   "concept": "Retinal Detachment",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 5,
+   "mentions_negated": 0,
+   "mentions_affirmed": 5,
+   "sections": {
+    "introduction": 3,
+    "unlabelled": 2
+   },
+   "forms": {
+    "retinal detachment": 4,
+    "retinal detachments": 1
+   },
+   "best_score": 0.963
+  },
+  {
+   "term": "C0242781",
+   "concept": "disease transmission",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 4,
+   "mentions_negated": 0,
+   "mentions_affirmed": 4,
+   "sections": {
+    "unlabelled": 2,
+    "introduction": 1,
+    "conclusion": 1
+   },
+   "forms": {
+    "transmitted": 4
+   },
+   "best_score": 0.972
+  },
+  {
+   "term": "C0008513",
+   "concept": "Chorioretinitis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "introduction": 3
+   },
+   "forms": {
+    "chorioretinitis": 3
+   },
+   "best_score": 0.995
+  },
+  {
+   "term": "C0851162",
+   "concept": "Infections of musculoskeletal system",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 3,
+   "mentions_negated": 0,
+   "mentions_affirmed": 3,
+   "sections": {
+    "introduction": 3
+   },
+   "forms": {
+    "infections": 3
+   },
+   "best_score": 0.971
+  },
+  {
+   "term": "C0006035",
+   "concept": "Borrelia Infections",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "introduction": 2
+   },
+   "forms": {
+    "borreliosis": 2
+   },
+   "best_score": 0.984
+  },
+  {
+   "term": "C0015398",
+   "concept": "Eye Diseases, Hereditary",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "unlabelled": 2
+   },
+   "forms": {
+    "hereditary eye diseases": 2
+   },
+   "best_score": 0.984
+  },
+  {
+   "term": "C0022568",
+   "concept": "Keratitis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "unlabelled": 2
+   },
+   "forms": {
+    "keratitis": 2
+   },
+   "best_score": 0.971
+  },
+  {
+   "term": "C1640363",
+   "concept": "Vector Borne Diseases",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 2,
+   "mentions_negated": 0,
+   "mentions_affirmed": 2,
+   "sections": {
+    "conclusion": 2
+   },
+   "forms": {
+    "vector-borne diseases": 2
+   },
+   "best_score": 0.957
+  },
+  {
+   "term": "C0005747",
+   "concept": "Blepharospasm",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "blepharospasm": 1
+   },
+   "best_score": 0.994
+  },
+  {
+   "term": "C0009760",
+   "concept": "Conjunctival hemorrhage",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "conjunctival/subconjunctival haemorrhages": 1
+   },
+   "best_score": 0.854
+  },
+  {
+   "term": "C0010037",
+   "concept": "Corneal edema",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "corneal oedema": 1
+   },
+   "best_score": 0.965
+  },
+  {
+   "term": "C0012359",
+   "concept": "Pathological Dilatation",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "dilation": 1
+   },
+   "best_score": 0.962
+  },
+  {
+   "term": "C0019080",
+   "concept": "Hemorrhage",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "haemorrhages": 1
+   },
+   "best_score": 0.987
+  },
+  {
+   "term": "C0021368",
+   "concept": "Inflammation",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "inflammation": 1
+   },
+   "best_score": 0.958
+  },
+  {
+   "term": "C0022573",
+   "concept": "Keratoconjunctivitis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "unlabelled": 1
+   },
+   "forms": {
+    "keratoconjunctivitis": 1
+   },
+   "best_score": 0.977
+  },
+  {
+   "term": "C0027686",
+   "concept": "Pathologic Neovascularization",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "vascularisation": 1
+   },
+   "best_score": 0.968
+  },
+  {
+   "term": "C0035317",
+   "concept": "Retinal Hemorrhage",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "retinal haemorrhages": 1
+   },
+   "best_score": 0.975
+  },
+  {
+   "term": "C0041582",
+   "concept": "Ulcer",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "ulceration": 1
+   },
+   "best_score": 0.941
+  },
+  {
+   "term": "C0042165",
+   "concept": "Anterior uveitis",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "anterior uveitis": 1
+   },
+   "best_score": 0.94
+  },
+  {
+   "term": "C0152227",
+   "concept": "Excessive tearing",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "epiphora": 1
+   },
+   "best_score": 0.989
+  },
+  {
+   "term": "C0162835",
+   "concept": "Hypopigmentation disorder",
+   "semantic_types": [
+    "Disease or Syndrome"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "depigmentation": 1
+   },
+   "best_score": 0.953
+  },
+  {
+   "term": "C0332448",
+   "concept": "Infiltration",
+   "semantic_types": [
+    "Pathologic Function"
+   ],
+   "mentions": 1,
+   "mentions_negated": 0,
+   "mentions_affirmed": 1,
+   "sections": {
+    "introduction": 1
+   },
+   "forms": {
+    "infiltration": 1
+   },
+   "best_score": 0.94
+  }
+ ]
+}

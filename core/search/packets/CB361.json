@@ -1,0 +1,88 @@
+{
+ "id": "CB361",
+ "filename": "CB361_2009_possible-emergence-drug-resistant-variants-babesia.md",
+ "key": "PMID:19645835",
+ "record": {
+  "pmid": "19645835",
+  "pmcid": null,
+  "doi": "10.1111/j.1939-1676.2009.0300.x",
+  "title": "Possible emergence of drug-resistant variants of Babesia gibsoni in clinical cases treated with atovaquone and azithromycin.",
+  "authors": [
+   "Sakuma M",
+   "Setoguchi A",
+   "Endo Y"
+  ],
+  "journal": "Journal of veterinary internal medicine",
+  "journal_abbrev": "J Vet Intern Med",
+  "volume": "23",
+  "issue": "3",
+  "pages": "493-8",
+  "language": [
+   "eng"
+  ],
+  "issue_date": "2009-01-01",
+  "issue_date_precision": "year",
+  "epub_date": null,
+  "pubmed_entry_date": "2009-08-04",
+  "first_pub_date": "2009-01-01",
+  "publication_types": [
+   "Journal Article",
+   "Research Support, Non-U.S. Gov't"
+  ],
+  "mesh": [
+   "Animals",
+   "Antiprotozoal Agents",
+   "Atovaquone",
+   "Azithromycin",
+   "Babesia",
+   "Babesiosis",
+   "Dog Diseases",
+   "Dogs",
+   "Drug Resistance",
+   "Female",
+   "Male",
+   "Retrospective Studies"
+  ],
+  "keywords": [],
+  "abstract": "BACKGROUND: There is no well-established treatment strategy for Babesia gibsoni infection. A new therapeutic protocol using atovaquone (ATV) and azithromycin (AZM) has been proposed, but there is concern about the possible induction of relapse and the emergence of ATV-resistant variants after treatment.\nOBJECTIVE: To evaluate the clinical use of combination therapy with ATV and AZM as a first-line treatment of clinical B. gibsoni infection in dogs, and to investigate the emergence of ATV-resistant variants.\nANIMALS: Eight B. gibsoni naturally infected dogs showing signs of acute onset of disease.\nMETHODS: Retrospective case study. Eight clinical cases received combination therapy with ATV and AZM at Kagoshima University Veterinary Teaching Hospital during 2007-2008, and their clinical courses and clinicopathological parameters were evaluated. In addition, alterations in the cytochrome b (CYTb) gene of B. gibsoni were analyzed by polymerase chain reaction and DNA sequencing techniques.\nRESULTS: All of the dogs responded well to the treatment, with rapid improvement in their clinical condition and hematological parameters. However, 5 of the 8 dogs relapsed after treatment. Analysis of the CYTb gene strongly suggested the emergence of ATV-resistant variants after treatment.\nCONCLUSIONS AND CLINICAL IMPORTANCE: The combination of ATV and AZM can be used as a first-line treatment for dogs with babesiosis, but relapses occur. Attention should be paid to the possible in vivo selection of drug-resistant variants.",
+  "corrections": [],
+  "epmc_first_pub_date": "2009-05-01",
+  "is_oa": "N",
+  "has_suppl": "N",
+  "found_by": [
+   "EP1_broad",
+   "EP2_species",
+   "PM1_broad",
+   "PM2_species"
+  ],
+  "in_window": true,
+  "date_discrepancy": "PubMed-derived 2009-01-01 vs Europe PMC firstPublicationDate 2009-05-01",
+  "key": "PMID:19645835",
+  "source_files": [
+   "candidates.jsonl"
+  ]
+ },
+ "screening": {
+  "key": "PMID:19645835",
+  "decision": "include",
+  "include_type": "primary",
+  "exclude_reason": null,
+  "primary_category": "ERY",
+  "secondary_tags": [
+   "SEV"
+  ],
+  "species": "B. gibsoni (confirmed, PCR/sequencing)",
+  "rationale": "Based on the abstract. This is a retrospective series of 8 naturally infected dogs whose clinicopathological and haematological parameters were evaluated through treatment and relapse. Under the criteria, a treatment study that also reports host clinicopathology in infected dogs is included.",
+  "stage": "adjudicated",
+  "batch": "r4_06.md",
+  "first_decision": "exclude",
+  "rescue_reason": "Retrospective clinicopathological study of 8 B. gibsoni-infected dogs. It reports haematological and clinicopathological parameters with improvement and relapse, so host data in infected dogs fall inside the rescue rule despite the treatment focus.",
+  "screening_round": "r4"
+ },
+ "fulltext_check": {
+  "key": "PMID:19645835",
+  "pmcid": null,
+  "checked": "2026-10-28",
+  "fulltext_status": "no_pmcid"
+ }
+}

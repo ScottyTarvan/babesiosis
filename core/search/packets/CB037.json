@@ -1,0 +1,92 @@
+{
+ "id": "CB037",
+ "filename": "CB037_2019_disease-severity-blood-cytokine-concentrations-natural.md",
+ "key": "PMID:31063593",
+ "record": {
+  "pmid": "31063593",
+  "pmcid": null,
+  "doi": "10.1111/pim.12630",
+  "title": "Disease severity and blood cytokine concentrations in dogs with natural Babesia rossi infection.",
+  "authors": [
+   "Leisewitz A",
+   "Goddard A",
+   "De Gier J",
+   "Van Engelshoven J",
+   "Clift S",
+   "Thompson P",
+   "Schoeman JP"
+  ],
+  "journal": "Parasite immunology",
+  "journal_abbrev": "Parasite Immunol",
+  "volume": "41",
+  "issue": "7",
+  "pages": "e12630",
+  "language": [
+   "eng"
+  ],
+  "issue_date": "2019-07-01",
+  "issue_date_precision": "month",
+  "epub_date": "2019-05-20",
+  "pubmed_entry_date": "2019-05-08",
+  "first_pub_date": "2019-05-20",
+  "publication_types": [
+   "Journal Article",
+   "Research Support, Non-U.S. Gov't"
+  ],
+  "mesh": [
+   "Animals",
+   "Babesia",
+   "Babesiosis",
+   "Biomarkers",
+   "Cytokines",
+   "Dog Diseases",
+   "Dogs",
+   "Female",
+   "Male"
+  ],
+  "keywords": [
+   "Babesia rossi",
+   "cytokine storm",
+   "disease",
+   "dog",
+   "pathogenesis",
+   "tick-borne"
+  ],
+  "abstract": "AIMS: Babesia rossi causes severe disease in dogs. Here, we describe the association between serum cytokine concentrations and disease severity.\nMETHODS: Seventeen controls and 55 PCR confirmed B rossi-infected dogs were included. Diseased dogs were subdivided into 23 critically ill and 32 relatively well cases. Serum concentrations of 11 cytokines and biochemical markers of disease severity were determined.\nRESULTS: Significant differences were detected for IL-6, IL-8, IL-10, MCP-1 and TNF-α between the groups. Generally, the more complicated the disease, the more pro-inflammatory the cytokine milieu. IL-8 showed a reverse trend and was negatively correlated with disease severity. IL-6, MCP-1 and TNF-α were also significantly higher in the dogs that died (n = 9) compared to the dogs that survived (n = 46). IL-8 showed the opposite. MCP-1 and TNF-α were negatively correlated with biochemical markers of severity. Glucose was negatively correlated with IL-6. Cortisol, peripheral parasite density and band neutrophil count were positively correlated, whilst thyroid hormone was negatively correlated with IL-6, MCP-1 and TNF-α.\nCONCLUSIONS: As in malaria and sepsis, B rossi infection induces a pro-inflammatory cytokine storm that correlates with disease severity and adverse outcome. The multiplicity of cytokines involved argues for redundancy in the system once the disease is established.",
+  "corrections": [],
+  "epmc_first_pub_date": "2019-05-20",
+  "is_oa": "N",
+  "has_suppl": "N",
+  "found_by": [
+   "EP1_broad",
+   "EP2_species",
+   "PM1_broad",
+   "PM2_species",
+   "PM3_mechanism"
+  ],
+  "in_window": true,
+  "online_vs_issue": "online 2019-05-20; issue 2019-07-01 (month)"
+ },
+ "screening": {
+  "key": "PMID:31063593",
+  "decision": "include",
+  "include_type": "primary",
+  "exclude_reason": null,
+  "primary_category": "INF",
+  "secondary_tags": [
+   "SEV",
+   "MET"
+  ],
+  "species": "B. rossi (confirmed, PCR)",
+  "rationale": "Serum cytokines (IL-6, TNF-alpha, MCP-1, IL-10, IL-8) correlate with severity and death in PCR-confirmed B. rossi dogs; cytokine storm.",
+  "stage": "screen",
+  "batch": "r1_06.md",
+  "screening_round": "r1"
+ },
+ "fulltext_check": {
+  "key": "PMID:31063593",
+  "pmcid": null,
+  "checked": "2026-10-23",
+  "fulltext_status": "no_pmcid"
+ }
+}

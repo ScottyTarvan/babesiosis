@@ -1,0 +1,59 @@
+{
+ "id": "CB409",
+ "filename": "CB409_2011_liver-enzyme-activity-infected-babesia-canis.md",
+ "key": "https://openalex.org/W2159819183",
+ "record": {
+  "pmid": null,
+  "pmcid": null,
+  "doi": null,
+  "title": "Liver enzyme activity in dogs infected with Babesia canis",
+  "journal": null,
+  "authors": [
+   "Wojciech Zygner",
+   "Olga Gójska-Zygner",
+   "Ewa Długosz",
+   "H. Wędrychowicz"
+  ],
+  "first_pub_date": "2011-01-01",
+  "type": "article",
+  "language": [
+   "en"
+  ],
+  "abstract": "The influence of anaemia on alanine aminotransferase (ALT), aspartate aminotransferase (AST), and alkaline phosphatase (ALP) activities in dogs infected with B. canis was investigated. Samples of blood and serum from 230 infected dogs were divided into two groups: A (with anaemia) and B (without anaemia). The differences in the activities of the enzymes between both groups were not statistically significant. These results suggest that mild anaemia, as the only factor, has no influence on ALT, AST, or ALP activity in canine babesiosis. However, this study certainly cannot exclude the possibility that a more severe anaemia can have a major effect on the liver.",
+  "abstract_source": "OpenAlex abstract_inverted_index (reconstructed)",
+  "source_id": "https://openalex.org/W2159819183",
+  "src": "OPENALEX",
+  "found_by": [
+   "OA:title_and_abstract"
+  ],
+  "in_window": true,
+  "existing_id": "CB029",
+  "existing_retired": true,
+  "key": "https://openalex.org/W2159819183",
+  "source_files": [
+   "candidates_r3.jsonl"
+  ]
+ },
+ "screening": {
+  "key": "https://openalex.org/W2159819183",
+  "decision": "include",
+  "include_type": "primary",
+  "exclude_reason": null,
+  "primary_category": "MET",
+  "secondary_tags": [
+   "ERY"
+  ],
+  "species": "B. canis (infected dogs, species method not stated)",
+  "rationale": "ALT, AST and ALP activities in 230 infected dogs with and without anaemia, addressing hepatic enzyme changes and the effect of anaemia. Treated as a new record despite the retired ID CB029.",
+  "stage": "screen",
+  "batch": "r4_11.md",
+  "screening_round": "r4"
+ },
+ "fulltext_check": {
+  "key": "https://openalex.org/W2159819183",
+  "pmcid": null,
+  "checked": "2026-10-28",
+  "fulltext_status": "no_pmcid"
+ },
+ "replaces": "CB029"
+}

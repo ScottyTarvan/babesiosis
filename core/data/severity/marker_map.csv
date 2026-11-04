@@ -1,0 +1,400 @@
+alias,marker,marker_class,pattern,cui,source,note,articles
+lactate dehydrogenase,Lactate dehydrogenase,biochemistry,lactate dehydrogenase|\bldh\b,,seed,canonical,
+neutrophil-to-lymphocyte ratio,Neutrophil-to-lymphocyte ratio,haematology,neutrophil-? ?to-? ?lymphocyte|\bnlr\b,,seed,canonical,
+platelet-to-lymphocyte ratio,Platelet-to-lymphocyte ratio,haematology,platelet-? ?to-? ?lymphocyte|\bplr\b,,seed,canonical,
+urine protein:creatinine ratio,Urine protein:creatinine ratio,urine,protein ?[:/-] ?creatinine|protein-? ?to-? ?creatinine|\bupcr?\b|proteinuria,,seed,canonical,
+plasma ngal,Plasma NGAL,biochemistry,(plasma|serum) (ngal|neutrophil gelatinase)|\b[ps]ngal\b,,seed,canonical,
+urine specific gravity,Urine specific gravity,urine,specific gravity|\busg\b,,seed,canonical,
+urine osmolality,Urine osmolality,urine,osmolal|osmolar|\buosm,,seed,canonical,
+urinary kidney injury biomarkers,Urinary kidney injury biomarkers,urine,\bngal\b|lipocalin|\bkim-?1\b|urinary (ggt|gamma)|\buggt|retinol[- ]binding|\bu?nag\b|clusterin,,seed,canonical,
+cortisol:acth ratio,Cortisol:ACTH ratio,endocrine,cortisol ?[:/-] ?acth|cortisol-? ?to-? ?acth,,seed,canonical,
+ck-mb,CK-MB,cardiac,ck-?mb,,seed,canonical,
+plasma free haemoglobin,Plasma free haemoglobin,haematology,free h(a)?emoglobin|plasma h(a)?emoglobin|h(a)?emoglobin(a)?emia,,seed,canonical,
+haemoglobinuria,Haemoglobinuria,urine,h(a)?emoglobinuria|pigmenturia,,seed,canonical,
+red cell indices,Red cell indices,haematology,\bmcv\b|\bmchc?\b|mean (corpuscular|cell) (volume|h(a)?emoglobin),,seed,canonical,
+blood gases and oxygenation,Blood gases and oxygenation,acid-base and perfusion,\bpa?o2\b|\bpa?co2\b|partial pressure|oxygen (saturation|tension|content|extraction|delivery)|\bs[ap]o2\b|oxyh(a)?emoglobin|meth(a)?emoglobin|carboxyh(a)?emoglobin|\bp50\b|oxygen dissociation|hypox(a)?emi,,seed,canonical,
+albumin:globulin ratio,Albumin:globulin ratio,biochemistry,albumin ?[:/] ?globulin|albumin-? ?to-? ?globulin|\ba ?[:/] ?g ratio,,seed,canonical,
+serum protein electrophoresis fractions,Serum protein electrophoresis fractions,biochemistry,electrophore|(alpha|beta|gamma)-? ?[12]?-? ?globulin,,seed,canonical,
+angiopoietin-2:angiopoietin-1 ratio,Angiopoietin-2:angiopoietin-1 ratio,endothelial,angiopoietin.*ratio|ang-?2 ?[:/] ?ang-?1,,seed,canonical,
+asymmetric dimethylarginine / nitric oxide,Asymmetric dimethylarginine / nitric oxide,endothelial,asymmetric dimethylarginine|\badma\b|nitric oxide|nitrite|nitrate|\bnox\b,,seed,canonical,
+sdma,SDMA,biochemistry,\bsdma\b|(?<!a)symmetric dimethylarginine,,seed,canonical,
+thrombin-antithrombin complex / thrombin generation,Thrombin-antithrombin complex / thrombin generation,coagulation,thrombin-? ?antithrombin|\btat\b|thrombin generation,,seed,canonical,
+platelet function,Platelet function,coagulation,platelet (function|aggregation|activation)|p-selectin,,seed,canonical,
+mean platelet volume and platelet indices,Mean platelet volume and platelet indices,haematology,mean platelet volume|\bmpv\b|platelet indices|plateletcrit|platelet distribution width,,seed,canonical,
+mcp-1 (ccl2),MCP-1 (CCL2),cytokine,monocyte chemo(attractant|tactic) protein|\bmcp-?1|\bccl-?2\b,,seed,canonical,
+myeloperoxidase / mpxi,Myeloperoxidase / MPXI,haematology,myeloperoxidase|\bmpxi\b|\bmpo\b,,seed,canonical,
+band neutrophils,Band neutrophils,haematology,band (neutrophil|form|cell)s?|\bbands\b|left shift|immature neutrophil,,seed,canonical,
+lymphocyte subsets,Lymphocyte subsets,immunology,\bcd(4|8|21)\b|\b[bt][- ]cells?\b|\b[bt][- ]lymphocyte|lymphocyte subset,,seed,canonical,
+parasite dna load (qpcr),Parasite DNA load (qPCR),parasitology,(dna|copy) (load|number)|quantitative pcr|\bqpcr\b|\bct value|cycle threshold,,seed,canonical,
+icterus,Icterus,clinical sign,icter|jaundice,,seed,canonical,
+ferritin,Ferritin,acute phase protein,ferritin,,seed,canonical,
+haematocrit/pcv,Haematocrit/PCV,haematology,h(a)?ematocrit|packed cell volume|\bpcv\b|\bhct\b,,seed,canonical,
+haemoglobin,Haemoglobin,haematology,h(a)?emoglobin|\bhgb\b|\bhb\b,,seed,canonical,
+red blood cell count,Red blood cell count,haematology,red (blood )?cell count|erythrocyte count|\brbc\b|^erythrocytes?$,,seed,canonical,
+red cell distribution width,Red cell distribution width,haematology,\brdw\b|red (blood )?cell distribution width,,seed,canonical,
+reticulocytes,Reticulocytes,haematology,reticulocyt,,seed,canonical,
+nucleated red blood cells,Nucleated red blood cells,haematology,nucleated red|\bnrbcs?\b|normoblast,,seed,canonical,
+autoagglutination,Autoagglutination,haematology,agglutinat,,seed,canonical,
+spherocytes,Spherocytes,haematology,spherocyt,,seed,canonical,
+direct antiglobulin (coombs) test,Direct antiglobulin (Coombs) test,immunology,coombs|antiglobulin,,seed,canonical,
+white blood cell count,White blood cell count,haematology,white (blood )?cell|leu[ck]ocyt|leu[ck]open|\bwbc\b,,seed,canonical,
+neutrophil count,Neutrophil count,haematology,neutroph,,seed,canonical,
+lymphocyte count,Lymphocyte count,haematology,lymphocyt|lymphopen,,seed,canonical,
+monocyte count,Monocyte count,haematology,monocyt,,seed,canonical,
+eosinophil count,Eosinophil count,haematology,eosinop,,seed,canonical,
+platelet count,Platelet count,haematology,platelet|thrombocyt|\bplt\b,,seed,canonical,
+parasitaemia,Parasitaemia,parasitology,parasit(a)?emia|parasite (load|density|burden|count)|parasiti[sz]ed (red|erythro)|infected (red|erythro),,seed,canonical,
+parasite species or genotype,Parasite species or genotype,parasitology,genotyp|haplotype|strain|\bbc ?28|\bbr1\b|18s,,seed,canonical,
+co-infection,Co-infection,parasitology,co-?infect|concurrent infection|ehrlichi|anaplasm|hepatozo|leishman|dirofilari,,seed,canonical,
+antibody titre / serostatus,Antibody titre / serostatus,immunology,antibod|titre|titer|seropositiv|\big[gm]\b|serostatus,,seed,canonical,
+immune complexes / complement,Immune complexes / complement,immunology,immune complex|complement|\bc3\b,,seed,canonical,
+c-reactive protein,C-reactive protein,acute phase protein,c-?reactive|\bcrp\b,,seed,canonical,
+haptoglobin,Haptoglobin,acute phase protein,haptoglobin|\bhp\b,,seed,canonical,
+serum amyloid a,Serum amyloid A,acute phase protein,amyloid a|\bsaa\b,,seed,canonical,
+ceruloplasmin,Ceruloplasmin,acute phase protein,c(a)?eruloplasmin,,seed,canonical,
+procalcitonin,Procalcitonin,acute phase protein,procalcitonin,,seed,canonical,
+hepcidin,Hepcidin,acute phase protein,hepcidin,,seed,canonical,
+il-1 beta,IL-1 beta,cytokine,(\bil|interleukin)-? ?1(?![0-9]),,seed,canonical,
+il-2,IL-2,cytokine,(\bil|interleukin)-? ?2(?![0-9]),,seed,canonical,
+il-6,IL-6,cytokine,(\bil|interleukin)-? ?6(?![0-9]),,seed,canonical,
+il-8 (cxcl8),IL-8 (CXCL8),cytokine,(\bil|interleukin)-? ?8(?![0-9])|cxcl-?8,,seed,canonical,
+il-10,IL-10,cytokine,(\bil|interleukin)-? ?10(?![0-9]),,seed,canonical,
+il-18,IL-18,cytokine,(\bil|interleukin)-? ?18,,seed,canonical,
+tnf-alpha,TNF-alpha,cytokine,tumou?r necrosis factor|\btnf,,seed,canonical,
+ifn-gamma,IFN-gamma,cytokine,interferon|\bifn,,seed,canonical,
+kc-like (cxcl1),KC-like (CXCL1),cytokine,\bkc-? ?like|cxcl-?1\b,,seed,canonical,
+gm-csf,GM-CSF,cytokine,gm-?csf|granulocyte-? ?macrophage colony,,seed,canonical,
+cytokine linear combination,Cytokine linear combination,cytokine,linear combination,,seed,canonical,
+other cytokines and chemokines,Other cytokines and chemokines,cytokine,cytokine|chemokine|(\bil|interleukin)-? ?\d|\bcxcl|\bccl,,seed,canonical,
+angiopoietin-1,Angiopoietin-1,endothelial,angiopoietin-? ?1|\bang-?1\b,,seed,canonical,
+angiopoietin-2,Angiopoietin-2,endothelial,angiopoietin-? ?2|\bang-?2\b,,seed,canonical,
+vegf,VEGF,endothelial,vascular endothelial growth|\bvegf,,seed,canonical,
+syndecan-1,Syndecan-1,endothelial,syndecan,,seed,canonical,
+hyaluronan / glycocalyx,Hyaluronan / glycocalyx,endothelial,hyaluron|glycocalyx|heparan,,seed,canonical,
+"adhesion molecules (icam-1, vcam-1, selectins)","Adhesion molecules (ICAM-1, VCAM-1, selectins)",endothelial,icam|vcam|selectin|adhesion molecule,,seed,canonical,
+von willebrand factor,von Willebrand factor,endothelial,willebrand|\bvwf,,seed,canonical,
+endothelin-1,Endothelin-1,endothelial,endothelin,,seed,canonical,
+fibrinogen,Fibrinogen,coagulation,fibrinogen,,seed,canonical,
+coagulation factor activity,Coagulation factor activity,coagulation,coagulation factor|factor (ii|v|vii|viii|ix|x|xi|xii)\b|\bf(ii|v|vii|viii|ix|x|xi|xii)\b,,seed,canonical,
+"fibrinolysis (plasminogen, antiplasmin)","Fibrinolysis (plasminogen, antiplasmin)",coagulation,plasmin|fibrinoly|\bpai-?1\b|\btafi\b,,seed,canonical,
+prothrombin time,Prothrombin time,coagulation,prothrombin time|\bpt\b,,seed,canonical,
+aptt,aPTT,coagulation,partial thromboplastin|\ba?ptt\b,,seed,canonical,
+d-dimer,D-dimer,coagulation,d-?dimer|fibrin fragment d,,seed,canonical,
+fibrin(ogen) degradation products,Fibrin(ogen) degradation products,coagulation,degradation product|\bfdps?\b,,seed,canonical,
+antithrombin,Antithrombin,coagulation,antithrombin|\bat ?iii\b,,seed,canonical,
+protein c / protein s,Protein C / protein S,coagulation,protein [cs]\b,,seed,canonical,
+viscoelastic testing (teg/rotem),Viscoelastic testing (TEG/ROTEM),coagulation,thromboelasto|\bteg\b|rotem|viscoelastic|maximum amplitude,,seed,canonical,
+dic,DIC,coagulation,disseminated intravascular|\bdic\b,,seed,canonical,
+urea,Urea,biochemistry,\burea\b|urea nitrogen|\bbun\b|azot(a)?emi,,seed,canonical,
+creatinine,Creatinine,biochemistry,creatinin,,seed,canonical,
+cystatin c,Cystatin C,biochemistry,cystatin,,seed,canonical,
+glomerular filtration rate,Glomerular filtration rate,biochemistry,glomerular filtration|\bgfr\b|iohexol|clearance,,seed,canonical,
+alt,ALT,biochemistry,alanine (amino)?trans(ferase|aminase)|\balt\b|\bsgpt\b|\bgpt\b,,seed,canonical,
+ast,AST,biochemistry,aspartate (amino)?trans(ferase|aminase)|\bast\b|\bsgot\b|\bgot\b,,seed,canonical,
+alp,ALP,biochemistry,alkaline phosphatase|\balp\b|\bsap\b,,seed,canonical,
+ggt,GGT,biochemistry,gamma-? ?glutamyl|\bggt\b,,seed,canonical,
+bilirubin,Bilirubin,biochemistry,bilirubin,,seed,canonical,
+bile acids,Bile acids,biochemistry,bile acid,,seed,canonical,
+total protein,Total protein,biochemistry,total (serum |plasma )?protein|\btp\b|^proteins?$|(hypo|hyper)protein,,seed,canonical,
+albumin,Albumin,biochemistry,albumin,,seed,canonical,
+globulins,Globulins,biochemistry,globulin|gammopath,,seed,canonical,
+glucose,Glucose,biochemistry,glucose|glyc(a)?emi,,seed,canonical,
+cholesterol,Cholesterol,biochemistry,cholesterol,,seed,canonical,
+triglycerides,Triglycerides,biochemistry,triglycerid,,seed,canonical,
+lipoproteins,Lipoproteins,biochemistry,lipoprotein|\bhdl\b|\bldl\b,,seed,canonical,
+creatine kinase,Creatine kinase,biochemistry,creatine (phospho)?kinase|\bck\b|\bcpk\b,,seed,canonical,
+"pancreatic enzymes (lipase, amylase, cpli)","Pancreatic enzymes (lipase, amylase, cPLI)",biochemistry,lipase|amylase|\bc?pli\b|pancreatic,,seed,canonical,
+sodium,Sodium,electrolyte,sodium|natr(a)?emi,,seed,canonical,
+potassium,Potassium,electrolyte,potassium|kal(a)?emi,,seed,canonical,
+chloride,Chloride,electrolyte,chlorid|chlor(a)?emi,,seed,canonical,
+ionised calcium,Ionised calcium,electrolyte,ioni[sz]ed calcium|\bica\b,,seed,canonical,
+calcium,Calcium,electrolyte,calcium|calc(a)?emi,,seed,canonical,
+phosphate,Phosphate,electrolyte,phosph(ate|orus)|phosphat(a)?emi,,seed,canonical,
+magnesium,Magnesium,electrolyte,magnes,,seed,canonical,
+iron and iron indices,Iron and iron indices,biochemistry,\biron\b|transferrin|\btibc\b,,seed,canonical,
+ammonia,Ammonia,biochemistry,ammonia,,seed,canonical,
+zinc,Zinc,biochemistry,\bzinc\b|\bzn\b,,seed,canonical,
+copper,Copper,biochemistry,\bcopper\b|\bcu\b,,seed,canonical,
+selenium,Selenium,biochemistry,selenium,,seed,canonical,
+lactate,Lactate,acid-base and perfusion,lactat,,seed,canonical,
+"acid-base (ph, bicarbonate, base excess, anion gap)","Acid-base (pH, bicarbonate, base excess, anion gap)",acid-base and perfusion,\bph\b|acid(o|e)mi|acidos|alkal(osis|emia|aemia)|acid-base|bicarbonate|\bhco3|base (excess|deficit)|anion gap|strong ion|\bt?co2\b|total co2,,seed,canonical,
+cardiac troponin,Cardiac troponin,cardiac,troponin|\bctn[it]\b,,seed,canonical,
+natriuretic peptides,Natriuretic peptides,cardiac,natriuretic|\bbnp\b|\banp\b,,seed,canonical,
+ecg abnormalities,ECG abnormalities,cardiac,electrocardiog|\becg\b|\bekg\b|arrhythm|premature (ventricular|complex)|st-? ?segment|qt interval,,seed,canonical,
+echocardiographic findings,Echocardiographic findings,cardiac,echocardiog,,seed,canonical,
+cortisol,Cortisol,endocrine,cortisol,,seed,canonical,
+acth,ACTH,endocrine,\bacth\b|adrenocorticotrop,,seed,canonical,
+thyroid hormones,Thyroid hormones,endocrine,thyrox|\bf?t4\b|\bf?t3\b|triiodothyronine|thyroid hormone,,seed,canonical,
+tsh,TSH,endocrine,\btsh\b|thyroid-? ?stimulating,,seed,canonical,
+insulin,Insulin,endocrine,insulin,,seed,canonical,
+erythropoietin,Erythropoietin,endocrine,erythropoietin|\bepo\b,,seed,canonical,
+renin-angiotensin-aldosterone,Renin-angiotensin-aldosterone,endocrine,aldosteron|\brenin\b|angiotensin,,seed,canonical,
+vasopressin / copeptin,Vasopressin / copeptin,endocrine,vasopressin|copeptin,,seed,canonical,
+malondialdehyde / tbars,Malondialdehyde / TBARS,oxidative stress,malondialdehyde|\bmda\b|tbars|thiobarbituric|lipid peroxid,,seed,canonical,
+catalase,Catalase,oxidative stress,catalase,,seed,canonical,
+superoxide dismutase,Superoxide dismutase,oxidative stress,superoxide dismutase|\bsod\b,,seed,canonical,
+glutathione / glutathione peroxidase,Glutathione / glutathione peroxidase,oxidative stress,glutathione|\bgsh\b|\bgpx\b,,seed,canonical,
+total antioxidant capacity,Total antioxidant capacity,oxidative stress,total antioxidant|\btac\b|\btas\b|\bfrap\b|cuprac|\babts\b,,seed,canonical,
+paraoxonase-1,Paraoxonase-1,oxidative stress,paraoxonase|\bpon-?1,,seed,canonical,
+other oxidative stress markers,Other oxidative stress markers,oxidative stress,oxidat|antioxid|peroxid|reactive oxygen|\bros\b|\btos\b|isoprostane|carbonyl,,seed,canonical,
+body temperature,Body temperature,clinical sign,temperature|fever|pyrexi|hypotherm|hypertherm,,seed,canonical,
+heart rate,Heart rate,clinical sign,heart rate|pulse rate|tachycardi|bradycardi,,seed,canonical,
+respiratory rate / dyspnoea,Respiratory rate / dyspnoea,clinical sign,respiratory rate|tachypn|dyspn,,seed,canonical,
+blood pressure,Blood pressure,clinical sign,blood pressure|hypotensi|hypertensi|arterial pressure|\bmap\b,,seed,canonical,
+mentation / neurological signs,Mentation / neurological signs,clinical sign,mentation|collapse|neurolog|seizure|\bcoma\b|stupor|recumben,,seed,canonical,
+mucous membranes / capillary refill,Mucous membranes / capillary refill,clinical sign,mucous membrane|capillary refill|\bcrt\b|pallor|\bpale\b,,seed,canonical,
+splenomegaly / lymphadenopathy,Splenomegaly / lymphadenopathy,clinical sign,splenomegal|hepatomegal|lymphadenopath|lymph node,,seed,canonical,
+gastrointestinal signs,Gastrointestinal signs,clinical sign,vomit|diarrh|gastrointestinal sign|mel(a)?ena|anorexi|inappeten,,seed,canonical,
+urine output,Urine output,clinical sign,oligur|anuri|urine output|polyuri,,seed,canonical,
+clinical severity score,Clinical severity score,clinical score,severity score|clinical score|\bsirs\b|systemic inflammatory response|apple(fast|full)?\b|organ dysfunction score,,seed,canonical,
+travel / import history,Travel / import history,clinical history,travel|import,,seed,canonical,
+duration of illness before presentation,Duration of illness before presentation,clinical history,duration of (illness|clinical signs)|before presentation|time to (presentation|treatment),,seed,canonical,
+age,Age,signalment,\bage\b|puppy|puppies|young,,seed,canonical,
+sex / neuter status,Sex / neuter status,signalment,\bsex\b|gender|neuter|castrat|spay|gonadectom|\bintact\b,,seed,canonical,
+breed,Breed,signalment,breed,,seed,canonical,
+body weight / body condition,Body weight / body condition,signalment,body ?weight|body condition|\bbcs\b,,seed,canonical,
+ultrasonographic findings,Ultrasonographic findings,imaging,ultraso|sonograph|doppler|resistive index,,seed,canonical,
+radiographic findings,Radiographic findings,imaging,radiograph,,seed,canonical,
+gene expression / transcriptomics,Gene expression / transcriptomics,omics,gene expression|transcriptom|\bmrna\b|rna-?seq,,seed,canonical,
+proteomics / metabolomics,Proteomics / metabolomics,omics,proteom|metabolom|lipidom,,seed,canonical,
+treatment factors,Treatment factors,treatment,transfusion|imidocarb|diminazene|atovaquone|azithromycin|clindamycin,,seed,canonical,
+early diagnosis,,,,C0596473,scispacy,unmatched: fill in marker or set '-',14
+imidocarb,Treatment factors,treatment,,C0020928,scispacy,pattern match,9
+coitus,,,,C0009253,scispacy,unmatched: fill in marker or set '-',7
+menstruation,,,,C0025344,scispacy,unmatched: fill in marker or set '-',7
+autopsy,,,,C0004398,scispacy,unmatched: fill in marker or set '-',6
+interleukin-10,IL-10,cytokine,,C0085295,scispacy,pattern match,6
+acute-phase proteins,,,,C0001347,scispacy,unmatched: fill in marker or set '-',5
+cytokine,Other cytokines and chemokines,cytokine,,C0079189,scispacy,pattern match,5
+interleukin-6,IL-6,cytokine,,C0021760,scispacy,pattern match,5
+interleukin-8,IL-8 (CXCL8),cytokine,,C0079633,scispacy,pattern match,5
+blood circulation,,,,C0005775,scispacy,unmatched: fill in marker or set '-',4
+breeding,Breed,signalment,,C0006159,scispacy,pattern match,4
+monocyte chemoattractant protein-1,MCP-1 (CCL2),cytokine,,C0128897,scispacy,pattern match,4
+renal function,,,,C0232804,scispacy,unmatched: fill in marker or set '-',4
+white blood cell count procedure,White blood cell count,haematology,,C0023508,scispacy,pattern match,4
+levothyroxine,Thyroid hormones,endocrine,,C0040165,scispacy,pattern match,4
+activated partial thromboplastin time measurement,aPTT,coagulation,,C0030605,scispacy,pattern match,3
+blood urea nitrogen measurement,Urea,biochemistry,,C0005845,scispacy,pattern match,3
+electrolytes,,,,C0013832,scispacy,unmatched: fill in marker or set '-',3
+equilibrium,,,,C0014653,scispacy,unmatched: fill in marker or set '-',3
+haptoglobins,Haptoglobin,acute phase protein,,C0018595,scispacy,pattern match,3
+hemostatic function,,,,C0019116,scispacy,unmatched: fill in marker or set '-',3
+intercellular adhesion molecule 1,"Adhesion molecules (ICAM-1, VCAM-1, selectins)",endothelial,,C0063695,scispacy,pattern match,3
+prothrombin time assay,Prothrombin time,coagulation,,C0033707,scispacy,pattern match,3
+troponin,Cardiac troponin,cardiac,,C0041199,scispacy,pattern match,3
+cellular targeting,,,,C0599894,scispacy,unmatched: fill in marker or set '-',3
+chrysarobin,,,,C0008721,scispacy,unmatched: fill in marker or set '-',3
+adenosine a2b receptor antagonist tt-4,,,,C5557250,scispacy,unmatched: fill in marker or set '-',2
+blood volume,,,,C0005850,scispacy,unmatched: fill in marker or set '-',2
+blood coagulation,,,,C0005778,scispacy,unmatched: fill in marker or set '-',2
+blood concentration results,,,,C0427728,scispacy,unmatched: fill in marker or set '-',2
+catabolism,,,,C0699900,scispacy,unmatched: fill in marker or set '-',2
+cell differentiation process,,,,C0007589,scispacy,unmatched: fill in marker or set '-',2
+cell secretion,,,,C1327616,scispacy,unmatched: fill in marker or set '-',2
+clark,,,,C4484264,scispacy,unmatched: fill in marker or set '-',2
+complement activation,Immune complexes / complement,immunology,,C0009528,scispacy,pattern match,2
+dna integration,,,,C1158478,scispacy,unmatched: fill in marker or set '-',2
+dying process,,,,C0184532,scispacy,unmatched: fill in marker or set '-',2
+e-selectin,"Adhesion molecules (ICAM-1, VCAM-1, selectins)",endothelial,,C0115305,scispacy,pattern match,2
+excretory function,,,,C0221102,scispacy,unmatched: fill in marker or set '-',2
+fibrin,,,,C0015982,scispacy,unmatched: fill in marker or set '-',2
+fibrin fragment d,D-dimer,coagulation,,C0060323,scispacy,pattern match,2
+fibrinolysis,"Fibrinolysis (plasminogen, antiplasmin)",coagulation,,C0016017,scispacy,pattern match,2
+genetic selection,,,,C0036576,scispacy,unmatched: fill in marker or set '-',2
+hemoglobin concentration result,Haemoglobin,haematology,,C0019029,scispacy,pattern match,2
+immune status,,,,C5234945,scispacy,unmatched: fill in marker or set '-',2
+immunologic memory,,,,C0021055,scispacy,unmatched: fill in marker or set '-',2
+inhibitor,,,,C1999216,scispacy,unmatched: fill in marker or set '-',2
+interleukin-18,IL-18,cytokine,,C0383327,scispacy,pattern match,2
+interleukin-2,IL-2,cytokine,,C0021756,scispacy,pattern match,2
+laboratory abnormalities,,,,C1853129,scispacy,unmatched: fill in marker or set '-',2
+lipid peroxidation,Malondialdehyde / TBARS,oxidative stress,,C0023775,scispacy,pattern match,2
+necrosis,,,,C0027540,scispacy,unmatched: fill in marker or set '-',2
+platelet indices,Mean platelet volume and platelet indices,haematology,,C1979797,scispacy,pattern match,2
+platelet mean volume determination (procedure),Platelet count,haematology,,C0200665,scispacy,pattern match,2
+primed lymphocyte test,Lymphocyte count,haematology,,C0201617,scispacy,pattern match,2
+thrombelastography,,,,C0040017,scispacy,unmatched: fill in marker or set '-',2
+ultrasonography,Ultrasonographic findings,imaging,,C0041618,scispacy,pattern match,2
+ultrasound examination,Ultrasonographic findings,imaging,,C0948501,scispacy,pattern match,2
+chemokine,Other cytokines and chemokines,cytokine,,C0282554,scispacy,pattern match,2
+corticotropin,,,,C0001655,scispacy,unmatched: fill in marker or set '-',2
+dinoprostone,,,,C0012472,scispacy,unmatched: fill in marker or set '-',2
+secretion of saliva,,,,C0036104,scispacy,unmatched: fill in marker or set '-',2
+absolute reticulocyte count,Reticulocytes,haematology,,C5401214,scispacy,pattern match,1
+albumin/globulin ratio (procedure),Albumin:globulin ratio,biochemistry,,C0201837,scispacy,pattern match,1
+amino-terminal pro-brain natriuretic peptide,Natriuretic peptides,cardiac,,C0754710,scispacy,pattern match,1
+antigens,,,,C0003320,scispacy,unmatched: fill in marker or set '-',1
+apolipoprotein e,Lipoproteins,biochemistry,,C0003595,scispacy,pattern match,1
+apoptosis,,,,C0162638,scispacy,unmatched: fill in marker or set '-',1
+auscultation,,,,C0004339,scispacy,unmatched: fill in marker or set '-',1
+bicarbonates,"Acid-base (pH, bicarbonate, base excess, anion gap)",acid-base and perfusion,,C0005367,scispacy,pattern match,1
+bicillin-3,,,,C0053553,scispacy,unmatched: fill in marker or set '-',1
+bile pigments,,,,C0005402,scispacy,unmatched: fill in marker or set '-',1
+biochemical pathway,,,,C1704259,scispacy,unmatched: fill in marker or set '-',1
+biological assay,,,,C0005507,scispacy,unmatched: fill in marker or set '-',1
+biological evolution,,,,C0015219,scispacy,unmatched: fill in marker or set '-',1
+blood coagulation factor,Coagulation factor activity,coagulation,,C0005789,scispacy,pattern match,1
+blood coagulation tests,,,,C0005790,scispacy,unmatched: fill in marker or set '-',1
+blood group antigen n,,,,C0302052,scispacy,unmatched: fill in marker or set '-',1
+body temperature:temperature:point in time:rectum:quantitative,Body temperature,clinical sign,,C0488006,scispacy,pattern match,1
+cd3 antigens,,,,C0108779,scispacy,unmatched: fill in marker or set '-',1
+"ceacam8 protein, human",,,,C0376896,scispacy,unmatched: fill in marker or set '-',1
+"cst3 protein, human",,,,C1453113,scispacy,unmatched: fill in marker or set '-',1
+carboxypeptidase b2,,,,C0255161,scispacy,unmatched: fill in marker or set '-',1
+"carcinoembryonic antigen-related cell adhesion molecule 6, human","Adhesion molecules (ICAM-1, VCAM-1, selectins)",endothelial,,C0376900,scispacy,pattern match,1
+cardiac biomarkers:complex:-:^patient:set,,,,C2735101,scispacy,unmatched: fill in marker or set '-',1
+cardiac function,,,,C0232164,scispacy,unmatched: fill in marker or set '-',1
+cardiac troponin measurement,Cardiac troponin,cardiac,,C1096316,scispacy,pattern match,1
+cell count,,,,C0007584,scispacy,unmatched: fill in marker or set '-',1
+cell division,,,,C0007590,scispacy,unmatched: fill in marker or set '-',1
+cell-free dna,,,,C4289789,scispacy,unmatched: fill in marker or set '-',1
+cellular immune response,,,,C1817908,scispacy,unmatched: fill in marker or set '-',1
+clinical decision-making,,,,C4042877,scispacy,unmatched: fill in marker or set '-',1
+coagulation time measurement,,,,C0368930,scispacy,unmatched: fill in marker or set '-',1
+complement inactivating agents,Immune complexes / complement,immunology,,C1564892,scispacy,pattern match,1
+complete blood count,,,,C0009555,scispacy,unmatched: fill in marker or set '-',1
+dna,,,,C0012854,scispacy,unmatched: fill in marker or set '-',1
+dna replication,,,,C0598312,scispacy,unmatched: fill in marker or set '-',1
+detectable,,,,C3830527,scispacy,unmatched: fill in marker or set '-',1
+diagnostic imaging,,,,C0011923,scispacy,unmatched: fill in marker or set '-',1
+diagnostic tests,,,,C0086143,scispacy,unmatched: fill in marker or set '-',1
+differential diagnosis,,,,C0011906,scispacy,unmatched: fill in marker or set '-',1
+differential white blood cell count procedure,White blood cell count,haematology,,C0162401,scispacy,pattern match,1
+disease susceptibility,,,,C0012655,scispacy,unmatched: fill in marker or set '-',1
+electrocardiogram,ECG abnormalities,cardiac,,C0013798,scispacy,pattern match,1
+electroencephalography,,,,C0013819,scispacy,unmatched: fill in marker or set '-',1
+eosinophil count procedure,Eosinophil count,haematology,,C0200638,scispacy,pattern match,1
+f2-isoprostanes,Other oxidative stress markers,oxidative stress,,C0949861,scispacy,pattern match,1
+"fcgr3b protein, human",,,,C0966831,scispacy,unmatched: fill in marker or set '-',1
+"fer protein, human",,,,C1570097,scispacy,unmatched: fill in marker or set '-',1
+finding of liver enzyme levels,,,,C1287351,scispacy,unmatched: fill in marker or set '-',1
+"gata3 protein, human",,,,C1307598,scispacy,unmatched: fill in marker or set '-',1
+glutathione peroxidase,Glutathione / glutathione peroxidase,oxidative stress,,C0017822,scispacy,pattern match,1
+gamma-glutamyl transferase,GGT,biochemistry,,C0017040,scispacy,pattern match,1
+glycolysis,,,,C0017952,scispacy,unmatched: fill in marker or set '-',1
+glycosaminoglycans,,,,C0017973,scispacy,unmatched: fill in marker or set '-',1
+growth,,,,C0018270,scispacy,unmatched: fill in marker or set '-',1
+"havcr1 protein, human",,,,C1313407,scispacy,unmatched: fill in marker or set '-',1
+hmgb1 protein,,,,C0019796,scispacy,unmatched: fill in marker or set '-',1
+hematoxylin and eosin stain method,,,,C0523207,scispacy,unmatched: fill in marker or set '-',1
+heme,,,,C0018966,scispacy,unmatched: fill in marker or set '-',1
+hemodynamics,,,,C0019010,scispacy,unmatched: fill in marker or set '-',1
+hemopexin,,,,C0019067,scispacy,unmatched: fill in marker or set '-',1
+hemosiderin,,,,C0019113,scispacy,unmatched: fill in marker or set '-',1
+histones,,,,C0019652,scispacy,unmatched: fill in marker or set '-',1
+hormones,,,,C0019932,scispacy,unmatched: fill in marker or set '-',1
+host defense,,,,C0520990,scispacy,unmatched: fill in marker or set '-',1
+immune cell activation process,,,,C1155000,scispacy,unmatched: fill in marker or set '-',1
+immunocompetent,,,,C1512656,scispacy,unmatched: fill in marker or set '-',1
+immunohistochemistry,,,,C0021044,scispacy,unmatched: fill in marker or set '-',1
+immunologic factors,,,,C0021054,scispacy,unmatched: fill in marker or set '-',1
+immunosuppressive agents,,,,C0021081,scispacy,unmatched: fill in marker or set '-',1
+interleukin-13,Other cytokines and chemokines,cytokine,,C0214743,scispacy,pattern match,1
+interleukin-15,Other cytokines and chemokines,cytokine,,C0254610,scispacy,pattern match,1
+isolate - microorganism,,,,C1764827,scispacy,unmatched: fill in marker or set '-',1
+"lcn2 protein, human",,,,C0215955,scispacy,unmatched: fill in marker or set '-',1
+laboratory results,,,,C1254595,scispacy,unmatched: fill in marker or set '-',1
+laboratory test finding,,,,C0587081,scispacy,unmatched: fill in marker or set '-',1
+left ventricular ejection fraction,,,,C0428772,scispacy,unmatched: fill in marker or set '-',1
+left ventricular systolic area,,,,C1275805,scispacy,unmatched: fill in marker or set '-',1
+leukotriene b4,,,,C0023546,scispacy,unmatched: fill in marker or set '-',1
+lipid peroxides,Malondialdehyde / TBARS,oxidative stress,,C0023776,scispacy,pattern match,1
+lipids,,,,C0023779,scispacy,unmatched: fill in marker or set '-',1
+met gene mutation negative,,,,C5205215,scispacy,unmatched: fill in marker or set '-',1
+magnetic resonance imaging,,,,C0024485,scispacy,unmatched: fill in marker or set '-',1
+mass spectrometry,,,,C0037813,scispacy,unmatched: fill in marker or set '-',1
+matrix metalloproteinases,,,,C0623362,scispacy,unmatched: fill in marker or set '-',1
+measles virus nucleoprotein,,,,C0065827,scispacy,unmatched: fill in marker or set '-',1
+microbiology procedure,,,,C0085672,scispacy,unmatched: fill in marker or set '-',1
+minerals,,,,C0026162,scispacy,unmatched: fill in marker or set '-',1
+molecular diagnosis,,,,C1513388,scispacy,unmatched: fill in marker or set '-',1
+mononuclear,,,,C1513475,scispacy,unmatched: fill in marker or set '-',1
+myoglobin,,,,C0027078,scispacy,unmatched: fill in marker or set '-',1
+neuroimaging,,,,C0679575,scispacy,unmatched: fill in marker or set '-',1
+neutrophil band count,Neutrophil count,haematology,,C0200634,scispacy,pattern match,1
+neutrophil count (procedure),Neutrophil count,haematology,,C0200633,scispacy,pattern match,1
+nuclear magnetic resonance imaging brain,,,,C4028269,scispacy,unmatched: fill in marker or set '-',1
+oralit,,,,C0069590,scispacy,unmatched: fill in marker or set '-',1
+p-selectin,Platelet function,coagulation,,C0134835,scispacy,pattern match,1
+po2 measurement,Blood gases and oxygenation,acid-base and perfusion,,C1283004,scispacy,pattern match,1
+"pth protein, human",,,,C0020063,scispacy,unmatched: fill in marker or set '-',1
+packed red blood cells,,,,C2316467,scispacy,unmatched: fill in marker or set '-',1
+panoramic radiography,Radiographic findings,imaging,,C0034579,scispacy,pattern match,1
+percussion,,,,C0030987,scispacy,unmatched: fill in marker or set '-',1
+phosphorylation,,,,C0031715,scispacy,unmatched: fill in marker or set '-',1
+plasminogen activator inhibitor 1,"Fibrinolysis (plasminogen, antiplasmin)",coagulation,,C0030190,scispacy,pattern match,1
+platelet activation,Platelet function,coagulation,,C0032173,scispacy,pattern match,1
+platelet hematocrit measurement,Haematocrit/PCV,haematology,,C0474566,scispacy,pattern match,1
+post-translational protein processing,,,,C0033666,scispacy,unmatched: fill in marker or set '-',1
+pulse rate,Heart rate,clinical sign,,C0232117,scispacy,pattern match,1
+"rna, messenger",,,,C0035696,scispacy,unmatched: fill in marker or set '-',1
+red cell distribution width determination,Red cell distribution width,haematology,,C0427460,scispacy,pattern match,1
+respiratory rate,Respiratory rate / dyspnoea,clinical sign,,C0231832,scispacy,pattern match,1
+response to treatment,,,,C0521982,scispacy,unmatched: fill in marker or set '-',1
+"sdc1 protein, human",,,,C0753253,scispacy,unmatched: fill in marker or set '-',1
+"stat6 protein, human",,,,C0297890,scispacy,unmatched: fill in marker or set '-',1
+serum proteins,,,,C0036825,scispacy,unmatched: fill in marker or set '-',1
+serum total protein level result,Total protein,biochemistry,,C1318415,scispacy,pattern match,1
+spectrophotometry,,,,C0037805,scispacy,unmatched: fill in marker or set '-',1
+"spectroscopy, near-infrared",,,,C0376519,scispacy,unmatched: fill in marker or set '-',1
+staining method,,,,C0487602,scispacy,unmatched: fill in marker or set '-',1
+transcription factor,,,,C0040648,scispacy,unmatched: fill in marker or set '-',1
+thermometry,,,,C0178862,scispacy,unmatched: fill in marker or set '-',1
+thirst,,,,C0039971,scispacy,unmatched: fill in marker or set '-',1
+thrombomodulin,,,,C0145779,scispacy,unmatched: fill in marker or set '-',1
+tissue-specific gene expression,Gene expression / transcriptomics,omics,,C1519516,scispacy,pattern match,1
+total protein measurement,Total protein,biochemistry,,C0555903,scispacy,pattern match,1
+tropism,,,,C0242732,scispacy,unmatched: fill in marker or set '-',1
+troponin i,Cardiac troponin,cardiac,,C0077401,scispacy,pattern match,1
+tumor necrosis factor-alpha,TNF-alpha,cytokine,,C1456820,scispacy,pattern match,1
+tumor necrosis factor receptor 11b,TNF-alpha,cytokine,,C0538161,scispacy,pattern match,1
+unsaturated iron binding capacity measurement,Iron and iron indices,biochemistry,,C0202106,scispacy,pattern match,1
+up-regulation (physiology),,,,C0041904,scispacy,unmatched: fill in marker or set '-',1
+urinalysis,,,,C0042014,scispacy,unmatched: fill in marker or set '-',1
+vaccines,,,,C0042210,scispacy,unmatched: fill in marker or set '-',1
+virulence factors,,,,C1136170,scispacy,unmatched: fill in marker or set '-',1
+alpha-spectrin,,,,C0002311,scispacy,unmatched: fill in marker or set '-',1
+amphetamine,,,,C0002658,scispacy,unmatched: fill in marker or set '-',1
+arginine,,,,C0003765,scispacy,unmatched: fill in marker or set '-',1
+beta-actin,,,,C0005186,scispacy,unmatched: fill in marker or set '-',1
+bone morphogenetic protein 7,,,,C0083867,scispacy,unmatched: fill in marker or set '-',1
+caspase-5,,,,C0769345,scispacy,unmatched: fill in marker or set '-',1
+cationic antimicrobial protein cap 37,,,,C0054878,scispacy,unmatched: fill in marker or set '-',1
+chondroitin sulfates,,,,C0008466,scispacy,unmatched: fill in marker or set '-',1
+cinobufotalin,,,,C0526532,scispacy,unmatched: fill in marker or set '-',1
+clinical aspects,,,,C0683325,scispacy,unmatched: fill in marker or set '-',1
+collagen,,,,C0009325,scispacy,unmatched: fill in marker or set '-',1
+cytokine production,Other cytokines and chemokines,cytokine,,C1327413,scispacy,pattern match,1
+dacarbazine,,,,C0010927,scispacy,unmatched: fill in marker or set '-',1
+dipyridamole,,,,C0012582,scispacy,unmatched: fill in marker or set '-',1
+endothelial cell activation,,,,C1155002,scispacy,unmatched: fill in marker or set '-',1
+granzyme b,,,,C0061878,scispacy,unmatched: fill in marker or set '-',1
+heparan sulfate,Hyaluronan / glycocalyx,endothelial,,C0019143,scispacy,pattern match,1
+heroin,,,,C0011892,scispacy,unmatched: fill in marker or set '-',1
+insulin receptor-related receptor,Insulin,endocrine,,C0083017,scispacy,pattern match,1
+"interleukin-1, beta",IL-1 beta,cytokine,,C0021753,scispacy,pattern match,1
+interleukin-7,Other cytokines and chemokines,cytokine,,C0021761,scispacy,pattern match,1
+iodine,,,,C0021968,scispacy,unmatched: fill in marker or set '-',1
+lactoferrin,,,,C0022942,scispacy,unmatched: fill in marker or set '-',1
+leridistim,,,,C0919350,scispacy,unmatched: fill in marker or set '-',1
+liothyronine,,,,C0041014,scispacy,unmatched: fill in marker or set '-',1
+lipid oxidation,Other oxidative stress markers,oxidative stress,,C2612546,scispacy,pattern match,1
+lipoprotein metabolism,Lipoproteins,biochemistry,,C1158917,scispacy,pattern match,1
+methionine,,,,C0025646,scispacy,unmatched: fill in marker or set '-',1
+molecular diagnostics (lab procedure),,,,C2121080,scispacy,unmatched: fill in marker or set '-',1
+molecular_function,,,,C1148560,scispacy,unmatched: fill in marker or set '-',1
+natural killer cell mediated cytotoxicity,,,,C1159807,scispacy,unmatched: fill in marker or set '-',1
+negative regulation of inflammatory response,,,,C1327441,scispacy,unmatched: fill in marker or set '-',1
+neutrophil degranulation,Neutrophil count,haematology,,C1622271,scispacy,pattern match,1
+pentaerythritol tetranitrate,Asymmetric dimethylarginine / nitric oxide,endothelial,,C0030858,scispacy,pattern match,1
+peroxidase,Other oxidative stress markers,oxidative stress,,C0027021,scispacy,pattern match,1
+phenylalanine,,,,C0031453,scispacy,unmatched: fill in marker or set '-',1
+physiological aspects,,,,C0031843,scispacy,unmatched: fill in marker or set '-',1
+prasterone,,,,C0011185,scispacy,unmatched: fill in marker or set '-',1
+procoagulant,,,,C1292267,scispacy,unmatched: fill in marker or set '-',1
+proteoglycan binding,,,,C1621789,scispacy,unmatched: fill in marker or set '-',1
+receptor operated channel,,,,C0683187,scispacy,unmatched: fill in marker or set '-',1
+response to cytokine,Other cytokines and chemokines,cytokine,,C2247677,scispacy,pattern match,1
+tin,,,,C0040238,scispacy,unmatched: fill in marker or set '-',1
+unsaturated iron binding capacity (uibc) test,Iron and iron indices,biochemistry,,C0369540,scispacy,pattern match,1

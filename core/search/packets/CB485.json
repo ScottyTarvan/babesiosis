@@ -1,0 +1,114 @@
+{
+ "id": "CB485",
+ "filename": "CB485_2014_hyperaldosteronism-association-hypotension-azotaemia-babesiosis.md",
+ "key": "PMID:25347616",
+ "record": {
+  "pmid": "25347616",
+  "pmcid": null,
+  "doi": "10.1080/01652176.2014.981765",
+  "title": "Hyperaldosteronism and its association with hypotension and azotaemia in canine babesiosis.",
+  "authors": [
+   "Gójska-Zygner O",
+   "Zygner W"
+  ],
+  "journal": "The veterinary quarterly",
+  "journal_abbrev": "Vet Q",
+  "volume": "35",
+  "issue": "1",
+  "pages": "37-42",
+  "language": [
+   "eng"
+  ],
+  "issue_date": "2015-03-01",
+  "issue_date_precision": "month",
+  "epub_date": "2014-11-18",
+  "pubmed_entry_date": "2014-10-28",
+  "first_pub_date": "2014-11-18",
+  "publication_types": [
+   "Comparative Study",
+   "Journal Article"
+  ],
+  "mesh": [
+   "Animals",
+   "Azotemia",
+   "Babesiosis",
+   "Dog Diseases",
+   "Dogs",
+   "Hyperaldosteronism",
+   "Hypotension"
+  ],
+  "keywords": [
+   "Babesia canis",
+   "aldosterone",
+   "azotaemia",
+   "canine",
+   "dog",
+   "hypotension"
+  ],
+  "abstract": "BACKGROUND: The previous work on canine babesiosis revealed hypokalaemia and increased fractional excretion of potassium in infected dogs suggesting a role for aldosterone in the loss of potassium via the kidneys in affected dogs. Moreover, hypotension, which is one of the complications of canine babesiosis leading to renal failure, may induce secondary hyperaldosteronism.\nANIMALS AND METHODS: In this study, the serum aldosterone concentration was determined in 14 dogs infected with Babesia canis. The Mann-Whitney U test was used to compare serum aldosterone concentration and blood pressure between these dogs and 10 healthy dogs. Spearman's rank correlations between serum aldosterone concentration and blood pressure and between serum aldosterone and urea and creatinine concentrations were calculated.\nRESULTS: Increased concentrations of aldosterone above reference intervals were observed in only 4 out of the 14 dogs. The results showed significantly (p < 0.05) higher serum aldosterone concentrations and lower blood pressures in infected dogs in comparison to healthy dogs, and significantly negative correlations between aldosterone concentration and systolic arterial pressure (r = -0.63), diastolic arterial pressure (r = -0.67) and mean arterial pressure (r = -0.65). Serum aldosterone concentration was also significantly correlated with serum urea concentration (r = 0.72), serum creatinine concentration (r = 0.69) and serum potassium concentration (r = -0.57).\nCONCLUSION: The results of this study show hyperaldosteronism in some cases of canine babesiosis as a possible response to hypotension. However, both the hypotension and severe azotaemia observed in dogs infected with B. canis and associated hyperaldosteronaemia suggest that this response is insufficient.",
+  "corrections": [],
+  "epmc_first_pub_date": "2014-11-18",
+  "is_oa": "N",
+  "has_suppl": "N",
+  "found_by": [
+   "EP1_broad",
+   "EP2_species",
+   "PM1_broad",
+   "PM2_species",
+   "PM3_mechanism"
+  ],
+  "in_window": true,
+  "online_vs_issue": "online 2014-11-18; issue 2015-03-01 (month)",
+  "key": "PMID:25347616",
+  "source_files": [
+   "candidates.jsonl"
+  ]
+ },
+ "screening": {
+  "key": "PMID:25347616",
+  "decision": "include",
+  "include_type": "primary",
+  "exclude_reason": null,
+  "primary_category": "MET",
+  "secondary_tags": [
+   "REN",
+   "CAR",
+   "END"
+  ],
+  "species": "B. canis (natural infection; confirmation method not stated in abstract)",
+  "rationale": "Serum aldosterone, blood pressure and azotaemia in 14 infected dogs versus 10 healthy dogs. It gives endocrine and haemodynamic evidence on hyperaldosteronism and renal failure.",
+  "stage": "screen",
+  "batch": "r4_22.md",
+  "screening_round": "r4"
+ },
+ "fulltext_check": {
+  "key": "PMID:25347616",
+  "pmcid": null,
+  "checked": "2026-10-28",
+  "fulltext_status": "no_pmcid"
+ },
+ "duplicate_records": [
+  {
+   "key": "REF:hypoaldosteronismanditsassociationwithhypotensionandazotemia",
+   "basis": "Reference-list entry (title misspelt 'hypoaldosteronism') of the Vet Q hyperaldosteronism paper; PubMed record retained",
+   "record": {
+    "pmid": null,
+    "doi": null,
+    "title": "Hypoaldosteronism and its association with hypotension and azotemia in canine babesiosis",
+    "journal": null,
+    "first_pub_date": null,
+    "year": "2015",
+    "abstract": null,
+    "found_by": [
+     "citation:backward:29558219"
+    ],
+    "unresolved": true,
+    "source_id": "REF:hypoaldosteronismanditsassociationwithhypotensionandazotemia",
+    "key": "REF:hypoaldosteronismanditsassociationwithhypotensionandazotemia",
+    "source_files": [
+     "candidates_r2.jsonl"
+    ]
+   }
+  }
+ ]
+}

@@ -1,0 +1,54 @@
+{
+ "id": "CB457",
+ "filename": "CB457_2013_babesios-analysis-scientific-literature.md",
+ "key": "https://openalex.org/W3173537184",
+ "record": {
+  "pmid": null,
+  "pmcid": null,
+  "doi": null,
+  "title": "BABESIOS DOGS (ANALYSIS OF SCIENTIFIC LITERATURE)",
+  "journal": "Международный научно-исследовательский журнал",
+  "authors": [
+   "A I Shabuldo"
+  ],
+  "first_pub_date": "2013-11-08",
+  "type": "article",
+  "language": [
+   "ru"
+  ],
+  "abstract": "В статье рассмотрены вопросы истории открытия Babesia canis, морфология возбудителя; классификация, распространение и специфические переносчики возбудителя бабезиоза собак за пределами РФ, и на ее территории; причины роста заболеваемости собак бабезиозом в городе; формы клинического течения бабезиоза собак и возможность влияния на них естественной и искусственной иммунизации.",
+  "abstract_source": "OpenAlex abstract_inverted_index (reconstructed)",
+  "source_id": "https://openalex.org/W3173537184",
+  "src": "OPENALEX",
+  "found_by": [
+   "OA:title_and_abstract"
+  ],
+  "in_window": true,
+  "key": "https://openalex.org/W3173537184",
+  "source_files": [
+   "candidates_r3.jsonl"
+  ]
+ },
+ "screening": {
+  "key": "https://openalex.org/W3173537184",
+  "decision": "include",
+  "include_type": "review",
+  "exclude_reason": null,
+  "primary_category": "SEV",
+  "secondary_tags": [
+   "INF"
+  ],
+  "species": "B. canis (unspecified)",
+  "rationale": "Based on abstract: a Russian narrative review of canine babesiosis whose topics include the clinical forms of the disease and how immunisation affects them. This is marginal because history, vectors and epidemiology take up much of it, but it covers clinical syndromes, as with similar reviews included in rounds 1-3.",
+  "stage": "adjudicated",
+  "batch": "r4_18.md",
+  "first_decision": "uncertain",
+  "screening_round": "r4"
+ },
+ "fulltext_check": {
+  "key": "https://openalex.org/W3173537184",
+  "pmcid": null,
+  "checked": "2026-10-28",
+  "fulltext_status": "no_pmcid"
+ }
+}

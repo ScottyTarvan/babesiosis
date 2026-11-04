@@ -1,0 +1,50 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "babesiosis-api",
+      "runtimeExecutable": "cmd",
+      "runtimeArgs": [
+        "/c",
+        "cd webapp\\Babesiosis.Core.Functions && func start --port 6060"
+      ],
+      "port": 6060
+    },
+    {
+      "name": "babesiosis-web",
+      "runtimeExecutable": "cmd",
+      "runtimeArgs": [
+        "/c",
+        "cd webapp\\Babesiosis.Web && npx ng serve --host=127.0.0.1 --port 4400 --configuration local"
+      ],
+      "port": 4400
+    },
+    {
+      "name": "babesiosis-web-mock",
+      "runtimeExecutable": "cmd",
+      "runtimeArgs": [
+        "/c",
+        "cd webapp\\Babesiosis.Web && npx ng serve --host=127.0.0.1 --port 4444 --configuration mock"
+      ],
+      "port": 4444
+    },
+    {
+      "name": "babesiosis-web-mock-alt",
+      "runtimeExecutable": "cmd",
+      "runtimeArgs": [
+        "/c",
+        "cd webapp\\Babesiosis.Web && npx ng serve --host=127.0.0.1 --port 4445 --configuration mock"
+      ],
+      "port": 4445
+    },
+    {
+      "name": "babesiosis-web-mock-4446",
+      "runtimeExecutable": "cmd",
+      "runtimeArgs": [
+        "/c",
+        "cd webapp\\Babesiosis.Web && npx ng serve --host=127.0.0.1 --port 4446 --configuration mock"
+      ],
+      "port": 4446
+    }
+  ]
+}
