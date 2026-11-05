@@ -1,0 +1,27 @@
+<section class="fs-home">
+  <fs-page-header icon="home" title="Home"
+                  subtitle="Canine babesiosis scoping review" />
+
+  <fs-banner intent="info">
+    This landing page is a placeholder. Its content will be built in a later phase.
+  </fs-banner>
+
+  <fs-card title="Welcome" subtitle="Where to go from here">
+    <p class="fs-home__intro">
+      The application brings together the articles gathered for the scoping review, the
+      counts and charts drawn from them, the experiments run over the data, and an AI agent
+      that answers questions about the reviewed literature. Pick a screen below or use the
+      menu on the left.
+    </p>
+    <ul class="fs-home__screens">
+      @for (screen of screens; track screen.key) {
+        <li>
+          <a class="fs-home__screen" [routerLink]="screen.link">
+            <fs-symbol [name]="screen.icon ?? 'arrow-right'" size="sm" />
+            <span>{{ screen.label }}</span>
+          </a>
+        </li>
+      }
+    </ul>
+  </fs-card>
+</section>

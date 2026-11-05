@@ -1,0 +1,132 @@
+<section class="fs-ai-agent">
+  <fs-page-header icon="sparkles" title="AI Agent"
+                  subtitle="Ask questions about the reviewed articles">
+    <fs-button variant="outline" intent="secondary" size="sm" icon="refresh"
+               [disabled]="messages().length === 0 && !draft() && !error()"
+               (click)="clear()">New conversation</fs-button>
+  </fs-page-header>
+
+  @if (error(); as message) {
+    <fs-banner [intent]="unavailable() ? 'warning' : 'danger'">
+      @if (unavailable()) {
+        The AI agent is not available on this server. {{ message }}
+      } @else {
+        {{ message }} Your question is back in the box below, ready to send again.
+      }
+    </fs-banner>
+  }
+
+  <div class="fs-ai-agent__layout">
+    <fs-card class="fs-ai-agent__chat" [padded]="false">
+      <div #thread class="fs-ai-agent__thread" role="log" aria-live="polite" aria-label="Conversation">
+        @for (message of messages(); track message.id) {
+          <article class="fs-ai-agent__message"
+                   [class.fs-ai-agent__message--user]="message.role === 'user'"
+                   [class.fs-ai-agent__message--assistant]="message.role === 'assistant'">
+            <header class="fs-ai-agent__meta">
+              <fs-symbol [name]="message.role === 'user' ? 'user-check' : 'sparkles'" size="xs" />
+              <span>{{ message.role === 'user' ? 'You' : 'Agent' }}</span>
+              @if (modelName(message.model); as model) {
+                <span class="fs-ai-agent__model">· {{ model }}</span>
+              }
+              <time [attr.datetime]="message.createdAt">{{ message.createdAt | date: 'HH:mm' }}</time>
+            </header>
+
+            @if (message.role === 'assistant') {
+              <div class="fs-ai-agent__bubble fs-ai-agent__markdown" [innerHTML]="answerHtml().get(message.id)"></div>
+            } @else {
+              <div class="fs-ai-agent__bubble">{{ message.content }}</div>
+            }
+
+            @if (message.citations?.length) {
+              <ul class="fs-ai-agent__citations" aria-label="Articles cited">
+                @for (citation of message.citations; track citation.articleId) {
+                  <li>
+                    <fs-badge variant="tonal" intent="primary">{{ citation.code }}</fs-badge>
+                    @if (citation.sourceUrl) {
+                      <a class="fs-ai-agent__citation-title" [href]="citation.sourceUrl"
+                         target="_blank" rel="noopener noreferrer" [title]="citation.title">
+                        {{ citation.title }}
+                        <fs-symbol name="external-link" size="xs" ariaLabel="Opens in a new window" />
+                      </a>
+                    } @else {
+                      <span class="fs-ai-agent__citation-title" [title]="citation.title">{{ citation.title }}</span>
+                    }
+                    @if (citation.year) {
+                      <span class="fs-ai-agent__citation-extra">{{ citation.year }}</span>
+                    }
+                    @if (citation.sectionsRead?.length) {
+                      <span class="fs-ai-agent__citation-extra" title="Sections of the paper's own text the agent read">
+                        <fs-symbol name="file-search" size="xs" />
+                        {{ citation.sectionsRead!.join(', ') }}
+                      </span>
+                    }
+                  </li>
+                }
+              </ul>
+            }
+          </article>
+        } @empty {
+          <fs-empty-state icon="message-2" title="Start a conversation"
+                          subtitle="Ask about findings, methods or gaps across the articles. Answers cite the articles they draw on." />
+        }
+
+        @if (thinking()) {
+          <div class="fs-ai-agent__thinking" role="status">
+            <span class="fs-ai-agent__dots" aria-hidden="true"><span></span><span></span><span></span></span>
+            Searching the articles and writing an answer…
+          </div>
+        }
+      </div>
+
+      <form class="fs-ai-agent__composer" (ngSubmit)="send()">
+        <fs-textarea name="draft" [rows]="3" [invalid]="tooLong()"
+                     placeholder="Ask about the articles…"
+                     [ngModel]="draft()" (ngModelChange)="draft.set($event)"
+                     (keydown.control.enter)="send()" (keydown.meta.enter)="send()" />
+        <div class="fs-ai-agent__composer-actions">
+          <fs-segmented-control name="tier" size="sm" ariaLabel="Model"
+                                [options]="tierOptions" [disabled]="thinking()"
+                                [ngModel]="tier()" (ngModelChange)="tier.set($event)" />
+          <span class="fs-ai-agent__hint" [class.fs-ai-agent__hint--error]="tooLong()">
+            @if (tooLong()) {
+              {{ draft().length }} / {{ maxQuestionLength }} characters
+            } @else {
+              Ctrl + Enter to send
+            }
+          </span>
+          <fs-button type="submit" intent="primary" size="sm" icon="arrow-up"
+                     [disabled]="!canSend()" [loading]="thinking()">Send</fs-button>
+        </div>
+      </form>
+    </fs-card>
+
+    <aside class="fs-ai-agent__aside">
+      <fs-card title="Suggested questions">
+        <ul class="fs-ai-agent__suggestions">
+          @for (suggestion of suggestions; track suggestion) {
+            <li>
+              <button type="button" class="fs-ai-agent__suggestion" [disabled]="thinking()"
+                      (click)="useSuggestion(suggestion)">
+                <fs-symbol name="bulb" size="sm" />
+                <span>{{ suggestion }}</span>
+              </button>
+            </li>
+          }
+        </ul>
+      </fs-card>
+
+      <fs-card title="What the agent reads">
+        <p class="fs-ai-agent__note">
+          The agent searches the articles loaded to the database: their abstracts, extracted
+          findings and categories, and the papers' own text where it is held. Every claim cites
+          the article it comes from, so each answer can be checked against the source.
+        </p>
+        <p class="fs-ai-agent__note">
+          <strong>Fast</strong>, <strong>Balanced</strong> and <strong>Thorough</strong> pick
+          a smaller or larger model. Larger models take longer and cost more per question.
+        </p>
+      </fs-card>
+    </aside>
+  </div>
+</section>

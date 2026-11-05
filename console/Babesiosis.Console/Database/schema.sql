@@ -5,7 +5,8 @@
   created only when missing, and the category seed is merged.
 
   Source: core/articles.jsonl (structured fields), the .md files in
-          core/articles (narrative sections), and core/data/terms (terms).
+          core/articles (narrative sections), core/data/terms (terms) and
+          core/data/markdown (the papers' own text, in passages).
 */
 
 SET XACT_ABORT ON;
@@ -131,6 +132,17 @@ BEGIN
     verification_notes          NVARCHAR(2000) NULL,
     text_source                 VARCHAR(20)    NULL,      -- abstract / jats_xml / pdf, from data/terms/<ID>.json (TermLoader)
 
+    -- The paper's own text (data/markdown/<ID>.md, loaded into dbo.article_section by SectionLoader)
+    has_full_text               BIT            NULL,      -- 1 = full text (JATS XML or PDF) with usable text; 0 = abstract only or no text
+    text_quality                VARCHAR(20)    NULL,      -- ok / review / abstract_only / no_text (front matter "quality")
+    text_flags                  JSON           NULL,      -- front matter quality_flags, e.g. ["garbled_text"]
+    text_language               VARCHAR(30)    NULL,      -- language of the paper (en, tr, ru, ...); passages are English when text_translated = 1
+    text_translated             BIT            NULL,      -- 1 = passages come from the LLM translation <ID>.en.md
+    text_word_count             INT            NULL,
+    text_file                   NVARCHAR(200)  NULL,      -- data/markdown/CB058.en.md
+    text_hash                   BINARY(32)     NULL,      -- SHA-256 of the embedded passage texts; sections reload when it changes
+    text_loaded_at              DATETIME2(0)   NULL,
+
     -- Embedding (Azure OpenAI text-embedding-3-small)
     embedding                   VECTOR(1536)   NULL,
     embedding_model             VARCHAR(100)   NULL,
@@ -149,6 +161,19 @@ END;
 -- Databases created before text_source was added to the CREATE TABLE above.
 IF COL_LENGTH(N'dbo.article', N'text_source') IS NULL
   ALTER TABLE dbo.article ADD text_source VARCHAR(20) NULL;
+
+-- Databases created before the full-text columns were added to the CREATE TABLE above.
+IF COL_LENGTH(N'dbo.article', N'text_hash') IS NULL
+  ALTER TABLE dbo.article ADD
+    has_full_text   BIT           NULL,
+    text_quality    VARCHAR(20)   NULL,
+    text_flags      JSON          NULL,
+    text_language   VARCHAR(30)   NULL,
+    text_translated BIT           NULL,
+    text_word_count INT           NULL,
+    text_file       NVARCHAR(200) NULL,
+    text_hash       BINARY(32)    NULL,
+    text_loaded_at  DATETIME2(0)  NULL;
 
 /* ---------------------------------------------------------------------------
    article_category - secondary tags and comparator categories
@@ -208,6 +233,244 @@ BEGIN
   );
 
   CREATE INDEX IX_article_term_term ON dbo.article_term (term_id) INCLUDE (studied);
+END;
+
+/* ---------------------------------------------------------------------------
+   article_section - the paper's own text in passages, from data/markdown/<ID>.md
+   (or the English translation <ID>.en.md). Loaded by SectionLoader.
+
+   A passage is one H2 section of the Markdown, or part of one when the
+   section is long (chunk_index 1..chunk_count, split at paragraph breaks,
+   about 500 words each). section_kind normalises the heading so the agent
+   can ask for "results" or "methods" whatever the paper called them.
+   Abstract-only articles have a single abstract passage. Each passage has
+   its own embedding (title + heading + body) for dbo.search_passages.
+--------------------------------------------------------------------------- */
+IF OBJECT_ID(N'dbo.article_section', N'U') IS NULL
+BEGIN
+  CREATE TABLE dbo.article_section
+  (
+    section_id      INT IDENTITY(1,1) NOT NULL CONSTRAINT PK_article_section PRIMARY KEY,
+    article_id      INT            NOT NULL CONSTRAINT FK_article_section_article REFERENCES dbo.article (article_id) ON DELETE CASCADE,
+    section_order   SMALLINT       NOT NULL,                 -- reading order within the article, from 1
+    section_kind    VARCHAR(20)    NOT NULL CONSTRAINT CK_article_section_kind CHECK (section_kind IN
+                      ('abstract', 'introduction', 'methods', 'results', 'results_discussion', 'discussion',
+                       'conclusion', 'case', 'limitations', 'abbreviations', 'body', 'other')),
+    heading         NVARCHAR(300)  NULL,                     -- "Results" or "Results > Pooled prevalence"; NULL when the text has no headings
+    chunk_index     SMALLINT       NOT NULL,                 -- 1-based part number within the H2 section
+    chunk_count     SMALLINT       NOT NULL,                 -- parts in the H2 section
+    body            NVARCHAR(MAX)  NOT NULL,                 -- Markdown: paragraphs, lists, pipe tables
+    word_count      INT            NOT NULL,
+
+    -- Embedding (same model and dimensions as article.embedding)
+    embedding       VECTOR(1536)   NULL,
+    embedding_model VARCHAR(100)   NULL,
+    embedded_at     DATETIME2(0)   NULL,
+
+    CONSTRAINT UQ_article_section_order UNIQUE (article_id, section_order)
+  );
+
+  CREATE INDEX IX_article_section_kind ON dbo.article_section (article_id, section_kind, section_order);
+END;
+
+COMMIT TRANSACTION;
+
+/* ===========================================================================
+   Experiments: per-subject measurements from the downloaded datasets, and the
+   results of analyses run over them.
+
+   Source: core/data/tidy/<dataset>.json        (scripts/tidy_<dataset>.py)
+           core/data/experiments/<code>.json    (scripts/experiment_*.py)
+   Loaded by DatasetLoader and ExperimentLoader (console --datasets-only).
+
+   Measurements are stored long (one row per subject x variable x time point)
+   so a new dataset adds rows, not columns, and variables can later be mapped
+   to a canonical code across datasets. Results the UI must sort or filter
+   (associations, cluster labels) are relational; the full, method-specific
+   output is kept as JSON in experiment_result.
+=========================================================================== */
+
+SET XACT_ABORT ON;
+BEGIN TRANSACTION;
+
+/* ---------------------------------------------------------------------------
+   dataset - one row per downloaded dataset (datasets.jsonl dataset_id)
+--------------------------------------------------------------------------- */
+IF OBJECT_ID(N'dbo.dataset', N'U') IS NULL
+BEGIN
+  CREATE TABLE dbo.dataset
+  (
+    dataset_id         INT IDENTITY(1,1) NOT NULL CONSTRAINT PK_dataset PRIMARY KEY,
+    dataset_code       VARCHAR(20)    NOT NULL CONSTRAINT UQ_dataset_code UNIQUE,   -- DS05, S-CB050
+    title              NVARCHAR(500)  NOT NULL,
+    article_code       VARCHAR(10)    NULL,                                        -- linked article, e.g. CB126
+    article_id         INT            NULL CONSTRAINT FK_dataset_article REFERENCES dbo.article (article_id),
+    repository         NVARCHAR(200)  NULL,
+    source_record      NVARCHAR(400)  NULL,                                        -- DOI or accession of the record
+    licence            NVARCHAR(400)  NULL,
+    independent_source VARCHAR(10)    NULL,                                        -- SRC-F
+    species            NVARCHAR(400)  NULL,
+    design             NVARCHAR(MAX)  NULL,
+    source_file        NVARCHAR(300)  NULL,                                        -- path under core/
+    source_sha256      CHAR(64)       NULL,                                        -- from data/manifest.jsonl
+    n_subjects         INT            NOT NULL CONSTRAINT DF_dataset_n_subjects DEFAULT 0,
+    notes              JSON           NULL,                                        -- ["..."] cleaning notes from the tidy script
+    extracted_at       DATETIME2(0)   NULL,                                        -- when the tidy file was written
+    loaded_at          DATETIME2(0)   NOT NULL CONSTRAINT DF_dataset_loaded_at DEFAULT SYSUTCDATETIME()
+  );
+END;
+
+/* ---------------------------------------------------------------------------
+   variable - one row per measured or recoded column of a dataset
+   data_type: N numeric, O ordinal (integer score, ranked like a number),
+              C categorical, D date, T free text (never tested)
+--------------------------------------------------------------------------- */
+IF OBJECT_ID(N'dbo.variable', N'U') IS NULL
+BEGIN
+  CREATE TABLE dbo.variable
+  (
+    variable_id     INT IDENTITY(1,1) NOT NULL CONSTRAINT PK_variable PRIMARY KEY,
+    dataset_id      INT            NOT NULL CONSTRAINT FK_variable_dataset REFERENCES dbo.dataset (dataset_id) ON DELETE CASCADE,
+    variable_code   VARCHAR(60)    NOT NULL,                                       -- haematocrit, breed_group
+    name            NVARCHAR(200)  NOT NULL,                                       -- display name
+    source_name     NVARCHAR(200)  NULL,                                           -- header as it appears in the file
+    canonical_code  VARCHAR(60)    NULL,                                           -- same measurement across datasets (filled when a second dataset is mapped)
+    unit            NVARCHAR(50)   NULL,
+    data_type       CHAR(1)        NOT NULL CONSTRAINT CK_variable_data_type CHECK (data_type IN ('N', 'O', 'C', 'D', 'T')),
+    domain          VARCHAR(30)    NULL,                                           -- signalment, clinical, haematology, biochemistry, pathogen, time
+    derived         BIT            NOT NULL CONSTRAINT DF_variable_derived DEFAULT 0,        -- a grade or class computed from another variable
+    derived_from    JSON           NULL,                                           -- ["haemoglobin","rcc"]: arithmetic parents; a pair with a parent is trivial
+    include_default BIT            NOT NULL CONSTRAINT DF_variable_include DEFAULT 1,        -- part of the default test set
+    ref_low         FLOAT          NULL,
+    ref_high        FLOAT          NULL,
+    description     NVARCHAR(1000) NULL,
+    levels          JSON           NULL,                                           -- categorical: {"level": count}
+    sort_order      SMALLINT       NOT NULL CONSTRAINT DF_variable_sort_order DEFAULT 0,
+    CONSTRAINT UQ_variable_dataset_code UNIQUE (dataset_id, variable_code)
+  );
+END;
+
+/* ---------------------------------------------------------------------------
+   subject - one row per animal (or sample where animals are not identified)
+--------------------------------------------------------------------------- */
+IF OBJECT_ID(N'dbo.subject', N'U') IS NULL
+BEGIN
+  CREATE TABLE dbo.subject
+  (
+    subject_id    INT IDENTITY(1,1) NOT NULL CONSTRAINT PK_subject PRIMARY KEY,
+    dataset_id    INT            NOT NULL CONSTRAINT FK_subject_dataset REFERENCES dbo.dataset (dataset_id) ON DELETE CASCADE,
+    subject_code  VARCHAR(60)    NOT NULL,                                        -- the dataset's own identifier, e.g. BET001
+    group_label   NVARCHAR(100)  NULL,                                            -- study group as the dataset defines it
+    outcome_label NVARCHAR(100)  NULL,                                            -- survival or severity class where one exists
+    CONSTRAINT UQ_subject_dataset_code UNIQUE (dataset_id, subject_code)
+  );
+END;
+
+/* ---------------------------------------------------------------------------
+   observation - long table of values. time_point is '' for single-visit data.
+--------------------------------------------------------------------------- */
+IF OBJECT_ID(N'dbo.observation', N'U') IS NULL
+BEGIN
+  CREATE TABLE dbo.observation
+  (
+    observation_id BIGINT IDENTITY(1,1) NOT NULL CONSTRAINT PK_observation PRIMARY KEY,
+    subject_id     INT            NOT NULL CONSTRAINT FK_observation_subject  REFERENCES dbo.subject (subject_id) ON DELETE CASCADE,
+    variable_id    INT            NOT NULL CONSTRAINT FK_observation_variable REFERENCES dbo.variable (variable_id),
+    time_point     VARCHAR(30)    NOT NULL CONSTRAINT DF_observation_time_point DEFAULT '',
+    value_num      FLOAT          NULL,
+    value_text     NVARCHAR(400)  NULL,
+    value_date     DATE           NULL,
+    CONSTRAINT UQ_observation UNIQUE (subject_id, variable_id, time_point)
+  );
+
+  CREATE INDEX IX_observation_variable ON dbo.observation (variable_id) INCLUDE (subject_id, value_num, value_text);
+END;
+
+/* ---------------------------------------------------------------------------
+   experiment - one row per analysis run
+--------------------------------------------------------------------------- */
+IF OBJECT_ID(N'dbo.experiment', N'U') IS NULL
+BEGIN
+  CREATE TABLE dbo.experiment
+  (
+    experiment_id   INT IDENTITY(1,1) NOT NULL CONSTRAINT PK_experiment PRIMARY KEY,
+    experiment_code VARCHAR(60)    NOT NULL CONSTRAINT UQ_experiment_code UNIQUE,  -- EXP01-DS05-pairwise
+    name            NVARCHAR(200)  NOT NULL,
+    description     NVARCHAR(MAX)  NULL,
+    method          VARCHAR(50)    NOT NULL,                                       -- pairwise_association, clustering, ...
+    dataset_id      INT            NULL CONSTRAINT FK_experiment_dataset REFERENCES dbo.dataset (dataset_id),
+    parameters      JSON           NULL,                                           -- the run's settings, verbatim
+    script          NVARCHAR(200)  NULL,                                           -- scripts/experiment_pairwise.py
+    script_version  VARCHAR(64)    NULL,                                           -- SHA-256 prefix of the script file
+    run_at          DATETIME2(0)   NULL,
+    n_subjects      INT            NULL,
+    n_variables     INT            NULL,
+    n_tests         INT            NULL,
+    summary         NVARCHAR(MAX)  NULL,                                           -- short plain-text summary written by the script
+    loaded_at       DATETIME2(0)   NOT NULL CONSTRAINT DF_experiment_loaded_at DEFAULT SYSUTCDATETIME()
+  );
+END;
+
+/* ---------------------------------------------------------------------------
+   association - one row per tested variable pair. The UI sorts and filters here.
+--------------------------------------------------------------------------- */
+IF OBJECT_ID(N'dbo.association', N'U') IS NULL
+BEGIN
+  CREATE TABLE dbo.association
+  (
+    association_id INT IDENTITY(1,1) NOT NULL CONSTRAINT PK_association PRIMARY KEY,
+    experiment_id  INT           NOT NULL CONSTRAINT FK_association_experiment REFERENCES dbo.experiment (experiment_id) ON DELETE CASCADE,
+    variable_a_id  INT           NOT NULL CONSTRAINT FK_association_variable_a REFERENCES dbo.variable (variable_id),
+    variable_b_id  INT           NOT NULL CONSTRAINT FK_association_variable_b REFERENCES dbo.variable (variable_id),
+    test           VARCHAR(30)   NOT NULL,                                         -- spearman, kruskal_wallis, chi_square
+    estimate       FLOAT         NULL,                                             -- rho, eta_squared, cramers_v
+    estimate_label VARCHAR(30)   NULL,
+    n              INT           NOT NULL,
+    p_value        FLOAT         NULL,                                             -- permutation p
+    p_adjusted     FLOAT         NULL,                                             -- Benjamini-Hochberg across the run
+    significant    BIT           NOT NULL CONSTRAINT DF_association_significant DEFAULT 0,
+    trivial        BIT           NOT NULL CONSTRAINT DF_association_trivial DEFAULT 0,  -- one variable is arithmetically derived from the other
+    direction      NVARCHAR(200) NULL,                                             -- "positive", or the group with the higher median
+    detail         JSON          NULL                                              -- group medians, contingency table, statistic
+  );
+
+  CREATE INDEX IX_association_experiment ON dbo.association (experiment_id, p_adjusted) INCLUDE (variable_a_id, variable_b_id, estimate, significant, trivial);
+  CREATE INDEX IX_association_variable_a ON dbo.association (variable_a_id);
+  CREATE INDEX IX_association_variable_b ON dbo.association (variable_b_id);
+END;
+
+/* ---------------------------------------------------------------------------
+   cluster_assignment - subject-level groupings from clustering experiments
+--------------------------------------------------------------------------- */
+IF OBJECT_ID(N'dbo.cluster_assignment', N'U') IS NULL
+BEGIN
+  CREATE TABLE dbo.cluster_assignment
+  (
+    experiment_id INT          NOT NULL CONSTRAINT FK_cluster_experiment REFERENCES dbo.experiment (experiment_id) ON DELETE CASCADE,
+    subject_id    INT          NOT NULL CONSTRAINT FK_cluster_subject    REFERENCES dbo.subject (subject_id),
+    cluster_label VARCHAR(30)  NOT NULL,
+    score         FLOAT        NULL,                                               -- silhouette or membership strength
+    CONSTRAINT PK_cluster_assignment PRIMARY KEY (experiment_id, subject_id)
+  );
+END;
+
+/* ---------------------------------------------------------------------------
+   experiment_result - the full, method-specific outputs as JSON
+   (correlation matrix, variable clusters, top findings, figure data)
+--------------------------------------------------------------------------- */
+IF OBJECT_ID(N'dbo.experiment_result', N'U') IS NULL
+BEGIN
+  CREATE TABLE dbo.experiment_result
+  (
+    result_id     INT IDENTITY(1,1) NOT NULL CONSTRAINT PK_experiment_result PRIMARY KEY,
+    experiment_id INT           NOT NULL CONSTRAINT FK_result_experiment REFERENCES dbo.experiment (experiment_id) ON DELETE CASCADE,
+    result_kind   VARCHAR(40)   NOT NULL,                                          -- spearman_matrix, variable_clusters, top_associations
+    title         NVARCHAR(200) NULL,
+    payload       JSON          NOT NULL,
+    sort_order    SMALLINT      NOT NULL CONSTRAINT DF_result_sort_order DEFAULT 0
+  );
+
+  CREATE INDEX IX_experiment_result_experiment ON dbo.experiment_result (experiment_id, sort_order);
 END;
 
 COMMIT TRANSACTION;

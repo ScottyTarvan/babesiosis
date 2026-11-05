@@ -1,0 +1,385 @@
+:host {
+  display: block;
+}
+
+.fs-ai-agent {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+// The chat takes the width; the suggestions sit beside it on wide screens and
+// drop below it on narrow ones.
+.fs-ai-agent__layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 320px;
+  gap: 16px;
+  align-items: start;
+
+  @media (max-width: 1100px) {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+.fs-ai-agent__aside {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+// ---- Thread ---------------------------------------------------------------
+
+.fs-ai-agent__thread {
+  // The offset parent for scrollToLatest().
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: var(--fs-guide-space-4);
+  height: min(62vh, 640px);
+  min-height: 320px;
+  overflow-y: auto;
+  padding: var(--fs-guide-space-6);
+
+  fs-empty-state {
+    margin: auto;
+  }
+}
+
+.fs-ai-agent__message {
+  display: flex;
+  flex-direction: column;
+  gap: var(--fs-guide-space-1);
+  max-width: 78%;
+}
+
+.fs-ai-agent__message--user {
+  align-self: flex-end;
+  align-items: flex-end;
+
+  .fs-ai-agent__bubble {
+    background: rgb(var(--fs-color-primary));
+    color: rgb(var(--fs-color-primary-fg));
+    border-bottom-right-radius: var(--fs-radius-sm);
+  }
+}
+
+.fs-ai-agent__message--assistant {
+  align-self: flex-start;
+
+  .fs-ai-agent__bubble {
+    background: rgb(var(--fs-color-background));
+    border: 1px solid rgb(var(--fs-color-line));
+    border-bottom-left-radius: var(--fs-radius-sm);
+  }
+}
+
+.fs-ai-agent__meta {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font: var(--fs-guide-text-micro);
+  color: rgb(var(--fs-color-ink-soft));
+}
+
+.fs-ai-agent__bubble {
+  padding: var(--fs-guide-space-3) var(--fs-guide-space-4);
+  border-radius: var(--fs-radius-lg);
+  font: var(--fs-guide-text-body);
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+.fs-ai-agent__model {
+  font-weight: normal;
+}
+
+// ---- Answer Markdown --------------------------------------------------------
+// The answer arrives as HTML through [innerHTML], which the component's
+// emulated styles cannot reach, hence ::ng-deep under the bubble's own class.
+
+.fs-ai-agent__markdown {
+  white-space: normal;
+
+  ::ng-deep {
+    > :first-child { margin-top: 0; }
+    > :last-child { margin-bottom: 0; }
+
+    p,
+    ul,
+    ol,
+    pre,
+    table {
+      margin: 0 0 var(--fs-guide-space-3);
+    }
+
+    ul,
+    ol {
+      padding-left: 1.4em;
+    }
+
+    li + li {
+      margin-top: 2px;
+    }
+
+    h3,
+    h4,
+    h5,
+    h6 {
+      margin: var(--fs-guide-space-4) 0 var(--fs-guide-space-2);
+      font: var(--fs-guide-text-body-strong);
+      color: rgb(var(--fs-color-ink-strong));
+    }
+
+    h3 {
+      font-size: 1.05em;
+    }
+
+    code {
+      padding: 1px 4px;
+      border-radius: var(--fs-radius-sm);
+      background: rgb(var(--fs-color-line) / 0.6);
+      font-size: 0.92em;
+    }
+
+    pre {
+      padding: var(--fs-guide-space-3);
+      border-radius: var(--fs-radius-md);
+      background: rgb(var(--fs-color-line) / 0.5);
+      overflow-x: auto;
+
+      code {
+        padding: 0;
+        background: none;
+      }
+    }
+
+    table {
+      display: block;
+      max-width: 100%;
+      overflow-x: auto;
+      border-collapse: collapse;
+    }
+
+    th,
+    td {
+      padding: 4px 8px;
+      border: 1px solid rgb(var(--fs-color-line));
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      background: rgb(var(--fs-color-line) / 0.4);
+    }
+
+    hr {
+      border: 0;
+      border-top: 1px solid rgb(var(--fs-color-line));
+      margin: var(--fs-guide-space-3) 0;
+    }
+
+    a {
+      color: rgb(var(--fs-color-primary));
+    }
+
+    // Citations: small and quiet in the running text, a link where the source is known.
+    .agent-cite {
+      font-size: 0.85em;
+      color: rgb(var(--fs-color-ink-soft));
+      white-space: nowrap;
+
+      a {
+        font-weight: 600;
+        text-decoration: none;
+
+        &:hover,
+        &:focus-visible {
+          text-decoration: underline;
+        }
+      }
+
+      abbr {
+        font-weight: 600;
+        text-decoration: none;
+        cursor: help;
+      }
+    }
+  }
+}
+
+// ---- Citations under an answer ----------------------------------------------
+
+.fs-ai-agent__citations {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin: var(--fs-guide-space-1) 0 0;
+  padding: 0;
+  list-style: none;
+  width: 100%;
+
+  li {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    min-width: 0;
+    font: var(--fs-guide-text-micro);
+  }
+
+  fs-badge {
+    flex: none;
+  }
+}
+
+.fs-ai-agent__citation-title {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: rgb(var(--fs-color-ink));
+  text-decoration: none;
+
+  fs-symbol {
+    vertical-align: -2px;
+  }
+}
+
+a.fs-ai-agent__citation-title:hover,
+a.fs-ai-agent__citation-title:focus-visible {
+  color: rgb(var(--fs-color-primary));
+  text-decoration: underline;
+}
+
+.fs-ai-agent__citation-extra {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  flex: none;
+  color: rgb(var(--fs-color-ink-soft));
+}
+
+// Pulsing dots and a line of text while the agent searches and writes.
+.fs-ai-agent__thinking {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--fs-guide-space-2);
+  align-self: flex-start;
+  padding: var(--fs-guide-space-3) var(--fs-guide-space-4);
+  border: 1px solid rgb(var(--fs-color-line));
+  border-radius: var(--fs-radius-lg);
+  font: var(--fs-guide-text-micro);
+  color: rgb(var(--fs-color-ink-soft));
+}
+
+.fs-ai-agent__dots {
+  display: inline-flex;
+  gap: 4px;
+
+  span {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: rgb(var(--fs-color-ink-soft));
+    animation: fs-ai-agent-pulse 1.2s infinite ease-in-out;
+
+    &:nth-child(2) { animation-delay: 0.15s; }
+    &:nth-child(3) { animation-delay: 0.3s; }
+  }
+}
+
+@keyframes fs-ai-agent-pulse {
+  0%, 80%, 100% { opacity: 0.25; }
+  40% { opacity: 1; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fs-ai-agent__dots span {
+    animation: none;
+  }
+}
+
+// ---- Composer -------------------------------------------------------------
+
+.fs-ai-agent__composer {
+  display: flex;
+  flex-direction: column;
+  gap: var(--fs-guide-space-2);
+  padding: var(--fs-guide-space-4) var(--fs-guide-space-6);
+  border-top: 1px solid rgb(var(--fs-color-line));
+}
+
+.fs-ai-agent__composer-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--fs-guide-space-3);
+}
+
+.fs-ai-agent__hint {
+  margin-left: auto;
+  font: var(--fs-guide-text-micro);
+  color: rgb(var(--fs-color-ink-soft));
+}
+
+.fs-ai-agent__hint--error {
+  color: rgb(var(--fs-color-danger-fg));
+}
+
+// ---- Suggestions ----------------------------------------------------------
+
+.fs-ai-agent__suggestions {
+  display: flex;
+  flex-direction: column;
+  gap: var(--fs-guide-space-2);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.fs-ai-agent__suggestion {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--fs-guide-space-2);
+  width: 100%;
+  padding: var(--fs-guide-space-2) var(--fs-guide-space-3);
+  border: 1px solid rgb(var(--fs-color-line));
+  border-radius: var(--fs-radius-md);
+  background: transparent;
+  color: rgb(var(--fs-color-ink));
+  font: var(--fs-guide-text-body);
+  text-align: left;
+  cursor: pointer;
+
+  fs-symbol {
+    flex: none;
+    margin-top: 2px;
+    color: rgb(var(--fs-color-primary));
+  }
+
+  &:hover {
+    border-color: rgb(var(--fs-color-primary) / 0.40);
+    background-color: rgb(var(--fs-color-primary) / 0.06);
+  }
+
+  &:focus-visible {
+    outline: 2px solid rgb(var(--fs-color-primary));
+    outline-offset: 2px;
+  }
+
+  &:disabled {
+    cursor: default;
+    opacity: 0.6;
+    background: transparent;
+    border-color: rgb(var(--fs-color-line));
+  }
+}
+
+.fs-ai-agent__note {
+  margin: 0;
+
+  & + & {
+    margin-top: var(--fs-guide-space-3);
+  }
+  font: var(--fs-guide-text-body);
+  color: rgb(var(--fs-color-ink-soft));
+}

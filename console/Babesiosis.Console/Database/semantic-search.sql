@@ -12,7 +12,9 @@
         EXEC dbo.search_articles @question = N'acute kidney injury markers', @top = 5, @from_year = 2015;
         EXEC dbo.search_articles @question = N'treatment with imidocarb', @category_code = 'INF';
 
-    @category_code matches the primary category or a secondary/comparator tag.
+    @category_code matches the primary category or a secondary/comparator tag. has_full_text
+    says whether the paper's own text is available through dbo.search_passages and
+    dbo.article_section.
 */
 CREATE OR ALTER PROCEDURE dbo.search_articles
     @question      NVARCHAR(4000),
@@ -57,7 +59,9 @@ BEGIN
         c.category_code AS primary_category,
         CAST(d.distance AS DECIMAL(5, 4)) AS distance,
         a.one_sentence_finding,
-        a.doi
+        a.doi,
+        a.has_full_text,          -- 1 when dbo.article_section holds the paper's full text (see passage-search.sql)
+        a.text_source             -- abstract / jats_xml / pdf
     FROM dbo.article AS a
     CROSS APPLY (SELECT VECTOR_DISTANCE('cosine', a.embedding, @query_vector) AS distance) AS d
     LEFT JOIN dbo.category AS c ON c.category_id = a.primary_category_id

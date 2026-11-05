@@ -35,10 +35,18 @@ namespace Babesiosis.Console
       try
       {
         var settings = LoaderSettings.Load();
-        var articleResult = await new ArticleLoader(settings, options).RunAsync(cancellation.Token);
-        // Terms attach to article rows, so they load after the articles; a failed article still leaves the others.
-        var termResult = await new TermLoader(settings, options).RunAsync(cancellation.Token);
-        return Math.Max(articleResult, termResult);
+        var result = 0;
+        if (!options.DatasetsOnly)
+        {
+          result = await new ArticleLoader(settings, options).RunAsync(cancellation.Token);
+          // Passages and terms attach to article rows, so they load after the articles; a failed article still leaves the others.
+          result = Math.Max(result, await new SectionLoader(settings, options).RunAsync(cancellation.Token));
+          result = Math.Max(result, await new TermLoader(settings, options).RunAsync(cancellation.Token));
+        }
+        // Datasets link to articles by code, and experiments resolve their variables through the datasets, so this order matters.
+        result = Math.Max(result, await new DatasetLoader(settings, options).RunAsync(cancellation.Token));
+        result = Math.Max(result, await new ExperimentLoader(settings, options).RunAsync(cancellation.Token));
+        return result;
       }
       catch (OperationCanceledException)
       {

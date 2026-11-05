@@ -1,0 +1,187 @@
+<section class="fs-experiments">
+  <fs-page-header icon="chart-dots-3" title="Experiments"
+                  subtitle="Analyses run over the downloaded datasets, with the script's reading of each result">
+    <fs-button variant="outline" intent="secondary" size="sm" icon="refresh"
+               [loading]="listLoading() || detailLoading()" [disabled]="listLoading() || detailLoading()"
+               (click)="refresh()">Refresh</fs-button>
+  </fs-page-header>
+
+  <div class="fs-experiments__layout">
+    <!-- Left: every run, grouped by dataset, filtered by the search box. -->
+    <aside class="fs-experiments__panel" aria-label="Experiments">
+      <fs-card [padded]="false" [fillHeight]="true">
+        <div class="fs-experiments__panel-head">
+          <fs-text-input size="sm" placeholder="Search experiments…" ariaLabel="Search experiments"
+                         [ngModel]="search()" (ngModelChange)="search.set($event)" />
+          <span class="fs-experiments__panel-count">{{ filteredCount() }} of {{ items().length }}</span>
+        </div>
+
+        @if (listError(); as message) {
+          <div class="fs-experiments__panel-body">
+            <fs-banner intent="danger">
+              {{ message }}
+              <fs-button fsBannerAction variant="ghost" intent="secondary" size="sm"
+                         (click)="loadList()">Retry</fs-button>
+            </fs-banner>
+          </div>
+        } @else if (listLoading() && !items().length) {
+          <div class="fs-experiments__panel-loading"><fs-spinner size="sm" /></div>
+        } @else {
+          <nav class="fs-experiments__nav">
+            @for (group of groups(); track group.datasetCode) {
+              <div class="fs-experiments__group">
+                <h3 class="fs-experiments__group-title" [title]="group.datasetTitle">
+                  <span class="fs-experiments__group-code">{{ group.datasetCode }}</span>
+                  @if (group.articleCode) {
+                    <span class="fs-experiments__group-article">{{ group.articleCode }}</span>
+                  }
+                  <span class="fs-experiments__group-name">{{ group.datasetTitle }}</span>
+                </h3>
+                <ul class="fs-experiments__items">
+                  @for (item of group.items; track item.code) {
+                    <li>
+                      <button type="button" class="fs-experiments__item"
+                              [class.fs-experiments__item--selected]="item.code === selectedCode()"
+                              [attr.aria-current]="item.code === selectedCode() ? 'true' : null"
+                              (click)="select(item.code)">
+                        <span class="fs-experiments__item-name">{{ item.name }}</span>
+                        <span class="fs-experiments__item-meta">
+                          <fs-badge variant="tonal" intent="secondary">{{ methodLabel(item.method) }}</fs-badge>
+                          <span>{{ item.subjectCount ?? '–' }} subjects · {{ item.testCount ?? '–' }} tests · {{ item.findingCount }} findings</span>
+                        </span>
+                        <span class="fs-experiments__item-foot">
+                          <span class="fs-experiments__item-code">{{ item.code }}</span>
+                          @if (item.runAt) {
+                            <time [attr.datetime]="item.runAt">{{ item.runAt | date: 'd MMM yyyy' }}</time>
+                          }
+                        </span>
+                      </button>
+                    </li>
+                  }
+                </ul>
+              </div>
+            } @empty {
+              <div class="fs-experiments__panel-body">
+                <fs-empty-state size="compact" icon="list-search" title="No experiments match"
+                                [subtitle]="items().length ? 'Try another word, or clear the search.' : 'Run an experiment script and load it with the console.'" />
+              </div>
+            }
+          </nav>
+        }
+      </fs-card>
+    </aside>
+
+    <!-- Right: the selected run. Visualisation first, the note after it, then the details. -->
+    <div class="fs-experiments__detail">
+      @if (detailError(); as message) {
+        <fs-banner intent="danger">
+          {{ message }}
+          <fs-button fsBannerAction variant="ghost" intent="secondary" size="sm"
+                     (click)="retryDetail()">Retry</fs-button>
+        </fs-banner>
+      } @else if (!selectedCode()) {
+        <fs-card>
+          <fs-empty-state icon="chart-dots-3" title="Pick an experiment"
+                          subtitle="Choose a run from the list to see its results and the script's interpretation." />
+        </fs-card>
+      } @else if (detailLoading() && !detail()) {
+        <fs-card>
+          <div class="fs-experiments__loading"><fs-spinner /></div>
+        </fs-card>
+      } @else if (detail(); as d) {
+        <fs-card class="fs-experiments__header" [title]="d.name" [subtitle]="d.code">
+          <div class="fs-experiments__tags">
+            <fs-badge variant="tonal" intent="primary">{{ methodLabel(d.method) }}</fs-badge>
+            @if (d.dataset; as ds) {
+              <fs-badge variant="tonal" intent="secondary" [title]="ds.title">{{ ds.code }}</fs-badge>
+              @if (ds.articleCode) {
+                @if (ds.articleSourceUrl) {
+                  <a class="fs-experiments__article" [href]="ds.articleSourceUrl" target="_blank" rel="noopener noreferrer"
+                     [title]="ds.articleTitle ?? ds.articleCode">
+                    <fs-badge variant="tonal" intent="info">{{ ds.articleCode }}</fs-badge>
+                    <span class="fs-experiments__article-title">{{ ds.articleTitle ?? ds.articleCode }}</span>
+                    <fs-symbol name="external-link" size="xs" ariaLabel="Opens in a new window" />
+                  </a>
+                } @else {
+                  <fs-badge variant="tonal" intent="info" [title]="ds.articleTitle ?? ''">{{ ds.articleCode }}</fs-badge>
+                }
+              }
+            }
+            @if (d.runAt) {
+              <span class="fs-experiments__run-at">Run {{ d.runAt | date: 'd MMM yyyy, HH:mm' }} UTC</span>
+            }
+          </div>
+          <dl class="fs-experiments__stats">
+            <div><dt>Subjects</dt><dd>{{ d.subjectCount ?? '–' }}</dd></div>
+            <div><dt>Variables</dt><dd>{{ d.variableCount ?? '–' }}</dd></div>
+            <div><dt>Tests</dt><dd>{{ d.testCount ?? '–' }}</dd></div>
+            <div><dt>Significant</dt><dd>{{ d.significantCount }}</dd></div>
+            <div><dt>Findings</dt><dd>{{ d.findingCount }}</dd></div>
+          </dl>
+          @if (d.summary) {
+            <p class="fs-experiments__summary">{{ d.summary }}</p>
+          }
+          @if (d.description) {
+            <p class="fs-experiments__description">{{ d.description }}</p>
+          }
+        </fs-card>
+
+        @switch (d.method) {
+          @case ('pairwise_association') {
+            <fs-experiment-pairwise-view [detail]="d" />
+          }
+          @default {
+            <fs-banner intent="info">
+              This experiment's method, <strong>{{ d.method }}</strong>, has no visualisation yet. Its results are shown as stored.
+            </fs-banner>
+          }
+        }
+
+        @for (result of unhandledResults(); track result.kind) {
+          <fs-card [title]="result.title" [subtitle]="result.kind">
+            <pre class="fs-experiments__json">{{ result.text }}</pre>
+          </fs-card>
+        }
+
+        @if (interpretation(); as note) {
+          <fs-card class="fs-experiments__note-card" title="Explanation and interpretation"
+                   subtitle="Written by the experiment script from this run's own results">
+            <div class="fs-experiments__note">
+              @for (section of note.sections; track section.heading) {
+                <h4>{{ section.heading }}</h4>
+                @for (paragraph of section.paragraphs; track $index) {
+                  <p>{{ paragraph }}</p>
+                }
+              }
+              <span class="fs-experiments__note-date">
+                Generated {{ d.runAt | date: 'd MMM yyyy' }} by {{ d.script }}@if (d.scriptVersion) { (version {{ d.scriptVersion }})}.
+                The text is templated from the numbers above; it is a reading, not a review.
+              </span>
+            </div>
+          </fs-card>
+        }
+
+        <fs-card title="Dataset and run" subtitle="Where the data came from and how the run was set up">
+          <div class="fs-experiments__facts">
+            <div>
+              <h4>Dataset</h4>
+              <fs-definition-list [items]="datasetItems()" layout="stack" density="compact" />
+            </div>
+            <div>
+              <h4>Parameters</h4>
+              <fs-definition-list [items]="parameters()" layout="stack" density="compact" />
+            </div>
+          </div>
+          @if (datasetNotes().length) {
+            <h4 class="fs-experiments__facts-title">Cleaning notes</h4>
+            <ul class="fs-experiments__notes">
+              @for (note of datasetNotes(); track $index) {
+                <li>{{ note }}</li>
+              }
+            </ul>
+          }
+        </fs-card>
+      }
+    </div>
+  </div>
+</section>

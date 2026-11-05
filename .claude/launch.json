@@ -3,10 +3,11 @@
   "configurations": [
     {
       "name": "babesiosis-api",
-      "runtimeExecutable": "cmd",
+      "runtimeExecutable": "powershell",
       "runtimeArgs": [
-        "/c",
-        "cd webapp\\Babesiosis.Core.Functions && func start --port 6060"
+        "-NoProfile",
+        "-Command",
+        "$k = $env:OPENROUTER_API_KEY; if (-not $k) { $k = [Environment]::GetEnvironmentVariable('OPENROUTER_API_KEY', 'User') }; $env:AppSettings__AiAgents__ApiKey = $k; Set-Location webapp\\Babesiosis.Core.Functions; func.cmd start --port 6060"
       ],
       "port": 6060
     },
@@ -45,6 +46,15 @@
         "cd webapp\\Babesiosis.Web && npx ng serve --host=127.0.0.1 --port 4446 --configuration mock"
       ],
       "port": 4446
+    },
+    {
+      "name": "babesiosis-web-4401",
+      "runtimeExecutable": "cmd",
+      "runtimeArgs": [
+        "/c",
+        "cd webapp\\Babesiosis.Web && npx ng serve --host=127.0.0.1 --port 4401 --configuration local"
+      ],
+      "port": 4401
     }
   ]
 }

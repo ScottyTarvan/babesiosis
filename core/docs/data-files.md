@@ -14,6 +14,15 @@ Paths are relative to `core/`. Counts were taken on 2026-10-28; re-count before 
 
 To view a sheet, run `python -I scripts/table_dump.py "<file>[::member]"`.
 
+## Tidy datasets and experiments
+
+| File | Format | What it holds |
+|---|---|---|
+| `data/tidy/<dataset_id>.json` | JSON | One tidied dataset, written by `scripts/tidy_<dataset>.py`: `dataset` (metadata from `datasets.jsonl`, file hash from the manifest, cleaning `notes[]`), `variables[]` (`code`, `name`, `source_name`, `unit`, `data_type` N/O/C/D/T, `domain`, `derived`, `derived_from[]`, `include_default`, `ref_low`, `ref_high`, `description`, `levels{}`), `subjects[]` (`code`, `group_label`, `outcome_label`) and `observations[]` (`subject`, `variable`, `time_point`, `value_num`, `value_text`, `value_date`). Long format: one observation per subject × variable × time point. |
+| `data/experiments/<code>.json` | JSON | One experiment run, written by `scripts/experiment_*.py`: `experiment` (code, name, method, dataset, `parameters`, script and its hash, `run_utc`, counts, `summary`), `associations[]` (one per tested pair: test, estimate, n, `p_value`, `p_adjusted`, `significant`, `trivial`, `direction`, `detail`), `cluster_assignments[]` (subject-level groupings, empty for pairwise runs) and `results[]` (method-specific payloads: `spearman_matrix`, `variable_clusters`, `top_associations`, `run_notes`). |
+
+Current files: `DS05.json` (article 1, 150 dogs, 65 variables, 39 in the default test set) and `EXP01-DS05-pairwise.json`. Variables marked `derived` are the authors' grades and classes computed from measured columns; `derived_from` lists arithmetic parents (MCV from haematocrit and RCC, globulin from total protein and albumin, and so on), and a pair with its parent counts as `trivial`, not a finding. The raw files in `data/raw/` are never changed; re-running the tidy script rebuilds the JSON from them.
+
 ## Full texts and Markdown (git-ignored)
 
 | File | Format | Rows | What it holds |
@@ -30,6 +39,6 @@ To view a sheet, run `python -I scripts/table_dump.py "<file>[::member]"`.
 | `data/markdown_report.md` | Markdown | – | Rendered conversion report, with a translations table |
 | `data/abstracts_fetched.json` | JSON object | 11 | `ID` → `{abstract, source}`: abstracts fetched where the search packets had none |
 
-In `data/markdown/*.md`, the headings are `## Abstract`, `## Introduction`, `## Methods`, `## Results`, `## Discussion` and so on. References and administrative back matter were removed. Check `quality_flags` before you trust a file. The flags include `garbled_text`, `no_sections_detected` and `language:cyrillic`.
+In `data/markdown/*.md`, the headings are `## Abstract`, `## Introduction`, `## Methods`, `## Results`, `## Discussion` and so on. References and administrative back matter were removed. PDF-derived files are cleaned of running heads, page numbers and, in author manuscripts, margin line numbers and the one-line-per-row layout (re-run 2026-11-05; after re-converting, run `console/Babesiosis.Console` with no flags so the passages whose text changed are reloaded and re-embedded). Check `quality_flags` before you trust a file. The flags include `garbled_text`, `no_sections_detected` and `language:cyrillic`.
 
 In `data/fulltext_status.jsonl` and `data/markdown_report.jsonl` the round-4 IDs still carry the `scope_label` "pending extraction" that was set when they were converted, and both files keep rows for retired IDs. Join them to the `articles.jsonl` IDs, and take the scope from there, when you count the review's articles.

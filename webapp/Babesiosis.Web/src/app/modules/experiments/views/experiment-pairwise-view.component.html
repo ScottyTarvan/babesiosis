@@ -1,0 +1,63 @@
+<div class="fs-experiment-pairwise">
+  <fs-card title="Correlation matrix" subtitle="Spearman rho between every pair of numeric and ordinal variables · warm positive, cool negative, grey near zero">
+    @if (matrix(); as m) {
+      <div class="fs-experiment-pairwise__heatmap">
+        <fs-chart [options]="heatmapOptions()" [height]="heatmapHeight()"
+                  [empty]="!m.variables.length" emptyMessage="No numeric variables in this run" />
+      </div>
+      <p class="fs-experiment-pairwise__footnote">
+        {{ m.variables.length }} variables. Hover a cell for the coefficient and the number of complete pairs it rests on.
+        Cells on the diagonal are a variable against itself.
+      </p>
+    } @else {
+      <p class="fs-experiment-pairwise__footnote">This run stored no correlation matrix.</p>
+    }
+  </fs-card>
+
+  @if (clusterRows().length) {
+    <fs-card title="Variables that move together" subtitle="Average-linkage blocks on 1 − |rho| · descriptive groupings of measurements, not subtypes">
+      <ol class="fs-experiment-pairwise__clusters">
+        @for (cluster of clusterRows(); track $index) {
+          <li>
+            <span class="fs-experiment-pairwise__cluster-strength" title="Mean absolute Spearman rho within the block">
+              |rho| {{ cluster.strength === null ? '–' : cluster.strength.toFixed(2) }}
+            </span>
+            <span class="fs-experiment-pairwise__cluster-members">
+              @for (member of cluster.members; track member) {
+                <fs-badge variant="tonal" intent="secondary">{{ member }}</fs-badge>
+              }
+            </span>
+          </li>
+        }
+      </ol>
+      @if (singletonNames().length) {
+        <p class="fs-experiment-pairwise__footnote">
+          On their own at this cut: {{ singletonNames().join(', ') }}.
+        </p>
+      }
+    </fs-card>
+  }
+
+  <fs-card title="Findings" [subtitle]="filteredRows().length + ' of ' + detail().associations.length + ' tested pairs shown · best adjusted p first'">
+    <div class="fs-experiment-pairwise__filters">
+      <fs-text-input size="sm" placeholder="Filter by variable, domain or test…" ariaLabel="Filter findings"
+                     [ngModel]="search()" (ngModelChange)="search.set($event)" />
+      <fs-checkbox label="Significant only" [checked]="significantOnly()" (checkedChange)="significantOnly.set($event)" />
+      <fs-checkbox label="Hide arithmetic pairs" [checked]="hideTrivial()" (checkedChange)="hideTrivial.set($event)" />
+      <fs-checkbox label="Across domains only" [checked]="crossDomainOnly()" (checkedChange)="crossDomainOnly.set($event)" />
+    </div>
+    <fs-data-grid [data]="filteredRows()" [columns]="columns" keyExpr="id"
+                  [pager]="pager" [pageSize]="pageSize"
+                  noDataText="No pairs match these filters." />
+    @if (detail().associationsTruncated) {
+      <p class="fs-experiment-pairwise__footnote">
+        The server capped the rows it sent; the weakest pairs are not in this table.
+      </p>
+    }
+    <p class="fs-experiment-pairwise__footnote">
+      Effect sizes are Spearman rho for two numbers, eta squared for a category against a number and Cramer's V for two categories,
+      so they are comparable within a test, not across tests. Adjusted p is Benjamini-Hochberg across every test in the run.
+      Arithmetic pairs are ones where a variable is calculated from the other.
+    </p>
+  </fs-card>
+</div>

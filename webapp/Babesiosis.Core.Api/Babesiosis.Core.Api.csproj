@@ -16,6 +16,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Babesiosis.Core\Babesiosis.Core.csproj" />
+    <ProjectReference Include="..\Babesiosis.Agents\Babesiosis.Agents.csproj" />
     <!-- The MCP kernel: token check, caller, tool result, confirmation tokens, module registry. -->
     <!-- Dataset Link reflects and analyses through the V2 data factory. -->
   </ItemGroup>

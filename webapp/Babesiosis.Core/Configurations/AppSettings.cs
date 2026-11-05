@@ -100,7 +100,9 @@ namespace Babesiosis.Core.Configurations
             High = Read("Models:High"),
             Max = Read("Models:Max")
           },
-          BodyStorageAllowed = bool.TryParse(Read("BodyStorageAllowed"), out var bodies) && bodies
+          BodyStorageAllowed = bool.TryParse(Read("BodyStorageAllowed"), out var bodies) && bodies,
+          // On unless explicitly turned off.
+          FullText = !bool.TryParse(Read("FullText"), out var fullText) || fullText
         };
       }
     }

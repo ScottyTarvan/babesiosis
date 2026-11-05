@@ -5,7 +5,10 @@ Input: data/fulltext_status.jsonl (from fetch_fulltext.py) and the files it list
     (Markdown pipe tables, colspan/rowspan padded), figure and table captions, table footnotes.
   - PDF: pymupdf4llm (layout mode, page headers/footers off, no OCR), then cleaned: running
     heads and page numbers removed, line-end hyphenation and split paragraphs re-joined,
-    bold/italic markers dropped, <sup>/<sub> rewritten as ^x / plain.
+    bold/italic markers dropped, <sup>/<sub> rewritten as ^x / plain. Author manuscripts
+    (margin line numbers, every physical line emitted as a "- " item) get two more steps:
+    the line-number chain is removed and the wrapped lines are re-joined into paragraphs,
+    keeping only "- " lines that look like real list items.
 Both: headings normalised (known sections -> "## Results" etc., other headings -> "###"),
 references and administrative back matter (acknowledgements, funding, conflicts, author
 contributions, data availability, supplementary-file listings, footnotes) removed and named
@@ -276,8 +279,86 @@ def strip_inline(s):
     return re.sub(r"[ \t]{2,}", " ", s)
 
 
+BULLET = re.compile(r"^[-*•]\s+(?!\s*[-*•]\s)")  # "* - Mean is ..." is a table footnote marker, not a list item
+LIST_MARKER = re.compile(r"([ivx]+|[a-z]|\d{1,2})[).]\s")  # "i) ...", "a. ...", "1) ..." at the start of a list item
+TERMINAL = re.compile(r"[.:;?!)\]]$")  # a line that ends like this is not continued by the next one
+FLOAT_START = re.compile(r"^[*_]*(fig\w*|tab\w*|supplementary (tab\w*|fig\w*))\.?\s*S?\d", re.I)  # Figure/Figura/Tabela 1
+# A standalone integer: not part of a number, word, citation bracket or <sup> tag; or one glued to the end of a
+# word where a hyphenated line break was lost ("long240 term")
+LINE_NUMBER = re.compile(r"(?<![\w.,/:%\-<>\[\]()^])(\d{1,4})(?![\w.,/:%\-<>\[\]()])|(?<=[a-z])(\d{2,4})(?= [a-z])")
+
+
+def strip_line_numbers(lines):
+    """Remove manuscript line numbers (an integer that increases through the file, usually by 1 per physical line).
+
+    Author manuscripts carry them in the margin; pymupdf4llm emits them as bare lines ("- 6"), at the start of a
+    line ("- 24 Babesia rossi causes"), or mid-line where it joined two physical lines ("Five 29 healthy"). The
+    candidates are standalone integers outside tables; those that continue the chain (next expected value, a few
+    skipped values confirmed by the following number, or a restart near 1 confirmed twice) are removed, but only
+    when the chain is long enough to be line numbering rather than coincidence. Returns (lines, found)."""
+    cands = []  # (line index, start, end, value, strong) in document order
+    for i, l in enumerate(lines):
+        if not l.strip() or l.lstrip().startswith("|"):
+            continue
+        core = re.match(r"^\s*(?:[-*•]\s+|#+\s+)?", l).end()
+        for m in LINE_NUMBER.finditer(l):
+            strong = m.group(1) is not None and (m.start() == core or not l[m.end():].strip())  # at the start or end of the line
+            cands.append((i, m.start(), m.end(), int(m.group(0)), strong))
+    text_lines = sum(1 for l in lines if l.strip() and not l.lstrip().startswith("|"))
+
+    def chain(step):
+        def confirmed(i, v, n):
+            want = v + step
+            for c in cands[i + 1:i + 13]:
+                if c[3] in (want, want + step):
+                    want = c[3] + step
+                    n -= 1
+                    if n == 0:
+                        return True
+            return False
+        acc, last = [], None
+        for i, c in enumerate(cands):
+            v, strong = c[3], c[4]
+            if last is None:
+                ok = strong and confirmed(i, v, 2)
+            elif v == last + step:
+                ok = True
+            elif last + step < v <= last + 6 * step:
+                ok = confirmed(i, v, 1)  # one or more numbers lost in the conversion
+            elif strong:
+                ok = confirmed(i, v, 2)  # a longer run lost (title block, figure pages), or numbering restarting on a new page
+            else:
+                ok = False
+            if ok:
+                acc.append(c)
+                last = v
+        return acc
+
+    best = max((chain(s) for s in (1, 2, 3, 5)), key=len)
+    if len(best) < 20 or len(best) < 0.2 * text_lines:
+        return lines, False
+    out = list(lines)
+    for i, s, e, _, _ in reversed(best):  # right to left within a line, so earlier spans stay valid
+        out[i] = out[i][:s] + out[i][e:]
+    out = [re.sub(r"\s{2,}", " ", l).rstrip() for l in out]
+    return ["" if re.fullmatch(r"\s*(?:[-*•]|#+)?\s*", l) else l for l in out], True
+
+
+def wrapped_lines(lines, numbered):
+    """True when pymupdf4llm emitted the physical lines of the PDF one by one, most of them as "- " list items
+    (author manuscripts with margin line numbers do this): the list markers are then layout, not lists."""
+    if numbered:
+        return True
+    body = [l.strip() for l in lines if l.strip() and not l.lstrip().startswith(("|", "#"))]
+    bullets = [BULLET.sub("", l) for l in body if BULLET.match(l)]
+    lower = sum(1 for b in bullets if re.match(r"[a-z]", b) and not LIST_MARKER.match(b))
+    return len(bullets) >= 20 and len(bullets) >= 0.4 * len(body) and lower >= 0.25 * len(bullets)
+
+
 def clean_pdf_md(md, pages, title):
     lines = [l.rstrip() for l in md.splitlines()]
+    lines, numbered = strip_line_numbers(lines)
+    wrapped = wrapped_lines(lines, numbered)
     # running heads: short non-table lines repeated on several pages (page numbers ignored), bare page numbers,
     # the PDF's own title and article-type label (the file gets its title from articles.jsonl), corresponding-author notes
     norm = lambda l: re.sub(r"[\d\W_]+", " ", strip_inline(l)).strip().lower()
@@ -285,6 +366,8 @@ def clean_pdf_md(md, pages, title):
     tw = set(re.findall(r"\w{4,}", title.lower()))
     def drop(l):
         n, bare = norm(l), strip_inline(l).strip("# ").strip()
+        if wrapped:
+            bare = BULLET.sub("", bare)
         if not bare:
             return False
         if re.fullmatch(r"(page\s*)?\d{1,4}(\s*(of|/)\s*\d{1,4})?", bare, re.I) or FOOTNOTE.match(bare):
@@ -306,18 +389,49 @@ def clean_pdf_md(md, pages, title):
         elif cur:
             paras.append(cur)
             cur = []
+    # List items: a "- " line is a real item when it starts like one (capital, digit, bracket or "i)" marker) and
+    # follows a lead-in ending in a colon or another item; a lowercase "- " line continuing an unfinished line is a
+    # wrapped line and is joined. In wrapped-lines mode every other "- " marker is layout and is dropped.
     blocks = []
     for p in paras:
         is_table = p[0].startswith("|")
         text = "\n".join(p) if is_table else " ".join(p)
-        if blocks and not is_table and not text.startswith(("#", "- ", "* ", ">")):
+        if wrapped and not blocks and BULLET.match(text):
+            text = BULLET.sub("", text)
+        if blocks and not is_table and not text.startswith(("#", ">")):
             prev = blocks[-1]
-            if not prev.startswith(("#", "|")):
-                if re.search(r"\w-$", prev) and re.match(r"[a-z]", text):
-                    blocks[-1] = prev[:-1] + text
+            prev_end = strip_inline(prev).rstrip()
+            # in wrapped-lines mode a line ending in ")" is usually mid-sentence, e.g. "(P<0.001)"
+            finished = bool(re.search(r"[.:;?!]$", prev_end) if wrapped else TERMINAL.search(prev_end))
+            if FLOAT_START.match(prev) and prev_end.endswith(")"):
+                finished = False  # "Figure 1. ... (original)" wrapped onto a second line
+            m = BULLET.match(text)
+            body = text[m.end():] if m else text
+            plain = strip_inline(body).lstrip()  # without bold/italic markers, which decide nothing here
+            item = False
+            if m:
+                starts_item = re.match(r"[A-Z0-9(\[]", plain) or LIST_MARKER.match(plain)
+                if wrapped:  # after an item, a new one only if that item did not run to the full line width unfinished
+                    item = bool(starts_item and (prev_end.endswith(":") or
+                                                 (BULLET.match(prev) and (finished or len(prev_end) < 90))))
+                else:
+                    item = bool(starts_item or finished)
+            if m and not item:
+                text = body
+            if not item and not prev.startswith("|") and not FLOAT_START.match(body):
+                if prev.startswith("#"):
+                    if wrapped and re.fullmatch(r"\*\*[^*]{1,80}\*\*", body) and not finished:
+                        blocks[-1] = prev + " " + body  # heading wrapped onto a second line
+                        continue
+                elif re.search(r"\w-$", prev) and re.match(r"[a-z]", plain):
+                    blocks[-1] = prev[:-1] + body
                     continue
-                if not re.search(r"[.:;?!)\]]$", prev) and re.match(r"[a-z(\d]", text):
-                    blocks[-1] = prev + " " + text
+                elif wrapped and not finished and not (FLOAT_START.match(prev) and
+                                                       (not re.match(r"[a-z]", plain) or LIST_MARKER.match(plain))):
+                    blocks[-1] = prev + " " + body  # a caption takes only a lowercase continuation
+                    continue
+                elif not finished and re.match(r"[a-z(\d]", plain) and not LIST_MARKER.match(plain):
+                    blocks[-1] = prev + " " + body
                     continue
         blocks.append(text)
     blocks = [re.sub(r"(\w)- (?=[a-z])", r"\1", b) if not b.startswith("|") else b for b in blocks]  # in-line hyphenation
@@ -559,6 +673,10 @@ def main():
     sts = [r for r in map(json.loads, open(STATUS, encoding="utf-8")) if r.get("file")]
     if args.ids:
         sts = [r for r in sts if r["id"] in args.ids]
+    retired = [r["id"] for r in sts if r["id"] not in arts]  # fulltext_status.jsonl keeps rows for retired IDs
+    if retired:
+        print("skipping IDs no longer in articles.jsonl:", " ".join(retired))
+        sts = [r for r in sts if r["id"] in arts]
     try:
         import pymupdf
         import pymupdf4llm

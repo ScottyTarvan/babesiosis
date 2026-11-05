@@ -1,6 +1,6 @@
 # Markdown conversion report
 
-Generated 2026-10-28T20:27:45+00:00 by `scripts/to_markdown.py`. 540 articles: 255 from full text (100 JATS XML, 155 PDF), of which 210 pass every check; 285 abstract-only (full text not retrieved; see the last section).
+Generated 2026-11-05T06:50:49+00:00 by `scripts/to_markdown.py`. 540 articles: 255 from full text (100 JATS XML, 155 PDF), of which 211 pass every check; 285 abstract-only (full text not retrieved; see the last section).
 
 ## Flags
 
@@ -11,8 +11,8 @@ Generated 2026-10-28T20:27:45+00:00 by `scripts/to_markdown.py`. 540 articles: 2
 | `language:non-english-latin` | 11 | not English; translate or use a multilingual model |
 | `language:cyrillic` | 10 | not English; translate or use a multilingual model |
 | `title_check:unchecked` | 5 | fetcher could not confirm the title (see fulltext_missing.md) |
-| `references_not_found` | 5 | no reference heading found; reference list may remain in the text |
 | `short_text` | 4 | under 800 words (short case reports, or incomplete text) |
+| `references_not_found` | 4 | no reference heading found; reference list may remain in the text |
 | `little_text_per_page` | 3 | probably scanned pages; needs OCR |
 | `garbled_text` | 1 | PDF fonts lack a Unicode map; text is unusable without OCR |
 | `title_check:low` | 1 | fetcher could not confirm the title (see fulltext_missing.md) |
@@ -58,7 +58,6 @@ Generated 2026-10-28T20:27:45+00:00 by `scripts/to_markdown.py`. 540 articles: 2
 | [CB296](markdown/CB296.md) | pdf | 2744 | 1 | abstract, introduction | language:non-english-latin |
 | [CB336](markdown/CB336.md) | pdf | 3533 | 0 |  | no_sections_detected |
 | [CB359](markdown/CB359.md) | pdf | 4607 | 0 | methods, discussion | no_results_or_case_section |
-| [CB375](markdown/CB375.md) | pdf | 4094 | 1 | abstract, introduction | references_not_found |
 | [CB380](markdown/CB380.md) | pdf | 3733 | 2 | abstract | no_sections_detected |
 | [CB397](markdown/CB397.md) | pdf | 4907 | 2 | abstract, introduction, methods, results_discussion | little_text_per_page |
 | [CB454](markdown/CB454.md) | jats_xml | 1600 | 0 | abstract | no_sections_detected |
@@ -76,24 +75,24 @@ Machine translations (LLM, not reviewed by a person) of non-English articles, ma
 | CB058 | tr | [CB058.en.md](markdown/CB058.en.md) | 99% | 1.21 | introduction, methods, results, discussion | ok |  |
 | CB156 | pt | [CB156.en.md](markdown/CB156.en.md) | 100% | 1.01 | introduction | ok |  |
 | CB157 | pl | [CB157.en.md](markdown/CB157.en.md) | 99% | 1.24 |  | no_sections_detected |  |
-| CB158 | ru | [CB158.en.md](markdown/CB158.en.md) | 100% | 1.23 | introduction, results_discussion, conclusion | title_check:unchecked |  |
+| CB158 | ru | [CB158.en.md](markdown/CB158.en.md) | 100% | 1.23 | introduction, results_discussion, conclusion | title_check:unchecked | yes |
 | CB175 | pt | [CB175.en.md](markdown/CB175.en.md) | 100% | 1.01 | introduction, case, discussion | ok |  |
-| CB187 | uk | [CB187.en.md](markdown/CB187.en.md) | 100% | 1.25 |  | no_sections_detected, title_check:unchecked |  |
+| CB187 | uk | [CB187.en.md](markdown/CB187.en.md) | 100% | 1.25 |  | no_sections_detected, title_check:unchecked | yes |
 | CB189 | pt | [CB189.en.md](markdown/CB189.en.md) | 100% | 1.03 | abstract, introduction, methods, results, discussion, conclusion | ok |  |
 | CB192 | uk | [CB192.en.md](markdown/CB192.en.md) | 100% | 1.22 | introduction, conclusion | no_results_or_case_section |  |
 | CB194 | ru | [CB194.en.md](markdown/CB194.en.md) | 100% | 1.20 | introduction, methods, results_discussion, conclusion | ok |  |
-| CB200 | uk | [CB200.en.md](markdown/CB200.en.md) | 99% | 1.20 | introduction, conclusion | no_results_or_case_section |  |
+| CB200 | uk | [CB200.en.md](markdown/CB200.en.md) | 99% | 1.20 | introduction, conclusion | no_results_or_case_section | yes |
 | CB204 | pt | [CB204.en.md](markdown/CB204.en.md) | 100% | 0.99 | abstract, introduction, methods, results, discussion, conclusion | ok |  |
 | CB213 | uk | [CB213.en.md](markdown/CB213.en.md) | 100% | 1.22 | introduction, conclusion | no_results_or_case_section |  |
 | CB218 | ru | [CB218.en.md](markdown/CB218.en.md) | 100% | 1.12 | introduction, conclusion | ok |  |
-| CB226 | uk | [CB226.en.md](markdown/CB226.en.md) | 100% | 1.19 |  | no_sections_detected, title_check:unchecked |  |
+| CB226 | uk | [CB226.en.md](markdown/CB226.en.md) | 100% | 1.19 |  | no_sections_detected, title_check:unchecked | yes |
 | CB240 | pt | [CB240.en.md](markdown/CB240.en.md) | 100% | 1.00 | introduction, case, discussion, conclusion | ok |  |
 | CB250 | pt | [CB250.en.md](markdown/CB250.en.md) | 99% | 1.00 | introduction, case, discussion, conclusion | ok |  |
-| CB261 | tr | [CB261.en.md](markdown/CB261.en.md) | 100% | 1.16 | introduction, methods, results, discussion | ok |  |
+| CB261 | tr | [CB261.en.md](markdown/CB261.en.md) | 100% | 1.16 | introduction, methods, results, discussion | ok | yes |
 | CB262 | pt | [CB262.en.md](markdown/CB262.en.md) | 100% | 1.00 | abstract | abstract_only |  |
 | CB264 | fr | [CB264.en.md](markdown/CB264.en.md) | 100% | 0.80 | abstract | abstract_only |  |
 | CB267 | ru | [CB267.en.md](markdown/CB267.en.md) | 98% | 1.20 |  | no_sections_detected |  |
-| CB281 | ro | [CB281.en.md](markdown/CB281.en.md) | 100% | 1.01 | introduction, methods, results_discussion, conclusion | ok |  |
+| CB281 | ro | [CB281.en.md](markdown/CB281.en.md) | 100% | 1.01 | introduction, methods, results_discussion, conclusion | ok | yes |
 | CB296 | ro | [CB296.en.md](markdown/CB296.en.md) | 100% | 1.09 | introduction | ok |  |
 | CB299 | sr | [CB299.en.md](markdown/CB299.en.md) | 100% | 1.08 | abstract | abstract_only |  |
 | CB308 | uk | [CB308.en.md](markdown/CB308.en.md) | 100% | 1.18 | abstract | abstract_only |  |
@@ -104,7 +103,7 @@ Machine translations (LLM, not reviewed by a person) of non-English articles, ma
 | CB475 | ru | [CB475.en.md](markdown/CB475.en.md) | 100% | 0.96 | abstract | abstract_only |  |
 | CB488 | unknown | [CB488.en.md](markdown/CB488.en.md) | 100% | 0.14 | abstract | abstract_only |  |
 | CB522 | unknown | [CB522.en.md](markdown/CB522.en.md) | 100% | 1.20 | abstract | abstract_only |  |
-| CB537 | ru | [CB537.en.md](markdown/CB537.en.md) | 100% | 1.20 | introduction, methods, results_discussion, conclusion | references_not_found, title_check:unchecked, unclear_passages |  |
+| CB537 | ru | [CB537.en.md](markdown/CB537.en.md) | 100% | 1.20 | introduction, methods, results_discussion, conclusion | references_not_found, title_check:unchecked, unclear_passages | yes |
 | CB539 | unknown | [CB539.en.md](markdown/CB539.en.md) | 100% | 1.04 | abstract | abstract_only |  |
 
 ## Abstract-only articles

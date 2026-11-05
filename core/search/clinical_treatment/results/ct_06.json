@@ -1,0 +1,671 @@
+[
+ {
+  "key": "DOI:10.14943/jjvr.66.3.221",
+  "decision": "include",
+  "include_type": "trial",
+  "exclude_reason": null,
+  "syndromes": [
+   "uncomplicated",
+   "chronic/relapsing"
+  ],
+  "treatments": [
+   "diminazene",
+   "clindamycin"
+  ],
+  "outcome_reported": true,
+  "species": "B. gibsoni",
+  "coinfection": false,
+  "n_dogs": 242,
+  "rationale": "Large clinical series of acute B. gibsoni dogs treated with diminazene then clindamycin vs none, with relapse rates compared."
+ },
+ {
+  "key": "https://openalex.org/W2996550960",
+  "decision": "include",
+  "include_type": "review",
+  "exclude_reason": null,
+  "syndromes": [],
+  "treatments": [],
+  "outcome_reported": false,
+  "species": "B. canis, B. vogeli, B. gibsoni, B. microti-like",
+  "coinfection": false,
+  "n_dogs": null,
+  "rationale": "Practitioner review of canine piroplasmosis from aetiology to treatment; treatment is within scope but abstract is brief."
+ },
+ {
+  "key": "DOI:10.19087/imv.2021.10.4.622",
+  "decision": "include",
+  "include_type": "case_report",
+  "exclude_reason": null,
+  "syndromes": [
+   "haemolytic anaemia",
+   "thrombocytopenia"
+  ],
+  "treatments": [
+   "ivermectin",
+   "diphenhydramine",
+   "clindamycin",
+   "haematinic"
+  ],
+  "outcome_reported": true,
+  "species": "Babesia sp. (smear)",
+  "coinfection": false,
+  "n_dogs": 1,
+  "rationale": "Single Pomeranian with anaemia, thrombocytopenia and fever treated; improved after 14 days."
+ },
+ {
+  "key": "DOI:10.23910/1.2025.6529",
+  "decision": "exclude",
+  "include_type": null,
+  "exclude_reason": "no_treatment",
+  "syndromes": [
+   "other: pyometra",
+   "thrombocytopenia"
+  ],
+  "treatments": [],
+  "outcome_reported": false,
+  "species": "Babesia sp. (smear)",
+  "coinfection": false,
+  "n_dogs": 1,
+  "rationale": "Abstract gives presentation and diagnosis but no treatment or outcome."
+ },
+ {
+  "key": "DOI:10.31563/2308-9644-2026-59-1-460-478",
+  "decision": "include",
+  "include_type": "trial",
+  "exclude_reason": null,
+  "syndromes": [
+   "dic",
+   "haemolytic anaemia",
+   "thrombocytopenia"
+  ],
+  "treatments": [
+   "imidocarb",
+   "fluids",
+   "antibiotics",
+   "glycyrrhizic acid"
+  ],
+  "outcome_reported": true,
+  "species": "Babesia sp.",
+  "coinfection": false,
+  "n_dogs": 18,
+  "rationale": "Randomised trial of glycyrrhizic acid in dogs with severe babesiosis and DIC; coagulation, bleeding and mortality reported."
+ },
+ {
+  "key": "DOI:10.13140/rg.2.2.35203.77603",
+  "decision": "uncertain",
+  "include_type": "case_report",
+  "exclude_reason": null,
+  "syndromes": [
+   "other: diabetic nephropathy"
+  ],
+  "treatments": [],
+  "outcome_reported": false,
+  "species": "B. gibsoni",
+  "coinfection": true,
+  "n_dogs": 2,
+  "rationale": "No abstract; title suggests two dogs managed, one with concurrent B. gibsoni, but babesia relevance and outcome unknown."
+ },
+ {
+  "key": "https://openalex.org/W2967277757",
+  "decision": "uncertain",
+  "include_type": "case_report",
+  "exclude_reason": null,
+  "syndromes": [],
+  "treatments": [
+   "clindamycin"
+  ],
+  "outcome_reported": false,
+  "species": "Babesia sp.",
+  "coinfection": false,
+  "n_dogs": 1,
+  "rationale": "Case study title but abstract is textbook background only; unclear whether the dog's treatment and outcome are described."
+ },
+ {
+  "key": "https://openalex.org/W4385291091",
+  "decision": "include",
+  "include_type": "trial",
+  "exclude_reason": null,
+  "syndromes": [
+   "uncomplicated"
+  ],
+  "treatments": [
+   "imidocarb"
+  ],
+  "outcome_reported": true,
+  "species": "B. canis (smear)",
+  "coinfection": false,
+  "n_dogs": null,
+  "rationale": "Field study of imidocarb in naturally infected dogs with symptomatic therapy; claims 100% parasite clearance, clinical detail sparse."
+ },
+ {
+  "key": "DOI:10.4314/nvj.v41i1.6",
+  "decision": "include",
+  "include_type": "case_report",
+  "exclude_reason": null,
+  "syndromes": [
+   "haemolytic anaemia",
+   "icterus",
+   "neonatal"
+  ],
+  "treatments": [
+   "transfusion",
+   "diminazene"
+  ],
+  "outcome_reported": true,
+  "species": "Babesia sp.",
+  "coinfection": false,
+  "n_dogs": 1,
+  "rationale": "3-month-old puppy with fever, pallor and icterus transfused and given diminazene; fully recovered."
+ },
+ {
+  "key": "DOI:10.21608/javs.2026.477632.1931",
+  "decision": "include",
+  "include_type": "case_report",
+  "exclude_reason": null,
+  "syndromes": [
+   "non-regenerative anaemia",
+   "thrombocytopenia",
+   "coinfection"
+  ],
+  "treatments": [
+   "doxycycline",
+   "enrofloxacin",
+   "metronidazole",
+   "transfusion"
+  ],
+  "outcome_reported": true,
+  "species": "Babesia sp. (smear)",
+  "coinfection": true,
+  "n_dogs": 1,
+  "rationale": "Toy Poodle with Babesia/Ehrlichia co-infection and anaemia, transfused and treated, PCV improved."
+ },
+ {
+  "key": "DOI:10.32416/2500-4379-2025-1-41-48",
+  "decision": "uncertain",
+  "include_type": null,
+  "exclude_reason": null,
+  "syndromes": [],
+  "treatments": [
+   "fluralaner"
+  ],
+  "outcome_reported": false,
+  "species": "Babesia sp.",
+  "coinfection": false,
+  "n_dogs": null,
+  "rationale": "Fluralaner product comparison for ectoparasites and babesiosis prevention/treatment; abstract has no results, unclear whether babesia-infected dogs were treated."
+ },
+ {
+  "key": "DOI:10.31563/1684-7628-2023-67-3-65-69",
+  "decision": "uncertain",
+  "include_type": "trial",
+  "exclude_reason": null,
+  "syndromes": [
+   "other: haematological and biochemical changes"
+  ],
+  "treatments": [
+   "complex agents"
+  ],
+  "outcome_reported": true,
+  "species": "Babesia sp.",
+  "coinfection": false,
+  "n_dogs": null,
+  "rationale": "Treatment of canine piroplasmosis with complex agents, but abstract gives no drugs, syndromes or numbers."
+ },
+ {
+  "key": "DOI:10.18502/kls.v0i0.8953",
+  "decision": "uncertain",
+  "include_type": "experimental",
+  "exclude_reason": null,
+  "syndromes": [],
+  "treatments": [
+   "diminazene"
+  ],
+  "outcome_reported": true,
+  "species": "Babesia sp.",
+  "coinfection": false,
+  "n_dogs": null,
+  "rationale": "Mainly livestock/equine; mentions reduced-dose diminazene in experimental canine babesiosis with satisfactory effect, but dog syndrome and detail unclear."
+ },
+ {
+  "key": "DOI:10.32718/ujvas7-2.10",
+  "decision": "include",
+  "include_type": "case_report",
+  "exclude_reason": null,
+  "syndromes": [
+   "uncomplicated",
+   "coinfection"
+  ],
+  "treatments": [
+   "imidocarb",
+   "melarsomine",
+   "imidacloprid-moxidectin"
+  ],
+  "outcome_reported": true,
+  "species": "B. canis (smear)",
+  "coinfection": true,
+  "n_dogs": 1,
+  "rationale": "Dog with babesiosis and dirofilariasis; imidocarb given, no improvement until dirofilariasis treated; recovery reported."
+ },
+ {
+  "key": "DOI:10.47278/book.zoon/2023.118",
+  "decision": "exclude",
+  "include_type": null,
+  "exclude_reason": "not_peer_reviewed",
+  "syndromes": [],
+  "treatments": [],
+  "outcome_reported": false,
+  "species": null,
+  "coinfection": false,
+  "n_dogs": null,
+  "rationale": "Zoonoses book chapter, babesiosis only mentioned."
+ },
+ {
+  "key": "DOI:10.31016/978-5-9902341-5-4.2020.21.234-239",
+  "decision": "exclude",
+  "include_type": null,
+  "exclude_reason": "no_treatment",
+  "syndromes": [],
+  "treatments": [],
+  "outcome_reported": false,
+  "species": "B. canis (smear)",
+  "coinfection": false,
+  "n_dogs": 30,
+  "rationale": "Smear and tick survey; no treatment or outcome described in abstract despite title."
+ },
+ {
+  "key": "DOI:10.35508/jkv.v6i1.960",
+  "decision": "exclude",
+  "include_type": null,
+  "exclude_reason": "no_treatment",
+  "syndromes": [
+   "haemolytic anaemia"
+  ],
+  "treatments": [],
+  "outcome_reported": false,
+  "species": "Babesia sp. (smear)",
+  "coinfection": false,
+  "n_dogs": 1,
+  "rationale": "Single dog RBC profile; no treatment described."
+ },
+ {
+  "key": "DOI:10.22146/jsv.74202",
+  "decision": "uncertain",
+  "include_type": "case_report",
+  "exclude_reason": null,
+  "syndromes": [
+   "thrombocytopenia"
+  ],
+  "treatments": [
+   "diminazene",
+   "doxycycline"
+  ],
+  "outcome_reported": false,
+  "species": "Babesia sp. (PCR)",
+  "coinfection": false,
+  "n_dogs": 1,
+  "rationale": "Shih-Tzu with fever and thrombocytopenia treated with diminazene and doxycycline; abstract does not state outcome."
+ },
+ {
+  "key": "DOI:10.34188/bjaerv9n3-016",
+  "decision": "include",
+  "include_type": "case_report",
+  "exclude_reason": null,
+  "syndromes": [
+   "coinfection"
+  ],
+  "treatments": [
+   "doxycycline",
+   "imidocarb"
+  ],
+  "outcome_reported": true,
+  "species": "B. canis (smear)",
+  "coinfection": true,
+  "n_dogs": 1,
+  "rationale": "3-month-old bitch with B. canis and E. canis co-infection treated; clinical recovery and parasite clearance on microscopy."
+ },
+ {
+  "key": "DOI:10.37811/cl_rcm.v7i5.8447",
+  "decision": "exclude",
+  "include_type": null,
+  "exclude_reason": "no_treatment",
+  "syndromes": [
+   "haemolytic anaemia",
+   "thrombocytopenia"
+  ],
+  "treatments": [],
+  "outcome_reported": false,
+  "species": "Babesia sp. (smear)",
+  "coinfection": false,
+  "n_dogs": 1,
+  "rationale": "Case with anaemia and thrombocytopenia; no treatment reported."
+ },
+ {
+  "key": "DOI:10.15407/biotech16.02.035",
+  "decision": "include",
+  "include_type": "trial",
+  "exclude_reason": null,
+  "syndromes": [
+   "haemolytic anaemia"
+  ],
+  "treatments": [
+   "imidopyran",
+   "prednisolone"
+  ],
+  "outcome_reported": true,
+  "species": "B. canis",
+  "coinfection": false,
+  "n_dogs": 17,
+  "rationale": "Dogs with babesial haemolytic anaemia treated with imidopyran and prednisolone; erythron indices improved."
+ },
+ {
+  "key": "DOI:10.37422/ijvs/20.052",
+  "decision": "exclude",
+  "include_type": null,
+  "exclude_reason": "no_treatment",
+  "syndromes": [
+   "cerebral"
+  ],
+  "treatments": [],
+  "outcome_reported": false,
+  "species": "B. canis (one cause)",
+  "coinfection": false,
+  "n_dogs": 15,
+  "rationale": "Meningoencephalitis causes pooled, mostly distemper; no Babesia-specific treatment."
+ },
+ {
+  "key": "DOI:10.54328/covm.josvas.2026.347",
+  "decision": "include",
+  "include_type": "case_report",
+  "exclude_reason": null,
+  "syndromes": [
+   "coinfection",
+   "other: dermatitis"
+  ],
+  "treatments": [
+   "antibabesial",
+   "anti-ehrlichial",
+   "topical therapy"
+  ],
+  "outcome_reported": true,
+  "species": "Babesia sp.",
+  "coinfection": true,
+  "n_dogs": 1,
+  "rationale": "Bitch with babesiosis/ehrlichiosis and dermatitis treated; full recovery. Drug names not given in abstract."
+ },
+ {
+  "key": "DOI:10.32416/2500-4379-2020-3-28-33",
+  "decision": "include",
+  "include_type": "trial",
+  "exclude_reason": null,
+  "syndromes": [
+   "hepatopathy"
+  ],
+  "treatments": [
+   "imidocarb",
+   "hepatojekt"
+  ],
+  "outcome_reported": true,
+  "species": "B. canis",
+  "coinfection": false,
+  "n_dogs": null,
+  "rationale": "Dogs with babesial hepatitis given imidocarb plus Hepatojekt versus basic therapy; metabolic parameters corrected."
+ },
+ {
+  "key": "DOI:10.12681/jhvms.15529",
+  "decision": "exclude",
+  "include_type": null,
+  "exclude_reason": "no_treatment",
+  "syndromes": [
+   "haemolytic anaemia"
+  ],
+  "treatments": [],
+  "outcome_reported": false,
+  "species": null,
+  "coinfection": false,
+  "n_dogs": null,
+  "rationale": "Anaemia diagnostic review; babesiosis only passing mention."
+ },
+ {
+  "key": "DOI:10.30954/2277-940x.03.2020.16",
+  "decision": "include",
+  "include_type": "trial",
+  "exclude_reason": null,
+  "syndromes": [
+   "imha",
+   "haemolytic anaemia"
+  ],
+  "treatments": [
+   "prednisolone",
+   "azathioprine"
+  ],
+  "outcome_reported": true,
+  "species": "B. gibsoni (PCR)",
+  "coinfection": false,
+  "n_dogs": 32,
+  "rationale": "IMHA dogs, 13 secondary to B. gibsoni, treated with immunosuppression plus specific therapy; haematology improved. Babesia subset not separated."
+ },
+ {
+  "key": "DOI:10.22456/1679-9216.120530",
+  "decision": "exclude",
+  "include_type": null,
+  "exclude_reason": "babesia_incidental",
+  "syndromes": [],
+  "treatments": [],
+  "outcome_reported": false,
+  "species": "B. canis PCR negative",
+  "coinfection": false,
+  "n_dogs": 1,
+  "rationale": "Idiopathic polymyositis; Babesia ruled out."
+ },
+ {
+  "key": "DOI:10.24843/bulvet.2026.v18.i02.p02",
+  "decision": "include",
+  "include_type": "case_report",
+  "exclude_reason": null,
+  "syndromes": [
+   "coinfection",
+   "non-regenerative anaemia",
+   "thrombocytopenia"
+  ],
+  "treatments": [
+   "doxycycline",
+   "imidocarb",
+   "supportive care"
+  ],
+  "outcome_reported": true,
+  "species": "Babesia sp. (smear/rapid test)",
+  "coinfection": true,
+  "n_dogs": 1,
+  "rationale": "Shih Tzu with Anaplasma/Babesia/Ehrlichia infection treated 3 weeks; clinical and haematological recovery."
+ },
+ {
+  "key": "DOI:10.62757/iva.2025.102.02.38-41",
+  "decision": "include",
+  "include_type": "case_report",
+  "exclude_reason": null,
+  "syndromes": [
+   "other: cholelithiasis"
+  ],
+  "treatments": [
+   "prednisolone",
+   "ursodeoxycholic acid",
+   "taurine"
+  ],
+  "outcome_reported": true,
+  "species": "B. gibsoni and B. vogeli",
+  "coinfection": true,
+  "n_dogs": 1,
+  "rationale": "Husky with mixed Babesia infection developed cholelithiasis after prednisolone; steroid withdrawn and UDCA given with reduction in stone size. Adverse-effect case."
+ },
+ {
+  "key": "DOI:10.12681/jhvms.15694",
+  "decision": "exclude",
+  "include_type": null,
+  "exclude_reason": "prevention_only",
+  "syndromes": [],
+  "treatments": [],
+  "outcome_reported": false,
+  "species": null,
+  "coinfection": false,
+  "n_dogs": null,
+  "rationale": "Vaccination review; babesiosis mentioned in passing."
+ },
+ {
+  "key": "DOI:10.5455/vrn.2025.e59",
+  "decision": "exclude",
+  "include_type": null,
+  "exclude_reason": "no_syndrome",
+  "syndromes": [],
+  "treatments": [
+   "oxytetracycline"
+  ],
+  "outcome_reported": false,
+  "species": null,
+  "coinfection": false,
+  "n_dogs": null,
+  "rationale": "Paravet questionnaire on antibiotic use; no Babesia dog clinical data."
+ },
+ {
+  "key": "https://openalex.org/W7219502897",
+  "decision": "uncertain",
+  "include_type": "case_report",
+  "exclude_reason": null,
+  "syndromes": [
+   "coinfection"
+  ],
+  "treatments": [],
+  "outcome_reported": false,
+  "species": "Babesia sp.",
+  "coinfection": true,
+  "n_dogs": 1,
+  "rationale": "Co-infection case report but abstract truncated at the introduction; presentation and treatment not visible."
+ },
+ {
+  "key": "DOI:10.35679/1991-9476-2023-18-1-140-147",
+  "decision": "include",
+  "include_type": "trial",
+  "exclude_reason": null,
+  "syndromes": [
+   "hepatopathy",
+   "other: fever"
+  ],
+  "treatments": [
+   "reamberin",
+   "fluids"
+  ],
+  "outcome_reported": true,
+  "species": "Babesia sp.",
+  "coinfection": false,
+  "n_dogs": 15,
+  "rationale": "Three groups of 5 dogs with pyroplasmosis given different infusion therapies; Reamberin shortened recovery by 5 days."
+ },
+ {
+  "key": "DOI:10.22271/veterinary.2026.v11.i2f.3067",
+  "decision": "include",
+  "include_type": "case_report",
+  "exclude_reason": null,
+  "syndromes": [
+   "haemolytic anaemia",
+   "icterus",
+   "neonatal"
+  ],
+  "treatments": [
+   "transfusion",
+   "doxycycline"
+  ],
+  "outcome_reported": true,
+  "species": "B. vogeli (presumptive, smear)",
+  "coinfection": false,
+  "n_dogs": 1,
+  "rationale": "2-month-old puppy, PCV 10%, transfused and given doxycycline; PCV 28% by day 4."
+ },
+ {
+  "key": "DOI:10.5455/ijlr.20180105084812",
+  "decision": "exclude",
+  "include_type": null,
+  "exclude_reason": "no_treatment",
+  "syndromes": [
+   "imha"
+  ],
+  "treatments": [],
+  "outcome_reported": false,
+  "species": null,
+  "coinfection": false,
+  "n_dogs": null,
+  "rationale": "Idiopathic IMHA incidence; Babesia only excluded, no treatment data."
+ },
+ {
+  "key": "DOI:10.33545/26174693.2025.v9.i6sa.4489",
+  "decision": "exclude",
+  "include_type": null,
+  "exclude_reason": "babesia_incidental",
+  "syndromes": [
+   "other: iron deficiency anaemia"
+  ],
+  "treatments": [
+   "iron",
+   "homeopathic"
+  ],
+  "outcome_reported": false,
+  "species": "B. gibsoni (aetiology listed)",
+  "coinfection": false,
+  "n_dogs": 20,
+  "rationale": "Iron deficiency anaemia treatment; B. gibsoni merely one listed cause."
+ },
+ {
+  "key": "DOI:10.36871/vet.zoo.bio.202507105",
+  "decision": "uncertain",
+  "include_type": "trial",
+  "exclude_reason": null,
+  "syndromes": [],
+  "treatments": [
+   "protein hydrolysate"
+  ],
+  "outcome_reported": true,
+  "species": "Babesia sp.",
+  "coinfection": false,
+  "n_dogs": null,
+  "rationale": "Adjunct trial across several diseases including canine piroplasmosis; piroplasmosis-specific syndrome and data not separable in abstract."
+ },
+ {
+  "key": "DOI:10.2298/vetgl191216005j",
+  "decision": "exclude",
+  "include_type": null,
+  "exclude_reason": "no_treatment",
+  "syndromes": [],
+  "treatments": [],
+  "outcome_reported": false,
+  "species": "Babesia seroreactive, PCR negative",
+  "coinfection": false,
+  "n_dogs": 81,
+  "rationale": "Healthy seroreactive dogs; no treatment."
+ },
+ {
+  "key": "DOI:10.56808/2985-1130.3256",
+  "decision": "exclude",
+  "include_type": null,
+  "exclude_reason": "babesia_incidental",
+  "syndromes": [
+   "sirs/mods"
+  ],
+  "treatments": [],
+  "outcome_reported": false,
+  "species": "B. vogeli (PCR)",
+  "coinfection": true,
+  "n_dogs": 1,
+  "rationale": "Enterococcus septicaemia case; Babesia incidental and untreated."
+ },
+ {
+  "key": "DOI:10.12681/jhvms.28696",
+  "decision": "exclude",
+  "include_type": null,
+  "exclude_reason": "no_treatment",
+  "syndromes": [],
+  "treatments": [],
+  "outcome_reported": false,
+  "species": null,
+  "coinfection": false,
+  "n_dogs": null,
+  "rationale": "General leukogram survey; no Babesia treatment data."
+ }
+]

@@ -1,5 +1,6 @@
 using AutoMapper;
 using AutoMapper.EquivalencyExpression;
+using Babesiosis.Agents;
 using Babesiosis.Core.Api.Auth.Mapping;
 using Babesiosis.Core.Api.Teams.Roles.Mapping;
 using Babesiosis.Core.Api.Teams.Users.Mapping;
@@ -85,6 +86,10 @@ namespace Babesiosis.Core.Api.Hosting
       services.AddTransient<Babesiosis.Core.Api.Teams.Users.Controllers.AddUserController>();
       services.AddTransient<Babesiosis.Core.Api.Teams.Users.Controllers.EditUserController>();
       services.AddTransient<Babesiosis.Core.Api.Teams.Users.Controllers.GetUsersController>();
+
+      // The article question agent (OpenRouter models, vector search on dbo.article). Nothing
+      // calls OpenRouter until a question is asked, and AppSettings:AiAgents:Enabled gates that.
+      services.AddBabesiosisAgents();
 
       return services;
     }

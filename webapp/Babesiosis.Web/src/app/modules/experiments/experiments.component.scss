@@ -1,0 +1,343 @@
+:host {
+  display: block;
+}
+
+.fs-experiments {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+// The list sits beside the detail on wide screens and above it on narrow ones.
+// It is sticky inside the shell's scrolling content, so a long detail scrolls
+// under a list that stays in reach.
+.fs-experiments__layout {
+  display: grid;
+  grid-template-columns: 320px minmax(0, 1fr);
+  gap: 16px;
+  align-items: start;
+
+  @media (max-width: 1100px) {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+.fs-experiments__panel {
+  position: sticky;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  max-height: calc(100vh - 120px);
+  min-height: 0;
+
+  @media (max-width: 1100px) {
+    position: static;
+    max-height: 420px;
+  }
+
+  fs-card {
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+  }
+}
+
+.fs-experiments__panel-head {
+  display: flex;
+  flex-direction: column;
+  gap: var(--fs-guide-space-1);
+  padding: var(--fs-guide-space-3) var(--fs-guide-space-3) var(--fs-guide-space-2);
+  border-bottom: 1px solid rgb(var(--fs-color-line));
+}
+
+.fs-experiments__panel-count {
+  font-size: 11px;
+  color: rgb(var(--fs-color-ink-soft));
+}
+
+.fs-experiments__panel-body {
+  padding: var(--fs-guide-space-3);
+}
+
+.fs-experiments__panel-loading,
+.fs-experiments__loading {
+  display: flex;
+  justify-content: center;
+  padding: var(--fs-guide-space-6);
+}
+
+// The scrolling part of the panel: fifty runs is a few screens, so the groups
+// scroll inside the card and the search box stays put.
+.fs-experiments__nav {
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow-y: auto;
+  padding: var(--fs-guide-space-2) 0;
+}
+
+.fs-experiments__group + .fs-experiments__group {
+  margin-top: var(--fs-guide-space-3);
+}
+
+.fs-experiments__group-title {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  margin: 0;
+  padding: var(--fs-guide-space-1) var(--fs-guide-space-3);
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1.4;
+  letter-spacing: 0.02em;
+  color: rgb(var(--fs-color-ink-soft));
+  text-transform: uppercase;
+}
+
+.fs-experiments__group-code {
+  color: rgb(var(--fs-color-ink-strong));
+}
+
+.fs-experiments__group-article {
+  color: rgb(var(--fs-color-primary));
+}
+
+.fs-experiments__group-name {
+  flex: 1 1 auto;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+.fs-experiments__items {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.fs-experiments__item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 100%;
+  padding: var(--fs-guide-space-2) var(--fs-guide-space-3);
+  border: 0;
+  border-left: 3px solid transparent;
+  background: transparent;
+  text-align: left;
+  font: inherit;
+  color: rgb(var(--fs-color-ink));
+  cursor: pointer;
+
+  &:hover {
+    background: rgb(var(--fs-color-fill-hover));
+  }
+
+  &:focus-visible {
+    outline: 2px solid rgb(var(--fs-color-primary));
+    outline-offset: -2px;
+  }
+}
+
+.fs-experiments__item--selected {
+  border-left-color: rgb(var(--fs-color-primary));
+  background: rgb(var(--fs-color-fill-selected));
+
+  .fs-experiments__item-name {
+    color: rgb(var(--fs-color-ink-strong));
+  }
+}
+
+.fs-experiments__item-name {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.35;
+}
+
+.fs-experiments__item-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+  color: rgb(var(--fs-color-ink-soft));
+}
+
+.fs-experiments__item-foot {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  font-size: 11px;
+  color: rgb(var(--fs-color-ink-soft));
+}
+
+.fs-experiments__item-code {
+  font-family: var(--fs-guide-font-mono, ui-monospace, monospace);
+}
+
+// ---- Detail ---------------------------------------------------------------
+
+.fs-experiments__detail {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  min-width: 0;
+}
+
+.fs-experiments__tags {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.fs-experiments__article {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-width: 0;
+  color: rgb(var(--fs-color-primary));
+  text-decoration: none;
+
+  &:hover,
+  &:focus-visible {
+    text-decoration: underline;
+  }
+}
+
+.fs-experiments__article-title {
+  max-width: 48ch;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 13px;
+}
+
+.fs-experiments__run-at {
+  margin-left: auto;
+  font-size: 12px;
+  color: rgb(var(--fs-color-ink-soft));
+}
+
+.fs-experiments__stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--fs-guide-space-4);
+  margin: var(--fs-guide-space-3) 0 0;
+
+  > div {
+    display: flex;
+    flex-direction: column;
+    min-width: 72px;
+  }
+
+  dt {
+    font-size: 11px;
+    color: rgb(var(--fs-color-ink-soft));
+  }
+
+  dd {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 600;
+    font-variant-numeric: tabular-nums;
+    color: rgb(var(--fs-color-ink-strong));
+  }
+}
+
+.fs-experiments__summary {
+  margin: var(--fs-guide-space-3) 0 0;
+  font-size: 14px;
+  line-height: 1.5;
+  color: rgb(var(--fs-color-ink-strong));
+}
+
+.fs-experiments__description {
+  margin: var(--fs-guide-space-2) 0 0;
+  font-size: 13px;
+  line-height: 1.5;
+  color: rgb(var(--fs-color-ink-soft));
+}
+
+.fs-experiments__json {
+  margin: 0;
+  max-height: 420px;
+  overflow: auto;
+  padding: var(--fs-guide-space-3);
+  border-radius: var(--fs-radius-md);
+  background: rgb(var(--fs-color-background));
+  font-size: 12px;
+  line-height: 1.45;
+}
+
+// The note after the visuals: the same panel treatment as the Review dashboard's summaries.
+.fs-experiments__note {
+  box-sizing: border-box;
+  padding: var(--fs-guide-space-3) var(--fs-guide-space-4);
+  border-radius: var(--fs-radius-md);
+  background: rgb(var(--fs-color-background));
+  font-size: 14px;
+  line-height: 1.55;
+  color: rgb(var(--fs-color-ink));
+
+  h4 {
+    margin: var(--fs-guide-space-3) 0 var(--fs-guide-space-1);
+    font-size: 13px;
+    font-weight: 600;
+    color: rgb(var(--fs-color-ink-strong));
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  p {
+    margin: 0 0 var(--fs-guide-space-2);
+  }
+}
+
+.fs-experiments__note-date {
+  display: block;
+  margin-top: var(--fs-guide-space-2);
+  font-size: 12px;
+  color: rgb(var(--fs-color-ink-soft));
+}
+
+.fs-experiments__facts {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--fs-guide-space-4);
+
+  @media (max-width: 800px) {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  h4 {
+    margin: 0 0 var(--fs-guide-space-2);
+    font-size: 13px;
+    font-weight: 600;
+    color: rgb(var(--fs-color-ink-strong));
+  }
+}
+
+.fs-experiments__facts-title {
+  margin: var(--fs-guide-space-4) 0 var(--fs-guide-space-2);
+  font-size: 13px;
+  font-weight: 600;
+  color: rgb(var(--fs-color-ink-strong));
+}
+
+.fs-experiments__notes {
+  margin: 0;
+  padding-left: 1.2em;
+  font-size: 13px;
+  line-height: 1.5;
+  color: rgb(var(--fs-color-ink));
+
+  li + li {
+    margin-top: 4px;
+  }
+}

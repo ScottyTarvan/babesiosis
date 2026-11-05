@@ -1,10 +1,11 @@
-<#
+﻿<#
 .SYNOPSIS
     Sets up plain-text semantic search in babesiosis-db.
 
 .DESCRIPTION
     Runs semantic-search-setup.sql (REST endpoint switch, master key, API-key credential,
-    external model, smoke test), then semantic-search.sql (dbo.search_articles).
+    external model, smoke test), then semantic-search.sql (dbo.search_articles) and
+    passage-search.sql (dbo.search_passages).
 
     The endpoint, deployment and key come from appsettings.Local.json and reach sqlcmd as
     environment variables, so the key is not written to a file or shown on a command line.
@@ -67,7 +68,8 @@ try {
     foreach ($name in $variables.Keys) { Set-Item "env:$name" $variables[$name] }
     Invoke-SqlcmdChecked @('-i', (Join-Path $PSScriptRoot 'semantic-search-setup.sql'))
     Invoke-SqlcmdChecked @('-i', (Join-Path $PSScriptRoot 'semantic-search.sql'))
-    Write-Host 'Semantic search is ready: EXEC dbo.search_articles @question = N''...'';'
+    Invoke-SqlcmdChecked @('-i', (Join-Path $PSScriptRoot 'passage-search.sql'))
+    Write-Host 'Semantic search is ready: EXEC dbo.search_articles @question = N''...''; EXEC dbo.search_passages @question = N''...'';'
 }
 finally {
     foreach ($name in $variables.Keys) { Remove-Item "env:$name" -ErrorAction SilentlyContinue }

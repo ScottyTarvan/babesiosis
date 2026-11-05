@@ -1,6 +1,8 @@
 using Babesiosis.Core.Data;
 using Babesiosis.Core.Data.Configs.Articles;
+using Babesiosis.Core.Data.Configs.Experiments;
 using Babesiosis.Core.Models.Articles;
+using Babesiosis.Core.Models.Experiments;
 using Microsoft.EntityFrameworkCore;
 
 namespace Babesiosis.Core.Articles.Data
@@ -23,6 +25,16 @@ namespace Babesiosis.Core.Articles.Data
     public DbSet<Term> Terms { get; set; }
     public DbSet<ArticleTerm> ArticleTerms { get; set; }
 
+    // The tidied datasets and the experiments run over them (console --datasets-only).
+    public DbSet<Dataset> Datasets { get; set; }
+    public DbSet<Variable> Variables { get; set; }
+    public DbSet<Subject> Subjects { get; set; }
+    public DbSet<Observation> Observations { get; set; }
+    public DbSet<Experiment> Experiments { get; set; }
+    public DbSet<Association> Associations { get; set; }
+    public DbSet<ExperimentResult> ExperimentResults { get; set; }
+    public DbSet<ClusterAssignment> ClusterAssignments { get; set; }
+
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
       base.OnModelCreating(modelBuilder);
@@ -32,6 +44,15 @@ namespace Babesiosis.Core.Articles.Data
       modelBuilder.ApplyConfiguration(new ArticleCategoryConfig());
       modelBuilder.ApplyConfiguration(new TermConfig());
       modelBuilder.ApplyConfiguration(new ArticleTermConfig());
+
+      modelBuilder.ApplyConfiguration(new DatasetConfig());
+      modelBuilder.ApplyConfiguration(new VariableConfig());
+      modelBuilder.ApplyConfiguration(new SubjectConfig());
+      modelBuilder.ApplyConfiguration(new ObservationConfig());
+      modelBuilder.ApplyConfiguration(new ExperimentConfig());
+      modelBuilder.ApplyConfiguration(new AssociationConfig());
+      modelBuilder.ApplyConfiguration(new ExperimentResultConfig());
+      modelBuilder.ApplyConfiguration(new ClusterAssignmentConfig());
     }
   }
 }

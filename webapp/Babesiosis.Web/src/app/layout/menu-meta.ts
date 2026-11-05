@@ -23,6 +23,12 @@
  */
 export const MENU: MenuItem[] = [
   {
+    key: 'home',
+    icon: 'home',
+    label: 'Home',
+    link: '/home',
+  },
+  {
     key: 'literature-review',
     icon: 'clipboard-check',
     label: 'Literature Review',
@@ -35,14 +41,15 @@ export const MENU: MenuItem[] = [
     link: '/reference-articles',
   },
   {
-    key: 'system',
-    label: 'System',
-    isTitle: true,
+    key: 'experiments',
+    icon: 'chart-dots-3',
+    label: 'Experiments',
+    link: '/experiments',
   },
   {
-    key: 'help',
-    icon: 'help-circle',
-    label: 'Help & Support',
-    link: '/help',
+    key: 'ai-agent',
+    icon: 'sparkles',
+    label: 'AI Agent',
+    link: '/ai-agent',
   },
 ]

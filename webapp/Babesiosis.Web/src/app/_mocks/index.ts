@@ -1,4 +1,5 @@
 import { MockRegistration } from 'app/_mocks/mock-handler';
+import { articlesAgentAskMock } from 'app/_mocks/handlers/articles-agent-ask.mock';
 import { articlesListGetMock } from 'app/_mocks/handlers/articles-list-get.mock';
 import { authPasswordLoginMock } from 'app/_mocks/handlers/auth-password-login.mock';
 import { authPasswordForgotMock } from 'app/_mocks/handlers/auth-password-forgot.mock';
@@ -23,6 +24,7 @@ import { reviewListGetMock } from 'app/_mocks/handlers/review-list-get.mock';
  */
 export const mockRegistrations: MockRegistration[] = [
   authPasswordLoginMock,
+  articlesAgentAskMock,
   articlesListGetMock,
   authPasswordForgotMock,
   authPasswordResetMock,

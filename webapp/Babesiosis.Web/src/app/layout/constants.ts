@@ -5,4 +5,4 @@ export const basePath: string = '/'
  * (currently unrouted) password login and SSO callback read it too, so the
  * three can't drift apart if sign-in returns.
  */
-export const homeUrl: string = '/literature-review'
+export const homeUrl: string = '/home'

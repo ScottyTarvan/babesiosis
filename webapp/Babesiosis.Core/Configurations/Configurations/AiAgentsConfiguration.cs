@@ -1,4 +1,4 @@
-namespace Babesiosis.Core.Configurations.Configurations
+﻿namespace Babesiosis.Core.Configurations.Configurations
 {
   /// <summary>
   /// Settings for the platform AI agent service, read from <c>AppSettings:AiAgents:</c> on every
@@ -16,6 +16,14 @@ namespace Babesiosis.Core.Configurations.Configurations
     public int TimeoutSeconds { get; set; } = DefaultTimeoutSeconds;
     public AiAgentsModelsConfiguration Models { get; set; } = new AiAgentsModelsConfiguration();
     public bool BodyStorageAllowed { get; set; }
+
+    /// <summary>
+    /// Whether the article agent may read the papers' own text (dbo.article_section) through its
+    /// passage search, outline, section and full-text tools. Defaults to true; set
+    /// <c>AppSettings:AiAgents:FullText</c> to false to limit the agent to the review's records,
+    /// for example where the full texts may not be exposed.
+    /// </summary>
+    public bool FullText { get; set; } = true;
   }
 
   /// <summary>Model tier to OpenRouter model id (platform/ai-agents.md §3.2). Null or empty means unmapped.</summary>

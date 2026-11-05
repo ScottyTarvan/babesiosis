@@ -214,7 +214,7 @@ npm run lint     # fs-guard (feature template discipline) + import-guard (no rel
 
   ```powershell
   cd C:\Workspaces\gnome-ui
-  node scripts/icons.mjs --app ../Babesiosis/Babesiosis.Web/src --out ../Babesiosis/Babesiosis.Web/src/app/app-icons.ts
+  node scripts/icons.mjs --app ../Babesiosis/webapp/Babesiosis.Web/src --out ../Babesiosis/webapp/Babesiosis.Web/src/app/app-icons.ts
   ```
 
 ---

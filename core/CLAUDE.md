@@ -17,7 +17,7 @@ Rapid scoping review of canine babesiosis pathophysiology, window 2006-10-23 to 
 
 - Article ID = `<prefix><3 digits>`, also the file-name prefix in `articles/`. `CB` = canine evidence (444), `HU` = human comparator (27), `BG` = background (10). **Do not count `HU`/`BG` as canine evidence.**
 - IDs are stable and append-only; gaps are retired IDs, not errors (`ids.json`).
-- Cohorts `CH##` (same animals, `cohorts.json`), datasets `DS##`/`S-CB###`/`P-…`/`R-…`/`RQ-…`, independent sources `SRC-A`…`SRC-O`.
+- Cohorts `CH##` (same animals, `cohorts.json`), datasets `DS##`/`S-CB###`/`P-…`/`R-…`/`RQ-…`, independent sources `SRC-A`…`SRC-O`, experiments `EXP##-<dataset>-<method>`.
 - Categories: `ERY` erythrocyte/haemolysis · `INF` inflammation/immunity · `END` endothelium/perfusion · `COA` coagulation/DIC · `REN` renal · `PUL` pulmonary · `NEU` neurological · `CAR` cardiac · `MET` hepatic/metabolic/acid-base · `OXO` oxidative stress/omics/virulence · `SEV` multisystem severity/outcome. Assigned automatically by NLP, not human-reviewed.
 
 Full ID rules, retirement history, category definitions, dataset status codes 1–5: [docs/ids-and-codes.md](docs/ids-and-codes.md).
@@ -32,6 +32,8 @@ Full ID rules, retirement history, category definitions, dataset status codes 1�
 | Articles reporting the same dogs | `cohorts.json`; `articles.jsonl` → `cohort_id` |
 | Downloadable datasets and quality | `datasets.jsonl` (`status_code` = 1, `granularity`, scores, `suitable_questions`, `limitations`) |
 | A dataset's files and contents | `data/raw/<dataset_id>/`, `data/manifest.jsonl`, `data/inspection/<dataset_id>.json` |
+| Per-dog values of a tidied dataset; variable dictionary | `data/tidy/<dataset_id>.json` (long format; `include_default`, `derived`, `derived_from`), or SQL `dbo.observation` + `dbo.variable` |
+| Results of an experiment run (associations, clusters) | `data/experiments/<code>.json`, or SQL `dbo.association` (`trivial = 0` for findings) + `dbo.experiment_result` |
 | Why article X has no dataset | `search/dataset_negative_checks.jsonl` |
 | Diseases/syndromes article X mentions or studies | `data/syndromes/article_concepts.csv` (`in_results_or_case` = studied) |
 | How many articles mention concept Y | `data/syndromes/concept_summary.csv` |
@@ -43,7 +45,8 @@ Full ID rules, retirement history, category definitions, dataset status codes 1�
 | Full-text retrieval status | `data/fulltext_status.jsonl`, `data/markdown_report.jsonl` (230 of 481 abstract-only) |
 | Research gaps and questions | `research-map.md`; `search/synthesis/QUESTIONS.md`, `<CAT>.md` (narrative only) |
 | How the search was done; exclusions | `search-log.md`; `search/screening_r*.jsonl`, `search/r4/screening.jsonl` |
-| Semantic / "find similar" search | SQL Server `dbo.search_articles` |
+| Excluded records re-screened for clinical syndrome + treatment (not in `articles.jsonl`) | `search/clinical_treatment/included.csv`, `screening.jsonl`; see its `README.md` |
+| Semantic / "find similar" search | SQL Server `dbo.search_articles` (articles), `dbo.search_passages` (the papers' own text, `dbo.article_section`) |
 
 ## Detail files (read on demand)
 
