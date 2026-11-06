@@ -45,7 +45,7 @@ Full ID rules, retirement history, category definitions, dataset status codes 1â
 | Full-text retrieval status | `data/fulltext_status.jsonl`, `data/markdown_report.jsonl` (230 of 481 abstract-only) |
 | Research gaps and questions | `research-map.md`; `search/synthesis/QUESTIONS.md`, `<CAT>.md` (narrative only) |
 | How the search was done; exclusions | `search-log.md`; `search/screening_r*.jsonl`, `search/r4/screening.jsonl` |
-| Excluded records re-screened for clinical syndrome + treatment (not in `articles.jsonl`) | `search/clinical_treatment/included.csv`, `screening.jsonl`; see its `README.md` |
+| Articles with a clinical syndrome **and** treatment with outcome (main-review articles tagged + rescued excluded records; the latter not in `articles.jsonl`) | `search/clinical_treatment/combined_set.csv` (`source`, `decision`, `treatment_role`); per-pass detail `articles/tagging.jsonl`, `included.csv`, `screening.jsonl`; see its `README.md` |
 | Semantic / "find similar" search | SQL Server `dbo.search_articles` (articles), `dbo.search_passages` (the papers' own text, `dbo.article_section`) |
 
 ## Detail files (read on demand)

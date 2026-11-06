@@ -1,0 +1,725 @@
+[
+ {
+  "article_id": "CB434",
+  "key": "PMID:22884910",
+  "decision": "exclude",
+  "include_type": null,
+  "exclude_reason": "no_treatment",
+  "treatment_role": "none",
+  "syndromes": [
+   "cardiac"
+  ],
+  "treatments": [],
+  "outcome_reported": false,
+  "species": "B. rossi",
+  "coinfection": false,
+  "n_dogs": 45,
+  "rationale": "Cardiac biomarkers compared across severity groups; no treatment or post-treatment data described."
+ },
+ {
+  "article_id": "CB435",
+  "key": "PMID:22884913",
+  "decision": "exclude",
+  "include_type": null,
+  "exclude_reason": "no_treatment",
+  "treatment_role": "none",
+  "syndromes": [
+   "aki"
+  ],
+  "treatments": [],
+  "outcome_reported": false,
+  "species": "B. rossi",
+  "coinfection": false,
+  "n_dogs": 18,
+  "rationale": "Urinary marker study in uncomplicated dogs versus controls; no treatment or outcome."
+ },
+ {
+  "article_id": "CB437",
+  "key": "PMID:23076021",
+  "decision": "include",
+  "include_type": "case_report",
+  "exclude_reason": null,
+  "treatment_role": "context",
+  "syndromes": [
+   "cerebral",
+   "pancytopenia"
+  ],
+  "treatments": [],
+  "outcome_reported": true,
+  "species": "B. canis (smear, PCR)",
+  "coinfection": false,
+  "n_dogs": 1,
+  "rationale": "One dog with cerebral signs and pancytopenia that died despite treatment; outcome (death) reported, drugs not named."
+ },
+ {
+  "article_id": "CB438",
+  "key": "PMID:23098634",
+  "decision": "exclude",
+  "include_type": null,
+  "exclude_reason": "no_treatment",
+  "treatment_role": "none",
+  "syndromes": [
+   "dic",
+   "sirs/mods"
+  ],
+  "treatments": [],
+  "outcome_reported": false,
+  "species": "B. rossi (PCR/RLB)",
+  "coinfection": false,
+  "n_dogs": 72,
+  "rationale": "Admission coagulation variables related to mortality, but treatment is not described in the abstract."
+ },
+ {
+  "article_id": "CB439",
+  "key": "PMID:23194149",
+  "decision": "exclude",
+  "include_type": null,
+  "exclude_reason": "no_treatment",
+  "treatment_role": "none",
+  "syndromes": [
+   "thrombocytopenia"
+  ],
+  "treatments": [],
+  "outcome_reported": false,
+  "species": "B. rossi",
+  "coinfection": false,
+  "n_dogs": 19,
+  "rationale": "Samples taken prior to any treatment; no post-treatment values or outcome."
+ },
+ {
+  "article_id": "CB440",
+  "key": "DOI:10.2478/v10213-012-0091-4",
+  "decision": "include",
+  "include_type": "case_series",
+  "exclude_reason": null,
+  "treatment_role": "context",
+  "syndromes": [
+   "thrombocytopenia",
+   "aki"
+  ],
+  "treatments": [
+   "imidocarb"
+  ],
+  "outcome_reported": true,
+  "species": "Babesia sp. (smear)",
+  "coinfection": false,
+  "n_dogs": 8,
+  "rationale": "Babesia dogs were treated with imidocarb and resampled one week later with platelet recovery; renal dysfunction persisted in five despite treatment."
+ },
+ {
+  "article_id": "CB441",
+  "key": "DOI:10.2478/v10213-012-0092-3",
+  "decision": "exclude",
+  "include_type": null,
+  "exclude_reason": "no_treatment",
+  "treatment_role": "none",
+  "syndromes": [
+   "aki"
+  ],
+  "treatments": [],
+  "outcome_reported": false,
+  "species": "B. canis",
+  "coinfection": false,
+  "n_dogs": 23,
+  "rationale": "Thyroxine sampled before treatment; no post-treatment data."
+ },
+ {
+  "article_id": "CB442",
+  "key": "DOI:10.2298/avb1303279t",
+  "decision": "include",
+  "include_type": "trial",
+  "exclude_reason": null,
+  "treatment_role": "primary",
+  "syndromes": [
+   "haemolytic anaemia",
+   "uncomplicated"
+  ],
+  "treatments": [
+   "diminazene",
+   "imidocarb",
+   "fenamidine"
+  ],
+  "outcome_reported": true,
+  "species": "B. canis (smear)",
+  "coinfection": false,
+  "n_dogs": 226,
+  "rationale": "Compares three antibabesial drugs in 226 dogs with clinical, haematological and urine follow-up and reinfection outcome."
+ },
+ {
+  "article_id": "CB443",
+  "key": "DOI:10.4172/2157-7579.1000141",
+  "decision": "exclude",
+  "include_type": null,
+  "exclude_reason": "no_treatment",
+  "treatment_role": "none",
+  "syndromes": [
+   "haemolytic anaemia"
+  ],
+  "treatments": [],
+  "outcome_reported": false,
+  "species": "Babesia sp. (smear)",
+  "coinfection": true,
+  "n_dogs": null,
+  "rationale": "Prevalence survey with PCV comparison; no treatment."
+ },
+ {
+  "article_id": "CB444",
+  "key": "DOI:10.9775/kvfd.2013.7598",
+  "decision": "uncertain",
+  "include_type": "case_series",
+  "exclude_reason": null,
+  "treatment_role": "none",
+  "syndromes": [
+   "haemolytic anaemia",
+   "icterus",
+   "thrombocytopenia",
+   "hepatopathy",
+   "aki"
+  ],
+  "treatments": [],
+  "outcome_reported": true,
+  "species": "B. canis canis (smear, PCR)",
+  "coinfection": false,
+  "n_dogs": 3,
+  "rationale": "Three-dog series with one death, but no abstract and no full text, so it is unclear whether treatment is described."
+ },
+ {
+  "article_id": "CB445",
+  "key": "PMID:23335965",
+  "decision": "exclude",
+  "include_type": null,
+  "exclude_reason": "no_treatment",
+  "treatment_role": "none",
+  "syndromes": [
+   "uncomplicated"
+  ],
+  "treatments": [],
+  "outcome_reported": false,
+  "species": "B. vogeli, B. gibsoni (PCR)",
+  "coinfection": true,
+  "n_dogs": 67,
+  "rationale": "Babesia infections mostly subclinical; only E. canis treatment follow-up is described, not Babesia treatment."
+ },
+ {
+  "article_id": "CB446",
+  "key": "PMID:23875771",
+  "decision": "include",
+  "include_type": "case_series",
+  "exclude_reason": null,
+  "treatment_role": "context",
+  "syndromes": [
+   "thrombocytopenia",
+   "haemolytic anaemia"
+  ],
+  "treatments": [],
+  "outcome_reported": true,
+  "species": "Babesia sp. (smear, PCR)",
+  "coinfection": false,
+  "n_dogs": 12,
+  "rationale": "Ten of twelve dogs were re-tested three days after antiparasitic treatment, with blood counts normalising and inflammatory markers staying high."
+ },
+ {
+  "article_id": "CB447",
+  "key": "PMID:24238090",
+  "decision": "exclude",
+  "include_type": null,
+  "exclude_reason": "no_treatment",
+  "treatment_role": "none",
+  "syndromes": [
+   "cerebral",
+   "ards"
+  ],
+  "treatments": [],
+  "outcome_reported": false,
+  "species": "B. canis canis (smear)",
+  "coinfection": false,
+  "n_dogs": 1,
+  "rationale": "Single fatal case; no treatment is described in the abstract."
+ },
+ {
+  "article_id": "CB448",
+  "key": "https://openalex.org/W1565259675",
+  "decision": "exclude",
+  "include_type": null,
+  "exclude_reason": "no_treatment",
+  "treatment_role": "none",
+  "syndromes": [],
+  "treatments": [],
+  "outcome_reported": false,
+  "species": "B. gibsoni, B. canis subspecies",
+  "coinfection": false,
+  "n_dogs": null,
+  "rationale": "Review covering aetiology, epidemiology, immunology, clinicopathology and diagnosis, not treatment."
+ },
+ {
+  "article_id": "CB450",
+  "key": "https://openalex.org/W4317605690",
+  "decision": "include",
+  "include_type": "case_report",
+  "exclude_reason": null,
+  "treatment_role": "context",
+  "syndromes": [
+   "cerebral"
+  ],
+  "treatments": [
+   "diminazene"
+  ],
+  "outcome_reported": true,
+  "species": "B. gibsoni",
+  "coinfection": false,
+  "n_dogs": 1,
+  "rationale": "One dog with cerebral signs responded well to a single dose of diminazene."
+ },
+ {
+  "article_id": "CB452",
+  "key": "https://openalex.org/W2312287827",
+  "decision": "exclude",
+  "include_type": null,
+  "exclude_reason": "no_treatment",
+  "treatment_role": "none",
+  "syndromes": [
+   "haemolytic anaemia",
+   "thrombocytopenia"
+  ],
+  "treatments": [],
+  "outcome_reported": false,
+  "species": "B. canis vogeli (PCR)",
+  "coinfection": false,
+  "n_dogs": 37,
+  "rationale": "Molecular survey with clinical and haematological findings; no treatment."
+ },
+ {
+  "article_id": "CB453",
+  "key": "PMID:23685063",
+  "decision": "exclude",
+  "include_type": null,
+  "exclude_reason": "no_treatment",
+  "treatment_role": "none",
+  "syndromes": [
+   "uncomplicated"
+  ],
+  "treatments": [],
+  "outcome_reported": false,
+  "species": "B. canis (PCR-RFLP subset)",
+  "coinfection": false,
+  "n_dogs": 836,
+  "rationale": "Questionnaire survey of clinical signs and seasonality; no treatment or outcome."
+ },
+ {
+  "article_id": "CB454",
+  "key": "PMID:23676299",
+  "decision": "include",
+  "include_type": "case_report",
+  "exclude_reason": null,
+  "treatment_role": "context",
+  "syndromes": [
+   "haemolytic anaemia",
+   "chronic/relapsing",
+   "other: vasculitis-like skin lesions"
+  ],
+  "treatments": [
+   "atovaquone",
+   "azithromycin",
+   "clindamycin",
+   "doxycycline",
+   "metronidazole",
+   "transfusion",
+   "prednisolone"
+  ],
+  "outcome_reported": true,
+  "species": "B. gibsoni (smear)",
+  "coinfection": false,
+  "n_dogs": 1,
+  "rationale": "One dog with alopecia and anaemia improved on antiprotozoal therapy and relapsed after it was stopped."
+ },
+ {
+  "article_id": "CB455",
+  "key": "PMID:23773722",
+  "decision": "exclude",
+  "include_type": null,
+  "exclude_reason": "prevention_only",
+  "treatment_role": "none",
+  "syndromes": [
+   "haemolytic anaemia"
+  ],
+  "treatments": [],
+  "outcome_reported": false,
+  "species": "B. gibsoni (experimental)",
+  "coinfection": false,
+  "n_dogs": 4,
+  "rationale": "Attenuated-isolate immunisation and challenge study; endpoint is protection, not treatment."
+ },
+ {
+  "article_id": "CB456",
+  "key": "PMID:23990425",
+  "decision": "exclude",
+  "include_type": null,
+  "exclude_reason": "no_treatment",
+  "treatment_role": "none",
+  "syndromes": [
+   "aki"
+  ],
+  "treatments": [],
+  "outcome_reported": false,
+  "species": "B. canis",
+  "coinfection": false,
+  "n_dogs": null,
+  "rationale": "Renal indices compared with healthy dogs; duration before treatment is a correlate only, no treatment outcome."
+ },
+ {
+  "article_id": "CB457",
+  "key": "https://openalex.org/W3173537184",
+  "decision": "exclude",
+  "include_type": null,
+  "exclude_reason": "no_treatment",
+  "treatment_role": "none",
+  "syndromes": [],
+  "treatments": [],
+  "outcome_reported": false,
+  "species": "B. canis",
+  "coinfection": false,
+  "n_dogs": null,
+  "rationale": "Narrative review of history, morphology, vectors and clinical forms; treatment not covered."
+ },
+ {
+  "article_id": "CB459",
+  "key": "DOI:10.15835/buasvmcn-vm:70:2:9843",
+  "decision": "exclude",
+  "include_type": null,
+  "exclude_reason": "no_treatment",
+  "treatment_role": "none",
+  "syndromes": [
+   "haemolytic anaemia",
+   "thrombocytopenia"
+  ],
+  "treatments": [],
+  "outcome_reported": false,
+  "species": "Babesia spp.",
+  "coinfection": false,
+  "n_dogs": 15,
+  "rationale": "Haematology correlations in 15 dogs and 3 horses; no treatment."
+ },
+ {
+  "article_id": "CB461",
+  "key": "DOI:10.1155/2014/807141",
+  "decision": "exclude",
+  "include_type": null,
+  "exclude_reason": "no_treatment",
+  "treatment_role": "none",
+  "syndromes": [
+   "icterus",
+   "hepatopathy",
+   "aki"
+  ],
+  "treatments": [],
+  "outcome_reported": false,
+  "species": "B. gibsoni (PCR)",
+  "coinfection": false,
+  "n_dogs": 1,
+  "rationale": "Case report of presentation and laboratory findings; the abstract describes no treatment or outcome."
+ },
+ {
+  "article_id": "CB462",
+  "key": "PMID:24693460",
+  "decision": "exclude",
+  "include_type": null,
+  "exclude_reason": "no_treatment",
+  "treatment_role": "none",
+  "syndromes": [
+   "haemolytic anaemia",
+   "thrombocytopenia"
+  ],
+  "treatments": [],
+  "outcome_reported": false,
+  "species": "B. canis vogeli (PCR)",
+  "coinfection": false,
+  "n_dogs": 13,
+  "rationale": "Clinical and haematological description; the only treatment mention is a generic statement in the discussion."
+ },
+ {
+  "article_id": "CB463",
+  "key": "PMID:24724487",
+  "decision": "exclude",
+  "include_type": null,
+  "exclude_reason": "no_treatment",
+  "treatment_role": "none",
+  "syndromes": [
+   "aki",
+   "shock"
+  ],
+  "treatments": [],
+  "outcome_reported": false,
+  "species": "B. canis",
+  "coinfection": false,
+  "n_dogs": 48,
+  "rationale": "Blood pressure and azotaemia measured before imidocarb; no post-treatment data."
+ },
+ {
+  "article_id": "CB464",
+  "key": "PMID:25848381",
+  "decision": "exclude",
+  "include_type": null,
+  "exclude_reason": "no_treatment",
+  "treatment_role": "none",
+  "syndromes": [
+   "haemolytic anaemia",
+   "thrombocytopenia",
+   "icterus"
+  ],
+  "treatments": [],
+  "outcome_reported": false,
+  "species": "B. gibsoni (PCR-RFLP)",
+  "coinfection": false,
+  "n_dogs": 30,
+  "rationale": "Descriptive clinical and molecular series with no treatment or outcome."
+ },
+ {
+  "article_id": "CB465",
+  "key": "REF:importanceofhaematologicalchangesindiagnosingcaninebabesiosi",
+  "decision": "exclude",
+  "include_type": null,
+  "exclude_reason": "no_treatment",
+  "treatment_role": "none",
+  "syndromes": [
+   "thrombocytopenia",
+   "aki"
+  ],
+  "treatments": [],
+  "outcome_reported": false,
+  "species": "Babesia sp. (smear)",
+  "coinfection": false,
+  "n_dogs": 300,
+  "rationale": "Retrospective haematology series with no treatment or outcome in the abstract."
+ },
+ {
+  "article_id": "CB468",
+  "key": "https://openalex.org/W2323209117",
+  "decision": "exclude",
+  "include_type": null,
+  "exclude_reason": "no_treatment",
+  "treatment_role": "none",
+  "syndromes": [
+   "sirs/mods"
+  ],
+  "treatments": [],
+  "outcome_reported": false,
+  "species": "B. canis",
+  "coinfection": false,
+  "n_dogs": 72,
+  "rationale": "Biomarkers compared between survivors and non-survivors, but treatment is not described."
+ },
+ {
+  "article_id": "CB470",
+  "key": "PMID:24468427",
+  "decision": "include",
+  "include_type": "case_series",
+  "exclude_reason": null,
+  "treatment_role": "context",
+  "syndromes": [
+   "sirs/mods"
+  ],
+  "treatments": [],
+  "outcome_reported": true,
+  "species": "B. canis",
+  "coinfection": false,
+  "n_dogs": null,
+  "rationale": "Dogs with SIRS or MODS were followed for 7 days with eicosanoid values reported after therapy (sustained PGE2 in MODS); treatments are not named and n is not given."
+ },
+ {
+  "article_id": "CB471",
+  "key": "PMID:24507435",
+  "decision": "exclude",
+  "include_type": null,
+  "exclude_reason": "no_treatment",
+  "treatment_role": "none",
+  "syndromes": [
+   "icterus"
+  ],
+  "treatments": [],
+  "outcome_reported": false,
+  "species": "B. canis (PCR)",
+  "coinfection": false,
+  "n_dogs": 2,
+  "rationale": "Wolves found dead and necropsied; no treatment."
+ },
+ {
+  "article_id": "CB472",
+  "key": "PMID:24535736",
+  "decision": "exclude",
+  "include_type": null,
+  "exclude_reason": "prevention_only",
+  "treatment_role": "none",
+  "syndromes": [
+   "haemolytic anaemia"
+  ],
+  "treatments": [],
+  "outcome_reported": false,
+  "species": "B. gibsoni (experimental)",
+  "coinfection": false,
+  "n_dogs": 2,
+  "rationale": "Vaccine challenge study; endpoint is protection, not treatment."
+ },
+ {
+  "article_id": "CB473",
+  "key": "PMID:24553975",
+  "decision": "exclude",
+  "include_type": null,
+  "exclude_reason": "no_treatment",
+  "treatment_role": "none",
+  "syndromes": [
+   "shock",
+   "aki"
+  ],
+  "treatments": [],
+  "outcome_reported": false,
+  "species": "B. canis",
+  "coinfection": false,
+  "n_dogs": 11,
+  "rationale": "Samples taken before treatment; correlations only, no post-treatment data."
+ },
+ {
+  "article_id": "CB474",
+  "key": "DOI:10.14202/vetworld.2014.113-118",
+  "decision": "include",
+  "include_type": "experimental",
+  "exclude_reason": null,
+  "treatment_role": "context",
+  "syndromes": [
+   "haemolytic anaemia",
+   "uncomplicated"
+  ],
+  "treatments": [
+   "diminazene"
+  ],
+  "outcome_reported": true,
+  "species": "B. canis (experimental)",
+  "coinfection": false,
+  "n_dogs": 5,
+  "rationale": "Experimentally infected dogs developed disease and were treated with diminazene, with temperature, pulse and parasitaemia responses and one relapse reported."
+ },
+ {
+  "article_id": "CB476",
+  "key": "PMID:24885808",
+  "decision": "include",
+  "include_type": "case_series",
+  "exclude_reason": null,
+  "treatment_role": "context",
+  "syndromes": [
+   "haemolytic anaemia"
+  ],
+  "treatments": [
+   "imidocarb"
+  ],
+  "outcome_reported": true,
+  "species": "B. canis canis",
+  "coinfection": false,
+  "n_dogs": 25,
+  "rationale": "All dogs received imidocarb, were sampled on days 0, 1 and 6, and all survived; CRP fell with treatment."
+ },
+ {
+  "article_id": "CB477",
+  "key": "PMID:24882747",
+  "decision": "exclude",
+  "include_type": null,
+  "exclude_reason": "no_treatment",
+  "treatment_role": "none",
+  "syndromes": [],
+  "treatments": [],
+  "outcome_reported": false,
+  "species": "B. vogeli",
+  "coinfection": false,
+  "n_dogs": null,
+  "rationale": "Oxidative stress markers versus controls; no treatment."
+ },
+ {
+  "article_id": "CB478",
+  "key": "DOI:10.15835/buasvmcn-vm:71:1:9451",
+  "decision": "exclude",
+  "include_type": null,
+  "exclude_reason": "no_treatment",
+  "treatment_role": "none",
+  "syndromes": [
+   "aki"
+  ],
+  "treatments": [],
+  "outcome_reported": false,
+  "species": "B. canis",
+  "coinfection": false,
+  "n_dogs": 20,
+  "rationale": "Renal function descriptive series; no treatment or outcome."
+ },
+ {
+  "article_id": "CB480",
+  "key": "PMID:27413291",
+  "decision": "exclude",
+  "include_type": null,
+  "exclude_reason": "no_treatment",
+  "treatment_role": "none",
+  "syndromes": [
+   "haemolytic anaemia",
+   "icterus",
+   "thrombocytopenia"
+  ],
+  "treatments": [
+   "diminazene"
+  ],
+  "outcome_reported": false,
+  "species": "Babesia sp. (smear)",
+  "coinfection": false,
+  "n_dogs": 6,
+  "rationale": "Diminazene with supportive therapy is named, but no response or outcome is reported."
+ },
+ {
+  "article_id": "CB481",
+  "key": "PMID:25104322",
+  "decision": "include",
+  "include_type": "case_series",
+  "exclude_reason": null,
+  "treatment_role": "context",
+  "syndromes": [
+   "haemolytic anaemia"
+  ],
+  "treatments": [],
+  "outcome_reported": true,
+  "species": "Babesia sp.",
+  "coinfection": false,
+  "n_dogs": 29,
+  "rationale": "Dogs were resampled on days 1 and 7 after treatment, with HDL and PON1 rising and CRP falling; the treatment is not named."
+ },
+ {
+  "article_id": "CB483",
+  "key": "PMID:25119372",
+  "decision": "exclude",
+  "include_type": null,
+  "exclude_reason": "no_treatment",
+  "treatment_role": "none",
+  "syndromes": [
+   "aki",
+   "shock"
+  ],
+  "treatments": [],
+  "outcome_reported": false,
+  "species": "B. canis",
+  "coinfection": false,
+  "n_dogs": 48,
+  "rationale": "Correlation of urea:creatinine ratio with pressure; no treatment."
+ },
+ {
+  "article_id": "CB485",
+  "key": "PMID:25347616",
+  "decision": "exclude",
+  "include_type": null,
+  "exclude_reason": "no_treatment",
+  "treatment_role": "none",
+  "syndromes": [
+   "aki",
+   "shock"
+  ],
+  "treatments": [],
+  "outcome_reported": false,
+  "species": "B. canis",
+  "coinfection": false,
+  "n_dogs": 14,
+  "rationale": "Aldosterone and blood pressure versus controls; no treatment."
+ }
+]

@@ -1,0 +1,751 @@
+[
+ {
+  "article_id": "CB486",
+  "key": "REF:serumcortisolandinsulinconcentrationsindogsnaturallyinfected",
+  "decision": "include",
+  "include_type": "case_series",
+  "exclude_reason": null,
+  "treatment_role": "context",
+  "syndromes": [
+   "other: hyperinsulinaemia/hypercortisolaemia"
+  ],
+  "treatments": [
+   "antibabesial treatment"
+  ],
+  "outcome_reported": true,
+  "species": "B. canis (smear)",
+  "coinfection": false,
+  "n_dogs": null,
+  "rationale": "Cortisol, insulin and glucose were measured before and the day after antibabesial treatment, with survivors and non-survivors compared; this gives post-treatment values and outcome, though the aim is prognosis."
+ },
+ {
+  "article_id": "CB487",
+  "key": "https://openalex.org/W1787295399",
+  "decision": "exclude",
+  "include_type": null,
+  "exclude_reason": "no_treatment",
+  "treatment_role": "none",
+  "syndromes": [
+   "shock"
+  ],
+  "treatments": [],
+  "outcome_reported": false,
+  "species": "B. canis (smear)",
+  "coinfection": false,
+  "n_dogs": 30,
+  "rationale": "Blood pressure compared between infected and healthy dogs; no treatment is described and outcome is only an aim."
+ },
+ {
+  "article_id": "CB490",
+  "key": "PMID:25771779",
+  "decision": "include",
+  "include_type": "case_series",
+  "exclude_reason": null,
+  "treatment_role": "context",
+  "syndromes": [
+   "other: lymphopenia"
+  ],
+  "treatments": [
+   "imidocarb"
+  ],
+  "outcome_reported": true,
+  "species": "B. canis",
+  "coinfection": false,
+  "n_dogs": 10,
+  "rationale": "Ten infected dogs received a single imidocarb dose with lymphocyte subsets followed over 12 days, and parasitaemia clearance and clinical resolution were discussed; aim is immunology."
+ },
+ {
+  "article_id": "CB491",
+  "key": "PMID:25909253",
+  "decision": "exclude",
+  "include_type": null,
+  "exclude_reason": "no_treatment",
+  "treatment_role": "none",
+  "syndromes": [
+   "thrombocytopenia"
+  ],
+  "treatments": [],
+  "outcome_reported": false,
+  "species": "B. vogeli (PCR)",
+  "coinfection": false,
+  "n_dogs": 10,
+  "rationale": "Cross-sectional prevalence survey with haemogram association; no treatment or outcome."
+ },
+ {
+  "article_id": "CB492",
+  "key": "PMID:26682062",
+  "decision": "include",
+  "include_type": "retrospective_series",
+  "exclude_reason": null,
+  "treatment_role": "context",
+  "syndromes": [
+   "haemolytic anaemia"
+  ],
+  "treatments": [
+   "tetracyclines",
+   "imidocarb"
+  ],
+  "outcome_reported": true,
+  "species": "B. rossi, B. gibsoni (PCR)",
+  "coinfection": false,
+  "n_dogs": 363,
+  "rationale": "Large clinical-record series with clinical signs and haematology; management with tetracyclines and imidocarb was usually accompanied by clinical improvement."
+ },
+ {
+  "article_id": "CB493",
+  "key": "PMID:30155438",
+  "decision": "include",
+  "include_type": "review",
+  "exclude_reason": null,
+  "treatment_role": "primary",
+  "syndromes": [
+   "haemolytic anaemia",
+   "imha",
+   "aki",
+   "hepatopathy",
+   "cerebral",
+   "ards",
+   "pancreatitis",
+   "cardiac"
+  ],
+  "treatments": [
+   "imidocarb",
+   "diminazene",
+   "atovaquone",
+   "azithromycin",
+   "clindamycin",
+   "transfusion"
+  ],
+  "outcome_reported": true,
+  "species": "Babesia spp. (mainly B. rossi)",
+  "coinfection": false,
+  "n_dogs": null,
+  "rationale": "Narrative review of complications, biomarkers and treatment of canine babesiosis; treatment is in the title and stated scope."
+ },
+ {
+  "article_id": "CB494",
+  "key": "https://openalex.org/W2260412209",
+  "decision": "exclude",
+  "include_type": null,
+  "exclude_reason": "no_treatment",
+  "treatment_role": "none",
+  "syndromes": [
+   "haemolytic anaemia",
+   "aki"
+  ],
+  "treatments": [],
+  "outcome_reported": false,
+  "species": "B. canis (smear)",
+  "coinfection": false,
+  "n_dogs": null,
+  "rationale": "Descriptive clinical signs and erythrocyte morphology only; no treatment or outcome in the abstract."
+ },
+ {
+  "article_id": "CB495",
+  "key": "https://openalex.org/W2381924318",
+  "decision": "uncertain",
+  "include_type": "case_report",
+  "exclude_reason": null,
+  "treatment_role": "none",
+  "syndromes": [
+   "imha"
+  ],
+  "treatments": [],
+  "outcome_reported": false,
+  "species": "B. gibsoni",
+  "coinfection": false,
+  "n_dogs": 1,
+  "rationale": "Title and abstract say the case report covers diagnosis, treatment and prognosis of IMHA with B. gibsoni, but no clinical data, drugs or outcome are given; full text not available."
+ },
+ {
+  "article_id": "CB497",
+  "key": "https://openalex.org/W2755997768",
+  "decision": "exclude",
+  "include_type": null,
+  "exclude_reason": "no_treatment",
+  "treatment_role": "none",
+  "syndromes": [
+   "cardiac"
+  ],
+  "treatments": [],
+  "outcome_reported": false,
+  "species": "B. canis (PCR)",
+  "coinfection": false,
+  "n_dogs": 20,
+  "rationale": "Necropsy and histology series of fatal cases; no treatment described."
+ },
+ {
+  "article_id": "CB499",
+  "key": "https://openalex.org/W2304426453",
+  "decision": "include",
+  "include_type": "case_series",
+  "exclude_reason": null,
+  "treatment_role": "context",
+  "syndromes": [
+   "haemolytic anaemia",
+   "sirs/mods"
+  ],
+  "treatments": [
+   "imidocarb"
+  ],
+  "outcome_reported": true,
+  "species": "B. canis canis",
+  "coinfection": false,
+  "n_dogs": 30,
+  "rationale": "Malondialdehyde measured before and on days 2, 3 and 7 after imidocarb in 30 dogs, with association to outcome and complicated disease; aim is oxidative stress."
+ },
+ {
+  "article_id": "CB500",
+  "key": "DOI:10.1142/s1682648515500031",
+  "decision": "exclude",
+  "include_type": null,
+  "exclude_reason": "no_treatment",
+  "treatment_role": "none",
+  "syndromes": [
+   "haemolytic anaemia"
+  ],
+  "treatments": [],
+  "outcome_reported": false,
+  "species": "B. gibsoni (not stated)",
+  "coinfection": false,
+  "n_dogs": 36,
+  "rationale": "Retrospective survey of causes of anaemia; no treatment or outcome for Babesia dogs."
+ },
+ {
+  "article_id": "CB501",
+  "key": "DOI:10.1515/acve-2015-0004",
+  "decision": "exclude",
+  "include_type": null,
+  "exclude_reason": "no_treatment",
+  "treatment_role": "none",
+  "syndromes": [
+   "uncomplicated"
+  ],
+  "treatments": [],
+  "outcome_reported": false,
+  "species": "B. vogeli (PCR), E. canis",
+  "coinfection": true,
+  "n_dogs": 16,
+  "rationale": "Cystatin-C biomarker comparison at presentation; no treatment or outcome."
+ },
+ {
+  "article_id": "CB502",
+  "key": "PMID:25890106",
+  "decision": "exclude",
+  "include_type": null,
+  "exclude_reason": "no_treatment",
+  "treatment_role": "none",
+  "syndromes": [
+   "haemolytic anaemia",
+   "thrombocytopenia"
+  ],
+  "treatments": [],
+  "outcome_reported": false,
+  "species": "Theileria annae (PCR)",
+  "coinfection": false,
+  "n_dogs": 75,
+  "rationale": "Clinical presentation and diagnostic comparison of T. annae cases; no treatment or outcome described."
+ },
+ {
+  "article_id": "CB503",
+  "key": "PMID:25976636",
+  "decision": "exclude",
+  "include_type": null,
+  "exclude_reason": "no_treatment",
+  "treatment_role": "none",
+  "syndromes": [
+   "aki"
+  ],
+  "treatments": [],
+  "outcome_reported": false,
+  "species": "B. canis",
+  "coinfection": false,
+  "n_dogs": 13,
+  "rationale": "Thyroid hormone and IL-6 comparison with healthy dogs; no treatment or outcome."
+ },
+ {
+  "article_id": "CB504",
+  "key": "PMID:26088270",
+  "decision": "exclude",
+  "include_type": null,
+  "exclude_reason": "no_treatment",
+  "treatment_role": "none",
+  "syndromes": [
+   "thrombocytopenia"
+  ],
+  "treatments": [],
+  "outcome_reported": false,
+  "species": "B. rossi (PCR)",
+  "coinfection": false,
+  "n_dogs": 36,
+  "rationale": "Platelet-leukocyte aggregates compared by survival, but no treatment is described."
+ },
+ {
+  "article_id": "CB505",
+  "key": "PMID:26051258",
+  "decision": "exclude",
+  "include_type": null,
+  "exclude_reason": "no_treatment",
+  "treatment_role": "none",
+  "syndromes": [
+   "haemolytic anaemia",
+   "thrombocytopenia",
+   "icterus"
+  ],
+  "treatments": [],
+  "outcome_reported": false,
+  "species": "B. canis, B. gibsoni (PCR)",
+  "coinfection": false,
+  "n_dogs": 60,
+  "rationale": "All 60 dogs received imidocarb but no response, follow-up or outcome is reported."
+ },
+ {
+  "article_id": "CB506",
+  "key": "PMID:26152408",
+  "decision": "exclude",
+  "include_type": null,
+  "exclude_reason": "no_treatment",
+  "treatment_role": "none",
+  "syndromes": [],
+  "treatments": [],
+  "outcome_reported": false,
+  "species": "B. canis, B. vogeli",
+  "coinfection": false,
+  "n_dogs": null,
+  "rationale": "Multi-pathogen review of transmission, diagnosis and prophylaxis; treatment of clinical disease is not covered in the abstract."
+ },
+ {
+  "article_id": "CB507",
+  "key": "PMID:26601462",
+  "decision": "include",
+  "include_type": "review",
+  "exclude_reason": null,
+  "treatment_role": "context",
+  "syndromes": [
+   "haemolytic anaemia",
+   "sirs/mods"
+  ],
+  "treatments": [],
+  "outcome_reported": true,
+  "species": "Babesia spp. (canine)",
+  "coinfection": false,
+  "n_dogs": null,
+  "rationale": "Narrative review whose stated scope includes treatment of canine babesiosis, with relapse and post-treatment PCR discussed."
+ },
+ {
+  "article_id": "CB508",
+  "key": "PMID:26304138",
+  "decision": "exclude",
+  "include_type": null,
+  "exclude_reason": "no_treatment",
+  "treatment_role": "none",
+  "syndromes": [
+   "pancreatitis",
+   "sirs/mods"
+  ],
+  "treatments": [],
+  "outcome_reported": false,
+  "species": "B. rossi (PCR)",
+  "coinfection": false,
+  "n_dogs": 87,
+  "rationale": "Admission lipase concentrations and SIRS; no treatment or outcome reported."
+ },
+ {
+  "article_id": "CB509",
+  "key": "PMID:26297954",
+  "decision": "exclude",
+  "include_type": null,
+  "exclude_reason": "no_treatment",
+  "treatment_role": "none",
+  "syndromes": [
+   "haemolytic anaemia",
+   "thrombocytopenia"
+  ],
+  "treatments": [],
+  "outcome_reported": false,
+  "species": "B. gibsoni (PCR)",
+  "coinfection": false,
+  "n_dogs": null,
+  "rationale": "Experimental infection followed without treatment."
+ },
+ {
+  "article_id": "CB510",
+  "key": "https://openalex.org/W2287618507",
+  "decision": "exclude",
+  "include_type": null,
+  "exclude_reason": "no_treatment",
+  "treatment_role": "none",
+  "syndromes": [
+   "sirs/mods"
+  ],
+  "treatments": [],
+  "outcome_reported": false,
+  "species": "B. canis canis",
+  "coinfection": false,
+  "n_dogs": null,
+  "rationale": "Chemokine concentrations compared by severity; no treatment described."
+ },
+ {
+  "article_id": "CB511",
+  "key": "https://openalex.org/W2780407019",
+  "decision": "exclude",
+  "include_type": null,
+  "exclude_reason": "no_treatment",
+  "treatment_role": "none",
+  "syndromes": [
+   "sirs/mods"
+  ],
+  "treatments": [],
+  "outcome_reported": false,
+  "species": "B. canis canis",
+  "coinfection": false,
+  "n_dogs": null,
+  "rationale": "Duplicate chemokine report with no abstract; the finding line shows biomarker comparison only, no treatment."
+ },
+ {
+  "article_id": "CB512",
+  "key": "DOI:10.21608/kvmj.2015.109779",
+  "decision": "exclude",
+  "include_type": null,
+  "exclude_reason": "no_treatment",
+  "treatment_role": "none",
+  "syndromes": [
+   "haemolytic anaemia",
+   "icterus",
+   "thrombocytopenia"
+  ],
+  "treatments": [],
+  "outcome_reported": false,
+  "species": "B. canis (smear)",
+  "coinfection": false,
+  "n_dogs": null,
+  "rationale": "Clinical and haematological survey; no treatment or outcome in the abstract."
+ },
+ {
+  "article_id": "CB513",
+  "key": "PMID:26613563",
+  "decision": "exclude",
+  "include_type": null,
+  "exclude_reason": "no_treatment",
+  "treatment_role": "none",
+  "syndromes": [
+   "thrombocytopenia"
+  ],
+  "treatments": [],
+  "outcome_reported": false,
+  "species": "B. rossi (PCR)",
+  "coinfection": false,
+  "n_dogs": 96,
+  "rationale": "Platelet indices at presentation and 24 and 48 h in survivors, but no treatment is described."
+ },
+ {
+  "article_id": "CB514",
+  "key": "DOI:10.1515/bvip-2015-0074",
+  "decision": "exclude",
+  "include_type": null,
+  "exclude_reason": "no_treatment",
+  "treatment_role": "none",
+  "syndromes": [],
+  "treatments": [],
+  "outcome_reported": false,
+  "species": "B. canis",
+  "coinfection": false,
+  "n_dogs": null,
+  "rationale": "Narrative review of biology, immunity and diagnostics; no treatment coverage."
+ },
+ {
+  "article_id": "CB515",
+  "key": "https://openalex.org/W2736273537",
+  "decision": "exclude",
+  "include_type": null,
+  "exclude_reason": "no_treatment",
+  "treatment_role": "none",
+  "syndromes": [],
+  "treatments": [],
+  "outcome_reported": false,
+  "species": "B. vogeli (PCR), E. canis, L. infantum",
+  "coinfection": true,
+  "n_dogs": 15,
+  "rationale": "Oxidative biomarkers in single and co-infections; no treatment or outcome."
+ },
+ {
+  "article_id": "CB516",
+  "key": "PMID:26727465",
+  "decision": "exclude",
+  "include_type": null,
+  "exclude_reason": "no_treatment",
+  "treatment_role": "none",
+  "syndromes": [
+   "haemolytic anaemia",
+   "thrombocytopenia",
+   "sirs/mods"
+  ],
+  "treatments": [],
+  "outcome_reported": false,
+  "species": "B. canis (PCR)",
+  "coinfection": false,
+  "n_dogs": 15,
+  "rationale": "Prognostic markers sampled before any treatment, survivors vs non-survivors; the treatment given is not described."
+ },
+ {
+  "article_id": "CB517",
+  "key": "PMID:26953797",
+  "decision": "exclude",
+  "include_type": null,
+  "exclude_reason": "no_treatment",
+  "treatment_role": "none",
+  "syndromes": [
+   "sirs/mods"
+  ],
+  "treatments": [],
+  "outcome_reported": false,
+  "species": "B. rossi (PCR)",
+  "coinfection": false,
+  "n_dogs": 97,
+  "rationale": "Cytokines at admission before treatment with survival comparison; no treatment described."
+ },
+ {
+  "article_id": "CB518",
+  "key": "PMID:30050841",
+  "decision": "include",
+  "include_type": "case_series",
+  "exclude_reason": null,
+  "treatment_role": "context",
+  "syndromes": [
+   "uncomplicated"
+  ],
+  "treatments": [
+   "oxytetracycline",
+   "diminazene",
+   "doxycycline"
+  ],
+  "outcome_reported": true,
+  "species": "B. canis (smear)",
+  "coinfection": false,
+  "n_dogs": 63,
+  "rationale": "Smear-positive dogs were treated mostly with oxytetracycline, with recovery and 7 deaths among 44 so treated; main aim is diagnostic reliability of clinical indices."
+ },
+ {
+  "article_id": "CB520",
+  "key": "https://openalex.org/W2550317329",
+  "decision": "include",
+  "include_type": "case_report",
+  "exclude_reason": null,
+  "treatment_role": "primary",
+  "syndromes": [
+   "aki"
+  ],
+  "treatments": [
+   "fluids",
+   "antibabesial chemotherapy"
+  ],
+  "outcome_reported": true,
+  "species": "B. canis, B. gibsoni",
+  "coinfection": false,
+  "n_dogs": 1,
+  "rationale": "Single dog with acute renal failure managed with aggressive fluid therapy and antiprotozoal chemotherapy, reported as successful."
+ },
+ {
+  "article_id": "CB522",
+  "key": "https://openalex.org/W2755822926",
+  "decision": "exclude",
+  "include_type": null,
+  "exclude_reason": "no_treatment",
+  "treatment_role": "none",
+  "syndromes": [
+   "shock",
+   "dic"
+  ],
+  "treatments": [],
+  "outcome_reported": false,
+  "species": "B. canis",
+  "coinfection": false,
+  "n_dogs": 5,
+  "rationale": "Post-mortem comparison with leptospirosis; no treatment described."
+ },
+ {
+  "article_id": "CB526",
+  "key": "PMID:27876993",
+  "decision": "include",
+  "include_type": "case_report",
+  "exclude_reason": null,
+  "treatment_role": "context",
+  "syndromes": [
+   "other: paraplegia",
+   "hepatopathy"
+  ],
+  "treatments": [
+   "diminazene",
+   "doxycycline",
+   "enrofloxacin",
+   "metronidazole"
+  ],
+  "outcome_reported": true,
+  "species": "B. gibsoni (PCR)",
+  "coinfection": false,
+  "n_dogs": 1,
+  "rationale": "One Rottweiler with paraplegia and laboratory abnormalities treated for 21 days, with complete clinical recovery."
+ },
+ {
+  "article_id": "CB527",
+  "key": "PMID:26810086",
+  "decision": "include",
+  "include_type": "case_report",
+  "exclude_reason": null,
+  "treatment_role": "context",
+  "syndromes": [
+   "haemolytic anaemia",
+   "thrombocytopenia"
+  ],
+  "treatments": [
+   "fluids",
+   "analgesia",
+   "imidocarb"
+  ],
+  "outcome_reported": true,
+  "species": "B. canis canis (PCR)",
+  "coinfection": false,
+  "n_dogs": 3,
+  "rationale": "Fatal case with supportive therapy only before euthanasia, plus a housemate treated with imidocarb that remained stable; outcome and treatment are described."
+ },
+ {
+  "article_id": "CB528",
+  "key": "PMID:27033937",
+  "decision": "exclude",
+  "include_type": null,
+  "exclude_reason": "no_treatment",
+  "treatment_role": "none",
+  "syndromes": [
+   "sirs/mods"
+  ],
+  "treatments": [],
+  "outcome_reported": false,
+  "species": "B. canis canis",
+  "coinfection": false,
+  "n_dogs": 15,
+  "rationale": "Admission plasma proteomics by severity group; no treatment or outcome."
+ },
+ {
+  "article_id": "CB529",
+  "key": "DOI:10.17555/jvc.2016.02.33.1.16",
+  "decision": "include",
+  "include_type": "trial",
+  "exclude_reason": null,
+  "treatment_role": "primary",
+  "syndromes": [
+   "haemolytic anaemia",
+   "thrombocytopenia"
+  ],
+  "treatments": [
+   "atovaquone",
+   "proguanil",
+   "azithromycin",
+   "diminazene",
+   "tetracycline",
+   "clindamycin"
+  ],
+  "outcome_reported": true,
+  "species": "B. gibsoni (PCR)",
+  "coinfection": false,
+  "n_dogs": 8,
+  "rationale": "Randomised two-arm comparison in 8 naturally infected puppies, with PCR clearance and haematocrit and platelet recovery reported."
+ },
+ {
+  "article_id": "CB530",
+  "key": "PMID:27056107",
+  "decision": "exclude",
+  "include_type": null,
+  "exclude_reason": "no_treatment",
+  "treatment_role": "none",
+  "syndromes": [
+   "haemolytic anaemia"
+  ],
+  "treatments": [],
+  "outcome_reported": false,
+  "species": "B. gibsoni (PCR)",
+  "coinfection": true,
+  "n_dogs": 105,
+  "rationale": "Prevalence survey of seized dogs with anaemia association; no treatment or outcome."
+ },
+ {
+  "article_id": "CB532",
+  "key": "DOI:10.17221/8881-vetmed",
+  "decision": "include",
+  "include_type": "case_series",
+  "exclude_reason": null,
+  "treatment_role": "context",
+  "syndromes": [
+   "neonatal",
+   "thrombocytopenia"
+  ],
+  "treatments": [
+   "imidocarb"
+  ],
+  "outcome_reported": true,
+  "species": "B. canis canis (PCR)",
+  "coinfection": false,
+  "n_dogs": 4,
+  "rationale": "Bitch and three puppies treated with imidocarb, with improvement in 24-72 h and PCR-negative follow-up; aim is possible vertical transmission."
+ },
+ {
+  "article_id": "CB533",
+  "key": "PMID:27289223",
+  "decision": "include",
+  "include_type": "review",
+  "exclude_reason": null,
+  "treatment_role": "primary",
+  "syndromes": [
+   "haemolytic anaemia",
+   "aki",
+   "dic"
+  ],
+  "treatments": [
+   "imidocarb",
+   "diminazene",
+   "atovaquone",
+   "azithromycin",
+   "clindamycin",
+   "doxycycline"
+  ],
+  "outcome_reported": true,
+  "species": "B. canis, B. vogeli, B. gibsoni, B. vulpes",
+  "coinfection": false,
+  "n_dogs": null,
+  "rationale": "Practical guideline review covering diagnosis, treatment and prognosis of canine babesiosis in Europe."
+ },
+ {
+  "article_id": "CB535",
+  "key": "PMID:27704350",
+  "decision": "exclude",
+  "include_type": null,
+  "exclude_reason": "no_treatment",
+  "treatment_role": "none",
+  "syndromes": [
+   "cerebral"
+  ],
+  "treatments": [],
+  "outcome_reported": false,
+  "species": "B. canis",
+  "coinfection": false,
+  "n_dogs": null,
+  "rationale": "Contrast MRI of CNS lesions; no treatment of babesiosis described."
+ },
+ {
+  "article_id": "CB536",
+  "key": "PMID:27595920",
+  "decision": "exclude",
+  "include_type": null,
+  "exclude_reason": "no_treatment",
+  "treatment_role": "none",
+  "syndromes": [
+   "haemolytic anaemia",
+   "thrombocytopenia"
+  ],
+  "treatments": [],
+  "outcome_reported": false,
+  "species": "B. canis (PCR)",
+  "coinfection": true,
+  "n_dogs": 58,
+  "rationale": "Co-infection prevalence and haematology; no treatment or outcome."
+ }
+]
