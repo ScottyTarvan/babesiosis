@@ -1,0 +1,494 @@
+{
+ "dataset_id": "DS02",
+ "outcomes": [
+  {
+   "name": "died",
+   "definition": "Died on day 4 of the experimental infection (inferred from the end of the data and CB101); the file has no outcome column",
+   "includes_euthanasia": null
+  },
+  {
+   "name": "habitus_score",
+   "definition": "Daily habitus score from the Clinical sheet (column H), scale 1-4; per the DS01 supplementary table 4 is normal. One record per dog and day",
+   "includes_euthanasia": false
+  }
+ ],
+ "records": [
+  {
+   "dog_id": "DS02:d005",
+   "original_id": "dog 2",
+   "timepoint": null,
+   "day": null,
+   "values": {
+    "died": 0
+   }
+  },
+  {
+   "dog_id": "DS02:d001",
+   "original_id": "dog 3",
+   "timepoint": null,
+   "day": null,
+   "values": {
+    "died": 0
+   }
+  },
+  {
+   "dog_id": "DS02:d004",
+   "original_id": "dog 4",
+   "timepoint": null,
+   "day": null,
+   "values": {
+    "died": 0
+   }
+  },
+  {
+   "dog_id": "DS02:d002",
+   "original_id": "dog 5",
+   "timepoint": null,
+   "day": null,
+   "values": {
+    "died": 0
+   }
+  },
+  {
+   "dog_id": "DS02:d003",
+   "original_id": "dog 6",
+   "timepoint": null,
+   "day": null,
+   "values": {
+    "died": 1
+   }
+  },
+  {
+   "dog_id": "DS02:d005",
+   "original_id": "dog 2",
+   "timepoint": "day_-1",
+   "day": -1.0,
+   "values": {
+    "habitus_score": 4.0
+   }
+  },
+  {
+   "dog_id": "DS02:d005",
+   "original_id": "dog 2",
+   "timepoint": "day_0",
+   "day": 0.0,
+   "values": {
+    "habitus_score": 4.0
+   }
+  },
+  {
+   "dog_id": "DS02:d005",
+   "original_id": "dog 2",
+   "timepoint": "day_1",
+   "day": 1.0,
+   "values": {
+    "habitus_score": 4.0
+   }
+  },
+  {
+   "dog_id": "DS02:d005",
+   "original_id": "dog 2",
+   "timepoint": "day_2",
+   "day": 2.0,
+   "values": {
+    "habitus_score": 4.0
+   }
+  },
+  {
+   "dog_id": "DS02:d005",
+   "original_id": "dog 2",
+   "timepoint": "day_3",
+   "day": 3.0,
+   "values": {
+    "habitus_score": 4.0
+   }
+  },
+  {
+   "dog_id": "DS02:d005",
+   "original_id": "dog 2",
+   "timepoint": "day_4",
+   "day": 4.0,
+   "values": {
+    "habitus_score": 3.0
+   }
+  },
+  {
+   "dog_id": "DS02:d005",
+   "original_id": "dog 2",
+   "timepoint": "day_4_1",
+   "day": 4.0,
+   "values": {
+    "habitus_score": 4.0
+   }
+  },
+  {
+   "dog_id": "DS02:d005",
+   "original_id": "dog 2",
+   "timepoint": "day_5",
+   "day": 5.0,
+   "values": {
+    "habitus_score": 4.0
+   }
+  },
+  {
+   "dog_id": "DS02:d005",
+   "original_id": "dog 2",
+   "timepoint": "day_6",
+   "day": 6.0,
+   "values": {
+    "habitus_score": 4.0
+   }
+  },
+  {
+   "dog_id": "DS02:d005",
+   "original_id": "dog 2",
+   "timepoint": "day_7",
+   "day": 7.0,
+   "values": {
+    "habitus_score": 3.0
+   }
+  },
+  {
+   "dog_id": "DS02:d005",
+   "original_id": "dog 2",
+   "timepoint": "day_8",
+   "day": 8.0,
+   "values": {
+    "habitus_score": 4.0
+   }
+  },
+  {
+   "dog_id": "DS02:d001",
+   "original_id": "dog 3",
+   "timepoint": "day_-1",
+   "day": -1.0,
+   "values": {
+    "habitus_score": 4.0
+   }
+  },
+  {
+   "dog_id": "DS02:d001",
+   "original_id": "dog 3",
+   "timepoint": "day_0",
+   "day": 0.0,
+   "values": {
+    "habitus_score": 4.0
+   }
+  },
+  {
+   "dog_id": "DS02:d001",
+   "original_id": "dog 3",
+   "timepoint": "day_1",
+   "day": 1.0,
+   "values": {
+    "habitus_score": 4.0
+   }
+  },
+  {
+   "dog_id": "DS02:d001",
+   "original_id": "dog 3",
+   "timepoint": "day_2",
+   "day": 2.0,
+   "values": {
+    "habitus_score": 4.0
+   }
+  },
+  {
+   "dog_id": "DS02:d001",
+   "original_id": "dog 3",
+   "timepoint": "day_3",
+   "day": 3.0,
+   "values": {
+    "habitus_score": 4.0
+   }
+  },
+  {
+   "dog_id": "DS02:d001",
+   "original_id": "dog 3",
+   "timepoint": "day_4",
+   "day": 4.0,
+   "values": {
+    "habitus_score": 3.0
+   }
+  },
+  {
+   "dog_id": "DS02:d001",
+   "original_id": "dog 3",
+   "timepoint": "day_4_1",
+   "day": 4.0,
+   "values": {
+    "habitus_score": 3.0
+   }
+  },
+  {
+   "dog_id": "DS02:d001",
+   "original_id": "dog 3",
+   "timepoint": "day_5",
+   "day": 5.0,
+   "values": {
+    "habitus_score": 4.0
+   }
+  },
+  {
+   "dog_id": "DS02:d001",
+   "original_id": "dog 3",
+   "timepoint": "day_6",
+   "day": 6.0,
+   "values": {
+    "habitus_score": 4.0
+   }
+  },
+  {
+   "dog_id": "DS02:d001",
+   "original_id": "dog 3",
+   "timepoint": "day_7",
+   "day": 7.0,
+   "values": {
+    "habitus_score": 3.0
+   }
+  },
+  {
+   "dog_id": "DS02:d001",
+   "original_id": "dog 3",
+   "timepoint": "day_8",
+   "day": 8.0,
+   "values": {
+    "habitus_score": 3.0
+   }
+  },
+  {
+   "dog_id": "DS02:d004",
+   "original_id": "dog 4",
+   "timepoint": "day_-1",
+   "day": -1.0,
+   "values": {
+    "habitus_score": 4.0
+   }
+  },
+  {
+   "dog_id": "DS02:d004",
+   "original_id": "dog 4",
+   "timepoint": "day_0",
+   "day": 0.0,
+   "values": {
+    "habitus_score": 4.0
+   }
+  },
+  {
+   "dog_id": "DS02:d004",
+   "original_id": "dog 4",
+   "timepoint": "day_1",
+   "day": 1.0,
+   "values": {
+    "habitus_score": 4.0
+   }
+  },
+  {
+   "dog_id": "DS02:d004",
+   "original_id": "dog 4",
+   "timepoint": "day_2",
+   "day": 2.0,
+   "values": {
+    "habitus_score": 3.0
+   }
+  },
+  {
+   "dog_id": "DS02:d004",
+   "original_id": "dog 4",
+   "timepoint": "day_3",
+   "day": 3.0,
+   "values": {
+    "habitus_score": 2.0
+   }
+  },
+  {
+   "dog_id": "DS02:d004",
+   "original_id": "dog 4",
+   "timepoint": "day_4",
+   "day": 4.0,
+   "values": {
+    "habitus_score": 2.0
+   }
+  },
+  {
+   "dog_id": "DS02:d004",
+   "original_id": "dog 4",
+   "timepoint": "day_5",
+   "day": 5.0,
+   "values": {
+    "habitus_score": 2.0
+   }
+  },
+  {
+   "dog_id": "DS02:d004",
+   "original_id": "dog 4",
+   "timepoint": "day_6",
+   "day": 6.0,
+   "values": {
+    "habitus_score": 2.0
+   }
+  },
+  {
+   "dog_id": "DS02:d004",
+   "original_id": "dog 4",
+   "timepoint": "day_7",
+   "day": 7.0,
+   "values": {
+    "habitus_score": 3.0
+   }
+  },
+  {
+   "dog_id": "DS02:d004",
+   "original_id": "dog 4",
+   "timepoint": "day_8",
+   "day": 8.0,
+   "values": {
+    "habitus_score": 3.0
+   }
+  },
+  {
+   "dog_id": "DS02:d002",
+   "original_id": "dog 5",
+   "timepoint": "day_-1",
+   "day": -1.0,
+   "values": {
+    "habitus_score": 4.0
+   }
+  },
+  {
+   "dog_id": "DS02:d002",
+   "original_id": "dog 5",
+   "timepoint": "day_0",
+   "day": 0.0,
+   "values": {
+    "habitus_score": 4.0
+   }
+  },
+  {
+   "dog_id": "DS02:d002",
+   "original_id": "dog 5",
+   "timepoint": "day_1",
+   "day": 1.0,
+   "values": {
+    "habitus_score": 4.0
+   }
+  },
+  {
+   "dog_id": "DS02:d002",
+   "original_id": "dog 5",
+   "timepoint": "day_2",
+   "day": 2.0,
+   "values": {
+    "habitus_score": 3.0
+   }
+  },
+  {
+   "dog_id": "DS02:d002",
+   "original_id": "dog 5",
+   "timepoint": "day_3",
+   "day": 3.0,
+   "values": {
+    "habitus_score": 2.0
+   }
+  },
+  {
+   "dog_id": "DS02:d002",
+   "original_id": "dog 5",
+   "timepoint": "day_4",
+   "day": 4.0,
+   "values": {
+    "habitus_score": 2.0
+   }
+  },
+  {
+   "dog_id": "DS02:d002",
+   "original_id": "dog 5",
+   "timepoint": "day_5",
+   "day": 5.0,
+   "values": {
+    "habitus_score": 2.0
+   }
+  },
+  {
+   "dog_id": "DS02:d002",
+   "original_id": "dog 5",
+   "timepoint": "day_6",
+   "day": 6.0,
+   "values": {
+    "habitus_score": 2.0
+   }
+  },
+  {
+   "dog_id": "DS02:d002",
+   "original_id": "dog 5",
+   "timepoint": "day_7",
+   "day": 7.0,
+   "values": {
+    "habitus_score": 3.0
+   }
+  },
+  {
+   "dog_id": "DS02:d002",
+   "original_id": "dog 5",
+   "timepoint": "day_8",
+   "day": 8.0,
+   "values": {
+    "habitus_score": 3.0
+   }
+  },
+  {
+   "dog_id": "DS02:d003",
+   "original_id": "dog 6",
+   "timepoint": "day_-1",
+   "day": -1.0,
+   "values": {
+    "habitus_score": 4.0
+   }
+  },
+  {
+   "dog_id": "DS02:d003",
+   "original_id": "dog 6",
+   "timepoint": "day_0",
+   "day": 0.0,
+   "values": {
+    "habitus_score": 4.0
+   }
+  },
+  {
+   "dog_id": "DS02:d003",
+   "original_id": "dog 6",
+   "timepoint": "day_1",
+   "day": 1.0,
+   "values": {
+    "habitus_score": 4.0
+   }
+  },
+  {
+   "dog_id": "DS02:d003",
+   "original_id": "dog 6",
+   "timepoint": "day_2",
+   "day": 2.0,
+   "values": {
+    "habitus_score": 4.0
+   }
+  },
+  {
+   "dog_id": "DS02:d003",
+   "original_id": "dog 6",
+   "timepoint": "day_3",
+   "day": 3.0,
+   "values": {
+    "habitus_score": 2.0
+   }
+  },
+  {
+   "dog_id": "DS02:d003",
+   "original_id": "dog 6",
+   "timepoint": "day_4",
+   "day": 4.0,
+   "values": {
+    "habitus_score": 1.0
+   }
+  }
+ ]
+}

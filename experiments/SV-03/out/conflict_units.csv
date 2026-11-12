@@ -1,0 +1,38 @@
+conflict,unit,articles,marker,species_group,outcome_class,family,call,row_calls,timing,setting,circular
+IL-8,CH03,CB517,IL-8 (CXCL8),B. rossi,mortality,univariable,N,N,before treatment,referral hospital,False
+IL-8,CH23,CB017,IL-8 (CXCL8),B. canis,complicated,univariable,N,NN,mixed,referral hospital,False
+Fibrinogen,CB112,CB112,Fibrinogen,B. rossi,complicated,univariable,H,H,not stated,referral hospital,False
+Fibrinogen,CH03,CB145,Fibrinogen,B. rossi,mortality,univariable,N,N,before treatment,referral hospital,False
+aPTT,CH03,CB145,aPTT,B. rossi,mortality,univariable,N,N,before treatment,referral hospital,False
+aPTT,CH18,CB263,aPTT,mixed/unspecified,mortality,univariable,H,H,not stated,referral hospital,False
+MDA,CB006,CB006,Malondialdehyde / TBARS,B. canis,anaemia_grade,univariable,H,HNH,not stated,referral hospital,False
+MDA,CB006,CB006,Malondialdehyde / TBARS,B. canis,complicated,univariable,N,N,not stated,referral hospital,False
+MDA,CB006,CB006,Malondialdehyde / TBARS,B. canis,mortality,univariable,H,H,not stated,referral hospital,False
+MDA,CB006,CB006,Malondialdehyde / TBARS,B. canis,organ_dysfunction,univariable,H,HH,not stated,referral hospital,False
+MDA,CH08,CB202,Malondialdehyde / TBARS,mixed/unspecified,mortality,univariable,H,H,before treatment,referral hospital,False
+MDA,CH33,CB394,Malondialdehyde / TBARS,B. canis,anaemia_grade,univariable,N,N,not stated,referral hospital,False
+MDA,CH33,CB394,Malondialdehyde / TBARS,B. canis,complicated,univariable,N,N,not stated,referral hospital,False
+SOD and catalase,CB006,CB006,Catalase,B. canis,anaemia_grade,univariable,L,NLN,not stated,referral hospital,False
+SOD and catalase,CB006,CB006,Superoxide dismutase,B. canis,anaemia_grade,univariable,L,LLL,not stated,referral hospital,False
+SOD and catalase,CB006,CB006,Catalase,B. canis,complicated,univariable,N,N,not stated,referral hospital,False
+SOD and catalase,CB006,CB006,Superoxide dismutase,B. canis,complicated,univariable,N,N,not stated,referral hospital,False
+SOD and catalase,CB006,CB006,Catalase,B. canis,mortality,univariable,L,L,not stated,referral hospital,False
+SOD and catalase,CB006,CB006,Superoxide dismutase,B. canis,mortality,univariable,L,L,not stated,referral hospital,False
+SOD and catalase,CB006,CB006,Catalase,B. canis,organ_dysfunction,univariable,L,LN,not stated,referral hospital,False
+SOD and catalase,CB006,CB006,Superoxide dismutase,B. canis,organ_dysfunction,univariable,L,LL,not stated,referral hospital,False
+SOD and catalase,CH08,CB202,Catalase,mixed/unspecified,mortality,univariable,L,L,before treatment,referral hospital,False
+SOD and catalase,CH08,CB202,Superoxide dismutase,mixed/unspecified,mortality,univariable,N,N,before treatment,referral hospital,False
+Parasitaemia,CB045,CB045,Parasitaemia,B. gibsoni,specific_complication,univariable,N,N,before treatment,primary clinic,False
+Parasitaemia,CH09,CB105,Parasitaemia,B. rossi,other,univariable,U,UUUU,mixed,experimental,False
+Parasitaemia,CH12,CB141,Parasite DNA load (qPCR),B. canis,severity_grade,univariable,H,H,before treatment,laboratory submissions,False
+Parasitaemia,CH21,CB516,Parasitaemia,B. canis,mortality,univariable,N,N,before treatment,mixed,False
+Platelets against death,CH03,CB145,Platelet count,B. rossi,mortality,univariable,N,N,before treatment,referral hospital,False
+Platelets against death,CH18,CB263,Platelet count,mixed/unspecified,mortality,univariable,U,U,not stated,referral hospital,False
+Platelets against death,CH21,CB516,Platelet count,B. canis,mortality,univariable,L,LL,before treatment,mixed,False
+Lactate,CB040,CB040,Lactate,B. rossi,mortality,univariable,H,HHH,before treatment,referral hospital,False
+Lactate,CB040,CB040,Lactate,B. rossi,other,univariable,U,U,before treatment,referral hospital,False
+Lactate,CB112,CB112,Lactate,B. rossi,complicated,univariable,U,U,not stated,referral hospital,True
+Lactate,CH18,CB263,Lactate,mixed/unspecified,mortality,univariable,H,H,not stated,referral hospital,False
+Lactate,CH21,CB516,Lactate,B. canis,mortality,univariable,H,HH,before treatment,mixed,False
+"MCP-1 (candidate, SV-04)",CH03,CB517,MCP-1 (CCL2),B. rossi,mortality,univariable,H,H,before treatment,referral hospital,False
+"MCP-1 (candidate, SV-04)",CH23,CB017,MCP-1 (CCL2),B. canis,complicated,univariable,H,HHU,mixed,referral hospital,False

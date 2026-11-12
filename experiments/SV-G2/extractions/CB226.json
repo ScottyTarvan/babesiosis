@@ -1,0 +1,20 @@
+{
+  "id": "CB226",
+  "text_used": "data/markdown/CB226.en.md",
+  "extracted_by": "claude-opus-5-5 SV-G2 B11",
+  "extracted_utc": "2026-11-12T00:00:00Z",
+  "schema_version": "v2",
+  "setting": "primary clinic",
+  "sample_timing": "not stated",
+  "article_notes": "Descriptive case series of 36 dogs with B. canis babesiosis (Ukraine, institute veterinary clinic): frequencies of clinical signs and mean laboratory values for all dogs together. The text mentions that leucopenia was seen in dogs with a chronic course and eosinophilia in a severe course, but no groups, group sizes or comparisons are given. Nothing to extract. Used the English translation (LLM, not reviewed).",
+  "skipped_infected_vs_healthy": 0,
+  "severity_definitions": [],
+  "associations": [],
+  "not_extracted": [
+    {
+      "what": "Leucocyte changes (leucopenia, eosinophilia) by course (acute, chronic, severe)",
+      "reason": "no per-group result",
+      "note": "Narrative statements only; groups not defined and not sized."
+    }
+  ]
+}

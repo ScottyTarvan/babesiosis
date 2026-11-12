@@ -22,6 +22,22 @@ describe('renderAgentMarkdown', () => {
     expect(html).toContain('<abbr title="320 cases (2019)">CB040</abbr>, CB999]');
   });
 
+  it('links a cited experiment and clinical page to their screens, by code or by alias', () => {
+    const appLinks = [
+      { code: 'SV-05-01-age-death', aliases: ['SV-05-01'], href: 'experiments/SV-05-01-age-death', title: 'Age and death' },
+      { code: 'SY05', href: 'clinical/SY05', title: 'Acute kidney injury' },
+    ];
+    const html = renderAgentMarkdown('No effect [SV-05-01-age-death]; see [SV-05-01] and [SY05, CB024].', citations, { appLinks });
+    expect(html).toContain('[<a href="experiments/SV-05-01-age-death" target="_blank" rel="noopener" title="Age and death">SV-05-01-age-death</a>]');
+    expect(html).toContain('[<a href="experiments/SV-05-01-age-death" target="_blank" rel="noopener" title="Age and death">SV-05-01</a>]');
+    expect(html).toContain('[<a href="clinical/SY05" target="_blank" rel="noopener" title="Acute kidney injury">SY05</a>, <a href="https://doi.org/10.1/x"');
+  });
+
+  it('leaves an app code the server did not resolve, a dataset code and a plain bracket as text', () => {
+    const html = renderAgentMarkdown('See [SY07], [S-CB040] and [sic].', citations);
+    expect(html).toBe('<p>See [SY07], [S-CB040] and [sic].</p>');
+  });
+
   it('renders lists, headings, emphasis and code', () => {
     const html = renderAgentMarkdown('## Findings\n\n- **Anaemia** in *most* dogs\n- `PCV` < 15%\n\n1. one\n2. two');
     expect(html).toBe(

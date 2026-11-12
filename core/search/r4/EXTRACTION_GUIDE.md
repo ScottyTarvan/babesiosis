@@ -56,7 +56,7 @@ Return one JSON object with exactly these 44 fields. Use `null` for a value that
 | `design` | string | For example `case-control biomarker study of natural infection` |
 | `sample_size` | string | Free text with the groups, for example `30 infected, 10 healthy controls` |
 | `n_infected_dogs`, `n_controls` | integer or null | Numbers as reported; null when not reported |
-| `primary_category` | string | One code: ERY, INF, END, COA, REN, PUL, NEU, CAR, MET, OXO or SEV (definitions in `docs/ids-and-codes.md`) |
+| `primary_category` | string | One code: ERY, INF, END, COA, REN, PUL, NEU, CAR, MET, OXO or SEV (definitions in `/docs/ids-and-codes.md`) |
 | `secondary_tags` | list of strings | Further codes |
 | `evidence_type` | string | `descriptive`, `associational`, `prognostic`, `mechanistic (experimental)` or `review`. Add a short qualifier in brackets only where it is needed, for example `descriptive (single case report)` |
 | `one_sentence_finding` | string | The main finding in one sentence, with no causal claim |

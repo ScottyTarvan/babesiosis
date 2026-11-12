@@ -1,67 +1,41 @@
-# Canine babesiosis review: data catalogue
+# Canine babesiosis review
 
-Rapid scoping review of canine babesiosis pathophysiology, window 2006-10-23 to 2026-10-23 (rounds 1–3 + round 4, all complete). Paths are relative to this folder. This file is an index: **read the detail files in `docs/` only when the task needs them.** How each file is produced: [scripts/README.md](scripts/README.md).
+Rapid scoping review of canine babesiosis pathophysiology (window 2006-10-23 to 2026-10-23, complete), with a loader and a web app over its outputs.
 
-## Rules for querying
+**Documentation is in [docs/](docs/index.md). Read `docs/index.md` first, then only the one file the task needs.**
 
-- **Use the structured files for whole-set questions:** `articles.jsonl` (481 articles), `datasets.jsonl` (57 records), the CSVs in `data/syndromes/`. Never count or filter from the rendered reports `index.md`, `datasets.md`, `research-map.md`.
-- **Join on the article ID** (`id`, e.g. `CB050`). `key`, `pmid`, `doi` are not in every record.
-- **Never load `data/syndromes/mentions.jsonl` whole** (140 MB). Stream or grep it for an `id`/`cui`; usually use `article_concepts.csv` or `concept_summary.csv` instead.
-- **Run Python with `python -I`** from this folder. NLP scripts need `.venv-nlp`; the Markdown conversion needs `.venv`.
-- **Git-ignored, this machine only:** `data/fulltext/`, `data/markdown/` (copyrighted full texts).
-- **Free-text fields are not normalised** (e.g. `language` = `eng`/`en`/`English`). Match on keywords, not exact values.
-- `data/fulltext_status.jsonl` and `data/markdown_report.jsonl` include retired IDs and stale scope labels; join to `articles.jsonl` and take scope from there.
-- Counts in `docs/` were taken 2026-10-28; re-count before quoting them as current.
+## Layout
 
-## IDs at a glance
-
-- Article ID = `<prefix><3 digits>`, also the file-name prefix in `articles/`. `CB` = canine evidence (444), `HU` = human comparator (27), `BG` = background (10). **Do not count `HU`/`BG` as canine evidence.**
-- IDs are stable and append-only; gaps are retired IDs, not errors (`ids.json`).
-- Cohorts `CH##` (same animals, `cohorts.json`), datasets `DS##`/`S-CB###`/`P-…`/`R-…`/`RQ-…`, independent sources `SRC-A`…`SRC-O`, experiments `EXP##-<dataset>-<method>`.
-- Categories: `ERY` erythrocyte/haemolysis · `INF` inflammation/immunity · `END` endothelium/perfusion · `COA` coagulation/DIC · `REN` renal · `PUL` pulmonary · `NEU` neurological · `CAR` cardiac · `MET` hepatic/metabolic/acid-base · `OXO` oxidative stress/omics/virulence · `SEV` multisystem severity/outcome. Assigned automatically by NLP, not human-reviewed.
-
-Full ID rules, retirement history, category definitions, dataset status codes 1–5: [docs/ids-and-codes.md](docs/ids-and-codes.md).
-
-## Which file answers which question
-
-| Question | Use |
+| Folder | Holds |
 |---|---|
-| Articles by category / species / country | `articles.jsonl` (`primary_category`, `secondary_tags`, `species[]`, `country`, `scope_label`) |
-| What did article X find; evidence strength | `articles/<ID>_*.md` |
-| What the paper itself says | `data/markdown/<ID>.md` (`<ID>.en.md` = translation); check front matter `source_format` (`abstract` = abstract only) |
-| Articles reporting the same dogs | `cohorts.json`; `articles.jsonl` → `cohort_id` |
-| Downloadable datasets and quality | `datasets.jsonl` (`status_code` = 1, `granularity`, scores, `suitable_questions`, `limitations`) |
-| A dataset's files and contents | `data/raw/<dataset_id>/`, `data/manifest.jsonl`, `data/inspection/<dataset_id>.json` |
-| Per-dog values of a tidied dataset; variable dictionary | `data/tidy/<dataset_id>.json` (long format; `include_default`, `derived`, `derived_from`), or SQL `dbo.observation` + `dbo.variable` |
-| Results of an experiment run (associations, clusters) | `data/experiments/<code>.json`, or SQL `dbo.association` (`trivial = 0` for findings) + `dbo.experiment_result` |
-| Why article X has no dataset | `search/dataset_negative_checks.jsonl` |
-| Diseases/syndromes article X mentions or studies | `data/syndromes/article_concepts.csv` (`in_results_or_case` = studied) |
-| How many articles mention concept Y | `data/syndromes/concept_summary.csv` |
-| Exact sentence of a mention; negation | `data/syndromes/mentions.jsonl` (stream/grep) |
-| Disorder terms per article (one file each); which terms the dashboard shows, hides or merges | `data/terms/<ID>.json`; `data/terms/term_display.csv` (curated, edit by hand) |
-| NLP terms and summary for article X | `data/syndromes/article_terms.csv` / `.jsonl` |
-| NLP vs agent category | `data/syndromes/article_categories.csv` |
-| Markers tested against severity/outcome | `data/severity/associations.csv` (pilot, 10 articles; filter `quote_check`) |
-| Full-text retrieval status | `data/fulltext_status.jsonl`, `data/markdown_report.jsonl` (230 of 481 abstract-only) |
-| Research gaps and questions | `research-map.md`; `search/synthesis/QUESTIONS.md`, `<CAT>.md` (narrative only) |
-| How the search was done; exclusions | `search-log.md`; `search/screening_r*.jsonl`, `search/r4/screening.jsonl` |
-| Articles with a clinical syndrome **and** treatment with outcome (main-review articles tagged + rescued excluded records; the latter not in `articles.jsonl`) | `search/clinical_treatment/combined_set.csv` (`source`, `decision`, `treatment_role`); per-pass detail `articles/tagging.jsonl`, `included.csv`, `screening.jsonl`; see its `README.md` |
-| Semantic / "find similar" search | SQL Server `dbo.search_articles` (articles), `dbo.search_passages` (the papers' own text, `dbo.article_section`) |
+| `core/` | The review data: `articles.jsonl` (481 articles), `datasets.jsonl` (57 records), `cohorts.json`, `ids.json`, `articles/` (one note per article), `search/` (search record), `data/` (downloads, full texts, terms, severity). No scripts, experiments or rendered reports |
+| `console/Babesiosis.Console` | Loader: `core/` files → SQL Server |
+| `webapp/` | Angular + Azure Functions app over the database. Agent guides: `webapp/.claude/agents/agents.md` |
+| `docs/` | All project documentation |
+| `clinical/` | Clinical manual for veterinarians: one page per clinical syndrome and its treatments, researched by agents and shown on the web app's Clinical screen. Start at `clinical/index.md` |
+| `experiments/` | Research experiments on disease severity: one file per experiment, with their scripts and outputs. Start at `experiments/index.md` |
 
-## Detail files (read on demand)
+In `docs/` and `core/`, a path with no prefix is relative to `core/`. A path that starts with `/` is from the repository root.
 
-| File | Read when you need |
-|---|---|
-| [docs/ids-and-codes.md](docs/ids-and-codes.md) | ID schemes, retired/replaced IDs, round-4 ID history, category definitions, dataset status codes |
-| [docs/core-tables.md](docs/core-tables.md) | Root output files, and the field lists of `articles.jsonl` and `datasets.jsonl` |
-| [docs/data-files.md](docs/data-files.md) | `data/raw`, manifest, inspection, full texts, Markdown conversion and quality flags |
-| [docs/nlp-and-severity.md](docs/nlp-and-severity.md) | `data/syndromes/` NLP files, how categories are assigned, `data/severity/` |
-| [docs/search-provenance.md](docs/search-provenance.md) | `search/` working files: queries, candidates, screening, extraction, synthesis, round 4 |
-| [docs/database.md](docs/database.md) | SQL Server schema, `babesiosis-local-db` MCP, `dbo.search_articles` |
+## Rules
 
-## Interpretation caveats
+- **Whole-set questions: use the structured files** (`core/articles.jsonl`, `core/datasets.jsonl`, `core/cohorts.json`). Join on the article `id`.
+- **Never read these whole**: `core/articles.jsonl` (1.4 MB), `docs/pipeline-spec.md` (37 KB), and `core/data/syndromes/mentions.jsonl` (140 MB; the `syndromes/` folder is not in every checkout). Stream them, or grep for an ID or a heading.
+- **Only `CB` articles are canine evidence** (444). `HU` (27) are human comparators and `BG` (10) are background.
+- **Articles are not independent evidence.** Count with `cohort_id` (articles) and `independent_source` (datasets).
+- **Free-text fields are not normalised** (`language`, `country`, `evidence_type`). Match on keywords.
+- **Categories are assigned by NLP, with no human review.**
+- **Every dataset is small for its feature count.** No predictive ML. Do not call clusters "subtypes".
+- **Full texts are copyrighted.** `core/data/fulltext/` and `core/data/markdown/` are git-ignored. Do not commit or publish them.
+- **`core/` holds data only.** Put new scripts and experiment work outside `core/`, and write a row in `docs/index.md` for them. The old pipeline scripts and experiments were deleted on 2026-11-12 (`docs/index.md` says how to read one from git); the dataset tables in the database are empty (`dbo.experiment` and `dbo.experiment_result` hold the runs of `/experiments/`). Files in `core/data/raw/` are read-only.
+- **Python**: run as `python -I` with an environment in `core/`. `.venv` has numpy; `.venv-nlp` has numpy, scipy, scikit-learn and spaCy. Do not install packages into these two.
+- **Experiments are free to choose tools.** A package in `experiments/` builds its own environment in `experiments/<package>/env/` (Python, R, .NET; any library) and writes its own results to the database. The limits are in `experiments/run-instructions.md`.
+- **Counts in `docs/` have a date.** Re-count before you quote one as current.
+- **Run the apps with the entries in `.claude/launch.json`**, not with shell commands.
 
-- Article counts are not independent evidence: use `cohort_id` (articles) and `independent_source` (datasets). CB510/CB511 are one study published twice.
-- Most notes appraise the abstract only; full text was not retrieved for 230 of 481 articles.
-- Every verified dataset is small for its feature count: no predictive ML, do not call clusters "subtypes".
-- Some included articles predate the window: the 10 `BG` papers and 13 records with `older_foundational` = true.
+## When you change documentation
+
+- Put new documents in `docs/` and add a row to `docs/index.md`. Write each fact in one document and link to it from the others.
+- Delete a plan when its work is done. Git keeps the history.
+- Keep this file short: it is loaded in every session. Detail belongs in `docs/`.
+- A `README.md` stays beside the files it describes.

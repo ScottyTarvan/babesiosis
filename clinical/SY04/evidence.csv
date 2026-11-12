@@ -1,0 +1,38 @@
+ref,section,statement,value,species,design,n_dogs,cohort_id,read,location,note
+R1,description,Marrow of fatal B. rossi cases is hypercellular with erythroid and myeloid hyperplasia and dysplastic metarubricytes,,B. rossi,case-control (post mortem),6,CH04,full text,Results: Cytology; Histopathology,
+R1,description,Macrophages increased with erythrophagocytosis; marrow iron increased,,B. rossi,case-control,6,CH04,full text,Results; Table IV,
+R1,description,Megakaryocytes adequate or increased so thrombocytopenia is peripheral,,B. rossi,case-control,6,CH04,full text,Discussion; Conclusion,
+R1,diagnosis,Regeneration weak if ARC above reference interval but below 150 x10^9/L; laboratory upper limit 115 x10^9/L,ARC below 150 x10^9/L,B. rossi,case-control,6,CH04,full text,Discussion para 1,source units x10^9/L
+R1,diagnosis,Full regenerative response takes about 4 to 8 days after onset of anaemia; samples at 10 to 14 days may also mislead,4 to 8 days,general canine,case-control,6,CH04,full text,Discussion para 3,general haematology figure (Tvedten 2022) quoted by the authors
+R1,diagnosis,Warm saline agglutination negative in all dogs,,B. rossi,case-control,6,CH04,full text,Results (end of Haemogram),
+R2,description,103 natural B. rossi: median ARC 82.1 x10^9/L at median Hct 0.16 L/L; lower than IMHA at similar Hct,ARC 82.1 x10^9/L; Hct 0.16 L/L,B. rossi,retrospective cohort,108,CH09,full text,Table 1,
+R2,description,Experimental B. rossi: ARC fell about 48 h after parasitaemia and rose after treatment,,B. rossi,experimental,5,CH09,full text,Abstract; section 3.4,
+R3,description,B. rossi (non-transfused) ARC not regenerative day 0 and day 1; moderate day 3; mild day 6,median 33.67; 38.67; 227.31; 124.25 x10^9/L,B. rossi,prospective cohort,86,,full text,Results (Fig. 2),
+R3,diagnosis,ARC below 60 x10^9/L is non-regenerative if anaemic,ARC below 60 x10^9/L,B. rossi,prospective cohort,86,,full text,Fig. 2 caption,
+R3,treatment,Transfusion alleviated anaemia; no significant effect on WBC or platelet responses; slower Hct rise in transfused dogs,,B. rossi,prospective cohort,86,,full text,Abstract; Discussion,32 transfused and 54 not transfused
+R4,description,B. canis ARC below 65 x10^9/L at admission and high 14 days after imidocarb,ARC below 65 x10^9/L,B. canis,prospective paired samples,22,,full text,Methods; Results (Fig. 1C),
+R5,description,B. canis: leukopenia resolved by T1 (median 15 d) in 8 of 13; 6 of 19 anaemic dogs had no reticulocytosis at T1 or T2; mortality 0%,,B. canis,prospective cohort,23,CH11,full text,Results,
+R5,diagnosis,Haematological score: 1 to 3 points per cytopenia; 3 extra points for pancytopenia,,B. canis,prospective cohort,23,CH11,full text,Methods,
+R6,description,Pancytopenia in 19 (41%) and bicytopenia in 27 (59%) of 46 dogs with full data; 39 (85%) survived,41%,B. canis,case series,49,,full text,Results,
+R7,description,Pancytopenia in 135 of 342 dogs (39.5%),39.5%,B. canis,retrospective cohort,342,CH12,full text,Results,may overlap CH11 (cohorts.json)
+R8,description,Pancytopenia in 44 of 81 dogs (54%),54%,B. canis,retrospective series,81,,abstract,Abstract,
+R9,description,54 of 120 babesiosis cases in one referral clinic were pancytopenic; 20 PCR-confirmed B. gibsoni dogs studied,,B. gibsoni,retrospective group comparison,20,,full text,Materials and methods,
+R9,treatment,Filgrastim 10 µg/kg SC with triple therapy; higher WBC on day 7; 3 of 10 died without filgrastim and 0 of 10 with it,10 µg/kg SC,B. gibsoni,retrospective group comparison,20,,full text,Abstract; Table 1; Tables 3 and 4; Discussion,"abstract: ""Filgrastim @ 10 µg/kg, SC, SID""; Table 1: ""@ 10 µg/kg, SC, single dose"""
+R10,diagnosis,B. vulpes haemophagocytic syndrome: marrow hyperplasia; macrophages 3% or more with erythrophagia; Coombs negative; hypertriglyceridaemia; hyperferritinaemia,3% or more macrophages,B. vulpes,case report,1,,abstract,Abstract,
+R10,treatment,Double immunosuppression with antiprotozoal drugs and three more transfusions; platelets recovered quickly; anaemia improved 10 days later; no relapse,,B. vulpes,case report,1,,abstract,Abstract,drugs not named in the abstract
+R11,diagnosis,Haemophagocytic syndrome: bicytopenia or pancytopenia and more than 2% haemophagocytic macrophages in the aspirate; infection-associated cases had better 1-month survival,more than 2%,any cause,retrospective series,24,,abstract,Abstract,
+R12,diagnosis,Abnormal reticulocyte profiles in 20 of 92 dogs with large Babesia on Sysmex analysers,,large Babesia,retrospective,92,,abstract,Abstract,
+R13,diagnosis,Sysmex ARC 60 x10^9/L against manual 3.6 x10^9/L; new methylene blue does not stain Babesia,,large Babesia,case report,1,,abstract,Abstract,source units x10^9/L
+R14,description,E. canis co-infection in 3 of 149 B. rossi dogs (2.0%) in the Eastern Cape,2.0%,B. rossi,cross-sectional,150,,abstract,Abstract,
+R15,differential,Chronic E. canis with bicytopenia or pancytopenia and marrow hypoplasia; all 19 dogs died whatever the treatment,,E. canis,retrospective series,19,,abstract,Abstract,
+R16,differential,Theileria in six South African dogs: thrombocytopenia; anaemia; bleeding tendency; myelofibrosis in two core biopsies,,Theileria,retrospective series,6,,abstract,Abstract,
+R17,description,B. gibsoni serum and culture supernatant delay reticulocyte maturation in vitro,,B. gibsoni,in vitro,,,abstract,Abstract,
+R18,diagnosis,Entry criteria: reticulocytes below 60 000/µL and Hct below 30%,ARC below 60 x10^9/L; Hct below 0.30 L/L,B. gibsoni,controlled comparison,20,,abstract,Abstract,source units /µL and %
+R18,treatment,Darbepoetin 0.5 µg/kg weekly for 3 weeks with clindamycin and doxycycline gave no added benefit,0.5 µg/kg once weekly for 3 weeks,B. gibsoni,controlled comparison,20,,abstract,Abstract,"""darbepoetin at the dose rate of 0.5 μg/kg body weight at weekly intervals for three weeks"""
+R19,description,Mean serum EPO 87.0 mU/mL against 16.44 mU/mL in controls; 68% of infected dogs had raised EPO,,Babesia sp.,case-control,22,CH20,full text,Results; Discussion,
+R20,treatment,NAC 15 mg/kg PO for 10 days with specific therapy gave higher Hb and platelets at day 14,15 mg/kg PO for 10 days,Babesia and Ehrlichia,controlled study,32,,full text,Materials and methods; Results; Discussion,"""received NAC (15.00 mg kg) orally for 10 days""; the discussion says 14 days"
+R20,treatment,The authors warn that glucocorticoids predispose to secondary infection and gastrointestinal bleeding,,haemoprotozoa,controlled study,32,,full text,Introduction,opinion of the authors
+R21,treatment,NAC 70 mg/kg PO once daily for 14 days with triple therapy gave earlier improvement of anaemia,70 mg/kg PO every 24 h for 14 days,B. gibsoni,randomised trial,24,,abstract,Abstract,"""at the dose 70 mg/kg, PO, OD for 14 days"""
+R22,treatment,NAC 70 mg/kg oral for 5 days with triple therapy gave greater haematological recovery (only MCHC significant),70 mg/kg PO for 5 days,B. gibsoni,randomised trial,12,,abstract,Abstract,"""oral NAC (70 mg/kg for 5 days)"""
+R23,treatment,Doxycycline 10 mg/kg PO once daily; a 20-day course was followed by relapse in 5 of 6; a 28-day course cleared 4 of 5,10 mg/kg PO every 24 h for 28 days,E. canis,experimental trial,6,,full text,Methods; Results; Abstract,"""at 10 mg/kg – 11.7 mg/kg body mass once daily for 28 consecutive days"""
+R24,description,B. canis dog with pancytopenia; haematology returned to normal gradually over 5 months,,B. canis,case report,1,,abstract,Abstract,

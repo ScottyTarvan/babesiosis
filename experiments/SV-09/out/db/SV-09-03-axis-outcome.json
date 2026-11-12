@@ -1,0 +1,1182 @@
+{
+ "experiment": {
+  "code": "SV-09-03-axis-outcome",
+  "dataset": null,
+  "method": "axis_replication",
+  "script": "/experiments/SV-09/scripts/analyse.py",
+  "script_version": "e7f758a51299",
+  "run_utc": "2026-11-12T15:53:33Z",
+  "name": "DS05 residual axis scored in S-CB050 and S-CB017, against death and complicated disease",
+  "description": "Does a DS05 residual axis, scored with its own weights in other files, differ between dogs that died and survived (B. rossi) or complicated and uncomplicated (B. canis)? Hypothesis: it does, beyond what band neutrophils alone already show.",
+  "parameters": {
+   "package": "SV-09",
+   "role": "descriptive",
+   "datasets": [
+    "DS05",
+    "S-CB050",
+    "S-CB017"
+   ],
+   "independent_sources": [
+    "SRC-F",
+    "SRC-A",
+    "SRC-D"
+   ],
+   "spec_sha256": "3f98321b72ecfae1a89a27c8e932118c3b9b4e841144ec8a343515f604118270",
+   "seed": 20261112,
+   "n_bootstrap": 2000,
+   "n_permutations": 10000,
+   "n_parallel_analysis": 1000,
+   "versions": {
+    "python": "3.12.12",
+    "numpy": "2.3.4",
+    "scipy": "1.16.3"
+   },
+   "stage_covariate": "log(illness_days + 1) (owner-reported); SV-01 pseudo-stage failed validation and is used only in sensitivities S2 and S3",
+   "experiment": "step 3",
+   "axis_component": 1,
+   "axis_status": "congruent but not specific (leukocyte)",
+   "weights_s050": {
+    "neut_seg": 0.745,
+    "neut_band": 0.667
+   },
+   "weights_s017": {
+    "neut_seg": 0.556,
+    "neut_band": 0.497,
+    "lymph": 0.315,
+    "mono": 0.436,
+    "plt": 0.395
+   },
+   "bh_family": 2
+  },
+  "n_subjects": 172,
+  "n_variables": 5,
+  "n_tests": 2,
+  "summary": "Axis 1 score (segmented and band neutrophils, DS05 weights) is higher in S-CB050 dogs that died: Cliff's delta +0.49 (+0.21 to +0.74), 15 vs 126, q 0.003; S-CB017 complicated +0.28 (-0.13 to +0.68), q 0.196. It restates band neutrophils (bands alone +0.60; axis after bands +0.15, -0.17 to +0.45). 2 tests, 1 with q < 0.05."
+ },
+ "associations": [],
+ "cluster_assignments": [],
+ "results": [
+  {
+   "kind": "axis_outcome",
+   "title": "Axis score by outcome",
+   "sort_order": 1,
+   "payload": {
+    "rows": [
+     {
+      "key": "s050_died",
+      "label": "Axis score, died vs survived",
+      "file": "S-CB050",
+      "outcome": "died",
+      "note": "primary; stratified by cohort",
+      "delta": 0.486,
+      "ci": [
+       0.209,
+       0.739
+      ],
+      "p": 0.0017,
+      "n_pos": 15,
+      "n_neg": 126,
+      "median_pos": 1.591,
+      "median_neg": -0.303,
+      "q": 0.0034
+     },
+     {
+      "key": "s017_complicated",
+      "label": "Axis score, complicated vs uncomplicated",
+      "file": "S-CB017",
+      "outcome": "complicated",
+      "note": "primary; WBC is in the label",
+      "delta": 0.282,
+      "ci": [
+       -0.128,
+       0.684
+      ],
+      "p": 0.1959,
+      "n_pos": 18,
+      "n_neg": 13,
+      "median_pos": 0.256,
+      "median_neg": -0.472,
+      "q": 0.1959
+     },
+     {
+      "key": "s050_bands_only",
+      "label": "Band neutrophils alone, died vs survived",
+      "file": "S-CB050",
+      "outcome": "died",
+      "note": "comparison: the published finding",
+      "delta": 0.597,
+      "ci": [
+       0.387,
+       0.783
+      ],
+      "p": 0.0001,
+      "n_pos": 15,
+      "n_neg": 126,
+      "median_pos": 0.039,
+      "median_neg": -1.022
+     },
+     {
+      "key": "s050_seg_only",
+      "label": "Segmented neutrophils alone, died vs survived",
+      "file": "S-CB050",
+      "outcome": "died",
+      "note": "comparison",
+      "delta": 0.311,
+      "ci": [
+       -0.047,
+       0.639
+      ],
+      "p": 0.0459,
+      "n_pos": 15,
+      "n_neg": 126,
+      "median_pos": 2.224,
+      "median_neg": 1.409
+     },
+     {
+      "key": "s050_axis_given_bands",
+      "label": "Axis score after removing band neutrophils",
+      "file": "S-CB050",
+      "outcome": "died",
+      "note": "does the axis add to bands?",
+      "delta": 0.149,
+      "ci": [
+       -0.173,
+       0.452
+      ],
+      "p": 0.3423,
+      "n_pos": 15,
+      "n_neg": 126,
+      "median_pos": 0.197,
+      "median_neg": 0.036,
+      "rho_score_band": 0.812
+     },
+     {
+      "key": "A1_s050_cohort1",
+      "label": "A1 cohort 1 only",
+      "file": "S-CB050",
+      "outcome": "died",
+      "note": "sensitivity",
+      "delta": 0.363,
+      "ci": [
+       0.047,
+       0.659
+      ],
+      "p": 0.0394,
+      "n_pos": 12,
+      "n_neg": 85,
+      "median_pos": 0.098,
+      "median_neg": -0.307
+     },
+     {
+      "key": "A2_s050_with_wbc",
+      "label": "A2 with WBC",
+      "file": "S-CB050",
+      "outcome": "died",
+      "note": "sensitivity",
+      "delta": 0.425,
+      "ci": [
+       0.108,
+       0.695
+      ],
+      "p": 0.0077,
+      "n_pos": 15,
+      "n_neg": 126,
+      "median_pos": 2.091,
+      "median_neg": -0.437
+     },
+     {
+      "key": "A3_s017_no_hct",
+      "label": "A3 no haematocrit conditioning",
+      "file": "S-CB017",
+      "outcome": "complicated",
+      "note": "sensitivity",
+      "delta": 0.376,
+      "ci": [
+       -0.026,
+       0.761
+      ],
+      "p": 0.0885,
+      "n_pos": 18,
+      "n_neg": 13,
+      "median_pos": 0.589,
+      "median_neg": -0.658
+     },
+     {
+      "key": "A4_s050_died",
+      "label": "A4 (post hoc) axis 2 weights",
+      "file": "S-CB050",
+      "outcome": "died",
+      "note": "deviation D3",
+      "delta": 0.525,
+      "ci": [
+       0.266,
+       0.744
+      ],
+      "p": 0.001,
+      "n_pos": 15,
+      "n_neg": 126,
+      "median_pos": 1.531,
+      "median_neg": -0.25
+     },
+     {
+      "key": "A4_s017_complicated",
+      "label": "A4 (post hoc) axis 2 weights",
+      "file": "S-CB017",
+      "outcome": "complicated",
+      "note": "deviation D3",
+      "delta": 0.043,
+      "ci": [
+       -0.342,
+       0.453
+      ],
+      "p": 0.8615,
+      "n_pos": 18,
+      "n_neg": 13,
+      "median_pos": -0.058,
+      "median_neg": -0.133
+     }
+    ],
+    "axis_component": 1,
+    "axis_status": "congruent but not specific (leukocyte)",
+    "adds_beyond_bands": false,
+    "caption": "Cliff's delta (label 1 minus label 0) with 2,000-bootstrap 95% intervals; permutation p (10,000). S-CB050: died includes euthanasia for poor prognosis. S-CB017: B. canis, one species per source; WBC is part of the complicated label. Both files are already seen (published group comparisons): exploratory."
+   }
+  },
+  {
+   "kind": "score_points",
+   "title": "Axis scores by dog and label",
+   "sort_order": 2,
+   "payload": {
+    "points": [
+     {
+      "file": "S-CB050",
+      "score": -0.2186,
+      "label": 0
+     },
+     {
+      "file": "S-CB050",
+      "score": 1.8694,
+      "label": 0
+     },
+     {
+      "file": "S-CB050",
+      "score": -0.0165,
+      "label": 0
+     },
+     {
+      "file": "S-CB050",
+      "score": -1.0156,
+      "label": 0
+     },
+     {
+      "file": "S-CB050",
+      "score": -1.2472,
+      "label": 0
+     },
+     {
+      "file": "S-CB050",
+      "score": 1.8175,
+      "label": 0
+     },
+     {
+      "file": "S-CB050",
+      "score": 0.0289,
+      "label": 0
+     },
+     {
+      "file": "S-CB050",
+      "score": -0.9635,
+      "label": 0
+     },
+     {
+      "file": "S-CB050",
+      "score": -0.5136,
+      "label": 0
+     },
+     {
+      "file": "S-CB050",
+      "score": -0.6722,
+      "label": 0
+     },
+     {
+      "file": "S-CB050",
+      "score": 1.7837,
+      "label": 0
+     },
+     {
+      "file": "S-CB050",
+      "score": -0.6301,
+      "label": 0
+     },
+     {
+      "file": "S-CB050",
+      "score": 1.5911,
+      "label": 1
+     },
+     {
+      "file": "S-CB050",
+      "score": 1.403,
+      "label": 0
+     },
+     {
+      "file": "S-CB050",
+      "score": -0.4854,
+      "label": 0
+     },
+     {
+      "file": "S-CB050",
+      "score": 0.2591,
+      "label": 0
+     },
+     {
+      "file": "S-CB050",
+      "score": -0.5951,
+      "label": 0
+     },
+     {
+      "file": "S-CB050",
+      "score": -1.4498,
+      "label": 0
+     },
+     {
+      "file": "S-CB050",
+      "score": 1.0895,
+      "label": 0
+     },
+     {
+      "file": "S-CB050",
+      "score": -0.1337,
+      "label": 0
+     },
+     {
+      "file": "S-CB050",
+      "score": -0.0873,
+      "label": 1
+     },
+     {
+      "file": "S-CB050",
+      "score": 1.2085,
+      "label": 0
+     },
+     {
+      "file": "S-CB050",
+      "score": -0.3973,
+      "label": 0
+     },
+     {
+      "file": "S-CB050",
+      "score": 1.7566,
+      "label": 0
+     },
+     {
+      "file": "S-CB050",
+      "score": -1.5951,
+      "label": 0
+     },
+     {
+      "file": "S-CB050",
+      "score": -0.6402,
+      "label": 0
+     },
+     {
+      "file": "S-CB050",
+      "score": -0.9279,
+      "label": 0
+     },
+     {
+      "file": "S-CB050",
+      "score": -0.4216,
+      "label": 0
+     },
+     {
+      "file": "S-CB050",
+      "score": -0.6791,
+      "label": 0
+     },
+     {
+      "file": "S-CB050",
+      "score": -0.4485,
+      "label": 0
+     },
+     {
+      "file": "S-CB050",
+      "score": -0.3619,
+      "label": 0
+     },
+     {
+      "file": "S-CB050",
+      "score": -0.3068,
+      "label": 0
+     },
+     {
+      "file": "S-CB050",
+      "score": -1.3851,
+      "label": 0
+     },
+     {
+      "file": "S-CB050",
+      "score": 0.1442,
+      "label": 1
+     },
+     {
+      "file": "S-CB050",
+      "score": 1.1126,
+      "label": 0
+     },
+     {
+      "file": "S-CB050",
+      "score": 0.3017,
+      "label": 0
+     },
+     {
+      "file": "S-CB050",
+      "score": 2.1134,
+      "label": 1
+     },
+     {
+      "file": "S-CB050",
+      "score": -0.043,
+      "label": 0
+     },
+     {
+      "file": "S-CB050",
+      "score": -0.2992,
+      "label": 0
+     },
+     {
+      "file": "S-CB050",
+      "score": -0.6793,
+      "label": 0
+     },
+     {
+      "file": "S-CB050",
+      "score": -0.7806,
+      "label": 0
+     },
+     {
+      "file": "S-CB050",
+      "score": -1.2147,
+      "label": 0
+     },
+     {
+      "file": "S-CB050",
+      "score": 1.3094,
+      "label": 0
+     },
+     {
+      "file": "S-CB050",
+      "score": -0.4862,
+      "label": 0
+     },
+     {
+      "file": "S-CB050",
+      "score": -0.0551,
+      "label": 0
+     },
+     {
+      "file": "S-CB050",
+      "score": -0.0673,
+      "label": 0
+     },
+     {
+      "file": "S-CB050",
+      "score": -1.5108,
+      "label": 0
+     },
+     {
+      "file": "S-CB050",
+      "score": -0.5812,
+      "label": 0
+     },
+     {
+      "file": "S-CB050",
+      "score": 1.3974,
+      "label": 0
+     },
+     {
+      "file": "S-CB050",
+      "score": 2.6079,
+      "label": 0
+     },
+     {
+      "file": "S-CB050",
+      "score": -0.2682,
+      "label": 0
+     },
+     {
+      "file": "S-CB050",
+      "score": 0.1611,
+      "label": 0
+     },
+     {
+      "file": "S-CB050",
+      "score": 1.5044,
+      "label": 0
+     },
+     {
+      "file": "S-CB050",
+      "score": 0.3781,
+      "label": 0
+     },
+     {
+      "file": "S-CB050",
+      "score": 0.0509,
+      "label": 1
+     },
+     {
+      "file": "S-CB050",
+      "score": 1.0133,
+      "label": 0
+     },
+     {
+      "file": "S-CB050",
+      "score": -0.6872,
+      "label": 0
+     },
+     {
+      "file": "S-CB050",
+      "score": 1.79,
+      "label": 1
+     },
+     {
+      "file": "S-CB050",
+      "score": -0.5682,
+      "label": 1
+     },
+     {
+      "file": "S-CB050",
+      "score": -1.6788,
+      "label": 0
+     },
+     {
+      "file": "S-CB050",
+      "score": 2.2364,
+      "label": 1
+     },
+     {
+      "file": "S-CB050",
+      "score": 2.3997,
+      "label": 0
+     },
+     {
+      "file": "S-CB050",
+      "score": -1.545,
+      "label": 0
+     },
+     {
+      "file": "S-CB050",
+      "score": 1.8965,
+      "label": 0
+     },
+     {
+      "file": "S-CB050",
+      "score": 2.2008,
+      "label": 1
+     },
+     {
+      "file": "S-CB050",
+      "score": -0.6791,
+      "label": 0
+     },
+     {
+      "file": "S-CB050",
+      "score": -3.3,
+      "label": 0
+     },
+     {
+      "file": "S-CB050",
+      "score": 0.6875,
+      "label": 0
+     },
+     {
+      "file": "S-CB050",
+      "score": -0.016,
+      "label": 0
+     },
+     {
+      "file": "S-CB050",
+      "score": 0.2447,
+      "label": 0
+     },
+     {
+      "file": "S-CB050",
+      "score": 0.1636,
+      "label": 0
+     },
+     {
+      "file": "S-CB050",
+      "score": 0.9733,
+      "label": 0
+     },
+     {
+      "file": "S-CB050",
+      "score": -0.5406,
+      "label": 0
+     },
+     {
+      "file": "S-CB050",
+      "score": -1.6411,
+      "label": 0
+     },
+     {
+      "file": "S-CB050",
+      "score": 0.7476,
+      "label": 0
+     },
+     {
+      "file": "S-CB050",
+      "score": -0.27,
+      "label": 0
+     },
+     {
+      "file": "S-CB050",
+      "score": 3.2281,
+      "label": 0
+     },
+     {
+      "file": "S-CB050",
+      "score": -1.0716,
+      "label": 0
+     },
+     {
+      "file": "S-CB050",
+      "score": -0.2779,
+      "label": 0
+     },
+     {
+      "file": "S-CB050",
+      "score": -1.3225,
+      "label": 0
+     },
+     {
+      "file": "S-CB050",
+      "score": -0.3929,
+      "label": 1
+     },
+     {
+      "file": "S-CB050",
+      "score": -0.4008,
+      "label": 0
+     },
+     {
+      "file": "S-CB050",
+      "score": 2.3226,
+      "label": 0
+     },
+     {
+      "file": "S-CB050",
+      "score": -0.9333,
+      "label": 1
+     },
+     {
+      "file": "S-CB050",
+      "score": -0.076,
+      "label": 1
+     },
+     {
+      "file": "S-CB050",
+      "score": -0.6211,
+      "label": 0
+     },
+     {
+      "file": "S-CB050",
+      "score": 1.1968,
+      "label": 0
+     },
+     {
+      "file": "S-CB050",
+      "score": -0.8305,
+      "label": 0
+     },
+     {
+      "file": "S-CB050",
+      "score": -0.6913,
+      "label": 0
+     },
+     {
+      "file": "S-CB050",
+      "score": 0.0779,
+      "label": 0
+     },
+     {
+      "file": "S-CB050",
+      "score": -0.3706,
+      "label": 0
+     },
+     {
+      "file": "S-CB050",
+      "score": -1.6722,
+      "label": 0
+     },
+     {
+      "file": "S-CB050",
+      "score": 0.8518,
+      "label": 0
+     },
+     {
+      "file": "S-CB050",
+      "score": 0.1151,
+      "label": 0
+     },
+     {
+      "file": "S-CB050",
+      "score": -1.5228,
+      "label": 0
+     },
+     {
+      "file": "S-CB050",
+      "score": -1.8431,
+      "label": 0
+     },
+     {
+      "file": "S-CB050",
+      "score": -0.4399,
+      "label": 0
+     },
+     {
+      "file": "S-CB050",
+      "score": 0.1959,
+      "label": 0
+     },
+     {
+      "file": "S-CB050",
+      "score": -0.7536,
+      "label": 0
+     },
+     {
+      "file": "S-CB050",
+      "score": 0.2705,
+      "label": 0
+     },
+     {
+      "file": "S-CB050",
+      "score": -0.0773,
+      "label": 0
+     },
+     {
+      "file": "S-CB050",
+      "score": 0.3078,
+      "label": 0
+     },
+     {
+      "file": "S-CB050",
+      "score": -1.5062,
+      "label": 0
+     },
+     {
+      "file": "S-CB050",
+      "score": -1.2158,
+      "label": 0
+     },
+     {
+      "file": "S-CB050",
+      "score": 1.4135,
+      "label": 0
+     },
+     {
+      "file": "S-CB050",
+      "score": -0.1925,
+      "label": 0
+     },
+     {
+      "file": "S-CB050",
+      "score": -0.1601,
+      "label": 0
+     },
+     {
+      "file": "S-CB050",
+      "score": 0.4238,
+      "label": 0
+     },
+     {
+      "file": "S-CB050",
+      "score": 1.2994,
+      "label": 0
+     },
+     {
+      "file": "S-CB050",
+      "score": -1.9402,
+      "label": 0
+     },
+     {
+      "file": "S-CB050",
+      "score": 0.0,
+      "label": 0
+     },
+     {
+      "file": "S-CB050",
+      "score": -1.0625,
+      "label": 0
+     },
+     {
+      "file": "S-CB050",
+      "score": -0.5449,
+      "label": 0
+     },
+     {
+      "file": "S-CB050",
+      "score": 0.4712,
+      "label": 0
+     },
+     {
+      "file": "S-CB050",
+      "score": 0.6368,
+      "label": 0
+     },
+     {
+      "file": "S-CB050",
+      "score": -0.6004,
+      "label": 0
+     },
+     {
+      "file": "S-CB050",
+      "score": 0.0696,
+      "label": 0
+     },
+     {
+      "file": "S-CB050",
+      "score": -0.6011,
+      "label": 0
+     },
+     {
+      "file": "S-CB050",
+      "score": -0.4318,
+      "label": 0
+     },
+     {
+      "file": "S-CB050",
+      "score": -0.4642,
+      "label": 0
+     },
+     {
+      "file": "S-CB050",
+      "score": -0.818,
+      "label": 0
+     },
+     {
+      "file": "S-CB050",
+      "score": -0.0542,
+      "label": 0
+     },
+     {
+      "file": "S-CB050",
+      "score": 4.9863,
+      "label": 1
+     },
+     {
+      "file": "S-CB050",
+      "score": 1.6734,
+      "label": 1
+     },
+     {
+      "file": "S-CB050",
+      "score": 0.6854,
+      "label": 0
+     },
+     {
+      "file": "S-CB050",
+      "score": 0.3851,
+      "label": 0
+     },
+     {
+      "file": "S-CB050",
+      "score": -2.4028,
+      "label": 0
+     },
+     {
+      "file": "S-CB050",
+      "score": 1.8749,
+      "label": 1
+     },
+     {
+      "file": "S-CB050",
+      "score": -0.4833,
+      "label": 0
+     },
+     {
+      "file": "S-CB050",
+      "score": 0.045,
+      "label": 0
+     },
+     {
+      "file": "S-CB050",
+      "score": 0.033,
+      "label": 0
+     },
+     {
+      "file": "S-CB050",
+      "score": -0.789,
+      "label": 0
+     },
+     {
+      "file": "S-CB050",
+      "score": 0.781,
+      "label": 0
+     },
+     {
+      "file": "S-CB050",
+      "score": -0.4546,
+      "label": 0
+     },
+     {
+      "file": "S-CB050",
+      "score": -0.4917,
+      "label": 0
+     },
+     {
+      "file": "S-CB050",
+      "score": -0.4318,
+      "label": 0
+     },
+     {
+      "file": "S-CB050",
+      "score": -1.9288,
+      "label": 0
+     },
+     {
+      "file": "S-CB050",
+      "score": 0.6246,
+      "label": 0
+     },
+     {
+      "file": "S-CB050",
+      "score": 1.5445,
+      "label": 0
+     },
+     {
+      "file": "S-CB050",
+      "score": -0.6969,
+      "label": 0
+     },
+     {
+      "file": "S-CB050",
+      "score": -1.0841,
+      "label": 0
+     },
+     {
+      "file": "S-CB017",
+      "score": -2.6166,
+      "label": 1
+     },
+     {
+      "file": "S-CB017",
+      "score": 0.1706,
+      "label": 0
+     },
+     {
+      "file": "S-CB017",
+      "score": 1.647,
+      "label": 1
+     },
+     {
+      "file": "S-CB017",
+      "score": -0.3364,
+      "label": 0
+     },
+     {
+      "file": "S-CB017",
+      "score": 1.2977,
+      "label": 1
+     },
+     {
+      "file": "S-CB017",
+      "score": -0.4717,
+      "label": 0
+     },
+     {
+      "file": "S-CB017",
+      "score": -2.7255,
+      "label": 1
+     },
+     {
+      "file": "S-CB017",
+      "score": -0.6628,
+      "label": 0
+     },
+     {
+      "file": "S-CB017",
+      "score": -2.3754,
+      "label": 1
+     },
+     {
+      "file": "S-CB017",
+      "score": -0.6429,
+      "label": 0
+     },
+     {
+      "file": "S-CB017",
+      "score": -0.1163,
+      "label": 1
+     },
+     {
+      "file": "S-CB017",
+      "score": 1.0253,
+      "label": 1
+     },
+     {
+      "file": "S-CB017",
+      "score": -0.0724,
+      "label": 1
+     },
+     {
+      "file": "S-CB017",
+      "score": 0.4671,
+      "label": 1
+     },
+     {
+      "file": "S-CB017",
+      "score": -1.0184,
+      "label": 0
+     },
+     {
+      "file": "S-CB017",
+      "score": 2.652,
+      "label": 1
+     },
+     {
+      "file": "S-CB017",
+      "score": 3.2627,
+      "label": 1
+     },
+     {
+      "file": "S-CB017",
+      "score": -0.5527,
+      "label": 0
+     },
+     {
+      "file": "S-CB017",
+      "score": 0.9769,
+      "label": 1
+     },
+     {
+      "file": "S-CB017",
+      "score": 0.0445,
+      "label": 1
+     },
+     {
+      "file": "S-CB017",
+      "score": 1.2108,
+      "label": 1
+     },
+     {
+      "file": "S-CB017",
+      "score": -2.1718,
+      "label": 1
+     },
+     {
+      "file": "S-CB017",
+      "score": -0.9177,
+      "label": 1
+     },
+     {
+      "file": "S-CB017",
+      "score": 0.7519,
+      "label": 0
+     },
+     {
+      "file": "S-CB017",
+      "score": -1.4737,
+      "label": 0
+     },
+     {
+      "file": "S-CB017",
+      "score": 0.928,
+      "label": 0
+     },
+     {
+      "file": "S-CB017",
+      "score": -0.3472,
+      "label": 1
+     },
+     {
+      "file": "S-CB017",
+      "score": -0.3219,
+      "label": 0
+     },
+     {
+      "file": "S-CB017",
+      "score": -0.5821,
+      "label": 0
+     },
+     {
+      "file": "S-CB017",
+      "score": 0.8322,
+      "label": 0
+     },
+     {
+      "file": "S-CB017",
+      "score": 2.1389,
+      "label": 1
+     }
+    ]
+   }
+  },
+  {
+   "kind": "mcp1",
+   "title": "Axis score against MCP-1 (descriptive)",
+   "sort_order": 3,
+   "payload": {
+    "rows": [
+     {
+      "file": "S-CB050 cohort 1",
+      "n": 97,
+      "rho": -0.103,
+      "ci": [
+       -0.305,
+       0.105
+      ],
+      "p": 0.3176
+     },
+     {
+      "file": "S-CB017 day 1",
+      "n": 31,
+      "rho": 0.232,
+      "ci": [
+       -0.16,
+       0.576
+      ],
+      "p": 0.2079
+     }
+    ],
+    "caption": "Spearman rho among infected dogs; MCP-1 was named a candidate by SV-04. No outcome used."
+   }
+  },
+  {
+   "kind": "interpretation",
+   "title": "Explanation and interpretation",
+   "sort_order": 9,
+   "payload": {
+    "sections": [
+     {
+      "heading": "Question",
+      "paragraphs": [
+       "Scored in files that have a real outcome, does a DS05 residual axis separate dogs that died, or had complicated disease, beyond what band neutrophils already show?"
+      ]
+     },
+     {
+      "heading": "What was done",
+      "paragraphs": [
+       "The rule chose axis 1 (congruent but not specific (leukocyte)). Its DS05 loadings on the variables each file shares were used as weights: segmented and band neutrophils in S-CB050 (all 141 infected dogs, both cohorts), and segmented and band neutrophils, lymphocytes, monocytes and platelets (haematocrit removed) in S-CB017 day 1 (31 dogs). Cliff's delta, permutation p (stratified by cohort in S-CB050), bootstrap intervals; BH over the 2 primary tests.",
+       "Deviation D3: the rule tied between axes 1 and 2 (both congruent but not specific in S-CB050) and the code took axis 1. Axis 2 was scored as a post hoc check A4: in S-CB050 its score correlates +0.99 with the axis-1 score."
+      ]
+     },
+     {
+      "heading": "Result",
+      "paragraphs": [
+       "S-CB050: the score is higher in dogs that died, delta +0.49 (+0.21 to +0.74), p 0.002, q 0.003, 15 died vs 126 survived.",
+       "But this restates the published band-neutrophil finding: band neutrophils alone give +0.60 (+0.39 to +0.78); the score correlates +0.81 with bands; after bands are removed the score gives +0.15 (-0.17 to +0.45), p 0.342. The axis adds nothing beyond bands (the risk the package file named).",
+       "S-CB017 (B. canis): delta +0.28 (-0.13 to +0.68), q 0.196, 18 complicated vs 13 uncomplicated; detectable effect about 1.05 SD, and WBC is part of the label. Axis 2 weights give +0.04 (-0.34 to +0.45).",
+       "MCP-1 does not track the score: S-CB050 cohort 1 rho -0.10 (-0.30 to +0.10), n 97; S-CB017 day 1 rho +0.23 (-0.16 to +0.58), n 31."
+      ]
+     },
+     {
+      "heading": "What this does not show",
+      "paragraphs": [
+       "The axis was not replicated (experiment SV-09-02), so this is the score of an unreplicated direction. In S-CB050 only two of its twelve variables exist, so the score is a neutrophil sum, not the DS05 axis. Both files are already seen. Died includes euthanasia for poor prognosis. No predictive score was made and no group of dogs is a subtype."
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

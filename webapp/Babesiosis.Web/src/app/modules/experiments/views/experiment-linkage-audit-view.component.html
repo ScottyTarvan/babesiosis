@@ -1,0 +1,134 @@
+<div class="fs-experiment-linkage">
+  @if (primary(); as p) {
+    <fs-card title="Which files share dogs"
+             subtitle="Raw files of DS02-DS07, S-CB050, S-CB517 · descriptive, no statistical test · counts of link rows in out/linkage.csv">
+      <dl class="fs-experiment-linkage__totals">
+        <div><dt>Confirmed by values</dt><dd>{{ p.link_counts['confirmed by values'] }}</dd></div>
+        <div><dt>Probable</dt><dd>{{ p.link_counts['probable'] }}</dd></div>
+        <div><dt>Unverified</dt><dd>{{ p.link_counts['unverified'] }}</dd></div>
+        @for (h of p.headline; track h.label) {
+          <div><dt>{{ h.label }}</dt><dd>{{ h.value }}@if (h.of !== null) {<span class="fs-experiment-linkage__of"> / {{ h.of }}</span>}</dd></div>
+        }
+      </dl>
+      <fs-data-grid [data]="p.file_pairs" [columns]="filePairColumns" keyExpr="file_a" noDataText="No file pairs stored." />
+      <p class="fs-experiment-linkage__footnote">
+        Files that share dogs must not be pooled as extra dogs, and their sources are not independent. One species per source:
+        never read a between-file difference as a species effect. In the Onderstepoort files "died" includes euthanasia for poor prognosis.
+      </p>
+    </fs-card>
+  } @else {
+    <fs-card title="Which files share dogs"><p class="fs-experiment-linkage__footnote">This run stored no primary result.</p></fs-card>
+  }
+
+  <fs-card title="DS04 against S-CB050 by values"
+           subtitle="DS04 haematology rows (no case numbers in the file) joined by the case order of Stats Tables.xlsx, searched in all 161 S-CB050 rows">
+    @if (ds04(); as d) {
+      <div class="fs-experiment-linkage__badges">
+        <fs-badge variant="tonal" [intent]="d.orders_agree ? 'success' : 'danger'">5 Stats Tables sheets in one order: {{ d.orders_agree ? 'yes' : 'no' }}</fs-badge>
+        <fs-badge variant="tonal" intent="success">3 S-CB050 hits on the predicted rows · chance {{ d.p_three_matches.toFixed(4) }}</fs-badge>
+        <fs-badge variant="tonal" intent="secondary">Icterus vs bilirubin {{ d.icterus_agree }}/{{ d.icterus_n }} · p {{ d.icterus_p_fixed.toFixed(2) }} (uninformative)</fs-badge>
+      </div>
+      <fs-data-grid [data]="ds04Rows()" [columns]="ds04Columns" keyExpr="row" noDataText="No rows." />
+      <p class="fs-experiment-linkage__footnote">
+        Within rounding: every count differs by at most 0.011 or 0.5%. Nearest: the largest relative difference over the three counts.
+        DS04 (n 14: 10 fatal, 4 controls) and S-CB050 (n 161) are both Onderstepoort, B. rossi; all DS04 infected dogs died.
+      </p>
+    } @else {
+      <p class="fs-experiment-linkage__footnote">This run stored no DS04 join.</p>
+    }
+  </fs-card>
+
+  <fs-card title="DS03 against S-CB050 by age, weight and sex"
+           subtitle="Twin = same sex, same age in months, weight within 0.1 kg · DS05 (Eastern Cape, 2021) is the chance baseline: it cannot share dogs">
+    @if (ds03(); as d) {
+      <div class="fs-experiment-linkage__charts">
+        <div>
+          <h4 class="fs-experiment-linkage__subhead">Twin rate against the matching S-CB050 block and against DS05</h4>
+          <fs-chart [options]="rateChart()" [height]="300" [empty]="!d.rates.length" emptyMessage="No rates stored" />
+        </div>
+        <div>
+          <h4 class="fs-experiment-linkage__subhead">Unique twins keep the study-number order</h4>
+          <fs-chart [options]="orderChart()" [height]="300" [empty]="!d.unique_pairs.length" emptyMessage="No unique pairs" />
+        </div>
+      </div>
+      <div class="fs-experiment-linkage__badges">
+        @for (o of d.order_check; track o.ds03_block) {
+          <fs-badge variant="tonal" [intent]="o.order_inversions === 0 ? 'success' : 'warning'">
+            {{ o.ds03_block }}: {{ o.unique_pairs }} unique pairs, {{ o.order_inversions }} out of order (Kendall tau {{ o.kendall_tau }})
+          </fs-badge>
+        }
+        @for (v of d.value_check; track v.ds03_id) {
+          <fs-badge variant="tonal" intent="success">
+            {{ v.ds03_id }} = DS04 case {{ v.ds04_case }} by values: Hct {{ v.ds03_hct }} / {{ v.ds04_hct }}, retic {{ v.ds03_retic_pct }}% / {{ v.ds04_retic_pct }}%
+          </fs-badge>
+        }
+      </div>
+      <fs-data-grid [data]="rateRows()" [columns]="rateColumns" keyExpr="id" noDataText="No rates." />
+      <p class="fs-experiment-linkage__footnote">
+        Chance rate {{ d.baseline_rate_per_1000 }} twin pairs per 1,000 (DS03 cohort 1 and S-CB050 against DS05). DS03 n 117 (85 + 18 natural,
+        14 controls), S-CB050 n 161, DS05 n 150; all B. rossi. Weak identifiers: the file-level overlap is clear, each dog-level pair stays
+        unverified (one confirmed by values through DS04).
+      </p>
+    } @else {
+      <p class="fs-experiment-linkage__footnote">This run stored no DS03 comparison.</p>
+    }
+  </fs-card>
+
+  <fs-card title="DS07 sample numbers against DS04 case numbers"
+           subtitle="DS07 has no clinical values, so only the numbers and the CB112 group summaries can be compared">
+    @if (ds07(); as d) {
+      <div class="fs-experiment-linkage__badges">
+        <fs-badge variant="tonal" intent="warning">In DS07 complicated: {{ d.in_complicated.join(', ') }}</fs-badge>
+        <fs-badge variant="tonal" intent="secondary">In DS07 uncomplicated: {{ d.in_uncomplicated.join(', ') || 'none' }}</fs-badge>
+      </div>
+      <fs-data-grid [data]="hypRows()" [columns]="hypColumns" keyExpr="universe" noDataText="No probabilities." />
+      <h4 class="fs-experiment-linkage__subhead">DS04 signalment against the CB112 summaries</h4>
+      <fs-data-grid [data]="d.consistency" [columns]="consColumns" keyExpr="ds04_case" noDataText="No rows." />
+      <p class="fs-experiment-linkage__footnote">
+        Hypergeometric probability that 7 numbers drawn from the stated range hit the DS07 lists this often (14 complicated, 32 infected).
+        Unlikely by chance, but two DS04 records contradict CB112, so DS07 death cannot be taken from DS04 until the authors confirm.
+      </p>
+    } @else {
+      <p class="fs-experiment-linkage__footnote">This run stored no DS07 comparison.</p>
+    }
+  </fs-card>
+
+  <fs-card title="DS06 sample names against DS02 dog numbers"
+           subtitle="Exploratory: residual correlation of marker-gene expression with DS02 lymphocyte, neutrophil and monocyte counts within dose group · 5 Beagles">
+    @if (ds06(); as d) {
+      <div class="fs-experiment-linkage__badges">
+        <fs-badge variant="tonal" intent="warning">high_3 = dog 6 by sampling pattern (probable)</fs-badge>
+        <fs-badge variant="tonal" [intent]="d.positive_control_pass ? 'success' : 'danger'">
+          Positive control (recover high_3 = dog 6): {{ d.positive_control_pass ? 'passed' : 'failed' }}
+        </fs-badge>
+      </div>
+      <fs-data-grid [data]="ds06Rows()" [columns]="ds06Columns" keyExpr="id" noDataText="No scores." />
+      <p class="fs-experiment-linkage__footnote">
+        The positive control failed, so the other names stay unverified whatever their scores. Marker genes not in the count matrix: {{ absentMarkers() || 'none' }}.
+      </p>
+    } @else {
+      <p class="fs-experiment-linkage__footnote">This run stored no DS06 mapping.</p>
+    }
+  </fs-card>
+
+  <fs-card title="Proposed independent_source changes" subtitle="A proposal only: /core/datasets.jsonl was not edited">
+    @if (proposal(); as pr) {
+      <fs-data-grid [data]="pr.rows" [columns]="proposalColumns" keyExpr="dataset" noDataText="No proposal." />
+    } @else {
+      <p class="fs-experiment-linkage__footnote">This run stored no proposal.</p>
+    }
+  </fs-card>
+
+  <fs-card title="All links" [subtitle]="(linkTable()?.rows?.length ?? 0) + ' rows of out/linkage.csv'">
+    @if (linkTable()) {
+      <div class="fs-experiment-linkage__filter" role="group" aria-label="Filter by certainty">
+        @for (c of certainties; track c) {
+          <button type="button" class="fs-experiment-linkage__chip" [class.is-active]="certaintyFilter() === c" (click)="certaintyFilter.set(c)">{{ c }}</button>
+        }
+      </div>
+      <fs-data-grid [data]="linkRows()" [columns]="linkColumns" keyExpr="id" [pager]="pager" [pageSize]="10" noDataText="No links." />
+    } @else {
+      <p class="fs-experiment-linkage__footnote">This run stored no link table.</p>
+    }
+  </fs-card>
+</div>

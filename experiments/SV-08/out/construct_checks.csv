@@ -1,0 +1,37 @@
+mapping,set,ds02_variable,label,dog,n_points,spearman_rho
+working,type1_interferon,ip10,plasma IP-10 (CXCL10 protein),low_1,4,0.9487
+working,type1_interferon,ip10,plasma IP-10 (CXCL10 protein),low_2,4,1.0
+working,type1_interferon,ip10,plasma IP-10 (CXCL10 protein),high_1,4,0.8
+working,type1_interferon,ip10,plasma IP-10 (CXCL10 protein),high_2,4,1.0
+working,type1_interferon,ip10,plasma IP-10 (CXCL10 protein),high_3,3,1.0
+working,type1_interferon,ip10,plasma IP-10 (CXCL10 protein),median of dogs,5,1.0
+working,neutrophil_granule,neut_band,band neutrophils,low_1,4,0.9487
+working,neutrophil_granule,neut_band,band neutrophils,low_2,4,-0.2
+working,neutrophil_granule,neut_band,band neutrophils,high_1,4,0.8
+working,neutrophil_granule,neut_band,band neutrophils,high_2,4,0.8
+working,neutrophil_granule,neut_band,band neutrophils,high_3,3,-0.5
+working,neutrophil_granule,neut_band,band neutrophils,median of dogs,5,0.8
+working,erythroid_control,retic_pct,reticulocyte %,low_1,3,1.0
+working,erythroid_control,retic_pct,reticulocyte %,low_2,3,1.0
+working,erythroid_control,retic_pct,reticulocyte %,high_1,3,1.0
+working,erythroid_control,retic_pct,reticulocyte %,high_2,3,0.5
+working,erythroid_control,retic_pct,reticulocyte %,high_3,2,
+working,erythroid_control,retic_pct,reticulocyte %,median of dogs,4,1.0
+alternative,type1_interferon,ip10,plasma IP-10 (CXCL10 protein),low_1,4,0.8
+alternative,type1_interferon,ip10,plasma IP-10 (CXCL10 protein),low_2,4,0.9487
+alternative,type1_interferon,ip10,plasma IP-10 (CXCL10 protein),high_1,4,1.0
+alternative,type1_interferon,ip10,plasma IP-10 (CXCL10 protein),high_2,4,0.8
+alternative,type1_interferon,ip10,plasma IP-10 (CXCL10 protein),high_3,3,1.0
+alternative,type1_interferon,ip10,plasma IP-10 (CXCL10 protein),median of dogs,5,0.9487
+alternative,neutrophil_granule,neut_band,band neutrophils,low_1,4,-0.2
+alternative,neutrophil_granule,neut_band,band neutrophils,low_2,4,0.9487
+alternative,neutrophil_granule,neut_band,band neutrophils,high_1,4,0.8
+alternative,neutrophil_granule,neut_band,band neutrophils,high_2,4,0.8
+alternative,neutrophil_granule,neut_band,band neutrophils,high_3,3,-0.5
+alternative,neutrophil_granule,neut_band,band neutrophils,median of dogs,5,0.8
+alternative,erythroid_control,retic_pct,reticulocyte %,low_1,3,1.0
+alternative,erythroid_control,retic_pct,reticulocyte %,low_2,3,1.0
+alternative,erythroid_control,retic_pct,reticulocyte %,high_1,3,0.5
+alternative,erythroid_control,retic_pct,reticulocyte %,high_2,3,1.0
+alternative,erythroid_control,retic_pct,reticulocyte %,high_3,2,
+alternative,erythroid_control,retic_pct,reticulocyte %,median of dogs,4,1.0

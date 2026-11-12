@@ -1,0 +1,66 @@
+<div class="fs-experiment-reaction-norm">
+  <fs-card title="Primary result" [subtitle]="primary()?.label ?? 'Reaction norms'">
+    @if (primary(); as p) {
+      <div class="fs-experiment-reaction-norm__headline">
+        @for (r of p.readings; track r.measure) {
+          <div class="fs-experiment-reaction-norm__stat">
+            <span class="fs-experiment-reaction-norm__stat-label">{{ r.label }}</span>
+            <span class="fs-experiment-reaction-norm__stat-value">
+              <fs-badge variant="tonal" [intent]="intent(r.reading)">{{ r.reading }}</fs-badge>
+            </span>
+            <span class="fs-experiment-reaction-norm__stat-sub">at 5%: low {{ r.low_at_5pct }} vs high {{ r.high_at_5pct }} {{ r.unit }}</span>
+          </div>
+        }
+        <div class="fs-experiment-reaction-norm__stat">
+          <span class="fs-experiment-reaction-norm__stat-label">n</span>
+          <span class="fs-experiment-reaction-norm__stat-value fs-experiment-reaction-norm__stat-value--small">
+            {{ p.n_dogs }} dogs ({{ p.n_low }} low, {{ p.n_high }} high dose) · {{ p.n_points }} dog-days
+          </span>
+        </div>
+        <div class="fs-experiment-reaction-norm__stat">
+          <span class="fs-experiment-reaction-norm__stat-label">Independent sources</span>
+          <span class="fs-experiment-reaction-norm__stat-value fs-experiment-reaction-norm__stat-value--small">{{ p.independent_sources }}</span>
+        </div>
+      </div>
+      <p class="fs-experiment-reaction-norm__status">
+        <fs-badge variant="tonal" intent="info">{{ p.status }}</fs-badge>
+      </p>
+      <p class="fs-experiment-reaction-norm__text">{{ p.headline }}</p>
+      <p class="fs-experiment-reaction-norm__text">The result {{ p.verdict }}.</p>
+      <fs-data-grid [data]="readingRows()" [columns]="readingColumns" keyExpr="measure" />
+      <p class="fs-experiment-reaction-norm__footnote">
+        Sources: {{ p.sources.join('; ') }}. Descriptive only (no hypothesis test). Damage at a matched load is interpolated, never extrapolated;
+        the margin is the distance the spec allows between the low-dose value and the high-dose range. One species (B. rossi), one experiment.
+      </p>
+    } @else {
+      <p class="fs-experiment-reaction-norm__footnote">This run stored no primary result.</p>
+    }
+  </fs-card>
+
+  @for (c of chartOptions(); track c.chart.measure) {
+    <fs-card [title]="c.chart.label + ' against parasitaemia'"
+             subtitle="Each Beagle before treatment; dotted lines mark the matched loads of 1% and 5%">
+      <fs-chart [options]="c.options" [height]="380" [empty]="!c.chart.dogs.length" emptyMessage="No points for this measure" />
+      <p class="fs-experiment-reaction-norm__footnote">{{ c.chart.footnote }}</p>
+    </fs-card>
+  } @empty {
+    <fs-card title="Reaction norms">
+      <p class="fs-experiment-reaction-norm__footnote">This run stored no charts.</p>
+    </fs-card>
+  }
+
+  @if (slopeRows().length) {
+    <fs-card title="Per-dog slopes and damage" subtitle="OLS slope of damage per log10 unit of parasitaemia, 95% t interval (1 or 2 residual df), Theil-Sen slope, matched-load and peak damage">
+      <fs-data-grid [data]="slopeRows()" [columns]="slopeColumns" keyExpr="id" />
+      <p class="fs-experiment-reaction-norm__footnote">
+        Larger values are worse for every measure. The mean residual is from the pooled line. Dose and dog are aliased; the dog that died was not treated.
+      </p>
+    </fs-card>
+  }
+
+  @if (sensitivityRows().length) {
+    <fs-card title="Sensitivity checks" subtitle="The reading under other load offsets, positive loads only, clinical lactate, raw haematocrit and without the dog that died">
+      <fs-data-grid [data]="sensitivityRows()" [columns]="sensitivityColumns" keyExpr="id" />
+    </fs-card>
+  }
+</div>

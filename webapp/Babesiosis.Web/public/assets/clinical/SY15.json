@@ -1,0 +1,856 @@
+{
+  "schema_version": 1,
+  "id": "SY15",
+  "title": "Rhabdomyolysis",
+  "updated": "2026-11-12",
+  "definition": "Skeletal muscle necrosis in a dog with babesiosis, shown by muscle pain or tremors, pigmenturia and high serum myoglobin and muscle enzymes [R1]. Much more often, babesiosis studies report only biochemical 'muscle damage': creatine kinase (CK) above a cut-off, with no muscle signs [R2][R3].",
+  "definition_note": "Working definition confirmed for the clinical syndrome, which rests on two B. rossi dogs [R1]. Changed to separate it from biochemical muscle damage (CK above 300 U/L or 600 U/L), which is common in complicated disease and did not change survival [R2][R3]. Tremor alone is not specific: it also occurs in cerebral babesiosis (SY07). Rhabdomyolysis is not a distinct entity with its own treatment literature in babesiosis.",
+  "key_points": [
+    "Clinical rhabdomyolysis in babesiosis is rare: only two B. rossi dogs are published, one with acute renal failure and one with neurological signs and pulmonary oedema that died [R1].",
+    "A raised CK is common: 20 of 56 B. rossi dogs with complicated disease had CK above 300 U/L [R2], and 7 of 11 complicated B. canis dogs had CK above 600 U/L in each of two Zagreb studies [R3][R4].",
+    "Muscle damage alone did not change survival in B. rossi; brain and kidney involvement did [R2].",
+    "A heme-positive dipstick cannot tell myoglobin from haemoglobin. Measure CK and compare the colour of plasma and urine [R5][R6].",
+    "No treatment was tested in dogs with babesiosis. Care is extrapolated: early isotonic crystalloids, opioid analgesia and electrolyte checks; a human guideline advises against routine bicarbonate, mannitol and diuretics [R7][R8][R9]."
+  ],
+  "description": [
+    {
+      "heading": "What it is",
+      "text": "Two B. rossi dogs at Onderstepoort had rhabdomyolysis. One had muscle pain, caramel-coloured urine, high serum myoglobin and muscle enzymes, and acute renal failure. The other had muscle pain, tremors, neurological signs and pulmonary oedema; it died soon after admission, with muscle necrosis and haemorrhage at necropsy. Three more dogs with severe babesiosis and pigmenturia had mildly raised muscle enzymes without obvious muscle damage [R1]. Reviews list rhabdomyolysis among the complications of complicated babesiosis and note that it is rare [R10][R11]."
+    },
+    {
+      "heading": "How common, and in which dogs",
+      "text": "B. rossi: in complicated cases admitted to intensive care at Onderstepoort (1993 to 1998), 20 of 56 dogs assessed had CK above 300 U/L [R2]. B. canis: CK above 600 U/L in 7 of 11 complicated cases in each of two Zagreb studies [R3][R4] and in 2 of 7 in an earlier one [R12]. In 342 German B. canis dogs, CK was above 200 U/L in 107 of 236 dogs tested, with a maximum of 5214 U/L [R13]. Italian dogs with large Babesia mostly had mild CK rises [R14]. Polish authors state that clinical rhabdomyolysis has not been described with B. canis [R15]."
+    },
+    {
+      "heading": "When in the course of disease",
+      "text": "In the Onderstepoort study, samples were taken at admission or on the first day in hospital. Muscle damage was the least common finding when only one organ was involved, but became the second most common when three organs were involved. The authors suggest it is a late or bystander event of multiple organ dysfunction [R2]."
+    },
+    {
+      "heading": "Mechanism",
+      "text": "The cause of muscle injury in babesiosis is unknown; inflammatory cytokines and nitric oxide were proposed [R1]. In rhabdomyolysis from any cause, myoglobin injures renal tubules by oxidative damage and cast formation, and hypovolaemia and acidosis make this worse [R6]. This is the link to acute kidney injury (SY05)."
+    }
+  ],
+  "species_notes": [
+    {
+      "species": "B. rossi",
+      "note": "The only species with published clinical rhabdomyolysis (two dogs, South Africa) [R1]. Biochemical muscle damage in 20 of 56 complicated cases (the study reported the parasite as B. canis, the name then used in South Africa) [R2]."
+    },
+    {
+      "species": "B. canis",
+      "note": "CK rises are frequent in complicated and uncomplicated disease [R3][R4][R13], but no clinical case of rhabdomyolysis is described [R15]."
+    },
+    {
+      "species": "B. gibsoni, B. vogeli",
+      "note": "No report of muscle damage or rhabdomyolysis was found in this search."
+    }
+  ],
+  "diagnosis": {
+    "criteria": [
+      {
+        "criterion": "Muscle damage (B. rossi)",
+        "threshold": "CK above 300 U/L",
+        "basis": "babesiosis",
+        "note": "Five times the upper reference limit of the laboratory, measured at 25 °C. Samples with heavy haemoglobin or bilirubin discolouration were excluded from the analysis [R2].",
+        "refs": [
+          "R2"
+        ]
+      },
+      {
+        "criterion": "Muscular involvement (B. canis)",
+        "threshold": "CK above 600 U/L",
+        "basis": "babesiosis",
+        "note": "Used as one organ criterion of complicated babesiosis by the Zagreb group [R3][R4][R12].",
+        "refs": [
+          "R3",
+          "R4",
+          "R12"
+        ]
+      },
+      {
+        "criterion": "Clinical rhabdomyolysis",
+        "threshold": "Muscle pain or tremors, pigmenturia, and a marked rise in serum myoglobin and muscle enzymes",
+        "basis": "babesiosis",
+        "note": "From the two published B. rossi cases. The CK values are not in the abstract, so no numerical cut-off can be given [R1].",
+        "refs": [
+          "R1"
+        ]
+      },
+      {
+        "criterion": "Rhabdomyolysis in people",
+        "threshold": "CK above 5 times the upper reference limit",
+        "basis": "human",
+        "note": "The cut-off used by most human studies; severe disease was defined by cut-offs from 5000 to 15 000 U/L [R6].",
+        "refs": [
+          "R6"
+        ]
+      },
+      {
+        "criterion": "Exertional rhabdomyolysis in sled dogs",
+        "threshold": "CK above 30 000 U/L in affected dogs",
+        "basis": "general canine",
+        "note": "Healthy racing dogs can exceed 10 000 U/L. A CK rise must be read against exercise and the clinical signs [R16].",
+        "refs": [
+          "R16"
+        ]
+      }
+    ],
+    "clinical_signs": [
+      {
+        "sign": "Muscle pain",
+        "note": "Present in both published B. rossi cases [R1].",
+        "refs": [
+          "R1"
+        ]
+      },
+      {
+        "sign": "Tremors",
+        "note": "In one B. rossi case, together with neurological signs [R1]. Tremor also occurs in cerebral babesiosis (SY07).",
+        "refs": [
+          "R1"
+        ]
+      },
+      {
+        "sign": "Caramel, red or brown urine",
+        "note": "Myoglobinuria colours urine orange, red or brown [R5]. Haemoglobinuria from haemolysis looks the same.",
+        "refs": [
+          "R1",
+          "R5"
+        ]
+      },
+      {
+        "sign": "Stiffness or weakness",
+        "note": "Signs of muscle injury such as stiffness and pain are usually present [R5]. One non-babesiosis dog had tetraparesis and CK of 32 856 U/L without myoglobinuria [R17].",
+        "refs": [
+          "R5",
+          "R17"
+        ]
+      },
+      {
+        "sign": "Signs of other organ failure",
+        "note": "Rhabdomyolysis came with acute renal failure, neurological signs or pulmonary oedema [R1][R11].",
+        "refs": [
+          "R1",
+          "R11"
+        ]
+      }
+    ],
+    "tests": [
+      {
+        "test": "Spun haematocrit tube: plasma colour",
+        "finding": "Red plasma means haemoglobinaemia from haemolysis. Clear plasma with red-brown urine points to myoglobin [R5].",
+        "note": "In a haemolysing dog both pigments can be present, so red plasma does not exclude myoglobinuria.",
+        "refs": [
+          "R5"
+        ]
+      },
+      {
+        "test": "Urine: colour, centrifuge, dipstick",
+        "finding": "With either pigment the supernatant stays coloured and the pellet has few or no red cells. The dipstick heme pad is positive for both [R5][R6].",
+        "note": "Brown urine can also be methaemoglobin [R5]. The dipstick alone cannot separate the pigments.",
+        "refs": [
+          "R5",
+          "R6"
+        ]
+      },
+      {
+        "test": "Serum CK",
+        "finding": "Raised by muscle injury; in pure haemolysis it should not be markedly raised [R5]. Babesiosis studies used cut-offs of 300 U/L and 600 U/L [R2][R3].",
+        "note": "Heavily haemolysed or icteric samples were excluded in one study, so read results from such samples with care. In that study, intramuscular diminazene did not raise CK compared with intravenous trypan blue [R2].",
+        "refs": [
+          "R5",
+          "R2",
+          "R3"
+        ]
+      },
+      {
+        "test": "AST and ALT",
+        "finding": "AST rises with muscle injury [R5]. In B. canis, raised AST and the AST/ALT ratio were linked to renal azotaemia, so AST is not specific for muscle [R15].",
+        "note": "",
+        "refs": [
+          "R5",
+          "R15"
+        ]
+      },
+      {
+        "test": "Creatinine, urea and urine output",
+        "finding": "Detect acute kidney injury, the main complication of rhabdomyolysis [R1][R6].",
+        "note": "Grading and management of kidney injury: SY05.",
+        "refs": [
+          "R1",
+          "R6"
+        ]
+      },
+      {
+        "test": "Potassium, calcium and phosphate",
+        "finding": "Hyperkalaemia can follow muscle necrosis with kidney injury [R6]. Dogs with exertional rhabdomyolysis had low potassium (median 3.5 mmol/L) [R16].",
+        "note": "Check before and during fluid therapy.",
+        "refs": [
+          "R6",
+          "R16"
+        ]
+      },
+      {
+        "test": "Serum myoglobin",
+        "finding": "High in the published B. rossi case [R1]. In sled dogs, myoglobin and CK were closely correlated (R = 0.91) [R18].",
+        "note": "Not a routine practice test.",
+        "refs": [
+          "R1",
+          "R18"
+        ]
+      },
+      {
+        "test": "Urine sediment",
+        "finding": "Look for casts as a sign of tubular injury [R7].",
+        "note": "",
+        "refs": [
+          "R7"
+        ]
+      }
+    ],
+    "differentials": [
+      {
+        "condition": "Haemoglobinuria from intravascular haemolysis (SY01)",
+        "distinguish": "Red plasma, anaemia, and CK not markedly raised [R5].",
+        "refs": [
+          "R5"
+        ]
+      },
+      {
+        "condition": "Bilirubinuria or methaemoglobinuria",
+        "distinguish": "Other causes of dark urine; brown urine is not proof of myoglobin [R5][R7].",
+        "refs": [
+          "R5",
+          "R7"
+        ]
+      },
+      {
+        "condition": "Cerebral babesiosis (SY07)",
+        "distinguish": "Tremors and neurological signs occur without muscle necrosis. Seizures can themselves cause rhabdomyolysis and renal tubular necrosis [R19].",
+        "refs": [
+          "R19"
+        ]
+      },
+      {
+        "condition": "Exercise in working or hunting dogs",
+        "distinguish": "Healthy racing sled dogs can have CK above 10 000 U/L; take a history of exertion [R16].",
+        "refs": [
+          "R16"
+        ]
+      },
+      {
+        "condition": "Intramuscular injections",
+        "distinguish": "Intramuscular diminazene did not explain CK rises in B. rossi [R2].",
+        "refs": [
+          "R2"
+        ]
+      }
+    ]
+  },
+  "approach": [
+    {
+      "step": 1,
+      "action": "Treat the parasite and stabilise",
+      "detail": "Give antibabesial treatment (TX00) and manage shock and anaemia (SY10, SY01). Look for other complications, which decide the outcome more than muscle damage does [R2].",
+      "setting": "practice"
+    },
+    {
+      "step": 2,
+      "action": "Check whether the pigment is from muscle",
+      "detail": "Spin a haematocrit tube and look at the plasma; spin the urine; measure CK, creatinine, urea and potassium [R5][R2].",
+      "setting": "practice"
+    },
+    {
+      "step": 3,
+      "action": "Start isotonic crystalloids early",
+      "detail": "Correct dehydration and keep urine flowing. A human guideline favours early crystalloids over late fluids or colloids [R8]. One canine regimen is in the treatment table [R7].",
+      "setting": "practice"
+    },
+    {
+      "step": 4,
+      "action": "Give analgesia",
+      "detail": "Use short-acting opioids titrated to effect. Withhold NSAIDs until volume, cardiovascular and renal status are stable [R9].",
+      "setting": "practice"
+    },
+    {
+      "step": 5,
+      "action": "Monitor",
+      "detail": "Measure urine output, body weight and breathing, and repeat creatinine and electrolytes. Fluid overload is a risk, mainly with pulmonary oedema (SY08) or oliguria (SY05) [R6].",
+      "setting": "practice"
+    },
+    {
+      "step": 6,
+      "action": "Refer for dialysis if kidneys fail",
+      "detail": "Oliguric kidney injury or hyperkalaemia that does not respond needs renal replacement therapy (SY05) [R20][R6].",
+      "setting": "referral"
+    }
+  ],
+  "treatments": [
+    {
+      "name": "Isotonic crystalloid fluid therapy",
+      "class": "supportive",
+      "aim": "Restore volume and renal blood flow, and increase urine flow to clear myoglobin and protect the kidneys.",
+      "status": "standard",
+      "evidence_level": "D",
+      "independent_studies": 2,
+      "evidence_summary": "Not studied in babesiosis. A human guideline suggests early rather than late fluids and crystalloids rather than colloids (weak, low or very low quality evidence) [R8]. A human systematic review calls fluids the cornerstone of treatment but found no randomised trial [R6]. One dog with amphetamine-induced rhabdomyolysis (CK peak 181 900 U/L) recovered without kidney injury on lactated Ringer's diuresis [R7].",
+      "doses": [
+        {
+          "drug": "lactated Ringer's solution",
+          "dose": "10 mL/kg",
+          "route": "IV",
+          "frequency": "once, as a bolus",
+          "duration": "",
+          "context": "One dog with rhabdomyolysis from amphetamine toxicosis, case report; not babesiosis",
+          "note": "Followed by the maintenance rate in the next row.",
+          "refs": [
+            "R7"
+          ]
+        },
+        {
+          "drug": "lactated Ringer's solution",
+          "dose": "5 mL/kg/h",
+          "route": "IV",
+          "frequency": "continuous infusion",
+          "duration": "",
+          "context": "The same dog; rate kept to promote diuresis while myoglobinuria lasted; discharged on day 5",
+          "note": "A single case. Adjust to hydration, urine output and lung function.",
+          "refs": [
+            "R7"
+          ]
+        }
+      ],
+      "cautions": "Watch for fluid overload and metabolic acidosis [R6]. In babesiosis, pulmonary oedema (SY08) and oliguric kidney injury (SY05) make overload more likely.",
+      "monitoring": "Urine output, body weight, respiratory rate and effort, creatinine and electrolytes at least daily [R6].",
+      "availability": "",
+      "refs": [
+        "R8",
+        "R6",
+        "R7"
+      ]
+    },
+    {
+      "name": "Analgesia with opioids",
+      "class": "supportive",
+      "aim": "Relieve muscle pain.",
+      "status": "standard",
+      "evidence_level": "E",
+      "independent_studies": 0,
+      "evidence_summary": "Muscle pain was a presenting sign in both B. rossi cases [R1]. No analgesic was studied in this syndrome. The WSAVA pain guideline names opioids as the mainstay of analgesia in emergency and critical care, titrated from 10 to 20% of the usual dose to effect, then given as an infusion [R9].",
+      "doses": [],
+      "cautions": "The same guideline says NSAIDs should be withheld until volume, cardiovascular and renal status are stable [R9]. Kidney injury is a risk in this syndrome (SY05).",
+      "monitoring": "Pain assessment, sedation and breathing; adjust infusion rates to the pain score [R9].",
+      "availability": "",
+      "refs": [
+        "R1",
+        "R9"
+      ]
+    },
+    {
+      "name": "Electrolyte monitoring and correction",
+      "class": "supportive",
+      "aim": "Prevent arrhythmias from potassium changes and avoid harm from calcium.",
+      "status": "proposed",
+      "evidence_level": "D",
+      "independent_studies": 2,
+      "evidence_summary": "No data in babesiosis. A human systematic review states that hyperkalaemia is the only electrolyte change that needs rapid correction, that calcium for hypocalcaemia should be avoided because it may increase muscle injury, and that phosphate and calcium must be watched together [R6]. Sled dogs with exertional rhabdomyolysis were hypokalaemic [R16].",
+      "doses": [],
+      "cautions": "Do not give calcium for hypocalcaemia without signs (human advice) [R6]. Treatment of hyperkalaemia from kidney injury: SY05.",
+      "monitoring": "Potassium, calcium and phosphate, and an ECG if potassium is abnormal [R6].",
+      "availability": "",
+      "refs": [
+        "R6",
+        "R16"
+      ]
+    },
+    {
+      "name": "Renal replacement therapy (haemodialysis)",
+      "class": "supportive",
+      "aim": "Support a dog whose kidneys fail from myoglobinuric injury.",
+      "status": "proposed",
+      "evidence_level": "D",
+      "independent_studies": 2,
+      "evidence_summary": "Not reported in babesiosis rhabdomyolysis. One dog with crush injury, myoglobinuria and acute kidney injury recovered fully with intermittent haemodialysis [R20]. In people, continuous renal replacement clears myoglobin but did not lower mortality [R6], and a guideline advises against routine use to prevent kidney injury [R8].",
+      "doses": [],
+      "cautions": "Referral only. Use for established kidney failure, not as prevention [R8].",
+      "monitoring": "As for acute kidney injury: SY05.",
+      "availability": "",
+      "refs": [
+        "R20",
+        "R6",
+        "R8"
+      ]
+    },
+    {
+      "name": "Urine alkalinisation with sodium bicarbonate",
+      "class": "adjunct",
+      "aim": "Raise urine pH to reduce myoglobin toxicity and cast formation.",
+      "status": "no_benefit",
+      "evidence_level": "D",
+      "independent_studies": 1,
+      "evidence_summary": "No dog data. A human guideline suggests against routine alkalinisation (weak recommendation, low quality evidence) [R8]. A human review found no study that compared bicarbonate plus fluids with fluids alone [R6].",
+      "doses": [],
+      "cautions": "May cause paradoxical intracellular acidosis and volume overload, mainly with respiratory or circulatory failure [R6].",
+      "monitoring": "",
+      "availability": "",
+      "refs": [
+        "R8",
+        "R6"
+      ]
+    },
+    {
+      "name": "Mannitol or loop diuretics to force diuresis",
+      "class": "adjunct",
+      "aim": "Increase urine flow and myoglobin excretion.",
+      "status": "no_benefit",
+      "evidence_level": "D",
+      "independent_studies": 1,
+      "evidence_summary": "No dog data in this syndrome. A human guideline suggests against mannitol and against routine loop or other diuretics (weak recommendations, very low quality evidence) [R8].",
+      "doses": [],
+      "cautions": "Mannitol can cause volume depletion and worsen pre-renal azotaemia; avoid it in anuria [R6].",
+      "monitoring": "",
+      "availability": "",
+      "refs": [
+        "R8",
+        "R6"
+      ]
+    },
+    {
+      "name": "Fenoldopam",
+      "class": "adjunct",
+      "aim": "Increase renal blood flow by dopamine-1 receptor agonism.",
+      "status": "harmful",
+      "evidence_level": "D",
+      "independent_studies": 1,
+      "evidence_summary": "In 10 anaesthetised dogs with glycerol-induced rhabdomyolysis and myoglobinuric renal failure, fenoldopam 0.1 to 1.0 µg/kg/min IV lowered creatinine clearance compared with saline and made renal injury worse [R21].",
+      "doses": [],
+      "cautions": "Worsened kidney injury in this canine model [R21].",
+      "monitoring": "",
+      "availability": "",
+      "refs": [
+        "R21"
+      ]
+    }
+  ],
+  "prognosis": {
+    "text": "In 84 B. rossi dogs with complicated disease and a known outcome, 38 died or were euthanased (45%). Muscle damage was frequent but did not affect survival; brain and kidney involvement did [R2]. Of the two clinical cases, one with neurological signs and pulmonary oedema died; the other developed acute renal failure [R1]. In people, acute kidney injury follows rhabdomyolysis in 10 to 55% of patients [R6].",
+    "indicators": [
+      {
+        "finding": "Raised CK with no other organ damage",
+        "meaning": "Did not change survival in B. rossi [R2].",
+        "refs": [
+          "R2"
+        ]
+      },
+      {
+        "finding": "Central nervous system involvement",
+        "meaning": "57 times the chance of death compared with other organ damage [R2].",
+        "refs": [
+          "R2"
+        ]
+      },
+      {
+        "finding": "Renal involvement (creatinine above 150 µmol/L)",
+        "meaning": "Five times the risk of death [R2]. Kidney injury is the main complication of rhabdomyolysis [R6].",
+        "refs": [
+          "R2",
+          "R6"
+        ]
+      },
+      {
+        "finding": "Muscle signs with neurological signs and pulmonary oedema",
+        "meaning": "The one fatal published case had this combination [R1].",
+        "refs": [
+          "R1"
+        ]
+      }
+    ]
+  },
+  "related": [
+    {
+      "id": "TX00",
+      "why": "The drugs against the parasite."
+    },
+    {
+      "id": "SY05",
+      "why": "Acute kidney injury, hyperkalaemia and dialysis."
+    },
+    {
+      "id": "SY01",
+      "why": "Haemolysis and haemoglobinuria, the main differential of pigmenturia."
+    },
+    {
+      "id": "SY07",
+      "why": "Tremors and seizures from cerebral babesiosis."
+    },
+    {
+      "id": "SY08",
+      "why": "Pulmonary oedema, which limits fluid therapy."
+    },
+    {
+      "id": "SY11",
+      "why": "Multiple organ dysfunction, of which muscle damage is part."
+    },
+    {
+      "id": "SY06",
+      "why": "Bilirubinuria and liver enzymes."
+    }
+  ],
+  "evidence_gaps": [
+    "Only two clinical cases are published, both B. rossi, from 1996; there is no case series.",
+    "The CK and myoglobin values of the clinical cases could not be read (abstract only).",
+    "No treatment was studied in dogs with babesiosis and muscle injury; all advice is extrapolated.",
+    "No evidence was found for rest, nursing or muscle relaxants in this syndrome.",
+    "It is not known whether myoglobin adds to the kidney injury caused by haemoglobin in babesiosis.",
+    "No report was found for B. gibsoni or B. vogeli.",
+    "The CK cut-offs used in babesiosis (300 U/L and 600 U/L) were not validated against signs or outcome other than survival."
+  ],
+  "references": [
+    {
+      "ref": "R1",
+      "authors": "Jacobson LS, Lobetti RG",
+      "year": 1996,
+      "title": "Rhabdomyolysis as a complication of canine babesiosis.",
+      "journal": "Journal of Small Animal Practice",
+      "volume_pages": "37(6):286-291",
+      "doi": "10.1111/j.1748-5827.1996.tb02381.x",
+      "pmid": "8965483",
+      "url": "",
+      "article_id": "",
+      "type": "case report",
+      "species": "B. rossi",
+      "n_dogs": 2,
+      "read": "abstract"
+    },
+    {
+      "ref": "R2",
+      "authors": "Welzl C, Leisewitz AL, Jacobson LS, et al.",
+      "year": 2001,
+      "title": "Systemic inflammatory response syndrome and multiple-organ damage/dysfunction in complicated canine babesiosis.",
+      "journal": "Journal of the South African Veterinary Association",
+      "volume_pages": "72(3):158-162",
+      "doi": "10.4102/jsava.v72i3.640",
+      "pmid": "11811704",
+      "url": "",
+      "article_id": "",
+      "type": "cohort",
+      "species": "B. rossi",
+      "n_dogs": 91,
+      "read": "full text"
+    },
+    {
+      "ref": "R3",
+      "authors": "Kuleš J, Gotić J, Mrljak V, et al.",
+      "year": 2017,
+      "title": "Blood markers of fibrinolysis and endothelial activation in canine babesiosis.",
+      "journal": "BMC Veterinary Research",
+      "volume_pages": "13(1):82",
+      "doi": "10.1186/s12917-017-0995-6",
+      "pmid": "28363279",
+      "url": "",
+      "article_id": "CB004",
+      "type": "cohort",
+      "species": "B. canis",
+      "n_dogs": 30,
+      "read": "full text"
+    },
+    {
+      "ref": "R4",
+      "authors": "Crnogaj M, Cerón JJ, Šmit I, et al.",
+      "year": 2017,
+      "title": "Relation of antioxidant status at admission and disease severity and outcome in dogs naturally infected with Babesia canis canis.",
+      "journal": "BMC Veterinary Research",
+      "volume_pages": "13(1):114",
+      "doi": "10.1186/s12917-017-1020-9",
+      "pmid": "28438201",
+      "url": "",
+      "article_id": "CB006",
+      "type": "cohort",
+      "species": "B. canis",
+      "n_dogs": 40,
+      "read": "full text"
+    },
+    {
+      "ref": "R5",
+      "authors": "eClinpath, Cornell University College of Veterinary Medicine",
+      "year": 2026,
+      "title": "Urinalysis: chemical constituents (heme: hemoglobin and myoglobin)",
+      "journal": "eClinpath (online textbook)",
+      "volume_pages": "",
+      "doi": "",
+      "pmid": "",
+      "url": "https://eclinpath.com/urinalysis/chemical-constituents/",
+      "article_id": "",
+      "type": "textbook",
+      "species": "",
+      "n_dogs": null,
+      "read": "full text"
+    },
+    {
+      "ref": "R6",
+      "authors": "Chavez LO, Leon M, Einav S, et al.",
+      "year": 2016,
+      "title": "Beyond muscle destruction: a systematic review of rhabdomyolysis for clinical practice.",
+      "journal": "Critical Care",
+      "volume_pages": "20(1):135",
+      "doi": "10.1186/s13054-016-1314-5",
+      "pmid": "27301374",
+      "url": "",
+      "article_id": "",
+      "type": "review",
+      "species": "",
+      "n_dogs": null,
+      "read": "full text"
+    },
+    {
+      "ref": "R7",
+      "authors": "Smith MR, Wurlod VA",
+      "year": 2020,
+      "title": "Severe Rhabdomyolysis Associated with Acute Amphetamine Toxicosis in a Dog.",
+      "journal": "Case Reports in Veterinary Medicine",
+      "volume_pages": "2020:2816373",
+      "doi": "10.1155/2020/2816373",
+      "pmid": "32082692",
+      "url": "",
+      "article_id": "",
+      "type": "case report",
+      "species": "",
+      "n_dogs": 1,
+      "read": "full text"
+    },
+    {
+      "ref": "R8",
+      "authors": "Michelsen J, Cordtz J, Liboriussen L, et al.",
+      "year": 2019,
+      "title": "Prevention of rhabdomyolysis-induced acute kidney injury - A DASAIM/DSIT clinical practice guideline.",
+      "journal": "Acta Anaesthesiologica Scandinavica",
+      "volume_pages": "63(5):576-586",
+      "doi": "10.1111/aas.13308",
+      "pmid": "30644084",
+      "url": "",
+      "article_id": "",
+      "type": "guideline",
+      "species": "",
+      "n_dogs": null,
+      "read": "abstract"
+    },
+    {
+      "ref": "R9",
+      "authors": "WSAVA Global Pain Council (Monteiro BP, Lascelles BDX, Murrell J, et al.)",
+      "year": 2024,
+      "title": "Emergency and critical care: pain management protocol, reproduced from the 2022 WSAVA guidelines for the recognition, assessment and treatment of pain",
+      "journal": "World Small Animal Veterinary Association",
+      "volume_pages": "",
+      "doi": "",
+      "pmid": "",
+      "url": "https://wsava.org/wp-content/uploads/2024/08/Emergency-and-critical-care.pdf",
+      "article_id": "",
+      "type": "guideline",
+      "species": "",
+      "n_dogs": null,
+      "read": "full text"
+    },
+    {
+      "ref": "R10",
+      "authors": "Jacobson LS",
+      "year": 2006,
+      "title": "The South African form of severe and complicated canine babesiosis: clinical advances 1994-2004.",
+      "journal": "Veterinary Parasitology",
+      "volume_pages": "138(1-2):126-139",
+      "doi": "10.1016/j.vetpar.2006.01.047",
+      "pmid": "16503090",
+      "url": "",
+      "article_id": "",
+      "type": "review",
+      "species": "B. rossi",
+      "n_dogs": null,
+      "read": "abstract"
+    },
+    {
+      "ref": "R11",
+      "authors": "Köster LS, Lobetti RG, Kelly P",
+      "year": 2015,
+      "title": "Canine babesiosis: a perspective on clinical complications, biomarkers, and treatment.",
+      "journal": "Veterinary Medicine: Research and Reports",
+      "volume_pages": "6:119-128",
+      "doi": "10.2147/VMRR.S60431",
+      "pmid": "30155438",
+      "url": "",
+      "article_id": "CB493",
+      "type": "review",
+      "species": "",
+      "n_dogs": null,
+      "read": "full text"
+    },
+    {
+      "ref": "R12",
+      "authors": "Crnogaj M, Petlevski R, Mrljak V, et al.",
+      "year": 2010,
+      "title": "Malondialdehyde levels in serum of dogs infected with Babesia canis.",
+      "journal": "Veterinární medicína",
+      "volume_pages": "55(4):163-171",
+      "doi": "10.17221/77/2010-VETMED",
+      "pmid": "",
+      "url": "",
+      "article_id": "CB394",
+      "type": "cohort",
+      "species": "B. canis",
+      "n_dogs": 35,
+      "read": "full text"
+    },
+    {
+      "ref": "R13",
+      "authors": "von Hohnhorst IM, Moritz A, Eisenecker CM, et al.",
+      "year": 2025,
+      "title": "Impact of levels of parasitemia and antibodies, acute-phase proteins, as well as stays abroad on hematological and biochemical parameters in 342 dogs with acute Babesia canis infection.",
+      "journal": "Parasites & Vectors",
+      "volume_pages": "18(1):347",
+      "doi": "10.1186/s13071-025-06997-4",
+      "pmid": "40817086",
+      "url": "",
+      "article_id": "CB141",
+      "type": "cohort",
+      "species": "B. canis",
+      "n_dogs": 342,
+      "read": "full text"
+    },
+    {
+      "ref": "R14",
+      "authors": "Furlanello T, Fiorio F, Caldin M, et al.",
+      "year": 2005,
+      "title": "Clinicopathological findings in naturally occurring cases of babesiosis caused by large form Babesia from dogs of northeastern Italy.",
+      "journal": "Veterinary Parasitology",
+      "volume_pages": "134(1-2):77-85",
+      "doi": "10.1016/j.vetpar.2005.07.016",
+      "pmid": "16112810",
+      "url": "",
+      "article_id": "BG011",
+      "type": "case series",
+      "species": "B. canis",
+      "n_dogs": 23,
+      "read": "abstract"
+    },
+    {
+      "ref": "R15",
+      "authors": "Gójska-Zygner O, Karabowicz J, Bartosik J, et al.",
+      "year": 2022,
+      "title": "Association between Increased the De Ritis Quotient and Renal Azotaemia in Canine Babesiosis.",
+      "journal": "Animals (Basel)",
+      "volume_pages": "12(5):626",
+      "doi": "10.3390/ani12050626",
+      "pmid": "35268195",
+      "url": "",
+      "article_id": "CB093",
+      "type": "cohort",
+      "species": "B. canis",
+      "n_dogs": 34,
+      "read": "full text"
+    },
+    {
+      "ref": "R16",
+      "authors": "Frye CW, Mann S, Joseph JL, et al.",
+      "year": 2018,
+      "title": "Serum Biochemistry and Inflammatory Cytokines in Racing Endurance Sled Dogs With and Without Rhabdomyolysis.",
+      "journal": "Frontiers in Veterinary Science",
+      "volume_pages": "5:145",
+      "doi": "10.3389/fvets.2018.00145",
+      "pmid": "30073172",
+      "url": "",
+      "article_id": "",
+      "type": "cohort",
+      "species": "",
+      "n_dogs": 19,
+      "read": "abstract"
+    },
+    {
+      "ref": "R17",
+      "authors": "Santifort KM, Plonek M, Mandigers PJJ",
+      "year": 2023,
+      "title": "Clinical Diagnosis of Rhabdomyolysis without Myoglobinuria or Electromyographic Abnormalities in a Dog.",
+      "journal": "Animals (Basel)",
+      "volume_pages": "13(11):1747",
+      "doi": "10.3390/ani13111747",
+      "pmid": "37889668",
+      "url": "",
+      "article_id": "",
+      "type": "case report",
+      "species": "",
+      "n_dogs": 1,
+      "read": "abstract"
+    },
+    {
+      "ref": "R18",
+      "authors": "Devall VC, Goggs R, Hansen C, et al.",
+      "year": 2018,
+      "title": "Serum myoglobin, creatine kinase, and cell-free DNA in endurance sled dogs and sled dogs with clinical rhabdomyolysis.",
+      "journal": "Journal of Veterinary Emergency and Critical Care",
+      "volume_pages": "28(4):310-316",
+      "doi": "10.1111/vec.12731",
+      "pmid": "29898248",
+      "url": "",
+      "article_id": "",
+      "type": "cohort",
+      "species": "",
+      "n_dogs": 17,
+      "read": "abstract"
+    },
+    {
+      "ref": "R19",
+      "authors": "Haburjak JJ, Spangler WL",
+      "year": 2002,
+      "title": "Isoniazid-induced seizures with secondary rhabdomyolysis and associated acute renal failure in a dog.",
+      "journal": "Journal of Small Animal Practice",
+      "volume_pages": "43(4):182-186",
+      "doi": "10.1111/j.1748-5827.2002.tb00055.x",
+      "pmid": "11996396",
+      "url": "",
+      "article_id": "",
+      "type": "case report",
+      "species": "",
+      "n_dogs": 1,
+      "read": "abstract"
+    },
+    {
+      "ref": "R20",
+      "authors": "Chen H, Aroch I, Segev G",
+      "year": 2018,
+      "title": "Acute kidney injury secondary to traumatic rhabdomyolysis in a dog.",
+      "journal": "Journal of Veterinary Emergency and Critical Care",
+      "volume_pages": "28(6):585-590",
+      "doi": "10.1111/vec.12765",
+      "pmid": "30222253",
+      "url": "",
+      "article_id": "",
+      "type": "case report",
+      "species": "",
+      "n_dogs": 1,
+      "read": "abstract"
+    },
+    {
+      "ref": "R21",
+      "authors": "Murray C, Markos F, Snow HM, et al.",
+      "year": 2003,
+      "title": "Effects of fenoldopam on renal blood flow and its function in a canine model of rhabdomyolysis.",
+      "journal": "European Journal of Anaesthesiology",
+      "volume_pages": "20(9):711-718",
+      "doi": "10.1017/s0265021503001157",
+      "pmid": "12974592",
+      "url": "",
+      "article_id": "",
+      "type": "experimental",
+      "species": "",
+      "n_dogs": 10,
+      "read": "abstract"
+    }
+  ],
+  "search": {
+    "date": "2026-11-12",
+    "sources": [
+      "local review",
+      "PubMed",
+      "Europe PMC",
+      "Crossref",
+      "web"
+    ],
+    "note": "Searched the local review (term tags, full texts) and PubMed and Europe PMC for babesiosis with rhabdomyolysis, myoglobin, creatine kinase and muscle, then canine and human rhabdomyolysis treatment. No babesiosis treatment paper exists. Treatment guidance is from canine case reports, one canine experimental study, human guidance and the WSAVA pain guideline. The 1996 case report and several others were read as abstracts only."
+  }
+}

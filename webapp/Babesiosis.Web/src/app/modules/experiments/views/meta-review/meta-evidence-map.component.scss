@@ -1,0 +1,123 @@
+:host {
+  display: block;
+}
+
+.fs-emap__svg {
+  display: block;
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+}
+
+.fs-emap__gap {
+  fill: rgb(var(--fs-color-warning) / 0.08);
+  stroke: rgb(var(--fs-color-warning) / 0.35);
+  stroke-dasharray: 4 3;
+}
+
+.fs-emap__na {
+  fill: rgb(var(--fs-color-ink-soft) / 0.08);
+}
+
+.fs-emap__band-label {
+  font-size: 10px;
+  fill: rgb(var(--fs-color-ink-soft));
+}
+
+.fs-emap__grid {
+  stroke: rgb(var(--fs-color-ink-soft) / 0.18);
+  stroke-width: 1;
+}
+
+.fs-emap__axis {
+  stroke: rgb(var(--fs-color-ink-soft) / 0.6);
+  stroke-width: 1;
+}
+
+.fs-emap__tick {
+  font-size: 11px;
+  fill: rgb(var(--fs-color-ink-soft));
+}
+
+.fs-emap__title {
+  font-size: 12px;
+  font-weight: 600;
+  fill: rgb(var(--fs-color-ink));
+}
+
+.fs-emap__dot {
+  stroke: rgb(var(--fs-color-surface));
+  stroke-width: 1.5;
+
+  &--A { fill: rgb(var(--fs-color-success)); }
+  &--B { fill: rgb(var(--fs-color-primary)); }
+  &--C { fill: rgb(var(--fs-color-info)); }
+  &--D { fill: rgb(var(--fs-color-warning)); }
+  &--X { fill: rgb(var(--fs-color-ink-soft)); }
+}
+
+.fs-emap__ring {
+  fill: none;
+  stroke: rgb(var(--fs-color-ink));
+  stroke-width: 1.2;
+  stroke-dasharray: 2 2;
+}
+
+.fs-emap__mark {
+  opacity: 0.45;
+}
+
+.fs-emap__mark--lead {
+  opacity: 1;
+  cursor: pointer;
+
+  &:hover .fs-emap__dot,
+  &:focus-visible .fs-emap__dot {
+    stroke: rgb(var(--fs-color-ink));
+    stroke-width: 2;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.fs-emap__mark--active .fs-emap__dot {
+  stroke: rgb(var(--fs-color-ink-strong, var(--fs-color-ink)));
+  stroke-width: 3;
+}
+
+.fs-emap__mark--active .fs-emap__label {
+  font-weight: 700;
+}
+
+.fs-emap__label {
+  font-size: 12px;
+  fill: rgb(var(--fs-color-ink));
+  paint-order: stroke;
+  stroke: rgb(var(--fs-color-surface));
+  stroke-width: 3px;
+  stroke-linejoin: round;
+}
+
+.fs-emap__legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 16px;
+  margin-top: 6px;
+  font-size: 12px;
+  color: rgb(var(--fs-color-ink-soft));
+}
+
+.fs-emap__key {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.fs-emap__foot {
+  margin: 6px 0 0;
+  font-size: 12px;
+  line-height: 1.5;
+  color: rgb(var(--fs-color-ink-soft));
+}

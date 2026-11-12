@@ -1,0 +1,1069 @@
+{
+ "experiment": {
+  "code": "SV-10-01-parasite-genotype",
+  "name": "Design memo: does Babesia rossi genotype (BrEMA1, or genome-wide) change the outcome?",
+  "description": "Does the genotype of the infecting B. rossi change the risk of complicated disease once host age, days sick and parasite load are allowed for? The design replicates the BrEMA1 genotype link of CB379 (2009, never retested) and adds a genome-wide parasite association using the 2025 B. rossi assembly.",
+  "method": "study_design",
+  "dataset": null,
+  "parameters": {
+   "package": "SV-10",
+   "role": "descriptive",
+   "datasets": [],
+   "independent_sources": [],
+   "spec_sha256": "37d9c576a99cb40c7ce4cc73280a70d5fd416bec85b75f9fd7e78f813dd529f1",
+   "seed": null,
+   "memo": "/experiments/SV-10/out/memo_parasite_genotype.md",
+   "power": 0.8,
+   "death_proportion": 0.11,
+   "severe_proportion": 0.3,
+   "recommended_scenario": "Genotype19, freq 0.35 in uncomplicated, OR 2.5"
+  },
+  "script": "/experiments/SV-10/scripts/power.py",
+  "script_version": "9507f20d0e18",
+  "run_utc": "2026-11-12T15:32:58Z",
+  "n_subjects": 0,
+  "n_variables": 0,
+  "n_tests": 0,
+  "summary": "The recommended scenario (Genotype19, freq 0.35 in uncomplicated, OR 2.5) needs 80 severe and 120 mild dogs (199 in all), from a cohort of about 229 enrolled dogs. It detects an adjusted OR of 2.5 for genotype19 (35% of uncomplicated infections). No data analysed; 26 sample-size scenarios; 0 tests."
+ },
+ "associations": [],
+ "cluster_assignments": [],
+ "results": [
+  {
+   "kind": "primary_result",
+   "title": "Recommended design and sample size",
+   "sort_order": 1,
+   "payload": {
+    "memo_title": "parasite genotype",
+    "question": "Does the BrEMA1 genotype of the infecting B. rossi (genotype19 against all others) change the odds of complicated disease, adjusted for age, days sick and parasite load? CB379 linked four genotypes to poor prognosis, but those four cover 90% of its 141 isolates and no genotype-by-outcome table was published.",
+    "recommendation": {
+     "design": "Design A: BrEMA1 genotype19 vs others, complicated vs uncomplicated, R2 0.20",
+     "scenario": "Genotype19, freq 0.35 in uncomplicated, OR 2.5",
+     "n_total": 199,
+     "n_cases": 80,
+     "n_controls": 120,
+     "cohort_needed": 229,
+     "detects": "an adjusted OR of 2.5 for genotype19 (35% of uncomplicated infections)",
+     "basis": "Design A (targeted BrEMA1 amplicon sequencing from one pre-treatment EDTA sample, Firth logistic regression adjusted for age, log days sick and log load) at 40% complicated disease and 15% loss. Death needs about 545 enrolled dogs and is secondary. Design B (genome-wide) is hypothesis-generating: in 610 dogs it detects only OR of about 5 per gene."
+    },
+    "assumptions": [
+     {
+      "label": "Genotype19 among uncomplicated infections",
+      "value": "0.35 (0.25 to 0.45)",
+      "source": "CB379: genotype19 in 36.2% of 141 isolates (abstract)"
+     },
+     {
+      "label": "Complicated disease among enrolled dogs",
+      "value": "0.40 (0.30 to 0.50)",
+      "source": "assumption, research notes"
+     },
+     {
+      "label": "Death among enrolled dogs",
+      "value": "0.11",
+      "source": "S-CB050 15 of 140 (SV-05); includes euthanasia for poor prognosis"
+     },
+     {
+      "label": "R² of genotype with age, days sick, load",
+      "value": "0.20",
+      "source": "assumption"
+     },
+     {
+      "label": "Loss (failed amplification, mixed genotypes, follow-up)",
+      "value": "15%",
+      "source": "assumption"
+     },
+     {
+      "label": "Design B thresholds",
+      "value": "1.6e-5 genes; 1.7e-6 SNPs",
+      "source": "3,098 annotated genes (10.1186/s12864-025-11495-z); 30,000 common SNPs assumed"
+     }
+    ],
+    "gaps": [
+     {
+      "package": "SV-02a",
+      "gap": "No B. rossi unit reports parasite load against a clinical outcome; load cannot be pooled",
+      "answer": "Capillary and qPCR load measured in every dog, used as a covariate"
+     },
+     {
+      "package": "SV-03",
+      "gap": "Every replicated B. rossi signal comes from one hospital (Onderstepoort)",
+      "answer": "Multi-site enrolment; site kept in the model so parasite population structure is not read as virulence"
+     },
+     {
+      "package": "SV-05",
+      "gap": "Age against death: only OR of about 3.7 or more detectable with 15 deaths",
+      "answer": "Age is a fixed covariate; the primary outcome (complicated disease, 40%) gives about 3.6 times the events of death"
+     },
+     {
+      "package": "SV-01",
+      "gap": "No validated stage axis in natural cases",
+      "answer": "Days sick recorded and adjusted for, so genotype is not confused with late presentation"
+     }
+    ],
+    "caveat": "B. rossi only; no B. canis or B. gibsoni numbers. Genotype groups found by Design B are hypotheses, not subtypes. CB379's original 2x2 table could not be read (abstract only), so the exposure contrast is re-defined, not replicated as published."
+   }
+  },
+  {
+   "kind": "sample_size",
+   "title": "Sample-size scenarios",
+   "sort_order": 2,
+   "payload": {
+    "rows": [
+     {
+      "memo": "parasite_genotype",
+      "scenario": "Genotype19, freq 0.25 in uncomplicated, OR 2",
+      "design": "Design A: BrEMA1 genotype19 vs others, complicated vs uncomplicated, R2 0.20",
+      "exposure_freq_controls": 0.25,
+      "exposure_freq_cases": 0.4,
+      "odds_ratio": 2.0,
+      "alpha": 0.05,
+      "power": 0.8,
+      "r2_covariates": 0.2,
+      "controls_per_case": 1.5,
+      "n_cases": 157,
+      "n_controls": 235,
+      "n_total": 392,
+      "cohort_needed": 451,
+      "cohort_basis": "complicated 40%, +15% loss",
+      "note": "Haploid call per infection; mixed-genotype infections carry the genotype (sensitivity: excluded)",
+      "recommended": false
+     },
+     {
+      "memo": "parasite_genotype",
+      "scenario": "Genotype19, freq 0.25 in uncomplicated, OR 2.5",
+      "design": "Design A: BrEMA1 genotype19 vs others, complicated vs uncomplicated, R2 0.20",
+      "exposure_freq_controls": 0.25,
+      "exposure_freq_cases": 0.455,
+      "odds_ratio": 2.5,
+      "alpha": 0.05,
+      "power": 0.8,
+      "r2_covariates": 0.2,
+      "controls_per_case": 1.5,
+      "n_cases": 87,
+      "n_controls": 131,
+      "n_total": 218,
+      "cohort_needed": 250,
+      "cohort_basis": "complicated 40%, +15% loss",
+      "note": "Haploid call per infection; mixed-genotype infections carry the genotype (sensitivity: excluded)",
+      "recommended": false
+     },
+     {
+      "memo": "parasite_genotype",
+      "scenario": "Genotype19, freq 0.25 in uncomplicated, OR 3",
+      "design": "Design A: BrEMA1 genotype19 vs others, complicated vs uncomplicated, R2 0.20",
+      "exposure_freq_controls": 0.25,
+      "exposure_freq_cases": 0.5,
+      "odds_ratio": 3.0,
+      "alpha": 0.05,
+      "power": 0.8,
+      "r2_covariates": 0.2,
+      "controls_per_case": 1.5,
+      "n_cases": 60,
+      "n_controls": 89,
+      "n_total": 149,
+      "cohort_needed": 171,
+      "cohort_basis": "complicated 40%, +15% loss",
+      "note": "Haploid call per infection; mixed-genotype infections carry the genotype (sensitivity: excluded)",
+      "recommended": false
+     },
+     {
+      "memo": "parasite_genotype",
+      "scenario": "Genotype19, freq 0.25 in uncomplicated, OR 4",
+      "design": "Design A: BrEMA1 genotype19 vs others, complicated vs uncomplicated, R2 0.20",
+      "exposure_freq_controls": 0.25,
+      "exposure_freq_cases": 0.571,
+      "odds_ratio": 4.0,
+      "alpha": 0.05,
+      "power": 0.8,
+      "r2_covariates": 0.2,
+      "controls_per_case": 1.5,
+      "n_cases": 37,
+      "n_controls": 55,
+      "n_total": 92,
+      "cohort_needed": 106,
+      "cohort_basis": "complicated 40%, +15% loss",
+      "note": "Haploid call per infection; mixed-genotype infections carry the genotype (sensitivity: excluded)",
+      "recommended": false
+     },
+     {
+      "memo": "parasite_genotype",
+      "scenario": "Genotype19, freq 0.35 in uncomplicated, OR 2",
+      "design": "Design A: BrEMA1 genotype19 vs others, complicated vs uncomplicated, R2 0.20",
+      "exposure_freq_controls": 0.35,
+      "exposure_freq_cases": 0.519,
+      "odds_ratio": 2.0,
+      "alpha": 0.05,
+      "power": 0.8,
+      "r2_covariates": 0.2,
+      "controls_per_case": 1.5,
+      "n_cases": 140,
+      "n_controls": 210,
+      "n_total": 350,
+      "cohort_needed": 402,
+      "cohort_basis": "complicated 40%, +15% loss",
+      "note": "Haploid call per infection; mixed-genotype infections carry the genotype (sensitivity: excluded)",
+      "recommended": false
+     },
+     {
+      "memo": "parasite_genotype",
+      "scenario": "Genotype19, freq 0.35 in uncomplicated, OR 2.5",
+      "design": "Design A: BrEMA1 genotype19 vs others, complicated vs uncomplicated, R2 0.20",
+      "exposure_freq_controls": 0.35,
+      "exposure_freq_cases": 0.574,
+      "odds_ratio": 2.5,
+      "alpha": 0.05,
+      "power": 0.8,
+      "r2_covariates": 0.2,
+      "controls_per_case": 1.5,
+      "n_cases": 80,
+      "n_controls": 120,
+      "n_total": 199,
+      "cohort_needed": 229,
+      "cohort_basis": "complicated 40%, +15% loss",
+      "note": "Haploid call per infection; mixed-genotype infections carry the genotype (sensitivity: excluded)",
+      "recommended": true
+     },
+     {
+      "memo": "parasite_genotype",
+      "scenario": "Genotype19, freq 0.35 in uncomplicated, OR 3",
+      "design": "Design A: BrEMA1 genotype19 vs others, complicated vs uncomplicated, R2 0.20",
+      "exposure_freq_controls": 0.35,
+      "exposure_freq_cases": 0.618,
+      "odds_ratio": 3.0,
+      "alpha": 0.05,
+      "power": 0.8,
+      "r2_covariates": 0.2,
+      "controls_per_case": 1.5,
+      "n_cases": 56,
+      "n_controls": 84,
+      "n_total": 139,
+      "cohort_needed": 160,
+      "cohort_basis": "complicated 40%, +15% loss",
+      "note": "Haploid call per infection; mixed-genotype infections carry the genotype (sensitivity: excluded)",
+      "recommended": false
+     },
+     {
+      "memo": "parasite_genotype",
+      "scenario": "Genotype19, freq 0.35 in uncomplicated, OR 4",
+      "design": "Design A: BrEMA1 genotype19 vs others, complicated vs uncomplicated, R2 0.20",
+      "exposure_freq_controls": 0.35,
+      "exposure_freq_cases": 0.683,
+      "odds_ratio": 4.0,
+      "alpha": 0.05,
+      "power": 0.8,
+      "r2_covariates": 0.2,
+      "controls_per_case": 1.5,
+      "n_cases": 36,
+      "n_controls": 54,
+      "n_total": 89,
+      "cohort_needed": 103,
+      "cohort_basis": "complicated 40%, +15% loss",
+      "note": "Haploid call per infection; mixed-genotype infections carry the genotype (sensitivity: excluded)",
+      "recommended": false
+     },
+     {
+      "memo": "parasite_genotype",
+      "scenario": "Genotype19, freq 0.45 in uncomplicated, OR 2",
+      "design": "Design A: BrEMA1 genotype19 vs others, complicated vs uncomplicated, R2 0.20",
+      "exposure_freq_controls": 0.45,
+      "exposure_freq_cases": 0.621,
+      "odds_ratio": 2.0,
+      "alpha": 0.05,
+      "power": 0.8,
+      "r2_covariates": 0.2,
+      "controls_per_case": 1.5,
+      "n_cases": 139,
+      "n_controls": 208,
+      "n_total": 347,
+      "cohort_needed": 399,
+      "cohort_basis": "complicated 40%, +15% loss",
+      "note": "Haploid call per infection; mixed-genotype infections carry the genotype (sensitivity: excluded)",
+      "recommended": false
+     },
+     {
+      "memo": "parasite_genotype",
+      "scenario": "Genotype19, freq 0.45 in uncomplicated, OR 2.5",
+      "design": "Design A: BrEMA1 genotype19 vs others, complicated vs uncomplicated, R2 0.20",
+      "exposure_freq_controls": 0.45,
+      "exposure_freq_cases": 0.672,
+      "odds_ratio": 2.5,
+      "alpha": 0.05,
+      "power": 0.8,
+      "r2_covariates": 0.2,
+      "controls_per_case": 1.5,
+      "n_cases": 81,
+      "n_controls": 122,
+      "n_total": 203,
+      "cohort_needed": 233,
+      "cohort_basis": "complicated 40%, +15% loss",
+      "note": "Haploid call per infection; mixed-genotype infections carry the genotype (sensitivity: excluded)",
+      "recommended": false
+     },
+     {
+      "memo": "parasite_genotype",
+      "scenario": "Genotype19, freq 0.45 in uncomplicated, OR 3",
+      "design": "Design A: BrEMA1 genotype19 vs others, complicated vs uncomplicated, R2 0.20",
+      "exposure_freq_controls": 0.45,
+      "exposure_freq_cases": 0.711,
+      "odds_ratio": 3.0,
+      "alpha": 0.05,
+      "power": 0.8,
+      "r2_covariates": 0.2,
+      "controls_per_case": 1.5,
+      "n_cases": 58,
+      "n_controls": 87,
+      "n_total": 145,
+      "cohort_needed": 166,
+      "cohort_basis": "complicated 40%, +15% loss",
+      "note": "Haploid call per infection; mixed-genotype infections carry the genotype (sensitivity: excluded)",
+      "recommended": false
+     },
+     {
+      "memo": "parasite_genotype",
+      "scenario": "Genotype19, freq 0.45 in uncomplicated, OR 4",
+      "design": "Design A: BrEMA1 genotype19 vs others, complicated vs uncomplicated, R2 0.20",
+      "exposure_freq_controls": 0.45,
+      "exposure_freq_cases": 0.766,
+      "odds_ratio": 4.0,
+      "alpha": 0.05,
+      "power": 0.8,
+      "r2_covariates": 0.2,
+      "controls_per_case": 1.5,
+      "n_cases": 39,
+      "n_controls": 58,
+      "n_total": 96,
+      "cohort_needed": 110,
+      "cohort_basis": "complicated 40%, +15% loss",
+      "note": "Haploid call per infection; mixed-genotype infections carry the genotype (sensitivity: excluded)",
+      "recommended": false
+     },
+     {
+      "memo": "parasite_genotype",
+      "scenario": "Genotype19, freq 0.35 in survivors, death 11%, OR 2.5",
+      "design": "Design A, secondary outcome: died vs survived, R2 0.20",
+      "exposure_freq_controls": 0.35,
+      "exposure_freq_cases": 0.574,
+      "odds_ratio": 2.5,
+      "alpha": 0.05,
+      "power": 0.8,
+      "r2_covariates": 0.2,
+      "controls_per_case": 8.09,
+      "n_cases": 53,
+      "n_controls": 422,
+      "n_total": 474,
+      "cohort_needed": 545,
+      "cohort_basis": "death 11%, +15% loss",
+      "note": "Died includes euthanasia for poor prognosis at Onderstepoort",
+      "recommended": false
+     },
+     {
+      "memo": "parasite_genotype",
+      "scenario": "Genotype19, freq 0.35 in survivors, death 11%, OR 4",
+      "design": "Design A, secondary outcome: died vs survived, R2 0.20",
+      "exposure_freq_controls": 0.35,
+      "exposure_freq_cases": 0.683,
+      "odds_ratio": 4.0,
+      "alpha": 0.05,
+      "power": 0.8,
+      "r2_covariates": 0.2,
+      "controls_per_case": 8.09,
+      "n_cases": 23,
+      "n_controls": 187,
+      "n_total": 210,
+      "cohort_needed": 241,
+      "cohort_basis": "death 11%, +15% loss",
+      "note": "Died includes euthanasia for poor prognosis at Onderstepoort",
+      "recommended": false
+     },
+     {
+      "memo": "parasite_genotype",
+      "scenario": "gene burden, alpha 1.6e-5 (0.05 / 3,098 genes), carrier freq 0.15, OR 3",
+      "design": "Design B: genome-wide parasite association, complicated vs uncomplicated",
+      "exposure_freq_controls": 0.15,
+      "exposure_freq_cases": 0.346,
+      "odds_ratio": 3.0,
+      "alpha": 1.6139444803098775e-05,
+      "power": 0.8,
+      "r2_covariates": 0.2,
+      "controls_per_case": 1.5,
+      "n_cases": 256,
+      "n_controls": 384,
+      "n_total": 640,
+      "cohort_needed": 1227,
+      "cohort_basis": "complicated 40%, +15% loss, 60% monoclonal",
+      "note": "One sequenced monoclonal infection per dog; population structure by principal components",
+      "recommended": false
+     },
+     {
+      "memo": "parasite_genotype",
+      "scenario": "gene burden, alpha 1.6e-5 (0.05 / 3,098 genes), carrier freq 0.15, OR 5",
+      "design": "Design B: genome-wide parasite association, complicated vs uncomplicated",
+      "exposure_freq_controls": 0.15,
+      "exposure_freq_cases": 0.469,
+      "odds_ratio": 5.0,
+      "alpha": 1.6139444803098775e-05,
+      "power": 0.8,
+      "r2_covariates": 0.2,
+      "controls_per_case": 1.5,
+      "n_cases": 110,
+      "n_controls": 164,
+      "n_total": 274,
+      "cohort_needed": 524,
+      "cohort_basis": "complicated 40%, +15% loss, 60% monoclonal",
+      "note": "One sequenced monoclonal infection per dog; population structure by principal components",
+      "recommended": false
+     },
+     {
+      "memo": "parasite_genotype",
+      "scenario": "gene burden, alpha 1.6e-5 (0.05 / 3,098 genes), carrier freq 0.30, OR 3",
+      "design": "Design B: genome-wide parasite association, complicated vs uncomplicated",
+      "exposure_freq_controls": 0.3,
+      "exposure_freq_cases": 0.562,
+      "odds_ratio": 3.0,
+      "alpha": 1.6139444803098775e-05,
+      "power": 0.8,
+      "r2_covariates": 0.2,
+      "controls_per_case": 1.5,
+      "n_cases": 193,
+      "n_controls": 289,
+      "n_total": 481,
+      "cohort_needed": 922,
+      "cohort_basis": "complicated 40%, +15% loss, 60% monoclonal",
+      "note": "One sequenced monoclonal infection per dog; population structure by principal components",
+      "recommended": false
+     },
+     {
+      "memo": "parasite_genotype",
+      "scenario": "gene burden, alpha 1.6e-5 (0.05 / 3,098 genes), carrier freq 0.30, OR 5",
+      "design": "Design B: genome-wide parasite association, complicated vs uncomplicated",
+      "exposure_freq_controls": 0.3,
+      "exposure_freq_cases": 0.682,
+      "odds_ratio": 5.0,
+      "alpha": 1.6139444803098775e-05,
+      "power": 0.8,
+      "r2_covariates": 0.2,
+      "controls_per_case": 1.5,
+      "n_cases": 92,
+      "n_controls": 138,
+      "n_total": 230,
+      "cohort_needed": 441,
+      "cohort_basis": "complicated 40%, +15% loss, 60% monoclonal",
+      "note": "One sequenced monoclonal infection per dog; population structure by principal components",
+      "recommended": false
+     },
+     {
+      "memo": "parasite_genotype",
+      "scenario": "gene burden, alpha 1.6e-5 (0.05 / 3,098 genes), carrier freq 0.50, OR 3",
+      "design": "Design B: genome-wide parasite association, complicated vs uncomplicated",
+      "exposure_freq_controls": 0.5,
+      "exposure_freq_cases": 0.75,
+      "odds_ratio": 3.0,
+      "alpha": 1.6139444803098775e-05,
+      "power": 0.8,
+      "r2_covariates": 0.2,
+      "controls_per_case": 1.5,
+      "n_cases": 209,
+      "n_controls": 313,
+      "n_total": 522,
+      "cohort_needed": 999,
+      "cohort_basis": "complicated 40%, +15% loss, 60% monoclonal",
+      "note": "One sequenced monoclonal infection per dog; population structure by principal components",
+      "recommended": false
+     },
+     {
+      "memo": "parasite_genotype",
+      "scenario": "gene burden, alpha 1.6e-5 (0.05 / 3,098 genes), carrier freq 0.50, OR 5",
+      "design": "Design B: genome-wide parasite association, complicated vs uncomplicated",
+      "exposure_freq_controls": 0.5,
+      "exposure_freq_cases": 0.833,
+      "odds_ratio": 5.0,
+      "alpha": 1.6139444803098775e-05,
+      "power": 0.8,
+      "r2_covariates": 0.2,
+      "controls_per_case": 1.5,
+      "n_cases": 112,
+      "n_controls": 168,
+      "n_total": 279,
+      "cohort_needed": 535,
+      "cohort_basis": "complicated 40%, +15% loss, 60% monoclonal",
+      "note": "One sequenced monoclonal infection per dog; population structure by principal components",
+      "recommended": false
+     },
+     {
+      "memo": "parasite_genotype",
+      "scenario": "variant level, alpha 1.7e-6 (0.05 / 30,000 SNPs), carrier freq 0.15, OR 3",
+      "design": "Design B: genome-wide parasite association, complicated vs uncomplicated",
+      "exposure_freq_controls": 0.15,
+      "exposure_freq_cases": 0.346,
+      "odds_ratio": 3.0,
+      "alpha": 1.6666666666666667e-06,
+      "power": 0.8,
+      "r2_covariates": 0.2,
+      "controls_per_case": 1.5,
+      "n_cases": 306,
+      "n_controls": 459,
+      "n_total": 764,
+      "cohort_needed": 1464,
+      "cohort_basis": "complicated 40%, +15% loss, 60% monoclonal",
+      "note": "One sequenced monoclonal infection per dog; population structure by principal components",
+      "recommended": false
+     },
+     {
+      "memo": "parasite_genotype",
+      "scenario": "variant level, alpha 1.7e-6 (0.05 / 30,000 SNPs), carrier freq 0.15, OR 5",
+      "design": "Design B: genome-wide parasite association, complicated vs uncomplicated",
+      "exposure_freq_controls": 0.15,
+      "exposure_freq_cases": 0.469,
+      "odds_ratio": 5.0,
+      "alpha": 1.6666666666666667e-06,
+      "power": 0.8,
+      "r2_covariates": 0.2,
+      "controls_per_case": 1.5,
+      "n_cases": 131,
+      "n_controls": 196,
+      "n_total": 326,
+      "cohort_needed": 625,
+      "cohort_basis": "complicated 40%, +15% loss, 60% monoclonal",
+      "note": "One sequenced monoclonal infection per dog; population structure by principal components",
+      "recommended": false
+     },
+     {
+      "memo": "parasite_genotype",
+      "scenario": "variant level, alpha 1.7e-6 (0.05 / 30,000 SNPs), carrier freq 0.30, OR 3",
+      "design": "Design B: genome-wide parasite association, complicated vs uncomplicated",
+      "exposure_freq_controls": 0.3,
+      "exposure_freq_cases": 0.562,
+      "odds_ratio": 3.0,
+      "alpha": 1.6666666666666667e-06,
+      "power": 0.8,
+      "r2_covariates": 0.2,
+      "controls_per_case": 1.5,
+      "n_cases": 230,
+      "n_controls": 345,
+      "n_total": 575,
+      "cohort_needed": 1101,
+      "cohort_basis": "complicated 40%, +15% loss, 60% monoclonal",
+      "note": "One sequenced monoclonal infection per dog; population structure by principal components",
+      "recommended": false
+     },
+     {
+      "memo": "parasite_genotype",
+      "scenario": "variant level, alpha 1.7e-6 (0.05 / 30,000 SNPs), carrier freq 0.30, OR 5",
+      "design": "Design B: genome-wide parasite association, complicated vs uncomplicated",
+      "exposure_freq_controls": 0.3,
+      "exposure_freq_cases": 0.682,
+      "odds_ratio": 5.0,
+      "alpha": 1.6666666666666667e-06,
+      "power": 0.8,
+      "r2_covariates": 0.2,
+      "controls_per_case": 1.5,
+      "n_cases": 110,
+      "n_controls": 165,
+      "n_total": 275,
+      "cohort_needed": 527,
+      "cohort_basis": "complicated 40%, +15% loss, 60% monoclonal",
+      "note": "One sequenced monoclonal infection per dog; population structure by principal components",
+      "recommended": false
+     },
+     {
+      "memo": "parasite_genotype",
+      "scenario": "variant level, alpha 1.7e-6 (0.05 / 30,000 SNPs), carrier freq 0.50, OR 3",
+      "design": "Design B: genome-wide parasite association, complicated vs uncomplicated",
+      "exposure_freq_controls": 0.5,
+      "exposure_freq_cases": 0.75,
+      "odds_ratio": 3.0,
+      "alpha": 1.6666666666666667e-06,
+      "power": 0.8,
+      "r2_covariates": 0.2,
+      "controls_per_case": 1.5,
+      "n_cases": 250,
+      "n_controls": 374,
+      "n_total": 624,
+      "cohort_needed": 1195,
+      "cohort_basis": "complicated 40%, +15% loss, 60% monoclonal",
+      "note": "One sequenced monoclonal infection per dog; population structure by principal components",
+      "recommended": false
+     },
+     {
+      "memo": "parasite_genotype",
+      "scenario": "variant level, alpha 1.7e-6 (0.05 / 30,000 SNPs), carrier freq 0.50, OR 5",
+      "design": "Design B: genome-wide parasite association, complicated vs uncomplicated",
+      "exposure_freq_controls": 0.5,
+      "exposure_freq_cases": 0.833,
+      "odds_ratio": 5.0,
+      "alpha": 1.6666666666666667e-06,
+      "power": 0.8,
+      "r2_covariates": 0.2,
+      "controls_per_case": 1.5,
+      "n_cases": 134,
+      "n_controls": 201,
+      "n_total": 334,
+      "cohort_needed": 640,
+      "cohort_basis": "complicated 40%, +15% loss, 60% monoclonal",
+      "note": "One sequenced monoclonal infection per dog; population structure by principal components",
+      "recommended": false
+     }
+    ],
+    "calibration": {
+     "source": "SV-05-01-age-death (S-CB050, 15 deaths, 125 survivors, young 44/125 among survivors)",
+     "cohort_framing_detectable_or": 3.66,
+     "cohort_framing_note": "groups = 50 young vs 90 adult, outcome risk 9/90 in adults (the SV-05 formula)",
+     "case_control_framing_detectable_or_above": 4.68,
+     "case_control_framing_detectable_or_below": 0.09,
+     "case_control_framing_note": "groups = 15 deaths vs 125 survivors, exposure young 44/125 in survivors (the memo formula)",
+     "sv05_reported": "about 3.7 or more, or 0.28 or less"
+    },
+    "death_proportion": 0.11,
+    "severe_proportion": 0.3,
+    "complicated_proportion": 0.4
+   }
+  },
+  {
+   "kind": "memo_sections",
+   "title": "Design memo",
+   "sort_order": 3,
+   "payload": {
+    "title": "Design memo: does the parasite's genotype change the outcome in Babesia rossi?",
+    "file": "out/memo_parasite_genotype.md",
+    "words": 2897,
+    "sections": [
+     {
+      "heading": "Status",
+      "blocks": [
+       {
+        "type": "p",
+        "text": "SV-10 design memo. Draft, 2026-11-12. Literature facts are from PubMed; each carries a DOI link."
+       }
+      ]
+     },
+     {
+      "heading": "1 Question and why now",
+      "blocks": [
+       {
+        "type": "p",
+        "text": "Dogs with B. rossi babesiosis do not all get the same disease. Some recover as outpatients. Some die. We mostly look for the reason in the dog. One study looked for it in the parasite."
+       },
+       {
+        "type": "p",
+        "text": "The question: **does the genotype of the infecting B. rossi parasite predict severe disease or death, once we allow for the dog's age, how long it has been sick, and how many parasites it carries?**"
+       },
+       {
+        "type": "p",
+        "text": "Two things make now the right time. First, the one study that reported such a link, CB379 (Matjila et al. 2009, DOI (https://doi.org/10.1128/jcm.01110-08)), has never been repeated. The only follow-up work looked for the gene in Nigeria and did not find it at all (DOI (https://doi.org/10.1186/1756-3305-7-119)). Second, there is now a near-complete B. rossi genome (DOI (https://doi.org/10.1186/s12864-025-11495-z)), so we are no longer limited to one gene."
+       }
+      ]
+     },
+     {
+      "heading": "2 What is known",
+      "blocks": [
+       {
+        "type": "p",
+        "text": "CB379 collected 141 blood samples from infected dogs: 121 at the Onderstepoort Veterinary Academic Hospital and 20 from private clinics in several parts of South Africa. Diagnosis was by thin blood smear. The authors amplified and sequenced the hexapeptide-repeat region of the BrEMA1 gene. Gel electrophoresis gave 11 profiles. Sequencing resolved 12 genotypes, with 6 to 31 repeats, named genotype6 to genotype31. Four genotypes dominated: genotype19 at 36.2%, genotype28 and genotype29 at 20.6% each, and genotype11 at 12.7%. Those four were also the ones linked to the poorest prognosis. Clinical presentation was grouped as uncomplicated (good prognosis) or complicated (poor prognosis), and the comparison with clinical records was retrospective."
+       },
+       {
+        "type": "p",
+        "text": "The limits matter more than the finding. The published abstract gives no table of dogs by genotype and outcome, no statistical test, and no effect size. The four \"virulent\" genotypes together make up 90.1% of isolates, so almost every dog carried one; a frequency effect and a virulence effect cannot be separated. There was no adjustment for host age, treatment delay or parasite load, and most dogs were hospital cases. The authors themselves call it preliminary."
+       },
+       {
+        "type": "p",
+        "text": "The genome is new ground. The PMB strain assembly, from a sick dog in Pietermaritzburg, is 21.06 Mbp across five chromosome-level scaffolds plus an apicoplast scaffold and 54 unplaced scaffolds, N50 1.32 Mb, 96.6% BUSCO completeness, with 3,098 protein-coding genes. Two more field isolates were assembled; they share 99% of orthologous gene sets, differ by four syntenic inversions, and carry most of their SNPs in gene-poor regions (DOI (https://doi.org/10.1186/s12864-025-11495-z))."
+       }
+      ]
+     },
+     {
+      "heading": "3 Design A: targeted BrEMA1 replication",
+      "blocks": [
+       {
+        "type": "p",
+        "text": "Setting. Two sites, enrolling in parallel. One is Onderstepoort, so the result is comparable with the original. The second must be a different hospital, in a different part of South Africa. This is not optional: every replicated B. rossi signal in this review comes from Onderstepoort, so a single-site result would add nothing about generalisability."
+       },
+       {
+        "type": "p",
+        "text": "Eligibility. Client-owned dogs with a first episode of babesiosis, large Babesia on a capillary smear, and B. rossi confirmed by species-specific PCR. Excluded: dogs already given an antibabesial drug for this episode, mixed Babesia species infections, and owners who decline follow-up."
+       },
+       {
+        "type": "p",
+        "text": "Sampling. One EDTA blood sample taken before the first antibabesial dose. This is strict. In malaria, genotypes undetectable at admission appeared in the blood 16 hours after treatment began in 61% of patients (DOI (https://doi.org/10.1099/mgen.0.001386)); a post-treatment sample would genotype a different parasite population from the one that caused the presentation."
+       },
+       {
+        "type": "p",
+        "text": "Genotyping. PCR of the BrEMA1 hexapeptide-repeat region as in CB379, followed by amplicon deep sequencing rather than Sanger sequencing. Sanger reads the dominant clone only. Amplicon sequencing detects minority clones, and in malaria it detected mixed infections that whole-genome methods missed (DOI (https://doi.org/10.1099/mgen.0.001386))."
+       },
+       {
+        "type": "p",
+        "text": "Mixed genotypes. Declare the rule in advance. Primary analysis: the dominant genotype, defined as the one with the highest read fraction when it exceeds 70% of reads. Dogs with no genotype above 70% are a separate \"mixed\" category, analysed as its own exposure level, never silently dropped. Report how many dogs fall in each class."
+       },
+       {
+        "type": "p",
+        "text": "Outcome. Primary: complicated disease, defined before recruitment by a fixed list of organ complications recorded at or during admission. Secondary: death, which at Onderstepoort includes euthanasia for poor prognosis and must be reported that way, because a euthanasia decision is partly a clinical judgement and partly an owner's. Outcomes are assessed by a clinician blind to genotype."
+       },
+       {
+        "type": "p",
+        "text": "Covariates and how each is measured."
+       },
+       {
+        "type": "ul",
+        "items": [
+         "Age: years, from the owner's record, entered as a continuous term plus a spline. The only comparable published estimate is imprecise (OR for death 1.23, 0.34 to 4.15, in a 140-dog Onderstepoort cohort), so age enters as a confounder, not as a result.",
+         "Days sick: whole days from the owner first noticing illness to presentation, asked with one fixed question at enrolment. This has to be collected prospectively; it exists in only one dataset in this review, and there without an outcome.",
+         "Parasite load: percent parasitised red cells counted on a capillary smear by a blinded observer, plus a B. rossi qPCR copy number. Capillary parasitaemia is higher than venous and is associated with death (DOI (https://doi.org/10.1016/j.vetpar.2006.05.002)). Analysed as log load."
+        ]
+       },
+       {
+        "type": "p",
+        "text": "Analysis. Pre-registered before enrolment closes, with a fixed primary model. Logistic regression of outcome on genotype class, adjusted for age, log days sick and log load, fitted with Firth penalisation, because rare genotypes will produce small or empty cells and ordinary maximum likelihood will break down. Exact logistic regression as a sensitivity analysis. Site is a fixed effect; a site-by-genotype interaction is reported but is not the primary test. Report adjusted and unadjusted odds ratios side by side with 95% confidence intervals, and say plainly if the interval includes 1. No model selection, no stepwise, no prediction."
+       }
+      ]
+     },
+     {
+      "heading": "4 Design B: genome-wide parasite association",
+      "blocks": [
+       {
+        "type": "p",
+        "text": "Design A tests one gene chosen in 2009. Design B asks the genome."
+       },
+       {
+        "type": "p",
+        "text": "Material. The same pre-treatment blood samples. No B. rossi culture exists, host DNA dominates, and parasitaemia is often below 1%, so parasite DNA must be enriched. Use selective whole genome amplification with primer sets designed against the B. rossi reference; the method was built for exactly this problem in neglected malaria species (DOI (https://doi.org/10.1186/s12864-025-11292-8), DOI (https://doi.org/10.1128/spectrum.00726-22)). Dogs with higher parasitaemia go to direct whole-genome sequencing; low-parasitaemia dogs get a targeted amplicon panel covering the candidate genes and a structure-marker set, so they are not lost from the study."
+       },
+       {
+        "type": "p",
+        "text": "Calling. Map to the PMB reference (DOI (https://doi.org/10.1186/s12864-025-11495-z)), call variants haploid, since the blood stage is haploid. Filter on depth, call rate and mapping quality, and exclude the low-gene-density unplaced scaffolds from the primary scan."
+       },
+       {
+        "type": "p",
+        "text": "Mixed infection. Estimate multiplicity of infection per isolate with at least two methods — a within-sample allele-frequency method and runs of homozygosity — and cross-check against the amplicon data (DOI (https://doi.org/10.1099/mgen.0.001386)). The primary scan uses monoclonal isolates. Mixed isolates are analysed separately, with the dominant haplotype, as a sensitivity analysis."
+       },
+       {
+        "type": "p",
+        "text": "Structure. Compute principal components from genome-wide variants and include the leading components in every model, so that a parasite subpopulation that happens to circulate near one hospital is not mistaken for a virulence effect. Report the structure itself: nobody has described B. rossi population structure in the field."
+       },
+       {
+        "type": "p",
+        "text": "Tests. Two pre-declared layers. A single-variant scan across common variants, and a gene-based burden test that aggregates rare variants within each of the 3,098 annotated genes. A third, pre-declared, family-level test treats BrEMA1 and other variant antigen gene families as units and tests diversity and copy number, because in B. bovis attenuation showed up as reduced diversity across the ves family rather than as one causal amino-acid change (DOI (https://doi.org/10.1186/1471-2164-12-410)). All models carry the same host covariates as Design A."
+       },
+       {
+        "type": "p",
+        "text": "Threshold. Bonferroni across genes for the burden test and across common variants for the single-variant scan, with a permutation threshold reported alongside. Exact numbers are in the research notes; they follow from the 3,098-gene annotation and the variant count after filtering."
+       }
+      ]
+     },
+     {
+      "heading": "5 Sample size",
+      "blocks": [
+       {
+        "type": "p",
+        "text": "Normal approximations from scripts/power.py, two-sided alpha 0.05, power 0.8. Assumptions: genotype19 in 35% of uncomplicated infections (sensitivity 25% and 45%); complicated disease in 40% of enrolled dogs (1.5 uncomplicated per complicated); R² 0.20 between genotype and the covariates (age, log days sick, log load), so n is multiplied by 1 / 0.8; 15% added to the cohort for failed amplification, mixed genotypes and loss to follow-up. Design B thresholds: 0.05 / 3,098 genes = 1.6e-5 for the burden test, and 0.05 / 30,000 common SNPs = 1.7e-6 for the single-variant scan; Design B also assumes that 60% of infections are monoclonal."
+       },
+       {
+        "type": "table",
+        "header": [
+         "Scenario",
+         "Design",
+         "Severe (cases)",
+         "Mild (controls)",
+         "Total analysed",
+         "Cohort to enrol"
+        ],
+        "rows": [
+         [
+          "Genotype19, freq 0.25 in uncomplicated, OR 2",
+          "Design A: BrEMA1 genotype19 vs others, complicated vs uncomplicated, R2 0.20",
+          "157",
+          "235",
+          "392",
+          "451 (complicated 40%, +15% loss)"
+         ],
+         [
+          "Genotype19, freq 0.25 in uncomplicated, OR 2.5",
+          "Design A: BrEMA1 genotype19 vs others, complicated vs uncomplicated, R2 0.20",
+          "87",
+          "131",
+          "218",
+          "250 (complicated 40%, +15% loss)"
+         ],
+         [
+          "Genotype19, freq 0.25 in uncomplicated, OR 3",
+          "Design A: BrEMA1 genotype19 vs others, complicated vs uncomplicated, R2 0.20",
+          "60",
+          "89",
+          "149",
+          "171 (complicated 40%, +15% loss)"
+         ],
+         [
+          "Genotype19, freq 0.25 in uncomplicated, OR 4",
+          "Design A: BrEMA1 genotype19 vs others, complicated vs uncomplicated, R2 0.20",
+          "37",
+          "55",
+          "92",
+          "106 (complicated 40%, +15% loss)"
+         ],
+         [
+          "Genotype19, freq 0.35 in uncomplicated, OR 2",
+          "Design A: BrEMA1 genotype19 vs others, complicated vs uncomplicated, R2 0.20",
+          "140",
+          "210",
+          "350",
+          "402 (complicated 40%, +15% loss)"
+         ],
+         [
+          "Genotype19, freq 0.35 in uncomplicated, OR 2.5 (recommended)",
+          "Design A: BrEMA1 genotype19 vs others, complicated vs uncomplicated, R2 0.20",
+          "80",
+          "120",
+          "199",
+          "229 (complicated 40%, +15% loss)"
+         ],
+         [
+          "Genotype19, freq 0.35 in uncomplicated, OR 3",
+          "Design A: BrEMA1 genotype19 vs others, complicated vs uncomplicated, R2 0.20",
+          "56",
+          "84",
+          "139",
+          "160 (complicated 40%, +15% loss)"
+         ],
+         [
+          "Genotype19, freq 0.35 in uncomplicated, OR 4",
+          "Design A: BrEMA1 genotype19 vs others, complicated vs uncomplicated, R2 0.20",
+          "36",
+          "54",
+          "89",
+          "103 (complicated 40%, +15% loss)"
+         ],
+         [
+          "Genotype19, freq 0.45 in uncomplicated, OR 2",
+          "Design A: BrEMA1 genotype19 vs others, complicated vs uncomplicated, R2 0.20",
+          "139",
+          "208",
+          "347",
+          "399 (complicated 40%, +15% loss)"
+         ],
+         [
+          "Genotype19, freq 0.45 in uncomplicated, OR 2.5",
+          "Design A: BrEMA1 genotype19 vs others, complicated vs uncomplicated, R2 0.20",
+          "81",
+          "122",
+          "203",
+          "233 (complicated 40%, +15% loss)"
+         ],
+         [
+          "Genotype19, freq 0.45 in uncomplicated, OR 3",
+          "Design A: BrEMA1 genotype19 vs others, complicated vs uncomplicated, R2 0.20",
+          "58",
+          "87",
+          "145",
+          "166 (complicated 40%, +15% loss)"
+         ],
+         [
+          "Genotype19, freq 0.45 in uncomplicated, OR 4",
+          "Design A: BrEMA1 genotype19 vs others, complicated vs uncomplicated, R2 0.20",
+          "39",
+          "58",
+          "96",
+          "110 (complicated 40%, +15% loss)"
+         ],
+         [
+          "Genotype19, freq 0.35 in survivors, death 11%, OR 2.5",
+          "Design A, secondary outcome: died vs survived, R2 0.20",
+          "53",
+          "422",
+          "474",
+          "545 (death 11%, +15% loss)"
+         ],
+         [
+          "Genotype19, freq 0.35 in survivors, death 11%, OR 4",
+          "Design A, secondary outcome: died vs survived, R2 0.20",
+          "23",
+          "187",
+          "210",
+          "241 (death 11%, +15% loss)"
+         ],
+         [
+          "gene burden, alpha 1.6e-5 (0.05 / 3,098 genes), carrier freq 0.15, OR 3",
+          "Design B: genome-wide parasite association, complicated vs uncomplicated",
+          "256",
+          "384",
+          "640",
+          "1,227 (complicated 40%, +15% loss, 60% monoclonal)"
+         ],
+         [
+          "gene burden, alpha 1.6e-5 (0.05 / 3,098 genes), carrier freq 0.15, OR 5",
+          "Design B: genome-wide parasite association, complicated vs uncomplicated",
+          "110",
+          "164",
+          "274",
+          "524 (complicated 40%, +15% loss, 60% monoclonal)"
+         ],
+         [
+          "gene burden, alpha 1.6e-5 (0.05 / 3,098 genes), carrier freq 0.30, OR 3",
+          "Design B: genome-wide parasite association, complicated vs uncomplicated",
+          "193",
+          "289",
+          "481",
+          "922 (complicated 40%, +15% loss, 60% monoclonal)"
+         ],
+         [
+          "gene burden, alpha 1.6e-5 (0.05 / 3,098 genes), carrier freq 0.30, OR 5",
+          "Design B: genome-wide parasite association, complicated vs uncomplicated",
+          "92",
+          "138",
+          "230",
+          "441 (complicated 40%, +15% loss, 60% monoclonal)"
+         ],
+         [
+          "gene burden, alpha 1.6e-5 (0.05 / 3,098 genes), carrier freq 0.50, OR 3",
+          "Design B: genome-wide parasite association, complicated vs uncomplicated",
+          "209",
+          "313",
+          "522",
+          "999 (complicated 40%, +15% loss, 60% monoclonal)"
+         ],
+         [
+          "gene burden, alpha 1.6e-5 (0.05 / 3,098 genes), carrier freq 0.50, OR 5",
+          "Design B: genome-wide parasite association, complicated vs uncomplicated",
+          "112",
+          "168",
+          "279",
+          "535 (complicated 40%, +15% loss, 60% monoclonal)"
+         ],
+         [
+          "variant level, alpha 1.7e-6 (0.05 / 30,000 SNPs), carrier freq 0.15, OR 3",
+          "Design B: genome-wide parasite association, complicated vs uncomplicated",
+          "306",
+          "459",
+          "764",
+          "1,464 (complicated 40%, +15% loss, 60% monoclonal)"
+         ],
+         [
+          "variant level, alpha 1.7e-6 (0.05 / 30,000 SNPs), carrier freq 0.15, OR 5",
+          "Design B: genome-wide parasite association, complicated vs uncomplicated",
+          "131",
+          "196",
+          "326",
+          "625 (complicated 40%, +15% loss, 60% monoclonal)"
+         ],
+         [
+          "variant level, alpha 1.7e-6 (0.05 / 30,000 SNPs), carrier freq 0.30, OR 3",
+          "Design B: genome-wide parasite association, complicated vs uncomplicated",
+          "230",
+          "345",
+          "575",
+          "1,101 (complicated 40%, +15% loss, 60% monoclonal)"
+         ],
+         [
+          "variant level, alpha 1.7e-6 (0.05 / 30,000 SNPs), carrier freq 0.30, OR 5",
+          "Design B: genome-wide parasite association, complicated vs uncomplicated",
+          "110",
+          "165",
+          "275",
+          "527 (complicated 40%, +15% loss, 60% monoclonal)"
+         ],
+         [
+          "variant level, alpha 1.7e-6 (0.05 / 30,000 SNPs), carrier freq 0.50, OR 3",
+          "Design B: genome-wide parasite association, complicated vs uncomplicated",
+          "250",
+          "374",
+          "624",
+          "1,195 (complicated 40%, +15% loss, 60% monoclonal)"
+         ],
+         [
+          "variant level, alpha 1.7e-6 (0.05 / 30,000 SNPs), carrier freq 0.50, OR 5",
+          "Design B: genome-wide parasite association, complicated vs uncomplicated",
+          "134",
+          "201",
+          "334",
+          "640 (complicated 40%, +15% loss, 60% monoclonal)"
+         ]
+        ]
+       },
+       {
+        "type": "p",
+        "text": "Recommendation. Design A with genotype19 against all others, OR 2.5: 80 complicated and 120 uncomplicated dogs (199), from a cohort of about 229 enrolled dogs. Death as the outcome needs about 545 enrolled dogs for the same OR, so death is secondary; it becomes reachable inside the 610-dog cohort of memo 3. Design B in the same 610 dogs can detect only large effects (OR of about 5 for a gene with a carrier frequency of 0.15 to 0.5): it is hypothesis-generating, not a test."
+       }
+      ]
+     },
+     {
+      "heading": "6 Bias and confounders",
+      "blocks": [
+       {
+        "type": "ul",
+        "items": [
+         "Referral bias. Both sites are referral centres, so complications will be common. That limits who the result applies to.",
+         "Treatment delay. Days sick is both a confounder and part of the causal path. Report adjusted and unadjusted estimates.",
+         "Parasite population structure. Handled in Design B; in Design A, site is the crude proxy.",
+         "Mixed infections can make a dog look like it carries the dominant genotype only.",
+         "Euthanasia. Where \"died\" includes euthanasia for poor prognosis, owner finances and clinician judgement enter the outcome. Report the two components separately as well as combined.",
+         "Blinding. Genotype must not be known to the clinician recording the outcome, and the smear counter must not know the genotype or the outcome.",
+         "Survivor sampling. A dog that dies before a pre-treatment sample is taken never enters. Count those dogs."
+        ]
+       }
+      ]
+     },
+     {
+      "heading": "7 What it cannot show",
+      "blocks": [
+       {
+        "type": "p",
+        "text": "It cannot show that a genotype causes severe disease. It is an observational association in naturally infected dogs, and the parasite genotype travels with the tick, the place and the season. It cannot separate a frequency effect from a virulence effect if the commonest genotype is again the one linked to bad outcomes — which is why the exposure must be re-defined before data collection, not after. It cannot support a predictive model or a risk score, and the genotype groups it finds are not subtypes of disease. Design B at a realistic size is hypothesis-generating: it can nominate genes, not confirm them. Confirmation would need a second, independent cohort, and ultimately a functional experiment."
+       }
+      ]
+     },
+     {
+      "heading": "8 Open questions",
+      "blocks": [
+       {
+        "type": "ul",
+        "items": [
+         "Is a second, non-Onderstepoort South African site with enough B. rossi caseload willing and able to recruit prospectively?",
+         "What is the real multiplicity of infection in natural canine B. rossi infection? Nobody has measured it, and it drives the usable sample size in Design B.",
+         "Does BrEMA1 repeat number vary within one dog over the course of an infection?",
+         "Can sWGA primer sets designed against B. rossi reach usable coverage at 0.1% parasitaemia?",
+         "Should the primary exposure be genotype identity or repeat number as a continuous trend?",
+         "Are the CB379 BrEMA1 sequences in GenBank? If so, the 2009 and new genotypes can be aligned directly rather than matched by repeat count."
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "kind": "interpretation",
+   "title": "Explanation and interpretation",
+   "sort_order": 9,
+   "payload": {
+    "sections": [
+     {
+      "heading": "Question",
+      "paragraphs": [
+       "Does the BrEMA1 genotype of the infecting B. rossi (genotype19 against all others) change the odds of complicated disease, adjusted for age, days sick and parasite load? CB379 linked four genotypes to poor prognosis, but those four cover 90% of its 141 isolates and no genotype-by-outcome table was published."
+      ]
+     },
+     {
+      "heading": "What was done",
+      "paragraphs": [
+       "A sub-agent read the CB379 appraisal note and abstract, searched the local notes and PubMed for BrEMA1 follow-up, B. rossi population genetics, the 2025 genome and parasite association designs (Plasmodium, B. bovis), and drafted the memo; the package agent set the sample-size scenarios.",
+       "Sample sizes: 26 scenarios from scripts/power.py (normal approximations, power 0.8, two-sided). Formula check: the cohort formula gives a detectable OR of 3.66 for the S-CB050 age contrast; SV-05 reported about 3.7 or more, or 0.28 or less."
+      ]
+     },
+     {
+      "heading": "Result",
+      "paragraphs": [
+       "The recommended scenario (Genotype19, freq 0.35 in uncomplicated, OR 2.5) needs 80 severe and 120 mild dogs (199 in all), from a cohort of about 229 enrolled dogs. It detects an adjusted OR of 2.5 for genotype19 (35% of uncomplicated infections).",
+       "Design A (targeted BrEMA1 amplicon sequencing from one pre-treatment EDTA sample, Firth logistic regression adjusted for age, log days sick and log load) at 40% complicated disease and 15% loss. Death needs about 545 enrolled dogs and is secondary. Design B (genome-wide) is hypothesis-generating: in 610 dogs it detects only OR of about 5 per gene.",
+       "Across the scenarios the total ranges from 89 to 764 dogs."
+      ]
+     },
+     {
+      "heading": "What this does not show",
+      "paragraphs": [
+       "It analyses no data: every number is a planning assumption or a power calculation.",
+       "It cannot show that a genotype causes severe disease: genotype may mark a parasite population, a region or a season.",
+       "It does not cover B. canis or B. gibsoni; the sample sizes must be re-run for another species."
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

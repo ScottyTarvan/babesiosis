@@ -1,0 +1,20 @@
+{
+  "id": "CB440",
+  "text_used": "data/markdown/CB440.md",
+  "extracted_by": "claude-opus-5-5 SV-G2 B11",
+  "extracted_utc": "2026-11-12T00:00:00Z",
+  "schema_version": "v2",
+  "setting": "referral hospital",
+  "sample_timing": "mixed",
+  "article_notes": "24 dogs (8 healthy, 8 Babesia sp., 8 Ehrlichia sp.) sampled at diagnosis and one week after treatment; MPV and platelet count compared with healthy controls and over time (Table 1). The Results describe platelet counts, giant platelets and aggregates qualitatively in dogs with 'relatively mild symptoms' versus dogs with abundant trophozoites, with no group sizes or numbers. Nothing extractable against severity.",
+  "skipped_infected_vs_healthy": 2,
+  "severity_definitions": [],
+  "associations": [],
+  "not_extracted": [
+    {
+      "what": "Platelet count, giant platelets and platelet aggregates in dogs with mild signs vs dogs with abundant trophozoites",
+      "reason": "no per-group result",
+      "note": "Qualitative description only; groups not defined or sized, no values or test."
+    }
+  ]
+}

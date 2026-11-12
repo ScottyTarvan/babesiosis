@@ -1,0 +1,177 @@
+:host {
+  display: block;
+}
+
+.fs-experiment-cytokine {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.fs-experiment-cytokine__status {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--fs-guide-space-3);
+  margin: 0 0 var(--fs-guide-space-3);
+}
+
+.fs-experiment-cytokine__meta {
+  font-size: 12px;
+  color: rgb(var(--fs-color-ink-soft));
+}
+
+.fs-experiment-cytokine__primary {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: var(--fs-guide-space-4, 16px);
+  margin-bottom: var(--fs-guide-space-3);
+}
+
+.fs-experiment-cytokine__effect {
+  padding: var(--fs-guide-space-3);
+  border: 1px solid rgb(var(--fs-color-ink) / 0.12);
+  border-radius: 8px;
+}
+
+.fs-experiment-cytokine__effect-label {
+  margin-bottom: var(--fs-guide-space-2);
+  font-size: 13px;
+  font-weight: 600;
+  color: rgb(var(--fs-color-ink));
+}
+
+.fs-experiment-cytokine__headline {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--fs-guide-space-3) var(--fs-guide-space-5, 24px);
+}
+
+.fs-experiment-cytokine__stat {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.fs-experiment-cytokine__stat-label {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: rgb(var(--fs-color-ink-soft));
+}
+
+.fs-experiment-cytokine__stat-value {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1.1;
+  font-variant-numeric: tabular-nums;
+  color: rgb(var(--fs-color-ink));
+
+  &--small {
+    font-size: 16px;
+    padding-top: 8px;
+  }
+}
+
+.fs-experiment-cytokine__text {
+  margin: 0 0 var(--fs-guide-space-3);
+  font-size: 13px;
+  line-height: 1.5;
+  color: rgb(var(--fs-color-ink));
+}
+
+.fs-experiment-cytokine__rules {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--fs-guide-space-2);
+}
+
+.fs-experiment-cytokine__set {
+  margin: var(--fs-guide-space-4, 16px) 0 var(--fs-guide-space-2);
+  font-size: 13px;
+  font-weight: 600;
+  color: rgb(var(--fs-color-ink));
+}
+
+.fs-experiment-cytokine__forest {
+  display: grid;
+  grid-template-columns: minmax(140px, 260px) 1fr;
+  gap: var(--fs-guide-space-2);
+  margin-bottom: var(--fs-guide-space-2);
+}
+
+.fs-experiment-cytokine__forest-label {
+  height: 26px;
+  line-height: 26px;
+  font-size: 12px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: rgb(var(--fs-color-ink));
+}
+
+.fs-experiment-cytokine__forest-svg {
+  width: 100%;
+  display: block;
+}
+
+.fs-experiment-cytokine__grid {
+  stroke: rgb(var(--fs-color-ink) / 0.12);
+  stroke-width: 1;
+  vector-effect: non-scaling-stroke;
+}
+
+.fs-experiment-cytokine__zero {
+  stroke: rgb(var(--fs-color-ink-soft));
+  stroke-width: 1;
+  stroke-dasharray: 4 3;
+  vector-effect: non-scaling-stroke;
+}
+
+.fs-experiment-cytokine__tick {
+  font-size: 10px;
+  fill: rgb(var(--fs-color-ink-soft));
+}
+
+.fs-experiment-cytokine__ci {
+  stroke: rgb(var(--fs-color-ink-soft));
+  stroke-width: 2;
+  vector-effect: non-scaling-stroke;
+
+  &--strong {
+    stroke: rgb(var(--fs-color-chart-1));
+  }
+}
+
+.fs-experiment-cytokine__dot {
+  fill: rgb(var(--fs-color-surface, 255 255 255));
+  stroke: rgb(var(--fs-color-ink-soft));
+  stroke-width: 2;
+  vector-effect: non-scaling-stroke;
+
+  &--strong {
+    fill: rgb(var(--fs-color-chart-1));
+    stroke: rgb(var(--fs-color-chart-1));
+  }
+}
+
+.fs-experiment-cytokine__tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--fs-guide-space-2);
+  margin-bottom: var(--fs-guide-space-3);
+}
+
+.fs-experiment-cytokine__pair {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: var(--fs-guide-space-4, 16px);
+}
+
+.fs-experiment-cytokine__footnote {
+  margin: var(--fs-guide-space-2) 0 0;
+  font-size: 11px;
+  line-height: 1.4;
+  color: rgb(var(--fs-color-ink-soft));
+}

@@ -36,12 +36,17 @@ namespace Babesiosis.Console
       {
         var settings = LoaderSettings.Load();
         var result = 0;
+        if (options.SynthesisOnly)
+          return await new SynthesisLoader(settings, options).RunAsync(cancellation.Token);
+
         if (!options.DatasetsOnly)
         {
           result = await new ArticleLoader(settings, options).RunAsync(cancellation.Token);
           // Passages and terms attach to article rows, so they load after the articles; a failed article still leaves the others.
           result = Math.Max(result, await new SectionLoader(settings, options).RunAsync(cancellation.Token));
           result = Math.Max(result, await new TermLoader(settings, options).RunAsync(cancellation.Token));
+          // The syntheses stand alone (no foreign keys); with --only CB… nothing matches, so they are skipped.
+          result = Math.Max(result, await new SynthesisLoader(settings, options).RunAsync(cancellation.Token));
         }
         // Datasets link to articles by code, and experiments resolve their variables through the datasets, so this order matters.
         result = Math.Max(result, await new DatasetLoader(settings, options).RunAsync(cancellation.Token));

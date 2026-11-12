@@ -1,0 +1,171 @@
+{
+ "name": "pilot",
+ "reference": "extractions",
+ "other": "../../core/data/severity/extractions",
+ "articles": 10,
+ "outcome_class": {
+  "jaccard_pooled": 0.875,
+  "articles_identical_sets": 8
+ },
+ "matched_pairs": 141,
+ "ref_keys": 153,
+ "other_keys": 154,
+ "coverage_ref_found_by_other": 0.922,
+ "coverage_other_found_by_ref": 0.916,
+ "direction_agreement": 0.957,
+ "significance_agreement": 0.922,
+ "both_agree": 0.894,
+ "significance_kappa": 0.863,
+ "per_article": [
+  {
+   "id": "CB006",
+   "classes_ref": [
+    "anaemia_grade",
+    "complicated",
+    "mortality",
+    "organ_dysfunction"
+   ],
+   "classes_other": [
+    "anaemia_grade",
+    "mortality",
+    "organ_dysfunction"
+   ],
+   "keys_ref": 20,
+   "keys_other": 15,
+   "matched": 15,
+   "same_direction": 14,
+   "same_significance": 11
+  },
+  {
+   "id": "CB017",
+   "classes_ref": [
+    "complicated"
+   ],
+   "classes_other": [
+    "complicated"
+   ],
+   "keys_ref": 12,
+   "keys_other": 12,
+   "matched": 12,
+   "same_direction": 12,
+   "same_significance": 10
+  },
+  {
+   "id": "CB040",
+   "classes_ref": [
+    "mortality",
+    "other"
+   ],
+   "classes_other": [
+    "anaemia_grade",
+    "mortality",
+    "other"
+   ],
+   "keys_ref": 42,
+   "keys_other": 49,
+   "matched": 39,
+   "same_direction": 37,
+   "same_significance": 34
+  },
+  {
+   "id": "CB050",
+   "classes_ref": [
+    "mortality"
+   ],
+   "classes_other": [
+    "mortality"
+   ],
+   "keys_ref": 5,
+   "keys_other": 5,
+   "matched": 5,
+   "same_direction": 5,
+   "same_significance": 5
+  },
+  {
+   "id": "CB053",
+   "classes_ref": [
+    "complicated"
+   ],
+   "classes_other": [
+    "complicated"
+   ],
+   "keys_ref": 8,
+   "keys_other": 8,
+   "matched": 8,
+   "same_direction": 8,
+   "same_significance": 8
+  },
+  {
+   "id": "CB141",
+   "classes_ref": [
+    "severity_grade"
+   ],
+   "classes_other": [
+    "severity_grade"
+   ],
+   "keys_ref": 13,
+   "keys_other": 13,
+   "matched": 13,
+   "same_direction": 12,
+   "same_significance": 13
+  },
+  {
+   "id": "CB145",
+   "classes_ref": [
+    "mortality"
+   ],
+   "classes_other": [
+    "mortality"
+   ],
+   "keys_ref": 16,
+   "keys_other": 16,
+   "matched": 16,
+   "same_direction": 16,
+   "same_significance": 16
+  },
+  {
+   "id": "CB202",
+   "classes_ref": [
+    "mortality"
+   ],
+   "classes_other": [
+    "mortality"
+   ],
+   "keys_ref": 14,
+   "keys_other": 13,
+   "matched": 13,
+   "same_direction": 12,
+   "same_significance": 13
+  },
+  {
+   "id": "CB238",
+   "classes_ref": [
+    "anaemia_grade",
+    "mortality"
+   ],
+   "classes_other": [
+    "anaemia_grade",
+    "mortality"
+   ],
+   "keys_ref": 9,
+   "keys_other": 9,
+   "matched": 6,
+   "same_direction": 5,
+   "same_significance": 6
+  },
+  {
+   "id": "CB263",
+   "classes_ref": [
+    "mortality"
+   ],
+   "classes_other": [
+    "mortality"
+   ],
+   "keys_ref": 14,
+   "keys_other": 14,
+   "matched": 14,
+   "same_direction": 14,
+   "same_significance": 14
+  }
+ ]
+}

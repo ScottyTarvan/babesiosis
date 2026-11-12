@@ -1,0 +1,100 @@
+:host {
+  display: block;
+}
+
+.fs-experiment-load {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.fs-experiment-load__tiles {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+  gap: var(--fs-guide-space-3);
+  margin: 0 0 var(--fs-guide-space-3);
+
+  div {
+    padding: var(--fs-guide-space-2) var(--fs-guide-space-3);
+    border-radius: 6px;
+    background: rgb(var(--fs-color-fill-subtle));
+  }
+
+  dt {
+    font-size: 11px;
+    font-weight: 500;
+    color: rgb(var(--fs-color-ink-soft));
+  }
+
+  dd {
+    margin: 2px 0 0;
+    font-size: 20px;
+    font-variant-numeric: tabular-nums;
+
+    small {
+      font-size: 11px;
+      color: rgb(var(--fs-color-ink-soft));
+    }
+  }
+}
+
+.fs-experiment-load__subhead {
+  margin: var(--fs-guide-space-3) 0 var(--fs-guide-space-2);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.fs-experiment-load__forest {
+  overflow-x: auto;
+
+  svg {
+    display: block;
+    font-size: 11px;
+  }
+
+  .zero {
+    stroke: rgb(var(--fs-color-ink-soft));
+    stroke-dasharray: 3 3;
+  }
+
+  .tick {
+    stroke: rgb(var(--fs-color-ink-soft));
+  }
+
+  .tick-label,
+  .sub {
+    fill: rgb(var(--fs-color-ink-soft));
+    font-size: 10px;
+  }
+
+  .label,
+  .value {
+    fill: rgb(var(--fs-color-ink));
+    font-variant-numeric: tabular-nums;
+  }
+
+  .ci {
+    stroke: rgb(var(--fs-color-ink));
+    stroke-width: 2;
+
+    &.dashed {
+      stroke-dasharray: 4 3;
+    }
+  }
+
+  .point {
+    fill: rgb(var(--fs-color-chart-1));
+  }
+}
+
+.fs-experiment-load__axis {
+  margin: 0 0 var(--fs-guide-space-2);
+  font-size: 11px;
+  color: rgb(var(--fs-color-ink-soft));
+}
+
+.fs-experiment-load__footnote {
+  margin: var(--fs-guide-space-2) 0 0;
+  font-size: 12px;
+  color: rgb(var(--fs-color-ink-soft));
+}

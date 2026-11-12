@@ -13,8 +13,9 @@ const models: Record<string, string> = {
 
 /**
  * Mirrors `AskArticleAgentController`: a 400 for an empty question, otherwise
- * one canned answer in the real shape (Markdown with [CODE] citations, resolved
- * citations, and a `conversation` that counts the turns). Ask a question
+ * one canned answer in the real shape (Markdown with [CODE] citations of articles,
+ * experiments and a clinical manual page, the resolved sources, and a
+ * `conversation` that counts the turns). Ask a question
  * containing "unavailable" to see the 503 the server returns when
  * AppSettings:AiAgents is off. Answers and articles are illustrative, not real.
  */
@@ -58,6 +59,11 @@ export const articlesAgentAskMock: MockRegistration<AskArticleAgentCommand, Arti
           '|---|---|',
           '| uNGAL | [CB124] |',
           '| Proteinuria | [CB024] |',
+          '',
+          'The clinical manual grades it by serum creatinine and lists fluids as the standard treatment '
+          + '(evidence level D) [SY05]. In the project\'s own analysis of S-CB050, age did not change the risk of '
+          + 'death: odds ratio 1.23 (0.34 to 4.15) [SV-05-01-age-death], and no line of explanation was supported '
+          + 'by a replicated result [SV-INT-01].',
         ].join('\n'),
         citations: [
           {
@@ -72,6 +78,19 @@ export const articlesAgentAskMock: MockRegistration<AskArticleAgentCommand, Arti
             articleId: 124, code: 'CB124', title: 'Diagnostic efficacy of urinary neutrophil gelatinase-associated lipocalin',
             year: 2024, sourceUrl: 'https://pubmed.ncbi.nlm.nih.gov/30000124/', hasFullText: false, sectionsRead: [],
           },
+        ],
+        experiments: [
+          {
+            code: 'SV-05-01-age-death', shortCode: 'SV-05-01', method: 'age_sex_contrast',
+            name: 'Age group and death in B. rossi (S-CB050): dogs under 12 months against older dogs',
+          },
+          {
+            code: 'SV-INT-01-integration-report', shortCode: 'SV-INT-01', method: 'integration_synthesis',
+            name: 'Integration: why some dogs develop severe babesiosis, across all experiment packages',
+          },
+        ],
+        clinicalPages: [
+          { id: 'SY05', title: 'Acute kidney injury', group: 'Organs' },
         ],
       },
       conversation: String(turn),

@@ -1,0 +1,107 @@
+:host {
+  display: block;
+}
+
+.fs-experiment-reaction-norm {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.fs-experiment-reaction-norm__headline {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--fs-guide-space-3) var(--fs-guide-space-5, 24px);
+  margin-bottom: var(--fs-guide-space-3);
+}
+
+.fs-experiment-reaction-norm__stat {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.fs-experiment-reaction-norm__stat-label {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: rgb(var(--fs-color-ink-soft));
+}
+
+.fs-experiment-reaction-norm__stat-value {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1.1;
+  font-variant-numeric: tabular-nums;
+  color: rgb(var(--fs-color-ink));
+
+  &--small {
+    font-size: 18px;
+    padding-top: 8px;
+  }
+}
+
+.fs-experiment-reaction-norm__status {
+  margin: 0 0 var(--fs-guide-space-2);
+}
+
+.fs-experiment-reaction-norm__text {
+  margin: 0 0 var(--fs-guide-space-3);
+  font-size: 13px;
+  line-height: 1.5;
+  color: rgb(var(--fs-color-ink));
+}
+
+.fs-experiment-reaction-norm__set {
+  margin: var(--fs-guide-space-3) 0 var(--fs-guide-space-2);
+  font-size: 13px;
+  font-weight: 600;
+  color: rgb(var(--fs-color-ink));
+
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+.fs-experiment-reaction-norm__checks {
+  display: flex;
+  flex-direction: column;
+  gap: var(--fs-guide-space-2);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  li {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--fs-guide-space-3);
+    font-size: 13px;
+    line-height: 1.45;
+    color: rgb(var(--fs-color-ink));
+  }
+
+  fs-badge {
+    flex: none;
+    min-width: 64px;
+  }
+}
+
+.fs-experiment-reaction-norm__footnote {
+  margin: var(--fs-guide-space-2) 0 0;
+  font-size: 11px;
+  line-height: 1.4;
+  color: rgb(var(--fs-color-ink-soft));
+}
+
+// The map tooltip is rendered by Apex outside this component's view.
+:host ::ng-deep .fs-experiment-reaction-norm__tip {
+  padding: 6px 8px;
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+.fs-experiment-reaction-norm__stat-sub {
+  font-size: 11px;
+  color: rgb(var(--fs-color-ink-soft));
+  font-variant-numeric: tabular-nums;
+}

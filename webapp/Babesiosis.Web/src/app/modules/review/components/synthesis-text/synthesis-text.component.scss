@@ -1,0 +1,89 @@
+:host {
+  display: block;
+}
+
+// The rendered Markdown: paragraphs, lists, tables and links, sized for reading.
+.fs-synthesis-text {
+  font-size: 14px;
+  line-height: 1.55;
+  color: rgb(var(--fs-color-ink));
+  overflow-wrap: anywhere;
+
+  ::ng-deep {
+    > :first-child { margin-top: 0; }
+    > :last-child { margin-bottom: 0; }
+
+    p,
+    ul,
+    ol,
+    pre,
+    table {
+      margin: 0 0 var(--fs-guide-space-3);
+    }
+
+    ul,
+    ol {
+      padding-left: 1.4em;
+    }
+
+    li + li {
+      margin-top: 4px;
+    }
+
+    h3,
+    h4,
+    h5,
+    h6 {
+      margin: var(--fs-guide-space-4) 0 var(--fs-guide-space-2);
+      font-size: 15px;
+      font-weight: 600;
+      color: rgb(var(--fs-color-ink-strong));
+    }
+
+    strong {
+      font-weight: 600;
+      color: rgb(var(--fs-color-ink-strong));
+    }
+
+    a {
+      color: rgb(var(--fs-color-primary-fg));
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+
+    code {
+      padding: 1px 4px;
+      border-radius: var(--fs-radius-sm);
+      background: rgb(var(--fs-color-line) / 0.6);
+    }
+
+    // Tables (QUESTIONS.md summary, some "Data available" sections) scroll inside the card.
+    table {
+      display: block;
+      max-width: 100%;
+      overflow-x: auto;
+      border-collapse: collapse;
+      font-size: 13px;
+    }
+
+    th,
+    td {
+      padding: 6px 10px;
+      border-bottom: 1px solid rgb(var(--fs-color-line));
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      font-weight: 600;
+      color: rgb(var(--fs-color-ink-strong));
+      background: rgb(var(--fs-color-fill-subtle));
+    }
+
+    hr {
+      border: 0;
+      border-top: 1px solid rgb(var(--fs-color-line));
+      margin: var(--fs-guide-space-3) 0;
+    }
+  }
+}

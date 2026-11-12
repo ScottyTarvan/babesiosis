@@ -1,0 +1,545 @@
+{
+ "dataset_id": "S-CB516",
+ "independent_source": "SRC-O",
+ "species": "B. canis",
+ "built_from": [
+  {
+   "file": "/core/data/raw/S-CB516/PMC4913656_supplementaryFiles.zip!JVIM-30-174-s001.pdf",
+   "sha256": "d72fb8b5fbc929e9fa43ea35fe3a0f7de9b19e1ee817067bab8a1f77f488551f"
+  },
+  {
+   "file": "/core/data/raw/S-CB516/PMC4913656_supplementaryFiles.zip!JVIM-30-174-s002.pdf",
+   "sha256": "25eff1d7ffcc48061d175a52a8c34e877d604389a16bb44ea001c8bf7ddeeb55"
+  }
+ ],
+ "variables": [
+  {
+   "name": "breed",
+   "unit": "text",
+   "original": "Breed",
+   "floor": null,
+   "ceiling": null
+  },
+  {
+   "name": "age_months",
+   "unit": "months",
+   "original": "Age (Y= Year; Mo=months)",
+   "floor": null,
+   "ceiling": null
+  },
+  {
+   "name": "sex",
+   "unit": "male/female",
+   "original": "Sex",
+   "floor": null,
+   "ceiling": null
+  },
+  {
+   "name": "neuter",
+   "unit": "intact/neutered",
+   "original": "Sex",
+   "floor": null,
+   "ceiling": null
+  },
+  {
+   "name": "weight_kg",
+   "unit": "kg",
+   "original": "Body weight [kg]",
+   "floor": null,
+   "ceiling": null
+  },
+  {
+   "name": "travel_location",
+   "unit": "text",
+   "original": "Assumed location of infection based on travel history",
+   "floor": null,
+   "ceiling": null
+  },
+  {
+   "name": "travel_abroad",
+   "unit": "0/1",
+   "original": "Assumed location of infection based on travel history",
+   "floor": null,
+   "ceiling": null
+  },
+  {
+   "name": "sign_lethargy",
+   "unit": "0/1",
+   "original": "Apathy / Lethargy",
+   "floor": null,
+   "ceiling": null
+  },
+  {
+   "name": "sign_pale_mm",
+   "unit": "0/1",
+   "original": "Pale mucous membranes",
+   "floor": null,
+   "ceiling": null
+  },
+  {
+   "name": "sign_pigmenturia",
+   "unit": "0/1",
+   "original": "Pigmenturia",
+   "floor": null,
+   "ceiling": null
+  },
+  {
+   "name": "sign_icterus",
+   "unit": "0/1",
+   "original": "Icterus",
+   "floor": null,
+   "ceiling": null
+  },
+  {
+   "name": "sign_fever",
+   "unit": "0/1",
+   "original": "Fieber",
+   "floor": null,
+   "ceiling": null
+  },
+  {
+   "name": "temp_c",
+   "unit": "degC",
+   "original": "Body temeprature [°C]",
+   "floor": null,
+   "ceiling": null
+  },
+  {
+   "name": "sign_anorexia",
+   "unit": "0/1",
+   "original": "Anorexia",
+   "floor": null,
+   "ceiling": null
+  },
+  {
+   "name": "sign_vomiting",
+   "unit": "0/1",
+   "original": "Vomiting",
+   "floor": null,
+   "ceiling": null
+  },
+  {
+   "name": "sign_water_hammer_pulse",
+   "unit": "0/1",
+   "original": "Water hammer pulse",
+   "floor": null,
+   "ceiling": null
+  },
+  {
+   "name": "sign_epistaxis",
+   "unit": "0/1",
+   "original": "Epistaxis",
+   "floor": null,
+   "ceiling": null
+  }
+ ],
+ "records": [
+  {
+   "dog_id": "S-CB516:d001",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "breed": "English Cocker Spaniel",
+    "age_months": 27,
+    "sex": "male",
+    "neuter": "intact",
+    "weight_kg": 13.2,
+    "travel_location": "Switzerland (no travel history)",
+    "travel_abroad": 0,
+    "sign_lethargy": 1,
+    "sign_pale_mm": 1,
+    "sign_pigmenturia": 0,
+    "sign_icterus": 0,
+    "sign_fever": 0,
+    "temp_c": 37.9,
+    "sign_anorexia": 1,
+    "sign_vomiting": 0,
+    "sign_water_hammer_pulse": 1,
+    "sign_epistaxis": 0
+   },
+   "censored": {}
+  },
+  {
+   "dog_id": "S-CB516:d002",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "breed": "Mix",
+    "age_months": 56,
+    "sex": "male",
+    "neuter": "intact",
+    "weight_kg": 9.5,
+    "travel_location": "France",
+    "travel_abroad": 1,
+    "sign_lethargy": 1,
+    "sign_pale_mm": 1,
+    "sign_pigmenturia": 1,
+    "sign_icterus": 0,
+    "sign_fever": 0,
+    "temp_c": 38.6,
+    "sign_anorexia": 0,
+    "sign_vomiting": 0,
+    "sign_water_hammer_pulse": 0,
+    "sign_epistaxis": 1
+   },
+   "censored": {}
+  },
+  {
+   "dog_id": "S-CB516:d003",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "breed": "West Highland White Terrier",
+    "age_months": 129,
+    "sex": "male",
+    "neuter": "neutered",
+    "weight_kg": 11.0,
+    "travel_location": "Hungary",
+    "travel_abroad": 1,
+    "sign_lethargy": 1,
+    "sign_pale_mm": 1,
+    "sign_pigmenturia": 0,
+    "sign_icterus": 1,
+    "sign_fever": 0,
+    "temp_c": 38.0,
+    "sign_anorexia": 0,
+    "sign_vomiting": 1,
+    "sign_water_hammer_pulse": 0,
+    "sign_epistaxis": 0
+   },
+   "censored": {}
+  },
+  {
+   "dog_id": "S-CB516:d004",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "breed": "Bergamasco",
+    "age_months": 55,
+    "sex": "male",
+    "neuter": "intact",
+    "weight_kg": 24.0,
+    "travel_location": "Serbia",
+    "travel_abroad": 1,
+    "sign_lethargy": 1,
+    "sign_pale_mm": 1,
+    "sign_pigmenturia": 1,
+    "sign_icterus": 1,
+    "sign_fever": 0,
+    "temp_c": 38.5,
+    "sign_anorexia": 1,
+    "sign_vomiting": 0,
+    "sign_water_hammer_pulse": 0,
+    "sign_epistaxis": 1
+   },
+   "censored": {}
+  },
+  {
+   "dog_id": "S-CB516:d005",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "breed": "Flat-Coated Retriever",
+    "age_months": 24,
+    "sex": "female",
+    "neuter": "intact",
+    "weight_kg": 29.0,
+    "travel_location": "Russia",
+    "travel_abroad": 1,
+    "sign_lethargy": 1,
+    "sign_pale_mm": 1,
+    "sign_pigmenturia": 0,
+    "sign_icterus": 0,
+    "sign_fever": 1,
+    "temp_c": 40.1,
+    "sign_anorexia": 0,
+    "sign_vomiting": 0,
+    "sign_water_hammer_pulse": 1,
+    "sign_epistaxis": 0
+   },
+   "censored": {}
+  },
+  {
+   "dog_id": "S-CB516:d006",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "breed": "Mix",
+    "age_months": 65,
+    "sex": "male",
+    "neuter": "intact",
+    "weight_kg": 15.9,
+    "travel_location": "France",
+    "travel_abroad": 1,
+    "sign_lethargy": 1,
+    "sign_pale_mm": 1,
+    "sign_pigmenturia": 1,
+    "sign_icterus": 0,
+    "sign_fever": 0,
+    "temp_c": 38.6,
+    "sign_anorexia": 0,
+    "sign_vomiting": 0,
+    "sign_water_hammer_pulse": 0,
+    "sign_epistaxis": 0
+   },
+   "censored": {}
+  },
+  {
+   "dog_id": "S-CB516:d007",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "breed": "Beagle",
+    "age_months": 65,
+    "sex": "male",
+    "neuter": "neutered",
+    "weight_kg": 15.8,
+    "travel_location": "Switzerland (no travel history)",
+    "travel_abroad": 0,
+    "sign_lethargy": 1,
+    "sign_pale_mm": 1,
+    "sign_pigmenturia": 1,
+    "sign_icterus": 0,
+    "sign_fever": 1,
+    "temp_c": 39.1,
+    "sign_anorexia": 0,
+    "sign_vomiting": 0,
+    "sign_water_hammer_pulse": 0,
+    "sign_epistaxis": 0
+   },
+   "censored": {}
+  },
+  {
+   "dog_id": "S-CB516:d008",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "breed": "German Pinscher",
+    "age_months": 57,
+    "sex": "female",
+    "neuter": null,
+    "weight_kg": 13.9,
+    "travel_location": "France",
+    "travel_abroad": 1,
+    "sign_lethargy": 1,
+    "sign_pale_mm": 1,
+    "sign_pigmenturia": 1,
+    "sign_icterus": 1,
+    "sign_fever": 0,
+    "temp_c": 38.0,
+    "sign_anorexia": 0,
+    "sign_vomiting": 1,
+    "sign_water_hammer_pulse": 0,
+    "sign_epistaxis": 0
+   },
+   "censored": {}
+  },
+  {
+   "dog_id": "S-CB516:d009",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "breed": "Greater Swiss Mountain Dog",
+    "age_months": 62,
+    "sex": "male",
+    "neuter": "neutered",
+    "weight_kg": 62.1,
+    "travel_location": "Switzerland (no travel history)",
+    "travel_abroad": 0,
+    "sign_lethargy": 1,
+    "sign_pale_mm": 1,
+    "sign_pigmenturia": 1,
+    "sign_icterus": 0,
+    "sign_fever": 1,
+    "temp_c": 39.7,
+    "sign_anorexia": 0,
+    "sign_vomiting": 0,
+    "sign_water_hammer_pulse": 0,
+    "sign_epistaxis": 0
+   },
+   "censored": {}
+  },
+  {
+   "dog_id": "S-CB516:d010",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "breed": "Pekingese",
+    "age_months": 31,
+    "sex": "male",
+    "neuter": null,
+    "weight_kg": 7.0,
+    "travel_location": "Croatia",
+    "travel_abroad": 1,
+    "sign_lethargy": 1,
+    "sign_pale_mm": 1,
+    "sign_pigmenturia": 1,
+    "sign_icterus": 1,
+    "sign_fever": 0,
+    "temp_c": 37.9,
+    "sign_anorexia": 0,
+    "sign_vomiting": 0,
+    "sign_water_hammer_pulse": 1,
+    "sign_epistaxis": 0
+   },
+   "censored": {}
+  },
+  {
+   "dog_id": "S-CB516:d011",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "breed": "Airedale Terrier",
+    "age_months": 108,
+    "sex": "female",
+    "neuter": "neutered",
+    "weight_kg": 20.7,
+    "travel_location": "Switzerland (no travel history)",
+    "travel_abroad": 0,
+    "sign_lethargy": 1,
+    "sign_pale_mm": 1,
+    "sign_pigmenturia": 0,
+    "sign_icterus": 0,
+    "sign_fever": 1,
+    "temp_c": 40.5,
+    "sign_anorexia": 0,
+    "sign_vomiting": 0,
+    "sign_water_hammer_pulse": 0,
+    "sign_epistaxis": 0
+   },
+   "censored": {}
+  },
+  {
+   "dog_id": "S-CB516:d012",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "breed": "German Shepherd",
+    "age_months": 83,
+    "sex": "female",
+    "neuter": "neutered",
+    "weight_kg": 38.5,
+    "travel_location": "Hungary",
+    "travel_abroad": 1,
+    "sign_lethargy": 1,
+    "sign_pale_mm": 1,
+    "sign_pigmenturia": 1,
+    "sign_icterus": 1,
+    "sign_fever": 0,
+    "temp_c": 37.8,
+    "sign_anorexia": 1,
+    "sign_vomiting": 1,
+    "sign_water_hammer_pulse": 0,
+    "sign_epistaxis": 0
+   },
+   "censored": {}
+  },
+  {
+   "dog_id": "S-CB516:d013",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "breed": "Yugoslavian Tricolour Hound",
+    "age_months": 7,
+    "sex": "female",
+    "neuter": "intact",
+    "weight_kg": 14.3,
+    "travel_location": "Switzerland (no travel history)",
+    "travel_abroad": 0,
+    "sign_lethargy": 1,
+    "sign_pale_mm": 1,
+    "sign_pigmenturia": 0,
+    "sign_icterus": 0,
+    "sign_fever": 0,
+    "temp_c": 38.5,
+    "sign_anorexia": 0,
+    "sign_vomiting": 0,
+    "sign_water_hammer_pulse": 1,
+    "sign_epistaxis": 0
+   },
+   "censored": {}
+  },
+  {
+   "dog_id": "S-CB516:d014",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "breed": "Bernese Mountain Dog",
+    "age_months": 60,
+    "sex": "male",
+    "neuter": "intact",
+    "weight_kg": 42.0,
+    "travel_location": "Switzerland (no travel history)",
+    "travel_abroad": 0,
+    "sign_lethargy": 1,
+    "sign_pale_mm": 1,
+    "sign_pigmenturia": 1,
+    "sign_icterus": 0,
+    "sign_fever": 1,
+    "temp_c": 39.5,
+    "sign_anorexia": 0,
+    "sign_vomiting": 0,
+    "sign_water_hammer_pulse": 0,
+    "sign_epistaxis": 1
+   },
+   "censored": {}
+  },
+  {
+   "dog_id": "S-CB516:d015",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "breed": "Beagle",
+    "age_months": 31,
+    "sex": "male",
+    "neuter": "intact",
+    "weight_kg": 13.3,
+    "travel_location": "France",
+    "travel_abroad": 1,
+    "sign_lethargy": 1,
+    "sign_pale_mm": 1,
+    "sign_pigmenturia": 1,
+    "sign_icterus": 1,
+    "sign_fever": 0,
+    "temp_c": 38.5,
+    "sign_anorexia": 1,
+    "sign_vomiting": 1,
+    "sign_water_hammer_pulse": 0,
+    "sign_epistaxis": 0
+   },
+   "censored": {}
+  }
+ ],
+ "cleaning_notes": [
+  "Source: supplemental file 1 (one-page PDF table), converted with xpdf pdftotext 4.00 in '-table' mode from a copy of the zip member in SV-G1/out/work/scb516/. The '-layout' mode scrambles the wrapped cells of this table; '-table' keeps each dog's row, with wrapped text (breed, sex, location) on the line above it. Fields were cut at the header column positions.",
+  "Supplemental file 2 (differential WBC counts) holds figure panels only; its text is the caption. No values were read from it. Its dog IDs (D1-3 experimental, N1-11 natural) cannot be linked to the '#' numbers of file 1.",
+  "One record per dog: the 15 naturally infected dogs, timepoint 'admission' (signs at admission per the article's results; the table gives no sampling time). The 3 experimental dogs of the article are not in file 1.",
+  "No laboratory values per dog are in the files (the article's lactate, haematology and biochemistry results are group summaries only).",
+  "Neutral dog_id from the table number '#'. The table is sorted by outcome (#1-8 died, #9-15 survived), so the original number carries the label; it is only in the outcomes file.",
+  "Age: text such as '6Y 11 Mo' converted to months (years x 12 + months).",
+  "Sex and neuter status from one cell: 'male gelded' and 'female neutered' -> neuter 'neutered'; 'intact' -> 'intact'. Neuter status is missing (null) for 2 dogs whose cell gives only the sex.",
+  "travel_location: the 'assumed location of infection based on travel history' as written; 'no travel history (Switzerland)' is stored as 'Switzerland (no travel history)'. travel_abroad = 1 if a foreign country is named.",
+  "Clinical signs are 0/1 as in the table (caption: 0 absent, 1 present). Lethargy and pale mucous membranes are present in all 15 dogs and carry no information.",
+  "Fever flag against body temperature: highest temperature with fever 0 is 38.6 degC, lowest with fever 1 is 39.1 degC; the threshold is not stated (inferred to lie between them). The flag is consistent with temp_c in every dog.",
+  "Severity labels and the features: the label here is death, not a complication score, so no clinical-sign column defines it. Note that icterus, pigmenturia (haemoglobinuria) and epistaxis (bleeding) appear as complications in other severity definitions (e.g. WHO-style 'complicated' babesiosis in S-CB017); they are kept as features and analysts using a complication-based label elsewhere should not treat them as independent of it.",
+  "Death: 8 dogs labelled 'Died' in file 1. The article says 6 died spontaneously within 24 h of admission and 2 were euthanised within 48 h for clinical deterioration; which 2 is not in the files. 'died' therefore includes euthanasia.",
+  "All dogs received imidocarb (3-6 mg/kg IM, some with doxycycline) after admission sampling per the article; not in the file.",
+  "Raw header typos ('Fieber', 'temeprature') are kept in the 'original' fields; the age typo 'Mio' is flagged below.",
+  "FLAG: S-CB516:d002: age written '4 Y 8 Mio' ('Mio' read as months, Mo)"
+ ]
+}

@@ -1,0 +1,4693 @@
+{
+ "experiment": {
+  "code": "SV-06-02-ds07-candidate-tests",
+  "name": "Human severity-mechanism proteins in the B. rossi serum proteome: complicated against uncomplicated (DS07)",
+  "description": "Do serum proteins of mechanisms linked to severity in human disease (haemolysis and haem scavenging, neutrophil granule proteins, fibrinolysis and anticoagulants, complement regulation) differ between complicated and uncomplicated B. rossi babesiosis in DS07? Hypothesis: at least one mechanism candidate differs at q < 0.05.",
+  "method": "proteome_candidate_test",
+  "dataset": null,
+  "parameters": {
+   "package": "SV-06",
+   "part": "b",
+   "role": "primary",
+   "datasets": [
+    "DS07"
+   ],
+   "independent_sources": [
+    "SRC-C"
+   ],
+   "species": "B. rossi",
+   "spec_sha256": "a23e9c00852211c91cf0b3789b50d1f1fb870579180ab955acb3f71bab6ab8e1",
+   "seed": 20261112,
+   "n_permutations": 10000,
+   "n_bootstrap": 2000,
+   "family": [
+    "P60524",
+    "A0A5F4DB38",
+    "F1PR54",
+    "C0LQL0",
+    "L7N0L3",
+    "E2R4V3",
+    "Q28278",
+    "E2RES2",
+    "A0A5F4BVG1",
+    "A0A1S7J0A8"
+   ],
+   "family_size": 10,
+   "fdr": "Benjamini-Hochberg",
+   "permutation": "labels inside each TMT plex",
+   "inputs_sha256": {
+    "DS07.features.json": "e847f243e8ef13dd0ab32a67cbb0b7fe3f69ddb487fedb62dc1d444f189e006b",
+    "DS07.outcomes.json": "596e092a2b3df0f95057347467d9d48295703a77b0fef62df2391e6db5eb5962"
+   },
+   "numpy": "2.3.4",
+   "handover": "/experiments/SV-06/a/out/candidates_for_partb.json"
+  },
+  "script": "/experiments/SV-06/b/scripts/analyse.py",
+  "script_version": "01362624de84",
+  "run_utc": "2026-11-12T15:52:40Z",
+  "n_subjects": 52,
+  "n_variables": 11,
+  "n_tests": 9,
+  "summary": "None of the 10 family proteins differs at q < 0.05 between 14 complicated and 18 uncomplicated dogs (9 tested; 2 with p < 0.05). The smallest p is haemoglobin beta: Cliff's delta +0.48 (+0.09 to +0.82), p 0.019, q 0.133. Positive controls lactoferrin and CD14 are higher in complicated dogs, as CB112 reported. 9 tests, 0 passed at q < 0.05."
+ },
+ "associations": [],
+ "cluster_assignments": [],
+ "results": [
+  {
+   "kind": "primary_result",
+   "title": "Primary result",
+   "sort_order": 1,
+   "payload": {
+    "label": "Complicated against uncomplicated B. rossi, plex-stratified permutation, BH over 10 proteins",
+    "verdict": "Not shown",
+    "statistic": "Cliff's delta (complicated vs uncomplicated) with 95% bootstrap interval",
+    "dataset": "DS07",
+    "independent_sources": 1,
+    "sources": [
+     "DS07 (SRC-C), B. rossi, archived serum, 11 TMT plexes"
+    ],
+    "n_comp": 14,
+    "n_unc": 18,
+    "n_ctrl": 20,
+    "family_size": 10,
+    "n_tested": 9,
+    "n_q05": 0,
+    "n_p05": 2,
+    "positive_controls_consistent": true,
+    "positive_controls": [
+     {
+      "protein": "Lactoferrin",
+      "delta": 0.4202,
+      "delta_lo": 0.0082,
+      "delta_hi": 0.8067,
+      "p": 0.0265,
+      "q": 0.1325
+     },
+     {
+      "protein": "CD14",
+      "delta": 0.4206,
+      "delta_lo": 0.0514,
+      "delta_hi": 0.7421,
+      "p": 0.07269,
+      "q": 0.2423
+     }
+    ],
+    "best": {
+     "key": "hbb",
+     "protein": "Haemoglobin beta",
+     "accession": "P60524",
+     "mechanism": "F1-01 cell-free haemoglobin",
+     "role": "mechanism",
+     "expected_direction": "higher",
+     "coverage_rule": "full",
+     "n_comp": 14,
+     "n_unc": 18,
+     "n_ctrl": 20,
+     "plexes_observed": [
+      "B1",
+      "B10",
+      "B11",
+      "B2",
+      "B3",
+      "B4",
+      "B5",
+      "B6",
+      "B7",
+      "B8",
+      "B9"
+     ],
+     "tested": true,
+     "median_comp": 0.3487,
+     "median_unc": -1.2563,
+     "median_ctrl": -1.3077,
+     "delta": 0.4762,
+     "delta_lo": 0.0871,
+     "delta_hi": 0.8177,
+     "hl_log2": 1.1735,
+     "hl_lo": 0.0835,
+     "hl_hi": 2.4175,
+     "hl_sd_units": 0.881,
+     "p_stratified": 0.0192,
+     "q_bh": 0.1325,
+     "presence_fisher_p": null,
+     "detectable_sd_a05": 1.0,
+     "detectable_sd_a005": 1.3
+    },
+    "best_mechanism": {
+     "key": "hbb",
+     "protein": "Haemoglobin beta",
+     "accession": "P60524",
+     "mechanism": "F1-01 cell-free haemoglobin",
+     "role": "mechanism",
+     "expected_direction": "higher",
+     "coverage_rule": "full",
+     "n_comp": 14,
+     "n_unc": 18,
+     "n_ctrl": 20,
+     "plexes_observed": [
+      "B1",
+      "B10",
+      "B11",
+      "B2",
+      "B3",
+      "B4",
+      "B5",
+      "B6",
+      "B7",
+      "B8",
+      "B9"
+     ],
+     "tested": true,
+     "median_comp": 0.3487,
+     "median_unc": -1.2563,
+     "median_ctrl": -1.3077,
+     "delta": 0.4762,
+     "delta_lo": 0.0871,
+     "delta_hi": 0.8177,
+     "hl_log2": 1.1735,
+     "hl_lo": 0.0835,
+     "hl_hi": 2.4175,
+     "hl_sd_units": 0.881,
+     "p_stratified": 0.0192,
+     "q_bh": 0.1325,
+     "presence_fisher_p": null,
+     "detectable_sd_a05": 1.0,
+     "detectable_sd_a005": 1.3
+    },
+    "headline": "None of the 10 family proteins differs at q < 0.05 between 14 complicated and 18 uncomplicated dogs (9 tested; 2 with p < 0.05). The smallest p is haemoglobin beta: Cliff's delta +0.48 (+0.09 to +0.82), p 0.019, q 0.133.",
+    "caveats": [
+     "One proteome, one source (SRC-C), no replication.",
+     "The complicated label includes anaemia and laboratory thresholds: haemoglobin and haptoglobin partly restate it.",
+     "No covariates (age, sex, treatment, time from onset, sample haemolysis) are in the files.",
+     "Detectable effect about 1.0 SD at alpha 0.05, about 1.3 SD after correction for 10 tests."
+    ]
+   }
+  },
+  {
+   "kind": "candidate_tests",
+   "title": "Family tests: complicated against uncomplicated",
+   "sort_order": 2,
+   "payload": {
+    "rows": [
+     {
+      "key": "hbb",
+      "protein": "Haemoglobin beta",
+      "accession": "P60524",
+      "mechanism": "F1-01 cell-free haemoglobin",
+      "role": "mechanism",
+      "expected_direction": "higher",
+      "coverage_rule": "full",
+      "n_comp": 14,
+      "n_unc": 18,
+      "n_ctrl": 20,
+      "plexes_observed": [
+       "B1",
+       "B10",
+       "B11",
+       "B2",
+       "B3",
+       "B4",
+       "B5",
+       "B6",
+       "B7",
+       "B8",
+       "B9"
+      ],
+      "tested": true,
+      "median_comp": 0.3487,
+      "median_unc": -1.2563,
+      "median_ctrl": -1.3077,
+      "delta": 0.4762,
+      "delta_lo": 0.0871,
+      "delta_hi": 0.8177,
+      "hl_log2": 1.1735,
+      "hl_lo": 0.0835,
+      "hl_hi": 2.4175,
+      "hl_sd_units": 0.881,
+      "p_stratified": 0.0192,
+      "q_bh": 0.1325,
+      "presence_fisher_p": null,
+      "detectable_sd_a05": 1.0,
+      "detectable_sd_a005": 1.3
+     },
+     {
+      "key": "hp",
+      "protein": "Haptoglobin (group master A0A5F4DB38)",
+      "accession": "A0A5F4DB38",
+      "mechanism": "F1-03 haptoglobin depletion",
+      "role": "mechanism",
+      "expected_direction": "lower",
+      "coverage_rule": "full",
+      "n_comp": 14,
+      "n_unc": 18,
+      "n_ctrl": 20,
+      "plexes_observed": [
+       "B1",
+       "B10",
+       "B11",
+       "B2",
+       "B3",
+       "B4",
+       "B5",
+       "B6",
+       "B7",
+       "B8",
+       "B9"
+      ],
+      "tested": true,
+      "median_comp": -0.2186,
+      "median_unc": -0.2855,
+      "median_ctrl": -0.4049,
+      "delta": 0.0833,
+      "delta_lo": -0.3413,
+      "delta_hi": 0.4683,
+      "hl_log2": 0.0867,
+      "hl_lo": -0.4972,
+      "hl_hi": 0.8552,
+      "hl_sd_units": 0.088,
+      "p_stratified": 0.71393,
+      "q_bh": 0.89241,
+      "presence_fisher_p": null,
+      "detectable_sd_a05": 1.0,
+      "detectable_sd_a005": 1.3
+     },
+     {
+      "key": "ltf",
+      "protein": "Lactoferrin",
+      "accession": "F1PR54",
+      "mechanism": "F3-03 neutrophil granule proteins",
+      "role": "positive_control",
+      "expected_direction": "higher",
+      "coverage_rule": "full",
+      "n_comp": 14,
+      "n_unc": 17,
+      "n_ctrl": 19,
+      "plexes_observed": [
+       "B1",
+       "B10",
+       "B2",
+       "B3",
+       "B4",
+       "B5",
+       "B6",
+       "B7",
+       "B8",
+       "B9"
+      ],
+      "tested": true,
+      "median_comp": 0.2877,
+      "median_unc": -0.3511,
+      "median_ctrl": -0.4481,
+      "delta": 0.4202,
+      "delta_lo": 0.0082,
+      "delta_hi": 0.8067,
+      "hl_log2": 0.5127,
+      "hl_lo": 0.0154,
+      "hl_hi": 0.8513,
+      "hl_sd_units": 0.875,
+      "p_stratified": 0.0265,
+      "q_bh": 0.1325,
+      "presence_fisher_p": null,
+      "detectable_sd_a05": 1.01,
+      "detectable_sd_a005": 1.32
+     },
+     {
+      "key": "s100a8",
+      "protein": "S100A8",
+      "accession": "C0LQL0",
+      "mechanism": "F3-03/F3-12 neutrophil granule proteins, calprotectin",
+      "role": "mechanism",
+      "expected_direction": "higher",
+      "coverage_rule": "full",
+      "n_comp": 10,
+      "n_unc": 16,
+      "n_ctrl": 16,
+      "plexes_observed": [
+       "B10",
+       "B11",
+       "B2",
+       "B3",
+       "B4",
+       "B5",
+       "B6",
+       "B7",
+       "B8"
+      ],
+      "tested": true,
+      "median_comp": 0.4695,
+      "median_unc": -0.2686,
+      "median_ctrl": -0.1449,
+      "delta": 0.425,
+      "delta_lo": -0.1,
+      "delta_hi": 0.925,
+      "hl_log2": 0.6476,
+      "hl_lo": -0.0907,
+      "hl_hi": 1.0674,
+      "hl_sd_units": 1.206,
+      "p_stratified": 0.11769,
+      "q_bh": 0.29423,
+      "presence_fisher_p": null,
+      "detectable_sd_a05": 1.13,
+      "detectable_sd_a005": 1.47
+     },
+     {
+      "key": "h4",
+      "protein": "Histone H4",
+      "accession": "L7N0L3",
+      "mechanism": "F3-02 extracellular histones",
+      "role": "mechanism",
+      "expected_direction": "higher",
+      "coverage_rule": "low coverage",
+      "n_comp": 4,
+      "n_unc": 2,
+      "n_ctrl": 4,
+      "plexes_observed": [
+       "B1",
+       "B9"
+      ],
+      "tested": false,
+      "median_comp": null,
+      "median_unc": null,
+      "median_ctrl": null,
+      "delta": null,
+      "delta_lo": null,
+      "delta_hi": null,
+      "hl_log2": null,
+      "hl_lo": null,
+      "hl_hi": null,
+      "hl_sd_units": null,
+      "p_stratified": null,
+      "q_bh": null,
+      "presence_fisher_p": 0.3649425287356322,
+      "detectable_sd_a05": null,
+      "detectable_sd_a005": null
+     },
+     {
+      "key": "serpinf2",
+      "protein": "Alpha-2-antiplasmin (SERPINF2)",
+      "accession": "E2R4V3",
+      "mechanism": "F4-03 fibrinolytic shutdown",
+      "role": "mechanism",
+      "expected_direction": "higher",
+      "coverage_rule": "full",
+      "n_comp": 14,
+      "n_unc": 18,
+      "n_ctrl": 20,
+      "plexes_observed": [
+       "B1",
+       "B10",
+       "B11",
+       "B2",
+       "B3",
+       "B4",
+       "B5",
+       "B6",
+       "B7",
+       "B8",
+       "B9"
+      ],
+      "tested": true,
+      "median_comp": 0.034,
+      "median_unc": 0.0503,
+      "median_ctrl": -0.056,
+      "delta": 0.0952,
+      "delta_lo": -0.3254,
+      "delta_hi": 0.4843,
+      "hl_log2": 0.03,
+      "hl_lo": -0.1163,
+      "hl_hi": 0.2767,
+      "hl_sd_units": 0.122,
+      "p_stratified": 0.56854,
+      "q_bh": 0.89241,
+      "presence_fisher_p": null,
+      "detectable_sd_a05": 1.0,
+      "detectable_sd_a005": 1.3
+     },
+     {
+      "key": "proc",
+      "protein": "Protein C",
+      "accession": "Q28278",
+      "mechanism": "F4-04 anticoagulant consumption",
+      "role": "mechanism",
+      "expected_direction": "lower",
+      "coverage_rule": "low coverage",
+      "n_comp": 7,
+      "n_unc": 9,
+      "n_ctrl": 9,
+      "plexes_observed": [
+       "B10",
+       "B2",
+       "B5",
+       "B6",
+       "B7"
+      ],
+      "tested": true,
+      "median_comp": 0.3595,
+      "median_unc": 0.184,
+      "median_ctrl": 0.0881,
+      "delta": 0.0159,
+      "delta_lo": -0.5556,
+      "delta_hi": 0.6825,
+      "hl_log2": 0.0254,
+      "hl_lo": -0.4269,
+      "hl_hi": 0.395,
+      "hl_sd_units": 0.066,
+      "p_stratified": 1.0,
+      "q_bh": 1.0,
+      "presence_fisher_p": 1.0,
+      "detectable_sd_a05": 1.41,
+      "detectable_sd_a005": 1.84
+     },
+     {
+      "key": "serpinc1",
+      "protein": "Antithrombin (SERPINC1)",
+      "accession": "E2RES2",
+      "mechanism": "F4-04 anticoagulant consumption",
+      "role": "mechanism",
+      "expected_direction": "lower",
+      "coverage_rule": "full",
+      "n_comp": 14,
+      "n_unc": 18,
+      "n_ctrl": 20,
+      "plexes_observed": [
+       "B1",
+       "B10",
+       "B11",
+       "B2",
+       "B3",
+       "B4",
+       "B5",
+       "B6",
+       "B7",
+       "B8",
+       "B9"
+      ],
+      "tested": true,
+      "median_comp": -0.1657,
+      "median_unc": -0.1723,
+      "median_ctrl": 0.0861,
+      "delta": -0.0754,
+      "delta_lo": -0.4644,
+      "delta_hi": 0.3413,
+      "hl_log2": -0.0329,
+      "hl_lo": -0.1813,
+      "hl_hi": 0.0881,
+      "hl_sd_units": -0.167,
+      "p_stratified": 0.71393,
+      "q_bh": 0.89241,
+      "presence_fisher_p": null,
+      "detectable_sd_a05": 1.0,
+      "detectable_sd_a005": 1.3
+     },
+     {
+      "key": "cfh",
+      "protein": "Complement factor H",
+      "accession": "A0A5F4BVG1",
+      "mechanism": "F7-12 complement regulation",
+      "role": "mechanism",
+      "expected_direction": "none stated",
+      "coverage_rule": "full",
+      "n_comp": 14,
+      "n_unc": 18,
+      "n_ctrl": 20,
+      "plexes_observed": [
+       "B1",
+       "B10",
+       "B11",
+       "B2",
+       "B3",
+       "B4",
+       "B5",
+       "B6",
+       "B7",
+       "B8",
+       "B9"
+      ],
+      "tested": true,
+      "median_comp": -0.0373,
+      "median_unc": 0.0293,
+      "median_ctrl": 0.0433,
+      "delta": -0.119,
+      "delta_lo": -0.5159,
+      "delta_hi": 0.2938,
+      "hl_log2": -0.0255,
+      "hl_lo": -0.1236,
+      "hl_hi": 0.0658,
+      "hl_sd_units": -0.21,
+      "p_stratified": 0.61394,
+      "q_bh": 0.89241,
+      "presence_fisher_p": null,
+      "detectable_sd_a05": 1.0,
+      "detectable_sd_a005": 1.3
+     },
+     {
+      "key": "cd14",
+      "protein": "CD14",
+      "accession": "A0A1S7J0A8",
+      "mechanism": "F7-05 monocyte activation",
+      "role": "positive_control",
+      "expected_direction": "higher",
+      "coverage_rule": "full",
+      "n_comp": 14,
+      "n_unc": 18,
+      "n_ctrl": 20,
+      "plexes_observed": [
+       "B1",
+       "B10",
+       "B11",
+       "B2",
+       "B3",
+       "B4",
+       "B5",
+       "B6",
+       "B7",
+       "B8",
+       "B9"
+      ],
+      "tested": true,
+      "median_comp": 0.4163,
+      "median_unc": 0.2332,
+      "median_ctrl": -0.2543,
+      "delta": 0.4206,
+      "delta_lo": 0.0514,
+      "delta_hi": 0.7421,
+      "hl_log2": 0.1764,
+      "hl_lo": 0.0112,
+      "hl_hi": 0.3482,
+      "hl_sd_units": 0.628,
+      "p_stratified": 0.07269,
+      "q_bh": 0.2423,
+      "presence_fisher_p": null,
+      "detectable_sd_a05": 1.0,
+      "detectable_sd_a005": 1.3
+     }
+    ],
+    "footnote": "DS07, SRC-C, B. rossi: 14 complicated vs 18 uncomplicated dogs; one species, one source. Value: log2 ratio to the plex's pooled standard. p: labels permuted inside each plex (10,000 permutations, seed 20261112); interval: 2,000 bootstrap resamples of dogs within each group. q: Benjamini-Hochberg over 10 proteins (an untested protein counts in the family size). Lactoferrin and CD14 are positive controls (CB112 reported them higher in complicated dogs)."
+   }
+  },
+  {
+   "kind": "dog_values",
+   "title": "Values by dog",
+   "sort_order": 3,
+   "payload": {
+    "proteins": [
+     {
+      "key": "hbb",
+      "label": "Haemoglobin beta",
+      "in_family": true,
+      "points": [
+       {
+        "dog_id": "DS07:d001",
+        "plex": "B8",
+        "group": "complicated",
+        "value": -2.258425
+       },
+       {
+        "dog_id": "DS07:d002",
+        "plex": "B5",
+        "group": "uncomplicated",
+        "value": -0.826233
+       },
+       {
+        "dog_id": "DS07:d003",
+        "plex": "B3",
+        "group": "complicated",
+        "value": -1.289827
+       },
+       {
+        "dog_id": "DS07:d004",
+        "plex": "B6",
+        "group": "uncomplicated",
+        "value": -1.965784
+       },
+       {
+        "dog_id": "DS07:d005",
+        "plex": "B9",
+        "group": "complicated",
+        "value": 0.601221
+       },
+       {
+        "dog_id": "DS07:d006",
+        "plex": "B8",
+        "group": "uncomplicated",
+        "value": -1.625934
+       },
+       {
+        "dog_id": "DS07:d007",
+        "plex": "B10",
+        "group": "control",
+        "value": -0.696658
+       },
+       {
+        "dog_id": "DS07:d008",
+        "plex": "B2",
+        "group": "uncomplicated",
+        "value": 0.605968
+       },
+       {
+        "dog_id": "DS07:d009",
+        "plex": "B2",
+        "group": "complicated",
+        "value": 1.661294
+       },
+       {
+        "dog_id": "DS07:d010",
+        "plex": "B8",
+        "group": "control",
+        "value": -1.56918
+       },
+       {
+        "dog_id": "DS07:d011",
+        "plex": "B6",
+        "group": "control",
+        "value": -1.498179
+       },
+       {
+        "dog_id": "DS07:d012",
+        "plex": "B10",
+        "group": "uncomplicated",
+        "value": -1.139236
+       },
+       {
+        "dog_id": "DS07:d013",
+        "plex": "B2",
+        "group": "complicated",
+        "value": -0.518701
+       },
+       {
+        "dog_id": "DS07:d014",
+        "plex": "B7",
+        "group": "control",
+        "value": -1.046921
+       },
+       {
+        "dog_id": "DS07:d015",
+        "plex": "B3",
+        "group": "control",
+        "value": -1.289827
+       },
+       {
+        "dog_id": "DS07:d016",
+        "plex": "B11",
+        "group": "control",
+        "value": -1.45799
+       },
+       {
+        "dog_id": "DS07:d017",
+        "plex": "B4",
+        "group": "control",
+        "value": -2.040972
+       },
+       {
+        "dog_id": "DS07:d018",
+        "plex": "B4",
+        "group": "complicated",
+        "value": 0.096262
+       },
+       {
+        "dog_id": "DS07:d019",
+        "plex": "B7",
+        "group": "complicated",
+        "value": 1.776946
+       },
+       {
+        "dog_id": "DS07:d020",
+        "plex": "B10",
+        "group": "complicated",
+        "value": 1.473008
+       },
+       {
+        "dog_id": "DS07:d021",
+        "plex": "B3",
+        "group": "uncomplicated",
+        "value": 1.010064
+       },
+       {
+        "dog_id": "DS07:d022",
+        "plex": "B4",
+        "group": "uncomplicated",
+        "value": -1.703689
+       },
+       {
+        "dog_id": "DS07:d023",
+        "plex": "B6",
+        "group": "complicated",
+        "value": -1.800877
+       },
+       {
+        "dog_id": "DS07:d024",
+        "plex": "B5",
+        "group": "control",
+        "value": -0.91866
+       },
+       {
+        "dog_id": "DS07:d025",
+        "plex": "B1",
+        "group": "complicated",
+        "value": 2.186184
+       },
+       {
+        "dog_id": "DS07:d026",
+        "plex": "B1",
+        "group": "control",
+        "value": -0.42082
+       },
+       {
+        "dog_id": "DS07:d027",
+        "plex": "B7",
+        "group": "uncomplicated",
+        "value": -0.962969
+       },
+       {
+        "dog_id": "DS07:d028",
+        "plex": "B5",
+        "group": "control",
+        "value": -0.988504
+       },
+       {
+        "dog_id": "DS07:d029",
+        "plex": "B7",
+        "group": "uncomplicated",
+        "value": -0.595097
+       },
+       {
+        "dog_id": "DS07:d030",
+        "plex": "B9",
+        "group": "uncomplicated",
+        "value": -1.373327
+       },
+       {
+        "dog_id": "DS07:d031",
+        "plex": "B10",
+        "group": "control",
+        "value": -1.265345
+       },
+       {
+        "dog_id": "DS07:d032",
+        "plex": "B10",
+        "group": "complicated",
+        "value": -1.09234
+       },
+       {
+        "dog_id": "DS07:d033",
+        "plex": "B5",
+        "group": "complicated",
+        "value": 1.768502
+       },
+       {
+        "dog_id": "DS07:d034",
+        "plex": "B1",
+        "group": "complicated",
+        "value": 0.799087
+       },
+       {
+        "dog_id": "DS07:d035",
+        "plex": "B1",
+        "group": "uncomplicated",
+        "value": -0.284546
+       },
+       {
+        "dog_id": "DS07:d036",
+        "plex": "B9",
+        "group": "control",
+        "value": -1.351074
+       },
+       {
+        "dog_id": "DS07:d037",
+        "plex": "B6",
+        "group": "uncomplicated",
+        "value": -1.625934
+       },
+       {
+        "dog_id": "DS07:d038",
+        "plex": "B4",
+        "group": "uncomplicated",
+        "value": -1.841663
+       },
+       {
+        "dog_id": "DS07:d039",
+        "plex": "B8",
+        "group": "control",
+        "value": -1.564905
+       },
+       {
+        "dog_id": "DS07:d040",
+        "plex": "B1",
+        "group": "control",
+        "value": -0.411195
+       },
+       {
+        "dog_id": "DS07:d041",
+        "plex": "B2",
+        "group": "control",
+        "value": -0.971431
+       },
+       {
+        "dog_id": "DS07:d042",
+        "plex": "B9",
+        "group": "control",
+        "value": -1.481969
+       },
+       {
+        "dog_id": "DS07:d043",
+        "plex": "B5",
+        "group": "uncomplicated",
+        "value": -0.438307
+       },
+       {
+        "dog_id": "DS07:d044",
+        "plex": "B3",
+        "group": "control",
+        "value": -1.595097
+       },
+       {
+        "dog_id": "DS07:d045",
+        "plex": "B2",
+        "group": "control",
+        "value": -0.894322
+       },
+       {
+        "dog_id": "DS07:d046",
+        "plex": "B3",
+        "group": "uncomplicated",
+        "value": -1.816037
+       },
+       {
+        "dog_id": "DS07:d047",
+        "plex": "B11",
+        "group": "uncomplicated",
+        "value": -1.608232
+       },
+       {
+        "dog_id": "DS07:d048",
+        "plex": "B6",
+        "group": "control",
+        "value": -1.795859
+       },
+       {
+        "dog_id": "DS07:d049",
+        "plex": "B7",
+        "group": "uncomplicated",
+        "value": 0.03984
+       },
+       {
+        "dog_id": "DS07:d050",
+        "plex": "B8",
+        "group": "uncomplicated",
+        "value": -2.300448
+       },
+       {
+        "dog_id": "DS07:d051",
+        "plex": "B9",
+        "group": "complicated",
+        "value": -1.09234
+       },
+       {
+        "dog_id": "DS07:d052",
+        "plex": "B4",
+        "group": "control",
+        "value": -1.325539
+       }
+      ]
+     },
+     {
+      "key": "hp",
+      "label": "Haptoglobin (group master A0A5F4DB38)",
+      "in_family": true,
+      "points": [
+       {
+        "dog_id": "DS07:d001",
+        "plex": "B8",
+        "group": "complicated",
+        "value": -0.599462
+       },
+       {
+        "dog_id": "DS07:d002",
+        "plex": "B5",
+        "group": "uncomplicated",
+        "value": 0.658097
+       },
+       {
+        "dog_id": "DS07:d003",
+        "plex": "B3",
+        "group": "complicated",
+        "value": -1.107803
+       },
+       {
+        "dog_id": "DS07:d004",
+        "plex": "B6",
+        "group": "uncomplicated",
+        "value": -1.867752
+       },
+       {
+        "dog_id": "DS07:d005",
+        "plex": "B9",
+        "group": "complicated",
+        "value": 0.195348
+       },
+       {
+        "dog_id": "DS07:d006",
+        "plex": "B8",
+        "group": "uncomplicated",
+        "value": 0.129613
+       },
+       {
+        "dog_id": "DS07:d007",
+        "plex": "B10",
+        "group": "control",
+        "value": -0.467932
+       },
+       {
+        "dog_id": "DS07:d008",
+        "plex": "B2",
+        "group": "uncomplicated",
+        "value": 0.58111
+       },
+       {
+        "dog_id": "DS07:d009",
+        "plex": "B2",
+        "group": "complicated",
+        "value": 0.642471
+       },
+       {
+        "dog_id": "DS07:d010",
+        "plex": "B8",
+        "group": "control",
+        "value": -1.547932
+       },
+       {
+        "dog_id": "DS07:d011",
+        "plex": "B6",
+        "group": "control",
+        "value": 0.701327
+       },
+       {
+        "dog_id": "DS07:d012",
+        "plex": "B10",
+        "group": "uncomplicated",
+        "value": -0.500218
+       },
+       {
+        "dog_id": "DS07:d013",
+        "plex": "B2",
+        "group": "complicated",
+        "value": -1.029146
+       },
+       {
+        "dog_id": "DS07:d014",
+        "plex": "B7",
+        "group": "control",
+        "value": -0.02327
+       },
+       {
+        "dog_id": "DS07:d015",
+        "plex": "B3",
+        "group": "control",
+        "value": -1.761213
+       },
+       {
+        "dog_id": "DS07:d016",
+        "plex": "B11",
+        "group": "control",
+        "value": 0.360645
+       },
+       {
+        "dog_id": "DS07:d017",
+        "plex": "B4",
+        "group": "control",
+        "value": -0.537424
+       },
+       {
+        "dog_id": "DS07:d018",
+        "plex": "B4",
+        "group": "complicated",
+        "value": -0.852042
+       },
+       {
+        "dog_id": "DS07:d019",
+        "plex": "B7",
+        "group": "complicated",
+        "value": 0.16221
+       },
+       {
+        "dog_id": "DS07:d020",
+        "plex": "B10",
+        "group": "complicated",
+        "value": 0.732052
+       },
+       {
+        "dog_id": "DS07:d021",
+        "plex": "B3",
+        "group": "uncomplicated",
+        "value": 0.596458
+       },
+       {
+        "dog_id": "DS07:d022",
+        "plex": "B4",
+        "group": "uncomplicated",
+        "value": -2.32916
+       },
+       {
+        "dog_id": "DS07:d023",
+        "plex": "B6",
+        "group": "complicated",
+        "value": -0.790859
+       },
+       {
+        "dog_id": "DS07:d024",
+        "plex": "B5",
+        "group": "control",
+        "value": -0.055891
+       },
+       {
+        "dog_id": "DS07:d025",
+        "plex": "B1",
+        "group": "complicated",
+        "value": 1.208517
+       },
+       {
+        "dog_id": "DS07:d026",
+        "plex": "B1",
+        "group": "control",
+        "value": -0.481969
+       },
+       {
+        "dog_id": "DS07:d027",
+        "plex": "B7",
+        "group": "uncomplicated",
+        "value": 1.312665
+       },
+       {
+        "dog_id": "DS07:d028",
+        "plex": "B5",
+        "group": "control",
+        "value": -1.314733
+       },
+       {
+        "dog_id": "DS07:d029",
+        "plex": "B7",
+        "group": "uncomplicated",
+        "value": -0.905088
+       },
+       {
+        "dog_id": "DS07:d030",
+        "plex": "B9",
+        "group": "uncomplicated",
+        "value": 0.465713
+       },
+       {
+        "dog_id": "DS07:d031",
+        "plex": "B10",
+        "group": "control",
+        "value": 0.402722
+       },
+       {
+        "dog_id": "DS07:d032",
+        "plex": "B10",
+        "group": "complicated",
+        "value": -1.434403
+       },
+       {
+        "dog_id": "DS07:d033",
+        "plex": "B5",
+        "group": "complicated",
+        "value": 1.119024
+       },
+       {
+        "dog_id": "DS07:d034",
+        "plex": "B1",
+        "group": "complicated",
+        "value": 0.228973
+       },
+       {
+        "dog_id": "DS07:d035",
+        "plex": "B1",
+        "group": "uncomplicated",
+        "value": 0.659011
+       },
+       {
+        "dog_id": "DS07:d036",
+        "plex": "B9",
+        "group": "control",
+        "value": -0.852042
+       },
+       {
+        "dog_id": "DS07:d037",
+        "plex": "B6",
+        "group": "uncomplicated",
+        "value": -0.358454
+       },
+       {
+        "dog_id": "DS07:d038",
+        "plex": "B4",
+        "group": "uncomplicated",
+        "value": -2.132894
+       },
+       {
+        "dog_id": "DS07:d039",
+        "plex": "B8",
+        "group": "control",
+        "value": -0.28279
+       },
+       {
+        "dog_id": "DS07:d040",
+        "plex": "B1",
+        "group": "control",
+        "value": -1.526992
+       },
+       {
+        "dog_id": "DS07:d041",
+        "plex": "B2",
+        "group": "control",
+        "value": -0.341903
+       },
+       {
+        "dog_id": "DS07:d042",
+        "plex": "B9",
+        "group": "control",
+        "value": 0.347099
+       },
+       {
+        "dog_id": "DS07:d043",
+        "plex": "B5",
+        "group": "uncomplicated",
+        "value": -0.664288
+       },
+       {
+        "dog_id": "DS07:d044",
+        "plex": "B3",
+        "group": "control",
+        "value": -0.168123
+       },
+       {
+        "dog_id": "DS07:d045",
+        "plex": "B2",
+        "group": "control",
+        "value": 0.102994
+       },
+       {
+        "dog_id": "DS07:d046",
+        "plex": "B3",
+        "group": "uncomplicated",
+        "value": -1.494109
+       },
+       {
+        "dog_id": "DS07:d047",
+        "plex": "B11",
+        "group": "uncomplicated",
+        "value": -1.029146
+       },
+       {
+        "dog_id": "DS07:d048",
+        "plex": "B6",
+        "group": "control",
+        "value": -2.164884
+       },
+       {
+        "dog_id": "DS07:d049",
+        "plex": "B7",
+        "group": "uncomplicated",
+        "value": -0.212568
+       },
+       {
+        "dog_id": "DS07:d050",
+        "plex": "B8",
+        "group": "uncomplicated",
+        "value": 0.614474
+       },
+       {
+        "dog_id": "DS07:d051",
+        "plex": "B9",
+        "group": "complicated",
+        "value": -0.778432
+       },
+       {
+        "dog_id": "DS07:d052",
+        "plex": "B4",
+        "group": "control",
+        "value": -0.965784
+       }
+      ]
+     },
+     {
+      "key": "ltf",
+      "label": "Lactoferrin",
+      "in_family": true,
+      "points": [
+       {
+        "dog_id": "DS07:d001",
+        "plex": "B8",
+        "group": "complicated",
+        "value": -1.217591
+       },
+       {
+        "dog_id": "DS07:d002",
+        "plex": "B5",
+        "group": "uncomplicated",
+        "value": -0.158429
+       },
+       {
+        "dog_id": "DS07:d003",
+        "plex": "B3",
+        "group": "complicated",
+        "value": 0.320773
+       },
+       {
+        "dog_id": "DS07:d004",
+        "plex": "B6",
+        "group": "uncomplicated",
+        "value": 0.476122
+       },
+       {
+        "dog_id": "DS07:d005",
+        "plex": "B9",
+        "group": "complicated",
+        "value": 0.238787
+       },
+       {
+        "dog_id": "DS07:d006",
+        "plex": "B8",
+        "group": "uncomplicated",
+        "value": -0.72738
+       },
+       {
+        "dog_id": "DS07:d007",
+        "plex": "B10",
+        "group": "control",
+        "value": -0.362158
+       },
+       {
+        "dog_id": "DS07:d008",
+        "plex": "B2",
+        "group": "uncomplicated",
+        "value": 0.558757
+       },
+       {
+        "dog_id": "DS07:d009",
+        "plex": "B2",
+        "group": "complicated",
+        "value": -0.265345
+       },
+       {
+        "dog_id": "DS07:d010",
+        "plex": "B8",
+        "group": "control",
+        "value": -0.070967
+       },
+       {
+        "dog_id": "DS07:d011",
+        "plex": "B6",
+        "group": "control",
+        "value": -0.899695
+       },
+       {
+        "dog_id": "DS07:d012",
+        "plex": "B10",
+        "group": "uncomplicated",
+        "value": 0.069015
+       },
+       {
+        "dog_id": "DS07:d013",
+        "plex": "B2",
+        "group": "complicated",
+        "value": 0.144046
+       },
+       {
+        "dog_id": "DS07:d014",
+        "plex": "B7",
+        "group": "control",
+        "value": -1.465938
+       },
+       {
+        "dog_id": "DS07:d015",
+        "plex": "B3",
+        "group": "control",
+        "value": 0.195348
+       },
+       {
+        "dog_id": "DS07:d016",
+        "plex": "B11",
+        "group": "control",
+        "value": null
+       },
+       {
+        "dog_id": "DS07:d017",
+        "plex": "B4",
+        "group": "control",
+        "value": 0.437228
+       },
+       {
+        "dog_id": "DS07:d018",
+        "plex": "B4",
+        "group": "complicated",
+        "value": 0.946357
+       },
+       {
+        "dog_id": "DS07:d019",
+        "plex": "B7",
+        "group": "complicated",
+        "value": 0.553852
+       },
+       {
+        "dog_id": "DS07:d020",
+        "plex": "B10",
+        "group": "complicated",
+        "value": 0.648926
+       },
+       {
+        "dog_id": "DS07:d021",
+        "plex": "B3",
+        "group": "uncomplicated",
+        "value": 0.519039
+       },
+       {
+        "dog_id": "DS07:d022",
+        "plex": "B4",
+        "group": "uncomplicated",
+        "value": -0.463947
+       },
+       {
+        "dog_id": "DS07:d023",
+        "plex": "B6",
+        "group": "complicated",
+        "value": 0.254594
+       },
+       {
+        "dog_id": "DS07:d024",
+        "plex": "B5",
+        "group": "control",
+        "value": -0.21927
+       },
+       {
+        "dog_id": "DS07:d025",
+        "plex": "B1",
+        "group": "complicated",
+        "value": 0.54893
+       },
+       {
+        "dog_id": "DS07:d026",
+        "plex": "B1",
+        "group": "control",
+        "value": -0.150401
+       },
+       {
+        "dog_id": "DS07:d027",
+        "plex": "B7",
+        "group": "uncomplicated",
+        "value": -0.403542
+       },
+       {
+        "dog_id": "DS07:d028",
+        "plex": "B5",
+        "group": "control",
+        "value": -0.215915
+       },
+       {
+        "dog_id": "DS07:d029",
+        "plex": "B7",
+        "group": "uncomplicated",
+        "value": -0.171368
+       },
+       {
+        "dog_id": "DS07:d030",
+        "plex": "B9",
+        "group": "uncomplicated",
+        "value": -0.562772
+       },
+       {
+        "dog_id": "DS07:d031",
+        "plex": "B10",
+        "group": "control",
+        "value": -0.168123
+       },
+       {
+        "dog_id": "DS07:d032",
+        "plex": "B10",
+        "group": "complicated",
+        "value": 0.520045
+       },
+       {
+        "dog_id": "DS07:d033",
+        "plex": "B5",
+        "group": "complicated",
+        "value": 0.108357
+       },
+       {
+        "dog_id": "DS07:d034",
+        "plex": "B1",
+        "group": "complicated",
+        "value": 1.187134
+       },
+       {
+        "dog_id": "DS07:d035",
+        "plex": "B1",
+        "group": "uncomplicated",
+        "value": -0.192645
+       },
+       {
+        "dog_id": "DS07:d036",
+        "plex": "B9",
+        "group": "control",
+        "value": -0.746616
+       },
+       {
+        "dog_id": "DS07:d037",
+        "plex": "B6",
+        "group": "uncomplicated",
+        "value": 0.67717
+       },
+       {
+        "dog_id": "DS07:d038",
+        "plex": "B4",
+        "group": "uncomplicated",
+        "value": -0.382702
+       },
+       {
+        "dog_id": "DS07:d039",
+        "plex": "B8",
+        "group": "control",
+        "value": -0.937878
+       },
+       {
+        "dog_id": "DS07:d040",
+        "plex": "B1",
+        "group": "control",
+        "value": -0.448115
+       },
+       {
+        "dog_id": "DS07:d041",
+        "plex": "B2",
+        "group": "control",
+        "value": -0.456009
+       },
+       {
+        "dog_id": "DS07:d042",
+        "plex": "B9",
+        "group": "control",
+        "value": -0.200913
+       },
+       {
+        "dog_id": "DS07:d043",
+        "plex": "B5",
+        "group": "uncomplicated",
+        "value": -0.356606
+       },
+       {
+        "dog_id": "DS07:d044",
+        "plex": "B3",
+        "group": "control",
+        "value": -0.76366
+       },
+       {
+        "dog_id": "DS07:d045",
+        "plex": "B2",
+        "group": "control",
+        "value": -0.614845
+       },
+       {
+        "dog_id": "DS07:d046",
+        "plex": "B3",
+        "group": "uncomplicated",
+        "value": -0.510457
+       },
+       {
+        "dog_id": "DS07:d047",
+        "plex": "B11",
+        "group": "uncomplicated",
+        "value": null
+       },
+       {
+        "dog_id": "DS07:d048",
+        "plex": "B6",
+        "group": "control",
+        "value": -0.694321
+       },
+       {
+        "dog_id": "DS07:d049",
+        "plex": "B7",
+        "group": "uncomplicated",
+        "value": -0.351074
+       },
+       {
+        "dog_id": "DS07:d050",
+        "plex": "B8",
+        "group": "uncomplicated",
+        "value": -0.83908
+       },
+       {
+        "dog_id": "DS07:d051",
+        "plex": "B9",
+        "group": "complicated",
+        "value": -0.962969
+       },
+       {
+        "dog_id": "DS07:d052",
+        "plex": "B4",
+        "group": "control",
+        "value": -0.492079
+       }
+      ]
+     },
+     {
+      "key": "s100a8",
+      "label": "S100A8",
+      "in_family": true,
+      "points": [
+       {
+        "dog_id": "DS07:d001",
+        "plex": "B8",
+        "group": "complicated",
+        "value": -0.405451
+       },
+       {
+        "dog_id": "DS07:d002",
+        "plex": "B5",
+        "group": "uncomplicated",
+        "value": -0.732165
+       },
+       {
+        "dog_id": "DS07:d003",
+        "plex": "B3",
+        "group": "complicated",
+        "value": -0.531156
+       },
+       {
+        "dog_id": "DS07:d004",
+        "plex": "B6",
+        "group": "uncomplicated",
+        "value": -0.118727
+       },
+       {
+        "dog_id": "DS07:d005",
+        "plex": "B9",
+        "group": "complicated",
+        "value": null
+       },
+       {
+        "dog_id": "DS07:d006",
+        "plex": "B8",
+        "group": "uncomplicated",
+        "value": -0.200913
+       },
+       {
+        "dog_id": "DS07:d007",
+        "plex": "B10",
+        "group": "control",
+        "value": 0.200379
+       },
+       {
+        "dog_id": "DS07:d008",
+        "plex": "B2",
+        "group": "uncomplicated",
+        "value": 0.240009
+       },
+       {
+        "dog_id": "DS07:d009",
+        "plex": "B2",
+        "group": "complicated",
+        "value": 0.50284
+       },
+       {
+        "dog_id": "DS07:d010",
+        "plex": "B8",
+        "group": "control",
+        "value": 1.060739
+       },
+       {
+        "dog_id": "DS07:d011",
+        "plex": "B6",
+        "group": "control",
+        "value": -0.295128
+       },
+       {
+        "dog_id": "DS07:d012",
+        "plex": "B10",
+        "group": "uncomplicated",
+        "value": -0.434403
+       },
+       {
+        "dog_id": "DS07:d013",
+        "plex": "B2",
+        "group": "complicated",
+        "value": -0.662004
+       },
+       {
+        "dog_id": "DS07:d014",
+        "plex": "B7",
+        "group": "control",
+        "value": -0.54372
+       },
+       {
+        "dog_id": "DS07:d015",
+        "plex": "B3",
+        "group": "control",
+        "value": -0.046921
+       },
+       {
+        "dog_id": "DS07:d016",
+        "plex": "B11",
+        "group": "control",
+        "value": -0.02034
+       },
+       {
+        "dog_id": "DS07:d017",
+        "plex": "B4",
+        "group": "control",
+        "value": 0.126973
+       },
+       {
+        "dog_id": "DS07:d018",
+        "plex": "B4",
+        "group": "complicated",
+        "value": 0.645241
+       },
+       {
+        "dog_id": "DS07:d019",
+        "plex": "B7",
+        "group": "complicated",
+        "value": 0.436162
+       },
+       {
+        "dog_id": "DS07:d020",
+        "plex": "B10",
+        "group": "complicated",
+        "value": 0.78576
+       },
+       {
+        "dog_id": "DS07:d021",
+        "plex": "B3",
+        "group": "uncomplicated",
+        "value": -0.039488
+       },
+       {
+        "dog_id": "DS07:d022",
+        "plex": "B4",
+        "group": "uncomplicated",
+        "value": -0.311148
+       },
+       {
+        "dog_id": "DS07:d023",
+        "plex": "B6",
+        "group": "complicated",
+        "value": -0.074001
+       },
+       {
+        "dog_id": "DS07:d024",
+        "plex": "B5",
+        "group": "control",
+        "value": -0.039488
+       },
+       {
+        "dog_id": "DS07:d025",
+        "plex": "B1",
+        "group": "complicated",
+        "value": null
+       },
+       {
+        "dog_id": "DS07:d026",
+        "plex": "B1",
+        "group": "control",
+        "value": null
+       },
+       {
+        "dog_id": "DS07:d027",
+        "plex": "B7",
+        "group": "uncomplicated",
+        "value": -0.09234
+       },
+       {
+        "dog_id": "DS07:d028",
+        "plex": "B5",
+        "group": "control",
+        "value": -0.242977
+       },
+       {
+        "dog_id": "DS07:d029",
+        "plex": "B7",
+        "group": "uncomplicated",
+        "value": -0.226004
+       },
+       {
+        "dog_id": "DS07:d030",
+        "plex": "B9",
+        "group": "uncomplicated",
+        "value": null
+       },
+       {
+        "dog_id": "DS07:d031",
+        "plex": "B10",
+        "group": "control",
+        "value": -0.325539
+       },
+       {
+        "dog_id": "DS07:d032",
+        "plex": "B10",
+        "group": "complicated",
+        "value": 1.532068
+       },
+       {
+        "dog_id": "DS07:d033",
+        "plex": "B5",
+        "group": "complicated",
+        "value": 0.828632
+       },
+       {
+        "dog_id": "DS07:d034",
+        "plex": "B1",
+        "group": "complicated",
+        "value": null
+       },
+       {
+        "dog_id": "DS07:d035",
+        "plex": "B1",
+        "group": "uncomplicated",
+        "value": null
+       },
+       {
+        "dog_id": "DS07:d036",
+        "plex": "B9",
+        "group": "control",
+        "value": null
+       },
+       {
+        "dog_id": "DS07:d037",
+        "plex": "B6",
+        "group": "uncomplicated",
+        "value": -0.017417
+       },
+       {
+        "dog_id": "DS07:d038",
+        "plex": "B4",
+        "group": "uncomplicated",
+        "value": -0.526992
+       },
+       {
+        "dog_id": "DS07:d039",
+        "plex": "B8",
+        "group": "control",
+        "value": -0.498179
+       },
+       {
+        "dog_id": "DS07:d040",
+        "plex": "B1",
+        "group": "control",
+        "value": null
+       },
+       {
+        "dog_id": "DS07:d041",
+        "plex": "B2",
+        "group": "control",
+        "value": -0.254978
+       },
+       {
+        "dog_id": "DS07:d042",
+        "plex": "B9",
+        "group": "control",
+        "value": null
+       },
+       {
+        "dog_id": "DS07:d043",
+        "plex": "B5",
+        "group": "uncomplicated",
+        "value": -0.438307
+       },
+       {
+        "dog_id": "DS07:d044",
+        "plex": "B3",
+        "group": "control",
+        "value": -0.032094
+       },
+       {
+        "dog_id": "DS07:d045",
+        "plex": "B2",
+        "group": "control",
+        "value": 0.237564
+       },
+       {
+        "dog_id": "DS07:d046",
+        "plex": "B3",
+        "group": "uncomplicated",
+        "value": -0.362158
+       },
+       {
+        "dog_id": "DS07:d047",
+        "plex": "B11",
+        "group": "uncomplicated",
+        "value": -0.314733
+       },
+       {
+        "dog_id": "DS07:d048",
+        "plex": "B6",
+        "group": "control",
+        "value": -0.45799
+       },
+       {
+        "dog_id": "DS07:d049",
+        "plex": "B7",
+        "group": "uncomplicated",
+        "value": -0.362158
+       },
+       {
+        "dog_id": "DS07:d050",
+        "plex": "B8",
+        "group": "uncomplicated",
+        "value": 0.060739
+       },
+       {
+        "dog_id": "DS07:d051",
+        "plex": "B9",
+        "group": "complicated",
+        "value": null
+       },
+       {
+        "dog_id": "DS07:d052",
+        "plex": "B4",
+        "group": "control",
+        "value": -0.432455
+       }
+      ]
+     },
+     {
+      "key": "h4",
+      "label": "Histone H4",
+      "in_family": true,
+      "points": [
+       {
+        "dog_id": "DS07:d001",
+        "plex": "B8",
+        "group": "complicated",
+        "value": null
+       },
+       {
+        "dog_id": "DS07:d002",
+        "plex": "B5",
+        "group": "uncomplicated",
+        "value": null
+       },
+       {
+        "dog_id": "DS07:d003",
+        "plex": "B3",
+        "group": "complicated",
+        "value": null
+       },
+       {
+        "dog_id": "DS07:d004",
+        "plex": "B6",
+        "group": "uncomplicated",
+        "value": null
+       },
+       {
+        "dog_id": "DS07:d005",
+        "plex": "B9",
+        "group": "complicated",
+        "value": 0.595504
+       },
+       {
+        "dog_id": "DS07:d006",
+        "plex": "B8",
+        "group": "uncomplicated",
+        "value": null
+       },
+       {
+        "dog_id": "DS07:d007",
+        "plex": "B10",
+        "group": "control",
+        "value": null
+       },
+       {
+        "dog_id": "DS07:d008",
+        "plex": "B2",
+        "group": "uncomplicated",
+        "value": null
+       },
+       {
+        "dog_id": "DS07:d009",
+        "plex": "B2",
+        "group": "complicated",
+        "value": null
+       },
+       {
+        "dog_id": "DS07:d010",
+        "plex": "B8",
+        "group": "control",
+        "value": null
+       },
+       {
+        "dog_id": "DS07:d011",
+        "plex": "B6",
+        "group": "control",
+        "value": null
+       },
+       {
+        "dog_id": "DS07:d012",
+        "plex": "B10",
+        "group": "uncomplicated",
+        "value": null
+       },
+       {
+        "dog_id": "DS07:d013",
+        "plex": "B2",
+        "group": "complicated",
+        "value": null
+       },
+       {
+        "dog_id": "DS07:d014",
+        "plex": "B7",
+        "group": "control",
+        "value": null
+       },
+       {
+        "dog_id": "DS07:d015",
+        "plex": "B3",
+        "group": "control",
+        "value": null
+       },
+       {
+        "dog_id": "DS07:d016",
+        "plex": "B11",
+        "group": "control",
+        "value": null
+       },
+       {
+        "dog_id": "DS07:d017",
+        "plex": "B4",
+        "group": "control",
+        "value": null
+       },
+       {
+        "dog_id": "DS07:d018",
+        "plex": "B4",
+        "group": "complicated",
+        "value": null
+       },
+       {
+        "dog_id": "DS07:d019",
+        "plex": "B7",
+        "group": "complicated",
+        "value": null
+       },
+       {
+        "dog_id": "DS07:d020",
+        "plex": "B10",
+        "group": "complicated",
+        "value": null
+       },
+       {
+        "dog_id": "DS07:d021",
+        "plex": "B3",
+        "group": "uncomplicated",
+        "value": null
+       },
+       {
+        "dog_id": "DS07:d022",
+        "plex": "B4",
+        "group": "uncomplicated",
+        "value": null
+       },
+       {
+        "dog_id": "DS07:d023",
+        "plex": "B6",
+        "group": "complicated",
+        "value": null
+       },
+       {
+        "dog_id": "DS07:d024",
+        "plex": "B5",
+        "group": "control",
+        "value": null
+       },
+       {
+        "dog_id": "DS07:d025",
+        "plex": "B1",
+        "group": "complicated",
+        "value": 0.263034
+       },
+       {
+        "dog_id": "DS07:d026",
+        "plex": "B1",
+        "group": "control",
+        "value": 0.24732
+       },
+       {
+        "dog_id": "DS07:d027",
+        "plex": "B7",
+        "group": "uncomplicated",
+        "value": null
+       },
+       {
+        "dog_id": "DS07:d028",
+        "plex": "B5",
+        "group": "control",
+        "value": null
+       },
+       {
+        "dog_id": "DS07:d029",
+        "plex": "B7",
+        "group": "uncomplicated",
+        "value": null
+       },
+       {
+        "dog_id": "DS07:d030",
+        "plex": "B9",
+        "group": "uncomplicated",
+        "value": 0.342555
+       },
+       {
+        "dog_id": "DS07:d031",
+        "plex": "B10",
+        "group": "control",
+        "value": null
+       },
+       {
+        "dog_id": "DS07:d032",
+        "plex": "B10",
+        "group": "complicated",
+        "value": null
+       },
+       {
+        "dog_id": "DS07:d033",
+        "plex": "B5",
+        "group": "complicated",
+        "value": null
+       },
+       {
+        "dog_id": "DS07:d034",
+        "plex": "B1",
+        "group": "complicated",
+        "value": -0.403542
+       },
+       {
+        "dog_id": "DS07:d035",
+        "plex": "B1",
+        "group": "uncomplicated",
+        "value": -0.312939
+       },
+       {
+        "dog_id": "DS07:d036",
+        "plex": "B9",
+        "group": "control",
+        "value": 0.03984
+       },
+       {
+        "dog_id": "DS07:d037",
+        "plex": "B6",
+        "group": "uncomplicated",
+        "value": null
+       },
+       {
+        "dog_id": "DS07:d038",
+        "plex": "B4",
+        "group": "uncomplicated",
+        "value": null
+       },
+       {
+        "dog_id": "DS07:d039",
+        "plex": "B8",
+        "group": "control",
+        "value": null
+       },
+       {
+        "dog_id": "DS07:d040",
+        "plex": "B1",
+        "group": "control",
+        "value": 0.149259
+       },
+       {
+        "dog_id": "DS07:d041",
+        "plex": "B2",
+        "group": "control",
+        "value": null
+       },
+       {
+        "dog_id": "DS07:d042",
+        "plex": "B9",
+        "group": "control",
+        "value": -0.312939
+       },
+       {
+        "dog_id": "DS07:d043",
+        "plex": "B5",
+        "group": "uncomplicated",
+        "value": null
+       },
+       {
+        "dog_id": "DS07:d044",
+        "plex": "B3",
+        "group": "control",
+        "value": null
+       },
+       {
+        "dog_id": "DS07:d045",
+        "plex": "B2",
+        "group": "control",
+        "value": null
+       },
+       {
+        "dog_id": "DS07:d046",
+        "plex": "B3",
+        "group": "uncomplicated",
+        "value": null
+       },
+       {
+        "dog_id": "DS07:d047",
+        "plex": "B11",
+        "group": "uncomplicated",
+        "value": null
+       },
+       {
+        "dog_id": "DS07:d048",
+        "plex": "B6",
+        "group": "control",
+        "value": null
+       },
+       {
+        "dog_id": "DS07:d049",
+        "plex": "B7",
+        "group": "uncomplicated",
+        "value": null
+       },
+       {
+        "dog_id": "DS07:d050",
+        "plex": "B8",
+        "group": "uncomplicated",
+        "value": null
+       },
+       {
+        "dog_id": "DS07:d051",
+        "plex": "B9",
+        "group": "complicated",
+        "value": 1.105008
+       },
+       {
+        "dog_id": "DS07:d052",
+        "plex": "B4",
+        "group": "control",
+        "value": null
+       }
+      ]
+     },
+     {
+      "key": "serpinf2",
+      "label": "Alpha-2-antiplasmin (SERPINF2)",
+      "in_family": true,
+      "points": [
+       {
+        "dog_id": "DS07:d001",
+        "plex": "B8",
+        "group": "complicated",
+        "value": 0.094912
+       },
+       {
+        "dog_id": "DS07:d002",
+        "plex": "B5",
+        "group": "uncomplicated",
+        "value": -0.215915
+       },
+       {
+        "dog_id": "DS07:d003",
+        "plex": "B3",
+        "group": "complicated",
+        "value": 0.007196
+       },
+       {
+        "dog_id": "DS07:d004",
+        "plex": "B6",
+        "group": "uncomplicated",
+        "value": -0.015958
+       },
+       {
+        "dog_id": "DS07:d005",
+        "plex": "B9",
+        "group": "complicated",
+        "value": 0.060739
+       },
+       {
+        "dog_id": "DS07:d006",
+        "plex": "B8",
+        "group": "uncomplicated",
+        "value": -0.015958
+       },
+       {
+        "dog_id": "DS07:d007",
+        "plex": "B10",
+        "group": "control",
+        "value": -0.279284
+       },
+       {
+        "dog_id": "DS07:d008",
+        "plex": "B2",
+        "group": "uncomplicated",
+        "value": -0.354759
+       },
+       {
+        "dog_id": "DS07:d009",
+        "plex": "B2",
+        "group": "complicated",
+        "value": -0.212568
+       },
+       {
+        "dog_id": "DS07:d010",
+        "plex": "B8",
+        "group": "control",
+        "value": 0.10165
+       },
+       {
+        "dog_id": "DS07:d011",
+        "plex": "B6",
+        "group": "control",
+        "value": -0.072483
+       },
+       {
+        "dog_id": "DS07:d012",
+        "plex": "B10",
+        "group": "uncomplicated",
+        "value": -0.035047
+       },
+       {
+        "dog_id": "DS07:d013",
+        "plex": "B2",
+        "group": "complicated",
+        "value": -0.268817
+       },
+       {
+        "dog_id": "DS07:d014",
+        "plex": "B7",
+        "group": "control",
+        "value": -0.096962
+       },
+       {
+        "dog_id": "DS07:d015",
+        "plex": "B3",
+        "group": "control",
+        "value": -0.026205
+       },
+       {
+        "dog_id": "DS07:d016",
+        "plex": "B11",
+        "group": "control",
+        "value": 0.115033
+       },
+       {
+        "dog_id": "DS07:d017",
+        "plex": "B4",
+        "group": "control",
+        "value": -0.161653
+       },
+       {
+        "dog_id": "DS07:d018",
+        "plex": "B4",
+        "group": "complicated",
+        "value": -0.179515
+       },
+       {
+        "dog_id": "DS07:d019",
+        "plex": "B7",
+        "group": "complicated",
+        "value": -0.039488
+       },
+       {
+        "dog_id": "DS07:d020",
+        "plex": "B10",
+        "group": "complicated",
+        "value": 0.621056
+       },
+       {
+        "dog_id": "DS07:d021",
+        "plex": "B3",
+        "group": "uncomplicated",
+        "value": 0.480265
+       },
+       {
+        "dog_id": "DS07:d022",
+        "plex": "B4",
+        "group": "uncomplicated",
+        "value": 0.042644
+       },
+       {
+        "dog_id": "DS07:d023",
+        "plex": "B6",
+        "group": "complicated",
+        "value": 0.428678
+       },
+       {
+        "dog_id": "DS07:d024",
+        "plex": "B5",
+        "group": "control",
+        "value": -0.018878
+       },
+       {
+        "dog_id": "DS07:d025",
+        "plex": "B1",
+        "group": "complicated",
+        "value": -0.177882
+       },
+       {
+        "dog_id": "DS07:d026",
+        "plex": "B1",
+        "group": "control",
+        "value": -0.078564
+       },
+       {
+        "dog_id": "DS07:d027",
+        "plex": "B7",
+        "group": "uncomplicated",
+        "value": -0.309359
+       },
+       {
+        "dog_id": "DS07:d028",
+        "plex": "B5",
+        "group": "control",
+        "value": -0.081614
+       },
+       {
+        "dog_id": "DS07:d029",
+        "plex": "B7",
+        "group": "uncomplicated",
+        "value": 0.097611
+       },
+       {
+        "dog_id": "DS07:d030",
+        "plex": "B9",
+        "group": "uncomplicated",
+        "value": -0.182786
+       },
+       {
+        "dog_id": "DS07:d031",
+        "plex": "B10",
+        "group": "control",
+        "value": -0.001443
+       },
+       {
+        "dog_id": "DS07:d032",
+        "plex": "B10",
+        "group": "complicated",
+        "value": 0.392867
+       },
+       {
+        "dog_id": "DS07:d033",
+        "plex": "B5",
+        "group": "complicated",
+        "value": -0.051399
+       },
+       {
+        "dog_id": "DS07:d034",
+        "plex": "B1",
+        "group": "complicated",
+        "value": 0.196607
+       },
+       {
+        "dog_id": "DS07:d035",
+        "plex": "B1",
+        "group": "uncomplicated",
+        "value": 0.248535
+       },
+       {
+        "dog_id": "DS07:d036",
+        "plex": "B9",
+        "group": "control",
+        "value": 0.017209
+       },
+       {
+        "dog_id": "DS07:d037",
+        "plex": "B6",
+        "group": "uncomplicated",
+        "value": 0.064883
+       },
+       {
+        "dog_id": "DS07:d038",
+        "plex": "B4",
+        "group": "uncomplicated",
+        "value": 0.064883
+       },
+       {
+        "dog_id": "DS07:d039",
+        "plex": "B8",
+        "group": "control",
+        "value": 0.141433
+       },
+       {
+        "dog_id": "DS07:d040",
+        "plex": "B1",
+        "group": "control",
+        "value": -0.07552
+       },
+       {
+        "dog_id": "DS07:d041",
+        "plex": "B2",
+        "group": "control",
+        "value": -0.106249
+       },
+       {
+        "dog_id": "DS07:d042",
+        "plex": "B9",
+        "group": "control",
+        "value": -0.09234
+       },
+       {
+        "dog_id": "DS07:d043",
+        "plex": "B5",
+        "group": "uncomplicated",
+        "value": -0.207561
+       },
+       {
+        "dog_id": "DS07:d044",
+        "plex": "B3",
+        "group": "control",
+        "value": -0.205896
+       },
+       {
+        "dog_id": "DS07:d045",
+        "plex": "B2",
+        "group": "control",
+        "value": -0.039488
+       },
+       {
+        "dog_id": "DS07:d046",
+        "plex": "B3",
+        "group": "uncomplicated",
+        "value": 0.421156
+       },
+       {
+        "dog_id": "DS07:d047",
+        "plex": "B11",
+        "group": "uncomplicated",
+        "value": 0.104337
+       },
+       {
+        "dog_id": "DS07:d048",
+        "plex": "B6",
+        "group": "control",
+        "value": 0.144046
+       },
+       {
+        "dog_id": "DS07:d049",
+        "plex": "B7",
+        "group": "uncomplicated",
+        "value": 0.05797
+       },
+       {
+        "dog_id": "DS07:d050",
+        "plex": "B8",
+        "group": "uncomplicated",
+        "value": 0.069015
+       },
+       {
+        "dog_id": "DS07:d051",
+        "plex": "B9",
+        "group": "complicated",
+        "value": 0.356144
+       },
+       {
+        "dog_id": "DS07:d052",
+        "plex": "B4",
+        "group": "control",
+        "value": -0.038006
+       }
+      ]
+     },
+     {
+      "key": "proc",
+      "label": "Protein C",
+      "in_family": true,
+      "points": [
+       {
+        "dog_id": "DS07:d001",
+        "plex": "B8",
+        "group": "complicated",
+        "value": null
+       },
+       {
+        "dog_id": "DS07:d002",
+        "plex": "B5",
+        "group": "uncomplicated",
+        "value": 1.189666
+       },
+       {
+        "dog_id": "DS07:d003",
+        "plex": "B3",
+        "group": "complicated",
+        "value": null
+       },
+       {
+        "dog_id": "DS07:d004",
+        "plex": "B6",
+        "group": "uncomplicated",
+        "value": 0.085425
+       },
+       {
+        "dog_id": "DS07:d005",
+        "plex": "B9",
+        "group": "complicated",
+        "value": null
+       },
+       {
+        "dog_id": "DS07:d006",
+        "plex": "B8",
+        "group": "uncomplicated",
+        "value": null
+       },
+       {
+        "dog_id": "DS07:d007",
+        "plex": "B10",
+        "group": "control",
+        "value": 0.069015
+       },
+       {
+        "dog_id": "DS07:d008",
+        "plex": "B2",
+        "group": "uncomplicated",
+        "value": 0.183963
+       },
+       {
+        "dog_id": "DS07:d009",
+        "plex": "B2",
+        "group": "complicated",
+        "value": 0.492622
+       },
+       {
+        "dog_id": "DS07:d010",
+        "plex": "B8",
+        "group": "control",
+        "value": null
+       },
+       {
+        "dog_id": "DS07:d011",
+        "plex": "B6",
+        "group": "control",
+        "value": 0.012926
+       },
+       {
+        "dog_id": "DS07:d012",
+        "plex": "B10",
+        "group": "uncomplicated",
+        "value": -0.017417
+       },
+       {
+        "dog_id": "DS07:d013",
+        "plex": "B2",
+        "group": "complicated",
+        "value": -0.242977
+       },
+       {
+        "dog_id": "DS07:d014",
+        "plex": "B7",
+        "group": "control",
+        "value": 0.453122
+       },
+       {
+        "dog_id": "DS07:d015",
+        "plex": "B3",
+        "group": "control",
+        "value": null
+       },
+       {
+        "dog_id": "DS07:d016",
+        "plex": "B11",
+        "group": "control",
+        "value": null
+       },
+       {
+        "dog_id": "DS07:d017",
+        "plex": "B4",
+        "group": "control",
+        "value": null
+       },
+       {
+        "dog_id": "DS07:d018",
+        "plex": "B4",
+        "group": "complicated",
+        "value": null
+       },
+       {
+        "dog_id": "DS07:d019",
+        "plex": "B7",
+        "group": "complicated",
+        "value": 0.516015
+       },
+       {
+        "dog_id": "DS07:d020",
+        "plex": "B10",
+        "group": "complicated",
+        "value": 0.359521
+       },
+       {
+        "dog_id": "DS07:d021",
+        "plex": "B3",
+        "group": "uncomplicated",
+        "value": null
+       },
+       {
+        "dog_id": "DS07:d022",
+        "plex": "B4",
+        "group": "uncomplicated",
+        "value": null
+       },
+       {
+        "dog_id": "DS07:d023",
+        "plex": "B6",
+        "group": "complicated",
+        "value": 0.123004
+       },
+       {
+        "dog_id": "DS07:d024",
+        "plex": "B5",
+        "group": "control",
+        "value": 1.136191
+       },
+       {
+        "dog_id": "DS07:d025",
+        "plex": "B1",
+        "group": "complicated",
+        "value": null
+       },
+       {
+        "dog_id": "DS07:d026",
+        "plex": "B1",
+        "group": "control",
+        "value": null
+       },
+       {
+        "dog_id": "DS07:d027",
+        "plex": "B7",
+        "group": "uncomplicated",
+        "value": 0.097611
+       },
+       {
+        "dog_id": "DS07:d028",
+        "plex": "B5",
+        "group": "control",
+        "value": 0.989139
+       },
+       {
+        "dog_id": "DS07:d029",
+        "plex": "B7",
+        "group": "uncomplicated",
+        "value": 0.23634
+       },
+       {
+        "dog_id": "DS07:d030",
+        "plex": "B9",
+        "group": "uncomplicated",
+        "value": null
+       },
+       {
+        "dog_id": "DS07:d031",
+        "plex": "B10",
+        "group": "control",
+        "value": 0.088142
+       },
+       {
+        "dog_id": "DS07:d032",
+        "plex": "B10",
+        "group": "complicated",
+        "value": -0.194295
+       },
+       {
+        "dog_id": "DS07:d033",
+        "plex": "B5",
+        "group": "complicated",
+        "value": 0.681674
+       },
+       {
+        "dog_id": "DS07:d034",
+        "plex": "B1",
+        "group": "complicated",
+        "value": null
+       },
+       {
+        "dog_id": "DS07:d035",
+        "plex": "B1",
+        "group": "uncomplicated",
+        "value": null
+       },
+       {
+        "dog_id": "DS07:d036",
+        "plex": "B9",
+        "group": "control",
+        "value": null
+       },
+       {
+        "dog_id": "DS07:d037",
+        "plex": "B6",
+        "group": "uncomplicated",
+        "value": 0.259423
+       },
+       {
+        "dog_id": "DS07:d038",
+        "plex": "B4",
+        "group": "uncomplicated",
+        "value": null
+       },
+       {
+        "dog_id": "DS07:d039",
+        "plex": "B8",
+        "group": "control",
+        "value": null
+       },
+       {
+        "dog_id": "DS07:d040",
+        "plex": "B1",
+        "group": "control",
+        "value": null
+       },
+       {
+        "dog_id": "DS07:d041",
+        "plex": "B2",
+        "group": "control",
+        "value": -0.087733
+       },
+       {
+        "dog_id": "DS07:d042",
+        "plex": "B9",
+        "group": "control",
+        "value": null
+       },
+       {
+        "dog_id": "DS07:d043",
+        "plex": "B5",
+        "group": "uncomplicated",
+        "value": 0.903038
+       },
+       {
+        "dog_id": "DS07:d044",
+        "plex": "B3",
+        "group": "control",
+        "value": null
+       },
+       {
+        "dog_id": "DS07:d045",
+        "plex": "B2",
+        "group": "control",
+        "value": -0.182786
+       },
+       {
+        "dog_id": "DS07:d046",
+        "plex": "B3",
+        "group": "uncomplicated",
+        "value": null
+       },
+       {
+        "dog_id": "DS07:d047",
+        "plex": "B11",
+        "group": "uncomplicated",
+        "value": null
+       },
+       {
+        "dog_id": "DS07:d048",
+        "plex": "B6",
+        "group": "control",
+        "value": 0.27262
+       },
+       {
+        "dog_id": "DS07:d049",
+        "plex": "B7",
+        "group": "uncomplicated",
+        "value": 0.090853
+       },
+       {
+        "dog_id": "DS07:d050",
+        "plex": "B8",
+        "group": "uncomplicated",
+        "value": null
+       },
+       {
+        "dog_id": "DS07:d051",
+        "plex": "B9",
+        "group": "complicated",
+        "value": null
+       },
+       {
+        "dog_id": "DS07:d052",
+        "plex": "B4",
+        "group": "control",
+        "value": null
+       }
+      ]
+     },
+     {
+      "key": "serpinc1",
+      "label": "Antithrombin (SERPINC1)",
+      "in_family": true,
+      "points": [
+       {
+        "dog_id": "DS07:d001",
+        "plex": "B8",
+        "group": "complicated",
+        "value": -0.390245
+       },
+       {
+        "dog_id": "DS07:d002",
+        "plex": "B5",
+        "group": "uncomplicated",
+        "value": -0.334607
+       },
+       {
+        "dog_id": "DS07:d003",
+        "plex": "B3",
+        "group": "complicated",
+        "value": -0.477944
+       },
+       {
+        "dog_id": "DS07:d004",
+        "plex": "B6",
+        "group": "uncomplicated",
+        "value": 0.112367
+       },
+       {
+        "dog_id": "DS07:d005",
+        "plex": "B9",
+        "group": "complicated",
+        "value": -0.171368
+       },
+       {
+        "dog_id": "DS07:d006",
+        "plex": "B8",
+        "group": "uncomplicated",
+        "value": 0.034216
+       },
+       {
+        "dog_id": "DS07:d007",
+        "plex": "B10",
+        "group": "control",
+        "value": -0.011588
+       },
+       {
+        "dog_id": "DS07:d008",
+        "plex": "B2",
+        "group": "uncomplicated",
+        "value": -0.187707
+       },
+       {
+        "dog_id": "DS07:d009",
+        "plex": "B2",
+        "group": "complicated",
+        "value": -0.166503
+       },
+       {
+        "dog_id": "DS07:d010",
+        "plex": "B8",
+        "group": "control",
+        "value": 0.227741
+       },
+       {
+        "dog_id": "DS07:d011",
+        "plex": "B6",
+        "group": "control",
+        "value": -0.017417
+       },
+       {
+        "dog_id": "DS07:d012",
+        "plex": "B10",
+        "group": "uncomplicated",
+        "value": -0.422752
+       },
+       {
+        "dog_id": "DS07:d013",
+        "plex": "B2",
+        "group": "complicated",
+        "value": 0.258217
+       },
+       {
+        "dog_id": "DS07:d014",
+        "plex": "B7",
+        "group": "control",
+        "value": 0.130931
+       },
+       {
+        "dog_id": "DS07:d015",
+        "plex": "B3",
+        "group": "control",
+        "value": -0.093879
+       },
+       {
+        "dog_id": "DS07:d016",
+        "plex": "B11",
+        "group": "control",
+        "value": 0.109695
+       },
+       {
+        "dog_id": "DS07:d017",
+        "plex": "B4",
+        "group": "control",
+        "value": 0.16092
+       },
+       {
+        "dog_id": "DS07:d018",
+        "plex": "B4",
+        "group": "complicated",
+        "value": -0.136062
+       },
+       {
+        "dog_id": "DS07:d019",
+        "plex": "B7",
+        "group": "complicated",
+        "value": -0.195946
+       },
+       {
+        "dog_id": "DS07:d020",
+        "plex": "B10",
+        "group": "complicated",
+        "value": 0.085425
+       },
+       {
+        "dog_id": "DS07:d021",
+        "plex": "B3",
+        "group": "uncomplicated",
+        "value": -0.205896
+       },
+       {
+        "dog_id": "DS07:d022",
+        "plex": "B4",
+        "group": "uncomplicated",
+        "value": -0.195946
+       },
+       {
+        "dog_id": "DS07:d023",
+        "plex": "B6",
+        "group": "complicated",
+        "value": -0.107803
+       },
+       {
+        "dog_id": "DS07:d024",
+        "plex": "B5",
+        "group": "control",
+        "value": -0.036526
+       },
+       {
+        "dog_id": "DS07:d025",
+        "plex": "B1",
+        "group": "complicated",
+        "value": -0.164884
+       },
+       {
+        "dog_id": "DS07:d026",
+        "plex": "B1",
+        "group": "control",
+        "value": 0.032806
+       },
+       {
+        "dog_id": "DS07:d027",
+        "plex": "B7",
+        "group": "uncomplicated",
+        "value": -0.227692
+       },
+       {
+        "dog_id": "DS07:d028",
+        "plex": "B5",
+        "group": "control",
+        "value": 0.129613
+       },
+       {
+        "dog_id": "DS07:d029",
+        "plex": "B7",
+        "group": "uncomplicated",
+        "value": -0.15682
+       },
+       {
+        "dog_id": "DS07:d030",
+        "plex": "B9",
+        "group": "uncomplicated",
+        "value": -0.058894
+       },
+       {
+        "dog_id": "DS07:d031",
+        "plex": "B10",
+        "group": "control",
+        "value": 0.055196
+       },
+       {
+        "dog_id": "DS07:d032",
+        "plex": "B10",
+        "group": "complicated",
+        "value": -0.291592
+       },
+       {
+        "dog_id": "DS07:d033",
+        "plex": "B5",
+        "group": "complicated",
+        "value": -0.296899
+       },
+       {
+        "dog_id": "DS07:d034",
+        "plex": "B1",
+        "group": "complicated",
+        "value": -0.054392
+       },
+       {
+        "dog_id": "DS07:d035",
+        "plex": "B1",
+        "group": "uncomplicated",
+        "value": -0.258425
+       },
+       {
+        "dog_id": "DS07:d036",
+        "plex": "B9",
+        "group": "control",
+        "value": 0.020058
+       },
+       {
+        "dog_id": "DS07:d037",
+        "plex": "B6",
+        "group": "uncomplicated",
+        "value": 0.192825
+       },
+       {
+        "dog_id": "DS07:d038",
+        "plex": "B4",
+        "group": "uncomplicated",
+        "value": -0.021804
+       },
+       {
+        "dog_id": "DS07:d039",
+        "plex": "B8",
+        "group": "control",
+        "value": 0.186501
+       },
+       {
+        "dog_id": "DS07:d040",
+        "plex": "B1",
+        "group": "control",
+        "value": 0.255803
+       },
+       {
+        "dog_id": "DS07:d041",
+        "plex": "B2",
+        "group": "control",
+        "value": 0.059355
+       },
+       {
+        "dog_id": "DS07:d042",
+        "plex": "B9",
+        "group": "control",
+        "value": 0.02432
+       },
+       {
+        "dog_id": "DS07:d043",
+        "plex": "B5",
+        "group": "uncomplicated",
+        "value": -0.118727
+       },
+       {
+        "dog_id": "DS07:d044",
+        "plex": "B3",
+        "group": "control",
+        "value": 0.092207
+       },
+       {
+        "dog_id": "DS07:d045",
+        "plex": "B2",
+        "group": "control",
+        "value": 0.079975
+       },
+       {
+        "dog_id": "DS07:d046",
+        "plex": "B3",
+        "group": "uncomplicated",
+        "value": 0.286881
+       },
+       {
+        "dog_id": "DS07:d047",
+        "plex": "B11",
+        "group": "uncomplicated",
+        "value": 0.155749
+       },
+       {
+        "dog_id": "DS07:d048",
+        "plex": "B6",
+        "group": "control",
+        "value": 0.125651
+       },
+       {
+        "dog_id": "DS07:d049",
+        "plex": "B7",
+        "group": "uncomplicated",
+        "value": -0.244685
+       },
+       {
+        "dog_id": "DS07:d050",
+        "plex": "B8",
+        "group": "uncomplicated",
+        "value": -0.45799
+       },
+       {
+        "dog_id": "DS07:d051",
+        "plex": "B9",
+        "group": "complicated",
+        "value": -0.153607
+       },
+       {
+        "dog_id": "DS07:d052",
+        "plex": "B4",
+        "group": "control",
+        "value": 0.204141
+       }
+      ]
+     },
+     {
+      "key": "cfh",
+      "label": "Complement factor H",
+      "in_family": true,
+      "points": [
+       {
+        "dog_id": "DS07:d001",
+        "plex": "B8",
+        "group": "complicated",
+        "value": -0.093879
+       },
+       {
+        "dog_id": "DS07:d002",
+        "plex": "B5",
+        "group": "uncomplicated",
+        "value": 0.045443
+       },
+       {
+        "dog_id": "DS07:d003",
+        "plex": "B3",
+        "group": "complicated",
+        "value": -0.051399
+       },
+       {
+        "dog_id": "DS07:d004",
+        "plex": "B6",
+        "group": "uncomplicated",
+        "value": 0.128293
+       },
+       {
+        "dog_id": "DS07:d005",
+        "plex": "B9",
+        "group": "complicated",
+        "value": 0.055196
+       },
+       {
+        "dog_id": "DS07:d006",
+        "plex": "B8",
+        "group": "uncomplicated",
+        "value": -0.058894
+       },
+       {
+        "dog_id": "DS07:d007",
+        "plex": "B10",
+        "group": "control",
+        "value": 0.16092
+       },
+       {
+        "dog_id": "DS07:d008",
+        "plex": "B2",
+        "group": "uncomplicated",
+        "value": 0.141433
+       },
+       {
+        "dog_id": "DS07:d009",
+        "plex": "B2",
+        "group": "complicated",
+        "value": -0.02327
+       },
+       {
+        "dog_id": "DS07:d010",
+        "plex": "B8",
+        "group": "control",
+        "value": 0.086784
+       },
+       {
+        "dog_id": "DS07:d011",
+        "plex": "B6",
+        "group": "control",
+        "value": 0.086784
+       },
+       {
+        "dog_id": "DS07:d012",
+        "plex": "B10",
+        "group": "uncomplicated",
+        "value": 0.235114
+       },
+       {
+        "dog_id": "DS07:d013",
+        "plex": "B2",
+        "group": "complicated",
+        "value": -0.090803
+       },
+       {
+        "dog_id": "DS07:d014",
+        "plex": "B7",
+        "group": "control",
+        "value": 0.027154
+       },
+       {
+        "dog_id": "DS07:d015",
+        "plex": "B3",
+        "group": "control",
+        "value": -0.132894
+       },
+       {
+        "dog_id": "DS07:d016",
+        "plex": "B11",
+        "group": "control",
+        "value": 0.090853
+       },
+       {
+        "dog_id": "DS07:d017",
+        "plex": "B4",
+        "group": "control",
+        "value": -0.038006
+       },
+       {
+        "dog_id": "DS07:d018",
+        "plex": "B4",
+        "group": "complicated",
+        "value": 0.031395
+       },
+       {
+        "dog_id": "DS07:d019",
+        "plex": "B7",
+        "group": "complicated",
+        "value": 0.064883
+       },
+       {
+        "dog_id": "DS07:d020",
+        "plex": "B10",
+        "group": "complicated",
+        "value": -0.096962
+       },
+       {
+        "dog_id": "DS07:d021",
+        "plex": "B3",
+        "group": "uncomplicated",
+        "value": -0.242977
+       },
+       {
+        "dog_id": "DS07:d022",
+        "plex": "B4",
+        "group": "uncomplicated",
+        "value": -0.026205
+       },
+       {
+        "dog_id": "DS07:d023",
+        "plex": "B6",
+        "group": "complicated",
+        "value": -0.007232
+       },
+       {
+        "dog_id": "DS07:d024",
+        "plex": "B5",
+        "group": "control",
+        "value": 0.048236
+       },
+       {
+        "dog_id": "DS07:d025",
+        "plex": "B1",
+        "group": "complicated",
+        "value": -0.08467
+       },
+       {
+        "dog_id": "DS07:d026",
+        "plex": "B1",
+        "group": "control",
+        "value": 0.049631
+       },
+       {
+        "dog_id": "DS07:d027",
+        "plex": "B7",
+        "group": "uncomplicated",
+        "value": -0.118727
+       },
+       {
+        "dog_id": "DS07:d028",
+        "plex": "B5",
+        "group": "control",
+        "value": -0.017417
+       },
+       {
+        "dog_id": "DS07:d029",
+        "plex": "B7",
+        "group": "uncomplicated",
+        "value": -0.077041
+       },
+       {
+        "dog_id": "DS07:d030",
+        "plex": "B9",
+        "group": "uncomplicated",
+        "value": -0.140826
+       },
+       {
+        "dog_id": "DS07:d031",
+        "plex": "B10",
+        "group": "control",
+        "value": 0.125651
+       },
+       {
+        "dog_id": "DS07:d032",
+        "plex": "B10",
+        "group": "complicated",
+        "value": -0.064917
+       },
+       {
+        "dog_id": "DS07:d033",
+        "plex": "B5",
+        "group": "complicated",
+        "value": 0.206643
+       },
+       {
+        "dog_id": "DS07:d034",
+        "plex": "B1",
+        "group": "complicated",
+        "value": -0.153607
+       },
+       {
+        "dog_id": "DS07:d035",
+        "plex": "B1",
+        "group": "uncomplicated",
+        "value": 0.22033
+       },
+       {
+        "dog_id": "DS07:d036",
+        "plex": "B9",
+        "group": "control",
+        "value": 0.119024
+       },
+       {
+        "dog_id": "DS07:d037",
+        "plex": "B6",
+        "group": "uncomplicated",
+        "value": 0.104337
+       },
+       {
+        "dog_id": "DS07:d038",
+        "plex": "B4",
+        "group": "uncomplicated",
+        "value": -0.150401
+       },
+       {
+        "dog_id": "DS07:d039",
+        "plex": "B8",
+        "group": "control",
+        "value": 0.064883
+       },
+       {
+        "dog_id": "DS07:d040",
+        "plex": "B1",
+        "group": "control",
+        "value": -0.074001
+       },
+       {
+        "dog_id": "DS07:d041",
+        "plex": "B2",
+        "group": "control",
+        "value": -0.125006
+       },
+       {
+        "dog_id": "DS07:d042",
+        "plex": "B9",
+        "group": "control",
+        "value": 0.067639
+       },
+       {
+        "dog_id": "DS07:d043",
+        "plex": "B5",
+        "group": "uncomplicated",
+        "value": -0.200913
+       },
+       {
+        "dog_id": "DS07:d044",
+        "plex": "B3",
+        "group": "control",
+        "value": -0.120294
+       },
+       {
+        "dog_id": "DS07:d045",
+        "plex": "B2",
+        "group": "control",
+        "value": 0.020058
+       },
+       {
+        "dog_id": "DS07:d046",
+        "plex": "B3",
+        "group": "uncomplicated",
+        "value": 0.025738
+       },
+       {
+        "dog_id": "DS07:d047",
+        "plex": "B11",
+        "group": "uncomplicated",
+        "value": 0.032806
+       },
+       {
+        "dog_id": "DS07:d048",
+        "plex": "B6",
+        "group": "control",
+        "value": -0.010134
+       },
+       {
+        "dog_id": "DS07:d049",
+        "plex": "B7",
+        "group": "uncomplicated",
+        "value": 0.082703
+       },
+       {
+        "dog_id": "DS07:d050",
+        "plex": "B8",
+        "group": "uncomplicated",
+        "value": 0.075875
+       },
+       {
+        "dog_id": "DS07:d051",
+        "plex": "B9",
+        "group": "complicated",
+        "value": 0.084064
+       },
+       {
+        "dog_id": "DS07:d052",
+        "plex": "B4",
+        "group": "control",
+        "value": 0.038436
+       }
+      ]
+     },
+     {
+      "key": "cd14",
+      "label": "CD14",
+      "in_family": true,
+      "points": [
+       {
+        "dog_id": "DS07:d001",
+        "plex": "B8",
+        "group": "complicated",
+        "value": 0.263034
+       },
+       {
+        "dog_id": "DS07:d002",
+        "plex": "B5",
+        "group": "uncomplicated",
+        "value": 0.364012
+       },
+       {
+        "dog_id": "DS07:d003",
+        "plex": "B3",
+        "group": "complicated",
+        "value": 0.221568
+       },
+       {
+        "dog_id": "DS07:d004",
+        "plex": "B6",
+        "group": "uncomplicated",
+        "value": -0.052895
+       },
+       {
+        "dog_id": "DS07:d005",
+        "plex": "B9",
+        "group": "complicated",
+        "value": 0.632268
+       },
+       {
+        "dog_id": "DS07:d006",
+        "plex": "B8",
+        "group": "uncomplicated",
+        "value": 0.422233
+       },
+       {
+        "dog_id": "DS07:d007",
+        "plex": "B10",
+        "group": "control",
+        "value": -0.586406
+       },
+       {
+        "dog_id": "DS07:d008",
+        "plex": "B2",
+        "group": "uncomplicated",
+        "value": 0.503858
+       },
+       {
+        "dog_id": "DS07:d009",
+        "plex": "B2",
+        "group": "complicated",
+        "value": 0.457332
+       },
+       {
+        "dog_id": "DS07:d010",
+        "plex": "B8",
+        "group": "control",
+        "value": 0.071763
+       },
+       {
+        "dog_id": "DS07:d011",
+        "plex": "B6",
+        "group": "control",
+        "value": -0.199255
+       },
+       {
+        "dog_id": "DS07:d012",
+        "plex": "B10",
+        "group": "uncomplicated",
+        "value": -0.232769
+       },
+       {
+        "dog_id": "DS07:d013",
+        "plex": "B2",
+        "group": "complicated",
+        "value": 0.168642
+       },
+       {
+        "dog_id": "DS07:d014",
+        "plex": "B7",
+        "group": "control",
+        "value": -0.318326
+       },
+       {
+        "dog_id": "DS07:d015",
+        "plex": "B3",
+        "group": "control",
+        "value": -0.008682
+       },
+       {
+        "dog_id": "DS07:d016",
+        "plex": "B11",
+        "group": "control",
+        "value": -0.104697
+       },
+       {
+        "dog_id": "DS07:d017",
+        "plex": "B4",
+        "group": "control",
+        "value": -0.093879
+       },
+       {
+        "dog_id": "DS07:d018",
+        "plex": "B4",
+        "group": "complicated",
+        "value": 0.681674
+       },
+       {
+        "dog_id": "DS07:d019",
+        "plex": "B7",
+        "group": "complicated",
+        "value": 0.375178
+       },
+       {
+        "dog_id": "DS07:d020",
+        "plex": "B10",
+        "group": "complicated",
+        "value": 0.858379
+       },
+       {
+        "dog_id": "DS07:d021",
+        "plex": "B3",
+        "group": "uncomplicated",
+        "value": 0.342555
+       },
+       {
+        "dog_id": "DS07:d022",
+        "plex": "B4",
+        "group": "uncomplicated",
+        "value": 0.221568
+       },
+       {
+        "dog_id": "DS07:d023",
+        "plex": "B6",
+        "group": "complicated",
+        "value": 0.088142
+       },
+       {
+        "dog_id": "DS07:d024",
+        "plex": "B5",
+        "group": "control",
+        "value": -0.347399
+       },
+       {
+        "dog_id": "DS07:d025",
+        "plex": "B1",
+        "group": "complicated",
+        "value": 0.543991
+       },
+       {
+        "dog_id": "DS07:d026",
+        "plex": "B1",
+        "group": "control",
+        "value": -0.880976
+       },
+       {
+        "dog_id": "DS07:d027",
+        "plex": "B7",
+        "group": "uncomplicated",
+        "value": -0.494109
+       },
+       {
+        "dog_id": "DS07:d028",
+        "plex": "B5",
+        "group": "control",
+        "value": 0.107018
+       },
+       {
+        "dog_id": "DS07:d029",
+        "plex": "B7",
+        "group": "uncomplicated",
+        "value": 0.777367
+       },
+       {
+        "dog_id": "DS07:d030",
+        "plex": "B9",
+        "group": "uncomplicated",
+        "value": 0.168642
+       },
+       {
+        "dog_id": "DS07:d031",
+        "plex": "B10",
+        "group": "control",
+        "value": -0.325539
+       },
+       {
+        "dog_id": "DS07:d032",
+        "plex": "B10",
+        "group": "complicated",
+        "value": 0.469886
+       },
+       {
+        "dog_id": "DS07:d033",
+        "plex": "B5",
+        "group": "complicated",
+        "value": 0.515006
+       },
+       {
+        "dog_id": "DS07:d034",
+        "plex": "B1",
+        "group": "complicated",
+        "value": 0.266637
+       },
+       {
+        "dog_id": "DS07:d035",
+        "plex": "B1",
+        "group": "uncomplicated",
+        "value": 0.454176
+       },
+       {
+        "dog_id": "DS07:d036",
+        "plex": "B9",
+        "group": "control",
+        "value": -0.081614
+       },
+       {
+        "dog_id": "DS07:d037",
+        "plex": "B6",
+        "group": "uncomplicated",
+        "value": 0.074505
+       },
+       {
+        "dog_id": "DS07:d038",
+        "plex": "B4",
+        "group": "uncomplicated",
+        "value": 0.196607
+       },
+       {
+        "dog_id": "DS07:d039",
+        "plex": "B8",
+        "group": "control",
+        "value": 0.480265
+       },
+       {
+        "dog_id": "DS07:d040",
+        "plex": "B1",
+        "group": "control",
+        "value": -0.746616
+       },
+       {
+        "dog_id": "DS07:d041",
+        "plex": "B2",
+        "group": "control",
+        "value": -1.148801
+       },
+       {
+        "dog_id": "DS07:d042",
+        "plex": "B9",
+        "group": "control",
+        "value": -0.067939
+       },
+       {
+        "dog_id": "DS07:d043",
+        "plex": "B5",
+        "group": "uncomplicated",
+        "value": -0.004335
+       },
+       {
+        "dog_id": "DS07:d044",
+        "plex": "B3",
+        "group": "control",
+        "value": -0.086201
+       },
+       {
+        "dog_id": "DS07:d045",
+        "plex": "B2",
+        "group": "control",
+        "value": -0.78339
+       },
+       {
+        "dog_id": "DS07:d046",
+        "plex": "B3",
+        "group": "uncomplicated",
+        "value": 0.282143
+       },
+       {
+        "dog_id": "DS07:d047",
+        "plex": "B11",
+        "group": "uncomplicated",
+        "value": 0.244887
+       },
+       {
+        "dog_id": "DS07:d048",
+        "plex": "B6",
+        "group": "control",
+        "value": -0.309359
+       },
+       {
+        "dog_id": "DS07:d049",
+        "plex": "B7",
+        "group": "uncomplicated",
+        "value": 0.166073
+       },
+       {
+        "dog_id": "DS07:d050",
+        "plex": "B8",
+        "group": "uncomplicated",
+        "value": 0.597412
+       },
+       {
+        "dog_id": "DS07:d051",
+        "plex": "B9",
+        "group": "complicated",
+        "value": 0.343692
+       },
+       {
+        "dog_id": "DS07:d052",
+        "plex": "B4",
+        "group": "control",
+        "value": -0.878321
+       }
+      ]
+     },
+     {
+      "key": "hba",
+      "label": "Haemoglobin alpha (group master J9NXL3)",
+      "in_family": false,
+      "points": [
+       {
+        "dog_id": "DS07:d001",
+        "plex": "B8",
+        "group": "complicated",
+        "value": -2.083141
+       },
+       {
+        "dog_id": "DS07:d002",
+        "plex": "B5",
+        "group": "uncomplicated",
+        "value": -1.204233
+       },
+       {
+        "dog_id": "DS07:d003",
+        "plex": "B3",
+        "group": "complicated",
+        "value": -2.058894
+       },
+       {
+        "dog_id": "DS07:d004",
+        "plex": "B6",
+        "group": "uncomplicated",
+        "value": -3.237864
+       },
+       {
+        "dog_id": "DS07:d005",
+        "plex": "B9",
+        "group": "complicated",
+        "value": 0.669934
+       },
+       {
+        "dog_id": "DS07:d006",
+        "plex": "B8",
+        "group": "uncomplicated",
+        "value": -1.994241
+       },
+       {
+        "dog_id": "DS07:d007",
+        "plex": "B10",
+        "group": "control",
+        "value": -0.994241
+       },
+       {
+        "dog_id": "DS07:d008",
+        "plex": "B2",
+        "group": "uncomplicated",
+        "value": 0.568519
+       },
+       {
+        "dog_id": "DS07:d009",
+        "plex": "B2",
+        "group": "complicated",
+        "value": 1.468844
+       },
+       {
+        "dog_id": "DS07:d010",
+        "plex": "B8",
+        "group": "control",
+        "value": -1.666576
+       },
+       {
+        "dog_id": "DS07:d011",
+        "plex": "B6",
+        "group": "control",
+        "value": -1.9771
+       },
+       {
+        "dog_id": "DS07:d012",
+        "plex": "B10",
+        "group": "uncomplicated",
+        "value": -1.603841
+       },
+       {
+        "dog_id": "DS07:d013",
+        "plex": "B2",
+        "group": "complicated",
+        "value": -0.529073
+       },
+       {
+        "dog_id": "DS07:d014",
+        "plex": "B7",
+        "group": "control",
+        "value": -1.703689
+       },
+       {
+        "dog_id": "DS07:d015",
+        "plex": "B3",
+        "group": "control",
+        "value": -1.888969
+       },
+       {
+        "dog_id": "DS07:d016",
+        "plex": "B11",
+        "group": "control",
+        "value": -1.717857
+       },
+       {
+        "dog_id": "DS07:d017",
+        "plex": "B4",
+        "group": "control",
+        "value": -1.680382
+       },
+       {
+        "dog_id": "DS07:d018",
+        "plex": "B4",
+        "group": "complicated",
+        "value": 0.126973
+       },
+       {
+        "dog_id": "DS07:d019",
+        "plex": "B7",
+        "group": "complicated",
+        "value": 2.005759
+       },
+       {
+        "dog_id": "DS07:d020",
+        "plex": "B10",
+        "group": "complicated",
+        "value": 1.368489
+       },
+       {
+        "dog_id": "DS07:d021",
+        "plex": "B3",
+        "group": "uncomplicated",
+        "value": 0.970854
+       },
+       {
+        "dog_id": "DS07:d022",
+        "plex": "B4",
+        "group": "uncomplicated",
+        "value": -1.53952
+       },
+       {
+        "dog_id": "DS07:d023",
+        "plex": "B6",
+        "group": "complicated",
+        "value": -2.643856
+       },
+       {
+        "dog_id": "DS07:d024",
+        "plex": "B5",
+        "group": "control",
+        "value": -0.867752
+       },
+       {
+        "dog_id": "DS07:d025",
+        "plex": "B1",
+        "group": "complicated",
+        "value": 2.447315
+       },
+       {
+        "dog_id": "DS07:d026",
+        "plex": "B1",
+        "group": "control",
+        "value": -0.413115
+       },
+       {
+        "dog_id": "DS07:d027",
+        "plex": "B7",
+        "group": "uncomplicated",
+        "value": -1.662004
+       },
+       {
+        "dog_id": "DS07:d028",
+        "plex": "B5",
+        "group": "control",
+        "value": -1.231075
+       },
+       {
+        "dog_id": "DS07:d029",
+        "plex": "B7",
+        "group": "uncomplicated",
+        "value": -1.070967
+       },
+       {
+        "dog_id": "DS07:d030",
+        "plex": "B9",
+        "group": "uncomplicated",
+        "value": -1.943416
+       },
+       {
+        "dog_id": "DS07:d031",
+        "plex": "B10",
+        "group": "control",
+        "value": -1.603841
+       },
+       {
+        "dog_id": "DS07:d032",
+        "plex": "B10",
+        "group": "complicated",
+        "value": -1.289827
+       },
+       {
+        "dog_id": "DS07:d033",
+        "plex": "B5",
+        "group": "complicated",
+        "value": 1.637378
+       },
+       {
+        "dog_id": "DS07:d034",
+        "plex": "B1",
+        "group": "complicated",
+        "value": 0.870266
+       },
+       {
+        "dog_id": "DS07:d035",
+        "plex": "B1",
+        "group": "uncomplicated",
+        "value": -0.732165
+       },
+       {
+        "dog_id": "DS07:d036",
+        "plex": "B9",
+        "group": "control",
+        "value": -1.648372
+       },
+       {
+        "dog_id": "DS07:d037",
+        "plex": "B6",
+        "group": "uncomplicated",
+        "value": -2.058894
+       },
+       {
+        "dog_id": "DS07:d038",
+        "plex": "B4",
+        "group": "uncomplicated",
+        "value": -1.652901
+       },
+       {
+        "dog_id": "DS07:d039",
+        "plex": "B8",
+        "group": "control",
+        "value": -1.846843
+       },
+       {
+        "dog_id": "DS07:d040",
+        "plex": "B1",
+        "group": "control",
+        "value": -0.332789
+       },
+       {
+        "dog_id": "DS07:d041",
+        "plex": "B2",
+        "group": "control",
+        "value": -0.99137
+       },
+       {
+        "dog_id": "DS07:d042",
+        "plex": "B9",
+        "group": "control",
+        "value": -1.810966
+       },
+       {
+        "dog_id": "DS07:d043",
+        "plex": "B5",
+        "group": "uncomplicated",
+        "value": -0.239566
+       },
+       {
+        "dog_id": "DS07:d044",
+        "plex": "B3",
+        "group": "control",
+        "value": -2.293359
+       },
+       {
+        "dog_id": "DS07:d045",
+        "plex": "B2",
+        "group": "control",
+        "value": -0.940645
+       },
+       {
+        "dog_id": "DS07:d046",
+        "plex": "B3",
+        "group": "uncomplicated",
+        "value": -2.522841
+       },
+       {
+        "dog_id": "DS07:d047",
+        "plex": "B11",
+        "group": "uncomplicated",
+        "value": -2.224317
+       },
+       {
+        "dog_id": "DS07:d048",
+        "plex": "B6",
+        "group": "control",
+        "value": -2.599462
+       },
+       {
+        "dog_id": "DS07:d049",
+        "plex": "B7",
+        "group": "uncomplicated",
+        "value": -0.115597
+       },
+       {
+        "dog_id": "DS07:d050",
+        "plex": "B8",
+        "group": "uncomplicated",
+        "value": -2.171368
+       },
+       {
+        "dog_id": "DS07:d051",
+        "plex": "B9",
+        "group": "complicated",
+        "value": -1.207561
+       },
+       {
+        "dog_id": "DS07:d052",
+        "plex": "B4",
+        "group": "control",
+        "value": -1.526992
+       }
+      ]
+     }
+    ],
+    "footnote": "Each point is one dog (log2 ratio to the plex standard). A missing value is missing for the whole plex. Controls are shown for context and are not in the primary test."
+   }
+  },
+  {
+   "kind": "sensitivity",
+   "title": "Stability and sensitivity checks",
+   "sort_order": 4,
+   "payload": {
+    "rows": [
+     {
+      "key": "hbb",
+      "protein": "Haemoglobin beta",
+      "tested": true,
+      "in_family": true,
+      "delta": 0.4762,
+      "p_stratified": 0.0192,
+      "delta_unstratified": 0.4762,
+      "p_unstratified": 0.0216,
+      "lopo_min": 0.4135,
+      "lopo_max": 0.5385,
+      "lopo_sign_change": false,
+      "delta_infected_vs_control": 0.2266,
+      "p_infected_vs_control": 0.05179,
+      "rho_with_hbb": 1.0,
+      "n_rho": 32
+     },
+     {
+      "key": "hp",
+      "protein": "Haptoglobin (group master A0A5F4DB38)",
+      "tested": true,
+      "in_family": true,
+      "delta": 0.0833,
+      "p_stratified": 0.71393,
+      "delta_unstratified": 0.0833,
+      "p_unstratified": 0.70793,
+      "lopo_min": 0.0048,
+      "lopo_max": 0.1394,
+      "lopo_sign_change": false,
+      "delta_infected_vs_control": 0.1641,
+      "p_infected_vs_control": 0.32907,
+      "rho_with_hbb": 0.584,
+      "n_rho": 32
+     },
+     {
+      "key": "ltf",
+      "protein": "Lactoferrin",
+      "tested": true,
+      "in_family": true,
+      "delta": 0.4202,
+      "p_stratified": 0.0265,
+      "delta_unstratified": 0.4202,
+      "p_unstratified": 0.05249,
+      "lopo_min": 0.3333,
+      "lopo_max": 0.5179,
+      "lopo_sign_change": false,
+      "delta_infected_vs_control": 0.4363,
+      "p_infected_vs_control": 0.0078,
+      "rho_with_hbb": 0.539,
+      "n_rho": 31
+     },
+     {
+      "key": "s100a8",
+      "protein": "S100A8",
+      "tested": true,
+      "in_family": true,
+      "delta": 0.425,
+      "p_stratified": 0.11769,
+      "delta_unstratified": 0.425,
+      "p_unstratified": 0.08099,
+      "lopo_min": 0.2667,
+      "lopo_max": 0.5873,
+      "lopo_sign_change": false,
+      "delta_infected_vs_control": 0.0072,
+      "p_infected_vs_control": 0.9778,
+      "rho_with_hbb": 0.398,
+      "n_rho": 26
+     },
+     {
+      "key": "h4",
+      "protein": "Histone H4",
+      "tested": false
+     },
+     {
+      "key": "serpinf2",
+      "protein": "Alpha-2-antiplasmin (SERPINF2)",
+      "tested": true,
+      "in_family": true,
+      "delta": 0.0952,
+      "p_stratified": 0.56854,
+      "delta_unstratified": 0.0952,
+      "p_unstratified": 0.65633,
+      "lopo_min": -0.0392,
+      "lopo_max": 0.2212,
+      "lopo_sign_change": true,
+      "delta_infected_vs_control": 0.2203,
+      "p_infected_vs_control": 0.13959,
+      "rho_with_hbb": -0.239,
+      "n_rho": 32
+     },
+     {
+      "key": "proc",
+      "protein": "Protein C",
+      "tested": true,
+      "in_family": true,
+      "delta": 0.0159,
+      "p_stratified": 1.0,
+      "delta_unstratified": 0.0159,
+      "p_unstratified": 1.0,
+      "lopo_min": -0.2222,
+      "lopo_max": 0.1905,
+      "lopo_sign_change": true,
+      "delta_infected_vs_control": 0.0972,
+      "p_infected_vs_control": 0.61884,
+      "rho_with_hbb": 0.509,
+      "n_rho": 16
+     },
+     {
+      "key": "serpinc1",
+      "protein": "Antithrombin (SERPINC1)",
+      "tested": true,
+      "in_family": true,
+      "delta": -0.0754,
+      "p_stratified": 0.71393,
+      "delta_unstratified": -0.0754,
+      "p_unstratified": 0.72803,
+      "lopo_min": -0.1814,
+      "lopo_max": 0.024,
+      "lopo_sign_change": true,
+      "delta_infected_vs_control": -0.6719,
+      "p_infected_vs_control": 0.0001,
+      "rho_with_hbb": -0.119,
+      "n_rho": 32
+     },
+     {
+      "key": "cfh",
+      "protein": "Complement factor H",
+      "tested": true,
+      "in_family": true,
+      "delta": -0.119,
+      "p_stratified": 0.61394,
+      "delta_unstratified": -0.119,
+      "p_unstratified": 0.58394,
+      "lopo_min": -0.2549,
+      "lopo_max": 0.0196,
+      "lopo_sign_change": true,
+      "delta_infected_vs_control": -0.1734,
+      "p_infected_vs_control": 0.28747,
+      "rho_with_hbb": -0.034,
+      "n_rho": 32
+     },
+     {
+      "key": "cd14",
+      "protein": "CD14",
+      "tested": true,
+      "in_family": true,
+      "delta": 0.4206,
+      "p_stratified": 0.07269,
+      "delta_unstratified": 0.4206,
+      "p_unstratified": 0.0431,
+      "lopo_min": 0.3137,
+      "lopo_max": 0.5288,
+      "lopo_sign_change": false,
+      "delta_infected_vs_control": 0.8344,
+      "p_infected_vs_control": 0.0001,
+      "rho_with_hbb": 0.458,
+      "n_rho": 32
+     },
+     {
+      "key": "hba",
+      "protein": "Haemoglobin alpha (group master J9NXL3)",
+      "tested": true,
+      "in_family": false,
+      "delta": 0.4722,
+      "p_stratified": 0.0279,
+      "delta_unstratified": 0.4722,
+      "p_unstratified": 0.0234,
+      "lopo_min": 0.4069,
+      "lopo_max": 0.5769,
+      "lopo_sign_change": false,
+      "delta_infected_vs_control": 0.2203,
+      "p_infected_vs_control": 0.0495,
+      "rho_with_hbb": 0.952,
+      "n_rho": 32
+     }
+    ],
+    "footnote": "S1 unstratified permutation; S2 leave-one-plex-out range of delta; S3 infected (32) vs controls (20), plex-stratified, not corrected; S5 Spearman rho with haemoglobin beta among infected dogs. Not in the family."
+   }
+  },
+  {
+   "kind": "secondary",
+   "title": "Secondary: haemoglobin alpha (outside the family)",
+   "sort_order": 5,
+   "payload": {
+    "rows": [
+     {
+      "key": "hba",
+      "protein": "Haemoglobin alpha (group master J9NXL3)",
+      "accession": "J9NXL3",
+      "mechanism": "F1-01 cell-free haemoglobin",
+      "role": "secondary",
+      "expected_direction": "higher",
+      "coverage_rule": "full",
+      "n_comp": 14,
+      "n_unc": 18,
+      "n_ctrl": 20,
+      "plexes_observed": [
+       "B1",
+       "B10",
+       "B11",
+       "B2",
+       "B3",
+       "B4",
+       "B5",
+       "B6",
+       "B7",
+       "B8",
+       "B9"
+      ],
+      "tested": true,
+      "median_comp": 0.3985,
+      "median_unc": -1.6284,
+      "median_ctrl": -1.6575,
+      "delta": 0.4722,
+      "delta_lo": 0.0871,
+      "delta_hi": 0.8095,
+      "hl_log2": 1.4803,
+      "hl_lo": 0.2263,
+      "hl_hi": 2.7088,
+      "hl_sd_units": 0.966,
+      "p_stratified": 0.0279,
+      "q_bh": null,
+      "presence_fisher_p": null,
+      "detectable_sd_a05": 1.0,
+      "detectable_sd_a005": 1.3
+     }
+    ],
+    "footnote": "Haemoglobin alpha fails the master-protein check: P60529 is a candidate only and its group master J9NXL3 (LOC100855558, 'Uncharacterized protein') has no stated identity. Outside the family; no claim."
+   }
+  },
+  {
+   "kind": "master_check",
+   "title": "Master-protein check of the fixed family",
+   "sort_order": 6,
+   "payload": {
+    "rows": [
+     {
+      "candidate": "Haemoglobin beta",
+      "named_accessions": [
+       "P60524"
+      ],
+      "named_status": [
+       "IsMasterProtein"
+      ],
+      "quantity_accession": "P60524",
+      "quantity_description": "Hemoglobin subunit beta",
+      "quantity_gene": "HBB",
+      "coverage_pct": "45",
+      "unique_peptides": 6,
+      "psms": 135,
+      "same_abundances_as_named": true,
+      "check": "master",
+      "in_family": true
+     },
+     {
+      "candidate": "Haemoglobin alpha",
+      "named_accessions": [
+       "P60529"
+      ],
+      "named_status": [
+       "IsMasterProteinCandidate"
+      ],
+      "quantity_accession": "J9NXL3",
+      "quantity_description": "Uncharacterized protein",
+      "quantity_gene": "LOC100855558",
+      "coverage_pct": "31",
+      "unique_peptides": 2,
+      "psms": 63,
+      "same_abundances_as_named": true,
+      "check": "fails: candidate only; group master has no stated identity",
+      "in_family": false
+     },
+     {
+      "candidate": "Haptoglobin",
+      "named_accessions": [
+       "P19006",
+       "G1K2D9"
+      ],
+      "named_status": [
+       "IsMasterProteinCandidate",
+       "IsMasterProteinCandidate"
+      ],
+      "quantity_accession": "A0A5F4DB38",
+      "quantity_description": "Peptidase S1 domain-containing protein",
+      "quantity_gene": "LOC479668",
+      "coverage_pct": "17",
+      "unique_peptides": 6,
+      "psms": 152,
+      "same_abundances_as_named": true,
+      "check": "candidate only; group master has the same gene symbol",
+      "in_family": true
+     },
+     {
+      "candidate": "Lactoferrin",
+      "named_accessions": [
+       "F1PR54"
+      ],
+      "named_status": [
+       "IsMasterProtein"
+      ],
+      "quantity_accession": "F1PR54",
+      "quantity_description": "Lactotransferrin",
+      "quantity_gene": "LTF",
+      "coverage_pct": "6",
+      "unique_peptides": 3,
+      "psms": 95,
+      "same_abundances_as_named": true,
+      "check": "master",
+      "in_family": true
+     },
+     {
+      "candidate": "S100A8",
+      "named_accessions": [
+       "C0LQL0",
+       "J9P8S3"
+      ],
+      "named_status": [
+       "IsMasterProtein",
+       "IsMasterProteinCandidate"
+      ],
+      "quantity_accession": "C0LQL0",
+      "quantity_description": "Protein S100",
+      "quantity_gene": "S100A8",
+      "coverage_pct": "9",
+      "unique_peptides": 1,
+      "psms": 13,
+      "same_abundances_as_named": true,
+      "check": "master",
+      "in_family": true
+     },
+     {
+      "candidate": "Histone H4",
+      "named_accessions": [
+       "L7N0L3",
+       "J9NRV0",
+       "F2Z4N2"
+      ],
+      "named_status": [
+       "IsMasterProtein",
+       "IsMasterProteinCandidate",
+       "IsMasterProteinCandidate"
+      ],
+      "quantity_accession": "L7N0L3",
+      "quantity_description": "Histone H4",
+      "quantity_gene": "H4C7",
+      "coverage_pct": "11",
+      "unique_peptides": 1,
+      "psms": 2,
+      "same_abundances_as_named": true,
+      "check": "master",
+      "in_family": true
+     },
+     {
+      "candidate": "Alpha-2-antiplasmin",
+      "named_accessions": [
+       "E2R4V3",
+       "A0A5F4CB96"
+      ],
+      "named_status": [
+       "IsMasterProtein",
+       "IsMasterProteinCandidate"
+      ],
+      "quantity_accession": "E2R4V3",
+      "quantity_description": "Serpin family F member 2",
+      "quantity_gene": "SERPINF2",
+      "coverage_pct": "26",
+      "unique_peptides": 8,
+      "psms": 79,
+      "same_abundances_as_named": true,
+      "check": "master",
+      "in_family": true
+     },
+     {
+      "candidate": "Protein C",
+      "named_accessions": [
+       "Q28278",
+       "J9NVK0",
+       "A0A5F4CZ73"
+      ],
+      "named_status": [
+       "IsMasterProtein",
+       "IsMasterProteinCandidate",
+       "IsMasterProteinCandidate"
+      ],
+      "quantity_accession": "Q28278",
+      "quantity_description": "Vitamin K-dependent protein C",
+      "quantity_gene": "PROC",
+      "coverage_pct": "4",
+      "unique_peptides": 2,
+      "psms": 5,
+      "same_abundances_as_named": true,
+      "check": "master",
+      "in_family": true
+     },
+     {
+      "candidate": "Antithrombin",
+      "named_accessions": [
+       "E2RES2"
+      ],
+      "named_status": [
+       "IsMasterProtein"
+      ],
+      "quantity_accession": "E2RES2",
+      "quantity_description": "Antithrombin-III",
+      "quantity_gene": "SERPINC1",
+      "coverage_pct": "18",
+      "unique_peptides": 7,
+      "psms": 98,
+      "same_abundances_as_named": true,
+      "check": "master",
+      "in_family": true
+     },
+     {
+      "candidate": "Complement factor H",
+      "named_accessions": [
+       "A0A5F4BVG1",
+       "E2RK21",
+       "A0A5F4CHF6",
+       "J9NTL7",
+       "A0A5F4CLV4",
+       "A0A5F4BYC6"
+      ],
+      "named_status": [
+       "IsMasterProtein",
+       "IsMasterProteinCandidate",
+       "IsMasterProteinCandidate",
+       "IsMasterProteinCandidate",
+       "IsMasterProteinCandidate",
+       "IsMasterProteinCandidate"
+      ],
+      "quantity_accession": "A0A5F4BVG1",
+      "quantity_description": "Uncharacterized protein",
+      "quantity_gene": "CFH",
+      "coverage_pct": "15",
+      "unique_peptides": 13,
+      "psms": 164,
+      "same_abundances_as_named": true,
+      "check": "master",
+      "in_family": true
+     },
+     {
+      "candidate": "CD14",
+      "named_accessions": [
+       "A0A1S7J0A8"
+      ],
+      "named_status": [
+       "IsMasterProtein"
+      ],
+      "quantity_accession": "A0A1S7J0A8",
+      "quantity_description": "Monocyte differentiation antigen CD14",
+      "quantity_gene": "607076",
+      "coverage_pct": "11",
+      "unique_peptides": 4,
+      "psms": 34,
+      "same_abundances_as_named": true,
+      "check": "master",
+      "in_family": true
+     }
+    ],
+    "footnote": "Checked in /core/data/raw/DS07/B_Proteins.txt before the outcome lock opened: column Master, and for candidate-only rows the master protein with identical grouped abundances (66 cells)."
+   }
+  },
+  {
+   "kind": "plex_layout",
+   "title": "TMT plex layout",
+   "sort_order": 7,
+   "payload": {
+    "rows": [
+     {
+      "plex": "B1",
+      "complicated": 2,
+      "uncomplicated": 1,
+      "control": 2
+     },
+     {
+      "plex": "B2",
+      "complicated": 2,
+      "uncomplicated": 1,
+      "control": 2
+     },
+     {
+      "plex": "B3",
+      "complicated": 1,
+      "uncomplicated": 2,
+      "control": 2
+     },
+     {
+      "plex": "B4",
+      "complicated": 1,
+      "uncomplicated": 2,
+      "control": 2
+     },
+     {
+      "plex": "B5",
+      "complicated": 1,
+      "uncomplicated": 2,
+      "control": 2
+     },
+     {
+      "plex": "B6",
+      "complicated": 1,
+      "uncomplicated": 2,
+      "control": 2
+     },
+     {
+      "plex": "B7",
+      "complicated": 1,
+      "uncomplicated": 3,
+      "control": 1
+     },
+     {
+      "plex": "B8",
+      "complicated": 1,
+      "uncomplicated": 2,
+      "control": 2
+     },
+     {
+      "plex": "B9",
+      "complicated": 2,
+      "uncomplicated": 1,
+      "control": 2
+     },
+     {
+      "plex": "B10",
+      "complicated": 2,
+      "uncomplicated": 1,
+      "control": 2
+     },
+     {
+      "plex": "B11",
+      "complicated": 0,
+      "uncomplicated": 1,
+      "control": 1
+     }
+    ],
+    "footnote": "TMT layout from sample_list.xlsx; channel 126 of each plex is the pooled standard. Labels are permuted inside each plex."
+   }
+  },
+  {
+   "kind": "interpretation",
+   "title": "Explanation and interpretation",
+   "sort_order": 9,
+   "payload": {
+    "sections": [
+     {
+      "heading": "Question",
+      "paragraphs": [
+       "Do serum proteins of mechanisms linked to severity in human malaria, human babesiosis and sepsis (haemolysis and haem scavenging, neutrophil granule proteins and histones, fibrinolysis and anticoagulant consumption, complement regulation) differ between complicated and uncomplicated B. rossi babesiosis in the one public canine serum proteome (DS07)?",
+       "Hypothesis: at least one mechanism candidate (not a positive control) differs at q < 0.05."
+      ]
+     },
+     {
+      "heading": "What was done",
+      "paragraphs": [
+       "The 11 proteins were fixed by the package file and mapped to accessions by part a. Before the outcome lock opened, each was checked as a master protein in B_Proteins.txt. Haemoglobin alpha failed: its group master has no stated identity. It was dropped from the family and is shown once as a secondary result. Haptoglobin is quantified through its group master A0A5F4DB38, which has the haptoglobin gene symbol LOC479668. The family has 10 proteins.",
+       "For each protein: Cliff's delta, complicated against uncomplicated, on the log2 ratio to the plex standard; a permutation p with labels permuted inside each of the 11 TMT plexes (10,000 permutations, seed 20261112); a 95% bootstrap interval (2,000 resamples of dogs); Benjamini-Hochberg over 10 proteins.",
+       "Missing values in DS07 are missing for a whole plex. So a presence test only tests how the groups were placed in plexes. Proteins seen in less than 60% of a group were therefore tested on the observed dogs only and flagged as low coverage. A protein with fewer than 3 observed dogs in a group was not tested: Histone H4 (4 complicated, 2 uncomplicated, plexes B1, B9)."
+      ]
+     },
+     {
+      "heading": "Result",
+      "paragraphs": [
+       "None of the 10 family proteins differs at q < 0.05 between 14 complicated and 18 uncomplicated dogs (9 tested; 2 with p < 0.05). The smallest p is haemoglobin beta: Cliff's delta +0.48 (+0.09 to +0.82), p 0.019, q 0.133.",
+       "Positive controls: lactoferrin delta +0.42 (+0.01 to +0.81) and CD14 +0.42 (+0.05 to +0.74) are both higher in complicated dogs, the direction CB112 reported for the same data. The value pipeline is consistent with the source article. Neither control passes the family correction (q 0.133 and 0.242).",
+       "Mechanism candidates: haemoglobin beta is higher in complicated dogs (delta +0.48, +0.09 to +0.82; Hodges-Lehmann shift +1.17 log2 units; p 0.019, q 0.133). Its interval excludes zero but it does not pass the correction, and it partly restates the label. S100A8 points the same way (delta +0.42, -0.10 to +0.93, n 10 vs 16). Haptoglobin +0.08, alpha-2-antiplasmin +0.10, protein C +0.02 (low coverage, n 7 vs 9), antithrombin -0.08 and factor H -0.12: all intervals include zero. Histone H4 could not be tested.",
+       "Checks: leave-one-plex-out never changes the sign of the haemoglobin beta, lactoferrin, CD14 or S100A8 deltas. The unstratified test gives p < 0.05 for Haemoglobin beta, CD14. Against controls, Antithrombin (SERPINC1) (-0.67), CD14 (+0.83), Lactoferrin (+0.44) differ at p < 0.05. Of these, Antithrombin (SERPINC1), CD14 do not differ by complicated status (p >= 0.05): they move with infection more than with complicated disease. Among infected dogs, Haptoglobin (group master A0A5F4DB38) (rho +0.58), Lactoferrin (rho +0.54), Protein C (rho +0.51), CD14 (rho +0.46) rise with haemoglobin beta."
+      ]
+     },
+     {
+      "heading": "What this does not show",
+      "paragraphs": [
+       "A null here is 'not shown', not 'absent': with 14 against 18 dogs the test detects about 1.0 SD at alpha 0.05 and about 1.3 SD after correction.",
+       "DS07 is one source with no replication. It has no covariates (age, sex, treatment, time from onset, sample haemolysis index), and its label is defined partly by haematocrit, urea, creatinine, bilirubin, glucose and lactate. A haemoglobin difference may come from in-vivo haemolysis, anaemia severity or haemolysis of the stored sample, and these cannot be told apart.",
+       "Serum proteomics measures total protein, not activity. Alpha-2-antiplasmin and protein C amounts do not test fibrinolytic shutdown or protein C activation. Haptoglobin was measured as total haptoglobin group abundance, not as free haptoglobin. This is not a screen of the proteome, and no protein outside the fixed family was looked at."
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

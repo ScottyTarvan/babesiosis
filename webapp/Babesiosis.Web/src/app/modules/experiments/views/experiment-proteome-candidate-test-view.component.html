@@ -1,0 +1,158 @@
+<div class="fs-experiment-prot">
+  <fs-card title="Primary result" [subtitle]="primary()?.label ?? 'Candidate proteins, complicated against uncomplicated'">
+    @if (primary(); as p) {
+      <p class="fs-experiment-prot__status">
+        <fs-badge variant="tonal" [intent]="verdictIntent()">Hypothesis: {{ p.verdict }}</fs-badge>
+        <fs-badge variant="tonal" [intent]="p.n_q05 ? 'success' : 'info'">{{ p.n_q05 }} of {{ p.family_size }} at q &lt; 0.05</fs-badge>
+        <fs-badge variant="tonal" [intent]="p.positive_controls_consistent ? 'success' : 'warning'">
+          Positive controls {{ p.positive_controls_consistent ? 'consistent with CB112' : 'NOT consistent with CB112' }}
+        </fs-badge>
+        <span class="fs-experiment-prot__meta">
+          {{ p.n_comp }} complicated vs {{ p.n_unc }} uncomplicated dogs · {{ p.n_tested }} tested ·
+          {{ p.independent_sources }} independent source · {{ p.dataset }}
+        </span>
+      </p>
+      <div class="fs-experiment-prot__primary">
+        <div class="fs-experiment-prot__effect">
+          <div class="fs-experiment-prot__effect-label">Smallest p in the family: {{ p.best.protein }}</div>
+          <div class="fs-experiment-prot__stat-value">
+            Cliff's delta {{ fmtSigned(p.best.delta) }} ({{ fmtSigned(p.best.delta_lo) }} to {{ fmtSigned(p.best.delta_hi) }})
+          </div>
+          <div class="fs-experiment-prot__footnote">
+            n {{ p.best.n_comp }} vs {{ p.best.n_unc }} · HL shift {{ fmtSigned(p.best.hl_log2) }} log2 units ·
+            p {{ fmtP(p.best.p_stratified) }} · q {{ fmtP(p.best.q_bh) }}
+          </div>
+        </div>
+        @for (c of p.positive_controls; track c.protein) {
+          <div class="fs-experiment-prot__effect">
+            <div class="fs-experiment-prot__effect-label">Positive control: {{ c.protein }}</div>
+            <div class="fs-experiment-prot__stat-value">
+              Cliff's delta {{ fmtSigned(c.delta) }} ({{ fmtSigned(c.delta_lo) }} to {{ fmtSigned(c.delta_hi) }})
+            </div>
+            <div class="fs-experiment-prot__footnote">p {{ fmtP(c.p) }} · q {{ fmtP(c.q) }} · CB112 reported it higher in complicated dogs</div>
+          </div>
+        }
+      </div>
+      <p class="fs-experiment-prot__text">{{ p.headline }}</p>
+      <p class="fs-experiment-prot__footnote">Source: {{ p.sources.join('; ') }}. {{ p.caveats.join(' ') }}</p>
+    } @else {
+      <p class="fs-experiment-prot__footnote">This run stored no primary result.</p>
+    }
+  </fs-card>
+
+  <fs-card title="Cliff's delta for each protein of the fixed family"
+           subtitle="DS07, SRC-C, B. rossi · complicated minus uncomplicated · one source, no replication · label partly defined by anaemia">
+    @if (forestRows().length) {
+      <div class="fs-experiment-prot__forest">
+        <div class="fs-experiment-prot__forest-label fs-experiment-prot__meta">Protein</div>
+        <svg class="fs-experiment-prot__axis" [attr.viewBox]="'0 0 ' + forest.width + ' 18'" aria-hidden="true">
+          @for (t of ticks; track t.v) {
+            <text [attr.x]="t.x" y="13" text-anchor="middle" class="fs-experiment-prot__tick">{{ t.label }}</text>
+          }
+        </svg>
+        <div class="fs-experiment-prot__forest-effect fs-experiment-prot__meta">Delta (95% CI) · q</div>
+        @for (r of forestRows(); track r.key) {
+          <div class="fs-experiment-prot__forest-label" [title]="r.mechanism">
+            {{ r.protein }}@if (r.control) {<span class="fs-experiment-prot__meta"> · control</span>}
+          </div>
+          <svg class="fs-experiment-prot__mini" [attr.viewBox]="'0 0 ' + forest.width + ' ' + forest.height" role="img"
+               [attr.aria-label]="r.protein + ': ' + r.effect">
+            <line [attr.x1]="zeroX" [attr.x2]="zeroX" y1="1" [attr.y2]="forest.height - 1" class="fs-experiment-prot__zero" />
+            @if (r.tested) {
+              <line [attr.x1]="r.x1" [attr.x2]="r.x2" [attr.y1]="forest.height / 2" [attr.y2]="forest.height / 2"
+                    [class]="r.excludesZero ? 'fs-experiment-prot__ci fs-experiment-prot__ci--strong' : 'fs-experiment-prot__ci'" />
+              <circle [attr.cx]="r.x" [attr.cy]="forest.height / 2" r="5"
+                      [class]="r.excludesZero ? 'fs-experiment-prot__dot fs-experiment-prot__dot--strong' : 'fs-experiment-prot__dot'">
+                <title>{{ r.effect }}</title>
+              </circle>
+            } @else {
+              <text [attr.x]="zeroX + 8" [attr.y]="forest.height / 2 + 4" class="fs-experiment-prot__tick">not tested</text>
+            }
+          </svg>
+          <div class="fs-experiment-prot__forest-effect">{{ r.effect }} · q {{ r.q }}</div>
+        }
+      </div>
+      <p class="fs-experiment-prot__footnote">
+        Axis: Cliff's delta from −1 to +1; dashed line: no difference. A filled dot marks a 95% interval that excludes zero
+        (no protein passes the family correction unless its q is below 0.05).
+      </p>
+      <fs-data-grid [data]="forestRows()" [columns]="forestColumns" keyExpr="key" />
+      <p class="fs-experiment-prot__footnote">{{ tests()?.footnote }}</p>
+    } @else {
+      <p class="fs-experiment-prot__footnote">This run stored no family tests.</p>
+    }
+  </fs-card>
+
+  <fs-card title="Values by dog" subtitle="DS07 · log2 ratio to the plex standard · controls for context, not in the test">
+    @if (dogs(); as d) {
+      <div class="fs-experiment-prot__tabs" role="tablist">
+        @for (t of proteinTabs(); track t.key) {
+          <button type="button" class="btn btn-sm" role="tab"
+                  [class.btn-primary]="t.key === selectedProtein()?.key" [class.btn-outline-secondary]="t.key !== selectedProtein()?.key"
+                  [attr.aria-selected]="t.key === selectedProtein()?.key" (click)="selectProtein(t.key)">{{ t.label }}</button>
+        }
+      </div>
+      @if (stripPlot(); as s) {
+        @if (s.points.length) {
+          <svg class="fs-experiment-prot__strip" [attr.viewBox]="'0 0 ' + strip.width + ' ' + strip.height" role="img"
+               [attr.aria-label]="'Values by dog: ' + s.label">
+            @for (t of s.yTicks; track t.label) {
+              <line [attr.x1]="strip.left" [attr.x2]="strip.width - strip.right" [attr.y1]="t.y" [attr.y2]="t.y" class="fs-experiment-prot__grid" />
+              <text [attr.x]="strip.left - 6" [attr.y]="t.y + 4" text-anchor="end" class="fs-experiment-prot__tick">{{ t.label }}</text>
+            }
+            @for (g of s.groups; track g.key) {
+              <text [attr.x]="g.cx" [attr.y]="strip.height - 12" text-anchor="middle" class="fs-experiment-prot__tick">{{ g.label }}</text>
+              @if (g.medY !== null) {
+                <line [attr.x1]="g.x1" [attr.x2]="g.x2" [attr.y1]="g.medY" [attr.y2]="g.medY" class="fs-experiment-prot__median" />
+              }
+            }
+            @for (pt of s.points; track pt.id) {
+              <circle [attr.cx]="pt.cx" [attr.cy]="pt.cy" r="4" [class]="'fs-experiment-prot__pt fs-experiment-prot__pt--' + pt.group">
+                <title>{{ pt.title }}</title>
+              </circle>
+            }
+          </svg>
+        } @else {
+          <p class="fs-experiment-prot__footnote">No values for {{ s.label }}.</p>
+        }
+        <p class="fs-experiment-prot__footnote">
+          {{ s.label }}: {{ s.missing }} of 52 dogs have no value (whole plexes). Bars: group medians. {{ d.footnote }}
+        </p>
+      }
+    } @else {
+      <p class="fs-experiment-prot__footnote">This run stored no values by dog.</p>
+    }
+  </fs-card>
+
+  @if (sens(); as s) {
+    <fs-card title="Stability and sensitivity checks" subtitle="Not in the test family · S3 and S5 are context, not corrected">
+      <fs-data-grid [data]="sensRows()" [columns]="sensColumns" keyExpr="key" />
+      <p class="fs-experiment-prot__footnote">{{ s.footnote }}</p>
+    </fs-card>
+  }
+
+  @if (secondaryRows().length) {
+    <fs-card title="Secondary: haemoglobin alpha" subtitle="Failed the master-protein check · outside the family · no claim">
+      @for (r of secondaryRows(); track r.key) {
+        <p class="fs-experiment-prot__text">
+          {{ r.protein }}: Cliff's delta {{ r.effect }}, HL shift {{ r.hl }} log2 units, n {{ r.n }}, p {{ r.p }} (uncorrected).
+        </p>
+      }
+      <p class="fs-experiment-prot__footnote">{{ secondaryPayload()?.footnote }}</p>
+    </fs-card>
+  }
+
+  @if (master(); as m) {
+    <fs-card title="Master-protein check of the fixed family" subtitle="B_Proteins.txt · done before the outcome lock opened">
+      <fs-data-grid [data]="masterRows()" [columns]="masterColumns" keyExpr="candidate" />
+      <p class="fs-experiment-prot__footnote">{{ m.footnote }}</p>
+    </fs-card>
+  }
+
+  @if (plex(); as x) {
+    <fs-card title="TMT plex layout" subtitle="Dogs per plex and group · labels are permuted inside each plex">
+      <fs-data-grid [data]="$any(x.rows)" [columns]="plexColumns" keyExpr="plex" />
+      <p class="fs-experiment-prot__footnote">{{ x.footnote }}</p>
+    </fs-card>
+  }
+</div>

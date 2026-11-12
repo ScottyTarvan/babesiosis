@@ -161,6 +161,9 @@ export function parseJson<T>(text: string | null | undefined, fallback: T): T {
 export const METHOD_LABELS: Record<string, string> = {
   pairwise_association: 'Pairwise associations',
   clustering: 'Clustering',
+  data_layer_coverage: 'Data layer coverage',
+  literature_extraction: 'Literature extraction',
+  disease_space_map: 'Disease-space map',
 };
 
 export function methodLabel(method: string | null | undefined): string {

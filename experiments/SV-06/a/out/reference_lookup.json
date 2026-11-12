@@ -1,0 +1,814 @@
+{
+ "meta": {
+  "n_cb_notes": 444,
+  "n_cb_texts": 503,
+  "n_cb_texts_fulltext": 234,
+  "n_ds07_master": 224,
+  "n_ds07_candidate": 235,
+  "n_ds06_genes": 12362
+ },
+ "lookup": {
+  "F1-01": {
+   "mechanism": "Cell-free (plasma) haemoglobin",
+   "dog_genes": [
+    "HBA",
+    "HBB",
+    "HBA1",
+    "HBA2"
+   ],
+   "ds07_master": [
+    {
+     "gn": "HBB",
+     "accession": "P60524",
+     "description": "Hemoglobin subunit beta",
+     "coverage_pct": "45",
+     "status": "master"
+    },
+    {
+     "gn": "HBA",
+     "accession": "P60529",
+     "description": "Hemoglobin subunit alpha",
+     "coverage_pct": "31",
+     "status": "master_candidate"
+    }
+   ],
+   "ds06_genes": []
+  },
+  "F1-02": {
+   "mechanism": "Free haem and haemopexin depletion",
+   "dog_genes": [
+    "HPX"
+   ],
+   "ds07_master": [],
+   "ds06_genes": [
+    {
+     "gene": "HPX",
+     "ensembl": "ENSCAFG00000006430_HPX"
+    }
+   ]
+  },
+  "F1-03": {
+   "mechanism": "Haptoglobin depletion",
+   "dog_genes": [
+    "HP"
+   ],
+   "ds07_master": [
+    {
+     "gn": "LOC479668",
+     "accession": "G1K2D9",
+     "description": "Haptoglobin",
+     "coverage_pct": "16",
+     "status": "master_candidate"
+    },
+    {
+     "gn": "HP",
+     "accession": "P19006",
+     "description": "Haptoglobin",
+     "coverage_pct": "16",
+     "status": "master_candidate"
+    }
+   ],
+   "ds06_genes": []
+  },
+  "F1-04": {
+   "mechanism": "Haem oxygenase-1 induction",
+   "dog_genes": [
+    "HMOX1"
+   ],
+   "ds07_master": [],
+   "ds06_genes": [
+    {
+     "gene": "HMOX1",
+     "ensembl": "ENSCAFG00000001711_HMOX1"
+    }
+   ]
+  },
+  "F1-05": {
+   "mechanism": "Nitric oxide scavenging and arginine / ADMA",
+   "dog_genes": [
+    "NOS2",
+    "NOS3",
+    "ARG1",
+    "DDAH1"
+   ],
+   "ds07_master": [],
+   "ds06_genes": []
+  },
+  "F2-01": {
+   "mechanism": "Angiopoietin-2 and the Ang-2/Ang-1 ratio",
+   "dog_genes": [
+    "ANGPT1",
+    "ANGPT2",
+    "TEK"
+   ],
+   "ds07_master": [],
+   "ds06_genes": [
+    {
+     "gene": "ANGPT1",
+     "ensembl": "ENSCAFG00000000693_ANGPT1"
+    },
+    {
+     "gene": "TEK",
+     "ensembl": "ENSCAFG00000001713_TEK"
+    }
+   ]
+  },
+  "F2-02": {
+   "mechanism": "Glycocalyx shedding (syndecan-1, heparan sulfate, hyaluronan)",
+   "dog_genes": [
+    "SDC1",
+    "HPSE"
+   ],
+   "ds07_master": [],
+   "ds06_genes": [
+    {
+     "gene": "SDC1",
+     "ensembl": "ENSCAFG00000003833_SDC1"
+    },
+    {
+     "gene": "HPSE",
+     "ensembl": "ENSCAFG00000009094_HPSE"
+    }
+   ]
+  },
+  "F2-03": {
+   "mechanism": "Soluble endothelial adhesion molecules (ICAM-1, VCAM-1, E-selectin)",
+   "dog_genes": [
+    "ICAM1",
+    "VCAM1",
+    "SELE"
+   ],
+   "ds07_master": [],
+   "ds06_genes": [
+    {
+     "gene": "ICAM1",
+     "ensembl": "ENSCAFG00000031460_ICAM1"
+    }
+   ]
+  },
+  "F2-04": {
+   "mechanism": "VEGF and soluble VEGFR-1",
+   "dog_genes": [
+    "VEGFA",
+    "FLT1"
+   ],
+   "ds07_master": [],
+   "ds06_genes": [
+    {
+     "gene": "VEGFA",
+     "ensembl": "ENSCAFG00000001938_VEGFA"
+    },
+    {
+     "gene": "FLT1",
+     "ensembl": "ENSCAFG00000006701_FLT1"
+    }
+   ]
+  },
+  "F3-01": {
+   "mechanism": "Neutrophil extracellular traps (cell-free DNA, MPO-DNA, citrullinated histone H3)",
+   "dog_genes": [
+    "PADI4",
+    "MPO",
+    "ELANE"
+   ],
+   "ds07_master": [],
+   "ds06_genes": [
+    {
+     "gene": "PADI4",
+     "ensembl": "ENSCAFG00000015768_PADI4"
+    }
+   ]
+  },
+  "F3-02": {
+   "mechanism": "Circulating extracellular histones (host and parasite)",
+   "dog_genes": [
+    "H4C1",
+    "H2BC1",
+    "H3-3A",
+    "H4"
+   ],
+   "ds07_master": [
+    {
+     "gn": "H4C7",
+     "accession": "L7N0L3",
+     "description": "Histone H4",
+     "coverage_pct": "11",
+     "status": "master"
+    },
+    {
+     "gn": "",
+     "accession": "Q6B829",
+     "description": "Histone H4 (Fragment)",
+     "coverage_pct": "23",
+     "status": "master_candidate"
+    },
+    {
+     "gn": "H4C11",
+     "accession": "J9NRV0",
+     "description": "Histone H4",
+     "coverage_pct": "10",
+     "status": "master_candidate"
+    },
+    {
+     "gn": "H4-16",
+     "accession": "F2Z4N2",
+     "description": "Histone H4",
+     "coverage_pct": "10",
+     "status": "master_candidate"
+    }
+   ],
+   "ds06_genes": []
+  },
+  "F3-03": {
+   "mechanism": "Neutrophil granule proteins (MPO, elastase, lactoferrin, NGAL, S100A8/A9)",
+   "dog_genes": [
+    "MPO",
+    "ELANE",
+    "LTF",
+    "LCN2",
+    "S100A8",
+    "S100A9",
+    "S100A12",
+    "CAMP"
+   ],
+   "ds07_master": [
+    {
+     "gn": "LTF",
+     "accession": "F1PR54",
+     "description": "Lactotransferrin",
+     "coverage_pct": "6",
+     "status": "master"
+    },
+    {
+     "gn": "S100A8",
+     "accession": "J9P8S3",
+     "description": "S100 calcium binding protein A8",
+     "coverage_pct": "5",
+     "status": "master_candidate"
+    },
+    {
+     "gn": "S100A8",
+     "accession": "C0LQL0",
+     "description": "Protein S100",
+     "coverage_pct": "9",
+     "status": "master"
+    }
+   ],
+   "ds06_genes": [
+    {
+     "gene": "LTF",
+     "ensembl": "ENSCAFG00000013763_LTF"
+    },
+    {
+     "gene": "LCN2",
+     "ensembl": "ENSCAFG00000020088_LCN2"
+    },
+    {
+     "gene": "S100A8",
+     "ensembl": "ENSCAFG00000017557_S100A8"
+    },
+    {
+     "gene": "S100A12",
+     "ensembl": "ENSCAFG00000023324_S100A12"
+    },
+    {
+     "gene": "CAMP",
+     "ensembl": "ENSCAFG00000012896_CAMP"
+    }
+   ]
+  },
+  "F4-01": {
+   "mechanism": "VWF antigen, ultra-large multimers and ADAMTS13 (ratio)",
+   "dog_genes": [
+    "VWF",
+    "ADAMTS13"
+   ],
+   "ds07_master": [],
+   "ds06_genes": [
+    {
+     "gene": "VWF",
+     "ensembl": "ENSCAFG00000015228_VWF"
+    },
+    {
+     "gene": "ADAMTS13",
+     "ensembl": "ENSCAFG00000019776_ADAMTS13"
+    }
+   ]
+  },
+  "F4-02": {
+   "mechanism": "Platelet activation (soluble P-selectin, platelet factor 4)",
+   "dog_genes": [
+    "SELP",
+    "PF4",
+    "PPBP"
+   ],
+   "ds07_master": [
+    {
+     "gn": "PPBP",
+     "accession": "J9P346",
+     "description": "SCY domain-containing protein",
+     "coverage_pct": "14",
+     "status": "master_candidate"
+    }
+   ],
+   "ds06_genes": [
+    {
+     "gene": "SELP",
+     "ensembl": "ENSCAFG00000015180_SELP"
+    },
+    {
+     "gene": "PPBP",
+     "ensembl": "ENSCAFG00000031174_PPBP"
+    }
+   ]
+  },
+  "F4-03": {
+   "mechanism": "Fibrinolytic shutdown (PAI-1, alpha-2-antiplasmin)",
+   "dog_genes": [
+    "SERPINE1",
+    "SERPINF2",
+    "PLG"
+   ],
+   "ds07_master": [
+    {
+     "gn": "PLG",
+     "accession": "F1Q421",
+     "description": "Plasminogen",
+     "coverage_pct": "28",
+     "status": "master"
+    },
+    {
+     "gn": "SERPINF2",
+     "accession": "A0A5F4CB96",
+     "description": "Serpin family F member 2",
+     "coverage_pct": "30",
+     "status": "master_candidate"
+    },
+    {
+     "gn": "SERPINF2",
+     "accession": "E2R4V3",
+     "description": "Serpin family F member 2",
+     "coverage_pct": "26",
+     "status": "master"
+    },
+    {
+     "gn": "PLG",
+     "accession": "Q6JDI3",
+     "description": "Plasminogen (Fragment)",
+     "coverage_pct": "17",
+     "status": "master"
+    }
+   ],
+   "ds06_genes": [
+    {
+     "gene": "SERPINE1",
+     "ensembl": "ENSCAFG00000013909_SERPINE1"
+    },
+    {
+     "gene": "SERPINF2",
+     "ensembl": "ENSCAFG00000019240_SERPINF2"
+    }
+   ]
+  },
+  "F4-04": {
+   "mechanism": "Protein C, antithrombin and thrombomodulin (anticoagulant failure)",
+   "dog_genes": [
+    "PROC",
+    "SERPINC1",
+    "THBD"
+   ],
+   "ds07_master": [
+    {
+     "gn": "SERPINC1",
+     "accession": "E2RES2",
+     "description": "Antithrombin-III",
+     "coverage_pct": "18",
+     "status": "master"
+    },
+    {
+     "gn": "PROC",
+     "accession": "J9NVK0",
+     "description": "Vitamin K-dependent protein C",
+     "coverage_pct": "4",
+     "status": "master_candidate"
+    },
+    {
+     "gn": "PROC",
+     "accession": "A0A5F4CZ73",
+     "description": "Vitamin K-dependent protein C",
+     "coverage_pct": "4",
+     "status": "master_candidate"
+    },
+    {
+     "gn": "PROC",
+     "accession": "Q28278",
+     "description": "Vitamin K-dependent protein C",
+     "coverage_pct": "4",
+     "status": "master"
+    }
+   ],
+   "ds06_genes": [
+    {
+     "gene": "SERPINC1",
+     "ensembl": "ENSCAFG00000014470_SERPINC1"
+    }
+   ]
+  },
+  "F5-01": {
+   "mechanism": "Hepcidin",
+   "dog_genes": [
+    "HAMP"
+   ],
+   "ds07_master": [],
+   "ds06_genes": []
+  },
+  "F5-02": {
+   "mechanism": "Ferritin (hyperferritinaemia)",
+   "dog_genes": [
+    "FTL",
+    "FTH1"
+   ],
+   "ds07_master": [],
+   "ds06_genes": [
+    {
+     "gene": "FTL",
+     "ensembl": "ENSCAFG00000003861_FTL"
+    },
+    {
+     "gene": "FTH1",
+     "ensembl": "ENSCAFG00000015901_FTH1"
+    },
+    {
+     "gene": "FTH1",
+     "ensembl": "ENSCAFG00000030465_FTH1"
+    }
+   ]
+  },
+  "F5-03": {
+   "mechanism": "Serum iron and transferrin (iron restriction)",
+   "dog_genes": [
+    "TF",
+    "TFRC"
+   ],
+   "ds07_master": [
+    {
+     "gn": "TF",
+     "accession": "E2QZQ1",
+     "description": "Uncharacterized protein",
+     "coverage_pct": "33",
+     "status": "master"
+    },
+    {
+     "gn": "TF",
+     "accession": "J9P430",
+     "description": "Beta-1 metal-binding globulin",
+     "coverage_pct": "23",
+     "status": "master"
+    },
+    {
+     "gn": "",
+     "accession": "A0A0A0RBT6",
+     "description": "Transferrin receptor protein 1",
+     "coverage_pct": "10",
+     "status": "master_candidate"
+    },
+    {
+     "gn": "TFRC",
+     "accession": "F1PEN6",
+     "description": "Transferrin receptor protein 1",
+     "coverage_pct": "8",
+     "status": "master"
+    },
+    {
+     "gn": "TFRC",
+     "accession": "Q9GLD3",
+     "description": "Transferrin receptor protein 1",
+     "coverage_pct": "10",
+     "status": "master_candidate"
+    }
+   ],
+   "ds06_genes": [
+    {
+     "gene": "TFRC",
+     "ensembl": "ENSCAFG00000012941_TFRC"
+    }
+   ]
+  },
+  "F6-01": {
+   "mechanism": "Adrenal response (cortisol, cortisol:ACTH, adrenal androgens)",
+   "dog_genes": [
+    "POMC",
+    "NR3C1"
+   ],
+   "ds07_master": [],
+   "ds06_genes": [
+    {
+     "gene": "NR3C1",
+     "ensembl": "ENSCAFG00000006293_NR3C1"
+    }
+   ]
+  },
+  "F6-02": {
+   "mechanism": "Thyroid hormones (euthyroid sick syndrome)",
+   "dog_genes": [
+    "TTR",
+    "SERPINA7"
+   ],
+   "ds07_master": [
+    {
+     "gn": "TTR",
+     "accession": "E2R5U8",
+     "description": "Transthyretin",
+     "coverage_pct": "16",
+     "status": "master"
+    }
+   ],
+   "ds06_genes": []
+  },
+  "F6-03": {
+   "mechanism": "Lactate and hypoglycaemia",
+   "dog_genes": [
+    "LDHA"
+   ],
+   "ds07_master": [],
+   "ds06_genes": []
+  },
+  "F6-04": {
+   "mechanism": "Kynurenine pathway (IDO, kynurenine, quinolinic acid)",
+   "dog_genes": [
+    "IDO1",
+    "KMO"
+   ],
+   "ds07_master": [],
+   "ds06_genes": [
+    {
+     "gene": "IDO1",
+     "ensembl": "ENSCAFG00000005750_IDO1"
+    },
+    {
+     "gene": "KMO",
+     "ensembl": "ENSCAFG00000015726_KMO"
+    }
+   ]
+  },
+  "F6-05": {
+   "mechanism": "Copeptin / vasopressin",
+   "dog_genes": [
+    "AVP"
+   ],
+   "ds07_master": [],
+   "ds06_genes": []
+  },
+  "F7-01": {
+   "mechanism": "IL-10 and the IL-10/TNF balance",
+   "dog_genes": [
+    "IL10",
+    "TNF"
+   ],
+   "ds07_master": [],
+   "ds06_genes": [
+    {
+     "gene": "IL10",
+     "ensembl": "ENSCAFG00000011443_IL10"
+    },
+    {
+     "gene": "TNF",
+     "ensembl": "ENSCAFG00000000517_TNF"
+    }
+   ]
+  },
+  "F7-02": {
+   "mechanism": "Regulatory T cells and T-cell exhaustion (PD-1, PD-L1)",
+   "dog_genes": [
+    "FOXP3",
+    "PDCD1",
+    "CD274",
+    "CTLA4"
+   ],
+   "ds07_master": [],
+   "ds06_genes": [
+    {
+     "gene": "FOXP3",
+     "ensembl": "ENSCAFG00000015934_FOXP3"
+    },
+    {
+     "gene": "PDCD1",
+     "ensembl": "ENSCAFG00000013184_PDCD1"
+    },
+    {
+     "gene": "CD274",
+     "ensembl": "ENSCAFG00000002120_CD274"
+    },
+    {
+     "gene": "CTLA4",
+     "ensembl": "ENSCAFG00000012876_CTLA4"
+    }
+   ]
+  },
+  "F7-03": {
+   "mechanism": "Monocyte deactivation (HLA-DR / DLA class II expression)",
+   "dog_genes": [
+    "DLA-DRA",
+    "DLA-DRB1",
+    "CD74"
+   ],
+   "ds07_master": [],
+   "ds06_genes": [
+    {
+     "gene": "DLA-DRA",
+     "ensembl": "ENSCAFG00000000803_DLA-DRA"
+    },
+    {
+     "gene": "CD74",
+     "ensembl": "ENSCAFG00000018101_CD74"
+    }
+   ]
+  },
+  "F7-04": {
+   "mechanism": "Soluble TREM-1 and suPAR",
+   "dog_genes": [
+    "TREM1",
+    "PLAUR"
+   ],
+   "ds07_master": [],
+   "ds06_genes": [
+    {
+     "gene": "TREM1",
+     "ensembl": "ENSCAFG00000001591_TREM1"
+    },
+    {
+     "gene": "PLAUR",
+     "ensembl": "ENSCAFG00000004730_PLAUR"
+    }
+   ]
+  },
+  "F7-05": {
+   "mechanism": "Soluble CD14 (presepsin)",
+   "dog_genes": [
+    "CD14"
+   ],
+   "ds07_master": [
+    {
+     "gn": "607076",
+     "accession": "A0A1S7J0A8",
+     "description": "Monocyte differentiation antigen CD14",
+     "coverage_pct": "11",
+     "status": "master"
+    }
+   ],
+   "ds06_genes": []
+  },
+  "F1-11": {
+   "mechanism": "ADMA and arginine bioavailability (plasma arginine:ADMA ratio)",
+   "dog_genes": [
+    "DDAH1",
+    "DDAH2",
+    "PRMT1",
+    "AGXT2"
+   ],
+   "ds07_master": [],
+   "ds06_genes": [
+    {
+     "gene": "DDAH2",
+     "ensembl": "ENSCAFG00000000617_DDAH2"
+    },
+    {
+     "gene": "PRMT1",
+     "ensembl": "ENSCAFG00000003589_PRMT1"
+    }
+   ]
+  },
+  "F1-12": {
+   "mechanism": "Haem-driven lipid peroxidation (MDA, TBARS, F2-isoprostanes)",
+   "dog_genes": [],
+   "ds07_master": [],
+   "ds06_genes": []
+  },
+  "F3-11": {
+   "mechanism": "Released (plasma) myeloperoxidase and neutrophil elastase, as degranulation markers distinct from the cellular MPXI",
+   "dog_genes": [
+    "MPO",
+    "ELANE"
+   ],
+   "ds07_master": [],
+   "ds06_genes": []
+  },
+  "F3-12": {
+   "mechanism": "Calprotectin (S100A8/A9) and S100A12 as circulating neutrophil activation alarmins",
+   "dog_genes": [
+    "S100A8",
+    "S100A9",
+    "S100A12"
+   ],
+   "ds07_master": [
+    {
+     "gn": "S100A8",
+     "accession": "J9P8S3",
+     "description": "S100 calcium binding protein A8",
+     "coverage_pct": "5",
+     "status": "master_candidate"
+    },
+    {
+     "gn": "S100A8",
+     "accession": "C0LQL0",
+     "description": "Protein S100",
+     "coverage_pct": "9",
+     "status": "master"
+    }
+   ],
+   "ds06_genes": [
+    {
+     "gene": "S100A8",
+     "ensembl": "ENSCAFG00000017557_S100A8"
+    },
+    {
+     "gene": "S100A12",
+     "ensembl": "ENSCAFG00000023324_S100A12"
+    }
+   ]
+  },
+  "F3-13": {
+   "mechanism": "Band neutrophilia and the neutrophil left shift as a cheap severity marker already in the haematology record",
+   "dog_genes": [],
+   "ds07_master": [],
+   "ds06_genes": []
+  },
+  "F4-11": {
+   "mechanism": "Soluble endothelial protein C receptor (sEPCR) shedding",
+   "dog_genes": [
+    "PROCR"
+   ],
+   "ds07_master": [],
+   "ds06_genes": [
+    {
+     "gene": "PROCR",
+     "ensembl": "ENSCAFG00000007945_PROCR"
+    }
+   ]
+  },
+  "F7-11": {
+   "mechanism": "Soluble TREM-1 (split from F7-04)",
+   "dog_genes": [
+    "TREM1"
+   ],
+   "ds07_master": [],
+   "ds06_genes": [
+    {
+     "gene": "TREM1",
+     "ensembl": "ENSCAFG00000001591_TREM1"
+    }
+   ]
+  },
+  "F7-12": {
+   "mechanism": "Complement regulation (complement factor H)",
+   "dog_genes": [
+    "CFH"
+   ],
+   "ds07_master": [
+    {
+     "gn": "CFH",
+     "accession": "E2RK21",
+     "description": "Uncharacterized protein",
+     "coverage_pct": "14",
+     "status": "master_candidate"
+    },
+    {
+     "gn": "CFH",
+     "accession": "A0A5F4CHF6",
+     "description": "Uncharacterized protein",
+     "coverage_pct": "15",
+     "status": "master_candidate"
+    },
+    {
+     "gn": "CFH",
+     "accession": "J9NTL7",
+     "description": "Uncharacterized protein",
+     "coverage_pct": "14",
+     "status": "master_candidate"
+    },
+    {
+     "gn": "CFH",
+     "accession": "A0A5F4BVG1",
+     "description": "Uncharacterized protein",
+     "coverage_pct": "15",
+     "status": "master"
+    },
+    {
+     "gn": "CFH",
+     "accession": "A0A5F4CLV4",
+     "description": "Uncharacterized protein",
+     "coverage_pct": "15",
+     "status": "master_candidate"
+    },
+    {
+     "gn": "CFH",
+     "accession": "A0A5F4BYC6",
+     "description": "Uncharacterized protein",
+     "coverage_pct": "15",
+     "status": "master_candidate"
+    }
+   ],
+   "ds06_genes": []
+  }
+ }
+}

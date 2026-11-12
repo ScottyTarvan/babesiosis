@@ -1,0 +1,466 @@
+{
+  "inputs_sha256": {
+    "DS02.features.json": "12475e823e588af20e8bec2df5164979c158bdbbb86ddfb96a32afe8aad83e2d",
+    "DS03.features.json": "2862ac7e6e5fcec6200024543e4142fbe81eabd2eadef06d4f288bc982eda8a6",
+    "DS05.features.json": "323238159fb21596dacc02464fe4ebdf7bd54282cd06fdce7535057f28e90a1e",
+    "DS05.outcomes.json": "4a86691b3b97aefe846803c6d5784d96b35bd75b4b33d1f74d519d3d8365eba0"
+  },
+  "spec_sha256": "7c272692530ce89c0857ec971fd9b75578e407e643ce1d85c50a1f7d67d6a98f",
+  "seed": 20261112,
+  "versions": {
+    "python": "3.12.12",
+    "numpy": "2.3.4",
+    "scipy": "1.16.3"
+  },
+  "course_A_stage_vs_day": 0.584662,
+  "course_A": {
+    "n_points": 22,
+    "n_dogs": 5,
+    "iterations": 0,
+    "spread_sd_units": 1.052372,
+    "axis_mean": [
+      0.359091,
+      1.969823
+    ],
+    "axis_sd": [
+      0.068515,
+      0.287494
+    ],
+    "n_post_points": 16
+  },
+  "course_B_stage_vs_day": 0.304672,
+  "course_B": {
+    "n_points": 32,
+    "n_dogs": 5,
+    "iterations": 0,
+    "spread_sd_units": 0.985221,
+    "axis_mean": [
+      0.3625,
+      -0.820925
+    ],
+    "axis_sd": [
+      0.057977,
+      0.29854
+    ],
+    "n_post_points": 16
+  },
+  "validity": {
+    "estimate": -0.209381,
+    "ci_low": -0.359016,
+    "ci_high": -0.060141,
+    "p": 0.009999,
+    "n": 145,
+    "passed": false
+  },
+  "H1": {
+    "estimate": -0.543847,
+    "ci_low": -0.671153,
+    "ci_high": -0.398549,
+    "p": 0.0001,
+    "n": 147,
+    "q": 0.00015
+  },
+  "H2": {
+    "estimate": -0.278213,
+    "ci_low": -0.431229,
+    "ci_high": -0.105863,
+    "p": 0.0009,
+    "n": 147,
+    "q": 0.0009
+  },
+  "H3": {
+    "estimate": -0.467103,
+    "ci_low": -0.585858,
+    "ci_high": -0.336269,
+    "p": 0.0001,
+    "n": 147,
+    "q": 0.00015
+  },
+  "axes_vs_blood": {
+    "stage_vs_hct": -0.3341,
+    "distance_vs_hct": -0.895298,
+    "stage_vs_logarc": -0.47965,
+    "distance_vs_logarc": 0.154785,
+    "habitus_vs_hct": 0.531173,
+    "n": 147
+  },
+  "S1": {
+    "estimate": -0.548365,
+    "ci_low": -0.680467,
+    "ci_high": -0.408199,
+    "p": 0.0001,
+    "n": 144
+  },
+  "S2": {
+    "estimate": -0.511639,
+    "ci_low": -0.724976,
+    "ci_high": -0.248014,
+    "p": 0.0001,
+    "n": 56
+  },
+  "S3": {
+    "estimate": -0.286261,
+    "ci_low": -0.441136,
+    "ci_high": -0.096584,
+    "p": 0.0004,
+    "n": 147
+  },
+  "habitus_table": [
+    {
+      "habitus": 0,
+      "n": 3,
+      "median_stage": 0.960557,
+      "median_distance": 1.143133,
+      "median_hct": 0.28,
+      "beyond_end": 2
+    },
+    {
+      "habitus": 1,
+      "n": 18,
+      "median_stage": 1.0,
+      "median_distance": 3.044541,
+      "median_hct": 0.11,
+      "beyond_end": 14
+    },
+    {
+      "habitus": 2,
+      "n": 70,
+      "median_stage": 0.9961,
+      "median_distance": 2.528325,
+      "median_hct": 0.15,
+      "beyond_end": 41
+    },
+    {
+      "habitus": 3,
+      "n": 46,
+      "median_stage": 0.985153,
+      "median_distance": 1.646623,
+      "median_hct": 0.23,
+      "beyond_end": 29
+    },
+    {
+      "habitus": 4,
+      "n": 10,
+      "median_stage": 0.934844,
+      "median_distance": 0.755082,
+      "median_hct": 0.3,
+      "beyond_end": 5
+    }
+  ],
+  "loo": [
+    {
+      "left_out": "DS02:d001",
+      "spread": 0.832864,
+      "median_abs_stage_change": 0.001974,
+      "spearman_stage_vs_full": 0.841261,
+      "spearman_distance_vs_full": 0.96507,
+      "share_beyond_end": 0.55102,
+      "h1_partial_rho": -0.512558
+    },
+    {
+      "left_out": "DS02:d002",
+      "spread": 1.132501,
+      "median_abs_stage_change": 0.031605,
+      "spearman_stage_vs_full": -0.236646,
+      "spearman_distance_vs_full": 0.989395,
+      "share_beyond_end": 0.639456,
+      "h1_partial_rho": -0.575608
+    },
+    {
+      "left_out": "DS02:d003",
+      "spread": 1.024082,
+      "median_abs_stage_change": 0.108989,
+      "spearman_stage_vs_full": -0.390865,
+      "spearman_distance_vs_full": 0.97748,
+      "share_beyond_end": 0.081633,
+      "h1_partial_rho": -0.557173
+    },
+    {
+      "left_out": "DS02:d004",
+      "spread": 1.079456,
+      "median_abs_stage_change": 0.0,
+      "spearman_stage_vs_full": 0.46609,
+      "spearman_distance_vs_full": 0.996789,
+      "share_beyond_end": 0.938776,
+      "h1_partial_rho": -0.53282
+    },
+    {
+      "left_out": "DS02:d005",
+      "spread": 0.893277,
+      "median_abs_stage_change": 0.079324,
+      "spearman_stage_vs_full": 0.842018,
+      "spearman_distance_vs_full": 0.986558,
+      "share_beyond_end": 0.435374,
+      "h1_partial_rho": -0.53798
+    }
+  ],
+  "geometry": [
+    {
+      "group": "DS05",
+      "n": 147,
+      "share_within_band": 0.401361,
+      "within_ci_low": 0.325609,
+      "within_ci_high": 0.482136,
+      "share_beyond_end": 0.619048,
+      "beyond_ci_low": 0.53846,
+      "beyond_ci_high": 0.693572,
+      "share_past_late_end": 0.544218,
+      "median_stage": 0.993918,
+      "stage_q1": 0.961377,
+      "stage_q3": 1.0,
+      "median_stage_ci": [
+        0.986628,
+        1.0
+      ],
+      "median_distance": 2.308239,
+      "median_distance_ci": [
+        2.034595,
+        2.501818
+      ],
+      "median_hct": 0.18,
+      "stage_histogram": [
+        11,
+        1,
+        1,
+        1,
+        0,
+        0,
+        2,
+        2,
+        1,
+        128
+      ]
+    },
+    {
+      "group": "DS03_c1",
+      "n": 85,
+      "share_within_band": 0.411765,
+      "within_ci_low": 0.31317,
+      "within_ci_high": 0.51799,
+      "share_beyond_end": 0.647059,
+      "beyond_ci_low": 0.541125,
+      "beyond_ci_high": 0.740275,
+      "share_past_late_end": 0.552941,
+      "median_stage": 1.0,
+      "stage_q1": 0.958583,
+      "stage_q3": 1.0,
+      "median_stage_ci": [
+        0.980415,
+        1.0
+      ],
+      "median_distance": 2.321032,
+      "median_distance_ci": [
+        1.977226,
+        2.573412
+      ],
+      "median_hct": 0.18,
+      "stage_histogram": [
+        9,
+        2,
+        3,
+        0,
+        0,
+        2,
+        0,
+        0,
+        2,
+        67
+      ]
+    },
+    {
+      "group": "DS03_c2",
+      "n": 18,
+      "share_within_band": 0.166667,
+      "within_ci_low": 0.058366,
+      "within_ci_high": 0.39222,
+      "share_beyond_end": 0.555556,
+      "beyond_ci_low": 0.337164,
+      "beyond_ci_high": 0.754405,
+      "share_past_late_end": 0.444444,
+      "median_stage": 0.982863,
+      "stage_q1": 0.968233,
+      "stage_q3": 1.0,
+      "median_stage_ci": [
+        0.96872,
+        1.0
+      ],
+      "median_distance": 2.854985,
+      "median_distance_ci": [
+        2.221958,
+        3.209575
+      ],
+      "median_hct": 0.135,
+      "stage_histogram": [
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        16
+      ]
+    },
+    {
+      "group": "DS03_healthy",
+      "n": 14,
+      "share_within_band": 0.428571,
+      "within_ci_low": 0.213808,
+      "within_ci_high": 0.674094,
+      "share_beyond_end": 0.0,
+      "beyond_ci_low": 0.0,
+      "beyond_ci_high": 0.215311,
+      "share_past_late_end": 0.0,
+      "median_stage": 0.224606,
+      "stage_q1": 0.159215,
+      "stage_q3": 0.259844,
+      "median_stage_ci": [
+        0.157365,
+        0.260624
+      ],
+      "median_distance": 2.076082,
+      "median_distance_ci": [
+        1.411346,
+        2.476256
+      ],
+      "median_hct": 0.52,
+      "stage_histogram": [
+        2,
+        3,
+        7,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "group": "DS03_imha",
+      "n": 16,
+      "share_within_band": 0.0625,
+      "within_ci_low": 0.011119,
+      "within_ci_high": 0.283287,
+      "share_beyond_end": 0.3125,
+      "beyond_ci_low": 0.141646,
+      "beyond_ci_high": 0.555956,
+      "share_past_late_end": 0.25,
+      "median_stage": 0.969531,
+      "stage_q1": 0.946559,
+      "stage_q3": 0.982815,
+      "median_stage_ci": [
+        0.946559,
+        0.984566
+      ],
+      "median_distance": 3.074468,
+      "median_distance_ci": [
+        2.877462,
+        3.307803
+      ],
+      "median_hct": 0.15,
+      "stage_histogram": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        14
+      ]
+    }
+  ],
+  "beagle_hct_range": [
+    0.12,
+    0.42
+  ],
+  "beagle_arc_range": [
+    25.8,
+    240.1
+  ],
+  "tests": [
+    {
+      "code": "H1",
+      "label": "Habitus with distance given pseudo-stage, plane A (primary)",
+      "statistic": "partial rho",
+      "estimate": -0.543847,
+      "ci_low": -0.671153,
+      "ci_high": -0.398549,
+      "n": 147,
+      "p": 0.0001,
+      "q": 0.00015
+    },
+    {
+      "code": "H2",
+      "label": "Habitus with pseudo-stage, plane A",
+      "statistic": "rho",
+      "estimate": -0.278213,
+      "ci_low": -0.431229,
+      "ci_high": -0.105863,
+      "n": 147,
+      "p": 0.0009,
+      "q": 0.0009
+    },
+    {
+      "code": "H3",
+      "label": "Habitus with distance given pseudo-stage, plane B (bands)",
+      "statistic": "partial rho",
+      "estimate": -0.467103,
+      "ci_low": -0.585858,
+      "ci_high": -0.336269,
+      "n": 147,
+      "p": 0.0001,
+      "q": 0.00015
+    },
+    {
+      "code": "S1",
+      "label": "H1 without the 3 E. canis co-infected dogs",
+      "statistic": "partial rho",
+      "estimate": -0.548365,
+      "ci_low": -0.680467,
+      "ci_high": -0.408199,
+      "n": 144,
+      "p": 0.0001,
+      "q": null
+    },
+    {
+      "code": "S2",
+      "label": "H1, interior projections only",
+      "statistic": "partial rho",
+      "estimate": -0.511639,
+      "ci_low": -0.724976,
+      "ci_high": -0.248014,
+      "n": 56,
+      "p": 0.0001,
+      "q": null
+    },
+    {
+      "code": "S3",
+      "label": "H1 also controlling haematocrit",
+      "statistic": "partial rho",
+      "estimate": -0.286261,
+      "ci_low": -0.441136,
+      "ci_high": -0.096584,
+      "n": 147,
+      "p": 0.0004,
+      "q": null
+    },
+    {
+      "code": "V",
+      "label": "Validity: pseudo-stage with illness duration",
+      "statistic": "rho",
+      "estimate": -0.209381,
+      "ci_low": -0.359016,
+      "ci_high": -0.060141,
+      "n": 145,
+      "p": 0.009999,
+      "q": null
+    }
+  ]
+}

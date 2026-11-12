@@ -1,0 +1,79 @@
+id,independent_unit,species_group,setting,sample_timing,severity_key,outcome_class,severity_label,components,n_components,euthanasia_included,definition_source,follow_up_horizon,n_rows,n_tested_rows,n_tested_rows_marker_in_definition,markers_in_definition
+CB004,CB004,B. canis,referral hospital,mixed,S1,complicated,complicated (CB) vs uncomplicated (UB) babesiosis,renal;hepatic or icterus;cerebral;pulmonary;pancreatitis;rhabdomyolysis,6,not applicable,author-defined,,16,16,0,
+CB006,CB006,B. canis,referral hospital,not stated,S1,organ_dysfunction,MODS vs uncomplicated babesiosis,MODS;renal;pulmonary;hepatic or icterus;rhabdomyolysis;cerebral,6,not applicable,author-defined (Table 1 criteria; modified Glasgow coma scale from Welzl et al.),,5,5,0,
+CB006,CB006,B. canis,referral hospital,not stated,S2,organ_dysfunction,MODS vs one complication,MODS;renal;pulmonary;hepatic or icterus;rhabdomyolysis;cerebral,6,not applicable,author-defined (Table 1 criteria),,5,5,0,
+CB006,CB006,B. canis,referral hospital,not stated,S3,complicated,one complication vs uncomplicated babesiosis,renal;pulmonary;hepatic or icterus;rhabdomyolysis;cerebral,5,not applicable,author-defined (Table 1 criteria),,5,5,0,
+CB006,CB006,B. canis,referral hospital,not stated,S4,mortality,lethal outcome vs survival,death,1,not stated,not stated,,5,5,0,
+CB006,CB006,B. canis,referral hospital,not stated,S5,anaemia_grade,anaemic vs non-anaemic,anaemia grade,1,not applicable,author-defined,,5,5,0,
+CB006,CB006,B. canis,referral hospital,not stated,S6,anaemia_grade,moderately vs mildly anaemic,anaemia grade,1,not applicable,author-defined,,5,5,0,
+CB006,CB006,B. canis,referral hospital,not stated,S7,anaemia_grade,haematocrit (continuous) in infected dogs,anaemia grade,1,not applicable,author-defined,,5,4,0,
+CB017,CH23,B. canis,referral hospital,mixed,S1,complicated,complicated vs uncomplicated babesiosis,SIRS;MODS;renal;hepatic or icterus;pulmonary;rhabdomyolysis,6,not applicable,WHO malaria classification; SIRS and MODS criteria,,28,18,0,
+CB035,CB035,B. rossi,referral hospital,not stated,S1,severity_grade,clinical severity score (0-12),score;renal;hepatic or icterus;hypoglycaemia;other,5,not applicable,"author-defined (criteria drawn from Bohm et al., Keller et al., Nel et al., Schoeman et al.)",,1,1,0,
+CB038,CB038,mixed/unspecified,field survey,not stated,S1,severity_grade,complicated (group-3) vs uncomplicated (group-2) vs subclinical (group-1),cerebral;hepatic or icterus;renal;coagulopathy;hypotension or shock;MODS;death,7,not stated,author-defined,,21,0,0,ALT;AST;Bilirubin;Creatinine;Platelet count;Urea
+CB040,CB040,B. rossi,referral hospital,before treatment,S1,mortality,died vs survived,death,1,yes,author-defined,to discharge,47,44,0,
+CB040,CB040,B. rossi,referral hospital,before treatment,S2,other,collapsed vs non-collapsed at presentation,collapse,1,not applicable,author-defined,,22,20,0,
+CB045,CB045,B. gibsoni,primary clinic,before treatment,S1,specific_complication,Spec cPL concentration (>400 µg/l = suspected pancreatitis),pancreatitis,1,not applicable,IDEXX Spec cPL reference cut-off (>400 µg/l),,17,17,1,"Pancreatic enzymes (lipase, amylase, cPLI)"
+CB045,CB045,B. gibsoni,primary clinic,before treatment,S2,specific_complication,serum lipase activity,pancreatitis,1,not applicable,not stated,,1,1,0,
+CB050,CH03,B. rossi,referral hospital,before treatment,S1,mortality,non-survivors vs survivors,death,1,yes,author-defined,to discharge,5,4,0,
+CB052,CB052,B. rossi,field survey,not stated,S1,mortality,fatal babesiosis (confirmed or suspected) vs subclinical infection or mild disease,death,1,yes,author-defined,,3,0,0,
+CB053,CB053,B. rossi,referral hospital,before treatment,S1,complicated,complicated vs uncomplicated babesiosis,collapse;hypotension or shock;haemoconcentration;renal;hypoglycaemia;hepatic or icterus;cerebral;pulmonary;other,9,not applicable,Jacobson and Clark 1994; Jacobson 2006; WHO 2014 severe falciparum malaria criteria,,13,12,12,Creatinine;Plasma NGAL;SDMA;Urea;Urinary kidney injury biomarkers;Urine osmolality;Urine protein:creatinine ratio;Urine specific gravity
+CB065,CH05,B. canis,referral hospital,before treatment,S1,complicated,complicated (C) vs uncomplicated (UC) B. canis infection,SIRS;MODS,2,not applicable,author-defined,,17,0,0,
+CB071,CH06,B. canis,referral hospital,before treatment,S1,severity_grade,"group C (azotaemic, UPC > 1) vs group B (non-azotaemic, UPC > 0.5) vs group A (non-azotaemic, UPC < 0.5)",renal,1,not applicable,author-defined (creatinine 140 umol/L and ACVIM proteinuria UPC thresholds),,15,2,0,Creatinine;Urea;Urine creatinine;Urine protein:creatinine ratio
+CB071,CH06,B. canis,referral hospital,before treatment,S2,specific_complication,urine protein:creatinine ratio (continuous),renal,1,not applicable,author-defined,,5,5,0,
+CB071,CH06,B. canis,referral hospital,before treatment,S3,specific_complication,kidney dysfunction (ROC),renal,1,not applicable,not stated,,4,0,0,
+CB075,CB075,B. vogeli,field survey,not stated,S1,mortality,died vs live,death,1,not stated,not stated,,1,1,0,
+CB098,CH09,B. rossi,experimental,mixed,S1,parasitaemia_level,parasitaemia (continuous),other,1,not applicable,author-defined,,5,5,0,
+CB098,CH09,B. rossi,experimental,mixed,S2,mortality,dog that died vs surviving dogs,death,1,no,author-defined,8 days (end of experiment),5,0,0,
+CB105,CH09,B. rossi,experimental,mixed,S1,other,high dose (HD) vs low dose (LD) group,collapse;other,2,not applicable,author-defined,192 h post infection,19,15,0,
+CB106,CB106,B. canis,referral hospital,not stated,S1,mortality,died or euthanised vs survived,death,1,yes,author-defined,,2,0,0,
+CB109,CB109,B. canis,laboratory submissions,not stated,S1,severity_grade,'Babesia 2' (severe babesiosis) vs 'Babesia 1' (mild/moderate babesiosis),anaemia grade;hepatic or icterus;renal,3,not applicable,Bajer et al. (2016),,7,4,0,
+CB109,CB109,B. canis,laboratory submissions,not stated,S2,anaemia_grade,anaemia level 2 (RBC <4.5 T/l) vs level 0 (RBC 5.5-8.0 T/l),anaemia grade,1,not applicable,Bajer et al. (2016),,5,0,0,Haematocrit/PCV;Haemoglobin;Red blood cell count
+CB109,CB109,B. canis,laboratory submissions,not stated,S3,specific_complication,hepatic dysfunction level 2 vs level 0,hepatic or icterus,1,not applicable,Bajer et al. (2016),,3,0,0,ALP;ALT;AST
+CB109,CB109,B. canis,laboratory submissions,not stated,S4,specific_complication,renal dysfunction level 2 vs level 0,renal,1,not applicable,Bajer et al. (2016),,2,0,0,Creatinine;Urea
+CB112,CB112,B. rossi,referral hospital,not stated,S1,complicated,complicated vs uncomplicated babesiosis,collapse;cerebral;death;anaemia grade;haemoconcentration;renal;hepatic or icterus;hypoglycaemia;hyperlactataemia;other,10,not stated,"as previously described (cited, Onderstepoort criteria)",24 hours (death component),31,23,0,Bilirubin;Creatinine;Glucose;Haematocrit/PCV;Lactate;Urea
+CB125,CB125,B. rossi,mixed,not stated,S1,complicated,severe (complicated) vs not severe,death;collapse;renal;haemoconcentration;cerebral;pulmonary;other,7,not stated,author-defined (complicated babesiosis per Jacobson and Clark 1994; Leisewitz et al. 2019),,24,6,0,
+CB134,CB134,B. gibsoni,referral hospital,before treatment,S1,anaemia_grade,severe vs moderate vs mild anaemia (vs normal HCT),anaemia grade,1,not applicable,author-defined,,1,0,0,
+CB141,CH12,B. canis,laboratory submissions,before treatment,S1,severity_grade,"hematological score (HES), 0-11",score;anaemia grade;other,3,not applicable,author-defined,,16,16,0,
+CB145,CH03,B. rossi,referral hospital,before treatment,S1,mortality,non-survivors vs survivors,death,1,yes,author-defined,to discharge,31,30,0,
+CB149,CH12,B. canis,laboratory submissions,not stated,S1,mortality,died vs survived,death,1,yes,not stated,,2,0,0,
+CB149,CH12,B. canis,laboratory submissions,not stated,S2,complicated,complicated vs uncomplicated course,other,1,yes,not stated,,1,0,0,
+CB178,CH05,B. canis,referral hospital,before treatment,S1,anaemia_grade,lower RBC (L) vs physiological RBC (N),anaemia grade,1,not applicable,"author-defined (RBC reference range, Kraft and Dürr 2005)",,15,14,0,
+CB178,CH05,B. canis,referral hospital,before treatment,S2,mortality,died vs survived,death,1,not stated,not stated,,1,0,0,
+CB187,CB187,mixed/unspecified,primary clinic,not stated,S1,parasitaemia_level,high vs medium vs low intensity of invasion,other,1,not applicable,author-defined,,4,0,0,
+CB202,CH08,mixed/unspecified,referral hospital,before treatment,S1,mortality,non-survivors vs survivors,death,1,not stated,author-defined,during the treatment period,16,14,0,
+CB220,CB220,mixed/unspecified,referral hospital,not stated,S1,severity_grade,jaundiced (late) form vs anaemic (early) form,hepatic or icterus,1,not applicable,author-defined,,27,8,6,ALP;ALT;AST;Bilirubin;GGT
+CB224,CB224,B. gibsoni,laboratory submissions,not stated,S1,severity_grade,"acute (complicated form) vs chronic (mild, non-specific) vs subclinical (apparently healthy)",other,1,not applicable,author-defined,,18,0,0,
+CB238,CB238,mixed/unspecified,referral hospital,not stated,S1,mortality,dead vs survived (mortalities vs survival),death,1,not stated,not stated,,7,5,0,
+CB238,CB238,mixed/unspecified,referral hospital,not stated,S2,anaemia_grade,anemic vs non-anemic,anaemia grade,1,not applicable,Soundarya and Suganthi (2016),,3,2,0,
+CB241,CB241,B. canis,primary clinic,not stated,S1,parasitaemia_level,high-intensity vs low-intensity babesiosis infection,other,1,not applicable,author-defined,,28,0,0,
+CB263,CH18,mixed/unspecified,referral hospital,not stated,S1,mortality,non survivors vs survivors,death,1,not stated,not stated,,31,27,0,
+CB286,CH08,mixed/unspecified,mixed,not stated,S1,anaemia_grade,anaemic vs non-anaemic dogs with babesiosis,anaemia grade,1,not applicable,not stated,,5,5,0,
+CB286,CH08,mixed/unspecified,mixed,not stated,S2,anaemia_grade,"degree of anaemia (haemoglobin, PCV, erythrocyte count as continuous measures)",anaemia grade,1,not applicable,author-defined,,3,3,0,
+CB307,CB307,B. canis,primary clinic,not stated,S1,severity_grade,stage I / stage II / stage III of acute babesiosis,other,1,not applicable,author-defined,,4,3,0,
+CB313,CH16,B. gibsoni,mixed,not stated,S1,specific_complication,cerebral babesiosis vs all dogs with babesiosis,cerebral,1,not applicable,author-defined,,3,0,0,
+CB325,CH29,mixed/unspecified,referral hospital,before treatment,S1,specific_complication,acute renal failure proven on post mortem vs full recovery,renal;death,2,not stated,author-defined,,4,0,0,Creatinine;Cystatin C;Urea;Urea:creatinine ratio
+CB342,CB342,B. rossi,referral hospital,before treatment,S1,specific_complication,hypoglycaemic vs normoglycaemic dogs,hypoglycaemia,1,not applicable,"as previously described (ref. 11, Keller et al. hypoglycaemia study)",,16,16,0,
+CB342,CB342,B. rossi,referral hospital,before treatment,S2,specific_complication,hyperglycaemic vs normoglycaemic dogs,other,1,not applicable,as previously described (ref. 11),,6,6,0,
+CB376,CB376,B. rossi,referral hospital,before treatment,S1,mortality,non-survivors vs survivors,death,1,yes,author-defined,to discharge,2,2,0,
+CB376,CB376,B. rossi,referral hospital,before treatment,S2,treatment_intensity,length of ICU stay (days hospitalised) in survivors,other,1,not applicable,author-defined,to discharge,3,3,0,
+CB392,CB392,B. canis,not stated,not stated,S1,mortality,died or euthanised vs recovered,death,1,yes,author-defined,,1,0,0,
+CB394,CH33,B. canis,referral hospital,not stated,S1,complicated,complicated vs uncomplicated babesiosis,renal;hepatic or icterus;pulmonary;rhabdomyolysis,4,not applicable,Jacobson and Clark 1994 complications; bilirubin criterion from Weiser 1992 / Matijatko et al. 2009,,15,15,7,ALP;ALT;Bilirubin;Creatine kinase;Creatinine;GGT;Urea
+CB394,CH33,B. canis,referral hospital,not stated,S2,anaemia_grade,severe vs moderate vs mild anaemia (uncomplicated dogs only),anaemia grade,1,not applicable,Jacobson and Clark 1994,,1,1,0,
+CB418,CB418,B. rossi,referral hospital,mixed,S1,treatment_intensity,transfused vs non-transfused dogs,anaemia grade;collapse;other,3,not applicable,author-defined (clinician decision; OVAH protocol),,17,14,1,Haematocrit/PCV
+CB425,CH35,B. canis,primary clinic,not stated,S1,specific_complication,azotaemic (A1) vs non-azotaemic (A2),renal,1,not applicable,not stated,,3,3,3,Fractional excretion of electrolytes
+CB441,CH35,B. canis,primary clinic,before treatment,S1,specific_complication,azotaemic (group A) vs non-azotaemic (group B),renal,1,not applicable,author-defined,,3,3,0,
+CB441,CH35,B. canis,primary clinic,before treatment,S2,specific_complication,serum creatinine concentration,renal,1,not applicable,author-defined,,2,2,0,
+CB441,CH35,B. canis,primary clinic,before treatment,S3,specific_complication,serum urea concentration,renal,1,not applicable,author-defined,,2,2,0,
+CB492,CB492,mixed/unspecified,mixed,not stated,S1,treatment_intensity,hospitalised vs outpatient,other,1,not applicable,not stated,,2,1,0,
+CB492,CB492,mixed/unspecified,mixed,not stated,S2,anaemia_grade,severe / moderate / mild anaemia / non-anaemic,anaemia grade,1,not applicable,modified Reyers et al. 1998 (cited by Jacobson) and Tvedten and Weiss,,1,1,0,
+CB492,CB492,mixed/unspecified,mixed,not stated,S3,anaemia_grade,"PCV (degree of anaemia, continuous)",anaemia grade,1,not applicable,author-defined,,3,3,0,
+CB508,CH31,B. rossi,referral hospital,before treatment,S1,mortality,non-survivors vs survivors,death,1,yes,author-defined,to discharge,1,1,0,
+CB508,CH31,B. rossi,referral hospital,before treatment,S2,severity_grade,SIRS vs no SIRS,SIRS,1,not applicable,SIRS criteria (Okano et al.),,1,1,0,
+CB516,CH21,B. canis,mixed,before treatment,S1,mortality,nonsurvivors vs survivors,death,1,yes,author-defined,14 days (all deaths within 48 h of admission),37,37,0,
+CB517,CH03,B. rossi,referral hospital,before treatment,S1,mortality,non-survivors vs survivors,death,1,yes,author-defined,to discharge,17,17,0,
+CB518,CB518,B. rossi,mixed,not stated,S1,anaemia_grade,"degree of anaemia (PCV, continuous) among Babesia-positive dogs",anaemia grade,1,not applicable,author-defined,,7,7,0,
+CB536,CB536,B. canis,laboratory submissions,not stated,S1,anaemia_grade,anaemia severity class 2 (severe) vs class 1 (mild) vs class 0 (normal),anaemia grade,1,not applicable,author-defined,,6,6,3,Haematocrit/PCV;Haemoglobin;Red blood cell count
+CB536,CB536,B. canis,laboratory submissions,not stated,S2,specific_complication,hepatic dysfunction class 2 (hepatic failure) vs class 1 (abnormal) vs class 0 (normal),hepatic or icterus,1,not applicable,author-defined,,4,4,3,ALP;ALT;AST
+CB536,CB536,B. canis,laboratory submissions,not stated,S3,specific_complication,renal dysfunction class 2 vs class 1 vs class 0,renal,1,not applicable,author-defined,,3,3,2,Creatinine;Urea
+CB536,CB536,B. canis,laboratory submissions,not stated,S4,severity_grade,severe (level 3) vs moderate (level 2) vs mild (level 1) babesiosis,score;anaemia grade;hepatic or icterus;renal,4,not applicable,author-defined,,1,1,0,
+CB537,CB537,B. canis,mixed,not stated,S1,severity_grade,severe / moderately severe vs moderate and mild forms,other,1,not applicable,not stated,,12,0,0,

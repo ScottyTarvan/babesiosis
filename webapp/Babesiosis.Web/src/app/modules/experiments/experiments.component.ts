@@ -1,4 +1,4 @@
-import { DatePipe } from '@angular/common';
+import { DatePipe, NgComponentOutlet } from '@angular/common';
 import { ChangeDetectionStrategy, Component, computed, DestroyRef, inject, OnInit, signal } from '@angular/core';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { FormsModule } from '@angular/forms';
@@ -27,22 +27,30 @@ import {
   parseJson,
   parsePayload,
 } from 'app/modules/experiments/viewmodels/experiment.viewmodel';
-import { ExperimentPairwiseViewComponent } from 'app/modules/experiments/views/experiment-pairwise-view.component';
+import { experimentView } from 'app/modules/experiments/experiment-views.registry';
 
-/** The runs over one dataset, the unit the left-hand panel groups by. */
+/** The experiments of one package (SV-01, SV-G1, ...), the unit the rail groups by. */
 interface ExperimentGroup {
-  datasetCode: string;
-  datasetTitle: string;
-  articleCode: string | null;
+  key: string;
   items: ExperimentListItemViewModel[];
 }
 
-/** Result kinds the page renders itself; anything else goes to the generic payload view. */
-const HANDLED_RESULT_KINDS = new Set(['interpretation', 'spearman_matrix', 'variable_clusters', 'top_associations', 'run_notes']);
+/** `SV-01-02-ds03-geometry` gives `SV-01`. Codes of another form go in one last group. */
+const OTHER_GROUP = 'Other';
+function packageOf(code: string): string {
+  return /^([A-Z]+-[A-Z0-9]+)-\d{2}-/.exec(code)?.[1] ?? OTHER_GROUP;
+}
+
+/** The meta experiment reviews all the others, so its package is first on the rail. */
+const PINNED_GROUP = 'SV-META';
+/** Rail order of a package: the pinned package, then code order, then the codes of another form. */
+function groupRank(key: string): number {
+  return key === PINNED_GROUP ? 0 : key === OTHER_GROUP ? 2 : 1;
+}
 
 /**
  * The Experiments screen: every analysis run over the downloaded datasets in a
- * searchable panel on the left, grouped by dataset; the selected run on the right
+ * searchable panel on the left, grouped by package; the selected run on the right
  * as its visualisation, then the script's explanation and interpretation, then the
  * dataset and run details. The selection is the URL (`/experiments/:code`), so a run
  * can be linked to.
@@ -63,7 +71,7 @@ const HANDLED_RESULT_KINDS = new Set(['interpretation', 'spearman_matrix', 'vari
     FsSpinnerComponent,
     FsSymbolComponent,
     FsTextInputComponent,
-    ExperimentPairwiseViewComponent,
+    NgComponentOutlet,
   ],
   templateUrl: './experiments.component.html',
   styleUrls: ['./experiments.component.scss'],
@@ -88,7 +96,7 @@ export class ExperimentsComponent implements OnInit {
   protected readonly detailLoading = signal(false);
   protected readonly detailError = signal<string | null>(null);
 
-  /** The panel's rows after the search box, grouped by dataset in list order. */
+  /** The rail's rows after the search box, grouped by package; the meta experiment first, then packages and experiments in code order. */
   protected readonly groups = computed<ExperimentGroup[]>(() => {
     const term = this.search().trim().toLowerCase();
     const groups = new Map<string, ExperimentGroup>();
@@ -96,22 +104,28 @@ export class ExperimentsComponent implements OnInit {
       if (term && !this.matches(item, term)) {
         continue;
       }
-      const key = item.datasetCode ?? '';
+      const key = packageOf(item.code);
       let group = groups.get(key);
       if (!group) {
-        group = {
-          datasetCode: item.datasetCode ?? 'No dataset',
-          datasetTitle: item.datasetTitle ?? '',
-          articleCode: item.articleCode,
-          items: [],
-        };
+        group = { key, items: [] };
         groups.set(key, group);
       }
       group.items.push(item);
     }
-    return [...groups.values()];
+    const result = [...groups.values()];
+    result.forEach(g => g.items.sort((a, b) => a.code.localeCompare(b.code)));
+    return result.sort((a, b) => groupRank(a.key) - groupRank(b.key) || a.key.localeCompare(b.key));
   });
   protected readonly filteredCount = computed(() => this.groups().reduce((n, g) => n + g.items.length, 0));
+
+  /** The registered view of the selected experiment's method, and its inputs. */
+  protected readonly view = computed(() => experimentView(this.detail()?.method));
+  protected readonly viewInputs = computed(() => ({ detail: this.detail() }));
+  /** Experiments that store no association rows have no counts of findings to show. */
+  protected readonly hasAssociations = computed(() => {
+    const d = this.detail();
+    return !!d && (d.associations.length > 0 || d.significantCount > 0 || d.associationsTruncated);
+  });
 
   /** The script's note, rendered after the visualisation. */
   protected readonly interpretation = computed(() =>
@@ -122,7 +136,7 @@ export class ExperimentsComponent implements OnInit {
     if (!d) {
       return [];
     }
-    const handled = d.method === 'pairwise_association' ? HANDLED_RESULT_KINDS : new Set(['interpretation']);
+    const handled = new Set<string>(['interpretation', ...(experimentView(d.method)?.kinds ?? [])]);
     return d.results
       .filter(r => !handled.has(r.kind))
       .map(r => ({ kind: r.kind, title: r.title ?? r.kind, text: this.prettyJson(r.payload) }));
@@ -151,7 +165,7 @@ export class ExperimentsComponent implements OnInit {
     ].filter(item => item.value !== null && item.value !== undefined && item.value !== '');
   });
 
-  protected readonly methodLabel = methodLabel;
+  protected readonly methodLabel = (method: string | null | undefined) => experimentView(method)?.label ?? methodLabel(method);
 
   ngOnInit(): void {
     this.detailRequests.pipe(
@@ -239,7 +253,7 @@ export class ExperimentsComponent implements OnInit {
   }
 
   private matches(item: ExperimentListItemViewModel, term: string): boolean {
-    return [item.name, item.code, item.method, methodLabel(item.method), item.datasetCode, item.datasetTitle,
+    return [item.name, item.code, item.method, this.methodLabel(item.method), item.datasetCode, item.datasetTitle,
       item.articleCode, item.articleTitle, item.summary]
       .some(v => (v ?? '').toLowerCase().includes(term));
   }

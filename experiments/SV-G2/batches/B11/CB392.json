@@ -1,0 +1,66 @@
+{
+  "id": "CB392",
+  "text_used": "data/markdown/CB392.md",
+  "extracted_by": "claude-opus-5-5 SV-G2 B11",
+  "extracted_utc": "2026-11-12T00:00:00Z",
+  "schema_version": "v2",
+  "setting": "not stated",
+  "sample_timing": "not stated",
+  "article_notes": "45 dogs clinically suspected of babesiosis in northern Portugal (2007-2009), all PCR positive (44 B. canis canis, 1 B. canis vogeli); co-infections in 9. The only severity-related result is mortality by co-infection status, given descriptively (no test). HCT and age were compared between co-infected and singly infected dogs, but co-infection is not a severity measure, so those comparisons were not extracted. Setting not stated (dogs from the region examined clinically); samples taken at presentation, treatment timing not stated.",
+  "skipped_infected_vs_healthy": 0,
+  "severity_definitions": [
+    {
+      "key": "S1",
+      "outcome_class": "mortality",
+      "label": "died or euthanised vs recovered",
+      "definition": "Dogs that died despite imidocarb treatment (n = 2, both co-infected) or were euthanised at the owners' request (n = 2) versus dogs that clinically recovered after imidocarb (n = 41). Follow-up horizon not stated.",
+      "severe_group": "died or euthanised (n=4)",
+      "comparison_group": "recovered (n=41)",
+      "quote": "Of the 45 dogs diagnosed with babesiosis, four (9%) died.",
+      "components": [
+        "death"
+      ],
+      "euthanasia_included": "yes",
+      "definition_source": "author-defined",
+      "follow_up_horizon": null
+    }
+  ],
+  "associations": [
+    {
+      "marker_as_reported": "co-infection with L. infantum, E. canis or H. canis (PCR and sequencing)",
+      "marker": "Co-infection",
+      "marker_class": "parasitology",
+      "specimen": "whole blood (filter paper)",
+      "timepoint": "presentation",
+      "severity_key": "S1",
+      "species": "B. canis canis (44/45), B. canis vogeli (1/45)",
+      "species_confirmation": "PCR or sequencing",
+      "subgroup": null,
+      "n_total": 45,
+      "n_severe": 4,
+      "n_comparison": 41,
+      "analysis": "descriptive_only",
+      "direction": "more_frequent_in_severe",
+      "significant": "not_tested",
+      "statistic": "mortality 2/9 (22%) in co-infected dogs vs 2/36 (6%, both euthanised) in dogs with B. canis canis only; no test",
+      "p_value": null,
+      "effect_type": null,
+      "effect_value": null,
+      "effect_ci": null,
+      "cutoff": null,
+      "sensitivity": null,
+      "specificity": null,
+      "adjusted_for": null,
+      "quote": "Despite treatment with imidocarb dipropionate, two dogs died (22%) out of the nine found co-infected (Table 3).",
+      "location": "Results, last paragraph; Table 3 (clinical outcome column)",
+      "source_type": "text",
+      "confidence": "medium",
+      "note": "Mortality is given per exposure group (co-infected vs single infection), not co-infection per outcome group, so severe_value and comparison_value are left null (2/4 co-infected among dead dogs is not printed). The 2/36 (6%) figure for single infections is from the Discussion: 'From the 36 dogs found infected only with B. canis canis, two (6%) were euthanized'. The authors state co-infected dogs 'had a lower survival rate' but did no test. The two deaths in co-infected dogs were spontaneous; the two in single infections were owner-requested euthanasia.",
+      "severe_value": null,
+      "comparison_value": null,
+      "summary_type": null,
+      "load_method": null
+    }
+  ],
+  "not_extracted": []
+}

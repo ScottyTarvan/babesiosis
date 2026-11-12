@@ -1,0 +1,1179 @@
+{
+  "schema_version": 1,
+  "id": "SY05",
+  "title": "Acute kidney injury",
+  "updated": "2026-11-12",
+  "definition": "Kidney injury in a dog with babesiosis, from tubular or glomerular injury with a normal creatinine to oliguric or anuric renal failure. Studies in babesiosis diagnose and grade it with the IRIS acute kidney injury (AKI) criteria: serum creatinine, its change over 48 h, and urine output [R1][R2].",
+  "definition_note": "Working definition changed. 'Azotaemia that persists after rehydration' covers only the overt failure form; the B. rossi studies also count non-azotaemic IRIS grade I injury [R2]. 'Haemoglobinuric nephropathy' is not supported as the main cause: infused haemoglobin did not cause significant nephropathy in dogs [R3], and the lesion in fatal B. canis cases is tubular necrosis [R4]. Glomerular disease and protein-losing nephropathy stay in scope; they are described mainly with B. gibsoni and B. vulpes [R5][R6].",
+  "key_points": [
+    "Urea rises in babesiosis without renal disease; judge the kidney on creatinine, urine output and urine concentration, not on urea [R7][R8].",
+    "Haemoglobinuria raises urine specific gravity: in azotaemic B. rossi dogs, urine osmolality showed renal azotaemia in 21 of 26, but a USG below 1.030 flagged only 6 [R9].",
+    "A creatinine above 106 µmol/L at admission carried 7.55 times the odds of death in 320 B. rossi dogs [R8].",
+    "No treatment has been tested for kidney injury in babesiosis. Care follows canine AKI guidance: restore perfusion, measure urine output, avoid fluid overload, and refer oligoanuric or uraemic dogs for dialysis [R10][R1][R11].",
+    "Mild injury in B. rossi is transient: urinary injury markers were back to control values one month after treatment [R2].",
+    "Measure the urine protein:creatinine ratio. Proteinuric glomerular disease is reported mainly with B. gibsoni and B. vulpes [R5][R6][R12]."
+  ],
+  "description": [
+    {
+      "heading": "What it is",
+      "text": "A spectrum. Most dogs have mild injury with a normal creatinine; overt renal failure is less common [R13][R2]. In 8 fatal B. canis cases the lesion was necrosis of the proximal tubules, with no significant glomerular change on light microscopy [R4]. A separate, proteinuric glomerular form is described with small Babesia species [R14][R5]."
+    },
+    {
+      "heading": "How common, and in which dogs",
+      "text": "B. rossi, Onderstepoort: 17% of 152 dogs were azotaemic at admission and 14% had renal azotaemia, more often in older dogs [R9]. Creatinine was above the reference interval in 16% of 320 dogs and above 1.5 times its upper limit in 7% [R8]. B. canis, Hungary: acute renal failure in 31% of 63 dogs [R15]. B. canis, Austria: 34% of dogs with renal involvement died [R16]."
+    },
+    {
+      "heading": "When in the course of disease",
+      "text": "It can be present at admission or appear in hospital. Of 35 B. rossi dogs, 3 had grade II AKI at admission and 5 more of 13 re-tested at 24 h were diagnosed then [R2]. Serial creatinine is needed to see it [R1]."
+    },
+    {
+      "heading": "Mechanism",
+      "text": "Hypoxia and low renal perfusion are the favoured causes. Anaemic hypoxia reduced GFR and caused mild tubular change in experimental dogs, while infused haemoglobin did not cause significant nephropathy [R3]. Lower arterial pressure went with azotaemia in B. canis [R17]. Immune-complex glomerulonephritis was shown in one B. gibsoni dog [R14]. For the clinician: restore perfusion and oxygen delivery, and look for proteinuria."
+    }
+  ],
+  "species_notes": [
+    {
+      "species": "B. rossi",
+      "note": "Mostly mild and transient tubular and glomerular injury [R2][R18]. Renal azotaemia (14%) was associated with collapse, hypoglycaemia, hyperphosphataemia, cerebral babesiosis, ARDS and lower survival to discharge [R9]."
+    },
+    {
+      "species": "B. canis",
+      "note": "Acute tubular necrosis in fatal cases, most of which had received imidocarb [R4]. Glomerular and tubular injury markers raised in 42 dogs [R19]. Hypotension in 7 of 48 dogs [R17]."
+    },
+    {
+      "species": "B. gibsoni",
+      "note": "Proteinuria and hypoalbuminaemia in all of 5 pit bull-type dogs, azotaemia in 3; antiprotozoal treatment improved some [R5]. Membranoproliferative glomerulonephritis in one dog [R14]."
+    },
+    {
+      "species": "B. vulpes",
+      "note": "Azotaemia, hyperphosphataemia, proteinuria and casts were frequent in north-western Spain, suggesting a glomerular component [R6]. Not reported from South Africa in these sources."
+    }
+  ],
+  "diagnosis": {
+    "criteria": [
+      {
+        "criterion": "IRIS AKI grade (serum creatinine)",
+        "threshold": "I below 140; II 141 to 220; III 221 to 439; IV 440 to 880; V above 880 µmol/L",
+        "basis": "general canine",
+        "note": "Grade the dog at each measurement; the grade changes with the course. Used in B. rossi [R2].",
+        "refs": [
+          "R1",
+          "R2"
+        ]
+      },
+      {
+        "criterion": "Rise in creatinine",
+        "threshold": "26.4 µmol/L or more within 48 h",
+        "basis": "general canine",
+        "note": "Defines AKI even when creatinine stays in the reference interval (grade I). Used in B. rossi [R2].",
+        "refs": [
+          "R1",
+          "R2"
+        ]
+      },
+      {
+        "criterion": "Oliguria or anuria",
+        "threshold": "Urine output below 1 mL/kg/h, or none, over 6 h",
+        "basis": "general canine",
+        "note": "Subgrade O (oligoanuric) or NO (non-oliguric).",
+        "refs": [
+          "R1"
+        ]
+      },
+      {
+        "criterion": "Volume responsiveness",
+        "threshold": "Urine output above 1 mL/kg/h within 6 h, or creatinine back to baseline within 48 h",
+        "basis": "general canine",
+        "note": "A volume-responsive dog stays in grade I or II.",
+        "refs": [
+          "R1"
+        ]
+      },
+      {
+        "criterion": "Renal versus prerenal azotaemia",
+        "threshold": "Prerenal: USG 1.030 or more and urine osmolality 1110 mOsm/kg or more",
+        "basis": "babesiosis",
+        "note": "USG is falsely high with haemoglobinuria. If osmolality is not available, most azotaemic B. rossi dogs have renal azotaemia [R9].",
+        "refs": [
+          "R2",
+          "R9"
+        ]
+      },
+      {
+        "criterion": "Proteinuria",
+        "threshold": "UPC above 0.5 (investigate); above 2.0 persistent and non-azotaemic (consider biopsy)",
+        "basis": "general canine",
+        "note": "UPC was higher in infected B. rossi dogs than in controls and fell after treatment [R2]; re-check after recovery.",
+        "refs": [
+          "R12",
+          "R2"
+        ]
+      }
+    ],
+    "clinical_signs": [
+      {
+        "sign": "Oliguria or anuria despite adequate hydration",
+        "note": "The classical presentation of renal failure in babesiosis.",
+        "refs": [
+          "R20"
+        ]
+      },
+      {
+        "sign": "Dark red-brown urine",
+        "note": "Haemoglobinuria is common and makes urine volume and colour hard to judge by eye.",
+        "refs": [
+          "R20",
+          "R8"
+        ]
+      },
+      {
+        "sign": "Collapse",
+        "note": "Associated with renal azotaemia in B. rossi.",
+        "refs": [
+          "R9"
+        ]
+      },
+      {
+        "sign": "Signs of fluid overload",
+        "note": "Weight gain, serous nasal discharge, chemosis, subcutaneous oedema, cavity effusion, lung oedema.",
+        "refs": [
+          "R21",
+          "R11"
+        ]
+      }
+    ],
+    "tests": [
+      {
+        "test": "Serum creatinine, at admission and after 24 to 48 h",
+        "finding": "Rise of 26.4 µmol/L or more, or azotaemia, defines AKI.",
+        "note": "Haemolysis and bilirubin interfere with photometric urea and creatinine assays.",
+        "refs": [
+          "R1",
+          "R7"
+        ]
+      },
+      {
+        "test": "Serum urea",
+        "finding": "Often raised out of proportion to creatinine; the high urea:creatinine ratio is not of renal origin.",
+        "note": "Urea above 20 mmol/L was still a marker of death in B. rossi.",
+        "refs": [
+          "R7",
+          "R8"
+        ]
+      },
+      {
+        "test": "Urinalysis (USG, dipstick, sediment)",
+        "finding": "Proteinuria, haemoglobinuria, bilirubinuria, granular casts and tubular cells.",
+        "note": "Casts and proteinuria occur in mild disease too and do not predict failure. USG is falsely high.",
+        "refs": [
+          "R13",
+          "R20",
+          "R9"
+        ]
+      },
+      {
+        "test": "Urine output and body weight",
+        "finding": "Below 1 mL/kg/h over 6 h is oliguria. Weight gain suggests overload.",
+        "note": "Measure by urinary catheter, collected voids or weighed bedding.",
+        "refs": [
+          "R1",
+          "R11"
+        ]
+      },
+      {
+        "test": "Potassium, phosphate, acid-base",
+        "finding": "Hyperkalaemia in a few complicated cases; phosphate above 3 mmol/L went with death in B. canis.",
+        "note": "",
+        "refs": [
+          "R13",
+          "R16"
+        ]
+      },
+      {
+        "test": "Blood pressure",
+        "finding": "Babesiosis: mean pressure below 80 mmHg in 15% of B. canis dogs. Canine AKI of other causes: hypertension in 75%.",
+        "note": "Measure before fluids and before any antihypertensive.",
+        "refs": [
+          "R17",
+          "R11"
+        ]
+      },
+      {
+        "test": "Urine protein:creatinine ratio",
+        "finding": "Raised during the acute illness; a persistently high UPC suggests glomerular disease.",
+        "note": "Repeat after recovery.",
+        "refs": [
+          "R2",
+          "R12"
+        ]
+      },
+      {
+        "test": "Urine osmolality (referral laboratory)",
+        "finding": "Separates renal from prerenal azotaemia when haemoglobinuria makes USG unreliable.",
+        "note": "",
+        "refs": [
+          "R9"
+        ]
+      },
+      {
+        "test": "SDMA and urinary injury markers (IgG, CRP, RBP, NGAL)",
+        "finding": "Urinary markers rose while creatinine and SDMA were normal; SDMA was higher in complicated cases.",
+        "note": "Research tools. No cut-off for clinical decisions in babesiosis.",
+        "refs": [
+          "R2",
+          "R18",
+          "R19"
+        ]
+      }
+    ],
+    "differentials": [
+      {
+        "condition": "Prerenal azotaemia (dehydration, hypotension)",
+        "distinguish": "Concentrated urine (osmolality, not USG) and a fall in creatinine to baseline within 48 h of fluids.",
+        "refs": [
+          "R2",
+          "R1"
+        ]
+      },
+      {
+        "condition": "Non-renal rise in urea",
+        "distinguish": "Urea high with a normal creatinine.",
+        "refs": [
+          "R7",
+          "R8"
+        ]
+      },
+      {
+        "condition": "Rhabdomyolysis (SY15)",
+        "distinguish": "Proposed as one source of the high urea; check muscle enzymes.",
+        "refs": [
+          "R8"
+        ]
+      },
+      {
+        "condition": "Pre-existing chronic kidney disease",
+        "distinguish": "History, small or irregular kidneys; a creatinine rise above 26.4 µmol/L in 48 h on CKD is still AKI.",
+        "refs": [
+          "R1"
+        ]
+      },
+      {
+        "condition": "Other causes of AKI or glomerular disease (leptospirosis, leishmaniosis, NSAIDs)",
+        "distinguish": "Test for co-infections and review drugs before blaming Babesia.",
+        "refs": [
+          "R11",
+          "R5"
+        ]
+      },
+      {
+        "condition": "Drug-associated tubular injury (imidocarb)",
+        "distinguish": "Tubulonephrosis followed imidocarb in a healthy dog; 7 of 8 fatal B. canis cases with tubular necrosis had received it.",
+        "refs": [
+          "R22",
+          "R4"
+        ]
+      }
+    ],
+    "grading": [
+      {
+        "grade": "IRIS AKI grade I",
+        "criteria": "Creatinine below 140 µmol/L, with documented injury, a rise of 26.4 µmol/L or more in 48 h, or oliguria.",
+        "refs": [
+          "R1"
+        ]
+      },
+      {
+        "grade": "IRIS AKI grade II",
+        "criteria": "Creatinine 141 to 220 µmol/L.",
+        "refs": [
+          "R1"
+        ]
+      },
+      {
+        "grade": "IRIS AKI grades III to V",
+        "criteria": "Creatinine 221 to 439 (III), 440 to 880 (IV), above 880 µmol/L (V). Each grade subgraded oligoanuric or non-oliguric, and by need for renal replacement therapy.",
+        "refs": [
+          "R1"
+        ]
+      }
+    ]
+  },
+  "approach": [
+    {
+      "step": 1,
+      "action": "Measure before you treat",
+      "detail": "Creatinine, urea, potassium, PCV, urinalysis with sediment, and blood pressure at admission. Repeat creatinine at 24 to 48 h [R1][R2].",
+      "setting": "practice"
+    },
+    {
+      "step": 2,
+      "action": "Treat the parasite and the anaemia",
+      "detail": "Dogs in the kidney studies received standard antibabesial treatment, transfusion and fluids as needed [R2][R8]. Drugs: see TX00; transfusion: see SY01. No source gives a dose change for kidney injury.",
+      "setting": "practice"
+    },
+    {
+      "step": 3,
+      "action": "Restore perfusion",
+      "detail": "Correct dehydration with an isotonic crystalloid over 4 to 6 h. Do not give diuretics to a dehydrated dog [R21].",
+      "setting": "practice"
+    },
+    {
+      "step": 4,
+      "action": "Measure urine output and weight",
+      "detail": "Below 1 mL/kg/h over 6 h after rehydration is oligoanuric AKI [R1]. Weigh the dog at least daily [R11].",
+      "setting": "practice"
+    },
+    {
+      "step": 5,
+      "action": "Prevent fluid overload",
+      "detail": "Match fluids to output once hydrated. Overload was associated with non-survival in canine AKI [R11]; lung injury is common in fatal B. rossi cases [R8] (SY08).",
+      "setting": "practice"
+    },
+    {
+      "step": 6,
+      "action": "Refer early",
+      "detail": "Refer for renal replacement therapy if oligoanuria persists, azotaemia progresses, or there is hyperkalaemia, acidosis or overload. Grade IV to V dogs may die within 5 to 10 days without it [R1][R23].",
+      "setting": "referral"
+    },
+    {
+      "step": 7,
+      "action": "Follow up",
+      "detail": "Re-check creatinine and UPC about one month after treatment [R2][R12].",
+      "setting": "practice"
+    }
+  ],
+  "treatments": [
+    {
+      "name": "Intravenous isotonic crystalloid fluids",
+      "class": "supportive",
+      "aim": "Restore renal perfusion and correct dehydration without causing overload.",
+      "status": "standard",
+      "evidence_level": "D",
+      "independent_studies": 1,
+      "evidence_summary": "Given to B. rossi dogs as standard care in the kidney studies, but never compared or evaluated for the kidney [R2][R8]. Canine AKI guidance: replace the deficit, body weight (kg) times the fraction dehydrated in litres, over 4 to 6 h, then set the rate for the dog [R21][R10]. In 52 dogs with AKI of other causes, fluid overload occurred in 42% and was associated with non-survival [R11].",
+      "doses": [],
+      "cautions": "Overload in an oliguric dog: watch for weight gain, chemosis, nasal discharge, oedema and effusions [R21][R11]. Lung injury is common in severe B. rossi disease (SY08) [R8].",
+      "monitoring": "Body weight at least daily, urine output, respiratory rate, PCV and creatinine [R11][R1].",
+      "availability": "",
+      "refs": [
+        "R2",
+        "R8",
+        "R21",
+        "R10",
+        "R11",
+        "R1"
+      ]
+    },
+    {
+      "name": "Renal replacement therapy (haemodialysis, continuous therapy, peritoneal dialysis)",
+      "class": "supportive",
+      "aim": "Control uraemia, potassium, acid-base and fluid balance until the kidneys recover.",
+      "status": "proposed",
+      "evidence_level": "C",
+      "independent_studies": 2,
+      "evidence_summary": "Babesiosis: two single-dog reports. A dog with AKI after babesiosis recovered with haemodialysis [R24]; a dog with babesiosis, kidney and liver failure recovered after 6 days of peritoneal dialysis [R25]. IRIS consensus guidelines cover intermittent haemodialysis for severe AKI [R23]. Indications per IRIS: severe azotaemia, hyperkalaemia, acid-base disorder, overhydration, oliguria or anuria [R1].",
+      "doses": [],
+      "cautions": "Referral only. Without it, IRIS grade IV to V dogs may die within 5 to 10 days [R1].",
+      "monitoring": "By the dialysis unit.",
+      "availability": "",
+      "refs": [
+        "R24",
+        "R25",
+        "R23",
+        "R1"
+      ]
+    },
+    {
+      "name": "Furosemide",
+      "class": "supportive",
+      "aim": "Increase urine output in a volume-replete oliguric dog, to manage overload and potassium.",
+      "status": "proposed",
+      "evidence_level": "D",
+      "independent_studies": 1,
+      "evidence_summary": "Not studied in babesiosis. In 52 dogs with AKI of other causes, all 22 oliguric dogs received it; doses varied (recorded for 20) and no effect on outcome was assessed [R11]. A canine lecture states there is no solid evidence for diuretics in AKI [R21]; a review judged furosemide unhelpful in sepsis-associated AKI, mainly from human data [R26].",
+      "doses": [
+        {
+          "drug": "furosemide",
+          "dose": "0.5 to 2 mg/kg",
+          "route": "bolus (route not stated)",
+          "frequency": "single bolus",
+          "duration": "",
+          "context": "Canine AKI, other causes, observational (7 of 20 dogs with recorded doses)",
+          "note": "Doses as used, not tested.",
+          "refs": [
+            "R11"
+          ]
+        },
+        {
+          "drug": "furosemide",
+          "dose": "0.25 to 0.8 mg/kg/h",
+          "route": "continuous infusion (route not stated)",
+          "frequency": "continuous",
+          "duration": "",
+          "context": "Canine AKI, other causes, observational (11 of 20 dogs)",
+          "note": "Two other dogs had a 0.5 to 1 mg/kg bolus, then 0.1 to 2 mg/kg/h.",
+          "refs": [
+            "R11"
+          ]
+        }
+      ],
+      "cautions": "Never in a dehydrated dog [R21]. It may raise urine output without improving kidney function [R21].",
+      "monitoring": "Hourly urine output; volume response is above 1 mL/kg/h within 6 h [R1]. Weight, potassium.",
+      "availability": "",
+      "refs": [
+        "R11",
+        "R21",
+        "R26",
+        "R1"
+      ]
+    },
+    {
+      "name": "Mannitol",
+      "class": "supportive",
+      "aim": "Osmotic diuresis in an oliguric, volume-replete dog.",
+      "status": "proposed",
+      "evidence_level": "E",
+      "independent_studies": 0,
+      "evidence_summary": "No data in babesiosis or in controlled canine studies. A canine expert lecture gives the regimen and states there is no solid evidence for diuretics in AKI [R21].",
+      "doses": [
+        {
+          "drug": "mannitol",
+          "dose": "0.5 to 1.0 g/kg",
+          "route": "bolus then infusion (route not stated)",
+          "frequency": "bolus over 20 min, then 1 mg/kg/min",
+          "duration": "",
+          "context": "General canine AKI, expert lecture",
+          "note": "Not tested in babesiosis.",
+          "refs": [
+            "R21"
+          ]
+        }
+      ],
+      "cautions": "Expands plasma volume and can worsen hypertension; control blood pressure first [R21]. Overdose (two IV doses of 3 g/kg in under 24 h) caused AKI, hyponatraemia and seizures in a dog [R27]. Not for the dehydrated dog [R21].",
+      "monitoring": "Urine output, weight, sodium, blood pressure.",
+      "availability": "",
+      "refs": [
+        "R21",
+        "R27"
+      ]
+    },
+    {
+      "name": "Antiemetics and gastric protection",
+      "class": "supportive",
+      "aim": "Control vomiting and nausea of uraemia, and protect against gastric bleeding.",
+      "status": "proposed",
+      "evidence_level": "C",
+      "independent_studies": 1,
+      "evidence_summary": "One B. gibsoni dog with AKI received ondansetron and pantoprazole with fluids and triple antimicrobial therapy, and recovered; their effect cannot be separated [R28]. IRIS kidney guidance lists maropitant or ondansetron for vomiting, and omeprazole if gastric bleeding is suspected (CKD guidance, no doses given) [R12].",
+      "doses": [
+        {
+          "drug": "ondansetron",
+          "dose": "0.2 mg/kg",
+          "route": "IV",
+          "frequency": "not stated",
+          "duration": "5 days",
+          "context": "B. gibsoni, 1 dog, case report",
+          "note": "",
+          "refs": [
+            "R28"
+          ]
+        },
+        {
+          "drug": "pantoprazole",
+          "dose": "1 mg/kg",
+          "route": "IV",
+          "frequency": "not stated",
+          "duration": "5 days",
+          "context": "B. gibsoni, 1 dog, case report",
+          "note": "",
+          "refs": [
+            "R28"
+          ]
+        }
+      ],
+      "cautions": "",
+      "monitoring": "Vomiting, appetite, melaena.",
+      "availability": "",
+      "refs": [
+        "R28",
+        "R12"
+      ]
+    },
+    {
+      "name": "Amlodipine for hypertension",
+      "class": "supportive",
+      "aim": "Lower systolic pressure in a hypertensive dog with AKI.",
+      "status": "proposed",
+      "evidence_level": "D",
+      "independent_studies": 1,
+      "evidence_summary": "Not studied in babesiosis, where low pressure is the usual finding [R17]. In 52 dogs with AKI of other causes, 75% were hypertensive at some point; 22 of 25 treated dogs got amlodipine, and pressure category fell in 56% of treated dogs [R11].",
+      "doses": [
+        {
+          "drug": "amlodipine",
+          "dose": "0.1 to 0.5 mg/kg",
+          "route": "PO",
+          "frequency": "once daily (escalated in some dogs)",
+          "duration": "",
+          "context": "Canine AKI, other causes; recommended range as cited by the study",
+          "note": "Median dose used 0.19 mg/kg/day (range 0.05 to 0.45); the discussion of the same paper gives 0.1 to 1.2 mg/kg/day.",
+          "refs": [
+            "R11"
+          ]
+        }
+      ],
+      "cautions": "Measure pressure first: many babesiosis dogs are hypotensive [R17]. Systolic pressure below 120 mmHg is to be avoided [R12].",
+      "monitoring": "Systolic pressure at least daily in hospital [R11].",
+      "availability": "",
+      "refs": [
+        "R17",
+        "R11",
+        "R12"
+      ]
+    },
+    {
+      "name": "Antiproteinuric treatment (angiotensin receptor blocker or ACE inhibitor, kidney diet)",
+      "class": "specific",
+      "aim": "Reduce persistent renal proteinuria after the acute illness.",
+      "status": "proposed",
+      "evidence_level": "D",
+      "independent_studies": 0,
+      "evidence_summary": "Not studied in babesiosis. In B. gibsoni, after antiprotozoal treatment alone, proteinuria fell in 2 dogs and azotaemia resolved or improved in 2 (4 dogs with follow-up) [R5]. IRIS recommends an angiotensin receptor blocker and a clinical kidney diet for confirmed persistent renal proteinuria, with an ACE inhibitor added cautiously; it gives no dose [R12].",
+      "doses": [],
+      "cautions": "Contraindicated in a dehydrated or hypovolaemic dog: GFR may drop sharply [R12]. Treat the infection first; proteinuria may resolve [R5][R14].",
+      "monitoring": "UPC, creatinine and albumin; aim for UPC below 0.5 or a 50% fall [R12].",
+      "availability": "",
+      "refs": [
+        "R5",
+        "R12",
+        "R14"
+      ]
+    },
+    {
+      "name": "Antithrombotic prophylaxis in protein-losing nephropathy",
+      "class": "supportive",
+      "aim": "Reduce the risk of thrombosis in a dog with protein-losing nephropathy.",
+      "status": "proposed",
+      "evidence_level": "D",
+      "independent_studies": 0,
+      "evidence_summary": "Not studied in babesiosis. IRIS guidance for proteinuric kidney disease in dogs [R12].",
+      "doses": [
+        {
+          "drug": "clopidogrel",
+          "dose": "1.1 to 3 mg/kg",
+          "route": "PO",
+          "frequency": "every 24 h",
+          "duration": "",
+          "context": "IRIS canine CKD guidance (proteinuria)",
+          "note": "A note in the same guidance gives 1 to 4 mg/kg orally once daily.",
+          "refs": [
+            "R12"
+          ]
+        },
+        {
+          "drug": "acetylsalicylic acid",
+          "dose": "2 to 5 mg/kg",
+          "route": "not stated",
+          "frequency": "once daily",
+          "duration": "",
+          "context": "IRIS canine CKD guidance (proteinuria)",
+          "note": "Low dose; alternative if clopidogrel is not available. A note in the same guidance gives 1 to 5 mg/kg orally once daily.",
+          "refs": [
+            "R12"
+          ]
+        }
+      ],
+      "cautions": "Babesiosis often causes thrombocytopenia and coagulopathy (SY03); no source addresses this use in the acute disease.",
+      "monitoring": "",
+      "availability": "",
+      "refs": [
+        "R12"
+      ]
+    },
+    {
+      "name": "Immunosuppression for immune-complex glomerulonephritis",
+      "class": "specific",
+      "aim": "Treat immune-complex glomerular disease.",
+      "status": "proposed",
+      "evidence_level": "C",
+      "independent_studies": 1,
+      "evidence_summary": "One B. gibsoni dog with biopsy-proven membranoproliferative glomerulonephritis got azithromycin, atovaquone and one dose of a corticosteroid with cyclophosphamide; all abnormalities had resolved 3 months later [R14]. The effect of the immunosuppressants cannot be separated.",
+      "doses": [],
+      "cautions": "Single case; doses not given in the abstract.",
+      "monitoring": "UPC, albumin, creatinine, PCR.",
+      "availability": "",
+      "refs": [
+        "R14"
+      ]
+    },
+    {
+      "name": "Dopamine",
+      "class": "supportive",
+      "aim": "Increase renal blood flow and urine output.",
+      "status": "no_benefit",
+      "evidence_level": "D",
+      "independent_studies": 0,
+      "evidence_summary": "Not studied in babesiosis. A canine lecture states it may raise urine output but did not change outcome in human studies [R21]; a review judged it harmful in human AKI [R26].",
+      "doses": [],
+      "cautions": "",
+      "monitoring": "",
+      "availability": "",
+      "refs": [
+        "R21",
+        "R26"
+      ]
+    },
+    {
+      "name": "Fenoldopam",
+      "class": "supportive",
+      "aim": "Renal vasodilation.",
+      "status": "no_benefit",
+      "evidence_level": "D",
+      "independent_studies": 0,
+      "evidence_summary": "Not studied in babesiosis. Did not change outcome or kidney dysfunction in dogs with heatstroke-associated AKI, as reported in a canine review lecture [R21].",
+      "doses": [],
+      "cautions": "",
+      "monitoring": "",
+      "availability": "",
+      "refs": [
+        "R21"
+      ]
+    }
+  ],
+  "prognosis": {
+    "text": "Mild B. rossi kidney injury resolves with treatment of the infection [R2]. Overt failure is serious: of 22 B. rossi dogs with creatinine above 1.5 times the upper limit, 10 died [R8], and 34% of B. canis dogs with renal involvement died [R16]. 'Died' in these studies may include euthanasia. Multiple complications raise mortality (67% vs 21% with one complication, B. canis) [R15]. In canine AKI generally, grades I to II often recover in 2 to 5 days; grades IV to V may need dialysis [R1].",
+    "indicators": [
+      {
+        "finding": "Creatinine above 106 µmol/L at admission",
+        "meaning": "Odds ratio for death 7.55 (B. rossi, 320 dogs).",
+        "refs": [
+          "R8"
+        ]
+      },
+      {
+        "finding": "Urea above 20 mmol/L",
+        "meaning": "Odds ratio for death 30.95 (B. rossi), whatever its source.",
+        "refs": [
+          "R8"
+        ]
+      },
+      {
+        "finding": "Creatinine above 442 µmol/L or phosphate above 3 mmol/L",
+        "meaning": "Strongly associated with death (B. canis, 240 dogs).",
+        "refs": [
+          "R16"
+        ]
+      },
+      {
+        "finding": "Renal azotaemia at admission",
+        "meaning": "Lower survival to discharge (B. rossi).",
+        "refs": [
+          "R9"
+        ]
+      },
+      {
+        "finding": "Fluid overload",
+        "meaning": "Associated with non-survival in canine AKI of other causes.",
+        "refs": [
+          "R11"
+        ]
+      }
+    ]
+  },
+  "related": [
+    {
+      "id": "TX00",
+      "why": "The drugs against the parasite."
+    },
+    {
+      "id": "SY01",
+      "why": "Transfusion and the anaemia that drives renal hypoxia."
+    },
+    {
+      "id": "SY08",
+      "why": "Lung oedema from fluid overload."
+    },
+    {
+      "id": "SY10",
+      "why": "Hypotension and renal hypoperfusion."
+    },
+    {
+      "id": "SY11",
+      "why": "Triage and the order of care in complicated disease."
+    },
+    {
+      "id": "SY15",
+      "why": "Rhabdomyolysis as a cause of pigment and urea."
+    }
+  ],
+  "evidence_gaps": [
+    "No treatment has been compared in dogs with babesiosis and kidney injury.",
+    "No source states a dose change for diminazene or imidocarb in kidney injury.",
+    "Urine alkalinisation was not proposed or tested in any source found.",
+    "The fluid rate and end points that balance perfusion against lung oedema in babesiosis are unknown.",
+    "How often survivors develop chronic kidney disease is unknown; one-month follow-up exists for only 9 B. rossi dogs.",
+    "Whether imidocarb adds tubular injury in dogs with babesiosis is untested.",
+    "Urinary injury markers and SDMA have no validated cut-offs for clinical decisions in babesiosis.",
+    "Glomerular disease with B. gibsoni rests on 6 dogs, and with B. vulpes on one regional laboratory series."
+  ],
+  "references": [
+    {
+      "ref": "R1",
+      "authors": "Cowgill L (International Renal Interest Society)",
+      "year": 2026,
+      "title": "Grading of acute kidney injury (2026)",
+      "journal": "IRIS guideline document",
+      "volume_pages": "",
+      "doi": "",
+      "pmid": "",
+      "url": "https://iris-kidney.com/s/IRIS-AKI-Grading_2026.pdf",
+      "article_id": "",
+      "type": "guideline",
+      "species": "",
+      "n_dogs": null,
+      "read": "full text"
+    },
+    {
+      "ref": "R2",
+      "authors": "Defauw P, Schoeman JP, Leisewitz AL, et al.",
+      "year": 2020,
+      "title": "Evaluation of acute kidney injury in dogs with complicated or uncomplicated Babesia rossi infection",
+      "journal": "Ticks and Tick-borne Diseases",
+      "volume_pages": "11(3):101406",
+      "doi": "10.1016/j.ttbdis.2020.101406",
+      "pmid": "32107174",
+      "url": "",
+      "article_id": "CB053",
+      "type": "cohort",
+      "species": "B. rossi",
+      "n_dogs": 35,
+      "read": "full text"
+    },
+    {
+      "ref": "R3",
+      "authors": "Lobetti RG, Reyers F, Nesbit JW",
+      "year": 1996,
+      "title": "The comparative role of haemoglobinaemia and hypoxia in the development of canine babesial nephropathy",
+      "journal": "Journal of the South African Veterinary Association",
+      "volume_pages": "67(4):188-198",
+      "doi": "",
+      "pmid": "9284030",
+      "url": "",
+      "article_id": "BG002",
+      "type": "experimental",
+      "species": "",
+      "n_dogs": 18,
+      "read": "abstract"
+    },
+    {
+      "ref": "R4",
+      "authors": "Máthé A, Dobos-Kovács M, Vörös K",
+      "year": 2007,
+      "title": "Histological and ultrastructural studies of renal lesions in Babesia canis infected dogs treated with imidocarb",
+      "journal": "Acta Veterinaria Hungarica",
+      "volume_pages": "55(4):511-523",
+      "doi": "10.1556/AVet.55.2007.4.10",
+      "pmid": "18277710",
+      "url": "",
+      "article_id": "CB341",
+      "type": "case series",
+      "species": "B. canis",
+      "n_dogs": 8,
+      "read": "abstract"
+    },
+    {
+      "ref": "R5",
+      "authors": "Ullal T, Birkenheuer A, Vaden S",
+      "year": 2018,
+      "title": "Azotemia and proteinuria in dogs infected with Babesia gibsoni",
+      "journal": "Journal of the American Animal Hospital Association",
+      "volume_pages": "54(3):156-160",
+      "doi": "10.5326/JAAHA-MS-6693",
+      "pmid": "29558219",
+      "url": "",
+      "article_id": "CB018",
+      "type": "case series",
+      "species": "B. gibsoni",
+      "n_dogs": 5,
+      "read": "abstract"
+    },
+    {
+      "ref": "R6",
+      "authors": "Camacho García AT",
+      "year": 2006,
+      "title": "Piroplasma infection in dogs in northern Spain",
+      "journal": "Veterinary Parasitology",
+      "volume_pages": "138(1-2):97-102",
+      "doi": "10.1016/j.vetpar.2006.01.043",
+      "pmid": "16513282",
+      "url": "",
+      "article_id": "",
+      "type": "case series",
+      "species": "B. vulpes",
+      "n_dogs": null,
+      "read": "abstract"
+    },
+    {
+      "ref": "R7",
+      "authors": "de Scally MP, Leisewitz AL, Lobetti RG, et al.",
+      "year": 2006,
+      "title": "The elevated serum urea:creatinine ratio in canine babesiosis in South Africa is not of renal origin",
+      "journal": "Journal of the South African Veterinary Association",
+      "volume_pages": "77(4):175-178",
+      "doi": "10.4102/jsava.v77i4.373",
+      "pmid": "17458340",
+      "url": "",
+      "article_id": "CB325",
+      "type": "cohort",
+      "species": "B. rossi",
+      "n_dogs": 25,
+      "read": "full text"
+    },
+    {
+      "ref": "R8",
+      "authors": "Leisewitz AL, Goddard A, Clift S, et al.",
+      "year": 2019,
+      "title": "A clinical and pathological description of 320 cases of naturally acquired Babesia rossi infection in dogs",
+      "journal": "Veterinary Parasitology",
+      "volume_pages": "271:22-30",
+      "doi": "10.1016/j.vetpar.2019.06.005",
+      "pmid": "31303199",
+      "url": "",
+      "article_id": "CB040",
+      "type": "cohort",
+      "species": "B. rossi",
+      "n_dogs": 320,
+      "read": "full text"
+    },
+    {
+      "ref": "R9",
+      "authors": "Defauw P, Daminet S, Leisewitz AL, et al.",
+      "year": 2018,
+      "title": "Renal azotemia and associated clinical and laboratory findings in dogs with Babesia rossi infection",
+      "journal": "Veterinary Parasitology",
+      "volume_pages": "260:22-29",
+      "doi": "10.1016/j.vetpar.2018.07.012",
+      "pmid": "30197009",
+      "url": "",
+      "article_id": "CB025",
+      "type": "cohort",
+      "species": "B. rossi",
+      "n_dogs": 152,
+      "read": "abstract"
+    },
+    {
+      "ref": "R10",
+      "authors": "Segev G, Cortellini S, Foster JD, et al.",
+      "year": 2024,
+      "title": "International Renal Interest Society best practice consensus guidelines for the diagnosis and management of acute kidney injury in cats and dogs",
+      "journal": "The Veterinary Journal",
+      "volume_pages": "305:106068",
+      "doi": "10.1016/j.tvjl.2024.106068",
+      "pmid": "38325516",
+      "url": "",
+      "article_id": "",
+      "type": "guideline",
+      "species": "",
+      "n_dogs": null,
+      "read": "abstract"
+    },
+    {
+      "ref": "R11",
+      "authors": "Cole LP, Jepson R, Dawson C, et al.",
+      "year": 2020,
+      "title": "Hypertension, retinopathy, and acute kidney injury in dogs: a prospective study",
+      "journal": "Journal of Veterinary Internal Medicine",
+      "volume_pages": "34(5):1940-1947",
+      "doi": "10.1111/jvim.15839",
+      "pmid": "32677736",
+      "url": "",
+      "article_id": "",
+      "type": "cohort",
+      "species": "",
+      "n_dogs": 52,
+      "read": "full text"
+    },
+    {
+      "ref": "R12",
+      "authors": "International Renal Interest Society",
+      "year": 2026,
+      "title": "Treatment recommendations for CKD in dogs (2026)",
+      "journal": "IRIS guideline document",
+      "volume_pages": "",
+      "doi": "",
+      "pmid": "",
+      "url": "https://iris-kidney.com/s/IRIS-DOG-Treatment_Recommendations_may-2026.pdf",
+      "article_id": "",
+      "type": "guideline",
+      "species": "",
+      "n_dogs": null,
+      "read": "full text"
+    },
+    {
+      "ref": "R13",
+      "authors": "Lobetti RG, Jacobson LS",
+      "year": 2001,
+      "title": "Renal involvement in dogs with babesiosis",
+      "journal": "Journal of the South African Veterinary Association",
+      "volume_pages": "72(1):23-28",
+      "doi": "10.4102/jsava.v72i1.604",
+      "pmid": "11563713",
+      "url": "",
+      "article_id": "",
+      "type": "cohort",
+      "species": "",
+      "n_dogs": 30,
+      "read": "abstract"
+    },
+    {
+      "ref": "R14",
+      "authors": "Slade DJ, Lees GE, Berridge BR, et al.",
+      "year": 2011,
+      "title": "Resolution of a proteinuric nephropathy associated with Babesia gibsoni infection in a dog",
+      "journal": "Journal of the American Animal Hospital Association",
+      "volume_pages": "47(6):e138-e144",
+      "doi": "10.5326/JAAHA-MS-5576",
+      "pmid": "22058361",
+      "url": "",
+      "article_id": "CB404",
+      "type": "case report",
+      "species": "B. gibsoni",
+      "n_dogs": 1,
+      "read": "abstract"
+    },
+    {
+      "ref": "R15",
+      "authors": "Máthé A, Vörös K, Papp L, et al.",
+      "year": 2006,
+      "title": "Clinical manifestations of canine babesiosis in Hungary (63 cases)",
+      "journal": "Acta Veterinaria Hungarica",
+      "volume_pages": "54(3):367-385",
+      "doi": "10.1556/AVet.54.2006.3.7",
+      "pmid": "17020140",
+      "url": "",
+      "article_id": "",
+      "type": "case series",
+      "species": "B. canis",
+      "n_dogs": 63,
+      "read": "abstract"
+    },
+    {
+      "ref": "R16",
+      "authors": "Strobl A, Künzel F, Tichy A, et al.",
+      "year": 2020,
+      "title": "Complications and risk factors regarding the outcomes of canine babesiosis in Central Europe: a retrospective analysis of 240 cases",
+      "journal": "Acta Veterinaria Hungarica",
+      "volume_pages": "68(2):160-168",
+      "doi": "10.1556/004.2020.00031",
+      "pmid": "32877354",
+      "url": "",
+      "article_id": "CB061",
+      "type": "cohort",
+      "species": "B. canis",
+      "n_dogs": 240,
+      "read": "abstract"
+    },
+    {
+      "ref": "R17",
+      "authors": "Zygner W, Gójska-Zygner O",
+      "year": 2014,
+      "title": "Association between decreased blood pressure and azotaemia in canine babesiosis",
+      "journal": "Polish Journal of Veterinary Sciences",
+      "volume_pages": "17(1):173-175",
+      "doi": "10.2478/pjvs-2014-0024",
+      "pmid": "24724487",
+      "url": "",
+      "article_id": "CB463",
+      "type": "cohort",
+      "species": "B. canis",
+      "n_dogs": 48,
+      "read": "full text"
+    },
+    {
+      "ref": "R18",
+      "authors": "Defauw P, Schoeman JP, Smets P, et al.",
+      "year": 2012,
+      "title": "Assessment of renal dysfunction using urinary markers in canine babesiosis caused by Babesia rossi",
+      "journal": "Veterinary Parasitology",
+      "volume_pages": "190(3-4):326-332",
+      "doi": "10.1016/j.vetpar.2012.07.023",
+      "pmid": "22884913",
+      "url": "",
+      "article_id": "CB435",
+      "type": "cohort",
+      "species": "B. rossi",
+      "n_dogs": 18,
+      "read": "abstract"
+    },
+    {
+      "ref": "R19",
+      "authors": "Kuleš J, Bilić P, Beer Ljubić B, et al.",
+      "year": 2018,
+      "title": "Glomerular and tubular kidney damage markers in canine babesiosis caused by Babesia canis",
+      "journal": "Ticks and Tick-borne Diseases",
+      "volume_pages": "9(6):1508-1517",
+      "doi": "10.1016/j.ttbdis.2018.07.012",
+      "pmid": "30057291",
+      "url": "",
+      "article_id": "CB024",
+      "type": "cohort",
+      "species": "B. canis",
+      "n_dogs": 42,
+      "read": "abstract"
+    },
+    {
+      "ref": "R20",
+      "authors": "Köster LS, Lobetti RG, Kelly P",
+      "year": 2015,
+      "title": "Canine babesiosis: a perspective on clinical complications, biomarkers, and treatment",
+      "journal": "Veterinary Medicine: Research and Reports",
+      "volume_pages": "6:119-128",
+      "doi": "10.2147/VMRR.S60431",
+      "pmid": "30155438",
+      "url": "",
+      "article_id": "CB493",
+      "type": "review",
+      "species": "",
+      "n_dogs": null,
+      "read": "full text"
+    },
+    {
+      "ref": "R21",
+      "authors": "Segev G",
+      "year": 2018,
+      "title": "State-of-the-art lecture: update on the diagnosis and management of acute kidney injury in the dog",
+      "journal": "WSAVA World Congress Proceedings (VIN)",
+      "volume_pages": "",
+      "doi": "",
+      "pmid": "",
+      "url": "https://vin.com/doc/?id=8896681",
+      "article_id": "",
+      "type": "review",
+      "species": "",
+      "n_dogs": null,
+      "read": "full text"
+    },
+    {
+      "ref": "R22",
+      "authors": "Abdullah AS, Sheikh-Omar AR, Baggot JD, et al.",
+      "year": 1984,
+      "title": "Adverse effects of imidocarb dipropionate (Imizol) in a dog",
+      "journal": "Veterinary Research Communications",
+      "volume_pages": "8(1):55-59",
+      "doi": "10.1007/BF02214695",
+      "pmid": "6719828",
+      "url": "",
+      "article_id": "",
+      "type": "case report",
+      "species": "",
+      "n_dogs": 1,
+      "read": "abstract"
+    },
+    {
+      "ref": "R23",
+      "authors": "Segev G, Foster JD, Francey T, et al.",
+      "year": 2024,
+      "title": "International Renal Interest Society best practice consensus guidelines for intermittent hemodialysis in dogs and cats",
+      "journal": "The Veterinary Journal",
+      "volume_pages": "305:106092",
+      "doi": "10.1016/j.tvjl.2024.106092",
+      "pmid": "38442779",
+      "url": "",
+      "article_id": "",
+      "type": "guideline",
+      "species": "",
+      "n_dogs": null,
+      "read": "abstract"
+    },
+    {
+      "ref": "R24",
+      "authors": "Velescu S, Morar D, Kracunovic CM, et al.",
+      "year": 2026,
+      "title": "Acute kidney injury in a dog successfully treated with hemodialysis: a case report",
+      "journal": "Romanian Journal of Veterinary Sciences",
+      "volume_pages": "59(3):571-578",
+      "doi": "10.59463/rjvs.2026.3.04",
+      "pmid": "",
+      "url": "",
+      "article_id": "",
+      "type": "case report",
+      "species": "",
+      "n_dogs": 1,
+      "read": "abstract"
+    },
+    {
+      "ref": "R25",
+      "authors": "Bociu NA, Ștefănescu A, Vițălaru BA",
+      "year": 2018,
+      "title": "Peritoneal dialysis in a canine patient with kidney and liver injury consecutive to babesiosis",
+      "journal": "Scientific Works. Series C. Veterinary Medicine",
+      "volume_pages": "64(1):23-26",
+      "doi": "",
+      "pmid": "",
+      "url": "https://veterinarymedicinejournal.usamv.ro/index.php/component/content/article/peritoneal-dialysis-in-a-canine-patient-with-kidney-and-liver-injury-consecutive-to-babesiosis-1608?catid=9",
+      "article_id": "",
+      "type": "case report",
+      "species": "",
+      "n_dogs": 1,
+      "read": "abstract"
+    },
+    {
+      "ref": "R26",
+      "authors": "Keir I, Kellum JA",
+      "year": 2015,
+      "title": "Acute kidney injury in severe sepsis: pathophysiology, diagnosis, and treatment recommendations",
+      "journal": "Journal of Veterinary Emergency and Critical Care",
+      "volume_pages": "25(2):200-209",
+      "doi": "10.1111/vec.12297",
+      "pmid": "25845505",
+      "url": "",
+      "article_id": "",
+      "type": "review",
+      "species": "",
+      "n_dogs": null,
+      "read": "abstract"
+    },
+    {
+      "ref": "R27",
+      "authors": "Clabots MF, Gaillard E, Aumann M",
+      "year": 2019,
+      "title": "Acute kidney injury, seizures, and hypertonic hyponatremia secondary to mannitol intoxication in a dog",
+      "journal": "Journal of Veterinary Emergency and Critical Care",
+      "volume_pages": "29(6):680-685",
+      "doi": "10.1111/vec.12902",
+      "pmid": "31637833",
+      "url": "",
+      "article_id": "",
+      "type": "case report",
+      "species": "",
+      "n_dogs": 1,
+      "read": "abstract"
+    },
+    {
+      "ref": "R28",
+      "authors": "Enbavelan PA, Kumaravel A, Muniyappan N, et al.",
+      "year": 2021,
+      "title": "Therapeutic management of Babesia gibsoni induced acute kidney injury in a Rottweiler dog: a case report",
+      "journal": "International Journal of Current Microbiology and Applied Sciences",
+      "volume_pages": "10(1):1710-1715",
+      "doi": "10.20546/ijcmas.2021.1001.200",
+      "pmid": "",
+      "url": "",
+      "article_id": "CB072",
+      "type": "case report",
+      "species": "B. gibsoni",
+      "n_dogs": 1,
+      "read": "full text"
+    }
+  ],
+  "search": {
+    "date": "2026-11-12",
+    "sources": [
+      "local review",
+      "PubMed",
+      "Europe PMC",
+      "Crossref",
+      "web"
+    ],
+    "note": "Searched the local review (renal tags, REN synthesis, full texts), PubMed and the web for babesiosis with kidney terms and each candidate treatment, and IRIS guidance. The 2024 IRIS AKI consensus was read as abstract only (subscription), so canine AKI doses come from an open study and an expert lecture. A 2008 peritoneal dialysis report in B. canis could not be read."
+  }
+}

@@ -1,0 +1,632 @@
+{
+ "inputs": {
+  "/core/data/raw/S-CB050/PMC7040022_supplementaryFiles.zip": "8113a933faceb155103230eaea433f6c5b34ad7aba71531282c01707df63eb85",
+  "/core/data/raw/DS04/stats for haematology.xlsx": "248bb18e79e30566163b2b372740f67952cecd3e0cb2020913209862b7ae3fcd",
+  "/core/data/raw/DS04/Stats Tables.xlsx": "352c1bec22e206a0ea4d6f6e3e7b1dff70c6fe062bdeb923c145f707a2624284",
+  "/core/data/raw/DS04/all tables from thesis.docx": "64dff05245fda772b08e8e55f8d4ca9da6936156fba5ce02bc629bd97dffe264",
+  "/core/data/raw/DS03/Babesia Retics_Natural inf and cont_dissertation.xlsx": "0a3e3e74835ca51e2579f040e97a6da75d03a0249ec092e0dbefdbead566dfd5",
+  "/core/data/raw/DS02/B.Atkinson_Experimental Babesia study raw data.xlsx": "a4a19a8d97e6ab94702dc454b077c4038006ed444d62e11efe0775931b721bfd",
+  "/core/data/raw/DS06/GSE167201_raw_counts.txt.gz": "b2575d138ca08fb7292f3fa46d9f296f02a3d3306f53813b962ce4c993189fc3",
+  "/core/data/raw/DS07/sample_list.xlsx": "3119957fa2b37cbc61d7a1590ed8cc8ea407c695efae354d2b9410a78ff94358",
+  "/experiments/shared/tidy/DS05.features.json": "323238159fb21596dacc02464fe4ebdf7bd54282cd06fdce7535057f28e90a1e",
+  "/experiments/SV-07/spec.md": "be985d2414d9b0037f8e24e8d395164eaf4788ccc26f22f3e01a8a4a89d00bee",
+  "/core/data/raw/S-CB050/PMC7040022_supplementaryFiles.zip!Table_1.DOCX": "ec02b1d7a08f23d477886e1bd2083828a8457cd57df8983964236c9f17a8fb03"
+ },
+ "step1": {
+  "sheet_orders": {
+   "IHC": [
+    "2",
+    "4",
+    "9",
+    "11",
+    "50",
+    "20",
+    "117",
+    "110",
+    "54",
+    "59",
+    "91",
+    "61",
+    "88",
+    "106"
+   ],
+   "Special Stains": [
+    "2",
+    "4",
+    "9",
+    "11",
+    "50",
+    "20",
+    "117",
+    "110",
+    "54",
+    "59",
+    "91",
+    "61",
+    "88",
+    "106"
+   ],
+   "Score Sheet": [
+    "2",
+    "4",
+    "9",
+    "11",
+    "50",
+    "20",
+    "117",
+    "110",
+    "54",
+    "59",
+    "91",
+    "61",
+    "88",
+    "106"
+   ],
+   "Sheet1": [
+    "2",
+    "4",
+    "9",
+    "11",
+    "50",
+    "20",
+    "117",
+    "110",
+    "54",
+    "59",
+    "91",
+    "61",
+    "88",
+    "106"
+   ],
+   "Total Phenotypes": [
+    "2",
+    "4",
+    "9",
+    "11",
+    "50",
+    "20",
+    "117",
+    "110",
+    "54",
+    "59",
+    "91",
+    "61",
+    "88",
+    "106"
+   ]
+  },
+  "orders_agree": true,
+  "join": {
+   "1": "2",
+   "2": "4",
+   "3": "9",
+   "4": "11",
+   "5": "50",
+   "6": "20",
+   "7": "117",
+   "8": "110",
+   "9": "54",
+   "10": "59",
+   "11": "91",
+   "12": "61",
+   "13": "88",
+   "14": "106"
+  },
+  "s050_matches": {
+   "50": 126,
+   "54": 127,
+   "59": 131
+  },
+  "p_three_matches_on_join_rows": 0.001388888888888889,
+  "icterus_agree": 8,
+  "icterus_n": 10,
+  "icterus_p_all_orders": 0.18333333333333332,
+  "icterus_p_orders_with_matches_fixed": 0.37142857142857144,
+  "n_orders_all": 3628800,
+  "n_orders_fixed": 5040
+ },
+ "step3": {
+  "summary": [
+   {
+    "ds03_block": "cohort 1",
+    "n_complete": 78,
+    "with_s050_candidate": 77,
+    "with_unique_s050_candidate": 75,
+    "with_s050_c1": 77,
+    "with_s050_c2": 2,
+    "s050_pool": 131,
+    "with_ds05_candidate": 3,
+    "ds05_pool": 150
+   },
+   {
+    "ds03_block": "cohort 2",
+    "n_complete": 17,
+    "with_s050_candidate": 17,
+    "with_unique_s050_candidate": 17,
+    "with_s050_c1": 0,
+    "with_s050_c2": 17,
+    "s050_pool": 131,
+    "with_ds05_candidate": 0,
+    "ds05_pool": 150
+   },
+   {
+    "ds03_block": "controls",
+    "n_complete": 13,
+    "with_s050_candidate": 12,
+    "with_unique_s050_candidate": 12,
+    "with_s050_c1": 12,
+    "with_s050_c2": 0,
+    "s050_pool": 19,
+    "with_ds05_candidate": null,
+    "ds05_pool": null
+   }
+  ],
+  "rates": [
+   {
+    "ds03_block": "cohort 1",
+    "against": "S-CB050 cohort 1",
+    "pairs": 6786,
+    "candidate_pairs": 77,
+    "per_1000": 11.347,
+    "expected_at_baseline": 1.3,
+    "ratio_to_baseline": 59.3,
+    "p_poisson": 1.05e-105
+   },
+   {
+    "ds03_block": "cohort 1",
+    "against": "S-CB050 cohort 2",
+    "pairs": 3432,
+    "candidate_pairs": 2,
+    "per_1000": 0.583,
+    "expected_at_baseline": 0.66,
+    "ratio_to_baseline": 3.0,
+    "p_poisson": 0.141
+   },
+   {
+    "ds03_block": "cohort 1",
+    "against": "DS05 (baseline)",
+    "pairs": 11700,
+    "candidate_pairs": 3,
+    "per_1000": 0.256,
+    "expected_at_baseline": 2.24,
+    "ratio_to_baseline": 1.3,
+    "p_poisson": 0.388
+   },
+   {
+    "ds03_block": "cohort 2",
+    "against": "S-CB050 cohort 1",
+    "pairs": 1479,
+    "candidate_pairs": 0,
+    "per_1000": 0.0,
+    "expected_at_baseline": 0.28,
+    "ratio_to_baseline": 0.0,
+    "p_poisson": 1.0
+   },
+   {
+    "ds03_block": "cohort 2",
+    "against": "S-CB050 cohort 2",
+    "pairs": 748,
+    "candidate_pairs": 17,
+    "per_1000": 22.727,
+    "expected_at_baseline": 0.14,
+    "ratio_to_baseline": 118.7,
+    "p_poisson": 1.09e-29
+   },
+   {
+    "ds03_block": "cohort 2",
+    "against": "DS05 (baseline)",
+    "pairs": 2550,
+    "candidate_pairs": 0,
+    "per_1000": 0.0,
+    "expected_at_baseline": 0.49,
+    "ratio_to_baseline": 0.0,
+    "p_poisson": 1.0
+   },
+   {
+    "ds03_block": "S-CB050 infected",
+    "against": "DS05 (baseline)",
+    "pairs": 19650,
+    "candidate_pairs": 3,
+    "per_1000": 0.153,
+    "expected_at_baseline": 3.76,
+    "ratio_to_baseline": 0.8,
+    "p_poisson": 0.725
+   },
+   {
+    "ds03_block": "controls",
+    "against": "S-CB050 controls",
+    "pairs": 247,
+    "candidate_pairs": 12,
+    "per_1000": 48.583,
+    "expected_at_baseline": 0.05,
+    "ratio_to_baseline": 253.8,
+    "p_poisson": 2.49e-25
+   }
+  ],
+  "s050_vs_ds05": {
+   "n": 131,
+   "with_ds05_candidate": 3
+  },
+  "n_candidate_pairs": 108,
+  "baseline_rate_per_1000": 0.191,
+  "order_check": [
+   {
+    "ds03_block": "cohort 1",
+    "unique_pairs": 75,
+    "order_inversions": 0,
+    "pairs_compared": 2775,
+    "kendall_tau": 1.0,
+    "p_all_in_order_by_chance": 4.03e-110
+   },
+   {
+    "ds03_block": "cohort 2",
+    "unique_pairs": 17,
+    "order_inversions": 0,
+    "pairs_compared": 136,
+    "kendall_tau": 1.0,
+    "p_all_in_order_by_chance": 2.81e-15
+   },
+   {
+    "ds03_block": "controls",
+    "unique_pairs": 12,
+    "order_inversions": 0,
+    "pairs_compared": 66,
+    "kendall_tau": 1.0,
+    "p_all_in_order_by_chance": 2.09e-09
+   }
+  ],
+  "ds04_vs_ds03": [
+   {
+    "row": 9,
+    "ds04_case": "54",
+    "ds04_hct": 0.07,
+    "ds04_retic_pct": 3.2,
+    "ds03_id": "BLSC29",
+    "ds03_hct": 0.07,
+    "ds03_retic_pct": 3.17,
+    "ds03_age": 9.0,
+    "ds03_wt": 45.6,
+    "ds03_sex": "male",
+    "signalment_agrees": true
+   }
+  ]
+ },
+ "step4": {
+  "markers_present": {
+   "Lymph": [
+    "CD3E",
+    "CD3D",
+    "CD2",
+    "MS4A1",
+    "CD79A",
+    "CD79B"
+   ],
+   "SNeut": [
+    "CSF3R",
+    "CXCR2",
+    "MNDA"
+   ],
+   "Mono": [
+    "CSF1R"
+   ]
+  },
+  "markers_absent": {
+   "Lymph": [],
+   "SNeut": [
+    "FPR1"
+   ],
+   "Mono": [
+    "CD14"
+   ]
+  },
+  "positive_control_best": {
+   "test": "positive control: high dose, days 0,1,3",
+   "assignment": "high_1=dog 4; high_2=dog 6; high_3=dog 5",
+   "days": "0,1,3",
+   "lymph": 0.667,
+   "neut": -0.167,
+   "mono": 0.333,
+   "mean": 0.278,
+   "best": true,
+   "wins": 1
+  },
+  "positive_control_pass": false,
+  "high_best": {
+   "test": "high dose 1/2, all days",
+   "assignment": "high_1=dog 4; high_2=dog 5",
+   "days": "0,1,3,4,6,8",
+   "lymph": 0.429,
+   "neut": 0.257,
+   "mono": 0.486,
+   "mean": 0.39,
+   "best": true,
+   "wins": 3
+  },
+  "low_best": {
+   "test": "low dose 1/2, all days",
+   "assignment": "low_1=dog 2; low_2=dog 3",
+   "days": "0,1,3,4,6,8",
+   "lymph": 0.8,
+   "neut": 0.257,
+   "mono": -0.257,
+   "mean": 0.267,
+   "best": true,
+   "wins": 2
+  },
+  "days_per_name": {
+   "low_0": [
+    0
+   ],
+   "low_1": [
+    0,
+    1,
+    3,
+    4,
+    6,
+    8
+   ],
+   "low_2": [
+    0,
+    1,
+    3,
+    4,
+    6,
+    8
+   ],
+   "high_1": [
+    0,
+    1,
+    3,
+    4,
+    6,
+    8
+   ],
+   "high_2": [
+    0,
+    1,
+    3,
+    4,
+    6,
+    8
+   ],
+   "high_3": [
+    0,
+    1,
+    3
+   ]
+  }
+ },
+ "step5": {
+  "ds07_lists": {
+   "Controls": [
+    "1z",
+    "2z",
+    "3z",
+    "4z",
+    "5z",
+    "6z",
+    "7z",
+    "8z",
+    "9z",
+    "10z",
+    "11z",
+    "12z",
+    "13z",
+    "14z",
+    "15z",
+    "16z",
+    "17z",
+    "18z",
+    "19z",
+    "20z"
+   ],
+   "Complicated babesiosis": [
+    "81",
+    "91",
+    "7",
+    "15",
+    "16",
+    "20",
+    "24",
+    "37",
+    "40",
+    "43",
+    "50",
+    "54",
+    "59",
+    "61"
+   ],
+   "Uncomplicated babesiosis": [
+    "69",
+    "88",
+    "74",
+    "56",
+    "70",
+    "33",
+    "64",
+    "28",
+    "26",
+    "71",
+    "42",
+    "45",
+    "72",
+    "58",
+    "30",
+    "19",
+    "55",
+    "73"
+   ]
+  },
+  "ds04_numbers_below_98": [
+   50,
+   20,
+   54,
+   59,
+   91,
+   61,
+   88
+  ],
+  "in_complicated": [
+   20,
+   50,
+   54,
+   59,
+   61,
+   91
+  ],
+  "in_uncomplicated": [
+   88
+  ],
+  "hypergeometric": [
+   {
+    "universe": "1-91",
+    "expected_in_complicated": 1.08,
+    "p_ge_observed_complicated": 2.8992251595501377e-05,
+    "expected_in_any_infected": 2.46,
+    "p_ge_observed_any": 0.0004158463157218134
+   },
+   {
+    "universe": "1-97",
+    "expected_in_complicated": 1.01,
+    "p_ge_observed_complicated": 1.966964532649227e-05,
+    "expected_in_any_infected": 2.31,
+    "p_ge_observed_any": 0.00026201096932514106
+   },
+   {
+    "universe": "1-144",
+    "expected_in_complicated": 0.68,
+    "p_ge_observed_complicated": 1.7926792883161646e-06,
+    "expected_in_any_infected": 1.56,
+    "p_ge_observed_any": 1.5321389710718785e-05
+   }
+  ],
+  "consistency": [
+   {
+    "ds04_case": 20,
+    "ds07_group": "complicated",
+    "sex": "female",
+    "neuter": "neutered",
+    "age_months": 144,
+    "timing": "Died before Rx",
+    "s050_case": null,
+    "contradiction": "age 144 months is outside the CB112 infected range 6-120"
+   },
+   {
+    "ds04_case": 50,
+    "ds07_group": "complicated",
+    "sex": "male",
+    "neuter": "intact",
+    "age_months": 30,
+    "timing": "Died before Rx",
+    "s050_case": 126,
+    "contradiction": null
+   },
+   {
+    "ds04_case": 54,
+    "ds07_group": "complicated",
+    "sex": "male",
+    "neuter": "intact",
+    "age_months": 9,
+    "timing": "Died after Rx",
+    "s050_case": 127,
+    "contradiction": null
+   },
+   {
+    "ds04_case": 59,
+    "ds07_group": "complicated",
+    "sex": "male",
+    "neuter": "intact",
+    "age_months": 60,
+    "timing": "Died after Rx",
+    "s050_case": 131,
+    "contradiction": null
+   },
+   {
+    "ds04_case": 61,
+    "ds07_group": "complicated",
+    "sex": "male",
+    "neuter": "intact",
+    "age_months": 96,
+    "timing": "Died after Rx",
+    "s050_case": null,
+    "contradiction": null
+   },
+   {
+    "ds04_case": 88,
+    "ds07_group": "uncomplicated",
+    "sex": "male",
+    "neuter": null,
+    "age_months": 7,
+    "timing": "DOA",
+    "s050_case": null,
+    "contradiction": "dead on arrival in DS04, but CB112 counts death within 24 h as complicated"
+   },
+   {
+    "ds04_case": 91,
+    "ds07_group": "complicated",
+    "sex": "male",
+    "neuter": "intact",
+    "age_months": 84,
+    "timing": "Died after Rx",
+    "s050_case": null,
+    "contradiction": null
+   }
+  ],
+  "summary_level": {
+   "CB112 controls (article)": {
+    "n": 20,
+    "female": 6,
+    "median_age": 21,
+    "age_min": 12,
+    "age_max": 120
+   },
+   "CB112 infected (article)": {
+    "n": 32,
+    "female": 9,
+    "median_age": 28,
+    "age_min": 6,
+    "age_max": 120
+   },
+   "S-CB050 controls 201-220": {
+    "n": 20,
+    "female": 13,
+    "median_age": 46.0,
+    "age_min": 3.0,
+    "age_max": 84.0
+   },
+   "S-CB050 controls 216-220 (2014)": {
+    "n": 5,
+    "female": 3,
+    "median_age": 44.0,
+    "age_min": 24.0,
+    "age_max": 76.0
+   },
+   "S-CB050 infected 101-144 (2014)": {
+    "n": 44,
+    "female": 14,
+    "median_age": 19.5,
+    "age_min": 3.0,
+    "age_max": 91.0
+   },
+   "S-CB050 infected 1-97 (2011-13)": {
+    "n": 97,
+    "female": 34,
+    "median_age": 20.0,
+    "age_min": 2.0,
+    "age_max": 144.0
+   },
+   "DS03 controls": {
+    "n": 14,
+    "female": 9,
+    "median_age": 56.0,
+    "age_min": 3.0,
+    "age_max": 84.0
+   }
+  }
+ },
+ "link_counts": {
+  "confirmed by values": 10,
+  "probable": 11,
+  "unverified": 126
+ }
+}

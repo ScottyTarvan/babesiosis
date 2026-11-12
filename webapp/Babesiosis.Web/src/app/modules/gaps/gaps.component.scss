@@ -1,0 +1,219 @@
+@use '../review/review-heat' as heat;
+
+:host {
+  display: block;
+}
+
+.fs-gaps {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.fs-gaps__loading {
+  display: flex;
+  justify-content: center;
+  padding: 32px;
+}
+
+.fs-gaps__legend {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  color: rgb(var(--fs-color-ink-soft));
+}
+
+.fs-gaps__swatch {
+  @include heat.heat-cell;
+  width: 22px;
+  height: 14px;
+  border-radius: 3px;
+}
+
+.fs-gaps__scroll {
+  overflow-x: auto;
+}
+
+// The matrix: a CSS grid with table roles (raw <table> is reserved for fs-data-table).
+.fs-matrix {
+  min-width: 860px;
+}
+
+.fs-matrix__row {
+  display: grid;
+  grid-template-columns: 250px repeat(6, minmax(0, 1fr)) 64px;
+  gap: 4px;
+  align-items: center;
+  padding: 2px 0;
+}
+
+.fs-matrix__row--head {
+  align-items: end;
+  padding-bottom: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  text-align: center;
+  color: rgb(var(--fs-color-ink-soft));
+}
+
+.fs-matrix__topic {
+  text-align: left;
+  font-size: 13.5px;
+}
+
+.fs-matrix__name {
+  font-weight: 600;
+  color: rgb(var(--fs-color-primary-fg));
+  text-decoration: none;
+
+  &:hover,
+  &:focus-visible {
+    text-decoration: underline;
+  }
+}
+
+.fs-matrix__code {
+  margin-left: 6px;
+  font-size: 12px;
+  color: rgb(var(--fs-color-ink-soft));
+}
+
+.fs-matrix__cell {
+  @include heat.heat-cell($empty: outline);
+  display: block;
+  padding: 8px 0;
+  border-radius: 4px;
+  font-size: 13px;
+  text-align: center;
+  text-decoration: none;
+}
+
+a.fs-matrix__cell:hover,
+a.fs-matrix__cell:focus-visible {
+  outline: 2px solid rgb(var(--fs-color-primary-fg));
+  outline-offset: 1px;
+}
+
+.fs-matrix__total {
+  text-align: right;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  color: rgb(var(--fs-color-ink-strong));
+}
+
+.fs-gaps__footnote {
+  margin: var(--fs-guide-space-3) 0 0;
+  font-size: 12.5px;
+  line-height: 1.4;
+  color: rgb(var(--fs-color-ink-soft));
+}
+
+.fs-gaps__figures {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+}
+
+.fs-gaps__figure {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.fs-gaps__figure-value {
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: rgb(var(--fs-color-ink-strong));
+}
+
+.fs-gaps__figure-title {
+  font-weight: 600;
+  color: rgb(var(--fs-color-ink-strong));
+}
+
+.fs-gaps__figure-text {
+  font-size: 13px;
+  color: rgb(var(--fs-color-ink-soft));
+}
+
+.fs-gaps__columns {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  align-items: start;
+
+  @media (max-width: 991.98px) {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+.fs-gaps__list {
+  display: flex;
+  flex-direction: column;
+}
+
+.fs-gaps__item {
+  border-bottom: 1px solid rgb(var(--fs-color-line));
+
+  &[open] .fs-gaps__chevron {
+    transform: rotate(90deg);
+  }
+}
+
+// The native disclosure row: keyboard and screen-reader support come with <details>.
+.fs-gaps__summary {
+  display: flex;
+  gap: 10px;
+  align-items: baseline;
+  min-height: 44px;
+  padding: 10px 0;
+  cursor: pointer;
+  list-style: none;
+
+  &::-webkit-details-marker {
+    display: none;
+  }
+
+  &:focus-visible {
+    outline: 2px solid rgb(var(--fs-color-primary-fg));
+    outline-offset: 2px;
+  }
+}
+
+.fs-gaps__chevron {
+  flex: none;
+  color: rgb(var(--fs-color-ink-soft));
+  transition: transform 0.15s ease;
+}
+
+.fs-gaps__qid {
+  flex: 0 0 28px;
+  font-weight: 700;
+  color: rgb(var(--fs-color-primary-fg));
+}
+
+.fs-gaps__summary-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.fs-gaps__heading {
+  font-weight: 600;
+}
+
+.fs-gaps__codes {
+  font-size: 12.5px;
+  color: rgb(var(--fs-color-ink-soft));
+}
+
+.fs-gaps__body {
+  padding: 0 0 var(--fs-guide-space-4) 26px;
+
+  @media (max-width: 575.98px) {
+    padding-left: 0;
+  }
+}

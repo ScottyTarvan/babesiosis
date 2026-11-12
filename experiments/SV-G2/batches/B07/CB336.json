@@ -1,0 +1,20 @@
+{
+  "id": "CB336",
+  "text_used": "data/markdown/CB336.md",
+  "extracted_by": "claude-opus-5-5 SV-G2 B07",
+  "extracted_utc": "2026-11-12T00:00:00Z",
+  "schema_version": "v2",
+  "setting": "experimental",
+  "sample_timing": "mixed",
+  "article_notes": "Four splenectomised dogs experimentally infected with B. gibsoni and treated (diminazene, then clindamycin/metronidazole/doxycycline). Per-dog time courses only; within-dog Pearson correlations of platelet count and CRP with PCV during the recovery phase are treatment-response analyses over time (excluded by the guide) and their coefficients are given only in figures. No severity or outcome group comparison. Nothing extracted.",
+  "skipped_infected_vs_healthy": 0,
+  "severity_definitions": [],
+  "associations": [],
+  "not_extracted": [
+    {
+      "what": "Within-dog correlations of PLT and plasma CRP with PCV during the recovery phase (Figs 2 and 3)",
+      "reason": "figure only",
+      "note": "Serial treatment-response correlations in 4 experimental dogs; excluded as change over time after treatment, and r values are in figures only."
+    }
+  ]
+}

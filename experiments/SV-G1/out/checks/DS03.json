@@ -1,0 +1,94 @@
+{
+ "dataset_id": "DS03",
+ "checks": [
+  {
+   "name": "naturally infected dogs (cohort 1 + cohort 2)",
+   "observed": [
+    85,
+    18
+   ],
+   "expected": [
+    85,
+    18
+   ],
+   "tolerance": 0.0,
+   "source": "data.md; CB115 note: 103 naturally infected",
+   "pass": true
+  },
+  {
+   "name": "healthy controls",
+   "observed": 14,
+   "expected": 14,
+   "tolerance": 0.0,
+   "source": "CB115 note: 14 healthy controls",
+   "pass": true
+  },
+  {
+   "name": "IMHA dogs in the file",
+   "observed": 16,
+   "expected": 16,
+   "tolerance": 0.0,
+   "source": "data.md (the article reports 10)",
+   "pass": true
+  },
+  {
+   "name": "experimental dogs",
+   "observed": 5,
+   "expected": 5,
+   "tolerance": 0.0,
+   "source": "CB115 note: five experimentally infected dogs",
+   "pass": true
+  },
+  {
+   "name": "median haematocrit lower in natural B. rossi than in controls",
+   "observed": [
+    0.16,
+    0.52,
+    true
+   ],
+   "expected": [
+    null,
+    null,
+    true
+   ],
+   "tolerance": 0.0,
+   "source": "CB115 note: haematocrit low in B. rossi relative to controls (p < .001)",
+   "pass": true
+  },
+  {
+   "name": "ARC 2-3 days after parasitaemia is detected falls below 60% of its value on days 0-1 of detection, in every experimental dog",
+   "observed": [
+    5,
+    true
+   ],
+   "expected": [
+    5,
+    true
+   ],
+   "tolerance": 0.0,
+   "source": "CB115 note: ARC dropped abruptly about 48 h after parasitaemia was detected",
+   "pass": true
+  },
+  {
+   "name": "experimental dogs linked to DS02 by value",
+   "observed": 5,
+   "expected": 5,
+   "tolerance": 0.0,
+   "source": "this script",
+   "pass": true
+  }
+ ],
+ "n_dogs": 138,
+ "n_records": 161,
+ "same_dog_as": {
+  "exp case 1": "DS02:d005",
+  "exp case 2": "DS02:d001",
+  "exp case 3": "DS02:d004",
+  "exp case 4": "DS02:d002",
+  "exp case 5": "DS02:d003"
+ },
+ "ds02_cell_differences": [
+  "DS02:d003 day 3 hb: DS03 120.0, DS02 118.0"
+ ],
+ "n_failed": 0
+}

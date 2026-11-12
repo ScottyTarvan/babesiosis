@@ -1,0 +1,30 @@
+alias,marker,marker_class,canonical,id,note
+splenectomy,Splenectomy,clinical history,yes,,owner: host factor named in SV-G2 package file
+splenectomised,Splenectomy,clinical history,no,,owner
+prior treatment,Treatment factors,treatment,no,,owner: prior antibabesial or other treatment before presentation
+collapsed at presentation (vs able to stand),Collapse,clinical sign,yes,CB040,merged from B00a
+sirs positive (vs sirs negative),SIRS status,clinical score,yes,CB040,merged from B00a: SIRS present/absent or number of SIRS criteria (Okano criteria)
+number of sirs criteria,SIRS status,clinical score,no,CB040,merged from B00a
+sirs criteria,SIRS status,clinical score,no,CB106,owner: S2 proposed 'SIRS criteria'; merged into SIRS status
+sirs criteria at initial presentation,SIRS status,clinical score,no,CB106,merged from S2
+serum 25-hydroxyvitamin d,Vitamin D (25-hydroxyvitamin D),endocrine,yes,CB035,merged from B01
+baso,Basophil count,haematology,yes,CB224,merged from B01/B02/B05
+basophils,Basophil count,haematology,no,CB241,merged from B02
+basophils (%),Basophil count,haematology,no,CB038,merged from B05
+thrombocrit,Mean platelet volume and platelet indices,haematology,no,CB241,merged from B02
+urine creatinine,Urine creatinine,urine,yes,CB071,merged from B02; keeps it out of serum Creatinine
+serum urea:creatinine ratio,Urea:creatinine ratio,biochemistry,yes,CB325,merged from B03
+other clinical signs (weakness; refusal of food; laboured breathing; dyspnoea; thirst),Other clinical signs (composite),clinical sign,yes,CB187,merged from B03
+low haemoglobin density (lhd %),Red cell indices,haematology,no,CB286,merged from B04
+erythrocyte sedimentation rate,Erythrocyte sedimentation rate,haematology,yes,CB038,merged from B05
+fe(na+),Fractional excretion of electrolytes,urine,yes,CB425,merged from B09
+fe(k+),Fractional excretion of electrolytes,urine,no,CB425,merged from B09
+fe(cl-),Fractional excretion of electrolytes,urine,no,CB425,merged from B09
+soluble thrombomodulin,Thrombomodulin,endothelial,yes,CB004,merged from B08: soluble TM; endothelial activation marker
+hmgb-1,HMGB-1,immunology,yes,CB004,merged from B08: high mobility group box-1 protein (alarmin / DAMP)
+supar,suPAR,coagulation,yes,CB004,merged from B08: soluble urokinase plasminogen activator receptor; authors group it with fibrinolysis markers
+cbv,Circulating blood volume,other,yes,CB220,merged from B08: circulating blood volume by Evans blue dilution; also specific CBV and blood volume deficit
+spontaneous erythrocyte aggregation (speac),Erythrocyte aggregation,haematology,yes,CB220,merged from B08: shaker method
+index of wetting the vascular wall,Vascular wall wetting index,endothelial,yes,CB220,merged from B08: haemorheological index of vascular wall state
+soluble fibrin-monomer complexes (sfmc),Soluble fibrin monomer complexes,coagulation,yes,CB220,merged from B08: DIC marker; could alternatively map to DIC
+time since last meal,Time since last meal,clinical history,yes,CB342,merged from B08: fasting duration before presentation

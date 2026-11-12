@@ -1,0 +1,178 @@
+<div class="fs-evm">
+  @if (isMatrix()) {
+    <fs-card title="Primary analysis: do markers hold up across independent cohorts?"
+             subtitle="Published group results (SV-G2) · cell = marker × outcome class × species · counted by independent unit, not article · pooling needs ≥ 3 units in one cell">
+      @if (summary(); as s) {
+        <dl class="fs-evm__tiles">
+          <div><dt>Cells with ≥ 3 tested units</dt><dd>{{ s.tiles.cells_ge3_tested }} <small>of {{ s.tiles.cells }} cells (largest {{ s.tiles.largest_cell }})</small></dd></div>
+          <div><dt>Pooled estimates</dt><dd>{{ s.tiles.pooled }} <small>rule: ≥ 3 units, one species and outcome class</small></dd></div>
+          <div><dt>Consistent cells</dt><dd>{{ s.tiles.consistent }} <small>all in 2 units only</small></dd></div>
+          <div><dt>Post hoc, classes merged</dt><dd>{{ s.tiles.collapsed_consistent_ge3_noncircular }} <small>non-circular cells consistent in ≥ 3 units</small></dd></div>
+          <div><dt>…with Onderstepoort counted once</dt><dd>{{ s.tiles.collapsed_consistent_ge3_noncircular_s1 }} <small>cells keep 3 agreeing units</small></dd></div>
+          <div><dt>Tested rows not significant</dt><dd>{{ pct(s.tiles.share_not_significant) }} <small>selective-reporting check</small></dd></div>
+        </dl>
+        <h4 class="fs-evm__subhead">Consistent cells in the primary matrix (2 units each)</h4>
+        <fs-data-grid [data]="s.consistent_cells" [columns]="cellColumns" noDataText="No consistent cell." />
+        <p class="fs-evm__footnote">
+          {{ s.tiles.rows }} rows, {{ s.tiles.articles }} articles, {{ s.tiles.units }} independent units, {{ s.tiles.markers }} markers ·
+          units by species: {{ speciesUnits() }} · one species per source, so species are not compared · no hypothesis test.
+          A negative primary result: the evidence is spread over too many definitions for any cell to reach 3 units.
+        </p>
+      } @else {
+        <p class="fs-evm__footnote">This run stored no primary summary.</p>
+      }
+    </fs-card>
+
+    <fs-card title="Exploratory (post hoc D1): outcome classes merged within species"
+             subtitle="Independent units by call, cells with ≥ 3 tested units · green higher in severe, blue lower, grey not significant, pale both directions in one unit · not pooled">
+      @if (collapsed(); as rows) {
+        @if (bars().bars.length) {
+          <div class="fs-evm__bars">
+            <svg [attr.viewBox]="'0 0 ' + bars().width + ' ' + bars().height" [attr.width]="bars().width" [attr.height]="bars().height"
+                 role="img" aria-label="Independent units by call for each marker and species">
+              @for (t of bars().ticks; track t.x) {
+                <line class="grid" [attr.x1]="t.x" [attr.x2]="t.x" y1="10" [attr.y2]="bars().height - 24" />
+                <text class="tick-label" [attr.x]="t.x" [attr.y]="bars().height - 10" text-anchor="middle">{{ t.label }}</text>
+              }
+              @for (b of bars().bars; track b.key) {
+                <text class="label" x="0" [attr.y]="b.y - 2">{{ b.label }}</text>
+                <text class="sub" x="0" [attr.y]="b.y + 10">{{ b.sub }}</text>
+                @for (s of b.segs; track s.x) {
+                  <rect [attr.class]="'seg ' + s.cls" [attr.x]="s.x" [attr.y]="b.y - bars().barH / 2" [attr.width]="s.w - 2" [attr.height]="bars().barH" rx="2" />
+                }
+                <text class="tag" [attr.x]="bars().tagX" [attr.y]="b.y + 4">{{ b.tag }}</text>
+              }
+            </svg>
+          </div>
+          <p class="fs-evm__axis">Independent units (one call per unit across its definitions)</p>
+        }
+        <fs-data-grid [data]="rows" [columns]="collapsedColumns" [pager]="pager" [pageSize]="10" noDataText="No cells." />
+        <p class="fs-evm__footnote">
+          Added after the primary result was known; it mixes definitions and is exploratory. "Circular": the marker is part of the
+          severity definition in at least one unit (for example creatinine in a renal complication). "Onderstepoort once": all
+          Onderstepoort B. rossi units counted as one unit, because their dogs probably overlap. Death includes euthanasia.
+        </p>
+      } @else {
+        <p class="fs-evm__footnote">This run stored no collapsed matrix.</p>
+      }
+    </fs-card>
+
+    <fs-card title="Pooling" subtitle="Random effects, REML with Hartung-Knapp interval · only within one species and outcome class">
+      @if (pooling(); as p) {
+        @if (p.pooled.length) {
+          @for (r of p.pooled; track r.marker + r.outcome_class + r.species_group) {
+            <p>{{ r.marker }} · {{ r.outcome_class }} · {{ r.species_group }}: {{ r.estimate.toFixed(2) }} ({{ r.ci_low.toFixed(2) }} to {{ r.ci_high.toFixed(2) }}), k {{ r.k_units }}</p>
+          }
+        } @else {
+          <p class="fs-evm__lead">No cell had 3 independent units with a usable summary, so there is no pooled estimate.
+            {{ p.usable_rows }} rows had a usable summary; {{ p.near_misses.length }} cells had 2 units.</p>
+        }
+        <h4 class="fs-evm__subhead">Cells with 2 usable units</h4>
+        <fs-data-grid [data]="p.near_misses" [columns]="nearColumns" noDataText="None." />
+        <h4 class="fs-evm__subhead">Would reach 3 units if outcome classes were merged (not pooled: forbidden by the spec)</h4>
+        <fs-data-grid [data]="p.poolable_if_collapsed" [columns]="poolableColumns" noDataText="None." />
+        <p class="fs-evm__footnote">All in B. canis: a meta-analysis with harmonised definitions would be possible there, not in B. rossi.</p>
+      } @else {
+        <p class="fs-evm__footnote">This run stored no pooling result.</p>
+      }
+    </fs-card>
+
+    <fs-card title="Conflicts named in the syntheses"
+             subtitle="IL-8, fibrinogen, aPTT, MDA, SOD and catalase, parasitaemia, platelets against death, lactate; MCP-1 added from SV-04 · univariable unit calls">
+      @if (conflicts(); as c) {
+        <fs-data-grid [data]="c.rows" [columns]="conflictColumns" noDataText="No conflicts." />
+        <h4 class="fs-evm__subhead">The units behind each conflict</h4>
+        <fs-data-grid [data]="c.units" [columns]="conflictUnitColumns" [pager]="pager" [pageSize]="10" noDataText="No units." />
+        <p class="fs-evm__footnote">
+          A unit can count under two calls when it used several definitions. "No conflict in the extracted evidence": no two units
+          point in opposite significant directions. The published IL-8 contrast rests on CB037 (abstract only, not extracted)
+          and on comparisons with healthy controls. Species is aliased with source and definition.
+        </p>
+      } @else {
+        <p class="fs-evm__footnote">This run stored no conflict table.</p>
+      }
+    </fs-card>
+
+    @if (sensitivity(); as rows) {
+      <fs-card title="Sensitivity sets" subtitle="Counts of cells under each set · S1 Onderstepoort once · S2 judgement calls removed · S3 strict rule · S4 circular units removed">
+        <fs-data-grid [data]="rows" [columns]="sensitivityColumns" noDataText="No sets." />
+      </fs-card>
+    }
+
+    @if (selective(); as s) {
+      <fs-card title="Selective reporting check" subtitle="Share of tested rows that are not significant, by article">
+        <p class="fs-evm__lead">
+          Overall {{ pct(s.summary.overall_share_not_significant) }} not significant; median by article {{ pct(s.summary.median_share_not_significant) }}
+          (IQR {{ pct(s.summary.q1) }} to {{ pct(s.summary.q3) }}). {{ s.summary.articles_with_no_not_significant_row }} of
+          {{ s.summary.articles_with_tested_rows }} articles report no non-significant row: {{ s.summary.those_articles.join(', ') }}.
+        </p>
+        <fs-data-grid [data]="s.rows" [columns]="selectiveColumns" [pager]="pager" [pageSize]="10" noDataText="No articles." />
+      </fs-card>
+    }
+
+    @if (matrix(); as m) {
+      <fs-card title="Evidence matrix (primary)" [subtitle]="'Cells with ≥ 2 tested units or a conflict inside one unit · ' + m.rows.length + ' of ' + m.all_cells + ' cells · full table in out/evidence_matrix.csv'">
+        <fs-data-grid [data]="m.rows" [columns]="cellColumns" [pager]="pager" [pageSize]="10" noDataText="No cells." />
+      </fs-card>
+    }
+  }
+
+  @if (isDefinitionMap()) {
+    <fs-card title="Primary: how severe disease is defined"
+             subtitle="SV-G2 definitions · components counted by independent unit · species aliased with source and setting">
+      @if (defSummary(); as d) {
+        <dl class="fs-evm__tiles">
+          <div><dt>Definitions</dt><dd>{{ d.circularity.definitions }} <small>in {{ d.circularity.definition_units }} units</small></dd></div>
+          <div><dt>Components per definition</dt><dd>{{ d.circularity.component_count_median }} <small>median</small></dd></div>
+          <div><dt>Tested rows with the marker in its own definition</dt><dd>{{ pct(d.circularity.share_rows, 1) }} <small>{{ d.circularity.tested_rows_marker_in_definition }} of {{ d.circularity.tested_rows }}</small></dd></div>
+          <div><dt>Units with such a row</dt><dd>{{ d.circularity.units_with_marker_in_definition }} <small>of {{ d.circularity.units_tested }} units with tests</small></dd></div>
+          <div><dt>Significant: circular rows</dt><dd>{{ pct(d.circularity.share_significant_circular) }} <small>vs {{ pct(d.circularity.share_significant_noncircular) }} other rows</small></dd></div>
+        </dl>
+      } @else {
+        <p class="fs-evm__footnote">This run stored no definition summary.</p>
+      }
+      @if (heat().length) {
+        <h4 class="fs-evm__subhead">Definition components by independent units</h4>
+        <div class="fs-evm__heat">
+          <table>
+            <thead><tr><th>Component</th><th>All units</th>@for (s of species; track s) {<th>{{ s }}</th>}</tr></thead>
+            <tbody>
+              @for (r of heat(); track r.name) {
+                <tr>
+                  <td>{{ r.name }}</td>
+                  <td class="num">{{ r.all }} <small>{{ pct(r.share) }}</small></td>
+                  @for (c of r.cells; track $index) {
+                    <td class="num cell" [style.--a]="c.alpha">{{ c.n || '' }}</td>
+                  }
+                </tr>
+              }
+            </tbody>
+          </table>
+        </div>
+        <p class="fs-evm__footnote">Darker cells: more units. A unit is counted once per component however many definitions it used.</p>
+      }
+    </fs-card>
+
+    @if (outcomeClasses(); as rows) {
+      <fs-card title="Outcome classes" subtitle="Independent units using each outcome class, by species">
+        <fs-data-grid [data]="rows" [columns]="ocColumns" noDataText="No classes." />
+      </fs-card>
+    }
+
+    @if (circularity(); as rows) {
+      <fs-card title="Markers tested against a definition that contains them" subtitle="Tested rows by marker and reason">
+        <fs-data-grid [data]="rows" [columns]="circColumns" noDataText="None." />
+      </fs-card>
+    }
+
+    @if (definitions(); as rows) {
+      <fs-card title="All severity definitions" subtitle="One row per definition · death includes euthanasia where stated">
+        <fs-data-grid [data]="rows" [columns]="defColumns" [pager]="pager" [pageSize]="10" noDataText="No definitions." />
+      </fs-card>
+    }
+  }
+
+  @if (!isMatrix() && !isDefinitionMap()) {
+    <p class="fs-evm__footnote">This experiment stored none of the payloads this view draws.</p>
+  }
+</div>

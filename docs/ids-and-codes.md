@@ -1,6 +1,6 @@
 # ID schemes and codes
 
-Paths are relative to `core/`. Counts were taken on 2026-10-28; re-count before you quote them as current.
+Paths are relative to `core/`. Counts as of 2026-10-28.
 
 ## Article IDs
 
@@ -13,7 +13,9 @@ The format of an article ID is `<prefix><3 digits>`. The ID is also the start of
 | `BG` | `background` | 10 | Older or foundational papers (before 2006-10-23). `BG001` is the seed meta-analysis. |
 
 - IDs are append-only and stable. `ids.json` maps each source key (`PMID:…` or `DOI:…`) to its ID. It has 584 entries, and 103 of them are retired (`"retired": true`, with a `retired_reason`). Retired IDs leave gaps in the numbers (for example, `CB003` is retired). A missing number is not an error.
-- Round 4 (2026-10-27) added 221 CB IDs (CB320–CB540). At extraction, 162 were included. 57 were retired (38 unverifiable, 19 excluded on full text), and 2 were retired as duplicates of another included record (CB380 → CB371, CB488 → CB468). Seven background papers inside the new window were reclassified: `BG004`, `BG008`, `BG010`, `BG012`, `BG013`, `BG014` and `BG015` are retired under `RETIRED:<BG ID>` keys with `replaced_by` (CB323, CB446, CB435, CB438, CB504, CB517, CB481). The new CB entries have `replaces`, and the BG notes and rows were removed. `CB029` (retired as unverifiable) was found and has `replaced_by: CB409`. CB510 and CB511 are the same study, published twice (in English and in Croatian). Both are kept, in cohort CH23; count them once.
+- Round 4 added CB320–CB540 (221 IDs: 162 included, 57 retired, 2 retired as duplicates: CB380 → CB371, CB488 → CB468).
+- A replaced ID has `replaced_by`, and the new entry has `replaces`. Seven `BG` papers inside the window became `CB` articles (BG004, BG008, BG010, BG012, BG013, BG014, BG015 → CB323, CB446, CB435, CB438, CB504, CB517, CB481), under `RETIRED:<BG ID>` keys. `CB029` → CB409.
+- CB510 and CB511 are the same study, published twice (cohort CH23). Count them once.
 - Do not count `HU` and `BG` articles as canine evidence.
 
 ## Other IDs

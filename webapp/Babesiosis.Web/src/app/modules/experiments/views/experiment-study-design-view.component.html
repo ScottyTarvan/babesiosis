@@ -1,0 +1,114 @@
+<div class="fs-study-design">
+  @if (primary(); as p) {
+    <fs-card [title]="'Recommended design: ' + p.memo_title"
+             subtitle="Design memo · no data analysed · every number is a planning assumption or a power calculation (80% power, two-sided)">
+      <p class="fs-study-design__question">{{ p.question }}</p>
+      <dl class="fs-study-design__totals">
+        <div><dt>Dogs to analyse</dt><dd>{{ p.recommendation.n_total.toLocaleString() }}</dd></div>
+        @if (p.recommendation.n_cases !== null) {
+          <div><dt>Severe (cases)</dt><dd>{{ p.recommendation.n_cases.toLocaleString() }}</dd></div>
+        }
+        @if (p.recommendation.n_controls !== null) {
+          <div><dt>Mild (controls)</dt><dd>{{ p.recommendation.n_controls.toLocaleString() }}</dd></div>
+        }
+        @if (p.recommendation.cohort_needed !== null) {
+          <div><dt>Cohort to enrol</dt><dd>{{ p.recommendation.cohort_needed.toLocaleString() }}</dd></div>
+        }
+      </dl>
+      <div class="fs-study-design__badges">
+        <fs-badge variant="tonal" intent="info">{{ p.recommendation.design }}</fs-badge>
+        <fs-badge variant="tonal" intent="secondary">Detects: {{ p.recommendation.detects }}</fs-badge>
+      </div>
+      <p class="fs-study-design__text">{{ p.recommendation.basis }}</p>
+      @if (p.assumptions.length) {
+        <h4 class="fs-study-design__subhead">Assumptions</h4>
+        <div class="fs-study-design__table">
+          <table>
+            <thead><tr><th>Assumption</th><th>Value</th><th>Source</th></tr></thead>
+            <tbody>
+              @for (a of p.assumptions; track a.label) {
+                <tr><td>{{ a.label }}</td><td class="num">{{ a.value }}</td><td>{{ a.source }}</td></tr>
+              }
+            </tbody>
+          </table>
+        </div>
+      }
+      <p class="fs-study-design__footnote">{{ p.caveat }}</p>
+    </fs-card>
+
+    <fs-card title="What the finished packages could not answer"
+             subtitle="Gaps found by SV-01 to SV-07 on the existing files, and the item of this design that addresses each">
+      @if (gapRows().length) {
+        <div class="fs-study-design__table">
+          <table>
+            <thead><tr><th>Package</th><th>What it could not answer</th><th>What this design adds</th></tr></thead>
+            <tbody>
+              @for (g of gapRows(); track g.id) {
+                <tr><td class="num">{{ g.package }}</td><td>{{ g.gap }}</td><td>{{ g.answer }}</td></tr>
+              }
+            </tbody>
+          </table>
+        </div>
+      } @else {
+        <p class="fs-study-design__footnote">No gaps stored.</p>
+      }
+    </fs-card>
+  } @else {
+    <fs-card title="Recommended design"><p class="fs-study-design__footnote">This run stored no primary result.</p></fs-card>
+  }
+
+  <fs-card title="Sample-size scenarios"
+           subtitle="Normal approximations, scripts/power.py · death 11% from S-CB050 (died includes euthanasia for poor prognosis) · the recommended scenario is highlighted">
+    @if (sizes(); as s) {
+      <div class="fs-study-design__badges">
+        <fs-badge variant="tonal" intent="success">
+          Formula check: S-CB050 age contrast detectable OR {{ s.calibration.cohort_framing_detectable_or }} (SV-05: {{ s.calibration.sv05_reported }})
+        </fs-badge>
+        <fs-badge variant="tonal" intent="secondary">Death {{ pct(s.death_proportion) }}% · severe outcome set {{ pct(s.severe_proportion) }}% · complicated (memo 1) {{ pct(s.complicated_proportion) }}% (assumed)</fs-badge>
+      </div>
+      <fs-chart [options]="sizeChart()" [height]="chartHeight()" [empty]="!s.rows.length" emptyMessage="No scenarios stored" />
+      <fs-data-grid [data]="sizeRows()" [columns]="sizeColumns" keyExpr="id" noDataText="No scenarios." />
+      <p class="fs-study-design__footnote">
+        Total = severe + mild dogs analysed. Cohort to enrol = cases needed divided by the share of dogs with the outcome.
+        Covariate adjustment (age, days sick, load) inflates n by 1 / (1 − R²). One species per source: these numbers are for B. rossi
+        and must be re-run for another species.
+      </p>
+    } @else {
+      <p class="fs-study-design__footnote">This run stored no sample-size scenarios.</p>
+    }
+  </fs-card>
+
+  <fs-card [title]="memo()?.title ?? 'Design memo'"
+           [subtitle]="memo() ? ('/experiments/SV-10/' + memo()!.file + ' · ' + memo()!.words + ' words · draft, not sent') : ''">
+    @if (memo(); as m) {
+      <div class="fs-study-design__memo">
+        @for (sec of m.sections; track sec.heading) {
+          <section>
+            <h3>{{ sec.heading }}</h3>
+            @for (b of sec.blocks; track $index) {
+              @switch (b.type) {
+                @case ('p') { <p>{{ b.text }}</p> }
+                @case ('h3') { <h4>{{ b.text }}</h4> }
+                @case ('ul') { <ul>@for (it of b.items; track $index) {<li>{{ it }}</li>}</ul> }
+                @case ('table') {
+                  <div class="fs-study-design__table">
+                    <table>
+                      <thead><tr>@for (h of b.header; track $index) {<th>{{ h }}</th>}</tr></thead>
+                      <tbody>
+                        @for (row of b.rows; track $index) {
+                          <tr>@for (c of row; track $index) {<td>{{ c }}</td>}</tr>
+                        }
+                      </tbody>
+                    </table>
+                  </div>
+                }
+              }
+            }
+          </section>
+        }
+      </div>
+    } @else {
+      <p class="fs-study-design__footnote">This run stored no memo text.</p>
+    }
+  </fs-card>
+</div>

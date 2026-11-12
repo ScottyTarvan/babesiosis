@@ -1,0 +1,502 @@
+marker,outcome_class,species_group,independent_unit,family,articles,rows,row_calls,unit_call,circular,timing,setting
+ACTH,specific_complication,B. rossi,CB342,univariable,CB342,1,N,N,False,before treatment,referral hospital
+ALP,complicated,B. canis,CH33,univariable,CB394,1,H,H,True,not stated,referral hospital
+ALP,mortality,B. canis,CH21,univariable,CB516,1,N,N,False,before treatment,mixed
+ALP,mortality,mixed/unspecified,CH18,univariable,CB263,1,N,N,False,not stated,referral hospital
+ALP,parasitaemia_level,B. canis,CB241,descriptive,CB241,1,D,D,False,not stated,primary clinic
+ALP,severity_grade,B. canis,CB537,descriptive,CB537,1,D,D,False,not stated,mixed
+ALP,severity_grade,B. canis,CH12,univariable,CB141,1,H,H,False,before treatment,laboratory submissions
+ALP,severity_grade,mixed/unspecified,CB220,univariable,CB220,1,H,H,True,not stated,referral hospital
+ALP,specific_complication,B. canis,CB109,descriptive,CB109,1,D,D,True,not stated,laboratory submissions
+ALP,specific_complication,B. canis,CB536,univariable,CB536,1,H,H,True,not stated,laboratory submissions
+ALP,specific_complication,B. gibsoni,CB045,univariable,CB045,1,N,N,False,before treatment,primary clinic
+ALT,complicated,B. canis,CH33,univariable,CB394,1,H,H,True,not stated,referral hospital
+ALT,mortality,B. canis,CH21,univariable,CB516,1,N,N,False,before treatment,mixed
+ALT,mortality,mixed/unspecified,CH18,univariable,CB263,1,N,N,False,not stated,referral hospital
+ALT,parasitaemia_level,B. canis,CB241,descriptive,CB241,1,D,D,False,not stated,primary clinic
+ALT,severity_grade,B. canis,CH06,descriptive,CB071,1,D,D,False,before treatment,referral hospital
+ALT,severity_grade,B. canis,CH12,univariable,CB141,1,H,H,False,before treatment,laboratory submissions
+ALT,severity_grade,B. gibsoni,CB224,descriptive,CB224,1,D,D,False,not stated,laboratory submissions
+ALT,severity_grade,mixed/unspecified,CB038,descriptive,CB038,1,D,D,True,not stated,field survey
+ALT,severity_grade,mixed/unspecified,CB220,univariable,CB220,1,H,H,True,not stated,referral hospital
+ALT,specific_complication,B. canis,CB109,descriptive,CB109,1,D,D,True,not stated,laboratory submissions
+ALT,specific_complication,B. canis,CB536,univariable,CB536,1,H,H,True,not stated,laboratory submissions
+ALT,specific_complication,B. gibsoni,CB045,univariable,CB045,1,N,N,False,before treatment,primary clinic
+AST,parasitaemia_level,B. canis,CB241,descriptive,CB241,1,D,D,False,not stated,primary clinic
+AST,severity_grade,B. canis,CH06,descriptive,CB071,1,D,D,False,before treatment,referral hospital
+AST,severity_grade,B. canis,CH12,univariable,CB141,1,H,H,False,before treatment,laboratory submissions
+AST,severity_grade,B. gibsoni,CB224,descriptive,CB224,1,D,D,False,not stated,laboratory submissions
+AST,severity_grade,mixed/unspecified,CB038,descriptive,CB038,1,D,D,True,not stated,field survey
+AST,severity_grade,mixed/unspecified,CB220,univariable,CB220,1,H,H,True,not stated,referral hospital
+AST,specific_complication,B. canis,CB109,descriptive,CB109,1,D,D,True,not stated,laboratory submissions
+AST,specific_complication,B. canis,CB536,univariable,CB536,1,H,H,True,not stated,laboratory submissions
+"Acid-base (pH, bicarbonate, base excess, anion gap)",mortality,B. rossi,CB040,univariable,CB040,2,LN,L,False,before treatment,referral hospital
+"Acid-base (pH, bicarbonate, base excess, anion gap)",other,B. rossi,CB040,univariable,CB040,3,LUH,X,False,before treatment,referral hospital
+"Adhesion molecules (ICAM-1, VCAM-1, selectins)",complicated,B. canis,CB004,univariable,CB004,4,NNHN,H,False,mixed,referral hospital
+Age,anaemia_grade,mixed/unspecified,CB238,descriptive,CB238,1,U,U,False,not stated,referral hospital
+Age,anaemia_grade,mixed/unspecified,CB492,univariable,CB492,1,N,N,False,not stated,mixed
+Age,complicated,B. canis,CH23,descriptive,CB017,1,D,D,False,mixed,referral hospital
+Age,complicated,B. rossi,CB125,descriptive,CB125,1,D,D,False,not stated,mixed
+Age,mortality,B. canis,CH21,univariable,CB516,1,N,N,False,before treatment,mixed
+Age,mortality,B. rossi,CB040,univariable,CB040,1,N,N,False,before treatment,referral hospital
+Age,mortality,B. rossi,CB052,descriptive,CB052,1,D,D,False,not stated,field survey
+Age,mortality,B. rossi,CH03,univariable,CB050;CB145;CB517,3,NNN,N,False,before treatment,referral hospital
+Age,severity_grade,B. canis,CB537,descriptive,CB537,1,D,D,False,not stated,mixed
+Age,specific_complication,B. gibsoni,CH16,descriptive,CB313,1,D,D,False,not stated,mixed
+Age,specific_complication,B. rossi,CB342,univariable,CB342,1,N,N,False,before treatment,referral hospital
+Age,treatment_intensity,B. rossi,CB418,univariable,CB418,1,L,L,False,mixed,referral hospital
+Albumin,anaemia_grade,B. canis,CH05,univariable,CB178,2,LL,L,False,before treatment,referral hospital
+Albumin,anaemia_grade,B. rossi,CB518,univariable,CB518,1,N,N,False,not stated,mixed
+Albumin,complicated,B. canis,CH05,descriptive,CB065,2,DD,D,False,before treatment,referral hospital
+Albumin,complicated,B. canis,CH33,univariable,CB394,1,N,N,False,not stated,referral hospital
+Albumin,mortality,B. canis,CH21,univariable,CB516,1,N,N,False,before treatment,mixed
+Albumin,mortality,mixed/unspecified,CH18,univariable,CB263,1,U,U,False,not stated,referral hospital
+Albumin,other,B. rossi,CB040,univariable,CB040,1,L,L,False,before treatment,referral hospital
+Albumin,parasitaemia_level,B. canis,CB241,descriptive,CB241,1,D,D,False,not stated,primary clinic
+Albumin,severity_grade,B. canis,CH06,descriptive,CB071,1,D,D,False,before treatment,referral hospital
+Albumin,severity_grade,B. gibsoni,CB224,descriptive,CB224,1,D,D,False,not stated,laboratory submissions
+Albumin,severity_grade,mixed/unspecified,CB038,descriptive,CB038,1,D,D,False,not stated,field survey
+Albumin:globulin ratio,anaemia_grade,B. canis,CH05,univariable,CB178,1,L,L,False,before treatment,referral hospital
+Albumin:globulin ratio,complicated,B. canis,CH05,descriptive,CB065,1,D,D,False,before treatment,referral hospital
+Albumin:globulin ratio,severity_grade,mixed/unspecified,CB038,descriptive,CB038,1,D,D,False,not stated,field survey
+Antibody titre / serostatus,severity_grade,B. canis,CH12,univariable,CB141,2,LL,L,False,before treatment,laboratory submissions
+Antithrombin,mortality,B. rossi,CH03,univariable,CB145,1,L,L,False,before treatment,referral hospital
+Autoagglutination,mortality,B. rossi,CB040,univariable,CB040,1,U,U,False,before treatment,referral hospital
+Band neutrophils,complicated,B. rossi,CB112,univariable,CB112,1,U,U,False,not stated,referral hospital
+Band neutrophils,mortality,B. rossi,CB040,univariable,CB040,2,HH,H,False,before treatment,referral hospital
+Band neutrophils,mortality,B. rossi,CH03,univariable,CB050,1,H,H,False,before treatment,referral hospital
+Band neutrophils,mortality,B. rossi,CH09,descriptive,CB098,1,D,D,False,mixed,experimental
+Band neutrophils,parasitaemia_level,B. canis,CB241,descriptive,CB241,1,D,D,False,not stated,primary clinic
+Band neutrophils,specific_complication,B. gibsoni,CB045,univariable,CB045,1,H,H,False,before treatment,primary clinic
+Band neutrophils,treatment_intensity,B. rossi,CB418,multivariable,CB418,1,H,H,False,mixed,referral hospital
+Band neutrophils,treatment_intensity,B. rossi,CB418,univariable,CB418,2,HH,H,False,mixed,referral hospital
+Basophil count,parasitaemia_level,B. canis,CB241,descriptive,CB241,1,D,D,False,not stated,primary clinic
+Basophil count,severity_grade,B. gibsoni,CB224,descriptive,CB224,1,D,D,False,not stated,laboratory submissions
+Basophil count,severity_grade,mixed/unspecified,CB038,descriptive,CB038,1,D,D,False,not stated,field survey
+Bilirubin,anaemia_grade,B. rossi,CB518,univariable,CB518,1,N,N,False,not stated,mixed
+Bilirubin,complicated,B. canis,CH33,univariable,CB394,1,H,H,True,not stated,referral hospital
+Bilirubin,complicated,B. rossi,CB112,univariable,CB112,1,U,U,True,not stated,referral hospital
+Bilirubin,mortality,B. canis,CH21,univariable,CB516,1,N,N,False,before treatment,mixed
+Bilirubin,mortality,B. rossi,CB040,univariable,CB040,3,HHH,H,False,before treatment,referral hospital
+Bilirubin,mortality,mixed/unspecified,CH18,univariable,CB263,2,NN,N,False,not stated,referral hospital
+Bilirubin,other,B. rossi,CB040,univariable,CB040,1,H,H,False,before treatment,referral hospital
+Bilirubin,parasitaemia_level,B. canis,CB241,descriptive,CB241,2,DD,D,False,not stated,primary clinic
+Bilirubin,severity_grade,B. canis,CB537,descriptive,CB537,1,D,D,False,not stated,mixed
+Bilirubin,severity_grade,B. canis,CH06,descriptive,CB071,1,D,D,False,before treatment,referral hospital
+Bilirubin,severity_grade,B. canis,CH12,univariable,CB141,1,H,H,False,before treatment,laboratory submissions
+Bilirubin,severity_grade,B. gibsoni,CB224,descriptive,CB224,1,D,D,False,not stated,laboratory submissions
+Bilirubin,severity_grade,mixed/unspecified,CB038,descriptive,CB038,1,D,D,True,not stated,field survey
+Bilirubin,severity_grade,mixed/unspecified,CB220,univariable,CB220,2,HH,H,True,not stated,referral hospital
+Bilirubin,specific_complication,B. gibsoni,CB045,univariable,CB045,1,N,N,False,before treatment,primary clinic
+Blood gases and oxygenation,mortality,B. rossi,CB040,univariable,CB040,2,NN,N,False,before treatment,referral hospital
+Blood gases and oxygenation,other,B. rossi,CB040,univariable,CB040,2,NL,L,False,before treatment,referral hospital
+Blood pressure,mortality,B. rossi,CH09,descriptive,CB098,1,D,D,False,mixed,experimental
+Body temperature,anaemia_grade,B. rossi,CB518,univariable,CB518,1,L,L,False,not stated,mixed
+Body temperature,anaemia_grade,mixed/unspecified,CB492,univariable,CB492,1,L,L,False,not stated,mixed
+Body temperature,mortality,B. rossi,CB040,univariable,CB040,2,LL,L,False,before treatment,referral hospital
+Body temperature,mortality,B. rossi,CH09,descriptive,CB098,1,D,D,False,mixed,experimental
+Body temperature,mortality,mixed/unspecified,CB238,univariable,CB238,1,N,N,False,not stated,referral hospital
+Body temperature,other,B. rossi,CB040,univariable,CB040,1,L,L,False,before treatment,referral hospital
+Body temperature,parasitaemia_level,B. rossi,CH09,univariable,CB098,1,N,N,False,mixed,experimental
+Body temperature,parasitaemia_level,mixed/unspecified,CB187,descriptive,CB187,1,D,D,False,not stated,primary clinic
+Body temperature,specific_complication,B. rossi,CB342,univariable,CB342,2,LN,L,False,before treatment,referral hospital
+Body weight / body condition,complicated,B. rossi,CB125,descriptive,CB125,1,D,D,False,not stated,mixed
+Body weight / body condition,mortality,B. rossi,CB040,univariable,CB040,1,N,N,False,before treatment,referral hospital
+Body weight / body condition,mortality,B. rossi,CH03,univariable,CB145;CB517,2,NN,N,False,before treatment,referral hospital
+Body weight / body condition,specific_complication,B. rossi,CB342,univariable,CB342,1,N,N,False,before treatment,referral hospital
+Body weight / body condition,treatment_intensity,B. rossi,CB418,univariable,CB418,1,N,N,False,mixed,referral hospital
+Breed,anaemia_grade,mixed/unspecified,CB238,univariable,CB238,1,N,N,False,not stated,referral hospital
+Breed,anaemia_grade,mixed/unspecified,CB492,univariable,CB492,1,N,N,False,not stated,mixed
+Breed,complicated,B. rossi,CB125,descriptive,CB125,8,DDDDDDDD,D,False,not stated,mixed
+Breed,specific_complication,B. gibsoni,CH16,descriptive,CB313,1,D,D,False,not stated,mixed
+Breed,treatment_intensity,B. rossi,CB418,descriptive,CB418,1,D,D,False,mixed,referral hospital
+C-reactive protein,mortality,B. canis,CH21,univariable,CB516,1,N,N,False,before treatment,mixed
+C-reactive protein,mortality,B. rossi,CB376,multivariable,CB376,1,N,N,False,before treatment,referral hospital
+C-reactive protein,mortality,B. rossi,CB376,univariable,CB376,1,N,N,False,before treatment,referral hospital
+C-reactive protein,mortality,B. rossi,CH03,univariable,CB145;CB517,2,NN,N,False,before treatment,referral hospital
+C-reactive protein,mortality,mixed/unspecified,CH08,univariable,CB202,1,H,H,False,before treatment,referral hospital
+C-reactive protein,parasitaemia_level,B. rossi,CH09,univariable,CB098,1,N,N,False,mixed,experimental
+C-reactive protein,severity_grade,B. canis,CH06,descriptive,CB071,1,D,D,False,before treatment,referral hospital
+C-reactive protein,severity_grade,B. canis,CH12,univariable,CB141,1,H,H,False,before treatment,laboratory submissions
+C-reactive protein,specific_complication,B. gibsoni,CB045,univariable,CB045,1,N,N,False,before treatment,primary clinic
+C-reactive protein,treatment_intensity,B. rossi,CB376,multivariable,CB376,2,NN,N,False,before treatment,referral hospital
+C-reactive protein,treatment_intensity,B. rossi,CB376,univariable,CB376,1,N,N,False,before treatment,referral hospital
+Calcium,mortality,B. canis,CH21,univariable,CB516,1,N,N,False,before treatment,mixed
+Calcium,parasitaemia_level,B. canis,CB241,descriptive,CB241,1,D,D,False,not stated,primary clinic
+Catalase,anaemia_grade,B. canis,CB006,univariable,CB006,3,NLN,L,False,not stated,referral hospital
+Catalase,complicated,B. canis,CB006,univariable,CB006,1,N,N,False,not stated,referral hospital
+Catalase,mortality,B. canis,CB006,univariable,CB006,1,L,L,False,not stated,referral hospital
+Catalase,mortality,mixed/unspecified,CH08,univariable,CB202,1,L,L,False,before treatment,referral hospital
+Catalase,organ_dysfunction,B. canis,CB006,univariable,CB006,2,LN,L,False,not stated,referral hospital
+Chloride,mortality,B. canis,CH21,univariable,CB516,1,N,N,False,before treatment,mixed
+Chloride,mortality,B. rossi,CB040,univariable,CB040,1,U,U,False,before treatment,referral hospital
+Cholesterol,mortality,B. canis,CH21,univariable,CB516,1,N,N,False,before treatment,mixed
+Cholesterol,parasitaemia_level,B. canis,CB241,descriptive,CB241,1,D,D,False,not stated,primary clinic
+Cholesterol,specific_complication,B. canis,CH35,univariable,CB441,1,N,N,False,before treatment,primary clinic
+Circulating blood volume,severity_grade,mixed/unspecified,CB220,descriptive,CB220,1,D,D,False,not stated,referral hospital
+Circulating blood volume,severity_grade,mixed/unspecified,CB220,univariable,CB220,2,UU,U,False,not stated,referral hospital
+Co-infection,anaemia_grade,B. canis,CB536,univariable,CB536,1,N,N,False,not stated,laboratory submissions
+Co-infection,mortality,B. canis,CB392,descriptive,CB392,1,D,D,False,not stated,not stated
+Co-infection,mortality,B. vogeli,CB075,univariable,CB075,1,N,N,False,not stated,field survey
+Co-infection,mortality,mixed/unspecified,CH08,descriptive,CB202,1,D,D,False,before treatment,referral hospital
+Co-infection,severity_grade,B. canis,CB536,univariable,CB536,1,N,N,False,not stated,laboratory submissions
+Co-infection,specific_complication,B. canis,CB536,univariable,CB536,2,NN,N,False,not stated,laboratory submissions
+Coagulation factor activity,complicated,B. rossi,CB112,univariable,CB112,1,L,L,False,not stated,referral hospital
+Coagulation factor activity,mortality,B. rossi,CH03,univariable,CB145,4,NLLN,L,False,before treatment,referral hospital
+Collapse,mortality,B. rossi,CB040,univariable,CB040,2,HH,H,False,before treatment,referral hospital
+Copper,mortality,mixed/unspecified,CH08,univariable,CB202,1,N,N,False,before treatment,referral hospital
+Cortisol,mortality,B. rossi,CB040,univariable,CB040,3,HHH,H,False,before treatment,referral hospital
+Cortisol,other,B. rossi,CB040,univariable,CB040,1,H,H,False,before treatment,referral hospital
+Cortisol,other,B. rossi,CH09,univariable,CB105,5,NHHHN,H,False,mixed,experimental
+Cortisol,specific_complication,B. rossi,CB342,univariable,CB342,4,HHNN,H,False,before treatment,referral hospital
+Creatine kinase,complicated,B. canis,CH33,univariable,CB394,1,N,N,True,not stated,referral hospital
+Creatine kinase,severity_grade,B. canis,CH12,univariable,CB141,1,H,H,False,before treatment,laboratory submissions
+Creatinine,complicated,B. canis,CH33,univariable,CB394,1,H,H,True,not stated,referral hospital
+Creatinine,complicated,B. rossi,CB053,univariable,CB053,1,N,N,True,before treatment,referral hospital
+Creatinine,complicated,B. rossi,CB112,univariable,CB112,1,U,U,True,not stated,referral hospital
+Creatinine,mortality,B. canis,CB106,descriptive,CB106,1,D,D,False,not stated,referral hospital
+Creatinine,mortality,B. canis,CH21,univariable,CB516,1,N,N,False,before treatment,mixed
+Creatinine,mortality,B. rossi,CB040,univariable,CB040,2,HH,H,False,before treatment,referral hospital
+Creatinine,other,B. rossi,CB040,univariable,CB040,1,H,H,False,before treatment,referral hospital
+Creatinine,parasitaemia_level,B. canis,CB241,descriptive,CB241,1,D,D,False,not stated,primary clinic
+Creatinine,severity_grade,B. canis,CB307,univariable,CB307,1,H,H,False,not stated,primary clinic
+Creatinine,severity_grade,B. canis,CB537,descriptive,CB537,1,D,D,False,not stated,mixed
+Creatinine,severity_grade,B. canis,CH06,descriptive,CB071,1,D,D,True,before treatment,referral hospital
+Creatinine,severity_grade,B. gibsoni,CB224,descriptive,CB224,1,D,D,False,not stated,laboratory submissions
+Creatinine,severity_grade,mixed/unspecified,CB038,descriptive,CB038,1,D,D,True,not stated,field survey
+Creatinine,specific_complication,B. canis,CB109,descriptive,CB109,1,D,D,True,not stated,laboratory submissions
+Creatinine,specific_complication,B. canis,CB536,univariable,CB536,1,H,H,True,not stated,laboratory submissions
+Creatinine,specific_complication,B. gibsoni,CB045,univariable,CB045,1,N,N,False,before treatment,primary clinic
+Creatinine,specific_complication,mixed/unspecified,CH29,descriptive,CB325,1,D,D,True,before treatment,referral hospital
+Cystatin C,specific_complication,mixed/unspecified,CH29,descriptive,CB325,1,D,D,True,before treatment,referral hospital
+Cytokine linear combination,complicated,B. canis,CH23,univariable,CB017,3,UUU,U,False,mixed,referral hospital
+D-dimer,mortality,B. rossi,CH03,univariable,CB145,1,N,N,False,before treatment,referral hospital
+D-dimer,severity_grade,mixed/unspecified,CB220,descriptive,CB220,1,D,D,False,not stated,referral hospital
+Duration of illness before presentation,specific_complication,B. rossi,CB342,univariable,CB342,1,N,N,False,before treatment,referral hospital
+Echocardiographic findings,mortality,mixed/unspecified,CH18,descriptive,CB263,1,D,D,False,not stated,referral hospital
+Echocardiographic findings,mortality,mixed/unspecified,CH18,univariable,CB263,16,NNNNNNNNHNNNLNHN,X,False,not stated,referral hospital
+Eosinophil count,mortality,B. rossi,CH03,univariable,CB517,1,N,N,False,before treatment,referral hospital
+Eosinophil count,parasitaemia_level,B. canis,CB241,descriptive,CB241,1,D,D,False,not stated,primary clinic
+Eosinophil count,severity_grade,B. gibsoni,CB224,descriptive,CB224,1,D,D,False,not stated,laboratory submissions
+Eosinophil count,severity_grade,mixed/unspecified,CB038,descriptive,CB038,1,D,D,False,not stated,field survey
+Eosinophil count,specific_complication,B. gibsoni,CB045,univariable,CB045,1,N,N,False,before treatment,primary clinic
+Eosinophil count,treatment_intensity,B. rossi,CB418,multivariable,CB418,1,N,N,False,mixed,referral hospital
+Erythrocyte aggregation,severity_grade,mixed/unspecified,CB220,descriptive,CB220,1,D,D,False,not stated,referral hospital
+Erythrocyte sedimentation rate,severity_grade,mixed/unspecified,CB038,descriptive,CB038,1,D,D,False,not stated,field survey
+Erythrocyte sedimentation rate,severity_grade,mixed/unspecified,CB220,descriptive,CB220,1,D,D,False,not stated,referral hospital
+Fibrin(ogen) degradation products,severity_grade,mixed/unspecified,CB220,descriptive,CB220,1,D,D,False,not stated,referral hospital
+Fibrinogen,complicated,B. rossi,CB112,univariable,CB112,1,H,H,False,not stated,referral hospital
+Fibrinogen,mortality,B. rossi,CH03,univariable,CB145,1,N,N,False,before treatment,referral hospital
+Fibrinogen,severity_grade,mixed/unspecified,CB220,descriptive,CB220,1,D,D,False,not stated,referral hospital
+"Fibrinolysis (plasminogen, antiplasmin)",complicated,B. canis,CB004,univariable,CB004,6,NNNNNH,H,False,mixed,referral hospital
+"Fibrinolysis (plasminogen, antiplasmin)",mortality,B. rossi,CH03,univariable,CB145,2,NN,N,False,before treatment,referral hospital
+Fractional excretion of electrolytes,specific_complication,B. canis,CH35,univariable,CB425,3,HHH,H,True,not stated,primary clinic
+GGT,complicated,B. canis,CH33,univariable,CB394,1,H,H,True,not stated,referral hospital
+GGT,parasitaemia_level,B. canis,CB241,descriptive,CB241,1,D,D,False,not stated,primary clinic
+GGT,severity_grade,B. canis,CB307,univariable,CB307,1,H,H,False,not stated,primary clinic
+GGT,severity_grade,B. canis,CH12,univariable,CB141,1,L,L,False,before treatment,laboratory submissions
+GGT,severity_grade,mixed/unspecified,CB220,univariable,CB220,1,H,H,True,not stated,referral hospital
+GM-CSF,complicated,B. canis,CH23,univariable,CB017,3,HNU,H,False,mixed,referral hospital
+GM-CSF,mortality,B. rossi,CH03,univariable,CB517,1,N,N,False,before treatment,referral hospital
+Gene expression / transcriptomics,severity_grade,B. canis,CB109,univariable,CB109,4,NUNU,N,False,not stated,laboratory submissions
+Globulins,anaemia_grade,B. rossi,CB518,univariable,CB518,1,N,N,False,not stated,mixed
+Globulins,severity_grade,B. canis,CH12,univariable,CB141,1,L,L,False,before treatment,laboratory submissions
+Globulins,severity_grade,mixed/unspecified,CB038,descriptive,CB038,1,D,D,False,not stated,field survey
+Glucose,complicated,B. canis,CH33,univariable,CB394,1,N,N,False,not stated,referral hospital
+Glucose,complicated,B. rossi,CB112,univariable,CB112,1,U,U,True,not stated,referral hospital
+Glucose,mortality,B. canis,CH21,univariable,CB516,1,N,N,False,before treatment,mixed
+Glucose,mortality,B. rossi,CB040,univariable,CB040,3,LNN,L,False,before treatment,referral hospital
+Glucose,other,B. rossi,CB040,univariable,CB040,1,N,N,False,before treatment,referral hospital
+Glucose,parasitaemia_level,B. canis,CB241,descriptive,CB241,1,D,D,False,not stated,primary clinic
+Glucose,severity_grade,B. canis,CB537,descriptive,CB537,1,D,D,False,not stated,mixed
+Glutathione / glutathione peroxidase,anaemia_grade,B. canis,CB006,univariable,CB006,3,NLL,L,False,not stated,referral hospital
+Glutathione / glutathione peroxidase,complicated,B. canis,CB006,univariable,CB006,1,N,N,False,not stated,referral hospital
+Glutathione / glutathione peroxidase,mortality,B. canis,CB006,univariable,CB006,1,L,L,False,not stated,referral hospital
+Glutathione / glutathione peroxidase,mortality,mixed/unspecified,CH08,univariable,CB202,1,N,N,False,before treatment,referral hospital
+Glutathione / glutathione peroxidase,organ_dysfunction,B. canis,CB006,univariable,CB006,2,LL,L,False,not stated,referral hospital
+HMGB-1,complicated,B. canis,CB004,univariable,CB004,2,NN,N,False,mixed,referral hospital
+Haematocrit/PCV,anaemia_grade,B. canis,CB109,descriptive,CB109,1,D,D,True,not stated,laboratory submissions
+Haematocrit/PCV,anaemia_grade,B. canis,CB536,univariable,CB536,1,L,L,True,not stated,laboratory submissions
+Haematocrit/PCV,complicated,B. canis,CH05,descriptive,CB065,1,D,D,False,before treatment,referral hospital
+Haematocrit/PCV,complicated,B. canis,CH23,univariable,CB017,1,U,U,False,mixed,referral hospital
+Haematocrit/PCV,complicated,B. canis,CH33,univariable,CB394,1,N,N,False,not stated,referral hospital
+Haematocrit/PCV,complicated,B. rossi,CB112,univariable,CB112,1,U,U,True,not stated,referral hospital
+Haematocrit/PCV,mortality,B. canis,CH21,univariable,CB516,2,LL,L,False,before treatment,mixed
+Haematocrit/PCV,mortality,B. rossi,CB040,univariable,CB040,3,NNH,H,False,before treatment,referral hospital
+Haematocrit/PCV,mortality,B. rossi,CB052,descriptive,CB052,1,D,D,False,not stated,field survey
+Haematocrit/PCV,mortality,B. rossi,CH03,univariable,CB145,1,L,L,False,before treatment,referral hospital
+Haematocrit/PCV,mortality,mixed/unspecified,CB238,descriptive,CB238,1,D,D,False,not stated,referral hospital
+Haematocrit/PCV,mortality,mixed/unspecified,CB238,univariable,CB238,1,L,L,False,not stated,referral hospital
+Haematocrit/PCV,mortality,mixed/unspecified,CH18,univariable,CB263,1,N,N,False,not stated,referral hospital
+Haematocrit/PCV,other,B. rossi,CB040,univariable,CB040,1,L,L,False,before treatment,referral hospital
+Haematocrit/PCV,parasitaemia_level,B. canis,CB241,descriptive,CB241,1,D,D,False,not stated,primary clinic
+Haematocrit/PCV,severity_grade,B. canis,CB537,descriptive,CB537,1,D,D,False,not stated,mixed
+Haematocrit/PCV,severity_grade,B. gibsoni,CB224,descriptive,CB224,1,D,D,False,not stated,laboratory submissions
+Haematocrit/PCV,severity_grade,mixed/unspecified,CB038,descriptive,CB038,1,D,D,False,not stated,field survey
+Haematocrit/PCV,severity_grade,mixed/unspecified,CB220,univariable,CB220,1,U,U,False,not stated,referral hospital
+Haematocrit/PCV,specific_complication,B. gibsoni,CB045,univariable,CB045,1,N,N,False,before treatment,primary clinic
+Haematocrit/PCV,specific_complication,B. rossi,CB342,univariable,CB342,2,LL,L,False,before treatment,referral hospital
+Haematocrit/PCV,treatment_intensity,B. rossi,CB418,multivariable,CB418,1,L,L,True,mixed,referral hospital
+Haematocrit/PCV,treatment_intensity,mixed/unspecified,CB492,univariable,CB492,1,U,U,False,not stated,mixed
+Haemoglobin,anaemia_grade,B. canis,CB109,descriptive,CB109,1,D,D,True,not stated,laboratory submissions
+Haemoglobin,anaemia_grade,B. canis,CB536,univariable,CB536,1,L,L,True,not stated,laboratory submissions
+Haemoglobin,complicated,B. canis,CH05,descriptive,CB065,1,D,D,False,before treatment,referral hospital
+Haemoglobin,mortality,B. canis,CH21,univariable,CB516,1,N,N,False,before treatment,mixed
+Haemoglobin,mortality,mixed/unspecified,CB238,univariable,CB238,1,L,L,False,not stated,referral hospital
+Haemoglobin,mortality,mixed/unspecified,CH18,univariable,CB263,1,N,N,False,not stated,referral hospital
+Haemoglobin,parasitaemia_level,B. canis,CB241,descriptive,CB241,1,D,D,False,not stated,primary clinic
+Haemoglobin,severity_grade,B. canis,CB537,descriptive,CB537,1,D,D,False,not stated,mixed
+Haemoglobin,severity_grade,B. gibsoni,CB224,descriptive,CB224,1,D,D,False,not stated,laboratory submissions
+Haemoglobin,severity_grade,mixed/unspecified,CB038,descriptive,CB038,1,D,D,False,not stated,field survey
+Haemoglobin,severity_grade,mixed/unspecified,CB220,descriptive,CB220,1,D,D,False,not stated,referral hospital
+Haemoglobin,specific_complication,B. gibsoni,CB045,univariable,CB045,1,N,N,False,before treatment,primary clinic
+Haemoglobinuria,parasitaemia_level,mixed/unspecified,CB187,descriptive,CB187,1,D,D,False,not stated,primary clinic
+Heart rate,anaemia_grade,B. rossi,CB518,univariable,CB518,1,N,N,False,not stated,mixed
+Heart rate,mortality,mixed/unspecified,CB238,univariable,CB238,1,H,H,False,not stated,referral hospital
+Heart rate,specific_complication,B. rossi,CB342,univariable,CB342,1,N,N,False,before treatment,referral hospital
+Hepcidin,mortality,mixed/unspecified,CH08,univariable,CB202,2,HH,H,False,before treatment,referral hospital
+IFN-gamma,severity_grade,B. canis,CB109,univariable,CB109,1,U,U,False,not stated,laboratory submissions
+IL-10,complicated,B. canis,CH23,univariable,CB017,2,NN,N,False,mixed,referral hospital
+IL-10,mortality,B. rossi,CH03,univariable,CB517,1,N,N,False,before treatment,referral hospital
+IL-10,parasitaemia_level,B. rossi,CH09,univariable,CB098,1,H,H,False,mixed,experimental
+IL-10,severity_grade,B. canis,CB109,univariable,CB109,1,N,N,False,not stated,laboratory submissions
+IL-18,complicated,B. canis,CH23,univariable,CB017,2,NN,N,False,mixed,referral hospital
+IL-18,mortality,B. rossi,CH03,univariable,CB517,1,N,N,False,before treatment,referral hospital
+IL-2,complicated,B. canis,CH23,univariable,CB017,2,HN,H,False,mixed,referral hospital
+IL-2,mortality,B. rossi,CH03,univariable,CB517,1,N,N,False,before treatment,referral hospital
+IL-6,mortality,B. rossi,CH03,univariable,CB517,1,H,H,False,before treatment,referral hospital
+IL-6,mortality,B. rossi,CH09,descriptive,CB098,1,D,D,False,mixed,experimental
+IL-8 (CXCL8),complicated,B. canis,CH23,univariable,CB017,2,NN,N,False,mixed,referral hospital
+IL-8 (CXCL8),mortality,B. rossi,CH03,univariable,CB517,1,N,N,False,before treatment,referral hospital
+Icterus,parasitaemia_level,mixed/unspecified,CB187,descriptive,CB187,1,D,D,False,not stated,primary clinic
+Icterus,specific_complication,B. rossi,CB342,univariable,CB342,1,N,N,False,before treatment,referral hospital
+Immune complexes / complement,complicated,B. rossi,CB112,univariable,CB112,5,HHHHL,X,False,not stated,referral hospital
+Ionised calcium,mortality,B. rossi,CB040,univariable,CB040,1,L,L,False,before treatment,referral hospital
+Ionised calcium,other,B. rossi,CB040,univariable,CB040,1,L,L,False,before treatment,referral hospital
+Iron and iron indices,anaemia_grade,mixed/unspecified,CH08,univariable,CB286,3,LHH,X,False,not stated,mixed
+Iron and iron indices,complicated,B. rossi,CB112,univariable,CB112,2,LL,L,False,not stated,referral hospital
+Iron and iron indices,mortality,mixed/unspecified,CH08,univariable,CB202,2,LH,X,False,before treatment,referral hospital
+Iron and iron indices,severity_grade,B. canis,CH12,univariable,CB141,1,L,L,False,before treatment,laboratory submissions
+KC-like (CXCL1),complicated,B. canis,CH23,univariable,CB017,3,HHU,H,False,mixed,referral hospital
+KC-like (CXCL1),parasitaemia_level,B. rossi,CH09,univariable,CB098,1,H,H,False,mixed,experimental
+Lactate,complicated,B. rossi,CB112,univariable,CB112,1,U,U,True,not stated,referral hospital
+Lactate,mortality,B. canis,CH21,univariable,CB516,2,HH,H,False,before treatment,mixed
+Lactate,mortality,B. rossi,CB040,univariable,CB040,3,HHH,H,False,before treatment,referral hospital
+Lactate,mortality,mixed/unspecified,CH18,univariable,CB263,1,H,H,False,not stated,referral hospital
+Lactate,other,B. rossi,CB040,univariable,CB040,1,U,U,False,before treatment,referral hospital
+Lactate dehydrogenase,severity_grade,mixed/unspecified,CB220,univariable,CB220,1,H,H,False,not stated,referral hospital
+Lipoproteins,complicated,B. rossi,CB112,univariable,CB112,2,HU,H,False,not stated,referral hospital
+Lymphocyte count,mortality,B. rossi,CH03,univariable,CB517,1,N,N,False,before treatment,referral hospital
+Lymphocyte count,parasitaemia_level,B. canis,CB241,descriptive,CB241,1,D,D,False,not stated,primary clinic
+Lymphocyte count,severity_grade,B. gibsoni,CB224,descriptive,CB224,1,D,D,False,not stated,laboratory submissions
+Lymphocyte count,severity_grade,mixed/unspecified,CB038,descriptive,CB038,1,D,D,False,not stated,field survey
+Lymphocyte count,specific_complication,B. gibsoni,CB045,univariable,CB045,1,N,N,False,before treatment,primary clinic
+Lymphocyte count,treatment_intensity,B. rossi,CB418,multivariable,CB418,1,N,N,False,mixed,referral hospital
+MCP-1 (CCL2),complicated,B. canis,CH23,univariable,CB017,3,HHU,H,False,mixed,referral hospital
+MCP-1 (CCL2),mortality,B. rossi,CH03,univariable,CB517,1,H,H,False,before treatment,referral hospital
+MCP-1 (CCL2),mortality,B. rossi,CH09,descriptive,CB098,1,D,D,False,mixed,experimental
+Magnesium,parasitaemia_level,B. canis,CB241,descriptive,CB241,1,D,D,False,not stated,primary clinic
+Malondialdehyde / TBARS,anaemia_grade,B. canis,CB006,univariable,CB006,3,HNH,H,False,not stated,referral hospital
+Malondialdehyde / TBARS,anaemia_grade,B. canis,CH33,univariable,CB394,1,N,N,False,not stated,referral hospital
+Malondialdehyde / TBARS,complicated,B. canis,CB006,univariable,CB006,1,N,N,False,not stated,referral hospital
+Malondialdehyde / TBARS,complicated,B. canis,CH33,univariable,CB394,1,N,N,False,not stated,referral hospital
+Malondialdehyde / TBARS,mortality,B. canis,CB006,univariable,CB006,1,H,H,False,not stated,referral hospital
+Malondialdehyde / TBARS,mortality,mixed/unspecified,CH08,univariable,CB202,1,H,H,False,before treatment,referral hospital
+Malondialdehyde / TBARS,organ_dysfunction,B. canis,CB006,univariable,CB006,2,HH,H,False,not stated,referral hospital
+Mean platelet volume and platelet indices,mortality,B. rossi,CH03,univariable,CB145,1,N,N,False,before treatment,referral hospital
+Mean platelet volume and platelet indices,parasitaemia_level,B. canis,CB241,descriptive,CB241,1,D,D,False,not stated,primary clinic
+Mentation / neurological signs,mortality,B. rossi,CB040,descriptive,CB040,1,D,D,False,before treatment,referral hospital
+Mentation / neurological signs,mortality,B. rossi,CB040,univariable,CB040,1,H,H,False,before treatment,referral hospital
+Mentation / neurological signs,specific_complication,B. rossi,CB342,univariable,CB342,1,H,H,False,before treatment,referral hospital
+Monocyte count,mortality,B. rossi,CH03,univariable,CB517,1,N,N,False,before treatment,referral hospital
+Monocyte count,parasitaemia_level,B. canis,CB241,descriptive,CB241,1,D,D,False,not stated,primary clinic
+Monocyte count,severity_grade,B. gibsoni,CB224,descriptive,CB224,1,D,D,False,not stated,laboratory submissions
+Monocyte count,severity_grade,mixed/unspecified,CB038,descriptive,CB038,1,D,D,False,not stated,field survey
+Monocyte count,treatment_intensity,B. rossi,CB418,multivariable,CB418,1,N,N,False,mixed,referral hospital
+Myeloperoxidase / MPXI,mortality,B. rossi,CH03,univariable,CB050,1,N,N,False,before treatment,referral hospital
+Neutrophil count,mortality,B. rossi,CH03,univariable,CB050;CB517,2,HN,H,False,before treatment,referral hospital
+Neutrophil count,parasitaemia_level,B. canis,CB241,descriptive,CB241,1,D,D,False,not stated,primary clinic
+Neutrophil count,parasitaemia_level,B. rossi,CH09,univariable,CB098,1,L,L,False,mixed,experimental
+Neutrophil count,severity_grade,B. gibsoni,CB224,descriptive,CB224,1,D,D,False,not stated,laboratory submissions
+Neutrophil count,severity_grade,mixed/unspecified,CB038,descriptive,CB038,1,D,D,False,not stated,field survey
+Neutrophil count,specific_complication,B. gibsoni,CB045,univariable,CB045,1,N,N,False,before treatment,primary clinic
+Neutrophil count,treatment_intensity,B. rossi,CB418,descriptive,CB418,2,DD,D,False,mixed,referral hospital
+Neutrophil count,treatment_intensity,B. rossi,CB418,multivariable,CB418,1,N,N,False,mixed,referral hospital
+Other clinical signs (composite),parasitaemia_level,mixed/unspecified,CB187,descriptive,CB187,1,D,D,False,not stated,primary clinic
+Other cytokines and chemokines,complicated,B. canis,CH23,univariable,CB017,5,HNNNU,H,False,mixed,referral hospital
+Other cytokines and chemokines,severity_grade,B. canis,CB109,univariable,CB109,1,N,N,False,not stated,laboratory submissions
+"Pancreatic enzymes (lipase, amylase, cPLI)",mortality,B. rossi,CH31,univariable,CB508,1,N,N,False,before treatment,referral hospital
+"Pancreatic enzymes (lipase, amylase, cPLI)",severity_grade,B. rossi,CH31,univariable,CB508,1,H,H,False,before treatment,referral hospital
+"Pancreatic enzymes (lipase, amylase, cPLI)",specific_complication,B. gibsoni,CB045,univariable,CB045,1,H,H,True,before treatment,primary clinic
+Parasitaemia,mortality,B. canis,CH21,univariable,CB516,1,N,N,False,before treatment,mixed
+Parasitaemia,other,B. rossi,CH09,univariable,CB105,4,UUUU,U,False,mixed,experimental
+Parasitaemia,severity_grade,B. canis,CB537,descriptive,CB537,1,D,D,False,not stated,mixed
+Parasitaemia,severity_grade,mixed/unspecified,CB038,descriptive,CB038,1,D,D,False,not stated,field survey
+Parasitaemia,severity_grade,mixed/unspecified,CB220,descriptive,CB220,1,D,D,False,not stated,referral hospital
+Parasitaemia,specific_complication,B. gibsoni,CB045,univariable,CB045,1,N,N,False,before treatment,primary clinic
+Parasite DNA load (qPCR),severity_grade,B. canis,CH12,univariable,CB141,1,H,H,False,before treatment,laboratory submissions
+Parasite species or genotype,anaemia_grade,mixed/unspecified,CB492,univariable,CB492,1,N,N,False,not stated,mixed
+Parasite species or genotype,mortality,mixed/unspecified,CH08,descriptive,CB202,1,D,D,False,before treatment,referral hospital
+Phosphate,mortality,B. canis,CH21,univariable,CB516,2,HH,H,False,before treatment,mixed
+Phosphate,mortality,B. rossi,CB040,univariable,CB040,1,H,H,False,before treatment,referral hospital
+Phosphate,other,B. rossi,CB040,univariable,CB040,1,H,H,False,before treatment,referral hospital
+Phosphate,parasitaemia_level,B. canis,CB241,descriptive,CB241,1,D,D,False,not stated,primary clinic
+Plasma NGAL,complicated,B. rossi,CB053,univariable,CB053,1,N,N,True,before treatment,referral hospital
+Platelet count,anaemia_grade,B. canis,CB109,descriptive,CB109,1,D,D,False,not stated,laboratory submissions
+Platelet count,anaemia_grade,B. canis,CB536,univariable,CB536,1,N,N,False,not stated,laboratory submissions
+Platelet count,anaemia_grade,B. gibsoni,CB134,descriptive,CB134,1,D,D,False,before treatment,referral hospital
+Platelet count,complicated,B. canis,CH33,univariable,CB394,1,H,H,False,not stated,referral hospital
+Platelet count,mortality,B. canis,CH21,univariable,CB516,2,LL,L,False,before treatment,mixed
+Platelet count,mortality,B. rossi,CB052,descriptive,CB052,1,D,D,False,not stated,field survey
+Platelet count,mortality,B. rossi,CH03,univariable,CB145,1,N,N,False,before treatment,referral hospital
+Platelet count,mortality,mixed/unspecified,CH18,univariable,CB263,1,U,U,False,not stated,referral hospital
+Platelet count,parasitaemia_level,B. canis,CB241,descriptive,CB241,1,D,D,False,not stated,primary clinic
+Platelet count,severity_grade,B. canis,CB537,descriptive,CB537,1,D,D,False,not stated,mixed
+Platelet count,severity_grade,B. gibsoni,CB224,descriptive,CB224,1,D,D,False,not stated,laboratory submissions
+Platelet count,severity_grade,mixed/unspecified,CB038,descriptive,CB038,1,D,D,True,not stated,field survey
+Platelet count,severity_grade,mixed/unspecified,CB220,descriptive,CB220,1,D,D,False,not stated,referral hospital
+Platelet count,specific_complication,B. gibsoni,CB045,univariable,CB045,1,H,H,False,before treatment,primary clinic
+Platelet count,treatment_intensity,B. rossi,CB418,multivariable,CB418,1,N,N,False,mixed,referral hospital
+Platelet function,severity_grade,mixed/unspecified,CB220,descriptive,CB220,1,D,D,False,not stated,referral hospital
+Potassium,mortality,B. canis,CH21,univariable,CB516,1,N,N,False,before treatment,mixed
+Potassium,mortality,B. rossi,CB040,univariable,CB040,1,N,N,False,before treatment,referral hospital
+Potassium,other,B. rossi,CB040,univariable,CB040,1,N,N,False,before treatment,referral hospital
+Potassium,parasitaemia_level,B. canis,CB241,descriptive,CB241,1,D,D,False,not stated,primary clinic
+Protein C / protein S,complicated,B. rossi,CB112,univariable,CB112,1,L,L,False,not stated,referral hospital
+Proteomics / metabolomics,complicated,B. rossi,CB112,univariable,CB112,12,HHHHHHLLLLNH,X,False,not stated,referral hospital
+Proteomics / metabolomics,severity_grade,B. canis,CH06,univariable,CB071,5,LUHUU,X,False,before treatment,referral hospital
+Proteomics / metabolomics,specific_complication,B. canis,CH06,univariable,CB071,9,HHHHHUUUD,H,False,before treatment,referral hospital
+Prothrombin time,mortality,B. rossi,CH03,univariable,CB145,1,H,H,False,before treatment,referral hospital
+Prothrombin time,mortality,mixed/unspecified,CH18,univariable,CB263,1,H,H,False,not stated,referral hospital
+Prothrombin time,severity_grade,mixed/unspecified,CB220,descriptive,CB220,1,D,D,False,not stated,referral hospital
+Red blood cell count,anaemia_grade,B. canis,CB109,descriptive,CB109,1,D,D,True,not stated,laboratory submissions
+Red blood cell count,anaemia_grade,B. canis,CB536,univariable,CB536,1,L,L,True,not stated,laboratory submissions
+Red blood cell count,complicated,B. canis,CH05,descriptive,CB065,1,D,D,False,before treatment,referral hospital
+Red blood cell count,complicated,B. canis,CH33,univariable,CB394,1,N,N,False,not stated,referral hospital
+Red blood cell count,mortality,B. canis,CH05,descriptive,CB178,1,D,D,False,before treatment,referral hospital
+Red blood cell count,mortality,B. canis,CH21,univariable,CB516,1,N,N,False,before treatment,mixed
+Red blood cell count,mortality,mixed/unspecified,CB238,univariable,CB238,1,L,L,False,not stated,referral hospital
+Red blood cell count,mortality,mixed/unspecified,CH18,univariable,CB263,1,N,N,False,not stated,referral hospital
+Red blood cell count,parasitaemia_level,B. canis,CB241,descriptive,CB241,1,D,D,False,not stated,primary clinic
+Red blood cell count,severity_grade,B. canis,CB537,descriptive,CB537,1,D,D,False,not stated,mixed
+Red blood cell count,severity_grade,B. gibsoni,CB224,descriptive,CB224,1,D,D,False,not stated,laboratory submissions
+Red blood cell count,severity_grade,mixed/unspecified,CB038,descriptive,CB038,1,D,D,False,not stated,field survey
+Red blood cell count,severity_grade,mixed/unspecified,CB220,descriptive,CB220,1,D,D,False,not stated,referral hospital
+Red blood cell count,specific_complication,B. gibsoni,CB045,univariable,CB045,1,N,N,False,before treatment,primary clinic
+Red cell distribution width,severity_grade,B. gibsoni,CB224,descriptive,CB224,1,D,D,False,not stated,laboratory submissions
+Red cell indices,anaemia_grade,mixed/unspecified,CH08,univariable,CB286,5,HHHHH,H,False,not stated,mixed
+Red cell indices,mortality,B. canis,CH21,univariable,CB516,3,NNN,N,False,before treatment,mixed
+Red cell indices,mortality,mixed/unspecified,CB238,descriptive,CB238,1,D,D,False,not stated,referral hospital
+Red cell indices,mortality,mixed/unspecified,CH08,univariable,CB202,1,H,H,False,before treatment,referral hospital
+Respiratory rate / dyspnoea,specific_complication,B. rossi,CB342,univariable,CB342,1,N,N,False,before treatment,referral hospital
+Reticulocytes,mortality,B. canis,CH21,univariable,CB516,1,N,N,False,before treatment,mixed
+Reticulocytes,treatment_intensity,B. rossi,CB418,multivariable,CB418,1,H,H,False,mixed,referral hospital
+SDMA,complicated,B. rossi,CB053,descriptive,CB053,1,D,D,True,before treatment,referral hospital
+SDMA,complicated,B. rossi,CB053,univariable,CB053,1,H,H,True,before treatment,referral hospital
+SIRS status,mortality,B. canis,CB106,descriptive,CB106,1,D,D,False,not stated,referral hospital
+SIRS status,mortality,B. rossi,CB040,univariable,CB040,2,NN,N,False,before treatment,referral hospital
+SIRS status,other,B. rossi,CB040,univariable,CB040,2,HH,H,False,before treatment,referral hospital
+Selenium,mortality,mixed/unspecified,CH08,univariable,CB202,1,N,N,False,before treatment,referral hospital
+Serum amyloid A,mortality,B. canis,CH21,univariable,CB516,1,N,N,False,before treatment,mixed
+Serum amyloid A,mortality,B. rossi,CH03,univariable,CB145;CB517,2,NN,N,False,before treatment,referral hospital
+Serum amyloid A,mortality,mixed/unspecified,CH08,univariable,CB202,1,N,N,False,before treatment,referral hospital
+Serum protein electrophoresis fractions,anaemia_grade,B. canis,CH05,descriptive,CB178,1,D,D,False,before treatment,referral hospital
+Serum protein electrophoresis fractions,anaemia_grade,B. canis,CH05,univariable,CB178,10,HNHNNHNHNN,H,False,before treatment,referral hospital
+Serum protein electrophoresis fractions,complicated,B. canis,CH05,descriptive,CB065,10,DDDDDDDDDD,D,False,before treatment,referral hospital
+Sex / neuter status,anaemia_grade,mixed/unspecified,CB238,univariable,CB238,1,N,N,False,not stated,referral hospital
+Sex / neuter status,complicated,B. canis,CH23,descriptive,CB017,1,D,D,False,mixed,referral hospital
+Sex / neuter status,complicated,B. rossi,CB125,descriptive,CB125,6,DDDDDD,D,False,not stated,mixed
+Sex / neuter status,complicated,B. rossi,CB125,multivariable,CB125,7,LLUNLLU,L,False,not stated,mixed
+Sex / neuter status,complicated,B. rossi,CB125,univariable,CB125,1,N,N,False,not stated,mixed
+Sex / neuter status,mortality,B. canis,CH21,univariable,CB516,1,N,N,False,before treatment,mixed
+Sex / neuter status,mortality,B. rossi,CH03,descriptive,CB050;CB145,2,DD,D,False,before treatment,referral hospital
+Sex / neuter status,mortality,B. rossi,CH03,univariable,CB517,1,N,N,False,before treatment,referral hospital
+Sex / neuter status,severity_grade,B. canis,CB307,descriptive,CB307,1,D,D,False,not stated,primary clinic
+Sex / neuter status,specific_complication,B. gibsoni,CH16,descriptive,CB313,1,D,D,False,not stated,mixed
+Sex / neuter status,treatment_intensity,B. rossi,CB418,univariable,CB418,1,N,N,False,mixed,referral hospital
+Sodium,mortality,B. canis,CH21,univariable,CB516,1,N,N,False,before treatment,mixed
+Sodium,mortality,B. rossi,CB040,univariable,CB040,1,N,N,False,before treatment,referral hospital
+Sodium,other,B. rossi,CB040,univariable,CB040,1,N,N,False,before treatment,referral hospital
+Soluble fibrin monomer complexes,severity_grade,mixed/unspecified,CB220,descriptive,CB220,1,D,D,False,not stated,referral hospital
+Superoxide dismutase,anaemia_grade,B. canis,CB006,univariable,CB006,3,LLL,L,False,not stated,referral hospital
+Superoxide dismutase,complicated,B. canis,CB006,univariable,CB006,1,N,N,False,not stated,referral hospital
+Superoxide dismutase,mortality,B. canis,CB006,univariable,CB006,1,L,L,False,not stated,referral hospital
+Superoxide dismutase,mortality,mixed/unspecified,CH08,univariable,CB202,1,N,N,False,before treatment,referral hospital
+Superoxide dismutase,organ_dysfunction,B. canis,CB006,univariable,CB006,2,LL,L,False,not stated,referral hospital
+TSH,other,B. rossi,CH09,univariable,CB105,5,NNLNN,L,False,mixed,experimental
+TSH,specific_complication,B. rossi,CB342,univariable,CB342,1,N,N,False,before treatment,referral hospital
+Thrombomodulin,complicated,B. canis,CB004,univariable,CB004,2,NN,N,False,mixed,referral hospital
+Thyroid hormones,mortality,B. rossi,CB040,univariable,CB040,3,LLL,L,False,before treatment,referral hospital
+Thyroid hormones,other,B. rossi,CB040,univariable,CB040,1,L,L,False,before treatment,referral hospital
+Thyroid hormones,other,B. rossi,CH09,univariable,CB105,5,NNLNN,L,False,mixed,experimental
+Thyroid hormones,specific_complication,B. canis,CH35,univariable,CB441,6,NNLLLN,L,False,before treatment,primary clinic
+Thyroid hormones,specific_complication,B. rossi,CB342,univariable,CB342,4,LLNN,L,False,before treatment,referral hospital
+Time since last meal,specific_complication,B. rossi,CB342,univariable,CB342,1,N,N,False,before treatment,referral hospital
+Total antioxidant capacity,anaemia_grade,B. canis,CB006,univariable,CB006,3,NNU,N,False,not stated,referral hospital
+Total antioxidant capacity,complicated,B. canis,CB006,univariable,CB006,1,N,N,False,not stated,referral hospital
+Total antioxidant capacity,mortality,B. canis,CB006,univariable,CB006,1,H,H,False,not stated,referral hospital
+Total antioxidant capacity,organ_dysfunction,B. canis,CB006,univariable,CB006,2,NN,N,False,not stated,referral hospital
+Total protein,anaemia_grade,B. canis,CH05,univariable,CB178,1,N,N,False,before treatment,referral hospital
+Total protein,anaemia_grade,B. rossi,CB518,univariable,CB518,1,N,N,False,not stated,mixed
+Total protein,complicated,B. canis,CH05,descriptive,CB065,1,D,D,False,before treatment,referral hospital
+Total protein,complicated,B. canis,CH33,univariable,CB394,1,N,N,False,not stated,referral hospital
+Total protein,mortality,B. canis,CH21,univariable,CB516,2,LL,L,False,before treatment,mixed
+Total protein,mortality,mixed/unspecified,CH18,univariable,CB263,1,N,N,False,not stated,referral hospital
+Total protein,parasitaemia_level,B. canis,CB241,descriptive,CB241,1,D,D,False,not stated,primary clinic
+Total protein,severity_grade,B. canis,CH06,descriptive,CB071,1,D,D,False,before treatment,referral hospital
+Total protein,severity_grade,B. canis,CH12,univariable,CB141,1,L,L,False,before treatment,laboratory submissions
+Total protein,severity_grade,B. gibsoni,CB224,descriptive,CB224,1,D,D,False,not stated,laboratory submissions
+Total protein,severity_grade,mixed/unspecified,CB038,descriptive,CB038,1,D,D,False,not stated,field survey
+Travel / import history,complicated,B. canis,CH12,descriptive,CB149,1,D,D,False,not stated,laboratory submissions
+Travel / import history,mortality,B. canis,CH12,descriptive,CB149,2,DD,D,False,not stated,laboratory submissions
+Travel / import history,severity_grade,B. canis,CH12,univariable,CB141,3,LNN,L,False,before treatment,laboratory submissions
+Treatment factors,treatment_intensity,mixed/unspecified,CB492,univariable,CB492,1,H,H,False,not stated,mixed
+Triglycerides,mortality,B. canis,CH21,univariable,CB516,2,HH,H,False,before treatment,mixed
+Urea,complicated,B. canis,CH33,univariable,CB394,1,H,H,True,not stated,referral hospital
+Urea,complicated,B. rossi,CB053,univariable,CB053,1,H,H,True,before treatment,referral hospital
+Urea,complicated,B. rossi,CB112,univariable,CB112,1,U,U,True,not stated,referral hospital
+Urea,mortality,B. canis,CH21,univariable,CB516,1,N,N,False,before treatment,mixed
+Urea,mortality,B. rossi,CB040,univariable,CB040,4,NHHH,H,False,before treatment,referral hospital
+Urea,other,B. rossi,CB040,univariable,CB040,1,H,H,False,before treatment,referral hospital
+Urea,parasitaemia_level,B. canis,CB241,descriptive,CB241,1,D,D,False,not stated,primary clinic
+Urea,severity_grade,B. canis,CB307,univariable,CB307,1,H,H,False,not stated,primary clinic
+Urea,severity_grade,B. canis,CB537,descriptive,CB537,1,D,D,False,not stated,mixed
+Urea,severity_grade,B. canis,CH06,descriptive,CB071,1,D,D,True,before treatment,referral hospital
+Urea,severity_grade,B. gibsoni,CB224,descriptive,CB224,1,D,D,False,not stated,laboratory submissions
+Urea,severity_grade,mixed/unspecified,CB038,descriptive,CB038,1,D,D,True,not stated,field survey
+Urea,severity_grade,mixed/unspecified,CB220,univariable,CB220,1,H,H,False,not stated,referral hospital
+Urea,specific_complication,B. canis,CB109,descriptive,CB109,1,D,D,True,not stated,laboratory submissions
+Urea,specific_complication,B. canis,CB536,univariable,CB536,1,H,H,True,not stated,laboratory submissions
+Urea,specific_complication,B. gibsoni,CB045,univariable,CB045,2,HH,H,False,before treatment,primary clinic
+Urea,specific_complication,mixed/unspecified,CH29,descriptive,CB325,1,D,D,True,before treatment,referral hospital
+Urea:creatinine ratio,specific_complication,mixed/unspecified,CH29,descriptive,CB325,1,D,D,True,before treatment,referral hospital
+Urinary kidney injury biomarkers,complicated,B. rossi,CB053,univariable,CB053,5,HHNNN,H,True,before treatment,referral hospital
+Urine creatinine,severity_grade,B. canis,CH06,descriptive,CB071,1,D,D,True,before treatment,referral hospital
+Urine osmolality,complicated,B. rossi,CB053,univariable,CB053,1,N,N,True,before treatment,referral hospital
+Urine protein:creatinine ratio,complicated,B. rossi,CB053,univariable,CB053,1,H,H,True,before treatment,referral hospital
+Urine protein:creatinine ratio,severity_grade,B. canis,CH06,descriptive,CB071,1,D,D,True,before treatment,referral hospital
+Urine specific gravity,complicated,B. rossi,CB053,univariable,CB053,1,N,N,True,before treatment,referral hospital
+Vascular wall wetting index,severity_grade,mixed/unspecified,CB220,descriptive,CB220,1,D,D,False,not stated,referral hospital
+Viscoelastic testing (TEG/ROTEM),mortality,B. rossi,CH03,univariable,CB145,12,NNNNNNNNNNNN,N,False,before treatment,referral hospital
+Vitamin D (25-hydroxyvitamin D),severity_grade,B. rossi,CB035,multivariable,CB035,1,L,L,False,not stated,referral hospital
+White blood cell count,anaemia_grade,B. canis,CB109,descriptive,CB109,1,D,D,False,not stated,laboratory submissions
+White blood cell count,anaemia_grade,B. canis,CB536,univariable,CB536,1,H,H,False,not stated,laboratory submissions
+White blood cell count,anaemia_grade,B. rossi,CB518,univariable,CB518,1,H,H,False,not stated,mixed
+White blood cell count,complicated,B. canis,CH33,univariable,CB394,1,N,N,False,not stated,referral hospital
+White blood cell count,mortality,B. canis,CH21,univariable,CB516,2,LL,L,False,before treatment,mixed
+White blood cell count,mortality,B. rossi,CB040,univariable,CB040,1,H,H,False,before treatment,referral hospital
+White blood cell count,mortality,B. rossi,CH03,univariable,CB517,1,N,N,False,before treatment,referral hospital
+White blood cell count,mortality,mixed/unspecified,CH18,univariable,CB263,1,U,U,False,not stated,referral hospital
+White blood cell count,other,B. rossi,CB040,univariable,CB040,1,H,H,False,before treatment,referral hospital
+White blood cell count,parasitaemia_level,B. canis,CB241,descriptive,CB241,1,D,D,False,not stated,primary clinic
+White blood cell count,severity_grade,B. canis,CB537,descriptive,CB537,1,D,D,False,not stated,mixed
+White blood cell count,severity_grade,B. gibsoni,CB224,descriptive,CB224,1,D,D,False,not stated,laboratory submissions
+White blood cell count,severity_grade,mixed/unspecified,CB038,descriptive,CB038,1,D,D,False,not stated,field survey
+White blood cell count,severity_grade,mixed/unspecified,CB220,descriptive,CB220,1,D,D,False,not stated,referral hospital
+White blood cell count,specific_complication,B. gibsoni,CB045,univariable,CB045,1,N,N,False,before treatment,primary clinic
+White blood cell count,treatment_intensity,B. rossi,CB418,multivariable,CB418,1,N,N,False,mixed,referral hospital
+Zinc,mortality,mixed/unspecified,CH08,univariable,CB202,1,L,L,False,before treatment,referral hospital
+aPTT,mortality,B. rossi,CH03,univariable,CB145,1,N,N,False,before treatment,referral hospital
+aPTT,mortality,mixed/unspecified,CH18,univariable,CB263,1,H,H,False,not stated,referral hospital
+aPTT,severity_grade,mixed/unspecified,CB220,descriptive,CB220,1,D,D,False,not stated,referral hospital
+suPAR,complicated,B. canis,CB004,univariable,CB004,2,NN,N,False,mixed,referral hospital

@@ -1,0 +1,132 @@
+:host {
+  display: block;
+}
+
+.fs-study-design {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.fs-study-design__question {
+  margin: 0 0 var(--fs-guide-space-3);
+  font-size: 14px;
+  color: rgb(var(--fs-color-ink));
+}
+
+.fs-study-design__totals {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: var(--fs-guide-space-3);
+  margin: 0 0 var(--fs-guide-space-3);
+
+  div {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  dt {
+    font-size: 11px;
+    font-weight: 500;
+    color: rgb(var(--fs-color-ink-soft));
+  }
+
+  dd {
+    margin: 0;
+    font-size: 22px;
+    font-weight: 600;
+    font-variant-numeric: tabular-nums;
+    color: rgb(var(--fs-color-ink));
+  }
+}
+
+.fs-study-design__badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--fs-guide-space-2);
+  margin: 0 0 var(--fs-guide-space-3);
+}
+
+.fs-study-design__text {
+  margin: 0 0 var(--fs-guide-space-3);
+  font-size: 13px;
+  line-height: 1.5;
+  color: rgb(var(--fs-color-ink));
+}
+
+.fs-study-design__subhead {
+  margin: var(--fs-guide-space-3) 0 var(--fs-guide-space-2);
+  font-size: 12px;
+  font-weight: 600;
+  color: rgb(var(--fs-color-ink-soft));
+}
+
+.fs-study-design__table {
+  overflow-x: auto;
+  margin: 0 0 var(--fs-guide-space-3);
+
+  table {
+    border-collapse: collapse;
+    font-size: 12px;
+    width: 100%;
+  }
+
+  th,
+  td {
+    padding: 4px 10px;
+    border-bottom: 1px solid rgb(var(--fs-color-ink-soft) / 0.2);
+    text-align: left;
+    vertical-align: top;
+    color: rgb(var(--fs-color-ink));
+  }
+
+  th {
+    font-weight: 600;
+    color: rgb(var(--fs-color-ink-soft));
+  }
+
+  .num {
+    font-variant-numeric: tabular-nums;
+    white-space: nowrap;
+  }
+}
+
+.fs-study-design__memo {
+  max-width: 980px;
+  font-size: 13px;
+  line-height: 1.55;
+  color: rgb(var(--fs-color-ink));
+
+  section + section {
+    margin-top: var(--fs-guide-space-4);
+  }
+
+  h3 {
+    margin: 0 0 var(--fs-guide-space-2);
+    font-size: 15px;
+    font-weight: 600;
+  }
+
+  h4 {
+    margin: var(--fs-guide-space-3) 0 var(--fs-guide-space-2);
+    font-size: 13px;
+    font-weight: 600;
+    color: rgb(var(--fs-color-ink-soft));
+  }
+
+  p {
+    margin: 0 0 var(--fs-guide-space-2);
+  }
+
+  ul {
+    margin: 0 0 var(--fs-guide-space-2);
+    padding-left: 20px;
+  }
+}
+
+.fs-study-design__footnote {
+  margin: var(--fs-guide-space-2) 0 0;
+  font-size: 11px;
+  color: rgb(var(--fs-color-ink-soft));
+}

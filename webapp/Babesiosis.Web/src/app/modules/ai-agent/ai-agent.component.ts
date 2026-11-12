@@ -27,7 +27,7 @@ import {
   FsTextareaComponent,
 } from '@core';
 import { errorCode, errorMessage } from 'app/core/http-error';
-import { renderAgentMarkdown } from 'app/modules/ai-agent/agent-markdown';
+import { AgentAppLink, renderAgentMarkdown } from 'app/modules/ai-agent/agent-markdown';
 import { AiAgentService } from 'app/modules/ai-agent/ai-agent.service';
 import { AgentModelTier } from 'app/modules/ai-agent/commands/ask-article-agent.command';
 import { ChatMessageViewModel } from 'app/modules/ai-agent/viewmodels/chat-message.viewmodel';
@@ -39,8 +39,18 @@ const MAX_QUESTION_LENGTH = 4000;
 const AGENT_UNAVAILABLE = 'AI_AGENT_UNAVAILABLE';
 
 /**
+ * Where an experiment is shown in the app, relative to the base href. Links from an answer
+ * open in a new tab: the conversation lives in this component and would be lost on navigation.
+ */
+const experimentHref = (code: string) => `experiments/${encodeURIComponent(code)}`;
+
+/** Where a page of the clinical manual is shown in the app, relative to the base href. */
+const clinicalHref = (id: string) => `clinical/${encodeURIComponent(id)}`;
+
+/**
  * An interactive chat with the article agent (`articles-agent-ask`), which
- * searches the review's articles and answers with citations.
+ * reads the review's articles, the experiments and the clinical manual, and
+ * answers with citations.
  *
  * The conversation lives on the client: each answer carries an opaque
  * `conversation` that goes back with the next question, so follow-ups keep
@@ -102,16 +112,21 @@ export class AiAgentComponent {
   protected readonly answerHtml = computed(() => new Map(
     this.messages()
       .filter(m => m.role === 'assistant')
-      .map(m => [m.id, renderAgentMarkdown(m.content, m.citations ?? [])]),
+      .map(m => [m.id, renderAgentMarkdown(m.content, m.citations ?? [], { appLinks: appLinks(m) })]),
   ));
 
-  /** Starting points that show what the agent can be asked about the articles. */
+  /** Starting points that show what the agent can be asked: articles, experiments and the clinical manual. */
   protected readonly suggestions: readonly string[] = [
     'Which haematological changes are most often reported in Babesia rossi infections?',
-    'Summarise the evidence on acute kidney injury in canine babesiosis.',
-    'Which studies compare treatment protocols for Babesia gibsoni?',
     'What gaps does the literature leave on prognostic markers?',
+    'Which experiments have been run, and what did they find overall?',
+    'What did the experiments find about age and the risk of death?',
+    'How is acute kidney injury in babesiosis diagnosed and treated?',
+    'Which antibabesial drugs and doses are reported for Babesia gibsoni?',
   ];
+
+  protected readonly experimentHref = experimentHref;
+  protected readonly clinicalHref = clinicalHref;
 
   /** Puts a suggested question in the composer so it can be edited before sending. */
   protected useSuggestion(text: string): void {
@@ -193,4 +208,21 @@ export class AiAgentComponent {
       thread.scrollTo({ top: latest ? latest.offsetTop - 16 : thread.scrollHeight, behavior: 'smooth' });
     }, { injector: this.injector });
   }
+}
+
+/** The experiments and clinical pages an answer cites, as links for its citations. */
+function appLinks(message: ChatMessageViewModel): AgentAppLink[] {
+  return [
+    ...(message.experiments ?? []).map(e => ({
+      code: e.code,
+      aliases: e.shortCode ? [e.shortCode] : [],
+      href: experimentHref(e.code),
+      title: e.name,
+    })),
+    ...(message.clinicalPages ?? []).map(p => ({
+      code: p.id,
+      href: clinicalHref(p.id),
+      title: p.title,
+    })),
+  ];
 }

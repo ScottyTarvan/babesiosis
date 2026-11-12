@@ -9,21 +9,22 @@ import { ArticleListViewModel, ArticleViewModel } from 'app/modules/reference-ar
  */
 const articles: ArticleViewModel[] = [
   {
-    id: 1, pubDate: '2023-04-12', pubDatePrecision: 'D', categoryName: 'Renal injury and renal function',
-    studyType: 'Associational', species: 'B. rossi', journal: 'Veterinary Parasitology',
+    id: 1, code: 'CB901', pubDate: '2023-04-12', pubDatePrecision: 'D', categoryName: 'Renal injury and renal function',
+    categoryCode: 'REN', categoryLabel: 'Kidney', studyType: 'Associational', species: 'B. rossi', country: 'South Africa', journal: 'Veterinary Parasitology',
     title: 'Acute kidney injury in dogs naturally infected with Babesia rossi',
     summary: 'Azotaemia at admission was associated with higher mortality in dogs with B. rossi infection.',
     doi: '10.1000/example.2023.001', pmid: '30000001', sourceUrl: 'https://doi.org/10.1000/example.2023.001',
   },
   {
-    id: 2, pubDate: '2021-09-01', pubDatePrecision: 'M', categoryName: 'Erythrocyte injury, haemolysis, anaemia and immune-mediated processes',
-    studyType: 'Descriptive', species: 'B. canis', journal: 'Parasites & Vectors',
+    id: 2, code: 'CB902', pubDate: '2021-09-01', pubDatePrecision: 'M', categoryName: 'Erythrocyte injury, haemolysis, anaemia and immune-mediated processes',
+    categoryCode: 'ERY', categoryLabel: 'Red cells and anaemia', studyType: 'Descriptive', species: 'B. canis', country: 'Poland', journal: 'Parasites & Vectors',
     title: 'Haematological changes in canine babesiosis caused by Babesia canis',
     summary: 'Thrombocytopenia was the most consistent haematological finding across all severity grades.',
     doi: null, pmid: '30000002', sourceUrl: 'https://pubmed.ncbi.nlm.nih.gov/30000002/',
   },
   {
-    id: 3, pubDate: '2019-01-01', pubDatePrecision: 'Y', categoryName: null, studyType: 'Descriptive', species: 'Mixed / unspecified', journal: 'Journal of the South African Veterinary Association',
+    id: 3, code: 'CB903', pubDate: '2019-01-01', pubDatePrecision: 'Y', categoryName: null, categoryCode: null, categoryLabel: null,
+    studyType: 'Descriptive', species: 'Not identified in text read', country: null, journal: 'Journal of the South African Veterinary Association',
     title: 'A retrospective review of canine babesiosis cases at a referral hospital',
     summary: 'Most cases presented in summer, with young dogs over-represented.',
     doi: null, pmid: null, sourceUrl: null,

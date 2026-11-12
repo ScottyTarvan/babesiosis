@@ -1,0 +1,2744 @@
+{
+ "experiment": {
+  "code": "SV-08-01-transcriptome-signatures",
+  "name": "Human severe-malaria blood signatures (neutrophil granule, type 1 interferon) in the B. rossi Beagle transcriptome (DS06)",
+  "description": "Do the whole-blood signatures of severe human malaria appear in the five experimentally infected Beagles before clinical deterioration, and earlier at the high dose? Hypothesis: both set scores rise from day 0 to the last pre-treatment sample beyond the library composition shift, first in the high-dose dogs.",
+  "method": "transcriptome_signature",
+  "dataset": null,
+  "parameters": {
+   "package": "SV-08",
+   "role": "primary",
+   "datasets": [
+    "DS06",
+    "DS02"
+   ],
+   "independent_sources": [
+    "SRC-B"
+   ],
+   "spec_sha256": "e7fdfabd75daee92de3c97b7b0e51f5967889297d539257b2590c1fa1d557547",
+   "seed": 20261112,
+   "n_random_sets": 2000,
+   "score": "mean within-sample rank percentile",
+   "gene_sets": {
+    "neutrophil_granule": {
+     "fixed": 11,
+     "mapped": 6
+    },
+    "type1_interferon": {
+     "fixed": 11,
+     "mapped": 11
+    },
+    "erythroid_control": {
+     "fixed": 3,
+     "mapped": 2
+    }
+   },
+   "mapping_working": {
+    "low_1": "DS02:d005",
+    "low_2": "DS02:d001",
+    "high_1": "DS02:d004",
+    "high_2": "DS02:d002",
+    "high_3": "DS02:d003"
+   },
+   "mapping_alternative": {
+    "low_1": "DS02:d001",
+    "low_2": "DS02:d005",
+    "high_1": "DS02:d002",
+    "high_2": "DS02:d004",
+    "high_3": "DS02:d003"
+   },
+   "versions": {
+    "python": "3.12.12",
+    "numpy": "2.3.4",
+    "scipy": "1.16.3"
+   },
+   "exploratory": true
+  },
+  "script": "/experiments/SV-08/scripts/analyse.py",
+  "script_version": "4cb7afc19085",
+  "run_utc": "2026-11-12T15:40:29Z",
+  "n_subjects": 5,
+  "n_variables": 19,
+  "n_tests": 2,
+  "summary": "Type 1 interferon score rose from day 0 to the last pre-treatment sample in 5 of 5 Beagles (4 beyond the composition background; sign-test p 0.062); neutrophil granule in 5 of 5 (4 beyond background, p 0.062); n 5 dogs, 1 source, exploratory. 0 of 2 sign tests below 0.05 (minimum attainable 0.0625). 'Earlier at the high dose' not met (interferon no, neutrophil no)."
+ },
+ "associations": [],
+ "cluster_assignments": [],
+ "results": [
+  {
+   "kind": "primary_result",
+   "title": "Primary analysis: within-dog change per set",
+   "sort_order": 1,
+   "payload": {
+    "label": "Within-dog change from day 0 to the last pre-treatment sample (DS06, 5 Beagles)",
+    "n_dogs": 5,
+    "n_low": 2,
+    "n_high": 3,
+    "n_samples": 28,
+    "n_genes_matrix": 12362,
+    "independent_sources": 1,
+    "sources": [
+     "SRC-B (DS06 RNA-seq; DS02 clinical data of the same Beagles)"
+    ],
+    "sets": [
+     {
+      "set": "neutrophil_granule",
+      "label": "Neutrophil granule",
+      "in_family": true,
+      "n_dogs": 5,
+      "n_genes": 6,
+      "n_genes_fixed": 11,
+      "positive": 5,
+      "sign_test_p": 0.0625,
+      "beyond_rise": 4,
+      "beyond_fall": 0,
+      "median_delta": 0.1672,
+      "s1_positive": 5,
+      "s1_beyond_rise": 4,
+      "s2_positive": 5,
+      "s3_positive": 5,
+      "s4_positive_all_loo": 5,
+      "verdict": {
+       "signature_appears": true,
+       "before_deterioration_working": true,
+       "before_deterioration_alternative": true,
+       "earlier_at_high_dose": false
+      }
+     },
+     {
+      "set": "type1_interferon",
+      "label": "Type 1 interferon",
+      "in_family": true,
+      "n_dogs": 5,
+      "n_genes": 11,
+      "n_genes_fixed": 11,
+      "positive": 5,
+      "sign_test_p": 0.0625,
+      "beyond_rise": 4,
+      "beyond_fall": 0,
+      "median_delta": 0.3051,
+      "s1_positive": 5,
+      "s1_beyond_rise": 5,
+      "s2_positive": 4,
+      "s3_positive": 5,
+      "s4_positive_all_loo": 4,
+      "verdict": {
+       "signature_appears": true,
+       "before_deterioration_working": true,
+       "before_deterioration_alternative": true,
+       "earlier_at_high_dose": false
+      }
+     },
+     {
+      "set": "erythroid_control",
+      "label": "Erythroid (composition control)",
+      "in_family": false,
+      "n_dogs": 5,
+      "n_genes": 2,
+      "n_genes_fixed": 3,
+      "positive": 5,
+      "sign_test_p": 0.0625,
+      "beyond_rise": 5,
+      "beyond_fall": 0,
+      "median_delta": 0.2428,
+      "s1_positive": 5,
+      "s1_beyond_rise": 4,
+      "s2_positive": 5,
+      "s3_positive": 5,
+      "s4_positive_all_loo": 5,
+      "verdict": null
+     }
+    ],
+    "dogs": [
+     {
+      "dog": "low_1",
+      "label": "low_1 (low dose)",
+      "dose": "low",
+      "set": "neutrophil_granule",
+      "last_pre_day": 4,
+      "score_d0": 0.3911,
+      "score_last": 0.4936,
+      "delta": 0.1025,
+      "bg_percentile": 0.9585,
+      "bg_lo95": -0.0578,
+      "bg_hi95": 0.1162,
+      "beyond": "no"
+     },
+     {
+      "dog": "low_1",
+      "label": "low_1 (low dose)",
+      "dose": "low",
+      "set": "type1_interferon",
+      "last_pre_day": 4,
+      "score_d0": 0.4045,
+      "score_last": 0.7096,
+      "delta": 0.3051,
+      "bg_percentile": 1.0,
+      "bg_lo95": -0.0516,
+      "bg_hi95": 0.082,
+      "beyond": "rise"
+     },
+     {
+      "dog": "low_1",
+      "label": "low_1 (low dose)",
+      "dose": "low",
+      "set": "erythroid_control",
+      "last_pre_day": 4,
+      "score_d0": 0.6356,
+      "score_last": 0.9809,
+      "delta": 0.3454,
+      "bg_percentile": 0.9995,
+      "bg_lo95": -0.105,
+      "bg_hi95": 0.2049,
+      "beyond": "rise"
+     },
+     {
+      "dog": "low_2",
+      "label": "low_2 (low dose)",
+      "dose": "low",
+      "set": "neutrophil_granule",
+      "last_pre_day": 4,
+      "score_d0": 0.4025,
+      "score_last": 0.5321,
+      "delta": 0.1296,
+      "bg_percentile": 0.988,
+      "bg_lo95": -0.0547,
+      "bg_hi95": 0.1135,
+      "beyond": "rise"
+     },
+     {
+      "dog": "low_2",
+      "label": "low_2 (low dose)",
+      "dose": "low",
+      "set": "type1_interferon",
+      "last_pre_day": 4,
+      "score_d0": 0.4151,
+      "score_last": 0.8374,
+      "delta": 0.4223,
+      "bg_percentile": 1.0,
+      "bg_lo95": -0.0609,
+      "bg_hi95": 0.0795,
+      "beyond": "rise"
+     },
+     {
+      "dog": "low_2",
+      "label": "low_2 (low dose)",
+      "dose": "low",
+      "set": "erythroid_control",
+      "last_pre_day": 4,
+      "score_d0": 0.6902,
+      "score_last": 0.9805,
+      "delta": 0.2902,
+      "bg_percentile": 0.998,
+      "bg_lo95": -0.1171,
+      "bg_hi95": 0.1765,
+      "beyond": "rise"
+     },
+     {
+      "dog": "high_1",
+      "label": "high_1 (high dose)",
+      "dose": "high",
+      "set": "neutrophil_granule",
+      "last_pre_day": 4,
+      "score_d0": 0.4354,
+      "score_last": 0.6026,
+      "delta": 0.1672,
+      "bg_percentile": 0.9965,
+      "bg_lo95": -0.0592,
+      "bg_hi95": 0.1057,
+      "beyond": "rise"
+     },
+     {
+      "dog": "high_1",
+      "label": "high_1 (high dose)",
+      "dose": "high",
+      "set": "type1_interferon",
+      "last_pre_day": 4,
+      "score_d0": 0.4203,
+      "score_last": 0.594,
+      "delta": 0.1738,
+      "bg_percentile": 1.0,
+      "bg_lo95": -0.064,
+      "bg_hi95": 0.0711,
+      "beyond": "rise"
+     },
+     {
+      "dog": "high_1",
+      "label": "high_1 (high dose)",
+      "dose": "high",
+      "set": "erythroid_control",
+      "last_pre_day": 4,
+      "score_d0": 0.6687,
+      "score_last": 0.9115,
+      "delta": 0.2428,
+      "bg_percentile": 0.9985,
+      "bg_lo95": -0.1364,
+      "bg_hi95": 0.1389,
+      "beyond": "rise"
+     },
+     {
+      "dog": "high_2",
+      "label": "high_2 (high dose)",
+      "dose": "high",
+      "set": "neutrophil_granule",
+      "last_pre_day": 4,
+      "score_d0": 0.4537,
+      "score_last": 0.7292,
+      "delta": 0.2755,
+      "bg_percentile": 1.0,
+      "bg_lo95": -0.0636,
+      "bg_hi95": 0.115,
+      "beyond": "rise"
+     },
+     {
+      "dog": "high_2",
+      "label": "high_2 (high dose)",
+      "dose": "high",
+      "set": "type1_interferon",
+      "last_pre_day": 4,
+      "score_d0": 0.4784,
+      "score_last": 0.5051,
+      "delta": 0.0267,
+      "bg_percentile": 0.7705,
+      "bg_lo95": -0.0814,
+      "bg_hi95": 0.0786,
+      "beyond": "no"
+     },
+     {
+      "dog": "high_2",
+      "label": "high_2 (high dose)",
+      "dose": "high",
+      "set": "erythroid_control",
+      "last_pre_day": 4,
+      "score_d0": 0.6983,
+      "score_last": 0.9177,
+      "delta": 0.2193,
+      "bg_percentile": 0.9995,
+      "bg_lo95": -0.1876,
+      "bg_hi95": 0.1284,
+      "beyond": "rise"
+     },
+     {
+      "dog": "high_3",
+      "label": "high_3 (high dose, died day 4)",
+      "dose": "high",
+      "set": "neutrophil_granule",
+      "last_pre_day": 3,
+      "score_d0": 0.3755,
+      "score_last": 0.5653,
+      "delta": 0.1898,
+      "bg_percentile": 0.998,
+      "bg_lo95": -0.058,
+      "bg_hi95": 0.1091,
+      "beyond": "rise"
+     },
+     {
+      "dog": "high_3",
+      "label": "high_3 (high dose, died day 4)",
+      "dose": "high",
+      "set": "type1_interferon",
+      "last_pre_day": 3,
+      "score_d0": 0.4419,
+      "score_last": 0.8283,
+      "delta": 0.3864,
+      "bg_percentile": 1.0,
+      "bg_lo95": -0.0591,
+      "bg_hi95": 0.0697,
+      "beyond": "rise"
+     },
+     {
+      "dog": "high_3",
+      "label": "high_3 (high dose, died day 4)",
+      "dose": "high",
+      "set": "erythroid_control",
+      "last_pre_day": 3,
+      "score_d0": 0.6603,
+      "score_last": 0.8919,
+      "delta": 0.2317,
+      "bg_percentile": 0.9835,
+      "bg_lo95": -0.1276,
+      "bg_hi95": 0.1851,
+      "beyond": "rise"
+     }
+    ],
+    "note": "Score = mean within-sample rank percentile of the set genes (0 = lowest-expressed gene, 1 = highest). Background = 2,000 random gene sets matched on each dog's day-0 expression decile. Sign test: the smallest attainable two-sided p with 5 dogs is 0.0625. Exploratory; one source; dose aliased with dog."
+   }
+  },
+  {
+   "kind": "score_trajectories",
+   "title": "Set scores by day and parasitaemia, each dog",
+   "sort_order": 2,
+   "payload": {
+    "sets": [
+     {
+      "set": "neutrophil_granule",
+      "label": "Neutrophil granule",
+      "n_genes": 6,
+      "low_0_d0": 0.4416,
+      "dogs": [
+       {
+        "dog": "low_1",
+        "label": "low_1 (low dose)",
+        "dose": "low",
+        "points": [
+         {
+          "day": 0,
+          "score": 0.3911,
+          "delta": 0.0,
+          "bg_percentile": null,
+          "post_treatment": false,
+          "parasitaemia_working": null,
+          "parasitaemia_alt": null,
+          "library_size": 30546225
+         },
+         {
+          "day": 1,
+          "score": 0.4171,
+          "delta": 0.026,
+          "bg_percentile": 0.9285,
+          "post_treatment": false,
+          "parasitaemia_working": 0.0,
+          "parasitaemia_alt": 0.0,
+          "library_size": 38449881
+         },
+         {
+          "day": 3,
+          "score": 0.4722,
+          "delta": 0.0811,
+          "bg_percentile": 0.993,
+          "post_treatment": false,
+          "parasitaemia_working": 0.05,
+          "parasitaemia_alt": 0.1,
+          "library_size": 40119231
+         },
+         {
+          "day": 4,
+          "score": 0.4936,
+          "delta": 0.1025,
+          "bg_percentile": 0.9585,
+          "post_treatment": false,
+          "parasitaemia_working": 3.15,
+          "parasitaemia_alt": 4.61,
+          "library_size": 15520273
+         },
+         {
+          "day": 6,
+          "score": 0.6256,
+          "delta": 0.2345,
+          "bg_percentile": 1.0,
+          "post_treatment": true,
+          "parasitaemia_working": 0.0,
+          "parasitaemia_alt": 0.0,
+          "library_size": 31614103
+         },
+         {
+          "day": 8,
+          "score": 0.6637,
+          "delta": 0.2726,
+          "bg_percentile": 1.0,
+          "post_treatment": true,
+          "parasitaemia_working": null,
+          "parasitaemia_alt": null,
+          "library_size": 33352573
+         }
+        ]
+       },
+       {
+        "dog": "low_2",
+        "label": "low_2 (low dose)",
+        "dose": "low",
+        "points": [
+         {
+          "day": 0,
+          "score": 0.4025,
+          "delta": 0.0,
+          "bg_percentile": null,
+          "post_treatment": false,
+          "parasitaemia_working": null,
+          "parasitaemia_alt": null,
+          "library_size": 31670082
+         },
+         {
+          "day": 1,
+          "score": 0.4251,
+          "delta": 0.0226,
+          "bg_percentile": 0.967,
+          "post_treatment": false,
+          "parasitaemia_working": 0.0,
+          "parasitaemia_alt": 0.0,
+          "library_size": 37644149
+         },
+         {
+          "day": 3,
+          "score": 0.496,
+          "delta": 0.0935,
+          "bg_percentile": 0.999,
+          "post_treatment": false,
+          "parasitaemia_working": 0.1,
+          "parasitaemia_alt": 0.05,
+          "library_size": 36122922
+         },
+         {
+          "day": 4,
+          "score": 0.5321,
+          "delta": 0.1296,
+          "bg_percentile": 0.988,
+          "post_treatment": false,
+          "parasitaemia_working": 4.61,
+          "parasitaemia_alt": 3.15,
+          "library_size": 8940663
+         },
+         {
+          "day": 6,
+          "score": 0.4801,
+          "delta": 0.0776,
+          "bg_percentile": 0.9745,
+          "post_treatment": true,
+          "parasitaemia_working": 0.0,
+          "parasitaemia_alt": 0.0,
+          "library_size": 35048412
+         },
+         {
+          "day": 8,
+          "score": 0.7015,
+          "delta": 0.2989,
+          "bg_percentile": 1.0,
+          "post_treatment": true,
+          "parasitaemia_working": null,
+          "parasitaemia_alt": null,
+          "library_size": 44058833
+         }
+        ]
+       },
+       {
+        "dog": "high_1",
+        "label": "high_1 (high dose)",
+        "dose": "high",
+        "points": [
+         {
+          "day": 0,
+          "score": 0.4354,
+          "delta": 0.0,
+          "bg_percentile": null,
+          "post_treatment": false,
+          "parasitaemia_working": null,
+          "parasitaemia_alt": null,
+          "library_size": 33642905
+         },
+         {
+          "day": 1,
+          "score": 0.5136,
+          "delta": 0.0782,
+          "bg_percentile": 0.992,
+          "post_treatment": false,
+          "parasitaemia_working": 0.05,
+          "parasitaemia_alt": 0.05,
+          "library_size": 36128171
+         },
+         {
+          "day": 3,
+          "score": 0.5383,
+          "delta": 0.1029,
+          "bg_percentile": 0.979,
+          "post_treatment": false,
+          "parasitaemia_working": 6.74,
+          "parasitaemia_alt": 11.08,
+          "library_size": 7237355
+         },
+         {
+          "day": 4,
+          "score": 0.6026,
+          "delta": 0.1672,
+          "bg_percentile": 0.9965,
+          "post_treatment": false,
+          "parasitaemia_working": 34.95,
+          "parasitaemia_alt": 59.8,
+          "library_size": 1318009
+         },
+         {
+          "day": 6,
+          "score": 0.7752,
+          "delta": 0.3398,
+          "bg_percentile": 1.0,
+          "post_treatment": true,
+          "parasitaemia_working": 0.0,
+          "parasitaemia_alt": 0.0,
+          "library_size": 35435126
+         },
+         {
+          "day": 8,
+          "score": 0.8146,
+          "delta": 0.3792,
+          "bg_percentile": 1.0,
+          "post_treatment": true,
+          "parasitaemia_working": null,
+          "parasitaemia_alt": null,
+          "library_size": 36459084
+         }
+        ]
+       },
+       {
+        "dog": "high_2",
+        "label": "high_2 (high dose)",
+        "dose": "high",
+        "points": [
+         {
+          "day": 0,
+          "score": 0.4537,
+          "delta": 0.0,
+          "bg_percentile": null,
+          "post_treatment": false,
+          "parasitaemia_working": null,
+          "parasitaemia_alt": null,
+          "library_size": 39640045
+         },
+         {
+          "day": 1,
+          "score": 0.4579,
+          "delta": 0.0043,
+          "bg_percentile": 0.577,
+          "post_treatment": false,
+          "parasitaemia_working": 0.05,
+          "parasitaemia_alt": 0.05,
+          "library_size": 41668818
+         },
+         {
+          "day": 3,
+          "score": 0.55,
+          "delta": 0.0963,
+          "bg_percentile": 0.9655,
+          "post_treatment": false,
+          "parasitaemia_working": 11.08,
+          "parasitaemia_alt": 6.74,
+          "library_size": 4201004
+         },
+         {
+          "day": 4,
+          "score": 0.7292,
+          "delta": 0.2755,
+          "bg_percentile": 1.0,
+          "post_treatment": false,
+          "parasitaemia_working": 59.8,
+          "parasitaemia_alt": 34.95,
+          "library_size": 824187
+         },
+         {
+          "day": 6,
+          "score": 0.8456,
+          "delta": 0.3919,
+          "bg_percentile": 1.0,
+          "post_treatment": true,
+          "parasitaemia_working": 0.0,
+          "parasitaemia_alt": 0.0,
+          "library_size": 32230621
+         },
+         {
+          "day": 8,
+          "score": 0.8341,
+          "delta": 0.3804,
+          "bg_percentile": 1.0,
+          "post_treatment": true,
+          "parasitaemia_working": null,
+          "parasitaemia_alt": null,
+          "library_size": 38160806
+         }
+        ]
+       },
+       {
+        "dog": "high_3",
+        "label": "high_3 (high dose, died day 4)",
+        "dose": "high",
+        "points": [
+         {
+          "day": 0,
+          "score": 0.3755,
+          "delta": 0.0,
+          "bg_percentile": null,
+          "post_treatment": false,
+          "parasitaemia_working": null,
+          "parasitaemia_alt": null,
+          "library_size": 34985849
+         },
+         {
+          "day": 1,
+          "score": 0.4635,
+          "delta": 0.0881,
+          "bg_percentile": 0.993,
+          "post_treatment": false,
+          "parasitaemia_working": 0.05,
+          "parasitaemia_alt": 0.05,
+          "library_size": 31333888
+         },
+         {
+          "day": 3,
+          "score": 0.5653,
+          "delta": 0.1898,
+          "bg_percentile": 0.998,
+          "post_treatment": false,
+          "parasitaemia_working": 14.81,
+          "parasitaemia_alt": 14.81,
+          "library_size": 4328737
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "set": "type1_interferon",
+      "label": "Type 1 interferon",
+      "n_genes": 11,
+      "low_0_d0": 0.448,
+      "dogs": [
+       {
+        "dog": "low_1",
+        "label": "low_1 (low dose)",
+        "dose": "low",
+        "points": [
+         {
+          "day": 0,
+          "score": 0.4045,
+          "delta": 0.0,
+          "bg_percentile": null,
+          "post_treatment": false,
+          "parasitaemia_working": null,
+          "parasitaemia_alt": null,
+          "library_size": 30546225
+         },
+         {
+          "day": 1,
+          "score": 0.3684,
+          "delta": -0.0362,
+          "bg_percentile": 0.003,
+          "post_treatment": false,
+          "parasitaemia_working": 0.0,
+          "parasitaemia_alt": 0.0,
+          "library_size": 38449881
+         },
+         {
+          "day": 3,
+          "score": 0.6273,
+          "delta": 0.2228,
+          "bg_percentile": 1.0,
+          "post_treatment": false,
+          "parasitaemia_working": 0.05,
+          "parasitaemia_alt": 0.1,
+          "library_size": 40119231
+         },
+         {
+          "day": 4,
+          "score": 0.7096,
+          "delta": 0.3051,
+          "bg_percentile": 1.0,
+          "post_treatment": false,
+          "parasitaemia_working": 3.15,
+          "parasitaemia_alt": 4.61,
+          "library_size": 15520273
+         },
+         {
+          "day": 6,
+          "score": 0.6338,
+          "delta": 0.2293,
+          "bg_percentile": 1.0,
+          "post_treatment": true,
+          "parasitaemia_working": 0.0,
+          "parasitaemia_alt": 0.0,
+          "library_size": 31614103
+         },
+         {
+          "day": 8,
+          "score": 0.4398,
+          "delta": 0.0353,
+          "bg_percentile": 0.925,
+          "post_treatment": true,
+          "parasitaemia_working": null,
+          "parasitaemia_alt": null,
+          "library_size": 33352573
+         }
+        ]
+       },
+       {
+        "dog": "low_2",
+        "label": "low_2 (low dose)",
+        "dose": "low",
+        "points": [
+         {
+          "day": 0,
+          "score": 0.4151,
+          "delta": 0.0,
+          "bg_percentile": null,
+          "post_treatment": false,
+          "parasitaemia_working": null,
+          "parasitaemia_alt": null,
+          "library_size": 31670082
+         },
+         {
+          "day": 1,
+          "score": 0.4581,
+          "delta": 0.043,
+          "bg_percentile": 1.0,
+          "post_treatment": false,
+          "parasitaemia_working": 0.0,
+          "parasitaemia_alt": 0.0,
+          "library_size": 37644149
+         },
+         {
+          "day": 3,
+          "score": 0.7482,
+          "delta": 0.3331,
+          "bg_percentile": 1.0,
+          "post_treatment": false,
+          "parasitaemia_working": 0.1,
+          "parasitaemia_alt": 0.05,
+          "library_size": 36122922
+         },
+         {
+          "day": 4,
+          "score": 0.8374,
+          "delta": 0.4223,
+          "bg_percentile": 1.0,
+          "post_treatment": false,
+          "parasitaemia_working": 4.61,
+          "parasitaemia_alt": 3.15,
+          "library_size": 8940663
+         },
+         {
+          "day": 6,
+          "score": 0.7432,
+          "delta": 0.3281,
+          "bg_percentile": 1.0,
+          "post_treatment": true,
+          "parasitaemia_working": 0.0,
+          "parasitaemia_alt": 0.0,
+          "library_size": 35048412
+         },
+         {
+          "day": 8,
+          "score": 0.5119,
+          "delta": 0.0968,
+          "bg_percentile": 0.9995,
+          "post_treatment": true,
+          "parasitaemia_working": null,
+          "parasitaemia_alt": null,
+          "library_size": 44058833
+         }
+        ]
+       },
+       {
+        "dog": "high_1",
+        "label": "high_1 (high dose)",
+        "dose": "high",
+        "points": [
+         {
+          "day": 0,
+          "score": 0.4203,
+          "delta": 0.0,
+          "bg_percentile": null,
+          "post_treatment": false,
+          "parasitaemia_working": null,
+          "parasitaemia_alt": null,
+          "library_size": 33642905
+         },
+         {
+          "day": 1,
+          "score": 0.8322,
+          "delta": 0.4119,
+          "bg_percentile": 1.0,
+          "post_treatment": false,
+          "parasitaemia_working": 0.05,
+          "parasitaemia_alt": 0.05,
+          "library_size": 36128171
+         },
+         {
+          "day": 3,
+          "score": 0.7657,
+          "delta": 0.3455,
+          "bg_percentile": 1.0,
+          "post_treatment": false,
+          "parasitaemia_working": 6.74,
+          "parasitaemia_alt": 11.08,
+          "library_size": 7237355
+         },
+         {
+          "day": 4,
+          "score": 0.594,
+          "delta": 0.1738,
+          "bg_percentile": 1.0,
+          "post_treatment": false,
+          "parasitaemia_working": 34.95,
+          "parasitaemia_alt": 59.8,
+          "library_size": 1318009
+         },
+         {
+          "day": 6,
+          "score": 0.629,
+          "delta": 0.2087,
+          "bg_percentile": 1.0,
+          "post_treatment": true,
+          "parasitaemia_working": 0.0,
+          "parasitaemia_alt": 0.0,
+          "library_size": 35435126
+         },
+         {
+          "day": 8,
+          "score": 0.461,
+          "delta": 0.0407,
+          "bg_percentile": 0.9355,
+          "post_treatment": true,
+          "parasitaemia_working": null,
+          "parasitaemia_alt": null,
+          "library_size": 36459084
+         }
+        ]
+       },
+       {
+        "dog": "high_2",
+        "label": "high_2 (high dose)",
+        "dose": "high",
+        "points": [
+         {
+          "day": 0,
+          "score": 0.4784,
+          "delta": 0.0,
+          "bg_percentile": null,
+          "post_treatment": false,
+          "parasitaemia_working": null,
+          "parasitaemia_alt": null,
+          "library_size": 39640045
+         },
+         {
+          "day": 1,
+          "score": 0.8617,
+          "delta": 0.3834,
+          "bg_percentile": 1.0,
+          "post_treatment": false,
+          "parasitaemia_working": 0.05,
+          "parasitaemia_alt": 0.05,
+          "library_size": 41668818
+         },
+         {
+          "day": 3,
+          "score": 0.8029,
+          "delta": 0.3245,
+          "bg_percentile": 1.0,
+          "post_treatment": false,
+          "parasitaemia_working": 11.08,
+          "parasitaemia_alt": 6.74,
+          "library_size": 4201004
+         },
+         {
+          "day": 4,
+          "score": 0.5051,
+          "delta": 0.0267,
+          "bg_percentile": 0.7705,
+          "post_treatment": false,
+          "parasitaemia_working": 59.8,
+          "parasitaemia_alt": 34.95,
+          "library_size": 824187
+         },
+         {
+          "day": 6,
+          "score": 0.5855,
+          "delta": 0.1072,
+          "bg_percentile": 0.999,
+          "post_treatment": true,
+          "parasitaemia_working": 0.0,
+          "parasitaemia_alt": 0.0,
+          "library_size": 32230621
+         },
+         {
+          "day": 8,
+          "score": 0.5265,
+          "delta": 0.0481,
+          "bg_percentile": 0.9515,
+          "post_treatment": true,
+          "parasitaemia_working": null,
+          "parasitaemia_alt": null,
+          "library_size": 38160806
+         }
+        ]
+       },
+       {
+        "dog": "high_3",
+        "label": "high_3 (high dose, died day 4)",
+        "dose": "high",
+        "points": [
+         {
+          "day": 0,
+          "score": 0.4419,
+          "delta": 0.0,
+          "bg_percentile": null,
+          "post_treatment": false,
+          "parasitaemia_working": null,
+          "parasitaemia_alt": null,
+          "library_size": 34985849
+         },
+         {
+          "day": 1,
+          "score": 0.7234,
+          "delta": 0.2815,
+          "bg_percentile": 1.0,
+          "post_treatment": false,
+          "parasitaemia_working": 0.05,
+          "parasitaemia_alt": 0.05,
+          "library_size": 31333888
+         },
+         {
+          "day": 3,
+          "score": 0.8283,
+          "delta": 0.3864,
+          "bg_percentile": 1.0,
+          "post_treatment": false,
+          "parasitaemia_working": 14.81,
+          "parasitaemia_alt": 14.81,
+          "library_size": 4328737
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "set": "erythroid_control",
+      "label": "Erythroid (composition control)",
+      "n_genes": 2,
+      "low_0_d0": 0.7086,
+      "dogs": [
+       {
+        "dog": "low_1",
+        "label": "low_1 (low dose)",
+        "dose": "low",
+        "points": [
+         {
+          "day": 0,
+          "score": 0.6356,
+          "delta": 0.0,
+          "bg_percentile": null,
+          "post_treatment": false,
+          "parasitaemia_working": null,
+          "parasitaemia_alt": null,
+          "library_size": 30546225
+         },
+         {
+          "day": 1,
+          "score": 0.7412,
+          "delta": 0.1056,
+          "bg_percentile": 1.0,
+          "post_treatment": false,
+          "parasitaemia_working": 0.0,
+          "parasitaemia_alt": 0.0,
+          "library_size": 38449881
+         },
+         {
+          "day": 3,
+          "score": 0.8206,
+          "delta": 0.185,
+          "bg_percentile": 0.9965,
+          "post_treatment": false,
+          "parasitaemia_working": 0.05,
+          "parasitaemia_alt": 0.1,
+          "library_size": 40119231
+         },
+         {
+          "day": 4,
+          "score": 0.9809,
+          "delta": 0.3454,
+          "bg_percentile": 0.9995,
+          "post_treatment": false,
+          "parasitaemia_working": 3.15,
+          "parasitaemia_alt": 4.61,
+          "library_size": 15520273
+         },
+         {
+          "day": 6,
+          "score": 0.908,
+          "delta": 0.2724,
+          "bg_percentile": 0.9985,
+          "post_treatment": true,
+          "parasitaemia_working": 0.0,
+          "parasitaemia_alt": 0.0,
+          "library_size": 31614103
+         },
+         {
+          "day": 8,
+          "score": 0.9741,
+          "delta": 0.3385,
+          "bg_percentile": 1.0,
+          "post_treatment": true,
+          "parasitaemia_working": null,
+          "parasitaemia_alt": null,
+          "library_size": 33352573
+         }
+        ]
+       },
+       {
+        "dog": "low_2",
+        "label": "low_2 (low dose)",
+        "dose": "low",
+        "points": [
+         {
+          "day": 0,
+          "score": 0.6902,
+          "delta": 0.0,
+          "bg_percentile": null,
+          "post_treatment": false,
+          "parasitaemia_working": null,
+          "parasitaemia_alt": null,
+          "library_size": 31670082
+         },
+         {
+          "day": 1,
+          "score": 0.6849,
+          "delta": -0.0054,
+          "bg_percentile": 0.3802,
+          "post_treatment": false,
+          "parasitaemia_working": 0.0,
+          "parasitaemia_alt": 0.0,
+          "library_size": 37644149
+         },
+         {
+          "day": 3,
+          "score": 0.7349,
+          "delta": 0.0447,
+          "bg_percentile": 0.939,
+          "post_treatment": false,
+          "parasitaemia_working": 0.1,
+          "parasitaemia_alt": 0.05,
+          "library_size": 36122922
+         },
+         {
+          "day": 4,
+          "score": 0.9805,
+          "delta": 0.2902,
+          "bg_percentile": 0.998,
+          "post_treatment": false,
+          "parasitaemia_working": 4.61,
+          "parasitaemia_alt": 3.15,
+          "library_size": 8940663
+         },
+         {
+          "day": 6,
+          "score": 0.8997,
+          "delta": 0.2095,
+          "bg_percentile": 0.996,
+          "post_treatment": true,
+          "parasitaemia_working": 0.0,
+          "parasitaemia_alt": 0.0,
+          "library_size": 35048412
+         },
+         {
+          "day": 8,
+          "score": 0.9803,
+          "delta": 0.2901,
+          "bg_percentile": 0.9985,
+          "post_treatment": true,
+          "parasitaemia_working": null,
+          "parasitaemia_alt": null,
+          "library_size": 44058833
+         }
+        ]
+       },
+       {
+        "dog": "high_1",
+        "label": "high_1 (high dose)",
+        "dose": "high",
+        "points": [
+         {
+          "day": 0,
+          "score": 0.6687,
+          "delta": 0.0,
+          "bg_percentile": null,
+          "post_treatment": false,
+          "parasitaemia_working": null,
+          "parasitaemia_alt": null,
+          "library_size": 33642905
+         },
+         {
+          "day": 1,
+          "score": 0.6667,
+          "delta": -0.002,
+          "bg_percentile": 0.5525,
+          "post_treatment": false,
+          "parasitaemia_working": 0.05,
+          "parasitaemia_alt": 0.05,
+          "library_size": 36128171
+         },
+         {
+          "day": 3,
+          "score": 0.947,
+          "delta": 0.2783,
+          "bg_percentile": 0.998,
+          "post_treatment": false,
+          "parasitaemia_working": 6.74,
+          "parasitaemia_alt": 11.08,
+          "library_size": 7237355
+         },
+         {
+          "day": 4,
+          "score": 0.9115,
+          "delta": 0.2428,
+          "bg_percentile": 0.9985,
+          "post_treatment": false,
+          "parasitaemia_working": 34.95,
+          "parasitaemia_alt": 59.8,
+          "library_size": 1318009
+         },
+         {
+          "day": 6,
+          "score": 0.8853,
+          "delta": 0.2165,
+          "bg_percentile": 0.9995,
+          "post_treatment": true,
+          "parasitaemia_working": 0.0,
+          "parasitaemia_alt": 0.0,
+          "library_size": 35435126
+         },
+         {
+          "day": 8,
+          "score": 0.9581,
+          "delta": 0.2893,
+          "bg_percentile": 1.0,
+          "post_treatment": true,
+          "parasitaemia_working": null,
+          "parasitaemia_alt": null,
+          "library_size": 36459084
+         }
+        ]
+       },
+       {
+        "dog": "high_2",
+        "label": "high_2 (high dose)",
+        "dose": "high",
+        "points": [
+         {
+          "day": 0,
+          "score": 0.6983,
+          "delta": 0.0,
+          "bg_percentile": null,
+          "post_treatment": false,
+          "parasitaemia_working": null,
+          "parasitaemia_alt": null,
+          "library_size": 39640045
+         },
+         {
+          "day": 1,
+          "score": 0.6857,
+          "delta": -0.0127,
+          "bg_percentile": 0.4015,
+          "post_treatment": false,
+          "parasitaemia_working": 0.05,
+          "parasitaemia_alt": 0.05,
+          "library_size": 41668818
+         },
+         {
+          "day": 3,
+          "score": 0.9521,
+          "delta": 0.2538,
+          "bg_percentile": 0.9995,
+          "post_treatment": false,
+          "parasitaemia_working": 11.08,
+          "parasitaemia_alt": 6.74,
+          "library_size": 4201004
+         },
+         {
+          "day": 4,
+          "score": 0.9177,
+          "delta": 0.2193,
+          "bg_percentile": 0.9995,
+          "post_treatment": false,
+          "parasitaemia_working": 59.8,
+          "parasitaemia_alt": 34.95,
+          "library_size": 824187
+         },
+         {
+          "day": 6,
+          "score": 0.9639,
+          "delta": 0.2655,
+          "bg_percentile": 1.0,
+          "post_treatment": true,
+          "parasitaemia_working": 0.0,
+          "parasitaemia_alt": 0.0,
+          "library_size": 32230621
+         },
+         {
+          "day": 8,
+          "score": 0.9718,
+          "delta": 0.2734,
+          "bg_percentile": 1.0,
+          "post_treatment": true,
+          "parasitaemia_working": null,
+          "parasitaemia_alt": null,
+          "library_size": 38160806
+         }
+        ]
+       },
+       {
+        "dog": "high_3",
+        "label": "high_3 (high dose, died day 4)",
+        "dose": "high",
+        "points": [
+         {
+          "day": 0,
+          "score": 0.6603,
+          "delta": 0.0,
+          "bg_percentile": null,
+          "post_treatment": false,
+          "parasitaemia_working": null,
+          "parasitaemia_alt": null,
+          "library_size": 34985849
+         },
+         {
+          "day": 1,
+          "score": 0.7424,
+          "delta": 0.0821,
+          "bg_percentile": 0.9755,
+          "post_treatment": false,
+          "parasitaemia_working": 0.05,
+          "parasitaemia_alt": 0.05,
+          "library_size": 31333888
+         },
+         {
+          "day": 3,
+          "score": 0.8919,
+          "delta": 0.2317,
+          "bg_percentile": 0.9835,
+          "post_treatment": false,
+          "parasitaemia_working": 14.81,
+          "parasitaemia_alt": 14.81,
+          "library_size": 4328737
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "kind": "timing",
+   "title": "First risen day against deterioration day",
+   "sort_order": 3,
+   "payload": {
+    "rows": [
+     {
+      "mapping": "working",
+      "dog": "low_1",
+      "dose": "low",
+      "ds02_dog": "DS02:d005",
+      "ds02_original_id": "dog 2",
+      "set": "neutrophil_granule",
+      "set_label": "Neutrophil granule",
+      "first_risen_day": 3,
+      "deterioration_day": 4.0,
+      "habitus_baseline": 4.0,
+      "risen_before_deterioration": true
+     },
+     {
+      "mapping": "working",
+      "dog": "low_1",
+      "dose": "low",
+      "ds02_dog": "DS02:d005",
+      "ds02_original_id": "dog 2",
+      "set": "type1_interferon",
+      "set_label": "Type 1 interferon",
+      "first_risen_day": 3,
+      "deterioration_day": 4.0,
+      "habitus_baseline": 4.0,
+      "risen_before_deterioration": true
+     },
+     {
+      "mapping": "working",
+      "dog": "low_1",
+      "dose": "low",
+      "ds02_dog": "DS02:d005",
+      "ds02_original_id": "dog 2",
+      "set": "erythroid_control",
+      "set_label": "Erythroid (composition control)",
+      "first_risen_day": 1,
+      "deterioration_day": 4.0,
+      "habitus_baseline": 4.0,
+      "risen_before_deterioration": true
+     },
+     {
+      "mapping": "working",
+      "dog": "low_2",
+      "dose": "low",
+      "ds02_dog": "DS02:d001",
+      "ds02_original_id": "dog 3",
+      "set": "neutrophil_granule",
+      "set_label": "Neutrophil granule",
+      "first_risen_day": 3,
+      "deterioration_day": 4.0,
+      "habitus_baseline": 4.0,
+      "risen_before_deterioration": true
+     },
+     {
+      "mapping": "working",
+      "dog": "low_2",
+      "dose": "low",
+      "ds02_dog": "DS02:d001",
+      "ds02_original_id": "dog 3",
+      "set": "type1_interferon",
+      "set_label": "Type 1 interferon",
+      "first_risen_day": 1,
+      "deterioration_day": 4.0,
+      "habitus_baseline": 4.0,
+      "risen_before_deterioration": true
+     },
+     {
+      "mapping": "working",
+      "dog": "low_2",
+      "dose": "low",
+      "ds02_dog": "DS02:d001",
+      "ds02_original_id": "dog 3",
+      "set": "erythroid_control",
+      "set_label": "Erythroid (composition control)",
+      "first_risen_day": 4,
+      "deterioration_day": 4.0,
+      "habitus_baseline": 4.0,
+      "risen_before_deterioration": false
+     },
+     {
+      "mapping": "working",
+      "dog": "high_1",
+      "dose": "high",
+      "ds02_dog": "DS02:d004",
+      "ds02_original_id": "dog 4",
+      "set": "neutrophil_granule",
+      "set_label": "Neutrophil granule",
+      "first_risen_day": 1,
+      "deterioration_day": 2.0,
+      "habitus_baseline": 4.0,
+      "risen_before_deterioration": true
+     },
+     {
+      "mapping": "working",
+      "dog": "high_1",
+      "dose": "high",
+      "ds02_dog": "DS02:d004",
+      "ds02_original_id": "dog 4",
+      "set": "type1_interferon",
+      "set_label": "Type 1 interferon",
+      "first_risen_day": 1,
+      "deterioration_day": 2.0,
+      "habitus_baseline": 4.0,
+      "risen_before_deterioration": true
+     },
+     {
+      "mapping": "working",
+      "dog": "high_1",
+      "dose": "high",
+      "ds02_dog": "DS02:d004",
+      "ds02_original_id": "dog 4",
+      "set": "erythroid_control",
+      "set_label": "Erythroid (composition control)",
+      "first_risen_day": 3,
+      "deterioration_day": 2.0,
+      "habitus_baseline": 4.0,
+      "risen_before_deterioration": false
+     },
+     {
+      "mapping": "working",
+      "dog": "high_2",
+      "dose": "high",
+      "ds02_dog": "DS02:d002",
+      "ds02_original_id": "dog 5",
+      "set": "neutrophil_granule",
+      "set_label": "Neutrophil granule",
+      "first_risen_day": 4,
+      "deterioration_day": 2.0,
+      "habitus_baseline": 4.0,
+      "risen_before_deterioration": false
+     },
+     {
+      "mapping": "working",
+      "dog": "high_2",
+      "dose": "high",
+      "ds02_dog": "DS02:d002",
+      "ds02_original_id": "dog 5",
+      "set": "type1_interferon",
+      "set_label": "Type 1 interferon",
+      "first_risen_day": 1,
+      "deterioration_day": 2.0,
+      "habitus_baseline": 4.0,
+      "risen_before_deterioration": true
+     },
+     {
+      "mapping": "working",
+      "dog": "high_2",
+      "dose": "high",
+      "ds02_dog": "DS02:d002",
+      "ds02_original_id": "dog 5",
+      "set": "erythroid_control",
+      "set_label": "Erythroid (composition control)",
+      "first_risen_day": 3,
+      "deterioration_day": 2.0,
+      "habitus_baseline": 4.0,
+      "risen_before_deterioration": false
+     },
+     {
+      "mapping": "working",
+      "dog": "high_3",
+      "dose": "high",
+      "ds02_dog": "DS02:d003",
+      "ds02_original_id": "dog 6",
+      "set": "neutrophil_granule",
+      "set_label": "Neutrophil granule",
+      "first_risen_day": 1,
+      "deterioration_day": 3.0,
+      "habitus_baseline": 4.0,
+      "risen_before_deterioration": true
+     },
+     {
+      "mapping": "working",
+      "dog": "high_3",
+      "dose": "high",
+      "ds02_dog": "DS02:d003",
+      "ds02_original_id": "dog 6",
+      "set": "type1_interferon",
+      "set_label": "Type 1 interferon",
+      "first_risen_day": 1,
+      "deterioration_day": 3.0,
+      "habitus_baseline": 4.0,
+      "risen_before_deterioration": true
+     },
+     {
+      "mapping": "working",
+      "dog": "high_3",
+      "dose": "high",
+      "ds02_dog": "DS02:d003",
+      "ds02_original_id": "dog 6",
+      "set": "erythroid_control",
+      "set_label": "Erythroid (composition control)",
+      "first_risen_day": 1,
+      "deterioration_day": 3.0,
+      "habitus_baseline": 4.0,
+      "risen_before_deterioration": true
+     },
+     {
+      "mapping": "alternative",
+      "dog": "low_1",
+      "dose": "low",
+      "ds02_dog": "DS02:d001",
+      "ds02_original_id": "dog 3",
+      "set": "neutrophil_granule",
+      "set_label": "Neutrophil granule",
+      "first_risen_day": 3,
+      "deterioration_day": 4.0,
+      "habitus_baseline": 4.0,
+      "risen_before_deterioration": true
+     },
+     {
+      "mapping": "alternative",
+      "dog": "low_1",
+      "dose": "low",
+      "ds02_dog": "DS02:d001",
+      "ds02_original_id": "dog 3",
+      "set": "type1_interferon",
+      "set_label": "Type 1 interferon",
+      "first_risen_day": 3,
+      "deterioration_day": 4.0,
+      "habitus_baseline": 4.0,
+      "risen_before_deterioration": true
+     },
+     {
+      "mapping": "alternative",
+      "dog": "low_1",
+      "dose": "low",
+      "ds02_dog": "DS02:d001",
+      "ds02_original_id": "dog 3",
+      "set": "erythroid_control",
+      "set_label": "Erythroid (composition control)",
+      "first_risen_day": 1,
+      "deterioration_day": 4.0,
+      "habitus_baseline": 4.0,
+      "risen_before_deterioration": true
+     },
+     {
+      "mapping": "alternative",
+      "dog": "low_2",
+      "dose": "low",
+      "ds02_dog": "DS02:d005",
+      "ds02_original_id": "dog 2",
+      "set": "neutrophil_granule",
+      "set_label": "Neutrophil granule",
+      "first_risen_day": 3,
+      "deterioration_day": 4.0,
+      "habitus_baseline": 4.0,
+      "risen_before_deterioration": true
+     },
+     {
+      "mapping": "alternative",
+      "dog": "low_2",
+      "dose": "low",
+      "ds02_dog": "DS02:d005",
+      "ds02_original_id": "dog 2",
+      "set": "type1_interferon",
+      "set_label": "Type 1 interferon",
+      "first_risen_day": 1,
+      "deterioration_day": 4.0,
+      "habitus_baseline": 4.0,
+      "risen_before_deterioration": true
+     },
+     {
+      "mapping": "alternative",
+      "dog": "low_2",
+      "dose": "low",
+      "ds02_dog": "DS02:d005",
+      "ds02_original_id": "dog 2",
+      "set": "erythroid_control",
+      "set_label": "Erythroid (composition control)",
+      "first_risen_day": 4,
+      "deterioration_day": 4.0,
+      "habitus_baseline": 4.0,
+      "risen_before_deterioration": false
+     },
+     {
+      "mapping": "alternative",
+      "dog": "high_1",
+      "dose": "high",
+      "ds02_dog": "DS02:d002",
+      "ds02_original_id": "dog 5",
+      "set": "neutrophil_granule",
+      "set_label": "Neutrophil granule",
+      "first_risen_day": 1,
+      "deterioration_day": 2.0,
+      "habitus_baseline": 4.0,
+      "risen_before_deterioration": true
+     },
+     {
+      "mapping": "alternative",
+      "dog": "high_1",
+      "dose": "high",
+      "ds02_dog": "DS02:d002",
+      "ds02_original_id": "dog 5",
+      "set": "type1_interferon",
+      "set_label": "Type 1 interferon",
+      "first_risen_day": 1,
+      "deterioration_day": 2.0,
+      "habitus_baseline": 4.0,
+      "risen_before_deterioration": true
+     },
+     {
+      "mapping": "alternative",
+      "dog": "high_1",
+      "dose": "high",
+      "ds02_dog": "DS02:d002",
+      "ds02_original_id": "dog 5",
+      "set": "erythroid_control",
+      "set_label": "Erythroid (composition control)",
+      "first_risen_day": 3,
+      "deterioration_day": 2.0,
+      "habitus_baseline": 4.0,
+      "risen_before_deterioration": false
+     },
+     {
+      "mapping": "alternative",
+      "dog": "high_2",
+      "dose": "high",
+      "ds02_dog": "DS02:d004",
+      "ds02_original_id": "dog 4",
+      "set": "neutrophil_granule",
+      "set_label": "Neutrophil granule",
+      "first_risen_day": 4,
+      "deterioration_day": 2.0,
+      "habitus_baseline": 4.0,
+      "risen_before_deterioration": false
+     },
+     {
+      "mapping": "alternative",
+      "dog": "high_2",
+      "dose": "high",
+      "ds02_dog": "DS02:d004",
+      "ds02_original_id": "dog 4",
+      "set": "type1_interferon",
+      "set_label": "Type 1 interferon",
+      "first_risen_day": 1,
+      "deterioration_day": 2.0,
+      "habitus_baseline": 4.0,
+      "risen_before_deterioration": true
+     },
+     {
+      "mapping": "alternative",
+      "dog": "high_2",
+      "dose": "high",
+      "ds02_dog": "DS02:d004",
+      "ds02_original_id": "dog 4",
+      "set": "erythroid_control",
+      "set_label": "Erythroid (composition control)",
+      "first_risen_day": 3,
+      "deterioration_day": 2.0,
+      "habitus_baseline": 4.0,
+      "risen_before_deterioration": false
+     },
+     {
+      "mapping": "alternative",
+      "dog": "high_3",
+      "dose": "high",
+      "ds02_dog": "DS02:d003",
+      "ds02_original_id": "dog 6",
+      "set": "neutrophil_granule",
+      "set_label": "Neutrophil granule",
+      "first_risen_day": 1,
+      "deterioration_day": 3.0,
+      "habitus_baseline": 4.0,
+      "risen_before_deterioration": true
+     },
+     {
+      "mapping": "alternative",
+      "dog": "high_3",
+      "dose": "high",
+      "ds02_dog": "DS02:d003",
+      "ds02_original_id": "dog 6",
+      "set": "type1_interferon",
+      "set_label": "Type 1 interferon",
+      "first_risen_day": 1,
+      "deterioration_day": 3.0,
+      "habitus_baseline": 4.0,
+      "risen_before_deterioration": true
+     },
+     {
+      "mapping": "alternative",
+      "dog": "high_3",
+      "dose": "high",
+      "ds02_dog": "DS02:d003",
+      "ds02_original_id": "dog 6",
+      "set": "erythroid_control",
+      "set_label": "Erythroid (composition control)",
+      "first_risen_day": 1,
+      "deterioration_day": 3.0,
+      "habitus_baseline": 4.0,
+      "risen_before_deterioration": true
+     }
+    ],
+    "verdict": {
+     "neutrophil_granule": {
+      "signature_appears": true,
+      "before_deterioration_working": true,
+      "before_deterioration_alternative": true,
+      "earlier_at_high_dose": false
+     },
+     "type1_interferon": {
+      "signature_appears": true,
+      "before_deterioration_working": true,
+      "before_deterioration_alternative": true,
+      "earlier_at_high_dose": false
+     }
+    }
+   }
+  },
+  {
+   "kind": "construct_checks",
+   "title": "Construct checks against DS02 measures",
+   "sort_order": 4,
+   "payload": {
+    "rows": [
+     {
+      "mapping": "working",
+      "set": "type1_interferon",
+      "set_label": "Type 1 interferon",
+      "variable": "plasma IP-10 (CXCL10 protein)",
+      "dog": "low_1",
+      "n_points": 4,
+      "rho": 0.9487
+     },
+     {
+      "mapping": "working",
+      "set": "type1_interferon",
+      "set_label": "Type 1 interferon",
+      "variable": "plasma IP-10 (CXCL10 protein)",
+      "dog": "low_2",
+      "n_points": 4,
+      "rho": 1.0
+     },
+     {
+      "mapping": "working",
+      "set": "type1_interferon",
+      "set_label": "Type 1 interferon",
+      "variable": "plasma IP-10 (CXCL10 protein)",
+      "dog": "high_1",
+      "n_points": 4,
+      "rho": 0.8
+     },
+     {
+      "mapping": "working",
+      "set": "type1_interferon",
+      "set_label": "Type 1 interferon",
+      "variable": "plasma IP-10 (CXCL10 protein)",
+      "dog": "high_2",
+      "n_points": 4,
+      "rho": 1.0
+     },
+     {
+      "mapping": "working",
+      "set": "type1_interferon",
+      "set_label": "Type 1 interferon",
+      "variable": "plasma IP-10 (CXCL10 protein)",
+      "dog": "high_3",
+      "n_points": 3,
+      "rho": 1.0
+     },
+     {
+      "mapping": "working",
+      "set": "type1_interferon",
+      "set_label": "Type 1 interferon",
+      "variable": "plasma IP-10 (CXCL10 protein)",
+      "dog": "median of dogs",
+      "n_points": 5,
+      "rho": 1.0
+     },
+     {
+      "mapping": "working",
+      "set": "neutrophil_granule",
+      "set_label": "Neutrophil granule",
+      "variable": "band neutrophils",
+      "dog": "low_1",
+      "n_points": 4,
+      "rho": 0.9487
+     },
+     {
+      "mapping": "working",
+      "set": "neutrophil_granule",
+      "set_label": "Neutrophil granule",
+      "variable": "band neutrophils",
+      "dog": "low_2",
+      "n_points": 4,
+      "rho": -0.2
+     },
+     {
+      "mapping": "working",
+      "set": "neutrophil_granule",
+      "set_label": "Neutrophil granule",
+      "variable": "band neutrophils",
+      "dog": "high_1",
+      "n_points": 4,
+      "rho": 0.8
+     },
+     {
+      "mapping": "working",
+      "set": "neutrophil_granule",
+      "set_label": "Neutrophil granule",
+      "variable": "band neutrophils",
+      "dog": "high_2",
+      "n_points": 4,
+      "rho": 0.8
+     },
+     {
+      "mapping": "working",
+      "set": "neutrophil_granule",
+      "set_label": "Neutrophil granule",
+      "variable": "band neutrophils",
+      "dog": "high_3",
+      "n_points": 3,
+      "rho": -0.5
+     },
+     {
+      "mapping": "working",
+      "set": "neutrophil_granule",
+      "set_label": "Neutrophil granule",
+      "variable": "band neutrophils",
+      "dog": "median of dogs",
+      "n_points": 5,
+      "rho": 0.8
+     },
+     {
+      "mapping": "working",
+      "set": "erythroid_control",
+      "set_label": "Erythroid (composition control)",
+      "variable": "reticulocyte %",
+      "dog": "low_1",
+      "n_points": 3,
+      "rho": 1.0
+     },
+     {
+      "mapping": "working",
+      "set": "erythroid_control",
+      "set_label": "Erythroid (composition control)",
+      "variable": "reticulocyte %",
+      "dog": "low_2",
+      "n_points": 3,
+      "rho": 1.0
+     },
+     {
+      "mapping": "working",
+      "set": "erythroid_control",
+      "set_label": "Erythroid (composition control)",
+      "variable": "reticulocyte %",
+      "dog": "high_1",
+      "n_points": 3,
+      "rho": 1.0
+     },
+     {
+      "mapping": "working",
+      "set": "erythroid_control",
+      "set_label": "Erythroid (composition control)",
+      "variable": "reticulocyte %",
+      "dog": "high_2",
+      "n_points": 3,
+      "rho": 0.5
+     },
+     {
+      "mapping": "working",
+      "set": "erythroid_control",
+      "set_label": "Erythroid (composition control)",
+      "variable": "reticulocyte %",
+      "dog": "high_3",
+      "n_points": 2,
+      "rho": null
+     },
+     {
+      "mapping": "working",
+      "set": "erythroid_control",
+      "set_label": "Erythroid (composition control)",
+      "variable": "reticulocyte %",
+      "dog": "median of dogs",
+      "n_points": 4,
+      "rho": 1.0
+     },
+     {
+      "mapping": "alternative",
+      "set": "type1_interferon",
+      "set_label": "Type 1 interferon",
+      "variable": "plasma IP-10 (CXCL10 protein)",
+      "dog": "low_1",
+      "n_points": 4,
+      "rho": 0.8
+     },
+     {
+      "mapping": "alternative",
+      "set": "type1_interferon",
+      "set_label": "Type 1 interferon",
+      "variable": "plasma IP-10 (CXCL10 protein)",
+      "dog": "low_2",
+      "n_points": 4,
+      "rho": 0.9487
+     },
+     {
+      "mapping": "alternative",
+      "set": "type1_interferon",
+      "set_label": "Type 1 interferon",
+      "variable": "plasma IP-10 (CXCL10 protein)",
+      "dog": "high_1",
+      "n_points": 4,
+      "rho": 1.0
+     },
+     {
+      "mapping": "alternative",
+      "set": "type1_interferon",
+      "set_label": "Type 1 interferon",
+      "variable": "plasma IP-10 (CXCL10 protein)",
+      "dog": "high_2",
+      "n_points": 4,
+      "rho": 0.8
+     },
+     {
+      "mapping": "alternative",
+      "set": "type1_interferon",
+      "set_label": "Type 1 interferon",
+      "variable": "plasma IP-10 (CXCL10 protein)",
+      "dog": "high_3",
+      "n_points": 3,
+      "rho": 1.0
+     },
+     {
+      "mapping": "alternative",
+      "set": "type1_interferon",
+      "set_label": "Type 1 interferon",
+      "variable": "plasma IP-10 (CXCL10 protein)",
+      "dog": "median of dogs",
+      "n_points": 5,
+      "rho": 0.9487
+     },
+     {
+      "mapping": "alternative",
+      "set": "neutrophil_granule",
+      "set_label": "Neutrophil granule",
+      "variable": "band neutrophils",
+      "dog": "low_1",
+      "n_points": 4,
+      "rho": -0.2
+     },
+     {
+      "mapping": "alternative",
+      "set": "neutrophil_granule",
+      "set_label": "Neutrophil granule",
+      "variable": "band neutrophils",
+      "dog": "low_2",
+      "n_points": 4,
+      "rho": 0.9487
+     },
+     {
+      "mapping": "alternative",
+      "set": "neutrophil_granule",
+      "set_label": "Neutrophil granule",
+      "variable": "band neutrophils",
+      "dog": "high_1",
+      "n_points": 4,
+      "rho": 0.8
+     },
+     {
+      "mapping": "alternative",
+      "set": "neutrophil_granule",
+      "set_label": "Neutrophil granule",
+      "variable": "band neutrophils",
+      "dog": "high_2",
+      "n_points": 4,
+      "rho": 0.8
+     },
+     {
+      "mapping": "alternative",
+      "set": "neutrophil_granule",
+      "set_label": "Neutrophil granule",
+      "variable": "band neutrophils",
+      "dog": "high_3",
+      "n_points": 3,
+      "rho": -0.5
+     },
+     {
+      "mapping": "alternative",
+      "set": "neutrophil_granule",
+      "set_label": "Neutrophil granule",
+      "variable": "band neutrophils",
+      "dog": "median of dogs",
+      "n_points": 5,
+      "rho": 0.8
+     },
+     {
+      "mapping": "alternative",
+      "set": "erythroid_control",
+      "set_label": "Erythroid (composition control)",
+      "variable": "reticulocyte %",
+      "dog": "low_1",
+      "n_points": 3,
+      "rho": 1.0
+     },
+     {
+      "mapping": "alternative",
+      "set": "erythroid_control",
+      "set_label": "Erythroid (composition control)",
+      "variable": "reticulocyte %",
+      "dog": "low_2",
+      "n_points": 3,
+      "rho": 1.0
+     },
+     {
+      "mapping": "alternative",
+      "set": "erythroid_control",
+      "set_label": "Erythroid (composition control)",
+      "variable": "reticulocyte %",
+      "dog": "high_1",
+      "n_points": 3,
+      "rho": 0.5
+     },
+     {
+      "mapping": "alternative",
+      "set": "erythroid_control",
+      "set_label": "Erythroid (composition control)",
+      "variable": "reticulocyte %",
+      "dog": "high_2",
+      "n_points": 3,
+      "rho": 1.0
+     },
+     {
+      "mapping": "alternative",
+      "set": "erythroid_control",
+      "set_label": "Erythroid (composition control)",
+      "variable": "reticulocyte %",
+      "dog": "high_3",
+      "n_points": 2,
+      "rho": null
+     },
+     {
+      "mapping": "alternative",
+      "set": "erythroid_control",
+      "set_label": "Erythroid (composition control)",
+      "variable": "reticulocyte %",
+      "dog": "median of dogs",
+      "n_points": 4,
+      "rho": 1.0
+     }
+    ]
+   }
+  },
+  {
+   "kind": "sensitivity",
+   "title": "Sensitivity checks",
+   "sort_order": 5,
+   "payload": {
+    "rows": [
+     {
+      "dog": "low_1",
+      "label": "low_1 (low dose)",
+      "set": "neutrophil_granule",
+      "set_label": "Neutrophil granule",
+      "delta": 0.1025,
+      "s1_delta_d3": 0.0811,
+      "s1_bg_percentile": 0.993,
+      "s2_delta_log2_uq": 0.6336,
+      "s3_delta": 0.1051,
+      "s4_min": 0.053,
+      "s4_max": 0.1285
+     },
+     {
+      "dog": "low_1",
+      "label": "low_1 (low dose)",
+      "set": "type1_interferon",
+      "set_label": "Type 1 interferon",
+      "delta": 0.3051,
+      "s1_delta_d3": 0.2228,
+      "s1_bg_percentile": 1.0,
+      "s2_delta_log2_uq": 2.559,
+      "s3_delta": 0.3084,
+      "s4_min": 0.2595,
+      "s4_max": 0.3342
+     },
+     {
+      "dog": "low_1",
+      "label": "low_1 (low dose)",
+      "set": "erythroid_control",
+      "set_label": "Erythroid (composition control)",
+      "delta": 0.3454,
+      "s1_delta_d3": 0.185,
+      "s1_bg_percentile": 0.9965,
+      "s2_delta_log2_uq": 5.9673,
+      "s3_delta": 0.3471,
+      "s4_min": 0.0214,
+      "s4_max": 0.6693
+     },
+     {
+      "dog": "low_2",
+      "label": "low_2 (low dose)",
+      "set": "neutrophil_granule",
+      "set_label": "Neutrophil granule",
+      "delta": 0.1296,
+      "s1_delta_d3": 0.0935,
+      "s1_bg_percentile": 0.999,
+      "s2_delta_log2_uq": 0.8279,
+      "s3_delta": 0.1319,
+      "s4_min": 0.0927,
+      "s4_max": 0.1531
+     },
+     {
+      "dog": "low_2",
+      "label": "low_2 (low dose)",
+      "set": "type1_interferon",
+      "set_label": "Type 1 interferon",
+      "delta": 0.4223,
+      "s1_delta_d3": 0.3331,
+      "s1_bg_percentile": 1.0,
+      "s2_delta_log2_uq": 3.3827,
+      "s3_delta": 0.4257,
+      "s4_min": 0.3736,
+      "s4_max": 0.458
+     },
+     {
+      "dog": "low_2",
+      "label": "low_2 (low dose)",
+      "set": "erythroid_control",
+      "set_label": "Erythroid (composition control)",
+      "delta": 0.2902,
+      "s1_delta_d3": 0.0447,
+      "s1_bg_percentile": 0.939,
+      "s2_delta_log2_uq": 4.9923,
+      "s3_delta": 0.2916,
+      "s4_min": 0.0058,
+      "s4_max": 0.5747
+     },
+     {
+      "dog": "high_1",
+      "label": "high_1 (high dose)",
+      "set": "neutrophil_granule",
+      "set_label": "Neutrophil granule",
+      "delta": 0.1672,
+      "s1_delta_d3": 0.1029,
+      "s1_bg_percentile": 0.979,
+      "s2_delta_log2_uq": 1.6452,
+      "s3_delta": 0.1676,
+      "s4_min": 0.1415,
+      "s4_max": 0.1972
+     },
+     {
+      "dog": "high_1",
+      "label": "high_1 (high dose)",
+      "set": "type1_interferon",
+      "set_label": "Type 1 interferon",
+      "delta": 0.1738,
+      "s1_delta_d3": 0.3455,
+      "s1_bg_percentile": 1.0,
+      "s2_delta_log2_uq": 0.9438,
+      "s3_delta": 0.1753,
+      "s4_min": 0.1357,
+      "s4_max": 0.1956
+     },
+     {
+      "dog": "high_1",
+      "label": "high_1 (high dose)",
+      "set": "erythroid_control",
+      "set_label": "Erythroid (composition control)",
+      "delta": 0.2428,
+      "s1_delta_d3": 0.2783,
+      "s1_bg_percentile": 0.998,
+      "s2_delta_log2_uq": 2.4381,
+      "s3_delta": 0.2436,
+      "s4_min": 0.0049,
+      "s4_max": 0.4807
+     },
+     {
+      "dog": "high_2",
+      "label": "high_2 (high dose)",
+      "set": "neutrophil_granule",
+      "set_label": "Neutrophil granule",
+      "delta": 0.2755,
+      "s1_delta_d3": 0.0963,
+      "s1_bg_percentile": 0.9655,
+      "s2_delta_log2_uq": 2.5928,
+      "s3_delta": 0.276,
+      "s4_min": 0.2053,
+      "s4_max": 0.3267
+     },
+     {
+      "dog": "high_2",
+      "label": "high_2 (high dose)",
+      "set": "type1_interferon",
+      "set_label": "Type 1 interferon",
+      "delta": 0.0267,
+      "s1_delta_d3": 0.3245,
+      "s1_bg_percentile": 1.0,
+      "s2_delta_log2_uq": -0.142,
+      "s3_delta": 0.0276,
+      "s4_min": -0.01,
+      "s4_max": 0.0544
+     },
+     {
+      "dog": "high_2",
+      "label": "high_2 (high dose)",
+      "set": "erythroid_control",
+      "set_label": "Erythroid (composition control)",
+      "delta": 0.2193,
+      "s1_delta_d3": 0.2538,
+      "s1_bg_percentile": 0.9995,
+      "s2_delta_log2_uq": 2.3714,
+      "s3_delta": 0.2197,
+      "s4_min": 0.0064,
+      "s4_max": 0.4322
+     },
+     {
+      "dog": "high_3",
+      "label": "high_3 (high dose, died day 4)",
+      "set": "neutrophil_granule",
+      "set_label": "Neutrophil granule",
+      "delta": 0.1898,
+      "s1_delta_d3": 0.1898,
+      "s1_bg_percentile": 0.998,
+      "s2_delta_log2_uq": 1.3867,
+      "s3_delta": 0.1911,
+      "s4_min": 0.1355,
+      "s4_max": 0.2358
+     },
+     {
+      "dog": "high_3",
+      "label": "high_3 (high dose, died day 4)",
+      "set": "type1_interferon",
+      "set_label": "Type 1 interferon",
+      "delta": 0.3864,
+      "s1_delta_d3": 0.3864,
+      "s1_bg_percentile": 1.0,
+      "s2_delta_log2_uq": 2.8446,
+      "s3_delta": 0.3888,
+      "s4_min": 0.3458,
+      "s4_max": 0.4154
+     },
+     {
+      "dog": "high_3",
+      "label": "high_3 (high dose, died day 4)",
+      "set": "erythroid_control",
+      "set_label": "Erythroid (composition control)",
+      "delta": 0.2317,
+      "s1_delta_d3": 0.2317,
+      "s1_bg_percentile": 0.9835,
+      "s2_delta_log2_uq": 3.4,
+      "s3_delta": 0.2332,
+      "s4_min": 0.0088,
+      "s4_max": 0.4545
+     }
+    ]
+   }
+  },
+  {
+   "kind": "gene_mapping",
+   "title": "Gene mapping and unmapped genes",
+   "sort_order": 6,
+   "payload": {
+    "rows": [
+     {
+      "set": "neutrophil_granule",
+      "set_label": "Neutrophil granule",
+      "gene": "MPO",
+      "mapped": false,
+      "row_id": null,
+      "how": null,
+      "reason": "dog gene found in Ensembl (ENSCAFG00000017474) but not in the DS06 matrix, which was pre-filtered by CPM"
+     },
+     {
+      "set": "neutrophil_granule",
+      "set_label": "Neutrophil granule",
+      "gene": "ELANE",
+      "mapped": false,
+      "row_id": null,
+      "how": null,
+      "reason": "dog gene found in Ensembl (ENSCAFG00000019669) but not in the DS06 matrix, which was pre-filtered by CPM"
+     },
+     {
+      "set": "neutrophil_granule",
+      "set_label": "Neutrophil granule",
+      "gene": "CTSG",
+      "mapped": true,
+      "row_id": "ENSCAFG00000029775_CTSG",
+      "how": "symbol in DS06 row",
+      "reason": null
+     },
+     {
+      "set": "neutrophil_granule",
+      "set_label": "Neutrophil granule",
+      "gene": "LTF",
+      "mapped": true,
+      "row_id": "ENSCAFG00000013763_LTF",
+      "how": "symbol in DS06 row",
+      "reason": null
+     },
+     {
+      "set": "neutrophil_granule",
+      "set_label": "Neutrophil granule",
+      "gene": "LCN2",
+      "mapped": true,
+      "row_id": "ENSCAFG00000020088_LCN2",
+      "how": "symbol in DS06 row",
+      "reason": null
+     },
+     {
+      "set": "neutrophil_granule",
+      "set_label": "Neutrophil granule",
+      "gene": "MMP8",
+      "mapped": true,
+      "row_id": "ENSCAFG00000023335_MMP8",
+      "how": "symbol in DS06 row",
+      "reason": null
+     },
+     {
+      "set": "neutrophil_granule",
+      "set_label": "Neutrophil granule",
+      "gene": "MMP9",
+      "mapped": true,
+      "row_id": "ENSCAFG00000009905_MMP9",
+      "how": "symbol in DS06 row",
+      "reason": null
+     },
+     {
+      "set": "neutrophil_granule",
+      "set_label": "Neutrophil granule",
+      "gene": "CAMP",
+      "mapped": true,
+      "row_id": "ENSCAFG00000012896_CAMP",
+      "how": "symbol in DS06 row",
+      "reason": null
+     },
+     {
+      "set": "neutrophil_granule",
+      "set_label": "Neutrophil granule",
+      "gene": "OLFM4",
+      "mapped": false,
+      "row_id": null,
+      "how": null,
+      "reason": "dog gene found in Ensembl (ENSCAFG00000004843) but not in the DS06 matrix, which was pre-filtered by CPM"
+     },
+     {
+      "set": "neutrophil_granule",
+      "set_label": "Neutrophil granule",
+      "gene": "CEACAM8",
+      "mapped": false,
+      "row_id": null,
+      "how": null,
+      "reason": "no dog gene with this symbol in Ensembl, and no unnamed DS06 row annotated as it"
+     },
+     {
+      "set": "neutrophil_granule",
+      "set_label": "Neutrophil granule",
+      "gene": "ARG1",
+      "mapped": false,
+      "row_id": null,
+      "how": null,
+      "reason": "dog gene found in Ensembl (ENSCAFG00000000386) but not in the DS06 matrix, which was pre-filtered by CPM"
+     },
+     {
+      "set": "type1_interferon",
+      "set_label": "Type 1 interferon",
+      "gene": "IFI44",
+      "mapped": true,
+      "row_id": "ENSCAFG00000020342_IFI44",
+      "how": "symbol in DS06 row",
+      "reason": null
+     },
+     {
+      "set": "type1_interferon",
+      "set_label": "Type 1 interferon",
+      "gene": "IFI44L",
+      "mapped": true,
+      "row_id": "ENSCAFG00000020343_IFI44L",
+      "how": "symbol in DS06 row",
+      "reason": null
+     },
+     {
+      "set": "type1_interferon",
+      "set_label": "Type 1 interferon",
+      "gene": "IFIT1",
+      "mapped": true,
+      "row_id": "ENSCAFG00000009617_IFIT1",
+      "how": "symbol in DS06 row",
+      "reason": null
+     },
+     {
+      "set": "type1_interferon",
+      "set_label": "Type 1 interferon",
+      "gene": "IFIT3",
+      "mapped": true,
+      "row_id": "ENSCAFG00000031614_IFIT3",
+      "how": "symbol in DS06 row",
+      "reason": null
+     },
+     {
+      "set": "type1_interferon",
+      "set_label": "Type 1 interferon",
+      "gene": "ISG15",
+      "mapped": true,
+      "row_id": "ENSCAFG00000019348_ISG15",
+      "how": "symbol in DS06 row",
+      "reason": null
+     },
+     {
+      "set": "type1_interferon",
+      "set_label": "Type 1 interferon",
+      "gene": "MX1",
+      "mapped": true,
+      "row_id": "ENSCAFG00000010172_MX1",
+      "how": "symbol in DS06 row",
+      "reason": null
+     },
+     {
+      "set": "type1_interferon",
+      "set_label": "Type 1 interferon",
+      "gene": "MX2",
+      "mapped": true,
+      "row_id": "ENSCAFG00000010167_MX2",
+      "how": "symbol in DS06 row",
+      "reason": null
+     },
+     {
+      "set": "type1_interferon",
+      "set_label": "Type 1 interferon",
+      "gene": "OAS1",
+      "mapped": true,
+      "row_id": "ENSCAFG00000023556_OAS1",
+      "how": "symbol in DS06 row",
+      "reason": null
+     },
+     {
+      "set": "type1_interferon",
+      "set_label": "Type 1 interferon",
+      "gene": "OAS2",
+      "mapped": true,
+      "row_id": "ENSCAFG00000023107_OAS2",
+      "how": "symbol in DS06 row",
+      "reason": null
+     },
+     {
+      "set": "type1_interferon",
+      "set_label": "Type 1 interferon",
+      "gene": "RSAD2",
+      "mapped": true,
+      "row_id": "ENSCAFG00000003293_RSAD2",
+      "how": "symbol in DS06 row",
+      "reason": null
+     },
+     {
+      "set": "type1_interferon",
+      "set_label": "Type 1 interferon",
+      "gene": "CXCL10",
+      "mapped": true,
+      "row_id": "ENSCAFG00000008584_CXCL10",
+      "how": "symbol in DS06 row",
+      "reason": null
+     },
+     {
+      "set": "erythroid_control",
+      "set_label": "Erythroid (composition control)",
+      "gene": "ALAS2",
+      "mapped": true,
+      "row_id": "ENSCAFG00000014308_ALAS2",
+      "how": "symbol in DS06 row",
+      "reason": null
+     },
+     {
+      "set": "erythroid_control",
+      "set_label": "Erythroid (composition control)",
+      "gene": "HBB",
+      "mapped": false,
+      "row_id": null,
+      "how": null,
+      "reason": "no dog gene with this symbol in Ensembl, and no unnamed DS06 row annotated as it"
+     },
+     {
+      "set": "erythroid_control",
+      "set_label": "Erythroid (composition control)",
+      "gene": "SLC4A1",
+      "mapped": true,
+      "row_id": "ENSCAFG00000014228_SLC4A1",
+      "how": "symbol in DS06 row",
+      "reason": null
+     }
+    ]
+   }
+  },
+  {
+   "kind": "library_sizes",
+   "title": "Library size and ALAS2 rank per sample",
+   "sort_order": 7,
+   "payload": {
+    "rows": [
+     {
+      "sample": "low_0_D0",
+      "dog": "low_0",
+      "day": 0,
+      "library_size": 36910387,
+      "alas2_percentile": 0.9951
+     },
+     {
+      "sample": "low_1_D0",
+      "dog": "low_1",
+      "day": 0,
+      "library_size": 30546225,
+      "alas2_percentile": 0.9783
+     },
+     {
+      "sample": "low_1_D1",
+      "dog": "low_1",
+      "day": 1,
+      "library_size": 38449881,
+      "alas2_percentile": 0.9905
+     },
+     {
+      "sample": "low_1_D3",
+      "dog": "low_1",
+      "day": 3,
+      "library_size": 40119231,
+      "alas2_percentile": 0.9949
+     },
+     {
+      "sample": "low_1_D4",
+      "dog": "low_1",
+      "day": 4,
+      "library_size": 15520273,
+      "alas2_percentile": 0.9998
+     },
+     {
+      "sample": "low_1_D6",
+      "dog": "low_1",
+      "day": 6,
+      "library_size": 31614103,
+      "alas2_percentile": 0.9889
+     },
+     {
+      "sample": "low_1_D8",
+      "dog": "low_1",
+      "day": 8,
+      "library_size": 33352573,
+      "alas2_percentile": 0.997
+     },
+     {
+      "sample": "low_2_D0",
+      "dog": "low_2",
+      "day": 0,
+      "library_size": 31670082,
+      "alas2_percentile": 0.9939
+     },
+     {
+      "sample": "low_2_D1",
+      "dog": "low_2",
+      "day": 1,
+      "library_size": 37644149,
+      "alas2_percentile": 0.992
+     },
+     {
+      "sample": "low_2_D3",
+      "dog": "low_2",
+      "day": 3,
+      "library_size": 36122922,
+      "alas2_percentile": 0.9948
+     },
+     {
+      "sample": "low_2_D4",
+      "dog": "low_2",
+      "day": 4,
+      "library_size": 8940663,
+      "alas2_percentile": 0.9998
+     },
+     {
+      "sample": "low_2_D6",
+      "dog": "low_2",
+      "day": 6,
+      "library_size": 35048412,
+      "alas2_percentile": 0.9969
+     },
+     {
+      "sample": "low_2_D8",
+      "dog": "low_2",
+      "day": 8,
+      "library_size": 44058833,
+      "alas2_percentile": 0.999
+     },
+     {
+      "sample": "high_1_D0",
+      "dog": "high_1",
+      "day": 0,
+      "library_size": 33642905,
+      "alas2_percentile": 0.9943
+     },
+     {
+      "sample": "high_1_D1",
+      "dog": "high_1",
+      "day": 1,
+      "library_size": 36128171,
+      "alas2_percentile": 0.9881
+     },
+     {
+      "sample": "high_1_D3",
+      "dog": "high_1",
+      "day": 3,
+      "library_size": 7237355,
+      "alas2_percentile": 0.9998
+     },
+     {
+      "sample": "high_1_D4",
+      "dog": "high_1",
+      "day": 4,
+      "library_size": 1318009,
+      "alas2_percentile": 0.9992
+     },
+     {
+      "sample": "high_1_D6",
+      "dog": "high_1",
+      "day": 6,
+      "library_size": 35435126,
+      "alas2_percentile": 0.9583
+     },
+     {
+      "sample": "high_1_D8",
+      "dog": "high_1",
+      "day": 8,
+      "library_size": 36459084,
+      "alas2_percentile": 0.9964
+     },
+     {
+      "sample": "high_2_D0",
+      "dog": "high_2",
+      "day": 0,
+      "library_size": 39640045,
+      "alas2_percentile": 0.9926
+     },
+     {
+      "sample": "high_2_D1",
+      "dog": "high_2",
+      "day": 1,
+      "library_size": 41668818,
+      "alas2_percentile": 0.992
+     },
+     {
+      "sample": "high_2_D3",
+      "dog": "high_2",
+      "day": 3,
+      "library_size": 4201004,
+      "alas2_percentile": 0.9998
+     },
+     {
+      "sample": "high_2_D4",
+      "dog": "high_2",
+      "day": 4,
+      "library_size": 824187,
+      "alas2_percentile": 0.9989
+     },
+     {
+      "sample": "high_2_D6",
+      "dog": "high_2",
+      "day": 6,
+      "library_size": 32230621,
+      "alas2_percentile": 0.9885
+     },
+     {
+      "sample": "high_2_D8",
+      "dog": "high_2",
+      "day": 8,
+      "library_size": 38160806,
+      "alas2_percentile": 0.9985
+     },
+     {
+      "sample": "high_3_D0",
+      "dog": "high_3",
+      "day": 0,
+      "library_size": 34985849,
+      "alas2_percentile": 0.9909
+     },
+     {
+      "sample": "high_3_D1",
+      "dog": "high_3",
+      "day": 1,
+      "library_size": 31333888,
+      "alas2_percentile": 0.9934
+     },
+     {
+      "sample": "high_3_D3",
+      "dog": "high_3",
+      "day": 3,
+      "library_size": 4328737,
+      "alas2_percentile": 0.9998
+     }
+    ]
+   }
+  },
+  {
+   "kind": "interpretation",
+   "title": "Explanation and interpretation",
+   "sort_order": 9,
+   "payload": {
+    "sections": [
+     {
+      "heading": "Question",
+      "paragraphs": [
+       "Do the whole-blood signatures of severe human malaria (neutrophil granule and type 1 interferon genes) rise in the five B. rossi Beagles between day 0 and the last sample before treatment, before clinical deterioration, and earlier at the high dose?"
+      ]
+     },
+     {
+      "heading": "What was done",
+      "paragraphs": [
+       "DS06 whole-blood RNA-seq (12,362 genes, 28 samples; 5 dogs with a time course). Genes were ranked inside each sample; a set score is the mean rank percentile of its genes. Mapped genes: neutrophil granule 6 of 11, type 1 interferon 11 of 11, erythroid control 2 of 3. Not in the matrix: MPO, ELANE, OLFM4, CEACAM8, ARG1, HBB.",
+       "The primary result is the change per dog from day 0 to day 4 (day 3 for high_3, which died on day 4), compared with 2,000 random gene sets matched on day-0 expression, because the day 3 and day 4 libraries collapse and shift to reticulocyte transcripts. Timing used the DS02 habitus score; the DS06-to-DS02 dog mapping is probable only for high_3 and unverified for the others, so it was run under both possible mappings inside each dose group. Days 6 and 8 follow treatment and are shown only."
+      ]
+     },
+     {
+      "heading": "Result",
+      "paragraphs": [
+       "Type 1 interferon: higher than day 0 in 5 of 5 dogs (sign-test p 0.062), beyond the composition background in 4 of 5. Per dog: low_1 +0.305 (background percentile 1.00); low_2 +0.422 (background percentile 1.00); high_1 +0.174 (background percentile 1.00); high_2 +0.027 (background percentile 0.77); high_3 +0.386 (background percentile 1.00). The signature appears.",
+       "Neutrophil granule: higher in 5 of 5 dogs (p 0.062), beyond background in 4 of 5. Per dog: low_1 +0.102 (background percentile 0.96); low_2 +0.130 (background percentile 0.99); high_1 +0.167 (background percentile 1.00); high_2 +0.276 (background percentile 1.00); high_3 +0.190 (background percentile 1.00). The signature appears.",
+       "Erythroid control: higher in 5 of 5 dogs, beyond background in 5 of 5 (the reticulocyte shift).",
+       "Timing (working mapping). Interferon: low_1: risen day 3, habitus fell day 4; low_2: risen day 1, habitus fell day 4; high_1: risen day 1, habitus fell day 2; high_2: risen day 1, habitus fell day 2; high_3: risen day 1, habitus fell day 3. Neutrophil granule: low_1: risen day 3, habitus fell day 4; low_2: risen day 3, habitus fell day 4; high_1: risen day 1, habitus fell day 2; high_2: risen day 4, habitus fell day 2; high_3: risen day 1, habitus fell day 3. Risen before deterioration in at least one dog: interferon yes (alternative mapping yes), neutrophil granule yes (alternative yes). Earlier at the high dose: interferon no, neutrophil granule no.",
+       "Pre-treatment day of the highest score (D1, D3, D4): interferon low_1 day 4; low_2 day 4; high_1 day 1; high_2 day 1; high_3 day 3; neutrophil granule low_1 day 4; low_2 day 4; high_1 day 4; high_2 day 4; high_3 day 3. The spec rule for 'earlier at the high dose' needs every high-dose dog to rise before both low-dose dogs; it is not met.",
+       "Construct checks (median of per-dog Spearman rho over 3 or 4 pre-treatment points, working mapping): interferon score with plasma IP-10 +1.00, neutrophil-granule score with band neutrophils +0.80, erythroid score with reticulocyte % +1.00."
+      ]
+     },
+     {
+      "heading": "What this does not show",
+      "paragraphs": [
+       "Five dogs from one experiment (one source) show a pattern, not a rate: no sign count can reach p < 0.05. Dose is aliased with dog, and the dog mapping to the clinical data is unverified except for high_3. It does not show that these genes mark severe natural babesiosis, that they predict anything, or that the human malaria signatures transfer: several neutrophil granule genes (the promyelocyte genes) are not in the pre-filtered matrix. No genome-wide screen was run."
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

@@ -8,7 +8,7 @@ using static Babesiosis.Console.DatasetLoader;
 namespace Babesiosis.Console
 {
   /// <summary>
-  /// Loads experiment result files (core/data/experiments/&lt;code&gt;.json, written by scripts/experiment_*.py) into
+  /// Loads experiment load files (/experiments/&lt;package&gt;/out/db/&lt;code&gt;.json, see /experiments/run-instructions.md) into
   /// dbo.experiment, dbo.association, dbo.cluster_assignment and dbo.experiment_result. Runs after
   /// <see cref="DatasetLoader"/>: variables and subjects are resolved by code within the experiment's dataset.
   /// One transaction per experiment; the experiment row is merged by code and its child rows are replaced.
@@ -20,18 +20,25 @@ namespace Babesiosis.Console
 
     public async Task<int> RunAsync(CancellationToken cancellationToken)
     {
-      var folder = Path.Combine(settings.ReviewRoot, "data", "experiments");
+      var folder = settings.ExperimentsRoot;
       Out.WriteLine();
-      Out.WriteLine($"Reading experiments from {folder}");
+      Out.WriteLine($"Reading experiments from {Path.Combine(folder, "<package>", "out", "db")}");
 
       if (!Directory.Exists(folder))
       {
-        _warnings.Add($"Folder {folder} not found. Run a scripts/experiment_*.py script first. Nothing loaded.");
+        _warnings.Add($"Folder {folder} not found. Nothing loaded.");
         PrintReport(0, 0, 0, 0);
         return 0;
       }
 
-      var files = Directory.GetFiles(folder, "*.json").OrderBy(f => f, StringComparer.OrdinalIgnoreCase).ToList();
+      // One load file per experiment: <root>/<package>/out/db/<code>.json (see /experiments/run-instructions.md).
+      var files = Directory.GetDirectories(folder)
+        .Select(package => Path.Combine(package, "out", "db"))
+        .Where(Directory.Exists)
+        .SelectMany(db => Directory.GetFiles(db, "*.json"))
+        .OrderBy(f => f, StringComparer.OrdinalIgnoreCase)
+        .ToList();
+      var seen = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase);
       int experiments = 0, associations = 0, clusters = 0, results = 0;
 
       foreach (var file in files)
@@ -42,8 +49,7 @@ namespace Babesiosis.Console
         {
           exp = JsonSerializer.Deserialize<ExperimentFile>(File.ReadAllText(file), TidyJson.Options)
                 ?? throw new InvalidDataException("empty file");
-          if (string.IsNullOrWhiteSpace(exp.Experiment.Code))
-            throw new InvalidDataException("experiment.code is missing");
+          Validate(exp, file, seen);
         }
         catch (Exception ex) when (ex is JsonException or InvalidDataException)
         {
@@ -76,6 +82,39 @@ namespace Babesiosis.Console
 
       PrintReport(experiments, associations, clusters, results);
       return _errors.Count == 0 ? 0 : 1;
+    }
+
+    /// <summary>Checks that would otherwise fail as a null reference or a SQL error, or load one file over another.</summary>
+    private static void Validate(ExperimentFile exp, string file, Dictionary<string, string> seen)
+    {
+      if (exp.Experiment is null || string.IsNullOrWhiteSpace(exp.Experiment.Code))
+        throw new InvalidDataException("experiment.code is missing");
+      var code = exp.Experiment.Code;
+      if (code.Length > 60)
+        throw new InvalidDataException($"experiment.code is {code.Length} characters (60 at most)");
+      if (!string.Equals(Path.GetFileNameWithoutExtension(file), code, StringComparison.OrdinalIgnoreCase))
+        throw new InvalidDataException($"the file name must be {code}.json");
+      if (seen.TryGetValue(code, out var other))
+        throw new InvalidDataException($"experiment code {code} is also in {other}");
+      seen[code] = file;
+      if (string.IsNullOrWhiteSpace(exp.Experiment.Name) || string.IsNullOrWhiteSpace(exp.Experiment.Method))
+        throw new InvalidDataException("experiment.name and experiment.method are required");
+      if (exp.Experiment.Method.Length > 50)
+        throw new InvalidDataException("experiment.method is longer than 50 characters");
+      if (exp.Associations is null || exp.ClusterAssignments is null || exp.Results is null)
+        throw new InvalidDataException("associations, cluster_assignments and results must be present (use [] when empty)");
+      if (exp.Experiment.Dataset is null && (exp.Associations.Count > 0 || exp.ClusterAssignments.Count > 0))
+        throw new InvalidDataException("associations and cluster_assignments need experiment.dataset");
+      foreach (var r in exp.Results)
+      {
+        if (string.IsNullOrWhiteSpace(r.Kind) || r.Kind.Length > 40)
+          throw new InvalidDataException("each result needs a kind of 40 characters at most");
+        if (r.Payload.ValueKind is not (JsonValueKind.Object or JsonValueKind.Array))
+          throw new InvalidDataException($"result {r.Kind} needs a payload that is an object or an array");
+      }
+      var repeated = exp.Results.GroupBy(r => r.Kind, StringComparer.Ordinal).FirstOrDefault(g => g.Count() > 1);
+      if (repeated is not null)
+        throw new InvalidDataException($"result kind {repeated.Key} is used more than once");
     }
 
     private async Task WriteAsync(ExperimentFile file, CancellationToken cancellationToken)

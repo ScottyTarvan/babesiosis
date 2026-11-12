@@ -1,0 +1,196 @@
+{
+ "dataset_id": "S-CB516",
+ "checks": [
+  {
+   "name": "dogs died, survived",
+   "observed": [
+    8,
+    7
+   ],
+   "expected": [
+    8,
+    7
+   ],
+   "tolerance": 0.0,
+   "source": "data.md; CB516 methods",
+   "pass": true
+  },
+  {
+   "name": "feature records",
+   "observed": 15,
+   "expected": 15,
+   "tolerance": 0.0,
+   "source": "data.md",
+   "pass": true
+  },
+  {
+   "name": "dogs with lethargy",
+   "observed": 15,
+   "expected": 15,
+   "tolerance": 0.0,
+   "source": "CB516 full text, results (n of 15)",
+   "pass": true
+  },
+  {
+   "name": "dogs with pale_mm",
+   "observed": 15,
+   "expected": 15,
+   "tolerance": 0.0,
+   "source": "CB516 full text, results (n of 15)",
+   "pass": true
+  },
+  {
+   "name": "dogs with pigmenturia",
+   "observed": 10,
+   "expected": 10,
+   "tolerance": 0.0,
+   "source": "CB516 full text, results (n of 15)",
+   "pass": true
+  },
+  {
+   "name": "dogs with icterus",
+   "observed": 6,
+   "expected": 6,
+   "tolerance": 0.0,
+   "source": "CB516 full text, results (n of 15)",
+   "pass": true
+  },
+  {
+   "name": "dogs with fever",
+   "observed": 5,
+   "expected": 5,
+   "tolerance": 0.0,
+   "source": "CB516 full text, results (n of 15)",
+   "pass": true
+  },
+  {
+   "name": "dogs with anorexia",
+   "observed": 4,
+   "expected": 4,
+   "tolerance": 0.0,
+   "source": "CB516 full text, results (n of 15)",
+   "pass": true
+  },
+  {
+   "name": "dogs with vomiting",
+   "observed": 4,
+   "expected": 4,
+   "tolerance": 0.0,
+   "source": "CB516 full text, results (n of 15)",
+   "pass": true
+  },
+  {
+   "name": "dogs with water_hammer_pulse",
+   "observed": 4,
+   "expected": 4,
+   "tolerance": 0.0,
+   "source": "CB516 full text, results (n of 15)",
+   "pass": true
+  },
+  {
+   "name": "dogs with epistaxis",
+   "observed": 3,
+   "expected": 3,
+   "tolerance": 0.0,
+   "source": "CB516 full text, results (n of 15)",
+   "pass": true
+  },
+  {
+   "name": "sex: female, male",
+   "observed": [
+    5,
+    10
+   ],
+   "expected": [
+    5,
+    10
+   ],
+   "tolerance": 0.0,
+   "source": "record",
+   "pass": true
+  },
+  {
+   "name": "dogs with neuter status missing",
+   "observed": 2,
+   "expected": 2,
+   "tolerance": 0.0,
+   "source": "record (#2 and #6)",
+   "pass": true
+  },
+  {
+   "name": "weight range kg",
+   "observed": [
+    7.0,
+    62.1
+   ],
+   "expected": [
+    7.0,
+    62.1
+   ],
+   "tolerance": 0.0,
+   "source": "record",
+   "pass": true
+  },
+  {
+   "name": "age range months",
+   "observed": [
+    7,
+    129
+   ],
+   "expected": [
+    7,
+    129
+   ],
+   "tolerance": 0.0,
+   "source": "record: 7 months to 10 years 9 months",
+   "pass": true
+  },
+  {
+   "name": "temperature range degC",
+   "observed": [
+    37.8,
+    40.5
+   ],
+   "expected": [
+    37.8,
+    40.5
+   ],
+   "tolerance": 0.0,
+   "source": "record",
+   "pass": true
+  },
+  {
+   "name": "assumed locations: France, Hungary, Russia, Croatia, Serbia, Switzerland",
+   "observed": [
+    4,
+    2,
+    1,
+    1,
+    1,
+    6
+   ],
+   "expected": [
+    4,
+    2,
+    1,
+    1,
+    1,
+    6
+   ],
+   "tolerance": 0.0,
+   "source": "record",
+   "pass": true
+  },
+  {
+   "name": "supplemental file 2 has no numeric table",
+   "observed": "caption only",
+   "expected": "caption only",
+   "tolerance": 0.0,
+   "source": "record",
+   "pass": true
+  }
+ ],
+ "n_dogs": 15,
+ "n_records": 15,
+ "n_failed": 0
+}

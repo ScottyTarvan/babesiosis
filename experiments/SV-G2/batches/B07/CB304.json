@@ -1,0 +1,20 @@
+{
+  "id": "CB304",
+  "text_used": "data/markdown/CB304.md",
+  "extracted_by": "claude-opus-5-5 SV-G2 B07",
+  "extracted_utc": "2026-11-12T00:00:00Z",
+  "schema_version": "v2",
+  "setting": "referral hospital",
+  "sample_timing": "not stated",
+  "article_notes": "B. gibsoni (PCR) vs E. canis vs healthy controls: platelet indices and morphometry. Comparisons are infected vs healthy or babesiosis vs ehrlichiosis, not severity. Dogs with babesiosis were also grouped by degree of thrombocytopenia (mild/moderate/severe), a laboratory grading by platelet count rather than clinical severity; the result is reported only in text, tested together with healthy controls, with no per-group values (the table is not in the text). Not extracted.",
+  "skipped_infected_vs_healthy": 6,
+  "severity_definitions": [],
+  "associations": [],
+  "not_extracted": [
+    {
+      "what": "Platelet indices (MPV, PCT, PDW, MPC, MPM, large platelets) across mild, moderate and severe thrombocytopenia groups in B. gibsoni dogs",
+      "reason": "outcome groups mixed with controls",
+      "note": "Text only says PCT and PDW differed significantly across control and the three groups; no per-group values or group sizes; grouping is by platelet count, not clinical severity."
+    }
+  ]
+}

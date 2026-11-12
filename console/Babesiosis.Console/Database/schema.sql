@@ -31,25 +31,27 @@ END;
 IF COL_LENGTH(N'dbo.category', N'label') IS NULL
   ALTER TABLE dbo.category ADD label NVARCHAR(100) NULL;
 
+-- name is the formal category name; label is the short plain-language name the
+-- web app shows (with the code beside it and the formal name on hover).
 MERGE dbo.category AS t
 USING (VALUES
-  ('ERY', N'Erythrocyte injury, haemolysis, anaemia and immune-mediated processes', 1),
-  ('INF', N'Inflammation, innate/adaptive immunity and immunopathology',             2),
-  ('END', N'Endothelium, microcirculation, perfusion and tissue hypoxia',            3),
-  ('COA', N'Coagulation, platelets, immunothrombosis and DIC',                       4),
-  ('REN', N'Renal injury and renal function',                                        5),
-  ('PUL', N'Pulmonary injury and gas exchange',                                      6),
-  ('NEU', N'Neurological and cerebral disease',                                      7),
-  ('CAR', N'Cardiac injury and haemodynamics',                                       8),
-  ('MET', N'Hepatic, metabolic, endocrine and acid-base disturbances',               9),
-  ('OXO', N'Oxidative stress, host-parasite interaction, omics and virulence',      10),
-  ('SEV', N'Multisystem clinical phenotype, severity and outcome',                  11)
-) AS s (category_code, name, sort_order)
+  ('ERY', N'Erythrocyte injury, haemolysis, anaemia and immune-mediated processes', N'Red cells and anaemia',                  1),
+  ('INF', N'Inflammation, innate/adaptive immunity and immunopathology',             N'Inflammation and immunity',              2),
+  ('END', N'Endothelium, microcirculation, perfusion and tissue hypoxia',            N'Endothelium and perfusion',              3),
+  ('COA', N'Coagulation, platelets, immunothrombosis and DIC',                       N'Coagulation and platelets',              4),
+  ('REN', N'Renal injury and renal function',                                        N'Kidney',                                 5),
+  ('PUL', N'Pulmonary injury and gas exchange',                                      N'Lung and gas exchange',                  6),
+  ('NEU', N'Neurological and cerebral disease',                                      N'Brain and nervous system',               7),
+  ('CAR', N'Cardiac injury and haemodynamics',                                       N'Heart and haemodynamics',                8),
+  ('MET', N'Hepatic, metabolic, endocrine and acid-base disturbances',               N'Liver, metabolism and acid-base',        9),
+  ('OXO', N'Oxidative stress, host-parasite interaction, omics and virulence',      N'Oxidative stress, omics and virulence', 10),
+  ('SEV', N'Multisystem clinical phenotype, severity and outcome',                  N'Severity, phenotype and outcome',       11)
+) AS s (category_code, name, label, sort_order)
 ON t.category_code = s.category_code
-WHEN MATCHED AND (t.name <> s.name OR t.sort_order <> s.sort_order) THEN
-  UPDATE SET name = s.name, sort_order = s.sort_order
+WHEN MATCHED AND (t.name <> s.name OR t.sort_order <> s.sort_order OR ISNULL(t.label, N'') <> s.label) THEN
+  UPDATE SET name = s.name, label = s.label, sort_order = s.sort_order
 WHEN NOT MATCHED BY TARGET THEN
-  INSERT (category_code, name, sort_order) VALUES (s.category_code, s.name, s.sort_order);
+  INSERT (category_code, name, label, sort_order) VALUES (s.category_code, s.name, s.label, s.sort_order);
 
 /* ---------------------------------------------------------------------------
    article - one row per article file
@@ -175,6 +177,35 @@ IF COL_LENGTH(N'dbo.article', N'text_hash') IS NULL
     text_hash       BINARY(32)    NULL,
     text_loaded_at  DATETIME2(0)  NULL;
 
+/* Derived columns for the web app's overview. Computed and persisted, so they
+   follow every reload of the article without a loader change.
+
+   country_normalised: country is free text (183 spellings). Take the text before
+   the first "(", ";", "," or "/", trimmed; map Türkiye to Turkey, Republic of
+   Korea to South Korea and United States to USA; empty values and values that
+   start "not ", "unspecified" or "unclear" are NULL (not stated).
+
+   category_confidence / category_source: how the primary category was assigned,
+   from the articles.jsonl record (high / low from the NLP step; NULL with source
+   "agent ..." when NLP found no category and the extraction agent's label was kept). */
+IF COL_LENGTH(N'dbo.article', N'country_normalised') IS NULL
+  ALTER TABLE dbo.article ADD country_normalised AS
+    CAST(CASE
+      WHEN LTRIM(RTRIM(LEFT(ISNULL(country, N''), PATINDEX(N'%[(;,/]%', ISNULL(country, N'') + N'(') - 1))) = N''
+        OR LTRIM(RTRIM(LEFT(ISNULL(country, N''), PATINDEX(N'%[(;,/]%', ISNULL(country, N'') + N'(') - 1))) LIKE N'not %'
+        OR LTRIM(RTRIM(LEFT(ISNULL(country, N''), PATINDEX(N'%[(;,/]%', ISNULL(country, N'') + N'(') - 1))) LIKE N'unspecified%'
+        OR LTRIM(RTRIM(LEFT(ISNULL(country, N''), PATINDEX(N'%[(;,/]%', ISNULL(country, N'') + N'(') - 1))) LIKE N'unclear%' THEN NULL
+      WHEN LTRIM(RTRIM(LEFT(ISNULL(country, N''), PATINDEX(N'%[(;,/]%', ISNULL(country, N'') + N'(') - 1))) = N'Türkiye' THEN N'Turkey'
+      WHEN LTRIM(RTRIM(LEFT(ISNULL(country, N''), PATINDEX(N'%[(;,/]%', ISNULL(country, N'') + N'(') - 1))) = N'Republic of Korea' THEN N'South Korea'
+      WHEN LTRIM(RTRIM(LEFT(ISNULL(country, N''), PATINDEX(N'%[(;,/]%', ISNULL(country, N'') + N'(') - 1))) = N'United States' THEN N'USA'
+      ELSE LTRIM(RTRIM(LEFT(ISNULL(country, N''), PATINDEX(N'%[(;,/]%', ISNULL(country, N'') + N'(') - 1)))
+    END AS NVARCHAR(100)) PERSISTED;
+
+IF COL_LENGTH(N'dbo.article', N'category_confidence') IS NULL
+  ALTER TABLE dbo.article ADD
+    category_confidence AS CAST(JSON_VALUE(source_json, '$.category_confidence') AS VARCHAR(10)) PERSISTED,
+    category_source     AS CAST(JSON_VALUE(source_json, '$.category_source') AS VARCHAR(60)) PERSISTED;
+
 /* ---------------------------------------------------------------------------
    article_category - secondary tags and comparator categories
    (the primary category stays on article.primary_category_id)
@@ -273,14 +304,41 @@ BEGIN
   CREATE INDEX IX_article_section_kind ON dbo.article_section (article_id, section_kind, section_order);
 END;
 
+/* ---------------------------------------------------------------------------
+   synthesis_section - the narrative syntheses in core/search/synthesis, split
+   by heading: one document per category (<CODE>.md, sections such as
+   "Question this direction asks" and "Evidence base"), CROSS.md (one section
+   per numbered theme) and QUESTIONS.md (one section per "## " heading).
+   The text is stored as written (Markdown). Loaded by SynthesisLoader
+   (console --synthesis-only), which replaces a document's rows as a whole.
+--------------------------------------------------------------------------- */
+IF OBJECT_ID(N'dbo.synthesis_section', N'U') IS NULL
+BEGIN
+  CREATE TABLE dbo.synthesis_section
+  (
+    synthesis_section_id INT IDENTITY(1,1) NOT NULL CONSTRAINT PK_synthesis_section PRIMARY KEY,
+    document_code        VARCHAR(10)    NOT NULL,                  -- ERY .. SEV, CROSS, QUESTIONS
+    section_order        SMALLINT       NOT NULL,                  -- reading order within the document, from 1
+    section_key          VARCHAR(60)    NOT NULL,                  -- intro, question, evidence-base, theme-1, q1, summary-table, ...
+    heading              NVARCHAR(400)  NOT NULL,                  -- as written, Markdown emphasis kept
+    body                 NVARCHAR(MAX)  NOT NULL,                  -- Markdown, as written
+    source_file          NVARCHAR(200)  NOT NULL,                  -- search/synthesis/REN.md
+    file_modified_at     DATETIME2(0)   NOT NULL,                  -- UTC, the file's last write time
+    loaded_at            DATETIME2(0)   NOT NULL CONSTRAINT DF_synthesis_section_loaded_at DEFAULT SYSUTCDATETIME(),
+
+    CONSTRAINT UQ_synthesis_section_order UNIQUE (document_code, section_order),
+    CONSTRAINT UQ_synthesis_section_key   UNIQUE (document_code, section_key)
+  );
+END;
+
 COMMIT TRANSACTION;
 
 /* ===========================================================================
    Experiments: per-subject measurements from the downloaded datasets, and the
    results of analyses run over them.
 
-   Source: core/data/tidy/<dataset>.json        (scripts/tidy_<dataset>.py)
-           core/data/experiments/<code>.json    (scripts/experiment_*.py)
+   Source: core/data/tidy/<dataset>.json              (deleted on 2026-11-12; the dataset tables are empty)
+           experiments/<package>/out/db/<code>.json   (see experiments/run-instructions.md)
    Loaded by DatasetLoader and ExperimentLoader (console --datasets-only).
 
    Measurements are stored long (one row per subject x variable x time point)

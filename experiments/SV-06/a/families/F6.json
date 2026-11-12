@@ -1,0 +1,453 @@
+{
+ "family": "F6 Endocrine and metabolic",
+ "agent_summary": "Cortisol, thyroid hormones and lactate/hypoglycaemia are NOT gaps: each has 5 to 8 independent canine severity or outcome units (cortisol and T4 mostly Onderstepoort B. rossi: CB040, CH31, CB342, CH09, plus CB486 or CH35 from B. canis; lactate in B. rossi, B. canis and B. gibsoni). The two gaps are the kynurenine pathway (serum kynurenine measured only infected vs healthy in B. canis, CB091; canine LC-MS/MS method validated; IDO1/KMO in DS06, per-dog metabolite tables in public supplements S-CB091/S-CB071) and copeptin/vasopressin (never measured in canine babesiosis; canine ELISA used but its agreement with AVP is doubtful). Of 5 grade >=2 mechanisms, 2 (40%) are gaps. Surprises: adrenal androgens (DHEA) have never been measured in dogs with babesiosis, and the Onderstepoort endocrine units may share patients.",
+ "mechanisms": [
+  {
+   "mechanism_id": "F6-01",
+   "family": "F6 Endocrine and metabolic",
+   "mechanism": "Adrenal response (cortisol, cortisol:ACTH, adrenal androgens)",
+   "added_by_agent": "no",
+   "human_conditions": [
+    "sepsis"
+   ],
+   "hu_articles": [
+    "HU019"
+   ],
+   "human_key_dois": [
+    "https://doi.org/10.1371/journal.pone.0214312",
+    "https://doi.org/10.1111/j.1365-2265.2004.01923.x"
+   ],
+   "human_n_studies": 2,
+   "human_grade": 2,
+   "human_direction": "higher basal cortisol in non-survivors (sepsis); adrenal androgens and ratios mostly not independent",
+   "cb_confirmed": [
+    {
+     "id": "CB040",
+     "what": "admission serum cortisol, 320 B. rossi dogs, died vs survived and collapsed vs not; higher with death (OR, ROC)",
+     "severity_contrast": true,
+     "cohort": null
+    },
+    {
+     "id": "CB338",
+     "what": "cortisol and ACTH, 95 B. rossi dogs, died vs hospitalised survivors vs outpatients; both higher in non-survivors",
+     "severity_contrast": true,
+     "cohort": "CH31"
+    },
+    {
+     "id": "CB352",
+     "what": "basal and ACTH-stimulated cortisol and cortisol:ACTH ratio, 68 B. rossi dogs by outcome; cortisol higher in deaths, ratio not different",
+     "severity_contrast": true,
+     "cohort": "CH31"
+    },
+    {
+     "id": "CB342",
+     "what": "cortisol, ACTH, post-ACTH cortisol in 36 B. rossi dogs by glucose group; cortisol higher in hypoglycaemic dogs",
+     "severity_contrast": true,
+     "cohort": null
+    },
+    {
+     "id": "CB105",
+     "what": "serial cortisol in 5 experimental B. rossi Beagles, high vs low dose; faster, larger rise with severity",
+     "severity_contrast": true,
+     "cohort": "CH09"
+    },
+    {
+     "id": "CB486",
+     "what": "serum cortisol and insulin, B. canis survivors vs non-survivors vs healthy (abstract only, n not given)",
+     "severity_contrast": true,
+     "cohort": null
+    },
+    {
+     "id": "CB083",
+     "what": "plasma cortisol, B. vogeli infected vs uninfected only",
+     "severity_contrast": false,
+     "cohort": null
+    },
+    {
+     "id": "CB037",
+     "what": "cytokines correlated with cortisol in B. rossi (the severity contrast is for cytokines, not cortisol)",
+     "severity_contrast": false,
+     "cohort": null
+    }
+   ],
+   "cb_rejected": [
+    "CB035, CB119, CB157, CB371, CB373, CB508: reviews or other markers; cortisol only mentioned",
+    "Most CB text hits (CB028, CB039, CB041 and others): keyword in discussion or references only",
+    "No CB article measured DHEA or other adrenal androgens"
+   ],
+   "canine_pubmed": {
+    "queries": [
+     "(dog OR canine) AND babesi* AND (cortisol OR thyroxine OR thyroid OR ACTH)",
+     "cortisol[Title] AND (sepsis[Title] OR septic[Title]) AND (mortality[Title] OR prognostic[Title] OR outcome[Title])",
+     "(cortisol) AND (sepsis OR septic shock OR malaria) AND mortality AND meta-analysis",
+     "(dog OR canine) AND (cortisol OR thyroxine) AND chemiluminescent immunoassay AND validation"
+    ],
+    "dog_babesiosis_dois": [
+     "https://doi.org/10.1016/j.vetpar.2019.06.005",
+     "https://doi.org/10.1016/j.vetpar.2007.06.010",
+     "https://doi.org/10.1016/j.vetpar.2008.03.023",
+     "https://doi.org/10.4102/jsava.v78i4.326",
+     "https://doi.org/10.1016/j.ttbdis.2022.102107"
+    ]
+   },
+   "canine_status": "severity_tested",
+   "canine_severity_units": 5,
+   "canine_assay": "validated",
+   "assay_evidence": [
+    "https://doi.org/10.1016/j.vetpar.2007.06.010",
+    "https://doi.org/10.1016/j.ttbdis.2022.102107"
+   ],
+   "dog_genes": [
+    "POMC",
+    "NR3C1"
+   ],
+   "testable_now": "public_file",
+   "testable_detail": "DS06 has NR3C1 (glucocorticoid receptor, whole-blood gene expression, not the hormone); no DS07 master; cortisol not in DS02",
+   "gap": "no",
+   "notes": "5 units: CB040, CH31 (CB338+CB352), CB342, CH09 (CB105), CB486 (B. canis). 4 of 5 are Onderstepoort B. rossi; CB040 (2006-2016 patients) and CB342 (2007) may share patients with CH31, which cohorts.json does not resolve. Untested parts: adrenal androgens (never measured) and the cortisol:ACTH ratio (tested once by outcome, CB352, null). Assay graded validated as standard canine clinical endocrine immunoassays; no separate validation DOI retrieved.",
+   "keywords": [],
+   "ds07_desc": []
+  },
+  {
+   "mechanism_id": "F6-02",
+   "family": "F6 Endocrine and metabolic",
+   "mechanism": "Thyroid hormones (euthyroid sick syndrome)",
+   "added_by_agent": "no",
+   "human_conditions": [
+    "sepsis"
+   ],
+   "hu_articles": [
+    "HU020"
+   ],
+   "human_key_dois": [
+    "https://doi.org/10.1038/s41598-018-32543-7",
+    "https://doi.org/10.1016/j.ajem.2021.02.014",
+    "https://doi.org/10.1530/EJE-10-0695",
+    "https://doi.org/10.3389/fendo.2026.1767422"
+   ],
+   "human_n_studies": 8,
+   "human_grade": 3,
+   "human_direction": "lower T3 and T4 in non-survivors (sepsis meta-analysis of 8 studies, 1578 patients); TSH not different",
+   "cb_confirmed": [
+    {
+     "id": "CB040",
+     "what": "total T4, 320 B. rossi dogs, died vs survived and collapsed; low T4 with death",
+     "severity_contrast": true,
+     "cohort": null
+    },
+    {
+     "id": "CB338",
+     "what": "TT4, fT4, TSH, 95 B. rossi dogs by outcome; lower T4 in non-survivors, TSH unchanged",
+     "severity_contrast": true,
+     "cohort": "CH31"
+    },
+    {
+     "id": "CB342",
+     "what": "TT4, fT4, TSH by glucose group, 36 B. rossi dogs; lower T4 in hypoglycaemic dogs",
+     "severity_contrast": true,
+     "cohort": null
+    },
+    {
+     "id": "CB105",
+     "what": "serial T4 and TSH, 5 experimental B. rossi Beagles, high vs low dose; deeper, faster T4 fall with severity",
+     "severity_contrast": true,
+     "cohort": "CH09"
+    },
+    {
+     "id": "CB441",
+     "what": "TT4, fT4 in 23 B. canis dogs, azotaemic vs not (ns) and correlation with creatinine and urea (significant)",
+     "severity_contrast": true,
+     "cohort": "CH35"
+    },
+    {
+     "id": "CB503",
+     "what": "T3, TT4, fT4, TSH in 13 B. canis vs 10 healthy; T3 inversely correlated with urea and creatinine within infected (correlation only)",
+     "severity_contrast": false,
+     "cohort": "CH37"
+    },
+    {
+     "id": "CB204",
+     "what": "T3, T4, fT4, TSH in 12 dogs with E. canis with or without B. vogeli, before vs after doxycycline",
+     "severity_contrast": false,
+     "cohort": null
+    }
+   ],
+   "cb_rejected": [
+    "CB035, CB037, CB119, CB157, CB371, CB373, CB508: thyroid only mentioned (review or other marker)",
+    "CB413, CB454, CB493, CB517, CB533, CB534 text hits: T3/T4 string or discussion only"
+   ],
+   "canine_pubmed": {
+    "queries": [
+     "(dog OR canine) AND babesi* AND (cortisol OR thyroxine OR thyroid OR ACTH)",
+     "(low T3 OR triiodothyronine OR non-thyroidal illness) AND sepsis AND mortality AND (meta-analysis OR cohort)",
+     "(thyroid OR triiodothyronine OR thyroxine)[Title] AND (sepsis OR septic OR malaria)[Title] AND (mortality OR prognosis OR meta-analysis)"
+    ],
+    "dog_babesiosis_dois": [
+     "https://doi.org/10.1016/j.vetpar.2007.06.010",
+     "https://doi.org/10.1016/j.vetpar.2019.06.005",
+     "https://doi.org/10.1016/j.ttbdis.2022.102107",
+     "https://doi.org/10.1016/j.vetpar.2015.04.023",
+     "https://doi.org/10.2478/v10213-012-0092-3"
+    ]
+   },
+   "canine_status": "severity_tested",
+   "canine_severity_units": 5,
+   "canine_assay": "validated",
+   "assay_evidence": [
+    "https://doi.org/10.1016/j.vetpar.2007.06.010",
+    "https://doi.org/10.1016/j.vetpar.2015.04.023"
+   ],
+   "dog_genes": [
+    "TTR",
+    "SERPINA7"
+   ],
+   "testable_now": "public_file",
+   "testable_detail": "DS07 master E2R5U8 (TTR, transthyretin, 16% coverage): a thyroid hormone carrier, not T4/T3 itself; SERPINA7 not found; no thyroid hormone in DS02 or DS06",
+   "gap": "no",
+   "notes": "5 units: CB040, CH31, CB342, CH09 (all Onderstepoort B. rossi, possible patient overlap as for F6-01) and CH35 (Warsaw B. canis). CH37 adds a within-infected correlation with azotaemia. T3 is the least tested by outcome. TTR in DS07 is an indirect proxy that can be tested now.",
+   "keywords": [],
+   "ds07_desc": []
+  },
+  {
+   "mechanism_id": "F6-03",
+   "family": "F6 Endocrine and metabolic",
+   "mechanism": "Lactate and hypoglycaemia",
+   "added_by_agent": "no",
+   "human_conditions": [
+    "malaria",
+    "sepsis"
+   ],
+   "hu_articles": [
+    "HU018",
+    "HU019",
+    "HU010"
+   ],
+   "human_key_dois": [
+    "https://doi.org/10.3390/biology10111085",
+    "https://doi.org/10.1186/1475-2875-4-1",
+    "https://doi.org/10.1371/journal.pone.0086737"
+   ],
+   "human_n_studies": 30,
+   "human_grade": 3,
+   "human_direction": "higher lactate in severe and fatal falciparum malaria (meta-analysis of 30 studies); hypoglycaemia and hyperlactataemia carry the highest case fatality",
+   "cb_confirmed": [
+    {
+     "id": "CB040",
+     "what": "lactate and glucose, 320 B. rossi dogs, died vs survived; hyperlactataemia and hypoglycaemia raise odds of death",
+     "severity_contrast": true,
+     "cohort": null
+    },
+    {
+     "id": "CB516",
+     "what": "hand-held lactate and glucose, B. canis, non-survivors vs survivors; lactate higher, glucose not different",
+     "severity_contrast": true,
+     "cohort": "CH21"
+    },
+    {
+     "id": "CB263",
+     "what": "lactate within 2 h of presentation, non-survivors vs survivors (species unspecified, India)",
+     "severity_contrast": true,
+     "cohort": "CH18"
+    },
+    {
+     "id": "CB074",
+     "what": "lactate prognostic in B. gibsoni survivors vs non-survivors (ROC)",
+     "severity_contrast": true,
+     "cohort": "CH08"
+    },
+    {
+     "id": "CB486",
+     "what": "glucose with cortisol and insulin, B. canis survivors vs non-survivors",
+     "severity_contrast": true,
+     "cohort": null
+    },
+    {
+     "id": "CB537",
+     "what": "glucose lower in severe vs mild B. canis (descriptive only)",
+     "severity_contrast": true,
+     "cohort": null
+    },
+    {
+     "id": "CB394",
+     "what": "glucose, complicated vs uncomplicated B. canis (ns)",
+     "severity_contrast": true,
+     "cohort": "CH33"
+    },
+    {
+     "id": "CB112",
+     "what": "glucose and lactate, complicated vs uncomplicated B. rossi (direction not stated; hypoglycaemia and hyperlactataemia are part of the complicated definition, so circular)",
+     "severity_contrast": true,
+     "cohort": null
+    },
+    {
+     "id": "CB342",
+     "what": "dogs grouped by glucose for endocrine comparison; glucose is the grouping variable",
+     "severity_contrast": false,
+     "cohort": null
+    },
+    {
+     "id": "CB340",
+     "what": "insulin by glucose group, 94 B. rossi dogs; glucose is the grouping variable",
+     "severity_contrast": false,
+     "cohort": "CH31"
+    }
+   ],
+   "cb_rejected": [
+    "CB241: glucose by parasitaemia intensity only (not a severity or outcome contrast)",
+    "CB053: hypoglycaemia is a component of the complicated label (circular)",
+    "Most of the ~70 other note hits: lactate or hypoglycaemia as background, case reports or reviews; not counted"
+   ],
+   "canine_pubmed": {
+    "queries": [
+     "(dog OR canine) AND babesi* AND (lactate OR hyperlactataemia OR hyperlactatemia OR hypoglycaemia OR hypoglycemia)",
+     "hypoglycaemia AND falciparum malaria AND mortality AND children AND (cohort OR prospective)",
+     "(dog OR canine) AND lactate AND (portable OR hand-held) AND analyzer AND (validation OR agreement)"
+    ],
+    "dog_babesiosis_dois": [
+     "https://doi.org/10.1016/j.vetpar.2019.06.005",
+     "https://doi.org/10.1111/jvim.13822",
+     "https://doi.org/10.1002/vetr.29",
+     "https://doi.org/10.29005/ijcp.2024.16.2.110-114",
+     "https://doi.org/10.1016/j.vetpar.2007.11.017"
+    ]
+   },
+   "canine_status": "severity_tested",
+   "canine_severity_units": 8,
+   "canine_assay": "validated",
+   "assay_evidence": [
+    "https://doi.org/10.1053/j.tcam.2016.05.004",
+    "https://doi.org/10.1111/jvim.13822"
+   ],
+   "dog_genes": [
+    "LDHA"
+   ],
+   "testable_now": "public_file",
+   "testable_detail": "DS02 has lactate and glucose (5 experimental B. rossi Beagles with clinical scores); no DS07 master; LDHA not in DS06 lookup",
+   "gap": "no",
+   "notes": "8 units with a severity or outcome contrast: CB040, CH21, CH18, CH08, CB486, CB537, CH33, CB112 (CB112 circular). Lactate alone: 4 units (CB040, CH21, CH18, CH08) in B. rossi, B. canis and B. gibsoni, all higher with death. Pre-2006 Onderstepoort lactate and hypoglycaemia studies are outside the review window and not counted.",
+   "keywords": [],
+   "ds07_desc": []
+  },
+  {
+   "mechanism_id": "F6-04",
+   "family": "F6 Endocrine and metabolic",
+   "mechanism": "Kynurenine pathway (IDO, kynurenine, quinolinic acid)",
+   "added_by_agent": "no",
+   "human_conditions": [
+    "sepsis",
+    "malaria"
+   ],
+   "hu_articles": [],
+   "human_key_dois": [
+    "https://doi.org/10.1086/650996",
+    "https://doi.org/10.1371/journal.pone.0087538",
+    "https://doi.org/10.3349/ymj.2022.0324",
+    "https://doi.org/10.1186/s12936-017-1954-1"
+   ],
+   "human_n_studies": 4,
+   "human_grade": 3,
+   "human_direction": "higher IDO activity (kynurenine:tryptophan) and kynurenine with sepsis severity and death; CSF kynurenine and kynurenic acid with longer coma in cerebral malaria; kynurenine is vasodilatory and lowers blood pressure in murine malaria",
+   "cb_confirmed": [
+    {
+     "id": "CB091",
+     "what": "serum kynurenine and tryptophan (targeted LC-MS) in 12 B. canis vs 12 healthy dogs; kynurenine among discriminating metabolites; no severity groups",
+     "severity_contrast": false,
+     "cohort": "CH06"
+    },
+    {
+     "id": "CB071",
+     "what": "urinary tryptophan (targeted) by kidney-function group in 22 B. canis dogs; kynurenine only as an annotated untargeted feature in the supplement, not reported",
+     "severity_contrast": false,
+     "cohort": "CH06"
+    }
+   ],
+   "cb_rejected": [
+    "No CB note mentions kynurenine, IDO or quinolinic acid; only the two Zagreb metabolomics texts hit"
+   ],
+   "canine_pubmed": {
+    "queries": [
+     "(dog OR canine) AND babesi* AND (kynurenine OR tryptophan OR indoleamine)",
+     "malaria AND kynurenine AND (severe OR severity OR mortality OR cerebral)",
+     "sepsis AND kynurenine AND (mortality OR severity) AND (patients)",
+     "(kynurenine OR \"indoleamine 2,3-dioxygenase\") AND (sepsis OR septic) AND (hypotension OR mortality) AND plasma[Title/Abstract]",
+     "(dog OR canine) AND kynurenine AND (serum OR plasma) AND (sepsis OR inflammation OR assay OR mass spectrometry)"
+    ],
+    "dog_babesiosis_dois": [
+     "https://doi.org/10.3390/ijms23031575"
+    ]
+   },
+   "canine_status": "measured_no_severity",
+   "canine_severity_units": 0,
+   "canine_assay": "validated",
+   "assay_evidence": [
+    "https://doi.org/10.1177/10406387261447261",
+    "https://doi.org/10.1016/j.theriogenology.2015.01.009",
+    "https://doi.org/10.3390/ijms23031575"
+   ],
+   "dog_genes": [
+    "IDO1",
+    "KMO"
+   ],
+   "testable_now": "public_file",
+   "testable_detail": "DS06 has IDO1 and KMO (whole-blood gene expression in the 5 B. rossi Beagles, not circulating metabolite). Outside DS02/06/07: public supplements S-CB091 (serum kynurenine and tryptophan per dog, infected vs healthy only) and S-CB071 (urine, kynurenine and kynurenic acid as annotated untargeted features, by kidney-function groups A/B/C) could give a first renal-severity contrast",
+   "gap": "yes",
+   "notes": "Gap confirmed: one PubMed hit for dog babesiosis (CB091, infected vs healthy). Canine LC-MS/MS method for kynurenine and tryptophan validated (2026); IDO activity raised in canine pyometra. The vasodilatory role (10.1038/nm.2092) fits B. rossi hypotension. Not covered by HU001-HU027.",
+   "keywords": [],
+   "ds07_desc": []
+  },
+  {
+   "mechanism_id": "F6-05",
+   "family": "F6 Endocrine and metabolic",
+   "mechanism": "Copeptin / vasopressin",
+   "added_by_agent": "no",
+   "human_conditions": [
+    "sepsis",
+    "malaria"
+   ],
+   "hu_articles": [],
+   "human_key_dois": [
+    "https://doi.org/10.3389/fmed.2025.1686137",
+    "https://doi.org/10.1097/JS9.0000000000001069",
+    "https://doi.org/10.1186/1475-2875-11-6",
+    "https://doi.org/10.1186/1475-2875-12-246"
+   ],
+   "human_n_studies": 3,
+   "human_grade": 3,
+   "human_direction": "higher copeptin in sepsis non-survivors (two meta-analyses); in imported malaria copeptin is only a weak marker of severity (AUC 0.66, n=204) or not related to it",
+   "cb_confirmed": [],
+   "cb_rejected": [
+    "CB044: SIADH inferred from sodium, osmolality and urine specific gravity with blood pressure; vasopressin and copeptin not measured",
+    "CB431: electrolytes only (abstract)",
+    "CB026, CB460: vasopressin mentioned in discussion only"
+   ],
+   "canine_pubmed": {
+    "queries": [
+     "(dog OR canine) AND babesi* AND (copeptin OR vasopressin OR antidiuretic)",
+     "copeptin AND (sepsis OR malaria) AND (mortality OR severity OR meta-analysis)",
+     "copeptin AND sepsis AND mortality AND meta-analysis",
+     "(copeptin OR vasopressin) AND falciparum malaria AND (severe OR mortality)",
+     "(dog OR canine) AND copeptin AND (validation OR assay OR ELISA OR immunoassay)",
+     "copeptin[Title] AND (dogs[Title] OR canine[Title])"
+    ],
+    "dog_babesiosis_dois": []
+   },
+   "canine_status": "none",
+   "canine_severity_units": 0,
+   "canine_assay": "used_in_dogs",
+   "assay_evidence": [
+    "https://doi.org/10.1111/jvim.70219",
+    "https://doi.org/10.3390/ani15071013",
+    "https://doi.org/10.3389/fvets.2025.1528008"
+   ],
+   "dog_genes": [
+    "AVP"
+   ],
+   "testable_now": "stored_samples_only",
+   "testable_detail": "AVP not in DS06 lookup; no DS07 master; not in DS02. Needs archived serum (canine or human copeptin ELISA)",
+   "gap": "yes",
+   "notes": "Gap confirmed: no dog babesiosis study measured copeptin or AVP (CB044 suspected SIADH without measuring it). Assay caveat: serum copeptin tracked osmotic stimulation in Beagles (10.1111/jvim.70219), but an ELISA agreed poorly with ADH in cardiac dogs (10.3390/ani15071013), so graded used_in_dogs, not validated. Human malaria evidence is weak; the grade rests on sepsis.",
+   "keywords": [],
+   "ds07_desc": []
+  }
+ ]
+}

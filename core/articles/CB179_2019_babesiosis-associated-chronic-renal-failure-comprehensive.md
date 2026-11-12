@@ -13,7 +13,7 @@
 | DOI | not assigned |
 | PMID / PMCID | not indexed |
 | Corrections / retractions | not checked (not in PubMed) |
-| Babesia species | unspecified (species and confirmatory test not reported in abstract) |
+| Babesia species | B. gibsoni (suspected: blood smear morphology, full text) |
 | Host | domestic dog (3-year-old male Labrador) |
 | Country / setting | India (Jammu and Kashmir, from author affiliations; clinical setting not stated in abstract) |
 | Study design | single case report |

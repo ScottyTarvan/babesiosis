@@ -50,6 +50,9 @@ namespace Babesiosis.Core.Data.Configs.Articles
       builder.Property(e => e.EvidenceType).HasColumnName("evidence_type").HasMaxLength(150);
       builder.Property(e => e.Host).HasColumnName("host").HasMaxLength(400);
       builder.Property(e => e.Country).HasColumnName("country").HasMaxLength(300);
+      // Computed, persisted columns (schema.sql): read-only here.
+      builder.Property(e => e.CountryNormalised).HasColumnName("country_normalised").HasMaxLength(100)
+        .ValueGeneratedOnAddOrUpdate().Metadata.SetAfterSaveBehavior(Microsoft.EntityFrameworkCore.Metadata.PropertySaveBehavior.Ignore);
       builder.Property(e => e.SpeciesSummary).HasColumnName("species_summary").HasMaxLength(200);
       builder.Property(e => e.Species).HasColumnName("species").HasColumnType("json");
       builder.Property(e => e.SampleSize).HasColumnName("sample_size").HasMaxLength(400);
@@ -59,6 +62,10 @@ namespace Babesiosis.Core.Data.Configs.Articles
 
       // Category
       builder.Property(e => e.PrimaryCategoryId).HasColumnName("primary_category_id");
+      builder.Property(e => e.CategoryConfidence).HasColumnName("category_confidence").HasMaxLength(10).IsUnicode(false)
+        .ValueGeneratedOnAddOrUpdate().Metadata.SetAfterSaveBehavior(Microsoft.EntityFrameworkCore.Metadata.PropertySaveBehavior.Ignore);
+      builder.Property(e => e.CategorySource).HasColumnName("category_source").HasMaxLength(60).IsUnicode(false)
+        .ValueGeneratedOnAddOrUpdate().Metadata.SetAfterSaveBehavior(Microsoft.EntityFrameworkCore.Metadata.PropertySaveBehavior.Ignore);
 
       // Narrative
       builder.Property(e => e.OneSentenceFinding).HasColumnName("one_sentence_finding").HasMaxLength(1000);

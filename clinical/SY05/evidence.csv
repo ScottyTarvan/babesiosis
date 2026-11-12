@@ -1,0 +1,48 @@
+ref,section,statement,value,species,design,n_dogs,cohort_id,read,location,note
+R1,diagnosis,IRIS AKI grades by creatinine,I <140; II 141-220; III 221-439; IV 440-880; V >880 µmol/L,,guideline,,,full text,"Table 1, p4",Also in mg/dL: <1.6; 1.7-2.5; 2.6-5.0; 5.1-10.0; >10.0
+R1,diagnosis,Creatinine rise defining AKI within 48 h,26.4 µmol/L or more in 48 h,,guideline,,,full text,p3 and Table 1,"0.3 mg/dL; text uses >=, table uses >"
+R1,diagnosis,Oliguria/anuria definition,"<1 mL/kg/h, or none, over 6 h",,guideline,,,full text,p3,subgrade O vs NO
+R1,diagnosis,Volume responsiveness,urine >1 mL/kg/h within 6 h and/or creatinine to baseline over 48 h,,guideline,,,full text,"p3, Table 1 footnote",
+R1,treatment,RRT indications and time window,grade IV-V may die within 5-10 days without RRT; grade I-II recover in 2-5 days,,guideline,,,full text,"p3, p5","indications: severe azotaemia, hyperkalaemia, acid-base disorders, overhydration, oliguria/anuria"
+R2,diagnosis,AKI in B. rossi graded by IRIS; grade I = rise of 26.4 µmol/L in 48 h,26.4 µmol/L,B. rossi,prospective cohort,35,,full text,Methods,Onderstepoort
+R2,description,"3 dogs grade II at admission, 5 more AKI by 24 h",,B. rossi,prospective cohort,35,,full text,Results 3.4,
+R2,diagnosis,"Prerenal azotaemia: USG >=1.030 and uOsm >=1110 mOsm/kg; renal dog USG 1.018, uOsm 430",1110 mOsm/kg,B. rossi,prospective cohort,35,,full text,Results 3.4,
+R2,diagnosis,Urinary injury markers raised with normal creatinine and SDMA; SDMA higher in complicated,,B. rossi,prospective cohort,35,,full text,"Abstract, Table 4",
+R2,prognosis,Urinary markers back to control values at 1 month,,B. rossi,prospective cohort,9,,full text,"Abstract, 3.4",
+R2,treatment,"Standard care: antibabesial drug, packed red cells and IV fluids as needed",,B. rossi,prospective cohort,35,,full text,Methods,antibabesial dose belongs to TX00; not on page
+R3,description,Infused haemoglobin did not cause significant nephropathy; anaemic hypoxia gave mild nephropathy and reduced GFR,,,experimental,18,,abstract,Abstract,3 groups of 6 dogs
+R4,description,"Proximal tubular necrosis, no significant glomerular change; 7 of 8 had imidocarb",,B. canis,necropsy series,8,,abstract,Abstract,
+R5,description,"5 pit bull-type dogs, all proteinuric and hypoalbuminaemic, 3 azotaemic; after treatment proteinuria reduced in 2, azotaemia resolved in 1 and improved in 1",,B. gibsoni,retrospective case series,5,,abstract,Abstract,4 with pre and post data; co-infections excluded
+R6,description,"Azotaemia frequent, proteinuria, casts; glomerular component suggested",,B. vulpes,laboratory case series,,,abstract,Abstract,"62 samples, NW Spain; named T. annae at the time"
+R7,diagnosis,Raised urea and urea:creatinine ratio not of renal origin; creatinine and cystatin C normal; pigment interferes with photometric assays,,B. rossi,cross-sectional,25,CH29,full text,Abstract,
+R8,diagnosis,"Creatinine >106 µmol/L OR death 7.55; urea >20 mmol/L OR 30.95; creatinine above RI 16.3%, above 1.5x ULN 6.8% (22 dogs, 10 died)",106 µmol/L; 20 mmol/L,B. rossi,cohort,320,,full text,"Results, creatinine paragraph",
+R8,description,Acute lung injury in just under two thirds of fatal cases at necropsy,,B. rossi,cohort,25,,full text,Discussion,25 necropsies
+R9,diagnosis,Renal azotaemia 14% (21/152); 81% of azotaemic dogs; USG <1.030 would flag 6 of 26,,B. rossi,cross-sectional,152,,abstract,Abstract,
+R9,prognosis,"Renal azotaemia associated with older age, collapse, hypoglycaemia, hyperphosphataemia, cerebral babesiosis, ARDS and lower survival to discharge",,B. rossi,cross-sectional,152,,abstract,Abstract,
+R10,treatment,IRIS AKI consensus 2024 on management of AKI,,,guideline,,,abstract,Abstract,full text by subscription; no dose taken from it
+R11,treatment,Furosemide single bolus 0.5-2 mg/kg (7 dogs),0.5 to 2 mg/kg,,prospective observational,52,,full text,"Results, urine output paragraph",quote: received a single bolus dose between 0.5 and 2 mg/kg; route not stated
+R11,treatment,Furosemide CRI 0.25-0.8 mg/kg/h (11 dogs); bolus 0.5-1 mg/kg then 0.1-2 mg/kg/h (2 dogs),0.25 to 0.8 mg/kg/h,,prospective observational,52,,full text,Results,quote: continuous infusion between 0.25 and 0.8 mg/kg/hr
+R11,treatment,"Amlodipine recommended range 0.1-0.5 mg/kg PO; median used 0.19 mg/kg/day (0.05-0.45), once daily initially",0.1 to 0.5 mg/kg,,prospective observational,52,,full text,Results; Discussion,quote: recommended range of 0.1 to 0.5 mg/kg PO
+R11,prognosis,"Hypertension 75%; fluid overload 42%, associated with non-survival (P = .007)",,,prospective observational,52,,full text,"Abstract, Results",AKI of non-babesial causes
+R12,treatment,UPC >0.5 investigate; ARB and kidney diet; ACEI/ARB contraindicated if dehydrated; target UPC <0.5 or 50% fall; biopsy if UPC >2.0 non-azotaemic,UPC 0.5; 2.0,,guideline,,,full text,"pp4-5, Appendix 2",no ARB or ACEI dose given (standard dose rate)
+R12,treatment,Clopidogrel 1.1-3 mg/kg PO every 24 h; acetylsalicylic acid 2-5 mg/kg once daily,1.1 to 3 mg/kg; 2 to 5 mg/kg,,guideline,,,full text,p4 item 5,note b of the same document gives 1-4 mg/kg and 1-5 mg/kg; page uses item 5
+R12,treatment,Antiemetics maropitant or ondansetron; omeprazole if gastric bleeding; systolic pressure <120 mmHg to be avoided,,,guideline,,,full text,"p11, p3",
+R13,diagnosis,Minimal renal damage commoner than ARF; proteinuria and tubular cells common; hyperkalaemia in 2 complicated dogs,,,case-control,30,,abstract,Abstract,South African dogs; species reported as B. canis at the time
+R14,treatment,"MPGN with immune complexes; azithromycin, atovaquone, one dose corticosteroid with cyclophosphamide; resolved at 3 months",,B. gibsoni,case report,1,,abstract,Abstract,doses not in abstract
+R15,description,"ARF in 31% of 63 dogs; mortality 3, 21 and 67% with none, one or multiple complications",,B. canis,case series,63,,abstract,Abstract,
+R16,prognosis,Creatinine >5 mg/dL and phosphate >3 mmol/L linked to death; 33.9% died with renal involvement,442 µmol/L; 3 mmol/L,B. canis,retrospective cohort,240,,abstract,Abstract,source unit 5 mg/dL; x 88.4 = 442 µmol/L
+R17,description,MAP <80 mmHg in 7 of 48 (14.6%); pressures inversely correlated with creatinine and urea,80 mmHg,B. canis,cross-sectional,48,,full text,Abstract,
+R18,diagnosis,"Urinary IgG, CRP, RBP raised in uncomplicated B. rossi with normal urea and creatinine",,B. rossi,case-control,18,CH36,abstract,Abstract,
+R19,diagnosis,Glomerular and tubular markers raised in B. canis,,B. canis,case-control,42,,abstract,Abstract,
+R20,diagnosis,AKI presents as oliguria or anuria despite adequate hydration; urinalysis findings; red-brown urine at necropsy,,,review,,,full text,Renal sections,
+R21,treatment,Correct dehydration over 4-6 h; volume (L) = body weight x % dehydration; no diuretics in dehydrated patient; no solid evidence for diuretics,,,expert lecture,,,full text,"Fluid therapy, diuretics",
+R21,treatment,Mannitol 0.5-1.0 g/kg over 20 min then CRI 1 mg/kg/min; control blood pressure first,0.5 to 1.0 g/kg; 1 mg/kg/min,,expert lecture,,,full text,Mannitol paragraph,quote: bolus (0.5-1.0 g/kg over 20 minutes)
+R21,treatment,Dopamine raised urine output in some but did not change outcome; fenoldopam did not change outcome in heatstroke AKI,,,expert lecture,,,full text,Vasoactive drugs,dopamine dose stated in source; not put on page (no_benefit)
+R21,diagnosis,"Overhydration signs: serous nasal discharge, peripheral oedema, lung oedema, chemosis, pleural effusion, ascites",,,expert lecture,,,full text,Fluid therapy,
+R22,diagnosis,Imidocarb: tubulonephrosis in a healthy dog in a pharmacokinetic study,,,case report,1,,abstract,Abstract,
+R23,treatment,IRIS intermittent haemodialysis guidelines for severe AKI,,,guideline,,,abstract,Abstract,
+R24,treatment,Dog with AKI after babesiosis; azotaemia persisted despite fluids; recovered with haemodialysis,,,case report,1,,abstract,Crossref abstract,species not stated
+R25,treatment,"Shih Tzu with babesiosis, kidney and liver failure; 6 days of peritoneal dialysis; creatinine 4.0 to 1.0 mg/dL",,,case report,1,,abstract,Journal page abstract,source units mg/dL (354 to 88 µmol/L); dialysate Dianeal PD4 1.4%
+R26,treatment,Furosemide and NAC not helpful; dopamine and HES harmful in AKI,,,review,,,abstract,Abstract,mainly human evidence (KDIGO)
+R27,treatment,"Two IV boluses of 3 g/kg mannitol in under 24 h caused AKI, hyponatraemia, seizures",3 g/kg,,case report,1,,abstract,Abstract,
+R28,treatment,Ondansetron 0.2 mg/kg IV and pantoprazole 1 mg/kg IV for 5 days,0.2 mg/kg; 1 mg/kg,B. gibsoni,case report,1,,full text,Results and discussion,"quote: Ondansetron 0.2mg/kg i/v, Pantaprazole 1mg/kg i/v for 5 days; frequency not stated"

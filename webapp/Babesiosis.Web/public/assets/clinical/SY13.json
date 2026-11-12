@@ -1,0 +1,1037 @@
+{
+  "schema_version": 1,
+  "id": "SY13",
+  "title": "Haemorrhagic gastroenteritis and gut signs",
+  "updated": "2026-11-12",
+  "definition": "Vomiting, diarrhoea, melaena, haematochezia or haematemesis in a dog with babesiosis. In the literature these are non-specific signs of the systemic disease, not a separate syndrome; the old \"gut form\" of babesiosis is now described as acute pancreatitis [R1][R2].",
+  "definition_note": "Working definition changed. No paper defines a haemorrhagic gastroenteritis syndrome of babesiosis, and no threshold or grading exists. The former \"gut form\" was renamed pancreatitis (SY12). This page therefore covers gut signs as findings: how often they occur, what causes them in a dog with babesiosis, and what to rule out.",
+  "key_points": [
+    "Gut signs are common but seldom lead: vomiting was the main complaint in 6 of 146 B. rossi dogs in the Eastern Cape, and occurred in 17 of 87 B. rossi dogs at Onderstepoort [R3][R2].",
+    "There is no distinct gut syndrome of babesiosis; the old \"gut form\" is now treated as acute pancreatitis (SY12) [R1].",
+    "Look for the cause: pancreatitis, thrombocytopenia or coagulopathy, uraemia, imidocarb cholinergic effects, parvovirus or a co-infection such as E. canis [R1][R4][R5].",
+    "A vomiting dog with babesiosis is at higher risk of hypoglycaemia: measure glucose [R6].",
+    "No gut treatment has been tested in babesiosis; fluids, antiemetics, acid suppression and nutrition are taken from general canine care (level D).",
+    "Antibiotics did not help dogs with bloody diarrhoea and no signs of sepsis in a randomised trial and a meta-analysis [R7][R8]."
+  ],
+  "description": [
+    {
+      "heading": "What it is",
+      "text": "Gut signs in babesiosis are part of the systemic illness. Reviews list vomiting and diarrhoea as occasional signs in all canine Babesia species [R9]. A review from Onderstepoort places anorexia, vomiting, diarrhoea, melaena, haematemesis and abdominal effusion under pancreatitis, which was formerly called the \"gut form\" [R1]. No study defines haemorrhagic gastroenteritis as a separate complication of babesiosis."
+    },
+    {
+      "heading": "How common, and in which dogs",
+      "text": "B. rossi: vomiting in 17 of 87 and diarrhoea in 5 of 87 dogs at Onderstepoort [R2]; vomiting was the main complaint in 6 of 146 and diarrhoea in 1 [R3]. B. canis (Germany): vomiting in 9% of dogs in a series of 49 [R4]. B. gibsoni: vomiting in 24% and diarrhoea in 15% of 108 dogs in Hong Kong [R10]; gut signs in 29% of 34 sick dogs in Korea [R11]; melaena in 30% of 23 dogs in India [R12]. Frequencies depend on the case mix and are not comparable across studies."
+    },
+    {
+      "heading": "When in the course of disease",
+      "text": "Gut signs are usually present at admission, with the acute illness [R2][R10]. They can also start after treatment: in a B. canis series, imidocarb was followed by vomiting in 2 dogs and by mucopurulent bloody diarrhoea in 2 dogs, and one dog died with haematemesis and acute kidney disease [R4]. In a splenectomised, immunosuppressed dog later found to carry B. vulpes and haemotropic Mycoplasma, haemorrhagic gastroenteritis and later haematochezia occurred months into the illness [R13]."
+    },
+    {
+      "heading": "Mechanism",
+      "text": "No mechanism was proven. Proposed causes are pancreatitis [R1][R2], mucosal bleeding from thrombocytopenia, coagulopathy or endothelial injury (petechiae in the stomach or small intestine in 4 of 6 fatal B. canis cases, with no thrombi on histology) [R14], uraemia, the cholinergic effect of imidocarb [R1][R4], and co-infections. Gut bleeding is one proposed reason for the high urea relative to creatinine in babesiosis, but this was not proven [R15]."
+    }
+  ],
+  "species_notes": [
+    {
+      "species": "B. rossi",
+      "note": "Vomiting in about one dog in five at a referral hospital; seldom the main complaint in general cases [R2][R3]. Pancreatitis, the former \"gut form\", carried mortality above 30% [R16]. Vomiting was a risk factor for hypoglycaemia [R6]."
+    },
+    {
+      "species": "B. canis",
+      "note": "Vomiting in 9% of dogs in a German series of 49; pancreatitis suspected in 8 dogs; bloody diarrhoea after imidocarb in 2 [R4]. Mucosal petechiae of the stomach or small intestine in 4 of 6 fatal cases [R14]."
+    },
+    {
+      "species": "B. gibsoni",
+      "note": "Gut signs are reported more often in Asian case series: vomiting 24% and diarrhoea 15% in Hong Kong [R10]; melaena in 30% of 23 dogs in India [R12]."
+    },
+    {
+      "species": "B. vulpes",
+      "note": "One splenectomised, immunosuppressed dog with B. vulpes and haemotropic Mycoplasma had haemorrhagic gastroenteritis, then haematochezia before euthanasia [R13]."
+    }
+  ],
+  "diagnosis": {
+    "criteria": [
+      {
+        "criterion": "Gut signs in a dog with confirmed babesiosis",
+        "threshold": "Vomiting, diarrhoea, melaena, haematochezia or haematemesis",
+        "basis": "working",
+        "note": "No published definition or threshold for a gut syndrome of babesiosis. Record the signs and look for a cause.",
+        "refs": [
+          "R1"
+        ]
+      },
+      {
+        "criterion": "Serum canine pancreatic-specific lipase (Spec cPL)",
+        "threshold": "above 400 µg/L",
+        "basis": "babesiosis",
+        "note": "Used in 87 B. rossi dogs: 28% were above the cut-off at admission, but cPL did not differ between dogs with and without gut signs, or between survivors and non-survivors. A high value does not by itself explain the gut signs.",
+        "refs": [
+          "R2"
+        ]
+      },
+      {
+        "criterion": "Serum urea relative to creatinine",
+        "threshold": "Raised urea with normal creatinine",
+        "basis": "babesiosis",
+        "note": "In 25 anaemic babesiosis dogs the urea:creatinine ratio was raised in 23, with normal creatinine and cystatin C. Gut bleeding is one proposed cause; the finding does not prove bleeding or kidney injury.",
+        "refs": [
+          "R15"
+        ]
+      },
+      {
+        "criterion": "Faecal parvovirus antigen test",
+        "threshold": "Positive result",
+        "basis": "general canine",
+        "note": "A positive result means natural infection until proven otherwise; a negative result does not rule out parvovirus (sensitivity 16% to 80%). PCR on faeces if the test is negative and suspicion stays.",
+        "refs": [
+          "R17"
+        ]
+      }
+    ],
+    "clinical_signs": [
+      {
+        "sign": "Vomiting",
+        "note": "The most frequent gut sign in all species; check glucose in a vomiting B. rossi dog.",
+        "refs": [
+          "R2",
+          "R10",
+          "R6"
+        ]
+      },
+      {
+        "sign": "Diarrhoea",
+        "note": "Less frequent than vomiting in B. rossi and B. gibsoni series.",
+        "refs": [
+          "R2",
+          "R10"
+        ]
+      },
+      {
+        "sign": "Melaena or haematemesis",
+        "note": "Reported mainly in B. gibsoni series from India; listed with pancreatitis in B. rossi.",
+        "refs": [
+          "R12",
+          "R1"
+        ]
+      },
+      {
+        "sign": "Abdominal pain",
+        "note": "4 of 87 B. rossi dogs; think of pancreatitis.",
+        "refs": [
+          "R2"
+        ]
+      },
+      {
+        "sign": "Salivation, vomiting or bloody diarrhoea soon after imidocarb",
+        "note": "Cholinergic adverse effect of the drug.",
+        "refs": [
+          "R4",
+          "R1"
+        ]
+      }
+    ],
+    "tests": [
+      {
+        "test": "Haematocrit, total protein and blood smear with platelet estimate",
+        "finding": "Anaemia and thrombocytopenia are expected in babesiosis; a falling haematocrit with melaena suggests gut blood loss.",
+        "note": "Basic practice. Severe thrombocytopenia can cause bleeding: see SY03.",
+        "refs": [
+          "R4"
+        ]
+      },
+      {
+        "test": "Blood glucose",
+        "finding": "Hypoglycaemia was more likely in vomiting B. rossi dogs.",
+        "note": "Basic practice. Hypoglycaemia was defined as below 3.3 mmol/L in that study.",
+        "refs": [
+          "R6"
+        ]
+      },
+      {
+        "test": "Faecal parvovirus antigen test",
+        "finding": "Positive in parvovirus enteritis.",
+        "note": "Basic practice. A negative test does not exclude parvovirus.",
+        "refs": [
+          "R17"
+        ]
+      },
+      {
+        "test": "Serum urea and creatinine",
+        "finding": "Urea is often raised more than creatinine in babesiosis.",
+        "note": "Interpret with care; see SY05 for kidney injury.",
+        "refs": [
+          "R15"
+        ]
+      },
+      {
+        "test": "Spec cPL or a rapid cPL test",
+        "finding": "Above 400 µg/L in 28% of B. rossi dogs at admission.",
+        "note": "Supports pancreatitis (SY12) but did not track gut signs.",
+        "refs": [
+          "R2"
+        ]
+      },
+      {
+        "test": "Abdominal ultrasound",
+        "finding": "Pancreatic changes and duodenal atony were described in B. rossi and B. canis dogs with gut signs; in parvovirus it shows intussusception or effusion.",
+        "note": "Practice or referral.",
+        "refs": [
+          "R1",
+          "R17"
+        ]
+      }
+    ],
+    "differentials": [
+      {
+        "condition": "Acute pancreatitis (SY12)",
+        "distinguish": "Abdominal pain, raised cPL, pancreatic changes on ultrasound. The old \"gut form\" of babesiosis.",
+        "refs": [
+          "R1",
+          "R2"
+        ]
+      },
+      {
+        "condition": "Bleeding from thrombocytopenia or coagulopathy (SY03)",
+        "distinguish": "Petechiae, other bleeding sites, prolonged clotting times. Mucosal petechiae were found in fatal B. canis cases.",
+        "refs": [
+          "R14",
+          "R4"
+        ]
+      },
+      {
+        "condition": "Uraemic gastritis (SY05)",
+        "distinguish": "Raised creatinine and oliguria; haematemesis occurred with acute kidney disease in one fatal B. canis case.",
+        "refs": [
+          "R4"
+        ]
+      },
+      {
+        "condition": "Imidocarb adverse effect",
+        "distinguish": "Salivation, vomiting or diarrhoea in the hours after the injection.",
+        "refs": [
+          "R4",
+          "R1"
+        ]
+      },
+      {
+        "condition": "Parvovirus enteritis",
+        "distinguish": "Young or poorly vaccinated dog, profuse vomiting and diarrhoea, faecal antigen or PCR. Leukopenia does not separate the two: it was found in 56% of B. canis dogs and is the main blood finding in parvovirus. No report of the two together was found.",
+        "refs": [
+          "R17",
+          "R4"
+        ]
+      },
+      {
+        "condition": "Ehrlichia canis co-infection",
+        "distinguish": "Melaena was reported in 43% of E. canis dogs in an Indian series; test for E. canis (PCR or serology).",
+        "refs": [
+          "R5"
+        ]
+      },
+      {
+        "condition": "Other causes of acute gastroenteritis",
+        "distinguish": "Haemorrhagic gastroenteritis, salmonellosis, hypoadrenocorticism, intussusception, foreign body, toxins and distemper.",
+        "refs": [
+          "R17"
+        ]
+      }
+    ],
+    "grading": []
+  },
+  "approach": [
+    {
+      "step": 1,
+      "action": "Confirm babesiosis and assess perfusion",
+      "detail": "Blood smear, haematocrit, total protein, glucose. Treat shock first (SY10). Vomiting dogs are at higher risk of hypoglycaemia [R6].",
+      "setting": "practice"
+    },
+    {
+      "step": 2,
+      "action": "Look for the cause of the gut signs",
+      "detail": "Platelet estimate, urea and creatinine, faecal parvovirus test, cPL test if abdominal pain. Ask when imidocarb was given [R4][R17][R2].",
+      "setting": "practice"
+    },
+    {
+      "step": 3,
+      "action": "Start antibabesial treatment",
+      "detail": "As in TX00. Split oral doxycycline into two daily doses if the dog vomits [R18].",
+      "setting": "practice"
+    },
+    {
+      "step": 4,
+      "action": "Replace fluid and electrolyte losses",
+      "detail": "Balanced isotonic crystalloid IV, potassium and glucose as needed [R17].",
+      "setting": "practice"
+    },
+    {
+      "step": 5,
+      "action": "Control vomiting and feed early",
+      "detail": "Maropitant once daily; consider early feeding by nasoesophageal tube [R19][R20].",
+      "setting": "practice"
+    },
+    {
+      "step": 6,
+      "action": "Treat gut bleeding",
+      "detail": "Proton pump inhibitor twice daily for melaena or haematemesis; transfuse for severe loss (SY01, SY03) [R21].",
+      "setting": "practice"
+    },
+    {
+      "step": 7,
+      "action": "Refer if bleeding continues or organs fail",
+      "detail": "Persistent bleeding with coagulopathy, pancreatitis, kidney injury or sepsis needs intensive care [R16].",
+      "setting": "referral"
+    }
+  ],
+  "treatments": [
+    {
+      "name": "Intravenous fluid and electrolyte replacement",
+      "class": "supportive",
+      "aim": "Correct hypovolaemia, dehydration, potassium loss and low glucose caused by vomiting and diarrhoea.",
+      "status": "standard",
+      "evidence_level": "D",
+      "independent_studies": 0,
+      "evidence_summary": "Not tested for gut signs in babesiosis. A balanced crystalloid was given to 45 of 46 hospitalised B. canis dogs, with no dose reported [R4]. The regimens below are from a review of parvovirus enteritis, not babesiosis [R17].",
+      "doses": [
+        {
+          "drug": "balanced isotonic crystalloid (for example lactated Ringer's)",
+          "dose": "15 to 20 mL/kg",
+          "route": "IV",
+          "frequency": "bolus over 15 minutes, repeated until perfusion improves",
+          "duration": "up to a total shock dose of 80 to 90 mL/kg",
+          "context": "Parvovirus enteritis, review (level D)",
+          "note": "For hypovolaemic shock. See SY10 for shock in babesiosis.",
+          "refs": [
+            "R17"
+          ]
+        },
+        {
+          "drug": "balanced isotonic crystalloid",
+          "dose": "40 to 60 mL/kg per day maintenance, plus deficit and ongoing losses",
+          "route": "IV",
+          "frequency": "continuous",
+          "duration": "rehydrate over 12 to 24 h",
+          "context": "Parvovirus enteritis, review (level D)",
+          "note": "Deficit (L) = body weight (kg) x % dehydration.",
+          "refs": [
+            "R17"
+          ]
+        },
+        {
+          "drug": "potassium chloride added to maintenance fluids",
+          "dose": "20 mmol/L or more; not above 0.5 mmol/kg/h",
+          "route": "IV",
+          "frequency": "continuous",
+          "duration": "",
+          "context": "Parvovirus enteritis, review (level D)",
+          "note": "Source gives milliequivalents, equal to mmol for potassium. Measure potassium daily.",
+          "refs": [
+            "R17"
+          ]
+        },
+        {
+          "drug": "dextrose added to maintenance fluids",
+          "dose": "2.5% to 5% solution",
+          "route": "IV",
+          "frequency": "continuous",
+          "duration": "while glucose falls",
+          "context": "Parvovirus enteritis, review (level D)",
+          "note": "Measure glucose at least once or twice a day.",
+          "refs": [
+            "R17"
+          ]
+        }
+      ],
+      "cautions": "Subcutaneous fluids are poorly absorbed in dehydrated dogs [R17]. Large crystalloid volumes in a severely anaemic dog: see SY01 and SY10.",
+      "monitoring": "Perfusion (capillary refill, pulse, mucous membranes, lactate), body weight, potassium daily, glucose once or twice daily [R17].",
+      "availability": "",
+      "refs": [
+        "R4",
+        "R17"
+      ]
+    },
+    {
+      "name": "Maropitant (antiemetic)",
+      "class": "supportive",
+      "aim": "Stop vomiting, which causes fluid loss, aspiration risk and hypoglycaemia.",
+      "status": "standard",
+      "evidence_level": "D",
+      "independent_studies": 0,
+      "evidence_summary": "Maropitant 1 mg/kg IV once daily was used as needed in a series of 49 B. canis dogs; its effect was not measured [R4]. European reviews advise antiemetics for vomiting in babesiosis [R18]. In other causes of vomiting, a randomised trial of 275 dogs (26% with parvovirus) found less vomiting with maropitant than placebo (as cited in [R17]). Metoclopramide and ondansetron are alternatives in parvovirus; no dose was found in a source read for this page [R17].",
+      "doses": [
+        {
+          "drug": "maropitant citrate",
+          "dose": "1 mg/kg",
+          "route": "SC or IV",
+          "frequency": "every 24 h",
+          "duration": "up to 5 consecutive days",
+          "context": "Product label (UK)",
+          "note": "IV as a single bolus, not mixed with fluids. Safety not established under 8 weeks of age.",
+          "refs": [
+            "R19"
+          ]
+        },
+        {
+          "drug": "maropitant",
+          "dose": "1 mg/kg",
+          "route": "IV",
+          "frequency": "every 24 h",
+          "duration": "",
+          "context": "B. canis, 49 dogs, case series (supportive care, not evaluated)",
+          "note": "",
+          "refs": [
+            "R4"
+          ]
+        }
+      ],
+      "cautions": "Vomiting can mean gut obstruction: investigate before antiemetics alone. Injection pain is very common after SC use; a refrigerated solution hurts less [R19]. Acid suppressants are not antiemetics [R21].",
+      "monitoring": "Number of vomits a day; glucose; aspiration signs.",
+      "availability": "",
+      "refs": [
+        "R4",
+        "R18",
+        "R17",
+        "R19",
+        "R21"
+      ]
+    },
+    {
+      "name": "Proton pump inhibitor (omeprazole, esomeprazole)",
+      "class": "supportive",
+      "aim": "Raise gastric pH in a dog with melaena or haematemesis, to protect clots and help mucosal healing.",
+      "status": "proposed",
+      "evidence_level": "D",
+      "independent_studies": 0,
+      "evidence_summary": "Used as needed in a series of 49 B. canis dogs, effect not measured [R4]. The ACVIM consensus finds proton pump inhibitors better than H2 blockers at raising gastric pH, advises twice-daily omeprazole, and finds no evidence for routine prophylaxis in critically ill dogs or in kidney or liver disease without bleeding. In dogs with immune thrombocytopenia and gut bleeding, acid suppressants did not change survival to discharge in one study [R21].",
+      "doses": [
+        {
+          "drug": "omeprazole",
+          "dose": "1 mg/kg",
+          "route": "PO",
+          "frequency": "every 12 h",
+          "duration": "",
+          "context": "B. canis, 49 dogs, case series (supportive care, not evaluated)",
+          "note": "",
+          "refs": [
+            "R4"
+          ]
+        },
+        {
+          "drug": "esomeprazole",
+          "dose": "1 mg/kg",
+          "route": "IV",
+          "frequency": "every 12 h",
+          "duration": "",
+          "context": "B. canis, 49 dogs, case series (supportive care, not evaluated)",
+          "note": "For the dog that cannot take oral drugs.",
+          "refs": [
+            "R4"
+          ]
+        }
+      ],
+      "cautions": "Not for vomiting alone and not as routine prophylaxis [R21]. Taper after 4 weeks or more of use to avoid rebound acid secretion [R21]. Adding famotidine to an IV proton pump inhibitor gave no extra effect in healthy dogs [R21].",
+      "monitoring": "Melaena, haematocrit every 12 to 24 h while bleeding.",
+      "availability": "",
+      "refs": [
+        "R4",
+        "R21"
+      ]
+    },
+    {
+      "name": "Transfusion for gut blood loss",
+      "class": "supportive",
+      "aim": "Replace red cells, and clotting factors when bleeding is from a coagulopathy.",
+      "status": "standard",
+      "evidence_level": "D",
+      "independent_studies": 0,
+      "evidence_summary": "In 49 B. canis dogs, 13 received packed red cells and 4 with prolonged clotting times received fresh frozen plasma; transfusion was not studied for gut bleeding [R4]. In parvovirus enteritis, whole blood or packed red cells are advised for severe anaemia; plasma is a poor source of albumin [R17]. Transfusion thresholds and doses for babesiosis are in SY01; coagulopathy in SY03.",
+      "doses": [
+        {
+          "drug": "whole blood",
+          "dose": "20 mL/kg",
+          "route": "IV",
+          "frequency": "once, given within 4 h",
+          "duration": "single dose",
+          "context": "Parvovirus enteritis, review (level D)",
+          "note": "For severe anaemia. Babesiosis doses: SY01.",
+          "refs": [
+            "R17"
+          ]
+        }
+      ],
+      "cautions": "Plasma at 22.5 mL/kg raised albumin by only about 5 g/L in parvovirus enteritis [R17].",
+      "monitoring": "Haematocrit, total protein, platelets, clotting times.",
+      "availability": "",
+      "refs": [
+        "R4",
+        "R17"
+      ]
+    },
+    {
+      "name": "Early enteral nutrition",
+      "class": "supportive",
+      "aim": "Support gut barrier function and recovery in a dog with gastroenteritis.",
+      "status": "proposed",
+      "evidence_level": "D",
+      "independent_studies": 1,
+      "evidence_summary": "Not studied in babesiosis. In a randomised trial in 30 dogs with severe parvovirus enteritis at Onderstepoort, feeding by nasoesophageal tube from 12 h after admission gave earlier clinical improvement and weight gain than withholding food until vomiting stopped; survival did not differ [R20].",
+      "doses": [],
+      "cautions": "In the trial, tube feeding started at 12 h even in dogs still vomiting; no data in babesiosis [R20].",
+      "monitoring": "Vomiting, regurgitation, body weight.",
+      "availability": "",
+      "refs": [
+        "R20"
+      ]
+    },
+    {
+      "name": "Sucralfate",
+      "class": "supportive",
+      "aim": "Coat ulcerated mucosa.",
+      "status": "proposed",
+      "evidence_level": "D",
+      "independent_studies": 0,
+      "evidence_summary": "No use in babesiosis was found. The ACVIM consensus reviewed sucralfate for oesophagitis and gastroduodenal ulceration; combined sucralfate and H2 blocker was no better than either drug alone in human trials [R21]. No dose was found in a source read for this page.",
+      "doses": [],
+      "cautions": "Give as a suspension: tablets may not dissolve in dogs. The suspension lowers the absorption of doxycycline; give doxycycline 2 h before. Aluminium accumulates in kidney insufficiency; constipation [R21].",
+      "monitoring": "Melaena; faecal output.",
+      "availability": "",
+      "refs": [
+        "R21"
+      ]
+    },
+    {
+      "name": "Splitting oral doxycycline in the vomiting dog",
+      "class": "adjunct",
+      "aim": "Reduce vomiting caused by doxycycline in dogs that receive it with antibabesial treatment.",
+      "status": "proposed",
+      "evidence_level": "E",
+      "independent_studies": 0,
+      "evidence_summary": "A European review gives doxycycline at 10 mg/kg/day and advises splitting it into two doses if the dog vomits [R18]. Doxycycline in babesiosis: TX00.",
+      "doses": [
+        {
+          "drug": "doxycycline",
+          "dose": "5 mg/kg",
+          "route": "PO",
+          "frequency": "every 12 h",
+          "duration": "",
+          "context": "Narrative review and guideline (B. canis, B. gibsoni)",
+          "note": "In place of 10 mg/kg once daily when the dog vomits.",
+          "refs": [
+            "R18"
+          ]
+        }
+      ],
+      "cautions": "Sucralfate suspension lowers doxycycline absorption [R21].",
+      "monitoring": "Vomiting after each dose.",
+      "availability": "",
+      "refs": [
+        "R18",
+        "R21"
+      ]
+    },
+    {
+      "name": "Atropine for imidocarb cholinergic signs",
+      "class": "adjunct",
+      "aim": "Prevent or reverse salivation, vomiting and diarrhoea caused by imidocarb.",
+      "status": "proposed",
+      "evidence_level": "E",
+      "independent_studies": 0,
+      "evidence_summary": "Cholinergic signs after imidocarb are described in reviews [R1][R22]. In 49 B. canis dogs given imidocarb, 2 vomited and 2 had mucopurulent bloody diarrhoea [R4]. Atropine premedication is advised in reviews; the two sources give different doses, and neither reports a trial [R22][R23]. Imidocarb dosing: TX00.",
+      "doses": [
+        {
+          "drug": "atropine",
+          "dose": "0.05 mg/kg",
+          "route": "not stated",
+          "frequency": "once, before imidocarb",
+          "duration": "single dose",
+          "context": "Narrative review, B. gibsoni (level E)",
+          "note": "Route not given in the source.",
+          "refs": [
+            "R22"
+          ]
+        },
+        {
+          "drug": "atropine",
+          "dose": "0.01 mg/kg",
+          "route": "IV",
+          "frequency": "once, before imidocarb",
+          "duration": "single dose",
+          "context": "Drug summary for clinicians (level E)",
+          "note": "The two sources differ fivefold.",
+          "refs": [
+            "R23"
+          ]
+        }
+      ],
+      "cautions": "Imidocarb toxicity is more likely in dogs with liver or kidney disease [R23]. Cardiac effects in babesiosis: SY09.",
+      "monitoring": "Heart rate; salivation, vomiting and diarrhoea in the hours after imidocarb.",
+      "availability": "",
+      "refs": [
+        "R1",
+        "R22",
+        "R4",
+        "R23"
+      ]
+    },
+    {
+      "name": "Antibiotics for bloody diarrhoea without sepsis",
+      "class": "supportive",
+      "aim": "Treat bacterial translocation or infection in haemorrhagic diarrhoea.",
+      "status": "no_benefit",
+      "evidence_level": "D",
+      "independent_studies": 2,
+      "evidence_summary": "Not tested in babesiosis; 39 dogs in a series of 49 B. canis dogs got doxycycline or amoxicillin-clavulanate at admission, effect not measured [R4]. In 60 dogs with haemorrhagic gastroenteritis and no sepsis, amoxicillin-clavulanate did not change mortality, hospital stay or clinical scores [R7]. A meta-analysis found no clinically relevant effect of antimicrobials in mild or moderate acute diarrhoea; evidence for severe disease was of low certainty [R8]. Broad-spectrum antibiotics are advised in severe parvovirus with neutropenia [R17].",
+      "doses": [],
+      "cautions": "Dogs with signs of sepsis or severe neutropenia were not part of the trial and need antibiotics [R7][R17].",
+      "monitoring": "Temperature, leucocyte count, perfusion.",
+      "availability": "",
+      "refs": [
+        "R4",
+        "R7",
+        "R8",
+        "R17"
+      ]
+    }
+  ],
+  "prognosis": {
+    "text": "No study has given an outcome for gut signs in babesiosis. Outcome depends on the cause and on the other complications: in B. rossi, pancreatitis carried mortality above 30% against 12% for all admitted cases [R16]. In B. canis, one dog with haematemesis and acute kidney disease died [R4].",
+    "indicators": [
+      {
+        "finding": "Vomiting in B. rossi",
+        "meaning": "Associated with hypoglycaemia on univariable analysis; measure glucose.",
+        "refs": [
+          "R6"
+        ]
+      },
+      {
+        "finding": "Raised cPL in B. rossi",
+        "meaning": "Not different between survivors and non-survivors; higher in dogs with SIRS.",
+        "refs": [
+          "R2"
+        ]
+      },
+      {
+        "finding": "Pancreatitis (former \"gut form\")",
+        "meaning": "Mortality above 30% in admitted B. rossi dogs.",
+        "refs": [
+          "R16",
+          "R1"
+        ]
+      }
+    ]
+  },
+  "related": [
+    {
+      "id": "SY12",
+      "why": "Acute pancreatitis, the former \"gut form\"."
+    },
+    {
+      "id": "SY03",
+      "why": "Gut bleeding from thrombocytopenia or coagulopathy."
+    },
+    {
+      "id": "SY05",
+      "why": "Uraemic gastritis and acute kidney injury."
+    },
+    {
+      "id": "SY01",
+      "why": "Transfusion for anaemia."
+    },
+    {
+      "id": "SY10",
+      "why": "Shock and fluid resuscitation."
+    },
+    {
+      "id": "TX00",
+      "why": "Antibabesial drugs, imidocarb and doxycycline doses."
+    }
+  ],
+  "evidence_gaps": [
+    "No study defines or grades a gut syndrome of babesiosis.",
+    "No gut treatment (antiemetic, acid suppressant, sucralfate, nutrition, antibiotic) was tested in dogs with babesiosis.",
+    "No report of babesiosis together with parvovirus enteritis was found, and no study tells the two apart.",
+    "The cause of melaena in B. gibsoni series (thrombocytopenia, uraemia, co-infection) was not studied.",
+    "Gut lesions at necropsy were described for B. canis only; no gut pathology report for B. rossi was found.",
+    "The atropine dose before imidocarb differs fivefold between sources, and no trial was found."
+  ],
+  "references": [
+    {
+      "ref": "R1",
+      "authors": "Köster LS, Lobetti RG, Kelly P",
+      "year": 2015,
+      "title": "Canine babesiosis: a perspective on clinical complications, biomarkers, and treatment",
+      "journal": "Veterinary Medicine: Research and Reports",
+      "volume_pages": "6:119-128",
+      "doi": "10.2147/vmrr.s60431",
+      "pmid": "30155438",
+      "url": "",
+      "article_id": "CB493",
+      "type": "review",
+      "species": "B. rossi, B. canis, B. gibsoni",
+      "n_dogs": null,
+      "read": "full text"
+    },
+    {
+      "ref": "R2",
+      "authors": "Köster LS, Steiner JM, Suchodolski JS et al.",
+      "year": 2015,
+      "title": "Serum canine pancreatic-specific lipase concentrations in dogs with naturally occurring Babesia rossi infection",
+      "journal": "Journal of the South African Veterinary Association",
+      "volume_pages": "86(1):E1-7",
+      "doi": "10.4102/jsava.v86i1.1297",
+      "pmid": "26304138",
+      "url": "",
+      "article_id": "CB508",
+      "type": "cohort",
+      "species": "B. rossi",
+      "n_dogs": 87,
+      "read": "full text"
+    },
+    {
+      "ref": "R3",
+      "authors": "Cloete HPP, Rautenbach Y, Leisewitz AL et al.",
+      "year": 2024,
+      "title": "Prevalence of co-infections with Ehrlichia spp. or Theileria spp. in dogs naturally infected with babesiosis in the Eastern Cape province",
+      "journal": "Veterinary Parasitology: Regional Studies and Reports",
+      "volume_pages": "54:101092",
+      "doi": "10.1016/j.vprsr.2024.101092",
+      "pmid": "39237242",
+      "url": "",
+      "article_id": "CB126",
+      "type": "cohort",
+      "species": "B. rossi",
+      "n_dogs": 150,
+      "read": "full text"
+    },
+    {
+      "ref": "R4",
+      "authors": "Weingart C, Helm CS, Müller E et al.",
+      "year": 2023,
+      "title": "Autochthonous Babesia canis infections in 49 dogs in Germany",
+      "journal": "Journal of Veterinary Internal Medicine",
+      "volume_pages": "37(1):140-149",
+      "doi": "10.1111/jvim.16611",
+      "pmid": "36629833",
+      "url": "",
+      "article_id": "CB106",
+      "type": "case series",
+      "species": "B. canis",
+      "n_dogs": 49,
+      "read": "full text"
+    },
+    {
+      "ref": "R5",
+      "authors": "Sharma A, Brar APS, Singh H et al.",
+      "year": 2026,
+      "title": "Studies on correlation of platelet indices with molecular diagnosis of Ehrlichia canis and Babesia gibsoni in dogs",
+      "journal": "Indian Journal of Animal Research",
+      "volume_pages": "",
+      "doi": "10.18805/ijar.b-5694",
+      "pmid": "",
+      "url": "",
+      "article_id": "CB304",
+      "type": "case series",
+      "species": "B. gibsoni",
+      "n_dogs": null,
+      "read": "full text"
+    },
+    {
+      "ref": "R6",
+      "authors": "Keller N, Jacobson LS, Nel M et al.",
+      "year": 2004,
+      "title": "Prevalence and risk factors of hypoglycemia in virulent canine babesiosis",
+      "journal": "Journal of Veterinary Internal Medicine",
+      "volume_pages": "18(3):265-270",
+      "doi": "10.1892/0891-6640(2004)18<265:parfoh>2.0.co;2",
+      "pmid": "15188810",
+      "url": "",
+      "article_id": "",
+      "type": "cohort",
+      "species": "B. rossi",
+      "n_dogs": 250,
+      "read": "abstract"
+    },
+    {
+      "ref": "R7",
+      "authors": "Unterer S, Strohmeyer K, Kruse BD et al.",
+      "year": 2011,
+      "title": "Treatment of aseptic dogs with hemorrhagic gastroenteritis with amoxicillin/clavulanic acid: a prospective blinded study",
+      "journal": "Journal of Veterinary Internal Medicine",
+      "volume_pages": "25(5):973-979",
+      "doi": "10.1111/j.1939-1676.2011.00765.x",
+      "pmid": "21781168",
+      "url": "",
+      "article_id": "",
+      "type": "trial",
+      "species": "",
+      "n_dogs": 60,
+      "read": "abstract"
+    },
+    {
+      "ref": "R8",
+      "authors": "Scahill K, Jessen LR, Prior C et al.",
+      "year": 2024,
+      "title": "Efficacy of antimicrobial and nutraceutical treatment for canine acute diarrhoea: A systematic review and meta-analysis for European Network for Optimization of Antimicrobial Therapy (ENOVAT) guidelines",
+      "journal": "The Veterinary Journal",
+      "volume_pages": "303:106054",
+      "doi": "10.1016/j.tvjl.2023.106054",
+      "pmid": "38049062",
+      "url": "",
+      "article_id": "",
+      "type": "review",
+      "species": "",
+      "n_dogs": null,
+      "read": "abstract"
+    },
+    {
+      "ref": "R9",
+      "authors": "Leisewitz AL, Mrljak V, Dear JD et al.",
+      "year": 2023,
+      "title": "The diverse pathogenicity of various Babesia parasite species that infect dogs",
+      "journal": "Pathogens",
+      "volume_pages": "12(12):1437",
+      "doi": "10.3390/pathogens12121437",
+      "pmid": "38133320",
+      "url": "",
+      "article_id": "CB119",
+      "type": "review",
+      "species": "B. rossi, B. canis, B. gibsoni, B. vogeli, B. conradae, B. vulpes",
+      "n_dogs": null,
+      "read": "full text"
+    },
+    {
+      "ref": "R10",
+      "authors": "Chan K, Bęczkowski PM, Almendros A et al.",
+      "year": 2025,
+      "title": "Clinical and clinicopathological features of 108 dogs infected with Babesia gibsoni in Hong Kong",
+      "journal": "Animals",
+      "volume_pages": "15(5):645",
+      "doi": "10.3390/ani15050645",
+      "pmid": "40075928",
+      "url": "",
+      "article_id": "CB134",
+      "type": "case series",
+      "species": "B. gibsoni",
+      "n_dogs": 108,
+      "read": "full text"
+    },
+    {
+      "ref": "R11",
+      "authors": "Miranda EA, Han SW, Rim JM et al.",
+      "year": 2022,
+      "title": "Clinical and subclinical cases of canine babesiosis caused by Babesia gibsoni in the Republic of Korea",
+      "journal": "Journal of Veterinary Clinics",
+      "volume_pages": "39(5):207-216",
+      "doi": "10.17555/jvc.2022.39.5.207",
+      "pmid": "",
+      "url": "",
+      "article_id": "CB224",
+      "type": "case series",
+      "species": "B. gibsoni",
+      "n_dogs": 36,
+      "read": "full text"
+    },
+    {
+      "ref": "R12",
+      "authors": "Dubey V, Choudhary S, Sehrawat S et al.",
+      "year": 2026,
+      "title": "Clinico-pathological and ultrasonographical studies in Babesia gibsoni infection in dogs",
+      "journal": "Indian Journal of Veterinary Medicine",
+      "volume_pages": "46(1):1-4",
+      "doi": "10.56093/ijvm.v46i1.177827",
+      "pmid": "",
+      "url": "",
+      "article_id": "CB310",
+      "type": "case series",
+      "species": "B. gibsoni",
+      "n_dogs": 23,
+      "read": "full text"
+    },
+    {
+      "ref": "R13",
+      "authors": "Unterköfler MS, Pantchev N, Bergfeld C et al.",
+      "year": 2023,
+      "title": "Case report of a fatal Babesia vulpes infection in a splenectomised dog",
+      "journal": "Parasitologia",
+      "volume_pages": "3(1):59-68",
+      "doi": "10.3390/parasitologia3010008",
+      "pmid": "",
+      "url": "",
+      "article_id": "CB120",
+      "type": "case report",
+      "species": "B. vulpes",
+      "n_dogs": 1,
+      "read": "full text"
+    },
+    {
+      "ref": "R14",
+      "authors": "Zygner W, Rodo A, Gójska-Zygner O et al.",
+      "year": 2021,
+      "title": "Disorders in blood circulation as a probable cause of death in dogs infected with Babesia canis",
+      "journal": "Journal of Veterinary Research",
+      "volume_pages": "65(3):277-285",
+      "doi": "10.2478/jvetres-2021-0036",
+      "pmid": "34917839",
+      "url": "",
+      "article_id": "CB080",
+      "type": "case series",
+      "species": "B. canis",
+      "n_dogs": 6,
+      "read": "full text"
+    },
+    {
+      "ref": "R15",
+      "authors": "de Scally MP, Leisewitz AL, Lobetti RG et al.",
+      "year": 2006,
+      "title": "The elevated serum urea:creatinine ratio in canine babesiosis in South Africa is not of renal origin",
+      "journal": "Journal of the South African Veterinary Association",
+      "volume_pages": "77(4):175-178",
+      "doi": "10.4102/jsava.v77i4.373",
+      "pmid": "17458340",
+      "url": "",
+      "article_id": "CB325",
+      "type": "cohort",
+      "species": "Babesia sp. (South Africa)",
+      "n_dogs": 25,
+      "read": "full text"
+    },
+    {
+      "ref": "R16",
+      "authors": "Jacobson LS",
+      "year": 2006,
+      "title": "The South African form of severe and complicated canine babesiosis: clinical advances 1994-2004",
+      "journal": "Veterinary Parasitology",
+      "volume_pages": "138(1-2):126-139",
+      "doi": "10.1016/j.vetpar.2006.01.047",
+      "pmid": "16503090",
+      "url": "",
+      "article_id": "",
+      "type": "review",
+      "species": "B. rossi",
+      "n_dogs": null,
+      "read": "abstract"
+    },
+    {
+      "ref": "R17",
+      "authors": "Mylonakis ME, Kalli I, Rallis TS",
+      "year": 2016,
+      "title": "Canine parvoviral enteritis: an update on the clinical diagnosis, treatment, and prevention",
+      "journal": "Veterinary Medicine: Research and Reports",
+      "volume_pages": "7:91-100",
+      "doi": "10.2147/VMRR.S80971",
+      "pmid": "30050842",
+      "url": "",
+      "article_id": "",
+      "type": "review",
+      "species": "",
+      "n_dogs": null,
+      "read": "full text"
+    },
+    {
+      "ref": "R18",
+      "authors": "Solano-Gallego L, Sainz Á, Roura X et al.",
+      "year": 2016,
+      "title": "A review of canine babesiosis: the European perspective",
+      "journal": "Parasites & Vectors",
+      "volume_pages": "9(1):336",
+      "doi": "10.1186/s13071-016-1596-0",
+      "pmid": "27289223",
+      "url": "",
+      "article_id": "CB533",
+      "type": "review",
+      "species": "B. canis, B. vogeli, B. gibsoni",
+      "n_dogs": null,
+      "read": "full text"
+    },
+    {
+      "ref": "R19",
+      "authors": "Zoetis UK Limited; Veterinary Medicines Directorate",
+      "year": 2025,
+      "title": "Cerenia 10 mg/ml solution for injection for dogs and cats: product information (revised January 2025)",
+      "journal": "Veterinary Medicines Directorate Product Information Database",
+      "volume_pages": "",
+      "doi": "",
+      "pmid": "",
+      "url": "https://www.vmd.defra.gov.uk/ProductInformationDatabase/files/QRD_Documents/QRD-Auth_2243304.PDF",
+      "article_id": "",
+      "type": "label",
+      "species": "",
+      "n_dogs": null,
+      "read": "full text"
+    },
+    {
+      "ref": "R20",
+      "authors": "Mohr AJ, Leisewitz AL, Jacobson LS et al.",
+      "year": 2003,
+      "title": "Effect of early enteral nutrition on intestinal permeability, intestinal protein loss, and outcome in dogs with severe parvoviral enteritis",
+      "journal": "Journal of Veterinary Internal Medicine",
+      "volume_pages": "17(6):791-798",
+      "doi": "10.1111/j.1939-1676.2003.tb02516.x",
+      "pmid": "14658714",
+      "url": "",
+      "article_id": "",
+      "type": "trial",
+      "species": "",
+      "n_dogs": 30,
+      "read": "abstract"
+    },
+    {
+      "ref": "R21",
+      "authors": "Marks SL, Kook PH, Papich MG et al.",
+      "year": 2018,
+      "title": "ACVIM consensus statement: Support for rational administration of gastrointestinal protectants to dogs and cats",
+      "journal": "Journal of Veterinary Internal Medicine",
+      "volume_pages": "32(6):1823-1840",
+      "doi": "10.1111/jvim.15337",
+      "pmid": "30378711",
+      "url": "",
+      "article_id": "",
+      "type": "guideline",
+      "species": "",
+      "n_dogs": null,
+      "read": "full text"
+    },
+    {
+      "ref": "R22",
+      "authors": "Karasová M, Tóthová C, Grelová S et al.",
+      "year": 2022,
+      "title": "The etiology, incidence, pathogenesis, diagnostics, and treatment of canine babesiosis caused by Babesia gibsoni infection",
+      "journal": "Animals",
+      "volume_pages": "12(6):739",
+      "doi": "10.3390/ani12060739",
+      "pmid": "35327136",
+      "url": "",
+      "article_id": "CB094",
+      "type": "review",
+      "species": "B. gibsoni",
+      "n_dogs": null,
+      "read": "full text"
+    },
+    {
+      "ref": "R23",
+      "authors": "Scimeca RC",
+      "year": 2026,
+      "title": "Therapeutic snapshot: imidocarb",
+      "journal": "Clinician's Brief",
+      "volume_pages": "",
+      "doi": "",
+      "pmid": "",
+      "url": "https://www.cliniciansbrief.com/article/imidocarb-dosage-safety-efficacy-canine-feline",
+      "article_id": "",
+      "type": "review",
+      "species": "",
+      "n_dogs": null,
+      "read": "full text"
+    }
+  ],
+  "search": {
+    "date": "2026-11-12",
+    "sources": [
+      "local review",
+      "PubMed",
+      "Europe PMC",
+      "Crossref",
+      "web"
+    ],
+    "note": "Local notes and full texts searched for gut terms; PubMed for babesiosis with gut signs, parvovirus and each candidate treatment. ENOVAT guideline full text is paywalled (meta-analysis abstract used). One Indian outbreak report (puppies with haemorrhagic enteritis) was dropped because its DOI does not resolve."
+  }
+}

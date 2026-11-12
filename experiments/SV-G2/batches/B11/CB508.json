@@ -1,0 +1,122 @@
+{
+  "id": "CB508",
+  "text_used": "data/markdown/CB508.md",
+  "extracted_by": "claude-opus-5-5 SV-G2 B11",
+  "extracted_utc": "2026-11-12T00:00:00Z",
+  "schema_version": "v2",
+  "setting": "referral hospital",
+  "sample_timing": "before treatment",
+  "article_notes": "87 dogs with PCR-confirmed B. rossi at Onderstepoort (OVAH), 2005 prospective biomarker cohort (the same cohort was used for other OVAH biomarker papers, e.g. endocrine and CRP studies cited in the Discussion). cPL compared by outcome and by SIRS status. cPL vs pancreatitis-related clinical signs (P = 0.51) is not a severity definition and was not extracted. Spearman correlations of cPL with rectal temperature, heart rate, respiratory rate, band cells and other markers (Table 1) are marker-marker correlations, not correlations with a severity measure, and were not extracted (note: text gives lipase rs 0.78 and band/immature rs 0.32/0.34 while Table 1 gives 0.74, 0.28, 0.29). SIRS status known for 85 of 87 dogs.",
+  "skipped_infected_vs_healthy": 0,
+  "severity_definitions": [
+    {
+      "key": "S1",
+      "outcome_class": "mortality",
+      "label": "non-survivors vs survivors",
+      "definition": "Dogs that died of the infection or were euthanised on a poor prognosis (cerebral babesiosis, ARDS, hyperlactataemia, hypoglycaemia) vs survivors to discharge. Dogs euthanised for other reasons were excluded.",
+      "severe_group": "non-survivors (n=6)",
+      "comparison_group": "survivors (n=81)",
+      "quote": "A total of six dogs (6.9%) died as a result of the infection or were euthanised based on a poor prognosis.",
+      "components": [
+        "death"
+      ],
+      "euthanasia_included": "yes",
+      "definition_source": "author-defined",
+      "follow_up_horizon": "to discharge"
+    },
+    {
+      "key": "S2",
+      "outcome_class": "severity_grade",
+      "label": "SIRS vs no SIRS",
+      "definition": "SIRS if two or more of: WBC > 12 000/uL or < 4000/uL or >= 10% band cells; rectal temperature < 37.8 or > 39.7 C; heart rate >= 160/min; respiratory rate >= 40/min (Okano et al.). 53 SIRS vs 32 no SIRS (85 of 87 dogs).",
+      "severe_group": "SIRS (n=53)",
+      "comparison_group": "no SIRS (n=32)",
+      "quote": "Dogs were classified as meeting the criteria for SIRS if two or more of the following parameters had been met, as described by Okano et al.:",
+      "components": [
+        "SIRS"
+      ],
+      "euthanasia_included": "not applicable",
+      "definition_source": "SIRS criteria (Okano et al.)",
+      "follow_up_horizon": null
+    }
+  ],
+  "associations": [
+    {
+      "marker_as_reported": "serum canine pancreatic-specific lipase (Spec cPL, ug/L)",
+      "marker": "Pancreatic enzymes (lipase, amylase, cPLI)",
+      "marker_class": "biochemistry",
+      "specimen": "serum",
+      "timepoint": "admission, before treatment",
+      "species": "B. rossi",
+      "species_confirmation": "PCR or sequencing",
+      "subgroup": null,
+      "effect_type": null,
+      "effect_value": null,
+      "effect_ci": null,
+      "cutoff": null,
+      "sensitivity": null,
+      "specificity": null,
+      "adjusted_for": null,
+      "load_method": null,
+      "severity_key": "S1",
+      "n_total": 87,
+      "n_severe": 6,
+      "n_comparison": 81,
+      "analysis": "group_comparison",
+      "direction": "no_difference",
+      "significant": "no",
+      "statistic": "Mann-Whitney U; values shown only as boxplot (Figure 1)",
+      "p_value": "0.74",
+      "quote": "Serum cPL concentrations were not significantly different between non-survivors and survivors (P = 0.74; Figure 1)",
+      "location": "Results, para 3; Figure 1",
+      "source_type": "text",
+      "confidence": "high",
+      "note": "Group values only in a figure. The text adds that 3 of the 6 non-survivors had cPL > 400 ug/L; the count for survivors is not printed.",
+      "severe_value": null,
+      "comparison_value": null,
+      "summary_type": null
+    },
+    {
+      "marker_as_reported": "serum canine pancreatic-specific lipase (Spec cPL, ug/L)",
+      "marker": "Pancreatic enzymes (lipase, amylase, cPLI)",
+      "marker_class": "biochemistry",
+      "specimen": "serum",
+      "timepoint": "admission, before treatment",
+      "species": "B. rossi",
+      "species_confirmation": "PCR or sequencing",
+      "subgroup": null,
+      "effect_type": null,
+      "effect_value": null,
+      "effect_ci": null,
+      "cutoff": null,
+      "sensitivity": null,
+      "specificity": null,
+      "adjusted_for": null,
+      "load_method": null,
+      "severity_key": "S2",
+      "n_total": 85,
+      "n_severe": 53,
+      "n_comparison": 32,
+      "analysis": "group_comparison",
+      "direction": "higher_in_severe",
+      "significant": "yes",
+      "statistic": "median 158 (IQR 52.5-571.5) vs 75 (IQR 50.3-131.8) ug/L; Mann-Whitney U",
+      "p_value": "0.018",
+      "quote": "The median concentration of serum cPL in dogs with SIRS was 158 µg/L (interquartile range: 52.5 µg/L – 571.5 µg/L; n = 53), which was significantly higher than in dogs without SIRS (75 µg/L; interquartile range: 50.3 µg/L – 131.8 µg/L; n = 32) (P = 0.018; Figure 3).",
+      "location": "Results, para 3; Figure 3; Abstract",
+      "source_type": "text",
+      "confidence": "high",
+      "note": null,
+      "severe_value": "158 (52.5-571.5)",
+      "comparison_value": "75 (50.3-131.8)",
+      "summary_type": "median and IQR"
+    }
+  ],
+  "not_extracted": [
+    {
+      "what": "cPL values per outcome group (non-survivors vs survivors)",
+      "reason": "figure only",
+      "note": "Only the P value (0.74) is in the text; medians shown in a boxplot (Figure 1)."
+    }
+  ]
+}

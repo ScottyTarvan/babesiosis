@@ -1,0 +1,20 @@
+{
+  "id": "CB440",
+  "text_used": "data/markdown/CB440.md",
+  "extracted_by": "claude-opus-5-5 SV-G2 blind second extraction S1",
+  "extracted_utc": "2026-11-12T05:26:52Z",
+  "schema_version": "v2",
+  "setting": "referral hospital",
+  "sample_timing": "mixed",
+  "skipped_infected_vs_healthy": 2,
+  "article_notes": "Nothing extracted. 8 smear-diagnosed Babesia sp. dogs, 8 Ehrlichia dogs and 8 healthy controls (Olsztyn university clinic, Poland); MPV and platelet count before and one week after treatment (Table 1, per-dog values). Results are infected vs healthy and change after treatment (treatment response), neither extracted. The Results text says, without numbers or defined groups, that dogs with relatively mild signs had many giant platelets and only a small fall in platelet count, while smears with abundant trophozoites showed more platelet aggregates and lower counts; recorded under not_extracted.",
+  "not_extracted": [
+    {
+      "what": "Giant platelets, platelet aggregates and platelet count in dogs with mild signs vs dogs with abundant trophozoites",
+      "reason": "no per-group result",
+      "note": "Qualitative statement only; severity groups and their sizes are not defined and no values are given per group."
+    }
+  ],
+  "severity_definitions": [],
+  "associations": []
+}

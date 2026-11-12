@@ -6,6 +6,8 @@ namespace Babesiosis.Console
   internal sealed class LoaderSettings
   {
     public required string ReviewRoot { get; init; }
+    /// <summary>The folder of the experiment packages. Default: the "experiments" folder beside <see cref="ReviewRoot"/>.</summary>
+    public required string ExperimentsRoot { get; init; }
     public required string ConnectionString { get; init; }
     public required string EmbeddingModel { get; init; }
     public required int Dimensions { get; init; }
@@ -24,9 +26,13 @@ namespace Babesiosis.Console
         .AddJsonFile("appsettings.Local.json", optional: true)
         .Build();
 
+      var reviewRoot = Required(config, "Articles:ReviewRoot");
+
       return new LoaderSettings
       {
-        ReviewRoot = Required(config, "Articles:ReviewRoot"),
+        ReviewRoot = reviewRoot,
+        ExperimentsRoot = Optional(config, "Experiments:Root")
+                          ?? Path.GetFullPath(Path.Combine(reviewRoot, "..", "experiments")),
         ConnectionString = Required(config, "ConnectionStrings:Babesiosis"),
         EmbeddingModel = Required(config, "Embedding:Model"),
         Dimensions = int.Parse(Required(config, "Embedding:Dimensions")),

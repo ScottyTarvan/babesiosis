@@ -1,0 +1,105 @@
+{
+ "dataset_id": "DS07",
+ "checks": [
+  {
+   "name": "dogs",
+   "observed": 52,
+   "expected": 52,
+   "tolerance": 0.0,
+   "source": "data.md; CB112 note: 52 dogs",
+   "pass": true
+  },
+  {
+   "name": "controls",
+   "observed": 20,
+   "expected": 20,
+   "tolerance": 0.0,
+   "source": "data.md; CB112 note: 20 healthy",
+   "pass": true
+  },
+  {
+   "name": "uncomplicated",
+   "observed": 18,
+   "expected": 18,
+   "tolerance": 0.0,
+   "source": "data.md; CB112 note: 18 uncomplicated",
+   "pass": true
+  },
+  {
+   "name": "complicated",
+   "observed": 14,
+   "expected": 14,
+   "tolerance": 0.0,
+   "source": "data.md; CB112 note: 14 complicated",
+   "pass": true
+  },
+  {
+   "name": "infected",
+   "observed": 32,
+   "expected": 32,
+   "tolerance": 0.0,
+   "source": "CB112 full text: 32 infected",
+   "pass": true
+  },
+  {
+   "name": "master proteins with >= 2 unique peptides",
+   "observed": 128,
+   "expected": 128,
+   "tolerance": 0.0,
+   "source": "CB112 full text: 128 proteins identified and quantified (>= 2 unique peptides, 1% FDR)",
+   "pass": true
+  },
+  {
+   "name": "master proteins",
+   "observed": 224,
+   "expected": 224,
+   "tolerance": 0.0,
+   "source": "DS07 record: 224 IsMasterProtein rows",
+   "pass": true
+  },
+  {
+   "name": "master proteins with a gene symbol",
+   "observed": 172,
+   "expected": 163,
+   "tolerance": 0.0,
+   "source": "data.md: 163 master proteins carry a gene symbol. Observed: 172 with GN= (12 of them LOC), 160 non-LOC; none of these counts gives 163",
+   "pass": false
+  },
+  {
+   "name": "percent empty protein x sample cells (52 sample channels)",
+   "observed": 31.1,
+   "expected": 31.1,
+   "tolerance": 0.05,
+   "source": "DS07 record: 31.1% in the 52 sample channels",
+   "pass": true
+  },
+  {
+   "name": "plex B11 samples",
+   "observed": 2,
+   "expected": 2,
+   "tolerance": 0.0,
+   "source": "data.md: plex B11 has 2 samples",
+   "pass": true
+  },
+  {
+   "name": "computed log2 ratio vs PD Abundance Ratio: disagreements",
+   "observed": 0,
+   "expected": 0,
+   "tolerance": 0.0,
+   "source": "internal consistency",
+   "pass": true
+  },
+  {
+   "name": "median proteins detected per sample within the record's 149-158",
+   "observed": true,
+   "expected": true,
+   "tolerance": 0.0,
+   "source": "DS07 record: median 149-158 proteins detected per sample",
+   "pass": true
+  }
+ ],
+ "n_dogs": 52,
+ "n_records": 52,
+ "abundance_columns_used": "Abundances (Grouped): Fk, 127-131 and Fk, 126 (log2 of their ratio)",
+ "n_failed": 1
+}

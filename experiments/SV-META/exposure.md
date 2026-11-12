@@ -1,0 +1,10 @@
+# SV-META exposure log
+
+One line for each outcomes file that this package or its refutation sub-agents opened. All files were already seen by earlier packages (rules.md, "Outcome lock"). `S-CB050.outcomes.json` was not opened; `DS07` and `DS02` outcomes were not opened by the package scripts (only by refutation sub-agents, below): their contrasts are read from the SV-04, SV-05, SV-06b, SV-08 and SV-09 output files, and the DS02 dose group is a design variable in the features file.
+
+- 2026-11-12, `shared/tidy/S-CB017.outcomes.json` (SHA-256 11f98f2bae04), opened by `scripts/themes.py` after the spec was frozen (spec 9f41ddf629757e4f31569c305eb2a607cd84bf0eb91b1190adcfae96038f6238). Already seen by earlier packages; role descriptive.
+- 2026-11-12, `shared/tidy/S-CB517.outcomes.json` (SHA-256 796318151ab9), opened by `scripts/themes.py` after the spec was frozen (spec 9f41ddf629757e4f31569c305eb2a607cd84bf0eb91b1190adcfae96038f6238). Already seen by earlier packages; role descriptive.
+- 2026-11-12, `shared/tidy/S-CB516.outcomes.json` (SHA-256 ade2af7d51d6), opened by `scripts/themes.py` after the spec was frozen (spec 9f41ddf629757e4f31569c305eb2a607cd84bf0eb91b1190adcfae96038f6238). Already seen by earlier packages; role descriptive.
+- 2026-11-12, `shared/tidy/DS05.outcomes.json` (SHA-256 4a86691b3b97), opened by `scripts/themes.py` after the spec was frozen (spec 9f41ddf629757e4f31569c305eb2a607cd84bf0eb91b1190adcfae96038f6238). Already seen by earlier packages; role descriptive.
+- 2026-11-12, `shared/tidy/DS07.outcomes.json` (SHA-256 596e092a2b3d), opened by the K01 refutation sub-agent (`refutation/scripts/K01_checks.py`) to adjust the CD14 contrast for haemoglobin beta. Already seen by SV-06b; role descriptive. Recorded here by the package agent.
+- 2026-11-12, `shared/tidy/DS02.outcomes.json` (SHA-256 26831fd671b6), opened by the K03 refutation sub-agent (`refutation/scripts/K03_checks.py`). Already seen by SV-02b and SV-08; role descriptive. DS07.outcomes.json was also opened by the K03 and K04 sub-agents. Recorded here by the package agent.

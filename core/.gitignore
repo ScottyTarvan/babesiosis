@@ -1,9 +1,9 @@
-# Full-text PDFs and XML: copyrighted, large, re-downloadable with scripts/fetch_fulltext.py
+# Full-text PDFs and XML: copyrighted, large
 data/fulltext/
 data/markdown/
 .venv/
 .venv-nlp/
 
-# Tagging inputs that quote the full texts above; rebuild with scripts/build_clinical_tagging.py
+# Tagging inputs that quote the full texts above
 search/clinical_treatment/articles/candidates.jsonl
 search/clinical_treatment/articles/batches/

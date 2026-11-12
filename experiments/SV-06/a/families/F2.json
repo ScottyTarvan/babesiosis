@@ -1,0 +1,205 @@
+{
+  "family": "F2 Endothelium, glycocalyx, angiopoietin",
+  "agent_summary": "Angiopoietin-2, glycocalyx shedding (syndecan-1, hyaluronan, heparan sulfate) and VEGF/sFlt-1 have never been measured in dogs with babesiosis (PubMed and local corpus, 2026-11-12). All three have strong human severity evidence: malaria cohorts plus sepsis meta-analyses. All three also have canine assays already used in canine sepsis or critical care, so they are true gaps. Soluble adhesion molecules are not a gap: CB004 (Zagreb, B. canis) compared sICAM-1 and sVCAM-1 between complicated and uncomplicated dogs, and only VCAM-1 differed at admission. Surprise: the canine Ang-2 data come from validated cross-reactive human ELISAs, and Ang-2 was higher in septic non-survivors. But ANGPT2 itself is not among the DS06 genes (only ANGPT1 and TEK), and no F2 protein is a DS07 master protein.",
+  "mechanisms": [
+    {
+      "mechanism_id": "F2-01",
+      "family": "F2 Endothelium, glycocalyx, angiopoietin",
+      "mechanism": "Angiopoietin-2 and the Ang-2/Ang-1 ratio",
+      "added_by_agent": "no",
+      "human_conditions": ["malaria", "sepsis"],
+      "hu_articles": ["HU004", "HU010", "HU012", "HU017"],
+      "human_key_dois": [
+        "https://doi.org/10.1186/s12936-016-1624-8",
+        "https://doi.org/10.1186/s13613-024-01393-0",
+        "https://doi.org/10.1186/1475-2875-10-383",
+        "https://doi.org/10.1186/s13054-021-03474-z"
+      ],
+      "human_n_studies": 6,
+      "human_grade": 3,
+      "human_direction": "Ang-2 and the Ang-2/Ang-1 ratio are higher in severe and fatal malaria (falciparum, knowlesi, vivax) and in sepsis non-survivors and sepsis AKI. Ang-1 is lower.",
+      "cb_confirmed": [],
+      "cb_rejected": ["No CB note or CB text hit for angiopoietin, Ang-2, ANGPT2, Tie-2 or TEK"],
+      "canine_pubmed": {
+        "queries": [
+          "(dog OR canine) AND babesia AND (angiopoietin OR glycocalyx OR syndecan OR hyaluronan OR heparan)",
+          "(dog OR canine) AND babesiosis AND (angiopoietin OR syndecan OR hyaluronan OR VEGF OR selectin)",
+          "(dog OR canine) AND angiopoietin-2 AND (sepsis OR critical OR validation OR assay OR ELISA)",
+          "malaria AND angiopoietin-2 AND (mortality OR fatal OR severe) AND (meta-analysis OR cohort)",
+          "angiopoietin-2 AND malaria AND (systematic review OR meta-analysis)",
+          "angiopoietin-2 AND sepsis AND mortality AND meta-analysis"
+        ],
+        "dog_babesiosis_dois": []
+      },
+      "canine_status": "none",
+      "canine_severity_units": 0,
+      "canine_assay": "validated",
+      "assay_evidence": [
+        "https://doi.org/10.2460/ajvr.79.8.803",
+        "https://doi.org/10.1111/jvim.15369",
+        "https://doi.org/10.1002/vms3.70871"
+      ],
+      "dog_genes": ["ANGPT1", "ANGPT2", "TEK"],
+      "testable_now": "public_file",
+      "testable_detail": "DS06 has ANGPT1 (ENSCAFG00000000693) and TEK (ENSCAFG00000001713). These are whole-blood gene expression, not circulating protein. ANGPT2 is not among the DS06 genes. No DS07 master protein. Not in DS02. Plasma Ang-2 itself would need stored samples (validated human ELISA).",
+      "gap": "yes",
+      "notes": "A human Ang-2 ELISA was validated for canine plasma (Ang-1 ELISA failed). In canine SIRS/sepsis, Ang-2 was higher in non-survivors. Ang-2 has been measured in canine leishmaniosis, but never in babesiosis. The DS06 match is partial (receptor and Ang-1 only), and Ang-2 is stored in endothelial Weibel-Palade bodies, so blood RNA is a weak proxy.",
+      "keywords": [],
+      "ds07_desc": []
+    },
+    {
+      "mechanism_id": "F2-02",
+      "family": "F2 Endothelium, glycocalyx, angiopoietin",
+      "mechanism": "Glycocalyx shedding (syndecan-1, heparan sulfate, hyaluronan)",
+      "added_by_agent": "no",
+      "human_conditions": ["malaria", "sepsis"],
+      "hu_articles": ["HU011", "HU012"],
+      "human_key_dois": [
+        "https://doi.org/10.1093/cid/ciz038",
+        "https://doi.org/10.1038/s41598-021-88962-6",
+        "https://doi.org/10.1096/fj.202100277RR",
+        "https://doi.org/10.3389/fpubh.2022.870065"
+      ],
+      "human_n_studies": 5,
+      "human_grade": 3,
+      "human_direction": "Higher urinary glycosaminoglycans and plasma syndecan-1 go with severe and fatal falciparum malaria, and with severity in vivax and knowlesi malaria. A sepsis meta-analysis links syndecan-1 to complications and mortality.",
+      "cb_confirmed": [],
+      "cb_rejected": [
+        "CB223: 'glycocalyx' occurs only in the reviewer's text. The study measured total serum chondroitin sulfates by a colourimetric method (connective-tissue GAG), not glycocalyx fragments, with 12 infected vs 10 healthy dogs and no severity contrast."
+      ],
+      "canine_pubmed": {
+        "queries": [
+          "(dog OR canine) AND babesia AND (angiopoietin OR glycocalyx OR syndecan OR hyaluronan OR heparan)",
+          "(dog OR canine) AND babesiosis AND (angiopoietin OR syndecan OR hyaluronan OR VEGF OR selectin)",
+          "(dog OR canine) AND (syndecan-1 OR hyaluronan OR heparan sulfate) AND (sepsis OR septic OR SIRS OR critically)",
+          "(dog OR canine) AND syndecan-1 AND (ELISA OR validation OR assay) AND plasma",
+          "syndecan-1 AND malaria",
+          "syndecan-1 AND sepsis AND mortality AND meta-analysis"
+        ],
+        "dog_babesiosis_dois": []
+      },
+      "canine_status": "none",
+      "canine_severity_units": 0,
+      "canine_assay": "used_in_dogs",
+      "assay_evidence": [
+        "https://doi.org/10.2460/javma.25.08.0560",
+        "https://doi.org/10.1016/j.tvjl.2024.106221",
+        "https://doi.org/10.3389/fvets.2023.1127099",
+        "https://doi.org/10.1371/journal.pone.0325809"
+      ],
+      "dog_genes": ["SDC1", "HPSE"],
+      "testable_now": "public_file",
+      "testable_detail": "DS06 has SDC1 (ENSCAFG00000003833) and HPSE (ENSCAFG00000009094). These are whole-blood gene expression, not shed circulating ectodomain. No DS07 master protein. Not in DS02. Plasma syndecan-1, HA or HS would need stored samples.",
+      "gap": "yes",
+      "notes": "Canine syndecan-1, hyaluronan and heparan sulfate ELISAs have been used in trauma, haemorrhage models, anaesthesia (urinary syndecan-1, https://doi.org/10.1111/jvim.17121) and sepsis or critical illness (HA). No formal canine analytical validation was found, so graded used_in_dogs. Hyaluronan is the same molecule in all species. Blood RNA for SDC1 does not reflect endothelial shedding.",
+      "keywords": [],
+      "ds07_desc": []
+    },
+    {
+      "mechanism_id": "F2-03",
+      "family": "F2 Endothelium, glycocalyx, angiopoietin",
+      "mechanism": "Soluble endothelial adhesion molecules (ICAM-1, VCAM-1, E-selectin)",
+      "added_by_agent": "no",
+      "human_conditions": ["malaria", "sepsis"],
+      "hu_articles": ["HU010"],
+      "human_key_dois": [
+        "https://doi.org/10.1371/journal.pone.0084181",
+        "https://doi.org/10.1097/CCM.0000000000004469",
+        "https://doi.org/10.1093/ofid/ofw134",
+        "https://doi.org/10.1038/s41426-018-0105-2"
+      ],
+      "human_n_studies": 4,
+      "human_grade": 3,
+      "human_direction": "sICAM-1 (and sVCAM-1, sE-selectin) are higher in cerebral and severe malaria and go with AKI and mortality in paediatric severe malaria. In knowlesi malaria they correlate with endothelial markers.",
+      "cb_confirmed": [
+        {"id": "CB004", "what": "Canine ELISA for sICAM-1 and sVCAM-1 in 30 dogs with B. canis (11 complicated vs 19 uncomplicated) plus 10 controls. At admission sVCAM-1 was higher in complicated dogs (p=0.004). sICAM-1 did not differ by severity; it was higher at admission than at day 6.", "severity_contrast": true, "cohort": null},
+        {"id": "CB446", "what": "Canine ELISA for sICAM-1 in 12 dogs with B. canis vs 10 healthy dogs, before and 3 days after treatment. Higher than controls.", "severity_contrast": false, "cohort": null},
+        {"id": "CB384", "what": "ELISA for sICAM-1 in 12 dogs before and 6 days after imidocarb. Lower than healthy dogs. Same Zagreb group as CB446 (possible overlap; not in cohorts.json).", "severity_contrast": false, "cohort": null},
+        {"id": "CB111", "what": "VCAM-1 immunohistochemistry of the lung in fatal B. rossi cases vs control lungs. Endothelial staining was similar to controls; intravascular leukocytes were positive. Tissue, not a severity contrast.", "severity_contrast": false, "cohort": "CH04"}
+      ],
+      "cb_rejected": [
+        "CB028, CB259, CB493, CB516: reviews or introductions citing the Zagreb sICAM-1 results; not measured",
+        "CB071, CB137: metabolomics discussion of ICAM-1; not measured",
+        "CB107, CB147, CB195: discussion of sequestration and adhesion molecules; not measured",
+        "CB469: abstract-only text (no CB note, not in articles.jsonl) from the Zagreb group; it measured ICAM-1 by day of disease vs healthy dogs and is probably the same cohort as CB004; no severity contrast in the abstract"
+      ],
+      "canine_pubmed": {
+        "queries": [
+          "(dog OR canine) AND babesia AND (ICAM-1 OR VCAM-1 OR E-selectin OR \"adhesion molecule\")",
+          "(dog OR canine) AND (babesiosis OR babesia) AND (endothelial OR endothelium)",
+          "(dog OR canine) AND (VCAM-1 OR ICAM-1 OR E-selectin) AND (soluble OR serum OR plasma) AND (ELISA OR validation OR sepsis)",
+          "(dog OR canine) AND (sICAM-1 OR sVCAM-1 OR soluble E-selectin) AND (validation OR ELISA)",
+          "malaria AND (ICAM-1 OR VCAM-1 OR E-selectin) AND soluble AND (severe OR cerebral OR fatal)",
+          "(Plasmodium OR malaria) AND (sICAM-1 OR soluble ICAM-1 OR VCAM-1) AND mortality"
+        ],
+        "dog_babesiosis_dois": [
+          "https://doi.org/10.1186/s12917-017-0995-6",
+          "https://doi.org/10.1111/jvim.12146",
+          "https://doi.org/10.36303/jsava.523"
+        ]
+      },
+      "canine_status": "severity_tested",
+      "canine_severity_units": 1,
+      "canine_assay": "validated",
+      "assay_evidence": [
+        "https://doi.org/10.1186/s12917-017-0995-6",
+        "https://doi.org/10.1111/jvim.12146"
+      ],
+      "dog_genes": ["ICAM1", "VCAM1", "SELE"],
+      "testable_now": "public_file",
+      "testable_detail": "DS06 has ICAM1 (ENSCAFG00000031460). This is whole-blood gene expression (leukocyte ICAM-1), not soluble endothelial protein. VCAM1 and SELE are not in DS06. No DS07 master protein. Not in DS02.",
+      "gap": "no",
+      "notes": "One severity-tested unit (CB004, 11 vs 19 dogs): only sVCAM-1 at admission was significant. The sICAM-1 direction against controls conflicts between CB384 (lower) and CB446 (higher). No study of sE-selectin in canine babesiosis was found; it remains unmeasured but is folded into this row. Graded validated because canine-specific ELISA kits were used. CB384 has no DOI in the corpus.",
+      "keywords": [],
+      "ds07_desc": []
+    },
+    {
+      "mechanism_id": "F2-04",
+      "family": "F2 Endothelium, glycocalyx, angiopoietin",
+      "mechanism": "VEGF and soluble VEGFR-1",
+      "added_by_agent": "no",
+      "human_conditions": ["malaria", "sepsis"],
+      "hu_articles": [],
+      "human_key_dois": [
+        "https://doi.org/10.1016/j.medcli.2024.03.027",
+        "https://doi.org/10.1097/CCE.0000000000001294",
+        "https://doi.org/10.4103/0972-9062.313969",
+        "https://doi.org/10.4269/ajtmh.2010.09-0203"
+      ],
+      "human_n_studies": 4,
+      "human_grade": 3,
+      "human_direction": "sFlt-1 (soluble VEGFR-1) is higher in sepsis with ARDS and in non-survivors (a systematic review and meta-analysis supports prognostic value). VEGF results in malaria are mixed: higher in severe vivax malaria, but proposed as protective in cerebral malaria.",
+      "cb_confirmed": [],
+      "cb_rejected": [
+        "CB122: serum extracellular-vesicle proteomics (15 B. canis vs 15 healthy dogs). VEGF/VEGFR appears only as an enrichment annotation of a pathway; VEGF and sFlt-1 were not quantified and there was no severity contrast"
+      ],
+      "canine_pubmed": {
+        "queries": [
+          "(dog OR canine) AND babesia AND (VEGF OR \"vascular endothelial growth factor\" OR sFlt-1 OR VEGFR)",
+          "(dog OR canine) AND babesiosis AND (angiopoietin OR syndecan OR hyaluronan OR VEGF OR selectin)",
+          "(dog OR canine) AND (VEGF OR vascular endothelial growth factor) AND ELISA AND validation",
+          "(dog OR canine) AND (VEGF OR vascular endothelial growth factor OR sFlt-1) AND (sepsis OR SIRS OR critical) AND (plasma OR serum)",
+          "(sFlt-1 OR soluble fms-like tyrosine kinase-1) AND sepsis AND mortality",
+          "(sFlt-1 OR soluble VEGF receptor) AND malaria"
+        ],
+        "dog_babesiosis_dois": []
+      },
+      "canine_status": "none",
+      "canine_severity_units": 0,
+      "canine_assay": "validated",
+      "assay_evidence": [
+        "https://doi.org/10.1892/0891-6640(2006)20[144:eavegf]2.0.co;2",
+        "https://doi.org/10.1111/jvim.15369",
+        "https://doi.org/10.1111/j.1476-4431.2009.00457.x",
+        "https://doi.org/10.3389/fvets.2023.1127099"
+      ],
+      "dog_genes": ["VEGFA", "FLT1"],
+      "testable_now": "public_file",
+      "testable_detail": "DS06 has VEGFA (ENSCAFG00000001938) and FLT1 (ENSCAFG00000006701). These are whole-blood gene expression; the soluble sFlt-1 splice form is not separable without isoform-level analysis. No DS07 master protein. Not in DS02. Plasma VEGF would need stored samples.",
+      "gap": "yes",
+      "notes": "The 'validated' grade applies to VEGF only: an ELISA was validated for canine VEGF, and VEGF was higher in septic and non-surviving dogs. No canine sFlt-1 measurement was found. The human grade rests mostly on sepsis sFlt-1; the malaria VEGF evidence is small and inconsistent.",
+      "keywords": [],
+      "ds07_desc": []
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+ "id": "CB196",
+ "text_used": "data/markdown/CB196.md",
+ "extracted_by": "claude-opus-5-5 SV-G2 batch B08",
+ "extracted_utc": "2026-11-12T00:00:00Z",
+ "article_notes": "Case series of 8 dogs with PCR-confirmed B. vogeli (Kerala). Two dogs were SIRS positive (Matijatko et al. 2010) and one of them died; per-dog vital signs and WBC are tabulated (Tables 3 and 5) but there is no per-group summary or test of any marker between SIRS-positive and SIRS-negative dogs or by outcome, and the SIRS variables themselves define the groups. Haematology was tested only against standard reference values (one-sample t-test, Table 4), which is not a severity comparison.",
+ "skipped_infected_vs_healthy": 8,
+ "severity_definitions": [],
+ "associations": [],
+ "schema_version": "v2",
+ "setting": "referral hospital",
+ "sample_timing": "not stated",
+ "not_extracted": [
+  {
+   "what": "Per-dog data by SIRS status and outcome (Tables 2, 3, 5, 6)",
+   "reason": "no per-group result",
+   "note": "n=2 SIRS positive vs 6 negative; individual values only, no summary or test."
+  }
+ ]
+}

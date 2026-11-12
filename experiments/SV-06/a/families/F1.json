@@ -1,0 +1,505 @@
+{
+ "family": "F1 Haemolysis and haem scavenging",
+ "agent_summary": "Every upstream step of the haem scavenging chain is a gap in canine babesiosis: cfHb, haemopexin and haptoglobin have been measured only against controls or over time, and HO-1 and ADMA never; all have grade 2-3 human severity evidence and a canine assay, and cfHb (DS02, DS07 HBB), HMOX1 and HPX (DS06) are in public files. Not gaps: NO metabolites (Jacobson 2002, no severity signal) and the downstream lipid peroxidation readout (MDA, 3 severity-tested units). Surprise: both canine proteomic studies report haemopexin raised, not depleted, in infected dogs; haptoglobin findings are inconsistent (low, normal, raised).",
+ "mechanisms": [
+  {
+   "mechanism_id": "F1-01",
+   "family": "F1 Haemolysis and haem scavenging",
+   "mechanism": "Cell-free (plasma) haemoglobin",
+   "added_by_agent": "no",
+   "human_conditions": [
+    "malaria",
+    "sepsis"
+   ],
+   "hu_articles": [
+    "HU002",
+    "HU003",
+    "HU010",
+    "HU022"
+   ],
+   "human_key_dois": [
+    "https://doi.org/10.1038/s41426-018-0105-2",
+    "https://doi.org/10.1186/s12879-017-2373-1",
+    "https://doi.org/10.1097/CCM.0b013e3182741a54",
+    "https://doi.org/10.1186/cc11425"
+   ],
+   "human_n_studies": 6,
+   "human_grade": 3,
+   "human_direction": "higher in severe malaria (falciparum and knowlesi), with AKI and in fatal cases; independently higher in sepsis non-survivors",
+   "cb_confirmed": [
+    {
+     "id": "CB082",
+     "what": "plasma haemoglobin measured serially in experimental B. rossi Beagles (3 high-dose, 2 low-dose); rose by day 3 in the high-dose group; contrast is inoculum dose and time, not a severity/outcome grouping",
+     "severity_contrast": false,
+     "cohort": "CH09"
+    },
+    {
+     "id": "CB412",
+     "what": "serum haemoglobin measured in 25 dogs with babesiosis vs controls, IMHA and induced haemoglobinaemia; no within-babesiosis severity contrast",
+     "severity_contrast": false,
+     "cohort": "CH29"
+    }
+   ],
+   "cb_rejected": [
+    "CB325: free Hb only as photometric interference (same cohort CH29 as CB412)",
+    "CB039, CB040, CB053, CB065, CB076, CB080, CB112, CB119, CB177, CB178, CB222, CB232, CB258, CB476, CB501, CB507: keyword in discussion or background only, cfHb not measured"
+   ],
+   "canine_pubmed": {
+    "queries": [
+     "(cell-free hemoglobin OR plasma free hemoglobin) AND (malaria OR sepsis) AND (mortality OR severity OR severe)",
+     "cell-free hemoglobin[Title/Abstract] AND (sepsis[Title/Abstract] OR malaria[Title/Abstract]) AND (mortality[Title/Abstract] OR death[Title/Abstract] OR severe[Title/Abstract])",
+     "(Janz DR[Author] AND cell-free hemoglobin AND sepsis) OR (Adamzik M[Author] AND free hemoglobin AND sepsis) OR (Yeo TW[Author] AND cell-free hemoglobin AND malaria)",
+     "(dog OR canine) AND babesi* AND (plasma hemoglobin OR free hemoglobin OR haemoglobinaemia OR hemoglobinemia OR hemopexin OR haemopexin OR heme OR haem)",
+     "(dog OR dogs OR canine) AND (babesiosis OR Babesia) AND (haptoglobin OR \"acute phase proteins\")"
+    ],
+    "dog_babesiosis_dois": [
+     "https://doi.org/10.1016/j.tvjl.2011.01.027",
+     "https://doi.org/10.1186/s12864-021-07889-4",
+     "https://doi.org/10.1016/s0304-4017(01)00606-9"
+    ]
+   },
+   "canine_status": "measured_no_severity",
+   "canine_severity_units": 0,
+   "canine_assay": "used_in_dogs",
+   "assay_evidence": [
+    "https://doi.org/10.1016/j.tvjl.2011.01.027",
+    "https://doi.org/10.1152/ajpheart.00092.2021",
+    "https://doi.org/10.1172/jci.insight.123013"
+   ],
+   "dog_genes": [
+    "HBA",
+    "HBB",
+    "HBA1",
+    "HBA2"
+   ],
+   "testable_now": "public_file",
+   "testable_detail": "DS02 cfhb (5 experimental B. rossi Beagles; dose groups and clinical scores, no outcome labels); DS07 master P60524 (HBB, 45% coverage); HBA P60529 is master_candidate only. Serum HBB peptides in DS07 may also reflect in vitro haemolysis.",
+   "gap": "yes",
+   "notes": "Jacobson 2002 (B. rossi, mild/severe/complicated groups) used free serum Hb as a covariate for nitric oxide metabolites; the abstract reports no cfHb-by-severity result, so it is not counted. CFH spectrophotometry is used in a canine sepsis model (purpose-bred Beagles), not formally validated. HU022 is brain tissue Hb by near-infrared spectroscopy, tangential.",
+   "keywords": [],
+   "ds07_desc": []
+  },
+  {
+   "mechanism_id": "F1-02",
+   "family": "F1 Haemolysis and haem scavenging",
+   "mechanism": "Free haem and haemopexin depletion",
+   "added_by_agent": "no",
+   "human_conditions": [
+    "malaria",
+    "sepsis"
+   ],
+   "hu_articles": [
+    "HU003"
+   ],
+   "human_key_dois": [
+    "https://doi.org/10.1186/s12936-015-1028-1",
+    "https://doi.org/10.26508/lsa.202302276",
+    "https://doi.org/10.1186/cc13108",
+    "https://doi.org/10.1186/s13054-015-0885-x"
+   ],
+   "human_n_studies": 2,
+   "human_grade": 2,
+   "human_direction": "free haem (haemin, labile haem) higher and haemopexin lower in severe and fatal paediatric malaria; in sepsis haemopexin was not independently linked to death and in Angolan children haemopexin was not a risk factor",
+   "cb_confirmed": [
+    {
+     "id": "CB117",
+     "what": "2-D gel proteomics: haemopexin spots more abundant in 3 B. canis dogs vs 3 healthy; no severity contrast",
+     "severity_contrast": false,
+     "cohort": null
+    },
+    {
+     "id": "CB476",
+     "what": "serum proteomics: haemopexin among proteins changed in 25 B. canis dogs vs 10 controls (reported as increased); no severity contrast",
+     "severity_contrast": false,
+     "cohort": "CH22"
+    }
+   ],
+   "cb_rejected": [
+    "CB325: 'free haem' keyword is free haemoglobin interference only",
+    "CB028, CB040, CB076, CB080, CB112, CB178, CB501, CB507: background or review mention, not measured"
+   ],
+   "canine_pubmed": {
+    "queries": [
+     "(dog OR canine) AND babesi* AND (plasma hemoglobin OR free hemoglobin OR haemoglobinaemia OR hemoglobinemia OR hemopexin OR haemopexin OR heme OR haem)",
+     "(hemopexin OR haemopexin OR \"free heme\" OR haptoglobin) AND (malaria OR sepsis) AND (mortality OR severe OR fatal) AND plasma AND humans[MeSH Terms]",
+     "(dog OR dogs OR canine) AND (hemopexin OR haemopexin) AND (serum OR plasma) AND (assay OR ELISA OR validation OR concentration)"
+    ],
+    "dog_babesiosis_dois": [
+     "https://doi.org/10.14202/vetworld.2023.2042-2048",
+     "https://doi.org/10.1186/1746-6148-10-111"
+    ]
+   },
+   "canine_status": "measured_no_severity",
+   "canine_severity_units": 0,
+   "canine_assay": "used_in_dogs",
+   "assay_evidence": [
+    "https://doi.org/10.14202/vetworld.2023.2042-2048",
+    "https://doi.org/10.3390/ani12040490",
+    "https://doi.org/10.1016/j.tvjl.2012.12.011"
+   ],
+   "dog_genes": [
+    "HPX"
+   ],
+   "testable_now": "public_file",
+   "testable_detail": "DS06 ENSCAFG00000006430_HPX (whole-blood RNA-seq of the DS02 Beagles: gene expression, not circulating protein; HPX is made in liver, so blood expression is a weak proxy). Not a master protein in DS07. Free haem itself is in no public file.",
+   "gap": "yes",
+   "notes": "Surprise: both canine proteomic studies report haemopexin HIGHER in infected dogs, opposite to the human 'depletion' direction. Canine haemopexin has only been quantified by mass spectrometry; no canine immunoassay validation found. Free/labile haem never measured in canine babesiosis.",
+   "keywords": [],
+   "ds07_desc": []
+  },
+  {
+   "mechanism_id": "F1-03",
+   "family": "F1 Haemolysis and haem scavenging",
+   "mechanism": "Haptoglobin depletion",
+   "added_by_agent": "no",
+   "human_conditions": [
+    "sepsis",
+    "malaria"
+   ],
+   "hu_articles": [
+    "HU003"
+   ],
+   "human_key_dois": [
+    "https://doi.org/10.1186/cc13108",
+    "https://doi.org/10.1186/s12936-015-1028-1",
+    "https://doi.org/10.26508/lsa.202302276"
+   ],
+   "human_n_studies": 1,
+   "human_grade": 2,
+   "human_direction": "higher haptoglobin independently linked to lower in-hospital mortality in sepsis (effect confined to patients with detectable cfHb); in paediatric malaria haptoglobin was not a risk factor for severe disease",
+   "cb_confirmed": [
+    {
+     "id": "CB058",
+     "what": "Hp lower in 20 B. canis dogs vs 10 controls",
+     "severity_contrast": false,
+     "cohort": null
+    },
+    {
+     "id": "CB232",
+     "what": "Hp not different in 15 B. canis canis dogs vs 15 controls",
+     "severity_contrast": false,
+     "cohort": "CH15"
+    },
+    {
+     "id": "CB222",
+     "what": "Hp modestly raised in 39 babesiosis dogs vs 23 controls (colourimetric kit)",
+     "severity_contrast": false,
+     "cohort": "CH05"
+    },
+    {
+     "id": "CB476",
+     "what": "Hp low on day 1 vs day 6 and vs controls (25 B. canis dogs); over time only",
+     "severity_contrast": false,
+     "cohort": "CH22"
+    },
+    {
+     "id": "CB323",
+     "what": "Hp followed over 8 days after treatment in uncomplicated B. canis; over time only",
+     "severity_contrast": false,
+     "cohort": null
+    },
+    {
+     "id": "CB076",
+     "what": "Hp within reference limits at presentation and after treatment in 8 dogs",
+     "severity_contrast": false,
+     "cohort": null
+    }
+   ],
+   "cb_rejected": [
+    "CB019, CB028, CB039, CB065, CB094, CB107, CB178: Hp cited in discussion or review only",
+    "CB046: Hp identified in pooled urine proteome, not quantified by severity",
+    "CB082: HP named as a haemolysis-cluster gene in RNA-seq, not a protein measurement"
+   ],
+   "canine_pubmed": {
+    "queries": [
+     "(dog OR canine) AND babesi* AND haptoglobin",
+     "(dog OR dogs OR canine) AND (babesiosis OR Babesia) AND (haptoglobin OR \"acute phase proteins\")",
+     "canine haptoglobin assay validation serum dogs"
+    ],
+    "dog_babesiosis_dois": [
+     "https://doi.org/10.30607/kvj.670744",
+     "https://doi.org/10.5281/zenodo.7769666",
+     "https://doi.org/10.47278/journal.ijvs/2022.167",
+     "https://doi.org/10.1186/1746-6148-10-111",
+     "https://doi.org/10.1016/j.vetpar.2006.10.004",
+     "https://doi.org/10.1111/j.1939-165x.2005.tb00028.x"
+    ]
+   },
+   "canine_status": "measured_no_severity",
+   "canine_severity_units": 0,
+   "canine_assay": "validated",
+   "assay_evidence": [
+    "https://doi.org/10.1007/s11259-006-3397-y"
+   ],
+   "dog_genes": [
+    "HP"
+   ],
+   "testable_now": "public_file",
+   "testable_detail": "DS07 has haptoglobin only as master_candidate (P19006 HP and G1K2D9 LOC479668, 16% coverage): counts only with this note. No HP Ensembl ID in DS06 counts per reference_lookup, although CB082 names HP among haemolysis-cluster genes of the same Beagles. Not in DS02.",
+   "gap": "yes",
+   "notes": "Ulutas 2005 (pre-window) had 6 uncomplicated and 1 complicated dog, so no usable severity contrast. Canine Hp is a positive acute-phase protein, so consumption by cfHb and induction by inflammation pull in opposite directions; canine results are inconsistent (low, normal, raised). Haemolysis lowers measured Hp in the validated canine assay.",
+   "keywords": [],
+   "ds07_desc": []
+  },
+  {
+   "mechanism_id": "F1-04",
+   "family": "F1 Haemolysis and haem scavenging",
+   "mechanism": "Haem oxygenase-1 induction",
+   "added_by_agent": "no",
+   "human_conditions": [
+    "malaria",
+    "sepsis"
+   ],
+   "hu_articles": [],
+   "human_key_dois": [
+    "https://doi.org/10.1371/journal.ppat.1002579",
+    "https://doi.org/10.1093/infdis/jiac234",
+    "https://doi.org/10.1097/SHK.0b013e31826ae951",
+    "https://doi.org/10.21037/atm-22-4793"
+   ],
+   "human_n_studies": 4,
+   "human_grade": 3,
+   "human_direction": "plasma HO-1 higher in severe malaria (Gambian children) and higher HO-1 linked to death in cerebral malaria (Ugandan children); HMOX1 promoter repeat linked to severe disease/death; serum HO-1 higher in septic AKI",
+   "cb_confirmed": [],
+   "cb_rejected": [
+    "no local keyword hits in CB notes or texts"
+   ],
+   "canine_pubmed": {
+    "queries": [
+     "(heme oxygenase-1 OR HO-1) AND plasma AND (malaria OR sepsis OR babesiosis) AND (severity OR mortality OR severe)",
+     "(HMOX1 OR heme oxygenase-1) AND (severe malaria OR cerebral malaria) AND (plasma OR levels) AND children",
+     "(dog OR dogs OR canine) AND (babesiosis OR Babesia) AND (heme oxygenase OR HMOX1 OR \"HO-1\")",
+     "(dog OR dogs OR canine) AND (heme oxygenase-1 OR HO-1) AND (serum OR plasma) AND (ELISA OR concentration OR assay)"
+    ],
+    "dog_babesiosis_dois": []
+   },
+   "canine_status": "none",
+   "canine_severity_units": 0,
+   "canine_assay": "used_in_dogs",
+   "assay_evidence": [
+    "https://doi.org/10.1016/j.imbio.2016.12.006"
+   ],
+   "dog_genes": [
+    "HMOX1"
+   ],
+   "testable_now": "public_file",
+   "testable_detail": "DS06 ENSCAFG00000001711_HMOX1 (whole-blood RNA-seq of the DS02 Beagles: gene expression, not circulating protein; human work shows neutrophils are the main blood HO-1 source, so blood expression is relevant). Not in DS07 or DS02.",
+   "gap": "yes",
+   "notes": "Zero PubMed hits for HO-1 in canine babesiosis. Plasma/splenic HO-1 measured in dogs by capture ELISA in visceral leishmaniasis (no formal canine validation).",
+   "keywords": [],
+   "ds07_desc": []
+  },
+  {
+   "mechanism_id": "F1-05",
+   "family": "F1 Haemolysis and haem scavenging",
+   "mechanism": "Nitric oxide scavenging and arginine / ADMA",
+   "added_by_agent": "no",
+   "human_conditions": [
+    "malaria",
+    "sepsis"
+   ],
+   "hu_articles": [
+    "HU010",
+    "HU011",
+    "HU002"
+   ],
+   "human_key_dois": [
+    "https://doi.org/10.1086/644641",
+    "https://doi.org/10.1093/infdis/jiz359",
+    "https://doi.org/10.1093/infdis/jiu156",
+    "https://doi.org/10.1093/ofid/ofw027"
+   ],
+   "human_n_studies": 4,
+   "human_grade": 3,
+   "human_direction": "lower endothelial NO bioavailability and lower arginine / arginine:ADMA ratio in severe malaria; cfHb inversely related to NO-dependent vascular function",
+   "cb_confirmed": [
+    {
+     "id": "CB515",
+     "what": "serum NOx in 5 B. vogeli-only dogs vs controls: no difference",
+     "severity_contrast": false,
+     "cohort": null
+    },
+    {
+     "id": "CB477",
+     "what": "serum NO in B. vogeli dogs vs controls: non-significant rise",
+     "severity_contrast": false,
+     "cohort": null
+    },
+    {
+     "id": "CB071",
+     "what": "urinary arginine (targeted metabolomics) associated with UPC in B. canis dogs (renal proteinuria as complication axis)",
+     "severity_contrast": true,
+     "cohort": "CH06"
+    }
+   ],
+   "cb_rejected": [
+    "CB473: NO named only as a proposed mechanism for TNF-alpha effect",
+    "CB091, CB137: arginine pathway enrichment vs healthy controls only (same cohort CH06 as CB071)",
+    "CB028, CB075, CB107, CB109, CB117, CB145, CB147, CB190, CB259, CB284, CB290, CB376, CB394, CB476, CB493, CB514: background mention"
+   ],
+   "canine_pubmed": {
+    "queries": [
+     "(dog OR dogs OR canine) AND (babesiosis OR Babesia) AND (asymmetric dimethylarginine OR ADMA OR symmetric dimethylarginine OR SDMA OR arginine OR nitric oxide OR nitrite)",
+     "(asymmetric dimethylarginine[Title] OR arginine[Title]) AND (sepsis[Title] OR malaria[Title]) AND (mortality OR fatal OR outcome OR severe)"
+    ],
+    "dog_babesiosis_dois": [
+     "https://doi.org/10.1016/s0304-4017(01)00606-9",
+     "https://doi.org/10.1016/j.vetpar.2014.05.002",
+     "https://doi.org/10.3389/fmicb.2021.715701",
+     "https://doi.org/10.1016/j.rvsc.2025.105629"
+    ]
+   },
+   "canine_status": "severity_tested",
+   "canine_severity_units": 2,
+   "canine_assay": "used_in_dogs",
+   "assay_evidence": [
+    "https://doi.org/10.1016/s0304-4017(01)00606-9",
+    "https://doi.org/10.1016/j.vetpar.2014.05.002"
+   ],
+   "dog_genes": [
+    "NOS2",
+    "NOS3",
+    "ARG1",
+    "DDAH1"
+   ],
+   "testable_now": "stored_samples_only",
+   "testable_detail": "No DS07 master, no DS06 genes in reference_lookup, nothing in DS02. NOx (Griess) or arginine would need archived serum.",
+   "gap": "no",
+   "notes": "Severity units: Jacobson 2002 (B. rossi, mild/severe uncomplicated/complicated, not in the review, pre-window): serum NO metabolites did not separate severity or outcome; CH06 urinary arginine vs UPC (weak, renal axis only). NO metabolites are not the human exposure (endothelial NO bioavailability, plasma arginine:ADMA); those are unmeasured in dogs with babesiosis. ADMA split out as F1-11.",
+   "keywords": [],
+   "ds07_desc": []
+  },
+  {
+   "mechanism_id": "F1-11",
+   "family": "F1 Haemolysis and haem scavenging",
+   "mechanism": "ADMA and arginine bioavailability (plasma arginine:ADMA ratio)",
+   "added_by_agent": "yes",
+   "human_conditions": [
+    "malaria"
+   ],
+   "hu_articles": [],
+   "human_key_dois": [
+    "https://doi.org/10.1093/ofid/ofw027",
+    "https://doi.org/10.1093/infdis/jiu156"
+   ],
+   "human_n_studies": 2,
+   "human_grade": 2,
+   "human_direction": "arginine:ADMA ratio lower in severe than non-severe malaria (adults) and low in severe paediatric malaria, inversely related to lactate and angiopoietin-2; ADMA itself higher in adults (linked to mortality in that group's work) but lower in children",
+   "cb_confirmed": [],
+   "cb_rejected": [
+    "no CB article measured ADMA; CB053 measured SDMA (renal filtration marker), not ADMA"
+   ],
+   "canine_pubmed": {
+    "queries": [
+     "(dog OR dogs OR canine) AND (babesiosis OR Babesia) AND (asymmetric dimethylarginine OR ADMA OR symmetric dimethylarginine OR SDMA OR arginine OR nitric oxide OR nitrite)",
+     "(dog OR dogs OR canine) AND (asymmetric dimethylarginine OR ADMA) AND (plasma OR serum) AND (sepsis OR disease OR validation OR assay OR ELISA)"
+    ],
+    "dog_babesiosis_dois": []
+   },
+   "canine_status": "none",
+   "canine_severity_units": 0,
+   "canine_assay": "used_in_dogs",
+   "assay_evidence": [
+    "https://doi.org/10.1111/jvim.15785",
+    "https://doi.org/10.3390/ijms24087142"
+   ],
+   "dog_genes": [
+    "DDAH1",
+    "DDAH2",
+    "PRMT1",
+    "AGXT2"
+   ],
+   "testable_now": "stored_samples_only",
+   "testable_detail": "ADMA is a metabolite: not a DS07 protein, not a DS02 variable. DDAH/PRMT gene expression in DS06 not checked here (left to the assembly script). HPLC or ELISA on archived serum needed.",
+   "gap": "yes",
+   "notes": "SDMA (a renal filtration marker, not the NOS inhibitor) was severity-tested in B. rossi (higher in complicated: https://doi.org/10.1016/j.ttbdis.2020.101406) and measured in B. canis (https://doi.org/10.1016/j.ttbdis.2018.07.012); ADMA never. Canine ADMA by HPLC was linked to death in acute pancreatitis.",
+   "keywords": [
+    "asymmetric dimethylarginine",
+    "\\bADMA\\b",
+    "arginine:ADMA",
+    "arginine/ADMA"
+   ],
+   "ds07_desc": []
+  },
+  {
+   "mechanism_id": "F1-12",
+   "family": "F1 Haemolysis and haem scavenging",
+   "mechanism": "Haem-driven lipid peroxidation (MDA, TBARS, F2-isoprostanes)",
+   "added_by_agent": "yes",
+   "human_conditions": [
+    "malaria",
+    "sepsis"
+   ],
+   "hu_articles": [
+    "HU002"
+   ],
+   "human_key_dois": [
+    "https://doi.org/10.1186/s12879-017-2373-1",
+    "https://doi.org/10.1097/CCM.0b013e3182741a54"
+   ],
+   "human_n_studies": 2,
+   "human_grade": 2,
+   "human_direction": "plasma F2-isoprostanes higher in fatal falciparum malaria and with AKI needing dialysis; in sepsis isoprostanes lower when cfHb-associated oxidation is blocked (acetaminophen)",
+   "cb_confirmed": [
+    {
+     "id": "CB006",
+     "what": "MDA and antioxidants by uncomplicated / one complication / MODS and by death in 40 dogs",
+     "severity_contrast": true,
+     "cohort": null
+    },
+    {
+     "id": "CB394",
+     "what": "MDA higher in 35 B. canis dogs vs controls; no difference complicated vs uncomplicated or by anaemia grade",
+     "severity_contrast": true,
+     "cohort": "CH33"
+    },
+    {
+     "id": "CB499",
+     "what": "MDA in 30 B. canis dogs vs 25 controls; associated with complicated disease, MODS and outcome",
+     "severity_contrast": true,
+     "cohort": null
+    },
+    {
+     "id": "CB076",
+     "what": "erythrocyte MDA before and after treatment in 8 dogs",
+     "severity_contrast": false,
+     "cohort": null
+    }
+   ],
+   "cb_rejected": [
+    "CB202 (CH08): TBARS correlated with hepcidin; TBARS-by-outcome not confirmed from the note",
+    "CB077, CB083, CB114, CB319: oxidative stress markers other than lipid peroxidation, or review"
+   ],
+   "canine_pubmed": {
+    "queries": [
+     "local CB notes grep: malondialdehyde|isoprostane|TBARS|lipid peroxid; SV-G2 associations_v2.csv grep MDA (no PubMed query run for this added row)"
+    ],
+    "dog_babesiosis_dois": [
+     "https://doi.org/10.1186/s12917-017-1020-9",
+     "https://doi.org/10.17221/77/2010-vetmed"
+    ]
+   },
+   "canine_status": "severity_tested",
+   "canine_severity_units": 3,
+   "canine_assay": "used_in_dogs",
+   "assay_evidence": [
+    "https://doi.org/10.17221/77/2010-vetmed",
+    "https://doi.org/10.1186/s12917-017-1020-9"
+   ],
+   "dog_genes": [],
+   "testable_now": "stored_samples_only",
+   "testable_detail": "Metabolite; not in DS07, DS06 or DS02.",
+   "gap": "no",
+   "notes": "Added as a check on the premise: the downstream oxidative-damage readout is already severity-tested in 3 canine units (mixed results), while the upstream haem scavenging chain (cfHb, free haem, haemopexin, haptoglobin, HO-1) is not. F2-isoprostanes never measured in canine babesiosis. CB499 has no DOI in articles.jsonl.",
+   "keywords": [
+    "malondialdehyde",
+    "\\bMDA\\b",
+    "isoprostane",
+    "TBARS",
+    "thiobarbituric",
+    "lipid peroxidation"
+   ],
+   "ds07_desc": []
+  }
+ ]
+}

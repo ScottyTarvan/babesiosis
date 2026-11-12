@@ -1,0 +1,4039 @@
+{
+ "experiment": {
+  "code": "SV-G2-01-literature-extraction",
+  "name": "Severity literature extraction: markers and host or parasite factors tested against severity (117 articles, schema v2)",
+  "description": "Which markers and host or parasite factors have canine babesiosis studies tested against severity or outcome, under which definitions and in how many independent cohorts? Descriptive groundwork for SV-03 and SV-02a; no hypothesis is tested.",
+  "method": "literature_extraction",
+  "dataset": null,
+  "parameters": {
+   "package": "SV-G2",
+   "role": "descriptive",
+   "datasets": [],
+   "independent_sources": [],
+   "scope": "shortlist tier A/B, source_format not abstract",
+   "articles": 117,
+   "independent_units": 99,
+   "spec_sha256": "b1b12dafb7675a31a450c66dc13c62c9aee8462888980934f38aeb4af19be880",
+   "seed": 20261112,
+   "second_sample_n": 24,
+   "schema": "association_schema_v2.json",
+   "schema_sha256": "01ef442d74fe30d53e891765c282a4dd8c7ddc0a9bc26b86f340989d4567bc0f"
+  },
+  "script": "/experiments/SV-G2/scripts/build_results.py",
+  "script_version": "09c63ce83f33",
+  "run_utc": "2026-11-12T05:30:13Z",
+  "n_subjects": 117,
+  "n_variables": 131,
+  "n_tests": 0,
+  "summary": "117 of 117 full-text tier A/B articles extracted under schema v2: 740 marker-by-severity rows from 49 articles in 42 independent units (78 severity definitions, 131 canonical markers, 75 in 2 or more units). Blind 20% second extraction: significance agreement 0.99, direction agreement 0.981 on 104 matched pairs. Descriptive; no tests."
+ },
+ "associations": [],
+ "cluster_assignments": [],
+ "results": [
+  {
+   "kind": "extraction_overview",
+   "title": "Coverage of the extraction",
+   "sort_order": 1,
+   "payload": {
+    "articles_in_scope": 117,
+    "articles_extracted": 117,
+    "articles_missing": [],
+    "articles_with_associations": 49,
+    "articles_without_associations": 68,
+    "independent_units_in_scope": 99,
+    "independent_units_with_associations": 42,
+    "canine_units_with_associations": 42,
+    "severity_definitions": 78,
+    "association_rows": 740,
+    "rows_significant": 260,
+    "rows_not_significant": 254,
+    "rows_not_tested": 192,
+    "canonical_markers": 131,
+    "markers_in_2plus_units": 75,
+    "quote_check_rows": {
+     "exact": 740
+    },
+    "quote_check_definitions": {
+     "exact": 78
+    },
+    "rows_numbers_not_in_text": 3,
+    "rows_schema_errors": 0,
+    "rows_unmapped_marker": 0,
+    "calibration_batch": [
+     "CB006",
+     "CB017",
+     "CB040",
+     "CB050",
+     "CB053",
+     "CB141",
+     "CB145",
+     "CB202",
+     "CB238",
+     "CB263"
+    ]
+   }
+  },
+  {
+   "kind": "markers",
+   "title": "Markers and factors by independent units",
+   "sort_order": 2,
+   "payload": {
+    "rows": [
+     {
+      "marker": "Haematocrit/PCV",
+      "marker_class": "haematology",
+      "factor_type": "laboratory or other marker",
+      "units": 21,
+      "articles": 21,
+      "rows": 27,
+      "units_sig_higher": 1,
+      "units_sig_lower": 7,
+      "units_not_significant": 4,
+      "outcome_classes": "anaemia_grade; complicated; mortality; other; parasitaemia_level; severity_grade; specific_complication; treatment_intensity",
+      "species_groups": "B. rossi; B. canis; B. gibsoni; Mixed or unspecified"
+     },
+     {
+      "marker": "Creatinine",
+      "marker_class": "biochemistry",
+      "factor_type": "laboratory or other marker",
+      "units": 16,
+      "articles": 16,
+      "rows": 18,
+      "units_sig_higher": 4,
+      "units_sig_lower": 0,
+      "units_not_significant": 3,
+      "outcome_classes": "complicated; mortality; other; parasitaemia_level; severity_grade; specific_complication",
+      "species_groups": "B. rossi; B. canis; B. gibsoni; Mixed or unspecified"
+     },
+     {
+      "marker": "Urea",
+      "marker_class": "biochemistry",
+      "factor_type": "laboratory or other marker",
+      "units": 16,
+      "articles": 16,
+      "rows": 21,
+      "units_sig_higher": 7,
+      "units_sig_lower": 0,
+      "units_not_significant": 2,
+      "outcome_classes": "complicated; mortality; other; parasitaemia_level; severity_grade; specific_complication",
+      "species_groups": "B. rossi; B. canis; B. gibsoni; Mixed or unspecified"
+     },
+     {
+      "marker": "Platelet count",
+      "marker_class": "haematology",
+      "factor_type": "laboratory or other marker",
+      "units": 15,
+      "articles": 15,
+      "rows": 16,
+      "units_sig_higher": 2,
+      "units_sig_lower": 1,
+      "units_not_significant": 3,
+      "outcome_classes": "anaemia_grade; complicated; mortality; parasitaemia_level; severity_grade; specific_complication; treatment_intensity",
+      "species_groups": "B. rossi; B. canis; B. gibsoni; Mixed or unspecified"
+     },
+     {
+      "marker": "White blood cell count",
+      "marker_class": "haematology",
+      "factor_type": "laboratory or other marker",
+      "units": 15,
+      "articles": 15,
+      "rows": 17,
+      "units_sig_higher": 3,
+      "units_sig_lower": 1,
+      "units_not_significant": 4,
+      "outcome_classes": "anaemia_grade; complicated; mortality; other; parasitaemia_level; severity_grade; specific_complication; treatment_intensity",
+      "species_groups": "B. rossi; B. canis; B. gibsoni; Mixed or unspecified"
+     },
+     {
+      "marker": "Bilirubin",
+      "marker_class": "biochemistry",
+      "factor_type": "laboratory or other marker",
+      "units": 14,
+      "articles": 14,
+      "rows": 20,
+      "units_sig_higher": 4,
+      "units_sig_lower": 0,
+      "units_not_significant": 4,
+      "outcome_classes": "anaemia_grade; complicated; mortality; other; parasitaemia_level; severity_grade; specific_complication",
+      "species_groups": "B. rossi; B. canis; B. gibsoni; Mixed or unspecified"
+     },
+     {
+      "marker": "Red blood cell count",
+      "marker_class": "haematology",
+      "factor_type": "laboratory or other marker",
+      "units": 13,
+      "articles": 14,
+      "rows": 14,
+      "units_sig_higher": 0,
+      "units_sig_lower": 2,
+      "units_not_significant": 4,
+      "outcome_classes": "anaemia_grade; complicated; mortality; parasitaemia_level; severity_grade; specific_complication",
+      "species_groups": "B. canis; B. gibsoni; Mixed or unspecified"
+     },
+     {
+      "marker": "Age",
+      "marker_class": "signalment",
+      "factor_type": "host factor",
+      "units": 12,
+      "articles": 14,
+      "rows": 14,
+      "units_sig_higher": 0,
+      "units_sig_lower": 1,
+      "units_not_significant": 5,
+      "outcome_classes": "anaemia_grade; complicated; mortality; severity_grade; specific_complication; treatment_intensity",
+      "species_groups": "B. rossi; B. canis; B. gibsoni; Mixed or unspecified"
+     },
+     {
+      "marker": "ALT",
+      "marker_class": "biochemistry",
+      "factor_type": "laboratory or other marker",
+      "units": 12,
+      "articles": 12,
+      "rows": 12,
+      "units_sig_higher": 4,
+      "units_sig_lower": 0,
+      "units_not_significant": 3,
+      "outcome_classes": "complicated; mortality; parasitaemia_level; severity_grade; specific_complication",
+      "species_groups": "B. canis; B. gibsoni; Mixed or unspecified"
+     },
+     {
+      "marker": "Haemoglobin",
+      "marker_class": "haematology",
+      "factor_type": "laboratory or other marker",
+      "units": 12,
+      "articles": 12,
+      "rows": 12,
+      "units_sig_higher": 0,
+      "units_sig_lower": 2,
+      "units_not_significant": 3,
+      "outcome_classes": "anaemia_grade; complicated; mortality; parasitaemia_level; severity_grade; specific_complication",
+      "species_groups": "B. canis; B. gibsoni; Mixed or unspecified"
+     },
+     {
+      "marker": "Albumin",
+      "marker_class": "biochemistry",
+      "factor_type": "laboratory or other marker",
+      "units": 10,
+      "articles": 11,
+      "rows": 13,
+      "units_sig_higher": 0,
+      "units_sig_lower": 2,
+      "units_not_significant": 4,
+      "outcome_classes": "anaemia_grade; complicated; mortality; other; parasitaemia_level; severity_grade",
+      "species_groups": "B. rossi; B. canis; B. gibsoni; Mixed or unspecified"
+     },
+     {
+      "marker": "Total protein",
+      "marker_class": "biochemistry",
+      "factor_type": "laboratory or other marker",
+      "units": 10,
+      "articles": 11,
+      "rows": 12,
+      "units_sig_higher": 0,
+      "units_sig_lower": 2,
+      "units_not_significant": 4,
+      "outcome_classes": "anaemia_grade; complicated; mortality; parasitaemia_level; severity_grade",
+      "species_groups": "B. canis; B. gibsoni; Mixed or unspecified"
+     },
+     {
+      "marker": "ALP",
+      "marker_class": "biochemistry",
+      "factor_type": "laboratory or other marker",
+      "units": 10,
+      "articles": 10,
+      "rows": 10,
+      "units_sig_higher": 4,
+      "units_sig_lower": 0,
+      "units_not_significant": 3,
+      "outcome_classes": "complicated; mortality; parasitaemia_level; severity_grade; specific_complication",
+      "species_groups": "B. canis; B. gibsoni; Mixed or unspecified"
+     },
+     {
+      "marker": "Sex / neuter status",
+      "marker_class": "signalment",
+      "factor_type": "host factor",
+      "units": 8,
+      "articles": 10,
+      "rows": 23,
+      "units_sig_higher": 0,
+      "units_sig_lower": 1,
+      "units_not_significant": 5,
+      "outcome_classes": "anaemia_grade; complicated; mortality; severity_grade; specific_complication; treatment_intensity",
+      "species_groups": "B. rossi; B. canis; B. gibsoni; Mixed or unspecified"
+     },
+     {
+      "marker": "C-reactive protein",
+      "marker_class": "acute phase protein",
+      "factor_type": "laboratory or other marker",
+      "units": 8,
+      "articles": 9,
+      "rows": 13,
+      "units_sig_higher": 2,
+      "units_sig_lower": 0,
+      "units_not_significant": 5,
+      "outcome_classes": "mortality; parasitaemia_level; severity_grade; specific_complication; treatment_intensity",
+      "species_groups": "B. rossi; B. canis; B. gibsoni; Mixed or unspecified"
+     },
+     {
+      "marker": "AST",
+      "marker_class": "biochemistry",
+      "factor_type": "laboratory or other marker",
+      "units": 8,
+      "articles": 8,
+      "rows": 8,
+      "units_sig_higher": 3,
+      "units_sig_lower": 0,
+      "units_not_significant": 0,
+      "outcome_classes": "parasitaemia_level; severity_grade; specific_complication",
+      "species_groups": "B. canis; B. gibsoni; Mixed or unspecified"
+     },
+     {
+      "marker": "Neutrophil count",
+      "marker_class": "haematology",
+      "factor_type": "laboratory or other marker",
+      "units": 7,
+      "articles": 8,
+      "rows": 10,
+      "units_sig_higher": 1,
+      "units_sig_lower": 1,
+      "units_not_significant": 3,
+      "outcome_classes": "mortality; parasitaemia_level; severity_grade; specific_complication; treatment_intensity",
+      "species_groups": "B. rossi; B. gibsoni; Mixed or unspecified"
+     },
+     {
+      "marker": "Band neutrophils",
+      "marker_class": "haematology",
+      "factor_type": "laboratory or other marker",
+      "units": 7,
+      "articles": 7,
+      "rows": 10,
+      "units_sig_higher": 4,
+      "units_sig_lower": 0,
+      "units_not_significant": 1,
+      "outcome_classes": "complicated; mortality; parasitaemia_level; specific_complication; treatment_intensity",
+      "species_groups": "B. rossi; B. gibsoni; Mixed or unspecified"
+     },
+     {
+      "marker": "Body temperature",
+      "marker_class": "clinical sign",
+      "factor_type": "clinical sign or score",
+      "units": 7,
+      "articles": 7,
+      "rows": 11,
+      "units_sig_higher": 0,
+      "units_sig_lower": 4,
+      "units_not_significant": 3,
+      "outcome_classes": "anaemia_grade; mortality; other; parasitaemia_level; specific_complication",
+      "species_groups": "B. rossi; B. canis; Mixed or unspecified"
+     },
+     {
+      "marker": "Eosinophil count",
+      "marker_class": "haematology",
+      "factor_type": "laboratory or other marker",
+      "units": 6,
+      "articles": 6,
+      "rows": 6,
+      "units_sig_higher": 0,
+      "units_sig_lower": 0,
+      "units_not_significant": 3,
+      "outcome_classes": "mortality; parasitaemia_level; severity_grade; specific_complication; treatment_intensity",
+      "species_groups": "B. rossi; B. gibsoni; Mixed or unspecified"
+     },
+     {
+      "marker": "Glucose",
+      "marker_class": "biochemistry",
+      "factor_type": "laboratory or other marker",
+      "units": 6,
+      "articles": 6,
+      "rows": 9,
+      "units_sig_higher": 0,
+      "units_sig_lower": 1,
+      "units_not_significant": 3,
+      "outcome_classes": "complicated; mortality; other; parasitaemia_level; severity_grade",
+      "species_groups": "B. rossi; B. canis; Mixed or unspecified"
+     },
+     {
+      "marker": "Lymphocyte count",
+      "marker_class": "haematology",
+      "factor_type": "laboratory or other marker",
+      "units": 6,
+      "articles": 6,
+      "rows": 6,
+      "units_sig_higher": 0,
+      "units_sig_lower": 0,
+      "units_not_significant": 3,
+      "outcome_classes": "mortality; parasitaemia_level; severity_grade; specific_complication; treatment_intensity",
+      "species_groups": "B. rossi; B. gibsoni; Mixed or unspecified"
+     },
+     {
+      "marker": "Parasitaemia",
+      "marker_class": "parasitology",
+      "factor_type": "parasite factor",
+      "units": 6,
+      "articles": 6,
+      "rows": 9,
+      "units_sig_higher": 0,
+      "units_sig_lower": 0,
+      "units_not_significant": 2,
+      "outcome_classes": "mortality; other; severity_grade; specific_complication",
+      "species_groups": "B. rossi; B. canis; B. gibsoni; Mixed or unspecified"
+     },
+     {
+      "marker": "Body weight / body condition",
+      "marker_class": "signalment",
+      "factor_type": "host factor",
+      "units": 5,
+      "articles": 6,
+      "rows": 6,
+      "units_sig_higher": 0,
+      "units_sig_lower": 0,
+      "units_not_significant": 4,
+      "outcome_classes": "complicated; mortality; specific_complication; treatment_intensity",
+      "species_groups": "B. rossi; Mixed or unspecified"
+     },
+     {
+      "marker": "Breed",
+      "marker_class": "signalment",
+      "factor_type": "host factor",
+      "units": 5,
+      "articles": 5,
+      "rows": 12,
+      "units_sig_higher": 0,
+      "units_sig_lower": 0,
+      "units_not_significant": 2,
+      "outcome_classes": "anaemia_grade; complicated; specific_complication; treatment_intensity",
+      "species_groups": "B. rossi; B. gibsoni; Mixed or unspecified"
+     },
+     {
+      "marker": "GGT",
+      "marker_class": "biochemistry",
+      "factor_type": "laboratory or other marker",
+      "units": 5,
+      "articles": 5,
+      "rows": 5,
+      "units_sig_higher": 3,
+      "units_sig_lower": 1,
+      "units_not_significant": 0,
+      "outcome_classes": "complicated; parasitaemia_level; severity_grade",
+      "species_groups": "B. canis; Mixed or unspecified"
+     },
+     {
+      "marker": "Monocyte count",
+      "marker_class": "haematology",
+      "factor_type": "laboratory or other marker",
+      "units": 5,
+      "articles": 5,
+      "rows": 5,
+      "units_sig_higher": 0,
+      "units_sig_lower": 0,
+      "units_not_significant": 2,
+      "outcome_classes": "mortality; parasitaemia_level; severity_grade; treatment_intensity",
+      "species_groups": "B. rossi; B. gibsoni; Mixed or unspecified"
+     },
+     {
+      "marker": "Co-infection",
+      "marker_class": "parasitology",
+      "factor_type": "parasite factor",
+      "units": 4,
+      "articles": 4,
+      "rows": 7,
+      "units_sig_higher": 0,
+      "units_sig_lower": 0,
+      "units_not_significant": 2,
+      "outcome_classes": "anaemia_grade; mortality; severity_grade; specific_complication",
+      "species_groups": "B. canis; B. vogeli; Mixed or unspecified"
+     },
+     {
+      "marker": "IL-10",
+      "marker_class": "cytokine",
+      "factor_type": "laboratory or other marker",
+      "units": 4,
+      "articles": 4,
+      "rows": 5,
+      "units_sig_higher": 1,
+      "units_sig_lower": 0,
+      "units_not_significant": 3,
+      "outcome_classes": "complicated; mortality; parasitaemia_level; severity_grade",
+      "species_groups": "B. rossi; B. canis"
+     },
+     {
+      "marker": "Lactate",
+      "marker_class": "acid-base and perfusion",
+      "factor_type": "laboratory or other marker",
+      "units": 4,
+      "articles": 4,
+      "rows": 8,
+      "units_sig_higher": 3,
+      "units_sig_lower": 0,
+      "units_not_significant": 0,
+      "outcome_classes": "complicated; mortality; other",
+      "species_groups": "B. rossi; B. canis; Mixed or unspecified"
+     },
+     {
+      "marker": "Thyroid hormones",
+      "marker_class": "endocrine",
+      "factor_type": "laboratory or other marker",
+      "units": 4,
+      "articles": 4,
+      "rows": 19,
+      "units_sig_higher": 0,
+      "units_sig_lower": 4,
+      "units_not_significant": 3,
+      "outcome_classes": "mortality; other; specific_complication",
+      "species_groups": "B. rossi; B. canis"
+     },
+     {
+      "marker": "Iron and iron indices",
+      "marker_class": "biochemistry",
+      "factor_type": "laboratory or other marker",
+      "units": 3,
+      "articles": 4,
+      "rows": 8,
+      "units_sig_higher": 1,
+      "units_sig_lower": 3,
+      "units_not_significant": 0,
+      "outcome_classes": "anaemia_grade; complicated; mortality; severity_grade",
+      "species_groups": "B. rossi; B. canis; Mixed or unspecified"
+     },
+     {
+      "marker": "Red cell indices",
+      "marker_class": "haematology",
+      "factor_type": "laboratory or other marker",
+      "units": 3,
+      "articles": 4,
+      "rows": 10,
+      "units_sig_higher": 1,
+      "units_sig_lower": 0,
+      "units_not_significant": 1,
+      "outcome_classes": "anaemia_grade; mortality",
+      "species_groups": "B. canis; Mixed or unspecified"
+     },
+     {
+      "marker": "Serum amyloid A",
+      "marker_class": "acute phase protein",
+      "factor_type": "laboratory or other marker",
+      "units": 3,
+      "articles": 4,
+      "rows": 4,
+      "units_sig_higher": 0,
+      "units_sig_lower": 0,
+      "units_not_significant": 3,
+      "outcome_classes": "mortality",
+      "species_groups": "B. rossi; B. canis; Mixed or unspecified"
+     },
+     {
+      "marker": "Basophil count",
+      "marker_class": "haematology",
+      "factor_type": "laboratory or other marker",
+      "units": 3,
+      "articles": 3,
+      "rows": 3,
+      "units_sig_higher": 0,
+      "units_sig_lower": 0,
+      "units_not_significant": 1,
+      "outcome_classes": "parasitaemia_level; severity_grade",
+      "species_groups": "B. gibsoni; Mixed or unspecified"
+     },
+     {
+      "marker": "Cholesterol",
+      "marker_class": "biochemistry",
+      "factor_type": "laboratory or other marker",
+      "units": 3,
+      "articles": 3,
+      "rows": 3,
+      "units_sig_higher": 0,
+      "units_sig_lower": 0,
+      "units_not_significant": 2,
+      "outcome_classes": "mortality; parasitaemia_level; specific_complication",
+      "species_groups": "B. canis; Mixed or unspecified"
+     },
+     {
+      "marker": "Cortisol",
+      "marker_class": "endocrine",
+      "factor_type": "laboratory or other marker",
+      "units": 3,
+      "articles": 3,
+      "rows": 13,
+      "units_sig_higher": 3,
+      "units_sig_lower": 0,
+      "units_not_significant": 2,
+      "outcome_classes": "mortality; other; specific_complication",
+      "species_groups": "B. rossi"
+     },
+     {
+      "marker": "Fibrinogen",
+      "marker_class": "coagulation",
+      "factor_type": "laboratory or other marker",
+      "units": 3,
+      "articles": 3,
+      "rows": 3,
+      "units_sig_higher": 1,
+      "units_sig_lower": 0,
+      "units_not_significant": 1,
+      "outcome_classes": "complicated; mortality; severity_grade",
+      "species_groups": "B. rossi; Mixed or unspecified"
+     },
+     {
+      "marker": "Globulins",
+      "marker_class": "biochemistry",
+      "factor_type": "laboratory or other marker",
+      "units": 3,
+      "articles": 3,
+      "rows": 3,
+      "units_sig_higher": 0,
+      "units_sig_lower": 1,
+      "units_not_significant": 1,
+      "outcome_classes": "anaemia_grade; severity_grade",
+      "species_groups": "B. canis; Mixed or unspecified"
+     },
+     {
+      "marker": "Heart rate",
+      "marker_class": "clinical sign",
+      "factor_type": "clinical sign or score",
+      "units": 3,
+      "articles": 3,
+      "rows": 3,
+      "units_sig_higher": 1,
+      "units_sig_lower": 0,
+      "units_not_significant": 2,
+      "outcome_classes": "anaemia_grade; mortality; specific_complication",
+      "species_groups": "B. rossi; B. canis; Mixed or unspecified"
+     },
+     {
+      "marker": "MCP-1 (CCL2)",
+      "marker_class": "cytokine",
+      "factor_type": "laboratory or other marker",
+      "units": 3,
+      "articles": 3,
+      "rows": 5,
+      "units_sig_higher": 2,
+      "units_sig_lower": 0,
+      "units_not_significant": 0,
+      "outcome_classes": "complicated; mortality",
+      "species_groups": "B. rossi; B. canis"
+     },
+     {
+      "marker": "Malondialdehyde / TBARS",
+      "marker_class": "oxidative stress",
+      "factor_type": "laboratory or other marker",
+      "units": 3,
+      "articles": 3,
+      "rows": 10,
+      "units_sig_higher": 2,
+      "units_sig_lower": 0,
+      "units_not_significant": 2,
+      "outcome_classes": "anaemia_grade; complicated; mortality; organ_dysfunction",
+      "species_groups": "B. canis; Mixed or unspecified"
+     },
+     {
+      "marker": "Phosphate",
+      "marker_class": "electrolyte",
+      "factor_type": "laboratory or other marker",
+      "units": 3,
+      "articles": 3,
+      "rows": 5,
+      "units_sig_higher": 2,
+      "units_sig_lower": 0,
+      "units_not_significant": 0,
+      "outcome_classes": "mortality; other; parasitaemia_level",
+      "species_groups": "B. rossi; B. canis; Mixed or unspecified"
+     },
+     {
+      "marker": "Potassium",
+      "marker_class": "electrolyte",
+      "factor_type": "laboratory or other marker",
+      "units": 3,
+      "articles": 3,
+      "rows": 4,
+      "units_sig_higher": 0,
+      "units_sig_lower": 0,
+      "units_not_significant": 2,
+      "outcome_classes": "mortality; other; parasitaemia_level",
+      "species_groups": "B. rossi; B. canis; Mixed or unspecified"
+     },
+     {
+      "marker": "Prothrombin time",
+      "marker_class": "coagulation",
+      "factor_type": "laboratory or other marker",
+      "units": 3,
+      "articles": 3,
+      "rows": 3,
+      "units_sig_higher": 2,
+      "units_sig_lower": 0,
+      "units_not_significant": 0,
+      "outcome_classes": "mortality; severity_grade",
+      "species_groups": "B. rossi; Mixed or unspecified"
+     },
+     {
+      "marker": "aPTT",
+      "marker_class": "coagulation",
+      "factor_type": "laboratory or other marker",
+      "units": 3,
+      "articles": 3,
+      "rows": 3,
+      "units_sig_higher": 1,
+      "units_sig_lower": 0,
+      "units_not_significant": 1,
+      "outcome_classes": "mortality; severity_grade",
+      "species_groups": "B. rossi; Mixed or unspecified"
+     },
+     {
+      "marker": "Albumin:globulin ratio",
+      "marker_class": "biochemistry",
+      "factor_type": "laboratory or other marker",
+      "units": 2,
+      "articles": 3,
+      "rows": 3,
+      "units_sig_higher": 0,
+      "units_sig_lower": 1,
+      "units_not_significant": 0,
+      "outcome_classes": "anaemia_grade; complicated; severity_grade",
+      "species_groups": "B. canis; Mixed or unspecified"
+     },
+     {
+      "marker": "Calcium",
+      "marker_class": "electrolyte",
+      "factor_type": "laboratory or other marker",
+      "units": 2,
+      "articles": 2,
+      "rows": 2,
+      "units_sig_higher": 0,
+      "units_sig_lower": 0,
+      "units_not_significant": 1,
+      "outcome_classes": "mortality; parasitaemia_level",
+      "species_groups": "B. canis; Mixed or unspecified"
+     },
+     {
+      "marker": "Catalase",
+      "marker_class": "oxidative stress",
+      "factor_type": "laboratory or other marker",
+      "units": 2,
+      "articles": 2,
+      "rows": 8,
+      "units_sig_higher": 0,
+      "units_sig_lower": 2,
+      "units_not_significant": 1,
+      "outcome_classes": "anaemia_grade; complicated; mortality; organ_dysfunction",
+      "species_groups": "B. canis; Mixed or unspecified"
+     },
+     {
+      "marker": "Chloride",
+      "marker_class": "electrolyte",
+      "factor_type": "laboratory or other marker",
+      "units": 2,
+      "articles": 2,
+      "rows": 2,
+      "units_sig_higher": 0,
+      "units_sig_lower": 0,
+      "units_not_significant": 1,
+      "outcome_classes": "mortality",
+      "species_groups": "B. rossi; B. canis"
+     },
+     {
+      "marker": "Coagulation factor activity",
+      "marker_class": "coagulation",
+      "factor_type": "laboratory or other marker",
+      "units": 2,
+      "articles": 2,
+      "rows": 5,
+      "units_sig_higher": 0,
+      "units_sig_lower": 2,
+      "units_not_significant": 1,
+      "outcome_classes": "complicated; mortality",
+      "species_groups": "B. rossi"
+     },
+     {
+      "marker": "Creatine kinase",
+      "marker_class": "biochemistry",
+      "factor_type": "laboratory or other marker",
+      "units": 2,
+      "articles": 2,
+      "rows": 2,
+      "units_sig_higher": 1,
+      "units_sig_lower": 0,
+      "units_not_significant": 1,
+      "outcome_classes": "complicated; severity_grade",
+      "species_groups": "B. canis"
+     },
+     {
+      "marker": "D-dimer",
+      "marker_class": "coagulation",
+      "factor_type": "laboratory or other marker",
+      "units": 2,
+      "articles": 2,
+      "rows": 2,
+      "units_sig_higher": 0,
+      "units_sig_lower": 0,
+      "units_not_significant": 1,
+      "outcome_classes": "mortality; severity_grade",
+      "species_groups": "B. rossi; Mixed or unspecified"
+     },
+     {
+      "marker": "Erythrocyte sedimentation rate",
+      "marker_class": "haematology",
+      "factor_type": "laboratory or other marker",
+      "units": 2,
+      "articles": 2,
+      "rows": 2,
+      "units_sig_higher": 0,
+      "units_sig_lower": 0,
+      "units_not_significant": 0,
+      "outcome_classes": "severity_grade",
+      "species_groups": "Mixed or unspecified"
+     },
+     {
+      "marker": "Fibrinolysis (plasminogen, antiplasmin)",
+      "marker_class": "coagulation",
+      "factor_type": "laboratory or other marker",
+      "units": 2,
+      "articles": 2,
+      "rows": 8,
+      "units_sig_higher": 1,
+      "units_sig_lower": 0,
+      "units_not_significant": 2,
+      "outcome_classes": "complicated; mortality",
+      "species_groups": "B. rossi; B. canis"
+     },
+     {
+      "marker": "GM-CSF",
+      "marker_class": "cytokine",
+      "factor_type": "laboratory or other marker",
+      "units": 2,
+      "articles": 2,
+      "rows": 4,
+      "units_sig_higher": 1,
+      "units_sig_lower": 0,
+      "units_not_significant": 2,
+      "outcome_classes": "complicated; mortality",
+      "species_groups": "B. rossi; B. canis"
+     },
+     {
+      "marker": "Glutathione / glutathione peroxidase",
+      "marker_class": "oxidative stress",
+      "factor_type": "laboratory or other marker",
+      "units": 2,
+      "articles": 2,
+      "rows": 8,
+      "units_sig_higher": 0,
+      "units_sig_lower": 1,
+      "units_not_significant": 2,
+      "outcome_classes": "anaemia_grade; complicated; mortality; organ_dysfunction",
+      "species_groups": "B. canis; Mixed or unspecified"
+     },
+     {
+      "marker": "IL-18",
+      "marker_class": "cytokine",
+      "factor_type": "laboratory or other marker",
+      "units": 2,
+      "articles": 2,
+      "rows": 3,
+      "units_sig_higher": 0,
+      "units_sig_lower": 0,
+      "units_not_significant": 2,
+      "outcome_classes": "complicated; mortality",
+      "species_groups": "B. rossi; B. canis"
+     },
+     {
+      "marker": "IL-2",
+      "marker_class": "cytokine",
+      "factor_type": "laboratory or other marker",
+      "units": 2,
+      "articles": 2,
+      "rows": 3,
+      "units_sig_higher": 1,
+      "units_sig_lower": 0,
+      "units_not_significant": 2,
+      "outcome_classes": "complicated; mortality",
+      "species_groups": "B. rossi; B. canis"
+     },
+     {
+      "marker": "IL-6",
+      "marker_class": "cytokine",
+      "factor_type": "laboratory or other marker",
+      "units": 2,
+      "articles": 2,
+      "rows": 2,
+      "units_sig_higher": 1,
+      "units_sig_lower": 0,
+      "units_not_significant": 0,
+      "outcome_classes": "mortality",
+      "species_groups": "B. rossi"
+     },
+     {
+      "marker": "IL-8 (CXCL8)",
+      "marker_class": "cytokine",
+      "factor_type": "laboratory or other marker",
+      "units": 2,
+      "articles": 2,
+      "rows": 3,
+      "units_sig_higher": 0,
+      "units_sig_lower": 0,
+      "units_not_significant": 2,
+      "outcome_classes": "complicated; mortality",
+      "species_groups": "B. rossi; B. canis"
+     },
+     {
+      "marker": "Icterus",
+      "marker_class": "clinical sign",
+      "factor_type": "clinical sign or score",
+      "units": 2,
+      "articles": 2,
+      "rows": 2,
+      "units_sig_higher": 0,
+      "units_sig_lower": 0,
+      "units_not_significant": 1,
+      "outcome_classes": "parasitaemia_level; specific_complication",
+      "species_groups": "B. rossi; Mixed or unspecified"
+     },
+     {
+      "marker": "KC-like (CXCL1)",
+      "marker_class": "cytokine",
+      "factor_type": "laboratory or other marker",
+      "units": 2,
+      "articles": 2,
+      "rows": 4,
+      "units_sig_higher": 2,
+      "units_sig_lower": 0,
+      "units_not_significant": 0,
+      "outcome_classes": "complicated; parasitaemia_level",
+      "species_groups": "B. rossi; B. canis"
+     },
+     {
+      "marker": "Mean platelet volume and platelet indices",
+      "marker_class": "haematology",
+      "factor_type": "laboratory or other marker",
+      "units": 2,
+      "articles": 2,
+      "rows": 2,
+      "units_sig_higher": 0,
+      "units_sig_lower": 0,
+      "units_not_significant": 1,
+      "outcome_classes": "mortality; parasitaemia_level",
+      "species_groups": "B. rossi; Mixed or unspecified"
+     },
+     {
+      "marker": "Mentation / neurological signs",
+      "marker_class": "clinical sign",
+      "factor_type": "clinical sign or score",
+      "units": 2,
+      "articles": 2,
+      "rows": 3,
+      "units_sig_higher": 2,
+      "units_sig_lower": 0,
+      "units_not_significant": 0,
+      "outcome_classes": "mortality; specific_complication",
+      "species_groups": "B. rossi"
+     },
+     {
+      "marker": "Other cytokines and chemokines",
+      "marker_class": "cytokine",
+      "factor_type": "laboratory or other marker",
+      "units": 2,
+      "articles": 2,
+      "rows": 6,
+      "units_sig_higher": 1,
+      "units_sig_lower": 0,
+      "units_not_significant": 2,
+      "outcome_classes": "complicated; severity_grade",
+      "species_groups": "B. canis"
+     },
+     {
+      "marker": "Pancreatic enzymes (lipase, amylase, cPLI)",
+      "marker_class": "biochemistry",
+      "factor_type": "laboratory or other marker",
+      "units": 2,
+      "articles": 2,
+      "rows": 3,
+      "units_sig_higher": 2,
+      "units_sig_lower": 0,
+      "units_not_significant": 1,
+      "outcome_classes": "mortality; severity_grade; specific_complication",
+      "species_groups": "B. rossi; B. gibsoni"
+     },
+     {
+      "marker": "Parasite species or genotype",
+      "marker_class": "parasitology",
+      "factor_type": "parasite factor",
+      "units": 2,
+      "articles": 2,
+      "rows": 2,
+      "units_sig_higher": 0,
+      "units_sig_lower": 0,
+      "units_not_significant": 1,
+      "outcome_classes": "anaemia_grade; mortality",
+      "species_groups": "Mixed or unspecified"
+     },
+     {
+      "marker": "Proteomics / metabolomics",
+      "marker_class": "omics",
+      "factor_type": "laboratory or other marker",
+      "units": 2,
+      "articles": 2,
+      "rows": 26,
+      "units_sig_higher": 2,
+      "units_sig_lower": 2,
+      "units_not_significant": 1,
+      "outcome_classes": "complicated; severity_grade; specific_complication",
+      "species_groups": "B. rossi; B. canis"
+     },
+     {
+      "marker": "Reticulocytes",
+      "marker_class": "haematology",
+      "factor_type": "laboratory or other marker",
+      "units": 2,
+      "articles": 2,
+      "rows": 2,
+      "units_sig_higher": 1,
+      "units_sig_lower": 0,
+      "units_not_significant": 1,
+      "outcome_classes": "mortality; treatment_intensity",
+      "species_groups": "B. rossi; B. canis"
+     },
+     {
+      "marker": "SIRS status",
+      "marker_class": "clinical score",
+      "factor_type": "clinical sign or score",
+      "units": 2,
+      "articles": 2,
+      "rows": 5,
+      "units_sig_higher": 1,
+      "units_sig_lower": 0,
+      "units_not_significant": 1,
+      "outcome_classes": "mortality; other",
+      "species_groups": "B. rossi; B. canis"
+     },
+     {
+      "marker": "Sodium",
+      "marker_class": "electrolyte",
+      "factor_type": "laboratory or other marker",
+      "units": 2,
+      "articles": 2,
+      "rows": 3,
+      "units_sig_higher": 0,
+      "units_sig_lower": 0,
+      "units_not_significant": 2,
+      "outcome_classes": "mortality; other",
+      "species_groups": "B. rossi; B. canis"
+     },
+     {
+      "marker": "Superoxide dismutase",
+      "marker_class": "oxidative stress",
+      "factor_type": "laboratory or other marker",
+      "units": 2,
+      "articles": 2,
+      "rows": 8,
+      "units_sig_higher": 0,
+      "units_sig_lower": 1,
+      "units_not_significant": 2,
+      "outcome_classes": "anaemia_grade; complicated; mortality; organ_dysfunction",
+      "species_groups": "B. canis; Mixed or unspecified"
+     },
+     {
+      "marker": "TSH",
+      "marker_class": "endocrine",
+      "factor_type": "laboratory or other marker",
+      "units": 2,
+      "articles": 2,
+      "rows": 6,
+      "units_sig_higher": 0,
+      "units_sig_lower": 1,
+      "units_not_significant": 2,
+      "outcome_classes": "other; specific_complication",
+      "species_groups": "B. rossi"
+     },
+     {
+      "marker": "Urine protein:creatinine ratio",
+      "marker_class": "urine",
+      "factor_type": "laboratory or other marker",
+      "units": 2,
+      "articles": 2,
+      "rows": 2,
+      "units_sig_higher": 1,
+      "units_sig_lower": 0,
+      "units_not_significant": 0,
+      "outcome_classes": "complicated; severity_grade",
+      "species_groups": "B. rossi; B. canis"
+     },
+     {
+      "marker": "Serum protein electrophoresis fractions",
+      "marker_class": "biochemistry",
+      "factor_type": "laboratory or other marker",
+      "units": 1,
+      "articles": 2,
+      "rows": 21,
+      "units_sig_higher": 1,
+      "units_sig_lower": 0,
+      "units_not_significant": 1,
+      "outcome_classes": "anaemia_grade; complicated",
+      "species_groups": "B. canis; Mixed or unspecified"
+     },
+     {
+      "marker": "Travel / import history",
+      "marker_class": "clinical history",
+      "factor_type": "host factor",
+      "units": 1,
+      "articles": 2,
+      "rows": 6,
+      "units_sig_higher": 0,
+      "units_sig_lower": 1,
+      "units_not_significant": 1,
+      "outcome_classes": "complicated; mortality; severity_grade",
+      "species_groups": "B. canis"
+     },
+     {
+      "marker": "ACTH",
+      "marker_class": "endocrine",
+      "factor_type": "laboratory or other marker",
+      "units": 1,
+      "articles": 1,
+      "rows": 1,
+      "units_sig_higher": 0,
+      "units_sig_lower": 0,
+      "units_not_significant": 1,
+      "outcome_classes": "specific_complication",
+      "species_groups": "B. rossi"
+     },
+     {
+      "marker": "Acid-base (pH, bicarbonate, base excess, anion gap)",
+      "marker_class": "acid-base and perfusion",
+      "factor_type": "laboratory or other marker",
+      "units": 1,
+      "articles": 1,
+      "rows": 5,
+      "units_sig_higher": 1,
+      "units_sig_lower": 1,
+      "units_not_significant": 1,
+      "outcome_classes": "mortality; other",
+      "species_groups": "B. rossi"
+     },
+     {
+      "marker": "Adhesion molecules (ICAM-1, VCAM-1, selectins)",
+      "marker_class": "endothelial",
+      "factor_type": "laboratory or other marker",
+      "units": 1,
+      "articles": 1,
+      "rows": 4,
+      "units_sig_higher": 1,
+      "units_sig_lower": 0,
+      "units_not_significant": 1,
+      "outcome_classes": "complicated",
+      "species_groups": "B. canis"
+     },
+     {
+      "marker": "Antibody titre / serostatus",
+      "marker_class": "immunology",
+      "factor_type": "laboratory or other marker",
+      "units": 1,
+      "articles": 1,
+      "rows": 2,
+      "units_sig_higher": 0,
+      "units_sig_lower": 1,
+      "units_not_significant": 0,
+      "outcome_classes": "severity_grade",
+      "species_groups": "B. canis"
+     },
+     {
+      "marker": "Antithrombin",
+      "marker_class": "coagulation",
+      "factor_type": "laboratory or other marker",
+      "units": 1,
+      "articles": 1,
+      "rows": 1,
+      "units_sig_higher": 0,
+      "units_sig_lower": 1,
+      "units_not_significant": 0,
+      "outcome_classes": "mortality",
+      "species_groups": "B. rossi"
+     },
+     {
+      "marker": "Autoagglutination",
+      "marker_class": "haematology",
+      "factor_type": "laboratory or other marker",
+      "units": 1,
+      "articles": 1,
+      "rows": 1,
+      "units_sig_higher": 0,
+      "units_sig_lower": 0,
+      "units_not_significant": 1,
+      "outcome_classes": "mortality",
+      "species_groups": "B. rossi"
+     },
+     {
+      "marker": "Blood gases and oxygenation",
+      "marker_class": "acid-base and perfusion",
+      "factor_type": "laboratory or other marker",
+      "units": 1,
+      "articles": 1,
+      "rows": 4,
+      "units_sig_higher": 0,
+      "units_sig_lower": 1,
+      "units_not_significant": 1,
+      "outcome_classes": "mortality; other",
+      "species_groups": "B. rossi"
+     },
+     {
+      "marker": "Blood pressure",
+      "marker_class": "clinical sign",
+      "factor_type": "clinical sign or score",
+      "units": 1,
+      "articles": 1,
+      "rows": 1,
+      "units_sig_higher": 0,
+      "units_sig_lower": 0,
+      "units_not_significant": 0,
+      "outcome_classes": "mortality",
+      "species_groups": "B. rossi"
+     },
+     {
+      "marker": "Circulating blood volume",
+      "marker_class": "other",
+      "factor_type": "laboratory or other marker",
+      "units": 1,
+      "articles": 1,
+      "rows": 3,
+      "units_sig_higher": 0,
+      "units_sig_lower": 0,
+      "units_not_significant": 0,
+      "outcome_classes": "severity_grade",
+      "species_groups": "Mixed or unspecified"
+     },
+     {
+      "marker": "Collapse",
+      "marker_class": "clinical sign",
+      "factor_type": "clinical sign or score",
+      "units": 1,
+      "articles": 1,
+      "rows": 2,
+      "units_sig_higher": 1,
+      "units_sig_lower": 0,
+      "units_not_significant": 0,
+      "outcome_classes": "mortality",
+      "species_groups": "B. rossi"
+     },
+     {
+      "marker": "Copper",
+      "marker_class": "biochemistry",
+      "factor_type": "laboratory or other marker",
+      "units": 1,
+      "articles": 1,
+      "rows": 1,
+      "units_sig_higher": 0,
+      "units_sig_lower": 0,
+      "units_not_significant": 1,
+      "outcome_classes": "mortality",
+      "species_groups": "Mixed or unspecified"
+     },
+     {
+      "marker": "Cystatin C",
+      "marker_class": "biochemistry",
+      "factor_type": "laboratory or other marker",
+      "units": 1,
+      "articles": 1,
+      "rows": 1,
+      "units_sig_higher": 0,
+      "units_sig_lower": 0,
+      "units_not_significant": 0,
+      "outcome_classes": "specific_complication",
+      "species_groups": "Mixed or unspecified"
+     },
+     {
+      "marker": "Cytokine linear combination",
+      "marker_class": "cytokine",
+      "factor_type": "laboratory or other marker",
+      "units": 1,
+      "articles": 1,
+      "rows": 3,
+      "units_sig_higher": 0,
+      "units_sig_lower": 0,
+      "units_not_significant": 0,
+      "outcome_classes": "complicated",
+      "species_groups": "B. canis"
+     },
+     {
+      "marker": "Duration of illness before presentation",
+      "marker_class": "clinical history",
+      "factor_type": "host factor",
+      "units": 1,
+      "articles": 1,
+      "rows": 1,
+      "units_sig_higher": 0,
+      "units_sig_lower": 0,
+      "units_not_significant": 1,
+      "outcome_classes": "specific_complication",
+      "species_groups": "B. rossi"
+     },
+     {
+      "marker": "Echocardiographic findings",
+      "marker_class": "cardiac",
+      "factor_type": "laboratory or other marker",
+      "units": 1,
+      "articles": 1,
+      "rows": 17,
+      "units_sig_higher": 1,
+      "units_sig_lower": 1,
+      "units_not_significant": 1,
+      "outcome_classes": "mortality",
+      "species_groups": "Mixed or unspecified"
+     },
+     {
+      "marker": "Erythrocyte aggregation",
+      "marker_class": "haematology",
+      "factor_type": "laboratory or other marker",
+      "units": 1,
+      "articles": 1,
+      "rows": 1,
+      "units_sig_higher": 0,
+      "units_sig_lower": 0,
+      "units_not_significant": 0,
+      "outcome_classes": "severity_grade",
+      "species_groups": "Mixed or unspecified"
+     },
+     {
+      "marker": "Fibrin(ogen) degradation products",
+      "marker_class": "coagulation",
+      "factor_type": "laboratory or other marker",
+      "units": 1,
+      "articles": 1,
+      "rows": 1,
+      "units_sig_higher": 0,
+      "units_sig_lower": 0,
+      "units_not_significant": 0,
+      "outcome_classes": "severity_grade",
+      "species_groups": "Mixed or unspecified"
+     },
+     {
+      "marker": "Fractional excretion of electrolytes",
+      "marker_class": "urine",
+      "factor_type": "laboratory or other marker",
+      "units": 1,
+      "articles": 1,
+      "rows": 3,
+      "units_sig_higher": 1,
+      "units_sig_lower": 0,
+      "units_not_significant": 0,
+      "outcome_classes": "specific_complication",
+      "species_groups": "B. canis"
+     },
+     {
+      "marker": "Gene expression / transcriptomics",
+      "marker_class": "omics",
+      "factor_type": "laboratory or other marker",
+      "units": 1,
+      "articles": 1,
+      "rows": 4,
+      "units_sig_higher": 0,
+      "units_sig_lower": 0,
+      "units_not_significant": 1,
+      "outcome_classes": "severity_grade",
+      "species_groups": "B. canis"
+     },
+     {
+      "marker": "HMGB-1",
+      "marker_class": "immunology",
+      "factor_type": "laboratory or other marker",
+      "units": 1,
+      "articles": 1,
+      "rows": 2,
+      "units_sig_higher": 0,
+      "units_sig_lower": 0,
+      "units_not_significant": 1,
+      "outcome_classes": "complicated",
+      "species_groups": "B. canis"
+     },
+     {
+      "marker": "Haemoglobinuria",
+      "marker_class": "urine",
+      "factor_type": "laboratory or other marker",
+      "units": 1,
+      "articles": 1,
+      "rows": 1,
+      "units_sig_higher": 0,
+      "units_sig_lower": 0,
+      "units_not_significant": 0,
+      "outcome_classes": "parasitaemia_level",
+      "species_groups": "Mixed or unspecified"
+     },
+     {
+      "marker": "Hepcidin",
+      "marker_class": "acute phase protein",
+      "factor_type": "laboratory or other marker",
+      "units": 1,
+      "articles": 1,
+      "rows": 2,
+      "units_sig_higher": 1,
+      "units_sig_lower": 0,
+      "units_not_significant": 0,
+      "outcome_classes": "mortality",
+      "species_groups": "Mixed or unspecified"
+     },
+     {
+      "marker": "IFN-gamma",
+      "marker_class": "cytokine",
+      "factor_type": "laboratory or other marker",
+      "units": 1,
+      "articles": 1,
+      "rows": 1,
+      "units_sig_higher": 0,
+      "units_sig_lower": 0,
+      "units_not_significant": 0,
+      "outcome_classes": "severity_grade",
+      "species_groups": "B. canis"
+     },
+     {
+      "marker": "Immune complexes / complement",
+      "marker_class": "immunology",
+      "factor_type": "laboratory or other marker",
+      "units": 1,
+      "articles": 1,
+      "rows": 5,
+      "units_sig_higher": 1,
+      "units_sig_lower": 1,
+      "units_not_significant": 0,
+      "outcome_classes": "complicated",
+      "species_groups": "B. rossi"
+     },
+     {
+      "marker": "Ionised calcium",
+      "marker_class": "electrolyte",
+      "factor_type": "laboratory or other marker",
+      "units": 1,
+      "articles": 1,
+      "rows": 2,
+      "units_sig_higher": 0,
+      "units_sig_lower": 1,
+      "units_not_significant": 0,
+      "outcome_classes": "mortality; other",
+      "species_groups": "B. rossi"
+     },
+     {
+      "marker": "Lactate dehydrogenase",
+      "marker_class": "biochemistry",
+      "factor_type": "laboratory or other marker",
+      "units": 1,
+      "articles": 1,
+      "rows": 1,
+      "units_sig_higher": 1,
+      "units_sig_lower": 0,
+      "units_not_significant": 0,
+      "outcome_classes": "severity_grade",
+      "species_groups": "Mixed or unspecified"
+     },
+     {
+      "marker": "Lipoproteins",
+      "marker_class": "biochemistry",
+      "factor_type": "laboratory or other marker",
+      "units": 1,
+      "articles": 1,
+      "rows": 2,
+      "units_sig_higher": 1,
+      "units_sig_lower": 0,
+      "units_not_significant": 0,
+      "outcome_classes": "complicated",
+      "species_groups": "B. rossi"
+     },
+     {
+      "marker": "Magnesium",
+      "marker_class": "electrolyte",
+      "factor_type": "laboratory or other marker",
+      "units": 1,
+      "articles": 1,
+      "rows": 1,
+      "units_sig_higher": 0,
+      "units_sig_lower": 0,
+      "units_not_significant": 0,
+      "outcome_classes": "parasitaemia_level",
+      "species_groups": "Mixed or unspecified"
+     },
+     {
+      "marker": "Myeloperoxidase / MPXI",
+      "marker_class": "haematology",
+      "factor_type": "laboratory or other marker",
+      "units": 1,
+      "articles": 1,
+      "rows": 1,
+      "units_sig_higher": 0,
+      "units_sig_lower": 0,
+      "units_not_significant": 1,
+      "outcome_classes": "mortality",
+      "species_groups": "B. rossi"
+     },
+     {
+      "marker": "Other clinical signs (composite)",
+      "marker_class": "clinical sign",
+      "factor_type": "clinical sign or score",
+      "units": 1,
+      "articles": 1,
+      "rows": 1,
+      "units_sig_higher": 0,
+      "units_sig_lower": 0,
+      "units_not_significant": 1,
+      "outcome_classes": "parasitaemia_level",
+      "species_groups": "Mixed or unspecified"
+     },
+     {
+      "marker": "Parasite DNA load (qPCR)",
+      "marker_class": "parasitology",
+      "factor_type": "parasite factor",
+      "units": 1,
+      "articles": 1,
+      "rows": 1,
+      "units_sig_higher": 1,
+      "units_sig_lower": 0,
+      "units_not_significant": 0,
+      "outcome_classes": "severity_grade",
+      "species_groups": "B. canis"
+     },
+     {
+      "marker": "Plasma NGAL",
+      "marker_class": "biochemistry",
+      "factor_type": "laboratory or other marker",
+      "units": 1,
+      "articles": 1,
+      "rows": 1,
+      "units_sig_higher": 0,
+      "units_sig_lower": 0,
+      "units_not_significant": 1,
+      "outcome_classes": "complicated",
+      "species_groups": "B. rossi"
+     },
+     {
+      "marker": "Platelet function",
+      "marker_class": "coagulation",
+      "factor_type": "laboratory or other marker",
+      "units": 1,
+      "articles": 1,
+      "rows": 1,
+      "units_sig_higher": 0,
+      "units_sig_lower": 0,
+      "units_not_significant": 0,
+      "outcome_classes": "severity_grade",
+      "species_groups": "Mixed or unspecified"
+     },
+     {
+      "marker": "Protein C / protein S",
+      "marker_class": "coagulation",
+      "factor_type": "laboratory or other marker",
+      "units": 1,
+      "articles": 1,
+      "rows": 1,
+      "units_sig_higher": 0,
+      "units_sig_lower": 1,
+      "units_not_significant": 0,
+      "outcome_classes": "complicated",
+      "species_groups": "B. rossi"
+     },
+     {
+      "marker": "Red cell distribution width",
+      "marker_class": "haematology",
+      "factor_type": "laboratory or other marker",
+      "units": 1,
+      "articles": 1,
+      "rows": 1,
+      "units_sig_higher": 0,
+      "units_sig_lower": 0,
+      "units_not_significant": 0,
+      "outcome_classes": "severity_grade",
+      "species_groups": "B. gibsoni"
+     },
+     {
+      "marker": "Respiratory rate / dyspnoea",
+      "marker_class": "clinical sign",
+      "factor_type": "clinical sign or score",
+      "units": 1,
+      "articles": 1,
+      "rows": 1,
+      "units_sig_higher": 0,
+      "units_sig_lower": 0,
+      "units_not_significant": 1,
+      "outcome_classes": "specific_complication",
+      "species_groups": "B. rossi"
+     },
+     {
+      "marker": "SDMA",
+      "marker_class": "biochemistry",
+      "factor_type": "laboratory or other marker",
+      "units": 1,
+      "articles": 1,
+      "rows": 2,
+      "units_sig_higher": 1,
+      "units_sig_lower": 0,
+      "units_not_significant": 0,
+      "outcome_classes": "complicated",
+      "species_groups": "B. rossi"
+     },
+     {
+      "marker": "Selenium",
+      "marker_class": "biochemistry",
+      "factor_type": "laboratory or other marker",
+      "units": 1,
+      "articles": 1,
+      "rows": 1,
+      "units_sig_higher": 0,
+      "units_sig_lower": 0,
+      "units_not_significant": 1,
+      "outcome_classes": "mortality",
+      "species_groups": "Mixed or unspecified"
+     },
+     {
+      "marker": "Soluble fibrin monomer complexes",
+      "marker_class": "coagulation",
+      "factor_type": "laboratory or other marker",
+      "units": 1,
+      "articles": 1,
+      "rows": 1,
+      "units_sig_higher": 0,
+      "units_sig_lower": 0,
+      "units_not_significant": 0,
+      "outcome_classes": "severity_grade",
+      "species_groups": "Mixed or unspecified"
+     },
+     {
+      "marker": "Thrombomodulin",
+      "marker_class": "endothelial",
+      "factor_type": "laboratory or other marker",
+      "units": 1,
+      "articles": 1,
+      "rows": 2,
+      "units_sig_higher": 0,
+      "units_sig_lower": 0,
+      "units_not_significant": 1,
+      "outcome_classes": "complicated",
+      "species_groups": "B. canis"
+     },
+     {
+      "marker": "Time since last meal",
+      "marker_class": "clinical history",
+      "factor_type": "host factor",
+      "units": 1,
+      "articles": 1,
+      "rows": 1,
+      "units_sig_higher": 0,
+      "units_sig_lower": 0,
+      "units_not_significant": 1,
+      "outcome_classes": "specific_complication",
+      "species_groups": "B. rossi"
+     },
+     {
+      "marker": "Total antioxidant capacity",
+      "marker_class": "oxidative stress",
+      "factor_type": "laboratory or other marker",
+      "units": 1,
+      "articles": 1,
+      "rows": 7,
+      "units_sig_higher": 1,
+      "units_sig_lower": 0,
+      "units_not_significant": 1,
+      "outcome_classes": "anaemia_grade; complicated; mortality; organ_dysfunction",
+      "species_groups": "B. canis"
+     },
+     {
+      "marker": "Treatment factors",
+      "marker_class": "treatment",
+      "factor_type": "host factor",
+      "units": 1,
+      "articles": 1,
+      "rows": 1,
+      "units_sig_higher": 1,
+      "units_sig_lower": 0,
+      "units_not_significant": 0,
+      "outcome_classes": "treatment_intensity",
+      "species_groups": "Mixed or unspecified"
+     },
+     {
+      "marker": "Triglycerides",
+      "marker_class": "biochemistry",
+      "factor_type": "laboratory or other marker",
+      "units": 1,
+      "articles": 1,
+      "rows": 2,
+      "units_sig_higher": 1,
+      "units_sig_lower": 0,
+      "units_not_significant": 0,
+      "outcome_classes": "mortality",
+      "species_groups": "B. canis"
+     },
+     {
+      "marker": "Urea:creatinine ratio",
+      "marker_class": "biochemistry",
+      "factor_type": "laboratory or other marker",
+      "units": 1,
+      "articles": 1,
+      "rows": 1,
+      "units_sig_higher": 0,
+      "units_sig_lower": 0,
+      "units_not_significant": 0,
+      "outcome_classes": "specific_complication",
+      "species_groups": "Mixed or unspecified"
+     },
+     {
+      "marker": "Urinary kidney injury biomarkers",
+      "marker_class": "urine",
+      "factor_type": "laboratory or other marker",
+      "units": 1,
+      "articles": 1,
+      "rows": 5,
+      "units_sig_higher": 1,
+      "units_sig_lower": 0,
+      "units_not_significant": 1,
+      "outcome_classes": "complicated",
+      "species_groups": "B. rossi"
+     },
+     {
+      "marker": "Urine creatinine",
+      "marker_class": "urine",
+      "factor_type": "laboratory or other marker",
+      "units": 1,
+      "articles": 1,
+      "rows": 1,
+      "units_sig_higher": 0,
+      "units_sig_lower": 0,
+      "units_not_significant": 0,
+      "outcome_classes": "severity_grade",
+      "species_groups": "B. canis"
+     },
+     {
+      "marker": "Urine osmolality",
+      "marker_class": "urine",
+      "factor_type": "laboratory or other marker",
+      "units": 1,
+      "articles": 1,
+      "rows": 1,
+      "units_sig_higher": 0,
+      "units_sig_lower": 0,
+      "units_not_significant": 1,
+      "outcome_classes": "complicated",
+      "species_groups": "B. rossi"
+     },
+     {
+      "marker": "Urine specific gravity",
+      "marker_class": "urine",
+      "factor_type": "laboratory or other marker",
+      "units": 1,
+      "articles": 1,
+      "rows": 1,
+      "units_sig_higher": 0,
+      "units_sig_lower": 0,
+      "units_not_significant": 1,
+      "outcome_classes": "complicated",
+      "species_groups": "B. rossi"
+     },
+     {
+      "marker": "Vascular wall wetting index",
+      "marker_class": "endothelial",
+      "factor_type": "laboratory or other marker",
+      "units": 1,
+      "articles": 1,
+      "rows": 1,
+      "units_sig_higher": 0,
+      "units_sig_lower": 0,
+      "units_not_significant": 0,
+      "outcome_classes": "severity_grade",
+      "species_groups": "Mixed or unspecified"
+     },
+     {
+      "marker": "Viscoelastic testing (TEG/ROTEM)",
+      "marker_class": "coagulation",
+      "factor_type": "laboratory or other marker",
+      "units": 1,
+      "articles": 1,
+      "rows": 12,
+      "units_sig_higher": 0,
+      "units_sig_lower": 0,
+      "units_not_significant": 1,
+      "outcome_classes": "mortality",
+      "species_groups": "B. rossi"
+     },
+     {
+      "marker": "Vitamin D (25-hydroxyvitamin D)",
+      "marker_class": "endocrine",
+      "factor_type": "laboratory or other marker",
+      "units": 1,
+      "articles": 1,
+      "rows": 1,
+      "units_sig_higher": 0,
+      "units_sig_lower": 1,
+      "units_not_significant": 0,
+      "outcome_classes": "severity_grade",
+      "species_groups": "B. rossi"
+     },
+     {
+      "marker": "Zinc",
+      "marker_class": "biochemistry",
+      "factor_type": "laboratory or other marker",
+      "units": 1,
+      "articles": 1,
+      "rows": 1,
+      "units_sig_higher": 0,
+      "units_sig_lower": 1,
+      "units_not_significant": 0,
+      "outcome_classes": "mortality",
+      "species_groups": "Mixed or unspecified"
+     },
+     {
+      "marker": "suPAR",
+      "marker_class": "coagulation",
+      "factor_type": "laboratory or other marker",
+      "units": 1,
+      "articles": 1,
+      "rows": 2,
+      "units_sig_higher": 0,
+      "units_sig_lower": 0,
+      "units_not_significant": 1,
+      "outcome_classes": "complicated",
+      "species_groups": "B. canis"
+     }
+    ]
+   }
+  },
+  {
+   "kind": "marker_classes",
+   "title": "Records by marker class",
+   "sort_order": 3,
+   "payload": {
+    "rows": [
+     {
+      "marker_class": "haematology",
+      "factor_type": "laboratory or other marker",
+      "units": 25,
+      "articles": 29,
+      "markers": 19,
+      "rows": 146
+     },
+     {
+      "marker_class": "biochemistry",
+      "factor_type": "laboratory or other marker",
+      "units": 24,
+      "articles": 26,
+      "markers": 27,
+      "rows": 184
+     },
+     {
+      "marker_class": "signalment",
+      "factor_type": "host factor",
+      "units": 13,
+      "articles": 15,
+      "markers": 4,
+      "rows": 55
+     },
+     {
+      "marker_class": "parasitology",
+      "factor_type": "parasite factor",
+      "units": 12,
+      "articles": 12,
+      "markers": 4,
+      "rows": 19
+     },
+     {
+      "marker_class": "acute phase protein",
+      "factor_type": "laboratory or other marker",
+      "units": 8,
+      "articles": 9,
+      "markers": 3,
+      "rows": 19
+     },
+     {
+      "marker_class": "clinical sign",
+      "factor_type": "clinical sign or score",
+      "units": 7,
+      "articles": 7,
+      "markers": 8,
+      "rows": 24
+     },
+     {
+      "marker_class": "coagulation",
+      "factor_type": "laboratory or other marker",
+      "units": 5,
+      "articles": 5,
+      "markers": 13,
+      "rows": 43
+     },
+     {
+      "marker_class": "endocrine",
+      "factor_type": "laboratory or other marker",
+      "units": 5,
+      "articles": 5,
+      "markers": 5,
+      "rows": 40
+     },
+     {
+      "marker_class": "cytokine",
+      "factor_type": "laboratory or other marker",
+      "units": 4,
+      "articles": 4,
+      "markers": 11,
+      "rows": 39
+     },
+     {
+      "marker_class": "acid-base and perfusion",
+      "factor_type": "laboratory or other marker",
+      "units": 4,
+      "articles": 4,
+      "markers": 3,
+      "rows": 17
+     },
+     {
+      "marker_class": "urine",
+      "factor_type": "laboratory or other marker",
+      "units": 4,
+      "articles": 4,
+      "markers": 7,
+      "rows": 14
+     },
+     {
+      "marker_class": "immunology",
+      "factor_type": "laboratory or other marker",
+      "units": 3,
+      "articles": 3,
+      "markers": 3,
+      "rows": 9
+     },
+     {
+      "marker_class": "oxidative stress",
+      "factor_type": "laboratory or other marker",
+      "units": 3,
+      "articles": 3,
+      "markers": 5,
+      "rows": 41
+     },
+     {
+      "marker_class": "electrolyte",
+      "factor_type": "laboratory or other marker",
+      "units": 3,
+      "articles": 3,
+      "markers": 7,
+      "rows": 19
+     },
+     {
+      "marker_class": "omics",
+      "factor_type": "laboratory or other marker",
+      "units": 3,
+      "articles": 3,
+      "markers": 2,
+      "rows": 30
+     },
+     {
+      "marker_class": "endothelial",
+      "factor_type": "laboratory or other marker",
+      "units": 2,
+      "articles": 2,
+      "markers": 3,
+      "rows": 7
+     },
+     {
+      "marker_class": "clinical score",
+      "factor_type": "clinical sign or score",
+      "units": 2,
+      "articles": 2,
+      "markers": 1,
+      "rows": 5
+     },
+     {
+      "marker_class": "clinical history",
+      "factor_type": "host factor",
+      "units": 2,
+      "articles": 3,
+      "markers": 3,
+      "rows": 8
+     },
+     {
+      "marker_class": "other",
+      "factor_type": "laboratory or other marker",
+      "units": 1,
+      "articles": 1,
+      "markers": 1,
+      "rows": 3
+     },
+     {
+      "marker_class": "cardiac",
+      "factor_type": "laboratory or other marker",
+      "units": 1,
+      "articles": 1,
+      "markers": 1,
+      "rows": 17
+     },
+     {
+      "marker_class": "treatment",
+      "factor_type": "host factor",
+      "units": 1,
+      "articles": 1,
+      "markers": 1,
+      "rows": 1
+     }
+    ]
+   }
+  },
+  {
+   "kind": "host_parasite_factors",
+   "title": "Host and parasite factors",
+   "sort_order": 4,
+   "payload": {
+    "rows": [
+     {
+      "marker": "Age",
+      "marker_class": "signalment",
+      "factor_type": "host factor",
+      "units": 12,
+      "articles": 14,
+      "rows": 14,
+      "units_sig_higher": 0,
+      "units_sig_lower": 1,
+      "units_not_significant": 5,
+      "outcome_classes": "anaemia_grade; complicated; mortality; severity_grade; specific_complication; treatment_intensity",
+      "species_groups": "B. rossi; B. canis; B. gibsoni; Mixed or unspecified"
+     },
+     {
+      "marker": "Sex / neuter status",
+      "marker_class": "signalment",
+      "factor_type": "host factor",
+      "units": 8,
+      "articles": 10,
+      "rows": 23,
+      "units_sig_higher": 0,
+      "units_sig_lower": 1,
+      "units_not_significant": 5,
+      "outcome_classes": "anaemia_grade; complicated; mortality; severity_grade; specific_complication; treatment_intensity",
+      "species_groups": "B. rossi; B. canis; B. gibsoni; Mixed or unspecified"
+     },
+     {
+      "marker": "Parasitaemia",
+      "marker_class": "parasitology",
+      "factor_type": "parasite factor",
+      "units": 6,
+      "articles": 6,
+      "rows": 9,
+      "units_sig_higher": 0,
+      "units_sig_lower": 0,
+      "units_not_significant": 2,
+      "outcome_classes": "mortality; other; severity_grade; specific_complication",
+      "species_groups": "B. rossi; B. canis; B. gibsoni; Mixed or unspecified"
+     },
+     {
+      "marker": "Body weight / body condition",
+      "marker_class": "signalment",
+      "factor_type": "host factor",
+      "units": 5,
+      "articles": 6,
+      "rows": 6,
+      "units_sig_higher": 0,
+      "units_sig_lower": 0,
+      "units_not_significant": 4,
+      "outcome_classes": "complicated; mortality; specific_complication; treatment_intensity",
+      "species_groups": "B. rossi; Mixed or unspecified"
+     },
+     {
+      "marker": "Breed",
+      "marker_class": "signalment",
+      "factor_type": "host factor",
+      "units": 5,
+      "articles": 5,
+      "rows": 12,
+      "units_sig_higher": 0,
+      "units_sig_lower": 0,
+      "units_not_significant": 2,
+      "outcome_classes": "anaemia_grade; complicated; specific_complication; treatment_intensity",
+      "species_groups": "B. rossi; B. gibsoni; Mixed or unspecified"
+     },
+     {
+      "marker": "Co-infection",
+      "marker_class": "parasitology",
+      "factor_type": "parasite factor",
+      "units": 4,
+      "articles": 4,
+      "rows": 7,
+      "units_sig_higher": 0,
+      "units_sig_lower": 0,
+      "units_not_significant": 2,
+      "outcome_classes": "anaemia_grade; mortality; severity_grade; specific_complication",
+      "species_groups": "B. canis; B. vogeli; Mixed or unspecified"
+     },
+     {
+      "marker": "Parasite species or genotype",
+      "marker_class": "parasitology",
+      "factor_type": "parasite factor",
+      "units": 2,
+      "articles": 2,
+      "rows": 2,
+      "units_sig_higher": 0,
+      "units_sig_lower": 0,
+      "units_not_significant": 1,
+      "outcome_classes": "anaemia_grade; mortality",
+      "species_groups": "Mixed or unspecified"
+     },
+     {
+      "marker": "Travel / import history",
+      "marker_class": "clinical history",
+      "factor_type": "host factor",
+      "units": 1,
+      "articles": 2,
+      "rows": 6,
+      "units_sig_higher": 0,
+      "units_sig_lower": 1,
+      "units_not_significant": 1,
+      "outcome_classes": "complicated; mortality; severity_grade",
+      "species_groups": "B. canis"
+     },
+     {
+      "marker": "Duration of illness before presentation",
+      "marker_class": "clinical history",
+      "factor_type": "host factor",
+      "units": 1,
+      "articles": 1,
+      "rows": 1,
+      "units_sig_higher": 0,
+      "units_sig_lower": 0,
+      "units_not_significant": 1,
+      "outcome_classes": "specific_complication",
+      "species_groups": "B. rossi"
+     },
+     {
+      "marker": "Parasite DNA load (qPCR)",
+      "marker_class": "parasitology",
+      "factor_type": "parasite factor",
+      "units": 1,
+      "articles": 1,
+      "rows": 1,
+      "units_sig_higher": 1,
+      "units_sig_lower": 0,
+      "units_not_significant": 0,
+      "outcome_classes": "severity_grade",
+      "species_groups": "B. canis"
+     },
+     {
+      "marker": "Time since last meal",
+      "marker_class": "clinical history",
+      "factor_type": "host factor",
+      "units": 1,
+      "articles": 1,
+      "rows": 1,
+      "units_sig_higher": 0,
+      "units_sig_lower": 0,
+      "units_not_significant": 1,
+      "outcome_classes": "specific_complication",
+      "species_groups": "B. rossi"
+     },
+     {
+      "marker": "Treatment factors",
+      "marker_class": "treatment",
+      "factor_type": "host factor",
+      "units": 1,
+      "articles": 1,
+      "rows": 1,
+      "units_sig_higher": 1,
+      "units_sig_lower": 0,
+      "units_not_significant": 0,
+      "outcome_classes": "treatment_intensity",
+      "species_groups": "Mixed or unspecified"
+     }
+    ],
+    "load_methods": [
+     {
+      "marker": "Parasitaemia",
+      "load_method": "capillary smear",
+      "units": 1,
+      "rows": 1
+     },
+     {
+      "marker": "Parasitaemia",
+      "load_method": "smear, site not stated",
+      "units": 4,
+      "rows": 4
+     },
+     {
+      "marker": "Parasitaemia",
+      "load_method": "venous smear",
+      "units": 1,
+      "rows": 4
+     },
+     {
+      "marker": "Parasite DNA load (qPCR)",
+      "load_method": "other",
+      "units": 1,
+      "rows": 1
+     }
+    ]
+   }
+  },
+  {
+   "kind": "species",
+   "title": "Records by species",
+   "sort_order": 5,
+   "payload": {
+    "rows": [
+     {
+      "species_group": "B. rossi",
+      "articles_in_scope": 22,
+      "articles_with_rows": 14,
+      "units_with_rows": 11,
+      "rows": 245
+     },
+     {
+      "species_group": "B. canis",
+      "articles_in_scope": 34,
+      "articles_with_rows": 18,
+      "units_with_rows": 16,
+      "rows": 258
+     },
+     {
+      "species_group": "B. gibsoni",
+      "articles_in_scope": 19,
+      "articles_with_rows": 4,
+      "units_with_rows": 4,
+      "rows": 40
+     },
+     {
+      "species_group": "B. vogeli",
+      "articles_in_scope": 5,
+      "articles_with_rows": 1,
+      "units_with_rows": 1,
+      "rows": 1
+     },
+     {
+      "species_group": "Other single species",
+      "articles_in_scope": 1,
+      "articles_with_rows": 0,
+      "units_with_rows": 0,
+      "rows": 0
+     },
+     {
+      "species_group": "Mixed or unspecified",
+      "articles_in_scope": 35,
+      "articles_with_rows": 12,
+      "units_with_rows": 11,
+      "rows": 196
+     },
+     {
+      "species_group": "Not canine (BG)",
+      "articles_in_scope": 1,
+      "articles_with_rows": 0,
+      "units_with_rows": 0,
+      "rows": 0
+     }
+    ]
+   }
+  },
+  {
+   "kind": "outcome_definitions",
+   "title": "Severity definitions",
+   "sort_order": 6,
+   "payload": {
+    "outcome_classes": [
+     {
+      "outcome_class": "mortality",
+      "definitions": 18,
+      "units_defining": 16,
+      "rows": 214,
+      "units_with_rows": 16
+     },
+     {
+      "outcome_class": "severity_grade",
+      "definitions": 11,
+      "units_defining": 11,
+      "rows": 123,
+      "units_with_rows": 11
+     },
+     {
+      "outcome_class": "anaemia_grade",
+      "definitions": 14,
+      "units_defining": 10,
+      "rows": 65,
+      "units_with_rows": 10
+     },
+     {
+      "outcome_class": "complicated",
+      "definitions": 9,
+      "units_defining": 9,
+      "rows": 150,
+      "units_with_rows": 9
+     },
+     {
+      "outcome_class": "specific_complication",
+      "definitions": 16,
+      "units_defining": 8,
+      "rows": 78,
+      "units_with_rows": 8
+     },
+     {
+      "outcome_class": "parasitaemia_level",
+      "definitions": 3,
+      "units_defining": 3,
+      "rows": 37,
+      "units_with_rows": 3
+     },
+     {
+      "outcome_class": "treatment_intensity",
+      "definitions": 3,
+      "units_defining": 3,
+      "rows": 22,
+      "units_with_rows": 3
+     },
+     {
+      "outcome_class": "other",
+      "definitions": 2,
+      "units_defining": 2,
+      "rows": 41,
+      "units_with_rows": 2
+     },
+     {
+      "outcome_class": "organ_dysfunction",
+      "definitions": 2,
+      "units_defining": 1,
+      "rows": 10,
+      "units_with_rows": 1
+     }
+    ],
+    "components": [
+     {
+      "component": "death",
+      "definitions": 22,
+      "units": 20
+     },
+     {
+      "component": "other",
+      "definitions": 17,
+      "units": 15
+     },
+     {
+      "component": "renal",
+      "definitions": 23,
+      "units": 14
+     },
+     {
+      "component": "anaemia grade",
+      "definitions": 19,
+      "units": 13
+     },
+     {
+      "component": "hepatic or icterus",
+      "definitions": 15,
+      "units": 11
+     },
+     {
+      "component": "cerebral",
+      "definitions": 9,
+      "units": 7
+     },
+     {
+      "component": "pulmonary",
+      "definitions": 8,
+      "units": 6
+     },
+     {
+      "component": "collapse",
+      "definitions": 6,
+      "units": 6
+     },
+     {
+      "component": "rhabdomyolysis",
+      "definitions": 6,
+      "units": 4
+     },
+     {
+      "component": "MODS",
+      "definitions": 5,
+      "units": 4
+     },
+     {
+      "component": "hypoglycaemia",
+      "definitions": 4,
+      "units": 4
+     },
+     {
+      "component": "SIRS",
+      "definitions": 3,
+      "units": 3
+     },
+     {
+      "component": "score",
+      "definitions": 3,
+      "units": 3
+     },
+     {
+      "component": "haemoconcentration",
+      "definitions": 3,
+      "units": 3
+     },
+     {
+      "component": "pancreatitis",
+      "definitions": 3,
+      "units": 2
+     },
+     {
+      "component": "hypotension or shock",
+      "definitions": 2,
+      "units": 2
+     },
+     {
+      "component": "coagulopathy",
+      "definitions": 1,
+      "units": 1
+     },
+     {
+      "component": "hyperlactataemia",
+      "definitions": 1,
+      "units": 1
+     }
+    ],
+    "mortality_euthanasia": [
+     {
+      "value": "yes",
+      "definitions": 11
+     },
+     {
+      "value": "not stated",
+      "definitions": 6
+     },
+     {
+      "value": "no",
+      "definitions": 1
+     }
+    ],
+    "definition_sources": [
+     {
+      "value": "author-defined",
+      "definitions": 42
+     },
+     {
+      "value": "not stated",
+      "definitions": 13
+     },
+     {
+      "value": "Bajer et al. (2016)",
+      "definitions": 4
+     },
+     {
+      "value": "author-defined (Table 1 criteria)",
+      "definitions": 2
+     },
+     {
+      "value": "author-defined (Table 1 criteria; modified Glasgow coma scale from Welzl et al.)",
+      "definitions": 1
+     },
+     {
+      "value": "WHO malaria classification; SIRS and MODS criteria",
+      "definitions": 1
+     },
+     {
+      "value": "author-defined (criteria drawn from Bohm et al., Keller et al., Nel et al., Schoeman et al.)",
+      "definitions": 1
+     },
+     {
+      "value": "IDEXX Spec cPL reference cut-off (>400 µg/l)",
+      "definitions": 1
+     },
+     {
+      "value": "Jacobson and Clark 1994; Jacobson 2006; WHO 2014 severe falciparum malaria criteria",
+      "definitions": 1
+     },
+     {
+      "value": "author-defined (creatinine 140 umol/L and ACVIM proteinuria UPC thresholds)",
+      "definitions": 1
+     },
+     {
+      "value": "as previously described (cited, Onderstepoort criteria)",
+      "definitions": 1
+     },
+     {
+      "value": "author-defined (complicated babesiosis per Jacobson and Clark 1994; Leisewitz et al. 2019)",
+      "definitions": 1
+     },
+     {
+      "value": "author-defined (RBC reference range, Kraft and Dürr 2005)",
+      "definitions": 1
+     },
+     {
+      "value": "Soundarya and Suganthi (2016)",
+      "definitions": 1
+     },
+     {
+      "value": "as previously described (ref. 11, Keller et al. hypoglycaemia study)",
+      "definitions": 1
+     }
+    ],
+    "settings": [
+     {
+      "value": "referral hospital",
+      "articles": 59
+     },
+     {
+      "value": "mixed",
+      "articles": 15
+     },
+     {
+      "value": "primary clinic",
+      "articles": 14
+     },
+     {
+      "value": "experimental",
+      "articles": 9
+     },
+     {
+      "value": "not stated",
+      "articles": 8
+     },
+     {
+      "value": "laboratory submissions",
+      "articles": 7
+     },
+     {
+      "value": "field survey",
+      "articles": 4
+     },
+     {
+      "value": "shelter",
+      "articles": 1
+     }
+    ],
+    "sample_timing": [
+     {
+      "value": "not stated",
+      "articles": 74
+     },
+     {
+      "value": "before treatment",
+      "articles": 29
+     },
+     {
+      "value": "mixed",
+      "articles": 14
+     }
+    ]
+   }
+  },
+  {
+   "kind": "independent_units",
+   "title": "Records by cohort and independent unit",
+   "sort_order": 7,
+   "payload": {
+    "rows": [
+     {
+      "independent_unit": "CB040",
+      "is_cohort": false,
+      "articles": "CB040",
+      "n_articles": 1,
+      "articles_with_rows": 1,
+      "definitions": 2,
+      "rows": 69,
+      "species_groups": "B. rossi"
+     },
+     {
+      "independent_unit": "CH03",
+      "is_cohort": true,
+      "articles": "CB050 CB145 CB517",
+      "n_articles": 3,
+      "articles_with_rows": 3,
+      "definitions": 3,
+      "rows": 53,
+      "species_groups": "B. rossi"
+     },
+     {
+      "independent_unit": "CH21",
+      "is_cohort": true,
+      "articles": "CB010 CB516",
+      "n_articles": 2,
+      "articles_with_rows": 1,
+      "definitions": 1,
+      "rows": 37,
+      "species_groups": "B. canis"
+     },
+     {
+      "independent_unit": "CB006",
+      "is_cohort": false,
+      "articles": "CB006",
+      "n_articles": 1,
+      "articles_with_rows": 1,
+      "definitions": 7,
+      "rows": 35,
+      "species_groups": "B. canis"
+     },
+     {
+      "independent_unit": "CH05",
+      "is_cohort": true,
+      "articles": "CB065 CB178",
+      "n_articles": 2,
+      "articles_with_rows": 2,
+      "definitions": 3,
+      "rows": 33,
+      "species_groups": "B. canis; Mixed or unspecified"
+     },
+     {
+      "independent_unit": "CB112",
+      "is_cohort": false,
+      "articles": "CB112",
+      "n_articles": 1,
+      "articles_with_rows": 1,
+      "definitions": 1,
+      "rows": 31,
+      "species_groups": "B. rossi"
+     },
+     {
+      "independent_unit": "CH18",
+      "is_cohort": true,
+      "articles": "CB263",
+      "n_articles": 1,
+      "articles_with_rows": 1,
+      "definitions": 1,
+      "rows": 31,
+      "species_groups": "Mixed or unspecified"
+     },
+     {
+      "independent_unit": "CH09",
+      "is_cohort": true,
+      "articles": "CB082 CB098 CB101 CB105 CB115",
+      "n_articles": 5,
+      "articles_with_rows": 2,
+      "definitions": 3,
+      "rows": 29,
+      "species_groups": "B. rossi"
+     },
+     {
+      "independent_unit": "CB241",
+      "is_cohort": false,
+      "articles": "CB241",
+      "n_articles": 1,
+      "articles_with_rows": 1,
+      "definitions": 1,
+      "rows": 28,
+      "species_groups": "Mixed or unspecified"
+     },
+     {
+      "independent_unit": "CH23",
+      "is_cohort": true,
+      "articles": "CB017",
+      "n_articles": 1,
+      "articles_with_rows": 1,
+      "definitions": 1,
+      "rows": 28,
+      "species_groups": "B. canis"
+     },
+     {
+      "independent_unit": "CB220",
+      "is_cohort": false,
+      "articles": "CB220",
+      "n_articles": 1,
+      "articles_with_rows": 1,
+      "definitions": 1,
+      "rows": 27,
+      "species_groups": "Mixed or unspecified"
+     },
+     {
+      "independent_unit": "CB125",
+      "is_cohort": false,
+      "articles": "CB125",
+      "n_articles": 1,
+      "articles_with_rows": 1,
+      "definitions": 1,
+      "rows": 24,
+      "species_groups": "Mixed or unspecified"
+     },
+     {
+      "independent_unit": "CH06",
+      "is_cohort": true,
+      "articles": "CB071",
+      "n_articles": 1,
+      "articles_with_rows": 1,
+      "definitions": 3,
+      "rows": 24,
+      "species_groups": "B. canis"
+     },
+     {
+      "independent_unit": "CH08",
+      "is_cohort": true,
+      "articles": "CB202 CB286",
+      "n_articles": 2,
+      "articles_with_rows": 2,
+      "definitions": 3,
+      "rows": 24,
+      "species_groups": "Mixed or unspecified"
+     },
+     {
+      "independent_unit": "CB342",
+      "is_cohort": false,
+      "articles": "CB342",
+      "n_articles": 1,
+      "articles_with_rows": 1,
+      "definitions": 2,
+      "rows": 22,
+      "species_groups": "B. rossi"
+     },
+     {
+      "independent_unit": "CB038",
+      "is_cohort": false,
+      "articles": "CB038",
+      "n_articles": 1,
+      "articles_with_rows": 1,
+      "definitions": 1,
+      "rows": 21,
+      "species_groups": "Mixed or unspecified"
+     },
+     {
+      "independent_unit": "CH12",
+      "is_cohort": true,
+      "articles": "CB141 CB149",
+      "n_articles": 2,
+      "articles_with_rows": 2,
+      "definitions": 3,
+      "rows": 19,
+      "species_groups": "B. canis"
+     },
+     {
+      "independent_unit": "CB045",
+      "is_cohort": false,
+      "articles": "CB045",
+      "n_articles": 1,
+      "articles_with_rows": 1,
+      "definitions": 2,
+      "rows": 18,
+      "species_groups": "B. gibsoni"
+     },
+     {
+      "independent_unit": "CB224",
+      "is_cohort": false,
+      "articles": "CB224",
+      "n_articles": 1,
+      "articles_with_rows": 1,
+      "definitions": 1,
+      "rows": 18,
+      "species_groups": "B. gibsoni"
+     },
+     {
+      "independent_unit": "CB109",
+      "is_cohort": false,
+      "articles": "CB109",
+      "n_articles": 1,
+      "articles_with_rows": 1,
+      "definitions": 4,
+      "rows": 17,
+      "species_groups": "B. canis"
+     },
+     {
+      "independent_unit": "CB418",
+      "is_cohort": false,
+      "articles": "CB418",
+      "n_articles": 1,
+      "articles_with_rows": 1,
+      "definitions": 1,
+      "rows": 17,
+      "species_groups": "B. rossi"
+     },
+     {
+      "independent_unit": "CB004",
+      "is_cohort": false,
+      "articles": "CB004",
+      "n_articles": 1,
+      "articles_with_rows": 1,
+      "definitions": 1,
+      "rows": 16,
+      "species_groups": "B. canis"
+     },
+     {
+      "independent_unit": "CH33",
+      "is_cohort": true,
+      "articles": "CB394",
+      "n_articles": 1,
+      "articles_with_rows": 1,
+      "definitions": 2,
+      "rows": 16,
+      "species_groups": "B. canis"
+     },
+     {
+      "independent_unit": "CB536",
+      "is_cohort": false,
+      "articles": "CB536",
+      "n_articles": 1,
+      "articles_with_rows": 1,
+      "definitions": 4,
+      "rows": 14,
+      "species_groups": "B. canis"
+     },
+     {
+      "independent_unit": "CB053",
+      "is_cohort": false,
+      "articles": "CB053",
+      "n_articles": 1,
+      "articles_with_rows": 1,
+      "definitions": 1,
+      "rows": 13,
+      "species_groups": "B. rossi"
+     },
+     {
+      "independent_unit": "CB537",
+      "is_cohort": false,
+      "articles": "CB537",
+      "n_articles": 1,
+      "articles_with_rows": 1,
+      "definitions": 1,
+      "rows": 12,
+      "species_groups": "B. canis"
+     },
+     {
+      "independent_unit": "CB238",
+      "is_cohort": false,
+      "articles": "CB238",
+      "n_articles": 1,
+      "articles_with_rows": 1,
+      "definitions": 2,
+      "rows": 10,
+      "species_groups": "Mixed or unspecified"
+     },
+     {
+      "independent_unit": "CH35",
+      "is_cohort": true,
+      "articles": "CB425 CB441",
+      "n_articles": 2,
+      "articles_with_rows": 2,
+      "definitions": 4,
+      "rows": 10,
+      "species_groups": "B. canis"
+     },
+     {
+      "independent_unit": "CB518",
+      "is_cohort": false,
+      "articles": "CB518",
+      "n_articles": 1,
+      "articles_with_rows": 1,
+      "definitions": 1,
+      "rows": 7,
+      "species_groups": "B. canis"
+     },
+     {
+      "independent_unit": "CB492",
+      "is_cohort": false,
+      "articles": "CB492",
+      "n_articles": 1,
+      "articles_with_rows": 1,
+      "definitions": 3,
+      "rows": 6,
+      "species_groups": "Mixed or unspecified"
+     },
+     {
+      "independent_unit": "CB376",
+      "is_cohort": false,
+      "articles": "CB376",
+      "n_articles": 1,
+      "articles_with_rows": 1,
+      "definitions": 2,
+      "rows": 5,
+      "species_groups": "B. rossi"
+     },
+     {
+      "independent_unit": "CB187",
+      "is_cohort": false,
+      "articles": "CB187",
+      "n_articles": 1,
+      "articles_with_rows": 1,
+      "definitions": 1,
+      "rows": 4,
+      "species_groups": "Mixed or unspecified"
+     },
+     {
+      "independent_unit": "CB307",
+      "is_cohort": false,
+      "articles": "CB307",
+      "n_articles": 1,
+      "articles_with_rows": 1,
+      "definitions": 1,
+      "rows": 4,
+      "species_groups": "B. canis"
+     },
+     {
+      "independent_unit": "CH29",
+      "is_cohort": true,
+      "articles": "CB325",
+      "n_articles": 1,
+      "articles_with_rows": 1,
+      "definitions": 1,
+      "rows": 4,
+      "species_groups": "Mixed or unspecified"
+     },
+     {
+      "independent_unit": "CB052",
+      "is_cohort": false,
+      "articles": "CB052",
+      "n_articles": 1,
+      "articles_with_rows": 1,
+      "definitions": 1,
+      "rows": 3,
+      "species_groups": "B. rossi"
+     },
+     {
+      "independent_unit": "CH16",
+      "is_cohort": true,
+      "articles": "CB279 CB300 CB313",
+      "n_articles": 3,
+      "articles_with_rows": 1,
+      "definitions": 1,
+      "rows": 3,
+      "species_groups": "B. gibsoni"
+     },
+     {
+      "independent_unit": "CB106",
+      "is_cohort": false,
+      "articles": "CB106",
+      "n_articles": 1,
+      "articles_with_rows": 1,
+      "definitions": 1,
+      "rows": 2,
+      "species_groups": "B. canis"
+     },
+     {
+      "independent_unit": "CH31",
+      "is_cohort": true,
+      "articles": "CB508",
+      "n_articles": 1,
+      "articles_with_rows": 1,
+      "definitions": 2,
+      "rows": 2,
+      "species_groups": "B. rossi"
+     },
+     {
+      "independent_unit": "CB035",
+      "is_cohort": false,
+      "articles": "CB035",
+      "n_articles": 1,
+      "articles_with_rows": 1,
+      "definitions": 1,
+      "rows": 1,
+      "species_groups": "B. rossi"
+     },
+     {
+      "independent_unit": "CB075",
+      "is_cohort": false,
+      "articles": "CB075",
+      "n_articles": 1,
+      "articles_with_rows": 1,
+      "definitions": 1,
+      "rows": 1,
+      "species_groups": "B. vogeli"
+     },
+     {
+      "independent_unit": "CB134",
+      "is_cohort": false,
+      "articles": "CB134",
+      "n_articles": 1,
+      "articles_with_rows": 1,
+      "definitions": 1,
+      "rows": 1,
+      "species_groups": "B. gibsoni"
+     },
+     {
+      "independent_unit": "CB392",
+      "is_cohort": false,
+      "articles": "CB392",
+      "n_articles": 1,
+      "articles_with_rows": 1,
+      "definitions": 1,
+      "rows": 1,
+      "species_groups": "B. canis"
+     },
+     {
+      "independent_unit": "BG007",
+      "is_cohort": false,
+      "articles": "BG007",
+      "n_articles": 1,
+      "articles_with_rows": 0,
+      "definitions": 0,
+      "rows": 0,
+      "species_groups": "Not canine (BG)"
+     },
+     {
+      "independent_unit": "CB005",
+      "is_cohort": false,
+      "articles": "CB005",
+      "n_articles": 1,
+      "articles_with_rows": 0,
+      "definitions": 0,
+      "rows": 0,
+      "species_groups": "B. canis"
+     },
+     {
+      "independent_unit": "CB019",
+      "is_cohort": false,
+      "articles": "CB019",
+      "n_articles": 1,
+      "articles_with_rows": 0,
+      "definitions": 0,
+      "rows": 0,
+      "species_groups": "B. canis"
+     },
+     {
+      "independent_unit": "CB039",
+      "is_cohort": false,
+      "articles": "CB039",
+      "n_articles": 1,
+      "articles_with_rows": 0,
+      "definitions": 0,
+      "rows": 0,
+      "species_groups": "B. canis"
+     },
+     {
+      "independent_unit": "CB055",
+      "is_cohort": false,
+      "articles": "CB055",
+      "n_articles": 1,
+      "articles_with_rows": 0,
+      "definitions": 0,
+      "rows": 0,
+      "species_groups": "Other single species"
+     },
+     {
+      "independent_unit": "CB060",
+      "is_cohort": false,
+      "articles": "CB060",
+      "n_articles": 1,
+      "articles_with_rows": 0,
+      "definitions": 0,
+      "rows": 0,
+      "species_groups": "B. vogeli"
+     },
+     {
+      "independent_unit": "CB088",
+      "is_cohort": false,
+      "articles": "CB088",
+      "n_articles": 1,
+      "articles_with_rows": 0,
+      "definitions": 0,
+      "rows": 0,
+      "species_groups": "B. gibsoni"
+     },
+     {
+      "independent_unit": "CB110",
+      "is_cohort": false,
+      "articles": "CB110",
+      "n_articles": 1,
+      "articles_with_rows": 0,
+      "definitions": 0,
+      "rows": 0,
+      "species_groups": "Mixed or unspecified"
+     },
+     {
+      "independent_unit": "CB117",
+      "is_cohort": false,
+      "articles": "CB117",
+      "n_articles": 1,
+      "articles_with_rows": 0,
+      "definitions": 0,
+      "rows": 0,
+      "species_groups": "B. canis"
+     },
+     {
+      "independent_unit": "CB130",
+      "is_cohort": false,
+      "articles": "CB130",
+      "n_articles": 1,
+      "articles_with_rows": 0,
+      "definitions": 0,
+      "rows": 0,
+      "species_groups": "B. gibsoni"
+     },
+     {
+      "independent_unit": "CB143",
+      "is_cohort": false,
+      "articles": "CB143",
+      "n_articles": 1,
+      "articles_with_rows": 0,
+      "definitions": 0,
+      "rows": 0,
+      "species_groups": "Mixed or unspecified"
+     },
+     {
+      "independent_unit": "CB158",
+      "is_cohort": false,
+      "articles": "CB158",
+      "n_articles": 1,
+      "articles_with_rows": 0,
+      "definitions": 0,
+      "rows": 0,
+      "species_groups": "B. canis"
+     },
+     {
+      "independent_unit": "CB172",
+      "is_cohort": false,
+      "articles": "CB172",
+      "n_articles": 1,
+      "articles_with_rows": 0,
+      "definitions": 0,
+      "rows": 0,
+      "species_groups": "Mixed or unspecified"
+     },
+     {
+      "independent_unit": "CB181",
+      "is_cohort": false,
+      "articles": "CB181",
+      "n_articles": 1,
+      "articles_with_rows": 0,
+      "definitions": 0,
+      "rows": 0,
+      "species_groups": "Mixed or unspecified"
+     },
+     {
+      "independent_unit": "CB189",
+      "is_cohort": false,
+      "articles": "CB189",
+      "n_articles": 1,
+      "articles_with_rows": 0,
+      "definitions": 0,
+      "rows": 0,
+      "species_groups": "Mixed or unspecified"
+     },
+     {
+      "independent_unit": "CB192",
+      "is_cohort": false,
+      "articles": "CB192",
+      "n_articles": 1,
+      "articles_with_rows": 0,
+      "definitions": 0,
+      "rows": 0,
+      "species_groups": "Mixed or unspecified"
+     },
+     {
+      "independent_unit": "CB195",
+      "is_cohort": false,
+      "articles": "CB195",
+      "n_articles": 1,
+      "articles_with_rows": 0,
+      "definitions": 0,
+      "rows": 0,
+      "species_groups": "Mixed or unspecified"
+     },
+     {
+      "independent_unit": "CB196",
+      "is_cohort": false,
+      "articles": "CB196",
+      "n_articles": 1,
+      "articles_with_rows": 0,
+      "definitions": 0,
+      "rows": 0,
+      "species_groups": "B. vogeli"
+     },
+     {
+      "independent_unit": "CB204",
+      "is_cohort": false,
+      "articles": "CB204",
+      "n_articles": 1,
+      "articles_with_rows": 0,
+      "definitions": 0,
+      "rows": 0,
+      "species_groups": "Mixed or unspecified"
+     },
+     {
+      "independent_unit": "CB206",
+      "is_cohort": false,
+      "articles": "CB206",
+      "n_articles": 1,
+      "articles_with_rows": 0,
+      "definitions": 0,
+      "rows": 0,
+      "species_groups": "B. canis"
+     },
+     {
+      "independent_unit": "CB213",
+      "is_cohort": false,
+      "articles": "CB213",
+      "n_articles": 1,
+      "articles_with_rows": 0,
+      "definitions": 0,
+      "rows": 0,
+      "species_groups": "Mixed or unspecified"
+     },
+     {
+      "independent_unit": "CB226",
+      "is_cohort": false,
+      "articles": "CB226",
+      "n_articles": 1,
+      "articles_with_rows": 0,
+      "definitions": 0,
+      "rows": 0,
+      "species_groups": "B. canis"
+     },
+     {
+      "independent_unit": "CB227",
+      "is_cohort": false,
+      "articles": "CB227",
+      "n_articles": 1,
+      "articles_with_rows": 0,
+      "definitions": 0,
+      "rows": 0,
+      "species_groups": "Mixed or unspecified"
+     },
+     {
+      "independent_unit": "CB234",
+      "is_cohort": false,
+      "articles": "CB234",
+      "n_articles": 1,
+      "articles_with_rows": 0,
+      "definitions": 0,
+      "rows": 0,
+      "species_groups": "Mixed or unspecified"
+     },
+     {
+      "independent_unit": "CB244",
+      "is_cohort": false,
+      "articles": "CB244",
+      "n_articles": 1,
+      "articles_with_rows": 0,
+      "definitions": 0,
+      "rows": 0,
+      "species_groups": "Mixed or unspecified"
+     },
+     {
+      "independent_unit": "CB251",
+      "is_cohort": false,
+      "articles": "CB251",
+      "n_articles": 1,
+      "articles_with_rows": 0,
+      "definitions": 0,
+      "rows": 0,
+      "species_groups": "B. canis"
+     },
+     {
+      "independent_unit": "CB260",
+      "is_cohort": false,
+      "articles": "CB260",
+      "n_articles": 1,
+      "articles_with_rows": 0,
+      "definitions": 0,
+      "rows": 0,
+      "species_groups": "B. gibsoni"
+     },
+     {
+      "independent_unit": "CB267",
+      "is_cohort": false,
+      "articles": "CB267",
+      "n_articles": 1,
+      "articles_with_rows": 0,
+      "definitions": 0,
+      "rows": 0,
+      "species_groups": "Mixed or unspecified"
+     },
+     {
+      "independent_unit": "CB270",
+      "is_cohort": false,
+      "articles": "CB270",
+      "n_articles": 1,
+      "articles_with_rows": 0,
+      "definitions": 0,
+      "rows": 0,
+      "species_groups": "B. vogeli"
+     },
+     {
+      "independent_unit": "CB281",
+      "is_cohort": false,
+      "articles": "CB281",
+      "n_articles": 1,
+      "articles_with_rows": 0,
+      "definitions": 0,
+      "rows": 0,
+      "species_groups": "Mixed or unspecified"
+     },
+     {
+      "independent_unit": "CB282",
+      "is_cohort": false,
+      "articles": "CB282",
+      "n_articles": 1,
+      "articles_with_rows": 0,
+      "definitions": 0,
+      "rows": 0,
+      "species_groups": "Mixed or unspecified"
+     },
+     {
+      "independent_unit": "CB288",
+      "is_cohort": false,
+      "articles": "CB288",
+      "n_articles": 1,
+      "articles_with_rows": 0,
+      "definitions": 0,
+      "rows": 0,
+      "species_groups": "B. gibsoni"
+     },
+     {
+      "independent_unit": "CB289",
+      "is_cohort": false,
+      "articles": "CB289",
+      "n_articles": 1,
+      "articles_with_rows": 0,
+      "definitions": 0,
+      "rows": 0,
+      "species_groups": "B. gibsoni"
+     },
+     {
+      "independent_unit": "CB301",
+      "is_cohort": false,
+      "articles": "CB301",
+      "n_articles": 1,
+      "articles_with_rows": 0,
+      "definitions": 0,
+      "rows": 0,
+      "species_groups": "B. gibsoni"
+     },
+     {
+      "independent_unit": "CB304",
+      "is_cohort": false,
+      "articles": "CB304",
+      "n_articles": 1,
+      "articles_with_rows": 0,
+      "definitions": 0,
+      "rows": 0,
+      "species_groups": "B. gibsoni"
+     },
+     {
+      "independent_unit": "CB311",
+      "is_cohort": false,
+      "articles": "CB311",
+      "n_articles": 1,
+      "articles_with_rows": 0,
+      "definitions": 0,
+      "rows": 0,
+      "species_groups": "B. gibsoni"
+     },
+     {
+      "independent_unit": "CB336",
+      "is_cohort": false,
+      "articles": "CB336",
+      "n_articles": 1,
+      "articles_with_rows": 0,
+      "definitions": 0,
+      "rows": 0,
+      "species_groups": "B. gibsoni"
+     },
+     {
+      "independent_unit": "CB356",
+      "is_cohort": false,
+      "articles": "CB356",
+      "n_articles": 1,
+      "articles_with_rows": 0,
+      "definitions": 0,
+      "rows": 0,
+      "species_groups": "B. rossi"
+     },
+     {
+      "independent_unit": "CB359",
+      "is_cohort": false,
+      "articles": "CB359",
+      "n_articles": 1,
+      "articles_with_rows": 0,
+      "definitions": 0,
+      "rows": 0,
+      "species_groups": "B. gibsoni"
+     },
+     {
+      "independent_unit": "CB397",
+      "is_cohort": false,
+      "articles": "CB397",
+      "n_articles": 1,
+      "articles_with_rows": 0,
+      "definitions": 0,
+      "rows": 0,
+      "species_groups": "B. gibsoni"
+     },
+     {
+      "independent_unit": "CB440",
+      "is_cohort": false,
+      "articles": "CB440",
+      "n_articles": 1,
+      "articles_with_rows": 0,
+      "definitions": 0,
+      "rows": 0,
+      "species_groups": "Mixed or unspecified"
+     },
+     {
+      "independent_unit": "CB445",
+      "is_cohort": false,
+      "articles": "CB445",
+      "n_articles": 1,
+      "articles_with_rows": 0,
+      "definitions": 0,
+      "rows": 0,
+      "species_groups": "Mixed or unspecified"
+     },
+     {
+      "independent_unit": "CB474",
+      "is_cohort": false,
+      "articles": "CB474",
+      "n_articles": 1,
+      "articles_with_rows": 0,
+      "definitions": 0,
+      "rows": 0,
+      "species_groups": "B. canis"
+     },
+     {
+      "independent_unit": "CB501",
+      "is_cohort": false,
+      "articles": "CB501",
+      "n_articles": 1,
+      "articles_with_rows": 0,
+      "definitions": 0,
+      "rows": 0,
+      "species_groups": "B. vogeli"
+     },
+     {
+      "independent_unit": "CH01",
+      "is_cohort": true,
+      "articles": "CB046",
+      "n_articles": 1,
+      "articles_with_rows": 0,
+      "definitions": 0,
+      "rows": 0,
+      "species_groups": "B. canis"
+     },
+     {
+      "independent_unit": "CH02",
+      "is_cohort": true,
+      "articles": "CB015",
+      "n_articles": 1,
+      "articles_with_rows": 0,
+      "definitions": 0,
+      "rows": 0,
+      "species_groups": "B. gibsoni"
+     },
+     {
+      "independent_unit": "CH04",
+      "is_cohort": true,
+      "articles": "CB111 CB129 CB147",
+      "n_articles": 3,
+      "articles_with_rows": 0,
+      "definitions": 0,
+      "rows": 0,
+      "species_groups": "B. rossi"
+     },
+     {
+      "independent_unit": "CH10",
+      "is_cohort": true,
+      "articles": "CB228",
+      "n_articles": 1,
+      "articles_with_rows": 0,
+      "definitions": 0,
+      "rows": 0,
+      "species_groups": "Mixed or unspecified"
+     },
+     {
+      "independent_unit": "CH11",
+      "is_cohort": true,
+      "articles": "CB148",
+      "n_articles": 1,
+      "articles_with_rows": 0,
+      "definitions": 0,
+      "rows": 0,
+      "species_groups": "B. canis"
+     },
+     {
+      "independent_unit": "CH13",
+      "is_cohort": true,
+      "articles": "CB199 CB200",
+      "n_articles": 2,
+      "articles_with_rows": 0,
+      "definitions": 0,
+      "rows": 0,
+      "species_groups": "Mixed or unspecified"
+     },
+     {
+      "independent_unit": "CH15",
+      "is_cohort": true,
+      "articles": "CB261",
+      "n_articles": 1,
+      "articles_with_rows": 0,
+      "definitions": 0,
+      "rows": 0,
+      "species_groups": "B. canis"
+     },
+     {
+      "independent_unit": "CH17",
+      "is_cohort": true,
+      "articles": "CB248",
+      "n_articles": 1,
+      "articles_with_rows": 0,
+      "definitions": 0,
+      "rows": 0,
+      "species_groups": "B. gibsoni"
+     },
+     {
+      "independent_unit": "CH20",
+      "is_cohort": true,
+      "articles": "CB294 CB297 CB302",
+      "n_articles": 3,
+      "articles_with_rows": 0,
+      "definitions": 0,
+      "rows": 0,
+      "species_groups": "Mixed or unspecified"
+     },
+     {
+      "independent_unit": "CH22",
+      "is_cohort": true,
+      "articles": "CB476",
+      "n_articles": 1,
+      "articles_with_rows": 0,
+      "definitions": 0,
+      "rows": 0,
+      "species_groups": "B. canis"
+     },
+     {
+      "independent_unit": "CH25",
+      "is_cohort": true,
+      "articles": "CB077",
+      "n_articles": 1,
+      "articles_with_rows": 0,
+      "definitions": 0,
+      "rows": 0,
+      "species_groups": "B. canis"
+     },
+     {
+      "independent_unit": "CH27",
+      "is_cohort": true,
+      "articles": "CB080",
+      "n_articles": 1,
+      "articles_with_rows": 0,
+      "definitions": 0,
+      "rows": 0,
+      "species_groups": "B. canis"
+     },
+     {
+      "independent_unit": "CH36",
+      "is_cohort": true,
+      "articles": "CB439",
+      "n_articles": 1,
+      "articles_with_rows": 0,
+      "definitions": 0,
+      "rows": 0,
+      "species_groups": "B. rossi"
+     }
+    ],
+    "cohorts": 27
+   }
+  },
+  {
+   "kind": "not_extracted",
+   "title": "What could not be extracted",
+   "sort_order": 8,
+   "payload": {
+    "reasons": [
+     {
+      "reason": "no per-group result",
+      "items": 29,
+      "articles": 28
+     },
+     {
+      "reason": "figure only",
+      "items": 19,
+      "articles": 17
+     },
+     {
+      "reason": "supplement not in text",
+      "items": 12,
+      "articles": 11
+     },
+     {
+      "reason": "other",
+      "items": 6,
+      "articles": 5
+     },
+     {
+      "reason": "outcome groups mixed with controls",
+      "items": 3,
+      "articles": 3
+     },
+     {
+      "reason": "garbled table",
+      "items": 1,
+      "articles": 1
+     },
+     {
+      "reason": "group sizes unclear",
+      "items": 1,
+      "articles": 1
+     }
+    ],
+    "articles_without_associations": [
+     {
+      "id": "BG007",
+      "unit": "BG007",
+      "species_group": "Not canine (BG)",
+      "skipped_infected_vs_healthy": 0
+     },
+     {
+      "id": "CB005",
+      "unit": "CB005",
+      "species_group": "B. canis",
+      "skipped_infected_vs_healthy": 0
+     },
+     {
+      "id": "CB010",
+      "unit": "CH21",
+      "species_group": "B. canis",
+      "skipped_infected_vs_healthy": 0
+     },
+     {
+      "id": "CB015",
+      "unit": "CH02",
+      "species_group": "B. gibsoni",
+      "skipped_infected_vs_healthy": 27
+     },
+     {
+      "id": "CB019",
+      "unit": "CB019",
+      "species_group": "B. canis",
+      "skipped_infected_vs_healthy": 40
+     },
+     {
+      "id": "CB039",
+      "unit": "CB039",
+      "species_group": "B. canis",
+      "skipped_infected_vs_healthy": 25
+     },
+     {
+      "id": "CB046",
+      "unit": "CH01",
+      "species_group": "B. canis",
+      "skipped_infected_vs_healthy": 7
+     },
+     {
+      "id": "CB055",
+      "unit": "CB055",
+      "species_group": "Other single species",
+      "skipped_infected_vs_healthy": 0
+     },
+     {
+      "id": "CB060",
+      "unit": "CB060",
+      "species_group": "B. vogeli",
+      "skipped_infected_vs_healthy": 0
+     },
+     {
+      "id": "CB077",
+      "unit": "CH25",
+      "species_group": "B. canis",
+      "skipped_infected_vs_healthy": 9
+     },
+     {
+      "id": "CB080",
+      "unit": "CH27",
+      "species_group": "B. canis",
+      "skipped_infected_vs_healthy": 0
+     },
+     {
+      "id": "CB082",
+      "unit": "CH09",
+      "species_group": "B. rossi",
+      "skipped_infected_vs_healthy": 0
+     },
+     {
+      "id": "CB088",
+      "unit": "CB088",
+      "species_group": "B. gibsoni",
+      "skipped_infected_vs_healthy": 18
+     },
+     {
+      "id": "CB101",
+      "unit": "CH09",
+      "species_group": "B. rossi",
+      "skipped_infected_vs_healthy": 0
+     },
+     {
+      "id": "CB110",
+      "unit": "CB110",
+      "species_group": "Mixed or unspecified",
+      "skipped_infected_vs_healthy": 13
+     },
+     {
+      "id": "CB111",
+      "unit": "CH04",
+      "species_group": "B. rossi",
+      "skipped_infected_vs_healthy": 6
+     },
+     {
+      "id": "CB115",
+      "unit": "CH09",
+      "species_group": "B. rossi",
+      "skipped_infected_vs_healthy": 15
+     },
+     {
+      "id": "CB117",
+      "unit": "CB117",
+      "species_group": "B. canis",
+      "skipped_infected_vs_healthy": 3
+     },
+     {
+      "id": "CB129",
+      "unit": "CH04",
+      "species_group": "B. rossi",
+      "skipped_infected_vs_healthy": 33
+     },
+     {
+      "id": "CB130",
+      "unit": "CB130",
+      "species_group": "B. gibsoni",
+      "skipped_infected_vs_healthy": 0
+     },
+     {
+      "id": "CB143",
+      "unit": "CB143",
+      "species_group": "Mixed or unspecified",
+      "skipped_infected_vs_healthy": 1
+     },
+     {
+      "id": "CB147",
+      "unit": "CH04",
+      "species_group": "B. rossi",
+      "skipped_infected_vs_healthy": 13
+     },
+     {
+      "id": "CB148",
+      "unit": "CH11",
+      "species_group": "B. canis",
+      "skipped_infected_vs_healthy": 0
+     },
+     {
+      "id": "CB158",
+      "unit": "CB158",
+      "species_group": "B. canis",
+      "skipped_infected_vs_healthy": 0
+     },
+     {
+      "id": "CB172",
+      "unit": "CB172",
+      "species_group": "Mixed or unspecified",
+      "skipped_infected_vs_healthy": 15
+     },
+     {
+      "id": "CB181",
+      "unit": "CB181",
+      "species_group": "Mixed or unspecified",
+      "skipped_infected_vs_healthy": 0
+     },
+     {
+      "id": "CB189",
+      "unit": "CB189",
+      "species_group": "Mixed or unspecified",
+      "skipped_infected_vs_healthy": 0
+     },
+     {
+      "id": "CB192",
+      "unit": "CB192",
+      "species_group": "Mixed or unspecified",
+      "skipped_infected_vs_healthy": 0
+     },
+     {
+      "id": "CB195",
+      "unit": "CB195",
+      "species_group": "Mixed or unspecified",
+      "skipped_infected_vs_healthy": 0
+     },
+     {
+      "id": "CB196",
+      "unit": "CB196",
+      "species_group": "B. vogeli",
+      "skipped_infected_vs_healthy": 8
+     },
+     {
+      "id": "CB199",
+      "unit": "CH13",
+      "species_group": "Mixed or unspecified",
+      "skipped_infected_vs_healthy": 35
+     },
+     {
+      "id": "CB200",
+      "unit": "CH13",
+      "species_group": "Mixed or unspecified",
+      "skipped_infected_vs_healthy": 13
+     },
+     {
+      "id": "CB204",
+      "unit": "CB204",
+      "species_group": "Mixed or unspecified",
+      "skipped_infected_vs_healthy": 0
+     },
+     {
+      "id": "CB206",
+      "unit": "CB206",
+      "species_group": "B. canis",
+      "skipped_infected_vs_healthy": 28
+     },
+     {
+      "id": "CB213",
+      "unit": "CB213",
+      "species_group": "Mixed or unspecified",
+      "skipped_infected_vs_healthy": 10
+     },
+     {
+      "id": "CB226",
+      "unit": "CB226",
+      "species_group": "B. canis",
+      "skipped_infected_vs_healthy": 0
+     },
+     {
+      "id": "CB227",
+      "unit": "CB227",
+      "species_group": "Mixed or unspecified",
+      "skipped_infected_vs_healthy": 13
+     },
+     {
+      "id": "CB228",
+      "unit": "CH10",
+      "species_group": "Mixed or unspecified",
+      "skipped_infected_vs_healthy": 0
+     },
+     {
+      "id": "CB234",
+      "unit": "CB234",
+      "species_group": "Mixed or unspecified",
+      "skipped_infected_vs_healthy": 14
+     },
+     {
+      "id": "CB244",
+      "unit": "CB244",
+      "species_group": "Mixed or unspecified",
+      "skipped_infected_vs_healthy": 0
+     },
+     {
+      "id": "CB248",
+      "unit": "CH17",
+      "species_group": "B. gibsoni",
+      "skipped_infected_vs_healthy": 0
+     },
+     {
+      "id": "CB251",
+      "unit": "CB251",
+      "species_group": "B. canis",
+      "skipped_infected_vs_healthy": 0
+     },
+     {
+      "id": "CB260",
+      "unit": "CB260",
+      "species_group": "B. gibsoni",
+      "skipped_infected_vs_healthy": 0
+     },
+     {
+      "id": "CB261",
+      "unit": "CH15",
+      "species_group": "B. canis",
+      "skipped_infected_vs_healthy": 2
+     },
+     {
+      "id": "CB267",
+      "unit": "CB267",
+      "species_group": "Mixed or unspecified",
+      "skipped_infected_vs_healthy": 0
+     },
+     {
+      "id": "CB270",
+      "unit": "CB270",
+      "species_group": "B. vogeli",
+      "skipped_infected_vs_healthy": 17
+     },
+     {
+      "id": "CB279",
+      "unit": "CH16",
+      "species_group": "B. gibsoni",
+      "skipped_infected_vs_healthy": 0
+     },
+     {
+      "id": "CB281",
+      "unit": "CB281",
+      "species_group": "Mixed or unspecified",
+      "skipped_infected_vs_healthy": 0
+     },
+     {
+      "id": "CB282",
+      "unit": "CB282",
+      "species_group": "Mixed or unspecified",
+      "skipped_infected_vs_healthy": 11
+     },
+     {
+      "id": "CB288",
+      "unit": "CB288",
+      "species_group": "B. gibsoni",
+      "skipped_infected_vs_healthy": 0
+     },
+     {
+      "id": "CB289",
+      "unit": "CB289",
+      "species_group": "B. gibsoni",
+      "skipped_infected_vs_healthy": 0
+     },
+     {
+      "id": "CB294",
+      "unit": "CH20",
+      "species_group": "Mixed or unspecified",
+      "skipped_infected_vs_healthy": 0
+     },
+     {
+      "id": "CB297",
+      "unit": "CH20",
+      "species_group": "Mixed or unspecified",
+      "skipped_infected_vs_healthy": 1
+     },
+     {
+      "id": "CB300",
+      "unit": "CH16",
+      "species_group": "B. gibsoni",
+      "skipped_infected_vs_healthy": 29
+     },
+     {
+      "id": "CB301",
+      "unit": "CB301",
+      "species_group": "B. gibsoni",
+      "skipped_infected_vs_healthy": 11
+     },
+     {
+      "id": "CB302",
+      "unit": "CH20",
+      "species_group": "Mixed or unspecified",
+      "skipped_infected_vs_healthy": 8
+     },
+     {
+      "id": "CB304",
+      "unit": "CB304",
+      "species_group": "B. gibsoni",
+      "skipped_infected_vs_healthy": 6
+     },
+     {
+      "id": "CB311",
+      "unit": "CB311",
+      "species_group": "B. gibsoni",
+      "skipped_infected_vs_healthy": 0
+     },
+     {
+      "id": "CB336",
+      "unit": "CB336",
+      "species_group": "B. gibsoni",
+      "skipped_infected_vs_healthy": 0
+     },
+     {
+      "id": "CB356",
+      "unit": "CB356",
+      "species_group": "B. rossi",
+      "skipped_infected_vs_healthy": 27
+     },
+     {
+      "id": "CB359",
+      "unit": "CB359",
+      "species_group": "B. gibsoni",
+      "skipped_infected_vs_healthy": 0
+     },
+     {
+      "id": "CB397",
+      "unit": "CB397",
+      "species_group": "B. gibsoni",
+      "skipped_infected_vs_healthy": 0
+     },
+     {
+      "id": "CB439",
+      "unit": "CH36",
+      "species_group": "B. rossi",
+      "skipped_infected_vs_healthy": 14
+     },
+     {
+      "id": "CB440",
+      "unit": "CB440",
+      "species_group": "Mixed or unspecified",
+      "skipped_infected_vs_healthy": 2
+     },
+     {
+      "id": "CB445",
+      "unit": "CB445",
+      "species_group": "Mixed or unspecified",
+      "skipped_infected_vs_healthy": 0
+     },
+     {
+      "id": "CB474",
+      "unit": "CB474",
+      "species_group": "B. canis",
+      "skipped_infected_vs_healthy": 7
+     },
+     {
+      "id": "CB476",
+      "unit": "CH22",
+      "species_group": "B. canis",
+      "skipped_infected_vs_healthy": 8
+     },
+     {
+      "id": "CB501",
+      "unit": "CB501",
+      "species_group": "B. vogeli",
+      "skipped_infected_vs_healthy": 4
+     }
+    ],
+    "articles_missing": []
+   }
+  },
+  {
+   "kind": "agreement",
+   "title": "Agreement with the blind second extraction and the pilot",
+   "sort_order": 9,
+   "payload": {
+    "second": {
+     "name": "second",
+     "reference": "extractions",
+     "other": "second",
+     "articles": 24,
+     "outcome_class": {
+      "jaccard_pooled": 0.958,
+      "articles_identical_sets": 23
+     },
+     "matched_pairs": 104,
+     "ref_keys": 109,
+     "other_keys": 104,
+     "coverage_ref_found_by_other": 0.954,
+     "coverage_other_found_by_ref": 1.0,
+     "direction_agreement": 0.981,
+     "significance_agreement": 0.99,
+     "both_agree": 0.971,
+     "significance_kappa": 0.985
+    },
+    "pilot": {
+     "name": "pilot",
+     "reference": "extractions",
+     "other": "../../core/data/severity/extractions",
+     "articles": 10,
+     "outcome_class": {
+      "jaccard_pooled": 0.875,
+      "articles_identical_sets": 8
+     },
+     "matched_pairs": 141,
+     "ref_keys": 153,
+     "other_keys": 154,
+     "coverage_ref_found_by_other": 0.922,
+     "coverage_other_found_by_ref": 0.916,
+     "direction_agreement": 0.957,
+     "significance_agreement": 0.922,
+     "both_agree": 0.894,
+     "significance_kappa": 0.863
+    },
+    "resolutions": 6
+   }
+  },
+  {
+   "kind": "interpretation",
+   "title": "Explanation and interpretation",
+   "sort_order": 10,
+   "payload": {
+    "sections": [
+     {
+      "heading": "Question",
+      "paragraphs": [
+       "Which laboratory markers and host or parasite factors have published canine babesiosis studies tested against severity or outcome, under which definitions, in which species and in how many independent cohorts? SV-G2 is the groundwork for SV-03 (evidence matrix) and SV-02a (parasite load by outcome); it has no hypothesis test."
+      ]
+     },
+     {
+      "heading": "What was done",
+      "paragraphs": [
+       "Every shortlist article with tier A or B and a full text (117 articles, 99 independent units) was extracted by sub-agents in batches of about 10 under schema v2, which adds definition components, euthanasia, definition source, follow-up horizon, setting, sample timing, per-group values with summary type, the parasite load method, and a list of what could not be extracted. The ten pilot articles were re-extracted first as a calibration batch. Every quote was checked against the article text by the checker; the owner checked a sample of each batch by hand. A blind second extraction of a random 20% sample (24 articles, seed 20261112) measured agreement.",
+       "Counts are independent units: articles that share a cohort in /core/cohorts.json count once. Rows are not evidence."
+      ]
+     },
+     {
+      "heading": "Result",
+      "paragraphs": [
+       "740 rows (260 significant, 254 not significant, 192 not tested) from 49 articles; 68 articles reported nothing against severity. Markers reported in the most independent units: Haematocrit/PCV (21), Creatinine (16), Urea (16), Platelet count (15), White blood cell count (15), Bilirubin (14).",
+       "Quotes: 740 exact and 0 near of 740 rows. Second extraction: coverage 0.954 of the first extraction's marker-by-outcome keys, significance agreement 0.99 (kappa 0.985), direction agreement 0.981."
+      ]
+     },
+     {
+      "heading": "What this does not show",
+      "paragraphs": [
+       "This is a description of what was reported, not a synthesis: direction counts are not effect sizes, and markers reported only when significant (selective reporting) inflate the 'higher' and 'lower' columns. Species is aliased with source, setting and definition: do not compare species from these counts. Categories and cohort links come from NLP and agent extraction with one owner check, not a full human review. The 34 abstract-only tier B articles are not included. Mortality definitions usually count euthanasia as death."
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

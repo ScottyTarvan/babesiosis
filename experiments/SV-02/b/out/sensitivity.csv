@@ -1,0 +1,68 @@
+check,measure,dog_id,dose_group,n_points,slope,theil_sen,damage_at_1pct,damage_at_5pct,reading
+offset_0.001,hct_drop,DS02:d001,low,5,-0.0078,-0.0109,0.006,-0.0142,cannot tell
+offset_0.001,hct_drop,DS02:d002,high,4,0.0192,0.0392,-0.0237,0.0147,cannot tell
+offset_0.001,hct_drop,DS02:d003,high,4,0.0826,0.0765,-0.075,-0.0392,cannot tell
+offset_0.001,hct_drop,DS02:d004,high,4,0.0447,0.0424,0.0014,0.0508,cannot tell
+offset_0.001,hct_drop,DS02:d005,low,5,0.0099,0.0114,-0.0083,,cannot tell
+offset_0.001,lactate,DS02:d001,low,4,0.0069,0.0235,0.9605,1.1363,one shared norm
+offset_0.001,lactate,DS02:d002,high,4,1.5867,1.3221,1.5222,1.4409,one shared norm
+offset_0.001,lactate,DS02:d003,high,4,1.6511,1.24,1.2,1.2299,one shared norm
+offset_0.001,lactate,DS02:d004,high,4,0.5853,0.4445,1.2219,1.1866,one shared norm
+offset_0.001,lactate,DS02:d005,low,4,0.085,0.1933,1.1697,,one shared norm
+offset_0.001,habitus_loss,DS02:d001,low,5,0.2625,0.2609,0.6003,1.0,one shared norm
+offset_0.001,habitus_loss,DS02:d002,high,4,0.7009,0.7051,0.9808,1.6609,one shared norm
+offset_0.001,habitus_loss,DS02:d003,high,4,1.0375,1.3623,0.0015,1.1947,one shared norm
+offset_0.001,habitus_loss,DS02:d004,high,4,0.7542,0.7944,1.1627,1.8689,one shared norm
+offset_0.001,habitus_loss,DS02:d005,low,5,0.1338,0.0,0.7219,,one shared norm
+offset_0.1,hct_drop,DS02:d001,low,5,-0.021,-0.0239,0.0084,-0.0142,cannot tell
+offset_0.1,hct_drop,DS02:d002,high,4,0.0263,0.042,-0.0232,0.0142,cannot tell
+offset_0.1,hct_drop,DS02:d003,high,4,0.102,0.0869,-0.075,-0.0397,cannot tell
+offset_0.1,hct_drop,DS02:d004,high,4,0.0539,0.0525,0.0007,0.0505,cannot tell
+offset_0.1,hct_drop,DS02:d005,low,5,0.0228,0.0265,-0.0106,,cannot tell
+offset_0.1,lactate,DS02:d001,low,4,0.0968,0.0489,0.9314,1.1306,one shared norm
+offset_0.1,lactate,DS02:d002,high,4,1.935,1.6671,1.5159,1.442,one shared norm
+offset_0.1,lactate,DS02:d003,high,4,2.0403,1.5102,1.2,1.2294,one shared norm
+offset_0.1,lactate,DS02:d004,high,4,0.7286,0.565,1.2223,1.1868,one shared norm
+offset_0.1,lactate,DS02:d005,low,4,0.2197,0.2722,1.1356,,one shared norm
+offset_0.1,habitus_loss,DS02:d001,low,5,0.5906,0.5436,0.5396,1.0,one shared norm
+offset_0.1,habitus_loss,DS02:d002,high,4,0.8088,0.8926,0.974,1.6536,one shared norm
+offset_0.1,habitus_loss,DS02:d003,high,4,1.2665,1.4868,0.0014,1.1775,one shared norm
+offset_0.1,habitus_loss,DS02:d004,high,4,0.8754,0.9556,1.1534,1.864,one shared norm
+offset_0.1,habitus_loss,DS02:d005,low,5,0.2914,0.0,0.6478,,one shared norm
+positive_load_only,hct_drop,DS02:d001,low,3,-0.0292,-0.0327,0.006,-0.0142,cannot tell
+positive_load_only,hct_drop,DS02:d002,high,4,0.0191,0.0392,-0.0237,0.0147,cannot tell
+positive_load_only,hct_drop,DS02:d003,high,4,0.0823,0.0763,-0.075,-0.0392,cannot tell
+positive_load_only,hct_drop,DS02:d004,high,4,0.0446,0.0422,0.0014,0.0508,cannot tell
+positive_load_only,hct_drop,DS02:d005,low,3,0.0188,0.0203,-0.0083,,cannot tell
+positive_load_only,lactate,DS02:d001,low,2,0.2509,0.2509,0.9609,1.1363,one shared norm
+positive_load_only,lactate,DS02:d002,high,4,1.5812,1.3172,1.5223,1.4409,one shared norm
+positive_load_only,lactate,DS02:d003,high,4,1.645,1.236,1.2,1.2299,one shared norm
+positive_load_only,lactate,DS02:d004,high,4,0.5831,0.4428,1.2219,1.1866,one shared norm
+positive_load_only,lactate,DS02:d005,low,2,0.2077,0.2077,1.1702,,one shared norm
+positive_load_only,habitus_loss,DS02:d001,low,3,0.5679,0.5455,0.6011,1.0,one shared norm
+positive_load_only,habitus_loss,DS02:d002,high,4,0.6991,0.7019,0.9809,1.661,one shared norm
+positive_load_only,habitus_loss,DS02:d003,high,4,1.0339,1.3605,0.0015,1.1949,one shared norm
+positive_load_only,habitus_loss,DS02:d004,high,4,0.7522,0.7902,1.1628,1.869,one shared norm
+positive_load_only,habitus_loss,DS02:d005,low,3,0.2267,0.0,0.7231,,one shared norm
+clinical_lactate,lactate,DS02:d001,low,5,0.1745,0.1501,1.4559,1.7,cannot tell
+clinical_lactate,lactate,DS02:d002,high,3,0.5669,0.5735,1.59,2.1282,cannot tell
+clinical_lactate,lactate,DS02:d003,high,3,0.4172,0.4179,1.4004,1.7579,cannot tell
+clinical_lactate,lactate,DS02:d004,high,3,-0.0481,-0.0488,1.2838,1.2132,cannot tell
+clinical_lactate,lactate,DS02:d005,low,5,0.3086,0.2244,2.0547,,cannot tell
+hct_raw_value,hct_drop,DS02:d001,low,5,0.0122,0.015,0.3837,0.4042,cannot tell
+hct_raw_value,hct_drop,DS02:d002,high,4,-0.0201,-0.0395,0.3986,0.3604,cannot tell
+hct_raw_value,hct_drop,DS02:d003,high,4,-0.0851,-0.0778,0.42,0.3842,cannot tell
+hct_raw_value,hct_drop,DS02:d004,high,4,-0.046,-0.0436,0.3687,0.3192,cannot tell
+hct_raw_value,hct_drop,DS02:d005,low,5,-0.0143,-0.016,0.3786,,cannot tell
+without_dog_that_died,hct_drop,DS02:d001,low,5,-0.0122,-0.015,0.0063,-0.0142,cannot tell
+without_dog_that_died,hct_drop,DS02:d002,high,4,0.0201,0.0395,-0.0236,0.0146,cannot tell
+without_dog_that_died,hct_drop,DS02:d004,high,4,0.046,0.0436,0.0013,0.0508,cannot tell
+without_dog_that_died,hct_drop,DS02:d005,low,5,0.0143,0.016,-0.0086,,cannot tell
+without_dog_that_died,lactate,DS02:d001,low,4,0.0335,0.0318,0.9571,1.1356,one shared norm
+without_dog_that_died,lactate,DS02:d002,high,4,1.633,1.3638,1.5214,1.441,one shared norm
+without_dog_that_died,lactate,DS02:d004,high,4,0.6041,0.459,1.2219,1.1866,one shared norm
+without_dog_that_died,lactate,DS02:d005,low,4,0.132,0.2163,1.1652,,one shared norm
+without_dog_that_died,habitus_loss,DS02:d001,low,5,0.3762,0.3529,0.5932,1.0,one shared norm
+without_dog_that_died,habitus_loss,DS02:d002,high,4,0.7159,0.7331,0.98,1.6602,one shared norm
+without_dog_that_died,habitus_loss,DS02:d004,high,4,0.771,0.8302,1.1618,1.8685,one shared norm
+without_dog_that_died,habitus_loss,DS02:d005,low,5,0.1892,0.0,0.7123,,one shared norm

@@ -1,0 +1,142 @@
+<section class="fs-gaps">
+  <fs-page-header icon="list-search" title="Where the evidence is thin"
+                  subtitle="What kind of study exists for each topic, the themes that run across topics, and the questions the review leaves open: the bridge from the 20-year baseline to the severity work.">
+    <fs-button variant="outline" intent="secondary" size="sm" icon="refresh"
+               [loading]="loading()" [disabled]="loading()"
+               (click)="load()">Refresh</fs-button>
+  </fs-page-header>
+
+  @if (loadError(); as message) {
+    <fs-banner intent="danger">
+      {{ message }}
+      <fs-button fsBannerAction variant="ghost" intent="secondary" size="sm" (click)="load()">Retry</fs-button>
+    </fs-banner>
+  }
+
+  @if (loading() && !data()) {
+    <div class="fs-gaps__loading">
+      <fs-spinner size="md" intent="primary" ariaLabel="Loading the gaps and questions" />
+    </div>
+  } @else if (data(); as d) {
+    <fs-card [title]="matrixTitle()"
+             subtitle="Canine articles by main topic and study design. Outlined cells are empty: no article of that kind.">
+      <div fsCardTitleAside class="fs-gaps__legend" aria-hidden="true">
+        <span>Fewer</span>
+        @for (level of legend; track level) {
+          <span class="fs-gaps__swatch" [attr.data-heat]="level"></span>
+        }
+        <span>More articles</span>
+      </div>
+      @if (!rows().length) {
+        <fs-empty-state icon="report-analytics" title="No topics yet" subtitle="The matrix appears once articles are loaded." />
+      } @else {
+        <div class="fs-gaps__scroll">
+          <div class="fs-matrix" role="table" aria-label="Canine articles by topic and study design">
+            <div class="fs-matrix__row fs-matrix__row--head" role="row">
+              <span role="columnheader" class="fs-matrix__topic">Topic</span>
+              @for (design of d.designs; track design) {
+                <span role="columnheader">{{ design }}</span>
+              }
+              <span role="columnheader" class="fs-matrix__total">Total</span>
+            </div>
+            @for (row of rows(); track row.code) {
+              <div class="fs-matrix__row" role="row">
+                <span role="cell" class="fs-matrix__topic">
+                  <a class="fs-matrix__name" [routerLink]="topicUrl(row.code)" [title]="row.name">{{ row.label }}</a>
+                  <span class="fs-matrix__code">{{ row.code }}</span>
+                </span>
+                @for (cell of row.cells; track $index) {
+                  @if (cell.params) {
+                    <a role="cell" class="fs-matrix__cell" [attr.data-heat]="cell.heat" [title]="cell.tip"
+                       [routerLink]="articlesUrl" [queryParams]="cell.params">{{ cell.count }}</a>
+                  } @else {
+                    <span role="cell" class="fs-matrix__cell" [attr.data-heat]="cell.heat" [title]="cell.tip">0</span>
+                  }
+                }
+                <span role="cell" class="fs-matrix__total">{{ row.total }}</span>
+              </div>
+            }
+          </div>
+        </div>
+        <p class="fs-gaps__footnote">
+          Counts are articles, not independent sources. Topic and design labels are automatic: an empty cell means no
+          article was labelled that way, which is a strong hint but not proof that no such study exists. Click a count
+          to open those articles.
+        </p>
+      }
+    </fs-card>
+
+    <div class="fs-gaps__figures">
+      @for (figure of d.figures; track figure.key) {
+        <fs-card>
+          <div class="fs-gaps__figure">
+            <span class="fs-gaps__figure-value">{{ figure.value }}</span>
+            <span class="fs-gaps__figure-title">{{ figure.title }}</span>
+            <span class="fs-gaps__figure-text">{{ figure.text }}</span>
+          </div>
+        </fs-card>
+      }
+    </div>
+
+    <div class="fs-gaps__columns">
+      <fs-card title="Themes that cut across topics"
+               subtitle="From the cross-topic synthesis (CROSS.md), as written. Open a theme for its full text and articles.">
+        @if (!themes().length) {
+          <fs-empty-state icon="article" title="No themes loaded"
+                          subtitle="Run the console with --synthesis-only to load CROSS.md." />
+        } @else {
+          <div class="fs-gaps__list">
+            @for (theme of themes(); track theme.key) {
+              <details class="fs-gaps__item">
+                <summary class="fs-gaps__summary">
+                  <fs-symbol class="fs-gaps__chevron" name="arrow-right" size="xs" />
+                  <span class="fs-gaps__summary-text">
+                    <fs-synthesis-text class="fs-gaps__heading" [markdown]="theme.heading" />
+                    @if (theme.codes.length) {
+                      <span class="fs-gaps__codes">{{ theme.codes.join(' · ') }}</span>
+                    }
+                  </span>
+                </summary>
+                <div class="fs-gaps__body">
+                  <fs-synthesis-text [markdown]="theme.body" />
+                </div>
+              </details>
+            }
+          </div>
+        }
+      </fs-card>
+
+      <fs-card title="Candidate research questions"
+               subtitle="From QUESTIONS.md, as written. Questions, not findings: none of the analyses has been run.">
+        @if (!d.questions.length) {
+          <fs-empty-state icon="article" title="No questions loaded"
+                          subtitle="Run the console with --synthesis-only to load QUESTIONS.md." />
+        } @else {
+          <div class="fs-gaps__list">
+            @for (question of d.questions; track question.key) {
+              <details class="fs-gaps__item">
+                <summary class="fs-gaps__summary">
+                  <fs-symbol class="fs-gaps__chevron" name="arrow-right" size="xs" />
+                  <span class="fs-gaps__qid">{{ question.key.toUpperCase() }}</span>
+                  <span class="fs-gaps__summary-text">
+                    <fs-synthesis-text class="fs-gaps__heading" [markdown]="question.heading" />
+                  </span>
+                </summary>
+                <div class="fs-gaps__body">
+                  <fs-synthesis-text [markdown]="question.body" />
+                </div>
+              </details>
+            }
+          </div>
+        }
+      </fs-card>
+    </div>
+
+    @if (d.synthesisLoadedAt) {
+      <p class="fs-gaps__footnote">
+        Themes and questions loaded {{ d.synthesisLoadedAt | date: 'd MMM y, HH:mm' }} from search/synthesis. Counts quoted
+        in them were written earlier and can differ from the live figures above.
+      </p>
+    }
+  }
+</section>

@@ -1,0 +1,18 @@
+harmonised_name,dataset_id,original_column,unit,conversion,note
+age_months,DS03,Age (months),months,,
+weight_kg,DS03,Weight (kg),kg,,
+sex,DS03,Gender,male/female,"Male -> male, Female -> female",Neuter status not recorded.
+hb,DS03,HGB (g/L),g/L,,
+hct,DS03,HCT (L/L),L/L,,
+mchc,DS03,MCHC (g/L),g/L,,
+chcm,DS03,CHCM (g/L),g/L,,Dataset-specific name (not in the harmonised list). ADVIA cell haemoglobin concentration mean.
+retic_pct,DS03,Ret% (%),%,,
+arc,DS03,ARC (x10^9/L),10^9/L,,
+mcvr,DS03,MCVr (fL),fL,,Dataset-specific name (not in the harmonised list). Mean reticulocyte volume.
+chcmr,DS03,CHCMr (g/L),g/L,,Dataset-specific name (not in the harmonised list). Reticulocyte CHCM.
+chr,DS03,CHr (pg/cell),pg,,Dataset-specific name (not in the harmonised list). Reticulocyte haemoglobin content.
+chdwr,DS03,CHDWr (pg/cell),pg,,Dataset-specific name (not in the harmonised list). Reticulocyte haemoglobin distribution width.
+rdwr,DS03,RDWr (%),%,,Dataset-specific name (not in the harmonised list). Reticulocyte red cell distribution width.
+chdelta,DS03,CHDelta (pg),pg,,Dataset-specific name (not in the harmonised list). CHr minus CH of mature red cells.
+setting,DS03,file and section,category,,"Dataset-specific name (not in the harmonised list). natural, healthy, imha, experimental"
+cohort,DS03,section row,1/2,,Dataset-specific name (not in the harmonised list). Natural infection collection series.

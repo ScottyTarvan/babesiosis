@@ -1,0 +1,72 @@
+{
+  "id": "CB134",
+  "text_used": "data/markdown/CB134.md",
+  "extracted_by": "claude-opus-5-5 SV-G2 batch B10",
+  "extracted_utc": "2026-11-12T05:26:35Z",
+  "article_notes": "Retrospective descriptive study of 108 PCR-positive B. gibsoni dogs at one emergency and specialty hospital in Hong Kong; data at presentation before diagnosis or specific treatment. No outcome, complication or mortality data. The only severity grouping is the HCT-based anaemia grade, cross-tabulated against thrombocytopenia grade (Table 3).",
+  "skipped_infected_vs_healthy": 0,
+  "severity_definitions": [
+    {
+      "key": "S1",
+      "outcome_class": "anaemia_grade",
+      "label": "severe vs moderate vs mild anaemia (vs normal HCT)",
+      "definition": "Anaemia graded by haematocrit: severe HCT < 20%, moderate 20% <= HCT < 30%, mild 30% <= HCT < 37.3%. Severe n=46, moderate n=22, mild n=21, normal HCT n=19.",
+      "severe_group": "severe anaemia (n=46)",
+      "comparison_group": "mild anaemia (n=21)",
+      "quote": "Severity of anemia was classified based on HCT as severe (HCT < 20%), moderate (20% ≤ HCT < 30%), and mild (30% ≤ HCT < 37.3%).",
+      "components": [
+        "anaemia grade"
+      ],
+      "euthanasia_included": "not applicable",
+      "definition_source": "author-defined",
+      "follow_up_horizon": null
+    }
+  ],
+  "associations": [
+    {
+      "marker_as_reported": "thrombocytopenia grade (PLT)",
+      "marker": "Platelet count",
+      "marker_class": "haematology",
+      "specimen": "whole blood",
+      "timepoint": "admission/pre-treatment",
+      "severity_key": "S1",
+      "species": "B. gibsoni",
+      "species_confirmation": "PCR or sequencing",
+      "subgroup": null,
+      "n_total": 108,
+      "n_severe": 46,
+      "n_comparison": 21,
+      "analysis": "descriptive_only",
+      "direction": "not_stated",
+      "significant": "not_tested",
+      "statistic": "severe thrombocytopenia (PLT < 30 K/uL) in 17 dogs with severe anaemia vs 4 with mild anaemia (percentages are of all 108 dogs)",
+      "p_value": null,
+      "effect_type": null,
+      "effect_value": null,
+      "effect_ci": null,
+      "cutoff": null,
+      "sensitivity": null,
+      "specificity": null,
+      "adjusted_for": null,
+      "quote": "| Severe thrombocytopenia | 17 (15.7%) | 8 (7.4%) | 4 (3.7%) | 6 (5.6%) |",
+      "location": "Table 3 (columns: severe anaemia, moderate anaemia, mild anaemia, normal HCT)",
+      "source_type": "table",
+      "confidence": "medium",
+      "note": "Cross-tabulation of anaemia grade by thrombocytopenia grade, no test. Other rows of Table 3 (moderate, mild, normal PLT, thrombocytosis) give the rest of the distribution; percentages in the table are of 108, not of the column. The 'Normal PLT' row prints 2 (25.0%) for moderate anaemia, an apparent typo. Authors comment that no dog had severe anaemia with normal platelets.",
+      "severe_value": "17 (15.7%)",
+      "comparison_value": "4 (3.7%)",
+      "summary_type": "count and percent",
+      "load_method": null
+    }
+  ],
+  "schema_version": "v2",
+  "setting": "referral hospital",
+  "sample_timing": "before treatment",
+  "not_extracted": [
+    {
+      "what": "Statement that disease severity and clinical signs correlated with severity of anaemia",
+      "reason": "no per-group result",
+      "note": "Discussion; no data or test shown"
+    }
+  ]
+}

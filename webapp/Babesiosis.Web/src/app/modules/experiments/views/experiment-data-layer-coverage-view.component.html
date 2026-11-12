@@ -1,0 +1,85 @@
+<div class="fs-experiment-data-layer">
+  @if (summary(); as s) {
+    <fs-card title="The data layer in numbers" subtitle="Tidy features and outcomes files in /experiments/shared/tidy · descriptive, no statistical test">
+      <dl class="fs-experiment-data-layer__totals">
+        <div><dt>Datasets</dt><dd>{{ s.rows.length }}</dd></div>
+        <div><dt>Independent sources</dt><dd>{{ s.independent_sources.length }}</dd></div>
+        <div><dt>Dog records</dt><dd>{{ s.dog_records }}</dd></div>
+        <div><dt>Distinct dogs after known links</dt><dd>{{ s.distinct_dogs_after_links }}</dd></div>
+        <div><dt>Feature records</dt><dd>{{ s.feature_records }}</dd></div>
+        <div><dt>Checks passed</dt><dd>{{ s.checks_passed }} / {{ s.checks_total }}</dd></div>
+      </dl>
+      <fs-data-grid [data]="datasetRows()" [columns]="datasetColumns" keyExpr="dataset"
+                    noDataText="No datasets in this run." />
+      <p class="fs-experiment-data-layer__footnote">
+        A record is one dog at one timepoint. Cells missing counts every declared variable of every record, so long-format files
+        with sampling by design (DS02) look sparse. Severity labels and label proxies are only in the outcomes files.
+        Species is aliased with source (one source per species per label): never read a between-file difference as a species effect.
+        In the Onderstepoort files "died" includes euthanasia for poor prognosis.
+      </p>
+    </fs-card>
+  } @else {
+    <fs-card title="The data layer in numbers">
+      <p class="fs-experiment-data-layer__footnote">This run stored no dataset summary.</p>
+    </fs-card>
+  }
+
+  <fs-card title="Coverage of the harmonised variables"
+           subtitle="Share of dogs with at least one value, per harmonised name and dataset · grey: the file does not have the variable">
+    @if (coverage(); as m) {
+      <div class="fs-experiment-data-layer__heatmap">
+        <fs-chart [options]="heatmapOptions()" [height]="heatmapHeight()"
+                  [empty]="!m.datasets.length" emptyMessage="No coverage in this run" />
+      </div>
+      <p class="fs-experiment-data-layer__footnote">
+        {{ m.datasets.length }} datasets, {{ m.names.length }} harmonised names (names that no dataset has are left out).
+        Units are one per name (shared/dictionary.csv). Raw cytokine values of different files are different assay runs: compare within files only.
+      </p>
+    } @else {
+      <p class="fs-experiment-data-layer__footnote">This run stored no coverage matrix.</p>
+    }
+  </fs-card>
+
+  <fs-card title="Checks" [subtitle]="checkRows().length + ' checks against data.md, the article notes and the authors\' own summary rows · ' + failedChecks() + ' failed'">
+    @if (checks()) {
+      <fs-data-grid [data]="checkRows()" [columns]="checkColumns" keyExpr="id"
+                    [pager]="pager" [pageSize]="10" noDataText="No checks stored." />
+    } @else {
+      <p class="fs-experiment-data-layer__footnote">This run stored no checks.</p>
+    }
+  </fs-card>
+
+  <fs-card title="Flagged values" subtitle="Probable entry errors and contradictions, kept as reported in the tidy files">
+    @if (flags(); as f) {
+      <ul class="fs-experiment-data-layer__list">
+        @for (flag of f.rows; track $index) {
+          <li><fs-badge variant="tonal" intent="warning">{{ flag.dataset }}</fs-badge> {{ flag.note }}</li>
+        } @empty {
+          <li>No values were flagged.</li>
+        }
+      </ul>
+    } @else {
+      <p class="fs-experiment-data-layer__footnote">This run stored no flags.</p>
+    }
+  </fs-card>
+
+  <fs-card title="Files that share dogs" subtitle="Never pool these as extra dogs (data.md and the links SV-G1 found)">
+    @if (links(); as l) {
+      <ul class="fs-experiment-data-layer__list">
+        @for (link of l.rows; track $index) {
+          <li>
+            <fs-badge variant="tonal" intent="secondary">{{ link.a }}</fs-badge>
+            <fs-badge variant="tonal" intent="secondary">{{ link.b }}</fs-badge>
+            {{ link.what }}
+          </li>
+        }
+      </ul>
+      @if (comparisonText(); as text) {
+        <h4 class="fs-experiment-data-layer__subhead">S-CB517 against S-CB050: cytokine agreement</h4>
+        <pre class="fs-experiment-data-layer__pre">{{ text }}</pre>
+      }
+    } @else {
+      <p class="fs-experiment-data-layer__footnote">This run stored no link table.</p>
+    }
+  </fs-card>
+</div>

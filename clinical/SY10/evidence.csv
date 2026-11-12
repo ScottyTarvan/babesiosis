@@ -1,0 +1,60 @@
+ref,section,statement,value,species,design,n_dogs,cohort_id,read,location,note
+R1,description,Hypotension is the most frequent BP abnormality and rises with severity,"5/10 complicated, 2/10 severe uncomplicated, 0/10 mild",B. rossi,prospective cohort with controls,30,,abstract,abstract,
+R1,diagnosis,Hypotension defined as more than 3 SD below control mean,"controls SAP 151 ± 11, DAP 89 ± 8, MAP 107 ± 10 mmHg",B. rossi,prospective cohort with controls,40,,abstract,abstract,10 healthy controls
+R1,diagnosis,Low pulse pressure in complicated cases,7/10 complicated,B. rossi,prospective cohort,30,,abstract,abstract,
+R1,diagnosis,Mucous membrane colour and haematocrit not related to arterial pressure,,B. rossi,prospective cohort,30,,abstract,abstract,
+R1,prognosis,Pressures differed between collapsed and non-collapsed dogs but not between survivors and non-survivors,,B. rossi,prospective cohort,30,,abstract,abstract,
+R2,description,Dogs with severe/complicated babesiosis often presented collapsed and in shock resembling hyperdynamic septic shock; mechanisms vasodilation leak dehydration myocardial depression,,mixed (mainly B. rossi),narrative review,,,full text,Haemodynamic and cardiovascular changes,
+R2,description,A peracute to acute highly virulent form is named in the review,,B. rossi; B. canis,narrative review,,,full text,Clinical signs paragraph,No study found that reports a peracute group separately
+R2,diagnosis,Ventricular arrhythmias go with raised cTnI; other ECG changes of limited value,,mixed,narrative review,,,full text,Haemodynamic section,
+R3,description,72/320 (22.5%) unable to stand at presentation; 24 of 34 deaths were collapsed,OR death 8.36,B. rossi,retrospective/prospective databases,320,,full text,Results 3.1 and Table 1,Deaths not separated from euthanasia in the text read
+R3,description,8 of 20 deaths in the largest database before or at admission; treated dogs that died did so within 24 h,,B. rossi,cohort,130,,full text,Results 3.1,
+R3,diagnosis,Lactate above 2 mmol/L in 116/209 (55.5%); median 4.3 mmol/L in deaths vs 2.2 in survivors,above 2 mmol/L,B. rossi,cohort,209,,full text,Results lactate paragraph,ROC cut-off 4.1 mmol/L (75% sens/spec)
+R3,diagnosis,Hypoglycaemia below 3.3 mmol/L in 61/317 (19.2%); OR death 3.47,below 3.3 mmol/L,B. rossi,cohort,317,,full text,Results glucose paragraph,
+R3,diagnosis,Haematocrit above 0.55 L/L in 4 cases; 3 died,above 0.55 L/L,B. rossi,cohort,320,,full text,Results 3.2 and Table 1,
+R3,diagnosis,Creatinine above 106 µmol/L OR death 7.55,above 106 µmol/L,B. rossi,cohort,320,,full text,Table 1,
+R3,prognosis,Odds of death rose 1.39 per 1 °C fall in rectal temperature,,B. rossi,cohort,320,,full text,Table 1,
+R3,treatment,Standard care included diminazene 3.5 mg/kg; transfusion; IV fluids (crystalloids),,B. rossi,cohort,320,,full text,Methods and Results 3.1,
+R3,treatment,Cortisol rise associated with death (OR 1.15 per 50 nmol/L),,B. rossi,cohort,241,,full text,Table 1,
+R3,diagnosis,Co-infections (B. vogeli; E. canis; Theileria) excluded by PCR,,B. rossi,cohort,320,,full text,Methods,
+R4,description,Complicated B. canis had lower pressures than uncomplicated (MAP 60 vs 116 mmHg),MAP 60 ± 22.38 vs 116 ± 41.33 mmHg,B. canis (smear only),cross-sectional with controls,50,,abstract,abstract,± values as printed in the abstract; nature of dispersion not stated
+R4,diagnosis,Serial blood pressure measurements recommended,,B. canis,cross-sectional,50,,abstract,abstract,
+R5,diagnosis,Hypotension MAP below 80 mmHg in 7/48 (14.6%); oscillometric before treatment,MAP below 80 mmHg,B. canis,cross-sectional,48,,full text,Methods and Results,Cardell 9405 monitor
+R5,diagnosis,Pressures correlated inversely with creatinine and urea,,B. canis,cross-sectional,48,,full text,Results,
+R6,description,21/100 dogs had a clinically compromised circulation; more likely to die; higher parasitaemias,21/100,B. rossi,prospective observational,100,,abstract,abstract,Scoring of circulation not described in abstract
+R7,description,Dogs with Hct 0.10-0.20 L/L presented with normotensive tachycardia,Hct 0.10-0.20 L/L,B. rossi,randomised trial,12,,abstract,abstract,Source gives 10-20%
+R7,treatment,pRBC or Oxyglobin 20 mL/kg over 4 h via central venous catheter then LRS; similar improvements; pRBC faster habitus and appetite,20 mL/kg over 4 h,B. rossi,randomised trial,12,,abstract,abstract,"Quote: ""20 mL/kg of Oxyglobin or pRBCT over 4 hours via a central venous catheter"""
+R7,treatment,Central venous PO2 subnormal throughout in both groups,,B. rossi,randomised trial,12,,abstract,abstract,
+R8,description,10/86 admitted dogs had septic shock (SIRS + MODS + refractory hypotension); all died day 1-4; 2.6% mortality in others,10/86,species not stated in abstract (Croatia),retrospective case series,86,CH33,abstract,abstract,
+R9,diagnosis,Hyperlactataemia above 2.5 mmol/L in 45/90 at presentation,above 2.5 mmol/L,B. rossi,prospective cohort,90,,abstract,abstract,Source: >22.5 mg/dL; converted ÷9.01
+R9,prognosis,Admission lactate above 5 mmol/L associated with death,above 5 mmol/L,B. rossi,prospective cohort,90,,abstract,abstract,Source: >45 mg/dL
+R9,prognosis,Lactate above 2.5 mmol/L at 8/16/24 h or increase or <50% decrease within 8 and 16 h associated with death; persistently above 4.4 mmol/L very poor,above 4.4 mmol/L,B. rossi,prospective cohort,90,,abstract,abstract,Source: >40 mg/dL (= 4.44 mmol/L)
+R10,treatment,Incremental isotonic crystalloid boluses in hypoperfused patients without cardiac disease with reassessment,10 to 15 mL/kg,general canine/feline sepsis,narrative review,,,full text,Current Recommendations: Fluid Resuscitation,"Quote: ""incremental isotonic crystalloid fluid boluses (10–15 ml/kg)"""
+R10,treatment,Balanced crystalloids preferred over 0.9% saline,,general sepsis,narrative review,,,full text,Fluid Types: Crystalloids,
+R10,treatment,Norepinephrine vasopressor of choice if hypotensive after fluid,0.1 to 1 µg/kg/min,general canine/feline sepsis,narrative review,,,full text,Fluid Resuscitation,"Quote: ""Norepinephrine (0.1–1 mcg/kg/min) is the vasopressor of choice"""
+R10,treatment,Synthetic colloids not recommended in sepsis,,general sepsis,narrative review,,,full text,Synthetic Colloids,
+R10,treatment,Signs of fluid overload; reassess fluid needs every 4-6 h by exam and body weight,,general sepsis,narrative review,,,full text,Maintenance,
+R11,treatment,Fluid boluses of 20-40 mL/kg increased 48-h mortality in African children with severe febrile illness (57% malaria),RR 1.45,human (children; 57% malaria),randomised trial,,,abstract,abstract,3141 children in stratum A
+R12,treatment,Liberal saline in adult severe malaria did not improve acid-base or renal function; EVLW rose in 17/22; 8 pulmonary oedema (5 died); lactic acidosis from sequestration,,human (adult falciparum malaria),prospective cohort,,,abstract,abstract,28 patients
+R13,description,Severe and complicated B. rossi: hypotension common; tissue hypoxia major role; collapse and abnormal breathing proposed as simple severity markers,,B. rossi,narrative review,,,abstract,abstract,
+R14,diagnosis,Systolic below 100 mmHg in 3/49; median 119 (90-180) mmHg,below 100 mmHg,B. canis,retrospective case series,49,,full text,Results clinical findings,
+R14,treatment,45 dogs received balanced crystalloid (Sterofundin ISO) in hospital,,B. canis,retrospective case series,49,,full text,Results treatment,
+R15,description,Serum TNF-alpha correlated inversely with SAP DAP MAP,r = -0.72 (SAP),B. canis,cross-sectional,11,CH37,full text,abstract and results,
+R16,description,Aldosterone raised in 4/14; inversely correlated with pressures; response judged insufficient,,B. canis,cross-sectional,14,,abstract,abstract,
+R17,description,Hyperlactataemic dogs differed in clinical collapse; glucose and lactate correlated negatively,,large Babesia (South Africa; species not named in abstract),prospective cohort,20,,abstract,abstract,
+R18,description,Reduced circulating blood volume by Evans blue dilution (about 31% deficit),specific CBV 78.4 ± 7.4 vs 136 ± 8.8 mL/kg,Babesia spp. (not identified),comparative clinical study,30,CH13,full text,Table 1,
+R18,diagnosis,Shock index 1.43 ± 0.3 vs 0.76 ± 0.2; pulse 122 vs 86 beats/min,,Babesia spp.,comparative clinical study,30,CH13,full text,Table 3,
+R18,treatment,Rheopolyglucin or Rheosorbilact 5 mL/kg IV drip once daily for 3 days; 15 dogs each,5 mL/kg once a day 3 days,Babesia spp.,comparative clinical study,30,CH13,full text,Material and methods,"Quote: ""at a dose of 5 ml/kg body weight once a day"""
+R18,treatment,Rheopolyglucin is 10% partially hydrolysed dextran MW 30000-40000 in isotonic NaCl,,Babesia spp.,comparative clinical study,30,CH13,full text,Results and discussion,
+R19,treatment,No adrenal insufficiency after low-dose ACTH test; basal and stimulated cortisol highest in deaths,5 µg/kg tetracosactrin (test),B. rossi,prospective case-controlled,68,CH31,abstract,abstract,
+R20,prognosis,All 8/8 non-survivors hyperlactataemic; cut-off 3.95 mmol/L 100% sens/spec; 2 non-survivors euthanised,above 3.95 mmol/L,B. canis,case series,15,CH21,full text,Results and Table 2,Hand-held analyser
+R21,treatment,Rheopolyglucin + dipyridamole mixture 5 mL/kg restored parameters for 48 h; better than either alone,5 mL/kg of mixture,Babesia spp. (not reported),clinical trial,100,CH13,abstract,abstract,"Quote: ""5 ml (45 mg Dexrtan and 2.5 mg Dipyridamole) per 1 kg"" - inconsistent with a 10% solution"
+R22,treatment,Dopamine CRI given to dogs with systolic dysfunction; HES 6% for diastolic dysfunction,10 µg/kg/min; HES 5 mL/kg/h,Babesia sp. (smear),case series,92,CH18,full text,Materials and methods,"Quote: ""dopamine (10 ug/kg/min, CRI, IV)"""
+R22,diagnosis,Cardiac dysfunction in 31/92; 2 systolic only; 24 diastolic; 5 both,,Babesia sp.,case series,92,CH18,full text,Results,
+R23,diagnosis,Consensus: septic shock = sepsis subset with cardiovascular instability and impaired perfusion despite adequate fluid; hyperlactataemia persistent hypotension organ dysfunction,,general canine/feline,consensus and systematic review,,,full text,Section 3 consensus definition,No numeric cut-off for dogs
+R24,diagnosis,Sustained resolution of hypotension defined as SAP above 90 or MAP above 65 mmHg for at least 4 h,SAP > 90 or MAP > 65 mmHg for 4 h,general canine (septic shock),retrospective cohort,47,,abstract,abstract,
+R24,treatment,HC-treated dogs sicker; longer to sustained resolution (8.5 vs 4 h); survival 14.3% vs 34.6% not significant,,general canine (septic shock),retrospective cohort,47,,abstract,abstract,No dose in abstract
+R25,diagnosis,Mixed metabolic acidosis and respiratory alkalosis 31/34; 82% hyperlactataemic; negative BE in all,,B. rossi,prospective cohort,34,,abstract,abstract,
+R26,treatment,IV crystalloid indicated in dehydrated or hypovolaemic dogs with babesiosis,,B. canis; B. vogeli; B. gibsoni (Europe),narrative review/guideline,,,full text,Treatment section,
+R27,treatment,7.5% saline 4 mL/kg vs HES 10 mL/kg every 15 min in GDV shock; both hypocoagulable on ROTEM,4 mL/kg,general canine (GDV),randomised trial,23,,abstract,abstract,"Quote: ""HS at 4 mL/kg every 15 minutes""; number of boluses not stated"
+R28,treatment,HES 10% independent risk factor for death or AKI (aOR 1.98; NNH 6),,general canine ICU,retrospective cohort,422,,abstract,abstract,AKI = 2-fold creatinine rise or oliguria/anuria ≥12 h

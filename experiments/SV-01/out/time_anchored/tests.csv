@@ -1,0 +1,8 @@
+code,label,statistic,estimate,ci_low,ci_high,n,p,q
+H1,"Habitus with distance given pseudo-stage, plane A (primary)",partial rho,-0.543847,-0.671153,-0.398549,147,0.0001,0.00015
+H2,"Habitus with pseudo-stage, plane A",rho,-0.278213,-0.431229,-0.105863,147,0.0009,0.0009
+H3,"Habitus with distance given pseudo-stage, plane B (bands)",partial rho,-0.467103,-0.585858,-0.336269,147,0.0001,0.00015
+S1,H1 without the 3 E. canis co-infected dogs,partial rho,-0.548365,-0.680467,-0.408199,144,0.0001,
+S2,"H1, interior projections only",partial rho,-0.511639,-0.724976,-0.248014,56,0.0001,
+S3,H1 also controlling haematocrit,partial rho,-0.286261,-0.441136,-0.096584,147,0.0004,
+V,Validity: pseudo-stage with illness duration,rho,-0.209381,-0.359016,-0.060141,145,0.009999,

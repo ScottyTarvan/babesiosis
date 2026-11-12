@@ -1,0 +1,50 @@
+<div class="fs-emap">
+  <svg class="fs-emap__svg" [attr.viewBox]="'0 0 ' + w + ' ' + h" role="img"
+       aria-label="Evidence map: canine evidence against human evidence for each candidate, coloured by tier">
+    <!-- gap column (x = 0) and not-assessed band (below y = 0) -->
+    <rect class="fs-emap__gap" [attr.x]="gapBand().x" [attr.y]="gapBand().y" [attr.width]="gapBand().w" [attr.height]="gapBand().h" />
+    <text class="fs-emap__band-label" [attr.x]="gapBand().x + gapBand().w / 2" [attr.y]="pad.top + 12" text-anchor="middle">no canine data</text>
+    @if (showRejected()) {
+      <rect class="fs-emap__na" [attr.x]="naBand().x" [attr.y]="naBand().y" [attr.width]="naBand().w" [attr.height]="naBand().h" />
+    }
+
+    @for (t of yTicks(); track t.v) {
+      <line class="fs-emap__grid" [attr.x1]="pad.left" [attr.x2]="w - pad.right" [attr.y1]="t.y" [attr.y2]="t.y" />
+      <text class="fs-emap__tick" [attr.x]="pad.left - 8" [attr.y]="t.y + 4" text-anchor="end">{{ t.label }}</text>
+    }
+    @if (showRejected()) {
+      <text class="fs-emap__tick" [attr.x]="pad.left - 8" [attr.y]="naBand().ly + 4" text-anchor="end">n/a</text>
+    }
+    <line class="fs-emap__axis" [attr.x1]="pad.left" [attr.x2]="w - pad.right" [attr.y1]="axisY()" [attr.y2]="axisY()" />
+    @for (t of xTicks(); track t.v) {
+      <text class="fs-emap__tick" [attr.x]="t.x" [attr.y]="axisY() + 16" text-anchor="middle">{{ t.label }}</text>
+    }
+    <text class="fs-emap__title" [attr.x]="(pad.left + w - pad.right) / 2" [attr.y]="h - 10" text-anchor="middle">{{ data().x_title }}</text>
+    <text class="fs-emap__title" [attr.transform]="'translate(16 ' + (h - pad.bottom + pad.top) / 2 + ') rotate(-90)'" text-anchor="middle">{{ data().y_title }}</text>
+
+    @for (m of marks(); track m.id) {
+      <g class="fs-emap__mark" [class.fs-emap__mark--lead]="m.isLead" [class.fs-emap__mark--active]="m.id === activeId()"
+         [attr.role]="m.isLead ? 'button' : null" [attr.tabindex]="m.isLead ? 0 : null"
+         [attr.aria-label]="m.isLead ? 'Show lead ' + m.lead_rank + ': ' + m.short_label : null"
+         (click)="onPick(m)" (keydown.enter)="onPick(m)" (keydown.space)="onPick(m); $event.preventDefault()">
+        <title>{{ m.tip }}</title>
+        <circle [attr.cx]="m.cx" [attr.cy]="m.cy" [attr.r]="m.r" [class]="'fs-emap__dot fs-emap__dot--' + m.tier" />
+        @if (m.mixed) {
+          <circle [attr.cx]="m.cx" [attr.cy]="m.cy" [attr.r]="m.r + 4" class="fs-emap__ring" />
+        }
+        @if (m.labelText) {
+          <text class="fs-emap__label" [attr.x]="m.labelX" [attr.y]="m.cy + 4" [attr.text-anchor]="m.anchor">{{ m.labelText }}</text>
+        }
+      </g>
+    }
+  </svg>
+
+  <div class="fs-emap__legend">
+    @for (t of tierLegend; track t) {
+      <span class="fs-emap__key"><svg width="12" height="12" aria-hidden="true"><circle cx="6" cy="6" r="5" [class]="'fs-emap__dot fs-emap__dot--' + t" /></svg>Tier {{ t }}</span>
+    }
+    <span class="fs-emap__key"><svg width="16" height="16" aria-hidden="true"><circle cx="8" cy="8" r="6" class="fs-emap__ring" /></svg>some human records disagree</span>
+    <span class="fs-emap__key">Large, labelled = research lead (click to open its card)</span>
+  </div>
+  <p class="fs-emap__foot">{{ data().footnote }}</p>
+</div>

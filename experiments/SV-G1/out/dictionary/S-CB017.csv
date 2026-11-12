@@ -1,0 +1,27 @@
+harmonised_name,dataset_id,original_column,unit,conversion,note
+gmcsf,S-CB017,CYTOKINES!GM-CSF (pg/ml),pg/mL,,Milliplex canine panel (Luminex). 
+kc,S-CB017,CYTOKINES!KC-like (pg/ml),pg/mL,,Milliplex canine panel (Luminex). KC-like (canine CXCL1 homologue); the panel reports KC-like and IL-8 separately.
+il2,S-CB017,CYTOKINES!IL-2 (pg/ml),pg/mL,,Milliplex canine panel (Luminex). Assay floor 10 pg/mL (record); values at the floor flagged in censored.
+il7,S-CB017,CYTOKINES!IL-7 (pg/ml),pg/mL,,Dataset-specific name (not in the harmonised list). Milliplex canine panel (Luminex).
+il8,S-CB017,CYTOKINES!IL-8 (pg/ml),pg/mL,,Milliplex canine panel (Luminex). Assay floor 10 pg/mL (record); values at the floor flagged in censored.
+il10,S-CB017,CYTOKINES!IL-10 (pg/ml),pg/mL,,Milliplex canine panel (Luminex). Assay floor 0.8 pg/mL (record); values at the floor flagged in censored.
+il15,S-CB017,CYTOKINES!IL-15 (pg/ml),pg/mL,,Dataset-specific name (not in the harmonised list). Milliplex canine panel (Luminex). Assay floor 12 pg/mL (record); values at the floor flagged in censored.
+il18,S-CB017,CYTOKINES!IL-18 (pg/ml),pg/mL,,Milliplex canine panel (Luminex). Assay floor 2 pg/mL (record); values at the floor flagged in censored.
+mcp1,S-CB017,CYTOKINES!MCP-1 (pg/ml),pg/mL,,Milliplex canine panel (Luminex). 
+wbc,S-CB017,HEMATOLOGY!Leuko,10^9/L,,Leukocytes.
+lymph,S-CB017,HEMATOLOGY!Lymph,10^9/L,,
+neut_band,S-CB017,HEMATOLOGY!Neseg. Neut,10^9/L,,Non-segmented (band) neutrophils (Croatian 'nesegmentirani').
+neut_seg,S-CB017,HEMATOLOGY!Seg. Neut,10^9/L,,
+mono,S-CB017,HEMATOLOGY!Mono,10^9/L,,
+eos,S-CB017,HEMATOLOGY!Eos,10^9/L,,
+plt,S-CB017,HEMATOLOGY!Thromb,10^9/L,,Thrombocytes.
+hct,S-CB017,HEMATOLOGY!HMT,L/L,/100 (% to L/L),Haematocrit; raw values are % (reference 37-55).
+rbc,S-CB017,HEMATOLOGY!Eryt,10^12/L,,Erythrocytes.
+lymph_pct,S-CB017,HEMATOLOGY!Lymph %,%,,Dataset-specific name (not in the harmonised list). Percent of WBC.
+neut_band_pct,S-CB017,HEMATOLOGY!Nes. Neut %,%,,Dataset-specific name (not in the harmonised list). Percent of WBC.
+neut_seg_pct,S-CB017,HEMATOLOGY!Seg neut %,%,,Dataset-specific name (not in the harmonised list). Percent of WBC.
+mono_pct,S-CB017,HEMATOLOGY!Mono %,%,,Dataset-specific name (not in the harmonised list). Percent of WBC.
+eos_pct,S-CB017,HEMATOLOGY!Eos %,%,,Dataset-specific name (not in the harmonised list). Percent of WBC.
+gran_total_pct,S-CB017,HEMATOLOGY!Total gran,%,,"Dataset-specific name (not in the harmonised list). Total granulocytes (segmented + band neutrophils), percent of WBC."
+nl_ratio,S-CB017,HEMATOLOGY!n:l,ratio,,Dataset-specific name (not in the harmonised list). Neutrophil to lymphocyte ratio; in the file it equals Total gran % / Lymph %.
+control_subgroup,S-CB017,Sample ID prefix H / HI (controls only),H/HI,,Dataset-specific name (not in the harmonised list). Design variable; HI probably the prophylactic-imidocarb subgroup (inferred).

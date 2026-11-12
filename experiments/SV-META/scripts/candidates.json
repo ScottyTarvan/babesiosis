@@ -1,0 +1,1052 @@
+{
+ "note": "Candidate definitions for SV-META (spec sections 6-9). Written by the package agent from the census, out/themes.csv and the novelty search (CB notes and texts, SV-G2 rows, PubMed). Numbers are quoted from out/themes.csv or the census; screen.py and build_load.py read them from the files, this file holds the judgement.",
+ "candidates": [
+  {
+   "id": "K01",
+   "label": "Higher circulating monocyte count in more severe disease (with CD14 and CCL2 as supporting markers)",
+   "kind": "severity; human parallel",
+   "theme": "T02",
+   "provisional_tier": "C",
+   "circularity": "none (no monocyte variable in any label)",
+   "novelty": "published_other (mechanism)",
+   "novelty_where": "CCL2 by outcome published per cohort (CB517, CB017); CD14 by complicated status (CB112); monocyte activation proposed as a mechanism (CB107, CB119, CB517); CCL2 also published in an independent B. rossi cohort (CB037). No CB article combines independent sources, and the DS05 (Eastern Cape) monocyte association is unpublished. The sCD14/presepsin parallel is not made in a CB text found",
+   "sources": "SRC-A, SRC-B, SRC-C, SRC-F (B. rossi); SRC-D (B. canis, transfer)",
+   "evidence": "T02 B. rossi 4 of 4 sources in the expected direction, Stouffer one-sided p 4e-05, BH q 0.00016 over 8 themes (themes chosen after results were seen), leave-one-source-out max p 0.0105; with SRC-D 5 of 5",
+   "screen_reason": "no single non-published source passes alone except SRC-F (DS05 monocytes with dullness, already seen); convergent across 4 B. rossi sources",
+   "census_match": [
+    {
+     "experiment": "SV-06-02",
+     "contains": [
+      "CD14",
+      "complicated vs uncomplicated (plex"
+     ]
+    }
+   ],
+   "short_label": "Monocytes",
+   "x_from_theme": true
+  },
+  {
+   "id": "K02",
+   "label": "Inflammation against regeneration at a given haematocrit (SV-09 residual axis 2) tracks dullness",
+   "kind": "severity; mechanism",
+   "theme": "T08",
+   "provisional_tier": "B",
+   "circularity": "none (habitus is not a laboratory label); partly restates leukocytes",
+   "novelty": "published_other (mechanism), severity link not_found",
+   "novelty_where": "inadequate regeneration and cytokine-suppressed erythropoiesis proposed in CB115, CB129, CB082, with the malaria parallel (CB129, CB115); no CB article links it to clinical severity",
+   "sources": "SRC-F only",
+   "evidence": "partial rho with habitus -0.26 (-0.40 to -0.10), p 0.003, family of 2 axes, n 140 (DS05, already seen: exploratory)",
+   "screen_reason": "passes the statistical screen in one source; not replicable in other files (SV-09-02)",
+   "census_match": [
+    {
+     "experiment": "SV-09-01",
+     "contains": [
+      "residual axis 2"
+     ]
+    }
+   ],
+   "short_label": "Regeneration axis",
+   "x_from_theme": true
+  },
+  {
+   "id": "K03",
+   "label": "Intravascular haemolysis per unit of anaemia (cell-free haemoglobin, haem scavenging)",
+   "kind": "mechanism; human parallel",
+   "theme": "T04",
+   "provisional_tier": "D",
+   "circularity": "partial: DS07 label contains haematocrit < 0.15 and bilirubin > 30",
+   "novelty": "human_only (severity)",
+   "novelty_where": "SV-06a F1-01 measured_no_severity (CB082, CB412); haem oxygenase-1 never measured; haemopexin and haptoglobin measured without severity",
+   "sources": "SRC-B, SRC-C",
+   "evidence": "T04: DS07 haemoglobin beta +0.48 (+0.09 to +0.82), q 0.133; DS02 cfHb change high vs low dose +1.0 (exact p 0.2); Stouffer p 0.005, q 0.010, leave-one-source-out fails (max p 0.1), so not tier C",
+   "screen_reason": "combined test passes but leave-one-source-out fails with 2 sources; gap lead by SV-06a",
+   "census_match": [
+    {
+     "experiment": "SV-06-02",
+     "contains": [
+      "Haemoglobin beta",
+      "complicated vs uncomplicated (plex"
+     ]
+    },
+    {
+     "experiment": "SV-06-02",
+     "contains": [
+      "Haemoglobin alpha",
+      "complicated vs uncomplicated (plex"
+     ]
+    },
+    {
+     "experiment": "SV-06-01",
+     "contains": [
+      "Cell-free (plasma) haemoglobin"
+     ]
+    },
+    {
+     "experiment": "SV-06-01",
+     "contains": [
+      "Haem oxygenase-1"
+     ]
+    },
+    {
+     "experiment": "SV-06-01",
+     "contains": [
+      "haemopexin depletion"
+     ]
+    },
+    {
+     "experiment": "SV-06-01",
+     "contains": [
+      "Haptoglobin depletion"
+     ]
+    },
+    {
+     "experiment": "SV-06-02",
+     "contains": [
+      "Haptoglobin",
+      "complicated vs uncomplicated (plex"
+     ]
+    }
+   ],
+   "short_label": "Cell-free haemoglobin",
+   "x_from_theme": false
+  },
+  {
+   "id": "K04",
+   "label": "Neutrophil degranulation and extracellular traps (NETs, histones, released MPO and elastase, calprotectin)",
+   "kind": "mechanism; human parallel",
+   "theme": "T01",
+   "provisional_tier": "D",
+   "circularity": "none for the released markers; bands are a known driver",
+   "novelty": "human_only (severity)",
+   "novelty_where": "SV-06a ranks 3, 4, 5, 9: never measured in canine babesiosis; band neutrophils and MPXI are published (CB050, CB040)",
+   "sources": "SRC-B (transcripts), SRC-C (S100A8)",
+   "evidence": "SV-08 neutrophil-granule score rose in 5 of 5 Beagles (also in mild dogs; MPO, ELANE missing); DS07 S100A8 +0.43 (-0.10 to +0.93), q 0.29; histone H4 untestable",
+   "screen_reason": "gap lead by SV-06a; the existing data are within-dog changes or underpowered",
+   "census_match": [
+    {
+     "experiment": "SV-08",
+     "contains": [
+      "neutrophil_granule score, D0"
+     ]
+    },
+    {
+     "experiment": "SV-06-02",
+     "contains": [
+      "S100A8",
+      "complicated vs uncomplicated (plex"
+     ]
+    },
+    {
+     "experiment": "SV-06-02",
+     "contains": [
+      "Histone H4",
+      "complicated vs uncomplicated (plex"
+     ]
+    },
+    {
+     "experiment": "SV-06-01",
+     "contains": [
+      "Neutrophil extracellular traps"
+     ]
+    },
+    {
+     "experiment": "SV-06-01",
+     "contains": [
+      "Circulating extracellular histones"
+     ]
+    },
+    {
+     "experiment": "SV-06-01",
+     "contains": [
+      "Released (plasma) myeloperoxidase"
+     ]
+    },
+    {
+     "experiment": "SV-06-01",
+     "contains": [
+      "Calprotectin"
+     ]
+    }
+   ],
+   "short_label": "NETs and degranulation",
+   "x_from_theme": false
+  },
+  {
+   "id": "K05",
+   "label": "Angiopoietin-2 and the Ang-2/Ang-1 ratio",
+   "kind": "mechanism; human parallel",
+   "theme": "endothelium",
+   "provisional_tier": "D",
+   "circularity": "none",
+   "novelty": "human_only",
+   "novelty_where": "SV-06a rank 1, never measured in canine babesiosis",
+   "sources": "none (gap)",
+   "evidence": "SV-06a grade 3 (6 human cohorts), validated canine assay",
+   "screen_reason": "gap lead",
+   "census_match": [
+    {
+     "experiment": "SV-06-01",
+     "contains": [
+      "Angiopoietin-2"
+     ]
+    }
+   ],
+   "short_label": "Angiopoietin-2",
+   "x_from_theme": false
+  },
+  {
+   "id": "K06",
+   "label": "VWF, ultra-large multimers and ADAMTS13",
+   "kind": "mechanism; human parallel",
+   "theme": "T05",
+   "provisional_tier": "D",
+   "circularity": "none",
+   "novelty": "human_only",
+   "novelty_where": "SV-06a rank 6, measured only against controls (CB446)",
+   "sources": "none (gap)",
+   "evidence": "SV-06a grade 3 (4 human cohorts), validated canine assay",
+   "screen_reason": "gap lead",
+   "census_match": [
+    {
+     "experiment": "SV-06-01",
+     "contains": [
+      "VWF antigen"
+     ]
+    }
+   ],
+   "short_label": "VWF and ADAMTS13",
+   "x_from_theme": false
+  },
+  {
+   "id": "K07",
+   "label": "VEGF and soluble VEGFR-1 (sFlt-1)",
+   "kind": "mechanism; human parallel",
+   "theme": "endothelium",
+   "provisional_tier": "D",
+   "circularity": "none",
+   "novelty": "human_only",
+   "novelty_where": "SV-06a rank 2, never measured",
+   "sources": "none (gap)",
+   "evidence": "SV-06a grade 3 (4 human cohorts), validated canine VEGF assay",
+   "screen_reason": "gap lead",
+   "census_match": [
+    {
+     "experiment": "SV-06-01",
+     "contains": [
+      "VEGF and soluble VEGFR-1"
+     ]
+    }
+   ],
+   "short_label": "VEGF and sFlt-1",
+   "x_from_theme": false
+  },
+  {
+   "id": "K08",
+   "label": "Ferritin (hyperferritinaemia)",
+   "kind": "mechanism; human parallel",
+   "theme": "iron",
+   "provisional_tier": "D",
+   "circularity": "none",
+   "novelty": "human_only",
+   "novelty_where": "SV-06a rank 7, measured, no difference 7 vs 7 (CB242)",
+   "sources": "none (gap)",
+   "evidence": "SV-06a grade 3 (4 human cohorts), validated canine assay",
+   "screen_reason": "gap lead",
+   "census_match": [
+    {
+     "experiment": "SV-06-01",
+     "contains": [
+      "Ferritin (hyperferritinaemia)"
+     ]
+    }
+   ],
+   "short_label": "Ferritin",
+   "x_from_theme": false
+  },
+  {
+   "id": "K09",
+   "label": "Kynurenine pathway (kynurenine:tryptophan)",
+   "kind": "mechanism; human parallel",
+   "theme": "metabolic",
+   "provisional_tier": "D",
+   "circularity": "none",
+   "novelty": "human_only",
+   "novelty_where": "SV-06a rank 8, measured against controls in B. canis (CB091)",
+   "sources": "none (gap)",
+   "evidence": "SV-06a grade 3 (4 human cohorts), validated canine assay",
+   "screen_reason": "gap lead",
+   "census_match": [
+    {
+     "experiment": "SV-06-01",
+     "contains": [
+      "Kynurenine pathway"
+     ]
+    }
+   ],
+   "short_label": "Kynurenine",
+   "x_from_theme": false
+  },
+  {
+   "id": "X01",
+   "label": "Neutrophil activation and left shift (band neutrophils, lactoferrin)",
+   "kind": "severity",
+   "theme": "T01",
+   "provisional_tier": "X",
+   "circularity": "known_driver (bands); label in SRC-C and SRC-D",
+   "novelty": "published_same_dogs",
+   "novelty_where": "band neutrophils with death published (CB050, CB040); lactoferrin with complicated status (CB112)",
+   "sources": "SRC-A, SRC-B, SRC-F",
+   "evidence": "T01 B. rossi Stouffer Z 5.23, 3 of 3, leave-one-source-out max p 0.0001",
+   "screen_reason_code": "known driver, published",
+   "screen_reason": "strong convergence, but band neutrophils are a published severity finding and a declared known driver; the SRC-C and SRC-D indicators are in their labels",
+   "census_match": [
+    {
+     "experiment": "SV-06-02",
+     "contains": [
+      "Lactoferrin",
+      "complicated vs uncomplicated (plex"
+     ]
+    },
+    {
+     "experiment": "SV-03-01",
+     "contains": [
+      "Band neutrophils"
+     ]
+    },
+    {
+     "experiment": "SV-06-01",
+     "contains": [
+      "Band neutrophilia"
+     ]
+    },
+    {
+     "experiment": "SV-06-01",
+     "contains": [
+      "Neutrophil granule proteins (MPO"
+     ]
+    }
+   ],
+   "short_label": "Band neutrophils",
+   "x_from_theme": true
+  },
+  {
+   "id": "X02",
+   "label": "CCL2 (MCP-1) higher in severe disease in each file",
+   "kind": "severity",
+   "theme": "T02s",
+   "provisional_tier": "X",
+   "circularity": "none",
+   "novelty": "published_same_dogs",
+   "novelty_where": "CB517 (S-CB050 dogs) and CB017 (S-CB017 dogs); the malaria and sepsis parallel is made in CB017, CB517 and CB107",
+   "sources": "SRC-A, SRC-D",
+   "evidence": "S-CB050 +0.47 (+0.22 to +0.70), q 0.052; S-CB017 +0.81 (+0.56 to +0.97), q < 0.001",
+   "screen_reason_code": "published",
+   "screen_reason": "each per-file result is the published finding of the article that reported those dogs; it is carried into K01 only as a sensitivity",
+   "census_match": [
+    {
+     "experiment": "SV-04-01",
+     "contains": [
+      "mcp1",
+      "vs survived"
+     ]
+    },
+    {
+     "experiment": "SV-04-01",
+     "contains": [
+      "mcp1",
+      "complicated vs"
+     ]
+    }
+   ],
+   "short_label": "MCP-1 per file",
+   "x_from_theme": false
+  },
+  {
+   "id": "X03",
+   "label": "GM-CSF and IL-2 higher in complicated B. canis",
+   "kind": "severity",
+   "theme": "cytokines",
+   "provisional_tier": "X",
+   "circularity": "none",
+   "novelty": "published_same_dogs",
+   "novelty_where": "CB017 (SV-G2 rows: GM-CSF p 0.00066, IL-2 p 0.025 on day 1)",
+   "sources": "SRC-D",
+   "evidence": "GM-CSF +0.73 (+0.44 to +0.97), IL-2 +0.48 (+0.08 to +0.82); not in B. rossi deaths (+0.02, +0.04)",
+   "screen_reason_code": "published",
+   "screen_reason": "passes in one source, but it is the published finding of CB017; no B. rossi counterpart",
+   "census_match": [
+    {
+     "experiment": "SV-04-01",
+     "contains": [
+      "gmcsf",
+      "complicated vs"
+     ]
+    },
+    {
+     "experiment": "SV-04-01",
+     "contains": [
+      "il2",
+      "complicated vs"
+     ]
+    },
+    {
+     "experiment": "SV-04-01",
+     "contains": [
+      "gmcsf",
+      "vs survived"
+     ]
+    },
+    {
+     "experiment": "SV-04-01",
+     "contains": [
+      "il2",
+      "vs survived"
+     ]
+    }
+   ],
+   "short_label": "GM-CSF, IL-2 (B. canis)",
+   "x_from_theme": false
+  },
+  {
+   "id": "X04",
+   "label": "Type 1 interferon transcript response in the Beagles",
+   "kind": "mechanism; human parallel",
+   "theme": "T03",
+   "provisional_tier": "X",
+   "circularity": "none",
+   "novelty": "published_same_dogs",
+   "novelty_where": "type I IFN genes reported in the same Beagles (CB082) and cited in CB111",
+   "sources": "SRC-B",
+   "evidence": "rose in 5 of 5 dogs, before habitus fell; dose contrast -0.67 (low-dose dogs rose more); no severity gradient",
+   "screen_reason_code": "published, no severity contrast",
+   "screen_reason": "a response to infection already reported for these dogs; the severe-malaria parallel (inadequate suppression of type 1 IFN, 10.1126/scitranslmed.aar3619) cannot be tested in 5 dogs",
+   "census_match": [
+    {
+     "experiment": "SV-08",
+     "contains": [
+      "type1_interferon"
+     ]
+    },
+    {
+     "experiment": "SV-08",
+     "contains": [
+      "erythroid_control"
+     ]
+    }
+   ],
+   "short_label": "Type 1 interferon",
+   "x_from_theme": true
+  },
+  {
+   "id": "X05",
+   "label": "Anaemia (haematocrit)",
+   "kind": "severity",
+   "theme": "T07",
+   "provisional_tier": "X",
+   "circularity": "known_driver; label in SRC-C and SRC-D",
+   "novelty": "published_other",
+   "novelty_where": "anaemia is a defining feature (SV-03 haematocrit 23 units)",
+   "sources": "SRC-B, SRC-F",
+   "evidence": "T07 Stouffer p 0.0001, but leave-one-source-out max p 0.1",
+   "screen_reason_code": "known driver",
+   "screen_reason": "known driver by the spec",
+   "census_match": [],
+   "short_label": "Anaemia",
+   "x_from_theme": true
+  },
+  {
+   "id": "X06",
+   "label": "Anti-inflammatory IL-10",
+   "kind": "severity",
+   "theme": "T11",
+   "provisional_tier": "X",
+   "circularity": "none",
+   "novelty": "published_other",
+   "novelty_where": "IL-10/TNF severity-tested in 5 canine units (SV-06a F7-01)",
+   "sources": "SRC-A, SRC-B (+SRC-D)",
+   "evidence": "T11 2 of 2 (3 of 3 with B. canis), Stouffer p 0.081, q 0.13",
+   "screen_reason_code": "null after correction",
+   "screen_reason": "combined q 0.13",
+   "census_match": [
+    {
+     "experiment": "SV-04-01",
+     "contains": [
+      "il10",
+      "vs survived"
+     ]
+    },
+    {
+     "experiment": "SV-04-01",
+     "contains": [
+      "il10",
+      "complicated vs"
+     ]
+    }
+   ],
+   "short_label": "IL-10",
+   "x_from_theme": true
+  },
+  {
+   "id": "X07",
+   "label": "Coagulation and platelet consumption",
+   "kind": "severity",
+   "theme": "T05",
+   "provisional_tier": "X",
+   "circularity": "none",
+   "novelty": "published_other",
+   "novelty_where": "CB145 (Onderstepoort, factor activities by outcome)",
+   "sources": "SRC-B, SRC-C, SRC-F (+SRC-D)",
+   "evidence": "T05 1 of 3 in the expected direction, Stouffer p 0.68",
+   "screen_reason_code": "null",
+   "screen_reason": "directions disagree; null",
+   "census_match": [
+    {
+     "experiment": "SV-06-02",
+     "contains": [
+      "Antithrombin",
+      "complicated vs uncomplicated (plex"
+     ]
+    },
+    {
+     "experiment": "SV-06-02",
+     "contains": [
+      "Protein C",
+      "complicated vs uncomplicated (plex"
+     ]
+    },
+    {
+     "experiment": "SV-06-02",
+     "contains": [
+      "Alpha-2-antiplasmin",
+      "complicated vs uncomplicated (plex"
+     ]
+    }
+   ],
+   "short_label": "Coagulation",
+   "x_from_theme": true
+  },
+  {
+   "id": "X08",
+   "label": "Host age",
+   "kind": "severity",
+   "theme": "T10",
+   "provisional_tier": "X",
+   "circularity": "none",
+   "novelty": "published_other",
+   "novelty_where": "age tested in 12 literature units (SV-G2)",
+   "sources": "SRC-A, SRC-F, SRC-O",
+   "evidence": "T10 0 of 2 (0 of 3), Stouffer p 0.63; SV-05 OR 1.23 (0.34 to 4.15)",
+   "screen_reason_code": "null, underpowered",
+   "screen_reason": "null; only large effects were detectable",
+   "census_match": [
+    {
+     "experiment": "SV-05-01",
+     "contains": []
+    }
+   ],
+   "short_label": "Age",
+   "x_from_theme": true
+  },
+  {
+   "id": "X09",
+   "label": "Acute phase response (CRP)",
+   "kind": "severity",
+   "theme": "T13",
+   "provisional_tier": "X",
+   "circularity": "none",
+   "novelty": "published_same_dogs",
+   "novelty_where": "no outcome difference in CB517 and CB145",
+   "sources": "SRC-A, SRC-B",
+   "evidence": "T13 1 of 2, Stouffer p 0.66",
+   "screen_reason_code": "null",
+   "screen_reason": "null",
+   "census_match": [],
+   "short_label": "CRP",
+   "x_from_theme": true
+  },
+  {
+   "id": "X10",
+   "label": "Size of the cytokine response (perturbation count)",
+   "kind": "severity",
+   "theme": "T14",
+   "provisional_tier": "X",
+   "circularity": "label (SIRS) in SRC-D",
+   "novelty": "not_found",
+   "novelty_where": "",
+   "sources": "SRC-A, SRC-D",
+   "evidence": "S-CB050 +0.04 (-0.22 to +0.31); S-CB017 +0.71 (circular)",
+   "screen_reason_code": "circular",
+   "screen_reason": "passes only in the source whose label contains SIRS",
+   "census_match": [
+    {
+     "experiment": "SV-04-02",
+     "contains": [
+      "perturbation"
+     ]
+    }
+   ],
+   "short_label": "Cytokine response size",
+   "x_from_theme": true
+  },
+  {
+   "id": "X11",
+   "label": "SV-09 leukocyte axis score with death",
+   "kind": "severity",
+   "theme": "T01",
+   "provisional_tier": "X",
+   "circularity": "known_driver (bands)",
+   "novelty": "published_same_dogs",
+   "novelty_where": "band neutrophils with death (CB050)",
+   "sources": "SRC-A",
+   "evidence": "+0.49 (+0.21 to +0.74), q 0.003; after bands +0.15 (-0.17 to +0.45)",
+   "screen_reason_code": "known driver",
+   "screen_reason": "restates band neutrophils",
+   "census_match": [
+    {
+     "experiment": "SV-09-03",
+     "contains": []
+    }
+   ],
+   "short_label": "Leukocyte axis score",
+   "x_from_theme": false
+  },
+  {
+   "id": "X12",
+   "label": "Distance from the Beagle course (SV-01)",
+   "kind": "severity",
+   "theme": "time",
+   "provisional_tier": "X",
+   "circularity": "known_driver (anaemia)",
+   "novelty": "not_found",
+   "novelty_where": "",
+   "sources": "SRC-F (dogs), SRC-B (course)",
+   "evidence": "H1 -0.24 (-0.39 to -0.07); +0.08 once haematocrit is controlled; stage score failed validation",
+   "screen_reason_code": "known driver, instrument failed",
+   "screen_reason": "restates anaemia; the stage score failed validation and is unstable",
+   "census_match": [
+    {
+     "experiment": "SV-01-01",
+     "contains": []
+    }
+   ],
+   "short_label": "Distance from course",
+   "x_from_theme": false
+  },
+  {
+   "id": "X13",
+   "label": "Antibody level against load (CB141, B. canis)",
+   "kind": "severity",
+   "theme": "T09",
+   "provisional_tier": "X",
+   "circularity": "partial (score built from blood counts)",
+   "novelty": "published_same_dogs",
+   "novelty_where": "CB141",
+   "sources": "one literature unit (CH12)",
+   "evidence": "antibody rho -0.65 (-0.73 to -0.56), load rho 0.35 (0.23 to 0.46)",
+   "screen_reason_code": "published, single unit",
+   "screen_reason": "published single cohort; the test needs dog-level data (SV-02c, a user decision)",
+   "census_match": [
+    {
+     "experiment": "SV-02-01",
+     "contains": [
+      "CB141"
+     ]
+    }
+   ],
+   "short_label": "Antibody (CB141)",
+   "x_from_theme": false
+  },
+  {
+   "id": "X14",
+   "label": "Endocrine stress response (cortisol up, thyroid down), body temperature",
+   "kind": "severity",
+   "theme": "T06",
+   "provisional_tier": "X",
+   "circularity": "none",
+   "novelty": "published_other",
+   "novelty_where": "CB040, CB342, CH09; all Onderstepoort",
+   "sources": "literature, one hospital",
+   "evidence": "3 of 3 units each (post hoc merged classes); 2 units once Onderstepoort is counted once",
+   "screen_reason_code": "published, one source",
+   "screen_reason": "published and from one hospital",
+   "census_match": [
+    {
+     "experiment": "SV-03-01",
+     "contains": [
+      "Cortisol"
+     ]
+    },
+    {
+     "experiment": "SV-03-01",
+     "contains": [
+      "Thyroid"
+     ]
+    },
+    {
+     "experiment": "SV-03-01",
+     "contains": [
+      "Body temperature"
+     ]
+    }
+   ],
+   "short_label": "Cortisol, thyroid",
+   "x_from_theme": false
+  },
+  {
+   "id": "X15",
+   "label": "Lactate",
+   "kind": "severity",
+   "theme": "T12",
+   "provisional_tier": "X",
+   "circularity": "label in SRC-C and several definitions",
+   "novelty": "published_other",
+   "novelty_where": "CB040, CB516, CH18; human parallel made in the CB literature",
+   "sources": "SRC-B; literature",
+   "evidence": "3 units higher in death (SV-03); Beagles high vs low dose +1.0",
+   "screen_reason_code": "published",
+   "screen_reason": "published severity marker",
+   "census_match": [
+    {
+     "experiment": "SV-03-01",
+     "contains": [
+      "Lactate"
+     ]
+    }
+   ],
+   "short_label": "Lactate",
+   "x_from_theme": true
+  },
+  {
+   "id": "X16",
+   "label": "Young dogs present earlier (DS05)",
+   "kind": "severity",
+   "theme": "T10",
+   "provisional_tier": "X",
+   "circularity": "none",
+   "novelty": "not_found",
+   "novelty_where": "",
+   "sources": "SRC-F",
+   "evidence": "HL -1 day (-1 to 0), q 0.090",
+   "screen_reason_code": "fails correction",
+   "screen_reason": "q 0.09 in its family",
+   "census_match": [
+    {
+     "experiment": "SV-05-02",
+     "contains": [
+      "B8"
+     ]
+    }
+   ],
+   "short_label": "Earlier presentation",
+   "x_from_theme": false
+  },
+  {
+   "id": "X17",
+   "label": "MCP-1 minus IL-8 balance index",
+   "kind": "severity",
+   "theme": "T02s",
+   "provisional_tier": "X",
+   "circularity": "none",
+   "novelty": "published_same_dogs (MCP-1 component)",
+   "novelty_where": "CB517, CB017",
+   "sources": "SRC-A, SRC-D",
+   "evidence": "+0.32 (+0.02 to +0.60), q 0.139; +0.44 (+0.07 to +0.78), q 0.038",
+   "screen_reason_code": "fails correction in B. rossi",
+   "screen_reason": "carried by MCP-1; fails the correction in S-CB050",
+   "census_match": [
+    {
+     "experiment": "SV-04-02",
+     "contains": [
+      "balance"
+     ]
+    }
+   ],
+   "short_label": "MCP-1/IL-8 balance",
+   "x_from_theme": false
+  },
+  {
+   "id": "X18",
+   "label": "Parasite load",
+   "kind": "severity",
+   "theme": "T09",
+   "provisional_tier": "X",
+   "circularity": "dose sets load in SRC-B",
+   "novelty": "published_other",
+   "novelty_where": "CB516, CB141",
+   "sources": "SRC-O; literature",
+   "evidence": "CB516 g -0.17 (-1.19 to 0.85); no B. rossi load-by-outcome unit",
+   "screen_reason_code": "null, no data",
+   "screen_reason": "null in the one dog-level contrast; no B. rossi data",
+   "census_match": [
+    {
+     "experiment": "SV-02-01",
+     "contains": [
+      "parasite load"
+     ]
+    }
+   ],
+   "short_label": "Parasite load",
+   "x_from_theme": true
+  },
+  {
+   "id": "X19",
+   "label": "Infected against healthy controls (IL-8 direction, MCP-1, IL-10, CD14, antithrombin)",
+   "kind": "mechanism",
+   "theme": "infection response",
+   "provisional_tier": "X",
+   "circularity": "not a severity contrast",
+   "novelty": "published_same_dogs",
+   "novelty_where": "CB517, CB017, CB112",
+   "sources": "SRC-A, SRC-C, SRC-D",
+   "evidence": "e.g. IL-8 -0.45 in S-CB050 and +0.87 in S-CB017",
+   "screen_reason_code": "not severity, published",
+   "screen_reason": "infection response, not severity; reported in the source articles; a between-file difference cannot be attributed to species",
+   "census_match": [
+    {
+     "experiment": "SV-04-01",
+     "contains": [
+      "infected vs healthy controls"
+     ]
+    },
+    {
+     "experiment": "SV-06-02",
+     "contains": [
+      "infected vs healthy controls"
+     ]
+    }
+   ],
+   "short_label": "Infected vs controls",
+   "x_from_theme": false
+  },
+  {
+   "id": "X20",
+   "label": "Lower haematocrit in young infected Onderstepoort dogs (DS03)",
+   "kind": "severity",
+   "theme": "T10",
+   "provisional_tier": "X",
+   "circularity": "partly physiological (young controls lower)",
+   "novelty": "not_found",
+   "novelty_where": "",
+   "sources": "SRC-A",
+   "evidence": "HL -0.06 (-0.10 to -0.025), q 0.007; not in DS05 (-0.02, -0.04 to +0.01)",
+   "screen_reason_code": "artefact (physiology), not replicated",
+   "screen_reason": "the normal age difference explains part of it; not seen in the independent source",
+   "census_match": [
+    {
+     "experiment": "SV-05-02",
+     "contains": [
+      "B2"
+     ]
+    }
+   ],
+   "short_label": "Young dogs' haematocrit",
+   "x_from_theme": false
+  }
+ ],
+ "leads": [
+  {
+   "id": "L-K01",
+   "candidates": [
+    "K01"
+   ],
+   "kind": "severity; human parallel",
+   "hypothesis": "In B. rossi babesiosis, a higher circulating monocyte count at admission goes with more severe disease, beyond anaemia and total leukocytes.",
+   "evidence": "T02: 4 of 4 B. rossi sources in the expected direction (DS05 monocytes with dullness rho +0.45, partial +0.29 after haematocrit, WBC, segmented and band neutrophils and illness days; S-CB517 died +0.25; DS07 CD14 +0.42, halves after haemoglobin beta; Beagles +0.67), Stouffer q 0.00016 over 8 themes; but without DS05, the source that suggested it, Z 2.31 (Bonferroni 0.084). Monocyte count does not track MCP-1",
+   "human_counterpart": "Monocyte/macrophage markers with severity: soluble CD14 with severity in falciparum malaria and presepsin (sCD14-ST) higher in sepsis non-survivors agree; MCP-1 independently prognostic in sepsis; but monocyte activation markers were lower in severe malaria in Malawian children and MCP-1 lower in complicated falciparum malaria (mixed)",
+   "human_doi": [
+    "10.1186/s12879-018-3593-8",
+    "10.1371/journal.pone.0191486",
+    "10.1186/cc5783",
+    "10.1111/pim.12319"
+   ],
+   "parallel_new": "partly: the CCL2 (MCP-1) parallel is made in CB017, CB517, CB107; a circulating monocyte count or sCD14 parallel was not found in a CB text",
+   "refuted_by": "No monocyte-count difference by outcome in a non-Onderstepoort B. rossi cohort with a hard outcome, or a difference that disappears after WBC and haematocrit adjustment",
+   "next_existing": "Monocyte count and monocyte fraction against death in the probable DS03-S-CB050 join is not possible (DS03 has no leukocytes); cheapest: ask the CB040 authors (320 B. rossi dogs, SV-02c request) for dog-level monocyte counts and outcome",
+   "next_new_dogs": "SV-10-03 prospective B. rossi cohort with at least 200 dogs outside Onderstepoort: admission CBC with differential, outcome components stored separately",
+   "minimum_dataset": "Manual or analyser differential with absolute monocyte count; plasma sCD14 (presepsin) and CCL2 on stored pre-treatment plasma",
+   "short_name": "Monocytes",
+   "theme_forest": "T02",
+   "canine_line": "",
+   "refuted_short": "No monocyte difference by outcome in a non-Onderstepoort cohort, or none after WBC and haematocrit adjustment",
+   "existing_short": "Ask the CB040 authors (320 dogs) for monocyte counts and outcome (SV-02c)",
+   "new_short": "SV-10-03 cohort, 200+ dogs outside Onderstepoort",
+   "md_short": "Absolute monocyte count; plasma sCD14 and CCL2"
+  },
+  {
+   "id": "L-K03",
+   "candidates": [
+    "K03"
+   ],
+   "kind": "mechanism; human parallel",
+   "hypothesis": "More intravascular haemolysis per unit of anaemia (cell-free haemoglobin and haem load relative to haematocrit and scavenger capacity) goes with severe and fatal B. rossi disease, as in severe falciparum and knowlesi malaria and sepsis.",
+   "evidence": "Gap: no CB article relates measured cell-free haemoglobin or haem to outcome. Existing data do not support it: DS07 haemoglobin beta +0.48 (q 0.133) partly restates the label and moves with another red-cell protein (sample haemolysis not excluded); the Beagle cfHb contrast is parasite load, already reported (CB082)",
+   "human_counterpart": "Cell-free haemoglobin higher with AKI in severe falciparum malaria, with death in Ugandan children (with low haemopexin), with severity in knowlesi malaria, and independently with death in sepsis",
+   "human_doi": [
+    "10.1186/s12879-017-2373-1",
+    "10.1186/s12936-015-1028-1",
+    "10.1038/s41426-018-0105-2",
+    "10.1097/CCM.0b013e3182741a54"
+   ],
+   "parallel_new": "partly: CB119 proposes cfHb as a severity measure without data; no quantified canine cfHb-outcome study",
+   "refuted_by": "No difference in cfHb (or cfHb per haematocrit unit, or haemopexin depletion) between dogs that die and survive in a cohort that measures a sample haemolysis index",
+   "next_existing": "None adequate: DS07 lacks haematocrit, bilirubin and a haemolysis index. Cheapest is stored pre-treatment plasma (CB145 / Onderstepoort biobank, SV-02c-type request)",
+   "next_new_dogs": "SV-10-03 cohort: plasma cfHb by spectrophotometry with haematocrit, haptoglobin, haemopexin and a haemolysis index at admission",
+   "minimum_dataset": "Plasma cell-free haemoglobin, haemolysis index, haptoglobin, haemopexin; urine haemoglobin",
+   "short_name": "Cell-free haemoglobin",
+   "theme_forest": "",
+   "canine_line": "No canine study relates measured cell-free haemoglobin to outcome. DS07 haemoglobin beta (q 0.133) partly restates the label; the Beagle contrast is parasite load",
+   "refuted_short": "No cfHb difference by outcome when a haemolysis index is measured",
+   "existing_short": "None adequate; stored pre-treatment plasma",
+   "new_short": "SV-10-03 cohort with haematocrit, haptoglobin, haemopexin",
+   "md_short": "Plasma cfHb, haemolysis index, haptoglobin, haemopexin"
+  },
+  {
+   "id": "L-K04",
+   "candidates": [
+    "K04"
+   ],
+   "kind": "mechanism; human parallel",
+   "hypothesis": "Neutrophil degranulation and extracellular trap release (cfDNA, nucleosomes, histones, released MPO and elastase, calprotectin) are greater in severe B. rossi babesiosis, beyond neutrophil number.",
+   "evidence": "Gap: never measured in canine babesiosis (CB107 states NETosis is unstudied). Weak, confounded support: DS07 S100A8 +0.43 (q 0.29), a third explained by haemoglobin beta; histone H4 untestable; Beagle granule transcripts rose in all 5 dogs with no severity gradient",
+   "human_counterpart": "Plasma elastase and MPO higher in cerebral malaria; circulating histones raised with brain swelling in cerebral malaria; neutrophil granule transcripts associated with severe malaria and with sepsis mortality; but cfDNA and MPO-DNA did not predict death after adjustment in a sepsis cohort (mixed)",
+   "human_doi": [
+    "10.1128/mBio.01300-15",
+    "10.1182/bloodadvances.2019001258",
+    "10.1126/scitranslmed.aar3619",
+    "10.1093/ajrcmb/aanag021",
+    "10.1164/rccm.201811-2111OC"
+   ],
+   "parallel_new": "yes for NETs, histones, calprotectin and released MPO/elastase (only speculated in CB articles); band neutrophils and MPXI are published",
+   "refuted_by": "Plasma cfDNA, nucleosomes or calprotectin no higher in dogs that die once the band neutrophil count is adjusted for",
+   "next_existing": "Re-quantify DS06 from SRA PRJNA703846 without the CPM filter to recover MPO and ELANE (a coordinator decision, large download); no severity contrast in those 5 dogs",
+   "next_new_dogs": "SV-10-03 cohort: citrate plasma (not serum) for cfDNA by fluorometry and calprotectin; nucleosome ELISA only with a haemolysis and icterus check",
+   "minimum_dataset": "Plasma cfDNA, calprotectin (S100A8/A9), plasma MPO and elastase; band and segmented neutrophil counts",
+   "short_name": "NETs and degranulation",
+   "theme_forest": "",
+   "canine_line": "Never measured in canine babesiosis. Nearest data: DS07 S100A8 +0.43 (q 0.29) and a Beagle granule-transcript rise with no severity gradient",
+   "refuted_short": "cfDNA, nucleosomes or calprotectin no higher in dogs that die, after band neutrophils",
+   "existing_short": "Re-quantify DS06 from SRA (MPO, ELANE); no severity contrast",
+   "new_short": "SV-10-03 cohort, citrate plasma",
+   "md_short": "cfDNA, calprotectin, plasma MPO and elastase"
+  },
+  {
+   "id": "L-K05",
+   "candidates": [
+    "K05"
+   ],
+   "kind": "mechanism; human parallel",
+   "hypothesis": "Endothelial activation measured as plasma angiopoietin-2 is higher in dogs with severe or fatal B. rossi babesiosis.",
+   "evidence": "Gap: never measured in canine babesiosis (0 CB notes or texts, 1 PubMed record not about Ang-2). Not in DS07; DS06 holds no ANGPT2 transcript. The Ang-2/Ang-1 ratio is not assayable in dogs with the validated kit, so the lead is Ang-2 alone",
+   "human_counterpart": "Ang-2 rose with severity in all 11 falciparum studies of a systematic review and discriminated death (AUROC 0.71 to 0.83); higher in sepsis non-survivors (meta-analysis); in canine SIRS and sepsis higher in non-survivors",
+   "human_doi": [
+    "10.1186/s12936-016-1624-8",
+    "10.1186/1475-2875-10-383",
+    "10.1097/CCM.0000000000004469",
+    "10.1111/jvim.15369"
+   ],
+   "parallel_new": "yes: no CB article makes it",
+   "refuted_by": "No Ang-2 difference between dogs that die and survive once haemolysis and creatinine are accounted for",
+   "next_existing": "None in the public files. Stored pre-treatment plasma with outcome (Onderstepoort biobank; contacting the authors is a user decision)",
+   "next_new_dogs": "SV-10-03 cohort: plasma Ang-2 at admission with creatinine and a haemolysis index",
+   "minimum_dataset": "Plasma angiopoietin-2 (validated canine ELISA), stored EDTA or citrate plasma at -80 C",
+   "short_name": "Angiopoietin-2",
+   "theme_forest": "",
+   "canine_line": "Never measured in canine babesiosis; not in any public file",
+   "refuted_short": "No Ang-2 difference by outcome after haemolysis and creatinine",
+   "existing_short": "None public; stored pre-treatment plasma",
+   "new_short": "SV-10-03 cohort",
+   "md_short": "Plasma angiopoietin-2 (validated canine ELISA)"
+  },
+  {
+   "id": "L-K06",
+   "candidates": [
+    "K06"
+   ],
+   "kind": "mechanism; human parallel",
+   "hypothesis": "VWF release and ADAMTS13 consumption (a higher VWF:ADAMTS13 ratio) go with severe B. rossi babesiosis and its microthrombi.",
+   "evidence": "Gap: CB145 measured factor activities, fibrinolysis and microthrombi at necropsy by outcome, but not VWF or ADAMTS13; CB446 found vWF activity lower than in controls in 12 dogs without an outcome contrast, so the direction cannot be assumed. Coagulation theme T05 null (1 of 3)",
+   "human_counterpart": "Higher VWF and ultra-large multimers with lower ADAMTS13 in severe and cerebral falciparum malaria (small cohorts); VWF in malaria-associated ARDS",
+   "human_doi": [
+    "10.1371/journal.ppat.1000349",
+    "10.1186/s12936-019-3040-3",
+    "10.1097/CCM.0000000000004469"
+   ],
+   "parallel_new": "yes for the severity link; CB446 measured vWF against controls only",
+   "refuted_by": "VWF antigen, VWF activity and ADAMTS13 activity the same in dogs that die and survive, or VWF lower in severe dogs as CB446's direction suggests",
+   "next_existing": "None public. CB145 cohort plasma (thromboinflammation study, raw data on request) is the natural place to add VWF and ADAMTS13",
+   "next_new_dogs": "SV-10-03 cohort: citrate plasma for VWF antigen, VWF:collagen binding and ADAMTS13 activity",
+   "minimum_dataset": "Citrate plasma: VWF antigen, VWF activity, ADAMTS13 activity; platelet count",
+   "short_name": "VWF and ADAMTS13",
+   "theme_forest": "",
+   "canine_line": "Not measured against severity; CB446 found vWF activity lower than in controls (12 dogs)",
+   "refuted_short": "VWF and ADAMTS13 the same in dogs that die and survive, or VWF lower",
+   "existing_short": "Add to the CB145 cohort plasma (on request)",
+   "new_short": "SV-10-03 cohort, citrate plasma",
+   "md_short": "VWF antigen and activity, ADAMTS13 activity"
+  },
+  {
+   "id": "L-K08",
+   "candidates": [
+    "K08"
+   ],
+   "kind": "mechanism; human parallel",
+   "hypothesis": "Hyperferritinaemia (macrophage activation and iron sequestration) at admission goes with severe or fatal B. rossi babesiosis.",
+   "evidence": "Gap: the only canine babesiosis ferritin data are 7 infected vs 7 healthy dogs (CB242, no severity contrast, species not identified) and one case report. Not in DS07 or any tidy file. Confounded in a haemolytic disease by iron release and the acute-phase response",
+   "human_counterpart": "Ferritin higher in sepsis non-survivors in several large cohorts; very high ferritin marks a macrophage-activation-like phenotype in septic shock; in malaria ferritin rises with clinical infection but is confounded by inflammation (an infection contrast, not severity)",
+   "human_doi": [
+    "10.1186/s12879-026-13418-z",
+    "10.3389/fnut.2026.1858343",
+    "10.1159/000552315",
+    "10.1017/S0007114522000757"
+   ],
+   "parallel_new": "yes: no CB article makes it",
+   "refuted_by": "No ferritin difference by outcome once CRP and a haemolysis marker (cell-free haemoglobin or bilirubin) are adjusted for",
+   "next_existing": "None public; stored serum with outcome (same biobank question as the other plasma leads)",
+   "next_new_dogs": "SV-10-03 cohort: serum ferritin with CRP, serum iron and transferrin at admission",
+   "minimum_dataset": "Serum ferritin (canine immunoassay), with CRP, serum iron, transferrin and a haemolysis marker",
+   "short_name": "Ferritin",
+   "theme_forest": "",
+   "canine_line": "Only 7 infected vs 7 healthy dogs (CB242), no severity contrast",
+   "refuted_short": "No ferritin difference by outcome after CRP and a haemolysis marker",
+   "existing_short": "None public; stored serum",
+   "new_short": "SV-10-03 cohort",
+   "md_short": "Serum ferritin with CRP, iron, transferrin"
+  },
+  {
+   "id": "L-K09",
+   "candidates": [
+    "K09"
+   ],
+   "kind": "mechanism; human parallel",
+   "hypothesis": "Higher kynurenine:tryptophan (IDO activity) at admission goes with severe or fatal canine babesiosis.",
+   "evidence": "Gap: kynurenine was measured only against healthy dogs (CB091 serum, B. canis: kynurenine and Kyn/Trp clearly higher in infected dogs, no severity label). The nearest severity proxy (CB071 urine, renal-function groups, 5 to 10 dogs per group) is null. CB071, CB091 and CB137 are one cohort (CH06)",
+   "human_counterpart": "Higher IDO activity (kynurenine:tryptophan) and kynurenine with sepsis severity and death; CSF kynurenine pathway metabolites with longer coma in cerebral malaria (mostly cerebral, not systemic, evidence in malaria)",
+   "human_doi": [
+    "10.1086/650996",
+    "10.1371/journal.pone.0087538",
+    "10.1186/s12936-017-1954-1"
+   ],
+   "parallel_new": "yes for severity; the infection contrast is published (CB091)",
+   "refuted_by": "No Kyn/Trp difference by outcome once creatinine (azotaemia) and CRP are adjusted for",
+   "next_existing": "None public with a severity label; the CB091 supplement has dog-level values but no severity label (ask the authors for complicated status: a user decision)",
+   "next_new_dogs": "SV-10-03 cohort: plasma tryptophan and kynurenine by LC-MS/MS with creatinine and CRP",
+   "minimum_dataset": "Plasma tryptophan, kynurenine (LC-MS/MS); creatinine and CRP for adjustment",
+   "short_name": "Kynurenine",
+   "theme_forest": "",
+   "canine_line": "Measured only against healthy dogs (CB091, B. canis); no severity label",
+   "refuted_short": "No Kyn/Trp difference by outcome after creatinine and CRP",
+   "existing_short": "Ask the CB091 authors for complicated status",
+   "new_short": "SV-10-03 cohort, LC-MS/MS",
+   "md_short": "Plasma tryptophan and kynurenine"
+  }
+ ],
+ "lead_order": [
+  "L-K01",
+  "L-K04",
+  "L-K03",
+  "L-K05",
+  "L-K06",
+  "L-K08",
+  "L-K09"
+ ]
+}

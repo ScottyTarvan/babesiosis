@@ -1,0 +1,20 @@
+{
+  "id": "CB060",
+  "text_used": "data/markdown/CB060.md",
+  "extracted_by": "claude-opus-5-5 SV-G2 batch B03",
+  "extracted_utc": "2026-11-12T00:00:00Z",
+  "schema_version": "v2",
+  "setting": "referral hospital",
+  "sample_timing": "not stated",
+  "article_notes": "Retrospective study of 44 PCR-confirmed B. vogeli dogs at a university teaching hospital in Thailand, grouped as single B. vogeli infection (n=33) vs B. vogeli + E. canis co-infection (n=11). The groups are defined by infection status, not by severity or outcome: Tables 1 and 2 compare signalment, clinical signs and haematology/biochemistry between the infection groups. No severity grading, complication status or outcome was recorded, so no marker-severity rows can be extracted. The authors conclude that co-infection increases severity only from lower RBC, haemoglobin and haematocrit in the co-infected group; this is a marker difference between infection groups, not a test of co-infection against a severity outcome. No healthy control group.",
+  "skipped_infected_vs_healthy": 0,
+  "severity_definitions": [],
+  "associations": [],
+  "not_extracted": [
+    {
+      "what": "Haematology, biochemistry and signalment compared between single B. vogeli infection and B. vogeli + E. canis co-infection (Tables 1 and 2)",
+      "reason": "other",
+      "note": "Groups are defined by co-infection status, not by severity or outcome; no severity measure exists to test co-infection against."
+    }
+  ]
+}

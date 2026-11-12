@@ -1,0 +1,2515 @@
+{
+ "experiment": {
+  "code": "SV-04-01-il8-direction",
+  "name": "Does IL-8 go in opposite directions with severity in B. rossi and B. canis? Within-file contrasts and the Beagle course around treatment",
+  "description": "Is the reported IL-8 conflict (lower with severity in B. rossi, higher in complicated B. canis) present in the dog-level files, and could sampling time after treatment or the severity definition explain it? Hypothesis: timing or definition is a sufficient explanation.",
+  "method": "cytokine_conflict",
+  "dataset": null,
+  "parameters": {
+   "package": "SV-04",
+   "role": "descriptive",
+   "datasets": [
+    "S-CB050",
+    "S-CB017",
+    "DS02"
+   ],
+   "independent_sources": [
+    "SRC-A",
+    "SRC-D",
+    "SRC-B"
+   ],
+   "spec_sha256": "22c7da5db7ad2e3ee20189dddf790bb63ae12a5b670baf849c69f9de89914742",
+   "seed": 20261112,
+   "n_bootstrap": 2000,
+   "n_permutations": 10000,
+   "families": "2 families of 6 (one per file), BH",
+   "inputs_sha256": {
+    "S-CB050.features.json": "fedde71e230325695e0866bd362d932a83904dc50de7883003dc6431cff9460f",
+    "S-CB017.features.json": "6ed00495a7296cb9e3a87e5132cfa0f7a6a798068e9c9e811c9efdcada088cac",
+    "DS02.features.json": "12475e823e588af20e8bec2df5164979c158bdbbb86ddfb96a32afe8aad83e2d",
+    "S-CB050.outcomes.json": "d2657b5321d1dd8528d8e363a8bf621398df32b538301d68df81976562f2d813",
+    "S-CB017.outcomes.json": "11f98f2bae04842d46d493e00246d8dc275da2a7bcc307188f8002ead6f4f046"
+   },
+   "versions": {
+    "python": "3.12.12",
+    "numpy": "2.3.4"
+   },
+   "selection": {
+    "S-CB050": "cohort 1 (cytokines measured): infected 97, controls 15",
+    "S-CB017": "infected day 1 (31), controls 16; day 7 (30) in check C2",
+    "DS02": "5 Beagles; cytokines on days -1, 0, 1, 2, 3, 4, 6, 8; treatment after the day-4 sample"
+   }
+  },
+  "script": "/experiments/SV-04/scripts/analyse.py",
+  "script_version": "9756f9a0ca42",
+  "run_utc": "2026-11-12T06:35:21Z",
+  "n_subjects": 164,
+  "n_variables": 6,
+  "n_tests": 12,
+  "summary": "No IL-8 conflict inside the dog-level files: severe minus non-severe Cliff's delta +0.02 (-0.28 to +0.34; S-CB050, died 12 vs survived 85) and +0.15 (-0.29 to +0.56; S-CB017, complicated 18 vs uncomplicated 13); DS02 shows no consistent post-treatment IL-8 change (R1 not met, R3 not met). 3 of 12 analyte tests passed BH q < 0.05 (IL-2 in S-CB017, GM-CSF in S-CB017, MCP-1 in S-CB017)."
+ },
+ "associations": [],
+ "cluster_assignments": [],
+ "results": [
+  {
+   "kind": "primary_result",
+   "title": "IL-8 by severity inside each file",
+   "sort_order": 1,
+   "payload": {
+    "label": "IL-8, severe minus non-severe, inside each file",
+    "statistic": "Cliff's delta",
+    "verdict": "no conflict",
+    "headline": "Verdict by the pre-stated rule: no conflict. Both IL-8 intervals include 0 and both point estimates are positive. The B. rossi fall in IL-8 is a contrast of infected dogs against healthy controls (delta -0.45), not of dogs that died against survivors. DS02 gives no support for a treatment-driven reversal.",
+    "independent_sources": 3,
+    "sources": [
+     "S-CB050 (SRC-A, B. rossi, Onderstepoort)",
+     "S-CB017 (SRC-D, B. canis, Zagreb)",
+     "DS02 (SRC-B, B. rossi, 5 experimental Beagles)"
+    ],
+    "rows": [
+     {
+      "label": "S-CB050 · B. rossi · admission, before treatment",
+      "estimate": 0.023529,
+      "ci_low": -0.282377,
+      "ci_high": 0.337402,
+      "p": 0.89811,
+      "q": 0.931807,
+      "n_a": 12,
+      "n_b": 85,
+      "a_label": "died",
+      "b_label": "survived",
+      "median_a": 1171.65,
+      "median_b": 1066.3,
+      "hl_log2": 0.106344,
+      "hl_low": -1.10915,
+      "hl_high": 1.047203,
+      "definition": "death (includes euthanasia for poor prognosis)"
+     },
+     {
+      "label": "S-CB017 · B. canis · day 1, 6-8 h after imidocarb",
+      "estimate": 0.145299,
+      "ci_low": -0.290598,
+      "ci_high": 0.555556,
+      "p": 0.518348,
+      "q": 0.622018,
+      "n_a": 18,
+      "n_b": 13,
+      "a_label": "complicated",
+      "b_label": "uncomplicated",
+      "median_a": 907.55,
+      "median_b": 600.7,
+      "hl_log2": 0.3479,
+      "hl_low": -0.609167,
+      "hl_high": 1.085627,
+      "definition": "complicated (WHO malaria-style criteria; all SIRS-positive; WBC is a SIRS criterion)"
+     }
+    ],
+    "caveats": [
+     "Descriptive re-analysis: the published group comparisons of CB050/CB517 and CB017 were already seen.",
+     "One species per source: species, source, country, assay, definition and sampling time are aliased.",
+     "Died includes euthanasia for poor prognosis (Onderstepoort)."
+    ],
+    "ds02": {
+     "r1": false,
+     "r2": true,
+     "r3": false,
+     "all": false,
+     "text": "R1 same direction in all 4 dogs: no; R2 median |change| 1.45 log2 against median day-to-day change before treatment 1.11: larger; R3 rises more in the high-dose dogs: no (mean change high dose -1.28, low dose +1.45)"
+    }
+   }
+  },
+  {
+   "kind": "severity_contrasts",
+   "title": "Six analytes by severity, inside each file",
+   "sort_order": 2,
+   "payload": {
+    "statistic": "Cliff's delta (first group minus second)",
+    "groups": [
+     {
+      "key": "S-CB050",
+      "label": "S-CB050 · B. rossi · admission, before treatment · died vs survived",
+      "note": "BH family of 6. Died includes euthanasia for poor prognosis.",
+      "rows": [
+       {
+        "label": "IL-2",
+        "estimate": 0.044118,
+        "ci_low": -0.319632,
+        "ci_high": 0.390221,
+        "p": 0.810319,
+        "q": 0.931807,
+        "n_a": 12,
+        "n_b": 85,
+        "a_label": "died",
+        "b_label": "survived",
+        "median_a": 40.8,
+        "median_b": 27.5,
+        "hl_log2": 0.0,
+        "hl_low": -2.010569,
+        "hl_high": 2.38876
+       },
+       {
+        "label": "IL-8",
+        "estimate": 0.023529,
+        "ci_low": -0.282377,
+        "ci_high": 0.337402,
+        "p": 0.89811,
+        "q": 0.931807,
+        "n_a": 12,
+        "n_b": 85,
+        "a_label": "died",
+        "b_label": "survived",
+        "median_a": 1171.65,
+        "median_b": 1066.3,
+        "hl_log2": 0.106344,
+        "hl_low": -1.10915,
+        "hl_high": 1.047203
+       },
+       {
+        "label": "IL-10",
+        "estimate": 0.205882,
+        "ci_low": -0.111765,
+        "ci_high": 0.529412,
+        "p": 0.256674,
+        "q": 0.770023,
+        "n_a": 12,
+        "n_b": 85,
+        "a_label": "died",
+        "b_label": "survived",
+        "median_a": 849.25,
+        "median_b": 607.5,
+        "hl_log2": 0.566875,
+        "hl_low": -0.215792,
+        "hl_high": 1.386029
+       },
+       {
+        "label": "IL-18",
+        "estimate": -0.052941,
+        "ci_low": -0.458824,
+        "ci_high": 0.356912,
+        "p": 0.772823,
+        "q": 0.931807,
+        "n_a": 12,
+        "n_b": 85,
+        "a_label": "died",
+        "b_label": "survived",
+        "median_a": 65.05,
+        "median_b": 52.3,
+        "hl_log2": -0.239819,
+        "hl_low": -1.90229,
+        "hl_high": 2.035659
+       },
+       {
+        "label": "GM-CSF",
+        "estimate": 0.016667,
+        "ci_low": -0.369632,
+        "ci_high": 0.382402,
+        "p": 0.931807,
+        "q": 0.931807,
+        "n_a": 12,
+        "n_b": 85,
+        "a_label": "died",
+        "b_label": "survived",
+        "median_a": 45.8,
+        "median_b": 29.2,
+        "hl_log2": 0.0,
+        "hl_low": -1.121562,
+        "hl_high": 2.001126
+       },
+       {
+        "label": "MCP-1",
+        "estimate": 0.466667,
+        "ci_low": 0.223529,
+        "ci_high": 0.703922,
+        "p": 0.008699,
+        "q": 0.052195,
+        "n_a": 12,
+        "n_b": 85,
+        "a_label": "died",
+        "b_label": "survived",
+        "median_a": 921.7,
+        "median_b": 527.6,
+        "hl_log2": 0.742925,
+        "hl_low": 0.306572,
+        "hl_high": 1.239784
+       }
+      ]
+     },
+     {
+      "key": "S-CB017",
+      "label": "S-CB017 · B. canis · day 1, 6-8 h after imidocarb · complicated vs uncomplicated",
+      "note": "BH family of 6.",
+      "rows": [
+       {
+        "label": "IL-2",
+        "estimate": 0.482906,
+        "ci_low": 0.076923,
+        "ci_high": 0.820513,
+        "p": 0.021998,
+        "q": 0.043996,
+        "n_a": 18,
+        "n_b": 13,
+        "a_label": "complicated",
+        "b_label": "uncomplicated",
+        "median_a": 131.4,
+        "median_b": 89.4,
+        "hl_log2": 0.983507,
+        "hl_low": 0.260803,
+        "hl_high": 2.216496
+       },
+       {
+        "label": "IL-8",
+        "estimate": 0.145299,
+        "ci_low": -0.290598,
+        "ci_high": 0.555556,
+        "p": 0.518348,
+        "q": 0.622018,
+        "n_a": 18,
+        "n_b": 13,
+        "a_label": "complicated",
+        "b_label": "uncomplicated",
+        "median_a": 907.55,
+        "median_b": 600.7,
+        "hl_log2": 0.3479,
+        "hl_low": -0.609167,
+        "hl_high": 1.085627
+       },
+       {
+        "label": "IL-10",
+        "estimate": 0.094017,
+        "ci_low": -0.34188,
+        "ci_high": 0.529915,
+        "p": 0.683332,
+        "q": 0.683332,
+        "n_a": 18,
+        "n_b": 13,
+        "a_label": "complicated",
+        "b_label": "uncomplicated",
+        "median_a": 592.25,
+        "median_b": 461.1,
+        "hl_log2": 0.138048,
+        "hl_low": -0.554536,
+        "hl_high": 0.859133
+       },
+       {
+        "label": "IL-18",
+        "estimate": 0.205128,
+        "ci_low": -0.226496,
+        "ci_high": 0.598291,
+        "p": 0.338566,
+        "q": 0.507849,
+        "n_a": 18,
+        "n_b": 13,
+        "a_label": "complicated",
+        "b_label": "uncomplicated",
+        "median_a": 188.35,
+        "median_b": 144.9,
+        "hl_log2": 0.749318,
+        "hl_low": -0.594235,
+        "hl_high": 2.374242
+       },
+       {
+        "label": "GM-CSF",
+        "estimate": 0.730769,
+        "ci_low": 0.444338,
+        "ci_high": 0.965812,
+        "p": 0.0003,
+        "q": 0.0009,
+        "n_a": 18,
+        "n_b": 13,
+        "a_label": "complicated",
+        "b_label": "uncomplicated",
+        "median_a": 254.45,
+        "median_b": 143.0,
+        "hl_log2": 0.833164,
+        "hl_low": 0.365757,
+        "hl_high": 1.508762
+       },
+       {
+        "label": "MCP-1",
+        "estimate": 0.811966,
+        "ci_low": 0.564103,
+        "ci_high": 0.974359,
+        "p": 0.0001,
+        "q": 0.0006,
+        "n_a": 18,
+        "n_b": 13,
+        "a_label": "complicated",
+        "b_label": "uncomplicated",
+        "median_a": 576.25,
+        "median_b": 224.4,
+        "hl_log2": 1.31229,
+        "hl_low": 0.787191,
+        "hl_high": 1.886242
+       }
+      ]
+     },
+     {
+      "key": "S-CB017-d7",
+      "label": "S-CB017 · B. canis · day 7, 6 days after imidocarb · complicated vs uncomplicated (check C2)",
+      "note": "Check C2; BH inside these 6 only.",
+      "rows": [
+       {
+        "label": "IL-2",
+        "estimate": 0.190045,
+        "ci_low": -0.235294,
+        "ci_high": 0.583824,
+        "p": 0.391661,
+        "q": 0.614939,
+        "n_a": 17,
+        "n_b": 13,
+        "a_label": "complicated",
+        "b_label": "uncomplicated",
+        "median_a": 64.6,
+        "median_b": 27.7,
+        "hl_log2": 0.814036,
+        "hl_low": -0.679114,
+        "hl_high": 2.008915
+       },
+       {
+        "label": "IL-8",
+        "estimate": -0.149321,
+        "ci_low": -0.59276,
+        "ci_high": 0.294118,
+        "p": 0.512449,
+        "q": 0.614939,
+        "n_a": 17,
+        "n_b": 13,
+        "a_label": "complicated",
+        "b_label": "uncomplicated",
+        "median_a": 1910.8,
+        "median_b": 2852.2,
+        "hl_log2": -0.427978,
+        "hl_low": -1.147919,
+        "hl_high": 0.581645
+       },
+       {
+        "label": "IL-10",
+        "estimate": 0.117647,
+        "ci_low": 0.0,
+        "ci_high": 0.294118,
+        "p": 0.490051,
+        "q": 0.614939,
+        "n_a": 17,
+        "n_b": 13,
+        "a_label": "complicated",
+        "b_label": "uncomplicated",
+        "median_a": 0.8,
+        "median_b": 0.8,
+        "hl_log2": 0.0,
+        "hl_low": 0.0,
+        "hl_high": 0.0
+       },
+       {
+        "label": "IL-18",
+        "estimate": 0.049774,
+        "ci_low": -0.366629,
+        "ci_high": 0.475113,
+        "p": 0.827217,
+        "q": 0.827217,
+        "n_a": 17,
+        "n_b": 13,
+        "a_label": "complicated",
+        "b_label": "uncomplicated",
+        "median_a": 225.0,
+        "median_b": 145.0,
+        "hl_log2": 0.0,
+        "hl_low": -0.925086,
+        "hl_high": 3.159653
+       },
+       {
+        "label": "GM-CSF",
+        "estimate": 0.411765,
+        "ci_low": -0.013688,
+        "ci_high": 0.773756,
+        "p": 0.055894,
+        "q": 0.167683,
+        "n_a": 17,
+        "n_b": 13,
+        "a_label": "complicated",
+        "b_label": "uncomplicated",
+        "median_a": 253.6,
+        "median_b": 153.6,
+        "hl_log2": 0.738946,
+        "hl_low": 0.0,
+        "hl_high": 1.475937
+       },
+       {
+        "label": "MCP-1",
+        "estimate": 0.538462,
+        "ci_low": 0.167421,
+        "ci_high": 0.855204,
+        "p": 0.010699,
+        "q": 0.064194,
+        "n_a": 17,
+        "n_b": 13,
+        "a_label": "complicated",
+        "b_label": "uncomplicated",
+        "median_a": 365.2,
+        "median_b": 191.0,
+        "hl_log2": 0.771731,
+        "hl_low": 0.149523,
+        "hl_high": 1.957458
+       }
+      ]
+     }
+    ],
+    "footnote": "Cliff's delta with 95% percentile bootstrap interval (2,000 resamples of dogs, stratified by group); two-sided permutation p (10,000). Raw concentrations of the two files are never compared. One species per source. Descriptive: the published comparisons were already seen."
+   }
+  },
+  {
+   "kind": "ds02_courses",
+   "title": "DS02: cytokine course of the 5 Beagles around treatment",
+   "sort_order": 3,
+   "payload": {
+    "analytes": [
+     {
+      "analyte": "il2",
+      "label": "IL-2",
+      "dogs": [
+       {
+        "dog": "d001",
+        "dose_group": "low",
+        "points": [
+         {
+          "day": -1.0,
+          "value": 18.06,
+          "log2": 4.252476
+         },
+         {
+          "day": 0.0,
+          "value": 19.27,
+          "log2": 4.341274
+         },
+         {
+          "day": 1.0,
+          "value": 119.68,
+          "log2": 6.915043
+         },
+         {
+          "day": 2.0,
+          "value": 107.23,
+          "log2": 6.757957
+         },
+         {
+          "day": 3.0,
+          "value": 75.08,
+          "log2": 6.249445
+         },
+         {
+          "day": 4.0,
+          "value": 63.35,
+          "log2": 6.007868
+         },
+         {
+          "day": 6.0,
+          "value": 264.13,
+          "log2": 8.050556
+         },
+         {
+          "day": 8.0,
+          "value": 2102.12,
+          "log2": 11.038315
+         }
+        ]
+       },
+       {
+        "dog": "d002",
+        "dose_group": "high",
+        "points": [
+         {
+          "day": -1.0,
+          "value": 0.0,
+          "log2": 0.0
+         },
+         {
+          "day": 0.0,
+          "value": 0.0,
+          "log2": 0.0
+         },
+         {
+          "day": 1.0,
+          "value": 23.36,
+          "log2": 4.606442
+         },
+         {
+          "day": 2.0,
+          "value": 10.69,
+          "log2": 3.547203
+         },
+         {
+          "day": 3.0,
+          "value": 2.67,
+          "log2": 1.87578
+         },
+         {
+          "day": 4.0,
+          "value": 2.52,
+          "log2": 1.815575
+         },
+         {
+          "day": 6.0,
+          "value": 143098.29,
+          "log2": 17.126657
+         },
+         {
+          "day": 8.0,
+          "value": 354790.09,
+          "log2": 18.43661
+         }
+        ]
+       },
+       {
+        "dog": "d003",
+        "dose_group": "high",
+        "points": [
+         {
+          "day": -1.0,
+          "value": 14.41,
+          "log2": 3.945795
+         },
+         {
+          "day": 0.0,
+          "value": 24.43,
+          "log2": 4.66846
+         },
+         {
+          "day": 1.0,
+          "value": 37.66,
+          "log2": 5.27277
+         },
+         {
+          "day": 2.0,
+          "value": 29.09,
+          "log2": 4.911212
+         },
+         {
+          "day": 3.0,
+          "value": 12.81,
+          "log2": 3.787641
+         },
+         {
+          "day": 4.0,
+          "value": 9.44,
+          "log2": 3.38405
+         }
+        ]
+       },
+       {
+        "dog": "d004",
+        "dose_group": "high",
+        "points": [
+         {
+          "day": -1.0,
+          "value": 1.31,
+          "log2": 1.207893
+         },
+         {
+          "day": 0.0,
+          "value": 0.0,
+          "log2": 0.0
+         },
+         {
+          "day": 1.0,
+          "value": 0.0,
+          "log2": 0.0
+         },
+         {
+          "day": 2.0,
+          "value": 0.63,
+          "log2": 0.704872
+         },
+         {
+          "day": 3.0,
+          "value": 0.0,
+          "log2": 0.0
+         },
+         {
+          "day": 4.0,
+          "value": 2.81,
+          "log2": 1.929791
+         },
+         {
+          "day": 6.0,
+          "value": 29.33,
+          "log2": 4.922674
+         },
+         {
+          "day": 8.0,
+          "value": 7.91,
+          "log2": 3.155425
+         }
+        ]
+       },
+       {
+        "dog": "d005",
+        "dose_group": "low",
+        "points": [
+         {
+          "day": -1.0,
+          "value": 40.75,
+          "log2": 5.383704
+         },
+         {
+          "day": 0.0,
+          "value": 6.88,
+          "log2": 2.978196
+         },
+         {
+          "day": 1.0,
+          "value": 12.19,
+          "log2": 3.721373
+         },
+         {
+          "day": 2.0,
+          "value": 0.0,
+          "log2": 0.0
+         },
+         {
+          "day": 3.0,
+          "value": 7.13,
+          "log2": 3.023255
+         },
+         {
+          "day": 4.0,
+          "value": 0.0,
+          "log2": 0.0
+         },
+         {
+          "day": 6.0,
+          "value": 7.65,
+          "log2": 3.1127
+         },
+         {
+          "day": 8.0,
+          "value": 2.96,
+          "log2": 1.9855
+         }
+        ]
+       }
+      ],
+      "decision": {
+       "n_dogs": 4,
+       "R1_same_direction": true,
+       "median_abs_post": 3.052791,
+       "median_abs_daily_pre": 1.035102,
+       "R2_exceeds_daily": true,
+       "mean_change_high": 9.151982,
+       "mean_change_low": 2.577694,
+       "R3_high_more_upward": false,
+       "all_rules": false
+      },
+      "changes": [
+       {
+        "dog": "d001",
+        "change": 2.042688
+       },
+       {
+        "dog": "d002",
+        "change": 15.311082
+       },
+       {
+        "dog": "d004",
+        "change": 2.992883
+       },
+       {
+        "dog": "d005",
+        "change": 3.1127
+       }
+      ]
+     },
+     {
+      "analyte": "il8",
+      "label": "IL-8",
+      "dogs": [
+       {
+        "dog": "d001",
+        "dose_group": "low",
+        "points": [
+         {
+          "day": -1.0,
+          "value": 56.88,
+          "log2": 5.854993
+         },
+         {
+          "day": 0.0,
+          "value": 147.61,
+          "log2": 7.215387
+         },
+         {
+          "day": 1.0,
+          "value": 211.61,
+          "log2": 7.732066
+         },
+         {
+          "day": 2.0,
+          "value": 334.03,
+          "log2": 8.388146
+         },
+         {
+          "day": 3.0,
+          "value": 123.59,
+          "log2": 6.961044
+         },
+         {
+          "day": 4.0,
+          "value": 92.5,
+          "log2": 6.546894
+         },
+         {
+          "day": 6.0,
+          "value": 324.95,
+          "log2": 8.348507
+         },
+         {
+          "day": 8.0,
+          "value": 845.19,
+          "log2": 9.724838
+         }
+        ]
+       },
+       {
+        "dog": "d002",
+        "dose_group": "high",
+        "points": [
+         {
+          "day": -1.0,
+          "value": 196.74,
+          "log2": 7.627461
+         },
+         {
+          "day": 0.0,
+          "value": 135.22,
+          "log2": 7.089795
+         },
+         {
+          "day": 1.0,
+          "value": 76.02,
+          "log2": 6.267161
+         },
+         {
+          "day": 2.0,
+          "value": 144.41,
+          "log2": 7.183983
+         },
+         {
+          "day": 3.0,
+          "value": 55.44,
+          "log2": 5.818646
+         },
+         {
+          "day": 4.0,
+          "value": 513.99,
+          "log2": 9.008401
+         },
+         {
+          "day": 6.0,
+          "value": 437.43,
+          "log2": 8.776203
+         },
+         {
+          "day": 8.0,
+          "value": 374.39,
+          "log2": 8.552246
+         }
+        ]
+       },
+       {
+        "dog": "d003",
+        "dose_group": "high",
+        "points": [
+         {
+          "day": -1.0,
+          "value": 128.62,
+          "log2": 7.018145
+         },
+         {
+          "day": 0.0,
+          "value": 190.4,
+          "log2": 7.580447
+         },
+         {
+          "day": 1.0,
+          "value": 124.71,
+          "log2": 6.973956
+         },
+         {
+          "day": 2.0,
+          "value": 163.8,
+          "log2": 7.364572
+         },
+         {
+          "day": 3.0,
+          "value": 41.86,
+          "log2": 5.42156
+         },
+         {
+          "day": 4.0,
+          "value": 1817.67,
+          "log2": 10.828668
+         }
+        ]
+       },
+       {
+        "dog": "d004",
+        "dose_group": "high",
+        "points": [
+         {
+          "day": -1.0,
+          "value": 92.5,
+          "log2": 6.546894
+         },
+         {
+          "day": 0.0,
+          "value": 185.97,
+          "log2": 7.546663
+         },
+         {
+          "day": 1.0,
+          "value": 176.0,
+          "log2": 7.467606
+         },
+         {
+          "day": 2.0,
+          "value": 164.83,
+          "log2": 7.373561
+         },
+         {
+          "day": 3.0,
+          "value": 37.03,
+          "log2": 5.249066
+         },
+         {
+          "day": 4.0,
+          "value": 271.26,
+          "log2": 8.088841
+         },
+         {
+          "day": 6.0,
+          "value": 53.25,
+          "log2": 5.761551
+         },
+         {
+          "day": 8.0,
+          "value": 123.03,
+          "log2": 6.954545
+         }
+        ]
+       },
+       {
+        "dog": "d005",
+        "dose_group": "low",
+        "points": [
+         {
+          "day": -1.0,
+          "value": 98.6,
+          "log2": 6.638074
+         },
+         {
+          "day": 0.0,
+          "value": 44.99,
+          "log2": 5.523248
+         },
+         {
+          "day": 1.0,
+          "value": 302.31,
+          "log2": 8.244649
+         },
+         {
+          "day": 2.0,
+          "value": 103.39,
+          "log2": 6.70584
+         },
+         {
+          "day": 3.0,
+          "value": 78.62,
+          "log2": 6.315059
+         },
+         {
+          "day": 4.0,
+          "value": 48.04,
+          "log2": 5.615887
+         },
+         {
+          "day": 6.0,
+          "value": 103.39,
+          "log2": 6.70584
+         },
+         {
+          "day": 8.0,
+          "value": 193.33,
+          "log2": 7.602365
+         }
+        ]
+       }
+      ],
+      "decision": {
+       "n_dogs": 4,
+       "R1_same_direction": false,
+       "median_abs_post": 1.445783,
+       "median_abs_daily_pre": 1.11413,
+       "R2_exceeds_daily": true,
+       "mean_change_high": -1.279744,
+       "mean_change_low": 1.445783,
+       "R3_high_more_upward": false,
+       "all_rules": false
+      },
+      "changes": [
+       {
+        "dog": "d001",
+        "change": 1.801612
+       },
+       {
+        "dog": "d002",
+        "change": -0.232198
+       },
+       {
+        "dog": "d004",
+        "change": -2.32729
+       },
+       {
+        "dog": "d005",
+        "change": 1.089953
+       }
+      ]
+     },
+     {
+      "analyte": "il10",
+      "label": "IL-10",
+      "dogs": [
+       {
+        "dog": "d001",
+        "dose_group": "low",
+        "points": [
+         {
+          "day": -1.0,
+          "value": 12.56,
+          "log2": 3.761285
+         },
+         {
+          "day": 0.0,
+          "value": 11.64,
+          "log2": 3.659925
+         },
+         {
+          "day": 1.0,
+          "value": 56.29,
+          "log2": 5.840211
+         },
+         {
+          "day": 2.0,
+          "value": 76.41,
+          "log2": 6.274448
+         },
+         {
+          "day": 3.0,
+          "value": 81.89,
+          "log2": 6.373126
+         },
+         {
+          "day": 4.0,
+          "value": 229.09,
+          "log2": 7.846054
+         },
+         {
+          "day": 6.0,
+          "value": 165.05,
+          "log2": 7.375474
+         },
+         {
+          "day": 8.0,
+          "value": 400.72,
+          "log2": 8.650046
+         }
+        ]
+       },
+       {
+        "dog": "d002",
+        "dose_group": "high",
+        "points": [
+         {
+          "day": -1.0,
+          "value": 5.83,
+          "log2": 2.771886
+         },
+         {
+          "day": 0.0,
+          "value": 14.78,
+          "log2": 3.980025
+         },
+         {
+          "day": 1.0,
+          "value": 36.57,
+          "log2": 5.231509
+         },
+         {
+          "day": 2.0,
+          "value": 109.22,
+          "log2": 6.784242
+         },
+         {
+          "day": 3.0,
+          "value": 182.15,
+          "log2": 7.516882
+         },
+         {
+          "day": 4.0,
+          "value": 150.44,
+          "log2": 7.242603
+         },
+         {
+          "day": 6.0,
+          "value": 198.02,
+          "log2": 7.63677
+         },
+         {
+          "day": 8.0,
+          "value": 212.01,
+          "log2": 7.734777
+         }
+        ]
+       },
+       {
+        "dog": "d003",
+        "dose_group": "high",
+        "points": [
+         {
+          "day": -1.0,
+          "value": 9.41,
+          "log2": 3.379898
+         },
+         {
+          "day": 0.0,
+          "value": 37.27,
+          "log2": 5.258142
+         },
+         {
+          "day": 1.0,
+          "value": 46.02,
+          "log2": 5.555203
+         },
+         {
+          "day": 2.0,
+          "value": 136.08,
+          "log2": 7.098874
+         },
+         {
+          "day": 3.0,
+          "value": 384.13,
+          "log2": 8.589202
+         },
+         {
+          "day": 4.0,
+          "value": 1429.07,
+          "log2": 10.48187
+         }
+        ]
+       },
+       {
+        "dog": "d004",
+        "dose_group": "high",
+        "points": [
+         {
+          "day": -1.0,
+          "value": 12.56,
+          "log2": 3.761285
+         },
+         {
+          "day": 0.0,
+          "value": 19.54,
+          "log2": 4.360364
+         },
+         {
+          "day": 1.0,
+          "value": 211.81,
+          "log2": 7.733422
+         },
+         {
+          "day": 2.0,
+          "value": 147.73,
+          "log2": 7.216552
+         },
+         {
+          "day": 3.0,
+          "value": 194.41,
+          "log2": 7.61036
+         },
+         {
+          "day": 4.0,
+          "value": 462.56,
+          "log2": 8.856612
+         },
+         {
+          "day": 6.0,
+          "value": 44.27,
+          "log2": 5.500483
+         },
+         {
+          "day": 8.0,
+          "value": 5.43,
+          "log2": 2.684819
+         }
+        ]
+       },
+       {
+        "dog": "d005",
+        "dose_group": "low",
+        "points": [
+         {
+          "day": -1.0,
+          "value": 11.19,
+          "log2": 3.607626
+         },
+         {
+          "day": 0.0,
+          "value": 135.19,
+          "log2": 7.089477
+         },
+         {
+          "day": 1.0,
+          "value": 16.1,
+          "log2": 4.095924
+         },
+         {
+          "day": 2.0,
+          "value": 27.29,
+          "log2": 4.82222
+         },
+         {
+          "day": 3.0,
+          "value": 166.16,
+          "log2": 7.385086
+         },
+         {
+          "day": 4.0,
+          "value": 347.74,
+          "log2": 8.446008
+         },
+         {
+          "day": 6.0,
+          "value": 87.43,
+          "log2": 6.466464
+         },
+         {
+          "day": 8.0,
+          "value": 7.06,
+          "log2": 3.01078
+         }
+        ]
+       }
+      ],
+      "decision": {
+       "n_dogs": 4,
+       "R1_same_direction": false,
+       "median_abs_post": 1.225062,
+       "median_abs_daily_pre": 0.972822,
+       "R2_exceeds_daily": true,
+       "mean_change_high": -1.480981,
+       "mean_change_low": -1.225062,
+       "R3_high_more_upward": false,
+       "all_rules": false
+      },
+      "changes": [
+       {
+        "dog": "d001",
+        "change": -0.470581
+       },
+       {
+        "dog": "d002",
+        "change": 0.394167
+       },
+       {
+        "dog": "d004",
+        "change": -3.356129
+       },
+       {
+        "dog": "d005",
+        "change": -1.979544
+       }
+      ]
+     },
+     {
+      "analyte": "il18",
+      "label": "IL-18",
+      "dogs": [
+       {
+        "dog": "d001",
+        "dose_group": "low",
+        "points": [
+         {
+          "day": -1.0,
+          "value": 22.19,
+          "log2": 4.535431
+         },
+         {
+          "day": 0.0,
+          "value": 18.56,
+          "log2": 4.289834
+         },
+         {
+          "day": 1.0,
+          "value": 87.3,
+          "log2": 6.464342
+         },
+         {
+          "day": 2.0,
+          "value": 75.41,
+          "log2": 6.25569
+         },
+         {
+          "day": 3.0,
+          "value": 51.88,
+          "log2": 5.72465
+         },
+         {
+          "day": 4.0,
+          "value": 47.03,
+          "log2": 5.585864
+         },
+         {
+          "day": 6.0,
+          "value": 261.14,
+          "log2": 8.034194
+         },
+         {
+          "day": 8.0,
+          "value": 1566.64,
+          "log2": 10.614379
+         }
+        ]
+       },
+       {
+        "dog": "d002",
+        "dose_group": "high",
+        "points": [
+         {
+          "day": -1.0,
+          "value": 7.52,
+          "log2": 3.090853
+         },
+         {
+          "day": 0.0,
+          "value": 9.13,
+          "log2": 3.340562
+         },
+         {
+          "day": 1.0,
+          "value": 43.92,
+          "log2": 5.489286
+         },
+         {
+          "day": 2.0,
+          "value": 26.28,
+          "log2": 4.769772
+         },
+         {
+          "day": 3.0,
+          "value": 16.36,
+          "log2": 4.117695
+         },
+         {
+          "day": 4.0,
+          "value": 16.96,
+          "log2": 4.166715
+         },
+         {
+          "day": 6.0,
+          "value": 0.0,
+          "log2": 0.0
+         },
+         {
+          "day": 8.0,
+          "value": 0.0,
+          "log2": 0.0
+         }
+        ]
+       },
+       {
+        "dog": "d003",
+        "dose_group": "high",
+        "points": [
+         {
+          "day": -1.0,
+          "value": 9.9,
+          "log2": 3.446256
+         },
+         {
+          "day": 0.0,
+          "value": 10.76,
+          "log2": 3.555816
+         },
+         {
+          "day": 1.0,
+          "value": 10.28,
+          "log2": 3.495695
+         },
+         {
+          "day": 2.0,
+          "value": 7.42,
+          "log2": 3.07382
+         },
+         {
+          "day": 3.0,
+          "value": 5.56,
+          "log2": 2.713696
+         },
+         {
+          "day": 4.0,
+          "value": 7.23,
+          "log2": 3.040892
+         }
+        ]
+       },
+       {
+        "dog": "d004",
+        "dose_group": "high",
+        "points": [
+         {
+          "day": -1.0,
+          "value": 10.47,
+          "log2": 3.519793
+         },
+         {
+          "day": 0.0,
+          "value": 8.75,
+          "log2": 3.285402
+         },
+         {
+          "day": 1.0,
+          "value": 7.61,
+          "log2": 3.106013
+         },
+         {
+          "day": 2.0,
+          "value": 10.09,
+          "log2": 3.471187
+         },
+         {
+          "day": 3.0,
+          "value": 6.11,
+          "log2": 2.82985
+         },
+         {
+          "day": 4.0,
+          "value": 10.09,
+          "log2": 3.471187
+         },
+         {
+          "day": 6.0,
+          "value": 175.73,
+          "log2": 7.465403
+         },
+         {
+          "day": 8.0,
+          "value": 15.17,
+          "log2": 4.015248
+         }
+        ]
+       },
+       {
+        "dog": "d005",
+        "dose_group": "low",
+        "points": [
+         {
+          "day": -1.0,
+          "value": 28.14,
+          "log2": 4.864929
+         },
+         {
+          "day": 0.0,
+          "value": 11.83,
+          "log2": 3.681449
+         },
+         {
+          "day": 1.0,
+          "value": 21.99,
+          "log2": 4.522935
+         },
+         {
+          "day": 2.0,
+          "value": 9.9,
+          "log2": 3.446256
+         },
+         {
+          "day": 3.0,
+          "value": 16.56,
+          "log2": 4.134221
+         },
+         {
+          "day": 4.0,
+          "value": 10.86,
+          "log2": 3.568032
+         },
+         {
+          "day": 6.0,
+          "value": 20.47,
+          "log2": 4.42425
+         },
+         {
+          "day": 8.0,
+          "value": 18.86,
+          "log2": 4.311794
+         }
+        ]
+       }
+      ],
+      "decision": {
+       "n_dogs": 4,
+       "R1_same_direction": false,
+       "median_abs_post": 3.221273,
+       "median_abs_daily_pre": 0.594526,
+       "R2_exceeds_daily": true,
+       "mean_change_high": -0.08625,
+       "mean_change_low": 1.652274,
+       "R3_high_more_upward": false,
+       "all_rules": false
+      },
+      "changes": [
+       {
+        "dog": "d001",
+        "change": 2.44833
+       },
+       {
+        "dog": "d002",
+        "change": -4.166715
+       },
+       {
+        "dog": "d004",
+        "change": 3.994216
+       },
+       {
+        "dog": "d005",
+        "change": 0.856218
+       }
+      ]
+     },
+     {
+      "analyte": "gmcsf",
+      "label": "GM-CSF",
+      "dogs": [
+       {
+        "dog": "d001",
+        "dose_group": "low",
+        "points": [
+         {
+          "day": -1.0,
+          "value": 39.24,
+          "log2": 5.330558
+         },
+         {
+          "day": 0.0,
+          "value": 28.88,
+          "log2": 4.901108
+         },
+         {
+          "day": 1.0,
+          "value": 124.54,
+          "log2": 6.972003
+         },
+         {
+          "day": 2.0,
+          "value": 107.23,
+          "log2": 6.757957
+         },
+         {
+          "day": 3.0,
+          "value": 82.95,
+          "log2": 6.391458
+         },
+         {
+          "day": 4.0,
+          "value": 68.31,
+          "log2": 6.114992
+         },
+         {
+          "day": 6.0,
+          "value": 332.46,
+          "log2": 8.38137
+         },
+         {
+          "day": 8.0,
+          "value": 2438.55,
+          "log2": 11.252399
+         }
+        ]
+       },
+       {
+        "dog": "d002",
+        "dose_group": "high",
+        "points": [
+         {
+          "day": -1.0,
+          "value": 3.36,
+          "log2": 2.124328
+         },
+         {
+          "day": 0.0,
+          "value": 7.8,
+          "log2": 3.137504
+         },
+         {
+          "day": 1.0,
+          "value": 58.38,
+          "log2": 5.891905
+         },
+         {
+          "day": 2.0,
+          "value": 37.71,
+          "log2": 5.274634
+         },
+         {
+          "day": 3.0,
+          "value": 27.3,
+          "log2": 4.82273
+         },
+         {
+          "day": 4.0,
+          "value": 32.07,
+          "log2": 5.047451
+         },
+         {
+          "day": 6.0,
+          "value": 9220.8,
+          "log2": 13.170833
+         },
+         {
+          "day": 8.0,
+          "value": 9220.8,
+          "log2": 13.170833
+         }
+        ]
+       },
+       {
+        "dog": "d003",
+        "dose_group": "high",
+        "points": [
+         {
+          "day": -1.0,
+          "value": 0.0,
+          "log2": 0.0
+         },
+         {
+          "day": 0.0,
+          "value": 9.2,
+          "log2": 3.350497
+         },
+         {
+          "day": 1.0,
+          "value": 6.77,
+          "log2": 2.957915
+         },
+         {
+          "day": 2.0,
+          "value": 0.0,
+          "log2": 0.0
+         },
+         {
+          "day": 3.0,
+          "value": 0.0,
+          "log2": 0.0
+         },
+         {
+          "day": 4.0,
+          "value": 23.75,
+          "log2": 4.629357
+         }
+        ]
+       },
+       {
+        "dog": "d004",
+        "dose_group": "high",
+        "points": [
+         {
+          "day": -1.0,
+          "value": 6.77,
+          "log2": 2.957915
+         },
+         {
+          "day": 0.0,
+          "value": 2.24,
+          "log2": 1.695994
+         },
+         {
+          "day": 1.0,
+          "value": 0.0,
+          "log2": 0.0
+         },
+         {
+          "day": 2.0,
+          "value": 7.8,
+          "log2": 3.137504
+         },
+         {
+          "day": 3.0,
+          "value": 0.0,
+          "log2": 0.0
+         },
+         {
+          "day": 4.0,
+          "value": 11.25,
+          "log2": 3.61471
+         },
+         {
+          "day": 6.0,
+          "value": 38.37,
+          "log2": 5.299025
+         },
+         {
+          "day": 8.0,
+          "value": 19.67,
+          "log2": 4.369466
+         }
+        ]
+       },
+       {
+        "dog": "d005",
+        "dose_group": "low",
+        "points": [
+         {
+          "day": -1.0,
+          "value": 51.38,
+          "log2": 5.710944
+         },
+         {
+          "day": 0.0,
+          "value": 20.79,
+          "log2": 4.445594
+         },
+         {
+          "day": 1.0,
+          "value": 33.23,
+          "log2": 5.097189
+         },
+         {
+          "day": 2.0,
+          "value": 14.13,
+          "log2": 3.91934
+         },
+         {
+          "day": 3.0,
+          "value": 24.78,
+          "log2": 4.68818
+         },
+         {
+          "day": 4.0,
+          "value": 11.25,
+          "log2": 3.61471
+         },
+         {
+          "day": 6.0,
+          "value": 22.96,
+          "log2": 4.582556
+         },
+         {
+          "day": 8.0,
+          "value": 18.95,
+          "log2": 4.318317
+         }
+        ]
+       }
+      ],
+      "decision": {
+       "n_dogs": 4,
+       "R1_same_direction": true,
+       "median_abs_post": 1.975347,
+       "median_abs_daily_pre": 0.727871,
+       "R2_exceeds_daily": true,
+       "mean_change_high": 4.903848,
+       "mean_change_low": 1.617112,
+       "R3_high_more_upward": false,
+       "all_rules": false
+      },
+      "changes": [
+       {
+        "dog": "d001",
+        "change": 2.266378
+       },
+       {
+        "dog": "d002",
+        "change": 8.123382
+       },
+       {
+        "dog": "d004",
+        "change": 1.684315
+       },
+       {
+        "dog": "d005",
+        "change": 0.967846
+       }
+      ]
+     },
+     {
+      "analyte": "mcp1",
+      "label": "MCP-1",
+      "dogs": [
+       {
+        "dog": "d001",
+        "dose_group": "low",
+        "points": [
+         {
+          "day": -1.0,
+          "value": 182.55,
+          "log2": 7.520029
+         },
+         {
+          "day": 0.0,
+          "value": 195.24,
+          "log2": 7.616475
+         },
+         {
+          "day": 1.0,
+          "value": 244.23,
+          "log2": 7.937992
+         },
+         {
+          "day": 2.0,
+          "value": 232.56,
+          "log2": 7.867649
+         },
+         {
+          "day": 3.0,
+          "value": 229.06,
+          "log2": 7.845866
+         },
+         {
+          "day": 4.0,
+          "value": 467.65,
+          "log2": 8.872367
+         },
+         {
+          "day": 6.0,
+          "value": 293.09,
+          "log2": 8.200114
+         },
+         {
+          "day": 8.0,
+          "value": 1012.66,
+          "log2": 9.985358
+         }
+        ]
+       },
+       {
+        "dog": "d002",
+        "dose_group": "high",
+        "points": [
+         {
+          "day": -1.0,
+          "value": 67.87,
+          "log2": 6.105804
+         },
+         {
+          "day": 0.0,
+          "value": 61.47,
+          "log2": 5.965092
+         },
+         {
+          "day": 1.0,
+          "value": 264.24,
+          "log2": 8.051155
+         },
+         {
+          "day": 2.0,
+          "value": 321.89,
+          "log2": 8.334899
+         },
+         {
+          "day": 3.0,
+          "value": 345.49,
+          "log2": 8.43667
+         },
+         {
+          "day": 4.0,
+          "value": 856.8,
+          "log2": 9.744498
+         },
+         {
+          "day": 6.0,
+          "value": 98603.3,
+          "log2": 16.589363
+         },
+         {
+          "day": 8.0,
+          "value": 227245.74,
+          "log2": 17.7939
+         }
+        ]
+       },
+       {
+        "dog": "d003",
+        "dose_group": "high",
+        "points": [
+         {
+          "day": -1.0,
+          "value": 62.29,
+          "log2": 5.983906
+         },
+         {
+          "day": 0.0,
+          "value": 75.42,
+          "log2": 6.255878
+         },
+         {
+          "day": 1.0,
+          "value": 225.92,
+          "log2": 7.82604
+         },
+         {
+          "day": 2.0,
+          "value": 284.57,
+          "log2": 8.157701
+         },
+         {
+          "day": 3.0,
+          "value": 404.03,
+          "log2": 8.661885
+         },
+         {
+          "day": 4.0,
+          "value": 2271.2,
+          "log2": 11.149874
+         }
+        ]
+       },
+       {
+        "dog": "d004",
+        "dose_group": "high",
+        "points": [
+         {
+          "day": -1.0,
+          "value": 72.02,
+          "log2": 6.19022
+         },
+         {
+          "day": 0.0,
+          "value": 63.54,
+          "log2": 6.012122
+         },
+         {
+          "day": 1.0,
+          "value": 242.03,
+          "log2": 7.924991
+         },
+         {
+          "day": 2.0,
+          "value": 241.14,
+          "log2": 7.919698
+         },
+         {
+          "day": 3.0,
+          "value": 258.86,
+          "log2": 8.021591
+         },
+         {
+          "day": 4.0,
+          "value": 523.22,
+          "log2": 9.034029
+         },
+         {
+          "day": 6.0,
+          "value": 201.93,
+          "log2": 7.664838
+         },
+         {
+          "day": 8.0,
+          "value": 74.19,
+          "log2": 6.232469
+         }
+        ]
+       },
+       {
+        "dog": "d005",
+        "dose_group": "low",
+        "points": [
+         {
+          "day": -1.0,
+          "value": 130.4,
+          "log2": 7.037821
+         },
+         {
+          "day": 0.0,
+          "value": 116.57,
+          "log2": 6.877376
+         },
+         {
+          "day": 1.0,
+          "value": 103.86,
+          "log2": 6.712321
+         },
+         {
+          "day": 2.0,
+          "value": 56.05,
+          "log2": 5.834155
+         },
+         {
+          "day": 3.0,
+          "value": 196.48,
+          "log2": 7.625563
+         },
+         {
+          "day": 4.0,
+          "value": 253.52,
+          "log2": 7.991635
+         },
+         {
+          "day": 6.0,
+          "value": 98.85,
+          "log2": 6.641691
+         },
+         {
+          "day": 8.0,
+          "value": 70.61,
+          "log2": 6.162089
+         }
+        ]
+       }
+      ],
+      "decision": {
+       "n_dogs": 4,
+       "R1_same_direction": false,
+       "median_abs_post": 1.359567,
+       "median_abs_daily_pre": 0.589642,
+       "R2_exceeds_daily": true,
+       "mean_change_high": 2.737838,
+       "mean_change_low": -1.011099,
+       "R3_high_more_upward": false,
+       "all_rules": false
+      },
+      "changes": [
+       {
+        "dog": "d001",
+        "change": -0.672253
+       },
+       {
+        "dog": "d002",
+        "change": 6.844865
+       },
+       {
+        "dog": "d004",
+        "change": -1.36919
+       },
+       {
+        "dog": "d005",
+        "change": -1.349945
+       }
+      ]
+     }
+    ],
+    "treatment_after_day": 4,
+    "footnote": "DS02: 5 experimentally infected Beagles (SRC-B, B. rossi), 2 low dose and 3 high dose; one high-dose dog died on day 4. Cytokines were measured on days -1, 0, 1, 2, 3, 4, 6 and 8; treatment came after the day-4 sample (about 96 h high dose, 108 h low dose). The first post-treatment sample (day 6) is 36 to 48 h after treatment, so a 6 to 8 h effect cannot be seen. y axis: log2(value + 1). No test (n 4)."
+   }
+  },
+  {
+   "kind": "ds02_decisions",
+   "title": "DS02: decision rules R1 to R3, by analyte",
+   "sort_order": 4,
+   "payload": {
+    "rows": [
+     {
+      "analyte": "IL-2",
+      "n_dogs": 4,
+      "R1_same_direction": true,
+      "median_abs_post": 3.052791,
+      "median_abs_daily_pre": 1.035102,
+      "R2_exceeds_daily": true,
+      "mean_change_high": 9.151982,
+      "mean_change_low": 2.577694,
+      "R3_high_more_upward": false,
+      "all_rules": false
+     },
+     {
+      "analyte": "IL-8",
+      "n_dogs": 4,
+      "R1_same_direction": false,
+      "median_abs_post": 1.445783,
+      "median_abs_daily_pre": 1.11413,
+      "R2_exceeds_daily": true,
+      "mean_change_high": -1.279744,
+      "mean_change_low": 1.445783,
+      "R3_high_more_upward": false,
+      "all_rules": false
+     },
+     {
+      "analyte": "IL-10",
+      "n_dogs": 4,
+      "R1_same_direction": false,
+      "median_abs_post": 1.225062,
+      "median_abs_daily_pre": 0.972822,
+      "R2_exceeds_daily": true,
+      "mean_change_high": -1.480981,
+      "mean_change_low": -1.225062,
+      "R3_high_more_upward": false,
+      "all_rules": false
+     },
+     {
+      "analyte": "IL-18",
+      "n_dogs": 4,
+      "R1_same_direction": false,
+      "median_abs_post": 3.221273,
+      "median_abs_daily_pre": 0.594526,
+      "R2_exceeds_daily": true,
+      "mean_change_high": -0.08625,
+      "mean_change_low": 1.652274,
+      "R3_high_more_upward": false,
+      "all_rules": false
+     },
+     {
+      "analyte": "GM-CSF",
+      "n_dogs": 4,
+      "R1_same_direction": true,
+      "median_abs_post": 1.975347,
+      "median_abs_daily_pre": 0.727871,
+      "R2_exceeds_daily": true,
+      "mean_change_high": 4.903848,
+      "mean_change_low": 1.617112,
+      "R3_high_more_upward": false,
+      "all_rules": false
+     },
+     {
+      "analyte": "MCP-1",
+      "n_dogs": 4,
+      "R1_same_direction": false,
+      "median_abs_post": 1.359567,
+      "median_abs_daily_pre": 0.589642,
+      "R2_exceeds_daily": true,
+      "mean_change_high": 2.737838,
+      "mean_change_low": -1.011099,
+      "R3_high_more_upward": false,
+      "all_rules": false
+     }
+    ]
+   }
+  },
+  {
+   "kind": "infected_vs_control",
+   "title": "Infected dogs against healthy controls (deviation D1)",
+   "sort_order": 5,
+   "payload": {
+    "statistic": "Cliff's delta (infected minus healthy controls)",
+    "groups": [
+     {
+      "key": "S-CB050",
+      "label": "S-CB050 · B. rossi · infected vs healthy controls",
+      "note": "Deviation D1: added after the outcome lock; uses no outcome. Raw p only.",
+      "rows": [
+       {
+        "label": "IL-2",
+        "estimate": -0.012371,
+        "ci_low": -0.323058,
+        "ci_high": 0.301048,
+        "p": 0.941206,
+        "q": null,
+        "n_a": 97,
+        "n_b": 15,
+        "a_label": "infected",
+        "b_label": "controls",
+        "median_a": 28.2,
+        "median_b": 19.0,
+        "hl_log2": 0.0,
+        "hl_low": -1.958082,
+        "hl_high": 1.249172
+       },
+       {
+        "label": "IL-8",
+        "estimate": -0.452921,
+        "ci_low": -0.649485,
+        "ci_high": -0.235739,
+        "p": 0.004,
+        "q": null,
+        "n_a": 97,
+        "n_b": 15,
+        "a_label": "infected",
+        "b_label": "controls",
+        "median_a": 1066.3,
+        "median_b": 3316.7,
+        "hl_log2": -1.334959,
+        "hl_low": -2.049802,
+        "hl_high": -0.656832
+       },
+       {
+        "label": "IL-10",
+        "estimate": 0.678351,
+        "ci_low": 0.357938,
+        "ci_high": 0.939519,
+        "p": 0.0001,
+        "q": null,
+        "n_a": 97,
+        "n_b": 15,
+        "a_label": "infected",
+        "b_label": "controls",
+        "median_a": 620.3,
+        "median_b": 44.6,
+        "hl_log2": 3.787926,
+        "hl_low": 1.954409,
+        "hl_high": 5.221472
+       },
+       {
+        "label": "IL-18",
+        "estimate": 0.023368,
+        "ci_low": -0.321031,
+        "ci_high": 0.387663,
+        "p": 0.884012,
+        "q": null,
+        "n_a": 97,
+        "n_b": 15,
+        "a_label": "infected",
+        "b_label": "controls",
+        "median_a": 52.3,
+        "median_b": 43.6,
+        "hl_log2": 0.068617,
+        "hl_low": -1.877181,
+        "hl_high": 1.537123
+       },
+       {
+        "label": "GM-CSF",
+        "estimate": 0.035739,
+        "ci_low": -0.288007,
+        "ci_high": 0.371873,
+        "p": 0.824518,
+        "q": null,
+        "n_a": 97,
+        "n_b": 15,
+        "a_label": "infected",
+        "b_label": "controls",
+        "median_a": 29.3,
+        "median_b": 21.8,
+        "hl_log2": 0.0,
+        "hl_low": -1.108524,
+        "hl_high": 1.121562
+       },
+       {
+        "label": "MCP-1",
+        "estimate": 0.898282,
+        "ci_low": 0.802027,
+        "ci_high": 0.964296,
+        "p": 0.0001,
+        "q": null,
+        "n_a": 97,
+        "n_b": 15,
+        "a_label": "infected",
+        "b_label": "controls",
+        "median_a": 544.2,
+        "median_b": 211.7,
+        "hl_log2": 1.57825,
+        "hl_low": 1.15281,
+        "hl_high": 2.076748
+       }
+      ]
+     },
+     {
+      "key": "S-CB017",
+      "label": "S-CB017 · B. canis · infected vs healthy controls",
+      "note": "Deviation D1: added after the outcome lock; uses no outcome. Raw p only.",
+      "rows": [
+       {
+        "label": "IL-2",
+        "estimate": 0.778226,
+        "ci_low": 0.564516,
+        "ci_high": 0.927419,
+        "p": 0.0001,
+        "q": null,
+        "n_a": 31,
+        "n_b": 16,
+        "a_label": "infected",
+        "b_label": "controls",
+        "median_a": 96.5,
+        "median_b": 17.25,
+        "hl_log2": 2.269555,
+        "hl_low": 1.169925,
+        "hl_high": 2.906096
+       },
+       {
+        "label": "IL-8",
+        "estimate": 0.870968,
+        "ci_low": 0.677419,
+        "ci_high": 1.0,
+        "p": 0.0001,
+        "q": null,
+        "n_a": 31,
+        "n_b": 16,
+        "a_label": "infected",
+        "b_label": "controls",
+        "median_a": 856.3,
+        "median_b": 137.3,
+        "hl_log2": 2.414118,
+        "hl_low": 1.993493,
+        "hl_high": 3.088265
+       },
+       {
+        "label": "IL-10",
+        "estimate": 0.967742,
+        "ci_low": 0.903226,
+        "ci_high": 1.0,
+        "p": 0.0001,
+        "q": null,
+        "n_a": 31,
+        "n_b": 16,
+        "a_label": "infected",
+        "b_label": "controls",
+        "median_a": 559.6,
+        "median_b": 0.8,
+        "hl_log2": 9.45018,
+        "hl_low": 9.00422,
+        "hl_high": 9.812979
+       },
+       {
+        "label": "IL-18",
+        "estimate": 0.360887,
+        "ci_low": 0.01003,
+        "ci_high": 0.675454,
+        "p": 0.041096,
+        "q": null,
+        "n_a": 31,
+        "n_b": 16,
+        "a_label": "infected",
+        "b_label": "controls",
+        "median_a": 188.3,
+        "median_b": 82.9,
+        "hl_log2": 1.184355,
+        "hl_low": 0.0,
+        "hl_high": 5.375039
+       },
+       {
+        "label": "GM-CSF",
+        "estimate": 0.947581,
+        "ci_low": 0.82248,
+        "ci_high": 1.0,
+        "p": 0.0001,
+        "q": null,
+        "n_a": 31,
+        "n_b": 16,
+        "a_label": "infected",
+        "b_label": "controls",
+        "median_a": 182.1,
+        "median_b": 87.15,
+        "hl_log2": 1.15615,
+        "hl_low": 0.82001,
+        "hl_high": 1.483408
+       },
+       {
+        "label": "MCP-1",
+        "estimate": 0.590726,
+        "ci_low": 0.310484,
+        "ci_high": 0.842742,
+        "p": 0.0006,
+        "q": null,
+        "n_a": 31,
+        "n_b": 16,
+        "a_label": "infected",
+        "b_label": "controls",
+        "median_a": 389.8,
+        "median_b": 192.75,
+        "hl_log2": 0.876502,
+        "hl_low": 0.344383,
+        "hl_high": 1.297805
+       }
+      ]
+     }
+    ],
+    "footnote": "S-CB050: 97 infected, 15 controls (cohort 1). S-CB017: 31 infected (day 1), 16 controls. One species per source."
+   }
+  },
+  {
+   "kind": "definition_check",
+   "title": "Check C1: IL-8 and WBC",
+   "sort_order": 6,
+   "payload": {
+    "rows": [
+     {
+      "file": "S-CB050",
+      "species": "B. rossi",
+      "rho": 0.303095,
+      "rho_low": 0.093165,
+      "rho_high": 0.489656,
+      "rho_p": 0.0034,
+      "n": 97,
+      "wbc_delta": 0.114706,
+      "wbc_low": -0.266691,
+      "wbc_high": 0.482402,
+      "wbc_p": 0.534847,
+      "wbc_median_severe": 6.255,
+      "wbc_median_nonsevere": 6.22,
+      "severe": "died",
+      "nonsevere": "survived"
+     },
+     {
+      "file": "S-CB017",
+      "species": "B. canis",
+      "rho": 0.246697,
+      "rho_low": -0.105737,
+      "rho_high": 0.571608,
+      "rho_p": 0.182382,
+      "n": 31,
+      "wbc_delta": 0.230769,
+      "wbc_low": -0.196581,
+      "wbc_high": 0.632479,
+      "wbc_p": 0.292671,
+      "wbc_median_severe": 9.3,
+      "wbc_median_nonsevere": 5.0,
+      "severe": "complicated",
+      "nonsevere": "uncomplicated"
+     }
+    ],
+    "footnote": "Check C1. Spearman rho of IL-8 with WBC among infected dogs (bootstrap 95% CI, permutation p) and Cliff's delta of WBC by label. Raw p only."
+   }
+  },
+  {
+   "kind": "floor_sensitivity",
+   "title": "Sensitivity S2: floors at half the floor",
+   "sort_order": 7,
+   "payload": {
+    "rows": [
+     {
+      "file": "S-CB050",
+      "analyte": "IL-2",
+      "delta": 0.044118,
+      "delta_primary": 0.044118,
+      "hl_log2": 0.0,
+      "hl_primary": 0.0,
+      "q": 0.927207
+     },
+     {
+      "file": "S-CB050",
+      "analyte": "IL-8",
+      "delta": 0.023529,
+      "delta_primary": 0.023529,
+      "hl_log2": 0.106344,
+      "hl_primary": 0.106344,
+      "q": 0.927207
+     },
+     {
+      "file": "S-CB050",
+      "analyte": "IL-10",
+      "delta": 0.205882,
+      "delta_primary": 0.205882,
+      "hl_log2": 0.566875,
+      "hl_primary": 0.566875,
+      "q": 0.765823
+     },
+     {
+      "file": "S-CB050",
+      "analyte": "IL-18",
+      "delta": -0.052941,
+      "delta_primary": -0.052941,
+      "hl_log2": -0.239819,
+      "hl_primary": -0.239819,
+      "q": 0.927207
+     },
+     {
+      "file": "S-CB050",
+      "analyte": "GM-CSF",
+      "delta": 0.016667,
+      "delta_primary": 0.016667,
+      "hl_log2": 0.0,
+      "hl_primary": 0.0,
+      "q": 0.927207
+     },
+     {
+      "file": "S-CB050",
+      "analyte": "MCP-1",
+      "delta": 0.466667,
+      "delta_primary": 0.466667,
+      "hl_log2": 0.742925,
+      "hl_primary": 0.742925,
+      "q": 0.053995
+     },
+     {
+      "file": "S-CB017",
+      "analyte": "IL-2",
+      "delta": 0.482906,
+      "delta_primary": 0.482906,
+      "hl_log2": 0.983507,
+      "hl_primary": 0.983507,
+      "q": 0.043796
+     },
+     {
+      "file": "S-CB017",
+      "analyte": "IL-8",
+      "delta": 0.145299,
+      "delta_primary": 0.145299,
+      "hl_log2": 0.3479,
+      "hl_primary": 0.3479,
+      "q": 0.613019
+     },
+     {
+      "file": "S-CB017",
+      "analyte": "IL-10",
+      "delta": 0.094017,
+      "delta_primary": 0.094017,
+      "hl_log2": 0.138048,
+      "hl_primary": 0.138048,
+      "q": 0.684532
+     },
+     {
+      "file": "S-CB017",
+      "analyte": "IL-18",
+      "delta": 0.205128,
+      "delta_primary": 0.205128,
+      "hl_log2": 0.749318,
+      "hl_primary": 0.749318,
+      "q": 0.517148
+     },
+     {
+      "file": "S-CB017",
+      "analyte": "GM-CSF",
+      "delta": 0.730769,
+      "delta_primary": 0.730769,
+      "hl_log2": 0.833164,
+      "hl_primary": 0.833164,
+      "q": 0.0021
+     },
+     {
+      "file": "S-CB017",
+      "analyte": "MCP-1",
+      "delta": 0.811966,
+      "delta_primary": 0.811966,
+      "hl_log2": 1.31229,
+      "hl_primary": 1.31229,
+      "q": 0.0006
+     }
+    ],
+    "footnote": "Sensitivity S2: every value at an assay floor set to half the floor. Cliff's delta and the Hodges-Lehmann log2 shift are unchanged."
+   }
+  },
+  {
+   "kind": "interpretation",
+   "title": "Explanation and interpretation",
+   "sort_order": 9,
+   "payload": {
+    "sections": [
+     {
+      "heading": "Question",
+      "paragraphs": [
+       "IL-8 is reported to fall with severity in B. rossi and to rise in complicated B. canis. Can sampling time (before treatment in S-CB050; 6-8 h after imidocarb in S-CB017) or the severity definition (death against 'complicated') explain the difference?"
+      ]
+     },
+     {
+      "heading": "What was done",
+      "paragraphs": [
+       "Inside each dog-level file, each of 6 shared analytes (IL-2, IL-8, IL-10, IL-18, GM-CSF, MCP-1) was compared between severe and non-severe dogs with Cliff's delta (bootstrap 95% CI by dog, permutation p, BH within each file, family of 6). DS02 (5 Beagles) gave the within-dog course before treatment and the change from day 4 to day 6, judged by three rules fixed in spec.md (R1 same direction in every dog, R2 larger than day-to-day change, R3 larger rise in the high-dose dogs). Checks: C1 IL-8 against WBC (the 'complicated' label uses SIRS, which uses WBC); C2 the S-CB017 day-7 contrast; S2 floors at half the floor.",
+       "Deviation D1 (added after the outcome lock, uses no outcome): infected dogs against the healthy controls of each file. It was added because the primary result showed no severity conflict, and the article notes place the B. rossi IL-8 fall between infected dogs and controls."
+      ]
+     },
+     {
+      "heading": "Result",
+      "paragraphs": [
+       "S-CB050 (B. rossi, admission, before treatment): IL-8 Cliff's delta +0.02 (95% CI -0.28 to +0.34), died 12 vs survived 85, medians 1172 vs 1066 pg/mL, permutation p 0.898.",
+       "S-CB017 (B. canis, day 1, 6-8 h after imidocarb): IL-8 Cliff's delta +0.15 (95% CI -0.29 to +0.56), complicated 18 vs uncomplicated 13, medians 908 vs 601 pg/mL, permutation p 0.518. At day 7 the S-CB017 estimate is -0.15 (-0.59 to +0.29).",
+       "Verdict by the pre-stated rule: no conflict. Neither file shows an IL-8 difference by severity, and both estimates are slightly positive. The severity direction that both files share is MCP-1: delta +0.47 (+0.22 to +0.70, q 0.052) and +0.81 (+0.56 to +0.97, q < 0.001). 3 of 12 tests passed q < 0.05 (IL-2 in S-CB017, GM-CSF in S-CB017, MCP-1 in S-CB017).",
+       "Where the IL-8 directions do differ is infection against health (deviation D1): infected minus controls -0.45 (-0.65 to -0.24) in S-CB050 (median 1066 vs 3317 pg/mL) and +0.87 (+0.68 to +1.00) in S-CB017. This difference cannot be separated from species, assay run and control selection.",
+       "DS02, IL-8 log2 change day 4 to day 6: d001 +1.80, d002 -0.23, d004 -2.33, d005 +1.09. R1 same direction in all 4 dogs: no; R2 median |change| 1.45 log2 against median day-to-day change before treatment 1.11: larger; R3 rises more in the high-dose dogs: no (mean change high dose -1.28, low dose +1.45). So DS02 does not support a treatment-driven reversal. Before treatment, IL-8 log2 change from baseline to day 4 by dog: d001 (low) +0.01, d002 (high) +1.65, d003 (high) +3.53, d004 (high) +1.04, d005 (low) -0.46. It rose in every high-dose dog, so in experimental B. rossi IL-8 went up, not down, as disease progressed.",
+       "C1: IL-8 correlated with WBC among infected dogs in S-CB050 (rho +0.30, +0.09 to +0.49) and in S-CB017 (rho +0.25, -0.11 to +0.57); the WBC difference by label had an interval that included 0 in both files (delta +0.11 and +0.23). The definition is therefore not needed to explain an IL-8 conflict that the files do not show."
+      ]
+     },
+     {
+      "heading": "What this does not show",
+      "paragraphs": [
+       "The B. rossi report of IL-8 falling with severity rests on CB037 (55 dogs, a separate cohort with no dog-level file, read from the abstract only). This package cannot test it. In the one B. rossi dog-level file, IL-8 does not differ between dogs that died and survivors.",
+       "Detectable effect at 80% power: about 0.86 SD in S-CB050 (12 vs 85) and 1.05 SD in S-CB017 (18 vs 13). A smaller IL-8 difference is not excluded.",
+       "DS02 samples are daily; the first post-treatment cytokine sample is 36 to 48 h after treatment. A 6 to 8 h effect of imidocarb cannot be seen. DS02 has 4 dogs with a post-treatment sample and no severity label; dose group is a design variable.",
+       "Species, source, country, assay run, definition and sampling time are fully aliased between files. Nothing here attributes a difference to species. Died includes euthanasia for poor prognosis. This is a descriptive re-analysis of comparisons that were already published."
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

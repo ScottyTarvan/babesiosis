@@ -1,0 +1,420 @@
+{
+  "family": "F3 Neutrophils, NETs, histones",
+  "agent_summary": "NETs (cfDNA, nucleosomes, MPO-DNA, CitH3) and circulating extracellular histones are grade-3 human severity mechanisms in malaria and sepsis, have canine assays already used in sepsis, IMHA, heatstroke and pancreatitis, and have never been measured in dogs with babesiosis: both are clear gaps. The granule-protein seed row is only partly filled in dogs: MPXI is an intracellular analyser index and NGAL studies are renal, so released plasma MPO/elastase and calprotectin/S100A12 are split out as added rows and are also gaps. DS07 (CB112 serum proteome, severity-labelled) already carries master proteins for histone H4, S100A8 and lactotransferrin, of which only lactotransferrin was reported.",
+  "mechanisms": [
+    {
+      "mechanism_id": "F3-01",
+      "family": "F3 Neutrophils, NETs, histones",
+      "mechanism": "Neutrophil extracellular traps (cell-free DNA, MPO-DNA, citrullinated histone H3)",
+      "added_by_agent": "no",
+      "human_conditions": [
+        "malaria",
+        "sepsis"
+      ],
+      "hu_articles": [
+        "HU008",
+        "HU005"
+      ],
+      "human_key_dois": [
+        "https://doi.org/10.1093/infdis/jiy661",
+        "https://doi.org/10.1172/jci.insight.136279",
+        "https://doi.org/10.1371/journal.pntd.0012424",
+        "https://doi.org/10.1038/s41598-023-46663-2"
+      ],
+      "human_n_studies": 6,
+      "human_grade": 3,
+      "human_direction": "higher in severe or fatal disease: cfDNA rises from uncomplicated to cerebral malaria and separates fatal retinopathy-positive cases; NET counts, elastase and CitH3 rise with severity in falciparum and knowlesi malaria; sepsis meta-analyses report higher cfDNA in non-survivors. Counterpoint: in HU008 (341 ICU patients) cfDNA and MPO-DNA did not predict death after severity adjustment; only an ex vivo NET-induction assay did.",
+      "cb_confirmed": [],
+      "cb_rejected": [
+        "CB107: review, states NETosis has not been studied in Babesia infections",
+        "CB028: review, NETs only as a hypothesis for thrombocytopenia",
+        "CB141: NETosis cited from literature, not measured",
+        "CB145: thromboinflammation cohort CH03, NETs discussed only",
+        "CB098: keyword hit only, no NET marker measured"
+      ],
+      "canine_pubmed": {
+        "queries": [
+          "(dog OR canine) AND babesi* AND (neutrophil extracellular trap* OR NETosis OR cell-free DNA OR nucleosome* OR histone*)",
+          "(dog OR canine) AND (cell-free DNA OR nucleosome* OR citrullinated histone OR neutrophil extracellular traps) AND (sepsis OR immune-mediated OR assay OR validation)",
+          "(dog OR canine OR dogs) AND (cell-free DNA OR nucleosomes OR citrullinated histone H3) AND (sepsis OR immune-mediated hemolytic anemia OR trauma)",
+          "(malaria OR sepsis) AND (neutrophil extracellular traps OR cell-free DNA OR nucleosomes OR citrullinated histone) AND (mortality OR severe)",
+          "(falciparum OR knowlesi OR vivax) malaria AND (neutrophil extracellular traps OR cell-free DNA OR nucleosomes OR MPO-DNA OR citrullinated) AND (severe OR mortality OR cerebral)"
+        ],
+        "dog_babesiosis_dois": []
+      },
+      "canine_status": "none",
+      "canine_severity_units": 0,
+      "canine_assay": "validated",
+      "assay_evidence": [
+        "https://doi.org/10.1111/vec.12592",
+        "https://doi.org/10.1111/vec.12773",
+        "https://doi.org/10.1111/vcp.12478",
+        "https://doi.org/10.1136/vetreco-2019-000357",
+        "https://doi.org/10.1371/journal.pone.0236228"
+      ],
+      "dog_genes": [
+        "PADI4",
+        "MPO",
+        "ELANE"
+      ],
+      "testable_now": "public_file",
+      "testable_detail": "DS06 has PADI4 (ENSCAFG00000015768), whole-blood gene expression only, a NET-capacity proxy rather than circulating NETs. No DS07 master protein, no DS02 variable. Circulating cfDNA or nucleosomes would need stored plasma; sample type changes cfDNA values.",
+      "gap": "yes",
+      "notes": "Canine cfDNA fluorometry is linear and repeatable and is prognostic in canine sepsis (cfDNA per neutrophil higher in non-survivors, https://doi.org/10.1111/vec.12773); nucleosome ELISA (Nu.Q H3.1) and a histone-DNA ELISA have been evaluated in dogs. Haemolysis and icterus interfere with the nucleosome ELISA (https://doi.org/10.1016/j.vetimm.2015.10.014), a real limitation in haemolytic babesiosis. A dog cfDNA sequencing study (https://doi.org/10.1016/j.ygeno.2018.05.020) detected Babesia DNA, not host NETs.",
+      "keywords": [],
+      "ds07_desc": []
+    },
+    {
+      "mechanism_id": "F3-02",
+      "family": "F3 Neutrophils, NETs, histones",
+      "mechanism": "Circulating extracellular histones (host and parasite)",
+      "added_by_agent": "no",
+      "human_conditions": [
+        "malaria",
+        "sepsis"
+      ],
+      "hu_articles": [
+        "HU021"
+      ],
+      "human_key_dois": [
+        "https://doi.org/10.1182/bloodadvances.2019001258",
+        "https://doi.org/10.1097/CCM.0000000000003839",
+        "https://doi.org/10.1155/2021/8395048",
+        "https://doi.org/10.1038/s41598-017-10830-z"
+      ],
+      "human_n_studies": 5,
+      "human_grade": 3,
+      "human_direction": "higher with severity and death: in paediatric cerebral malaria circulating histones are raised, roughly half of parasite origin, and track brain swelling; in 420 ICU patients histone levels correlate with organ injury markers and SOFA; in two smaller sepsis cohorts histones are far higher in non-survivors",
+      "cb_confirmed": [],
+      "cb_rejected": [
+        "CB010: parasite side only. A B. canis secreted histone was found in the parasite secretome from cultured infected RBC, not measured in dog plasma and not by severity",
+        "CB028: review, histone-platelet binding discussed",
+        "CB107: review, histones named as NET components",
+        "CB145: histones named in the thromboinflammation narrative, not measured"
+      ],
+      "canine_pubmed": {
+        "queries": [
+          "(dog OR canine) AND babesi* AND (neutrophil extracellular trap* OR NETosis OR cell-free DNA OR nucleosome* OR histone*)",
+          "(dog OR dogs OR canine) AND (histone OR histones) AND (plasma OR serum OR circulating) AND (sepsis OR inflammation OR ELISA OR mass spectrometry)",
+          "(sepsis OR septic shock OR malaria) AND (circulating histones OR extracellular histones OR histone H3 OR histone H4) AND (mortality OR organ failure OR severity)",
+          "histones[Title] AND (sepsis[Title] OR septic[Title]) AND (mortality OR prognosis OR organ dysfunction OR plasma)"
+        ],
+        "dog_babesiosis_dois": []
+      },
+      "canine_status": "none",
+      "canine_severity_units": 0,
+      "canine_assay": "validated",
+      "assay_evidence": [
+        "https://doi.org/10.1007/s12192-017-0817-6",
+        "https://doi.org/10.2460/ajvr.82.9.701",
+        "https://doi.org/10.1186/s12917-021-02991-x"
+      ],
+      "dog_genes": [
+        "H4C1",
+        "H2BC1",
+        "H3-3A",
+        "H4"
+      ],
+      "testable_now": "public_file",
+      "testable_detail": "DS07 master L7N0L3 Histone H4 (H4C7, 11 percent coverage), plus three master_candidate H4 entries (Q6B829, J9NRV0, F2Z4N2). DS07 rows carry the CB112 complicated/uncomplicated/control labels, so a severity contrast of serum histone H4 abundance is possible from the public file; abundance in a TMT serum proteome is not a validated histone concentration. No DS06 gene in the counts file, no DS02 variable.",
+      "gap": "yes",
+      "notes": "Serum histones have been measured in dogs by ELISA in heatstroke (associated with severity) and in acute pancreatitis, and nucleosome assays in canine cancer, so a canine method exists. Parasite-derived histones are plausible in Babesia (CB010 secretome) but untested in dog blood, and host versus parasite origin would need species-distinguishing peptides, as in the human cerebral malaria work.",
+      "keywords": [],
+      "ds07_desc": []
+    },
+    {
+      "mechanism_id": "F3-03",
+      "family": "F3 Neutrophils, NETs, histones",
+      "mechanism": "Neutrophil granule proteins (MPO, elastase, lactoferrin, NGAL, S100A8/A9)",
+      "added_by_agent": "no",
+      "human_conditions": [
+        "malaria",
+        "sepsis"
+      ],
+      "hu_articles": [
+        "HU005",
+        "HU006",
+        "HU013"
+      ],
+      "human_key_dois": [
+        "https://doi.org/10.1128/mBio.01300-15",
+        "https://doi.org/10.1093/ajrcmb/aanag021",
+        "https://doi.org/10.1126/scitranslmed.aar3619",
+        "https://doi.org/10.1186/s12936-016-1516-y"
+      ],
+      "human_n_studies": 5,
+      "human_grade": 3,
+      "human_direction": "higher in severe disease: plasma elastase, MPO and proteinase 3 raised in retinopathy-positive cerebral malaria (lactoferrin and lipocalin were not), neutrophil granule transcripts raised in sepsis non-survivors and in all severe malaria phenotypes in dual RNA-seq, NGAL predicts malarial acute kidney injury",
+      "cb_confirmed": [
+        {
+          "id": "CB050",
+          "what": "neutrophil myeloperoxidase index (MPXI, ADVIA 2120) in 140 infected dogs vs 20 controls, compared between non-survivors and survivors (median 22.8 vs 19.0, not significant) and correlated with cytokines; MPXI is intracellular MPO content, not released plasma MPO",
+          "severity_contrast": true,
+          "cohort": "CH03"
+        },
+        {
+          "id": "CB112",
+          "what": "serum proteome of 32 B. rossi cases (18 uncomplicated, 14 complicated) and 20 controls; lactotransferrin reported for the first time in this disease and validated by western blot (control vs complicated P = 0.003); S100A8 present among DS07 master proteins but not reported",
+          "severity_contrast": true,
+          "cohort": null
+        },
+        {
+          "id": "CB053",
+          "what": "urinary and plasma NGAL at presentation in 35 B. rossi cases (complicated vs uncomplicated) and 10 controls; both NGAL measures did not differ by complication status",
+          "severity_contrast": true,
+          "cohort": null
+        },
+        {
+          "id": "CB103",
+          "what": "serum and urine TMT proteomics in 22 B. canis cases stratified by renal dysfunction; urinary NGAL proposed as an early renal marker",
+          "severity_contrast": true,
+          "cohort": "CH06"
+        },
+        {
+          "id": "CB124",
+          "what": "urinary NGAL and KIM-1 across IRIS AKI grades in dogs with babesiosis or leptospirosis",
+          "severity_contrast": true,
+          "cohort": "CH10"
+        }
+      ],
+      "cb_rejected": [
+        "CB004, CB011, CB032, CB278, CB439: elastase named as a mechanism for antithrombin loss, not measured",
+        "CB019, CB091: platelet degranulation pathway terms in omics annotation",
+        "CB098, CB517: cite CB050 for MPO, no granule protein measured",
+        "CB093: NGAL cited from other work",
+        "CB107, CB145: reviews or narrative mentions"
+      ],
+      "canine_pubmed": {
+        "queries": [
+          "(dog OR canine) AND babesi* AND (myeloperoxidase OR elastase OR lactoferrin OR calprotectin OR S100A12 OR S100A8 OR NGAL OR lipocalin)",
+          "malaria AND (myeloperoxidase OR neutrophil elastase OR lactoferrin OR calprotectin OR S100A8 OR neutrophil granule) AND (severe OR mortality OR cerebral)",
+          "(dog OR dogs OR canine) AND (myeloperoxidase OR neutrophil elastase) AND (plasma OR serum) AND (ELISA OR validation) AND (sepsis OR inflammation OR SIRS)"
+        ],
+        "dog_babesiosis_dois": [
+          "https://doi.org/10.3389/fvets.2020.00072",
+          "https://doi.org/10.1038/s41598-023-37312-9",
+          "https://doi.org/10.1016/j.ttbdis.2020.101406",
+          "https://doi.org/10.1016/j.jprot.2022.104735",
+          "https://doi.org/10.1007/s11259-024-10416-x"
+        ]
+      },
+      "canine_status": "severity_tested",
+      "canine_severity_units": 4,
+      "canine_assay": "validated",
+      "assay_evidence": [
+        "https://doi.org/10.2460/ajvr.68.6.584",
+        "https://doi.org/10.2460/ajvr.69.7.845",
+        "https://doi.org/10.1016/j.vetimm.2011.09.011"
+      ],
+      "dog_genes": [
+        "MPO",
+        "ELANE",
+        "LTF",
+        "LCN2",
+        "S100A8",
+        "S100A9",
+        "S100A12",
+        "CAMP"
+      ],
+      "testable_now": "public_file",
+      "testable_detail": "DS07 masters F1PR54 lactotransferrin (6 percent) and C0LQL0 Protein S100 (S100A8, 9 percent), plus master_candidate J9P8S3 S100A8; DS06 has LTF, LCN2, S100A8, S100A12 and CAMP. No DS02 variable.",
+      "gap": "no",
+      "notes": "Counted units: CH03 (CB050), CB112, CB053 and CH06/CB103; CB124 adds a fifth but mixes leptospirosis and reports no babesiosis-only severity contrast, so it is not counted. The row is only nominally covered: NGAL is partly a renal tubular marker rather than a neutrophil activation marker, MPXI is cellular not released, and no study measured plasma MPO, elastase or calprotectin. See the two added rows.",
+      "keywords": [],
+      "ds07_desc": []
+    },
+    {
+      "mechanism_id": "F3-11",
+      "family": "F3 Neutrophils, NETs, histones",
+      "mechanism": "Released (plasma) myeloperoxidase and neutrophil elastase, as degranulation markers distinct from the cellular MPXI",
+      "added_by_agent": "yes",
+      "human_conditions": [
+        "malaria",
+        "sepsis"
+      ],
+      "hu_articles": [
+        "HU005",
+        "HU006"
+      ],
+      "human_key_dois": [
+        "https://doi.org/10.1128/mBio.01300-15",
+        "https://doi.org/10.1371/journal.pntd.0012424",
+        "https://doi.org/10.1093/ajrcmb/aanag021",
+        "https://doi.org/10.1172/jci.insight.136279"
+      ],
+      "human_n_studies": 4,
+      "human_grade": 3,
+      "human_direction": "higher in severe disease: plasma elastase and MPO raised in retinopathy-positive cerebral malaria, soluble elastase rises with severity and with acute lung injury in knowlesi malaria, plasma MPO correlates with cfDNA in fatal paediatric cerebral malaria, neutrophil degranulation genes raised in sepsis non-survivors",
+      "cb_confirmed": [],
+      "cb_rejected": [
+        "CB050: measured MPXI, the intracellular analyser index, not plasma MPO",
+        "CB004, CB011, CB032, CB278, CB439: elastase invoked to explain antithrombin loss, never measured"
+      ],
+      "canine_pubmed": {
+        "queries": [
+          "(dog OR canine) AND babesi* AND (myeloperoxidase OR elastase OR lactoferrin OR calprotectin OR S100A12 OR S100A8 OR NGAL OR lipocalin)",
+          "(dog OR dogs OR canine) AND (myeloperoxidase OR neutrophil elastase) AND (plasma OR serum) AND (ELISA OR validation) AND (sepsis OR inflammation OR SIRS)"
+        ],
+        "dog_babesiosis_dois": []
+      },
+      "canine_status": "none",
+      "canine_severity_units": 0,
+      "canine_assay": "validated",
+      "assay_evidence": [
+        "https://doi.org/10.2460/ajvr.68.6.584",
+        "https://doi.org/10.1371/journal.pone.0295268"
+      ],
+      "dog_genes": [
+        "MPO",
+        "ELANE"
+      ],
+      "testable_now": "stored_samples_only",
+      "testable_detail": "No MPO or ELANE master protein in DS07 and neither gene in the DS06 counts; no DS02 variable. A canine neutrophil elastase ELISA exists (purified canine NE, rabbit antibodies), and MPO has been assayed in canine CSF and serum in steroid-responsive meningitis-arteritis, so archived serum or plasma such as DS07's would be needed.",
+      "gap": "yes",
+      "notes": "Split from F3-03 because the only canine babesiosis MPO measure (CB050 MPXI) estimates granule content inside neutrophils and would be expected to move opposite to released MPO. The canine NE ELISA has modest spiking recovery (27 to 114 percent), so analytical validation in haemolysed serum would be needed first.",
+      "keywords": [
+        "plasma myeloperoxidase",
+        "released MPO",
+        "neutrophil elastase",
+        "\\bNE\\b",
+        "degranulation",
+        "proteinase 3",
+        "\\bPRTN3\\b"
+      ],
+      "ds07_desc": [
+        "Myeloperoxidase",
+        "Neutrophil elastase",
+        "Proteinase 3",
+        "Azurocidin"
+      ]
+    },
+    {
+      "mechanism_id": "F3-12",
+      "family": "F3 Neutrophils, NETs, histones",
+      "mechanism": "Calprotectin (S100A8/A9) and S100A12 as circulating neutrophil activation alarmins",
+      "added_by_agent": "yes",
+      "human_conditions": [
+        "sepsis",
+        "malaria"
+      ],
+      "hu_articles": [
+        "HU005",
+        "HU006"
+      ],
+      "human_key_dois": [
+        "https://doi.org/10.3389/fcimb.2026.1934020",
+        "https://doi.org/10.3343/alm.2026.0113",
+        "https://doi.org/10.1038/s41598-026-59502-x",
+        "https://doi.org/10.1126/scitranslmed.aar3619"
+      ],
+      "human_n_studies": 5,
+      "human_grade": 3,
+      "human_direction": "higher with severity: a 21-cohort meta-analysis gives a pooled prognostic AUC of about 0.74 for circulating calprotectin in acute infection and sepsis; single cohorts link it to hospital mortality independently of renal function and to sepsis-associated AKI; S100A8/A9 genes sit in the neutrophil granule signature of severe malaria. Effects are moderate and calprotectin did not beat clinical severity scores.",
+      "cb_confirmed": [],
+      "cb_rejected": [
+        "CB112: S100A8 (C0LQL0, J9P8S3) is present among the DS07 master proteins but calprotectin was not reported or validated in the article",
+        "no other CB note or text reports calprotectin, S100A8, S100A9 or S100A12 measurement in babesiosis"
+      ],
+      "canine_pubmed": {
+        "queries": [
+          "(dog OR canine) AND babesi* AND (myeloperoxidase OR elastase OR lactoferrin OR calprotectin OR S100A12 OR S100A8 OR NGAL OR lipocalin)",
+          "(dog OR dogs OR canine) AND (calprotectin OR S100A12 OR S100A8/A9) AND serum AND (validation OR assay OR immunoassay)",
+          "canine calprotectin[Title] OR canine S100A12[Title]",
+          "(calprotectin[Title] OR S100A8/A9[Title] OR S100A12[Title]) AND (sepsis[Title] OR septic[Title] OR malaria[Title])"
+        ],
+        "dog_babesiosis_dois": []
+      },
+      "canine_status": "none",
+      "canine_severity_units": 0,
+      "canine_assay": "validated",
+      "assay_evidence": [
+        "https://doi.org/10.2460/ajvr.69.7.845",
+        "https://doi.org/10.1016/j.vetimm.2011.09.011",
+        "https://doi.org/10.1016/j.biochi.2008.03.008"
+      ],
+      "dog_genes": [
+        "S100A8",
+        "S100A9",
+        "S100A12"
+      ],
+      "testable_now": "public_file",
+      "testable_detail": "DS07 master C0LQL0 Protein S100 (S100A8, 9 percent) and master_candidate J9P8S3 S100A8, in a file with complicated/uncomplicated/control labels, so a severity contrast of serum S100A8 abundance can be run now; DS06 has S100A8 and S100A12 whole-blood expression (transcript, not circulating protein). No DS02 variable. A concentration measurement would need stored serum and the canine radioimmunoassays.",
+      "gap": "yes",
+      "notes": "Canine calprotectin and canine S100A12 were purified from dog leukocytes and have analytically validated species-specific radioimmunoassays with reference intervals, so this is among the most readily testable F3 gaps. S100A9 was not detected as a DS07 master protein, so the heterodimer cannot be confirmed from the public file alone.",
+      "keywords": [
+        "calprotectin",
+        "S100A8",
+        "S100A9",
+        "S100A12",
+        "calgranulin",
+        "MRP8",
+        "MRP14"
+      ],
+      "ds07_desc": [
+        "Protein S100",
+        "S100 calcium binding protein"
+      ]
+    },
+    {
+      "mechanism_id": "F3-13",
+      "family": "F3 Neutrophils, NETs, histones",
+      "mechanism": "Band neutrophilia and the neutrophil left shift as a cheap severity marker already in the haematology record",
+      "added_by_agent": "yes",
+      "human_conditions": [
+        "malaria",
+        "sepsis"
+      ],
+      "hu_articles": [
+        "HU005",
+        "HU006"
+      ],
+      "human_key_dois": [
+        "https://doi.org/10.1126/scitranslmed.aar3619",
+        "https://doi.org/10.1371/journal.pntd.0012424",
+        "https://doi.org/10.1093/ajrcmb/aanag021"
+      ],
+      "human_n_studies": 3,
+      "human_grade": 2,
+      "human_direction": "higher in severe disease: granulopoiesis and immature-neutrophil transcripts best explain severity in Gambian severe malaria, neutrophilia raises the odds of acute lung injury in knowlesi malaria",
+      "cb_confirmed": [
+        {
+          "id": "CB050",
+          "what": "band neutrophil count at admission, higher in non-survivors than survivors (median 1.0 vs 0.3 x10^9/L, P < 0.001); segmented neutrophils also differed (P = 0.049)",
+          "severity_contrast": true,
+          "cohort": "CH03"
+        }
+      ],
+      "cb_rejected": [
+        "CB098: neutrophil counts over time in 5 experimental Beagles, dose groups only, no severity or outcome contrast"
+      ],
+      "canine_pubmed": {
+        "queries": [
+          "(dog OR canine) AND babesi* AND (myeloperoxidase OR elastase OR lactoferrin OR calprotectin OR S100A12 OR S100A8 OR NGAL OR lipocalin)",
+          "malaria AND (myeloperoxidase OR neutrophil elastase OR lactoferrin OR calprotectin OR S100A8 OR neutrophil granule) AND (severe OR mortality OR cerebral)"
+        ],
+        "dog_babesiosis_dois": [
+          "https://doi.org/10.3389/fvets.2020.00072"
+        ]
+      },
+      "canine_status": "severity_tested",
+      "canine_severity_units": 1,
+      "canine_assay": "validated",
+      "assay_evidence": [
+        "https://doi.org/10.3389/fvets.2020.00072"
+      ],
+      "dog_genes": [],
+      "testable_now": "public_file",
+      "testable_detail": "DS02 haematology includes the neutrophil counts for the five experimental Beagles; CB050 already provides the natural-infection outcome contrast. This row is included as the within-family comparator that is not a gap.",
+      "gap": "no",
+      "notes": "Added as a negative control for the family: the cheapest neutrophil marker has been tested against outcome in dogs with babesiosis, while every specific neutrophil-product marker has not.",
+      "keywords": [
+        "band neutrophil",
+        "left shift",
+        "segmented neutrophil",
+        "neutrophilia",
+        "immature neutrophil"
+      ],
+      "ds07_desc": []
+    }
+  ]
+}

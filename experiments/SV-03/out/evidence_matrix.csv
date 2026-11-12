@@ -1,0 +1,424 @@
+marker,marker_class,outcome_class,species_group,units,tested_units,H,L,N,X,U,D,consistent,consistent_direction,circular,circular_units,presumed_species_units,multivariable_units,multivariable_calls,unit_calls,S1_onderstepoort_collapse,S2_no_judgement_calls,S3_strict_unit_rule,S4_no_circular_units,S1_onderstepoort_collapse_consistent,S2_no_judgement_calls_consistent,S3_strict_unit_rule_consistent,S4_no_circular_units_consistent
+Age,signalment,mortality,B. rossi,3,2,0,0,2,0,0,1,False,,False,0,,0,,CB040:N;CB052:D;CH03:N,1t 0H/0L/1N/0X,2t 0H/0L/2N/0X,2t 0H/0L/2N/0X,2t 0H/0L/2N/0X,False,False,False,False
+Band neutrophils,haematology,mortality,B. rossi,3,2,2,0,0,0,0,1,True,higher,False,0,,0,,CB040:H;CH03:H;CH09:D,1t 1H/0L/0N/0X,2t 2H/0L/0N/0X consistent,2t 2H/0L/0N/0X consistent,2t 2H/0L/0N/0X consistent,False,True,True,True
+Body weight / body condition,signalment,mortality,B. rossi,2,2,0,0,2,0,0,0,False,,False,0,,0,,CB040:N;CH03:N,1t 0H/0L/1N/0X,2t 0H/0L/2N/0X,2t 0H/0L/2N/0X,2t 0H/0L/2N/0X,False,False,False,False
+Breed,signalment,anaemia_grade,mixed/unspecified,2,2,0,0,2,0,0,0,False,,False,0,,0,,CB238:N;CB492:N,2t 0H/0L/2N/0X,2t 0H/0L/2N/0X,2t 0H/0L/2N/0X,2t 0H/0L/2N/0X,False,False,False,False
+C-reactive protein,acute phase protein,mortality,B. rossi,2,2,0,0,2,0,0,0,False,,False,0,,1,CB376:N,CB376:N;CH03:N,1t 0H/0L/1N/0X,2t 0H/0L/2N/0X,2t 0H/0L/2N/0X,2t 0H/0L/2N/0X,False,False,False,False
+Cortisol,endocrine,other,B. rossi,2,2,2,0,0,0,0,0,True,higher,False,0,,0,,CB040:H;CH09:H,2t 2H/0L/0N/0X consistent,1t 1H/0L/0N/0X,2t 1H/0L/1N/0X,2t 2H/0L/0N/0X consistent,True,False,False,True
+GGT,biochemistry,severity_grade,B. canis,2,2,1,1,0,0,0,0,False,,False,0,,0,,CB307:H;CH12:L,2t 1H/1L/0N/0X,2t 1H/1L/0N/0X,2t 1H/1L/0N/0X,2t 1H/1L/0N/0X,False,False,False,False
+Haematocrit/PCV,haematology,mortality,B. rossi,3,2,1,1,0,0,0,1,False,,False,0,,0,,CB040:H;CB052:D;CH03:L,1t 0H/0L/0N/1X,2t 1H/1L/0N/0X,2t 0H/1L/1N/0X,2t 1H/1L/0N/0X,False,False,False,False
+Haematocrit/PCV,haematology,mortality,mixed/unspecified,2,2,0,1,1,0,0,0,False,,False,0,,0,,CB238:L;CH18:N,2t 0H/1L/1N/0X,2t 0H/1L/1N/0X,2t 0H/1L/1N/0X,2t 0H/1L/1N/0X,False,False,False,False
+Haemoglobin,haematology,mortality,mixed/unspecified,2,2,0,1,1,0,0,0,False,,False,0,,0,,CB238:L;CH18:N,2t 0H/1L/1N/0X,2t 0H/1L/1N/0X,2t 0H/1L/1N/0X,2t 0H/1L/1N/0X,False,False,False,False
+Malondialdehyde / TBARS,oxidative stress,anaemia_grade,B. canis,2,2,1,0,1,0,0,0,False,,False,0,,0,,CB006:H;CH33:N,2t 1H/0L/1N/0X,2t 1H/0L/1N/0X,2t 0H/0L/2N/0X,2t 1H/0L/1N/0X,False,False,False,False
+Malondialdehyde / TBARS,oxidative stress,complicated,B. canis,2,2,0,0,2,0,0,0,False,,False,0,,0,,CB006:N;CH33:N,2t 0H/0L/2N/0X,2t 0H/0L/2N/0X,2t 0H/0L/2N/0X,2t 0H/0L/2N/0X,False,False,False,False
+Red blood cell count,haematology,mortality,mixed/unspecified,2,2,0,1,1,0,0,0,False,,False,0,,0,,CB238:L;CH18:N,2t 0H/1L/1N/0X,2t 0H/1L/1N/0X,2t 0H/1L/1N/0X,2t 0H/1L/1N/0X,False,False,False,False
+Thyroid hormones,endocrine,other,B. rossi,2,2,0,2,0,0,0,0,True,lower,False,0,,0,,CB040:L;CH09:L,2t 0H/2L/0N/0X consistent,1t 0H/1L/0N/0X,2t 0H/1L/1N/0X,2t 0H/2L/0N/0X consistent,True,False,False,True
+White blood cell count,haematology,mortality,B. rossi,2,2,1,0,1,0,0,0,False,,False,0,,0,,CB040:H;CH03:N,1t 1H/0L/0N/0X,2t 1H/0L/1N/0X,2t 1H/0L/1N/0X,2t 1H/0L/1N/0X,False,False,False,False
+ACTH,endocrine,specific_complication,B. rossi,1,1,0,0,1,0,0,0,False,,False,0,,0,,CB342:N,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,False,False,False,False
+ALP,biochemistry,complicated,B. canis,1,1,1,0,0,0,0,0,False,,True,1,,0,,CH33:H,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,,False,False,False,False
+ALP,biochemistry,mortality,B. canis,1,1,0,0,1,0,0,0,False,,False,0,,0,,CH21:N,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,False,False,False,False
+ALP,biochemistry,mortality,mixed/unspecified,1,1,0,0,1,0,0,0,False,,False,0,,0,,CH18:N,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,False,False,False,False
+ALP,biochemistry,severity_grade,B. canis,2,1,1,0,0,0,0,1,False,,False,0,,0,,CB537:D;CH12:H,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,False,False,False,False
+ALP,biochemistry,severity_grade,mixed/unspecified,1,1,1,0,0,0,0,0,False,,True,1,,0,,CB220:H,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,,False,False,False,False
+ALP,biochemistry,specific_complication,B. canis,2,1,1,0,0,0,0,1,False,,True,2,,0,,CB109:D;CB536:H,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,,False,False,False,False
+ALP,biochemistry,specific_complication,B. gibsoni,1,1,0,0,1,0,0,0,False,,False,0,,0,,CB045:N,1t 0H/0L/1N/0X,,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,False,False,False,False
+ALT,biochemistry,complicated,B. canis,1,1,1,0,0,0,0,0,False,,True,1,,0,,CH33:H,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,,False,False,False,False
+ALT,biochemistry,mortality,B. canis,1,1,0,0,1,0,0,0,False,,False,0,,0,,CH21:N,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,False,False,False,False
+ALT,biochemistry,mortality,mixed/unspecified,1,1,0,0,1,0,0,0,False,,False,0,,0,,CH18:N,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,False,False,False,False
+ALT,biochemistry,severity_grade,B. canis,2,1,1,0,0,0,0,1,False,,False,0,,0,,CH06:D;CH12:H,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,False,False,False,False
+ALT,biochemistry,severity_grade,mixed/unspecified,2,1,1,0,0,0,0,1,False,,True,2,,0,,CB038:D;CB220:H,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,,False,False,False,False
+ALT,biochemistry,specific_complication,B. canis,2,1,1,0,0,0,0,1,False,,True,2,,0,,CB109:D;CB536:H,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,,False,False,False,False
+ALT,biochemistry,specific_complication,B. gibsoni,1,1,0,0,1,0,0,0,False,,False,0,,0,,CB045:N,1t 0H/0L/1N/0X,,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,False,False,False,False
+AST,biochemistry,severity_grade,B. canis,2,1,1,0,0,0,0,1,False,,False,0,,0,,CH06:D;CH12:H,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,False,False,False,False
+AST,biochemistry,severity_grade,mixed/unspecified,2,1,1,0,0,0,0,1,False,,True,2,,0,,CB038:D;CB220:H,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,,False,False,False,False
+AST,biochemistry,specific_complication,B. canis,2,1,1,0,0,0,0,1,False,,True,2,,0,,CB109:D;CB536:H,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,,False,False,False,False
+"Acid-base (pH, bicarbonate, base excess, anion gap)",acid-base and perfusion,mortality,B. rossi,1,1,0,1,0,0,0,0,False,,False,0,,0,,CB040:L,1t 0H/1L/0N/0X,1t 0H/1L/0N/0X,1t 0H/0L/1N/0X,1t 0H/1L/0N/0X,False,False,False,False
+"Acid-base (pH, bicarbonate, base excess, anion gap)",acid-base and perfusion,other,B. rossi,1,1,0,0,0,1,0,0,False,,False,0,,0,,CB040:X,1t 0H/0L/0N/1X,1t 0H/0L/0N/1X,1t 0H/0L/1N/0X,1t 0H/0L/0N/1X,False,False,False,False
+"Adhesion molecules (ICAM-1, VCAM-1, selectins)",endothelial,complicated,B. canis,1,1,1,0,0,0,0,0,False,,False,0,,0,,CB004:H,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,1t 0H/0L/1N/0X,1t 1H/0L/0N/0X,False,False,False,False
+Age,signalment,anaemia_grade,mixed/unspecified,2,1,0,0,1,0,1,0,False,,False,0,,0,,CB238:U;CB492:N,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,False,False,False,False
+Age,signalment,mortality,B. canis,1,1,0,0,1,0,0,0,False,,False,0,,0,,CH21:N,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,False,False,False,False
+Age,signalment,specific_complication,B. rossi,1,1,0,0,1,0,0,0,False,,False,0,,0,,CB342:N,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,False,False,False,False
+Age,signalment,treatment_intensity,B. rossi,1,1,0,1,0,0,0,0,False,,False,0,,0,,CB418:L,1t 0H/1L/0N/0X,,1t 0H/1L/0N/0X,1t 0H/1L/0N/0X,False,False,False,False
+Albumin,biochemistry,anaemia_grade,B. canis,1,1,0,1,0,0,0,0,False,,False,0,,0,,CH05:L,1t 0H/1L/0N/0X,1t 0H/1L/0N/0X,1t 0H/1L/0N/0X,1t 0H/1L/0N/0X,False,False,False,False
+Albumin,biochemistry,anaemia_grade,B. rossi,1,1,0,0,1,0,0,0,False,,False,0,CB518,0,,CB518:N,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,False,False,False,False
+Albumin,biochemistry,complicated,B. canis,2,1,0,0,1,0,0,1,False,,False,0,,0,,CH05:D;CH33:N,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,False,False,False,False
+Albumin,biochemistry,mortality,B. canis,1,1,0,0,1,0,0,0,False,,False,0,,0,,CH21:N,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,False,False,False,False
+Albumin,biochemistry,other,B. rossi,1,1,0,1,0,0,0,0,False,,False,0,,0,,CB040:L,1t 0H/1L/0N/0X,1t 0H/1L/0N/0X,1t 0H/1L/0N/0X,1t 0H/1L/0N/0X,False,False,False,False
+Albumin:globulin ratio,biochemistry,anaemia_grade,B. canis,1,1,0,1,0,0,0,0,False,,False,0,,0,,CH05:L,1t 0H/1L/0N/0X,1t 0H/1L/0N/0X,1t 0H/1L/0N/0X,1t 0H/1L/0N/0X,False,False,False,False
+Antibody titre / serostatus,immunology,severity_grade,B. canis,1,1,0,1,0,0,0,0,False,,False,0,,0,,CH12:L,1t 0H/1L/0N/0X,1t 0H/1L/0N/0X,1t 0H/1L/0N/0X,1t 0H/1L/0N/0X,False,False,False,False
+Antithrombin,coagulation,mortality,B. rossi,1,1,0,1,0,0,0,0,False,,False,0,,0,,CH03:L,1t 0H/1L/0N/0X,1t 0H/1L/0N/0X,1t 0H/1L/0N/0X,1t 0H/1L/0N/0X,False,False,False,False
+Band neutrophils,haematology,specific_complication,B. gibsoni,1,1,1,0,0,0,0,0,False,,False,0,,0,,CB045:H,1t 1H/0L/0N/0X,,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,False,False,False,False
+Band neutrophils,haematology,treatment_intensity,B. rossi,1,1,1,0,0,0,0,0,False,,False,0,,1,CB418:H,CB418:H,1t 1H/0L/0N/0X,,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,False,False,False,False
+Bilirubin,biochemistry,anaemia_grade,B. rossi,1,1,0,0,1,0,0,0,False,,False,0,CB518,0,,CB518:N,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,False,False,False,False
+Bilirubin,biochemistry,complicated,B. canis,1,1,1,0,0,0,0,0,False,,True,1,,0,,CH33:H,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,,False,False,False,False
+Bilirubin,biochemistry,mortality,B. canis,1,1,0,0,1,0,0,0,False,,False,0,,0,,CH21:N,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,False,False,False,False
+Bilirubin,biochemistry,mortality,B. rossi,1,1,1,0,0,0,0,0,False,,False,0,,0,,CB040:H,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,False,False,False,False
+Bilirubin,biochemistry,mortality,mixed/unspecified,1,1,0,0,1,0,0,0,False,,False,0,,0,,CH18:N,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,False,False,False,False
+Bilirubin,biochemistry,other,B. rossi,1,1,1,0,0,0,0,0,False,,False,0,,0,,CB040:H,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,False,False,False,False
+Bilirubin,biochemistry,severity_grade,B. canis,3,1,1,0,0,0,0,2,False,,False,0,,0,,CB537:D;CH06:D;CH12:H,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,False,False,False,False
+Bilirubin,biochemistry,severity_grade,mixed/unspecified,2,1,1,0,0,0,0,1,False,,True,2,,0,,CB038:D;CB220:H,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,,False,False,False,False
+Bilirubin,biochemistry,specific_complication,B. gibsoni,1,1,0,0,1,0,0,0,False,,False,0,,0,,CB045:N,1t 0H/0L/1N/0X,,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,False,False,False,False
+Blood gases and oxygenation,acid-base and perfusion,mortality,B. rossi,1,1,0,0,1,0,0,0,False,,False,0,,0,,CB040:N,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,False,False,False,False
+Blood gases and oxygenation,acid-base and perfusion,other,B. rossi,1,1,0,1,0,0,0,0,False,,False,0,,0,,CB040:L,1t 0H/1L/0N/0X,1t 0H/1L/0N/0X,1t 0H/0L/1N/0X,1t 0H/1L/0N/0X,False,False,False,False
+Body temperature,clinical sign,anaemia_grade,B. rossi,1,1,0,1,0,0,0,0,False,,False,0,CB518,0,,CB518:L,1t 0H/1L/0N/0X,1t 0H/1L/0N/0X,1t 0H/1L/0N/0X,1t 0H/1L/0N/0X,False,False,False,False
+Body temperature,clinical sign,anaemia_grade,mixed/unspecified,1,1,0,1,0,0,0,0,False,,False,0,,0,,CB492:L,1t 0H/1L/0N/0X,1t 0H/1L/0N/0X,1t 0H/1L/0N/0X,1t 0H/1L/0N/0X,False,False,False,False
+Body temperature,clinical sign,mortality,B. rossi,2,1,0,1,0,0,0,1,False,,False,0,,0,,CB040:L;CH09:D,1t 0H/1L/0N/0X,1t 0H/1L/0N/0X,1t 0H/1L/0N/0X,1t 0H/1L/0N/0X,False,False,False,False
+Body temperature,clinical sign,mortality,mixed/unspecified,1,1,0,0,1,0,0,0,False,,False,0,,0,,CB238:N,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,False,False,False,False
+Body temperature,clinical sign,other,B. rossi,1,1,0,1,0,0,0,0,False,,False,0,,0,,CB040:L,1t 0H/1L/0N/0X,1t 0H/1L/0N/0X,1t 0H/1L/0N/0X,1t 0H/1L/0N/0X,False,False,False,False
+Body temperature,clinical sign,parasitaemia_level,B. rossi,1,1,0,0,1,0,0,0,False,,False,0,,0,,CH09:N,1t 0H/0L/1N/0X,,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,False,False,False,False
+Body temperature,clinical sign,specific_complication,B. rossi,1,1,0,1,0,0,0,0,False,,False,0,,0,,CB342:L,1t 0H/1L/0N/0X,1t 0H/1L/0N/0X,1t 0H/0L/1N/0X,1t 0H/1L/0N/0X,False,False,False,False
+Body weight / body condition,signalment,specific_complication,B. rossi,1,1,0,0,1,0,0,0,False,,False,0,,0,,CB342:N,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,False,False,False,False
+Body weight / body condition,signalment,treatment_intensity,B. rossi,1,1,0,0,1,0,0,0,False,,False,0,,0,,CB418:N,1t 0H/0L/1N/0X,,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,False,False,False,False
+C-reactive protein,acute phase protein,mortality,B. canis,1,1,0,0,1,0,0,0,False,,False,0,,0,,CH21:N,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,False,False,False,False
+C-reactive protein,acute phase protein,mortality,mixed/unspecified,1,1,1,0,0,0,0,0,False,,False,0,,0,,CH08:H,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,False,False,False,False
+C-reactive protein,acute phase protein,parasitaemia_level,B. rossi,1,1,0,0,1,0,0,0,False,,False,0,,0,,CH09:N,1t 0H/0L/1N/0X,,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,False,False,False,False
+C-reactive protein,acute phase protein,severity_grade,B. canis,2,1,1,0,0,0,0,1,False,,False,0,,0,,CH06:D;CH12:H,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,False,False,False,False
+C-reactive protein,acute phase protein,specific_complication,B. gibsoni,1,1,0,0,1,0,0,0,False,,False,0,,0,,CB045:N,1t 0H/0L/1N/0X,,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,False,False,False,False
+C-reactive protein,acute phase protein,treatment_intensity,B. rossi,1,1,0,0,1,0,0,0,False,,False,0,,1,CB376:N,CB376:N,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,False,False,False,False
+Calcium,electrolyte,mortality,B. canis,1,1,0,0,1,0,0,0,False,,False,0,,0,,CH21:N,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,False,False,False,False
+Catalase,oxidative stress,anaemia_grade,B. canis,1,1,0,1,0,0,0,0,False,,False,0,,0,,CB006:L,1t 0H/1L/0N/0X,1t 0H/1L/0N/0X,1t 0H/0L/1N/0X,1t 0H/1L/0N/0X,False,False,False,False
+Catalase,oxidative stress,complicated,B. canis,1,1,0,0,1,0,0,0,False,,False,0,,0,,CB006:N,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,False,False,False,False
+Catalase,oxidative stress,mortality,B. canis,1,1,0,1,0,0,0,0,False,,False,0,,0,,CB006:L,1t 0H/1L/0N/0X,1t 0H/1L/0N/0X,1t 0H/1L/0N/0X,1t 0H/1L/0N/0X,False,False,False,False
+Catalase,oxidative stress,mortality,mixed/unspecified,1,1,0,1,0,0,0,0,False,,False,0,,0,,CH08:L,1t 0H/1L/0N/0X,1t 0H/1L/0N/0X,1t 0H/1L/0N/0X,1t 0H/1L/0N/0X,False,False,False,False
+Catalase,oxidative stress,organ_dysfunction,B. canis,1,1,0,1,0,0,0,0,False,,False,0,,0,,CB006:L,1t 0H/1L/0N/0X,1t 0H/1L/0N/0X,1t 0H/0L/1N/0X,1t 0H/1L/0N/0X,False,False,False,False
+Chloride,electrolyte,mortality,B. canis,1,1,0,0,1,0,0,0,False,,False,0,,0,,CH21:N,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,False,False,False,False
+Cholesterol,biochemistry,mortality,B. canis,1,1,0,0,1,0,0,0,False,,False,0,,0,,CH21:N,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,False,False,False,False
+Cholesterol,biochemistry,specific_complication,B. canis,1,1,0,0,1,0,0,0,False,,False,0,,0,,CH35:N,1t 0H/0L/1N/0X,,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,False,False,False,False
+Co-infection,parasitology,anaemia_grade,B. canis,1,1,0,0,1,0,0,0,False,,False,0,,0,,CB536:N,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,False,False,False,False
+Co-infection,parasitology,mortality,B. vogeli,1,1,0,0,1,0,0,0,False,,False,0,,0,,CB075:N,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,False,False,False,False
+Co-infection,parasitology,severity_grade,B. canis,1,1,0,0,1,0,0,0,False,,False,0,,0,,CB536:N,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,False,False,False,False
+Co-infection,parasitology,specific_complication,B. canis,1,1,0,0,1,0,0,0,False,,False,0,,0,,CB536:N,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,False,False,False,False
+Coagulation factor activity,coagulation,complicated,B. rossi,1,1,0,1,0,0,0,0,False,,False,0,,0,,CB112:L,1t 0H/1L/0N/0X,1t 0H/1L/0N/0X,1t 0H/1L/0N/0X,1t 0H/1L/0N/0X,False,False,False,False
+Coagulation factor activity,coagulation,mortality,B. rossi,1,1,0,1,0,0,0,0,False,,False,0,,0,,CH03:L,1t 0H/1L/0N/0X,1t 0H/1L/0N/0X,1t 0H/0L/1N/0X,1t 0H/1L/0N/0X,False,False,False,False
+Collapse,clinical sign,mortality,B. rossi,1,1,1,0,0,0,0,0,False,,False,0,,0,,CB040:H,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,False,False,False,False
+Copper,biochemistry,mortality,mixed/unspecified,1,1,0,0,1,0,0,0,False,,False,0,,0,,CH08:N,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,False,False,False,False
+Cortisol,endocrine,mortality,B. rossi,1,1,1,0,0,0,0,0,False,,False,0,,0,,CB040:H,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,False,False,False,False
+Cortisol,endocrine,specific_complication,B. rossi,1,1,1,0,0,0,0,0,False,,False,0,,0,,CB342:H,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,1t 0H/0L/1N/0X,1t 1H/0L/0N/0X,False,False,False,False
+Creatine kinase,biochemistry,complicated,B. canis,1,1,0,0,1,0,0,0,False,,True,1,,0,,CH33:N,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,,False,False,False,False
+Creatine kinase,biochemistry,severity_grade,B. canis,1,1,1,0,0,0,0,0,False,,False,0,,0,,CH12:H,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,False,False,False,False
+Creatinine,biochemistry,complicated,B. canis,1,1,1,0,0,0,0,0,False,,True,1,,0,,CH33:H,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,,False,False,False,False
+Creatinine,biochemistry,complicated,B. rossi,2,1,0,0,1,0,1,0,False,,True,2,,0,,CB053:N;CB112:U,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,,False,False,False,False
+Creatinine,biochemistry,mortality,B. canis,2,1,0,0,1,0,0,1,False,,False,0,,0,,CB106:D;CH21:N,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,False,False,False,False
+Creatinine,biochemistry,mortality,B. rossi,1,1,1,0,0,0,0,0,False,,False,0,,0,,CB040:H,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,False,False,False,False
+Creatinine,biochemistry,other,B. rossi,1,1,1,0,0,0,0,0,False,,False,0,,0,,CB040:H,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,False,False,False,False
+Creatinine,biochemistry,severity_grade,B. canis,3,1,1,0,0,0,0,2,False,,True,1,,0,,CB307:H;CB537:D;CH06:D,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,False,False,False,False
+Creatinine,biochemistry,specific_complication,B. canis,2,1,1,0,0,0,0,1,False,,True,2,,0,,CB109:D;CB536:H,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,,False,False,False,False
+Creatinine,biochemistry,specific_complication,B. gibsoni,1,1,0,0,1,0,0,0,False,,False,0,,0,,CB045:N,1t 0H/0L/1N/0X,,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,False,False,False,False
+D-dimer,coagulation,mortality,B. rossi,1,1,0,0,1,0,0,0,False,,False,0,,0,,CH03:N,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,False,False,False,False
+Duration of illness before presentation,clinical history,specific_complication,B. rossi,1,1,0,0,1,0,0,0,False,,False,0,,0,,CB342:N,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,False,False,False,False
+Echocardiographic findings,cardiac,mortality,mixed/unspecified,1,1,0,0,0,1,0,0,False,,False,0,,0,,CH18:X,1t 0H/0L/0N/1X,1t 0H/0L/0N/1X,1t 0H/0L/1N/0X,1t 0H/0L/0N/1X,False,False,False,False
+Eosinophil count,haematology,mortality,B. rossi,1,1,0,0,1,0,0,0,False,,False,0,,0,,CH03:N,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,False,False,False,False
+Eosinophil count,haematology,specific_complication,B. gibsoni,1,1,0,0,1,0,0,0,False,,False,0,,0,,CB045:N,1t 0H/0L/1N/0X,,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,False,False,False,False
+Fibrinogen,coagulation,complicated,B. rossi,1,1,1,0,0,0,0,0,False,,False,0,,0,,CB112:H,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,False,False,False,False
+Fibrinogen,coagulation,mortality,B. rossi,1,1,0,0,1,0,0,0,False,,False,0,,0,,CH03:N,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,False,False,False,False
+"Fibrinolysis (plasminogen, antiplasmin)",coagulation,complicated,B. canis,1,1,1,0,0,0,0,0,False,,False,0,,0,,CB004:H,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,1t 0H/0L/1N/0X,1t 1H/0L/0N/0X,False,False,False,False
+"Fibrinolysis (plasminogen, antiplasmin)",coagulation,mortality,B. rossi,1,1,0,0,1,0,0,0,False,,False,0,,0,,CH03:N,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,False,False,False,False
+Fractional excretion of electrolytes,urine,specific_complication,B. canis,1,1,1,0,0,0,0,0,False,,True,1,,0,,CH35:H,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,,False,False,False,False
+GGT,biochemistry,complicated,B. canis,1,1,1,0,0,0,0,0,False,,True,1,,0,,CH33:H,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,,False,False,False,False
+GGT,biochemistry,severity_grade,mixed/unspecified,1,1,1,0,0,0,0,0,False,,True,1,,0,,CB220:H,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,,False,False,False,False
+GM-CSF,cytokine,complicated,B. canis,1,1,1,0,0,0,0,0,False,,False,0,,0,,CH23:H,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,1t 0H/0L/1N/0X,1t 1H/0L/0N/0X,False,False,False,False
+GM-CSF,cytokine,mortality,B. rossi,1,1,0,0,1,0,0,0,False,,False,0,,0,,CH03:N,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,False,False,False,False
+Gene expression / transcriptomics,omics,severity_grade,B. canis,1,1,0,0,1,0,0,0,False,,False,0,,0,,CB109:N,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,False,False,False,False
+Globulins,biochemistry,anaemia_grade,B. rossi,1,1,0,0,1,0,0,0,False,,False,0,CB518,0,,CB518:N,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,False,False,False,False
+Globulins,biochemistry,severity_grade,B. canis,1,1,0,1,0,0,0,0,False,,False,0,,0,,CH12:L,1t 0H/1L/0N/0X,1t 0H/1L/0N/0X,1t 0H/1L/0N/0X,1t 0H/1L/0N/0X,False,False,False,False
+Glucose,biochemistry,complicated,B. canis,1,1,0,0,1,0,0,0,False,,False,0,,0,,CH33:N,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,False,False,False,False
+Glucose,biochemistry,mortality,B. canis,1,1,0,0,1,0,0,0,False,,False,0,,0,,CH21:N,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,False,False,False,False
+Glucose,biochemistry,mortality,B. rossi,1,1,0,1,0,0,0,0,False,,False,0,,0,,CB040:L,1t 0H/1L/0N/0X,1t 0H/1L/0N/0X,1t 0H/0L/1N/0X,1t 0H/1L/0N/0X,False,False,False,False
+Glucose,biochemistry,other,B. rossi,1,1,0,0,1,0,0,0,False,,False,0,,0,,CB040:N,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,False,False,False,False
+Glutathione / glutathione peroxidase,oxidative stress,anaemia_grade,B. canis,1,1,0,1,0,0,0,0,False,,False,0,,0,,CB006:L,1t 0H/1L/0N/0X,1t 0H/1L/0N/0X,1t 0H/0L/1N/0X,1t 0H/1L/0N/0X,False,False,False,False
+Glutathione / glutathione peroxidase,oxidative stress,complicated,B. canis,1,1,0,0,1,0,0,0,False,,False,0,,0,,CB006:N,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,False,False,False,False
+Glutathione / glutathione peroxidase,oxidative stress,mortality,B. canis,1,1,0,1,0,0,0,0,False,,False,0,,0,,CB006:L,1t 0H/1L/0N/0X,1t 0H/1L/0N/0X,1t 0H/1L/0N/0X,1t 0H/1L/0N/0X,False,False,False,False
+Glutathione / glutathione peroxidase,oxidative stress,mortality,mixed/unspecified,1,1,0,0,1,0,0,0,False,,False,0,,0,,CH08:N,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,False,False,False,False
+Glutathione / glutathione peroxidase,oxidative stress,organ_dysfunction,B. canis,1,1,0,1,0,0,0,0,False,,False,0,,0,,CB006:L,1t 0H/1L/0N/0X,1t 0H/1L/0N/0X,1t 0H/1L/0N/0X,1t 0H/1L/0N/0X,False,False,False,False
+HMGB-1,immunology,complicated,B. canis,1,1,0,0,1,0,0,0,False,,False,0,,0,,CB004:N,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,False,False,False,False
+Haematocrit/PCV,haematology,anaemia_grade,B. canis,2,1,0,1,0,0,0,1,False,,True,2,,0,,CB109:D;CB536:L,1t 0H/1L/0N/0X,1t 0H/1L/0N/0X,1t 0H/1L/0N/0X,,False,False,False,False
+Haematocrit/PCV,haematology,complicated,B. canis,3,1,0,0,1,0,1,1,False,,False,0,,0,,CH05:D;CH23:U;CH33:N,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,False,False,False,False
+Haematocrit/PCV,haematology,mortality,B. canis,1,1,0,1,0,0,0,0,False,,False,0,,0,,CH21:L,1t 0H/1L/0N/0X,1t 0H/1L/0N/0X,1t 0H/1L/0N/0X,1t 0H/1L/0N/0X,False,False,False,False
+Haematocrit/PCV,haematology,other,B. rossi,1,1,0,1,0,0,0,0,False,,False,0,,0,,CB040:L,1t 0H/1L/0N/0X,1t 0H/1L/0N/0X,1t 0H/1L/0N/0X,1t 0H/1L/0N/0X,False,False,False,False
+Haematocrit/PCV,haematology,specific_complication,B. gibsoni,1,1,0,0,1,0,0,0,False,,False,0,,0,,CB045:N,1t 0H/0L/1N/0X,,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,False,False,False,False
+Haematocrit/PCV,haematology,specific_complication,B. rossi,1,1,0,1,0,0,0,0,False,,False,0,,0,,CB342:L,1t 0H/1L/0N/0X,1t 0H/1L/0N/0X,1t 0H/1L/0N/0X,1t 0H/1L/0N/0X,False,False,False,False
+Haemoglobin,haematology,anaemia_grade,B. canis,2,1,0,1,0,0,0,1,False,,True,2,,0,,CB109:D;CB536:L,1t 0H/1L/0N/0X,1t 0H/1L/0N/0X,1t 0H/1L/0N/0X,,False,False,False,False
+Haemoglobin,haematology,mortality,B. canis,1,1,0,0,1,0,0,0,False,,False,0,,0,,CH21:N,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,False,False,False,False
+Haemoglobin,haematology,specific_complication,B. gibsoni,1,1,0,0,1,0,0,0,False,,False,0,,0,,CB045:N,1t 0H/0L/1N/0X,,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,False,False,False,False
+Heart rate,clinical sign,anaemia_grade,B. rossi,1,1,0,0,1,0,0,0,False,,False,0,CB518,0,,CB518:N,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,False,False,False,False
+Heart rate,clinical sign,mortality,mixed/unspecified,1,1,1,0,0,0,0,0,False,,False,0,,0,,CB238:H,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,False,False,False,False
+Heart rate,clinical sign,specific_complication,B. rossi,1,1,0,0,1,0,0,0,False,,False,0,,0,,CB342:N,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,False,False,False,False
+Hepcidin,acute phase protein,mortality,mixed/unspecified,1,1,1,0,0,0,0,0,False,,False,0,,0,,CH08:H,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,False,False,False,False
+IL-10,cytokine,complicated,B. canis,1,1,0,0,1,0,0,0,False,,False,0,,0,,CH23:N,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,False,False,False,False
+IL-10,cytokine,mortality,B. rossi,1,1,0,0,1,0,0,0,False,,False,0,,0,,CH03:N,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,False,False,False,False
+IL-10,cytokine,parasitaemia_level,B. rossi,1,1,1,0,0,0,0,0,False,,False,0,,0,,CH09:H,1t 1H/0L/0N/0X,,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,False,False,False,False
+IL-10,cytokine,severity_grade,B. canis,1,1,0,0,1,0,0,0,False,,False,0,,0,,CB109:N,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,False,False,False,False
+IL-18,cytokine,complicated,B. canis,1,1,0,0,1,0,0,0,False,,False,0,,0,,CH23:N,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,False,False,False,False
+IL-18,cytokine,mortality,B. rossi,1,1,0,0,1,0,0,0,False,,False,0,,0,,CH03:N,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,False,False,False,False
+IL-2,cytokine,complicated,B. canis,1,1,1,0,0,0,0,0,False,,False,0,,0,,CH23:H,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,1t 0H/0L/1N/0X,1t 1H/0L/0N/0X,False,False,False,False
+IL-2,cytokine,mortality,B. rossi,1,1,0,0,1,0,0,0,False,,False,0,,0,,CH03:N,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,False,False,False,False
+IL-6,cytokine,mortality,B. rossi,2,1,1,0,0,0,0,1,False,,False,0,,0,,CH03:H;CH09:D,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,False,False,False,False
+IL-8 (CXCL8),cytokine,complicated,B. canis,1,1,0,0,1,0,0,0,False,,False,0,,0,,CH23:N,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,False,False,False,False
+IL-8 (CXCL8),cytokine,mortality,B. rossi,1,1,0,0,1,0,0,0,False,,False,0,,0,,CH03:N,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,False,False,False,False
+Icterus,clinical sign,specific_complication,B. rossi,1,1,0,0,1,0,0,0,False,,False,0,,0,,CB342:N,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,False,False,False,False
+Immune complexes / complement,immunology,complicated,B. rossi,1,1,0,0,0,1,0,0,False,,False,0,,0,,CB112:X,1t 0H/0L/0N/1X,1t 0H/0L/0N/1X,1t 0H/0L/1N/0X,1t 0H/0L/0N/1X,False,False,False,False
+Ionised calcium,electrolyte,mortality,B. rossi,1,1,0,1,0,0,0,0,False,,False,0,,0,,CB040:L,1t 0H/1L/0N/0X,1t 0H/1L/0N/0X,1t 0H/1L/0N/0X,1t 0H/1L/0N/0X,False,False,False,False
+Ionised calcium,electrolyte,other,B. rossi,1,1,0,1,0,0,0,0,False,,False,0,,0,,CB040:L,1t 0H/1L/0N/0X,1t 0H/1L/0N/0X,1t 0H/1L/0N/0X,1t 0H/1L/0N/0X,False,False,False,False
+Iron and iron indices,biochemistry,anaemia_grade,mixed/unspecified,1,1,0,0,0,1,0,0,False,,False,0,,0,,CH08:X,1t 0H/0L/0N/1X,1t 0H/0L/0N/1X,1t 0H/0L/1N/0X,1t 0H/0L/0N/1X,False,False,False,False
+Iron and iron indices,biochemistry,complicated,B. rossi,1,1,0,1,0,0,0,0,False,,False,0,,0,,CB112:L,1t 0H/1L/0N/0X,1t 0H/1L/0N/0X,1t 0H/1L/0N/0X,1t 0H/1L/0N/0X,False,False,False,False
+Iron and iron indices,biochemistry,mortality,mixed/unspecified,1,1,0,0,0,1,0,0,False,,False,0,,0,,CH08:X,1t 0H/0L/0N/1X,1t 0H/0L/0N/1X,1t 0H/0L/1N/0X,1t 0H/0L/0N/1X,False,False,False,False
+Iron and iron indices,biochemistry,severity_grade,B. canis,1,1,0,1,0,0,0,0,False,,False,0,,0,,CH12:L,1t 0H/1L/0N/0X,1t 0H/1L/0N/0X,1t 0H/1L/0N/0X,1t 0H/1L/0N/0X,False,False,False,False
+KC-like (CXCL1),cytokine,complicated,B. canis,1,1,1,0,0,0,0,0,False,,False,0,,0,,CH23:H,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,False,False,False,False
+KC-like (CXCL1),cytokine,parasitaemia_level,B. rossi,1,1,1,0,0,0,0,0,False,,False,0,,0,,CH09:H,1t 1H/0L/0N/0X,,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,False,False,False,False
+Lactate,acid-base and perfusion,mortality,B. canis,1,1,1,0,0,0,0,0,False,,False,0,,0,,CH21:H,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,False,False,False,False
+Lactate,acid-base and perfusion,mortality,B. rossi,1,1,1,0,0,0,0,0,False,,False,0,,0,,CB040:H,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,False,False,False,False
+Lactate,acid-base and perfusion,mortality,mixed/unspecified,1,1,1,0,0,0,0,0,False,,False,0,,0,,CH18:H,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,False,False,False,False
+Lactate dehydrogenase,biochemistry,severity_grade,mixed/unspecified,1,1,1,0,0,0,0,0,False,,False,0,,0,,CB220:H,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,False,False,False,False
+Lipoproteins,biochemistry,complicated,B. rossi,1,1,1,0,0,0,0,0,False,,False,0,,0,,CB112:H,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,False,False,False,False
+Lymphocyte count,haematology,mortality,B. rossi,1,1,0,0,1,0,0,0,False,,False,0,,0,,CH03:N,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,False,False,False,False
+Lymphocyte count,haematology,specific_complication,B. gibsoni,1,1,0,0,1,0,0,0,False,,False,0,,0,,CB045:N,1t 0H/0L/1N/0X,,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,False,False,False,False
+MCP-1 (CCL2),cytokine,complicated,B. canis,1,1,1,0,0,0,0,0,False,,False,0,,0,,CH23:H,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,False,False,False,False
+MCP-1 (CCL2),cytokine,mortality,B. rossi,2,1,1,0,0,0,0,1,False,,False,0,,0,,CH03:H;CH09:D,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,False,False,False,False
+Malondialdehyde / TBARS,oxidative stress,mortality,B. canis,1,1,1,0,0,0,0,0,False,,False,0,,0,,CB006:H,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,False,False,False,False
+Malondialdehyde / TBARS,oxidative stress,mortality,mixed/unspecified,1,1,1,0,0,0,0,0,False,,False,0,,0,,CH08:H,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,False,False,False,False
+Malondialdehyde / TBARS,oxidative stress,organ_dysfunction,B. canis,1,1,1,0,0,0,0,0,False,,False,0,,0,,CB006:H,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,False,False,False,False
+Mean platelet volume and platelet indices,haematology,mortality,B. rossi,1,1,0,0,1,0,0,0,False,,False,0,,0,,CH03:N,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,False,False,False,False
+Mentation / neurological signs,clinical sign,mortality,B. rossi,1,1,1,0,0,0,0,0,False,,False,0,,0,,CB040:H,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,False,False,False,False
+Mentation / neurological signs,clinical sign,specific_complication,B. rossi,1,1,1,0,0,0,0,0,False,,False,0,,0,,CB342:H,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,False,False,False,False
+Monocyte count,haematology,mortality,B. rossi,1,1,0,0,1,0,0,0,False,,False,0,,0,,CH03:N,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,False,False,False,False
+Myeloperoxidase / MPXI,haematology,mortality,B. rossi,1,1,0,0,1,0,0,0,False,,False,0,,0,,CH03:N,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,False,False,False,False
+Neutrophil count,haematology,mortality,B. rossi,1,1,1,0,0,0,0,0,False,,False,0,,0,,CH03:H,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,1t 0H/0L/1N/0X,1t 1H/0L/0N/0X,False,False,False,False
+Neutrophil count,haematology,parasitaemia_level,B. rossi,1,1,0,1,0,0,0,0,False,,False,0,,0,,CH09:L,1t 0H/1L/0N/0X,,1t 0H/1L/0N/0X,1t 0H/1L/0N/0X,False,False,False,False
+Neutrophil count,haematology,specific_complication,B. gibsoni,1,1,0,0,1,0,0,0,False,,False,0,,0,,CB045:N,1t 0H/0L/1N/0X,,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,False,False,False,False
+Other cytokines and chemokines,cytokine,complicated,B. canis,1,1,1,0,0,0,0,0,False,,False,0,,0,,CH23:H,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,1t 0H/0L/1N/0X,1t 1H/0L/0N/0X,False,False,False,False
+Other cytokines and chemokines,cytokine,severity_grade,B. canis,1,1,0,0,1,0,0,0,False,,False,0,,0,,CB109:N,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,False,False,False,False
+"Pancreatic enzymes (lipase, amylase, cPLI)",biochemistry,mortality,B. rossi,1,1,0,0,1,0,0,0,False,,False,0,,0,,CH31:N,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,False,False,False,False
+"Pancreatic enzymes (lipase, amylase, cPLI)",biochemistry,severity_grade,B. rossi,1,1,1,0,0,0,0,0,False,,False,0,,0,,CH31:H,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,False,False,False,False
+"Pancreatic enzymes (lipase, amylase, cPLI)",biochemistry,specific_complication,B. gibsoni,1,1,1,0,0,0,0,0,False,,True,1,,0,,CB045:H,1t 1H/0L/0N/0X,,1t 1H/0L/0N/0X,,False,False,False,False
+Parasitaemia,parasitology,mortality,B. canis,1,1,0,0,1,0,0,0,False,,False,0,,0,,CH21:N,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,False,False,False,False
+Parasitaemia,parasitology,specific_complication,B. gibsoni,1,1,0,0,1,0,0,0,False,,False,0,,0,,CB045:N,1t 0H/0L/1N/0X,,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,False,False,False,False
+Parasite DNA load (qPCR),parasitology,severity_grade,B. canis,1,1,1,0,0,0,0,0,False,,False,0,,0,,CH12:H,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,False,False,False,False
+Parasite species or genotype,parasitology,anaemia_grade,mixed/unspecified,1,1,0,0,1,0,0,0,False,,False,0,,0,,CB492:N,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,False,False,False,False
+Phosphate,electrolyte,mortality,B. canis,1,1,1,0,0,0,0,0,False,,False,0,,0,,CH21:H,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,False,False,False,False
+Phosphate,electrolyte,mortality,B. rossi,1,1,1,0,0,0,0,0,False,,False,0,,0,,CB040:H,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,False,False,False,False
+Phosphate,electrolyte,other,B. rossi,1,1,1,0,0,0,0,0,False,,False,0,,0,,CB040:H,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,False,False,False,False
+Plasma NGAL,biochemistry,complicated,B. rossi,1,1,0,0,1,0,0,0,False,,True,1,,0,,CB053:N,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,,False,False,False,False
+Platelet count,haematology,anaemia_grade,B. canis,2,1,0,0,1,0,0,1,False,,False,0,,0,,CB109:D;CB536:N,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,False,False,False,False
+Platelet count,haematology,complicated,B. canis,1,1,1,0,0,0,0,0,False,,False,0,,0,,CH33:H,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,False,False,False,False
+Platelet count,haematology,mortality,B. canis,1,1,0,1,0,0,0,0,False,,False,0,,0,,CH21:L,1t 0H/1L/0N/0X,1t 0H/1L/0N/0X,1t 0H/1L/0N/0X,1t 0H/1L/0N/0X,False,False,False,False
+Platelet count,haematology,mortality,B. rossi,2,1,0,0,1,0,0,1,False,,False,0,,0,,CB052:D;CH03:N,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,False,False,False,False
+Platelet count,haematology,specific_complication,B. gibsoni,1,1,1,0,0,0,0,0,False,,False,0,,0,,CB045:H,1t 1H/0L/0N/0X,,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,False,False,False,False
+Potassium,electrolyte,mortality,B. canis,1,1,0,0,1,0,0,0,False,,False,0,,0,,CH21:N,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,False,False,False,False
+Potassium,electrolyte,mortality,B. rossi,1,1,0,0,1,0,0,0,False,,False,0,,0,,CB040:N,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,False,False,False,False
+Potassium,electrolyte,other,B. rossi,1,1,0,0,1,0,0,0,False,,False,0,,0,,CB040:N,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,False,False,False,False
+Protein C / protein S,coagulation,complicated,B. rossi,1,1,0,1,0,0,0,0,False,,False,0,,0,,CB112:L,1t 0H/1L/0N/0X,1t 0H/1L/0N/0X,1t 0H/1L/0N/0X,1t 0H/1L/0N/0X,False,False,False,False
+Proteomics / metabolomics,omics,complicated,B. rossi,1,1,0,0,0,1,0,0,False,,False,0,,0,,CB112:X,1t 0H/0L/0N/1X,1t 0H/0L/0N/1X,1t 0H/0L/1N/0X,1t 0H/0L/0N/1X,False,False,False,False
+Proteomics / metabolomics,omics,severity_grade,B. canis,1,1,0,0,0,1,0,0,False,,False,0,,0,,CH06:X,1t 0H/0L/0N/1X,1t 0H/0L/0N/1X,1t 0H/0L/1N/0X,1t 0H/0L/0N/1X,False,False,False,False
+Proteomics / metabolomics,omics,specific_complication,B. canis,1,1,1,0,0,0,0,0,False,,False,0,,0,,CH06:H,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,False,False,False,False
+Prothrombin time,coagulation,mortality,B. rossi,1,1,1,0,0,0,0,0,False,,False,0,,0,,CH03:H,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,False,False,False,False
+Prothrombin time,coagulation,mortality,mixed/unspecified,1,1,1,0,0,0,0,0,False,,False,0,,0,,CH18:H,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,False,False,False,False
+Red blood cell count,haematology,anaemia_grade,B. canis,2,1,0,1,0,0,0,1,False,,True,2,,0,,CB109:D;CB536:L,1t 0H/1L/0N/0X,1t 0H/1L/0N/0X,1t 0H/1L/0N/0X,,False,False,False,False
+Red blood cell count,haematology,complicated,B. canis,2,1,0,0,1,0,0,1,False,,False,0,,0,,CH05:D;CH33:N,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,False,False,False,False
+Red blood cell count,haematology,mortality,B. canis,2,1,0,0,1,0,0,1,False,,False,0,,0,,CH05:D;CH21:N,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,False,False,False,False
+Red blood cell count,haematology,specific_complication,B. gibsoni,1,1,0,0,1,0,0,0,False,,False,0,,0,,CB045:N,1t 0H/0L/1N/0X,,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,False,False,False,False
+Red cell indices,haematology,anaemia_grade,mixed/unspecified,1,1,1,0,0,0,0,0,False,,False,0,,0,,CH08:H,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,False,False,False,False
+Red cell indices,haematology,mortality,B. canis,1,1,0,0,1,0,0,0,False,,False,0,,0,,CH21:N,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,False,False,False,False
+Red cell indices,haematology,mortality,mixed/unspecified,2,1,1,0,0,0,0,1,False,,False,0,,0,,CB238:D;CH08:H,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,False,False,False,False
+Respiratory rate / dyspnoea,clinical sign,specific_complication,B. rossi,1,1,0,0,1,0,0,0,False,,False,0,,0,,CB342:N,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,False,False,False,False
+Reticulocytes,haematology,mortality,B. canis,1,1,0,0,1,0,0,0,False,,False,0,,0,,CH21:N,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,False,False,False,False
+SDMA,biochemistry,complicated,B. rossi,1,1,1,0,0,0,0,0,False,,True,1,,0,,CB053:H,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,,False,False,False,False
+SIRS status,clinical score,mortality,B. rossi,1,1,0,0,1,0,0,0,False,,False,0,,0,,CB040:N,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,False,False,False,False
+SIRS status,clinical score,other,B. rossi,1,1,1,0,0,0,0,0,False,,False,0,,0,,CB040:H,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,False,False,False,False
+Selenium,biochemistry,mortality,mixed/unspecified,1,1,0,0,1,0,0,0,False,,False,0,,0,,CH08:N,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,False,False,False,False
+Serum amyloid A,acute phase protein,mortality,B. canis,1,1,0,0,1,0,0,0,False,,False,0,,0,,CH21:N,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,False,False,False,False
+Serum amyloid A,acute phase protein,mortality,B. rossi,1,1,0,0,1,0,0,0,False,,False,0,,0,,CH03:N,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,False,False,False,False
+Serum amyloid A,acute phase protein,mortality,mixed/unspecified,1,1,0,0,1,0,0,0,False,,False,0,,0,,CH08:N,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,False,False,False,False
+Serum protein electrophoresis fractions,biochemistry,anaemia_grade,B. canis,1,1,1,0,0,0,0,0,False,,False,0,,0,,CH05:H,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,1t 0H/0L/1N/0X,1t 1H/0L/0N/0X,False,False,False,False
+Sex / neuter status,signalment,anaemia_grade,mixed/unspecified,1,1,0,0,1,0,0,0,False,,False,0,,0,,CB238:N,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,False,False,False,False
+Sex / neuter status,signalment,complicated,B. rossi,1,1,0,0,1,0,0,0,False,,False,0,CB125,1,CB125:L,CB125:N,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,False,False,False,False
+Sex / neuter status,signalment,mortality,B. canis,1,1,0,0,1,0,0,0,False,,False,0,,0,,CH21:N,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,False,False,False,False
+Sex / neuter status,signalment,mortality,B. rossi,1,1,0,0,1,0,0,0,False,,False,0,,0,,CH03:N,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,False,False,False,False
+Sex / neuter status,signalment,treatment_intensity,B. rossi,1,1,0,0,1,0,0,0,False,,False,0,,0,,CB418:N,1t 0H/0L/1N/0X,,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,False,False,False,False
+Sodium,electrolyte,mortality,B. canis,1,1,0,0,1,0,0,0,False,,False,0,,0,,CH21:N,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,False,False,False,False
+Sodium,electrolyte,mortality,B. rossi,1,1,0,0,1,0,0,0,False,,False,0,,0,,CB040:N,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,False,False,False,False
+Sodium,electrolyte,other,B. rossi,1,1,0,0,1,0,0,0,False,,False,0,,0,,CB040:N,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,False,False,False,False
+Superoxide dismutase,oxidative stress,anaemia_grade,B. canis,1,1,0,1,0,0,0,0,False,,False,0,,0,,CB006:L,1t 0H/1L/0N/0X,1t 0H/1L/0N/0X,1t 0H/1L/0N/0X,1t 0H/1L/0N/0X,False,False,False,False
+Superoxide dismutase,oxidative stress,complicated,B. canis,1,1,0,0,1,0,0,0,False,,False,0,,0,,CB006:N,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,False,False,False,False
+Superoxide dismutase,oxidative stress,mortality,B. canis,1,1,0,1,0,0,0,0,False,,False,0,,0,,CB006:L,1t 0H/1L/0N/0X,1t 0H/1L/0N/0X,1t 0H/1L/0N/0X,1t 0H/1L/0N/0X,False,False,False,False
+Superoxide dismutase,oxidative stress,mortality,mixed/unspecified,1,1,0,0,1,0,0,0,False,,False,0,,0,,CH08:N,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,False,False,False,False
+Superoxide dismutase,oxidative stress,organ_dysfunction,B. canis,1,1,0,1,0,0,0,0,False,,False,0,,0,,CB006:L,1t 0H/1L/0N/0X,1t 0H/1L/0N/0X,1t 0H/1L/0N/0X,1t 0H/1L/0N/0X,False,False,False,False
+TSH,endocrine,other,B. rossi,1,1,0,1,0,0,0,0,False,,False,0,,0,,CH09:L,1t 0H/1L/0N/0X,,1t 0H/0L/1N/0X,1t 0H/1L/0N/0X,False,False,False,False
+TSH,endocrine,specific_complication,B. rossi,1,1,0,0,1,0,0,0,False,,False,0,,0,,CB342:N,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,False,False,False,False
+Thrombomodulin,endothelial,complicated,B. canis,1,1,0,0,1,0,0,0,False,,False,0,,0,,CB004:N,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,False,False,False,False
+Thyroid hormones,endocrine,mortality,B. rossi,1,1,0,1,0,0,0,0,False,,False,0,,0,,CB040:L,1t 0H/1L/0N/0X,1t 0H/1L/0N/0X,1t 0H/1L/0N/0X,1t 0H/1L/0N/0X,False,False,False,False
+Thyroid hormones,endocrine,specific_complication,B. canis,1,1,0,1,0,0,0,0,False,,False,0,,0,,CH35:L,1t 0H/1L/0N/0X,,1t 0H/0L/1N/0X,1t 0H/1L/0N/0X,False,False,False,False
+Thyroid hormones,endocrine,specific_complication,B. rossi,1,1,0,1,0,0,0,0,False,,False,0,,0,,CB342:L,1t 0H/1L/0N/0X,1t 0H/1L/0N/0X,1t 0H/0L/1N/0X,1t 0H/1L/0N/0X,False,False,False,False
+Time since last meal,clinical history,specific_complication,B. rossi,1,1,0,0,1,0,0,0,False,,False,0,,0,,CB342:N,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,False,False,False,False
+Total antioxidant capacity,oxidative stress,anaemia_grade,B. canis,1,1,0,0,1,0,0,0,False,,False,0,,0,,CB006:N,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,False,False,False,False
+Total antioxidant capacity,oxidative stress,complicated,B. canis,1,1,0,0,1,0,0,0,False,,False,0,,0,,CB006:N,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,False,False,False,False
+Total antioxidant capacity,oxidative stress,mortality,B. canis,1,1,1,0,0,0,0,0,False,,False,0,,0,,CB006:H,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,False,False,False,False
+Total antioxidant capacity,oxidative stress,organ_dysfunction,B. canis,1,1,0,0,1,0,0,0,False,,False,0,,0,,CB006:N,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,False,False,False,False
+Total protein,biochemistry,anaemia_grade,B. canis,1,1,0,0,1,0,0,0,False,,False,0,,0,,CH05:N,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,False,False,False,False
+Total protein,biochemistry,anaemia_grade,B. rossi,1,1,0,0,1,0,0,0,False,,False,0,CB518,0,,CB518:N,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,False,False,False,False
+Total protein,biochemistry,complicated,B. canis,2,1,0,0,1,0,0,1,False,,False,0,,0,,CH05:D;CH33:N,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,False,False,False,False
+Total protein,biochemistry,mortality,B. canis,1,1,0,1,0,0,0,0,False,,False,0,,0,,CH21:L,1t 0H/1L/0N/0X,1t 0H/1L/0N/0X,1t 0H/1L/0N/0X,1t 0H/1L/0N/0X,False,False,False,False
+Total protein,biochemistry,mortality,mixed/unspecified,1,1,0,0,1,0,0,0,False,,False,0,,0,,CH18:N,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,False,False,False,False
+Total protein,biochemistry,severity_grade,B. canis,2,1,0,1,0,0,0,1,False,,False,0,,0,,CH06:D;CH12:L,1t 0H/1L/0N/0X,1t 0H/1L/0N/0X,1t 0H/1L/0N/0X,1t 0H/1L/0N/0X,False,False,False,False
+Travel / import history,clinical history,severity_grade,B. canis,1,1,0,1,0,0,0,0,False,,False,0,,0,,CH12:L,1t 0H/1L/0N/0X,1t 0H/1L/0N/0X,1t 0H/0L/1N/0X,1t 0H/1L/0N/0X,False,False,False,False
+Treatment factors,treatment,treatment_intensity,mixed/unspecified,1,1,1,0,0,0,0,0,False,,False,0,,0,,CB492:H,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,False,False,False,False
+Triglycerides,biochemistry,mortality,B. canis,1,1,1,0,0,0,0,0,False,,False,0,,0,,CH21:H,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,False,False,False,False
+Urea,biochemistry,complicated,B. canis,1,1,1,0,0,0,0,0,False,,True,1,,0,,CH33:H,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,,False,False,False,False
+Urea,biochemistry,complicated,B. rossi,2,1,1,0,0,0,1,0,False,,True,2,,0,,CB053:H;CB112:U,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,,False,False,False,False
+Urea,biochemistry,mortality,B. canis,1,1,0,0,1,0,0,0,False,,False,0,,0,,CH21:N,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,False,False,False,False
+Urea,biochemistry,mortality,B. rossi,1,1,1,0,0,0,0,0,False,,False,0,,0,,CB040:H,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,1t 0H/0L/1N/0X,1t 1H/0L/0N/0X,False,False,False,False
+Urea,biochemistry,other,B. rossi,1,1,1,0,0,0,0,0,False,,False,0,,0,,CB040:H,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,False,False,False,False
+Urea,biochemistry,severity_grade,B. canis,3,1,1,0,0,0,0,2,False,,True,1,,0,,CB307:H;CB537:D;CH06:D,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,False,False,False,False
+Urea,biochemistry,severity_grade,mixed/unspecified,2,1,1,0,0,0,0,1,False,,True,1,,0,,CB038:D;CB220:H,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,False,False,False,False
+Urea,biochemistry,specific_complication,B. canis,2,1,1,0,0,0,0,1,False,,True,2,,0,,CB109:D;CB536:H,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,,False,False,False,False
+Urea,biochemistry,specific_complication,B. gibsoni,1,1,1,0,0,0,0,0,False,,False,0,,0,,CB045:H,1t 1H/0L/0N/0X,,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,False,False,False,False
+Urinary kidney injury biomarkers,urine,complicated,B. rossi,1,1,1,0,0,0,0,0,False,,True,1,,0,,CB053:H,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,1t 0H/0L/1N/0X,,False,False,False,False
+Urine osmolality,urine,complicated,B. rossi,1,1,0,0,1,0,0,0,False,,True,1,,0,,CB053:N,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,,False,False,False,False
+Urine protein:creatinine ratio,urine,complicated,B. rossi,1,1,1,0,0,0,0,0,False,,True,1,,0,,CB053:H,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,,False,False,False,False
+Urine specific gravity,urine,complicated,B. rossi,1,1,0,0,1,0,0,0,False,,True,1,,0,,CB053:N,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,,False,False,False,False
+Viscoelastic testing (TEG/ROTEM),coagulation,mortality,B. rossi,1,1,0,0,1,0,0,0,False,,False,0,,0,,CH03:N,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,False,False,False,False
+White blood cell count,haematology,anaemia_grade,B. canis,2,1,1,0,0,0,0,1,False,,False,0,,0,,CB109:D;CB536:H,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,False,False,False,False
+White blood cell count,haematology,anaemia_grade,B. rossi,1,1,1,0,0,0,0,0,False,,False,0,CB518,0,,CB518:H,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,False,False,False,False
+White blood cell count,haematology,complicated,B. canis,1,1,0,0,1,0,0,0,False,,False,0,,0,,CH33:N,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,False,False,False,False
+White blood cell count,haematology,mortality,B. canis,1,1,0,1,0,0,0,0,False,,False,0,,0,,CH21:L,1t 0H/1L/0N/0X,1t 0H/1L/0N/0X,1t 0H/1L/0N/0X,1t 0H/1L/0N/0X,False,False,False,False
+White blood cell count,haematology,other,B. rossi,1,1,1,0,0,0,0,0,False,,False,0,,0,,CB040:H,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,False,False,False,False
+White blood cell count,haematology,specific_complication,B. gibsoni,1,1,0,0,1,0,0,0,False,,False,0,,0,,CB045:N,1t 0H/0L/1N/0X,,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,False,False,False,False
+Zinc,biochemistry,mortality,mixed/unspecified,1,1,0,1,0,0,0,0,False,,False,0,,0,,CH08:L,1t 0H/1L/0N/0X,1t 0H/1L/0N/0X,1t 0H/1L/0N/0X,1t 0H/1L/0N/0X,False,False,False,False
+aPTT,coagulation,mortality,B. rossi,1,1,0,0,1,0,0,0,False,,False,0,,0,,CH03:N,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,False,False,False,False
+aPTT,coagulation,mortality,mixed/unspecified,1,1,1,0,0,0,0,0,False,,False,0,,0,,CH18:H,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,1t 1H/0L/0N/0X,False,False,False,False
+suPAR,coagulation,complicated,B. canis,1,1,0,0,1,0,0,0,False,,False,0,,0,,CB004:N,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,1t 0H/0L/1N/0X,False,False,False,False
+ALP,biochemistry,parasitaemia_level,B. canis,1,0,0,0,0,0,0,1,False,,False,0,,0,,CB241:D,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,False,False,False,False
+ALT,biochemistry,parasitaemia_level,B. canis,1,0,0,0,0,0,0,1,False,,False,0,,0,,CB241:D,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,False,False,False,False
+ALT,biochemistry,severity_grade,B. gibsoni,1,0,0,0,0,0,0,1,False,,False,0,,0,,CB224:D,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,False,False,False,False
+AST,biochemistry,parasitaemia_level,B. canis,1,0,0,0,0,0,0,1,False,,False,0,,0,,CB241:D,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,False,False,False,False
+AST,biochemistry,severity_grade,B. gibsoni,1,0,0,0,0,0,0,1,False,,False,0,,0,,CB224:D,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,False,False,False,False
+Age,signalment,complicated,B. canis,1,0,0,0,0,0,0,1,False,,False,0,,0,,CH23:D,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,False,False,False,False
+Age,signalment,complicated,B. rossi,1,0,0,0,0,0,0,1,False,,False,0,CB125,0,,CB125:D,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,False,False,False,False
+Age,signalment,severity_grade,B. canis,1,0,0,0,0,0,0,1,False,,False,0,,0,,CB537:D,0t 0H/0L/0N/0X,,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,False,False,False,False
+Age,signalment,specific_complication,B. gibsoni,1,0,0,0,0,0,0,1,False,,False,0,,0,,CH16:D,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,False,False,False,False
+Albumin,biochemistry,mortality,mixed/unspecified,1,0,0,0,0,0,1,0,False,,False,0,,0,,CH18:U,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,False,False,False,False
+Albumin,biochemistry,parasitaemia_level,B. canis,1,0,0,0,0,0,0,1,False,,False,0,,0,,CB241:D,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,False,False,False,False
+Albumin,biochemistry,severity_grade,B. canis,1,0,0,0,0,0,0,1,False,,False,0,,0,,CH06:D,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,False,False,False,False
+Albumin,biochemistry,severity_grade,B. gibsoni,1,0,0,0,0,0,0,1,False,,False,0,,0,,CB224:D,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,False,False,False,False
+Albumin,biochemistry,severity_grade,mixed/unspecified,1,0,0,0,0,0,0,1,False,,False,0,,0,,CB038:D,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,False,False,False,False
+Albumin:globulin ratio,biochemistry,complicated,B. canis,1,0,0,0,0,0,0,1,False,,False,0,,0,,CH05:D,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,False,False,False,False
+Albumin:globulin ratio,biochemistry,severity_grade,mixed/unspecified,1,0,0,0,0,0,0,1,False,,False,0,,0,,CB038:D,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,False,False,False,False
+Autoagglutination,haematology,mortality,B. rossi,1,0,0,0,0,0,1,0,False,,False,0,,0,,CB040:U,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,False,False,False,False
+Band neutrophils,haematology,complicated,B. rossi,1,0,0,0,0,0,1,0,False,,False,0,,0,,CB112:U,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,False,False,False,False
+Band neutrophils,haematology,parasitaemia_level,B. canis,1,0,0,0,0,0,0,1,False,,False,0,,0,,CB241:D,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,False,False,False,False
+Basophil count,haematology,parasitaemia_level,B. canis,1,0,0,0,0,0,0,1,False,,False,0,,0,,CB241:D,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,False,False,False,False
+Basophil count,haematology,severity_grade,B. gibsoni,1,0,0,0,0,0,0,1,False,,False,0,,0,,CB224:D,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,False,False,False,False
+Basophil count,haematology,severity_grade,mixed/unspecified,1,0,0,0,0,0,0,1,False,,False,0,,0,,CB038:D,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,False,False,False,False
+Bilirubin,biochemistry,complicated,B. rossi,1,0,0,0,0,0,1,0,False,,True,1,,0,,CB112:U,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,,False,False,False,False
+Bilirubin,biochemistry,parasitaemia_level,B. canis,1,0,0,0,0,0,0,1,False,,False,0,,0,,CB241:D,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,False,False,False,False
+Bilirubin,biochemistry,severity_grade,B. gibsoni,1,0,0,0,0,0,0,1,False,,False,0,,0,,CB224:D,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,False,False,False,False
+Blood pressure,clinical sign,mortality,B. rossi,1,0,0,0,0,0,0,1,False,,False,0,,0,,CH09:D,0t 0H/0L/0N/0X,,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,False,False,False,False
+Body temperature,clinical sign,parasitaemia_level,mixed/unspecified,1,0,0,0,0,0,0,1,False,,False,0,,0,,CB187:D,0t 0H/0L/0N/0X,,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,False,False,False,False
+Body weight / body condition,signalment,complicated,B. rossi,1,0,0,0,0,0,0,1,False,,False,0,CB125,0,,CB125:D,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,False,False,False,False
+Breed,signalment,complicated,B. rossi,1,0,0,0,0,0,0,1,False,,False,0,CB125,0,,CB125:D,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,False,False,False,False
+Breed,signalment,specific_complication,B. gibsoni,1,0,0,0,0,0,0,1,False,,False,0,,0,,CH16:D,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,False,False,False,False
+Breed,signalment,treatment_intensity,B. rossi,1,0,0,0,0,0,0,1,False,,False,0,,0,,CB418:D,0t 0H/0L/0N/0X,,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,False,False,False,False
+Calcium,electrolyte,parasitaemia_level,B. canis,1,0,0,0,0,0,0,1,False,,False,0,,0,,CB241:D,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,False,False,False,False
+Chloride,electrolyte,mortality,B. rossi,1,0,0,0,0,0,1,0,False,,False,0,,0,,CB040:U,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,False,False,False,False
+Cholesterol,biochemistry,parasitaemia_level,B. canis,1,0,0,0,0,0,0,1,False,,False,0,,0,,CB241:D,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,False,False,False,False
+Circulating blood volume,other,severity_grade,mixed/unspecified,1,0,0,0,0,0,1,0,False,,False,0,,0,,CB220:U,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,False,False,False,False
+Co-infection,parasitology,mortality,B. canis,1,0,0,0,0,0,0,1,False,,False,0,,0,,CB392:D,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,False,False,False,False
+Co-infection,parasitology,mortality,mixed/unspecified,1,0,0,0,0,0,0,1,False,,False,0,,0,,CH08:D,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,False,False,False,False
+Creatinine,biochemistry,parasitaemia_level,B. canis,1,0,0,0,0,0,0,1,False,,False,0,,0,,CB241:D,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,False,False,False,False
+Creatinine,biochemistry,severity_grade,B. gibsoni,1,0,0,0,0,0,0,1,False,,False,0,,0,,CB224:D,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,False,False,False,False
+Creatinine,biochemistry,severity_grade,mixed/unspecified,1,0,0,0,0,0,0,1,False,,True,1,,0,,CB038:D,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,,False,False,False,False
+Creatinine,biochemistry,specific_complication,mixed/unspecified,1,0,0,0,0,0,0,1,False,,True,1,,0,,CH29:D,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,,False,False,False,False
+Cystatin C,biochemistry,specific_complication,mixed/unspecified,1,0,0,0,0,0,0,1,False,,True,1,,0,,CH29:D,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,,False,False,False,False
+Cytokine linear combination,cytokine,complicated,B. canis,1,0,0,0,0,0,1,0,False,,False,0,,0,,CH23:U,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,False,False,False,False
+D-dimer,coagulation,severity_grade,mixed/unspecified,1,0,0,0,0,0,0,1,False,,False,0,,0,,CB220:D,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,False,False,False,False
+Eosinophil count,haematology,parasitaemia_level,B. canis,1,0,0,0,0,0,0,1,False,,False,0,,0,,CB241:D,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,False,False,False,False
+Eosinophil count,haematology,severity_grade,B. gibsoni,1,0,0,0,0,0,0,1,False,,False,0,,0,,CB224:D,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,False,False,False,False
+Eosinophil count,haematology,severity_grade,mixed/unspecified,1,0,0,0,0,0,0,1,False,,False,0,,0,,CB038:D,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,False,False,False,False
+Eosinophil count,haematology,treatment_intensity,B. rossi,0,0,0,0,0,0,0,0,False,,False,0,,1,CB418:N,,0t 0H/0L/0N/0X,,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,False,False,False,False
+Erythrocyte aggregation,haematology,severity_grade,mixed/unspecified,1,0,0,0,0,0,0,1,False,,False,0,,0,,CB220:D,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,False,False,False,False
+Erythrocyte sedimentation rate,haematology,severity_grade,mixed/unspecified,2,0,0,0,0,0,0,2,False,,False,0,,0,,CB038:D;CB220:D,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,False,False,False,False
+Fibrin(ogen) degradation products,coagulation,severity_grade,mixed/unspecified,1,0,0,0,0,0,0,1,False,,False,0,,0,,CB220:D,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,False,False,False,False
+Fibrinogen,coagulation,severity_grade,mixed/unspecified,1,0,0,0,0,0,0,1,False,,False,0,,0,,CB220:D,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,False,False,False,False
+GGT,biochemistry,parasitaemia_level,B. canis,1,0,0,0,0,0,0,1,False,,False,0,,0,,CB241:D,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,False,False,False,False
+Globulins,biochemistry,severity_grade,mixed/unspecified,1,0,0,0,0,0,0,1,False,,False,0,,0,,CB038:D,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,False,False,False,False
+Glucose,biochemistry,complicated,B. rossi,1,0,0,0,0,0,1,0,False,,True,1,,0,,CB112:U,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,,False,False,False,False
+Glucose,biochemistry,parasitaemia_level,B. canis,1,0,0,0,0,0,0,1,False,,False,0,,0,,CB241:D,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,False,False,False,False
+Glucose,biochemistry,severity_grade,B. canis,1,0,0,0,0,0,0,1,False,,False,0,,0,,CB537:D,0t 0H/0L/0N/0X,,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,False,False,False,False
+Haematocrit/PCV,haematology,complicated,B. rossi,1,0,0,0,0,0,1,0,False,,True,1,,0,,CB112:U,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,,False,False,False,False
+Haematocrit/PCV,haematology,parasitaemia_level,B. canis,1,0,0,0,0,0,0,1,False,,False,0,,0,,CB241:D,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,False,False,False,False
+Haematocrit/PCV,haematology,severity_grade,B. canis,1,0,0,0,0,0,0,1,False,,False,0,,0,,CB537:D,0t 0H/0L/0N/0X,,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,False,False,False,False
+Haematocrit/PCV,haematology,severity_grade,B. gibsoni,1,0,0,0,0,0,0,1,False,,False,0,,0,,CB224:D,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,False,False,False,False
+Haematocrit/PCV,haematology,severity_grade,mixed/unspecified,2,0,0,0,0,0,1,1,False,,False,0,,0,,CB038:D;CB220:U,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,False,False,False,False
+Haematocrit/PCV,haematology,treatment_intensity,B. rossi,0,0,0,0,0,0,0,0,False,,True,1,,1,CB418:L,,0t 0H/0L/0N/0X,,0t 0H/0L/0N/0X,,False,False,False,False
+Haematocrit/PCV,haematology,treatment_intensity,mixed/unspecified,1,0,0,0,0,0,1,0,False,,False,0,,0,,CB492:U,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,False,False,False,False
+Haemoglobin,haematology,complicated,B. canis,1,0,0,0,0,0,0,1,False,,False,0,,0,,CH05:D,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,False,False,False,False
+Haemoglobin,haematology,parasitaemia_level,B. canis,1,0,0,0,0,0,0,1,False,,False,0,,0,,CB241:D,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,False,False,False,False
+Haemoglobin,haematology,severity_grade,B. canis,1,0,0,0,0,0,0,1,False,,False,0,,0,,CB537:D,0t 0H/0L/0N/0X,,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,False,False,False,False
+Haemoglobin,haematology,severity_grade,B. gibsoni,1,0,0,0,0,0,0,1,False,,False,0,,0,,CB224:D,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,False,False,False,False
+Haemoglobin,haematology,severity_grade,mixed/unspecified,2,0,0,0,0,0,0,2,False,,False,0,,0,,CB038:D;CB220:D,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,False,False,False,False
+Haemoglobinuria,urine,parasitaemia_level,mixed/unspecified,1,0,0,0,0,0,0,1,False,,False,0,,0,,CB187:D,0t 0H/0L/0N/0X,,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,False,False,False,False
+IFN-gamma,cytokine,severity_grade,B. canis,1,0,0,0,0,0,1,0,False,,False,0,,0,,CB109:U,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,False,False,False,False
+Icterus,clinical sign,parasitaemia_level,mixed/unspecified,1,0,0,0,0,0,0,1,False,,False,0,,0,,CB187:D,0t 0H/0L/0N/0X,,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,False,False,False,False
+Lactate,acid-base and perfusion,complicated,B. rossi,1,0,0,0,0,0,1,0,False,,True,1,,0,,CB112:U,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,,False,False,False,False
+Lactate,acid-base and perfusion,other,B. rossi,1,0,0,0,0,0,1,0,False,,False,0,,0,,CB040:U,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,False,False,False,False
+Lymphocyte count,haematology,parasitaemia_level,B. canis,1,0,0,0,0,0,0,1,False,,False,0,,0,,CB241:D,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,False,False,False,False
+Lymphocyte count,haematology,severity_grade,B. gibsoni,1,0,0,0,0,0,0,1,False,,False,0,,0,,CB224:D,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,False,False,False,False
+Lymphocyte count,haematology,severity_grade,mixed/unspecified,1,0,0,0,0,0,0,1,False,,False,0,,0,,CB038:D,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,False,False,False,False
+Lymphocyte count,haematology,treatment_intensity,B. rossi,0,0,0,0,0,0,0,0,False,,False,0,,1,CB418:N,,0t 0H/0L/0N/0X,,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,False,False,False,False
+Magnesium,electrolyte,parasitaemia_level,B. canis,1,0,0,0,0,0,0,1,False,,False,0,,0,,CB241:D,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,False,False,False,False
+Mean platelet volume and platelet indices,haematology,parasitaemia_level,B. canis,1,0,0,0,0,0,0,1,False,,False,0,,0,,CB241:D,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,False,False,False,False
+Monocyte count,haematology,parasitaemia_level,B. canis,1,0,0,0,0,0,0,1,False,,False,0,,0,,CB241:D,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,False,False,False,False
+Monocyte count,haematology,severity_grade,B. gibsoni,1,0,0,0,0,0,0,1,False,,False,0,,0,,CB224:D,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,False,False,False,False
+Monocyte count,haematology,severity_grade,mixed/unspecified,1,0,0,0,0,0,0,1,False,,False,0,,0,,CB038:D,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,False,False,False,False
+Monocyte count,haematology,treatment_intensity,B. rossi,0,0,0,0,0,0,0,0,False,,False,0,,1,CB418:N,,0t 0H/0L/0N/0X,,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,False,False,False,False
+Neutrophil count,haematology,parasitaemia_level,B. canis,1,0,0,0,0,0,0,1,False,,False,0,,0,,CB241:D,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,False,False,False,False
+Neutrophil count,haematology,severity_grade,B. gibsoni,1,0,0,0,0,0,0,1,False,,False,0,,0,,CB224:D,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,False,False,False,False
+Neutrophil count,haematology,severity_grade,mixed/unspecified,1,0,0,0,0,0,0,1,False,,False,0,,0,,CB038:D,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,False,False,False,False
+Neutrophil count,haematology,treatment_intensity,B. rossi,1,0,0,0,0,0,0,1,False,,False,0,,1,CB418:N,CB418:D,0t 0H/0L/0N/0X,,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,False,False,False,False
+Other clinical signs (composite),clinical sign,parasitaemia_level,mixed/unspecified,1,0,0,0,0,0,0,1,False,,False,0,,0,,CB187:D,0t 0H/0L/0N/0X,,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,False,False,False,False
+Parasitaemia,parasitology,other,B. rossi,1,0,0,0,0,0,1,0,False,,False,0,,0,,CH09:U,0t 0H/0L/0N/0X,,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,False,False,False,False
+Parasitaemia,parasitology,severity_grade,B. canis,1,0,0,0,0,0,0,1,False,,False,0,,0,,CB537:D,0t 0H/0L/0N/0X,,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,False,False,False,False
+Parasitaemia,parasitology,severity_grade,mixed/unspecified,2,0,0,0,0,0,0,2,False,,False,0,,0,,CB038:D;CB220:D,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,False,False,False,False
+Parasite species or genotype,parasitology,mortality,mixed/unspecified,1,0,0,0,0,0,0,1,False,,False,0,,0,,CH08:D,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,False,False,False,False
+Phosphate,electrolyte,parasitaemia_level,B. canis,1,0,0,0,0,0,0,1,False,,False,0,,0,,CB241:D,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,False,False,False,False
+Platelet count,haematology,anaemia_grade,B. gibsoni,1,0,0,0,0,0,0,1,False,,False,0,,0,,CB134:D,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,False,False,False,False
+Platelet count,haematology,mortality,mixed/unspecified,1,0,0,0,0,0,1,0,False,,False,0,,0,,CH18:U,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,False,False,False,False
+Platelet count,haematology,parasitaemia_level,B. canis,1,0,0,0,0,0,0,1,False,,False,0,,0,,CB241:D,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,False,False,False,False
+Platelet count,haematology,severity_grade,B. canis,1,0,0,0,0,0,0,1,False,,False,0,,0,,CB537:D,0t 0H/0L/0N/0X,,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,False,False,False,False
+Platelet count,haematology,severity_grade,B. gibsoni,1,0,0,0,0,0,0,1,False,,False,0,,0,,CB224:D,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,False,False,False,False
+Platelet count,haematology,severity_grade,mixed/unspecified,2,0,0,0,0,0,0,2,False,,True,1,,0,,CB038:D;CB220:D,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,False,False,False,False
+Platelet count,haematology,treatment_intensity,B. rossi,0,0,0,0,0,0,0,0,False,,False,0,,1,CB418:N,,0t 0H/0L/0N/0X,,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,False,False,False,False
+Platelet function,coagulation,severity_grade,mixed/unspecified,1,0,0,0,0,0,0,1,False,,False,0,,0,,CB220:D,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,False,False,False,False
+Potassium,electrolyte,parasitaemia_level,B. canis,1,0,0,0,0,0,0,1,False,,False,0,,0,,CB241:D,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,False,False,False,False
+Prothrombin time,coagulation,severity_grade,mixed/unspecified,1,0,0,0,0,0,0,1,False,,False,0,,0,,CB220:D,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,False,False,False,False
+Red blood cell count,haematology,parasitaemia_level,B. canis,1,0,0,0,0,0,0,1,False,,False,0,,0,,CB241:D,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,False,False,False,False
+Red blood cell count,haematology,severity_grade,B. canis,1,0,0,0,0,0,0,1,False,,False,0,,0,,CB537:D,0t 0H/0L/0N/0X,,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,False,False,False,False
+Red blood cell count,haematology,severity_grade,B. gibsoni,1,0,0,0,0,0,0,1,False,,False,0,,0,,CB224:D,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,False,False,False,False
+Red blood cell count,haematology,severity_grade,mixed/unspecified,2,0,0,0,0,0,0,2,False,,False,0,,0,,CB038:D;CB220:D,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,False,False,False,False
+Red cell distribution width,haematology,severity_grade,B. gibsoni,1,0,0,0,0,0,0,1,False,,False,0,,0,,CB224:D,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,False,False,False,False
+Reticulocytes,haematology,treatment_intensity,B. rossi,0,0,0,0,0,0,0,0,False,,False,0,,1,CB418:H,,0t 0H/0L/0N/0X,,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,False,False,False,False
+SIRS status,clinical score,mortality,B. canis,1,0,0,0,0,0,0,1,False,,False,0,,0,,CB106:D,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,False,False,False,False
+Serum protein electrophoresis fractions,biochemistry,complicated,B. canis,1,0,0,0,0,0,0,1,False,,False,0,,0,,CH05:D,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,False,False,False,False
+Sex / neuter status,signalment,complicated,B. canis,1,0,0,0,0,0,0,1,False,,False,0,,0,,CH23:D,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,False,False,False,False
+Sex / neuter status,signalment,severity_grade,B. canis,1,0,0,0,0,0,0,1,False,,False,0,,0,,CB307:D,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,False,False,False,False
+Sex / neuter status,signalment,specific_complication,B. gibsoni,1,0,0,0,0,0,0,1,False,,False,0,,0,,CH16:D,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,False,False,False,False
+Soluble fibrin monomer complexes,coagulation,severity_grade,mixed/unspecified,1,0,0,0,0,0,0,1,False,,False,0,,0,,CB220:D,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,False,False,False,False
+Total protein,biochemistry,parasitaemia_level,B. canis,1,0,0,0,0,0,0,1,False,,False,0,,0,,CB241:D,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,False,False,False,False
+Total protein,biochemistry,severity_grade,B. gibsoni,1,0,0,0,0,0,0,1,False,,False,0,,0,,CB224:D,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,False,False,False,False
+Total protein,biochemistry,severity_grade,mixed/unspecified,1,0,0,0,0,0,0,1,False,,False,0,,0,,CB038:D,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,False,False,False,False
+Travel / import history,clinical history,complicated,B. canis,1,0,0,0,0,0,0,1,False,,False,0,,0,,CH12:D,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,False,False,False,False
+Travel / import history,clinical history,mortality,B. canis,1,0,0,0,0,0,0,1,False,,False,0,,0,,CH12:D,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,False,False,False,False
+Urea,biochemistry,parasitaemia_level,B. canis,1,0,0,0,0,0,0,1,False,,False,0,,0,,CB241:D,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,False,False,False,False
+Urea,biochemistry,severity_grade,B. gibsoni,1,0,0,0,0,0,0,1,False,,False,0,,0,,CB224:D,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,False,False,False,False
+Urea,biochemistry,specific_complication,mixed/unspecified,1,0,0,0,0,0,0,1,False,,True,1,,0,,CH29:D,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,,False,False,False,False
+Urea:creatinine ratio,biochemistry,specific_complication,mixed/unspecified,1,0,0,0,0,0,0,1,False,,True,1,,0,,CH29:D,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,,False,False,False,False
+Urine creatinine,urine,severity_grade,B. canis,1,0,0,0,0,0,0,1,False,,True,1,,0,,CH06:D,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,,False,False,False,False
+Urine protein:creatinine ratio,urine,severity_grade,B. canis,1,0,0,0,0,0,0,1,False,,True,1,,0,,CH06:D,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,,False,False,False,False
+Vascular wall wetting index,endothelial,severity_grade,mixed/unspecified,1,0,0,0,0,0,0,1,False,,False,0,,0,,CB220:D,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,False,False,False,False
+Vitamin D (25-hydroxyvitamin D),endocrine,severity_grade,B. rossi,0,0,0,0,0,0,0,0,False,,False,0,,1,CB035:L,,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,False,False,False,False
+White blood cell count,haematology,mortality,mixed/unspecified,1,0,0,0,0,0,1,0,False,,False,0,,0,,CH18:U,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,False,False,False,False
+White blood cell count,haematology,parasitaemia_level,B. canis,1,0,0,0,0,0,0,1,False,,False,0,,0,,CB241:D,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,False,False,False,False
+White blood cell count,haematology,severity_grade,B. canis,1,0,0,0,0,0,0,1,False,,False,0,,0,,CB537:D,0t 0H/0L/0N/0X,,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,False,False,False,False
+White blood cell count,haematology,severity_grade,B. gibsoni,1,0,0,0,0,0,0,1,False,,False,0,,0,,CB224:D,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,False,False,False,False
+White blood cell count,haematology,severity_grade,mixed/unspecified,2,0,0,0,0,0,0,2,False,,False,0,,0,,CB038:D;CB220:D,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,False,False,False,False
+White blood cell count,haematology,treatment_intensity,B. rossi,0,0,0,0,0,0,0,0,False,,False,0,,1,CB418:N,,0t 0H/0L/0N/0X,,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,False,False,False,False
+aPTT,coagulation,severity_grade,mixed/unspecified,1,0,0,0,0,0,0,1,False,,False,0,,0,,CB220:D,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,0t 0H/0L/0N/0X,False,False,False,False

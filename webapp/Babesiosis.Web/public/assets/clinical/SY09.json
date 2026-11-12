@@ -1,0 +1,884 @@
+{
+  "schema_version": 1,
+  "id": "SY09",
+  "title": "Cardiac dysfunction",
+  "updated": "2026-11-12",
+  "definition": "Myocardial injury or dysfunction in a dog with babesiosis, shown by a raised cardiac troponin, ventricular arrhythmia, systolic or diastolic dysfunction on echocardiography, or myocardial necrosis, haemorrhage and inflammation at necropsy [R1][R2][R3].",
+  "definition_note": "Working definition confirmed with two changes. ECG changes alone are not enough: most are non-specific and do not match troponin or pathology [R2][R3]. Clinical congestive heart failure is proposed as a mechanism in a review [R1], but no case series of dogs with babesiosis and documented heart failure was found.",
+  "key_points": [
+    "Myocardial injury is common in complicated babesiosis; troponin I rises with disease severity and was highest in dogs that died [R2][R4].",
+    "Most ECG changes are non-specific; ventricular premature complexes were the one change linked to a high troponin [R2][R3].",
+    "Anaemia alone makes the heart hyperdynamic and tachycardic, so do not read tachycardia or a high fractional shortening as cardiac disease [R5][R6].",
+    "No treatment aimed at the heart has been tested in dogs with babesiosis; all doses on this page come from general canine sources (level D or E).",
+    "A South African review advises careful IV fluids, troponin testing in complicated cases, and arrhythmia control, oxygen and cage rest when the heart is involved [R1]."
+  ],
+  "description": [
+    {
+      "heading": "What it is",
+      "text": "Damage to the myocardium during acute babesiosis, ranging from a raised troponin with no signs to arrhythmia, reduced function and death. Fatal cases show pericardial effusion, epicardial and endocardial haemorrhage, and multifocal myocardial necrosis, inflammation and fibrin microthrombi, mostly in the left ventricle [R1][R3][R7]."
+    },
+    {
+      "heading": "How common, and in which dogs",
+      "text": "In 50 B. canis dogs, troponin I was raised in 19 [R5]. In 92 Indian dogs with babesiosis and SIRS or sepsis, 31 (34%) had echocardiographic dysfunction, mostly diastolic [R8]. Of 121 B. rossi dogs, 7% had ventricular premature complexes and 7% sinoatrial block or arrest [R3]. Cardiac lesions were found in fatal B. canis cases in Croatia and Poland [R7][R9]. The risk rises with complicated disease and secondary IMHA [R2][R10]."
+    },
+    {
+      "heading": "When in the course of disease",
+      "text": "Troponin and NT-proBNP were raised at presentation in acute disease [R2][R10]. Necrosis seen at necropsy was of the acute type, about 12 hours to 4 days old [R1]. Whether the injury resolves in survivors is not known."
+    },
+    {
+      "heading": "Mechanism",
+      "text": "Anaemia, fever and acidosis cause tachycardia, which shortens diastole and coronary flow while the blood carries less oxygen, so the myocardium becomes hypoxic [R1]. Systemic inflammation, microthrombi and parasitised red cells in myocardial capillaries add injury [R1][R7]. Myocardial depression is one of the proposed causes of hypotension, with vasodilation and capillary leak [R1][R4]."
+    }
+  ],
+  "species_notes": [
+    {
+      "species": "B. rossi",
+      "note": "The South African troponin, NT-proBNP and ECG studies are in virulent disease at Onderstepoort, reported as B. canis or virulent babesiosis at the time [R2][R3][R10]."
+    },
+    {
+      "species": "B. canis",
+      "note": "Raised troponin I and T in Poland and Turkey; myocardial necrosis and haemorrhage in fatal cases in Croatia and Poland [R5][R11][R7][R9]."
+    },
+    {
+      "species": "B. gibsoni",
+      "note": "One large Indian ECG survey is mainly B. gibsoni but pools it with E. canis [R12]. No troponin or echocardiography study in B. gibsoni alone was found."
+    },
+    {
+      "species": "B. vogeli",
+      "note": "No cardiac data were found."
+    }
+  ],
+  "diagnosis": {
+    "criteria": [
+      {
+        "criterion": "Cardiac troponin I (cTnI)",
+        "threshold": "above the laboratory reference interval; medians 0.39 to 1.45 µg/L (ng/mL) in babesiosis groups against below 0.2 µg/L in controls",
+        "basis": "babesiosis",
+        "note": "Only the complicated group differed from controls in one study [R10]. Mean cTnI was 9.9 µg/L in complicated disease and 22.17 µg/L in 3 non-survivors in another [R2]. Assays differ; no cut-off was validated.",
+        "refs": [
+          "R2",
+          "R10"
+        ]
+      },
+      {
+        "criterion": "NT-proBNP",
+        "threshold": "no cut-off; medians 246, 650 and 638 pmol/L in mild, severe and complicated disease against 106 pmol/L in controls",
+        "basis": "babesiosis",
+        "note": "Rose with severity and appeared earlier than, or independently of, troponin [R10]. Renal dysfunction raises NT-proBNP; one study [R10].",
+        "refs": [
+          "R10"
+        ]
+      },
+      {
+        "criterion": "Diastolic dysfunction on tissue Doppler",
+        "threshold": "E′ below 8 cm/s",
+        "basis": "human",
+        "note": "Used in 92 dogs with babesiosis, taken from a human echocardiography guideline [R8]. Not validated in dogs with anaemia.",
+        "refs": [
+          "R8"
+        ]
+      },
+      {
+        "criterion": "Ventricular arrhythmia",
+        "threshold": "ventricular premature complexes or ventricular tachycardia on ECG",
+        "basis": "babesiosis",
+        "note": "Linked to a high troponin; specific for myocardial damage but not sensitive [R1][R2].",
+        "refs": [
+          "R1",
+          "R2"
+        ]
+      }
+    ],
+    "clinical_signs": [
+      {
+        "sign": "Tachycardia",
+        "note": "Very common, but anaemia, fever and acidosis cause it; not specific [R1][R12].",
+        "refs": [
+          "R1",
+          "R12"
+        ]
+      },
+      {
+        "sign": "Irregular rhythm or pulse deficits",
+        "note": "Prompts an ECG; ventricular premature complexes point to myocardial injury [R2][R3].",
+        "refs": [
+          "R2",
+          "R3"
+        ]
+      },
+      {
+        "sign": "Bradycardia",
+        "note": "Sinus bradycardia and an irregular rhythm were more common in non-survivors [R3][R4].",
+        "refs": [
+          "R3",
+          "R4"
+        ]
+      },
+      {
+        "sign": "Weak pulses, collapse, hypotension",
+        "note": "Myocardial depression is one possible cause among several [R1][R4].",
+        "refs": [
+          "R1",
+          "R4"
+        ]
+      },
+      {
+        "sign": "Muffled heart sounds",
+        "note": "Pericardial effusion was found at necropsy; low R-wave amplitude was the only ECG change that matched it [R3].",
+        "refs": [
+          "R3"
+        ]
+      }
+    ],
+    "tests": [
+      {
+        "test": "ECG (lead II rhythm strip)",
+        "finding": "Sinus tachycardia, low R amplitude, ST changes, large T waves, notched R; less often sinoatrial block, AV block, ventricular premature complexes and ventricular tachycardia [R3][R4].",
+        "note": "Most changes do not track severity or pathology; use it to find ventricular arrhythmia and bradyarrhythmia [R2][R3].",
+        "refs": [
+          "R2",
+          "R3",
+          "R4"
+        ]
+      },
+      {
+        "test": "Cardiac troponin I",
+        "finding": "Raised in complicated disease and secondary IMHA; highest in non-survivors [R2].",
+        "note": "More sensitive than troponin T in babesiosis; CK-MB is not heart-specific in dogs [R1][R2].",
+        "refs": [
+          "R1",
+          "R2"
+        ]
+      },
+      {
+        "test": "Electrolytes (potassium)",
+        "finding": "Hyperkalaemia was found in 2 of 9 complicated cases; hypokalaemia was uncommon [R13].",
+        "note": "Hypokalaemia reduces the effect of lidocaine [R14].",
+        "refs": [
+          "R13",
+          "R14"
+        ]
+      },
+      {
+        "test": "NT-proBNP",
+        "finding": "Raised in proportion to severity [R10].",
+        "note": "Send-out test; no cut-off for babesiosis.",
+        "refs": [
+          "R10"
+        ]
+      },
+      {
+        "test": "Echocardiography",
+        "finding": "Diastolic dysfunction most common; systolic dysfunction with reduced fractional shortening and raised E-point septal separation in a few; pericardial effusion [R8].",
+        "note": "Severe anaemia alone increases fractional shortening and ejection fraction [R6].",
+        "refs": [
+          "R8",
+          "R6"
+        ]
+      }
+    ],
+    "differentials": [
+      {
+        "condition": "Hyperdynamic heart of anaemia",
+        "distinguish": "Tachycardia and high fractional shortening with normal troponin; improves as the haematocrit rises [R6].",
+        "refs": [
+          "R6"
+        ]
+      },
+      {
+        "condition": "Ehrlichia canis co-infection",
+        "distinguish": "Also raises troponin I, in proportion to the anaemia; test for it before blaming Babesia [R15].",
+        "refs": [
+          "R15"
+        ]
+      },
+      {
+        "condition": "Hyperkalaemia from acute kidney injury",
+        "distinguish": "Bradycardia or atrial standstill with high potassium and azotaemia; see SY05 [R12][R13].",
+        "refs": [
+          "R12",
+          "R13"
+        ]
+      },
+      {
+        "condition": "Pericardial effusion from hypoalbuminaemia or capillary leak",
+        "distinguish": "Effusion can occur without myocardial necrosis [R1].",
+        "refs": [
+          "R1"
+        ]
+      },
+      {
+        "condition": "Shock from vasodilation or hypovolaemia (SY10)",
+        "distinguish": "Hypotension in babesiosis has several causes; echocardiography separates poor contraction from low preload [R1][R8].",
+        "refs": [
+          "R1",
+          "R8"
+        ]
+      },
+      {
+        "condition": "Thromboembolism with secondary IMHA",
+        "distinguish": "Notched R waves were more common with secondary IMHA [R1].",
+        "refs": [
+          "R1"
+        ]
+      }
+    ],
+    "grading": []
+  },
+  "approach": [
+    {
+      "step": 1,
+      "action": "Examine heart rate, rhythm and pulses",
+      "detail": "Record a lead II ECG in a dog with an irregular rhythm, pulse deficits or bradycardia. Look for ventricular arrhythmia [R2][R3].",
+      "setting": "practice"
+    },
+    {
+      "step": 2,
+      "action": "Measure potassium and treat the anaemia",
+      "detail": "Correct potassium before antiarrhythmics [R14]. Transfuse as on SY01; anaemic hypoxia drives the myocardial injury [R1].",
+      "setting": "practice"
+    },
+    {
+      "step": 3,
+      "action": "Give IV fluids with care",
+      "detail": "Myocardial lesions can cause fluid overload and pulmonary oedema; reassess often [R1].",
+      "setting": "practice"
+    },
+    {
+      "step": 4,
+      "action": "Measure troponin I in complicated cases",
+      "detail": "A South African review advises this, as lesions are more common than thought [R1].",
+      "setting": "practice"
+    },
+    {
+      "step": 5,
+      "action": "Oxygen and strict cage rest",
+      "detail": "Advised when the heart is involved [R1].",
+      "setting": "practice"
+    },
+    {
+      "step": 6,
+      "action": "Treat a haemodynamically significant ventricular arrhythmia",
+      "detail": "Lidocaine IV is the general canine first choice [R14].",
+      "setting": "practice"
+    },
+    {
+      "step": 7,
+      "action": "Echocardiography and inotropes",
+      "detail": "For persistent hypotension or suspected pump failure, refer for echocardiography, invasive monitoring and inotropes [R1][R8][R16].",
+      "setting": "referral"
+    }
+  ],
+  "treatments": [
+    {
+      "name": "Oxygen and strict cage rest",
+      "class": "supportive",
+      "aim": "Raise oxygen delivery and cut cardiac workload.",
+      "status": "standard",
+      "evidence_level": "E",
+      "independent_studies": 0,
+      "evidence_summary": "Recommended by a South African review for dogs with cardiac involvement, with no data in babesiosis [R1]. The heart-failure consensus advises oxygen by cage or nasal line where needed (level D) [R16].",
+      "doses": [],
+      "cautions": "Handling stress in a hypoxic, anaemic dog.",
+      "monitoring": "Respiratory rate and effort, mucous membranes, pulse oximetry.",
+      "availability": "",
+      "refs": [
+        "R1",
+        "R16"
+      ]
+    },
+    {
+      "name": "Lidocaine for ventricular arrhythmia",
+      "class": "specific",
+      "aim": "Suppress ventricular tachycardia or frequent ventricular premature complexes that compromise output.",
+      "status": "standard",
+      "evidence_level": "E",
+      "independent_studies": 0,
+      "evidence_summary": "A review advises arrhythmia control in babesiosis but names no drug [R1]. Ventricular arrhythmias were seen in about 7% of B. rossi dogs [R3]. No study treated them. Dose from a veterinary formulary for dogs in general [R14].",
+      "doses": [
+        {
+          "drug": "lidocaine",
+          "dose": "2 mg/kg",
+          "route": "IV over about 1 minute",
+          "frequency": "repeat to effect",
+          "duration": "maximum cumulative 8 mg/kg over about 30 minutes",
+          "context": "Dogs, any cause; formulary",
+          "note": "Fast bolus can cause hypotension. Use a product without adrenaline (general practice; not stated in the source).",
+          "refs": [
+            "R14"
+          ]
+        },
+        {
+          "drug": "lidocaine",
+          "dose": "25 to 75 µg/kg/min",
+          "route": "IV CRI",
+          "frequency": "continuous",
+          "duration": "",
+          "context": "Dogs, any cause; formulary",
+          "note": "Short half-life; a CRI or repeat boluses keep control.",
+          "refs": [
+            "R14"
+          ]
+        }
+      ],
+      "cautions": "Toxicity shows as drowsiness or agitation, then muscle twitching and seizures. Hypokalaemia reduces its effect [R14].",
+      "monitoring": "Continuous ECG, blood pressure, neurological signs, potassium.",
+      "availability": "",
+      "refs": [
+        "R1",
+        "R3",
+        "R14"
+      ]
+    },
+    {
+      "name": "Restricted, closely monitored IV fluids",
+      "class": "supportive",
+      "aim": "Avoid volume overload and pulmonary oedema when myocardial function is reduced.",
+      "status": "proposed",
+      "evidence_level": "E",
+      "independent_studies": 0,
+      "evidence_summary": "A review warns that myocardial lesions can cause fluid overload and pulmonary oedema, and that sodium retention may expand plasma volume [R1]. No study set a fluid rate or tested a fluid limit in dogs with babesiosis and heart involvement.",
+      "doses": [],
+      "cautions": "Hypovolaemia and capillary leak also occur; the dog may need fluids. See SY10 and SY08.",
+      "monitoring": "Respiratory rate, lung sounds, body weight, blood pressure, urine output.",
+      "availability": "",
+      "refs": [
+        "R1"
+      ]
+    },
+    {
+      "name": "Correction of potassium",
+      "class": "supportive",
+      "aim": "Remove an electrolyte cause of arrhythmia and allow antiarrhythmics to work.",
+      "status": "proposed",
+      "evidence_level": "E",
+      "independent_studies": 0,
+      "evidence_summary": "Hyperkalaemia occurred in 2 of 9 dogs with complicated babesiosis and hypokalaemia was uncommon [R13]. Hypokalaemia impairs lidocaine [R14]. No source gave a dose for this use, and no magnesium data in babesiosis were found.",
+      "doses": [],
+      "cautions": "Hyperkalaemia from acute kidney injury needs the opposite treatment (SY05).",
+      "monitoring": "Potassium and ECG.",
+      "availability": "",
+      "refs": [
+        "R13",
+        "R14"
+      ]
+    },
+    {
+      "name": "Dopamine for systolic dysfunction",
+      "class": "specific",
+      "aim": "Support contractility and blood pressure in dogs with reduced systolic function.",
+      "status": "proposed",
+      "evidence_level": "B",
+      "independent_studies": 1,
+      "evidence_summary": "In an Indian critical care series of 92 dogs with babesiosis, the 7 dogs with systolic dysfunction received dopamine [R8]. The paper gives no outcome for these dogs by treatment, so benefit is unknown.",
+      "doses": [
+        {
+          "drug": "dopamine",
+          "dose": "10 µg/kg/min",
+          "route": "IV CRI",
+          "frequency": "continuous",
+          "duration": "",
+          "context": "Babesia sp. (smear), 7 dogs with systolic dysfunction, case series",
+          "note": "No dose titration or outcome reported.",
+          "refs": [
+            "R8"
+          ]
+        }
+      ],
+      "cautions": "Can cause tachyarrhythmia in an already tachycardic dog.",
+      "monitoring": "Continuous ECG and blood pressure.",
+      "availability": "",
+      "refs": [
+        "R8"
+      ]
+    },
+    {
+      "name": "Dobutamine",
+      "class": "specific",
+      "aim": "Increase contractility in acute myocardial failure.",
+      "status": "proposed",
+      "evidence_level": "D",
+      "independent_studies": 1,
+      "evidence_summary": "Not studied in babesiosis. A babesiosis review advises positive inotropic support without naming a drug [R1]. The dose is from the consensus for acute heart failure in dogs with mitral valve disease [R16].",
+      "doses": [
+        {
+          "drug": "dobutamine",
+          "dose": "2.5 to 10 µg/kg/min",
+          "route": "IV CRI",
+          "frequency": "continuous",
+          "duration": "",
+          "context": "Dogs with acute congestive heart failure from mitral valve disease; consensus guideline",
+          "note": "Start at 2.5 µg/kg/min and titrate up.",
+          "refs": [
+            "R16"
+          ]
+        }
+      ],
+      "cautions": "Tachycardia and arrhythmia.",
+      "monitoring": "Continuous ECG and blood pressure; referral setting.",
+      "availability": "",
+      "refs": [
+        "R1",
+        "R16"
+      ]
+    },
+    {
+      "name": "Pimobendan",
+      "class": "specific",
+      "aim": "Inodilator support of a failing left ventricle.",
+      "status": "proposed",
+      "evidence_level": "D",
+      "independent_studies": 1,
+      "evidence_summary": "Not studied in babesiosis. The dose is from the consensus for congestive heart failure in mitral valve disease, a different disease of the heart [R16].",
+      "doses": [
+        {
+          "drug": "pimobendan",
+          "dose": "0.25 to 0.3 mg/kg",
+          "route": "PO",
+          "frequency": "every 12 h",
+          "duration": "",
+          "context": "Dogs with congestive heart failure from mitral valve disease; consensus guideline",
+          "note": "Oral only; absorption in a vomiting, collapsed dog is uncertain.",
+          "refs": [
+            "R16"
+          ]
+        }
+      ],
+      "cautions": "No data in anaemic or septic dogs.",
+      "monitoring": "Heart rate, rhythm, blood pressure.",
+      "availability": "",
+      "refs": [
+        "R16"
+      ]
+    },
+    {
+      "name": "Furosemide",
+      "class": "supportive",
+      "aim": "Remove fluid in cardiogenic pulmonary oedema.",
+      "status": "proposed",
+      "evidence_level": "D",
+      "independent_studies": 1,
+      "evidence_summary": "A babesiosis review lists diuretics for cardiac involvement [R1]. No study in babesiosis. The doses are from the consensus for acute congestive heart failure in dogs [R16]. For non-cardiogenic oedema see SY08.",
+      "doses": [
+        {
+          "drug": "furosemide",
+          "dose": "2 mg/kg",
+          "route": "IV or IM",
+          "frequency": "every hour until breathing improves",
+          "duration": "maximum 8 mg/kg over 4 h",
+          "context": "Dogs with acute congestive heart failure from mitral valve disease; consensus guideline",
+          "note": "",
+          "refs": [
+            "R16"
+          ]
+        },
+        {
+          "drug": "furosemide",
+          "dose": "0.66 to 1 mg/kg/h",
+          "route": "IV CRI",
+          "frequency": "continuous, after the bolus",
+          "duration": "",
+          "context": "Dogs with life-threatening cardiogenic pulmonary oedema; consensus guideline",
+          "note": "",
+          "refs": [
+            "R16"
+          ]
+        }
+      ],
+      "cautions": "Hypovolaemia, hypotension and prerenal azotaemia in a dog that is not volume overloaded; hypokalaemia.",
+      "monitoring": "Respiratory rate, blood pressure, creatinine, potassium.",
+      "availability": "",
+      "refs": [
+        "R1",
+        "R16"
+      ]
+    },
+    {
+      "name": "Hydroxyethyl starch for diastolic dysfunction",
+      "class": "supportive",
+      "aim": "Used to support preload in dogs with diastolic dysfunction.",
+      "status": "harmful",
+      "evidence_level": "D",
+      "independent_studies": 2,
+      "evidence_summary": "Given to dogs with diastolic dysfunction in one babesiosis series, with no outcome by treatment [R8]. In critically ill dogs from other causes, HES was linked to death or acute kidney injury after adjusting for illness severity [R17].",
+      "doses": [
+        {
+          "drug": "hydroxyethyl starch 6%",
+          "dose": "5 mL/kg/h",
+          "route": "IV",
+          "frequency": "continuous",
+          "duration": "",
+          "context": "Babesia sp. (smear), dogs with diastolic dysfunction, case series",
+          "note": "Reported use only; harm shown in other critically ill dogs.",
+          "refs": [
+            "R8"
+          ]
+        }
+      ],
+      "cautions": "Associated with death or acute kidney injury in critically ill dogs [R17].",
+      "monitoring": "Creatinine, urine output, signs of fluid overload.",
+      "availability": "",
+      "refs": [
+        "R8",
+        "R17"
+      ]
+    }
+  ],
+  "prognosis": {
+    "text": "Cardiac involvement marks severe disease. In one Indian series, mortality was 74% with echocardiographic dysfunction against 31% without; the paper's own counts do not fully agree, and died may include euthanasia [R8]. Fatal B. canis cases regularly show myocardial lesions [R7][R9]. No study adjusted for anaemia, kidney injury or other organ failure.",
+    "indicators": [
+      {
+        "finding": "High troponin I",
+        "meaning": "Highest in non-survivors with the worst myocardial lesions (3 dogs) [R2]; very high in the 2 B. canis deaths [R5].",
+        "refs": [
+          "R2",
+          "R5"
+        ]
+      },
+      {
+        "finding": "Sinus bradycardia or irregular rhythm",
+        "meaning": "More common in non-survivors [R3].",
+        "refs": [
+          "R3"
+        ]
+      },
+      {
+        "finding": "Raised NT-proBNP",
+        "meaning": "Higher with more severe disease; no outcome data [R10].",
+        "refs": [
+          "R10"
+        ]
+      },
+      {
+        "finding": "Low E′, high E/E′ or raised E-point septal separation",
+        "meaning": "Linked to death in one series [R8].",
+        "refs": [
+          "R8"
+        ]
+      }
+    ]
+  },
+  "related": [
+    {
+      "id": "TX00",
+      "why": "The drugs against the parasite."
+    },
+    {
+      "id": "SY01",
+      "why": "Transfusion; anaemic hypoxia drives the myocardial injury."
+    },
+    {
+      "id": "SY02",
+      "why": "Secondary IMHA; troponin was high in this group."
+    },
+    {
+      "id": "SY05",
+      "why": "Acute kidney injury and hyperkalaemia."
+    },
+    {
+      "id": "SY08",
+      "why": "Non-cardiogenic pulmonary oedema."
+    },
+    {
+      "id": "SY10",
+      "why": "Shock and hypotension from other causes."
+    },
+    {
+      "id": "SY11",
+      "why": "Triage and order of care in complicated disease."
+    }
+  ],
+  "evidence_gaps": [
+    "No treatment aimed at the heart has been tested in dogs with babesiosis.",
+    "No study tells how cardiac involvement should change fluid or transfusion rates.",
+    "No validated troponin or NT-proBNP cut-off predicts death after adjusting for anaemia and kidney function.",
+    "Whether myocardial injury resolves in survivors is not known.",
+    "No cardiac data exist for B. vogeli, and B. gibsoni data are pooled with Ehrlichia.",
+    "No magnesium data in babesiosis were found."
+  ],
+  "references": [
+    {
+      "ref": "R1",
+      "authors": "Lobetti RG",
+      "year": 2005,
+      "title": "Cardiac involvement in canine babesiosis",
+      "journal": "Journal of the South African Veterinary Association",
+      "volume_pages": "76:4-8",
+      "doi": "10.4102/jsava.v76i1.386",
+      "pmid": "15900893",
+      "url": "",
+      "article_id": "",
+      "type": "review",
+      "species": "B. rossi",
+      "n_dogs": null,
+      "read": "full text"
+    },
+    {
+      "ref": "R2",
+      "authors": "Lobetti R, Dvir E, Pearson J",
+      "year": 2002,
+      "title": "Cardiac troponins in canine babesiosis",
+      "journal": "Journal of Veterinary Internal Medicine",
+      "volume_pages": "16:63-68",
+      "doi": "10.1111/j.1939-1676.2002.tb01607.x",
+      "pmid": "11822806",
+      "url": "",
+      "article_id": "",
+      "type": "cohort",
+      "species": "B. rossi",
+      "n_dogs": 34,
+      "read": "abstract"
+    },
+    {
+      "ref": "R3",
+      "authors": "Dvir E, Lobetti RG, Jacobson LS, et al.",
+      "year": 2004,
+      "title": "Electrocardiographic changes and cardiac pathology in canine babesiosis",
+      "journal": "Journal of Veterinary Cardiology",
+      "volume_pages": "6:15-23",
+      "doi": "10.1016/S1760-2734(06)70060-1",
+      "pmid": "19083300",
+      "url": "",
+      "article_id": "",
+      "type": "cohort",
+      "species": "B. rossi",
+      "n_dogs": 121,
+      "read": "abstract"
+    },
+    {
+      "ref": "R4",
+      "authors": "Köster LS, Lobetti RG, Kelly P",
+      "year": 2015,
+      "title": "Canine babesiosis: a perspective on clinical complications, biomarkers, and treatment",
+      "journal": "Veterinary Medicine: Research and Reports",
+      "volume_pages": "6:119-128",
+      "doi": "10.2147/VMRR.S60431",
+      "pmid": "30155438",
+      "url": "",
+      "article_id": "CB493",
+      "type": "review",
+      "species": "",
+      "n_dogs": null,
+      "read": "full text"
+    },
+    {
+      "ref": "R5",
+      "authors": "Bartnicki M, Łyp P, Dębiak P, et al.",
+      "year": 2017,
+      "title": "Cardiac disorders in dogs infected with Babesia canis",
+      "journal": "Polish Journal of Veterinary Sciences",
+      "volume_pages": "20:573-581",
+      "doi": "10.1515/pjvs-2017-0070",
+      "pmid": "29166283",
+      "url": "",
+      "article_id": "CB014",
+      "type": "cohort",
+      "species": "B. canis",
+      "n_dogs": 50,
+      "read": "abstract"
+    },
+    {
+      "ref": "R6",
+      "authors": "Spotswood TC, Kirberger RM, Koma LM, et al.",
+      "year": 2006,
+      "title": "Changes in echocardiographic variables of left ventricular size and function in a model of canine normovolemic anemia",
+      "journal": "Veterinary Radiology & Ultrasound",
+      "volume_pages": "47:358-365",
+      "doi": "10.1111/j.1740-8261.2006.00154.x",
+      "pmid": "16863054",
+      "url": "",
+      "article_id": "",
+      "type": "experimental",
+      "species": "",
+      "n_dogs": 11,
+      "read": "abstract"
+    },
+    {
+      "ref": "R7",
+      "authors": "Huber D, Vlahović D, Mihoković Buhin I, et al.",
+      "year": 2026,
+      "title": "Cardiac involvement in European canine babesiosis - a pathological perspective",
+      "journal": "Topics in Companion Animal Medicine",
+      "volume_pages": "71:101060",
+      "doi": "10.1016/j.tcam.2026.101060",
+      "pmid": "42082101",
+      "url": "",
+      "article_id": "CB146",
+      "type": "case series",
+      "species": "B. canis",
+      "n_dogs": null,
+      "read": "abstract"
+    },
+    {
+      "ref": "R8",
+      "authors": "Gowtham R, Gowri B, Kavitha S, et al.",
+      "year": 2024,
+      "title": "Transthoracic echocardiographic assessment of cardiac dysfunction in dogs with babesiosis",
+      "journal": "Indian Journal of Canine Practice",
+      "volume_pages": "16:110-114",
+      "doi": "10.29005/ijcp.2024.16.2.110-114",
+      "pmid": "",
+      "url": "",
+      "article_id": "CB263",
+      "type": "case series",
+      "species": "Babesia sp.",
+      "n_dogs": 92,
+      "read": "full text"
+    },
+    {
+      "ref": "R9",
+      "authors": "Zygner W, Rodo A, Gójska-Zygner O, et al.",
+      "year": 2021,
+      "title": "Disorders in blood circulation as a probable cause of death in dogs infected with Babesia canis",
+      "journal": "Journal of Veterinary Research",
+      "volume_pages": "65:277-285",
+      "doi": "10.2478/jvetres-2021-0036",
+      "pmid": "34917839",
+      "url": "",
+      "article_id": "CB080",
+      "type": "case series",
+      "species": "B. canis",
+      "n_dogs": 6,
+      "read": "full text"
+    },
+    {
+      "ref": "R10",
+      "authors": "Lobetti R, Kirberger R, Keller N, et al.",
+      "year": 2012,
+      "title": "NT-ProBNP and cardiac troponin I in virulent canine babesiosis",
+      "journal": "Veterinary Parasitology",
+      "volume_pages": "190:333-339",
+      "doi": "10.1016/j.vetpar.2012.07.021",
+      "pmid": "22884910",
+      "url": "",
+      "article_id": "CB434",
+      "type": "cohort",
+      "species": "B. rossi",
+      "n_dogs": 45,
+      "read": "abstract"
+    },
+    {
+      "ref": "R11",
+      "authors": "Kızıltepe Ş, Ayvazoğlu C, Yaşar Ü, et al.",
+      "year": 2024,
+      "title": "Babesiosis'li Köpeklerde Kardiyak Troponin Seviyelerinin Belirlenmesi (Determination of cardiac troponin levels in dogs with babesiosis)",
+      "journal": "Van Veterinary Journal",
+      "volume_pages": "35:164-167",
+      "doi": "10.36483/vanvetj.1403752",
+      "pmid": "",
+      "url": "",
+      "article_id": "CB261",
+      "type": "cohort",
+      "species": "B. canis",
+      "n_dogs": 15,
+      "read": "full text"
+    },
+    {
+      "ref": "R12",
+      "authors": "Sharma S, Sharma P, Sharma D, et al.",
+      "year": 2025,
+      "title": "Prevalence of different types of arrhythmias in canine babesiosis and ehrlichiosis",
+      "journal": "International Journal of Advanced Biochemistry Research",
+      "volume_pages": "9:1012-1016",
+      "doi": "10.33545/26174693.2025.v9.i12m.6701",
+      "pmid": "",
+      "url": "",
+      "article_id": "CB289",
+      "type": "case series",
+      "species": "B. gibsoni",
+      "n_dogs": 465,
+      "read": "full text"
+    },
+    {
+      "ref": "R13",
+      "authors": "Lobetti RG, Jacobson LS",
+      "year": 2001,
+      "title": "Renal involvement in dogs with babesiosis",
+      "journal": "Journal of the South African Veterinary Association",
+      "volume_pages": "72:23-28",
+      "doi": "10.4102/jsava.v72i1.604",
+      "pmid": "11563713",
+      "url": "",
+      "article_id": "",
+      "type": "cohort",
+      "species": "B. rossi",
+      "n_dogs": 40,
+      "read": "abstract"
+    },
+    {
+      "ref": "R14",
+      "authors": "Gordon SG, Saunders AB, Malcolm E",
+      "year": 2023,
+      "title": "Antiarrhythmics for use in animals",
+      "journal": "MSD Veterinary Manual, Professional Version",
+      "volume_pages": "",
+      "doi": "",
+      "pmid": "",
+      "url": "https://www.msdvetmanual.com/pharmacology/systemic-pharmacotherapeutics-of-the-cardiovascular-system/antiarrhythmics",
+      "article_id": "",
+      "type": "textbook",
+      "species": "",
+      "n_dogs": null,
+      "read": "full text"
+    },
+    {
+      "ref": "R15",
+      "authors": "Diniz PPVP, de Morais HSA, Breitschwerdt EB, et al.",
+      "year": 2008,
+      "title": "Serum cardiac troponin I concentration in dogs with ehrlichiosis",
+      "journal": "Journal of Veterinary Internal Medicine",
+      "volume_pages": "22:1136-1143",
+      "doi": "10.1111/j.1939-1676.2008.0145.x",
+      "pmid": "18638021",
+      "url": "",
+      "article_id": "",
+      "type": "cohort",
+      "species": "",
+      "n_dogs": 210,
+      "read": "abstract"
+    },
+    {
+      "ref": "R16",
+      "authors": "Keene BW, Atkins CE, Bonagura JD, et al.",
+      "year": 2019,
+      "title": "ACVIM consensus guidelines for the diagnosis and treatment of myxomatous mitral valve disease in dogs",
+      "journal": "Journal of Veterinary Internal Medicine",
+      "volume_pages": "33:1127-1140",
+      "doi": "10.1111/jvim.15488",
+      "pmid": "30974015",
+      "url": "",
+      "article_id": "",
+      "type": "guideline",
+      "species": "",
+      "n_dogs": null,
+      "read": "full text"
+    },
+    {
+      "ref": "R17",
+      "authors": "Hayes G, Benedicenti L, Mathews K",
+      "year": 2016,
+      "title": "Retrospective cohort study on the incidence of acute kidney injury and death following hydroxyethyl starch (HES 10% 250/0.5/5:1) administration in dogs (2007-2010)",
+      "journal": "Journal of Veterinary Emergency and Critical Care",
+      "volume_pages": "26:35-40",
+      "doi": "10.1111/vec.12412",
+      "pmid": "26587795",
+      "url": "",
+      "article_id": "",
+      "type": "cohort",
+      "species": "",
+      "n_dogs": 422,
+      "read": "abstract"
+    }
+  ],
+  "search": {
+    "date": "2026-11-12",
+    "sources": [
+      "local review",
+      "PubMed",
+      "Europe PMC",
+      "Crossref",
+      "web"
+    ],
+    "note": "Local CAR synthesis and treatment set, then PubMed and Europe PMC for babesiosis with heart terms, then guideline and formulary sources for doses. Left out: ECG series that pool Babesia with Ehrlichia except the largest, a Croatian necropsy series with no DOI or PMID, and a B. gibsoni case report whose DOI does not resolve."
+  }
+}

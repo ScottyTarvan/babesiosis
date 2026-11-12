@@ -1,0 +1,242 @@
+:host {
+  display: block;
+}
+
+.fs-lead {
+  padding: 14px 16px;
+  border: 1px solid rgb(var(--fs-color-ink-soft) / 0.25);
+  border-top: 0;
+  border-radius: 0 0 8px 8px;
+  background: rgb(var(--fs-color-surface));
+}
+
+.fs-lead__head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.fs-lead__rank {
+  font-size: 18px;
+  font-weight: 600;
+  color: rgb(var(--fs-color-ink));
+}
+
+.fs-lead__kind,
+.fs-lead__muted,
+.fs-lead__note {
+  font-size: 12px;
+  color: rgb(var(--fs-color-ink-soft));
+}
+
+.fs-lead__hyp {
+  margin: 8px 0 12px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: rgb(var(--fs-color-ink));
+}
+
+.fs-lead__block {
+  margin-bottom: 14px;
+}
+
+.fs-lead__h {
+  margin: 0 0 6px;
+  font-size: 13px;
+  font-weight: 600;
+  color: rgb(var(--fs-color-ink));
+}
+
+.fs-lead__forest {
+  display: grid;
+  grid-template-columns: minmax(160px, 2fr) minmax(160px, 1.3fr) minmax(150px, max-content);
+  align-items: center;
+  gap: 2px 12px;
+}
+
+.fs-lead__flabel,
+.fs-lead__feffect {
+  font-size: 12px;
+  line-height: 24px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: rgb(var(--fs-color-ink));
+}
+
+.fs-lead__feffect {
+  font-variant-numeric: tabular-nums;
+  color: rgb(var(--fs-color-ink-soft));
+}
+
+.fs-lead__flag {
+  margin-left: 6px;
+  padding: 0 5px;
+  border-radius: 4px;
+  font-size: 10px;
+  background: rgb(var(--fs-color-ink-soft) / 0.15);
+  color: rgb(var(--fs-color-ink-soft));
+}
+
+.fs-lead__mini,
+.fs-lead__axis {
+  display: block;
+  width: 100%;
+}
+
+.fs-lead__mini {
+  height: 22px;
+}
+
+.fs-lead__axis {
+  height: 16px;
+}
+
+.fs-lead__tick {
+  font-size: 10px;
+  fill: rgb(var(--fs-color-ink-soft));
+}
+
+.fs-lead__zero {
+  stroke: rgb(var(--fs-color-ink-soft));
+  stroke-dasharray: 3 3;
+}
+
+.fs-lead__ci {
+  stroke: rgb(var(--fs-color-ink-soft));
+  stroke-width: 2;
+
+  &--strong {
+    stroke: rgb(var(--fs-color-info));
+  }
+}
+
+.fs-lead__dot {
+  fill: rgb(var(--fs-color-surface));
+  stroke: rgb(var(--fs-color-ink-soft));
+  stroke-width: 2;
+
+  &--strong {
+    fill: rgb(var(--fs-color-info));
+    stroke: rgb(var(--fs-color-info));
+  }
+}
+
+.fs-lead__combined {
+  margin: 6px 0 2px;
+  font-size: 12px;
+  color: rgb(var(--fs-color-ink));
+}
+
+.fs-lead__note {
+  margin: 0;
+}
+
+.fs-lead__nodata {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 10px 12px;
+  border: 1px dashed rgb(var(--fs-color-warning) / 0.6);
+  border-radius: 6px;
+  background: rgb(var(--fs-color-warning) / 0.06);
+  font-size: 13px;
+  color: rgb(var(--fs-color-ink));
+}
+
+.fs-lead__chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.fs-lead__chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 3px 10px;
+  border: 1px solid rgb(var(--fs-color-success) / 0.45);
+  border-radius: 999px;
+  font-size: 12px;
+  color: rgb(var(--fs-color-ink));
+  text-decoration: none;
+  background: rgb(var(--fs-color-success) / 0.08);
+
+  &:hover {
+    border-color: rgb(var(--fs-color-primary));
+  }
+
+  &--against {
+    border-color: rgb(var(--fs-color-danger) / 0.45);
+    background: rgb(var(--fs-color-danger) / 0.08);
+  }
+}
+
+.fs-lead__chip-mark {
+  font-weight: 700;
+}
+
+.fs-lead__chip-state {
+  font-size: 11px;
+  color: rgb(var(--fs-color-ink-soft));
+}
+
+.fs-lead__items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px 16px;
+  margin: 0 0 10px;
+
+  dt {
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    color: rgb(var(--fs-color-ink-soft));
+  }
+
+  dd {
+    margin: 2px 0 0;
+    font-size: 13px;
+    color: rgb(var(--fs-color-ink));
+  }
+}
+
+.fs-lead__details {
+  font-size: 12px;
+  color: rgb(var(--fs-color-ink));
+
+  summary {
+    cursor: pointer;
+    color: rgb(var(--fs-color-primary));
+  }
+}
+
+.fs-lead__long {
+  display: grid;
+  grid-template-columns: 170px 1fr;
+  gap: 4px 10px;
+  margin: 8px 0 0;
+  line-height: 1.45;
+
+  dt {
+    font-weight: 600;
+    color: rgb(var(--fs-color-ink-soft));
+  }
+
+  dd {
+    margin: 0;
+  }
+}
+
+@media (max-width: 640px) {
+  .fs-lead__forest {
+    grid-template-columns: 1fr;
+  }
+
+  .fs-lead__long {
+    grid-template-columns: 1fr;
+  }
+}

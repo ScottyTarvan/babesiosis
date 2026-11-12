@@ -1,0 +1,148 @@
+dataset_a,id_a,dataset_b,id_b,basis,fields_matched,certainty
+DS03,BLSC29 (cohort 2),S-CB050,case 127,chain through DS04 case 54 (both links confirmed by values),"via DS04: hct, retic_pct; wbc, neut_seg, neut_band; signalment",confirmed by values
+DS03 experimental,dogs 1-5,DS02,dogs 2-6,"SV-G1: ARC equal on every day, 139 of 140 cells equal",haematology by day,confirmed by values
+DS04,case 54,DS03,BLSC29 (cohort 2),"haematocrit and reticulocyte % equal within rounding; age, weight and sex equal",hct; retic_pct; age_months; weight_kg; sex,confirmed by values
+DS04,case 50,S-CB050,case 126,"WBC, segmented and band neutrophils equal within rounding; age, weight and sex equal; both died",wbc; neut_seg; neut_band; age_months; weight_kg; sex,confirmed by values
+DS04,case 54,S-CB050,case 127,"WBC, segmented and band neutrophils equal within rounding; age, weight and sex equal; both died",wbc; neut_seg; neut_band; age_months; weight_kg; sex,confirmed by values
+DS04,case 59,S-CB050,case 131,"WBC, segmented and band neutrophils equal within rounding; age, weight and sex equal; both died",wbc; neut_seg; neut_band; age_months; weight_kg; sex,confirmed by values
+DS04 haematology,row 5,DS04,case 50,row order of Stats Tables sheets; S-CB050 triple and signalment; icterus vs bilirubin,"WBC, segmented, band (via S-CB050); age, weight, sex",confirmed by values
+DS04 haematology,row 9,DS04,case 54,row order of Stats Tables sheets; S-CB050 triple and signalment; icterus vs bilirubin,"WBC, segmented, band (via S-CB050); age, weight, sex",confirmed by values
+DS04 haematology,row 10,DS04,case 59,row order of Stats Tables sheets; S-CB050 triple and signalment; icterus vs bilirubin,"WBC, segmented, band (via S-CB050); age, weight, sex",confirmed by values
+S-CB517,"cases 1-97, controls 201-215",S-CB050,same case numbers,SV-G1: 7 cytokines equal in 111-112 of 112 dogs,cytokines; neut_seg; WBC; died,confirmed by values
+DS03 cohort 1 (file level),78 dogs with full signalment,S-CB050 cohort 1,file level,77/78 DS03 dogs have an age-weight-sex twin; candidate pairs 59.3 times the DS05 baseline (p = 1.0e-105); the 75 unique pairs follow the study-number order with no inversion (Kendall tau 1.0). Dog-level pairs stay unverified (spec step 3),age_months; weight_kg; sex (summary),probable
+DS03 cohort 2 (file level),17 dogs with full signalment,S-CB050 cohort 2,file level,17/17 DS03 dogs have an age-weight-sex twin; candidate pairs 118.7 times the DS05 baseline (p = 1.1e-29); the 17 unique pairs follow the study-number order with no inversion (Kendall tau 1.0). Dog-level pairs stay unverified (spec step 3),age_months; weight_kg; sex (summary),probable
+DS03 controls (file level),13 dogs with full signalment,S-CB050 controls 201-215,file level,12/13 DS03 dogs have an age-weight-sex twin; candidate pairs 253.8 times the DS05 baseline (p = 2.5e-25); the 12 unique pairs follow the study-number order with no inversion (Kendall tau 1.0). Dog-level pairs stay unverified (spec step 3),age_months; weight_kg; sex (summary),probable
+DS04 haematology,row 6,DS04,case 20,"row order of the 5 Stats Tables sheets; the order rule is validated by the 3 S-CB050 hits on the rows it predicts (chance 0.0014); icterus wording vs bilirubin is uninformative (8/10 agree, p = 0.37)",order,probable
+DS04 haematology,row 7,DS04,case 117,"row order of the 5 Stats Tables sheets; the order rule is validated by the 3 S-CB050 hits on the rows it predicts (chance 0.0014); icterus wording vs bilirubin is uninformative (8/10 agree, p = 0.37)",order,probable
+DS04 haematology,row 8,DS04,case 110,"row order of the 5 Stats Tables sheets; the order rule is validated by the 3 S-CB050 hits on the rows it predicts (chance 0.0014); icterus wording vs bilirubin is uninformative (8/10 agree, p = 0.37)",order,probable
+DS04 haematology,row 11,DS04,case 91,"row order of the 5 Stats Tables sheets; the order rule is validated by the 3 S-CB050 hits on the rows it predicts (chance 0.0014); icterus wording vs bilirubin is uninformative (8/10 agree, p = 0.37)",order,probable
+DS04 haematology,row 12,DS04,case 61,"row order of the 5 Stats Tables sheets; the order rule is validated by the 3 S-CB050 hits on the rows it predicts (chance 0.0014); icterus wording vs bilirubin is uninformative (8/10 agree, p = 0.37)",order,probable
+DS04 haematology,row 13,DS04,case 88,"row order of the 5 Stats Tables sheets; the order rule is validated by the 3 S-CB050 hits on the rows it predicts (chance 0.0014); icterus wording vs bilirubin is uninformative (8/10 agree, p = 0.37)",order,probable
+DS04 haematology,row 14,DS04,case 106,"row order of the 5 Stats Tables sheets; the order rule is validated by the 3 S-CB050 hits on the rows it predicts (chance 0.0014); icterus wording vs bilirubin is uninformative (8/10 agree, p = 0.37)",order,probable
+DS06,high_3,DS02,dog 6,sample pattern: series stops after day 3; DS02 dog 6 died on day 4 (only high-dose dog with no sample after day 4),sampling pattern; dose group,probable
+DS03,BC04 (cohort 1),S-CB050,case 4,"age, weight (within 0.1 kg) and sex equal; 1 S-CB050 dog(s) and 1 DS03 dog(s) share the combination",age_months; weight_kg; sex,unverified
+DS03,BC06 (cohort 1),S-CB050,case 6,"age, weight (within 0.1 kg) and sex equal; 1 S-CB050 dog(s) and 1 DS03 dog(s) share the combination",age_months; weight_kg; sex,unverified
+DS03,BC11 (cohort 1),S-CB050,case 11,"age, weight (within 0.1 kg) and sex equal; 1 S-CB050 dog(s) and 1 DS03 dog(s) share the combination",age_months; weight_kg; sex,unverified
+DS03,BC12 (cohort 1),S-CB050,case 12,"age, weight (within 0.1 kg) and sex equal; 1 S-CB050 dog(s) and 1 DS03 dog(s) share the combination",age_months; weight_kg; sex,unverified
+DS03,BC14 (cohort 1),S-CB050,case 14,"age, weight (within 0.1 kg) and sex equal; 1 S-CB050 dog(s) and 1 DS03 dog(s) share the combination",age_months; weight_kg; sex,unverified
+DS03,BC17 (cohort 1),S-CB050,case 16,"age, weight (within 0.1 kg) and sex equal; 1 S-CB050 dog(s) and 1 DS03 dog(s) share the combination",age_months; weight_kg; sex,unverified
+DS03,BC18 (cohort 1),S-CB050,case 17,"age, weight (within 0.1 kg) and sex equal; 1 S-CB050 dog(s) and 1 DS03 dog(s) share the combination",age_months; weight_kg; sex,unverified
+DS03,BC19 (cohort 1),S-CB050,case 18,"age, weight (within 0.1 kg) and sex equal; 1 S-CB050 dog(s) and 1 DS03 dog(s) share the combination",age_months; weight_kg; sex,unverified
+DS03,BC21 (cohort 1),S-CB050,case 20,"age, weight (within 0.1 kg) and sex equal; 1 S-CB050 dog(s) and 1 DS03 dog(s) share the combination",age_months; weight_kg; sex,unverified
+DS03,BC23 (cohort 1),S-CB050,case 22,"age, weight (within 0.1 kg) and sex equal; 1 S-CB050 dog(s) and 1 DS03 dog(s) share the combination",age_months; weight_kg; sex,unverified
+DS03,BC24 (cohort 1),S-CB050,case 23,"age, weight (within 0.1 kg) and sex equal; 1 S-CB050 dog(s) and 1 DS03 dog(s) share the combination",age_months; weight_kg; sex,unverified
+DS03,BC25 (cohort 1),S-CB050,case 24,"age, weight (within 0.1 kg) and sex equal; 1 S-CB050 dog(s) and 1 DS03 dog(s) share the combination",age_months; weight_kg; sex,unverified
+DS03,BC26 (cohort 1),S-CB050,case 25,"age, weight (within 0.1 kg) and sex equal; 1 S-CB050 dog(s) and 1 DS03 dog(s) share the combination",age_months; weight_kg; sex,unverified
+DS03,BC27 (cohort 1),S-CB050,case 26,"age, weight (within 0.1 kg) and sex equal; 2 S-CB050 dog(s) and 1 DS03 dog(s) share the combination",age_months; weight_kg; sex,unverified
+DS03,BC27 (cohort 1),S-CB050,case 136,"age, weight (within 0.1 kg) and sex equal; 2 S-CB050 dog(s) and 1 DS03 dog(s) share the combination",age_months; weight_kg; sex,unverified
+DS03,BC28 (cohort 1),S-CB050,case 27,"age, weight (within 0.1 kg) and sex equal; 1 S-CB050 dog(s) and 1 DS03 dog(s) share the combination",age_months; weight_kg; sex,unverified
+DS03,BC31 (cohort 1),S-CB050,case 30,"age, weight (within 0.1 kg) and sex equal; 1 S-CB050 dog(s) and 1 DS03 dog(s) share the combination",age_months; weight_kg; sex,unverified
+DS03,BC32 (cohort 1),S-CB050,case 31,"age, weight (within 0.1 kg) and sex equal; 1 S-CB050 dog(s) and 1 DS03 dog(s) share the combination",age_months; weight_kg; sex,unverified
+DS03,BC33 (cohort 1),S-CB050,case 32,"age, weight (within 0.1 kg) and sex equal; 1 S-CB050 dog(s) and 1 DS03 dog(s) share the combination",age_months; weight_kg; sex,unverified
+DS03,BC36 (cohort 1),S-CB050,case 34,"age, weight (within 0.1 kg) and sex equal; 1 S-CB050 dog(s) and 1 DS03 dog(s) share the combination",age_months; weight_kg; sex,unverified
+DS03,BC37 (cohort 1),S-CB050,case 35,"age, weight (within 0.1 kg) and sex equal; 1 S-CB050 dog(s) and 1 DS03 dog(s) share the combination",age_months; weight_kg; sex,unverified
+DS03,BC38 (cohort 1),S-CB050,case 36,"age, weight (within 0.1 kg) and sex equal; 1 S-CB050 dog(s) and 1 DS03 dog(s) share the combination",age_months; weight_kg; sex,unverified
+DS03,BC39 (cohort 1),S-CB050,case 37,"age, weight (within 0.1 kg) and sex equal; 1 S-CB050 dog(s) and 1 DS03 dog(s) share the combination",age_months; weight_kg; sex,unverified
+DS03,BC40 (cohort 1),S-CB050,case 38,"age, weight (within 0.1 kg) and sex equal; 1 S-CB050 dog(s) and 1 DS03 dog(s) share the combination",age_months; weight_kg; sex,unverified
+DS03,BC41 (cohort 1),S-CB050,case 39,"age, weight (within 0.1 kg) and sex equal; 1 S-CB050 dog(s) and 1 DS03 dog(s) share the combination",age_months; weight_kg; sex,unverified
+DS03,BC42 (cohort 1),S-CB050,case 40,"age, weight (within 0.1 kg) and sex equal; 1 S-CB050 dog(s) and 1 DS03 dog(s) share the combination",age_months; weight_kg; sex,unverified
+DS03,BC44 (cohort 1),S-CB050,case 41,"age, weight (within 0.1 kg) and sex equal; 1 S-CB050 dog(s) and 1 DS03 dog(s) share the combination",age_months; weight_kg; sex,unverified
+DS03,BC45 (cohort 1),S-CB050,case 42,"age, weight (within 0.1 kg) and sex equal; 1 S-CB050 dog(s) and 1 DS03 dog(s) share the combination",age_months; weight_kg; sex,unverified
+DS03,BC46 (cohort 1),S-CB050,case 43,"age, weight (within 0.1 kg) and sex equal; 1 S-CB050 dog(s) and 1 DS03 dog(s) share the combination",age_months; weight_kg; sex,unverified
+DS03,BC47 (cohort 1),S-CB050,case 44,"age, weight (within 0.1 kg) and sex equal; 1 S-CB050 dog(s) and 1 DS03 dog(s) share the combination",age_months; weight_kg; sex,unverified
+DS03,BC48 (cohort 1),S-CB050,case 45,"age, weight (within 0.1 kg) and sex equal; 1 S-CB050 dog(s) and 1 DS03 dog(s) share the combination",age_months; weight_kg; sex,unverified
+DS03,BC49 (cohort 1),S-CB050,case 46,"age, weight (within 0.1 kg) and sex equal; 1 S-CB050 dog(s) and 1 DS03 dog(s) share the combination",age_months; weight_kg; sex,unverified
+DS03,BC50 (cohort 1),S-CB050,case 47,"age, weight (within 0.1 kg) and sex equal; 1 S-CB050 dog(s) and 1 DS03 dog(s) share the combination",age_months; weight_kg; sex,unverified
+DS03,BC51 (cohort 1),S-CB050,case 48,"age, weight (within 0.1 kg) and sex equal; 1 S-CB050 dog(s) and 1 DS03 dog(s) share the combination",age_months; weight_kg; sex,unverified
+DS03,BC52 (cohort 1),S-CB050,case 49,"age, weight (within 0.1 kg) and sex equal; 1 S-CB050 dog(s) and 1 DS03 dog(s) share the combination",age_months; weight_kg; sex,unverified
+DS03,BC53 (cohort 1),S-CB050,case 50,"age, weight (within 0.1 kg) and sex equal; 1 S-CB050 dog(s) and 1 DS03 dog(s) share the combination",age_months; weight_kg; sex,unverified
+DS03,BC54 (cohort 1),S-CB050,case 51,"age, weight (within 0.1 kg) and sex equal; 1 S-CB050 dog(s) and 1 DS03 dog(s) share the combination",age_months; weight_kg; sex,unverified
+DS03,BC55 (cohort 1),S-CB050,case 52,"age, weight (within 0.1 kg) and sex equal; 1 S-CB050 dog(s) and 1 DS03 dog(s) share the combination",age_months; weight_kg; sex,unverified
+DS03,BC56 (cohort 1),S-CB050,case 53,"age, weight (within 0.1 kg) and sex equal; 1 S-CB050 dog(s) and 1 DS03 dog(s) share the combination",age_months; weight_kg; sex,unverified
+DS03,BC59 (cohort 1),S-CB050,case 55,"age, weight (within 0.1 kg) and sex equal; 1 S-CB050 dog(s) and 1 DS03 dog(s) share the combination",age_months; weight_kg; sex,unverified
+DS03,BC62 (cohort 1),S-CB050,case 57,"age, weight (within 0.1 kg) and sex equal; 1 S-CB050 dog(s) and 1 DS03 dog(s) share the combination",age_months; weight_kg; sex,unverified
+DS03,BC63 (cohort 1),S-CB050,case 58,"age, weight (within 0.1 kg) and sex equal; 1 S-CB050 dog(s) and 1 DS03 dog(s) share the combination",age_months; weight_kg; sex,unverified
+DS03,BC64 (cohort 1),S-CB050,case 59,"age, weight (within 0.1 kg) and sex equal; 1 S-CB050 dog(s) and 1 DS03 dog(s) share the combination",age_months; weight_kg; sex,unverified
+DS03,BC65 (cohort 1),S-CB050,case 60,"age, weight (within 0.1 kg) and sex equal; 1 S-CB050 dog(s) and 1 DS03 dog(s) share the combination",age_months; weight_kg; sex,unverified
+DS03,BC66 (cohort 1),S-CB050,case 61,"age, weight (within 0.1 kg) and sex equal; 1 S-CB050 dog(s) and 1 DS03 dog(s) share the combination",age_months; weight_kg; sex,unverified
+DS03,BC67 (cohort 1),S-CB050,case 62,"age, weight (within 0.1 kg) and sex equal; 1 S-CB050 dog(s) and 1 DS03 dog(s) share the combination",age_months; weight_kg; sex,unverified
+DS03,BC68 (cohort 1),S-CB050,case 63,"age, weight (within 0.1 kg) and sex equal; 1 S-CB050 dog(s) and 1 DS03 dog(s) share the combination",age_months; weight_kg; sex,unverified
+DS03,BC69 (cohort 1),S-CB050,case 64,"age, weight (within 0.1 kg) and sex equal; 1 S-CB050 dog(s) and 1 DS03 dog(s) share the combination",age_months; weight_kg; sex,unverified
+DS03,BC70 (cohort 1),S-CB050,case 65,"age, weight (within 0.1 kg) and sex equal; 1 S-CB050 dog(s) and 1 DS03 dog(s) share the combination",age_months; weight_kg; sex,unverified
+DS03,BC71 (cohort 1),S-CB050,case 66,"age, weight (within 0.1 kg) and sex equal; 1 S-CB050 dog(s) and 1 DS03 dog(s) share the combination",age_months; weight_kg; sex,unverified
+DS03,BC72 (cohort 1),S-CB050,case 67,"age, weight (within 0.1 kg) and sex equal; 1 S-CB050 dog(s) and 1 DS03 dog(s) share the combination",age_months; weight_kg; sex,unverified
+DS03,BC74 (cohort 1),S-CB050,case 68,"age, weight (within 0.1 kg) and sex equal; 1 S-CB050 dog(s) and 1 DS03 dog(s) share the combination",age_months; weight_kg; sex,unverified
+DS03,BC76 (cohort 1),S-CB050,case 69,"age, weight (within 0.1 kg) and sex equal; 1 S-CB050 dog(s) and 1 DS03 dog(s) share the combination",age_months; weight_kg; sex,unverified
+DS03,BC77 (cohort 1),S-CB050,case 70,"age, weight (within 0.1 kg) and sex equal; 1 S-CB050 dog(s) and 1 DS03 dog(s) share the combination",age_months; weight_kg; sex,unverified
+DS03,BC78 (cohort 1),S-CB050,case 71,"age, weight (within 0.1 kg) and sex equal; 1 S-CB050 dog(s) and 1 DS03 dog(s) share the combination",age_months; weight_kg; sex,unverified
+DS03,BC79 (cohort 1),S-CB050,case 72,"age, weight (within 0.1 kg) and sex equal; 1 S-CB050 dog(s) and 1 DS03 dog(s) share the combination",age_months; weight_kg; sex,unverified
+DS03,BC80 (cohort 1),S-CB050,case 73,"age, weight (within 0.1 kg) and sex equal; 1 S-CB050 dog(s) and 1 DS03 dog(s) share the combination",age_months; weight_kg; sex,unverified
+DS03,BC81 (cohort 1),S-CB050,case 74,"age, weight (within 0.1 kg) and sex equal; 1 S-CB050 dog(s) and 1 DS03 dog(s) share the combination",age_months; weight_kg; sex,unverified
+DS03,BC82 (cohort 1),S-CB050,case 75,"age, weight (within 0.1 kg) and sex equal; 1 S-CB050 dog(s) and 1 DS03 dog(s) share the combination",age_months; weight_kg; sex,unverified
+DS03,BC83 (cohort 1),S-CB050,case 76,"age, weight (within 0.1 kg) and sex equal; 1 S-CB050 dog(s) and 1 DS03 dog(s) share the combination",age_months; weight_kg; sex,unverified
+DS03,BC86 (cohort 1),S-CB050,case 78,"age, weight (within 0.1 kg) and sex equal; 1 S-CB050 dog(s) and 1 DS03 dog(s) share the combination",age_months; weight_kg; sex,unverified
+DS03,BC87 (cohort 1),S-CB050,case 79,"age, weight (within 0.1 kg) and sex equal; 1 S-CB050 dog(s) and 1 DS03 dog(s) share the combination",age_months; weight_kg; sex,unverified
+DS03,BC88 (cohort 1),S-CB050,case 80,"age, weight (within 0.1 kg) and sex equal; 1 S-CB050 dog(s) and 1 DS03 dog(s) share the combination",age_months; weight_kg; sex,unverified
+DS03,BC89 (cohort 1),S-CB050,case 81,"age, weight (within 0.1 kg) and sex equal; 1 S-CB050 dog(s) and 1 DS03 dog(s) share the combination",age_months; weight_kg; sex,unverified
+DS03,BC90 (cohort 1),S-CB050,case 82,"age, weight (within 0.1 kg) and sex equal; 1 S-CB050 dog(s) and 1 DS03 dog(s) share the combination",age_months; weight_kg; sex,unverified
+DS03,BC91 (cohort 1),S-CB050,case 83,"age, weight (within 0.1 kg) and sex equal; 1 S-CB050 dog(s) and 1 DS03 dog(s) share the combination",age_months; weight_kg; sex,unverified
+DS03,BC94 (cohort 1),S-CB050,case 85,"age, weight (within 0.1 kg) and sex equal; 1 S-CB050 dog(s) and 1 DS03 dog(s) share the combination",age_months; weight_kg; sex,unverified
+DS03,BC95 (cohort 1),S-CB050,case 86,"age, weight (within 0.1 kg) and sex equal; 1 S-CB050 dog(s) and 1 DS03 dog(s) share the combination",age_months; weight_kg; sex,unverified
+DS03,BC96 (cohort 1),S-CB050,case 87,"age, weight (within 0.1 kg) and sex equal; 1 S-CB050 dog(s) and 1 DS03 dog(s) share the combination",age_months; weight_kg; sex,unverified
+DS03,BC97 (cohort 1),S-CB050,case 88,"age, weight (within 0.1 kg) and sex equal; 1 S-CB050 dog(s) and 1 DS03 dog(s) share the combination",age_months; weight_kg; sex,unverified
+DS03,BC98 (cohort 1),S-CB050,case 89,"age, weight (within 0.1 kg) and sex equal; 1 S-CB050 dog(s) and 1 DS03 dog(s) share the combination",age_months; weight_kg; sex,unverified
+DS03,BC99 (cohort 1),S-CB050,case 90,"age, weight (within 0.1 kg) and sex equal; 1 S-CB050 dog(s) and 1 DS03 dog(s) share the combination",age_months; weight_kg; sex,unverified
+DS03,BC100 (cohort 1),S-CB050,case 91,"age, weight (within 0.1 kg) and sex equal; 2 S-CB050 dog(s) and 1 DS03 dog(s) share the combination",age_months; weight_kg; sex,unverified
+DS03,BC100 (cohort 1),S-CB050,case 130,"age, weight (within 0.1 kg) and sex equal; 2 S-CB050 dog(s) and 1 DS03 dog(s) share the combination",age_months; weight_kg; sex,unverified
+DS03,BC101 (cohort 1),S-CB050,case 92,"age, weight (within 0.1 kg) and sex equal; 1 S-CB050 dog(s) and 1 DS03 dog(s) share the combination",age_months; weight_kg; sex,unverified
+DS03,BC102 (cohort 1),S-CB050,case 93,"age, weight (within 0.1 kg) and sex equal; 1 S-CB050 dog(s) and 1 DS03 dog(s) share the combination",age_months; weight_kg; sex,unverified
+DS03,BC103 (cohort 1),S-CB050,case 94,"age, weight (within 0.1 kg) and sex equal; 1 S-CB050 dog(s) and 1 DS03 dog(s) share the combination",age_months; weight_kg; sex,unverified
+DS03,BC106 (cohort 1),S-CB050,case 96,"age, weight (within 0.1 kg) and sex equal; 1 S-CB050 dog(s) and 1 DS03 dog(s) share the combination",age_months; weight_kg; sex,unverified
+DS03,BC107 (cohort 1),S-CB050,case 97,"age, weight (within 0.1 kg) and sex equal; 1 S-CB050 dog(s) and 1 DS03 dog(s) share the combination",age_months; weight_kg; sex,unverified
+DS03,BLSC1 (cohort 2),S-CB050,case 101,"age, weight (within 0.1 kg) and sex equal; 1 S-CB050 dog(s) and 1 DS03 dog(s) share the combination",age_months; weight_kg; sex,unverified
+DS03,BLSC2 (cohort 2),S-CB050,case 102,"age, weight (within 0.1 kg) and sex equal; 1 S-CB050 dog(s) and 1 DS03 dog(s) share the combination",age_months; weight_kg; sex,unverified
+DS03,BLSC3 (cohort 2),S-CB050,case 103,"age, weight (within 0.1 kg) and sex equal; 1 S-CB050 dog(s) and 1 DS03 dog(s) share the combination",age_months; weight_kg; sex,unverified
+DS03,BLSC4 (cohort 2),S-CB050,case 104,"age, weight (within 0.1 kg) and sex equal; 1 S-CB050 dog(s) and 1 DS03 dog(s) share the combination",age_months; weight_kg; sex,unverified
+DS03,BLSC7 (cohort 2),S-CB050,case 107,"age, weight (within 0.1 kg) and sex equal; 1 S-CB050 dog(s) and 1 DS03 dog(s) share the combination",age_months; weight_kg; sex,unverified
+DS03,BLSC10 (cohort 2),S-CB050,case 109,"age, weight (within 0.1 kg) and sex equal; 1 S-CB050 dog(s) and 1 DS03 dog(s) share the combination",age_months; weight_kg; sex,unverified
+DS03,BLSC11 (cohort 2),S-CB050,case 110,"age, weight (within 0.1 kg) and sex equal; 1 S-CB050 dog(s) and 1 DS03 dog(s) share the combination",age_months; weight_kg; sex,unverified
+DS03,BLSC12 (cohort 2),S-CB050,case 111,"age, weight (within 0.1 kg) and sex equal; 1 S-CB050 dog(s) and 1 DS03 dog(s) share the combination",age_months; weight_kg; sex,unverified
+DS03,BLSC13 (cohort 2),S-CB050,case 112,"age, weight (within 0.1 kg) and sex equal; 1 S-CB050 dog(s) and 1 DS03 dog(s) share the combination",age_months; weight_kg; sex,unverified
+DS03,BLSC14 (cohort 2),S-CB050,case 113,"age, weight (within 0.1 kg) and sex equal; 1 S-CB050 dog(s) and 1 DS03 dog(s) share the combination",age_months; weight_kg; sex,unverified
+DS03,BLSC15 (cohort 2),S-CB050,case 114,"age, weight (within 0.1 kg) and sex equal; 1 S-CB050 dog(s) and 1 DS03 dog(s) share the combination",age_months; weight_kg; sex,unverified
+DS03,BLSC18 (cohort 2),S-CB050,case 117,"age, weight (within 0.1 kg) and sex equal; 1 S-CB050 dog(s) and 1 DS03 dog(s) share the combination",age_months; weight_kg; sex,unverified
+DS03,BLSC19 (cohort 2),S-CB050,case 118,"age, weight (within 0.1 kg) and sex equal; 1 S-CB050 dog(s) and 1 DS03 dog(s) share the combination",age_months; weight_kg; sex,unverified
+DS03,BLSC22 (cohort 2),S-CB050,case 121,"age, weight (within 0.1 kg) and sex equal; 1 S-CB050 dog(s) and 1 DS03 dog(s) share the combination",age_months; weight_kg; sex,unverified
+DS03,BLSC40 (cohort 2),S-CB050,case 137,"age, weight (within 0.1 kg) and sex equal; 1 S-CB050 dog(s) and 1 DS03 dog(s) share the combination",age_months; weight_kg; sex,unverified
+DS03,BLSC42 (cohort 2),S-CB050,case 139,"age, weight (within 0.1 kg) and sex equal; 1 S-CB050 dog(s) and 1 DS03 dog(s) share the combination",age_months; weight_kg; sex,unverified
+DS03,CON2 (controls),S-CB050,case 202,"age, weight (within 0.1 kg) and sex equal; 1 S-CB050 dog(s) and 1 DS03 dog(s) share the combination",age_months; weight_kg; sex,unverified
+DS03,CON3 (controls),S-CB050,case 203,"age, weight (within 0.1 kg) and sex equal; 1 S-CB050 dog(s) and 1 DS03 dog(s) share the combination",age_months; weight_kg; sex,unverified
+DS03,CON6 (controls),S-CB050,case 204,"age, weight (within 0.1 kg) and sex equal; 1 S-CB050 dog(s) and 1 DS03 dog(s) share the combination",age_months; weight_kg; sex,unverified
+DS03,CON7 (controls),S-CB050,case 205,"age, weight (within 0.1 kg) and sex equal; 1 S-CB050 dog(s) and 1 DS03 dog(s) share the combination",age_months; weight_kg; sex,unverified
+DS03,CON9 (controls),S-CB050,case 207,"age, weight (within 0.1 kg) and sex equal; 1 S-CB050 dog(s) and 1 DS03 dog(s) share the combination",age_months; weight_kg; sex,unverified
+DS03,CON11 (controls),S-CB050,case 208,"age, weight (within 0.1 kg) and sex equal; 1 S-CB050 dog(s) and 1 DS03 dog(s) share the combination",age_months; weight_kg; sex,unverified
+DS03,CON14 (controls),S-CB050,case 209,"age, weight (within 0.1 kg) and sex equal; 1 S-CB050 dog(s) and 1 DS03 dog(s) share the combination",age_months; weight_kg; sex,unverified
+DS03,CON15 (controls),S-CB050,case 210,"age, weight (within 0.1 kg) and sex equal; 1 S-CB050 dog(s) and 1 DS03 dog(s) share the combination",age_months; weight_kg; sex,unverified
+DS03,CON19 (controls),S-CB050,case 211,"age, weight (within 0.1 kg) and sex equal; 1 S-CB050 dog(s) and 1 DS03 dog(s) share the combination",age_months; weight_kg; sex,unverified
+DS03,CON20 (controls),S-CB050,case 212,"age, weight (within 0.1 kg) and sex equal; 1 S-CB050 dog(s) and 1 DS03 dog(s) share the combination",age_months; weight_kg; sex,unverified
+DS03,CON21 (controls),S-CB050,case 213,"age, weight (within 0.1 kg) and sex equal; 1 S-CB050 dog(s) and 1 DS03 dog(s) share the combination",age_months; weight_kg; sex,unverified
+DS03,CON22 (controls),S-CB050,case 214,"age, weight (within 0.1 kg) and sex equal; 1 S-CB050 dog(s) and 1 DS03 dog(s) share the combination",age_months; weight_kg; sex,unverified
+DS04 haematology,row 1,DS04,case 2,"row order only (controls: all bilirubin 0, no icterus)",order,unverified
+DS04 haematology,row 2,DS04,case 4,"row order only (controls: all bilirubin 0, no icterus)",order,unverified
+DS04 haematology,row 3,DS04,case 9,"row order only (controls: all bilirubin 0, no icterus)",order,unverified
+DS04 haematology,row 4,DS04,case 11,"row order only (controls: all bilirubin 0, no icterus)",order,unverified
+DS06,high_1,DS02,dog 4,"dose group; marker-gene residual correlation with DS02 counts (mean rho 0.39, wins 3/3 cell types; positive control failed)",dose group; lymphocyte/neutrophil/monocyte kinetics (exploratory),unverified
+DS06,high_2,DS02,dog 5,"dose group; marker-gene residual correlation with DS02 counts (mean rho 0.39, wins 3/3 cell types; positive control failed)",dose group; lymphocyte/neutrophil/monocyte kinetics (exploratory),unverified
+DS06,low_1,DS02,dog 2,"dose group; marker-gene residual correlation with DS02 counts (mean rho 0.267, wins 2/3 cell types; positive control failed)",dose group; lymphocyte/neutrophil/monocyte kinetics (exploratory),unverified
+DS06,low_2,DS02,dog 3,"dose group; marker-gene residual correlation with DS02 counts (mean rho 0.267, wins 2/3 cell types; positive control failed)",dose group; lymphocyte/neutrophil/monocyte kinetics (exploratory),unverified
+DS06,low_0,DS02,dog 1 (donor)?,single day-0 sample labelled low dose; DS02 dog 1 is the splenectomised donor with one baseline sample. Not in the files,none,unverified
+DS07,20,DS04,case 20,same number; DS07 'complicated'; 6 of 7 DS04 numbers below 98 are DS07 complicated (p = 2.0e-05 over 1-97); no shared values to check; contradiction: age 144 months is outside the CB112 infected range 6-120,case number only,unverified
+DS07,50,DS04,case 50,same number; DS07 'complicated'; 6 of 7 DS04 numbers below 98 are DS07 complicated (p = 2.0e-05 over 1-97); no shared values to check,case number only,unverified
+DS07,54,DS04,case 54,same number; DS07 'complicated'; 6 of 7 DS04 numbers below 98 are DS07 complicated (p = 2.0e-05 over 1-97); no shared values to check,case number only,unverified
+DS07,59,DS04,case 59,same number; DS07 'complicated'; 6 of 7 DS04 numbers below 98 are DS07 complicated (p = 2.0e-05 over 1-97); no shared values to check,case number only,unverified
+DS07,61,DS04,case 61,same number; DS07 'complicated'; 6 of 7 DS04 numbers below 98 are DS07 complicated (p = 2.0e-05 over 1-97); no shared values to check,case number only,unverified
+DS07,88,DS04,case 88,"same number; DS07 'uncomplicated'; 6 of 7 DS04 numbers below 98 are DS07 complicated (p = 2.0e-05 over 1-97); no shared values to check; contradiction: dead on arrival in DS04, but CB112 counts death within 24 h as complicated",case number only,unverified
+DS07,91,DS04,case 91,same number; DS07 'complicated'; 6 of 7 DS04 numbers below 98 are DS07 complicated (p = 2.0e-05 over 1-97); no shared values to check,case number only,unverified
+DS07,50,S-CB050,case 126,through DS04 case 50 (number link unverified),case number only (chain),unverified
+DS07,54,S-CB050,case 127,through DS04 case 54 (number link unverified),case number only (chain),unverified
+DS07,59,S-CB050,case 131,through DS04 case 59 (number link unverified),case number only (chain),unverified

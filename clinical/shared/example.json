@@ -1,0 +1,125 @@
+{
+  "schema_version": 1,
+  "id": "SY99",
+  "title": "Example syndrome (placeholder, not clinical content)",
+  "updated": "2026-11-12",
+  "definition": "One or two sentences that define the syndrome as the literature on canine babesiosis uses it [R1].",
+  "definition_note": "Say here if the working definition of the page file was confirmed or changed, and why.",
+  "key_points": [
+    "The three to six things that the clinician must remember [R1].",
+    "Each point is one sentence with its citation [R2]."
+  ],
+  "description": [
+    { "heading": "What it is", "text": "Plain text. One paragraph for each entry [R1]." },
+    { "heading": "How common, and in which dogs", "text": "Frequency by species and setting [R2]." },
+    { "heading": "Mechanism", "text": "Two or three sentences that help the clinician [R1]." }
+  ],
+  "species_notes": [
+    { "species": "B. rossi", "note": "What is specific to this species [R2]." }
+  ],
+  "diagnosis": {
+    "criteria": [
+      {
+        "criterion": "Example measurement",
+        "threshold": "above 0.00 unit/L",
+        "basis": "babesiosis",
+        "note": "Who used this threshold, and in which dogs.",
+        "refs": ["R2"]
+      }
+    ],
+    "clinical_signs": [
+      { "sign": "Example sign", "note": "How often, how early.", "refs": ["R2"] }
+    ],
+    "tests": [
+      { "test": "Example test", "finding": "What it shows in this syndrome.", "note": "Availability, cost or limits.", "refs": ["R1"] }
+    ],
+    "differentials": [
+      { "condition": "Example other cause", "distinguish": "How to tell it apart.", "refs": ["R1"] }
+    ],
+    "grading": [
+      { "grade": "Mild", "criteria": "Example criteria.", "refs": ["R1"] }
+    ]
+  },
+  "approach": [
+    { "step": 1, "action": "First action in the consulting room", "detail": "What to do and why [R1].", "setting": "practice" },
+    { "step": 2, "action": "Action that needs referral", "detail": "When to refer [R1].", "setting": "referral" }
+  ],
+  "treatments": [
+    {
+      "name": "Example treatment",
+      "class": "supportive",
+      "aim": "What the treatment is meant to do.",
+      "status": "proposed",
+      "evidence_level": "C",
+      "independent_studies": 1,
+      "evidence_summary": "What was done, in how many dogs, and what happened [R2].",
+      "doses": [
+        {
+          "drug": "exampledrug",
+          "dose": "0.0 mg/kg",
+          "route": "IV",
+          "frequency": "every 0 h",
+          "duration": "0 days",
+          "context": "The species, the dogs and the study that used this dose.",
+          "note": "",
+          "refs": ["R2"]
+        }
+      ],
+      "cautions": "Adverse effects, contraindications, interactions [R1].",
+      "monitoring": "What to measure, and how often [R1].",
+      "availability": "",
+      "refs": ["R1", "R2"]
+    }
+  ],
+  "prognosis": {
+    "text": "Outcome with and without the syndrome [R2].",
+    "indicators": [
+      { "finding": "Example finding", "meaning": "What it means for the outcome.", "refs": ["R2"] }
+    ]
+  },
+  "related": [
+    { "id": "TX00", "why": "The drugs against the parasite." }
+  ],
+  "evidence_gaps": [
+    "What was not studied, in one sentence."
+  ],
+  "references": [
+    {
+      "ref": "R1",
+      "authors": "Surname AB, Surname CD",
+      "year": 2020,
+      "title": "Title of the article",
+      "journal": "Journal name",
+      "volume_pages": "00:000-000",
+      "doi": "10.0000/example.1",
+      "pmid": "",
+      "url": "",
+      "article_id": "",
+      "type": "review",
+      "species": "",
+      "n_dogs": null,
+      "read": "full text"
+    },
+    {
+      "ref": "R2",
+      "authors": "Surname EF et al.",
+      "year": 2015,
+      "title": "Title of the second article",
+      "journal": "Journal name",
+      "volume_pages": "",
+      "doi": "",
+      "pmid": "00000000",
+      "url": "",
+      "article_id": "CB000",
+      "type": "case series",
+      "species": "B. rossi",
+      "n_dogs": 12,
+      "read": "abstract"
+    }
+  ],
+  "search": {
+    "date": "2026-11-12",
+    "sources": ["local review", "PubMed", "Europe PMC", "web"],
+    "note": "One or two sentences on what was searched and what could not be reached."
+  }
+}

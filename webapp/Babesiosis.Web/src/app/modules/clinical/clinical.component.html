@@ -1,0 +1,486 @@
+<section class="fs-clinical">
+  <fs-page-header class="fs-clinical__page-header" icon="checkup-list" title="Clinical"
+                  subtitle="A manual of the clinical syndromes of canine babesiosis and their treatment, for veterinarians in practice">
+    <fs-button variant="outline" intent="secondary" size="sm"
+               [disabled]="!page()" (click)="print()">Print</fs-button>
+    <fs-button variant="outline" intent="secondary" size="sm" icon="refresh"
+               [loading]="loading()" [disabled]="loading()" (click)="load()">Refresh</fs-button>
+  </fs-page-header>
+
+  <div class="fs-clinical__layout">
+    <!-- Left rail: the pages of index.json under their groups, filtered by the text box. -->
+    <aside class="fs-clinical__panel" aria-label="Clinical syndromes">
+      <fs-card [padded]="false" [fillHeight]="true">
+        <div class="fs-clinical__panel-head">
+          <fs-text-input size="sm" placeholder="Filter syndromes…" ariaLabel="Filter syndromes"
+                         [ngModel]="filter()" (ngModelChange)="filter.set($event)" />
+          <span class="fs-clinical__panel-count">{{ writtenCount() }} of {{ allPages().length }} pages written</span>
+        </div>
+
+        @if (error(); as message) {
+          <div class="fs-clinical__panel-body">
+            <fs-banner intent="danger">
+              {{ message }}
+              <fs-button fsBannerAction variant="ghost" intent="secondary" size="sm" (click)="load()">Retry</fs-button>
+            </fs-banner>
+          </div>
+        } @else if (loading() && !allPages().length) {
+          <div class="fs-clinical__loading"><fs-spinner size="sm" /></div>
+        } @else {
+          <nav class="fs-clinical__nav">
+            @for (group of groups(); track group.group) {
+              <div class="fs-clinical__group">
+                <h3 class="fs-clinical__group-title">
+                  <span class="fs-clinical__group-code">{{ group.group }}</span>
+                  <span class="fs-clinical__group-name">{{ group.pages.length }} {{ group.pages.length === 1 ? 'page' : 'pages' }}</span>
+                </h3>
+                <ul class="fs-clinical__items">
+                  @for (item of group.pages; track item.id) {
+                    <li>
+                      <button type="button" class="fs-clinical__item"
+                              [class.fs-clinical__item--selected]="item.id === selectedId()"
+                              [class.fs-clinical__item--unwritten]="!isWritten(item.id)"
+                              [attr.aria-current]="item.id === selectedId() ? 'page' : null"
+                              (click)="select(item.id)">
+                        <span class="fs-clinical__item-name">{{ item.title }}</span>
+                        <span class="fs-clinical__item-foot">
+                          <span class="fs-clinical__item-code">{{ item.id }}</span>
+                          @if (isWritten(item.id)) {
+                            <fs-badge variant="tonal" intent="success">Written</fs-badge>
+                          } @else {
+                            <span>Not written</span>
+                          }
+                        </span>
+                      </button>
+                    </li>
+                  }
+                </ul>
+              </div>
+            } @empty {
+              <div class="fs-clinical__panel-body">
+                <fs-empty-state size="compact" icon="list-search" title="No syndrome matches"
+                                subtitle="Try another word, or clear the filter." />
+              </div>
+            }
+          </nav>
+        }
+      </fs-card>
+    </aside>
+
+    <!-- Right: the selected page, always in the same sections. -->
+    <div class="fs-clinical__detail" #detail>
+      <fs-banner intent="warning" class="fs-clinical__notice">
+        Compiled by AI agents from the published literature. Not peer reviewed. Check every dose against the
+        product label before use. This manual does not replace clinical judgement.
+      </fs-banner>
+
+      @if (loading() && !page()) {
+        <fs-card>
+          <div class="fs-clinical__loading"><fs-spinner /></div>
+        </fs-card>
+      } @else if (page(); as p) {
+        <!-- 1. Header -->
+        <fs-card class="fs-clinical__card">
+          <header class="fs-clinical__header">
+            <h2 class="fs-clinical__title">{{ p.title }}</h2>
+            <div class="fs-clinical__tags">
+              @for (name of species(); track name) {
+                <fs-badge variant="tonal" intent="secondary">{{ name }}</fs-badge>
+              }
+              @if (p.updated) {
+                <span class="fs-clinical__updated">Updated {{ p.updated }}</span>
+              }
+            </div>
+          </header>
+          @if (p.definition) {
+            <p class="fs-clinical__definition"><fs-clinical-text [text]="p.definition" /></p>
+          }
+          @if (p.definition_note) {
+            <p class="fs-clinical__soft"><fs-clinical-text [text]="p.definition_note" /></p>
+          }
+
+          <!-- 2. Key points -->
+          @if (p.key_points?.length) {
+            <div class="fs-clinical__key-points">
+              <h3>Key points</h3>
+              <ul>
+                @for (point of p.key_points; track $index) {
+                  <li><fs-clinical-text [text]="point" /></li>
+                }
+              </ul>
+            </div>
+          }
+        </fs-card>
+
+        <!-- 3. Description -->
+        @if (p.description?.length || p.species_notes?.length) {
+          <fs-card class="fs-clinical__card" title="Description">
+            <div class="fs-clinical__prose">
+              @for (section of p.description; track $index) {
+                <h4>{{ section.heading }}</h4>
+                <p><fs-clinical-text [text]="section.text" /></p>
+              }
+              @if (p.species_notes?.length) {
+                <h4>By <em>Babesia</em> species</h4>
+                <dl class="fs-clinical__pairs">
+                  @for (note of p.species_notes; track $index) {
+                    <div>
+                      <dt>{{ note.species }}</dt>
+                      <dd><fs-clinical-text [text]="note.note" /></dd>
+                    </div>
+                  }
+                </dl>
+              }
+            </div>
+          </fs-card>
+        }
+
+        <!-- 4. Diagnosis -->
+        @if (p.diagnosis; as dx) {
+          <fs-card class="fs-clinical__card" title="Diagnosis">
+            <div class="fs-clinical__prose">
+              @if (dx.criteria?.length) {
+                <h4>Diagnostic criteria</h4>
+                <div class="fs-clinical__table-wrap">
+                  <table class="fs-clinical__table">
+                    <thead>
+                      <tr><th>Criterion</th><th>Threshold</th><th>Basis</th><th>Note</th></tr>
+                    </thead>
+                    <tbody>
+                      @for (c of dx.criteria; track $index) {
+                        <tr>
+                          <th scope="row">{{ c.criterion }}</th>
+                          <td class="fs-clinical__strong">{{ c.threshold }}</td>
+                          <td><fs-badge variant="tonal" [intent]="c.basis === 'babesiosis' ? 'primary' : 'secondary'">{{ basisLabel(c.basis) }}</fs-badge></td>
+                          <td><fs-clinical-text [text]="c.note" [refs]="c.refs" /></td>
+                        </tr>
+                      }
+                    </tbody>
+                  </table>
+                </div>
+              }
+              @if (dx.clinical_signs?.length) {
+                <h4>Clinical signs</h4>
+                <div class="fs-clinical__table-wrap">
+                  <table class="fs-clinical__table">
+                    <thead><tr><th>Sign</th><th>Note</th></tr></thead>
+                    <tbody>
+                      @for (s of dx.clinical_signs; track $index) {
+                        <tr>
+                          <th scope="row">{{ s.sign }}</th>
+                          <td><fs-clinical-text [text]="s.note" [refs]="s.refs" /></td>
+                        </tr>
+                      }
+                    </tbody>
+                  </table>
+                </div>
+              }
+              @if (dx.tests?.length) {
+                <h4>Tests</h4>
+                <div class="fs-clinical__table-wrap">
+                  <table class="fs-clinical__table">
+                    <thead><tr><th>Test</th><th>Finding</th><th>Note</th></tr></thead>
+                    <tbody>
+                      @for (t of dx.tests; track $index) {
+                        <tr>
+                          <th scope="row">{{ t.test }}</th>
+                          <td><fs-clinical-text [text]="t.finding" /></td>
+                          <td><fs-clinical-text [text]="t.note" [refs]="t.refs" /></td>
+                        </tr>
+                      }
+                    </tbody>
+                  </table>
+                </div>
+              }
+              @if (dx.differentials?.length) {
+                <h4>Differential diagnoses</h4>
+                <div class="fs-clinical__table-wrap">
+                  <table class="fs-clinical__table">
+                    <thead><tr><th>Condition</th><th>How to distinguish</th></tr></thead>
+                    <tbody>
+                      @for (d of dx.differentials; track $index) {
+                        <tr>
+                          <th scope="row">{{ d.condition }}</th>
+                          <td><fs-clinical-text [text]="d.distinguish" [refs]="d.refs" /></td>
+                        </tr>
+                      }
+                    </tbody>
+                  </table>
+                </div>
+              }
+              @if (dx.grading?.length) {
+                <h4>Grading</h4>
+                <div class="fs-clinical__table-wrap">
+                  <table class="fs-clinical__table">
+                    <thead><tr><th>Grade</th><th>Criteria</th></tr></thead>
+                    <tbody>
+                      @for (g of dx.grading; track $index) {
+                        <tr>
+                          <th scope="row">{{ g.grade }}</th>
+                          <td><fs-clinical-text [text]="g.criteria" [refs]="g.refs" /></td>
+                        </tr>
+                      }
+                    </tbody>
+                  </table>
+                </div>
+              }
+            </div>
+          </fs-card>
+        }
+
+        <!-- 5. Approach -->
+        @if (p.approach?.length) {
+          <fs-card class="fs-clinical__card" title="Approach">
+            <ol class="fs-clinical__steps">
+              @for (step of p.approach; track $index) {
+                <li>
+                  <span class="fs-clinical__step-number" aria-hidden="true">{{ step.step ?? $index + 1 }}</span>
+                  <div>
+                    <p class="fs-clinical__step-action">
+                      {{ step.action }}
+                      @if (step.setting === 'referral') {
+                        <fs-badge variant="tonal" intent="warning">Referral</fs-badge>
+                      }
+                    </p>
+                    @if (step.detail) {
+                      <p><fs-clinical-text [text]="step.detail" /></p>
+                    }
+                  </div>
+                </li>
+              }
+            </ol>
+          </fs-card>
+        }
+
+        <!-- 6. Treatments -->
+        <fs-card class="fs-clinical__card" title="Treatments"
+                 subtitle="Every treatment that was proposed, with what the evidence shows. A listing is not a recommendation.">
+          @for (t of p.treatments; track $index) {
+            <article class="fs-clinical__treatment" [class]="'fs-clinical__treatment--' + status(t.status).key">
+              <header class="fs-clinical__treatment-head">
+                <h4>{{ t.name }}</h4>
+                <div class="fs-clinical__tags">
+                  <fs-badge variant="tonal" [intent]="status(t.status).intent" [title]="status(t.status).meaning">{{ status(t.status).label }}</fs-badge>
+                  <fs-badge variant="tonal" [intent]="evidence(t.evidence_level).intent" [title]="evidence(t.evidence_level).meaning">Evidence level {{ t.evidence_level || 'not given' }}</fs-badge>
+                  @if (t.class) {
+                    <fs-badge variant="plain" intent="secondary">{{ classLabel(t.class) }}</fs-badge>
+                  }
+                  @if (t.independent_studies !== undefined && t.independent_studies !== null) {
+                    <span class="fs-clinical__soft">{{ t.independent_studies }} independent {{ t.independent_studies === 1 ? 'study' : 'studies' }}</span>
+                  }
+                </div>
+              </header>
+              @if (t.aim) {
+                <p><strong>Aim.</strong> {{ t.aim }}</p>
+              }
+              @if (t.evidence_summary) {
+                <p><strong>Evidence.</strong>&ngsp;<fs-clinical-text [text]="t.evidence_summary" /></p>
+              }
+              @if (t.doses?.length) {
+                <div class="fs-clinical__table-wrap">
+                  <table class="fs-clinical__table fs-clinical__table--doses">
+                    <thead>
+                      <tr><th>Drug</th><th>Dose</th><th>Route</th><th>Frequency</th><th>Duration</th><th>Used in</th><th>Source</th></tr>
+                    </thead>
+                    <tbody>
+                      @for (d of t.doses; track $index) {
+                        <tr>
+                          <th scope="row">{{ d.drug }}</th>
+                          <td class="fs-clinical__strong">{{ d.dose }}</td>
+                          <td>{{ d.route }}</td>
+                          <td>{{ d.frequency }}</td>
+                          <td>{{ d.duration || '–' }}</td>
+                          <td>
+                            {{ d.context }}
+                            @if (d.note) {
+                              <span class="fs-clinical__dose-note"><fs-clinical-text [text]="d.note" /></span>
+                            }
+                          </td>
+                          <td><fs-clinical-text [refs]="d.refs" /></td>
+                        </tr>
+                      }
+                    </tbody>
+                  </table>
+                </div>
+              }
+              @if (t.cautions) {
+                <p><strong>Cautions.</strong>&ngsp;<fs-clinical-text [text]="t.cautions" /></p>
+              }
+              @if (t.monitoring) {
+                <p><strong>Monitoring.</strong>&ngsp;<fs-clinical-text [text]="t.monitoring" /></p>
+              }
+              @if (t.availability) {
+                <p><strong>Availability in South Africa.</strong>&ngsp;<fs-clinical-text [text]="t.availability" /></p>
+              }
+              @if (t.refs?.length) {
+                <p class="fs-clinical__soft">References: <fs-clinical-text [refs]="t.refs" /></p>
+              }
+            </article>
+          } @empty {
+            <fs-empty-state size="compact" icon="info-circle" title="No treatment was proposed"
+                            subtitle="The search of this page found no treatment for this syndrome. See the evidence gaps." />
+          }
+        </fs-card>
+
+        <!-- 7. Prognosis -->
+        @if (p.prognosis; as prognosis) {
+          <fs-card class="fs-clinical__card" title="Prognosis">
+            <div class="fs-clinical__prose">
+              @if (prognosis.text) {
+                <p><fs-clinical-text [text]="prognosis.text" /></p>
+              }
+              @if (prognosis.indicators?.length) {
+                <div class="fs-clinical__table-wrap">
+                  <table class="fs-clinical__table">
+                    <thead><tr><th>Finding</th><th>What it means</th></tr></thead>
+                    <tbody>
+                      @for (i of prognosis.indicators; track $index) {
+                        <tr>
+                          <th scope="row">{{ i.finding }}</th>
+                          <td><fs-clinical-text [text]="i.meaning" [refs]="i.refs" /></td>
+                        </tr>
+                      }
+                    </tbody>
+                  </table>
+                </div>
+              }
+            </div>
+          </fs-card>
+        }
+
+        <!-- 8. Evidence gaps -->
+        @if (p.evidence_gaps?.length) {
+          <fs-card class="fs-clinical__card" title="Evidence gaps" subtitle="What is not known">
+            <ul class="fs-clinical__list">
+              @for (gap of p.evidence_gaps; track $index) {
+                <li><fs-clinical-text [text]="gap" /></li>
+              }
+            </ul>
+          </fs-card>
+        }
+
+        <!-- 9. Related pages -->
+        @if (p.related?.length) {
+          <fs-card class="fs-clinical__card fs-clinical__related-card" title="Related pages">
+            <ul class="fs-clinical__list">
+              @for (rel of p.related; track rel.id) {
+                <li>
+                  <a class="fs-clinical__link" [routerLink]="['/clinical', rel.id]">{{ pageTitle(rel.id) }}</a>
+                  @if (rel.why) {
+                    <span> — {{ rel.why }}</span>
+                  }
+                </li>
+              }
+            </ul>
+          </fs-card>
+        }
+
+        <!-- 10. References -->
+        @if (references().length) {
+          <fs-card class="fs-clinical__card" title="References"
+                   subtitle="Each link opens the source in a new tab">
+            <ol class="fs-clinical__references">
+              @for (ref of references(); track ref.ref) {
+                <li [id]="refElementId(ref.ref)" tabindex="-1">
+                  <span class="fs-clinical__ref-number">{{ refNumber(ref.ref) }}.</span>
+                  <div>
+                    <p class="fs-clinical__ref-text">
+                      {{ ref.authors }} ({{ ref.year }}). {{ ref.title }}.
+                      @if (ref.journal) {
+                        <em>{{ ref.journal }}</em>
+                      }
+                      @if (ref.volume_pages) {
+                        <span> {{ ref.volume_pages }}</span>
+                      }
+                    </p>
+                    <div class="fs-clinical__tags">
+                      @if (link(ref); as href) {
+                        <a class="fs-clinical__link fs-clinical__ref-link" [href]="href" target="_blank" rel="noopener noreferrer">
+                          {{ linkLabel(ref) }}
+                          <fs-symbol name="external-link" size="xs" ariaLabel="Opens in a new tab" />
+                          <span class="fs-clinical__ref-url">{{ href }}</span>
+                        </a>
+                      }
+                      @if (ref.type) {
+                        <fs-badge variant="tonal" intent="secondary">{{ ref.type }}</fs-badge>
+                      }
+                      @if (ref.species) {
+                        <fs-badge variant="plain" intent="secondary">{{ ref.species }}</fs-badge>
+                      }
+                      @if (ref.n_dogs !== null && ref.n_dogs !== undefined) {
+                        <span class="fs-clinical__soft">{{ ref.n_dogs }} {{ ref.n_dogs === 1 ? 'dog' : 'dogs' }}</span>
+                      }
+                      @if (ref.read === 'abstract') {
+                        <fs-badge variant="tonal" intent="warning" title="The agent read the abstract, not the full text">Abstract only</fs-badge>
+                      }
+                      @if (ref.article_id) {
+                        <fs-badge variant="tonal" intent="info" title="This paper is in the review (Reference Articles)">{{ ref.article_id }}</fs-badge>
+                      }
+                    </div>
+                  </div>
+                </li>
+              }
+            </ol>
+          </fs-card>
+        }
+
+        <!-- 11. Search note and legend -->
+        <fs-card class="fs-clinical__card" title="How to read this page">
+          <div class="fs-clinical__prose">
+            @if (p.search; as search) {
+              <h4>Search</h4>
+              <p>
+                @if (search.date) {
+                  <span>Searched {{ search.date }}. </span>
+                }
+                @if (search.sources?.length) {
+                  <span>Sources: {{ search.sources?.join(', ') }}. </span>
+                }
+                {{ search.note }}
+              </p>
+            }
+            <div class="fs-clinical__legend">
+              <div>
+                <h4>Treatment status</h4>
+                <dl class="fs-clinical__pairs">
+                  @for (item of statusLegend; track item.key) {
+                    <div>
+                      <dt><fs-badge variant="tonal" [intent]="item.intent">{{ item.label }}</fs-badge></dt>
+                      <dd>{{ item.meaning }}</dd>
+                    </div>
+                  }
+                </dl>
+              </div>
+              <div>
+                <h4>Evidence level</h4>
+                <dl class="fs-clinical__pairs">
+                  @for (item of evidenceLegend; track item.key) {
+                    <div>
+                      <dt><fs-badge variant="tonal" [intent]="item.intent">{{ item.label }}</fs-badge></dt>
+                      <dd>{{ item.meaning }}</dd>
+                    </div>
+                  }
+                </dl>
+              </div>
+            </div>
+          </div>
+        </fs-card>
+      } @else if (selectedState()?.failed) {
+        <fs-card>
+          <fs-empty-state icon="alert-triangle" title="This page could not be loaded"
+                          subtitle="The page file could not be read. Use Refresh to try again." />
+        </fs-card>
+      } @else if (selectedEntry(); as entry) {
+        <fs-card>
+          <fs-empty-state icon="file-text" title="This page is not written yet"
+                          [subtitle]="entry.title + ' has no page in the manual yet.'" />
+        </fs-card>
+      } @else if (selectedId() && !error()) {
+        <fs-card>
+          <fs-empty-state icon="file-unknown" title="No such page"
+                          subtitle="Choose a syndrome from the list." />
+        </fs-card>
+      }
+    </div>
+  </div>
+</section>

@@ -1,0 +1,132 @@
+marker,marker_class,factor_type,units,articles,rows,units_sig_higher,units_sig_lower,units_not_significant,outcome_classes,species_groups
+Haematocrit/PCV,haematology,laboratory or other marker,21,21,27,1,7,4,anaemia_grade; complicated; mortality; other; parasitaemia_level; severity_grade; specific_complication; treatment_intensity,B. rossi; B. canis; B. gibsoni; Mixed or unspecified
+Creatinine,biochemistry,laboratory or other marker,16,16,18,4,0,3,complicated; mortality; other; parasitaemia_level; severity_grade; specific_complication,B. rossi; B. canis; B. gibsoni; Mixed or unspecified
+Urea,biochemistry,laboratory or other marker,16,16,21,7,0,2,complicated; mortality; other; parasitaemia_level; severity_grade; specific_complication,B. rossi; B. canis; B. gibsoni; Mixed or unspecified
+Platelet count,haematology,laboratory or other marker,15,15,16,2,1,3,anaemia_grade; complicated; mortality; parasitaemia_level; severity_grade; specific_complication; treatment_intensity,B. rossi; B. canis; B. gibsoni; Mixed or unspecified
+White blood cell count,haematology,laboratory or other marker,15,15,17,3,1,4,anaemia_grade; complicated; mortality; other; parasitaemia_level; severity_grade; specific_complication; treatment_intensity,B. rossi; B. canis; B. gibsoni; Mixed or unspecified
+Bilirubin,biochemistry,laboratory or other marker,14,14,20,4,0,4,anaemia_grade; complicated; mortality; other; parasitaemia_level; severity_grade; specific_complication,B. rossi; B. canis; B. gibsoni; Mixed or unspecified
+Red blood cell count,haematology,laboratory or other marker,13,14,14,0,2,4,anaemia_grade; complicated; mortality; parasitaemia_level; severity_grade; specific_complication,B. canis; B. gibsoni; Mixed or unspecified
+Age,signalment,host factor,12,14,14,0,1,5,anaemia_grade; complicated; mortality; severity_grade; specific_complication; treatment_intensity,B. rossi; B. canis; B. gibsoni; Mixed or unspecified
+ALT,biochemistry,laboratory or other marker,12,12,12,4,0,3,complicated; mortality; parasitaemia_level; severity_grade; specific_complication,B. canis; B. gibsoni; Mixed or unspecified
+Haemoglobin,haematology,laboratory or other marker,12,12,12,0,2,3,anaemia_grade; complicated; mortality; parasitaemia_level; severity_grade; specific_complication,B. canis; B. gibsoni; Mixed or unspecified
+Albumin,biochemistry,laboratory or other marker,10,11,13,0,2,4,anaemia_grade; complicated; mortality; other; parasitaemia_level; severity_grade,B. rossi; B. canis; B. gibsoni; Mixed or unspecified
+Total protein,biochemistry,laboratory or other marker,10,11,12,0,2,4,anaemia_grade; complicated; mortality; parasitaemia_level; severity_grade,B. canis; B. gibsoni; Mixed or unspecified
+ALP,biochemistry,laboratory or other marker,10,10,10,4,0,3,complicated; mortality; parasitaemia_level; severity_grade; specific_complication,B. canis; B. gibsoni; Mixed or unspecified
+Sex / neuter status,signalment,host factor,8,10,23,0,1,5,anaemia_grade; complicated; mortality; severity_grade; specific_complication; treatment_intensity,B. rossi; B. canis; B. gibsoni; Mixed or unspecified
+C-reactive protein,acute phase protein,laboratory or other marker,8,9,13,2,0,5,mortality; parasitaemia_level; severity_grade; specific_complication; treatment_intensity,B. rossi; B. canis; B. gibsoni; Mixed or unspecified
+AST,biochemistry,laboratory or other marker,8,8,8,3,0,0,parasitaemia_level; severity_grade; specific_complication,B. canis; B. gibsoni; Mixed or unspecified
+Neutrophil count,haematology,laboratory or other marker,7,8,10,1,1,3,mortality; parasitaemia_level; severity_grade; specific_complication; treatment_intensity,B. rossi; B. gibsoni; Mixed or unspecified
+Band neutrophils,haematology,laboratory or other marker,7,7,10,4,0,1,complicated; mortality; parasitaemia_level; specific_complication; treatment_intensity,B. rossi; B. gibsoni; Mixed or unspecified
+Body temperature,clinical sign,clinical sign or score,7,7,11,0,4,3,anaemia_grade; mortality; other; parasitaemia_level; specific_complication,B. rossi; B. canis; Mixed or unspecified
+Eosinophil count,haematology,laboratory or other marker,6,6,6,0,0,3,mortality; parasitaemia_level; severity_grade; specific_complication; treatment_intensity,B. rossi; B. gibsoni; Mixed or unspecified
+Glucose,biochemistry,laboratory or other marker,6,6,9,0,1,3,complicated; mortality; other; parasitaemia_level; severity_grade,B. rossi; B. canis; Mixed or unspecified
+Lymphocyte count,haematology,laboratory or other marker,6,6,6,0,0,3,mortality; parasitaemia_level; severity_grade; specific_complication; treatment_intensity,B. rossi; B. gibsoni; Mixed or unspecified
+Parasitaemia,parasitology,parasite factor,6,6,9,0,0,2,mortality; other; severity_grade; specific_complication,B. rossi; B. canis; B. gibsoni; Mixed or unspecified
+Body weight / body condition,signalment,host factor,5,6,6,0,0,4,complicated; mortality; specific_complication; treatment_intensity,B. rossi; Mixed or unspecified
+Breed,signalment,host factor,5,5,12,0,0,2,anaemia_grade; complicated; specific_complication; treatment_intensity,B. rossi; B. gibsoni; Mixed or unspecified
+GGT,biochemistry,laboratory or other marker,5,5,5,3,1,0,complicated; parasitaemia_level; severity_grade,B. canis; Mixed or unspecified
+Monocyte count,haematology,laboratory or other marker,5,5,5,0,0,2,mortality; parasitaemia_level; severity_grade; treatment_intensity,B. rossi; B. gibsoni; Mixed or unspecified
+Co-infection,parasitology,parasite factor,4,4,7,0,0,2,anaemia_grade; mortality; severity_grade; specific_complication,B. canis; B. vogeli; Mixed or unspecified
+IL-10,cytokine,laboratory or other marker,4,4,5,1,0,3,complicated; mortality; parasitaemia_level; severity_grade,B. rossi; B. canis
+Lactate,acid-base and perfusion,laboratory or other marker,4,4,8,3,0,0,complicated; mortality; other,B. rossi; B. canis; Mixed or unspecified
+Thyroid hormones,endocrine,laboratory or other marker,4,4,19,0,4,3,mortality; other; specific_complication,B. rossi; B. canis
+Iron and iron indices,biochemistry,laboratory or other marker,3,4,8,1,3,0,anaemia_grade; complicated; mortality; severity_grade,B. rossi; B. canis; Mixed or unspecified
+Red cell indices,haematology,laboratory or other marker,3,4,10,1,0,1,anaemia_grade; mortality,B. canis; Mixed or unspecified
+Serum amyloid A,acute phase protein,laboratory or other marker,3,4,4,0,0,3,mortality,B. rossi; B. canis; Mixed or unspecified
+Basophil count,haematology,laboratory or other marker,3,3,3,0,0,1,parasitaemia_level; severity_grade,B. gibsoni; Mixed or unspecified
+Cholesterol,biochemistry,laboratory or other marker,3,3,3,0,0,2,mortality; parasitaemia_level; specific_complication,B. canis; Mixed or unspecified
+Cortisol,endocrine,laboratory or other marker,3,3,13,3,0,2,mortality; other; specific_complication,B. rossi
+Fibrinogen,coagulation,laboratory or other marker,3,3,3,1,0,1,complicated; mortality; severity_grade,B. rossi; Mixed or unspecified
+Globulins,biochemistry,laboratory or other marker,3,3,3,0,1,1,anaemia_grade; severity_grade,B. canis; Mixed or unspecified
+Heart rate,clinical sign,clinical sign or score,3,3,3,1,0,2,anaemia_grade; mortality; specific_complication,B. rossi; B. canis; Mixed or unspecified
+MCP-1 (CCL2),cytokine,laboratory or other marker,3,3,5,2,0,0,complicated; mortality,B. rossi; B. canis
+Malondialdehyde / TBARS,oxidative stress,laboratory or other marker,3,3,10,2,0,2,anaemia_grade; complicated; mortality; organ_dysfunction,B. canis; Mixed or unspecified
+Phosphate,electrolyte,laboratory or other marker,3,3,5,2,0,0,mortality; other; parasitaemia_level,B. rossi; B. canis; Mixed or unspecified
+Potassium,electrolyte,laboratory or other marker,3,3,4,0,0,2,mortality; other; parasitaemia_level,B. rossi; B. canis; Mixed or unspecified
+Prothrombin time,coagulation,laboratory or other marker,3,3,3,2,0,0,mortality; severity_grade,B. rossi; Mixed or unspecified
+aPTT,coagulation,laboratory or other marker,3,3,3,1,0,1,mortality; severity_grade,B. rossi; Mixed or unspecified
+Albumin:globulin ratio,biochemistry,laboratory or other marker,2,3,3,0,1,0,anaemia_grade; complicated; severity_grade,B. canis; Mixed or unspecified
+Calcium,electrolyte,laboratory or other marker,2,2,2,0,0,1,mortality; parasitaemia_level,B. canis; Mixed or unspecified
+Catalase,oxidative stress,laboratory or other marker,2,2,8,0,2,1,anaemia_grade; complicated; mortality; organ_dysfunction,B. canis; Mixed or unspecified
+Chloride,electrolyte,laboratory or other marker,2,2,2,0,0,1,mortality,B. rossi; B. canis
+Coagulation factor activity,coagulation,laboratory or other marker,2,2,5,0,2,1,complicated; mortality,B. rossi
+Creatine kinase,biochemistry,laboratory or other marker,2,2,2,1,0,1,complicated; severity_grade,B. canis
+D-dimer,coagulation,laboratory or other marker,2,2,2,0,0,1,mortality; severity_grade,B. rossi; Mixed or unspecified
+Erythrocyte sedimentation rate,haematology,laboratory or other marker,2,2,2,0,0,0,severity_grade,Mixed or unspecified
+"Fibrinolysis (plasminogen, antiplasmin)",coagulation,laboratory or other marker,2,2,8,1,0,2,complicated; mortality,B. rossi; B. canis
+GM-CSF,cytokine,laboratory or other marker,2,2,4,1,0,2,complicated; mortality,B. rossi; B. canis
+Glutathione / glutathione peroxidase,oxidative stress,laboratory or other marker,2,2,8,0,1,2,anaemia_grade; complicated; mortality; organ_dysfunction,B. canis; Mixed or unspecified
+IL-18,cytokine,laboratory or other marker,2,2,3,0,0,2,complicated; mortality,B. rossi; B. canis
+IL-2,cytokine,laboratory or other marker,2,2,3,1,0,2,complicated; mortality,B. rossi; B. canis
+IL-6,cytokine,laboratory or other marker,2,2,2,1,0,0,mortality,B. rossi
+IL-8 (CXCL8),cytokine,laboratory or other marker,2,2,3,0,0,2,complicated; mortality,B. rossi; B. canis
+Icterus,clinical sign,clinical sign or score,2,2,2,0,0,1,parasitaemia_level; specific_complication,B. rossi; Mixed or unspecified
+KC-like (CXCL1),cytokine,laboratory or other marker,2,2,4,2,0,0,complicated; parasitaemia_level,B. rossi; B. canis
+Mean platelet volume and platelet indices,haematology,laboratory or other marker,2,2,2,0,0,1,mortality; parasitaemia_level,B. rossi; Mixed or unspecified
+Mentation / neurological signs,clinical sign,clinical sign or score,2,2,3,2,0,0,mortality; specific_complication,B. rossi
+Other cytokines and chemokines,cytokine,laboratory or other marker,2,2,6,1,0,2,complicated; severity_grade,B. canis
+"Pancreatic enzymes (lipase, amylase, cPLI)",biochemistry,laboratory or other marker,2,2,3,2,0,1,mortality; severity_grade; specific_complication,B. rossi; B. gibsoni
+Parasite species or genotype,parasitology,parasite factor,2,2,2,0,0,1,anaemia_grade; mortality,Mixed or unspecified
+Proteomics / metabolomics,omics,laboratory or other marker,2,2,26,2,2,1,complicated; severity_grade; specific_complication,B. rossi; B. canis
+Reticulocytes,haematology,laboratory or other marker,2,2,2,1,0,1,mortality; treatment_intensity,B. rossi; B. canis
+SIRS status,clinical score,clinical sign or score,2,2,5,1,0,1,mortality; other,B. rossi; B. canis
+Sodium,electrolyte,laboratory or other marker,2,2,3,0,0,2,mortality; other,B. rossi; B. canis
+Superoxide dismutase,oxidative stress,laboratory or other marker,2,2,8,0,1,2,anaemia_grade; complicated; mortality; organ_dysfunction,B. canis; Mixed or unspecified
+TSH,endocrine,laboratory or other marker,2,2,6,0,1,2,other; specific_complication,B. rossi
+Urine protein:creatinine ratio,urine,laboratory or other marker,2,2,2,1,0,0,complicated; severity_grade,B. rossi; B. canis
+Serum protein electrophoresis fractions,biochemistry,laboratory or other marker,1,2,21,1,0,1,anaemia_grade; complicated,B. canis; Mixed or unspecified
+Travel / import history,clinical history,host factor,1,2,6,0,1,1,complicated; mortality; severity_grade,B. canis
+ACTH,endocrine,laboratory or other marker,1,1,1,0,0,1,specific_complication,B. rossi
+"Acid-base (pH, bicarbonate, base excess, anion gap)",acid-base and perfusion,laboratory or other marker,1,1,5,1,1,1,mortality; other,B. rossi
+"Adhesion molecules (ICAM-1, VCAM-1, selectins)",endothelial,laboratory or other marker,1,1,4,1,0,1,complicated,B. canis
+Antibody titre / serostatus,immunology,laboratory or other marker,1,1,2,0,1,0,severity_grade,B. canis
+Antithrombin,coagulation,laboratory or other marker,1,1,1,0,1,0,mortality,B. rossi
+Autoagglutination,haematology,laboratory or other marker,1,1,1,0,0,1,mortality,B. rossi
+Blood gases and oxygenation,acid-base and perfusion,laboratory or other marker,1,1,4,0,1,1,mortality; other,B. rossi
+Blood pressure,clinical sign,clinical sign or score,1,1,1,0,0,0,mortality,B. rossi
+Circulating blood volume,other,laboratory or other marker,1,1,3,0,0,0,severity_grade,Mixed or unspecified
+Collapse,clinical sign,clinical sign or score,1,1,2,1,0,0,mortality,B. rossi
+Copper,biochemistry,laboratory or other marker,1,1,1,0,0,1,mortality,Mixed or unspecified
+Cystatin C,biochemistry,laboratory or other marker,1,1,1,0,0,0,specific_complication,Mixed or unspecified
+Cytokine linear combination,cytokine,laboratory or other marker,1,1,3,0,0,0,complicated,B. canis
+Duration of illness before presentation,clinical history,host factor,1,1,1,0,0,1,specific_complication,B. rossi
+Echocardiographic findings,cardiac,laboratory or other marker,1,1,17,1,1,1,mortality,Mixed or unspecified
+Erythrocyte aggregation,haematology,laboratory or other marker,1,1,1,0,0,0,severity_grade,Mixed or unspecified
+Fibrin(ogen) degradation products,coagulation,laboratory or other marker,1,1,1,0,0,0,severity_grade,Mixed or unspecified
+Fractional excretion of electrolytes,urine,laboratory or other marker,1,1,3,1,0,0,specific_complication,B. canis
+Gene expression / transcriptomics,omics,laboratory or other marker,1,1,4,0,0,1,severity_grade,B. canis
+HMGB-1,immunology,laboratory or other marker,1,1,2,0,0,1,complicated,B. canis
+Haemoglobinuria,urine,laboratory or other marker,1,1,1,0,0,0,parasitaemia_level,Mixed or unspecified
+Hepcidin,acute phase protein,laboratory or other marker,1,1,2,1,0,0,mortality,Mixed or unspecified
+IFN-gamma,cytokine,laboratory or other marker,1,1,1,0,0,0,severity_grade,B. canis
+Immune complexes / complement,immunology,laboratory or other marker,1,1,5,1,1,0,complicated,B. rossi
+Ionised calcium,electrolyte,laboratory or other marker,1,1,2,0,1,0,mortality; other,B. rossi
+Lactate dehydrogenase,biochemistry,laboratory or other marker,1,1,1,1,0,0,severity_grade,Mixed or unspecified
+Lipoproteins,biochemistry,laboratory or other marker,1,1,2,1,0,0,complicated,B. rossi
+Magnesium,electrolyte,laboratory or other marker,1,1,1,0,0,0,parasitaemia_level,Mixed or unspecified
+Myeloperoxidase / MPXI,haematology,laboratory or other marker,1,1,1,0,0,1,mortality,B. rossi
+Other clinical signs (composite),clinical sign,clinical sign or score,1,1,1,0,0,1,parasitaemia_level,Mixed or unspecified
+Parasite DNA load (qPCR),parasitology,parasite factor,1,1,1,1,0,0,severity_grade,B. canis
+Plasma NGAL,biochemistry,laboratory or other marker,1,1,1,0,0,1,complicated,B. rossi
+Platelet function,coagulation,laboratory or other marker,1,1,1,0,0,0,severity_grade,Mixed or unspecified
+Protein C / protein S,coagulation,laboratory or other marker,1,1,1,0,1,0,complicated,B. rossi
+Red cell distribution width,haematology,laboratory or other marker,1,1,1,0,0,0,severity_grade,B. gibsoni
+Respiratory rate / dyspnoea,clinical sign,clinical sign or score,1,1,1,0,0,1,specific_complication,B. rossi
+SDMA,biochemistry,laboratory or other marker,1,1,2,1,0,0,complicated,B. rossi
+Selenium,biochemistry,laboratory or other marker,1,1,1,0,0,1,mortality,Mixed or unspecified
+Soluble fibrin monomer complexes,coagulation,laboratory or other marker,1,1,1,0,0,0,severity_grade,Mixed or unspecified
+Thrombomodulin,endothelial,laboratory or other marker,1,1,2,0,0,1,complicated,B. canis
+Time since last meal,clinical history,host factor,1,1,1,0,0,1,specific_complication,B. rossi
+Total antioxidant capacity,oxidative stress,laboratory or other marker,1,1,7,1,0,1,anaemia_grade; complicated; mortality; organ_dysfunction,B. canis
+Treatment factors,treatment,host factor,1,1,1,1,0,0,treatment_intensity,Mixed or unspecified
+Triglycerides,biochemistry,laboratory or other marker,1,1,2,1,0,0,mortality,B. canis
+Urea:creatinine ratio,biochemistry,laboratory or other marker,1,1,1,0,0,0,specific_complication,Mixed or unspecified
+Urinary kidney injury biomarkers,urine,laboratory or other marker,1,1,5,1,0,1,complicated,B. rossi
+Urine creatinine,urine,laboratory or other marker,1,1,1,0,0,0,severity_grade,B. canis
+Urine osmolality,urine,laboratory or other marker,1,1,1,0,0,1,complicated,B. rossi
+Urine specific gravity,urine,laboratory or other marker,1,1,1,0,0,1,complicated,B. rossi
+Vascular wall wetting index,endothelial,laboratory or other marker,1,1,1,0,0,0,severity_grade,Mixed or unspecified
+Viscoelastic testing (TEG/ROTEM),coagulation,laboratory or other marker,1,1,12,0,0,1,mortality,B. rossi
+Vitamin D (25-hydroxyvitamin D),endocrine,laboratory or other marker,1,1,1,0,1,0,severity_grade,B. rossi
+Zinc,biochemistry,laboratory or other marker,1,1,1,0,1,0,mortality,Mixed or unspecified
+suPAR,coagulation,laboratory or other marker,1,1,2,0,0,1,complicated,B. canis

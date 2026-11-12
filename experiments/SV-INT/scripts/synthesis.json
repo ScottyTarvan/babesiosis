@@ -1,0 +1,910 @@
+{
+  "research_question": "Why do some dogs with babesiosis develop severe disease and others mild disease?",
+  "strength_classes": {
+    "no_data": "No usable data: the line cannot be examined with the public files or the extracted literature",
+    "design_only": "A study design and sample size, no data analysed",
+    "instrument_failed": "The measuring instrument (score or reference) failed its own validation",
+    "null_underpowered": "Tests run, no effect found, only large effects detectable",
+    "negative": "A pre-stated rule for the hypothesis was not met",
+    "restates_known": "A signal that restates an already-known marker, anaemia, or the severity label itself",
+    "weak": "Interval just excludes no effect, or one source only, or exploratory (already-seen file)",
+    "descriptive": "Description without a test; shows that something exists, not how often or how large"
+  },
+  "lines": [
+    {
+      "key": "time",
+      "label": "Time",
+      "question": "Is \"severe\" partly \"late\"? Do clinically worst dogs lie further along, or off, a common course of infection?",
+      "verdict": "cannot_address",
+      "verdict_text": "Cannot address. The only reference course is 5 experimental Beagles before treatment, whose haematocrit seldom fell below 0.27, while the median natural dog had 0.18; the stage score built on it failed validation and is unstable to one Beagle. The one association (duller dogs further from the course) disappears once haematocrit is controlled.",
+      "findings": [
+        {
+          "code": "SV-01-01-habitus-distance",
+          "asked": "In DS05, is habitus worse in dogs further from the Beagle course, at a given pseudo-stage?",
+          "found": "Partial rho -0.24 (95% CI -0.39 to -0.07), p 0.005, n 147; it vanishes once haematocrit is controlled (+0.08, -0.08 to 0.24). The spec stage score does not keep the Beagles' time order (rho 0.19) and the time-anchored course fails the illness-duration check: no construction passes both. Dropping one Beagle reverses the order of the dogs in 2 of 5 refits.",
+          "effect": "partial rho -0.24 (-0.39 to -0.07)",
+          "n": "147 dogs",
+          "sources": [
+            "SRC-B (course)",
+            "SRC-F (dogs)"
+          ],
+          "detectable": "|rho| about 0.23 at n 147: at the edge",
+          "strength": "instrument_failed",
+          "quotes": [
+            [
+              "SV-01/report.md",
+              "partial rho -0.24 (95% CI -0.39 to -0.07), permutation p 0.005, BH q 0.007, n 147 dogs"
+            ],
+            [
+              "SV-01/report.md",
+              "+0.08 (-0.08 to 0.24), p 0.34"
+            ],
+            [
+              "SV-01/report.md",
+              "No construction passes both checks."
+            ],
+            [
+              "SV-01/report.md",
+              "Pseudo-stage is not stable: dropping one Beagle reverses the order of the DS05 dogs in 2 of 5 spec refits"
+            ],
+            [
+              "SV-01/report.md",
+              "Detectable effect at n 147: |rho| about 0.23"
+            ]
+          ]
+        },
+        {
+          "code": "SV-01-02-ds03-geometry",
+          "asked": "Where do naturally infected dogs lie relative to the Beagle course?",
+          "found": "Within 2 spread units of the course: 20% (13 to 30) of DS03 cohort 1 (n 85), 17% (6 to 39) of cohort 2 (n 18), 24% (18 to 32) of DS05 (n 147); 61%, 83% and 61% project onto an end of the course. The geometry recurs in a clinic and a referral hospital; the course cannot place most natural dogs.",
+          "effect": "share within 2 spread units: 20% / 17% / 24%",
+          "n": "103 DS03 natural dogs, 147 DS05 dogs",
+          "sources": [
+            "SRC-A (DS03 natural = S-CB050 dogs, SV-07)",
+            "SRC-F",
+            "SRC-B (course)"
+          ],
+          "detectable": "No test",
+          "strength": "descriptive",
+          "quotes": [
+            [
+              "SV-01/report.md",
+              "| DS03 natural, cohort 1 | 85 | 20% (13 to 30) | 61% (51 to 71)"
+            ],
+            [
+              "SV-01/report.md",
+              "| DS05 natural | 147 | 24% (18 to 32) | 61% (53 to 69)"
+            ],
+            [
+              "SV-01/report.md",
+              "The median natural dog has haematocrit 0.18"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "key": "load",
+      "label": "Load",
+      "question": "Do dogs differ in parasite load (resistance) or in damage per parasite (tolerance)?",
+      "verdict": "cannot_address",
+      "verdict_text": "Cannot address in natural infection. No species by outcome-class cell of the literature has 3 independent units with load against outcome, and no B. rossi unit reports load against a clinical outcome. Inside 5 experimental Beagles, damage followed load along one shared line, so no tolerance difference was seen, but with 5 dogs and 1 source that is a description, not a test.",
+      "findings": [
+        {
+          "code": "SV-02-01-load-by-outcome",
+          "asked": "Do published contrasts show more parasites in severe disease, inside one species and outcome class?",
+          "found": "No pooled estimate: 6 units in 5 cells, largest cell 2 units. B. canis died vs survived (CB516, 8 vs 7): Hedges g of log load -0.17 (-1.19 to 0.85). Only CB141 (B. canis, ddPCR, n 222) is significant, rho 0.35 (0.23 to 0.46) with a haematological score, and in the same cohort antibody correlates more strongly and the other way, rho -0.65 (-0.73 to -0.56), n 166.",
+          "effect": "g -0.17 (-1.19 to 0.85) in the only death contrast",
+          "n": "6 units; 15 dogs in the death contrast",
+          "sources": [
+            "6 literature units; no B. rossi unit"
+          ],
+          "detectable": "1.6 SD in CB516",
+          "strength": "no_data",
+          "quotes": [
+            [
+              "SV-02/report.md",
+              "g of log load -0.17 (-1.19 to 0.85)"
+            ],
+            [
+              "SV-02/report.md",
+              "detectable at 80% power: 1.6 SD"
+            ],
+            [
+              "SV-02/report.md",
+              "rho 0.35 (0.23 to 0.46), significant"
+            ],
+            [
+              "SV-02/report.md",
+              "Antibody: rho -0.65 (-0.73 to -0.56), n 166."
+            ],
+            [
+              "SV-02/report.md",
+              "No B. rossi unit reports load against a clinical outcome."
+            ]
+          ]
+        },
+        {
+          "code": "SV-02-02-beagle-reaction-norms",
+          "asked": "In 5 DS02 Beagles, do dogs at the same load differ in damage?",
+          "found": "No measure shows different norms: venous lactate and habitus loss read one shared norm, haematocrit drop cannot tell. At 5% parasitaemia lactate was 1.14 mmol/L in the one low-dose dog against 1.19 to 1.44 in the high-dose dogs. Clear damage appeared only above about 10% parasitaemia. The dog that died had the most damage at its peak, but was not a residual outlier.",
+          "effect": "readings: 2 of 3 one shared norm, 1 cannot tell, 0 different",
+          "n": "5 dogs, 22 dog-days",
+          "sources": [
+            "SRC-B"
+          ],
+          "detectable": "No test (per-dog intervals with 1 or 2 df)",
+          "strength": "descriptive",
+          "quotes": [
+            [
+              "SV-02/report.md",
+              "Venous lactate reads one shared norm, habitus loss one shared norm, haematocrit drop cannot tell."
+            ],
+            [
+              "SV-02/report.md",
+              "| Venous lactate (mmol/L) | 1.14 (n 1) | 1.19 to 1.44 |"
+            ],
+            [
+              "SV-02/report.md",
+              "appears only above about 10% parasitaemia"
+            ]
+          ]
+        },
+        {
+          "code": "SV-03-01-evidence-matrix",
+          "asked": "Is there a published conflict on parasitaemia and severity?",
+          "found": "Parasitaemia was tested in 4 units; none pair has opposite significant directions (no conflict, and no consistent cell either).",
+          "effect": "direction calls only",
+          "n": "4 units",
+          "sources": [
+            "4 literature units"
+          ],
+          "detectable": "Not applicable",
+          "strength": "no_data",
+          "quotes": [
+            [
+              "SV-03/report.md",
+              "| Parasitaemia | 4 | CH12 qPCR load higher (severity grade, B. canis); CH21 N (death, B. canis); CB045 N; CH09 unclear | No conflict |"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "key": "host",
+      "label": "Host",
+      "question": "Do age, sex, neuter status and breed change the amount or the form of severe disease?",
+      "verdict": "not_supported_underpowered",
+      "verdict_text": "Not supported, and underpowered. In S-CB050 young and adult dogs died at similar rates (OR 1.23, 0.34 to 4.15), but with 15 deaths only an odds ratio of about 3.7 or more was detectable. The age-changes-form hypothesis was not supported. Neuter status (7 neutered DS05 dogs) and breed were not testable, and no canine study has genotyped dogs against severity.",
+      "findings": [
+        {
+          "code": "SV-05-01-age-death",
+          "asked": "Does age (under 12 months against older) change the risk of death in B. rossi?",
+          "found": "6 of 50 young and 9 of 90 adult dogs died: OR 1.23 (0.34 to 4.15); sex-stratified MH OR 1.24 (0.41 to 3.77). 0 of 3 tests q < 0.05. Died includes euthanasia for poor prognosis.",
+          "effect": "OR 1.23 (0.34 to 4.15)",
+          "n": "140 dogs, 15 deaths",
+          "sources": [
+            "SRC-A"
+          ],
+          "detectable": "OR about 3.7 or more (or 0.28 or less)",
+          "strength": "null_underpowered",
+          "quotes": [
+            [
+              "SV-05/report.md",
+              "OR 1.23 (0.34 to 4.15)"
+            ],
+            [
+              "SV-05/report.md",
+              "MH OR 1.24 (0.41 to 3.77)"
+            ],
+            [
+              "SV-05/report.md",
+              "a test at 80% power detects only an odds ratio of about 3.7 or more, or 0.28 or less"
+            ]
+          ]
+        },
+        {
+          "code": "SV-05-02-age-form",
+          "asked": "Is severe disease anaemia-dominant in young dogs and inflammatory in adults?",
+          "found": "Verdict not supported. DS05 haematocrit young minus adult HL -0.02 (-0.04 to +0.01), n 55 vs 92. DS03 shows -0.06 (-0.10 to -0.025), but DS03 dogs are S-CB050 dogs and young healthy controls are lower too. No adult excess of band neutrophils or cytokine perturbation. The one lead: young DS05 dogs presented about 1 day earlier (q 0.090). 1 of 8 tests q < 0.05.",
+          "effect": "HL -0.02 L/L (-0.04 to +0.01) in the independent source",
+          "n": "147 DS05, 101 DS03, 140 S-CB050",
+          "sources": [
+            "SRC-F",
+            "SRC-A"
+          ],
+          "detectable": "about 0.48 SD (DS05)",
+          "strength": "negative",
+          "quotes": [
+            [
+              "SV-05/report.md",
+              "Verdict by the pre-stated rule: not supported."
+            ],
+            [
+              "SV-05/report.md",
+              "HL -0.02 (-0.04 to +0.01)"
+            ],
+            [
+              "SV-05/report.md",
+              "HL -0.06 (-0.10 to -0.025)"
+            ],
+            [
+              "SV-05/report.md",
+              "young DS05 dogs presented about 1 day earlier (q 0.090)"
+            ],
+            [
+              "SV-05/report.md",
+              "about 0.48 SD for the DS05 contrasts"
+            ],
+            [
+              "SV-05/report.md",
+              "DS05 has 7 neutered dogs"
+            ]
+          ]
+        },
+        {
+          "code": "SV-10-02-host-genetics",
+          "asked": "What study would test host genes within one breed?",
+          "found": "PubMed: no canine study has genotyped dogs against babesiosis severity or outcome. Design: pit bull-type B. rossi, 142 severe + 142 mild, from about 471 cases (about 14 hospital-years), detects DEA 1 OR 3 at alpha 0.0025; OR 2 is not feasible in one breed.",
+          "effect": "Design: detects OR 3",
+          "n": "planning figure: 283 dogs",
+          "sources": [
+            "none (new data needed)"
+          ],
+          "detectable": "OR 3 (DEA 1); OR 2 needs 330 to 500 severe dogs",
+          "strength": "design_only",
+          "quotes": [
+            [
+              "SV-10/report.md",
+              "No canine study has genotyped dogs against babesiosis severity or outcome."
+            ],
+            [
+              "SV-10/report.md",
+              "142 severe + 142 mild = 283, from about 471 pit bull-type cases (about 14 hospital-years)"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "key": "parasite",
+      "label": "Parasite",
+      "question": "Does parasite genotype matter?",
+      "verdict": "cannot_address",
+      "verdict_text": "Cannot address. No public file holds parasite genotype with an outcome, the literature has 2 units on species or genotype, and between-file species contrasts are aliased with source, country, assay and definition. SV-10 sized the study that would answer it.",
+      "findings": [
+        {
+          "code": "SV-G2-01-literature-extraction",
+          "asked": "How many units test parasite species or genotype against severity?",
+          "found": "2 units (parasite species or genotype); parasite DNA load 1 unit.",
+          "effect": "count only",
+          "n": "2 units",
+          "sources": [
+            "2 literature units"
+          ],
+          "detectable": "Not applicable",
+          "strength": "no_data",
+          "quotes": [
+            [
+              "SV-G2/report.md",
+              "- Parasite species or genotype 2"
+            ]
+          ]
+        },
+        {
+          "code": "SV-10-01-parasite-genotype",
+          "asked": "What study would test parasite genotype at a given load?",
+          "found": "BrEMA1 genotype19 against the others, complicated vs uncomplicated B. rossi, adjusted for age, days sick and load: 80 complicated + 120 uncomplicated (about 229 enrolled) for an adjusted OR 2.5; death as outcome needs about 545 enrolled. A genome-wide design is hypothesis-generating only.",
+          "effect": "Design: detects OR 2.5",
+          "n": "planning figure: 229 enrolled",
+          "sources": [
+            "none (new data needed)"
+          ],
+          "detectable": "OR 2.5",
+          "strength": "design_only",
+          "quotes": [
+            [
+              "SV-10/report.md",
+              "80 complicated + 120 uncomplicated = 199, from about 229 enrolled"
+            ],
+            [
+              "SV-10/report.md",
+              "about 545 enrolled"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "key": "response",
+      "label": "Response",
+      "question": "Is severity the size of the inflammatory response or its balance? Which mechanisms known from human disease are unmeasured in dogs?",
+      "verdict": "not_supported_underpowered",
+      "verdict_text": "Not supported as a replicated finding. The IL-8 conflict that motivated the line is not in the dog-level files. The pre-stated rule read \"balance\" (MCP-1 against IL-8) in two sources, but weakly (B. rossi p 0.070) and carried by MCP-1. Every signal that passes a test restates a known marker (band neutrophils), anaemia, or the severity label (haemoglobin beta; SIRS in the B. canis label). No marker reaches 3 independent units in the literature, and 21 of 37 human-severity mechanisms have never been tested against severity in dogs.",
+      "findings": [
+        {
+          "code": "SV-04-01-il8-direction",
+          "asked": "Is the IL-8 conflict (falls with severity in B. rossi, rises in B. canis) species, or sampling time and definition?",
+          "found": "No conflict inside the dog-level files: IL-8 severe minus non-severe +0.02 (-0.28 to +0.34) in S-CB050 (died 12 vs 85) and +0.15 (-0.29 to +0.56) in S-CB017 (complicated 18 vs 13). IL-8 differs only infected vs controls (-0.45 and +0.87). The B. rossi 'falls with severity' claim rests on one abstract-only article (CB037). 3 of 12 tests q < 0.05 (IL-2, GM-CSF, MCP-1 in S-CB017).",
+          "effect": "Cliff's delta +0.02 and +0.15",
+          "n": "97 and 31 dogs",
+          "sources": [
+            "SRC-A (B. rossi)",
+            "SRC-D (B. canis)"
+          ],
+          "detectable": "about 0.86 SD (S-CB050), 1.05 SD (S-CB017)",
+          "strength": "negative",
+          "quotes": [
+            [
+              "SV-04/report.md",
+              "| S-CB050, before treatment, died vs survived | 12 vs 85 | 1171.7 vs 1066.3 | +0.02 (-0.28 to +0.34) |"
+            ],
+            [
+              "SV-04/report.md",
+              "| S-CB017, 6-8 h after imidocarb, complicated vs uncomplicated | 18 vs 13 | 907.5 vs 600.7 | +0.15 (-0.29 to +0.56) |"
+            ],
+            [
+              "SV-04/report.md",
+              "IL-8 -0.45 (-0.65 to -0.24) in S-CB050"
+            ],
+            [
+              "SV-04/report.md",
+              "the detectable effect at 80% power is about 0.86 SD in S-CB050 and 1.05 SD in S-CB017"
+            ]
+          ]
+        },
+        {
+          "code": "SV-04-02-response-size-balance",
+          "asked": "Is severe disease a larger cytokine perturbation (size) or a shifted one (balance)?",
+          "found": "Rule reads 'balance', weakly: balance index higher in severe dogs in both files, +0.32 (+0.02 to +0.60, p 0.070, q 0.139) in S-CB050 and +0.44 (+0.07 to +0.78) in S-CB017, carried by MCP-1 (S-CB050 +0.47, +0.22 to +0.70, q 0.052; S-CB017 +0.81). Size (perturbation count) is higher only in complicated B. canis (+0.71), whose label includes SIRS.",
+          "effect": "balance +0.32 and +0.44",
+          "n": "97 and 31 dogs",
+          "sources": [
+            "SRC-A",
+            "SRC-D (one species per source)"
+          ],
+          "detectable": "about 0.86 / 1.05 SD",
+          "strength": "weak",
+          "quotes": [
+            [
+              "SV-04/report.md",
+              "| S-CB050 | T2 balance index | 19.42 vs -2.74 | +0.32 (+0.02 to +0.60) | 0.070 | 0.139 |"
+            ],
+            [
+              "SV-04/report.md",
+              "| S-CB017 | T2 balance index | 13.98 vs -19.35 | +0.44 (+0.07 to +0.78) | 0.038 | 0.038 |"
+            ],
+            [
+              "SV-04/report.md",
+              "| S-CB050 | MCP-1 | 12 vs 85 | 921.7 vs 527.6 | +0.47 (+0.22 to +0.70) |"
+            ],
+            [
+              "SV-04/report.md",
+              "| S-CB017 | T1 perturbation count | 4.11 vs 2.69 | +0.71 (+0.43 to +0.92) |"
+            ]
+          ]
+        },
+        {
+          "code": "SV-03-01-evidence-matrix",
+          "asked": "Which markers agree in 3 or more independent units of one species and outcome class?",
+          "found": "None: 0 of 423 cells reach 3 tested units; nothing pooled. Post hoc, with outcome classes merged, 4 non-circular B. rossi cells agree in 3 units (body temperature, band neutrophils, cortisol, thyroid hormones); 0 survive once Onderstepoort is counted once. Lactate is the most uniform named result (higher with death in 3 units).",
+          "effect": "0 pooled estimates",
+          "n": "42 units, 740 rows",
+          "sources": [
+            "42 literature units"
+          ],
+          "detectable": "Not applicable",
+          "strength": "no_data",
+          "quotes": [
+            [
+              "SV-03/report.md",
+              "423 cells. 15 have 2 tested units; none has 3"
+            ],
+            [
+              "SV-03/report.md",
+              "With Onderstepoort counted once (S1), none keeps 3 agreeing units."
+            ],
+            [
+              "SV-03/report.md",
+              "| Lactate | 4 | CB040, CH21, CH18 higher in death; CB112 unclear |"
+            ]
+          ]
+        },
+        {
+          "code": "SV-03-02-definition-map",
+          "asked": "How are severity definitions built, and how often is a marker part of its own definition?",
+          "found": "78 definitions in 42 units. A tested marker belongs to its own definition in 38 of 504 tested rows (7 of 31 units); those rows are significant 79% of the time against 47% for other rows.",
+          "effect": "79% vs 47% significant",
+          "n": "504 tested rows",
+          "sources": [
+            "42 literature units"
+          ],
+          "detectable": "Not applicable",
+          "strength": "descriptive",
+          "quotes": [
+            [
+              "SV-03/report.md",
+              "38 of 504 tested rows (7.5%), in 7 of 31 units with tests. These rows are significant 79% of the time; other rows 47%."
+            ]
+          ]
+        },
+        {
+          "code": "SV-06-01-transfer-grid",
+          "asked": "Which human severity mechanisms are unmeasured against severity in dogs?",
+          "found": "37 mechanisms: 21 gaps (12 never measured in canine babesiosis); 21 of 36 with human grade 2 or 3 are gaps (58%), but 10 of 26 grade-3 mechanisms already have canine severity data. Top gaps: angiopoietin-2, VEGF/sFlt-1, NETs, histones, calprotectin. The grades are one agent's judgement, not reviewed.",
+          "effect": "21 of 37 gaps",
+          "n": "37 mechanisms",
+          "sources": [
+            "literature (PubMed, HU and CB notes)"
+          ],
+          "detectable": "Not applicable",
+          "strength": "descriptive",
+          "quotes": [
+            [
+              "SV-06/report.md",
+              "21 of 36 mechanisms with human grade 2 or 3 are gaps (58%)."
+            ],
+            [
+              "SV-06/report.md",
+              "10 of the 26 grade-3 mechanisms already have canine severity data."
+            ],
+            [
+              "SV-06/report.md",
+              "The grades are single-agent judgements; no second agent or person checked them."
+            ]
+          ]
+        },
+        {
+          "code": "SV-06-02-ds07-candidate-tests",
+          "asked": "Do serum proteins of these mechanisms differ between complicated and uncomplicated B. rossi in DS07?",
+          "found": "Not supported: none of 10 family proteins at q < 0.05 (9 tested). Haemoglobin beta +0.48 (+0.09 to +0.82), p 0.019, q 0.133, which partly restates the label (haematocrit < 0.15 and bilirubin are in the definition). Haptoglobin, alpha-2-antiplasmin, protein C, antithrombin, factor H within +/-0.12. Histone H4 untestable.",
+          "effect": "Hb beta delta +0.48 (+0.09 to +0.82), q 0.133",
+          "n": "14 vs 18 dogs",
+          "sources": [
+            "SRC-C"
+          ],
+          "detectable": "about 1.0 SD at alpha 0.05, 1.3 SD after correction",
+          "strength": "negative",
+          "quotes": [
+            [
+              "SV-06/report.md",
+              "None of the 10 family proteins differs at q < 0.05 (9 tested; 2 with uncorrected p < 0.05)."
+            ],
+            [
+              "SV-06/report.md",
+              "| Haemoglobin beta | mechanism | 14 / 18 | 0.35 / -1.26 / -1.31 | +0.48 (+0.09 to +0.82) |"
+            ],
+            [
+              "SV-06/report.md",
+              "the test detects about 1.0 SD at alpha 0.05, and about 1.3 SD after correction"
+            ]
+          ]
+        },
+        {
+          "code": "SV-08-01-transcriptome-signatures",
+          "asked": "Do human severe-malaria blood signatures rise in the Beagles before treatment, before deterioration, and earlier at high dose?",
+          "found": "Type 1 interferon and neutrophil-granule scores rose in 5 of 5 dogs (4 of 5 beyond background each; sign p 0.0625, the smallest possible). Interferon rose before habitus fell in 5 of 5. 'Earlier at high dose' not met. Every dog rose, including the mild low-dose dogs, and the size of the rise does not separate the dog that died: a response to infection, not a severity gradient.",
+          "effect": "5 of 5 dogs; sign p 0.0625",
+          "n": "5 dogs",
+          "sources": [
+            "SRC-B"
+          ],
+          "detectable": "No sign test can reach p < 0.05 with 5 dogs",
+          "strength": "weak",
+          "quotes": [
+            [
+              "SV-08/report.md",
+              "Type 1 interferon: higher in 5 of 5 dogs (sign-test p 0.0625), beyond background in 4 of 5."
+            ],
+            [
+              "SV-08/report.md",
+              "Earlier at the high dose: not met (negative)."
+            ],
+            [
+              "SV-08/report.md",
+              "What transfers is the response to infection, not yet a severity gradient."
+            ]
+          ]
+        },
+        {
+          "code": "SV-09-01-ds05-residual-axes",
+          "asked": "After haematocrit and illness duration, is there a stable residual axis in DS05?",
+          "found": "Two bootstrap-stable axes (phi 0.99, 0.96), n 140. Axis 2 (leukocytes up, regeneration down at a given haematocrit) relates to habitus, partial rho -0.26 (-0.40 to -0.10); DS05 is already seen, so exploratory. Axes are directions in a continuum, not groups of dogs.",
+          "effect": "partial rho -0.26 (-0.40 to -0.10)",
+          "n": "140 dogs",
+          "sources": [
+            "SRC-F"
+          ],
+          "detectable": "|rho| about 0.23",
+          "strength": "weak",
+          "quotes": [
+            [
+              "SV-09/report.md",
+              "| 2 | 1.92 (1.46) | 16% | 0.96 (0.88) | -0.26 (-0.40 to -0.10), 0.003 |"
+            ],
+            [
+              "SV-09/report.md",
+              "Detectable |rho| at n 140 is about 0.23"
+            ]
+          ]
+        },
+        {
+          "code": "SV-09-02-axis-congruence",
+          "asked": "Do the DS05 axes recur in an independent file?",
+          "found": "0 of 6 axis-by-block checks replicate. Block patterns recur (phi 0.99, 1.00) but cannot be shown specific with 3 shared variables; in the only testable block (S-CB017, B. canis, n 31) phi 0.99 is no better than a uniform pattern (0.98, p 0.075). DS03 and S-CB050 are one source.",
+          "effect": "0 of 6 replicate",
+          "n": "103, 141 and 31 dogs",
+          "sources": [
+            "SRC-A",
+            "SRC-D"
+          ],
+          "detectable": "Files share only 3 to 5 of 12 variables",
+          "strength": "negative",
+          "quotes": [
+            [
+              "SV-09/report.md",
+              "0 of 6 axis-by-block checks meet the replication rule"
+            ]
+          ]
+        },
+        {
+          "code": "SV-09-03-axis-outcome",
+          "asked": "Does the axis score separate dogs that died beyond band neutrophils?",
+          "found": "S-CB050 died +0.49 (+0.21 to +0.74), q 0.003, but band neutrophils alone give +0.60 and after removing bands the score gives +0.15 (-0.17 to +0.45): it restates the published band-neutrophil finding. S-CB017 complicated +0.28 (-0.13 to +0.68). MCP-1 does not track the score.",
+          "effect": "+0.49 (+0.21 to +0.74); +0.15 after bands",
+          "n": "15 vs 126 dogs",
+          "sources": [
+            "SRC-A",
+            "SRC-D"
+          ],
+          "detectable": "about 0.76 SD (15 vs 126)",
+          "strength": "restates_known",
+          "quotes": [
+            [
+              "SV-09/report.md",
+              "| S-CB050 died, axis score (segmented and bands) | 15 vs 126 | +0.49 (+0.21 to +0.74) | 0.002 | 0.003 |"
+            ],
+            [
+              "SV-09/report.md",
+              "| S-CB050 died, axis score after removing bands | 15 vs 126 | +0.15 (-0.17 to +0.45) | 0.34 | - |"
+            ],
+            [
+              "rules.md",
+              "15 vs 126 dogs, 0.76 SD"
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "foundations": [
+    {
+      "code": "SV-G1-01-data-layer-coverage",
+      "found": "9 datasets tidied, 694 dog records, 574 dogs after known same-dog links; 133 of 141 checks passed (8 failures reported).",
+      "quotes": [
+        [
+          "SV-G1/report.md",
+          "574 dogs after the known same-dog links"
+        ],
+        [
+          "SV-G1/report.md",
+          "Checks: 141, of which 133 passed"
+        ]
+      ]
+    },
+    {
+      "code": "SV-G2-01-literature-extraction",
+      "found": "117 articles extracted; only 49 articles in 42 independent units report a marker against severity (68 of 117 have none); blind second extraction significance agreement 0.99. Extraction by language-model agents with a 16-article owner check.",
+      "quotes": [
+        [
+          "SV-G2/report.md",
+          "Articles with none: 68 of 117 (58%)."
+        ],
+        [
+          "SV-G2/report.md",
+          "Significance agreement 0.990, kappa 0.985, on 104 matched pairs."
+        ]
+      ]
+    },
+    {
+      "code": "SV-07-01-linkage-audit",
+      "found": "DS03 natural cohorts and controls are S-CB050 dogs (106 of 108 with signalment, all in study-number order); DS03 experimental dogs are the DS02 Beagles; 3 of 10 fatal DS04 dogs are S-CB050 dogs; DS07 cannot take death from another file. 10 links confirmed, 11 probable, 126 unverified.",
+      "quotes": [
+        [
+          "SV-07/report.md",
+          "DS03's natural cohorts and controls are S-CB050 dogs."
+        ],
+        [
+          "SV-07/report.md",
+          "10 confirmed by values, 11 probable, 126 unverified"
+        ],
+        [
+          "SV-07/report.md",
+          "DS07 cannot take death from another file yet."
+        ]
+      ]
+    },
+    {
+      "code": "SV-10-03-minimum-dataset",
+      "found": "Design memo for every line: a multi-centre prospective B. rossi cohort of 610 dogs (about 67 deaths, at least 200 outside Onderstepoort), with outcome components stored separately, smear and qPCR load, days sick, antibody, signalment with neuter status, pre-treatment and 24 h samples and stored plasma, detects OR 1.5 per SD of log load or a marker and OR about 2 for a binary host factor such as age.",
+      "quotes": [
+        [
+          "SV-10/report.md",
+          "610 dogs (about 67 deaths), at least 200 outside Onderstepoort"
+        ]
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "source": "SRC-A",
+      "files": "S-CB050; S-CB517 (all 112 = S-CB050 dogs); DS03 natural cohorts and controls (SV-07, file level probable); 3 of 10 fatal DS04 dogs",
+      "species": "B. rossi",
+      "setting": "Onderstepoort referral hospital",
+      "outcome": "died (includes euthanasia for poor prognosis): 15 of 141 infected",
+      "used_by": "SV-04, SV-05, SV-09 (and SV-01-02, SV-05-02 through DS03)"
+    },
+    {
+      "source": "SRC-B",
+      "files": "DS02 (= DS01, DS03 experimental, DS06)",
+      "species": "B. rossi",
+      "setting": "5 experimental Beagles (2 low, 3 high dose)",
+      "outcome": "daily habitus; 1 died on day 4",
+      "used_by": "SV-01 (course), SV-02b, SV-04, SV-08"
+    },
+    {
+      "source": "SRC-C",
+      "files": "DS07 (CB112 proteome)",
+      "species": "B. rossi",
+      "setting": "archived serum, 'the Clinic'; counted with Onderstepoort by SV-03 (S1); number overlap with DS04 unverified",
+      "outcome": "complicated 14 vs uncomplicated 18",
+      "used_by": "SV-06b"
+    },
+    {
+      "source": "SRC-D",
+      "files": "S-CB017",
+      "species": "B. canis",
+      "setting": "Zagreb",
+      "outcome": "complicated 18 vs uncomplicated 13",
+      "used_by": "SV-04, SV-09"
+    },
+    {
+      "source": "SRC-E",
+      "files": "DS03 IMHA dogs only, once SV-07's proposal is accepted",
+      "species": "none (comparator)",
+      "setting": "-",
+      "outcome": "none",
+      "used_by": "SV-01 (reference)"
+    },
+    {
+      "source": "SRC-F",
+      "files": "DS05",
+      "species": "B. rossi",
+      "setting": "clinic, another province",
+      "outcome": "habitus grade only (no hard outcome)",
+      "used_by": "SV-01, SV-05, SV-09"
+    },
+    {
+      "source": "SRC-G",
+      "files": "DS04 (CB147)",
+      "species": "B. rossi",
+      "setting": "OVAH tissue bank (Onderstepoort); 3 of 10 fatal dogs are S-CB050 dogs",
+      "outcome": "all infected died: no contrast",
+      "used_by": "SV-07"
+    },
+    {
+      "source": "SRC-O",
+      "files": "S-CB516",
+      "species": "B. canis",
+      "setting": "not stated in the reports",
+      "outcome": "died 8 vs survived 7",
+      "used_by": "through SV-02a (CB516)"
+    }
+  ],
+  "sources_quotes": [
+    [
+      "SV-07/report.md",
+      "| DS03 natural cohorts 1 and 2, DS03 controls | SRC-E | SRC-A | Same dogs as S-CB050 |"
+    ],
+    [
+      "SV-07/report.md",
+      "| DS03 experimental dogs | SRC-E | SRC-B | The DS02 Beagles (SV-G1) |"
+    ],
+    [
+      "SV-07/report.md",
+      "The DS05 baseline (another province)"
+    ],
+    [
+      "SV-07/report.md",
+      "CB147: liver from a tissue bank at OVAH"
+    ],
+    [
+      "SV-03/report.md",
+      "S1 all Onderstepoort B. rossi units counted once (CH03, CB040, CB035, CB053, CB112"
+    ],
+    [
+      "SV-03/report.md",
+      "For B. rossi, every replicated signal (band neutrophils, cortisol, thyroid hormones, hypothermia) is from one hospital."
+    ],
+    [
+      "SV-G1/report.md",
+      "| S-CB516 | SRC-O | B. canis | 15 |"
+    ]
+  ],
+  "candidates": [
+    {
+      "name": "Band neutrophils",
+      "codes": "SV-03-01, SV-09-03",
+      "evidence": "Higher in non-survivors in 2 B. rossi units (CB040, CH03), both Onderstepoort; S-CB050 died +0.60 (SV-09-03).",
+      "why_not_predictor": "One hospital; already published (CB050); a single source cannot replicate it."
+    },
+    {
+      "name": "Lactate",
+      "codes": "SV-03-01, SV-02-02",
+      "evidence": "Higher with death in 3 units (CB040, CH21, CH18); in the Beagles it followed load along one shared norm.",
+      "why_not_predictor": "Direction counts, not pooled effects; partly in several severity definitions."
+    },
+    {
+      "name": "MCP-1",
+      "codes": "SV-04-01, SV-04-02, SV-03-01",
+      "evidence": "Higher in severe dogs in S-CB050 (+0.47, q 0.052) and S-CB017 (+0.81); 2 units, 2 species, 2 definitions.",
+      "why_not_predictor": "Two sources with different species, definitions and sampling times; does not track the SV-09 axis score."
+    },
+    {
+      "name": "Interferon and neutrophil-granule signatures",
+      "codes": "SV-08-01",
+      "evidence": "Rose in 5 of 5 Beagles, before habitus fell; mirrored by plasma IP-10.",
+      "why_not_predictor": "Rose in mild dogs too; 5 dogs, 1 source; no severity gradient."
+    },
+    {
+      "name": "Haemoglobin beta (serum)",
+      "codes": "SV-06-02",
+      "evidence": "+0.48 (+0.09 to +0.82), q 0.133 in DS07.",
+      "why_not_predictor": "Not significant after correction; partly restates the 'complicated' label (haematocrit, bilirubin); haemolysis of stored samples not separable."
+    },
+    {
+      "name": "Cortisol and thyroid hormones",
+      "codes": "SV-03-01",
+      "evidence": "Consistent in 3 B. rossi units with outcome classes merged (post hoc).",
+      "why_not_predictor": "0 units remain at 3 once Onderstepoort is counted once."
+    },
+    {
+      "name": "Antibody level",
+      "codes": "SV-02-01",
+      "evidence": "rho -0.65 with a haematological score in CB141 (B. canis), stronger than load (0.35).",
+      "why_not_predictor": "One cohort, subsets differ, no formal comparison; a lead for a slope-modifier test (SV-02c)."
+    }
+  ],
+  "candidates_quotes": [
+    [
+      "SV-09/report.md",
+      "| S-CB050 died, band neutrophils alone | 15 vs 126 | +0.60 (+0.39 to +0.78) |"
+    ],
+    [
+      "SV-04/report.md",
+      "| S-CB017 | MCP-1 | 18 vs 13 | 576.2 vs 224.4 | +0.81 (+0.56 to +0.97) |"
+    ],
+    [
+      "SV-09/report.md",
+      "MCP-1 (SV-04 candidate) does not track the score"
+    ],
+    [
+      "SV-08/report.md",
+      "interferon score with plasma IP-10 (CXCL10 protein) +1.00 / +0.95"
+    ],
+    [
+      "SV-03/report.md",
+      "band neutrophils higher in non-survivors (B. rossi, CB040 and CH03)"
+    ]
+  ],
+  "decisions": [
+    {
+      "decision": "Send the case-numbering query to the authors (DS07/DS04 register, DS07 outcomes, DS03 dates, CB145 cohort). Draft: SV-07/out/author_query_draft.md, not sent.",
+      "raised_by": "SV-07; index.md",
+      "kind": "author request"
+    },
+    {
+      "decision": "Run SV-02c: request dog-level load, antibody status, age and outcome from the authors of CB141 (342 B. canis dogs), CB040 (320 B. rossi dogs) and RQ-CB145. Not run.",
+      "raised_by": "SV-02a; index.md",
+      "kind": "author request"
+    },
+    {
+      "decision": "Change independent_source in /core/datasets.jsonl and the 'never pool' list in data.md: DS03 natural and controls to SRC-A, DS03 experimental to SRC-B, DS04 with an overlap note to SRC-A.",
+      "raised_by": "SV-07; SV-05",
+      "kind": "data correction"
+    },
+    {
+      "decision": "Correct data.md: S-CB017 cytokine blocks are day 1 and day 7; DS07 has 172 gene-symbol master proteins (not 163); DS04 per-slide files are histopathology score sheets; DS03 'Day 1' is anchored; DS03 natural dogs are S-CB050 dogs; DS04 case 54 is DS03 BLSC29.",
+      "raised_by": "SV-G1; SV-07; SV-05",
+      "kind": "data correction"
+    },
+    {
+      "decision": "Use the S-CB050 WBC for the 24 flagged S-CB517 dogs (recommended).",
+      "raised_by": "SV-G1",
+      "kind": "data correction"
+    },
+    {
+      "decision": "Replace the pilot extractions under /core/data/severity/ with the SV-G2 v2 extractions, and add the 18 new canonical marker names to marker_map.csv.",
+      "raised_by": "SV-G2; index.md",
+      "kind": "core data"
+    },
+    {
+      "decision": "Extract the 34 abstract-only tier B articles (CB037 first), or obtain the CB037 full text: it is the only source of 'IL-8 falls with severity in B. rossi'.",
+      "raised_by": "SV-G2 (optional); SV-03; SV-04",
+      "kind": "literature"
+    },
+    {
+      "decision": "Accept merged outcome definitions (complicated, severity grade, death) for a harmonised B. canis meta-analysis: 10 cells would reach 3 to 4 units.",
+      "raised_by": "SV-03",
+      "kind": "method"
+    },
+    {
+      "decision": "Accept the SV-07 DS03-S-CB050 pairs at dog level, to join DS03 red-cell values to S-CB050 death (haematocrit by outcome; an axis-2-like score against death in about 100 dogs) as a new, separately locked analysis.",
+      "raised_by": "SV-05; SV-09",
+      "kind": "new analysis"
+    },
+    {
+      "decision": "Give the SV-06a mechanism grades a second, independent review (a person or a blind second agent) before relying on the ranking.",
+      "raised_by": "SV-06a",
+      "kind": "review"
+    },
+    {
+      "decision": "Accept haptoglobin through its group master A0A5F4DB38 (or drop it; no conclusion changes), and the replacement of the presence test by low-coverage rank tests in DS07.",
+      "raised_by": "SV-06b",
+      "kind": "method"
+    },
+    {
+      "decision": "Re-quantify DS06 from the public FASTQ files (SRA PRJNA703846) without the CPM filter to recover MPO and ELANE: a large download.",
+      "raised_by": "SV-08",
+      "kind": "new analysis"
+    },
+    {
+      "decision": "Decide whether to pursue any SV-10 design; set the severity thresholds of the outcome set; set one rule for load adjustment (memo 1 adjusts, memo 2 does not); obtain the CB379 full text; rank memo 3's stored-plasma panel by the SV-06a list (now possible).",
+      "raised_by": "SV-10",
+      "kind": "new cohort"
+    },
+    {
+      "decision": "Which package to deepen. SV-INT's proposal: first SV-02c (the cheapest route to dog-level load and outcome), then the SV-10-03 cohort with at least 200 dogs outside Onderstepoort; the DS03-S-CB050 join is cheapest but rests on unverified links.",
+      "raised_by": "SV-INT",
+      "kind": "programme"
+    }
+  ],
+  "decisions_quotes": [
+    [
+      "SV-07/report.md",
+      "Send the case-numbering query? Draft: out/author_query_draft.md (not sent)."
+    ],
+    [
+      "SV-02/report.md",
+      "Should a request go to the authors of CB141 (342 B. canis dogs), CB040 (320 B. rossi dogs) and RQ-CB145"
+    ],
+    [
+      "SV-G1/report.md",
+      "Whether S-CB517 analyses should use the S-CB050 WBC for the 24 flagged dogs (recommended)."
+    ],
+    [
+      "SV-G2/report.md",
+      "Whether to add the 18 new canonical marker names"
+    ],
+    [
+      "SV-03/report.md",
+      "10 cells reach 3 to 4 units if complicated, severity grade and death are merged"
+    ],
+    [
+      "SV-06/report.md",
+      "should the grades get a second, independent review"
+    ],
+    [
+      "SV-06/report.md",
+      "Accept haptoglobin through its group master A0A5F4DB38?"
+    ],
+    [
+      "SV-08/report.md",
+      "PRJNA703846"
+    ],
+    [
+      "SV-10/report.md",
+      "Load adjustment (D3): accept the split between memo 1 and memo 2, or set one rule."
+    ]
+  ]
+}

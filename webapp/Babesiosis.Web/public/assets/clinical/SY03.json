@@ -1,0 +1,1077 @@
+{
+  "schema_version": 1,
+  "id": "SY03",
+  "title": "Thrombocytopenia, coagulopathy and DIC",
+  "updated": "2026-11-12",
+  "definition": "Thrombocytopenia is found in almost every dog with babesiosis and rarely causes bleeding. A smaller group, mostly with complicated B. rossi disease, has a consumptive coagulopathy: low clotting factor and inhibitor activities, longer PT and aPTT and higher D-dimer, with fibrin microthrombi in organs at necropsy, read by the authors as DIC [R1][R2][R3].",
+  "definition_note": "Changed. The working definition treated thrombocytopenia and DIC as one bleeding spectrum. The literature separates them: thrombocytopenia is the rule and seldom bleeds, while consumptive coagulopathy is a marker of severe, often fatal disease whose main lesion is microthrombosis rather than haemorrhage. No babesiosis study used a validated canine DIC score; DIC was inferred from marker panels [R1][R2][R4][R5].",
+  "key_points": [
+    "Expect a low platelet count: it is present in nearly all dogs, often below 40 x10^9/L, and on its own seldom causes bleeding [R6][R7][R3].",
+    "With antibabesial treatment the count returns to normal within about a week in uncomplicated B. rossi and by the second imidocarb dose, about 17 days later, in B. canis; it needs no specific treatment unless the dog bleeds [R8][R9][R10].",
+    "In B. rossi, the platelet count does not separate survivors from non-survivors; longer PT, low antithrombin and low factor VII and X activities do [R11][R1][R2].",
+    "B. rossi dogs keep near-normal clot strength on thromboelastography because fibrinogen is high; the danger is microthrombosis and organ failure, not haemorrhage [R12][R1].",
+    "Bleeding with prolonged clotting times is treated with plasma; bleeding with normal clotting times and a very low count may be secondary immune thrombocytopenia, for which a short prednisone course is suggested by expert review [R10][R13].",
+    "No anticoagulant, antiplatelet or antifibrinolytic drug has been tested for survival in dogs with babesiosis."
+  ],
+  "description": [
+    {
+      "heading": "What it is",
+      "text": "Three overlapping states occur. Isolated thrombocytopenia, usually without bleeding signs, is the commonest [R3][R11]. An activated, procoagulant state with raised thrombin-antithrombin complexes and low antithrombin occurs even in uncomplicated B. canis disease [R4][R14]. A consumptive coagulopathy with factor loss, inhibitor consumption, reduced fibrinolysis and organ microthrombi is found mainly in dogs that die [R1][R2]."
+    },
+    {
+      "heading": "How common, and in which dogs",
+      "text": "Thrombocytopenia was found in 99.5% of 248 dogs with large Babesia in Poland, in all 49 B. canis dogs in Germany, and in all 86 B. rossi dogs in a Pretoria study [R6][R7][R8]. Suspected DIC was recorded in 12 of 46 German B. canis dogs [R7]. In an Indian series selected for bleeding signs, 23.8% of B. gibsoni dogs were grouped as pancytopenia with DIC, with criteria not stated in the abstract [R15]."
+    },
+    {
+      "heading": "When in the course of disease",
+      "text": "Changes are present at admission, before treatment [R1]. In B. rossi the platelet count rose within 24 to 48 hours of treatment in survivors and the median count was normal by day 6 in the 46 uncomplicated dogs still sampled [R11][R8]. In B. canis the count was normal in 21 of 23 dogs at the second imidocarb injection, about 17 days after the first [R9]. B. rossi non-survivors died at a median of 24 hours [R1]."
+    },
+    {
+      "heading": "Mechanism",
+      "text": "Severe inflammation activates coagulation: thrombin is generated, antithrombin and protein C are consumed, and fibrinolysis is suppressed [R1][R14]. High fibrinogen and large, activated platelets keep clot strength near normal despite few platelets [R12][R3]. Platelet loss is thought to be partly immune-mediated: counts recover quickly, and platelet-bound antibodies were found in 11 of 33 tested B. canis dogs [R8][R7]. These mechanisms are proposed, not proven."
+    }
+  ],
+  "species_notes": [
+    {
+      "species": "B. rossi",
+      "note": "Most data come from one Onderstepoort group. Uncomplicated dogs are normocoagulable on TEG; non-survivors show factor consumption, low antithrombin and microthrombi [R3][R1][R2]."
+    },
+    {
+      "species": "B. canis",
+      "note": "Procoagulant markers in uncomplicated dogs; aPTT prolonged in 34 of 39 tested dogs in Germany; a low platelet count was linked to death in one small study [R14][R7][R16]."
+    },
+    {
+      "species": "B. gibsoni",
+      "note": "aPTT prolonged in 10 of 17 tested dogs with normal PT; immune thrombocytopenia and bleeding are described in case reports [R17][R18]."
+    },
+    {
+      "species": "Untyped large Babesia (Ukraine)",
+      "note": "One programme reports low fibrinogen and raised fibrin monomer and degradation products, unlike the high fibrinogen of B. rossi; species were not typed [R5][R19]."
+    }
+  ],
+  "diagnosis": {
+    "criteria": [
+      {
+        "criterion": "Thrombocytopenia",
+        "threshold": "below 200 x10^9/L",
+        "basis": "babesiosis",
+        "note": "Lower limit of the Onderstepoort reference interval used in B. rossi studies; reference intervals differ between laboratories.",
+        "refs": [
+          "R1",
+          "R8"
+        ]
+      },
+      {
+        "criterion": "Severe thrombocytopenia",
+        "threshold": "below 40 x10^9/L",
+        "basis": "babesiosis",
+        "note": "Cut-off used in 49 German B. canis dogs; 39 dogs were below it and 2 of them bled.",
+        "refs": [
+          "R7"
+        ]
+      },
+      {
+        "criterion": "Consumptive coagulopathy (B. rossi)",
+        "threshold": "longer PT and aPTT, lower factor and protein C activities, higher D-dimer than survivors",
+        "basis": "babesiosis",
+        "note": "Comparisons of medians at admission; no single cut-off was published. In one cohort non-survivors had median PT 7.6 s, antithrombin 62%, factor VII 49% and factor X 42%.",
+        "refs": [
+          "R2",
+          "R1"
+        ]
+      },
+      {
+        "criterion": "DIC as diagnosed in babesiosis studies",
+        "threshold": "raised thrombin-antithrombin with low antithrombin; or raised fibrin monomer, fibrin degradation products and D-dimer with low fibrinogen",
+        "basis": "babesiosis",
+        "note": "Marker panels interpreted by the authors; no formal score was applied in any babesiosis study found.",
+        "refs": [
+          "R4",
+          "R5",
+          "R19"
+        ]
+      },
+      {
+        "criterion": "Canine DIC score",
+        "threshold": "model based on aPTT, PT, D-dimer and fibrinogen",
+        "basis": "general canine",
+        "note": "Sensitivity 91% and specificity 90% in development, 83% and 77% in validation, in dogs in intensive care. Not tested in babesiosis; coefficients are in the paywalled paper.",
+        "refs": [
+          "R20"
+        ]
+      }
+    ],
+    "clinical_signs": [
+      {
+        "sign": "No bleeding despite severe thrombocytopenia",
+        "note": "The usual picture: none of 19 uncomplicated B. rossi dogs with a median count of 20 x10^9/L bled.",
+        "refs": [
+          "R3",
+          "R11"
+        ]
+      },
+      {
+        "sign": "Petechiae and ecchymoses on skin and mucous membranes",
+        "note": "7 of 50 dogs (14%) in a Ukrainian series of untyped Babesia.",
+        "refs": [
+          "R5"
+        ]
+      },
+      {
+        "sign": "Epistaxis, haematuria or urogenital bleeding",
+        "note": "Epistaxis in 3 of 15 B. canis dogs in Switzerland; single dogs in other series and case reports.",
+        "refs": [
+          "R16",
+          "R7",
+          "R18"
+        ]
+      },
+      {
+        "sign": "Signs of organ thrombosis or infarction",
+        "note": "Found at necropsy: microthrombi in 8 of 12 B. rossi non-survivors (heart, lung, spleen, liver, kidney, brain).",
+        "refs": [
+          "R1"
+        ]
+      }
+    ],
+    "tests": [
+      {
+        "test": "Platelet count with blood smear review",
+        "finding": "Low count; check the smear for clumps and confirm a very low count manually.",
+        "note": "Studies excluded samples with platelet aggregation and confirmed low automated counts by hand.",
+        "refs": [
+          "R7",
+          "R8",
+          "R3"
+        ]
+      },
+      {
+        "test": "Mean platelet volume",
+        "finding": "Raised; large platelets.",
+        "note": "Did not differ between survivors and non-survivors in B. rossi.",
+        "refs": [
+          "R11",
+          "R1"
+        ]
+      },
+      {
+        "test": "PT and aPTT",
+        "finding": "aPTT often mildly prolonged; PT longer in B. rossi non-survivors.",
+        "note": "Interpret against the laboratory's own interval. aPTT was shortened in one B. canis study on days 2 and 3.",
+        "refs": [
+          "R1",
+          "R7",
+          "R4"
+        ]
+      },
+      {
+        "test": "Fibrinogen, D-dimer and antithrombin",
+        "finding": "High fibrinogen and mildly raised D-dimer in B. rossi; antithrombin low, lowest in non-survivors.",
+        "note": "Laboratory tests; low fibrinogen was reported only from untyped dogs in Ukraine.",
+        "refs": [
+          "R1",
+          "R5"
+        ]
+      },
+      {
+        "test": "Thromboelastography (TEG)",
+        "finding": "Near-normal clot strength with slow initiation and reduced lysis in B. rossi.",
+        "note": "Referral centres only.",
+        "refs": [
+          "R1",
+          "R3",
+          "R12"
+        ]
+      },
+      {
+        "test": "Platelet-bound antibody",
+        "finding": "Positive in 11 of 33 tested B. canis dogs.",
+        "note": "Specialist laboratory test; supports a secondary immune mechanism.",
+        "refs": [
+          "R7"
+        ]
+      }
+    ],
+    "differentials": [
+      {
+        "condition": "Ehrlichia canis co-infection",
+        "distinguish": "PCR or serology. In the Eastern Cape co-infection was found in 3 of 149 B. rossi dogs, and thrombocytopenia did not predict it.",
+        "refs": [
+          "R21"
+        ]
+      },
+      {
+        "condition": "Pseudothrombocytopenia (platelet clumping)",
+        "distinguish": "Smear review and manual count.",
+        "refs": [
+          "R8",
+          "R7"
+        ]
+      },
+      {
+        "condition": "Evans syndrome or secondary immune-mediated haemolytic anaemia (SY02)",
+        "distinguish": "Agglutination, spherocytes, Coombs test with thrombocytopenia.",
+        "refs": [
+          "R18",
+          "R22"
+        ]
+      },
+      {
+        "condition": "Pancytopenia or marrow failure (SY04)",
+        "distinguish": "Low leucocyte and red cell counts with low platelets; 19 of 46 B. canis dogs were pancytopenic.",
+        "refs": [
+          "R7"
+        ]
+      },
+      {
+        "condition": "Other causes of prolonged clotting times (for example anticoagulant rodenticide)",
+        "distinguish": "History; a hypocoagulable TEG with very long clotting times.",
+        "refs": [
+          "R23"
+        ]
+      }
+    ],
+    "grading": [
+      {
+        "grade": "Mild",
+        "criteria": "Platelets above 100 and below 148 x10^9/L.",
+        "refs": [
+          "R17"
+        ]
+      },
+      {
+        "grade": "Moderate",
+        "criteria": "Platelets 30 to 100 x10^9/L.",
+        "refs": [
+          "R17"
+        ]
+      },
+      {
+        "grade": "Severe",
+        "criteria": "Platelets below 30 x10^9/L (B. gibsoni, Hong Kong laboratory). A German B. canis study used below 40 x10^9/L.",
+        "refs": [
+          "R17",
+          "R7"
+        ]
+      }
+    ]
+  },
+  "approach": [
+    {
+      "step": 1,
+      "action": "Count platelets and look for bleeding",
+      "detail": "Confirm a very low count on a smear. Examine skin, gums, sclera, nose, urine and faeces for bleeding. Most dogs will not bleed [R3][R7].",
+      "setting": "practice"
+    },
+    {
+      "step": 2,
+      "action": "Treat the parasite and watch",
+      "detail": "Start antibabesial treatment (TX00). Expert review advises against immunosuppression based on the count alone; base it on clinical signs [R10]. In treated survivors the count rose within 24 to 48 hours [R11][R8].",
+      "setting": "practice"
+    },
+    {
+      "step": 3,
+      "action": "Test clotting in sick or bleeding dogs",
+      "detail": "In complicated disease or with bleeding, measure PT and aPTT, and fibrinogen, D-dimer and antithrombin where available. Prolonged PT with consumption points to a worse prognosis in B. rossi [R2][R1].",
+      "setting": "practice"
+    },
+    {
+      "step": 4,
+      "action": "Bleeding with prolonged clotting times: give plasma",
+      "detail": "Fresh frozen plasma was used for bleeding dogs with prolonged clotting times in case reports and series; refer for repeated plasma, platelet products or TEG [R10][R7][R13].",
+      "setting": "referral"
+    },
+    {
+      "step": 5,
+      "action": "Bleeding with normal clotting times and a very low count",
+      "detail": "Consider secondary immune thrombocytopenia. Expert review suggests a short prednisone course if bleeding continues despite antibabesial treatment [R10].",
+      "setting": "practice"
+    },
+    {
+      "step": 6,
+      "action": "Count still low after one to two weeks",
+      "detail": "This is outside the course seen in treated B. rossi and B. canis. Recheck for persistent infection and test for Ehrlichia co-infection, although it was uncommon in the Eastern Cape [R8][R9][R21].",
+      "setting": "practice"
+    }
+  ],
+  "treatments": [
+    {
+      "name": "Fresh frozen plasma",
+      "class": "supportive",
+      "aim": "Replace consumed clotting factors and inhibitors in a bleeding dog with prolonged clotting times.",
+      "status": "standard",
+      "evidence_level": "C",
+      "independent_studies": 2,
+      "evidence_summary": "Expert review states that dogs with DIC or coagulation disorders may need plasma [R10]. Four of 49 German B. canis dogs with prolonged clotting times received one plasma transfusion each; outcome was not reported by treatment [R7]. A B. gibsoni dog with DIC was stabilised with blood and plasma [R13]. No babesiosis source gives a dose; the dose below is from dogs with other hypocoagulable disorders [R23].",
+      "doses": [
+        {
+          "drug": "fresh frozen plasma",
+          "dose": "10 mL/kg",
+          "route": "transfusion (route not stated)",
+          "frequency": "once in 2 dogs; in 1 dog continued to a total of 15 mL/kg after a repeat TEG",
+          "duration": "",
+          "context": "3 dogs given plasma (rodenticide, angiostrongylosis, DIC after systemic inflammation) in a case series of 4 (not babesiosis)",
+          "note": "Volume chosen by TEG after in vitro plasma addition. The fourth dog, with immune thrombocytopenia, gained nothing from plasma on TEG and got whole blood.",
+          "refs": [
+            "R23"
+          ]
+        }
+      ],
+      "cautions": "One dog had a mild reaction (muzzle and eyelid oedema) after a total of 15 mL/kg, which responded to an antihistamine [R23]. Not indicated for a low platelet count without bleeding [R10].",
+      "monitoring": "Bleeding, PT and aPTT, and TEG where available, after each unit [R23].",
+      "availability": "",
+      "refs": [
+        "R10",
+        "R7",
+        "R13",
+        "R23"
+      ]
+    },
+    {
+      "name": "Fresh whole blood or platelet products",
+      "class": "supportive",
+      "aim": "Supply platelets and factors, with red cells, to a dog that is bleeding and anaemic.",
+      "status": "proposed",
+      "evidence_level": "C",
+      "independent_studies": 1,
+      "evidence_summary": "One German B. canis dog with severe thrombocytopenia and prolonged clotting times received platelet-rich plasma; no outcome was reported for it [R7]. No study measured whether whole blood or platelet products change outcome in babesiosis. Red cell transfusion is covered in SY01. The dose below comes from a non-babesiosis series of thrombocytopenic dogs [R24].",
+      "doses": [
+        {
+          "drug": "whole blood",
+          "dose": "20 mL/kg",
+          "route": "transfusion (route not stated)",
+          "frequency": "per transfusion; median 2.5 transfusions (range 1 to 13) per dog",
+          "duration": "",
+          "context": "Thrombocytopenic dogs with haematocrit below 0.20 L/L (20%), given before romiplostim, retrospective series of 42 dogs (not babesiosis)",
+          "note": "Given for anaemia caused by bleeding; the same series gave 10 mL/kg packed red cells as the alternative. Effect on platelet count not reported.",
+          "refs": [
+            "R24"
+          ]
+        }
+      ],
+      "cautions": "No babesiosis data on adverse effects or on platelet increments after transfusion [R7].",
+      "monitoring": "The source series monitored haematocrit and platelet count; no schedule for babesiosis is published [R24].",
+      "availability": "",
+      "refs": [
+        "R7",
+        "R24"
+      ]
+    },
+    {
+      "name": "Glucocorticoids (prednisone or prednisolone) for secondary immune thrombocytopenia",
+      "class": "specific",
+      "aim": "Reduce immune platelet destruction in a dog that bleeds despite antibabesial treatment.",
+      "status": "proposed",
+      "evidence_level": "A",
+      "independent_studies": 1,
+      "evidence_summary": "In a small randomised trial in 18 B. gibsoni dogs with immune-mediated haemolytic anaemia, mean platelet count rose to normal by day 21 in the arm without prednisolone as well as in the arms with it; groups were not compared statistically [R22]. Expert review suggests prednisone only for bleeding or high risk with platelets of 20 to 40 x10^9/L despite antibabesial treatment, for ten days or less [R10]. Case reports combine it with other drugs [R18].",
+      "doses": [
+        {
+          "drug": "prednisone",
+          "dose": "2 mg/kg/day",
+          "route": "not stated",
+          "frequency": "daily",
+          "duration": "ten days or less",
+          "context": "Expert recommendation, European review of canine babesiosis",
+          "note": "Only for moderate to severe signs despite antibabesial treatment, such as collapse or spontaneous bleeding; dose reduction may be faster than in primary disease.",
+          "refs": [
+            "R10"
+          ]
+        },
+        {
+          "drug": "prednisolone",
+          "dose": "2 mg/kg, then 1 mg/kg, then 0.5 mg/kg",
+          "route": "PO",
+          "frequency": "every 12 h",
+          "duration": "5 days at each dose (15 days)",
+          "context": "B. gibsoni with immune-mediated haemolytic anaemia, 6 dogs in this arm, randomised trial",
+          "note": "Given with doxycycline, metronidazole and clindamycin. The source PDF text is split; the dose follows the prednisolone-only arm in text order.",
+          "refs": [
+            "R22"
+          ]
+        }
+      ],
+      "cautions": "Expert review notes that immunosuppression is controversial because the cause is infectious, and that dogs on long-term immunosuppressants respond less well [R10].",
+      "monitoring": "Platelet count and bleeding; the sources give no schedule [R10][R22].",
+      "availability": "",
+      "refs": [
+        "R22",
+        "R10",
+        "R18"
+      ]
+    },
+    {
+      "name": "Dextran with dipyridamole infusion",
+      "class": "specific",
+      "aim": "Reduce platelet and red cell aggregation and restore circulating volume in shock with DIC.",
+      "status": "proposed",
+      "evidence_level": "A",
+      "independent_studies": 1,
+      "evidence_summary": "One Ukrainian programme in untyped large Babesia compared a plasma substitute alone (10 dogs) with the same solution plus dipyridamole (10 dogs) and reported better laboratory aggregation and haemodynamic values over 72 hours with the mixture [R25]. A second report from the same programme (100 dogs) used a dextran with dipyridamole mixture [R19]. Allocation was not described, outcomes were laboratory values only, and survival was not reported.",
+      "doses": [
+        {
+          "drug": "Reosorbilact plasma substitute 100 mL mixed with dipyridamole 0.5% 4 mL",
+          "dose": "5 mL/kg of the mixture",
+          "route": "IV",
+          "frequency": "daily",
+          "duration": "3 days",
+          "context": "Untyped large Babesia, 10 dogs, non-randomised controlled trial",
+          "note": "Ukrainian products. Group allocation not described; laboratory outcomes only.",
+          "refs": [
+            "R25"
+          ]
+        },
+        {
+          "drug": "dextran (Rheopolyglucine) with dipyridamole (Persantine)",
+          "dose": "5 mL/kg of the mixture (45 mg dextran and 2.5 mg dipyridamole per kg)",
+          "route": "infusion (route not stated)",
+          "frequency": "not stated in abstract",
+          "duration": "effects reported over 48 h",
+          "context": "Untyped Babesia, 100 dogs in the study, number treated not stated (abstract)",
+          "note": "Composition as stated in the abstract.",
+          "refs": [
+            "R19"
+          ]
+        }
+      ],
+      "cautions": "Colloid and antiplatelet effects in a thrombocytopenic dog were not assessed for bleeding in these reports.",
+      "monitoring": "Platelet count, blood pressure and haematocrit, as in the source studies.",
+      "availability": "",
+      "refs": [
+        "R25",
+        "R19"
+      ]
+    },
+    {
+      "name": "Romiplostim",
+      "class": "specific",
+      "aim": "Stimulate platelet production in severe immune thrombocytopenia.",
+      "status": "proposed",
+      "evidence_level": "C",
+      "independent_studies": 2,
+      "evidence_summary": "A B. gibsoni dog with urogenital bleeding and immune thrombocytopenia recovered with romiplostim, prednisolone and antibabesial drugs [R18]. In a retrospective series of 42 thrombocytopenic dogs, the one babesiosis dog improved, but the authors credit antimicrobial treatment as a possible cause; 2 of 6 dogs with DIC improved, which the authors attribute more to DIC management than to romiplostim [R24].",
+      "doses": [
+        {
+          "drug": "romiplostim",
+          "dose": "5 to 10 µg/kg",
+          "route": "SC",
+          "frequency": "single dose in most dogs; up to 4 doses",
+          "duration": "",
+          "context": "Thrombocytopenia of various causes, 42 dogs, retrospective series (one with babesiosis)",
+          "note": "One dog received 3 µg/kg. In the 27 dogs that improved, median time to platelets above 50 x10^9/L was 4 days.",
+          "refs": [
+            "R24"
+          ]
+        }
+      ],
+      "cautions": "Few data in dogs; the series reported it as well tolerated [R24].",
+      "monitoring": "Platelet count until recovery, as in the source series (median 4 days to above 50 x10^9/L in responders) [R24].",
+      "availability": "",
+      "refs": [
+        "R18",
+        "R24"
+      ]
+    },
+    {
+      "name": "Vincristine",
+      "class": "specific",
+      "aim": "Speed platelet recovery in severe immune thrombocytopenia.",
+      "status": "proposed",
+      "evidence_level": "D",
+      "independent_studies": 1,
+      "evidence_summary": "No use in babesiosis was found. In 24 bleeding dogs with severe primary immune thrombocytopenia, one dose with prednisone raised the count to 40 x10^9/L or more faster than prednisone alone (mean 4.9 versus 6.8 days) and shortened hospital stay [R26].",
+      "doses": [
+        {
+          "drug": "vincristine",
+          "dose": "0.02 mg/kg",
+          "route": "IV",
+          "frequency": "once",
+          "duration": "single dose",
+          "context": "Severe primary immune thrombocytopenia, 12 dogs in this arm, prospective controlled study, not randomised (not babesiosis)",
+          "note": "Given with prednisone 1.5 to 2 mg/kg PO every 12 h. Prednisone-only dogs that did not respond got vincristine on day 7.",
+          "refs": [
+            "R26"
+          ]
+        }
+      ],
+      "cautions": "No adverse effects were attributed to vincristine in the trial [R26]. Its relevance to infection-associated thrombocytopenia is unknown.",
+      "monitoring": "Platelet count, transfusion need and outcome, as in the trial [R26].",
+      "availability": "",
+      "refs": [
+        "R26"
+      ]
+    },
+    {
+      "name": "Heparin (unfractionated or low molecular weight)",
+      "class": "adjunct",
+      "aim": "Limit microthrombosis and consumption of clotting factors.",
+      "status": "proposed",
+      "evidence_level": "E",
+      "independent_studies": 0,
+      "evidence_summary": "Not tested in dogs with babesiosis. Reviews mention heparin for DIC and as thromboprophylaxis in secondary immune-mediated haemolytic anaemia [R10]. The B. rossi authors propose treatments that target thromboinflammation as future research [R1]. In an experimental B. canis infection, heparin injections were followed by a transient rise in parasitaemia, read as release of sequestered parasites [R27]. Canine dosing protocols are in a consensus guideline that was not available in full text [R28].",
+      "doses": [],
+      "cautions": "Antithrombin activity is low in B. rossi, lowest in non-survivors [R1]. The bleeding risk of heparin in dogs with severe thrombocytopenia from babesiosis has not been studied.",
+      "monitoring": "The consensus guideline recommends therapeutic monitoring when unfractionated heparin is used [R28].",
+      "availability": "",
+      "refs": [
+        "R10",
+        "R1",
+        "R27",
+        "R28"
+      ]
+    }
+  ],
+  "prognosis": {
+    "text": "Thrombocytopenia alone has a good outlook once the parasite is treated [R8][R9]. In B. rossi, 12% to 18% of dogs in coagulation cohorts died; non-survivors had consumptive coagulopathy and lower haematocrit, not lower platelet counts. Deaths include euthanasia for poor prognosis [R1][R2]. In general canine DIC, hypocoagulable dogs died more often than hypercoagulable dogs (64% versus 32%) [R29].",
+    "indicators": [
+      {
+        "finding": "Platelet count at admission (B. rossi)",
+        "meaning": "No prognostic value: median 34 x10^9/L in survivors and 32 in non-survivors; platelet indices also did not differ.",
+        "refs": [
+          "R1",
+          "R11"
+        ]
+      },
+      {
+        "finding": "Platelet count below 27.5 x10^9/L (B. canis)",
+        "meaning": "Associated with death in 15 dogs (sensitivity and specificity 83%); lactate and leucocyte count were better markers.",
+        "refs": [
+          "R16"
+        ]
+      },
+      {
+        "finding": "Longer PT, low antithrombin, low factor VII and X (B. rossi)",
+        "meaning": "Associated with death.",
+        "refs": [
+          "R1"
+        ]
+      },
+      {
+        "finding": "Low factor and protein C activities and high D-dimer (B. rossi)",
+        "meaning": "Associated with death in 72 dogs.",
+        "refs": [
+          "R2"
+        ]
+      },
+      {
+        "finding": "Hypocoagulable TEG in DIC (any cause)",
+        "meaning": "Higher case fatality than hypercoagulable TEG; not studied in babesiosis.",
+        "refs": [
+          "R29"
+        ]
+      }
+    ]
+  },
+  "related": [
+    {
+      "id": "TX00",
+      "why": "The drugs against the parasite; treating the infection is what restores the platelet count."
+    },
+    {
+      "id": "SY01",
+      "why": "Red cell transfusion and severe anaemia."
+    },
+    {
+      "id": "SY02",
+      "why": "Evans syndrome and secondary immune-mediated haemolytic anaemia."
+    },
+    {
+      "id": "SY04",
+      "why": "Pancytopenia and marrow failure."
+    },
+    {
+      "id": "SY11",
+      "why": "Complicated disease, triage and the order of care."
+    },
+    {
+      "id": "SY13",
+      "why": "Gut bleeding as a syndrome."
+    }
+  ],
+  "evidence_gaps": [
+    "No babesiosis study applied a validated canine DIC score, so the frequency of overt DIC is unknown.",
+    "No trial in dogs with babesiosis tested plasma, platelet products, heparin, antiplatelet drugs or glucocorticoids against survival.",
+    "No source on tranexamic acid, aspirin or clopidogrel in canine babesiosis was found; B. rossi dogs already show reduced fibrinolysis.",
+    "Whether the low counts are immune-mediated, consumptive or due to sequestration has not been settled.",
+    "The coagulation profile of B. vogeli and of PCR-typed B. canis in South Africa is not described.",
+    "What a platelet count that stays low after treatment means, and how often it reflects co-infection, was not studied.",
+    "The dextran with dipyridamole reports come from one programme with untyped parasites and laboratory outcomes only."
+  ],
+  "search": {
+    "date": "2026-11-12",
+    "sources": [
+      "local review",
+      "PubMed",
+      "Crossref",
+      "Europe PMC",
+      "web"
+    ],
+    "note": "Local review notes and full texts, then PubMed searches on babesiosis with DIC, plasma, heparin and thrombocytopenia treatment, and on canine immune thrombocytopenia, DIC scoring, transfusion and tranexamic acid. The CURATIVE dosing paper and the canine DIC score paper were paywalled and read as abstracts. Platelet-index and endothelial-marker studies without clinical use were left out."
+  },
+  "references": [
+    {
+      "ref": "R1",
+      "authors": "Goddard A, Schoeman JP, Leisewitz AL, et al.",
+      "year": 2026,
+      "title": "Thromboinflammation in dogs with virulent babesiosis",
+      "journal": "Frontiers in Veterinary Science",
+      "volume_pages": "13:1712262",
+      "doi": "10.3389/fvets.2026.1712262",
+      "pmid": "41908963",
+      "url": "",
+      "article_id": "CB145",
+      "type": "cohort",
+      "species": "B. rossi",
+      "n_dogs": 97,
+      "read": "full text"
+    },
+    {
+      "ref": "R2",
+      "authors": "Goddard A, Wiinberg B, Schoeman JP, et al.",
+      "year": 2012,
+      "title": "Mortality in virulent canine babesiosis is associated with a consumptive coagulopathy",
+      "journal": "Veterinary Journal",
+      "volume_pages": "196:213-217",
+      "doi": "10.1016/j.tvjl.2012.09.009",
+      "pmid": "23098634",
+      "url": "",
+      "article_id": "CB438",
+      "type": "cohort",
+      "species": "B. rossi",
+      "n_dogs": 72,
+      "read": "abstract"
+    },
+    {
+      "ref": "R3",
+      "authors": "Liebenberg C, Goddard A, Wiinberg B, et al.",
+      "year": 2013,
+      "title": "Hemostatic abnormalities in uncomplicated babesiosis (Babesia rossi) in dogs",
+      "journal": "Journal of Veterinary Internal Medicine",
+      "volume_pages": "27:150-156",
+      "doi": "10.1111/jvim.12016",
+      "pmid": "23194149",
+      "url": "",
+      "article_id": "CB439",
+      "type": "cohort",
+      "species": "B. rossi",
+      "n_dogs": 19,
+      "read": "full text"
+    },
+    {
+      "ref": "R4",
+      "authors": "Rafaj RB, Matijatko V, Kis I, et al.",
+      "year": 2009,
+      "title": "Alterations in some blood coagulation parameters in naturally occurring cases of canine babesiosis",
+      "journal": "Acta Veterinaria Hungarica",
+      "volume_pages": "57:295-304",
+      "doi": "10.1556/AVet.57.2009.2.10",
+      "pmid": "19584042",
+      "url": "",
+      "article_id": "CB374",
+      "type": "cohort",
+      "species": "B. canis",
+      "n_dogs": 30,
+      "read": "abstract"
+    },
+    {
+      "ref": "R5",
+      "authors": "Dubova OA, Feshchenko DV, Bakhur TI, et al.",
+      "year": 2020,
+      "title": "Disseminated intravascular coagulation syndrome as a complication in acute spontaneous canine babesiosis",
+      "journal": "Macedonian Veterinary Review",
+      "volume_pages": "43:141-149",
+      "doi": "10.2478/macvetrev-2020-0027",
+      "pmid": "",
+      "url": "",
+      "article_id": "CB199",
+      "type": "cohort",
+      "species": "Babesia sp. (large, not typed)",
+      "n_dogs": 50,
+      "read": "full text"
+    },
+    {
+      "ref": "R6",
+      "authors": "Zygner W, Gójska O, Rapacka G, et al.",
+      "year": 2007,
+      "title": "Hematological changes during the course of canine babesiosis caused by large Babesia in domestic dogs in Warsaw (Poland)",
+      "journal": "Veterinary Parasitology",
+      "volume_pages": "145:146-151",
+      "doi": "10.1016/j.vetpar.2006.11.008",
+      "pmid": "17157987",
+      "url": "",
+      "article_id": "CB326",
+      "type": "case series",
+      "species": "Babesia sp. (large)",
+      "n_dogs": 248,
+      "read": "abstract"
+    },
+    {
+      "ref": "R7",
+      "authors": "Weingart C, Helm CS, Müller E, et al.",
+      "year": 2023,
+      "title": "Autochthonous Babesia canis infections in 49 dogs in Germany",
+      "journal": "Journal of Veterinary Internal Medicine",
+      "volume_pages": "37:140-149",
+      "doi": "10.1111/jvim.16611",
+      "pmid": "36629833",
+      "url": "",
+      "article_id": "CB106",
+      "type": "case series",
+      "species": "B. canis",
+      "n_dogs": 49,
+      "read": "full text"
+    },
+    {
+      "ref": "R8",
+      "authors": "Scheepers E, Leisewitz AL, Thompson PN, et al.",
+      "year": 2011,
+      "title": "Serial haematology results in transfused and non-transfused dogs naturally infected with Babesia rossi",
+      "journal": "Journal of the South African Veterinary Association",
+      "volume_pages": "82:136-143",
+      "doi": "10.4102/jsava.v82i3.51",
+      "pmid": "22332296",
+      "url": "",
+      "article_id": "CB418",
+      "type": "cohort",
+      "species": "B. rossi",
+      "n_dogs": 86,
+      "read": "full text"
+    },
+    {
+      "ref": "R9",
+      "authors": "Eisenecker CM, Moritz A, von Hohnhorst IM, et al.",
+      "year": 2026,
+      "title": "Clinicopathological abnormalities and outcome of acute Babesia canis infections in 23 dogs treated with imidocarb dipropionate",
+      "journal": "Current Research in Parasitology & Vector-Borne Diseases",
+      "volume_pages": "10:100395",
+      "doi": "10.1016/j.crpvbd.2026.100395",
+      "pmid": "42375825",
+      "url": "",
+      "article_id": "CB148",
+      "type": "cohort",
+      "species": "B. canis",
+      "n_dogs": 23,
+      "read": "full text"
+    },
+    {
+      "ref": "R10",
+      "authors": "Solano-Gallego L, Sainz Á, Roura X, et al.",
+      "year": 2016,
+      "title": "A review of canine babesiosis: the European perspective",
+      "journal": "Parasites & Vectors",
+      "volume_pages": "9:336",
+      "doi": "10.1186/s13071-016-1596-0",
+      "pmid": "27289223",
+      "url": "",
+      "article_id": "CB533",
+      "type": "review",
+      "species": "",
+      "n_dogs": null,
+      "read": "full text"
+    },
+    {
+      "ref": "R11",
+      "authors": "Goddard A, Leisewitz AL, Kristensen AT, et al.",
+      "year": 2015,
+      "title": "Platelet indices in dogs with Babesia rossi infection",
+      "journal": "Veterinary Clinical Pathology",
+      "volume_pages": "44:493-497",
+      "doi": "10.1111/vcp.12306",
+      "pmid": "26613563",
+      "url": "",
+      "article_id": "CB513",
+      "type": "cohort",
+      "species": "B. rossi",
+      "n_dogs": 96,
+      "read": "abstract"
+    },
+    {
+      "ref": "R12",
+      "authors": "van Rooyen LJ, Hooijberg EH, Schoeman JP, et al.",
+      "year": 2019,
+      "title": "Thromboelastographic platelet mapping in dogs with complicated Babesia rossi infection",
+      "journal": "Veterinary Clinical Pathology",
+      "volume_pages": "48:11-18",
+      "doi": "10.1111/vcp.12689",
+      "pmid": "30924545",
+      "url": "",
+      "article_id": "CB034",
+      "type": "cohort",
+      "species": "B. rossi",
+      "n_dogs": 13,
+      "read": "abstract"
+    },
+    {
+      "ref": "R13",
+      "authors": "Almendros A, Burchell R",
+      "year": 2021,
+      "title": "Multiple complications in a dog infected with Babesia gibsoni",
+      "journal": "Veterinary Record Case Reports",
+      "volume_pages": "9:e126",
+      "doi": "10.1002/vrc2.126",
+      "pmid": "",
+      "url": "",
+      "article_id": "CB079",
+      "type": "case report",
+      "species": "B. gibsoni",
+      "n_dogs": 1,
+      "read": "abstract"
+    },
+    {
+      "ref": "R14",
+      "authors": "Kuleš J, Gotić J, Mrljak V, et al.",
+      "year": 2017,
+      "title": "Alteration of haemostatic parameters in uncomplicated canine babesiosis",
+      "journal": "Comparative Immunology, Microbiology and Infectious Diseases",
+      "volume_pages": "53:1-6",
+      "doi": "10.1016/j.cimid.2017.06.001",
+      "pmid": "28750862",
+      "url": "",
+      "article_id": "CB011",
+      "type": "cohort",
+      "species": "B. canis",
+      "n_dogs": 25,
+      "read": "abstract"
+    },
+    {
+      "ref": "R15",
+      "authors": "Pothiappan P, Nagarajan B, Selvaraj P, et al.",
+      "year": 2024,
+      "title": "Incidence of various types of bleeding disorders associated with canine vector borne diseases in Chennai, Tamil Nadu, India",
+      "journal": "Indian Journal of Animal Research",
+      "volume_pages": "",
+      "doi": "10.18805/ijar.b-5219",
+      "pmid": "",
+      "url": "",
+      "article_id": "CB254",
+      "type": "case series",
+      "species": "B. gibsoni",
+      "n_dogs": null,
+      "read": "abstract"
+    },
+    {
+      "ref": "R16",
+      "authors": "Eichenberger RM, Riond B, Willi B, et al.",
+      "year": 2016,
+      "title": "Prognostic markers in acute Babesia canis infections",
+      "journal": "Journal of Veterinary Internal Medicine",
+      "volume_pages": "30:174-182",
+      "doi": "10.1111/jvim.13822",
+      "pmid": "26727465",
+      "url": "",
+      "article_id": "CB516",
+      "type": "cohort",
+      "species": "B. canis",
+      "n_dogs": 15,
+      "read": "full text"
+    },
+    {
+      "ref": "R17",
+      "authors": "Chan K, Bęczkowski PM, Almendros A, et al.",
+      "year": 2025,
+      "title": "Clinical and clinicopathological features of 108 dogs infected with Babesia gibsoni in Hong Kong",
+      "journal": "Animals",
+      "volume_pages": "15:645",
+      "doi": "10.3390/ani15050645",
+      "pmid": "40075928",
+      "url": "",
+      "article_id": "CB134",
+      "type": "case series",
+      "species": "B. gibsoni",
+      "n_dogs": 108,
+      "read": "full text"
+    },
+    {
+      "ref": "R18",
+      "authors": "Khan N, Sandilya A, et al.",
+      "year": 2025,
+      "title": "Urogenital haemorrhage secondary to Babesia gibsoni induced immune thrombocytopenia and its management with combination of romiplostim and prednisolone in a dog",
+      "journal": "The Microbe",
+      "volume_pages": "7:100412",
+      "doi": "10.1016/j.microb.2025.100412",
+      "pmid": "",
+      "url": "",
+      "article_id": "CB272",
+      "type": "case report",
+      "species": "B. gibsoni",
+      "n_dogs": 1,
+      "read": "abstract"
+    },
+    {
+      "ref": "R19",
+      "authors": "Dubova O, Kovalova L, Dubovyi A, et al.",
+      "year": 2022,
+      "title": "Shock status and anti-shock infusion therapy in canine acute spontaneous babesiosis",
+      "journal": "Thai Journal of Veterinary Medicine",
+      "volume_pages": "52:135-143",
+      "doi": "10.56808/2985-1130.3198",
+      "pmid": "",
+      "url": "",
+      "article_id": "CB217",
+      "type": "trial",
+      "species": "Babesia sp. (not typed)",
+      "n_dogs": 100,
+      "read": "abstract"
+    },
+    {
+      "ref": "R20",
+      "authors": "Wiinberg B, Jensen AL, Johansson PI, et al.",
+      "year": 2010,
+      "title": "Development of a model based scoring system for diagnosis of canine disseminated intravascular coagulation with independent assessment of sensitivity and specificity",
+      "journal": "Veterinary Journal",
+      "volume_pages": "185:292-298",
+      "doi": "10.1016/j.tvjl.2009.06.003",
+      "pmid": "19586785",
+      "url": "",
+      "article_id": "",
+      "type": "cohort",
+      "species": "",
+      "n_dogs": 109,
+      "read": "abstract"
+    },
+    {
+      "ref": "R21",
+      "authors": "Cloete HPP, Rautenbach Y, Leisewitz AL, et al.",
+      "year": 2024,
+      "title": "Prevalence of co-infections with Ehrlichia spp. or Theileria spp. in dogs naturally infected with babesiosis in the Eastern Cape province",
+      "journal": "Veterinary Parasitology: Regional Studies and Reports",
+      "volume_pages": "54:101092",
+      "doi": "10.1016/j.vprsr.2024.101092",
+      "pmid": "39237242",
+      "url": "",
+      "article_id": "CB126",
+      "type": "cohort",
+      "species": "B. rossi",
+      "n_dogs": 150,
+      "read": "full text"
+    },
+    {
+      "ref": "R22",
+      "authors": "Soundarya TC, Anil Kumar MC, Kshama MA, et al.",
+      "year": 2024,
+      "title": "Comparison of the efficacy of different therapeutic regimen for the treatment of IMHA caused by B. gibsoni in dogs",
+      "journal": "International Journal of Advanced Biochemistry Research",
+      "volume_pages": "8(4S):212-219",
+      "doi": "10.33545/26174693.2024.v8.i4sc.970",
+      "pmid": "",
+      "url": "",
+      "article_id": "CB247",
+      "type": "trial",
+      "species": "B. gibsoni",
+      "n_dogs": 18,
+      "read": "full text"
+    },
+    {
+      "ref": "R23",
+      "authors": "Langhorn R, Bochsen L, Willesen JL, et al.",
+      "year": 2019,
+      "title": "Thromboelastography-guided transfusion in dogs with hypocoagulable disorders: a case series",
+      "journal": "Acta Veterinaria Scandinavica",
+      "volume_pages": "61:35",
+      "doi": "10.1186/s13028-019-0469-x",
+      "pmid": "31331398",
+      "url": "",
+      "article_id": "",
+      "type": "case series",
+      "species": "",
+      "n_dogs": 4,
+      "read": "full text"
+    },
+    {
+      "ref": "R24",
+      "authors": "Ryu MO, Kim JK, An JH, et al.",
+      "year": 2024,
+      "title": "Romiplostim for treatment of thrombocytopenia in dogs: a retrospective assessment and clinical outcomes",
+      "journal": "Journal of Veterinary Internal Medicine",
+      "volume_pages": "38:2158-2164",
+      "doi": "10.1111/jvim.17131",
+      "pmid": "39023218",
+      "url": "",
+      "article_id": "",
+      "type": "case series",
+      "species": "",
+      "n_dogs": 42,
+      "read": "full text"
+    },
+    {
+      "ref": "R25",
+      "authors": "Dubova OA, Rudchenko AO, Feshchenko DV, et al.",
+      "year": 2021,
+      "title": "Pathogenetic therapy of vascular-platelet hemostasis disorders in canine acute spontaneous babesiosis",
+      "journal": "Scientific Messenger of LNU of Veterinary Medicine and Biotechnologies",
+      "volume_pages": "23(103):96-102",
+      "doi": "10.32718/nvlvet10313",
+      "pmid": "",
+      "url": "",
+      "article_id": "CB213",
+      "type": "trial",
+      "species": "Babesia sp. (large, not typed)",
+      "n_dogs": 20,
+      "read": "full text"
+    },
+    {
+      "ref": "R26",
+      "authors": "Rozanski EA, Callan MB, Hughes D, et al.",
+      "year": 2002,
+      "title": "Comparison of platelet count recovery with use of vincristine and prednisone or prednisone alone for treatment for severe immune-mediated thrombocytopenia in dogs",
+      "journal": "Journal of the American Veterinary Medical Association",
+      "volume_pages": "220:477-481",
+      "doi": "10.2460/javma.2002.220.477",
+      "pmid": "11860242",
+      "url": "",
+      "article_id": "",
+      "type": "trial",
+      "species": "",
+      "n_dogs": 24,
+      "read": "abstract"
+    },
+    {
+      "ref": "R27",
+      "authors": "Schetters T",
+      "year": 2019,
+      "title": "Mechanisms involved in the persistence of Babesia canis infection in dogs",
+      "journal": "Pathogens",
+      "volume_pages": "8:94",
+      "doi": "10.3390/pathogens8030094",
+      "pmid": "31261942",
+      "url": "",
+      "article_id": "CB041",
+      "type": "review",
+      "species": "B. canis",
+      "n_dogs": null,
+      "read": "full text"
+    },
+    {
+      "ref": "R28",
+      "authors": "Blais MC, Bianco D, Goggs R, et al.",
+      "year": 2019,
+      "title": "Consensus on the Rational Use of Antithrombotics in Veterinary Critical Care (CURATIVE): Domain 3-Defining antithrombotic protocols",
+      "journal": "Journal of Veterinary Emergency and Critical Care",
+      "volume_pages": "29:60-74",
+      "doi": "10.1111/vec.12795",
+      "pmid": "30654416",
+      "url": "",
+      "article_id": "",
+      "type": "guideline",
+      "species": "",
+      "n_dogs": null,
+      "read": "abstract"
+    },
+    {
+      "ref": "R29",
+      "authors": "Wiinberg B, Jensen AL, Johansson PI, et al.",
+      "year": 2008,
+      "title": "Thromboelastographic evaluation of hemostatic function in dogs with disseminated intravascular coagulation",
+      "journal": "Journal of Veterinary Internal Medicine",
+      "volume_pages": "22:357-365",
+      "doi": "10.1111/j.1939-1676.2008.0058.x",
+      "pmid": "18346141",
+      "url": "",
+      "article_id": "",
+      "type": "cohort",
+      "species": "",
+      "n_dogs": 50,
+      "read": "abstract"
+    }
+  ]
+}

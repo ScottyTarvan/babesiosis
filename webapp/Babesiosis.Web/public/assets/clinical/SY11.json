@@ -1,0 +1,1154 @@
+{
+  "schema_version": 1,
+  "id": "SY11",
+  "title": "SIRS and multiple organ dysfunction",
+  "updated": "2026-11-12",
+  "definition": "Complicated babesiosis is disease with signs that haemolytic anaemia alone does not explain, from one organ complication to failure of several organs [R1][R2]. SIRS is two or more of four criteria (temperature, heart rate, respiratory rate, leukocytes); MODS is dysfunction of two or more organs [R3][R4].",
+  "definition_note": "Working definition changed. SIRS and complicated disease are not the same thing. Most dogs with babesiosis meet the SIRS criteria, and SIRS did not predict death in B. rossi [R5][R3]. Complicated disease starts with one organ complication; MODS is the severe end. The 2026 canine sepsis consensus also puts organ dysfunction, not SIRS, at the centre of the definition [R6].",
+  "key_points": [
+    "SIRS criteria are met by most dogs with B. rossi (61 to 87%) and many with B. canis (37 to 68%); in B. rossi, SIRS did not predict death [R5][R3][R4][R7].",
+    "Organ dysfunction predicts death. In B. canis, survival was 45% with two failing organs, 10% with three and 0% with four [R4].",
+    "On arrival, collapse, cerebral signs, haemoconcentration, hypoglycaemia, high urea or creatinine, high bilirubin and high lactate mark the B. rossi dogs that die [R3].",
+    "Most B. rossi deaths occur within 24 hours of admission, so triage and early referral matter [R3].",
+    "A lactate that does not fall by half in 8 to 16 hours was linked to death [R8].",
+    "No anti-inflammatory or immunomodulating drug has been shown to help in dogs. In human cerebral malaria, dexamethasone caused harm [R9][R10]."
+  ],
+  "description": [
+    {
+      "heading": "What it is",
+      "text": "South African authors first split dogs into 'severe' disease (life-threatening anaemia) and 'complicated' disease (complications not caused by the anaemia). Jacobson called this split artificial and proposed grading dogs by severity, using simple signs such as collapse and abnormal breathing [R1]. The terms follow the complicated and uncomplicated forms of falciparum malaria [R3]. The SIRS and MODS model was applied to B. rossi in 2001 and to B. canis in Croatia [R5][R4]. In the Zagreb B. canis studies, uncomplicated means no organ dysfunction, complicated means one or more, and MODS means two or more [R2]. The 2026 canine consensus defines sepsis as organ dysfunction from a dysregulated host response to infection [R6]."
+    },
+    {
+      "heading": "How common, and in which dogs",
+      "text": "B. rossi (Onderstepoort): SIRS in 87% of 91 complicated cases and MODS in 48% of 56 [R5]; SIRS in 61% of 266 dogs, and 34 of 320 dogs died or were euthanased [R3]. Mortality was 12% in admitted dogs [R1]. B. canis: SIRS in 68% of 332 dogs and MODS in 10% [R4]; SIRS in 59% of 54 dogs [R11] and 37% of 49 dogs in Germany [R7]. In Hungary, 31 of 63 dogs had complications, and old age was a risk factor for multiple complications [R12]. In 342 German dogs, 87.6% had an uncomplicated course and mortality was 6.7% [R13]."
+    },
+    {
+      "heading": "When in the course of disease",
+      "text": "Complications are usually present on arrival. In the Onderstepoort cohort, all treated dogs that died did so within 24 hours of admission [R3]. In a Zagreb series, dogs with septic shock died between day 1 and day 4 [R14]. Pro-inflammatory cytokines were higher in B. rossi dogs that came in within 48 hours of the first signs [R15]."
+    },
+    {
+      "heading": "Mechanism",
+      "text": "B. rossi provokes a mixed cytokine response; IL-6 and MCP-1 were higher in dogs that died [R15]. Jacobson argues that tissue hypoxia plays a major part beside inflammation [R1]. Dogs with a compromised circulation had higher parasitaemias and died more often, but parasite load is unlikely to be the only trigger [R16]."
+    }
+  ],
+  "species_notes": [
+    {
+      "species": "B. rossi",
+      "note": "The main species in South Africa and the most severe. Prognostic data come from a few Onderstepoort cohorts that may share dogs [R3][R8][R17]."
+    },
+    {
+      "species": "B. canis",
+      "note": "Most SIRS and MODS counts, and the organ-count gradient, come from European clinics [R4][R11][R12][R7]. Mortality was 6.7% in a recent German series of 342 dogs [R13]."
+    },
+    {
+      "species": "B. gibsoni",
+      "note": "One Indian study derived an outcome score [R18]. The N-acetylcysteine trials were in outpatient B. gibsoni dogs, not in dogs with MODS [R19][R20]."
+    }
+  ],
+  "diagnosis": {
+    "criteria": [
+      {
+        "criterion": "SIRS",
+        "threshold": "2 or more of: leukocytes above 12 or below 4 x10^9/L, or 10% or more band cells; rectal temperature below 37.8 or above 39.7 °C; heart rate 160/min or more; respiratory rate 40/min or more",
+        "basis": "babesiosis",
+        "note": "Okano criteria as applied to 320 B. rossi dogs; nearly the same criteria in 49 B. canis dogs. Not predictive of death on its own.",
+        "refs": [
+          "R3",
+          "R7"
+        ]
+      },
+      {
+        "criterion": "Renal dysfunction",
+        "threshold": "creatinine above 180 µmol/L",
+        "basis": "babesiosis",
+        "note": "Zagreb criteria, 40 B. canis dogs. In B. rossi, creatinine above 106 µmol/L was linked to death.",
+        "refs": [
+          "R2",
+          "R3"
+        ]
+      },
+      {
+        "criterion": "Hepatic dysfunction",
+        "threshold": "ALT above 176 U/L, ALP above 360 U/L and total bilirubin above 100 µmol/L",
+        "basis": "babesiosis",
+        "note": "Zagreb criteria, B. canis.",
+        "refs": [
+          "R2"
+        ]
+      },
+      {
+        "criterion": "Muscle involvement",
+        "threshold": "CK above 600 U/L",
+        "basis": "babesiosis",
+        "note": "Zagreb criteria, B. canis. See SY15.",
+        "refs": [
+          "R2"
+        ]
+      },
+      {
+        "criterion": "Respiratory dysfunction",
+        "threshold": "dyspnoea with typical nasal discharge, or pulmonary oedema on radiographs",
+        "basis": "babesiosis",
+        "note": "Zagreb criteria, B. canis. See SY08.",
+        "refs": [
+          "R2"
+        ]
+      },
+      {
+        "criterion": "Central nervous system dysfunction",
+        "threshold": "modified Glasgow coma scale below 9",
+        "basis": "babesiosis",
+        "note": "Zagreb criteria, using the scale of Welzl et al. Exclude hypoglycaemia first.",
+        "refs": [
+          "R2",
+          "R21"
+        ]
+      },
+      {
+        "criterion": "MODS",
+        "threshold": "dysfunction of 2 or more organs",
+        "basis": "babesiosis",
+        "note": "Used in B. canis and B. rossi studies; the organ criteria differ between groups.",
+        "refs": [
+          "R4",
+          "R2",
+          "R5"
+        ]
+      },
+      {
+        "criterion": "Septic shock",
+        "threshold": "SIRS, then MODS, with hypotension that does not respond to treatment",
+        "basis": "babesiosis",
+        "note": "Definition of one Zagreb case series; all 10 such dogs died.",
+        "refs": [
+          "R14"
+        ]
+      },
+      {
+        "criterion": "Collapse",
+        "threshold": "unable to stand unaided on arrival",
+        "basis": "babesiosis",
+        "note": "22.5% of 320 B. rossi dogs; 24 of the 34 deaths were in collapsed dogs.",
+        "refs": [
+          "R3"
+        ]
+      }
+    ],
+    "clinical_signs": [
+      {
+        "sign": "Collapse",
+        "note": "Odds ratio for death 8.4 in B. rossi. Collapse was also the main risk factor for hypoglycaemia.",
+        "refs": [
+          "R3",
+          "R21"
+        ]
+      },
+      {
+        "sign": "Cerebral signs (stupor, coma, seizures) with normal or high glucose",
+        "note": "6 of 320 B. rossi dogs; all died. See SY07.",
+        "refs": [
+          "R3"
+        ]
+      },
+      {
+        "sign": "Abnormal breathing",
+        "note": "Proposed as a simple severity marker; pulmonary oedema marks lung dysfunction. See SY08.",
+        "refs": [
+          "R1",
+          "R2"
+        ]
+      },
+      {
+        "sign": "Low rectal temperature",
+        "note": "The odds of death rose 1.4 times for each 1 °C fall in B. rossi.",
+        "refs": [
+          "R3"
+        ]
+      },
+      {
+        "sign": "Clinically compromised circulation",
+        "note": "21 of 100 B. rossi dogs; these dogs were more likely to die. See SY10.",
+        "refs": [
+          "R16"
+        ]
+      }
+    ],
+    "tests": [
+      {
+        "test": "Blood glucose (glucometer)",
+        "finding": "Below 3.3 mmol/L in 19.8% of admitted B. rossi dogs; odds ratio for death 3.5 [R21][R3].",
+        "note": "Measure in every collapsed dog, puppy, and dog with severe anaemia, vomiting or icterus. See SY16.",
+        "refs": [
+          "R21",
+          "R3"
+        ]
+      },
+      {
+        "test": "Haematocrit",
+        "finding": "Above 0.55 L/L (55%): 3 of 4 dogs died. Below 0.15 L/L (15%): 14% died [R3].",
+        "note": "Haemoconcentration is a worse sign than anaemia. See SY14 and SY01.",
+        "refs": [
+          "R3"
+        ]
+      },
+      {
+        "test": "Capillary (ear-tip) blood smear",
+        "finding": "Capillary parasitaemia is higher than venous; both were higher in B. rossi dogs that died [R16].",
+        "note": "Parasitaemia did not differ by outcome in a small B. canis series [R22].",
+        "refs": [
+          "R16",
+          "R22"
+        ]
+      },
+      {
+        "test": "Blood lactate (hand-held meter or blood gas)",
+        "finding": "Admission above 5.0 mmol/L, above 2.5 mmol/L at 8 to 24 h, or a fall of less than 50% within 8 to 16 h were linked to death in 90 B. rossi dogs [R8].",
+        "note": "All 8 B. canis non-survivors were hyperlactataemic [R22].",
+        "refs": [
+          "R8",
+          "R22"
+        ]
+      },
+      {
+        "test": "Complete blood count with manual differential",
+        "finding": "Band neutrophils above 0.5 x10^9/L: odds ratio for death 4.9 in B. rossi [R3]. Leukopenia below 6 x10^9/L and monocytopenia below 0.2 x10^9/L marked SIRS in B. canis [R11].",
+        "note": "Leukopenia was found in B. canis non-survivors [R22].",
+        "refs": [
+          "R3",
+          "R11",
+          "R22"
+        ]
+      },
+      {
+        "test": "Urea, creatinine, bilirubin, ALT, ALP, CK",
+        "finding": "Compare with the organ criteria. Urea above 14 mmol/L and bilirubin above 14.7 µmol/L separated non-survivors in B. rossi [R3].",
+        "note": "The organ criteria come from B. canis [R2].",
+        "refs": [
+          "R3",
+          "R2"
+        ]
+      },
+      {
+        "test": "Arterial blood pressure",
+        "finding": "Refractory hypotension with MODS defined septic shock, which was fatal in all 10 dogs [R14].",
+        "note": "See SY10.",
+        "refs": [
+          "R14"
+        ]
+      },
+      {
+        "test": "Serum cortisol and total T4 (laboratory)",
+        "finding": "High cortisol and ACTH, and low T4, were linked to death; cut-offs cortisol above 388 nmol/L and T4 below 4.8 nmol/L [R17][R3].",
+        "note": "B. rossi. Results come too late for triage.",
+        "refs": [
+          "R17",
+          "R3"
+        ]
+      }
+    ],
+    "differentials": [
+      {
+        "condition": "Hypoglycaemia",
+        "distinguish": "Measure glucose before calling a comatose dog a case of cerebral babesiosis [R21].",
+        "refs": [
+          "R21"
+        ]
+      },
+      {
+        "condition": "Bacterial sepsis or another cause of SIRS",
+        "distinguish": "SIRS criteria are not specific, and the consensus does not recommend them to identify sepsis [R6]. Look for a source of infection.",
+        "refs": [
+          "R6"
+        ]
+      },
+      {
+        "condition": "Co-infection (Ehrlichia canis, B. vogeli)",
+        "distinguish": "PCR. The Onderstepoort prognostic studies excluded these dogs [R17][R3].",
+        "refs": [
+          "R17",
+          "R3"
+        ]
+      },
+      {
+        "condition": "DIC",
+        "distinguish": "In Hungary, DIC predicted MODS better than SIRS (6 of 11 against 5 of 22 dogs) [R12]. See SY03.",
+        "refs": [
+          "R12"
+        ]
+      },
+      {
+        "condition": "Single organ complication",
+        "distinguish": "Count the failing organs; the outcome worsens with each organ added [R4][R12].",
+        "refs": [
+          "R4",
+          "R12"
+        ]
+      }
+    ],
+    "grading": [
+      {
+        "grade": "Uncomplicated",
+        "criteria": "No organ dysfunction [R2]. Mortality 3% in Hungary [R12].",
+        "refs": [
+          "R2",
+          "R12"
+        ]
+      },
+      {
+        "grade": "One complication",
+        "criteria": "One organ dysfunction. Mortality 21% in Hungary [R12].",
+        "refs": [
+          "R12"
+        ]
+      },
+      {
+        "grade": "MODS",
+        "criteria": "Two or more organs. Mortality 67% in Hungary [R12]; survival 45%, 10% and 0% with two, three and four organs in Croatia [R4].",
+        "refs": [
+          "R12",
+          "R4"
+        ]
+      },
+      {
+        "grade": "Septic shock",
+        "criteria": "MODS with refractory hypotension. 10 of 86 admissions; all died [R14].",
+        "refs": [
+          "R14"
+        ]
+      },
+      {
+        "grade": "Discriminant score (B. gibsoni)",
+        "criteria": "A score from admission markers, among them urea, ALT and lactate; cut-off 0.141, sensitivity 79%, specificity 83% in 108 dogs. Not validated elsewhere [R18].",
+        "refs": [
+          "R18"
+        ]
+      }
+    ]
+  },
+  "approach": [
+    {
+      "step": 1,
+      "action": "Triage on arrival",
+      "detail": "Look for collapse, cerebral signs, abnormal breathing and a poor circulation. These dogs die more often, and most deaths are in the first 24 hours [R3][R1][R16].",
+      "setting": "practice"
+    },
+    {
+      "step": 2,
+      "action": "Measure glucose and haematocrit at once",
+      "detail": "Treat hypoglycaemia (SY16) and life-threatening anaemia (SY01). A normal or high haematocrit with haemolysis is a danger sign (SY14) [R21][R3].",
+      "setting": "practice"
+    },
+    {
+      "step": 3,
+      "action": "Start antibabesial treatment and standard support",
+      "detail": "Onderstepoort standard care was diminazene, red cell or whole blood transfusion and IV fluids as needed [R3]. Drugs and doses are in TX00.",
+      "setting": "practice"
+    },
+    {
+      "step": 4,
+      "action": "Count the failing organs",
+      "detail": "Check creatinine, urea, bilirubin, ALT, CK, breathing and mentation against the criteria. Look for organ dysfunction; do not rely on SIRS [R2][R6].",
+      "setting": "practice"
+    },
+    {
+      "step": 5,
+      "action": "Measure lactate again at 8 and 16 hours",
+      "detail": "A lactate that stays above 2.5 mmol/L, or falls by less than half, was linked to death [R8].",
+      "setting": "practice"
+    },
+    {
+      "step": 6,
+      "action": "Refer early",
+      "detail": "Refer dogs with two or more failing organs, refractory hypotension, cerebral signs or lung oedema. Survival falls with each organ added, and septic shock was fatal in every reported dog [R4][R14].",
+      "setting": "referral"
+    },
+    {
+      "step": 7,
+      "action": "Treat each organ on its own page",
+      "detail": "Kidney SY05, liver SY06, brain SY07, lung SY08, heart SY09, shock SY10, pancreas SY12, coagulation SY03. No drug against the inflammatory response has shown benefit [R9][R10].",
+      "setting": "referral"
+    }
+  ],
+  "treatments": [
+    {
+      "name": "Supportive intensive care, organ by organ",
+      "class": "supportive",
+      "aim": "Keep oxygen delivery and organ function while the antibabesial drug acts.",
+      "status": "standard",
+      "evidence_level": "B",
+      "independent_studies": 2,
+      "evidence_summary": "Large cohorts describe this care but did not test it against no care. In 320 B. rossi dogs, care was diminazene, transfusion and IV fluids, with complications treated at the clinician's choice; 10.6% died [R3]. In 40 B. canis dogs, complicated cases received IV fluids, oxygen, analgesia and antibiotics [R2].",
+      "doses": [],
+      "cautions": "The doses for each organ support are on the organ pages.",
+      "monitoring": "Glucose, haematocrit and lactate at admission, 8 and 16 h; organ criteria daily [R8][R21].",
+      "availability": "",
+      "refs": [
+        "R3",
+        "R2",
+        "R8",
+        "R21"
+      ]
+    },
+    {
+      "name": "Antibiotics for suspected secondary bacterial infection",
+      "class": "supportive",
+      "aim": "Treat a bacterial infection added to babesiosis.",
+      "status": "proposed",
+      "evidence_level": "C",
+      "independent_studies": 1,
+      "evidence_summary": "In one Zagreb study, 7 of 11 B. canis dogs with complications received IV antibiotics. The study took leukocytes above 17 x10^9/L, or neutropenia with lymphopenia, as a sign of secondary infection. The outcome with and without antibiotics was not compared [R2]. No study of blood cultures in dogs with babesiosis was found.",
+      "doses": [
+        {
+          "drug": "amoxicillin-clavulanic acid",
+          "dose": "22 mg/kg",
+          "route": "IV",
+          "frequency": "every 8 h",
+          "duration": "",
+          "context": "B. canis, complicated cases, 1 cohort (Zagreb)",
+          "note": "Given alone, or with enrofloxacin.",
+          "refs": [
+            "R2"
+          ]
+        },
+        {
+          "drug": "enrofloxacin",
+          "dose": "10 mg/kg",
+          "route": "IV",
+          "frequency": "every 12 h",
+          "duration": "",
+          "context": "B. canis, complicated cases, 1 cohort (Zagreb), with amoxicillin-clavulanic acid",
+          "note": "Dose and frequency as the source states them; check against a formulary.",
+          "refs": [
+            "R2"
+          ]
+        }
+      ],
+      "cautions": "SIRS criteria do not show that an infection is bacterial [R6].",
+      "monitoring": "Leukocyte count and differential; the source of infection.",
+      "availability": "",
+      "refs": [
+        "R2",
+        "R6"
+      ]
+    },
+    {
+      "name": "Plasmapheresis (extracorporeal blood purification)",
+      "class": "adjunct",
+      "aim": "Remove circulating mediators and toxins in dogs with multiple organ failure.",
+      "status": "proposed",
+      "evidence_level": "C",
+      "independent_studies": 2,
+      "evidence_summary": "Russian reports only. A 2026 study added plasmapheresis to imidocarb and reported faster recovery and better renal, hepatic and cardiovascular function; the abstract gives no number of dogs and no design [R23]. In a series of 12 dogs in St Petersburg, one dog improved only after plasmapheresis [R24]. Neither report is controlled.",
+      "doses": [],
+      "cautions": "Needs extracorporeal equipment; a referral procedure.",
+      "monitoring": "",
+      "availability": "",
+      "refs": [
+        "R23",
+        "R24"
+      ]
+    },
+    {
+      "name": "N-acetylcysteine",
+      "class": "adjunct",
+      "aim": "Reduce oxidative stress.",
+      "status": "proposed",
+      "evidence_level": "A",
+      "independent_studies": 2,
+      "evidence_summary": "Two small randomised trials in B. gibsoni dogs given doxycycline, clindamycin and metronidazole. In 24 outpatient dogs, anaemia, the acute phase response and liver injury improved earlier with NAC [R19]. In 12 dogs, only antioxidant capacity and MCHC differed significantly [R20]. Neither trial was in dogs with SIRS or MODS, or in B. rossi.",
+      "doses": [
+        {
+          "drug": "N-acetylcysteine",
+          "dose": "70 mg/kg",
+          "route": "PO",
+          "frequency": "once daily",
+          "duration": "14 days",
+          "context": "B. gibsoni, 12 of 24 outpatient dogs, randomised trial",
+          "note": "Read in the abstract only.",
+          "refs": [
+            "R19"
+          ]
+        },
+        {
+          "drug": "N-acetylcysteine",
+          "dose": "70 mg/kg",
+          "route": "PO",
+          "frequency": "not stated in the abstract",
+          "duration": "5 days",
+          "context": "B. gibsoni, 6 of 12 dogs, randomised trial",
+          "note": "Read in the abstract only.",
+          "refs": [
+            "R20"
+          ]
+        }
+      ],
+      "cautions": "Not tested in critically ill dogs with babesiosis.",
+      "monitoring": "Haematocrit, ALT and CRP, as in the trials [R19].",
+      "availability": "",
+      "refs": [
+        "R19",
+        "R20"
+      ]
+    },
+    {
+      "name": "Pentoxifylline",
+      "class": "specific",
+      "aim": "Block TNF production and improve capillary blood flow.",
+      "status": "conflicting",
+      "evidence_level": "D",
+      "independent_studies": 4,
+      "evidence_summary": "No study in dogs. Human falciparum malaria only: two randomised trials found shorter coma in cerebral malaria [R25][R26]; two other randomised trials found no clinical benefit, and one stopped early, with more nausea on the drug [R27][R28].",
+      "doses": [],
+      "cautions": "No canine dose for this use was found; human doses are not given here.",
+      "monitoring": "",
+      "availability": "",
+      "refs": [
+        "R25",
+        "R26",
+        "R27",
+        "R28"
+      ]
+    },
+    {
+      "name": "Glucocorticoids against the inflammatory response",
+      "class": "specific",
+      "aim": "Suppress the inflammatory response.",
+      "status": "harmful",
+      "evidence_level": "D",
+      "independent_studies": 2,
+      "evidence_summary": "No study in dogs with babesiosis tested them for SIRS or MODS; the 320-dog B. rossi cohort excluded dogs given anti-inflammatory drugs in the previous 4 weeks [R3]. In human cerebral malaria, high-dose dexamethasone prolonged coma and more than doubled complications [R9]. A Cochrane review of two trials found no benefit [R10].",
+      "doses": [],
+      "cautions": "More gastrointestinal bleeding and pneumonia with dexamethasone in human cerebral malaria [R9]. Their use in secondary IMHA is a separate question: see SY02.",
+      "monitoring": "",
+      "availability": "",
+      "refs": [
+        "R3",
+        "R9",
+        "R10"
+      ]
+    }
+  ],
+  "prognosis": {
+    "text": "Overall, 10.6% of 320 B. rossi dogs died or were euthanased, and treated dogs that died did so within 24 hours [R3]. In B. canis, mortality rose from 3% without complications to 21% with one and 67% with several [R12]. No single finding or score is validated as a decision rule: the cut-offs were set on the dogs they describe, and multivariable analysis found no independent predictor [R3].",
+    "indicators": [
+      {
+        "finding": "Collapse on arrival",
+        "meaning": "Odds ratio for death 8.4 (B. rossi) [R3].",
+        "refs": [
+          "R3"
+        ]
+      },
+      {
+        "finding": "Cerebral signs with normal glucose",
+        "meaning": "All 6 B. rossi dogs died [R3]; CNS involvement gave a 57 times greater chance of death in an earlier cohort [R5].",
+        "refs": [
+          "R3",
+          "R5"
+        ]
+      },
+      {
+        "finding": "Renal involvement",
+        "meaning": "Five times the risk of death (B. rossi) [R5]; creatinine above 106 µmol/L, odds ratio 7.6 [R3].",
+        "refs": [
+          "R5",
+          "R3"
+        ]
+      },
+      {
+        "finding": "Urea above 20 mmol/L",
+        "meaning": "31% died; odds ratio 9.1 (B. rossi) [R3].",
+        "refs": [
+          "R3"
+        ]
+      },
+      {
+        "finding": "Haematocrit above 0.55 L/L (55%)",
+        "meaning": "3 of 4 B. rossi dogs died [R3].",
+        "refs": [
+          "R3"
+        ]
+      },
+      {
+        "finding": "Hypoglycaemia below 3.3 mmol/L",
+        "meaning": "Odds ratio for death 3.5 (B. rossi) [R3]; also linked to death in an earlier cohort [R8].",
+        "refs": [
+          "R3",
+          "R8"
+        ]
+      },
+      {
+        "finding": "Lactate above 5.0 mmol/L on admission, or not falling",
+        "meaning": "Linked to death; persistently above 4.4 mmol/L was a very poor sign (B. rossi) [R8].",
+        "refs": [
+          "R8"
+        ]
+      },
+      {
+        "finding": "Band neutrophils above 0.5 x10^9/L",
+        "meaning": "20% died against 5%; odds ratio 4.9 (B. rossi) [R3].",
+        "refs": [
+          "R3"
+        ]
+      },
+      {
+        "finding": "High cortisol, low T4",
+        "meaning": "Linked to death in two Onderstepoort studies, which may share dogs [R17][R3].",
+        "refs": [
+          "R17",
+          "R3"
+        ]
+      },
+      {
+        "finding": "Number of failing organs",
+        "meaning": "B. canis survival 45%, 10% and 0% with two, three and four organs [R4].",
+        "refs": [
+          "R4"
+        ]
+      },
+      {
+        "finding": "SIRS alone",
+        "meaning": "Not linked to death in B. rossi [R5][R3].",
+        "refs": [
+          "R5",
+          "R3"
+        ]
+      }
+    ]
+  },
+  "related": [
+    {
+      "id": "TX00",
+      "why": "Antibabesial drugs and doses."
+    },
+    {
+      "id": "SY01",
+      "why": "Severe haemolytic anaemia and transfusion."
+    },
+    {
+      "id": "SY02",
+      "why": "Secondary immune-mediated haemolytic anaemia, where glucocorticoids are a separate question."
+    },
+    {
+      "id": "SY03",
+      "why": "Thrombocytopenia, coagulopathy and DIC."
+    },
+    {
+      "id": "SY04",
+      "why": "Bone marrow failure."
+    },
+    {
+      "id": "SY05",
+      "why": "Acute kidney injury, the commonest organ in MODS."
+    },
+    {
+      "id": "SY06",
+      "why": "Hepatopathy and icterus."
+    },
+    {
+      "id": "SY07",
+      "why": "Cerebral babesiosis."
+    },
+    {
+      "id": "SY08",
+      "why": "Acute lung injury, ARDS and pulmonary oedema."
+    },
+    {
+      "id": "SY09",
+      "why": "Cardiac dysfunction."
+    },
+    {
+      "id": "SY10",
+      "why": "Shock and hypotension, including fluids."
+    },
+    {
+      "id": "SY12",
+      "why": "Acute pancreatitis."
+    },
+    {
+      "id": "SY13",
+      "why": "Haemorrhagic gastroenteritis and gut signs."
+    },
+    {
+      "id": "SY14",
+      "why": "Haemoconcentration (red biliary)."
+    },
+    {
+      "id": "SY15",
+      "why": "Rhabdomyolysis (muscle involvement)."
+    },
+    {
+      "id": "SY16",
+      "why": "Hypoglycaemia and other metabolic derangements."
+    }
+  ],
+  "evidence_gaps": [
+    "No trial in dogs with B. rossi or B. canis has tested any treatment aimed at the inflammatory response.",
+    "No study of NSAIDs, vitamins C or E, pentoxifylline or fresh frozen plasma in dogs with babesiosis was found.",
+    "No study of blood cultures was found, so it is not known how often bacterial sepsis accompanies babesiosis.",
+    "No admission cut-off or score has been tested prospectively in a new group of dogs.",
+    "The SIRS and organ criteria differ between research groups; there is no common definition of complicated babesiosis.",
+    "The Onderstepoort cohorts may share dogs, so the number of independent B. rossi studies is uncertain.",
+    "MODS data for B. gibsoni and B. vogeli are scarce, and no validation of canine illness severity scores (such as APPLE) in babesiosis was found in this run."
+  ],
+  "references": [
+    {
+      "ref": "R1",
+      "authors": "Jacobson LS",
+      "year": 2006,
+      "title": "The South African form of severe and complicated canine babesiosis: clinical advances 1994-2004",
+      "journal": "Veterinary Parasitology",
+      "volume_pages": "138(1-2):126-139",
+      "doi": "10.1016/j.vetpar.2006.01.047",
+      "pmid": "16503090",
+      "url": "",
+      "article_id": "",
+      "type": "review",
+      "species": "B. rossi",
+      "n_dogs": null,
+      "read": "abstract"
+    },
+    {
+      "ref": "R2",
+      "authors": "Crnogaj M, Cerón JJ, Šmit I, et al.",
+      "year": 2017,
+      "title": "Relation of antioxidant status at admission and disease severity and outcome in dogs naturally infected with Babesia canis canis",
+      "journal": "BMC Veterinary Research",
+      "volume_pages": "13:114",
+      "doi": "10.1186/s12917-017-1020-9",
+      "pmid": "28438201",
+      "url": "",
+      "article_id": "CB006",
+      "type": "cohort",
+      "species": "B. canis",
+      "n_dogs": 40,
+      "read": "full text"
+    },
+    {
+      "ref": "R3",
+      "authors": "Leisewitz AL, Goddard A, Clift S, et al.",
+      "year": 2019,
+      "title": "A clinical and pathological description of 320 cases of naturally acquired Babesia rossi infection in dogs",
+      "journal": "Veterinary Parasitology",
+      "volume_pages": "271:22-30",
+      "doi": "10.1016/j.vetpar.2019.06.005",
+      "pmid": "31303199",
+      "url": "",
+      "article_id": "CB040",
+      "type": "cohort",
+      "species": "B. rossi",
+      "n_dogs": 320,
+      "read": "full text"
+    },
+    {
+      "ref": "R4",
+      "authors": "Matijatko V, Kiš I, Torti M, et al.",
+      "year": 2010,
+      "title": "Systemic inflammatory response syndrome and multiple organ dysfunction syndrome in canine babesiosis",
+      "journal": "Veterinarski arhiv",
+      "volume_pages": "80(5):611-626",
+      "doi": "",
+      "pmid": "",
+      "url": "https://hrcak.srce.hr/62147",
+      "article_id": "CB399",
+      "type": "cohort",
+      "species": "B. canis",
+      "n_dogs": 332,
+      "read": "abstract"
+    },
+    {
+      "ref": "R5",
+      "authors": "Welzl C, Leisewitz AL, Jacobson LS, et al.",
+      "year": 2001,
+      "title": "Systemic inflammatory response syndrome and multiple-organ damage/dysfunction in complicated canine babesiosis",
+      "journal": "Journal of the South African Veterinary Association",
+      "volume_pages": "72(3):158-162",
+      "doi": "10.4102/jsava.v72i3.640",
+      "pmid": "11811704",
+      "url": "",
+      "article_id": "",
+      "type": "cohort",
+      "species": "B. rossi",
+      "n_dogs": 91,
+      "read": "abstract"
+    },
+    {
+      "ref": "R6",
+      "authors": "Goggs R, Cortellini S, DeClue AE, et al.",
+      "year": 2026,
+      "title": "Sepsis in dogs and cats: consensus definition and clinical criteria",
+      "journal": "Journal of Veterinary Emergency and Critical Care",
+      "volume_pages": "36(4):445-469",
+      "doi": "10.1111/vec.70129",
+      "pmid": "42438185",
+      "url": "",
+      "article_id": "",
+      "type": "guideline",
+      "species": "",
+      "n_dogs": null,
+      "read": "full text"
+    },
+    {
+      "ref": "R7",
+      "authors": "Weingart C, Helm CS, Müller E, et al.",
+      "year": 2023,
+      "title": "Autochthonous Babesia canis infections in 49 dogs in Germany",
+      "journal": "Journal of Veterinary Internal Medicine",
+      "volume_pages": "37(1):140-149",
+      "doi": "10.1111/jvim.16611",
+      "pmid": "36629833",
+      "url": "",
+      "article_id": "CB106",
+      "type": "case series",
+      "species": "B. canis",
+      "n_dogs": 49,
+      "read": "full text"
+    },
+    {
+      "ref": "R8",
+      "authors": "Nel M, Lobetti RG, Keller N, et al.",
+      "year": 2004,
+      "title": "Prognostic value of blood lactate, blood glucose, and hematocrit in canine babesiosis",
+      "journal": "Journal of Veterinary Internal Medicine",
+      "volume_pages": "18(4):471-476",
+      "doi": "10.1892/0891-6640(2004)18<471:pvoblb>2.0.co;2",
+      "pmid": "15320582",
+      "url": "",
+      "article_id": "",
+      "type": "cohort",
+      "species": "B. rossi",
+      "n_dogs": 90,
+      "read": "abstract"
+    },
+    {
+      "ref": "R9",
+      "authors": "Warrell DA, Looareesuwan S, Warrell MJ, et al.",
+      "year": 1982,
+      "title": "Dexamethasone proves deleterious in cerebral malaria. A double-blind trial in 100 comatose patients",
+      "journal": "New England Journal of Medicine",
+      "volume_pages": "306(6):313-319",
+      "doi": "10.1056/NEJM198202113060601",
+      "pmid": "7033788",
+      "url": "",
+      "article_id": "",
+      "type": "trial",
+      "species": "",
+      "n_dogs": null,
+      "read": "abstract"
+    },
+    {
+      "ref": "R10",
+      "authors": "Prasad K, Garner P",
+      "year": 2000,
+      "title": "Steroids for treating cerebral malaria",
+      "journal": "Cochrane Database of Systematic Reviews",
+      "volume_pages": "(2):CD000972",
+      "doi": "10.1002/14651858.CD000972",
+      "pmid": "10796562",
+      "url": "",
+      "article_id": "",
+      "type": "review",
+      "species": "",
+      "n_dogs": null,
+      "read": "abstract"
+    },
+    {
+      "ref": "R11",
+      "authors": "Beletić A, Janjić F, Radaković M, et al.",
+      "year": 2021,
+      "title": "Systemic inflammatory response syndrome in dogs naturally infected with Babesia canis: association with the parasite load and host factors",
+      "journal": "Veterinary Parasitology",
+      "volume_pages": "291:109366",
+      "doi": "10.1016/j.vetpar.2021.109366",
+      "pmid": "33545559",
+      "url": "",
+      "article_id": "CB073",
+      "type": "cohort",
+      "species": "B. canis",
+      "n_dogs": 54,
+      "read": "abstract"
+    },
+    {
+      "ref": "R12",
+      "authors": "Máthé Á, Vörös K, Papp L, et al.",
+      "year": 2006,
+      "title": "Clinical manifestations of canine babesiosis in Hungary (63 cases)",
+      "journal": "Acta Veterinaria Hungarica",
+      "volume_pages": "54(3):367-385",
+      "doi": "10.1556/AVet.54.2006.3.7",
+      "pmid": "17020140",
+      "url": "",
+      "article_id": "",
+      "type": "case series",
+      "species": "B. canis",
+      "n_dogs": 63,
+      "read": "abstract"
+    },
+    {
+      "ref": "R13",
+      "authors": "Eisenecker CM, Moritz A, von Hohnhorst IM, et al.",
+      "year": 2026,
+      "title": "Retrospective analysis of anamnesis, clinical signs, therapy, and outcome in 342 dogs with acute Babesia canis infections",
+      "journal": "Current Research in Parasitology and Vector-Borne Diseases",
+      "volume_pages": "10:100407",
+      "doi": "10.1016/j.crpvbd.2026.100407",
+      "pmid": "42433610",
+      "url": "",
+      "article_id": "CB149",
+      "type": "cohort",
+      "species": "B. canis",
+      "n_dogs": 342,
+      "read": "abstract"
+    },
+    {
+      "ref": "R14",
+      "authors": "Matijatko V, Kiš I, Torti M, et al.",
+      "year": 2009,
+      "title": "Septic shock in canine babesiosis",
+      "journal": "Veterinary Parasitology",
+      "volume_pages": "162(3-4):263-270",
+      "doi": "10.1016/j.vetpar.2009.03.011",
+      "pmid": "19345507",
+      "url": "",
+      "article_id": "CB372",
+      "type": "case series",
+      "species": "Babesia sp. (not stated in the abstract)",
+      "n_dogs": 86,
+      "read": "abstract"
+    },
+    {
+      "ref": "R15",
+      "authors": "Goddard A, Leisewitz AL, Kjelgaard-Hansen M, et al.",
+      "year": 2016,
+      "title": "Excessive pro-inflammatory serum cytokine concentrations in virulent canine babesiosis",
+      "journal": "PLoS One",
+      "volume_pages": "11(3):e0150113",
+      "doi": "10.1371/journal.pone.0150113",
+      "pmid": "26953797",
+      "url": "",
+      "article_id": "CB517",
+      "type": "cohort",
+      "species": "B. rossi",
+      "n_dogs": 97,
+      "read": "abstract"
+    },
+    {
+      "ref": "R16",
+      "authors": "Böhm M, Leisewitz AL, Thompson PN, et al.",
+      "year": 2006,
+      "title": "Capillary and venous Babesia canis rossi parasitaemias and their association with outcome of infection and circulatory compromise",
+      "journal": "Veterinary Parasitology",
+      "volume_pages": "141(1-2):18-29",
+      "doi": "10.1016/j.vetpar.2006.05.002",
+      "pmid": "16806713",
+      "url": "",
+      "article_id": "",
+      "type": "cohort",
+      "species": "B. rossi",
+      "n_dogs": 100,
+      "read": "abstract"
+    },
+    {
+      "ref": "R17",
+      "authors": "Schoeman JP, Rees P, Herrtage ME",
+      "year": 2007,
+      "title": "Endocrine predictors of mortality in canine babesiosis caused by Babesia canis rossi",
+      "journal": "Veterinary Parasitology",
+      "volume_pages": "148(2):75-82",
+      "doi": "10.1016/j.vetpar.2007.06.010",
+      "pmid": "17614201",
+      "url": "",
+      "article_id": "CB338",
+      "type": "cohort",
+      "species": "B. rossi",
+      "n_dogs": 95,
+      "read": "abstract"
+    },
+    {
+      "ref": "R18",
+      "authors": "Kandasamy R, Venkatasubramanian L, Loganathasamy K, et al.",
+      "year": 2021,
+      "title": "Prognostic markers and their discriminant score in predicting the outcome of Babesia gibsoni infection",
+      "journal": "Veterinary Record",
+      "volume_pages": "188(5):e29",
+      "doi": "10.1002/vetr.29",
+      "pmid": "33666974",
+      "url": "",
+      "article_id": "CB074",
+      "type": "cohort",
+      "species": "B. gibsoni",
+      "n_dogs": 108,
+      "read": "abstract"
+    },
+    {
+      "ref": "R19",
+      "authors": "Khan N, Sandilya A, Eregowda CG, et al.",
+      "year": 2026,
+      "title": "N-acetylcysteine as an adjunct therapy ameliorates oxidative stress and attenuates anaemia, acute phase response and hepatic injury in clinical Babesia gibsoni infection in dogs: a pilot study",
+      "journal": "Molecular Biology Reports",
+      "volume_pages": "53(1)",
+      "doi": "10.1007/s11033-026-11689-y",
+      "pmid": "41838252",
+      "url": "",
+      "article_id": "CB151",
+      "type": "trial",
+      "species": "B. gibsoni",
+      "n_dogs": 24,
+      "read": "abstract"
+    },
+    {
+      "ref": "R20",
+      "authors": "Mundassery AI, Latha RR, Kulangara V, et al.",
+      "year": 2025,
+      "title": "Effect of N-acetylcysteine on oxidative stress and hematological recovery in dogs with Babesia gibsoni infection",
+      "journal": "Acta Parasitologica",
+      "volume_pages": "70(5):186",
+      "doi": "10.1007/s11686-025-01122-y",
+      "pmid": "40828450",
+      "url": "",
+      "article_id": "CB142",
+      "type": "trial",
+      "species": "B. gibsoni",
+      "n_dogs": 12,
+      "read": "abstract"
+    },
+    {
+      "ref": "R21",
+      "authors": "Keller N, Jacobson LS, Nel M, et al.",
+      "year": 2004,
+      "title": "Prevalence and risk factors of hypoglycemia in virulent canine babesiosis",
+      "journal": "Journal of Veterinary Internal Medicine",
+      "volume_pages": "18(3):265-270",
+      "doi": "10.1892/0891-6640(2004)18<265:parfoh>2.0.co;2",
+      "pmid": "15188810",
+      "url": "",
+      "article_id": "",
+      "type": "cohort",
+      "species": "B. rossi",
+      "n_dogs": 250,
+      "read": "abstract"
+    },
+    {
+      "ref": "R22",
+      "authors": "Eichenberger RM, Riond B, Willi B, et al.",
+      "year": 2016,
+      "title": "Prognostic markers in acute Babesia canis infections",
+      "journal": "Journal of Veterinary Internal Medicine",
+      "volume_pages": "30(1):174-182",
+      "doi": "10.1111/jvim.13822",
+      "pmid": "26727465",
+      "url": "",
+      "article_id": "CB516",
+      "type": "case series",
+      "species": "B. canis",
+      "n_dogs": 15,
+      "read": "full text"
+    },
+    {
+      "ref": "R23",
+      "authors": "Belomyttseva E",
+      "year": 2026,
+      "title": "Comprehensive treatment of canine babesiosis with extracorporeal blood purification",
+      "journal": "Russian Journal of Parasitology",
+      "volume_pages": "20(2):302-309",
+      "doi": "10.31016/1998-8435-2026-20-2-302-309",
+      "pmid": "",
+      "url": "",
+      "article_id": "",
+      "type": "cohort",
+      "species": "",
+      "n_dogs": null,
+      "read": "abstract"
+    },
+    {
+      "ref": "R24",
+      "authors": "Belova L, Gavrilova N",
+      "year": 2025,
+      "title": "Analysis of clinical cases of canine babesiosis in Saint Petersburg",
+      "journal": "Russian Journal of Veterinary Pathology",
+      "volume_pages": "23(4):15-21",
+      "doi": "10.23947/2949-4826-2024-23-4-15-21",
+      "pmid": "",
+      "url": "",
+      "article_id": "CB267",
+      "type": "case series",
+      "species": "B. canis, B. gibsoni",
+      "n_dogs": 12,
+      "read": "full text"
+    },
+    {
+      "ref": "R25",
+      "authors": "Di Perri G, Di Perri IG, Monteiro GB, et al.",
+      "year": 1995,
+      "title": "Pentoxifylline as a supportive agent in the treatment of cerebral malaria in children",
+      "journal": "Journal of Infectious Diseases",
+      "volume_pages": "171(5):1317-1322",
+      "doi": "10.1093/infdis/171.5.1317",
+      "pmid": "7751709",
+      "url": "",
+      "article_id": "",
+      "type": "trial",
+      "species": "",
+      "n_dogs": null,
+      "read": "abstract"
+    },
+    {
+      "ref": "R26",
+      "authors": "Das BK, Mishra S, Padhi PK, et al.",
+      "year": 2003,
+      "title": "Pentoxifylline adjunct improves prognosis of human cerebral malaria in adults",
+      "journal": "Tropical Medicine and International Health",
+      "volume_pages": "8(8):680-684",
+      "doi": "10.1046/j.1365-3156.2003.01087.x",
+      "pmid": "12869088",
+      "url": "",
+      "article_id": "",
+      "type": "trial",
+      "species": "",
+      "n_dogs": null,
+      "read": "abstract"
+    },
+    {
+      "ref": "R27",
+      "authors": "Hemmer CJ, Hort G, Chiwakata CB, et al.",
+      "year": 1997,
+      "title": "Supportive pentoxifylline in falciparum malaria: no effect on tumor necrosis factor alpha levels or clinical outcome: a prospective, randomized, placebo-controlled study",
+      "journal": "American Journal of Tropical Medicine and Hygiene",
+      "volume_pages": "56(4):397-403",
+      "doi": "10.4269/ajtmh.1997.56.397",
+      "pmid": "9158047",
+      "url": "",
+      "article_id": "",
+      "type": "trial",
+      "species": "",
+      "n_dogs": null,
+      "read": "abstract"
+    },
+    {
+      "ref": "R28",
+      "authors": "Looareesuwan S, Wilairatana P, Vannaphan S, et al.",
+      "year": 1998,
+      "title": "Pentoxifylline as an ancillary treatment for severe falciparum malaria in Thailand",
+      "journal": "American Journal of Tropical Medicine and Hygiene",
+      "volume_pages": "58(3):348-353",
+      "doi": "10.4269/ajtmh.1998.58.348",
+      "pmid": "9546417",
+      "url": "",
+      "article_id": "",
+      "type": "trial",
+      "species": "",
+      "n_dogs": null,
+      "read": "abstract"
+    }
+  ],
+  "search": {
+    "date": "2026-11-12",
+    "sources": [
+      "local review",
+      "PubMed",
+      "Europe PMC",
+      "Crossref",
+      "web"
+    ],
+    "note": "Searched the local review (combined set, SEV synthesis, notes) and PubMed and Europe PMC for SIRS, MODS, prognosis and each candidate treatment, with human malaria trials for glucocorticoids and pentoxifylline. Welzl 2001 and Matijatko 2010 were read as abstracts only. Mechanistic marker studies were left out."
+  }
+}

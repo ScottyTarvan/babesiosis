@@ -1,13 +1,13 @@
 <section class="fs-experiments">
   <fs-page-header icon="chart-dots-3" title="Experiments"
-                  subtitle="Analyses run over the downloaded datasets, with the script's reading of each result">
+                  subtitle="Each experiment on why some dogs develop severe disease, with its result and its own reading of it">
     <fs-button variant="outline" intent="secondary" size="sm" icon="refresh"
                [loading]="listLoading() || detailLoading()" [disabled]="listLoading() || detailLoading()"
                (click)="refresh()">Refresh</fs-button>
   </fs-page-header>
 
   <div class="fs-experiments__layout">
-    <!-- Left: every run, grouped by dataset, filtered by the search box. -->
+    <!-- Left rail: every experiment in the database, grouped by package, filtered by the search box. -->
     <aside class="fs-experiments__panel" aria-label="Experiments">
       <fs-card [padded]="false" [fillHeight]="true">
         <div class="fs-experiments__panel-head">
@@ -28,14 +28,11 @@
           <div class="fs-experiments__panel-loading"><fs-spinner size="sm" /></div>
         } @else {
           <nav class="fs-experiments__nav">
-            @for (group of groups(); track group.datasetCode) {
+            @for (group of groups(); track group.key) {
               <div class="fs-experiments__group">
-                <h3 class="fs-experiments__group-title" [title]="group.datasetTitle">
-                  <span class="fs-experiments__group-code">{{ group.datasetCode }}</span>
-                  @if (group.articleCode) {
-                    <span class="fs-experiments__group-article">{{ group.articleCode }}</span>
-                  }
-                  <span class="fs-experiments__group-name">{{ group.datasetTitle }}</span>
+                <h3 class="fs-experiments__group-title">
+                  <span class="fs-experiments__group-code">{{ group.key }}</span>
+                  <span class="fs-experiments__group-name">{{ group.items.length }} {{ group.items.length === 1 ? 'experiment' : 'experiments' }}</span>
                 </h3>
                 <ul class="fs-experiments__items">
                   @for (item of group.items; track item.code) {
@@ -47,7 +44,7 @@
                         <span class="fs-experiments__item-name">{{ item.name }}</span>
                         <span class="fs-experiments__item-meta">
                           <fs-badge variant="tonal" intent="secondary">{{ methodLabel(item.method) }}</fs-badge>
-                          <span>{{ item.subjectCount ?? '–' }} subjects · {{ item.testCount ?? '–' }} tests · {{ item.findingCount }} findings</span>
+                          <span>{{ item.subjectCount ?? '–' }} subjects · {{ item.testCount ?? '–' }} tests</span>
                         </span>
                         <span class="fs-experiments__item-foot">
                           <span class="fs-experiments__item-code">{{ item.code }}</span>
@@ -63,7 +60,7 @@
             } @empty {
               <div class="fs-experiments__panel-body">
                 <fs-empty-state size="compact" icon="list-search" title="No experiments match"
-                                [subtitle]="items().length ? 'Try another word, or clear the search.' : 'Run an experiment script and load it with the console.'" />
+                                [subtitle]="items().length ? 'Try another word, or clear the search.' : 'No experiment has written its results to the database yet.'" />
               </div>
             }
           </nav>
@@ -82,7 +79,7 @@
       } @else if (!selectedCode()) {
         <fs-card>
           <fs-empty-state icon="chart-dots-3" title="Pick an experiment"
-                          subtitle="Choose a run from the list to see its results and the script's interpretation." />
+                          subtitle="Choose an experiment from the rail to see its result and interpretation." />
         </fs-card>
       } @else if (detailLoading() && !detail()) {
         <fs-card>
@@ -115,8 +112,10 @@
             <div><dt>Subjects</dt><dd>{{ d.subjectCount ?? '–' }}</dd></div>
             <div><dt>Variables</dt><dd>{{ d.variableCount ?? '–' }}</dd></div>
             <div><dt>Tests</dt><dd>{{ d.testCount ?? '–' }}</dd></div>
-            <div><dt>Significant</dt><dd>{{ d.significantCount }}</dd></div>
-            <div><dt>Findings</dt><dd>{{ d.findingCount }}</dd></div>
+            @if (hasAssociations()) {
+              <div><dt>Significant</dt><dd>{{ d.significantCount }}</dd></div>
+              <div><dt>Findings</dt><dd>{{ d.findingCount }}</dd></div>
+            }
           </dl>
           @if (d.summary) {
             <p class="fs-experiments__summary">{{ d.summary }}</p>
@@ -126,15 +125,13 @@
           }
         </fs-card>
 
-        @switch (d.method) {
-          @case ('pairwise_association') {
-            <fs-experiment-pairwise-view [detail]="d" />
-          }
-          @default {
-            <fs-banner intent="info">
-              This experiment's method, <strong>{{ d.method }}</strong>, has no visualisation yet. Its results are shown as stored.
-            </fs-banner>
-          }
+        <!-- The view comes from experiment-views.registry.ts; a new method adds one entry there. -->
+        @if (view(); as v) {
+          <ng-container *ngComponentOutlet="v.component; inputs: viewInputs()" />
+        } @else {
+          <fs-banner intent="info">
+            This experiment's method, <strong>{{ d.method }}</strong>, has no visualisation yet. Its results are shown as stored.
+          </fs-banner>
         }
 
         @for (result of unhandledResults(); track result.kind) {

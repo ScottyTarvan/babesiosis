@@ -1,0 +1,118 @@
+{
+ "spec_sha256": "e7fdfabd75daee92de3c97b7b0e51f5967889297d539257b2590c1fa1d557547",
+ "seed": 20261112,
+ "n_random_sets": 2000,
+ "inputs": {
+  "C:\\Workspaces\\Babesiosis\\core\\data\\raw\\DS06\\GSE167201_raw_counts.txt.gz": "b2575d138ca08fb7292f3fa46d9f296f02a3d3306f53813b962ce4c993189fc3",
+  "C:\\Workspaces\\Babesiosis\\experiments\\shared\\tidy\\DS02.features.json": "12475e823e588af20e8bec2df5164979c158bdbbb86ddfb96a32afe8aad83e2d",
+  "C:\\Workspaces\\Babesiosis\\experiments\\shared\\tidy\\DS02.outcomes.json": "26831fd671b6168a9228852823d73150cb48896d309f395c9a91858c4506dd67",
+  "ref/symbol_xrefs.json": "d2498ae35c3201c7f6fe4c485b25916d8f0fe23ded73a93055edffd655a60efd",
+  "ref/unsymbolled_lookup.json": "63e21a82264e47daa51f76835dbc85841628f8610d399771894b998ab80867d1",
+  "scripts/gene_sets.json": "a56f017dc465b5ee61cf8135460c5dee8b7a5177dd4c8d47b292d3c194a03f4d"
+ },
+ "versions": {
+  "python": "3.12.12",
+  "numpy": "2.3.4",
+  "scipy": "1.16.3"
+ },
+ "n_genes": 12362,
+ "n_samples": 28,
+ "n_dogs": 5,
+ "set_sizes": {
+  "neutrophil_granule": {
+   "fixed": 11,
+   "mapped": 6
+  },
+  "type1_interferon": {
+   "fixed": 11,
+   "mapped": 11
+  },
+  "erythroid_control": {
+   "fixed": 3,
+   "mapped": 2
+  }
+ },
+ "s3_genes_dropped": 105,
+ "sign_counts": [
+  {
+   "set": "neutrophil_granule",
+   "in_family": true,
+   "n_dogs": 5,
+   "positive": 5,
+   "sign_test_p_two_sided": 0.0625,
+   "beyond_background_rise": 4,
+   "beyond_background_fall": 0,
+   "median_delta": 0.1672,
+   "s1_positive": 5,
+   "s2_positive": 5,
+   "s3_positive": 5,
+   "s1_beyond_rise": 4,
+   "s4_positive_all_loo": 5
+  },
+  {
+   "set": "type1_interferon",
+   "in_family": true,
+   "n_dogs": 5,
+   "positive": 5,
+   "sign_test_p_two_sided": 0.0625,
+   "beyond_background_rise": 4,
+   "beyond_background_fall": 0,
+   "median_delta": 0.3051,
+   "s1_positive": 5,
+   "s2_positive": 4,
+   "s3_positive": 5,
+   "s1_beyond_rise": 5,
+   "s4_positive_all_loo": 4
+  },
+  {
+   "set": "erythroid_control",
+   "in_family": false,
+   "n_dogs": 5,
+   "positive": 5,
+   "sign_test_p_two_sided": 0.0625,
+   "beyond_background_rise": 5,
+   "beyond_background_fall": 0,
+   "median_delta": 0.2428,
+   "s1_positive": 5,
+   "s2_positive": 5,
+   "s3_positive": 5,
+   "s1_beyond_rise": 4,
+   "s4_positive_all_loo": 5
+  }
+ ],
+ "verdict": {
+  "neutrophil_granule": {
+   "signature_appears": true,
+   "before_deterioration_working": true,
+   "before_deterioration_alternative": true,
+   "earlier_at_high_dose": false
+  },
+  "type1_interferon": {
+   "signature_appears": true,
+   "before_deterioration_working": true,
+   "before_deterioration_alternative": true,
+   "earlier_at_high_dose": false
+  }
+ },
+ "mapping_working": {
+  "low_1": "DS02:d005",
+  "low_2": "DS02:d001",
+  "high_1": "DS02:d004",
+  "high_2": "DS02:d002",
+  "high_3": "DS02:d003"
+ },
+ "mapping_alternative": {
+  "low_1": "DS02:d001",
+  "low_2": "DS02:d005",
+  "high_1": "DS02:d002",
+  "high_2": "DS02:d004",
+  "high_3": "DS02:d003"
+ },
+ "last_pre_day": {
+  "low_1": 4,
+  "low_2": 4,
+  "high_1": 4,
+  "high_2": 4,
+  "high_3": 3
+ }
+}

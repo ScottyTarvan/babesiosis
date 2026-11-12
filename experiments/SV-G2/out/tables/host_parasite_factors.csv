@@ -1,0 +1,13 @@
+marker,marker_class,factor_type,units,articles,rows,units_sig_higher,units_sig_lower,units_not_significant,outcome_classes,species_groups
+Age,signalment,host factor,12,14,14,0,1,5,anaemia_grade; complicated; mortality; severity_grade; specific_complication; treatment_intensity,B. rossi; B. canis; B. gibsoni; Mixed or unspecified
+Sex / neuter status,signalment,host factor,8,10,23,0,1,5,anaemia_grade; complicated; mortality; severity_grade; specific_complication; treatment_intensity,B. rossi; B. canis; B. gibsoni; Mixed or unspecified
+Parasitaemia,parasitology,parasite factor,6,6,9,0,0,2,mortality; other; severity_grade; specific_complication,B. rossi; B. canis; B. gibsoni; Mixed or unspecified
+Body weight / body condition,signalment,host factor,5,6,6,0,0,4,complicated; mortality; specific_complication; treatment_intensity,B. rossi; Mixed or unspecified
+Breed,signalment,host factor,5,5,12,0,0,2,anaemia_grade; complicated; specific_complication; treatment_intensity,B. rossi; B. gibsoni; Mixed or unspecified
+Co-infection,parasitology,parasite factor,4,4,7,0,0,2,anaemia_grade; mortality; severity_grade; specific_complication,B. canis; B. vogeli; Mixed or unspecified
+Parasite species or genotype,parasitology,parasite factor,2,2,2,0,0,1,anaemia_grade; mortality,Mixed or unspecified
+Travel / import history,clinical history,host factor,1,2,6,0,1,1,complicated; mortality; severity_grade,B. canis
+Duration of illness before presentation,clinical history,host factor,1,1,1,0,0,1,specific_complication,B. rossi
+Parasite DNA load (qPCR),parasitology,parasite factor,1,1,1,1,0,0,severity_grade,B. canis
+Time since last meal,clinical history,host factor,1,1,1,0,0,1,specific_complication,B. rossi
+Treatment factors,treatment,host factor,1,1,1,1,0,0,treatment_intensity,Mixed or unspecified

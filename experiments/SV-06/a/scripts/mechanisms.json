@@ -1,0 +1,538 @@
+{
+ "version": "2026-11-12",
+ "note": "Seed mechanisms of the SV-06a spec. keywords: case-insensitive regex, word-bounded by the search script. genes: canine gene symbols used for DS07/DS06 lookup.",
+ "mechanisms": [
+  {
+   "id": "F1-01",
+   "family": "F1 Haemolysis and haem scavenging",
+   "mechanism": "Cell-free (plasma) haemoglobin",
+   "keywords": [
+    "cell[- ]free (haemo|hemo)globin",
+    "plasma[- ]free (haemo|hemo)globin",
+    "free (haemo|hemo)globin",
+    "CFH[bB]",
+    "plasma (haemo|hemo)globin"
+   ],
+   "genes": [
+    "HBA",
+    "HBB",
+    "HBA1",
+    "HBA2"
+   ],
+   "ds07_desc": [
+    "Hemoglobin subunit"
+   ]
+  },
+  {
+   "id": "F1-02",
+   "family": "F1 Haemolysis and haem scavenging",
+   "mechanism": "Free haem and haemopexin depletion",
+   "keywords": [
+    "(haemo|hemo)pexin",
+    "free (haem|heme)",
+    "labile (haem|heme)",
+    "\\bHPX\\b"
+   ],
+   "genes": [
+    "HPX"
+   ],
+   "ds07_desc": [
+    "Hemopexin"
+   ]
+  },
+  {
+   "id": "F1-03",
+   "family": "F1 Haemolysis and haem scavenging",
+   "mechanism": "Haptoglobin depletion",
+   "keywords": [
+    "haptoglobin"
+   ],
+   "genes": [
+    "HP"
+   ],
+   "ds07_desc": [
+    "Haptoglobin"
+   ]
+  },
+  {
+   "id": "F1-04",
+   "family": "F1 Haemolysis and haem scavenging",
+   "mechanism": "Haem oxygenase-1 induction",
+   "keywords": [
+    "(haem|heme) oxygenase",
+    "HO-1",
+    "HMOX1"
+   ],
+   "genes": [
+    "HMOX1"
+   ],
+   "ds07_desc": [
+    "Heme oxygenase"
+   ]
+  },
+  {
+   "id": "F1-05",
+   "family": "F1 Haemolysis and haem scavenging",
+   "mechanism": "Nitric oxide scavenging and arginine / ADMA",
+   "keywords": [
+    "nitric oxide",
+    "arginine",
+    "ADMA",
+    "asymmetric dimethylarginine",
+    "nitrite",
+    "nitrate"
+   ],
+   "genes": [
+    "NOS2",
+    "NOS3",
+    "ARG1",
+    "DDAH1"
+   ],
+   "ds07_desc": []
+  },
+  {
+   "id": "F2-01",
+   "family": "F2 Endothelium, glycocalyx, angiopoietin",
+   "mechanism": "Angiopoietin-2 and the Ang-2/Ang-1 ratio",
+   "keywords": [
+    "angiopoietin",
+    "Ang-2",
+    "ANGPT2",
+    "Tie-2",
+    "\\bTEK\\b"
+   ],
+   "genes": [
+    "ANGPT1",
+    "ANGPT2",
+    "TEK"
+   ],
+   "ds07_desc": []
+  },
+  {
+   "id": "F2-02",
+   "family": "F2 Endothelium, glycocalyx, angiopoietin",
+   "mechanism": "Glycocalyx shedding (syndecan-1, heparan sulfate, hyaluronan)",
+   "keywords": [
+    "glycocalyx",
+    "syndecan",
+    "heparan sulfate",
+    "heparan sulphate",
+    "hyaluronan",
+    "hyaluronic acid"
+   ],
+   "genes": [
+    "SDC1",
+    "HPSE"
+   ],
+   "ds07_desc": []
+  },
+  {
+   "id": "F2-03",
+   "family": "F2 Endothelium, glycocalyx, angiopoietin",
+   "mechanism": "Soluble endothelial adhesion molecules (ICAM-1, VCAM-1, E-selectin)",
+   "keywords": [
+    "ICAM-1",
+    "VCAM-1",
+    "E-selectin",
+    "adhesion molecule",
+    "endothelial activation"
+   ],
+   "genes": [
+    "ICAM1",
+    "VCAM1",
+    "SELE"
+   ],
+   "ds07_desc": []
+  },
+  {
+   "id": "F2-04",
+   "family": "F2 Endothelium, glycocalyx, angiopoietin",
+   "mechanism": "VEGF and soluble VEGFR-1",
+   "keywords": [
+    "VEGF",
+    "vascular endothelial growth factor",
+    "sFlt-1",
+    "VEGFR"
+   ],
+   "genes": [
+    "VEGFA",
+    "FLT1"
+   ],
+   "ds07_desc": []
+  },
+  {
+   "id": "F3-01",
+   "family": "F3 Neutrophils, NETs, histones",
+   "mechanism": "Neutrophil extracellular traps (cell-free DNA, MPO-DNA, citrullinated histone H3)",
+   "keywords": [
+    "neutrophil extracellular trap",
+    "NETs",
+    "NETosis",
+    "cell[- ]free DNA",
+    "cfDNA",
+    "nucleosome",
+    "citrullinated histone",
+    "H3Cit"
+   ],
+   "genes": [
+    "PADI4",
+    "MPO",
+    "ELANE"
+   ],
+   "ds07_desc": []
+  },
+  {
+   "id": "F3-02",
+   "family": "F3 Neutrophils, NETs, histones",
+   "mechanism": "Circulating extracellular histones (host and parasite)",
+   "keywords": [
+    "histone"
+   ],
+   "genes": [
+    "H4C1",
+    "H2BC1",
+    "H3-3A",
+    "H4"
+   ],
+   "ds07_desc": [
+    "Histone H"
+   ]
+  },
+  {
+   "id": "F3-03",
+   "family": "F3 Neutrophils, NETs, histones",
+   "mechanism": "Neutrophil granule proteins (MPO, elastase, lactoferrin, NGAL, S100A8/A9)",
+   "keywords": [
+    "myeloperoxidase",
+    "\\bMPO\\b",
+    "MPXI",
+    "elastase",
+    "lactoferrin",
+    "NGAL",
+    "lipocalin",
+    "calprotectin",
+    "S100A8",
+    "S100A9",
+    "S100A12",
+    "degranulation"
+   ],
+   "genes": [
+    "MPO",
+    "ELANE",
+    "LTF",
+    "LCN2",
+    "S100A8",
+    "S100A9",
+    "S100A12",
+    "CAMP"
+   ],
+   "ds07_desc": [
+    "Lactotransferrin",
+    "Protein S100",
+    "Myeloperoxidase",
+    "Neutrophil elastase",
+    "Neutrophil gelatinase",
+    "Cathelicidin"
+   ]
+  },
+  {
+   "id": "F4-01",
+   "family": "F4 VWF, ADAMTS13, thromboinflammation",
+   "mechanism": "VWF antigen, ultra-large multimers and ADAMTS13 (ratio)",
+   "keywords": [
+    "von Willebrand",
+    "\\bVWF\\b",
+    "vWF",
+    "ADAMTS-?13"
+   ],
+   "genes": [
+    "VWF",
+    "ADAMTS13"
+   ],
+   "ds07_desc": [
+    "von Willebrand"
+   ]
+  },
+  {
+   "id": "F4-02",
+   "family": "F4 VWF, ADAMTS13, thromboinflammation",
+   "mechanism": "Platelet activation (soluble P-selectin, platelet factor 4)",
+   "keywords": [
+    "P-selectin",
+    "platelet factor 4",
+    "\\bPF4\\b",
+    "platelet activation",
+    "CD62P"
+   ],
+   "genes": [
+    "SELP",
+    "PF4",
+    "PPBP"
+   ],
+   "ds07_desc": []
+  },
+  {
+   "id": "F4-03",
+   "family": "F4 VWF, ADAMTS13, thromboinflammation",
+   "mechanism": "Fibrinolytic shutdown (PAI-1, alpha-2-antiplasmin)",
+   "keywords": [
+    "PAI-1",
+    "plasminogen activator inhibitor",
+    "antiplasmin",
+    "fibrinolytic shutdown",
+    "fibrinolysis",
+    "thromboelastograph",
+    "TEG"
+   ],
+   "genes": [
+    "SERPINE1",
+    "SERPINF2",
+    "PLG"
+   ],
+   "ds07_desc": [
+    "Plasminogen",
+    "Alpha-2-antiplasmin",
+    "Plasminogen activator inhibitor"
+   ]
+  },
+  {
+   "id": "F4-04",
+   "family": "F4 VWF, ADAMTS13, thromboinflammation",
+   "mechanism": "Protein C, antithrombin and thrombomodulin (anticoagulant failure)",
+   "keywords": [
+    "protein C",
+    "antithrombin",
+    "thrombomodulin",
+    "\\bDIC\\b",
+    "disseminated intravascular coagulation"
+   ],
+   "genes": [
+    "PROC",
+    "SERPINC1",
+    "THBD"
+   ],
+   "ds07_desc": [
+    "Vitamin K-dependent protein C",
+    "Antithrombin",
+    "Thrombomodulin"
+   ]
+  },
+  {
+   "id": "F5-01",
+   "family": "F5 Iron and hepcidin",
+   "mechanism": "Hepcidin",
+   "keywords": [
+    "hepcidin",
+    "\\bHAMP\\b"
+   ],
+   "genes": [
+    "HAMP"
+   ],
+   "ds07_desc": []
+  },
+  {
+   "id": "F5-02",
+   "family": "F5 Iron and hepcidin",
+   "mechanism": "Ferritin (hyperferritinaemia)",
+   "keywords": [
+    "ferritin"
+   ],
+   "genes": [
+    "FTL",
+    "FTH1"
+   ],
+   "ds07_desc": [
+    "Ferritin"
+   ]
+  },
+  {
+   "id": "F5-03",
+   "family": "F5 Iron and hepcidin",
+   "mechanism": "Serum iron and transferrin (iron restriction)",
+   "keywords": [
+    "serum iron",
+    "transferrin",
+    "TIBC",
+    "iron[- ]binding capacity",
+    "hypoferraemia",
+    "hypoferremia"
+   ],
+   "genes": [
+    "TF",
+    "TFRC"
+   ],
+   "ds07_desc": [
+    "Serotransferrin",
+    "Transferrin receptor"
+   ]
+  },
+  {
+   "id": "F6-01",
+   "family": "F6 Endocrine and metabolic",
+   "mechanism": "Adrenal response (cortisol, cortisol:ACTH, adrenal androgens)",
+   "keywords": [
+    "cortisol",
+    "ACTH",
+    "adrenal",
+    "DHEA"
+   ],
+   "genes": [
+    "POMC",
+    "NR3C1"
+   ],
+   "ds07_desc": []
+  },
+  {
+   "id": "F6-02",
+   "family": "F6 Endocrine and metabolic",
+   "mechanism": "Thyroid hormones (euthyroid sick syndrome)",
+   "keywords": [
+    "thyroxine",
+    "\\bT4\\b",
+    "\\bT3\\b",
+    "thyroid",
+    "euthyroid"
+   ],
+   "genes": [
+    "TTR",
+    "SERPINA7"
+   ],
+   "ds07_desc": [
+    "Transthyretin",
+    "Thyroxine-binding"
+   ]
+  },
+  {
+   "id": "F6-03",
+   "family": "F6 Endocrine and metabolic",
+   "mechanism": "Lactate and hypoglycaemia",
+   "keywords": [
+    "lactate",
+    "hyperlactat",
+    "hypoglyc"
+   ],
+   "genes": [
+    "LDHA"
+   ],
+   "ds07_desc": []
+  },
+  {
+   "id": "F6-04",
+   "family": "F6 Endocrine and metabolic",
+   "mechanism": "Kynurenine pathway (IDO, kynurenine, quinolinic acid)",
+   "keywords": [
+    "kynurenine",
+    "tryptophan",
+    "quinolinic",
+    "\\bIDO\\b",
+    "indoleamine"
+   ],
+   "genes": [
+    "IDO1",
+    "KMO"
+   ],
+   "ds07_desc": []
+  },
+  {
+   "id": "F6-05",
+   "family": "F6 Endocrine and metabolic",
+   "mechanism": "Copeptin / vasopressin",
+   "keywords": [
+    "copeptin",
+    "vasopressin",
+    "antidiuretic hormone"
+   ],
+   "genes": [
+    "AVP"
+   ],
+   "ds07_desc": []
+  },
+  {
+   "id": "F7-01",
+   "family": "F7 Immune regulation and tolerance",
+   "mechanism": "IL-10 and the IL-10/TNF balance",
+   "keywords": [
+    "IL-10",
+    "interleukin-10",
+    "interleukin 10",
+    "TNF",
+    "tumou?r necrosis factor"
+   ],
+   "genes": [
+    "IL10",
+    "TNF"
+   ],
+   "ds07_desc": []
+  },
+  {
+   "id": "F7-02",
+   "family": "F7 Immune regulation and tolerance",
+   "mechanism": "Regulatory T cells and T-cell exhaustion (PD-1, PD-L1)",
+   "keywords": [
+    "regulatory T",
+    "Treg",
+    "FoxP3",
+    "PD-1",
+    "PD-L1",
+    "exhaustion"
+   ],
+   "genes": [
+    "FOXP3",
+    "PDCD1",
+    "CD274",
+    "CTLA4"
+   ],
+   "ds07_desc": []
+  },
+  {
+   "id": "F7-03",
+   "family": "F7 Immune regulation and tolerance",
+   "mechanism": "Monocyte deactivation (HLA-DR / DLA class II expression)",
+   "keywords": [
+    "HLA-DR",
+    "DLA-DR",
+    "MHC class II",
+    "DLA class II",
+    "monocyte deactivation",
+    "immunoparalysis"
+   ],
+   "genes": [
+    "DLA-DRA",
+    "DLA-DRB1",
+    "CD74"
+   ],
+   "ds07_desc": []
+  },
+  {
+   "id": "F7-04",
+   "family": "F7 Immune regulation and tolerance",
+   "mechanism": "Soluble TREM-1 and suPAR",
+   "keywords": [
+    "TREM-1",
+    "suPAR",
+    "urokinase.{0,20}receptor",
+    "uPAR"
+   ],
+   "genes": [
+    "TREM1",
+    "PLAUR"
+   ],
+   "ds07_desc": []
+  },
+  {
+   "id": "F7-05",
+   "family": "F7 Immune regulation and tolerance",
+   "mechanism": "Soluble CD14 (presepsin)",
+   "keywords": [
+    "CD14",
+    "presepsin"
+   ],
+   "genes": [
+    "CD14"
+   ],
+   "ds07_desc": [
+    "Monocyte differentiation antigen CD14"
+   ]
+  }
+ ]
+}

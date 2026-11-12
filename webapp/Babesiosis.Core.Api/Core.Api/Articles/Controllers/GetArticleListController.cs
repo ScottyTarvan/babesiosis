@@ -41,11 +41,15 @@ namespace Babesiosis.Core.Api.Articles.Controllers
       public ArticleViewModel ToViewModel() => new ArticleViewModel
       {
         Id = Id,
+        Code = Code,
         PubDate = PubDate,
         PubDatePrecision = PubDatePrecision,
         CategoryName = CategoryName,
+        CategoryCode = CategoryCode,
+        CategoryLabel = CategoryLabel,
         StudyType = StudyType,
         Species = Species,
+        Country = Country,
         Journal = Journal,
         Title = Title,
         Summary = Summary,
@@ -78,13 +82,17 @@ namespace Babesiosis.Core.Api.Articles.Controllers
         .Select(c => new ArticleRow
         {
           Id = c.Article.Id,
+          Code = c.Article.Code,
           PubDate = c.Article.PubDate,
           PubDatePrecision = c.Article.PubDatePrecision == DatePrecision.Year ? "Y"
             : c.Article.PubDatePrecision == DatePrecision.Month ? "M"
             : "D",
           CategoryName = c.Article.PrimaryCategory.Name,
+          CategoryCode = c.Article.PrimaryCategory.Code,
+          CategoryLabel = c.Article.PrimaryCategory.Label,
           StudyType = c.StudyType,
           Species = c.Species,
+          Country = c.Article.CountryNormalised,
           Journal = c.Article.Journal,
           Title = c.Article.Title,
           Summary = c.Article.OneSentenceFinding,

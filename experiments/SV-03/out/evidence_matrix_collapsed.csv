@@ -1,0 +1,51 @@
+marker,marker_class,species_group,units,tested_units,H,L,N,X,U,D,consistent,consistent_direction,circular,circular_units,presumed_species_units,multivariable_units,unit_calls,S1_tested_units,S1_H,S1_L,S1_N,S1_X,S1_consistent,S4_tested_units,S4_consistent
+ALP,biochemistry,B. canis,7,4,3,0,1,0,0,3,True,higher,True,3,,0,CB109:D;CB241:D;CB536:H;CB537:D;CH12:H;CH21:N;CH33:H,4,3,0,1,0,True,2,False
+ALT,biochemistry,B. canis,7,4,3,0,1,0,0,3,True,higher,True,3,,0,CB109:D;CB241:D;CB536:H;CH06:D;CH12:H;CH21:N;CH33:H,4,3,0,1,0,True,2,False
+Age,signalment,B. rossi,6,4,0,1,3,0,0,2,False,,False,0,CB125,0,CB040:N;CB052:D;CB125:D;CB342:N;CB418:L;CH03:N,1,0,1,0,0,False,4,False
+Body temperature,clinical sign,B. rossi,4,4,0,3,1,0,0,0,True,lower,False,0,CB518,0,CB040:L;CB342:L;CB518:L;CH09:N,3,0,2,1,0,True,4,True
+Body weight / body condition,signalment,B. rossi,5,4,0,0,4,0,0,1,False,,False,0,CB125,0,CB040:N;CB125:D;CB342:N;CB418:N;CH03:N,1,0,0,1,0,False,4,False
+Creatinine,biochemistry,B. canis,9,4,3,0,1,0,0,5,True,higher,True,4,,0,CB106:D;CB109:D;CB241:D;CB307:H;CB536:H;CB537:D;CH06:D;CH21:N;CH33:H,4,3,0,1,0,True,2,False
+Total protein,biochemistry,B. canis,6,4,0,2,2,0,0,2,False,,False,0,,0,CB241:D;CH05:N;CH06:D;CH12:L;CH21:L;CH33:N,4,0,2,2,0,False,4,False
+Urea,biochemistry,B. canis,8,4,3,0,1,0,0,4,True,higher,True,4,,0,CB109:D;CB241:D;CB307:H;CB536:H;CB537:D;CH06:D;CH21:N;CH33:H,4,3,0,1,0,True,2,False
+Albumin,biochemistry,B. canis,5,3,0,1,2,0,0,2,False,,False,0,,0,CB241:D;CH05:L;CH06:D;CH21:N;CH33:N,3,0,1,2,0,False,3,False
+Band neutrophils,haematology,B. rossi,5,3,3,0,0,0,1,1,True,higher,False,0,,1,CB040:H;CB112:U;CB418:H;CH03:H;CH09:D,1,1,0,0,0,False,3,True
+Bilirubin,biochemistry,B. canis,6,3,2,0,1,0,0,3,True,higher,True,1,,0,CB241:D;CB537:D;CH06:D;CH12:H;CH21:N;CH33:H,3,2,0,1,0,True,2,False
+C-reactive protein,acute phase protein,B. rossi,3,3,0,0,3,0,0,0,False,,False,0,,1,CB376:N;CH03:N;CH09:N,2,0,0,2,0,False,3,False
+Cortisol,endocrine,B. rossi,3,3,3,0,0,0,0,0,True,higher,False,0,,0,CB040:H;CB342:H;CH09:H,2,2,0,0,0,True,3,True
+GGT,biochemistry,B. canis,4,3,2,1,0,0,0,1,False,,True,1,,0,CB241:D;CB307:H;CH12:L;CH33:H,3,2,1,0,0,False,2,False
+Haematocrit/PCV,haematology,B. canis,8,3,0,2,1,0,1,4,True,lower,True,2,,0,CB109:D;CB241:D;CB536:L;CB537:D;CH05:D;CH21:L;CH23:U;CH33:N,3,0,2,1,0,True,2,False
+Haematocrit/PCV,haematology,B. rossi,5,3,0,2,0,1,1,1,False,,True,2,,1,CB040:X;CB052:D;CB112:U;CB342:L;CH03:L,1,0,0,0,1,False,3,False
+Platelet count,haematology,B. canis,6,3,1,1,1,0,0,3,False,,False,0,,0,CB109:D;CB241:D;CB536:N;CB537:D;CH21:L;CH33:H,3,1,1,1,0,False,3,False
+Red blood cell count,haematology,B. canis,7,3,0,1,2,0,0,4,False,,True,2,,0,CB109:D;CB241:D;CB536:L;CB537:D;CH05:D;CH21:N;CH33:N,3,0,1,2,0,False,2,False
+Sex / neuter status,signalment,B. rossi,3,3,0,0,3,0,0,0,False,,False,0,CB125,1,CB125:N;CB418:N;CH03:N,1,0,0,1,0,False,3,False
+Thyroid hormones,endocrine,B. rossi,3,3,0,3,0,0,0,0,True,lower,False,0,,0,CB040:L;CB342:L;CH09:L,2,0,2,0,0,True,3,True
+White blood cell count,haematology,B. canis,6,3,1,1,1,0,0,3,False,,False,0,,0,CB109:D;CB241:D;CB536:H;CB537:D;CH21:L;CH33:N,3,1,1,1,0,False,3,False
+White blood cell count,haematology,B. rossi,3,3,2,0,1,0,0,0,True,higher,False,0,CB518,1,CB040:H;CB518:H;CH03:N,2,2,0,0,0,True,3,True
+ALP,biochemistry,mixed/unspecified,2,2,1,0,1,0,0,0,False,,True,1,,0,CB220:H;CH18:N,2,1,0,1,0,False,1,False
+ALT,biochemistry,mixed/unspecified,3,2,1,0,1,0,0,1,False,,True,2,,0,CB038:D;CB220:H;CH18:N,2,1,0,1,0,False,1,False
+AST,biochemistry,B. canis,5,2,2,0,0,0,0,3,True,higher,True,2,,0,CB109:D;CB241:D;CB536:H;CH06:D;CH12:H,2,2,0,0,0,True,1,False
+Albumin,biochemistry,B. rossi,2,2,0,1,1,0,0,0,False,,False,0,CB518,0,CB040:L;CB518:N,2,0,1,1,0,False,2,False
+Bilirubin,biochemistry,B. rossi,3,2,1,0,1,0,1,0,False,,True,1,CB518,0,CB040:H;CB112:U;CB518:N,2,1,0,1,0,False,2,False
+Bilirubin,biochemistry,mixed/unspecified,3,2,1,0,1,0,0,1,False,,True,2,,0,CB038:D;CB220:H;CH18:N,2,1,0,1,0,False,1,False
+Body temperature,clinical sign,mixed/unspecified,3,2,0,1,1,0,0,1,False,,False,0,,0,CB187:D;CB238:N;CB492:L,2,0,1,1,0,False,2,False
+Breed,signalment,mixed/unspecified,2,2,0,0,2,0,0,0,False,,False,0,,0,CB238:N;CB492:N,2,0,0,2,0,False,2,False
+C-reactive protein,acute phase protein,B. canis,3,2,1,0,1,0,0,1,False,,False,0,,0,CH06:D;CH12:H;CH21:N,2,1,0,1,0,False,2,False
+Cholesterol,biochemistry,B. canis,3,2,0,0,2,0,0,1,False,,False,0,,0,CB241:D;CH21:N;CH35:N,2,0,0,2,0,False,2,False
+Coagulation factor activity,coagulation,B. rossi,2,2,0,2,0,0,0,0,True,lower,False,0,,0,CB112:L;CH03:L,1,0,1,0,0,False,2,True
+Creatine kinase,biochemistry,B. canis,2,2,1,0,1,0,0,0,False,,True,1,,0,CH12:H;CH33:N,2,1,0,1,0,False,1,False
+Creatinine,biochemistry,B. rossi,3,2,1,0,1,0,1,0,False,,True,2,,0,CB040:H;CB053:N;CB112:U,1,1,0,0,0,False,1,False
+Fibrinogen,coagulation,B. rossi,2,2,1,0,1,0,0,0,False,,False,0,,0,CB112:H;CH03:N,1,1,0,0,0,False,2,False
+Glucose,biochemistry,B. canis,4,2,0,0,2,0,0,2,False,,False,0,,0,CB241:D;CB537:D;CH21:N;CH33:N,2,0,0,2,0,False,2,False
+Haematocrit/PCV,haematology,mixed/unspecified,5,2,0,1,1,0,2,1,False,,False,0,,0,CB038:D;CB220:U;CB238:L;CB492:U;CH18:N,2,0,1,1,0,False,2,False
+Haemoglobin,haematology,B. canis,6,2,0,1,1,0,0,4,False,,True,2,,0,CB109:D;CB241:D;CB536:L;CB537:D;CH05:D;CH21:N,2,0,1,1,0,False,1,False
+Haemoglobin,haematology,mixed/unspecified,4,2,0,1,1,0,0,2,False,,False,0,,0,CB038:D;CB220:D;CB238:L;CH18:N,2,0,1,1,0,False,2,False
+Heart rate,clinical sign,B. rossi,2,2,0,0,2,0,0,0,False,,False,0,CB518,0,CB342:N;CB518:N,2,0,0,2,0,False,2,False
+IL-10,cytokine,B. canis,2,2,0,0,2,0,0,0,False,,False,0,,0,CB109:N;CH23:N,2,0,0,2,0,False,2,False
+IL-10,cytokine,B. rossi,2,2,1,0,1,0,0,0,False,,False,0,,0,CH03:N;CH09:H,2,1,0,1,0,False,2,False
+Malondialdehyde / TBARS,oxidative stress,B. canis,2,2,1,0,1,0,0,0,False,,False,0,,0,CB006:H;CH33:N,2,1,0,1,0,False,2,False
+Mentation / neurological signs,clinical sign,B. rossi,2,2,2,0,0,0,0,0,True,higher,False,0,,0,CB040:H;CB342:H,1,1,0,0,0,False,2,True
+Neutrophil count,haematology,B. rossi,3,2,1,1,0,0,0,1,False,,False,0,,1,CB418:D;CH03:H;CH09:L,2,1,1,0,0,False,2,False
+Other cytokines and chemokines,cytokine,B. canis,2,2,1,0,1,0,0,0,False,,False,0,,0,CB109:N;CH23:H,2,1,0,1,0,False,2,False
+Red blood cell count,haematology,mixed/unspecified,4,2,0,1,1,0,0,2,False,,False,0,,0,CB038:D;CB220:D;CB238:L;CH18:N,2,0,1,1,0,False,2,False
+TSH,endocrine,B. rossi,2,2,0,1,1,0,0,0,False,,False,0,,0,CB342:N;CH09:L,2,0,1,1,0,False,2,False
+Urea,biochemistry,B. rossi,3,2,2,0,0,0,1,0,True,higher,True,2,,0,CB040:H;CB053:H;CB112:U,1,1,0,0,0,False,1,False

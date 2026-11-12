@@ -1,0 +1,20 @@
+{
+  "id": "CB101",
+  "text_used": "data/markdown/CB101.md",
+  "extracted_by": "claude-opus-5-5 SV-G2 B04",
+  "extracted_utc": "2026-11-12T05:25:03Z",
+  "schema_version": "v2",
+  "setting": "experimental",
+  "sample_timing": "mixed",
+  "article_notes": "Data in Brief article for an experimental B. rossi infection of 5 beagles (3 high-dose, 2 low-dose; one high-dose dog died unexpectedly on day 4). Groups are defined by inoculum dose, not by severity, and the dose-group and time-point comparisons (linear mixed models) are only in the supplementary table and the Mendeley raw data, not in the text. The related research article (Atkinson et al., Vet Parasitol) reports the results. Nothing extractable against severity from this text.",
+  "skipped_infected_vs_healthy": 0,
+  "severity_definitions": [],
+  "associations": [],
+  "not_extracted": [
+    {
+      "what": "High-dose vs low-dose group comparisons of CBC, CRP, cytokines, lactate, glucose, parasitaemia over time",
+      "reason": "supplement not in text",
+      "note": "Groups defined by inoculum dose, not by clinical severity; results only in supplementary data and raw data repository."
+    }
+  ]
+}

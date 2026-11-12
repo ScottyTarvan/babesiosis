@@ -1,0 +1,3182 @@
+{
+ "code": "SV-G1-01-data-layer-coverage",
+ "datasets": [
+  {
+   "dataset": "S-CB050",
+   "independent_source": "SRC-A",
+   "species": "B. rossi",
+   "dogs": 161,
+   "infected": 141,
+   "control": 20,
+   "comparator": 0,
+   "records": 161,
+   "timepoints": [
+    "admission",
+    "single"
+   ],
+   "variables": 15,
+   "harmonised_variables": 14,
+   "missing_pct": 14.7,
+   "censored_cells": 82,
+   "outcomes": [
+    {
+     "name": "died",
+     "dogs_with_value": 141
+    }
+   ],
+   "checks_passed": 21,
+   "checks_total": 22,
+   "flags": 0,
+   "cleaning_notes": 14,
+   "inputs": [
+    {
+     "file": "/core/data/raw/S-CB050/PMC7040022_supplementaryFiles.zip!Table_1.DOCX",
+     "sha256": "ec02b1d7a08f23d477886e1bd2083828a8457cd57df8983964236c9f17a8fb03"
+    }
+   ]
+  },
+  {
+   "dataset": "S-CB517",
+   "independent_source": "SRC-A",
+   "species": "B. rossi",
+   "dogs": 112,
+   "infected": 97,
+   "control": 15,
+   "comparator": 0,
+   "records": 112,
+   "timepoints": [
+    "admission",
+    "single"
+   ],
+   "variables": 14,
+   "harmonised_variables": 14,
+   "missing_pct": 0.0,
+   "censored_cells": 86,
+   "outcomes": [
+    {
+     "name": "died",
+     "dogs_with_value": 97
+    }
+   ],
+   "checks_passed": 20,
+   "checks_total": 21,
+   "flags": 18,
+   "cleaning_notes": 30,
+   "inputs": [
+    {
+     "file": "/core/data/raw/S-CB517/PMC4783066_supplementaryFiles.zip!pone.0150113.s001.pdf",
+     "sha256": "027c284b57e46dbe385756de732bb2f04a905b81806087eeca4a929b77965078"
+    },
+    {
+     "file": "/core/data/raw/S-CB517/PMC4783066_supplementaryFiles.zip!pone.0150113.s002.pdf",
+     "sha256": "7267ee00de205f9c1dce3bebf5edd8c3fa30ae63d3581f4ede18a8ec77a1d39d"
+    }
+   ]
+  },
+  {
+   "dataset": "DS07",
+   "independent_source": "SRC-C",
+   "species": "B. rossi",
+   "dogs": 52,
+   "infected": 32,
+   "control": 20,
+   "comparator": 0,
+   "records": 52,
+   "timepoints": [
+    "admission",
+    "single"
+   ],
+   "variables": 226,
+   "harmonised_variables": 0,
+   "missing_pct": 30.8,
+   "censored_cells": 0,
+   "outcomes": [
+    {
+     "name": "complicated",
+     "dogs_with_value": 32
+    }
+   ],
+   "checks_passed": 11,
+   "checks_total": 12,
+   "flags": 0,
+   "cleaning_notes": 14,
+   "inputs": [
+    {
+     "file": "/core/data/raw/DS07/B_Proteins.txt",
+     "sha256": "2fc5d617dea4386d764336e4bed17405e56b5fbb542a0a0f79808c1afbbec120"
+    },
+    {
+     "file": "/core/data/raw/DS07/sample_list.xlsx",
+     "sha256": "3119957fa2b37cbc61d7a1590ed8cc8ea407c695efae354d2b9410a78ff94358"
+    }
+   ]
+  },
+  {
+   "dataset": "S-CB017",
+   "independent_source": "SRC-D",
+   "species": "B. canis",
+   "dogs": 47,
+   "infected": 31,
+   "control": 16,
+   "comparator": 0,
+   "records": 77,
+   "timepoints": [
+    "day_1",
+    "day_7",
+    "single"
+   ],
+   "variables": 26,
+   "harmonised_variables": 16,
+   "missing_pct": 3.0,
+   "censored_cells": 68,
+   "outcomes": [
+    {
+     "name": "complicated",
+     "dogs_with_value": 31
+    },
+    {
+     "name": "died",
+     "dogs_with_value": 31
+    }
+   ],
+   "checks_passed": 14,
+   "checks_total": 14,
+   "flags": 10,
+   "cleaning_notes": 25,
+   "inputs": [
+    {
+     "file": "/core/data/raw/S-CB017/PMC5756041_supplementaryFiles.zip!pone.0190474.s001.xlsx",
+     "sha256": "b47969425ccdb9596cdf95f60dfe0d879558c82984f5a60d0ce77906ce9bd118"
+    }
+   ]
+  },
+  {
+   "dataset": "S-CB516",
+   "independent_source": "SRC-O",
+   "species": "B. canis",
+   "dogs": 15,
+   "infected": 15,
+   "control": 0,
+   "comparator": 0,
+   "records": 15,
+   "timepoints": [
+    "admission"
+   ],
+   "variables": 17,
+   "harmonised_variables": 6,
+   "missing_pct": 0.8,
+   "censored_cells": 0,
+   "outcomes": [
+    {
+     "name": "died",
+     "dogs_with_value": 15
+    }
+   ],
+   "checks_passed": 18,
+   "checks_total": 18,
+   "flags": 1,
+   "cleaning_notes": 15,
+   "inputs": [
+    {
+     "file": "/core/data/raw/S-CB516/PMC4913656_supplementaryFiles.zip!JVIM-30-174-s001.pdf",
+     "sha256": "d72fb8b5fbc929e9fa43ea35fe3a0f7de9b19e1ee817067bab8a1f77f488551f"
+    },
+    {
+     "file": "/core/data/raw/S-CB516/PMC4913656_supplementaryFiles.zip!JVIM-30-174-s002.pdf",
+     "sha256": "25eff1d7ffcc48061d175a52a8c34e877d604389a16bb44ea001c8bf7ddeeb55"
+    }
+   ]
+  },
+  {
+   "dataset": "DS05",
+   "independent_source": "SRC-F",
+   "species": "B. rossi",
+   "dogs": 150,
+   "infected": 150,
+   "control": 0,
+   "comparator": 0,
+   "records": 150,
+   "timepoints": [
+    "admission"
+   ],
+   "variables": 42,
+   "harmonised_variables": 24,
+   "missing_pct": 1.4,
+   "censored_cells": 0,
+   "outcomes": [
+    {
+     "name": "illness_class",
+     "dogs_with_value": 150
+    },
+    {
+     "name": "habitus_raw",
+     "dogs_with_value": 150
+    },
+    {
+     "name": "habitus_score",
+     "dogs_with_value": 150
+    },
+    {
+     "name": "habitus_class",
+     "dogs_with_value": 150
+    },
+    {
+     "name": "anaemia_class",
+     "dogs_with_value": 148
+    },
+    {
+     "name": "wcc_class",
+     "dogs_with_value": 148
+    },
+    {
+     "name": "band_class",
+     "dogs_with_value": 148
+    },
+    {
+     "name": "left_shift_class",
+     "dogs_with_value": 150
+    },
+    {
+     "name": "monocyte_class",
+     "dogs_with_value": 148
+    },
+    {
+     "name": "arc_class",
+     "dogs_with_value": 148
+    },
+    {
+     "name": "arc_class_2",
+     "dogs_with_value": 148
+    },
+    {
+     "name": "globulin_class",
+     "dogs_with_value": 144
+    }
+   ],
+   "checks_passed": 12,
+   "checks_total": 12,
+   "flags": 2,
+   "cleaning_notes": 14,
+   "inputs": [
+    {
+     "file": "/core/data/raw/DS05/BET Study Dataset.xlsx",
+     "sha256": "d2aec8e8b369ed0dda3666841c774ce172ec249faa3ea59668ad41521c4f12cf"
+    }
+   ]
+  },
+  {
+   "dataset": "DS03",
+   "independent_source": "SRC-E",
+   "species": "B. rossi",
+   "dogs": 138,
+   "infected": 108,
+   "control": 14,
+   "comparator": 16,
+   "records": 161,
+   "timepoints": [
+    "admission",
+    "day_1",
+    "day_2",
+    "day_3",
+    "day_4",
+    "day_5",
+    "day_6",
+    "single"
+   ],
+   "variables": 17,
+   "harmonised_variables": 8,
+   "missing_pct": 7.3,
+   "censored_cells": 0,
+   "outcomes": [],
+   "checks_passed": 7,
+   "checks_total": 7,
+   "flags": 0,
+   "cleaning_notes": 10,
+   "inputs": [
+    {
+     "file": "/core/data/raw/DS03/Babesia Retics_Natural inf and cont_dissertation.xlsx",
+     "sha256": "0a3e3e74835ca51e2579f040e97a6da75d03a0249ec092e0dbefdbead566dfd5"
+    },
+    {
+     "file": "/core/data/raw/DS03/Babesia Retics_IMHA_dissertation.xlsx",
+     "sha256": "410929f2b5f9c625c5e924cd3587ac379cb9c7bcdf156710c90b48e75e048f37"
+    },
+    {
+     "file": "/core/data/raw/DS03/Babesia Retics_ Exp infected dissertation.xlsx",
+     "sha256": "5f0d44439ef3e4749391140cec0a9c49d2422b536e3b445b27ed12bf7bc8518b"
+    }
+   ]
+  },
+  {
+   "dataset": "DS02",
+   "independent_source": "SRC-B",
+   "species": "B. rossi",
+   "dogs": 5,
+   "infected": 5,
+   "control": 0,
+   "comparator": 0,
+   "records": 51,
+   "timepoints": [
+    "day_-1",
+    "day_0",
+    "day_1",
+    "day_2",
+    "day_3",
+    "day_4",
+    "day_4_1",
+    "day_5",
+    "day_6",
+    "day_7",
+    "day_8"
+   ],
+   "variables": 50,
+   "harmonised_variables": 27,
+   "missing_pct": 15.2,
+   "censored_cells": 53,
+   "outcomes": [
+    {
+     "name": "died",
+     "dogs_with_value": 5
+    },
+    {
+     "name": "habitus_score",
+     "dogs_with_value": 5
+    }
+   ],
+   "checks_passed": 5,
+   "checks_total": 5,
+   "flags": 1,
+   "cleaning_notes": 16,
+   "inputs": [
+    {
+     "file": "/core/data/raw/DS02/B.Atkinson_Experimental Babesia study raw data.xlsx",
+     "sha256": "a4a19a8d97e6ab94702dc454b077c4038006ed444d62e11efe0775931b721bfd"
+    }
+   ]
+  },
+  {
+   "dataset": "DS04",
+   "independent_source": "SRC-G",
+   "species": "B. rossi",
+   "dogs": 14,
+   "infected": 10,
+   "control": 4,
+   "comparator": 0,
+   "records": 24,
+   "timepoints": [
+    "admission",
+    "necropsy",
+    "single"
+   ],
+   "variables": 131,
+   "harmonised_variables": 17,
+   "missing_pct": 45.1,
+   "censored_cells": 3,
+   "outcomes": [
+    {
+     "name": "died",
+     "dogs_with_value": 14
+    },
+    {
+     "name": "death_timing",
+     "dogs_with_value": 10
+    }
+   ],
+   "checks_passed": 25,
+   "checks_total": 30,
+   "flags": 7,
+   "cleaning_notes": 30,
+   "inputs": [
+    {
+     "file": "/core/data/raw/DS04/Stats Tables.xlsx",
+     "sha256": "352c1bec22e206a0ea4d6f6e3e7b1dff70c6fe062bdeb923c145f707a2624284"
+    },
+    {
+     "file": "/core/data/raw/DS04/stats for haematology.xlsx",
+     "sha256": "248bb18e79e30566163b2b372740f67952cecd3e0cb2020913209862b7ae3fcd"
+    },
+    {
+     "file": "/core/data/raw/DS04/106.1 21.03.2022 - 71-126.xlsx",
+     "sha256": "a0cc96f6386705ed7abc3b9c9c8b41df74943b263404b091a78217f01ea37ba1"
+    },
+    {
+     "file": "/core/data/raw/DS04/106.2 12.04.2022 - 69-126.xlsx",
+     "sha256": "24678c1bd97645f3b458d43b3b59e9203250547686385748d280e8ac76ffaed6"
+    },
+    {
+     "file": "/core/data/raw/DS04/110.1 09.03.2022 - 75-126.xlsx",
+     "sha256": "50fe319d7327a001e7fc09b6c1e54f5a08cab857dd43ae746cfc9fe17977d256"
+    },
+    {
+     "file": "/core/data/raw/DS04/110.2 29.03.2022 - 66-126.xlsx",
+     "sha256": "2c36999f6d743a2760138fcbeda84211f0d358cd671613cd3ac21f5a2df6a615"
+    },
+    {
+     "file": "/core/data/raw/DS04/117.1 07.03.2022 - 88-126.xlsx",
+     "sha256": "0fe99adbffa61d0777ff335c96a17b3a2a60aa175e08517395f5caf51d5153e0"
+    },
+    {
+     "file": "/core/data/raw/DS04/117.2 28.03.2022 - 77-126.xlsx",
+     "sha256": "9f2a488a48c31e863e883fc400b43caae27d368d6b66778bb7ee35d570e1f81c"
+    },
+    {
+     "file": "/core/data/raw/DS04/11A.1 23.01.2022 - 28-126.xlsx",
+     "sha256": "19946592ebb883e8e77704b642cb5c2e59995bf83c4be194bb914625e21a66dc"
+    },
+    {
+     "file": "/core/data/raw/DS04/11A.2 01.02.2022 - 25-126.xlsx",
+     "sha256": "2556227f36f492955e93c0148a0c446ef7e62202cd773c65ec7ea694e9304c7a"
+    },
+    {
+     "file": "/core/data/raw/DS04/2.1 05.03.2022 - 15-126.xlsx",
+     "sha256": "aef716d291c9e12da07e70d03a6a0a81b22c9f5581fb491ae036ed03e7a6263c"
+    },
+    {
+     "file": "/core/data/raw/DS04/20.1 06.03.2022 - 64-126.xlsx",
+     "sha256": "76e17a497fb96dbfe405fc9f3ef865eaf8111ffab2fa5d1a657d3db09fd0381a"
+    },
+    {
+     "file": "/core/data/raw/DS04/20.2 24.03.2022 - 67-126.xlsx",
+     "sha256": "964f7534c642cea0a0a467c3cdf5991d9ca2c5f2d2adc3ad1f3f82b862aa16a0"
+    },
+    {
+     "file": "/core/data/raw/DS04/2A.1 23.01.2022 - 20-126.xlsx",
+     "sha256": "2ac8cd39d5639a8dac50e3dd62d43c268bcb936a0eacea65cba0bc1a6270805f"
+    },
+    {
+     "file": "/core/data/raw/DS04/2A.2 25.01.2022 - 19-126.xlsx",
+     "sha256": "e331393d4785bb41bcde61f017ffcbacfd9cc83d1a9d9ad83275522e303bb057"
+    },
+    {
+     "file": "/core/data/raw/DS04/4.1 05.03.2022 - 14-126.xlsx",
+     "sha256": "17e736a5f94d720c87ca8925c232d84c8ff77a7ec46862edf488c38ae9d1f9fe"
+    },
+    {
+     "file": "/core/data/raw/DS04/4A.1 23.01 - 15-126.xlsx",
+     "sha256": "752531b753c5f2f7a49cef3b021237bb1eb5083ae22f18e82bacdd31ff967066"
+    },
+    {
+     "file": "/core/data/raw/DS04/4A.2 25.01.2022 - 18-126.xlsx",
+     "sha256": "e6451d590ead00e653db043e3bcd15c7610a281bcd9531e28100d59a47494923"
+    },
+    {
+     "file": "/core/data/raw/DS04/4A.3 03.02.2022- 15-126.xlsx",
+     "sha256": "1391ab3039b08e44d6b550a5e89b32b759fd63b9dd696a31f9aadd480b5273a9"
+    },
+    {
+     "file": "/core/data/raw/DS04/50.1 06.03.2022 - 79-126.xlsx",
+     "sha256": "7aa1984adbdc57229a6127044820284cc979812e408a18a21d38c99ad347656e"
+    },
+    {
+     "file": "/core/data/raw/DS04/50.2 23.03.2022 - 77-126 (1).xlsx",
+     "sha256": "c1609e6e42eec42c674ebb1afb42c4d6f74915f08eefb4d1c8e3e63588700db6"
+    },
+    {
+     "file": "/core/data/raw/DS04/50.2 23.03.2022 - 77-126.xlsx",
+     "sha256": "a4d564ee33fdd01965d3985fec5d305c189c5ae9e8dfbbb80cc14622247d086c"
+    },
+    {
+     "file": "/core/data/raw/DS04/54.01 13.03.2022 - 75-126.xlsx",
+     "sha256": "55960277d16dbe4812da5f0f8eeac6ed9fce19552a058a70ca30974ed204a846"
+    },
+    {
+     "file": "/core/data/raw/DS04/54.2 30.03.2022 - 71-126.xlsx",
+     "sha256": "bfd5b065733a8b270afb7e12f342c45b737c3d61f4b11758bad17853fbff323c"
+    },
+    {
+     "file": "/core/data/raw/DS04/59.1 13.03.2022 - 71-126.xlsx",
+     "sha256": "d39f06c62b4d7ce5e9fb1d86c3c463b1964612c52ef95c4e50f8579e13e231f5"
+    },
+    {
+     "file": "/core/data/raw/DS04/59.2 02.04.2022 - 69-126.xlsx",
+     "sha256": "f1bfbc1898bb425e5f576130b419cc58e530fa13b5862a405b8893bca3b4ab6e"
+    },
+    {
+     "file": "/core/data/raw/DS04/61.1 14.03.2022 - 65-126.xlsx",
+     "sha256": "b3b94f85a21c3fa50e74d983fc7341bb3fe5135840b30e5a1f0f003c49911a9e"
+    },
+    {
+     "file": "/core/data/raw/DS04/61.2 02.04.2022 - 65-126.xlsx",
+     "sha256": "2141258090459cfe4cd4b8d05a1646228648378eaae4ee21b4a2820df1d55212"
+    },
+    {
+     "file": "/core/data/raw/DS04/88.1 21.03.2022 68-126.xlsx",
+     "sha256": "78f11f555a2e6eadec2d03bbf286b873e02fdf704cc6fe3f6504704ea4d61e04"
+    },
+    {
+     "file": "/core/data/raw/DS04/88.2 04.04.2022 - 59-126.xlsx",
+     "sha256": "46cffcc59ff8e0590c9ee44afef1e45f451ff4f3f4b11113f73af4d507542b7d"
+    },
+    {
+     "file": "/core/data/raw/DS04/91.1 13.03.2022 - 55-126.xlsx",
+     "sha256": "0e3c1ba3e100313c2d4974aa58b86e67461ba7a52e2c4f9cbc8d867af8b7fa8b"
+    },
+    {
+     "file": "/core/data/raw/DS04/91.2 02.04.2022 - 58-126.xlsx",
+     "sha256": "80ff3f7e1cffc624c90bbcd8bbdb11ed27b68a3b355943ab0de54fd8f366a363"
+    },
+    {
+     "file": "/core/data/raw/DS04/9A.1 23.01.2022 - 20-126.xlsx",
+     "sha256": "2cde0ce520cacbbfb6a73661cd4bc80845d147e21936c5b957e8371f535abb13"
+    },
+    {
+     "file": "/core/data/raw/DS04/9A.2 01.02.2022 - 20-126.xlsx",
+     "sha256": "1f1ced17bd448e4dce20384dd4060ebb67b21da2a5764b056fd4c44bcf410a13"
+    },
+    {
+     "file": "/core/data/raw/DS04/9A.3 02.02.2022 - 22-126.xlsx",
+     "sha256": "8059ddd9c6cdd7a2b86e10da192299b8148432e55b1a115c763a471733a4037a"
+    }
+   ]
+  }
+ ],
+ "coverage": [
+  {
+   "name": "age_months",
+   "dataset": "S-CB050",
+   "share": 0.9938
+  },
+  {
+   "name": "weight_kg",
+   "dataset": "S-CB050",
+   "share": 0.9379
+  },
+  {
+   "name": "sex",
+   "dataset": "S-CB050",
+   "share": 1.0
+  },
+  {
+   "name": "wbc",
+   "dataset": "S-CB050",
+   "share": 1.0
+  },
+  {
+   "name": "neut_seg",
+   "dataset": "S-CB050",
+   "share": 1.0
+  },
+  {
+   "name": "neut_band",
+   "dataset": "S-CB050",
+   "share": 1.0
+  },
+  {
+   "name": "il2",
+   "dataset": "S-CB050",
+   "share": 0.6957
+  },
+  {
+   "name": "il6",
+   "dataset": "S-CB050",
+   "share": 0.6957
+  },
+  {
+   "name": "il8",
+   "dataset": "S-CB050",
+   "share": 0.6957
+  },
+  {
+   "name": "il10",
+   "dataset": "S-CB050",
+   "share": 0.6957
+  },
+  {
+   "name": "il18",
+   "dataset": "S-CB050",
+   "share": 0.6957
+  },
+  {
+   "name": "gmcsf",
+   "dataset": "S-CB050",
+   "share": 0.6957
+  },
+  {
+   "name": "mcp1",
+   "dataset": "S-CB050",
+   "share": 0.6957
+  },
+  {
+   "name": "mpxi",
+   "dataset": "S-CB050",
+   "share": 0.9938
+  },
+  {
+   "name": "wbc",
+   "dataset": "S-CB517",
+   "share": 1.0
+  },
+  {
+   "name": "neut_seg",
+   "dataset": "S-CB517",
+   "share": 1.0
+  },
+  {
+   "name": "lymph",
+   "dataset": "S-CB517",
+   "share": 1.0
+  },
+  {
+   "name": "mono",
+   "dataset": "S-CB517",
+   "share": 1.0
+  },
+  {
+   "name": "eos",
+   "dataset": "S-CB517",
+   "share": 1.0
+  },
+  {
+   "name": "crp",
+   "dataset": "S-CB517",
+   "share": 1.0
+  },
+  {
+   "name": "saa",
+   "dataset": "S-CB517",
+   "share": 1.0
+  },
+  {
+   "name": "il2",
+   "dataset": "S-CB517",
+   "share": 1.0
+  },
+  {
+   "name": "il6",
+   "dataset": "S-CB517",
+   "share": 1.0
+  },
+  {
+   "name": "il8",
+   "dataset": "S-CB517",
+   "share": 1.0
+  },
+  {
+   "name": "il10",
+   "dataset": "S-CB517",
+   "share": 1.0
+  },
+  {
+   "name": "il18",
+   "dataset": "S-CB517",
+   "share": 1.0
+  },
+  {
+   "name": "gmcsf",
+   "dataset": "S-CB517",
+   "share": 1.0
+  },
+  {
+   "name": "mcp1",
+   "dataset": "S-CB517",
+   "share": 1.0
+  },
+  {
+   "name": "hct",
+   "dataset": "S-CB017",
+   "share": 1.0
+  },
+  {
+   "name": "rbc",
+   "dataset": "S-CB017",
+   "share": 1.0
+  },
+  {
+   "name": "wbc",
+   "dataset": "S-CB017",
+   "share": 1.0
+  },
+  {
+   "name": "neut_seg",
+   "dataset": "S-CB017",
+   "share": 1.0
+  },
+  {
+   "name": "neut_band",
+   "dataset": "S-CB017",
+   "share": 1.0
+  },
+  {
+   "name": "lymph",
+   "dataset": "S-CB017",
+   "share": 1.0
+  },
+  {
+   "name": "mono",
+   "dataset": "S-CB017",
+   "share": 1.0
+  },
+  {
+   "name": "eos",
+   "dataset": "S-CB017",
+   "share": 1.0
+  },
+  {
+   "name": "plt",
+   "dataset": "S-CB017",
+   "share": 1.0
+  },
+  {
+   "name": "il2",
+   "dataset": "S-CB017",
+   "share": 1.0
+  },
+  {
+   "name": "il8",
+   "dataset": "S-CB017",
+   "share": 1.0
+  },
+  {
+   "name": "il10",
+   "dataset": "S-CB017",
+   "share": 1.0
+  },
+  {
+   "name": "il18",
+   "dataset": "S-CB017",
+   "share": 1.0
+  },
+  {
+   "name": "gmcsf",
+   "dataset": "S-CB017",
+   "share": 1.0
+  },
+  {
+   "name": "mcp1",
+   "dataset": "S-CB017",
+   "share": 1.0
+  },
+  {
+   "name": "kc",
+   "dataset": "S-CB017",
+   "share": 1.0
+  },
+  {
+   "name": "age_months",
+   "dataset": "S-CB516",
+   "share": 1.0
+  },
+  {
+   "name": "weight_kg",
+   "dataset": "S-CB516",
+   "share": 1.0
+  },
+  {
+   "name": "sex",
+   "dataset": "S-CB516",
+   "share": 1.0
+  },
+  {
+   "name": "neuter",
+   "dataset": "S-CB516",
+   "share": 0.8667
+  },
+  {
+   "name": "breed",
+   "dataset": "S-CB516",
+   "share": 1.0
+  },
+  {
+   "name": "temp_c",
+   "dataset": "S-CB516",
+   "share": 1.0
+  },
+  {
+   "name": "age_months",
+   "dataset": "DS05",
+   "share": 1.0
+  },
+  {
+   "name": "weight_kg",
+   "dataset": "DS05",
+   "share": 1.0
+  },
+  {
+   "name": "sex",
+   "dataset": "DS05",
+   "share": 1.0
+  },
+  {
+   "name": "neuter",
+   "dataset": "DS05",
+   "share": 1.0
+  },
+  {
+   "name": "breed",
+   "dataset": "DS05",
+   "share": 1.0
+  },
+  {
+   "name": "illness_days",
+   "dataset": "DS05",
+   "share": 0.9867
+  },
+  {
+   "name": "temp_c",
+   "dataset": "DS05",
+   "share": 0.9667
+  },
+  {
+   "name": "hct",
+   "dataset": "DS05",
+   "share": 0.9867
+  },
+  {
+   "name": "hb",
+   "dataset": "DS05",
+   "share": 0.9867
+  },
+  {
+   "name": "rbc",
+   "dataset": "DS05",
+   "share": 0.9867
+  },
+  {
+   "name": "mcv",
+   "dataset": "DS05",
+   "share": 0.9867
+  },
+  {
+   "name": "mchc",
+   "dataset": "DS05",
+   "share": 0.9867
+  },
+  {
+   "name": "retic_pct",
+   "dataset": "DS05",
+   "share": 0.9867
+  },
+  {
+   "name": "arc",
+   "dataset": "DS05",
+   "share": 0.9867
+  },
+  {
+   "name": "wbc",
+   "dataset": "DS05",
+   "share": 0.9867
+  },
+  {
+   "name": "neut_seg",
+   "dataset": "DS05",
+   "share": 0.9867
+  },
+  {
+   "name": "neut_band",
+   "dataset": "DS05",
+   "share": 0.9867
+  },
+  {
+   "name": "lymph",
+   "dataset": "DS05",
+   "share": 0.9867
+  },
+  {
+   "name": "mono",
+   "dataset": "DS05",
+   "share": 0.9867
+  },
+  {
+   "name": "eos",
+   "dataset": "DS05",
+   "share": 0.9867
+  },
+  {
+   "name": "plt",
+   "dataset": "DS05",
+   "share": 0.9867
+  },
+  {
+   "name": "tsp",
+   "dataset": "DS05",
+   "share": 0.96
+  },
+  {
+   "name": "albumin",
+   "dataset": "DS05",
+   "share": 0.96
+  },
+  {
+   "name": "globulin",
+   "dataset": "DS05",
+   "share": 0.96
+  },
+  {
+   "name": "age_months",
+   "dataset": "DS03",
+   "share": 0.9493
+  },
+  {
+   "name": "weight_kg",
+   "dataset": "DS03",
+   "share": 0.8551
+  },
+  {
+   "name": "sex",
+   "dataset": "DS03",
+   "share": 0.9565
+  },
+  {
+   "name": "hct",
+   "dataset": "DS03",
+   "share": 1.0
+  },
+  {
+   "name": "hb",
+   "dataset": "DS03",
+   "share": 1.0
+  },
+  {
+   "name": "mchc",
+   "dataset": "DS03",
+   "share": 1.0
+  },
+  {
+   "name": "retic_pct",
+   "dataset": "DS03",
+   "share": 1.0
+  },
+  {
+   "name": "arc",
+   "dataset": "DS03",
+   "share": 1.0
+  },
+  {
+   "name": "temp_c",
+   "dataset": "DS02",
+   "share": 1.0
+  },
+  {
+   "name": "hct",
+   "dataset": "DS02",
+   "share": 1.0
+  },
+  {
+   "name": "hb",
+   "dataset": "DS02",
+   "share": 1.0
+  },
+  {
+   "name": "rbc",
+   "dataset": "DS02",
+   "share": 1.0
+  },
+  {
+   "name": "mcv",
+   "dataset": "DS02",
+   "share": 1.0
+  },
+  {
+   "name": "mchc",
+   "dataset": "DS02",
+   "share": 1.0
+  },
+  {
+   "name": "retic_pct",
+   "dataset": "DS02",
+   "share": 1.0
+  },
+  {
+   "name": "arc",
+   "dataset": "DS02",
+   "share": 1.0
+  },
+  {
+   "name": "wbc",
+   "dataset": "DS02",
+   "share": 1.0
+  },
+  {
+   "name": "neut_seg",
+   "dataset": "DS02",
+   "share": 1.0
+  },
+  {
+   "name": "neut_band",
+   "dataset": "DS02",
+   "share": 1.0
+  },
+  {
+   "name": "lymph",
+   "dataset": "DS02",
+   "share": 1.0
+  },
+  {
+   "name": "mono",
+   "dataset": "DS02",
+   "share": 1.0
+  },
+  {
+   "name": "eos",
+   "dataset": "DS02",
+   "share": 1.0
+  },
+  {
+   "name": "plt",
+   "dataset": "DS02",
+   "share": 1.0
+  },
+  {
+   "name": "albumin",
+   "dataset": "DS02",
+   "share": 1.0
+  },
+  {
+   "name": "parasitaemia_pct",
+   "dataset": "DS02",
+   "share": 1.0
+  },
+  {
+   "name": "crp",
+   "dataset": "DS02",
+   "share": 1.0
+  },
+  {
+   "name": "lactate",
+   "dataset": "DS02",
+   "share": 1.0
+  },
+  {
+   "name": "il2",
+   "dataset": "DS02",
+   "share": 1.0
+  },
+  {
+   "name": "il6",
+   "dataset": "DS02",
+   "share": 1.0
+  },
+  {
+   "name": "il8",
+   "dataset": "DS02",
+   "share": 1.0
+  },
+  {
+   "name": "il10",
+   "dataset": "DS02",
+   "share": 1.0
+  },
+  {
+   "name": "il18",
+   "dataset": "DS02",
+   "share": 1.0
+  },
+  {
+   "name": "gmcsf",
+   "dataset": "DS02",
+   "share": 1.0
+  },
+  {
+   "name": "mcp1",
+   "dataset": "DS02",
+   "share": 1.0
+  },
+  {
+   "name": "kc",
+   "dataset": "DS02",
+   "share": 1.0
+  },
+  {
+   "name": "age_months",
+   "dataset": "DS04",
+   "share": 1.0
+  },
+  {
+   "name": "weight_kg",
+   "dataset": "DS04",
+   "share": 0.8571
+  },
+  {
+   "name": "sex",
+   "dataset": "DS04",
+   "share": 1.0
+  },
+  {
+   "name": "neuter",
+   "dataset": "DS04",
+   "share": 0.7143
+  },
+  {
+   "name": "breed",
+   "dataset": "DS04",
+   "share": 1.0
+  },
+  {
+   "name": "hct",
+   "dataset": "DS04",
+   "share": 1.0
+  },
+  {
+   "name": "rbc",
+   "dataset": "DS04",
+   "share": 1.0
+  },
+  {
+   "name": "retic_pct",
+   "dataset": "DS04",
+   "share": 1.0
+  },
+  {
+   "name": "wbc",
+   "dataset": "DS04",
+   "share": 1.0
+  },
+  {
+   "name": "neut_seg",
+   "dataset": "DS04",
+   "share": 1.0
+  },
+  {
+   "name": "neut_band",
+   "dataset": "DS04",
+   "share": 1.0
+  },
+  {
+   "name": "lymph",
+   "dataset": "DS04",
+   "share": 1.0
+  },
+  {
+   "name": "mono",
+   "dataset": "DS04",
+   "share": 1.0
+  },
+  {
+   "name": "plt",
+   "dataset": "DS04",
+   "share": 1.0
+  },
+  {
+   "name": "tsp",
+   "dataset": "DS04",
+   "share": 1.0
+  },
+  {
+   "name": "albumin",
+   "dataset": "DS04",
+   "share": 1.0
+  },
+  {
+   "name": "globulin",
+   "dataset": "DS04",
+   "share": 0.9286
+  }
+ ],
+ "harmonised_names": [
+  "age_months",
+  "weight_kg",
+  "sex",
+  "neuter",
+  "breed",
+  "illness_days",
+  "temp_c",
+  "hct",
+  "hb",
+  "rbc",
+  "mcv",
+  "mchc",
+  "retic_pct",
+  "arc",
+  "wbc",
+  "neut_seg",
+  "neut_band",
+  "lymph",
+  "mono",
+  "eos",
+  "plt",
+  "tsp",
+  "albumin",
+  "globulin",
+  "parasitaemia_pct",
+  "crp",
+  "saa",
+  "lactate",
+  "il2",
+  "il6",
+  "il8",
+  "il10",
+  "il18",
+  "gmcsf",
+  "mcp1",
+  "kc",
+  "mpxi"
+ ],
+ "harmonised_used": [
+  "age_months",
+  "weight_kg",
+  "sex",
+  "neuter",
+  "breed",
+  "illness_days",
+  "temp_c",
+  "hct",
+  "hb",
+  "rbc",
+  "mcv",
+  "mchc",
+  "retic_pct",
+  "arc",
+  "wbc",
+  "neut_seg",
+  "neut_band",
+  "lymph",
+  "mono",
+  "eos",
+  "plt",
+  "tsp",
+  "albumin",
+  "globulin",
+  "parasitaemia_pct",
+  "crp",
+  "saa",
+  "lactate",
+  "il2",
+  "il6",
+  "il8",
+  "il10",
+  "il18",
+  "gmcsf",
+  "mcp1",
+  "kc",
+  "mpxi"
+ ],
+ "checks": [
+  {
+   "dataset": "S-CB050",
+   "check": "data rows",
+   "observed": 161,
+   "expected": 161,
+   "source": "data.md",
+   "pass": true
+  },
+  {
+   "dataset": "S-CB050",
+   "check": "infected dogs",
+   "observed": 141,
+   "expected": 141,
+   "source": "data.md (article reports 140)",
+   "pass": true
+  },
+  {
+   "dataset": "S-CB050",
+   "check": "deaths among infected",
+   "observed": 15,
+   "expected": 15,
+   "source": "data.md; CB050: 15 died",
+   "pass": true
+  },
+  {
+   "dataset": "S-CB050",
+   "check": "controls",
+   "observed": 20,
+   "expected": 20,
+   "source": "data.md; CB050: 20 controls",
+   "pass": true
+  },
+  {
+   "dataset": "S-CB050",
+   "check": "dogs with cytokines: infected, infected died, controls",
+   "observed": [
+    97,
+    12,
+    15
+   ],
+   "expected": [
+    97,
+    12,
+    15
+   ],
+   "source": "data.md",
+   "pass": true
+  },
+  {
+   "dataset": "S-CB050",
+   "check": "cohort 1 infected and controls",
+   "observed": [
+    97,
+    15
+   ],
+   "expected": [
+    97,
+    15
+   ],
+   "source": "data.md (article: 96 + 15)",
+   "pass": true
+  },
+  {
+   "dataset": "S-CB050",
+   "check": "dog S-CB050:d125 ceiling cells",
+   "observed": 4,
+   "expected": 4,
+   "source": "record: 50001 ceiling in dog S-CB050:d125",
+   "pass": true
+  },
+  {
+   "dataset": "S-CB050",
+   "check": "median MPXI, infected",
+   "observed": 19.2,
+   "expected": 19.2,
+   "source": "CB050 full text (Results): 19.2 (IQR 14.9-22.8)",
+   "pass": true
+  },
+  {
+   "dataset": "S-CB050",
+   "check": "median MPXI, controls",
+   "observed": 16.75,
+   "expected": 16.8,
+   "source": "CB050 full text (Results): 16.8 (IQR 12.8-19.7)",
+   "pass": true
+  },
+  {
+   "dataset": "S-CB050",
+   "check": "median MPXI, non-survivors",
+   "observed": 22.8,
+   "expected": 22.8,
+   "source": "CB050 full text (Results): 22.8 (IQR 17.7-26.1)",
+   "pass": true
+  },
+  {
+   "dataset": "S-CB050",
+   "check": "median MPXI, survivors",
+   "observed": 19.0,
+   "expected": 19.0,
+   "source": "CB050 full text (Results): 19.0 (IQR 14.7-21.8)",
+   "pass": true
+  },
+  {
+   "dataset": "S-CB050",
+   "check": "MPXI quartiles, infected (type 6)",
+   "observed": [
+    14.925,
+    22.8
+   ],
+   "expected": [
+    14.9,
+    22.8
+   ],
+   "source": "CB050 full text (Results)",
+   "pass": true
+  },
+  {
+   "dataset": "S-CB050",
+   "check": "median segmented neutrophils, controls",
+   "observed": 5.79,
+   "expected": 5.8,
+   "source": "CB050 full text (Results): 5.8",
+   "pass": true
+  },
+  {
+   "dataset": "S-CB050",
+   "check": "median segmented neutrophils, infected",
+   "observed": 4.04,
+   "expected": 4.0,
+   "source": "CB050 full text (Results): 4.0",
+   "pass": true
+  },
+  {
+   "dataset": "S-CB050",
+   "check": "median band neutrophils, non-survivors",
+   "observed": 0.99,
+   "expected": 1.0,
+   "source": "CB050 full text (Results): 1.0",
+   "pass": true
+  },
+  {
+   "dataset": "S-CB050",
+   "check": "median age, infected (months)",
+   "observed": 20.0,
+   "expected": 20,
+   "source": "CB050 full text (Results): 20",
+   "pass": true
+  },
+  {
+   "dataset": "S-CB050",
+   "check": "median age, controls (months)",
+   "observed": 46.0,
+   "expected": 46,
+   "source": "CB050 full text (Results): 46",
+   "pass": true
+  },
+  {
+   "dataset": "S-CB050",
+   "check": "male:female, controls",
+   "observed": [
+    7,
+    13
+   ],
+   "expected": [
+    7,
+    13
+   ],
+   "source": "CB050 full text (Results)",
+   "pass": true
+  },
+  {
+   "dataset": "S-CB050",
+   "check": "male:female, non-survivors",
+   "observed": [
+    10,
+    5
+   ],
+   "expected": [
+    10,
+    5
+   ],
+   "source": "CB050 full text (Results)",
+   "pass": true
+  },
+  {
+   "dataset": "S-CB050",
+   "check": "male:female, survivors",
+   "observed": [
+    83,
+    43
+   ],
+   "expected": [
+    82,
+    43
+   ],
+   "source": "CB050 full text (Results) (125 survivors; the file has one more)",
+   "pass": false
+  },
+  {
+   "dataset": "S-CB050",
+   "check": "Spearman MPXI vs IL-8, infected",
+   "observed": -0.35,
+   "expected": -0.35,
+   "source": "CB050 full text (Results): r = -0.350 (n here 96)",
+   "pass": true
+  },
+  {
+   "dataset": "S-CB050",
+   "check": "Spearman MPXI vs IL-10, infected",
+   "observed": 0.211,
+   "expected": 0.211,
+   "source": "CB050 full text (Results): r = 0.211 (n here 96)",
+   "pass": true
+  },
+  {
+   "dataset": "S-CB517",
+   "check": "infected and control rows",
+   "observed": [
+    97,
+    15
+   ],
+   "expected": [
+    97,
+    15
+   ],
+   "source": "data.md; CB517: 97 infected, 15 controls",
+   "pass": true
+  },
+  {
+   "dataset": "S-CB517",
+   "check": "survived and died",
+   "observed": [
+    85,
+    12
+   ],
+   "expected": [
+    85,
+    12
+   ],
+   "source": "CB517: 85 survived, 12 died",
+   "pass": true
+  },
+  {
+   "dataset": "S-CB517",
+   "check": "rows linked to S-CB050 by value",
+   "observed": 112,
+   "expected": 112,
+   "source": "this script",
+   "pass": true
+  },
+  {
+   "dataset": "S-CB517",
+   "check": "value link equals the ID-implied S-CB050 case",
+   "observed": 112,
+   "expected": 112,
+   "source": "this script",
+   "pass": true
+  },
+  {
+   "dataset": "S-CB517",
+   "check": "median WBC, controls",
+   "observed": 10.57,
+   "expected": 10.6,
+   "source": "CB517 full text, Table 1 median",
+   "pass": true
+  },
+  {
+   "dataset": "S-CB517",
+   "check": "median WBC, infected",
+   "observed": 6.29,
+   "expected": 6.2,
+   "source": "CB517 full text, Table 1 median (S-CB050 WBC for the same dogs gives 6.22; see cleaning_notes FLAG WBC)",
+   "pass": false
+  },
+  {
+   "dataset": "S-CB517",
+   "check": "median segmented neutrophils, infected",
+   "observed": 4.25,
+   "expected": 4.3,
+   "source": "CB517 full text, Table 1 median",
+   "pass": true
+  },
+  {
+   "dataset": "S-CB517",
+   "check": "median lymphocytes, controls",
+   "observed": 2.08,
+   "expected": 2.1,
+   "source": "CB517 full text, Table 1 median",
+   "pass": true
+  },
+  {
+   "dataset": "S-CB517",
+   "check": "median eosinophils, controls",
+   "observed": 0.73,
+   "expected": 0.7,
+   "source": "CB517 full text, Table 1 median",
+   "pass": true
+  },
+  {
+   "dataset": "S-CB517",
+   "check": "median CRP, infected",
+   "observed": 111.3,
+   "expected": 111.3,
+   "source": "CB517 full text, Table 1 median",
+   "pass": true
+  },
+  {
+   "dataset": "S-CB517",
+   "check": "median CRP, controls",
+   "observed": 2.6,
+   "expected": 2.6,
+   "source": "CB517 full text, Table 1 median",
+   "pass": true
+  },
+  {
+   "dataset": "S-CB517",
+   "check": "median SAA, infected",
+   "observed": 933.4,
+   "expected": 933.4,
+   "source": "CB517 full text, Table 1 median",
+   "pass": true
+  },
+  {
+   "dataset": "S-CB517",
+   "check": "median SAA, controls",
+   "observed": 14.1,
+   "expected": 14.1,
+   "source": "CB517 full text, Table 1 median",
+   "pass": true
+  },
+  {
+   "dataset": "S-CB517",
+   "check": "median IL-8, infected",
+   "observed": 1066.3,
+   "expected": 1066.3,
+   "source": "CB517 full text, Table 1 median",
+   "pass": true
+  },
+  {
+   "dataset": "S-CB517",
+   "check": "median IL-8, controls",
+   "observed": 3316.7,
+   "expected": 3316.7,
+   "source": "CB517 full text, Table 1 median",
+   "pass": true
+  },
+  {
+   "dataset": "S-CB517",
+   "check": "median IL-10, infected",
+   "observed": 620.3,
+   "expected": 620.3,
+   "source": "CB517 full text, Table 1 median",
+   "pass": true
+  },
+  {
+   "dataset": "S-CB517",
+   "check": "median IL-10, controls",
+   "observed": 44.6,
+   "expected": 44.6,
+   "source": "CB517 full text, Table 1 median",
+   "pass": true
+  },
+  {
+   "dataset": "S-CB517",
+   "check": "median MCP-1, infected",
+   "observed": 544.2,
+   "expected": 544.2,
+   "source": "CB517 full text, Table 1 median",
+   "pass": true
+  },
+  {
+   "dataset": "S-CB517",
+   "check": "median MCP-1, controls",
+   "observed": 211.7,
+   "expected": 211.7,
+   "source": "CB517 full text, Table 1 median",
+   "pass": true
+  },
+  {
+   "dataset": "S-CB517",
+   "check": "median IL-6, non-survivors",
+   "observed": 643.85,
+   "expected": 643.9,
+   "source": "CB517 full text, Table 1 median",
+   "pass": true
+  },
+  {
+   "dataset": "S-CB517",
+   "check": "median IL-6, survivors",
+   "observed": 84.1,
+   "expected": 84.1,
+   "source": "CB517 full text, Table 1 median",
+   "pass": true
+  },
+  {
+   "dataset": "DS07",
+   "check": "dogs",
+   "observed": 52,
+   "expected": 52,
+   "source": "data.md; CB112 note: 52 dogs",
+   "pass": true
+  },
+  {
+   "dataset": "DS07",
+   "check": "controls",
+   "observed": 20,
+   "expected": 20,
+   "source": "data.md; CB112 note: 20 healthy",
+   "pass": true
+  },
+  {
+   "dataset": "DS07",
+   "check": "uncomplicated",
+   "observed": 18,
+   "expected": 18,
+   "source": "data.md; CB112 note: 18 uncomplicated",
+   "pass": true
+  },
+  {
+   "dataset": "DS07",
+   "check": "complicated",
+   "observed": 14,
+   "expected": 14,
+   "source": "data.md; CB112 note: 14 complicated",
+   "pass": true
+  },
+  {
+   "dataset": "DS07",
+   "check": "infected",
+   "observed": 32,
+   "expected": 32,
+   "source": "CB112 full text: 32 infected",
+   "pass": true
+  },
+  {
+   "dataset": "DS07",
+   "check": "master proteins with >= 2 unique peptides",
+   "observed": 128,
+   "expected": 128,
+   "source": "CB112 full text: 128 proteins identified and quantified (>= 2 unique peptides, 1% FDR)",
+   "pass": true
+  },
+  {
+   "dataset": "DS07",
+   "check": "master proteins",
+   "observed": 224,
+   "expected": 224,
+   "source": "DS07 record: 224 IsMasterProtein rows",
+   "pass": true
+  },
+  {
+   "dataset": "DS07",
+   "check": "master proteins with a gene symbol",
+   "observed": 172,
+   "expected": 163,
+   "source": "data.md: 163 master proteins carry a gene symbol. Observed: 172 with GN= (12 of them LOC), 160 non-LOC; none of these counts gives 163",
+   "pass": false
+  },
+  {
+   "dataset": "DS07",
+   "check": "percent empty protein x sample cells (52 sample channels)",
+   "observed": 31.1,
+   "expected": 31.1,
+   "source": "DS07 record: 31.1% in the 52 sample channels",
+   "pass": true
+  },
+  {
+   "dataset": "DS07",
+   "check": "plex B11 samples",
+   "observed": 2,
+   "expected": 2,
+   "source": "data.md: plex B11 has 2 samples",
+   "pass": true
+  },
+  {
+   "dataset": "DS07",
+   "check": "computed log2 ratio vs PD Abundance Ratio: disagreements",
+   "observed": 0,
+   "expected": 0,
+   "source": "internal consistency",
+   "pass": true
+  },
+  {
+   "dataset": "DS07",
+   "check": "median proteins detected per sample within the record's 149-158",
+   "observed": true,
+   "expected": true,
+   "source": "DS07 record: median 149-158 proteins detected per sample",
+   "pass": true
+  },
+  {
+   "dataset": "S-CB017",
+   "check": "dogs: complicated, uncomplicated, controls",
+   "observed": [
+    18,
+    13,
+    16
+   ],
+   "expected": [
+    18,
+    13,
+    16
+   ],
+   "source": "data.md; CB017 note",
+   "pass": true
+  },
+  {
+   "dataset": "S-CB017",
+   "check": "samples per block (cytokines): healthy, day 1, day 7",
+   "observed": [
+    16,
+    31,
+    30
+   ],
+   "expected": [
+    16,
+    31,
+    30
+   ],
+   "source": "data.md; CB017 Table 2",
+   "pass": true
+  },
+  {
+   "dataset": "S-CB017",
+   "check": "samples per block (haematology): healthy, day 1, day 7",
+   "observed": [
+    16,
+    31,
+    30
+   ],
+   "expected": [
+    16,
+    31,
+    30
+   ],
+   "source": "data.md; record",
+   "pass": true
+  },
+  {
+   "dataset": "S-CB017",
+   "check": "feature records (dog-days)",
+   "observed": 77,
+   "expected": 77,
+   "source": "16 + 31 + 30",
+   "pass": true
+  },
+  {
+   "dataset": "S-CB017",
+   "check": "infected dogs missing on day 7 (one death)",
+   "observed": [
+    "BK11"
+   ],
+   "expected": [
+    "BK11"
+   ],
+   "source": "record; CB017 note: day-7 n = 30 after one death",
+   "pass": true
+  },
+  {
+   "dataset": "S-CB017",
+   "check": "haematology day-7 block lacks the same dog",
+   "observed": [
+    "BK11"
+   ],
+   "expected": [
+    "BK11"
+   ],
+   "source": "internal",
+   "pass": true
+  },
+  {
+   "dataset": "S-CB017",
+   "check": "IL-10 at floor 0.8 in 45 of 77 samples",
+   "observed": 45,
+   "expected": 45,
+   "source": "record",
+   "pass": true
+  },
+  {
+   "dataset": "S-CB017",
+   "check": "Table 2 medians, healthy all (9 cytokines, GM-CSF..MCP-1)",
+   "observed": [
+    87.2,
+    39.4,
+    17.2,
+    54.8,
+    137.3,
+    0.8,
+    76.9,
+    82.9,
+    192.8
+   ],
+   "expected": [
+    87,
+    39,
+    17,
+    55,
+    137,
+    1,
+    77,
+    83,
+    193
+   ],
+   "source": "CB017 full text, Table 2 (medians rounded to integers)",
+   "pass": true
+  },
+  {
+   "dataset": "S-CB017",
+   "check": "Table 2 medians, day 1 all (9 cytokines, GM-CSF..MCP-1)",
+   "observed": [
+    182.1,
+    531.6,
+    96.5,
+    101.4,
+    856.3,
+    559.6,
+    160.0,
+    188.3,
+    389.8
+   ],
+   "expected": [
+    182,
+    532,
+    96,
+    101,
+    856,
+    560,
+    160,
+    188,
+    390
+   ],
+   "source": "CB017 full text, Table 2 (medians rounded to integers)",
+   "pass": true
+  },
+  {
+   "dataset": "S-CB017",
+   "check": "Table 2 medians, day 7 all (9 cytokines, GM-CSF..MCP-1)",
+   "observed": [
+    196.3,
+    561.2,
+    48.7,
+    80.2,
+    2753.8,
+    0.8,
+    218.9,
+    206.7,
+    237.3
+   ],
+   "expected": [
+    196,
+    561,
+    49,
+    80,
+    2754,
+    1,
+    219,
+    207,
+    237
+   ],
+   "source": "CB017 full text, Table 2 (medians rounded to integers)",
+   "pass": true
+  },
+  {
+   "dataset": "S-CB017",
+   "check": "Table 2 medians, day 1 uncomplicated (9 cytokines, GM-CSF..MCP-1)",
+   "observed": [
+    143.0,
+    329.9,
+    89.4,
+    51.4,
+    600.7,
+    461.1,
+    110.6,
+    144.9,
+    224.4
+   ],
+   "expected": [
+    143,
+    330,
+    89,
+    51,
+    601,
+    461,
+    111,
+    145,
+    224
+   ],
+   "source": "CB017 full text, Table 2 (medians rounded to integers)",
+   "pass": true
+  },
+  {
+   "dataset": "S-CB017",
+   "check": "Table 2 medians, day 1 complicated (9 cytokines, GM-CSF..MCP-1)",
+   "observed": [
+    254.4,
+    567.0,
+    131.4,
+    138.6,
+    907.5,
+    592.2,
+    264.6,
+    188.4,
+    576.2
+   ],
+   "expected": [
+    254,
+    567,
+    131,
+    139,
+    908,
+    592,
+    265,
+    188,
+    576
+   ],
+   "source": "CB017 full text, Table 2 (medians rounded to integers)",
+   "pass": true
+  },
+  {
+   "dataset": "S-CB017",
+   "check": "Table 2 medians, day 7 uncomplicated (9 cytokines, GM-CSF..MCP-1)",
+   "observed": [
+    153.6,
+    440.0,
+    27.7,
+    67.7,
+    2852.2,
+    0.8,
+    183.9,
+    145.0,
+    191.0
+   ],
+   "expected": [
+    154,
+    440,
+    28,
+    68,
+    2852,
+    1,
+    184,
+    145,
+    191
+   ],
+   "source": "CB017 full text, Table 2 (medians rounded to integers)",
+   "pass": true
+  },
+  {
+   "dataset": "S-CB017",
+   "check": "Table 2 medians, day 7 complicated (9 cytokines, GM-CSF..MCP-1)",
+   "observed": [
+    253.6,
+    830.1,
+    64.6,
+    84.4,
+    1910.8,
+    0.8,
+    253.3,
+    225.0,
+    365.2
+   ],
+   "expected": [
+    254,
+    830,
+    65,
+    84,
+    1911,
+    1,
+    253,
+    225,
+    365
+   ],
+   "source": "CB017 full text, Table 2 (medians rounded to integers)",
+   "pass": true
+  },
+  {
+   "dataset": "S-CB516",
+   "check": "dogs died, survived",
+   "observed": [
+    8,
+    7
+   ],
+   "expected": [
+    8,
+    7
+   ],
+   "source": "data.md; CB516 methods",
+   "pass": true
+  },
+  {
+   "dataset": "S-CB516",
+   "check": "feature records",
+   "observed": 15,
+   "expected": 15,
+   "source": "data.md",
+   "pass": true
+  },
+  {
+   "dataset": "S-CB516",
+   "check": "dogs with lethargy",
+   "observed": 15,
+   "expected": 15,
+   "source": "CB516 full text, results (n of 15)",
+   "pass": true
+  },
+  {
+   "dataset": "S-CB516",
+   "check": "dogs with pale_mm",
+   "observed": 15,
+   "expected": 15,
+   "source": "CB516 full text, results (n of 15)",
+   "pass": true
+  },
+  {
+   "dataset": "S-CB516",
+   "check": "dogs with pigmenturia",
+   "observed": 10,
+   "expected": 10,
+   "source": "CB516 full text, results (n of 15)",
+   "pass": true
+  },
+  {
+   "dataset": "S-CB516",
+   "check": "dogs with icterus",
+   "observed": 6,
+   "expected": 6,
+   "source": "CB516 full text, results (n of 15)",
+   "pass": true
+  },
+  {
+   "dataset": "S-CB516",
+   "check": "dogs with fever",
+   "observed": 5,
+   "expected": 5,
+   "source": "CB516 full text, results (n of 15)",
+   "pass": true
+  },
+  {
+   "dataset": "S-CB516",
+   "check": "dogs with anorexia",
+   "observed": 4,
+   "expected": 4,
+   "source": "CB516 full text, results (n of 15)",
+   "pass": true
+  },
+  {
+   "dataset": "S-CB516",
+   "check": "dogs with vomiting",
+   "observed": 4,
+   "expected": 4,
+   "source": "CB516 full text, results (n of 15)",
+   "pass": true
+  },
+  {
+   "dataset": "S-CB516",
+   "check": "dogs with water_hammer_pulse",
+   "observed": 4,
+   "expected": 4,
+   "source": "CB516 full text, results (n of 15)",
+   "pass": true
+  },
+  {
+   "dataset": "S-CB516",
+   "check": "dogs with epistaxis",
+   "observed": 3,
+   "expected": 3,
+   "source": "CB516 full text, results (n of 15)",
+   "pass": true
+  },
+  {
+   "dataset": "S-CB516",
+   "check": "sex: female, male",
+   "observed": [
+    5,
+    10
+   ],
+   "expected": [
+    5,
+    10
+   ],
+   "source": "record",
+   "pass": true
+  },
+  {
+   "dataset": "S-CB516",
+   "check": "dogs with neuter status missing",
+   "observed": 2,
+   "expected": 2,
+   "source": "record (#2 and #6)",
+   "pass": true
+  },
+  {
+   "dataset": "S-CB516",
+   "check": "weight range kg",
+   "observed": [
+    7.0,
+    62.1
+   ],
+   "expected": [
+    7.0,
+    62.1
+   ],
+   "source": "record",
+   "pass": true
+  },
+  {
+   "dataset": "S-CB516",
+   "check": "age range months",
+   "observed": [
+    7,
+    129
+   ],
+   "expected": [
+    7,
+    129
+   ],
+   "source": "record: 7 months to 10 years 9 months",
+   "pass": true
+  },
+  {
+   "dataset": "S-CB516",
+   "check": "temperature range degC",
+   "observed": [
+    37.8,
+    40.5
+   ],
+   "expected": [
+    37.8,
+    40.5
+   ],
+   "source": "record",
+   "pass": true
+  },
+  {
+   "dataset": "S-CB516",
+   "check": "assumed locations: France, Hungary, Russia, Croatia, Serbia, Switzerland",
+   "observed": [
+    4,
+    2,
+    1,
+    1,
+    1,
+    6
+   ],
+   "expected": [
+    4,
+    2,
+    1,
+    1,
+    1,
+    6
+   ],
+   "source": "record",
+   "pass": true
+  },
+  {
+   "dataset": "S-CB516",
+   "check": "supplemental file 2 has no numeric table",
+   "observed": "caption only",
+   "expected": "caption only",
+   "source": "record",
+   "pass": true
+  },
+  {
+   "dataset": "DS05",
+   "check": "dogs",
+   "observed": 150,
+   "expected": 150,
+   "source": "data.md; CB126 note: 150 dogs",
+   "pass": true
+  },
+  {
+   "dataset": "DS05",
+   "check": "B. rossi qPCR positive",
+   "observed": 149,
+   "expected": 149,
+   "source": "CB126 note: B. rossi 149",
+   "pass": true
+  },
+  {
+   "dataset": "DS05",
+   "check": "B. vogeli qPCR positive",
+   "observed": 1,
+   "expected": 1,
+   "source": "CB126 note: B. vogeli 1",
+   "pass": true
+  },
+  {
+   "dataset": "DS05",
+   "check": "E. canis co-infection",
+   "observed": 3,
+   "expected": 3,
+   "source": "CB126 note: 3 dogs (2.0%) E. canis",
+   "pass": true
+  },
+  {
+   "dataset": "DS05",
+   "check": "T. equi",
+   "observed": 0,
+   "expected": 0,
+   "source": "CB126 note: no Theileria",
+   "pass": true
+  },
+  {
+   "dataset": "DS05",
+   "check": "male intact",
+   "observed": 82,
+   "expected": 82,
+   "source": "authors' summary row of the sheet: 82/150 MALE INTACT",
+   "pass": true
+  },
+  {
+   "dataset": "DS05",
+   "check": "median age_months",
+   "observed": 12.0,
+   "expected": 12.0,
+   "source": "authors' summary row of the sheet: '12 (8 - 30)'",
+   "pass": true
+  },
+  {
+   "dataset": "DS05",
+   "check": "median hb",
+   "observed": 53.0,
+   "expected": 53.0,
+   "source": "authors' summary row of the sheet: '53 (39 - 80,75)'",
+   "pass": true
+  },
+  {
+   "dataset": "DS05",
+   "check": "median hct",
+   "observed": 0.18,
+   "expected": 0.18,
+   "source": "authors' summary row of the sheet: '0,18 (0,13 - 0,27)'",
+   "pass": true
+  },
+  {
+   "dataset": "DS05",
+   "check": "median arc",
+   "observed": 102.05,
+   "expected": 102.05,
+   "source": "authors' summary row of the sheet: '102,05 (52,38 - 174,28)'",
+   "pass": true
+  },
+  {
+   "dataset": "DS05",
+   "check": "median albumin",
+   "observed": 23.7,
+   "expected": 23.7,
+   "source": "authors' summary row of the sheet: '23,7 (19,9 - 27,18)'",
+   "pass": true
+  },
+  {
+   "dataset": "DS05",
+   "check": "ARC quartiles (type 6, as Excel QUARTILE.EXC) vs the summary row",
+   "observed": [
+    52.38,
+    174.28
+   ],
+   "expected": [
+    52.38,
+    174.28
+   ],
+   "source": "authors' summary row: '102,05 (52,38 - 174,28)'",
+   "pass": true
+  },
+  {
+   "dataset": "DS03",
+   "check": "naturally infected dogs (cohort 1 + cohort 2)",
+   "observed": [
+    85,
+    18
+   ],
+   "expected": [
+    85,
+    18
+   ],
+   "source": "data.md; CB115 note: 103 naturally infected",
+   "pass": true
+  },
+  {
+   "dataset": "DS03",
+   "check": "healthy controls",
+   "observed": 14,
+   "expected": 14,
+   "source": "CB115 note: 14 healthy controls",
+   "pass": true
+  },
+  {
+   "dataset": "DS03",
+   "check": "IMHA dogs in the file",
+   "observed": 16,
+   "expected": 16,
+   "source": "data.md (the article reports 10)",
+   "pass": true
+  },
+  {
+   "dataset": "DS03",
+   "check": "experimental dogs",
+   "observed": 5,
+   "expected": 5,
+   "source": "CB115 note: five experimentally infected dogs",
+   "pass": true
+  },
+  {
+   "dataset": "DS03",
+   "check": "median haematocrit lower in natural B. rossi than in controls",
+   "observed": [
+    0.16,
+    0.52,
+    true
+   ],
+   "expected": [
+    null,
+    null,
+    true
+   ],
+   "source": "CB115 note: haematocrit low in B. rossi relative to controls (p < .001)",
+   "pass": true
+  },
+  {
+   "dataset": "DS03",
+   "check": "ARC 2-3 days after parasitaemia is detected falls below 60% of its value on days 0-1 of detection, in every experimental dog",
+   "observed": [
+    5,
+    true
+   ],
+   "expected": [
+    5,
+    true
+   ],
+   "source": "CB115 note: ARC dropped abruptly about 48 h after parasitaemia was detected",
+   "pass": true
+  },
+  {
+   "dataset": "DS03",
+   "check": "experimental dogs linked to DS02 by value",
+   "observed": 5,
+   "expected": 5,
+   "source": "this script",
+   "pass": true
+  },
+  {
+   "dataset": "DS02",
+   "check": "infected dogs (3 high dose + 2 low dose)",
+   "observed": [
+    3,
+    2
+   ],
+   "expected": [
+    3,
+    2
+   ],
+   "source": "data.md; CB098 note",
+   "pass": true
+  },
+  {
+   "dataset": "DS02",
+   "check": "feature records (dog-days)",
+   "observed": 51,
+   "expected": 51,
+   "source": "internal",
+   "pass": true
+  },
+  {
+   "dataset": "DS02",
+   "check": "parasitaemia first detected on day 1 in all high-dose dogs",
+   "observed": [
+    1.0
+   ],
+   "expected": [
+    1.0
+   ],
+   "source": "CB098 note: detected day 1 high dose",
+   "pass": true
+  },
+  {
+   "dataset": "DS02",
+   "check": "parasitaemia first detected on day 3 in all low-dose dogs",
+   "observed": [
+    3.0
+   ],
+   "expected": [
+    3.0
+   ],
+   "source": "CB098 note: detected day 3 low dose",
+   "pass": true
+  },
+  {
+   "dataset": "DS02",
+   "check": "one high-dose dog has no data after day 4",
+   "observed": [
+    1,
+    true
+   ],
+   "expected": [
+    1,
+    true
+   ],
+   "source": "CB101 note: one high-dose dog died on day 4",
+   "pass": true
+  },
+  {
+   "dataset": "DS04",
+   "check": "dogs",
+   "observed": 14,
+   "expected": 14,
+   "source": "data.md: 10 fatal + 4 controls",
+   "pass": true
+  },
+  {
+   "dataset": "DS04",
+   "check": "fatal cases",
+   "observed": 10,
+   "expected": 10,
+   "source": "data.md; CB147 note",
+   "pass": true
+  },
+  {
+   "dataset": "DS04",
+   "check": "controls",
+   "observed": 4,
+   "expected": 4,
+   "source": "data.md; CB147 note",
+   "pass": true
+  },
+  {
+   "dataset": "DS04",
+   "check": "feature records (4 single + 10 admission + 10 necropsy)",
+   "observed": 24,
+   "expected": 24,
+   "source": "design of this file",
+   "pass": true
+  },
+  {
+   "dataset": "DS04",
+   "check": "haematology copies identical (data rows)",
+   "observed": true,
+   "expected": true,
+   "source": "the two 'stats for haematology' files",
+   "pass": true
+  },
+  {
+   "dataset": "DS04",
+   "check": "median RBC, fatal cases",
+   "observed": 2.1,
+   "expected": 2.1,
+   "source": "CB147 full text, Results/Hematology: median 2.1 x10^12/L",
+   "pass": true
+  },
+  {
+   "dataset": "DS04",
+   "check": "median haematocrit, fatal cases",
+   "observed": 0.2,
+   "expected": 0.2,
+   "source": "CB147 full text: median 0.2 L/L",
+   "pass": true
+  },
+  {
+   "dataset": "DS04",
+   "check": "median platelets, fatal cases",
+   "observed": 40.5,
+   "expected": 40.5,
+   "source": "CB147 full text: median 40.5 x10^9/L",
+   "pass": true
+  },
+  {
+   "dataset": "DS04",
+   "check": "median ALT, fatal cases",
+   "observed": 86.5,
+   "expected": 86.5,
+   "source": "CB147 Table 2: ALT 86.5 U/L",
+   "pass": true
+  },
+  {
+   "dataset": "DS04",
+   "check": "median ALT, controls",
+   "observed": 21.4,
+   "expected": 21.4,
+   "source": "CB147 Table 2: ALT 21.4 U/L",
+   "pass": true
+  },
+  {
+   "dataset": "DS04",
+   "check": "median urea, fatal cases (zeros as missing)",
+   "observed": 28.3,
+   "expected": 28.3,
+   "source": "CB147 Table 2: urea 28.3 mmol/L",
+   "pass": true
+  },
+  {
+   "dataset": "DS04",
+   "check": "median pre-prandial bile acids, fatal cases (zeros as missing)",
+   "observed": 22.0,
+   "expected": 22,
+   "source": "CB147 Table 2: bile acids 22 umol/L",
+   "pass": true
+  },
+  {
+   "dataset": "DS04",
+   "check": "median albumin, fatal cases",
+   "observed": 19.549999999999997,
+   "expected": 19.6,
+   "source": "CB147 Table 2: albumin 19.6 g/L",
+   "pass": true
+  },
+  {
+   "dataset": "DS04",
+   "check": "median TSP, controls",
+   "observed": 51.3,
+   "expected": 51.3,
+   "source": "CB147 Table 2: TSP 51.3 g/L",
+   "pass": true
+  },
+  {
+   "dataset": "DS04",
+   "check": "fatal cases female",
+   "observed": 1,
+   "expected": 1,
+   "source": "CB147 full text: one female, nine males",
+   "pass": true
+  },
+  {
+   "dataset": "DS04",
+   "check": "controls female",
+   "observed": 3,
+   "expected": 3,
+   "source": "CB147 full text: three females, one male",
+   "pass": true
+  },
+  {
+   "dataset": "DS04",
+   "check": "mean age, controls (months)",
+   "observed": 18.25,
+   "expected": 18.3,
+   "source": "CB147 full text: mean 18.3 months",
+   "pass": true
+  },
+  {
+   "dataset": "DS04",
+   "check": "median age, controls (months)",
+   "observed": 15.5,
+   "expected": 15.5,
+   "source": "CB147 full text: median 15.5 months",
+   "pass": true
+  },
+  {
+   "dataset": "DS04",
+   "check": "mean weight, controls (kg)",
+   "observed": 13.625,
+   "expected": 13.6,
+   "source": "CB147 full text: mean 13.6 kg",
+   "pass": true
+  },
+  {
+   "dataset": "DS04",
+   "check": "median weight, controls (kg)",
+   "observed": 12.5,
+   "expected": 12.5,
+   "source": "CB147 full text: median 12.5 kg",
+   "pass": true
+  },
+  {
+   "dataset": "DS04",
+   "check": "mean weight, fatal cases (kg; 8 with a weight)",
+   "observed": 28.85,
+   "expected": 28.9,
+   "source": "CB147 full text: mean 28.9 kg",
+   "pass": true
+  },
+  {
+   "dataset": "DS04",
+   "check": "median weight, fatal cases (kg; 8 with a weight)",
+   "observed": 32.3,
+   "expected": 34,
+   "source": "CB147 full text: median 34 kg",
+   "pass": false
+  },
+  {
+   "dataset": "DS04",
+   "check": "mean age, fatal cases (months)",
+   "observed": 55.0,
+   "expected": 52.8,
+   "source": "CB147 full text: mean 52.8 months",
+   "pass": false
+  },
+  {
+   "dataset": "DS04",
+   "check": "median age, fatal cases (months)",
+   "observed": 42.0,
+   "expected": 50,
+   "source": "CB147 full text: median 50 months",
+   "pass": false
+  },
+  {
+   "dataset": "DS04",
+   "check": "IHC field-level medians (all fields of the group), fatal cases, vs CB147 Table 3 (18 marker-zones): mismatches",
+   "observed": [],
+   "expected": [],
+   "source": "CB147 full text, Table 3 (median per HPF, infected)",
+   "pass": true
+  },
+  {
+   "dataset": "DS04",
+   "check": "IHC field-level medians (all fields of the group), controls, vs CB147 Table 3 (18 marker-zones): mismatches",
+   "observed": [],
+   "expected": [],
+   "source": "CB147 full text, Table 3 (median per HPF, controls)",
+   "pass": true
+  },
+  {
+   "dataset": "DS04",
+   "check": "S-CB147 Table_2 per-case IHC values equal the per-dog field means (rounded to 0.1): mismatches",
+   "observed": [
+    "case 106 cd3 pt: S-CB147 14.5, mean of fields here 9.67",
+    "case 20 iba1 cl: S-CB147 7.3, mean of fields here 11.0"
+   ],
+   "expected": [],
+   "source": "S-CB147 Table_2.DOCX, 180 values",
+   "pass": false
+  },
+  {
+   "dataset": "DS04",
+   "check": "IHC per-dog means vs authors' Sheet1 averages: mismatches",
+   "observed": [
+    "case 20 CV Iba-1: fields [11.0, 11.0, None], Sheet1 7.33",
+    "case 106 PT CD3: fields [7.0, 7.0, 15.0], Sheet1 14.5"
+   ],
+   "expected": [],
+   "source": "Stats Tables.xlsx / Sheet1",
+   "pass": false
+  },
+  {
+   "dataset": "DS04",
+   "check": "S-CB050 linkage: rows matching cases 126, 127, 131 by WBC/seg/band are cases 50, 54, 59 under the join",
+   "observed": [
+    [
+     "50"
+    ],
+    [
+     "54"
+    ],
+    [
+     "59"
+    ]
+   ],
+   "expected": [
+    [
+     "50"
+    ],
+    [
+     "54"
+    ],
+    [
+     "59"
+    ]
+   ],
+   "source": "data.md linkage facts; S-CB050 Table_1.DOCX",
+   "pass": true
+  },
+  {
+   "dataset": "DS04",
+   "check": "S-CB050 age/weight of cases 126, 127, 131 equal DS04 signalment of the joined cases",
+   "observed": [
+    [
+     30.0,
+     30.6
+    ],
+    [
+     9.0,
+     45.6
+    ],
+    [
+     60.0,
+     34.0
+    ]
+   ],
+   "expected": [
+    [
+     30.0,
+     30.6
+    ],
+    [
+     9.0,
+     45.6
+    ],
+    [
+     60.0,
+     34.0
+    ]
+   ],
+   "source": "S-CB050 Table_1.DOCX vs DS04 score sheets",
+   "pass": true
+  }
+ ],
+ "flags": [
+  {
+   "dataset": "S-CB517",
+   "note": "FLAG WBC: S-CB517 WBC differs from S-CB050 WBC in 24 linked dogs, always higher here. In 24 of them the S-CB050 WBC equals NEUT+LYMPH+MONO+EOS of this file plus the S-CB050 band count (within 0.25), so the S1 WBC column looks like a different (uncorrected or mis-entered) total; the published Table 1 median WBC of infected dogs (6.2) matches the S-CB050 values (median 6.22), not this file (median 6.29). Values kept as reported. Prefer S-CB050 WBC for these dogs. The FLAG lines below on differentials far below WBC are mostly the same dogs."
+  },
+  {
+   "dataset": "S-CB517",
+   "note": "FLAG S-CB517:d096: NEUT+LYMPH+MONO+EOS = 12.93 is more than 25% below WBC 17.81 (bands are not in the file, or an entry error); kept"
+  },
+  {
+   "dataset": "S-CB517",
+   "note": "FLAG S-CB517:d062: NEUT+LYMPH+MONO+EOS = 5.98 is more than 25% below WBC 8.54 (bands are not in the file, or an entry error); kept"
+  },
+  {
+   "dataset": "S-CB517",
+   "note": "FLAG S-CB517:d016: NEUT+LYMPH+MONO+EOS = 14.77 is more than 25% below WBC 19.73 (bands are not in the file, or an entry error); kept"
+  },
+  {
+   "dataset": "S-CB517",
+   "note": "FLAG S-CB517:d011: NEUT+LYMPH+MONO+EOS = 6.69 is more than 25% below WBC 16.1 (bands are not in the file, or an entry error); kept"
+  },
+  {
+   "dataset": "S-CB517",
+   "note": "FLAG S-CB517:d091: NEUT+LYMPH+MONO+EOS = 3.94 is more than 25% below WBC 5.85 (bands are not in the file, or an entry error); kept"
+  },
+  {
+   "dataset": "S-CB517",
+   "note": "FLAG S-CB517:d099: NEUT+LYMPH+MONO+EOS = 14.40 is more than 25% below WBC 23.83 (bands are not in the file, or an entry error); kept"
+  },
+  {
+   "dataset": "S-CB517",
+   "note": "FLAG S-CB517:d042: NEUT+LYMPH+MONO+EOS = 7.58 is more than 25% below WBC 22.06 (bands are not in the file, or an entry error); kept"
+  },
+  {
+   "dataset": "S-CB517",
+   "note": "FLAG S-CB517:d010: NEUT+LYMPH+MONO+EOS = 2.35 is more than 25% below WBC 4.48 (bands are not in the file, or an entry error); kept"
+  },
+  {
+   "dataset": "S-CB517",
+   "note": "FLAG S-CB517:d051: NEUT+LYMPH+MONO+EOS = 11.35 is more than 25% below WBC 15.58 (bands are not in the file, or an entry error); kept"
+  },
+  {
+   "dataset": "S-CB517",
+   "note": "FLAG S-CB517:d102: NEUT+LYMPH+MONO+EOS = 4.35 is more than 25% below WBC 7.7 (bands are not in the file, or an entry error); kept"
+  },
+  {
+   "dataset": "S-CB517",
+   "note": "FLAG S-CB517:d078: NEUT+LYMPH+MONO+EOS = 22.02 is more than 25% below WBC 30.87 (bands are not in the file, or an entry error); kept"
+  },
+  {
+   "dataset": "S-CB517",
+   "note": "FLAG S-CB517:d036: NEUT+LYMPH+MONO+EOS = 23.90 is more than 25% below WBC 31.88 (bands are not in the file, or an entry error); kept"
+  },
+  {
+   "dataset": "S-CB517",
+   "note": "FLAG S-CB517:d108: NEUT+LYMPH+MONO+EOS = 1.58 is more than 25% below WBC 5.38 (bands are not in the file, or an entry error); kept"
+  },
+  {
+   "dataset": "S-CB517",
+   "note": "FLAG S-CB517:d092: NEUT+LYMPH+MONO+EOS = 3.58 is more than 25% below WBC 5.25 (bands are not in the file, or an entry error); kept"
+  },
+  {
+   "dataset": "S-CB517",
+   "note": "FLAG S-CB517:d002: NEUT+LYMPH+MONO+EOS = 15.85 is more than 25% below WBC 26.35 (bands are not in the file, or an entry error); kept"
+  },
+  {
+   "dataset": "S-CB517",
+   "note": "FLAG S-CB517:d008: NEUT+LYMPH+MONO+EOS = 3.13 is more than 25% below WBC 5.19 (bands are not in the file, or an entry error); kept"
+  },
+  {
+   "dataset": "S-CB517",
+   "note": "FLAG S-CB517:d085: NEUT+LYMPH+MONO+EOS = 9.92 is more than 25% below WBC 13.95 (bands are not in the file, or an entry error); kept"
+  },
+  {
+   "dataset": "S-CB017",
+   "note": "FLAG: the IL-2 floor of 10 occurs once (one control sample); the next-lowest IL-2 value 12.1 is frequent and may also be a floor-like interpolated value. Only the record's floors were flagged. Cytokine values are heavily quantised (repeated values such as IL-18 83, 144.9, 188.4); kept as reported."
+  },
+  {
+   "dataset": "S-CB017",
+   "note": "FLAG: the CYTOKINES sheet has an unlabelled column with the word 'Dead' beside 9 complicated dogs in the first block and 8 in the second. The article reports one death. The column is not used as an outcome and nothing from it is in the features or outcomes file."
+  },
+  {
+   "dataset": "S-CB017",
+   "note": "FLAG: S-CB017:d003 day 1: mono 2.3 vs mono_pct 27.0% of WBC 19.0 = 5.13"
+  },
+  {
+   "dataset": "S-CB017",
+   "note": "FLAG: S-CB017:d008 day 1: hct 35.0% and rbc 35.0 give MCV 10 fL (implausible; rbc is probably the haematocrit typed twice)"
+  },
+  {
+   "dataset": "S-CB017",
+   "note": "FLAG: S-CB017:d038 day 7: neut_band 0.7 vs neut_band_pct 1.0% of WBC 6.8 = 0.07"
+  },
+  {
+   "dataset": "S-CB017",
+   "note": "FLAG: S-CB017:d038 day 7: neut_seg 42.0 vs neut_seg_pct 62.0% of WBC 6.8 = 4.22"
+  },
+  {
+   "dataset": "S-CB017",
+   "note": "FLAG: S-CB017:d047 day 7: neut_seg 1.4 vs neut_seg_pct 59.0% of WBC 28.3 = 16.7"
+  },
+  {
+   "dataset": "S-CB017",
+   "note": "FLAG: S-CB017:d043 control: mono 0.8 vs mono_pct 1.0% of WBC 12.6 = 0.13"
+  },
+  {
+   "dataset": "S-CB017",
+   "note": "FLAG: S-CB017:d043 control: eos 1.6 vs eos_pct 3.0% of WBC 12.6 = 0.38"
+  },
+  {
+   "dataset": "S-CB017",
+   "note": "FLAG: S-CB017:d004 control: mono 0.0 vs mono_pct 4.0% of WBC 13.1 = 0.52"
+  },
+  {
+   "dataset": "S-CB516",
+   "note": "FLAG: S-CB516:d002: age written '4 Y 8 Mio' ('Mio' read as months, Mo)"
+  },
+  {
+   "dataset": "DS05",
+   "note": "FLAG (kept as reported): one dog (BET048 in the file) has red cell count 7.89 x10^12/L, the same number as its WCC, while its haematocrit is 0.28 L/L and MCV 75.5 fL (HCT/MCV gives about 3.71 x10^12/L). Probable entry error in rbc."
+  },
+  {
+   "dataset": "DS05",
+   "note": "FLAG (kept as reported): one dog (BET021 in the file) has globulin 1 g/L while total protein minus albumin is 32.7 g/L. Probable entry error in globulin."
+  },
+  {
+   "dataset": "DS02",
+   "note": "FLAG: the same dog has a parasitaemia of 0 in the day-6 column (raw cell Parasitaemias!K7), two days after its death. The value is kept as reported and flagged here; treat it as a probable entry error. Affected dog-days: 1."
+  },
+  {
+   "dataset": "DS04",
+   "note": "FLAG (resolved by the article): control 4 has two signalments: sheets 4.1 and 4A.3 say 'Unknown. 7 months. MI. Pitbull. 12 kg' (the same as case 88's signalment), sheets 4A.1 and 4A.2 say 'Dexter. 3 years. MI. JRT. 7kg'. Control 9: sheets 9A.1-9A.2 say 'Teddy. 3 years. FI. Africanis. 13kg', 9A.3 says '... Bull terrier. 23kg'. The CB147 control means and medians (age 18.3/15.5 months, weight 13.6/12.5 kg, breeds Pitbull, Africanis, Boerboel) are reproduced only with control 4 = Pitbull 7 months 12 kg and control 9 = Africanis 13 kg, so those are used; the other texts are treated as template carry-over. All repeat scorings stay assigned to the case number of the Score Sheet."
+  },
+  {
+   "dataset": "DS04",
+   "note": "FLAG (kept as reported): the fatal cases' ages from the sheets (mean 55.0, median 42 months) do not reproduce the CB147 mean 52.8 and median 50 months, and their weights (8 dogs) give median 32.3 kg against the article's 34 kg (the mean 28.9 kg agrees). The ages are kept as written on the sheets; one or more ages in the article's source must differ."
+  },
+  {
+   "dataset": "DS04",
+   "note": "FLAG (kept as reported): case 106 weighs 3 kg at 3 years (mixed breed). It is consistent with the article's mean weight."
+  },
+  {
+   "dataset": "DS04",
+   "note": "FLAG (kept as reported): case 88 is 'DOA' on its sheet; the same number 88 is in the DS07 'uncomplicated' list (data.md linkage facts; unverified numbering link)."
+  },
+  {
+   "dataset": "DS04",
+   "note": "FLAG (kept as reported): reticulocyte % is 0 in 6 of 10 fatal cases; true zero or not done is unknown."
+  },
+  {
+   "dataset": "DS04",
+   "note": "FLAG (kept as reported): monocytes 0 x10^9/L in one fatal case."
+  },
+  {
+   "dataset": "DS04",
+   "note": "FLAG (stored as null): globulin 'x' in one fatal case (its TSP minus albumin is 50.9 g/L)."
+  }
+ ],
+ "links": [
+  {
+   "a": "S-CB517",
+   "b": "S-CB050",
+   "what": "Same dogs: S-CB050 cases 1-97 and controls 201-215"
+  },
+  {
+   "a": "DS03",
+   "b": "DS02",
+   "what": "The 5 DS03 experimental dogs are the 5 DS02 Beagles (matched by value in SV-G1)"
+  },
+  {
+   "a": "DS04",
+   "b": "S-CB050",
+   "what": "At least 3 fatal DS04 dogs are S-CB050 cases 126, 127 and 131 (matched by value)"
+  },
+  {
+   "a": "DS03",
+   "b": "S-CB050",
+   "what": "Possible, unverified (same hospital)"
+  },
+  {
+   "a": "DS07",
+   "b": "DS04",
+   "what": "Possible, not confirmed (case numbers overlap; no shared values)"
+  }
+ ],
+ "scb050_scb517_comparison": {
+  "il2": {
+   "n_pairs": 112,
+   "n_equal": 111,
+   "n_within_1pct": 112,
+   "spearman_rho": 1.0,
+   "mismatches": [
+    {
+     "S-CB517": "S-CB517:d101",
+     "S-CB050": "S-CB050:d125",
+     "S-CB517_value": 50000.0,
+     "S-CB050_value": 50001.0
+    }
+   ]
+  },
+  "il6": {
+   "n_pairs": 112,
+   "n_equal": 111,
+   "n_within_1pct": 112,
+   "spearman_rho": 1.0,
+   "mismatches": [
+    {
+     "S-CB517": "S-CB517:d101",
+     "S-CB050": "S-CB050:d125",
+     "S-CB517_value": 50000.0,
+     "S-CB050_value": 50001.0
+    }
+   ]
+  },
+  "il8": {
+   "n_pairs": 112,
+   "n_equal": 112,
+   "n_within_1pct": 112,
+   "spearman_rho": 1.0,
+   "mismatches": []
+  },
+  "il10": {
+   "n_pairs": 112,
+   "n_equal": 112,
+   "n_within_1pct": 112,
+   "spearman_rho": 1.0,
+   "mismatches": []
+  },
+  "il18": {
+   "n_pairs": 112,
+   "n_equal": 111,
+   "n_within_1pct": 112,
+   "spearman_rho": 1.0,
+   "mismatches": [
+    {
+     "S-CB517": "S-CB517:d101",
+     "S-CB050": "S-CB050:d125",
+     "S-CB517_value": 50000.0,
+     "S-CB050_value": 50001.0
+    }
+   ]
+  },
+  "gmcsf": {
+   "n_pairs": 112,
+   "n_equal": 111,
+   "n_within_1pct": 112,
+   "spearman_rho": 1.0,
+   "mismatches": [
+    {
+     "S-CB517": "S-CB517:d101",
+     "S-CB050": "S-CB050:d125",
+     "S-CB517_value": 50000.0,
+     "S-CB050_value": 50001.0
+    }
+   ]
+  },
+  "mcp1": {
+   "n_pairs": 112,
+   "n_equal": 112,
+   "n_within_1pct": 112,
+   "spearman_rho": 1.0,
+   "mismatches": []
+  },
+  "wbc": {
+   "n_pairs": 112,
+   "n_equal": 88,
+   "n_within_1pct": 88,
+   "spearman_rho": 0.983041,
+   "mismatches": [
+    {
+     "S-CB517": "S-CB517:d005",
+     "S-CB050": "S-CB050:d013",
+     "S-CB517_value": 9.97,
+     "S-CB050_value": 8.98
+    },
+    {
+     "S-CB517": "S-CB517:d095",
+     "S-CB050": "S-CB050:d046",
+     "S-CB517_value": 5.27,
+     "S-CB050_value": 4.39
+    },
+    {
+     "S-CB517": "S-CB517:d096",
+     "S-CB050": "S-CB050:d023",
+     "S-CB517_value": 17.81,
+     "S-CB050_value": 15.22
+    },
+    {
+     "S-CB517": "S-CB517:d055",
+     "S-CB050": "S-CB050:d111",
+     "S-CB517_value": 3.31,
+     "S-CB050_value": 2.9
+    },
+    {
+     "S-CB517": "S-CB517:d006",
+     "S-CB050": "S-CB050:d153",
+     "S-CB517_value": 12.91,
+     "S-CB050_value": 11.22
+    },
+    {
+     "S-CB517": "S-CB517:d016",
+     "S-CB050": "S-CB050:d100",
+     "S-CB517_value": 19.73,
+     "S-CB050_value": 16.6
+    },
+    {
+     "S-CB517": "S-CB517:d076",
+     "S-CB050": "S-CB050:d005",
+     "S-CB517_value": 7.4,
+     "S-CB050_value": 6.73
+    },
+    {
+     "S-CB517": "S-CB517:d011",
+     "S-CB050": "S-CB050:d115",
+     "S-CB517_value": 16.1,
+     "S-CB050_value": 9.04
+    },
+    {
+     "S-CB517": "S-CB517:d091",
+     "S-CB050": "S-CB050:d097",
+     "S-CB517_value": 5.85,
+     "S-CB050_value": 5.32
+    },
+    {
+     "S-CB517": "S-CB517:d099",
+     "S-CB050": "S-CB050:d032",
+     "S-CB517_value": 23.83,
+     "S-CB050_value": 17.78
+    },
+    {
+     "S-CB517": "S-CB517:d042",
+     "S-CB050": "S-CB050:d132",
+     "S-CB517_value": 22.06,
+     "S-CB050_value": 11.49
+    },
+    {
+     "S-CB517": "S-CB517:d010",
+     "S-CB050": "S-CB050:d094",
+     "S-CB517_value": 4.48,
+     "S-CB050_value": 3.8
+    },
+    {
+     "S-CB517": "S-CB517:d051",
+     "S-CB050": "S-CB050:d050",
+     "S-CB517_value": 15.58,
+     "S-CB050_value": 13.67
+    },
+    {
+     "S-CB517": "S-CB517:d102",
+     "S-CB050": "S-CB050:d057",
+     "S-CB517_value": 7.7,
+     "S-CB050_value": 5.06
+    },
+    {
+     "S-CB517": "S-CB517:d078",
+     "S-CB050": "S-CB050:d126",
+     "S-CB517_value": 30.87,
+     "S-CB050_value": 23.93
+    },
+    {
+     "S-CB517": "S-CB517:d036",
+     "S-CB050": "S-CB050:d068",
+     "S-CB517_value": 31.88,
+     "S-CB050_value": 25.7
+    },
+    {
+     "S-CB517": "S-CB517:d108",
+     "S-CB050": "S-CB050:d080",
+     "S-CB517_value": 5.38,
+     "S-CB050_value": 1.8
+    },
+    {
+     "S-CB517": "S-CB517:d092",
+     "S-CB050": "S-CB050:d157",
+     "S-CB517_value": 5.25,
+     "S-CB050_value": 4.3
+    },
+    {
+     "S-CB517": "S-CB517:d046",
+     "S-CB050": "S-CB050:d083",
+     "S-CB517_value": 4.75,
+     "S-CB050_value": 4.31
+    },
+    {
+     "S-CB517": "S-CB517:d002",
+     "S-CB050": "S-CB050:d114",
+     "S-CB517_value": 26.35,
+     "S-CB050_value": 19.09
+    },
+    {
+     "S-CB517": "S-CB517:d008",
+     "S-CB050": "S-CB050:d087",
+     "S-CB517_value": 5.19,
+     "S-CB050_value": 4.12
+    },
+    {
+     "S-CB517": "S-CB517:d018",
+     "S-CB050": "S-CB050:d141",
+     "S-CB517_value": 5.49,
+     "S-CB050_value": 4.99
+    },
+    {
+     "S-CB517": "S-CB517:d059",
+     "S-CB050": "S-CB050:d074",
+     "S-CB517_value": 3.37,
+     "S-CB050_value": 3.06
+    },
+    {
+     "S-CB517": "S-CB517:d085",
+     "S-CB050": "S-CB050:d062",
+     "S-CB517_value": 13.95,
+     "S-CB050_value": 10.9
+    }
+   ],
+   "n_mismatch_where_scb050_wbc_equals_differential_plus_bands": 24
+  },
+  "neut_seg": {
+   "n_pairs": 112,
+   "n_equal": 112,
+   "n_within_1pct": 112,
+   "spearman_rho": 1.0,
+   "mismatches": []
+  },
+  "died_agreement": {
+   "n_pairs": 97,
+   "n_equal": 97,
+   "differ": []
+  },
+  "link": "112 of 112 rows linked by value (7 cytokines + WBC + segmented neutrophils; best match >= 7 of 9 equal values and at least 4 more than the next best; floor values make 3-4 chance matches common). The best value match is the case implied by the ID (CaseN -> S-CB050 case N; ControlK -> S-CB050 case 200+K) in 112 of 112 rows."
+ },
+ "dog_records": 694,
+ "distinct_dogs_after_links": 574,
+ "feature_records": 803,
+ "independent_sources": [
+  "SRC-A",
+  "SRC-B",
+  "SRC-C",
+  "SRC-D",
+  "SRC-E",
+  "SRC-F",
+  "SRC-G",
+  "SRC-O"
+ ],
+ "missing_datasets": [],
+ "dictionary_rows": 538
+}

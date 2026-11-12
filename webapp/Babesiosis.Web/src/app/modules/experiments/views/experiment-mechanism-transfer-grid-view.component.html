@@ -1,0 +1,68 @@
+<div class="fs-experiment-transfer">
+  @if (primary(); as p) {
+    <fs-card title="Ranked gaps: human severity mechanisms with no canine severity data and a canine assay"
+             subtitle="Literature grid (PubMed and the review corpus, 2026-11-12) · descriptive, no statistical test · no dog-level data used">
+      <dl class="fs-experiment-transfer__totals">
+        <div><dt>Mechanisms graded</dt><dd>{{ p.n_mechanisms }}<span class="fs-experiment-transfer__of"> ({{ p.n_seed }} seed, {{ p.n_added }} added)</span></dd></div>
+        <div><dt>Gaps</dt><dd>{{ p.n_gap }}<span class="fs-experiment-transfer__of"> / {{ p.n_mechanisms }}</span></dd></div>
+        <div><dt>Never measured in dogs with babesiosis</dt><dd>{{ p.status_counts.none }}</dd></div>
+        <div><dt>Gaps among human grade ≥ 2</dt><dd>{{ p.n_grade_ge2_gap }}<span class="fs-experiment-transfer__of"> / {{ p.n_grade_ge2 }} ({{ sharePct() }})</span></dd></div>
+        <div><dt>Grade 3 already tested in dogs</dt><dd>{{ p.n_grade3_severity_tested }}<span class="fs-experiment-transfer__of"> / {{ p.n_grade3 }}</span></dd></div>
+        <div><dt>Ranked (in DS07 proteome)</dt><dd>{{ p.n_ranked }}<span class="fs-experiment-transfer__of"> ({{ p.n_ranked_in_ds07 }})</span></dd></div>
+      </dl>
+      <div class="fs-experiment-transfer__badges">
+        <fs-badge variant="tonal" [intent]="p.premise === 'holds' ? 'success' : 'warning'">Premise "most strong human mechanisms are unmeasured in dogs": {{ p.premise }}</fs-badge>
+        @if (p.excluded_no_assay.length) {
+          <fs-badge variant="tonal" intent="secondary">Gap, strong human evidence, no canine assay: {{ p.excluded_no_assay.join('; ') }}</fs-badge>
+        }
+      </div>
+      <fs-data-grid [data]="rankedRows()" [columns]="rankedColumns" keyExpr="rank" noDataText="No mechanism met the ranking rule." />
+      <p class="fs-experiment-transfer__footnote">
+        Rule (fixed in spec.md): gap, human grade 2 or 3, a canine assay; ordered by human grade, assay, testable now, then fewer canine studies.
+        Human grade: 3 = three or more cohorts or a meta-analysis, 2 = two cohorts or one of 100 or more patients. A gap means not found in PubMed or the
+        review corpus (about half the CB texts are abstracts). DS07 is the only public file with a severity label (14 complicated vs 18 uncomplicated
+        B. rossi, one source); DS06 and DS02 are 5 experimental Beagles. Human evidence suggests what to measure, not what dogs will show.
+      </p>
+    </fs-card>
+  } @else {
+    <fs-card title="Ranked gaps"><p class="fs-experiment-transfer__footnote">This run stored no primary result.</p></fs-card>
+  }
+
+  <fs-card title="Canine status by mechanism family" subtitle="Seven families, one sub-agent each · counts of mechanisms">
+    @if (families(); as f) {
+      <fs-chart [options]="familyChart()" [height]="320" [empty]="!f.rows.length" emptyMessage="No family rows stored" />
+      <fs-data-grid [data]="f.rows" [columns]="familyColumns" keyExpr="family" noDataText="No family rows." />
+    } @else {
+      <p class="fs-experiment-transfer__footnote">This run stored no family summary.</p>
+    }
+  </fs-card>
+
+  <fs-card title="The transfer grid" subtitle="Every mechanism with its human and canine evidence · out/transfer_grid.csv has the DOIs and PubMed queries">
+    @if (grid(); as g) {
+      <div class="fs-experiment-transfer__filter">
+        @for (s of statuses; track s) {
+          <button type="button" class="fs-experiment-transfer__chip" [class.is-active]="statusFilter() === s" (click)="statusFilter.set(s)">{{ statusLabel(s) }}</button>
+        }
+      </div>
+      <fs-data-grid [data]="gridRows()" [columns]="gridColumns" keyExpr="mechanism_id" [pager]="pager" noDataText="No mechanisms." />
+      <p class="fs-experiment-transfer__footnote">
+        CB keyword hits are leads from a regex search of the 444 CB notes and the CB texts; "CB confirmed" lists the articles that the agent read and
+        found to measure the mechanism in dogs with babesiosis ("severity" when compared by severity or outcome). Grades are agent judgements, not reviewed by a person.
+      </p>
+    } @else {
+      <p class="fs-experiment-transfer__footnote">This run stored no grid.</p>
+    }
+  </fs-card>
+
+  <fs-card title="Hand-over to part b" subtitle="The DS07 candidate family fixed in the package file, mapped to grid mechanisms · not a test">
+    @if (handover(); as h) {
+      <fs-data-grid [data]="h.rows" [columns]="handoverColumns" keyExpr="partb_candidate" noDataText="No hand-over rows." />
+      <p class="fs-experiment-transfer__footnote">
+        Machine-readable list: {{ h.file }}. "master_candidate" means the protein is in B_Proteins.txt but not flagged as a master protein; part b
+        confirms master status before its outcome lock opens.
+      </p>
+    } @else {
+      <p class="fs-experiment-transfer__footnote">This run stored no hand-over.</p>
+    }
+  </fs-card>
+</div>

@@ -5,6 +5,7 @@ import { FsShell } from '@layouts/fs-shell';
 import { homeUrl } from '@layouts/constants';
 import { helpUrlMatcher } from 'app/modules/help/help.routes';
 import { experimentsUrlMatcher } from 'app/modules/experiments/experiments.routes';
+import { clinicalUrlMatcher } from 'app/modules/clinical/clinical.routes';
 
 const routes: Routes = [
   {
@@ -13,16 +14,25 @@ const routes: Routes = [
     children: [
       { path: '', redirectTo: homeUrl, pathMatch: 'full' },
       {
-        // The landing page (homeUrl). A placeholder until the real home content is built.
+        // The landing page (homeUrl): the overview of the canine literature.
         path: 'home',
         loadComponent: () =>
           import('app/modules/home/home.component').then(m => m.HomeComponent),
       },
+      // The old Literature Review dashboard was replaced by the overview; keep its links working.
+      { path: 'literature-review', redirectTo: homeUrl, pathMatch: 'full' },
+      // /topics opens the first topic (ERY, sort order 1); the page has a topic switcher.
+      { path: 'topics', redirectTo: 'topics/ERY', pathMatch: 'full' },
       {
-        // Placeholder until the Review screen is built in phase two.
-        path: 'literature-review',
+        // One page per category; the router reuses the component when the code changes.
+        path: 'topics/:code',
         loadComponent: () =>
-          import('app/modules/literature-review/literature-review.component').then(m => m.LiteratureReviewComponent),
+          import('app/modules/topics/topic.component').then(m => m.TopicComponent),
+      },
+      {
+        path: 'gaps',
+        loadComponent: () =>
+          import('app/modules/gaps/gaps.component').then(m => m.GapsComponent),
       },
       {
         path: 'reference-articles',
@@ -35,6 +45,13 @@ const routes: Routes = [
         matcher: experimentsUrlMatcher,
         loadComponent: () =>
           import('app/modules/experiments/experiments.component').then(m => m.ExperimentsComponent),
+      },
+      {
+        // /clinical and /clinical/:id — one config so the rail keeps its filter
+        // and scroll when another page of the manual is picked.
+        matcher: clinicalUrlMatcher,
+        loadComponent: () =>
+          import('app/modules/clinical/clinical.component').then(m => m.ClinicalComponent),
       },
       {
         // Chat screen only; the agent behind it is connected in phase two.

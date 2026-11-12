@@ -1,0 +1,110 @@
+{
+ "dataset_id": "DS05",
+ "checks": [
+  {
+   "name": "dogs",
+   "observed": 150,
+   "expected": 150,
+   "tolerance": 0.0,
+   "source": "data.md; CB126 note: 150 dogs",
+   "pass": true
+  },
+  {
+   "name": "B. rossi qPCR positive",
+   "observed": 149,
+   "expected": 149,
+   "tolerance": 0.0,
+   "source": "CB126 note: B. rossi 149",
+   "pass": true
+  },
+  {
+   "name": "B. vogeli qPCR positive",
+   "observed": 1,
+   "expected": 1,
+   "tolerance": 0.0,
+   "source": "CB126 note: B. vogeli 1",
+   "pass": true
+  },
+  {
+   "name": "E. canis co-infection",
+   "observed": 3,
+   "expected": 3,
+   "tolerance": 0.0,
+   "source": "CB126 note: 3 dogs (2.0%) E. canis",
+   "pass": true
+  },
+  {
+   "name": "T. equi",
+   "observed": 0,
+   "expected": 0,
+   "tolerance": 0.0,
+   "source": "CB126 note: no Theileria",
+   "pass": true
+  },
+  {
+   "name": "male intact",
+   "observed": 82,
+   "expected": 82,
+   "tolerance": 0.0,
+   "source": "authors' summary row of the sheet: 82/150 MALE INTACT",
+   "pass": true
+  },
+  {
+   "name": "median age_months",
+   "observed": 12.0,
+   "expected": 12.0,
+   "tolerance": 1e-06,
+   "source": "authors' summary row of the sheet: '12 (8 - 30)'",
+   "pass": true
+  },
+  {
+   "name": "median hb",
+   "observed": 53.0,
+   "expected": 53.0,
+   "tolerance": 1e-06,
+   "source": "authors' summary row of the sheet: '53 (39 - 80,75)'",
+   "pass": true
+  },
+  {
+   "name": "median hct",
+   "observed": 0.18,
+   "expected": 0.18,
+   "tolerance": 1e-06,
+   "source": "authors' summary row of the sheet: '0,18 (0,13 - 0,27)'",
+   "pass": true
+  },
+  {
+   "name": "median arc",
+   "observed": 102.05,
+   "expected": 102.05,
+   "tolerance": 1e-06,
+   "source": "authors' summary row of the sheet: '102,05 (52,38 - 174,28)'",
+   "pass": true
+  },
+  {
+   "name": "median albumin",
+   "observed": 23.7,
+   "expected": 23.7,
+   "tolerance": 1e-06,
+   "source": "authors' summary row of the sheet: '23,7 (19,9 - 27,18)'",
+   "pass": true
+  },
+  {
+   "name": "ARC quartiles (type 6, as Excel QUARTILE.EXC) vs the summary row",
+   "observed": [
+    52.38,
+    174.28
+   ],
+   "expected": [
+    52.38,
+    174.28
+   ],
+   "tolerance": 0.0,
+   "source": "authors' summary row: '102,05 (52,38 - 174,28)'",
+   "pass": true
+  }
+ ],
+ "n_dogs": 150,
+ "n_records": 150,
+ "n_failed": 0
+}

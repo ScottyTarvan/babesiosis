@@ -1,6 +1,6 @@
 # Search and extraction provenance (`search/`)
 
-Paths are relative to `core/`. Counts were taken on 2026-10-28; re-count before you quote them as current.
+Paths are relative to `core/`. Counts as of 2026-10-28.
 
 These are the working files. Use them for questions about how a record got in or why it was excluded. Do not use them to describe the included set: the final values are in `articles.jsonl`.
 

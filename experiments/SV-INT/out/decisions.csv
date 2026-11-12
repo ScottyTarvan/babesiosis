@@ -1,0 +1,15 @@
+decision,raised_by,kind
+"Send the case-numbering query to the authors (DS07/DS04 register, DS07 outcomes, DS03 dates, CB145 cohort). Draft: SV-07/out/author_query_draft.md, not sent.",SV-07; index.md,author request
+"Run SV-02c: request dog-level load, antibody status, age and outcome from the authors of CB141 (342 B. canis dogs), CB040 (320 B. rossi dogs) and RQ-CB145. Not run.",SV-02a; index.md,author request
+"Change independent_source in /core/datasets.jsonl and the 'never pool' list in data.md: DS03 natural and controls to SRC-A, DS03 experimental to SRC-B, DS04 with an overlap note to SRC-A.",SV-07; SV-05,data correction
+Correct data.md: S-CB017 cytokine blocks are day 1 and day 7; DS07 has 172 gene-symbol master proteins (not 163); DS04 per-slide files are histopathology score sheets; DS03 'Day 1' is anchored; DS03 natural dogs are S-CB050 dogs; DS04 case 54 is DS03 BLSC29.,SV-G1; SV-07; SV-05,data correction
+Use the S-CB050 WBC for the 24 flagged S-CB517 dogs (recommended).,SV-G1,data correction
+"Replace the pilot extractions under /core/data/severity/ with the SV-G2 v2 extractions, and add the 18 new canonical marker names to marker_map.csv.",SV-G2; index.md,core data
+"Extract the 34 abstract-only tier B articles (CB037 first), or obtain the CB037 full text: it is the only source of 'IL-8 falls with severity in B. rossi'.",SV-G2 (optional); SV-03; SV-04,literature
+"Accept merged outcome definitions (complicated, severity grade, death) for a harmonised B. canis meta-analysis: 10 cells would reach 3 to 4 units.",SV-03,method
+"Accept the SV-07 DS03-S-CB050 pairs at dog level, to join DS03 red-cell values to S-CB050 death (haematocrit by outcome; an axis-2-like score against death in about 100 dogs) as a new, separately locked analysis.",SV-05; SV-09,new analysis
+"Give the SV-06a mechanism grades a second, independent review (a person or a blind second agent) before relying on the ranking.",SV-06a,review
+"Accept haptoglobin through its group master A0A5F4DB38 (or drop it; no conclusion changes), and the replacement of the presence test by low-coverage rank tests in DS07.",SV-06b,method
+Re-quantify DS06 from the public FASTQ files (SRA PRJNA703846) without the CPM filter to recover MPO and ELANE: a large download.,SV-08,new analysis
+"Decide whether to pursue any SV-10 design; set the severity thresholds of the outcome set; set one rule for load adjustment (memo 1 adjusts, memo 2 does not); obtain the CB379 full text; rank memo 3's stored-plasma panel by the SV-06a list (now possible).",SV-10,new cohort
+"Which package to deepen. SV-INT's proposal: first SV-02c (the cheapest route to dog-level load and outcome), then the SV-10-03 cohort with at least 200 dogs outside Onderstepoort; the DS03-S-CB050 join is cheapest but rests on unverified links.",SV-INT,programme

@@ -1,0 +1,237 @@
+{
+ "dataset_id": "S-CB050",
+ "checks": [
+  {
+   "name": "data rows",
+   "observed": 161,
+   "expected": 161,
+   "tolerance": 0.0,
+   "source": "data.md",
+   "pass": true
+  },
+  {
+   "name": "infected dogs",
+   "observed": 141,
+   "expected": 141,
+   "tolerance": 0.0,
+   "source": "data.md (article reports 140)",
+   "pass": true
+  },
+  {
+   "name": "deaths among infected",
+   "observed": 15,
+   "expected": 15,
+   "tolerance": 0.0,
+   "source": "data.md; CB050: 15 died",
+   "pass": true
+  },
+  {
+   "name": "controls",
+   "observed": 20,
+   "expected": 20,
+   "tolerance": 0.0,
+   "source": "data.md; CB050: 20 controls",
+   "pass": true
+  },
+  {
+   "name": "dogs with cytokines: infected, infected died, controls",
+   "observed": [
+    97,
+    12,
+    15
+   ],
+   "expected": [
+    97,
+    12,
+    15
+   ],
+   "tolerance": 0.0,
+   "source": "data.md",
+   "pass": true
+  },
+  {
+   "name": "cohort 1 infected and controls",
+   "observed": [
+    97,
+    15
+   ],
+   "expected": [
+    97,
+    15
+   ],
+   "tolerance": 0.0,
+   "source": "data.md (article: 96 + 15)",
+   "pass": true
+  },
+  {
+   "name": "dog S-CB050:d125 ceiling cells",
+   "observed": 4,
+   "expected": 4,
+   "tolerance": 0.0,
+   "source": "record: 50001 ceiling in dog S-CB050:d125",
+   "pass": true
+  },
+  {
+   "name": "median MPXI, infected",
+   "observed": 19.2,
+   "expected": 19.2,
+   "tolerance": 0.050000001,
+   "source": "CB050 full text (Results): 19.2 (IQR 14.9-22.8)",
+   "pass": true
+  },
+  {
+   "name": "median MPXI, controls",
+   "observed": 16.75,
+   "expected": 16.8,
+   "tolerance": 0.050000001,
+   "source": "CB050 full text (Results): 16.8 (IQR 12.8-19.7)",
+   "pass": true
+  },
+  {
+   "name": "median MPXI, non-survivors",
+   "observed": 22.8,
+   "expected": 22.8,
+   "tolerance": 0.050000001,
+   "source": "CB050 full text (Results): 22.8 (IQR 17.7-26.1)",
+   "pass": true
+  },
+  {
+   "name": "median MPXI, survivors",
+   "observed": 19.0,
+   "expected": 19.0,
+   "tolerance": 0.050000001,
+   "source": "CB050 full text (Results): 19.0 (IQR 14.7-21.8)",
+   "pass": true
+  },
+  {
+   "name": "MPXI quartiles, infected (type 6)",
+   "observed": [
+    14.925,
+    22.8
+   ],
+   "expected": [
+    14.9,
+    22.8
+   ],
+   "tolerance": 0.0,
+   "source": "CB050 full text (Results)",
+   "pass": true
+  },
+  {
+   "name": "median segmented neutrophils, controls",
+   "observed": 5.79,
+   "expected": 5.8,
+   "tolerance": 0.050000001,
+   "source": "CB050 full text (Results): 5.8",
+   "pass": true
+  },
+  {
+   "name": "median segmented neutrophils, infected",
+   "observed": 4.04,
+   "expected": 4.0,
+   "tolerance": 0.050000001,
+   "source": "CB050 full text (Results): 4.0",
+   "pass": true
+  },
+  {
+   "name": "median band neutrophils, non-survivors",
+   "observed": 0.99,
+   "expected": 1.0,
+   "tolerance": 0.050000001,
+   "source": "CB050 full text (Results): 1.0",
+   "pass": true
+  },
+  {
+   "name": "median age, infected (months)",
+   "observed": 20.0,
+   "expected": 20,
+   "tolerance": 0.5,
+   "source": "CB050 full text (Results): 20",
+   "pass": true
+  },
+  {
+   "name": "median age, controls (months)",
+   "observed": 46.0,
+   "expected": 46,
+   "tolerance": 0.5,
+   "source": "CB050 full text (Results): 46",
+   "pass": true
+  },
+  {
+   "name": "male:female, controls",
+   "observed": [
+    7,
+    13
+   ],
+   "expected": [
+    7,
+    13
+   ],
+   "tolerance": 0.0,
+   "source": "CB050 full text (Results)",
+   "pass": true
+  },
+  {
+   "name": "male:female, non-survivors",
+   "observed": [
+    10,
+    5
+   ],
+   "expected": [
+    10,
+    5
+   ],
+   "tolerance": 0.0,
+   "source": "CB050 full text (Results)",
+   "pass": true
+  },
+  {
+   "name": "male:female, survivors",
+   "observed": [
+    83,
+    43
+   ],
+   "expected": [
+    82,
+    43
+   ],
+   "tolerance": 0.0,
+   "source": "CB050 full text (Results) (125 survivors; the file has one more)",
+   "pass": false
+  },
+  {
+   "name": "Spearman MPXI vs IL-8, infected",
+   "observed": -0.35,
+   "expected": -0.35,
+   "tolerance": 0.005,
+   "source": "CB050 full text (Results): r = -0.350 (n here 96)",
+   "pass": true
+  },
+  {
+   "name": "Spearman MPXI vs IL-10, infected",
+   "observed": 0.211,
+   "expected": 0.211,
+   "tolerance": 0.005,
+   "source": "CB050 full text (Results): r = 0.211 (n here 96)",
+   "pass": true
+  }
+ ],
+ "n_dogs": 161,
+ "n_records": 161,
+ "floor_counts": {
+  "il2": 30,
+  "il6": 11,
+  "il8": 0,
+  "il10": 5,
+  "il18": 4,
+  "gmcsf": 28,
+  "mcp1": 0
+ },
+ "ceiling_cells": [
+  "case 80 gmcsf",
+  "case 80 il18",
+  "case 80 il2",
+  "case 80 il6"
+ ],
+ "n_failed": 1
+}

@@ -1,0 +1,2767 @@
+{
+ "dataset_id": "DS05",
+ "outcomes": [
+  {
+   "name": "illness_class",
+   "definition": "Authors' illness duration class: DI_1 1-3 days, DI_2 4-6, DI_3 more than 7",
+   "includes_euthanasia": false
+  },
+  {
+   "name": "habitus_raw",
+   "definition": "Habitus cell as written in the file (1+ to 4+ or COLLAPSED)",
+   "includes_euthanasia": false
+  },
+  {
+   "name": "habitus_score",
+   "definition": "Admission mental status (habitus) graded by the authors: 4 bright, alert and responsive; 3 mildly depressed; 2 and 1 severely depressed; 0 = 'COLLAPSED' in the file (coded 0 here; the authors class it with <2+). Higher is brighter",
+   "includes_euthanasia": false
+  },
+  {
+   "name": "habitus_class",
+   "definition": "Authors' habitus class: BAR (4+), Mi_De (3+), De_Co (2+ or less, or collapsed)",
+   "includes_euthanasia": false
+  },
+  {
+   "name": "anaemia_class",
+   "definition": "Authors' anaemia grade from haematocrit: Ht_N, Ht_Mi, Ht_Mo, Ht_S, Ht_VS",
+   "includes_euthanasia": false
+  },
+  {
+   "name": "wcc_class",
+   "definition": "Authors' white cell class: WCC_Lo (<6), WCC_N, WCC_Hi (>15 x10^9/L)",
+   "includes_euthanasia": false
+  },
+  {
+   "name": "band_class",
+   "definition": "Authors' band neutrophil class: BaN_N (0-0.5), BaN_H (>0.5 x10^9/L)",
+   "includes_euthanasia": false
+  },
+  {
+   "name": "left_shift_class",
+   "definition": "Authors' left shift class: L_shft (bands > 0.5), De_L_shift (bands > segmented); empty = none",
+   "includes_euthanasia": false
+  },
+  {
+   "name": "monocyte_class",
+   "definition": "Authors' monocyte class: Mon_N, Mon_Hi (>1.35 x10^9/L)",
+   "includes_euthanasia": false
+  },
+  {
+   "name": "arc_class",
+   "definition": "Authors' reticulocyte class: ARC_In (<80), ARC_Mi, ARC_Mo, ARC_Ma (>300 x10^9/L)",
+   "includes_euthanasia": false
+  },
+  {
+   "name": "arc_class_2",
+   "definition": "Authors' second reticulocyte class: ARC_Lo (<12.86), ARC_N, ARC_Hi (>115.41 x10^9/L)",
+   "includes_euthanasia": false
+  },
+  {
+   "name": "globulin_class",
+   "definition": "Authors' globulin class: Glo_Lo (<20), Glo_N, Glo_Hi (>41 g/L)",
+   "includes_euthanasia": false
+  }
+ ],
+ "records": [
+  {
+   "dog_id": "DS05:d075",
+   "original_id": "BET001",
+   "values": {
+    "habitus_score": 2,
+    "habitus_raw": "2+",
+    "habitus_class": "De_Co",
+    "anaemia_class": "Ht_S",
+    "wcc_class": "WCC_N",
+    "band_class": "BaN_H",
+    "left_shift_class": "L_shft",
+    "monocyte_class": "Mon_N",
+    "arc_class": "ARC_Ma",
+    "arc_class_2": "ARC_Hi",
+    "globulin_class": "Glo_N",
+    "illness_class": "DI_3"
+   }
+  },
+  {
+   "dog_id": "DS05:d028",
+   "original_id": "BET002",
+   "values": {
+    "habitus_score": 4,
+    "habitus_raw": "4+",
+    "habitus_class": "BAR",
+    "anaemia_class": "Ht_N",
+    "wcc_class": "WCC_N",
+    "band_class": "BaN_N",
+    "left_shift_class": "none",
+    "monocyte_class": "Mon_N",
+    "arc_class": "ARC_In",
+    "arc_class_2": "ARC_N",
+    "globulin_class": "Glo_N",
+    "illness_class": "DI_2"
+   }
+  },
+  {
+   "dog_id": "DS05:d121",
+   "original_id": "BET003",
+   "values": {
+    "habitus_score": 4,
+    "habitus_raw": "4+",
+    "habitus_class": "BAR",
+    "anaemia_class": "Ht_Mi",
+    "wcc_class": "WCC_N",
+    "band_class": "BaN_N",
+    "left_shift_class": "none",
+    "monocyte_class": "Mon_N",
+    "arc_class": "ARC_Mo",
+    "arc_class_2": "ARC_Hi",
+    "globulin_class": "Glo_N",
+    "illness_class": "DI_3"
+   }
+  },
+  {
+   "dog_id": "DS05:d106",
+   "original_id": "BET004",
+   "values": {
+    "habitus_score": 2,
+    "habitus_raw": "2+",
+    "habitus_class": "De_Co",
+    "anaemia_class": "Ht_S",
+    "wcc_class": "WCC_N",
+    "band_class": "BaN_N",
+    "left_shift_class": "none",
+    "monocyte_class": "Mon_N",
+    "arc_class": "ARC_Mi",
+    "arc_class_2": "ARC_Hi",
+    "globulin_class": "Glo_Hi",
+    "illness_class": "DI_3"
+   }
+  },
+  {
+   "dog_id": "DS05:d037",
+   "original_id": "BET005",
+   "values": {
+    "habitus_score": 3,
+    "habitus_raw": "3+",
+    "habitus_class": "Mi_De",
+    "anaemia_class": "Ht_S",
+    "wcc_class": "WCC_N",
+    "band_class": "BaN_N",
+    "left_shift_class": "none",
+    "monocyte_class": "Mon_N",
+    "arc_class": "ARC_Mi",
+    "arc_class_2": "ARC_N",
+    "globulin_class": "Glo_N",
+    "illness_class": "DI_3"
+   }
+  },
+  {
+   "dog_id": "DS05:d054",
+   "original_id": "BET006",
+   "values": {
+    "habitus_score": 2,
+    "habitus_raw": "2+",
+    "habitus_class": "De_Co",
+    "anaemia_class": "Ht_Mo",
+    "wcc_class": "WCC_Lo",
+    "band_class": "BaN_N",
+    "left_shift_class": "none",
+    "monocyte_class": "Mon_N",
+    "arc_class": "ARC_Mi",
+    "arc_class_2": "ARC_Hi",
+    "globulin_class": "Glo_Hi",
+    "illness_class": "DI_1"
+   }
+  },
+  {
+   "dog_id": "DS05:d097",
+   "original_id": "BET007",
+   "values": {
+    "habitus_score": 3,
+    "habitus_raw": "3+",
+    "habitus_class": "Mi_De",
+    "anaemia_class": "Ht_S",
+    "wcc_class": "WCC_N",
+    "band_class": "BaN_H",
+    "left_shift_class": "L_shft",
+    "monocyte_class": "Mon_N",
+    "arc_class": "ARC_Mo",
+    "arc_class_2": "ARC_Hi",
+    "globulin_class": "Glo_N",
+    "illness_class": "DI_3"
+   }
+  },
+  {
+   "dog_id": "DS05:d005",
+   "original_id": "BET008",
+   "values": {
+    "habitus_score": 1,
+    "habitus_raw": "1+",
+    "habitus_class": "De_Co",
+    "anaemia_class": "Ht_VS",
+    "wcc_class": "WCC_Hi",
+    "band_class": "BaN_H",
+    "left_shift_class": "L_shft",
+    "monocyte_class": "Mon_N",
+    "arc_class": "ARC_Ma",
+    "arc_class_2": "ARC_Hi",
+    "globulin_class": "Glo_Hi",
+    "illness_class": "DI_2"
+   }
+  },
+  {
+   "dog_id": "DS05:d047",
+   "original_id": "BET009",
+   "values": {
+    "habitus_score": 2,
+    "habitus_raw": "2+",
+    "habitus_class": "De_Co",
+    "anaemia_class": "Ht_VS",
+    "wcc_class": "WCC_N",
+    "band_class": "BaN_N",
+    "left_shift_class": "none",
+    "monocyte_class": "Mon_N",
+    "arc_class": "ARC_Ma",
+    "arc_class_2": "ARC_Hi",
+    "globulin_class": "Glo_N",
+    "illness_class": "DI_1"
+   }
+  },
+  {
+   "dog_id": "DS05:d085",
+   "original_id": "BET010",
+   "values": {
+    "habitus_score": 2,
+    "habitus_raw": "2+",
+    "habitus_class": "De_Co",
+    "anaemia_class": "Ht_S",
+    "wcc_class": "WCC_N",
+    "band_class": "BaN_H",
+    "left_shift_class": "L_shft",
+    "monocyte_class": "Mon_Hi",
+    "arc_class": "ARC_In",
+    "arc_class_2": "ARC_N",
+    "globulin_class": "Glo_N",
+    "illness_class": "DI_1"
+   }
+  },
+  {
+   "dog_id": "DS05:d050",
+   "original_id": "BET011",
+   "values": {
+    "habitus_score": 2,
+    "habitus_raw": "2+",
+    "habitus_class": "De_Co",
+    "anaemia_class": "Ht_S",
+    "wcc_class": "WCC_N",
+    "band_class": "BaN_N",
+    "left_shift_class": "none",
+    "monocyte_class": "Mon_N",
+    "arc_class": "ARC_Mo",
+    "arc_class_2": "ARC_Hi",
+    "globulin_class": "Glo_Hi",
+    "illness_class": "DI_3"
+   }
+  },
+  {
+   "dog_id": "DS05:d076",
+   "original_id": "BET012",
+   "values": {
+    "habitus_score": 1,
+    "habitus_raw": "1+",
+    "habitus_class": "De_Co",
+    "anaemia_class": "Ht_VS",
+    "wcc_class": "WCC_N",
+    "band_class": "BaN_H",
+    "left_shift_class": "L_shft",
+    "monocyte_class": "Mon_N",
+    "arc_class": "ARC_Mi",
+    "arc_class_2": "ARC_Hi",
+    "globulin_class": "Glo_N",
+    "illness_class": "DI_1"
+   }
+  },
+  {
+   "dog_id": "DS05:d059",
+   "original_id": "BET013",
+   "values": {
+    "habitus_score": 3,
+    "habitus_raw": "3+",
+    "habitus_class": "Mi_De",
+    "anaemia_class": "Ht_S",
+    "wcc_class": "WCC_N",
+    "band_class": "BaN_H",
+    "left_shift_class": "L_shft",
+    "monocyte_class": "Mon_N",
+    "arc_class": "ARC_Mo",
+    "arc_class_2": "ARC_Hi",
+    "globulin_class": "Glo_N",
+    "illness_class": "DI_1"
+   }
+  },
+  {
+   "dog_id": "DS05:d041",
+   "original_id": "BET014",
+   "values": {
+    "habitus_score": 2,
+    "habitus_raw": "2+",
+    "habitus_class": "De_Co",
+    "anaemia_class": "Ht_S",
+    "wcc_class": "WCC_N",
+    "band_class": "BaN_H",
+    "left_shift_class": "L_shft",
+    "monocyte_class": "Mon_N",
+    "arc_class": "ARC_In",
+    "arc_class_2": "ARC_N",
+    "globulin_class": "Glo_N",
+    "illness_class": "DI_1"
+   }
+  },
+  {
+   "dog_id": "DS05:d090",
+   "original_id": "BET015",
+   "values": {
+    "habitus_score": 2,
+    "habitus_raw": "2+",
+    "habitus_class": "De_Co",
+    "anaemia_class": "Ht_S",
+    "wcc_class": "WCC_N",
+    "band_class": "BaN_H",
+    "left_shift_class": "L_shft",
+    "monocyte_class": "Mon_Hi",
+    "arc_class": "ARC_Ma",
+    "arc_class_2": "ARC_Hi",
+    "globulin_class": "Glo_N",
+    "illness_class": "DI_1"
+   }
+  },
+  {
+   "dog_id": "DS05:d095",
+   "original_id": "BET016",
+   "values": {
+    "habitus_score": 2,
+    "habitus_raw": "2+",
+    "habitus_class": "De_Co",
+    "anaemia_class": "Ht_Mo",
+    "wcc_class": "WCC_N",
+    "band_class": "BaN_H",
+    "left_shift_class": "L_shft",
+    "monocyte_class": "Mon_N",
+    "arc_class": "ARC_In",
+    "arc_class_2": "ARC_N",
+    "globulin_class": "Glo_N",
+    "illness_class": "DI_1"
+   }
+  },
+  {
+   "dog_id": "DS05:d119",
+   "original_id": "BET017",
+   "values": {
+    "habitus_score": 3,
+    "habitus_raw": "3+",
+    "habitus_class": "Mi_De",
+    "anaemia_class": "Ht_Mo",
+    "wcc_class": "WCC_Lo",
+    "band_class": "BaN_N",
+    "left_shift_class": "none",
+    "monocyte_class": "Mon_N",
+    "arc_class": "ARC_Mo",
+    "arc_class_2": "ARC_Hi",
+    "globulin_class": "Glo_Hi",
+    "illness_class": "DI_1"
+   }
+  },
+  {
+   "dog_id": "DS05:d013",
+   "original_id": "BET018",
+   "values": {
+    "habitus_score": 1,
+    "habitus_raw": "1+",
+    "habitus_class": "De_Co",
+    "anaemia_class": "Ht_VS",
+    "wcc_class": "WCC_N",
+    "band_class": "BaN_H",
+    "left_shift_class": "L_shft",
+    "monocyte_class": "Mon_Hi",
+    "arc_class": "ARC_In",
+    "arc_class_2": "ARC_N",
+    "globulin_class": "Glo_N",
+    "illness_class": "DI_1"
+   }
+  },
+  {
+   "dog_id": "DS05:d044",
+   "original_id": "BET019",
+   "values": {
+    "habitus_score": 3,
+    "habitus_raw": "3+",
+    "habitus_class": "Mi_De",
+    "anaemia_class": "Ht_Mo",
+    "wcc_class": "WCC_N",
+    "band_class": "BaN_N",
+    "left_shift_class": "none",
+    "monocyte_class": "Mon_N",
+    "arc_class": "ARC_Ma",
+    "arc_class_2": "ARC_Hi",
+    "globulin_class": "Glo_N",
+    "illness_class": "DI_1"
+   }
+  },
+  {
+   "dog_id": "DS05:d067",
+   "original_id": "BET020",
+   "values": {
+    "habitus_score": 1,
+    "habitus_raw": "1+",
+    "habitus_class": "De_Co",
+    "anaemia_class": "Ht_VS",
+    "wcc_class": "WCC_Hi",
+    "band_class": "BaN_H",
+    "left_shift_class": "L_shft",
+    "monocyte_class": "Mon_Hi",
+    "arc_class": "ARC_In",
+    "arc_class_2": "ARC_N",
+    "globulin_class": "Glo_Hi",
+    "illness_class": "DI_1"
+   }
+  },
+  {
+   "dog_id": "DS05:d135",
+   "original_id": "BET021",
+   "values": {
+    "habitus_score": 4,
+    "habitus_raw": "4+",
+    "habitus_class": "BAR",
+    "anaemia_class": "Ht_Mo",
+    "wcc_class": "WCC_N",
+    "band_class": "BaN_N",
+    "left_shift_class": "none",
+    "monocyte_class": "Mon_N",
+    "arc_class": "ARC_In",
+    "arc_class_2": "ARC_N",
+    "globulin_class": "Glo_Lo",
+    "illness_class": "DI_2"
+   }
+  },
+  {
+   "dog_id": "DS05:d015",
+   "original_id": "BET022",
+   "values": {
+    "habitus_score": 2,
+    "habitus_raw": "2+",
+    "habitus_class": "De_Co",
+    "anaemia_class": "Ht_S",
+    "wcc_class": "WCC_Lo",
+    "band_class": "BaN_N",
+    "left_shift_class": "none",
+    "monocyte_class": "Mon_N",
+    "arc_class": "ARC_In",
+    "arc_class_2": "ARC_N",
+    "globulin_class": "Glo_N",
+    "illness_class": "DI_2"
+   }
+  },
+  {
+   "dog_id": "DS05:d136",
+   "original_id": "BET023",
+   "values": {
+    "habitus_score": 3,
+    "habitus_raw": "3+",
+    "habitus_class": "Mi_De",
+    "anaemia_class": "Ht_S",
+    "wcc_class": "WCC_N",
+    "band_class": "BaN_H",
+    "left_shift_class": "L_shft",
+    "monocyte_class": "Mon_N",
+    "arc_class": "ARC_Mo",
+    "arc_class_2": "ARC_Hi",
+    "globulin_class": "Glo_Hi",
+    "illness_class": "DI_3"
+   }
+  },
+  {
+   "dog_id": "DS05:d060",
+   "original_id": "BET024",
+   "values": {
+    "habitus_score": 2,
+    "habitus_raw": "2+",
+    "habitus_class": "De_Co",
+    "anaemia_class": "Ht_VS",
+    "wcc_class": "WCC_Hi",
+    "band_class": "BaN_H",
+    "left_shift_class": "L_shft",
+    "monocyte_class": "Mon_Hi",
+    "arc_class": "ARC_In",
+    "arc_class_2": "ARC_N",
+    "globulin_class": "Glo_N",
+    "illness_class": "DI_3"
+   }
+  },
+  {
+   "dog_id": "DS05:d027",
+   "original_id": "BET025",
+   "values": {
+    "habitus_score": 2,
+    "habitus_raw": "2+",
+    "habitus_class": "De_Co",
+    "anaemia_class": "Ht_Mi",
+    "wcc_class": "WCC_Lo",
+    "band_class": "BaN_N",
+    "left_shift_class": "none",
+    "monocyte_class": "Mon_N",
+    "arc_class": "ARC_Mi",
+    "arc_class_2": "ARC_Hi",
+    "globulin_class": "Glo_N",
+    "illness_class": "DI_1"
+   }
+  },
+  {
+   "dog_id": "DS05:d113",
+   "original_id": "BET026",
+   "values": {
+    "habitus_score": 2,
+    "habitus_raw": "2+",
+    "habitus_class": "De_Co",
+    "anaemia_class": "Ht_N",
+    "wcc_class": "WCC_Hi",
+    "band_class": "BaN_H",
+    "left_shift_class": "L_shft",
+    "monocyte_class": "Mon_Hi",
+    "arc_class": "ARC_Ma",
+    "arc_class_2": "ARC_Hi",
+    "globulin_class": "Glo_Hi",
+    "illness_class": "DI_1"
+   }
+  },
+  {
+   "dog_id": "DS05:d023",
+   "original_id": "BET027",
+   "values": {
+    "habitus_score": 2,
+    "habitus_raw": "2+",
+    "habitus_class": "De_Co",
+    "anaemia_class": "Ht_S",
+    "wcc_class": "WCC_Hi",
+    "band_class": "BaN_H",
+    "left_shift_class": "L_shft",
+    "monocyte_class": "Mon_Hi",
+    "arc_class": "ARC_In",
+    "arc_class_2": "ARC_N",
+    "globulin_class": "Glo_Hi",
+    "illness_class": "DI_2"
+   }
+  },
+  {
+   "dog_id": "DS05:d031",
+   "original_id": "BET028",
+   "values": {
+    "habitus_score": 3,
+    "habitus_raw": "3+",
+    "habitus_class": "Mi_De",
+    "anaemia_class": "Ht_N",
+    "wcc_class": "WCC_Lo",
+    "band_class": "BaN_N",
+    "left_shift_class": "none",
+    "monocyte_class": "Mon_N",
+    "arc_class": "ARC_In",
+    "arc_class_2": "ARC_N",
+    "globulin_class": "Glo_N",
+    "illness_class": "DI_1"
+   }
+  },
+  {
+   "dog_id": "DS05:d036",
+   "original_id": "BET029",
+   "values": {
+    "habitus_score": 3,
+    "habitus_raw": "3+",
+    "habitus_class": "Mi_De",
+    "anaemia_class": "Ht_S",
+    "wcc_class": "WCC_N",
+    "band_class": "BaN_N",
+    "left_shift_class": "none",
+    "monocyte_class": "Mon_N",
+    "arc_class": "ARC_Mi",
+    "arc_class_2": "ARC_Hi",
+    "globulin_class": "Glo_Hi",
+    "illness_class": "DI_3"
+   }
+  },
+  {
+   "dog_id": "DS05:d147",
+   "original_id": "BET030",
+   "values": {
+    "habitus_score": 3,
+    "habitus_raw": "3+",
+    "habitus_class": "Mi_De",
+    "anaemia_class": "Ht_Mi",
+    "wcc_class": "WCC_N",
+    "band_class": "BaN_N",
+    "left_shift_class": "none",
+    "monocyte_class": "Mon_N",
+    "arc_class": "ARC_In",
+    "arc_class_2": "ARC_N",
+    "globulin_class": "Glo_N",
+    "illness_class": "DI_1"
+   }
+  },
+  {
+   "dog_id": "DS05:d014",
+   "original_id": "BET031",
+   "values": {
+    "habitus_score": 1,
+    "habitus_raw": "1+",
+    "habitus_class": "De_Co",
+    "anaemia_class": "Ht_VS",
+    "wcc_class": "WCC_Hi",
+    "band_class": "BaN_H",
+    "left_shift_class": "L_shft",
+    "monocyte_class": "Mon_N",
+    "arc_class": "ARC_Mi",
+    "arc_class_2": "ARC_N",
+    "globulin_class": "Glo_N",
+    "illness_class": "DI_1"
+   }
+  },
+  {
+   "dog_id": "DS05:d035",
+   "original_id": "BET032",
+   "values": {
+    "habitus_score": 3,
+    "habitus_raw": "3+",
+    "habitus_class": "Mi_De",
+    "anaemia_class": "Ht_Mo",
+    "wcc_class": "WCC_N",
+    "band_class": "BaN_N",
+    "left_shift_class": "none",
+    "monocyte_class": "Mon_N",
+    "arc_class": "ARC_In",
+    "arc_class_2": "ARC_N",
+    "globulin_class": "Glo_N",
+    "illness_class": "DI_1"
+   }
+  },
+  {
+   "dog_id": "DS05:d038",
+   "original_id": "BET033",
+   "values": {
+    "habitus_score": 3,
+    "habitus_raw": "3+",
+    "habitus_class": "Mi_De",
+    "anaemia_class": "Ht_Mi",
+    "wcc_class": "WCC_Lo",
+    "band_class": "BaN_N",
+    "left_shift_class": "none",
+    "monocyte_class": "Mon_N",
+    "arc_class": "ARC_In",
+    "arc_class_2": "ARC_N",
+    "globulin_class": "Glo_N",
+    "illness_class": "DI_1"
+   }
+  },
+  {
+   "dog_id": "DS05:d062",
+   "original_id": "BET034",
+   "values": {
+    "habitus_score": 2,
+    "habitus_raw": "2+",
+    "habitus_class": "De_Co",
+    "anaemia_class": "Ht_S",
+    "wcc_class": "WCC_Hi",
+    "band_class": "BaN_H",
+    "left_shift_class": "L_shft",
+    "monocyte_class": "Mon_N",
+    "arc_class": "ARC_Mi",
+    "arc_class_2": "ARC_N",
+    "globulin_class": "Glo_N",
+    "illness_class": "DI_1"
+   }
+  },
+  {
+   "dog_id": "DS05:d142",
+   "original_id": "BET035",
+   "values": {
+    "habitus_score": 2,
+    "habitus_raw": "2+",
+    "habitus_class": "De_Co",
+    "anaemia_class": "Ht_VS",
+    "wcc_class": "WCC_Lo",
+    "band_class": "BaN_N",
+    "left_shift_class": "none",
+    "monocyte_class": "Mon_N",
+    "arc_class": "ARC_In",
+    "arc_class_2": "ARC_N",
+    "globulin_class": "Glo_N",
+    "illness_class": "DI_1"
+   }
+  },
+  {
+   "dog_id": "DS05:d017",
+   "original_id": "BET036",
+   "values": {
+    "habitus_score": 3,
+    "habitus_raw": "3+",
+    "habitus_class": "Mi_De",
+    "anaemia_class": "Ht_VS",
+    "wcc_class": "WCC_Lo",
+    "band_class": "BaN_N",
+    "left_shift_class": "none",
+    "monocyte_class": "Mon_N",
+    "arc_class": "ARC_Mo",
+    "arc_class_2": "ARC_Hi",
+    "globulin_class": "Glo_Lo",
+    "illness_class": "DI_2"
+   }
+  },
+  {
+   "dog_id": "DS05:d143",
+   "original_id": "BET037",
+   "values": {
+    "habitus_score": 2,
+    "habitus_raw": "2+",
+    "habitus_class": "De_Co",
+    "anaemia_class": "Ht_Mo",
+    "wcc_class": "WCC_N",
+    "band_class": "BaN_H",
+    "left_shift_class": "L_shft",
+    "monocyte_class": "Mon_N",
+    "arc_class": "ARC_In",
+    "arc_class_2": "ARC_N",
+    "globulin_class": "Glo_N",
+    "illness_class": "DI_1"
+   }
+  },
+  {
+   "dog_id": "DS05:d120",
+   "original_id": "BET038",
+   "values": {
+    "habitus_score": 3,
+    "habitus_raw": "3+",
+    "habitus_class": "Mi_De",
+    "anaemia_class": "Ht_N",
+    "wcc_class": "WCC_N",
+    "band_class": "BaN_N",
+    "left_shift_class": "none",
+    "monocyte_class": "Mon_N",
+    "arc_class": "ARC_In",
+    "arc_class_2": "ARC_N",
+    "globulin_class": "Glo_Hi",
+    "illness_class": "DI_1"
+   }
+  },
+  {
+   "dog_id": "DS05:d032",
+   "original_id": "BET039",
+   "values": {
+    "habitus_score": 2,
+    "habitus_raw": "2+",
+    "habitus_class": "De_Co",
+    "anaemia_class": "Ht_VS",
+    "wcc_class": "WCC_Hi",
+    "band_class": "BaN_H",
+    "left_shift_class": "L_shft",
+    "monocyte_class": "Mon_Hi",
+    "arc_class": "ARC_Ma",
+    "arc_class_2": "ARC_Hi",
+    "globulin_class": "Glo_Hi",
+    "illness_class": "DI_2"
+   }
+  },
+  {
+   "dog_id": "DS05:d058",
+   "original_id": "BET040",
+   "values": {
+    "habitus_score": 3,
+    "habitus_raw": "3+",
+    "habitus_class": "Mi_De",
+    "anaemia_class": "Ht_Mo",
+    "wcc_class": "WCC_Lo",
+    "band_class": "BaN_N",
+    "left_shift_class": "none",
+    "monocyte_class": "Mon_N",
+    "arc_class": "ARC_Mo",
+    "arc_class_2": "ARC_Hi",
+    "globulin_class": "Glo_Hi",
+    "illness_class": "DI_1"
+   }
+  },
+  {
+   "dog_id": "DS05:d123",
+   "original_id": "BET041",
+   "values": {
+    "habitus_score": 3,
+    "habitus_raw": "3+",
+    "habitus_class": "Mi_De",
+    "anaemia_class": "Ht_Mi",
+    "wcc_class": "WCC_Lo",
+    "band_class": "BaN_N",
+    "left_shift_class": "none",
+    "monocyte_class": "Mon_N",
+    "arc_class": "ARC_In",
+    "arc_class_2": "ARC_N",
+    "globulin_class": "Glo_N",
+    "illness_class": "DI_3"
+   }
+  },
+  {
+   "dog_id": "DS05:d068",
+   "original_id": "BET042",
+   "values": {
+    "habitus_score": 2,
+    "habitus_raw": "2+",
+    "habitus_class": "De_Co",
+    "anaemia_class": "Ht_VS",
+    "wcc_class": "WCC_Hi",
+    "band_class": "BaN_H",
+    "left_shift_class": "L_shft",
+    "monocyte_class": "Mon_Hi",
+    "arc_class": "ARC_Mo",
+    "arc_class_2": "ARC_Hi",
+    "globulin_class": "Glo_N",
+    "illness_class": "DI_2"
+   }
+  },
+  {
+   "dog_id": "DS05:d129",
+   "original_id": "BET043",
+   "values": {
+    "habitus_score": 2,
+    "habitus_raw": "2+",
+    "habitus_class": "De_Co",
+    "anaemia_class": "Ht_S",
+    "wcc_class": "WCC_Hi",
+    "band_class": "BaN_H",
+    "left_shift_class": "L_shft",
+    "monocyte_class": "Mon_Hi",
+    "arc_class": "ARC_In",
+    "arc_class_2": "ARC_N",
+    "globulin_class": "Glo_N",
+    "illness_class": "DI_2"
+   }
+  },
+  {
+   "dog_id": "DS05:d088",
+   "original_id": "BET044",
+   "values": {
+    "habitus_score": 4,
+    "habitus_raw": "4+",
+    "habitus_class": "BAR",
+    "anaemia_class": "Ht_Mo",
+    "wcc_class": "WCC_N",
+    "band_class": "BaN_H",
+    "left_shift_class": "L_shft",
+    "monocyte_class": "Mon_N",
+    "arc_class": "ARC_Ma",
+    "arc_class_2": "ARC_Hi",
+    "globulin_class": "Glo_Hi",
+    "illness_class": "DI_1"
+   }
+  },
+  {
+   "dog_id": "DS05:d086",
+   "original_id": "BET045",
+   "values": {
+    "habitus_score": 3,
+    "habitus_raw": "3+",
+    "habitus_class": "Mi_De",
+    "anaemia_class": "Ht_Mo",
+    "wcc_class": "WCC_Lo",
+    "band_class": "BaN_N",
+    "left_shift_class": "none",
+    "monocyte_class": "Mon_N",
+    "arc_class": "ARC_Ma",
+    "arc_class_2": "ARC_Hi",
+    "globulin_class": "Glo_N",
+    "illness_class": "DI_3"
+   }
+  },
+  {
+   "dog_id": "DS05:d132",
+   "original_id": "BET046",
+   "values": {
+    "habitus_score": 2,
+    "habitus_raw": "2+",
+    "habitus_class": "De_Co",
+    "anaemia_class": "Ht_S",
+    "wcc_class": "WCC_N",
+    "band_class": "BaN_H",
+    "left_shift_class": "L_shft",
+    "monocyte_class": "Mon_N",
+    "arc_class": "ARC_Mi",
+    "arc_class_2": "ARC_N",
+    "globulin_class": "Glo_N",
+    "illness_class": "DI_3"
+   }
+  },
+  {
+   "dog_id": "DS05:d126",
+   "original_id": "BET047",
+   "values": {
+    "habitus_score": 3,
+    "habitus_raw": "3+",
+    "habitus_class": "Mi_De",
+    "anaemia_class": "Ht_Mo",
+    "wcc_class": "WCC_Lo",
+    "band_class": "BaN_N",
+    "left_shift_class": "none",
+    "monocyte_class": "Mon_N",
+    "arc_class": "ARC_In",
+    "arc_class_2": "ARC_N",
+    "globulin_class": "Glo_N",
+    "illness_class": "DI_2"
+   }
+  },
+  {
+   "dog_id": "DS05:d003",
+   "original_id": "BET048",
+   "values": {
+    "habitus_score": 3,
+    "habitus_raw": "3+",
+    "habitus_class": "Mi_De",
+    "anaemia_class": "Ht_Mo",
+    "wcc_class": "WCC_N",
+    "band_class": "BaN_N",
+    "left_shift_class": "none",
+    "monocyte_class": "Mon_N",
+    "arc_class": "ARC_In",
+    "arc_class_2": "ARC_N",
+    "globulin_class": "Glo_N",
+    "illness_class": "DI_2"
+   }
+  },
+  {
+   "dog_id": "DS05:d026",
+   "original_id": "BET049",
+   "values": {
+    "habitus_score": 4,
+    "habitus_raw": "4+",
+    "habitus_class": "BAR",
+    "anaemia_class": "Ht_N",
+    "wcc_class": "WCC_N",
+    "band_class": "BaN_N",
+    "left_shift_class": "none",
+    "monocyte_class": "Mon_N",
+    "arc_class": "ARC_Mi",
+    "arc_class_2": "ARC_Hi",
+    "globulin_class": "Glo_N",
+    "illness_class": "DI_1"
+   }
+  },
+  {
+   "dog_id": "DS05:d093",
+   "original_id": "BET050",
+   "values": {
+    "habitus_score": 2,
+    "habitus_raw": "2+",
+    "habitus_class": "De_Co",
+    "anaemia_class": "Ht_Mi",
+    "wcc_class": "WCC_Hi",
+    "band_class": "BaN_H",
+    "left_shift_class": "L_shft",
+    "monocyte_class": "Mon_Hi",
+    "arc_class": "ARC_Mo",
+    "arc_class_2": "ARC_Hi",
+    "globulin_class": "Glo_Hi",
+    "illness_class": "DI_2"
+   }
+  },
+  {
+   "dog_id": "DS05:d063",
+   "original_id": "BET051",
+   "values": {
+    "habitus_score": 3,
+    "habitus_raw": "3+",
+    "habitus_class": "Mi_De",
+    "anaemia_class": "Ht_S",
+    "wcc_class": "WCC_Lo",
+    "band_class": "BaN_N",
+    "left_shift_class": "none",
+    "monocyte_class": "Mon_N",
+    "arc_class": "ARC_Mo",
+    "arc_class_2": "ARC_Hi",
+    "globulin_class": "Glo_N",
+    "illness_class": "DI_2"
+   }
+  },
+  {
+   "dog_id": "DS05:d117",
+   "original_id": "BET052",
+   "values": {
+    "habitus_score": 2,
+    "habitus_raw": "2+",
+    "habitus_class": "De_Co",
+    "anaemia_class": "Ht_S",
+    "wcc_class": "WCC_Hi",
+    "band_class": "BaN_H",
+    "left_shift_class": "L_shft",
+    "monocyte_class": "Mon_Hi",
+    "arc_class": "ARC_In",
+    "arc_class_2": "ARC_N",
+    "globulin_class": "Glo_N",
+    "illness_class": "DI_2"
+   }
+  },
+  {
+   "dog_id": "DS05:d018",
+   "original_id": "BET053",
+   "values": {
+    "habitus_score": 4,
+    "habitus_raw": "4+",
+    "habitus_class": "BAR",
+    "anaemia_class": "Ht_S",
+    "wcc_class": "WCC_N",
+    "band_class": "BaN_N",
+    "left_shift_class": "none",
+    "monocyte_class": "Mon_N",
+    "arc_class": "ARC_Mi",
+    "arc_class_2": "ARC_Hi",
+    "globulin_class": "Glo_N",
+    "illness_class": "DI_1"
+   }
+  },
+  {
+   "dog_id": "DS05:d073",
+   "original_id": "BET054",
+   "values": {
+    "habitus_score": 3,
+    "habitus_raw": "3+",
+    "habitus_class": "Mi_De",
+    "anaemia_class": "Ht_Mo",
+    "wcc_class": "WCC_Lo",
+    "band_class": "BaN_N",
+    "left_shift_class": "none",
+    "monocyte_class": "Mon_N",
+    "arc_class": "ARC_In",
+    "arc_class_2": "ARC_N",
+    "globulin_class": "Glo_N",
+    "illness_class": "DI_1"
+   }
+  },
+  {
+   "dog_id": "DS05:d128",
+   "original_id": "BET055",
+   "values": {
+    "habitus_score": 2,
+    "habitus_raw": "2+",
+    "habitus_class": "De_Co",
+    "anaemia_class": "Ht_Mo",
+    "wcc_class": "WCC_N",
+    "band_class": "BaN_N",
+    "left_shift_class": "none",
+    "monocyte_class": "Mon_N",
+    "arc_class": "ARC_In",
+    "arc_class_2": "ARC_N",
+    "globulin_class": "Glo_N",
+    "illness_class": "DI_2"
+   }
+  },
+  {
+   "dog_id": "DS05:d101",
+   "original_id": "BET056",
+   "values": {
+    "habitus_score": 1,
+    "habitus_raw": "1+",
+    "habitus_class": "De_Co",
+    "anaemia_class": "Ht_VS",
+    "wcc_class": "WCC_N",
+    "band_class": "BaN_N",
+    "left_shift_class": "none",
+    "monocyte_class": "Mon_N",
+    "arc_class": "ARC_In",
+    "arc_class_2": "ARC_Lo",
+    "globulin_class": "Glo_N",
+    "illness_class": "DI_1"
+   }
+  },
+  {
+   "dog_id": "DS05:d111",
+   "original_id": "BET057",
+   "values": {
+    "habitus_score": 3,
+    "habitus_raw": "3+",
+    "habitus_class": "Mi_De",
+    "anaemia_class": "Ht_VS",
+    "wcc_class": "WCC_N",
+    "band_class": "BaN_N",
+    "left_shift_class": "none",
+    "monocyte_class": "Mon_N",
+    "arc_class": "ARC_Mi",
+    "arc_class_2": "ARC_N",
+    "globulin_class": "Glo_Hi",
+    "illness_class": "DI_1"
+   }
+  },
+  {
+   "dog_id": "DS05:d056",
+   "original_id": "BET058",
+   "values": {
+    "habitus_score": 1,
+    "habitus_raw": "1+",
+    "habitus_class": "De_Co",
+    "anaemia_class": "Ht_S",
+    "wcc_class": "WCC_N",
+    "band_class": "BaN_H",
+    "left_shift_class": "L_shft",
+    "monocyte_class": "Mon_Hi",
+    "arc_class": "ARC_Mo",
+    "arc_class_2": "ARC_Hi",
+    "globulin_class": "Glo_Hi",
+    "illness_class": "DI_2"
+   }
+  },
+  {
+   "dog_id": "DS05:d140",
+   "original_id": "BET059",
+   "values": {
+    "habitus_score": 1,
+    "habitus_raw": "1+",
+    "habitus_class": "De_Co",
+    "anaemia_class": "Ht_VS",
+    "wcc_class": "WCC_Hi",
+    "band_class": "BaN_H",
+    "left_shift_class": "L_shft",
+    "monocyte_class": "Mon_Hi",
+    "arc_class": "ARC_In",
+    "arc_class_2": "ARC_N",
+    "globulin_class": "Glo_N",
+    "illness_class": "DI_1"
+   }
+  },
+  {
+   "dog_id": "DS05:d096",
+   "original_id": "BET060",
+   "values": {
+    "habitus_score": 2,
+    "habitus_raw": "2+",
+    "habitus_class": "De_Co",
+    "anaemia_class": "Ht_Mo",
+    "wcc_class": "WCC_N",
+    "band_class": "BaN_N",
+    "left_shift_class": "none",
+    "monocyte_class": "Mon_N",
+    "arc_class": "ARC_In",
+    "arc_class_2": "ARC_N",
+    "globulin_class": "Glo_Hi",
+    "illness_class": "DI_2"
+   }
+  },
+  {
+   "dog_id": "DS05:d048",
+   "original_id": "BET061",
+   "values": {
+    "habitus_score": 2,
+    "habitus_raw": "2+",
+    "habitus_class": "De_Co",
+    "anaemia_class": "Ht_VS",
+    "wcc_class": "WCC_Hi",
+    "band_class": "BaN_H",
+    "left_shift_class": "L_shft",
+    "monocyte_class": "Mon_Hi",
+    "arc_class": "ARC_Ma",
+    "arc_class_2": "ARC_Hi",
+    "globulin_class": "Glo_Hi",
+    "illness_class": "DI_3"
+   }
+  },
+  {
+   "dog_id": "DS05:d089",
+   "original_id": "BET062",
+   "values": {
+    "habitus_score": 1,
+    "habitus_raw": "1+",
+    "habitus_class": "De_Co",
+    "anaemia_class": "Ht_VS",
+    "wcc_class": "WCC_N",
+    "band_class": "BaN_N",
+    "left_shift_class": "none",
+    "monocyte_class": "Mon_N",
+    "arc_class": "ARC_In",
+    "arc_class_2": "ARC_Lo",
+    "globulin_class": "Glo_N",
+    "illness_class": "DI_1"
+   }
+  },
+  {
+   "dog_id": "DS05:d108",
+   "original_id": "BET063",
+   "values": {
+    "habitus_score": 4,
+    "habitus_raw": "4+",
+    "habitus_class": "BAR",
+    "anaemia_class": "Ht_Mi",
+    "wcc_class": "WCC_Lo",
+    "band_class": "BaN_N",
+    "left_shift_class": "none",
+    "monocyte_class": "Mon_N",
+    "arc_class": "ARC_In",
+    "arc_class_2": "ARC_N",
+    "globulin_class": "Glo_Hi",
+    "illness_class": "DI_2"
+   }
+  },
+  {
+   "dog_id": "DS05:d046",
+   "original_id": "BET064",
+   "values": {
+    "habitus_score": 3,
+    "habitus_raw": "3+",
+    "habitus_class": "Mi_De",
+    "anaemia_class": "Ht_Mo",
+    "wcc_class": "WCC_N",
+    "band_class": "BaN_N",
+    "left_shift_class": "none",
+    "monocyte_class": "Mon_Hi",
+    "arc_class": "ARC_Mo",
+    "arc_class_2": "ARC_Hi",
+    "globulin_class": "Glo_Hi",
+    "illness_class": "DI_3"
+   }
+  },
+  {
+   "dog_id": "DS05:d083",
+   "original_id": "BET065",
+   "values": {
+    "habitus_score": 2,
+    "habitus_raw": "2+",
+    "habitus_class": "De_Co",
+    "anaemia_class": null,
+    "wcc_class": null,
+    "band_class": null,
+    "left_shift_class": "none",
+    "monocyte_class": null,
+    "arc_class": null,
+    "arc_class_2": null,
+    "globulin_class": null,
+    "illness_class": "DI_2"
+   }
+  },
+  {
+   "dog_id": "DS05:d045",
+   "original_id": "BET066",
+   "values": {
+    "habitus_score": 3,
+    "habitus_raw": "3+",
+    "habitus_class": "Mi_De",
+    "anaemia_class": null,
+    "wcc_class": null,
+    "band_class": null,
+    "left_shift_class": "none",
+    "monocyte_class": null,
+    "arc_class": null,
+    "arc_class_2": null,
+    "globulin_class": null,
+    "illness_class": "DI_1"
+   }
+  },
+  {
+   "dog_id": "DS05:d072",
+   "original_id": "BET067",
+   "values": {
+    "habitus_score": 2,
+    "habitus_raw": "2+",
+    "habitus_class": "De_Co",
+    "anaemia_class": "Ht_S",
+    "wcc_class": "WCC_N",
+    "band_class": "BaN_N",
+    "left_shift_class": "none",
+    "monocyte_class": "Mon_N",
+    "arc_class": "ARC_In",
+    "arc_class_2": "ARC_N",
+    "globulin_class": "Glo_N",
+    "illness_class": "DI_1"
+   }
+  },
+  {
+   "dog_id": "DS05:d122",
+   "original_id": "BET068",
+   "values": {
+    "habitus_score": 2,
+    "habitus_raw": "2+",
+    "habitus_class": "De_Co",
+    "anaemia_class": "Ht_Mo",
+    "wcc_class": "WCC_N",
+    "band_class": "BaN_N",
+    "left_shift_class": "none",
+    "monocyte_class": "Mon_N",
+    "arc_class": "ARC_Ma",
+    "arc_class_2": "ARC_Hi",
+    "globulin_class": "Glo_N",
+    "illness_class": "DI_2"
+   }
+  },
+  {
+   "dog_id": "DS05:d030",
+   "original_id": "BET069",
+   "values": {
+    "habitus_score": 2,
+    "habitus_raw": "2+",
+    "habitus_class": "De_Co",
+    "anaemia_class": "Ht_S",
+    "wcc_class": "WCC_N",
+    "band_class": "BaN_N",
+    "left_shift_class": "none",
+    "monocyte_class": "Mon_N",
+    "arc_class": "ARC_Mi",
+    "arc_class_2": "ARC_N",
+    "globulin_class": "Glo_N",
+    "illness_class": "DI_1"
+   }
+  },
+  {
+   "dog_id": "DS05:d077",
+   "original_id": "BET070",
+   "values": {
+    "habitus_score": 1,
+    "habitus_raw": "1+",
+    "habitus_class": "De_Co",
+    "anaemia_class": "Ht_VS",
+    "wcc_class": "WCC_N",
+    "band_class": "BaN_N",
+    "left_shift_class": "none",
+    "monocyte_class": "Mon_N",
+    "arc_class": "ARC_Mo",
+    "arc_class_2": "ARC_Hi",
+    "globulin_class": "Glo_N",
+    "illness_class": "DI_2"
+   }
+  },
+  {
+   "dog_id": "DS05:d057",
+   "original_id": "BET071",
+   "values": {
+    "habitus_score": 2,
+    "habitus_raw": "2+",
+    "habitus_class": "De_Co",
+    "anaemia_class": "Ht_Mo",
+    "wcc_class": "WCC_N",
+    "band_class": "BaN_N",
+    "left_shift_class": "none",
+    "monocyte_class": "Mon_Hi",
+    "arc_class": "ARC_In",
+    "arc_class_2": "ARC_N",
+    "globulin_class": "Glo_N",
+    "illness_class": "DI_3"
+   }
+  },
+  {
+   "dog_id": "DS05:d082",
+   "original_id": "BET072",
+   "values": {
+    "habitus_score": 1,
+    "habitus_raw": "1+",
+    "habitus_class": "De_Co",
+    "anaemia_class": "Ht_S",
+    "wcc_class": "WCC_Lo",
+    "band_class": "BaN_N",
+    "left_shift_class": "none",
+    "monocyte_class": "Mon_N",
+    "arc_class": "ARC_In",
+    "arc_class_2": "ARC_N",
+    "globulin_class": "Glo_N",
+    "illness_class": "DI_1"
+   }
+  },
+  {
+   "dog_id": "DS05:d099",
+   "original_id": "BET074",
+   "values": {
+    "habitus_score": 3,
+    "habitus_raw": "3+",
+    "habitus_class": "Mi_De",
+    "anaemia_class": "Ht_Mo",
+    "wcc_class": "WCC_N",
+    "band_class": "BaN_H",
+    "left_shift_class": "L_shft",
+    "monocyte_class": "Mon_N",
+    "arc_class": "ARC_Mi",
+    "arc_class_2": "ARC_N",
+    "globulin_class": "Glo_N",
+    "illness_class": "DI_1"
+   }
+  },
+  {
+   "dog_id": "DS05:d112",
+   "original_id": "BET075",
+   "values": {
+    "habitus_score": 2,
+    "habitus_raw": "2+",
+    "habitus_class": "De_Co",
+    "anaemia_class": "Ht_S",
+    "wcc_class": "WCC_N",
+    "band_class": "BaN_N",
+    "left_shift_class": "none",
+    "monocyte_class": "Mon_N",
+    "arc_class": "ARC_Mo",
+    "arc_class_2": "ARC_Hi",
+    "globulin_class": "Glo_N",
+    "illness_class": "DI_3"
+   }
+  },
+  {
+   "dog_id": "DS05:d078",
+   "original_id": "BET076",
+   "values": {
+    "habitus_score": 3,
+    "habitus_raw": "3+",
+    "habitus_class": "Mi_De",
+    "anaemia_class": "Ht_Mo",
+    "wcc_class": "WCC_Lo",
+    "band_class": "BaN_N",
+    "left_shift_class": "none",
+    "monocyte_class": "Mon_N",
+    "arc_class": "ARC_Mi",
+    "arc_class_2": "ARC_Hi",
+    "globulin_class": "Glo_N",
+    "illness_class": "DI_1"
+   }
+  },
+  {
+   "dog_id": "DS05:d064",
+   "original_id": "BET077",
+   "values": {
+    "habitus_score": 3,
+    "habitus_raw": "3+",
+    "habitus_class": "Mi_De",
+    "anaemia_class": "Ht_N",
+    "wcc_class": "WCC_N",
+    "band_class": "BaN_N",
+    "left_shift_class": "none",
+    "monocyte_class": "Mon_N",
+    "arc_class": "ARC_In",
+    "arc_class_2": "ARC_N",
+    "globulin_class": "Glo_N",
+    "illness_class": "DI_2"
+   }
+  },
+  {
+   "dog_id": "DS05:d053",
+   "original_id": "BET078",
+   "values": {
+    "habitus_score": 3,
+    "habitus_raw": "3+",
+    "habitus_class": "Mi_De",
+    "anaemia_class": "Ht_Mo",
+    "wcc_class": "WCC_Hi",
+    "band_class": "BaN_H",
+    "left_shift_class": "L_shft",
+    "monocyte_class": "Mon_N",
+    "arc_class": "ARC_Mi",
+    "arc_class_2": "ARC_N",
+    "globulin_class": "Glo_N",
+    "illness_class": "DI_2"
+   }
+  },
+  {
+   "dog_id": "DS05:d051",
+   "original_id": "BET079",
+   "values": {
+    "habitus_score": 3,
+    "habitus_raw": "3+",
+    "habitus_class": "Mi_De",
+    "anaemia_class": "Ht_Mo",
+    "wcc_class": "WCC_N",
+    "band_class": "BaN_H",
+    "left_shift_class": "L_shft",
+    "monocyte_class": "Mon_N",
+    "arc_class": "ARC_In",
+    "arc_class_2": "ARC_N",
+    "globulin_class": "Glo_N",
+    "illness_class": "DI_3"
+   }
+  },
+  {
+   "dog_id": "DS05:d004",
+   "original_id": "BET080",
+   "values": {
+    "habitus_score": 2,
+    "habitus_raw": "2+",
+    "habitus_class": "De_Co",
+    "anaemia_class": "Ht_VS",
+    "wcc_class": "WCC_Hi",
+    "band_class": "BaN_H",
+    "left_shift_class": "De_L_shift",
+    "monocyte_class": "Mon_Hi",
+    "arc_class": "ARC_In",
+    "arc_class_2": "ARC_N",
+    "globulin_class": "Glo_N",
+    "illness_class": "DI_1"
+   }
+  },
+  {
+   "dog_id": "DS05:d139",
+   "original_id": "BET081",
+   "values": {
+    "habitus_score": 4,
+    "habitus_raw": "4+",
+    "habitus_class": "BAR",
+    "anaemia_class": "Ht_Mi",
+    "wcc_class": "WCC_Lo",
+    "band_class": "BaN_N",
+    "left_shift_class": "none",
+    "monocyte_class": "Mon_N",
+    "arc_class": "ARC_Mi",
+    "arc_class_2": "ARC_Hi",
+    "globulin_class": "Glo_N",
+    "illness_class": "DI_1"
+   }
+  },
+  {
+   "dog_id": "DS05:d061",
+   "original_id": "BET082",
+   "values": {
+    "habitus_score": 3,
+    "habitus_raw": "3+",
+    "habitus_class": "Mi_De",
+    "anaemia_class": "Ht_Mi",
+    "wcc_class": "WCC_Lo",
+    "band_class": "BaN_N",
+    "left_shift_class": "none",
+    "monocyte_class": "Mon_N",
+    "arc_class": "ARC_Mo",
+    "arc_class_2": "ARC_Hi",
+    "globulin_class": "Glo_N",
+    "illness_class": "DI_2"
+   }
+  },
+  {
+   "dog_id": "DS05:d022",
+   "original_id": "BET083",
+   "values": {
+    "habitus_score": 2,
+    "habitus_raw": "2+",
+    "habitus_class": "De_Co",
+    "anaemia_class": "Ht_Mo",
+    "wcc_class": "WCC_N",
+    "band_class": "BaN_N",
+    "left_shift_class": "none",
+    "monocyte_class": "Mon_N",
+    "arc_class": "ARC_In",
+    "arc_class_2": "ARC_N",
+    "globulin_class": "Glo_Lo",
+    "illness_class": "DI_2"
+   }
+  },
+  {
+   "dog_id": "DS05:d009",
+   "original_id": "BET084",
+   "values": {
+    "habitus_score": 4,
+    "habitus_raw": "4+",
+    "habitus_class": "BAR",
+    "anaemia_class": "Ht_Mo",
+    "wcc_class": "WCC_Lo",
+    "band_class": "BaN_N",
+    "left_shift_class": "none",
+    "monocyte_class": "Mon_N",
+    "arc_class": "ARC_Mo",
+    "arc_class_2": "ARC_Hi",
+    "globulin_class": "Glo_N",
+    "illness_class": "DI_2"
+   }
+  },
+  {
+   "dog_id": "DS05:d104",
+   "original_id": "BET085",
+   "values": {
+    "habitus_score": 3,
+    "habitus_raw": "3+",
+    "habitus_class": "Mi_De",
+    "anaemia_class": "Ht_Mo",
+    "wcc_class": "WCC_Lo",
+    "band_class": "BaN_N",
+    "left_shift_class": "none",
+    "monocyte_class": "Mon_N",
+    "arc_class": "ARC_In",
+    "arc_class_2": "ARC_N",
+    "globulin_class": "Glo_N",
+    "illness_class": "DI_2"
+   }
+  },
+  {
+   "dog_id": "DS05:d118",
+   "original_id": "BET086",
+   "values": {
+    "habitus_score": 2,
+    "habitus_raw": "2+",
+    "habitus_class": "De_Co",
+    "anaemia_class": "Ht_Mo",
+    "wcc_class": "WCC_Lo",
+    "band_class": "BaN_N",
+    "left_shift_class": "none",
+    "monocyte_class": "Mon_N",
+    "arc_class": "ARC_In",
+    "arc_class_2": "ARC_N",
+    "globulin_class": "Glo_N",
+    "illness_class": "DI_2"
+   }
+  },
+  {
+   "dog_id": "DS05:d006",
+   "original_id": "BET087",
+   "values": {
+    "habitus_score": 1,
+    "habitus_raw": "1+",
+    "habitus_class": "De_Co",
+    "anaemia_class": "Ht_VS",
+    "wcc_class": "WCC_Lo",
+    "band_class": "BaN_N",
+    "left_shift_class": "none",
+    "monocyte_class": "Mon_N",
+    "arc_class": "ARC_In",
+    "arc_class_2": "ARC_N",
+    "globulin_class": "Glo_N",
+    "illness_class": "DI_1"
+   }
+  },
+  {
+   "dog_id": "DS05:d084",
+   "original_id": "BET088",
+   "values": {
+    "habitus_score": 2,
+    "habitus_raw": "2+",
+    "habitus_class": "De_Co",
+    "anaemia_class": "Ht_Mi",
+    "wcc_class": "WCC_Lo",
+    "band_class": "BaN_N",
+    "left_shift_class": "none",
+    "monocyte_class": "Mon_N",
+    "arc_class": "ARC_Mi",
+    "arc_class_2": "ARC_N",
+    "globulin_class": "Glo_N",
+    "illness_class": "DI_1"
+   }
+  },
+  {
+   "dog_id": "DS05:d025",
+   "original_id": "BET089",
+   "values": {
+    "habitus_score": 1,
+    "habitus_raw": "1+",
+    "habitus_class": "De_Co",
+    "anaemia_class": "Ht_VS",
+    "wcc_class": "WCC_N",
+    "band_class": "BaN_H",
+    "left_shift_class": "L_shft",
+    "monocyte_class": "Mon_Hi",
+    "arc_class": "ARC_In",
+    "arc_class_2": "ARC_N",
+    "globulin_class": "Glo_N",
+    "illness_class": "DI_1"
+   }
+  },
+  {
+   "dog_id": "DS05:d070",
+   "original_id": "BET090",
+   "values": {
+    "habitus_score": 2,
+    "habitus_raw": "2+",
+    "habitus_class": "De_Co",
+    "anaemia_class": "Ht_S",
+    "wcc_class": "WCC_N",
+    "band_class": "BaN_H",
+    "left_shift_class": "L_shft",
+    "monocyte_class": "Mon_N",
+    "arc_class": "ARC_Ma",
+    "arc_class_2": "ARC_Hi",
+    "globulin_class": "Glo_Hi",
+    "illness_class": "DI_2"
+   }
+  },
+  {
+   "dog_id": "DS05:d107",
+   "original_id": "BET091",
+   "values": {
+    "habitus_score": 2,
+    "habitus_raw": "2+",
+    "habitus_class": "De_Co",
+    "anaemia_class": "Ht_S",
+    "wcc_class": "WCC_Hi",
+    "band_class": "BaN_H",
+    "left_shift_class": "L_shft",
+    "monocyte_class": "Mon_Hi",
+    "arc_class": "ARC_In",
+    "arc_class_2": "ARC_N",
+    "globulin_class": "Glo_N",
+    "illness_class": "DI_3"
+   }
+  },
+  {
+   "dog_id": "DS05:d115",
+   "original_id": "BET092",
+   "values": {
+    "habitus_score": 2,
+    "habitus_raw": "2+",
+    "habitus_class": "De_Co",
+    "anaemia_class": "Ht_N",
+    "wcc_class": "WCC_Lo",
+    "band_class": "BaN_N",
+    "left_shift_class": "none",
+    "monocyte_class": "Mon_N",
+    "arc_class": "ARC_In",
+    "arc_class_2": "ARC_N",
+    "globulin_class": null,
+    "illness_class": "DI_1"
+   }
+  },
+  {
+   "dog_id": "DS05:d042",
+   "original_id": "BET093",
+   "values": {
+    "habitus_score": 2,
+    "habitus_raw": "2+",
+    "habitus_class": "De_Co",
+    "anaemia_class": "Ht_Mo",
+    "wcc_class": "WCC_N",
+    "band_class": "BaN_H",
+    "left_shift_class": "L_shft",
+    "monocyte_class": "Mon_Hi",
+    "arc_class": "ARC_In",
+    "arc_class_2": "ARC_N",
+    "globulin_class": "Glo_N",
+    "illness_class": "DI_1"
+   }
+  },
+  {
+   "dog_id": "DS05:d081",
+   "original_id": "BET094",
+   "values": {
+    "habitus_score": 3,
+    "habitus_raw": "3+",
+    "habitus_class": "Mi_De",
+    "anaemia_class": "Ht_Mo",
+    "wcc_class": "WCC_Lo",
+    "band_class": "BaN_N",
+    "left_shift_class": "none",
+    "monocyte_class": "Mon_N",
+    "arc_class": "ARC_In",
+    "arc_class_2": "ARC_N",
+    "globulin_class": "Glo_N",
+    "illness_class": "DI_1"
+   }
+  },
+  {
+   "dog_id": "DS05:d039",
+   "original_id": "BET095",
+   "values": {
+    "habitus_score": 3,
+    "habitus_raw": "3+",
+    "habitus_class": "Mi_De",
+    "anaemia_class": "Ht_Mo",
+    "wcc_class": "WCC_N",
+    "band_class": "BaN_N",
+    "left_shift_class": "none",
+    "monocyte_class": "Mon_N",
+    "arc_class": "ARC_Mi",
+    "arc_class_2": "ARC_Hi",
+    "globulin_class": "Glo_Hi",
+    "illness_class": "DI_3"
+   }
+  },
+  {
+   "dog_id": "DS05:d007",
+   "original_id": "BET096",
+   "values": {
+    "habitus_score": 3,
+    "habitus_raw": "3+",
+    "habitus_class": "Mi_De",
+    "anaemia_class": "Ht_Mo",
+    "wcc_class": "WCC_N",
+    "band_class": "BaN_N",
+    "left_shift_class": "none",
+    "monocyte_class": "Mon_N",
+    "arc_class": "ARC_Mo",
+    "arc_class_2": "ARC_Hi",
+    "globulin_class": "Glo_N",
+    "illness_class": "DI_3"
+   }
+  },
+  {
+   "dog_id": "DS05:d040",
+   "original_id": "BET097",
+   "values": {
+    "habitus_score": 4,
+    "habitus_raw": "4+",
+    "habitus_class": "BAR",
+    "anaemia_class": "Ht_Mo",
+    "wcc_class": "WCC_Lo",
+    "band_class": "BaN_N",
+    "left_shift_class": "none",
+    "monocyte_class": "Mon_N",
+    "arc_class": "ARC_In",
+    "arc_class_2": "ARC_N",
+    "globulin_class": "Glo_N",
+    "illness_class": "DI_1"
+   }
+  },
+  {
+   "dog_id": "DS05:d138",
+   "original_id": "BET098",
+   "values": {
+    "habitus_score": 2,
+    "habitus_raw": "2+",
+    "habitus_class": "De_Co",
+    "anaemia_class": "Ht_VS",
+    "wcc_class": "WCC_N",
+    "band_class": "BaN_N",
+    "left_shift_class": "none",
+    "monocyte_class": "Mon_N",
+    "arc_class": "ARC_Mo",
+    "arc_class_2": "ARC_Hi",
+    "globulin_class": "Glo_Lo",
+    "illness_class": "DI_1"
+   }
+  },
+  {
+   "dog_id": "DS05:d094",
+   "original_id": "BET099",
+   "values": {
+    "habitus_score": 1,
+    "habitus_raw": "1+",
+    "habitus_class": "De_Co",
+    "anaemia_class": "Ht_S",
+    "wcc_class": "WCC_Lo",
+    "band_class": "BaN_N",
+    "left_shift_class": "none",
+    "monocyte_class": "Mon_N",
+    "arc_class": "ARC_Ma",
+    "arc_class_2": "ARC_Hi",
+    "globulin_class": "Glo_Lo",
+    "illness_class": "DI_1"
+   }
+  },
+  {
+   "dog_id": "DS05:d100",
+   "original_id": "BET100",
+   "values": {
+    "habitus_score": 1,
+    "habitus_raw": "1+",
+    "habitus_class": "De_Co",
+    "anaemia_class": "Ht_N",
+    "wcc_class": "WCC_Lo",
+    "band_class": "BaN_N",
+    "left_shift_class": "none",
+    "monocyte_class": "Mon_N",
+    "arc_class": "ARC_In",
+    "arc_class_2": "ARC_N",
+    "globulin_class": "Glo_Lo",
+    "illness_class": "DI_1"
+   }
+  },
+  {
+   "dog_id": "DS05:d098",
+   "original_id": "BET101",
+   "values": {
+    "habitus_score": 2,
+    "habitus_raw": "2+",
+    "habitus_class": "De_Co",
+    "anaemia_class": "Ht_S",
+    "wcc_class": "WCC_N",
+    "band_class": "BaN_N",
+    "left_shift_class": "none",
+    "monocyte_class": "Mon_N",
+    "arc_class": "ARC_Mo",
+    "arc_class_2": "ARC_Hi",
+    "globulin_class": "Glo_N",
+    "illness_class": "DI_1"
+   }
+  },
+  {
+   "dog_id": "DS05:d001",
+   "original_id": "BET102",
+   "values": {
+    "habitus_score": 1,
+    "habitus_raw": "1+",
+    "habitus_class": "De_Co",
+    "anaemia_class": "Ht_S",
+    "wcc_class": "WCC_Hi",
+    "band_class": "BaN_H",
+    "left_shift_class": "L_shft",
+    "monocyte_class": "Mon_Hi",
+    "arc_class": "ARC_Mi",
+    "arc_class_2": "ARC_N",
+    "globulin_class": "Glo_Hi",
+    "illness_class": "DI_1"
+   }
+  },
+  {
+   "dog_id": "DS05:d103",
+   "original_id": "BET103",
+   "values": {
+    "habitus_score": 2,
+    "habitus_raw": "2+",
+    "habitus_class": "De_Co",
+    "anaemia_class": "Ht_S",
+    "wcc_class": "WCC_Hi",
+    "band_class": "BaN_H",
+    "left_shift_class": "L_shft",
+    "monocyte_class": "Mon_Hi",
+    "arc_class": "ARC_Ma",
+    "arc_class_2": "ARC_Hi",
+    "globulin_class": "Glo_N",
+    "illness_class": "DI_2"
+   }
+  },
+  {
+   "dog_id": "DS05:d016",
+   "original_id": "BET104",
+   "values": {
+    "habitus_score": 2,
+    "habitus_raw": "2+",
+    "habitus_class": "De_Co",
+    "anaemia_class": "Ht_VS",
+    "wcc_class": "WCC_Hi",
+    "band_class": "BaN_N",
+    "left_shift_class": "none",
+    "monocyte_class": "Mon_Hi",
+    "arc_class": "ARC_In",
+    "arc_class_2": "ARC_N",
+    "globulin_class": "Glo_Lo",
+    "illness_class": "DI_1"
+   }
+  },
+  {
+   "dog_id": "DS05:d071",
+   "original_id": "BET105",
+   "values": {
+    "habitus_score": 2,
+    "habitus_raw": "2+",
+    "habitus_class": "De_Co",
+    "anaemia_class": "Ht_S",
+    "wcc_class": "WCC_N",
+    "band_class": "BaN_N",
+    "left_shift_class": "none",
+    "monocyte_class": "Mon_N",
+    "arc_class": "ARC_Mo",
+    "arc_class_2": "ARC_Hi",
+    "globulin_class": "Glo_N",
+    "illness_class": "DI_1"
+   }
+  },
+  {
+   "dog_id": "DS05:d011",
+   "original_id": "BET106",
+   "values": {
+    "habitus_score": 3,
+    "habitus_raw": "3+",
+    "habitus_class": "Mi_De",
+    "anaemia_class": "Ht_S",
+    "wcc_class": "WCC_Hi",
+    "band_class": "BaN_N",
+    "left_shift_class": "none",
+    "monocyte_class": "Mon_Hi",
+    "arc_class": "ARC_Ma",
+    "arc_class_2": "ARC_Hi",
+    "globulin_class": "Glo_N",
+    "illness_class": "DI_3"
+   }
+  },
+  {
+   "dog_id": "DS05:d079",
+   "original_id": "BET107",
+   "values": {
+    "habitus_score": 3,
+    "habitus_raw": "3+",
+    "habitus_class": "Mi_De",
+    "anaemia_class": "Ht_S",
+    "wcc_class": "WCC_N",
+    "band_class": "BaN_N",
+    "left_shift_class": "none",
+    "monocyte_class": "Mon_N",
+    "arc_class": "ARC_In",
+    "arc_class_2": "ARC_N",
+    "globulin_class": "Glo_N",
+    "illness_class": "DI_2"
+   }
+  },
+  {
+   "dog_id": "DS05:d116",
+   "original_id": "BET108",
+   "values": {
+    "habitus_score": 2,
+    "habitus_raw": "2+",
+    "habitus_class": "De_Co",
+    "anaemia_class": "Ht_S",
+    "wcc_class": "WCC_N",
+    "band_class": "BaN_N",
+    "left_shift_class": "none",
+    "monocyte_class": "Mon_N",
+    "arc_class": "ARC_Ma",
+    "arc_class_2": "ARC_Hi",
+    "globulin_class": null,
+    "illness_class": "DI_2"
+   }
+  },
+  {
+   "dog_id": "DS05:d141",
+   "original_id": "BET109",
+   "values": {
+    "habitus_score": 3,
+    "habitus_raw": "3+",
+    "habitus_class": "Mi_De",
+    "anaemia_class": "Ht_Mo",
+    "wcc_class": "WCC_Lo",
+    "band_class": "BaN_N",
+    "left_shift_class": "none",
+    "monocyte_class": "Mon_N",
+    "arc_class": "ARC_In",
+    "arc_class_2": "ARC_N",
+    "globulin_class": null,
+    "illness_class": "DI_2"
+   }
+  },
+  {
+   "dog_id": "DS05:d110",
+   "original_id": "BET110",
+   "values": {
+    "habitus_score": 2,
+    "habitus_raw": "2+",
+    "habitus_class": "De_Co",
+    "anaemia_class": "Ht_Mo",
+    "wcc_class": "WCC_Lo",
+    "band_class": "BaN_N",
+    "left_shift_class": "none",
+    "monocyte_class": "Mon_N",
+    "arc_class": "ARC_In",
+    "arc_class_2": "ARC_N",
+    "globulin_class": "Glo_N",
+    "illness_class": "DI_1"
+   }
+  },
+  {
+   "dog_id": "DS05:d148",
+   "original_id": "BET111",
+   "values": {
+    "habitus_score": 2,
+    "habitus_raw": "2+",
+    "habitus_class": "De_Co",
+    "anaemia_class": "Ht_VS",
+    "wcc_class": "WCC_Lo",
+    "band_class": "BaN_N",
+    "left_shift_class": "none",
+    "monocyte_class": "Mon_Hi",
+    "arc_class": "ARC_Mi",
+    "arc_class_2": "ARC_N",
+    "globulin_class": "Glo_N",
+    "illness_class": "DI_2"
+   }
+  },
+  {
+   "dog_id": "DS05:d109",
+   "original_id": "BET112",
+   "values": {
+    "habitus_score": 2,
+    "habitus_raw": "2+",
+    "habitus_class": "De_Co",
+    "anaemia_class": "Ht_VS",
+    "wcc_class": "WCC_N",
+    "band_class": "BaN_N",
+    "left_shift_class": "none",
+    "monocyte_class": "Mon_N",
+    "arc_class": "ARC_Mo",
+    "arc_class_2": "ARC_Hi",
+    "globulin_class": "Glo_N",
+    "illness_class": "DI_1"
+   }
+  },
+  {
+   "dog_id": "DS05:d066",
+   "original_id": "BET113",
+   "values": {
+    "habitus_score": 3,
+    "habitus_raw": "3+",
+    "habitus_class": "Mi_De",
+    "anaemia_class": "Ht_Mo",
+    "wcc_class": "WCC_Lo",
+    "band_class": "BaN_N",
+    "left_shift_class": "none",
+    "monocyte_class": "Mon_N",
+    "arc_class": "ARC_In",
+    "arc_class_2": "ARC_N",
+    "globulin_class": "Glo_N",
+    "illness_class": "DI_1"
+   }
+  },
+  {
+   "dog_id": "DS05:d024",
+   "original_id": "BET114",
+   "values": {
+    "habitus_score": 2,
+    "habitus_raw": "2+",
+    "habitus_class": "De_Co",
+    "anaemia_class": "Ht_S",
+    "wcc_class": "WCC_N",
+    "band_class": "BaN_N",
+    "left_shift_class": "none",
+    "monocyte_class": "Mon_N",
+    "arc_class": "ARC_Mi",
+    "arc_class_2": "ARC_N",
+    "globulin_class": "Glo_N",
+    "illness_class": "DI_1"
+   }
+  },
+  {
+   "dog_id": "DS05:d131",
+   "original_id": "BET115",
+   "values": {
+    "habitus_score": 3,
+    "habitus_raw": "3+",
+    "habitus_class": "Mi_De",
+    "anaemia_class": "Ht_S",
+    "wcc_class": "WCC_N",
+    "band_class": "BaN_N",
+    "left_shift_class": "none",
+    "monocyte_class": "Mon_N",
+    "arc_class": "ARC_Mo",
+    "arc_class_2": "ARC_Hi",
+    "globulin_class": "Glo_Hi",
+    "illness_class": "DI_2"
+   }
+  },
+  {
+   "dog_id": "DS05:d069",
+   "original_id": "BET116",
+   "values": {
+    "habitus_score": 3,
+    "habitus_raw": "3+",
+    "habitus_class": "Mi_De",
+    "anaemia_class": "Ht_Mo",
+    "wcc_class": "WCC_N",
+    "band_class": "BaN_N",
+    "left_shift_class": "none",
+    "monocyte_class": "Mon_N",
+    "arc_class": "ARC_In",
+    "arc_class_2": "ARC_N",
+    "globulin_class": "Glo_N",
+    "illness_class": "DI_3"
+   }
+  },
+  {
+   "dog_id": "DS05:d091",
+   "original_id": "BET117",
+   "values": {
+    "habitus_score": 2,
+    "habitus_raw": "2+",
+    "habitus_class": "De_Co",
+    "anaemia_class": "Ht_S",
+    "wcc_class": "WCC_Hi",
+    "band_class": "BaN_N",
+    "left_shift_class": "none",
+    "monocyte_class": "Mon_Hi",
+    "arc_class": "ARC_Ma",
+    "arc_class_2": "ARC_Hi",
+    "globulin_class": "Glo_N",
+    "illness_class": "DI_3"
+   }
+  },
+  {
+   "dog_id": "DS05:d033",
+   "original_id": "BET118",
+   "values": {
+    "habitus_score": 1,
+    "habitus_raw": "1+",
+    "habitus_class": "De_Co",
+    "anaemia_class": "Ht_VS",
+    "wcc_class": "WCC_Hi",
+    "band_class": "BaN_H",
+    "left_shift_class": "L_shft",
+    "monocyte_class": "Mon_Hi",
+    "arc_class": "ARC_In",
+    "arc_class_2": "ARC_N",
+    "globulin_class": "Glo_N",
+    "illness_class": "DI_1"
+   }
+  },
+  {
+   "dog_id": "DS05:d019",
+   "original_id": "BET119",
+   "values": {
+    "habitus_score": 3,
+    "habitus_raw": "3+",
+    "habitus_class": "Mi_De",
+    "anaemia_class": "Ht_Mo",
+    "wcc_class": "WCC_N",
+    "band_class": "BaN_N",
+    "left_shift_class": "none",
+    "monocyte_class": "Mon_N",
+    "arc_class": "ARC_Mo",
+    "arc_class_2": "ARC_Hi",
+    "globulin_class": null,
+    "illness_class": "DI_1"
+   }
+  },
+  {
+   "dog_id": "DS05:d145",
+   "original_id": "BET120",
+   "values": {
+    "habitus_score": 2,
+    "habitus_raw": "2+",
+    "habitus_class": "De_Co",
+    "anaemia_class": "Ht_S",
+    "wcc_class": "WCC_N",
+    "band_class": "BaN_H",
+    "left_shift_class": "L_shft",
+    "monocyte_class": "Mon_Hi",
+    "arc_class": "ARC_Mo",
+    "arc_class_2": "ARC_Hi",
+    "globulin_class": "Glo_N",
+    "illness_class": "DI_2"
+   }
+  },
+  {
+   "dog_id": "DS05:d092",
+   "original_id": "BET121",
+   "values": {
+    "habitus_score": 2,
+    "habitus_raw": "2+",
+    "habitus_class": "De_Co",
+    "anaemia_class": "Ht_Mi",
+    "wcc_class": "WCC_Lo",
+    "band_class": "BaN_N",
+    "left_shift_class": "none",
+    "monocyte_class": "Mon_N",
+    "arc_class": "ARC_Mi",
+    "arc_class_2": "ARC_N",
+    "globulin_class": "Glo_N",
+    "illness_class": "DI_1"
+   }
+  },
+  {
+   "dog_id": "DS05:d029",
+   "original_id": "BET122",
+   "values": {
+    "habitus_score": 2,
+    "habitus_raw": "2+",
+    "habitus_class": "De_Co",
+    "anaemia_class": "Ht_VS",
+    "wcc_class": "WCC_Lo",
+    "band_class": "BaN_N",
+    "left_shift_class": "none",
+    "monocyte_class": "Mon_N",
+    "arc_class": "ARC_In",
+    "arc_class_2": "ARC_N",
+    "globulin_class": "Glo_Hi",
+    "illness_class": "DI_1"
+   }
+  },
+  {
+   "dog_id": "DS05:d137",
+   "original_id": "BET123",
+   "values": {
+    "habitus_score": 2,
+    "habitus_raw": "2+",
+    "habitus_class": "De_Co",
+    "anaemia_class": "Ht_Mo",
+    "wcc_class": "WCC_Lo",
+    "band_class": "BaN_N",
+    "left_shift_class": "none",
+    "monocyte_class": "Mon_N",
+    "arc_class": "ARC_In",
+    "arc_class_2": "ARC_N",
+    "globulin_class": "Glo_N",
+    "illness_class": "DI_1"
+   }
+  },
+  {
+   "dog_id": "DS05:d043",
+   "original_id": "BET124",
+   "values": {
+    "habitus_score": 3,
+    "habitus_raw": "3+",
+    "habitus_class": "Mi_De",
+    "anaemia_class": "Ht_Mo",
+    "wcc_class": "WCC_N",
+    "band_class": "BaN_N",
+    "left_shift_class": "none",
+    "monocyte_class": "Mon_N",
+    "arc_class": "ARC_In",
+    "arc_class_2": "ARC_N",
+    "globulin_class": "Glo_N",
+    "illness_class": "DI_1"
+   }
+  },
+  {
+   "dog_id": "DS05:d124",
+   "original_id": "BET125",
+   "values": {
+    "habitus_score": 3,
+    "habitus_raw": "3+",
+    "habitus_class": "Mi_De",
+    "anaemia_class": "Ht_Mo",
+    "wcc_class": "WCC_Lo",
+    "band_class": "BaN_N",
+    "left_shift_class": "none",
+    "monocyte_class": "Mon_N",
+    "arc_class": "ARC_Mi",
+    "arc_class_2": "ARC_N",
+    "globulin_class": "Glo_Hi",
+    "illness_class": "DI_2"
+   }
+  },
+  {
+   "dog_id": "DS05:d134",
+   "original_id": "BET126",
+   "values": {
+    "habitus_score": 0,
+    "habitus_raw": "COLLAPSED",
+    "habitus_class": "De_Co",
+    "anaemia_class": "Ht_VS",
+    "wcc_class": "WCC_N",
+    "band_class": "BaN_N",
+    "left_shift_class": "none",
+    "monocyte_class": "Mon_N",
+    "arc_class": "ARC_In",
+    "arc_class_2": "ARC_N",
+    "globulin_class": "Glo_Lo",
+    "illness_class": "DI_1"
+   }
+  },
+  {
+   "dog_id": "DS05:d049",
+   "original_id": "BET127",
+   "values": {
+    "habitus_score": 2,
+    "habitus_raw": "2+",
+    "habitus_class": "De_Co",
+    "anaemia_class": "Ht_S",
+    "wcc_class": "WCC_Hi",
+    "band_class": "BaN_H",
+    "left_shift_class": "L_shft",
+    "monocyte_class": "Mon_N",
+    "arc_class": "ARC_Mo",
+    "arc_class_2": "ARC_Hi",
+    "globulin_class": "Glo_N",
+    "illness_class": "DI_1"
+   }
+  },
+  {
+   "dog_id": "DS05:d055",
+   "original_id": "BET128",
+   "values": {
+    "habitus_score": 2,
+    "habitus_raw": "2+",
+    "habitus_class": "De_Co",
+    "anaemia_class": "Ht_Mo",
+    "wcc_class": "WCC_N",
+    "band_class": "BaN_N",
+    "left_shift_class": "none",
+    "monocyte_class": "Mon_N",
+    "arc_class": "ARC_Mi",
+    "arc_class_2": "ARC_N",
+    "globulin_class": "Glo_N",
+    "illness_class": "DI_1"
+   }
+  },
+  {
+   "dog_id": "DS05:d146",
+   "original_id": "BET129",
+   "values": {
+    "habitus_score": 3,
+    "habitus_raw": "3+",
+    "habitus_class": "Mi_De",
+    "anaemia_class": "Ht_Mo",
+    "wcc_class": "WCC_N",
+    "band_class": "BaN_N",
+    "left_shift_class": "none",
+    "monocyte_class": "Mon_N",
+    "arc_class": "ARC_In",
+    "arc_class_2": "ARC_N",
+    "globulin_class": "Glo_N",
+    "illness_class": "DI_1"
+   }
+  },
+  {
+   "dog_id": "DS05:d144",
+   "original_id": "BET130",
+   "values": {
+    "habitus_score": 2,
+    "habitus_raw": "2+",
+    "habitus_class": "De_Co",
+    "anaemia_class": "Ht_S",
+    "wcc_class": "WCC_Lo",
+    "band_class": "BaN_N",
+    "left_shift_class": "none",
+    "monocyte_class": "Mon_N",
+    "arc_class": "ARC_Mo",
+    "arc_class_2": "ARC_Hi",
+    "globulin_class": "Glo_Hi",
+    "illness_class": "DI_2"
+   }
+  },
+  {
+   "dog_id": "DS05:d010",
+   "original_id": "BET131",
+   "values": {
+    "habitus_score": 2,
+    "habitus_raw": "2+",
+    "habitus_class": "De_Co",
+    "anaemia_class": "Ht_VS",
+    "wcc_class": "WCC_N",
+    "band_class": "BaN_H",
+    "left_shift_class": "L_shft",
+    "monocyte_class": "Mon_N",
+    "arc_class": "ARC_Mo",
+    "arc_class_2": "ARC_Hi",
+    "globulin_class": "Glo_N",
+    "illness_class": "DI_2"
+   }
+  },
+  {
+   "dog_id": "DS05:d127",
+   "original_id": "BET132",
+   "values": {
+    "habitus_score": 3,
+    "habitus_raw": "3+",
+    "habitus_class": "Mi_De",
+    "anaemia_class": "Ht_Mo",
+    "wcc_class": "WCC_Lo",
+    "band_class": "BaN_N",
+    "left_shift_class": "none",
+    "monocyte_class": "Mon_N",
+    "arc_class": "ARC_In",
+    "arc_class_2": "ARC_N",
+    "globulin_class": "Glo_N",
+    "illness_class": "DI_1"
+   }
+  },
+  {
+   "dog_id": "DS05:d002",
+   "original_id": "BET133",
+   "values": {
+    "habitus_score": 3,
+    "habitus_raw": "3+",
+    "habitus_class": "Mi_De",
+    "anaemia_class": "Ht_Mi",
+    "wcc_class": "WCC_Lo",
+    "band_class": "BaN_N",
+    "left_shift_class": "none",
+    "monocyte_class": "Mon_N",
+    "arc_class": "ARC_In",
+    "arc_class_2": "ARC_N",
+    "globulin_class": "Glo_N",
+    "illness_class": "DI_2"
+   }
+  },
+  {
+   "dog_id": "DS05:d150",
+   "original_id": "BET134",
+   "values": {
+    "habitus_score": 2,
+    "habitus_raw": "2+",
+    "habitus_class": "De_Co",
+    "anaemia_class": "Ht_S",
+    "wcc_class": "WCC_Hi",
+    "band_class": "BaN_H",
+    "left_shift_class": "L_shft",
+    "monocyte_class": "Mon_N",
+    "arc_class": "ARC_Mi",
+    "arc_class_2": "ARC_N",
+    "globulin_class": "Glo_N",
+    "illness_class": "DI_1"
+   }
+  },
+  {
+   "dog_id": "DS05:d034",
+   "original_id": "BET135",
+   "values": {
+    "habitus_score": 2,
+    "habitus_raw": "2+",
+    "habitus_class": "De_Co",
+    "anaemia_class": "Ht_S",
+    "wcc_class": "WCC_N",
+    "band_class": "BaN_H",
+    "left_shift_class": "L_shft",
+    "monocyte_class": "Mon_N",
+    "arc_class": "ARC_Mo",
+    "arc_class_2": "ARC_Hi",
+    "globulin_class": "Glo_N",
+    "illness_class": "DI_2"
+   }
+  },
+  {
+   "dog_id": "DS05:d125",
+   "original_id": "BET136",
+   "values": {
+    "habitus_score": 2,
+    "habitus_raw": "2+",
+    "habitus_class": "De_Co",
+    "anaemia_class": "Ht_S",
+    "wcc_class": "WCC_N",
+    "band_class": "BaN_H",
+    "left_shift_class": "L_shft",
+    "monocyte_class": "Mon_N",
+    "arc_class": "ARC_Mo",
+    "arc_class_2": "ARC_Hi",
+    "globulin_class": "Glo_Hi",
+    "illness_class": "DI_1"
+   }
+  },
+  {
+   "dog_id": "DS05:d065",
+   "original_id": "BET137",
+   "values": {
+    "habitus_score": 2,
+    "habitus_raw": "2+",
+    "habitus_class": "De_Co",
+    "anaemia_class": "Ht_VS",
+    "wcc_class": "WCC_Hi",
+    "band_class": "BaN_H",
+    "left_shift_class": "L_shft",
+    "monocyte_class": "Mon_N",
+    "arc_class": "ARC_Ma",
+    "arc_class_2": "ARC_Hi",
+    "globulin_class": "Glo_N",
+    "illness_class": "DI_3"
+   }
+  },
+  {
+   "dog_id": "DS05:d020",
+   "original_id": "BET138",
+   "values": {
+    "habitus_score": 3,
+    "habitus_raw": "3+",
+    "habitus_class": "Mi_De",
+    "anaemia_class": "Ht_N",
+    "wcc_class": "WCC_Lo",
+    "band_class": "BaN_N",
+    "left_shift_class": "none",
+    "monocyte_class": "Mon_N",
+    "arc_class": "ARC_In",
+    "arc_class_2": "ARC_N",
+    "globulin_class": "Glo_N",
+    "illness_class": "DI_1"
+   }
+  },
+  {
+   "dog_id": "DS05:d133",
+   "original_id": "BET139",
+   "values": {
+    "habitus_score": 3,
+    "habitus_raw": "3+",
+    "habitus_class": "Mi_De",
+    "anaemia_class": "Ht_VS",
+    "wcc_class": "WCC_N",
+    "band_class": "BaN_H",
+    "left_shift_class": "L_shft",
+    "monocyte_class": "Mon_Hi",
+    "arc_class": "ARC_Mi",
+    "arc_class_2": "ARC_Hi",
+    "globulin_class": "Glo_N",
+    "illness_class": "DI_1"
+   }
+  },
+  {
+   "dog_id": "DS05:d052",
+   "original_id": "BET140",
+   "values": {
+    "habitus_score": 2,
+    "habitus_raw": "2+",
+    "habitus_class": "De_Co",
+    "anaemia_class": "Ht_VS",
+    "wcc_class": "WCC_N",
+    "band_class": "BaN_N",
+    "left_shift_class": "none",
+    "monocyte_class": "Mon_N",
+    "arc_class": "ARC_Mo",
+    "arc_class_2": "ARC_Hi",
+    "globulin_class": "Glo_N",
+    "illness_class": "DI_3"
+   }
+  },
+  {
+   "dog_id": "DS05:d149",
+   "original_id": "BET141",
+   "values": {
+    "habitus_score": 2,
+    "habitus_raw": "2+",
+    "habitus_class": "De_Co",
+    "anaemia_class": "Ht_S",
+    "wcc_class": "WCC_N",
+    "band_class": "BaN_H",
+    "left_shift_class": "L_shft",
+    "monocyte_class": "Mon_N",
+    "arc_class": "ARC_Mo",
+    "arc_class_2": "ARC_Hi",
+    "globulin_class": "Glo_N",
+    "illness_class": "DI_2"
+   }
+  },
+  {
+   "dog_id": "DS05:d114",
+   "original_id": "BET142",
+   "values": {
+    "habitus_score": 2,
+    "habitus_raw": "2+",
+    "habitus_class": "De_Co",
+    "anaemia_class": "Ht_Mo",
+    "wcc_class": "WCC_N",
+    "band_class": "BaN_N",
+    "left_shift_class": "none",
+    "monocyte_class": "Mon_Hi",
+    "arc_class": "ARC_Ma",
+    "arc_class_2": "ARC_Hi",
+    "globulin_class": "Glo_N",
+    "illness_class": "DI_3"
+   }
+  },
+  {
+   "dog_id": "DS05:d102",
+   "original_id": "BET143",
+   "values": {
+    "habitus_score": 2,
+    "habitus_raw": "2+",
+    "habitus_class": "De_Co",
+    "anaemia_class": "Ht_Mi",
+    "wcc_class": "WCC_Lo",
+    "band_class": "BaN_N",
+    "left_shift_class": "none",
+    "monocyte_class": "Mon_N",
+    "arc_class": "ARC_In",
+    "arc_class_2": "ARC_N",
+    "globulin_class": "Glo_N",
+    "illness_class": "DI_2"
+   }
+  },
+  {
+   "dog_id": "DS05:d074",
+   "original_id": "BET144",
+   "values": {
+    "habitus_score": 0,
+    "habitus_raw": "COLLAPSED",
+    "habitus_class": "De_Co",
+    "anaemia_class": "Ht_Mi",
+    "wcc_class": "WCC_Lo",
+    "band_class": "BaN_H",
+    "left_shift_class": "L_shft",
+    "monocyte_class": "Mon_N",
+    "arc_class": "ARC_In",
+    "arc_class_2": "ARC_N",
+    "globulin_class": "Glo_N",
+    "illness_class": "DI_3"
+   }
+  },
+  {
+   "dog_id": "DS05:d080",
+   "original_id": "BET145",
+   "values": {
+    "habitus_score": 2,
+    "habitus_raw": "2+",
+    "habitus_class": "De_Co",
+    "anaemia_class": "Ht_S",
+    "wcc_class": "WCC_Lo",
+    "band_class": "BaN_N",
+    "left_shift_class": "none",
+    "monocyte_class": "Mon_N",
+    "arc_class": "ARC_Mi",
+    "arc_class_2": "ARC_Hi",
+    "globulin_class": "Glo_Hi",
+    "illness_class": "DI_2"
+   }
+  },
+  {
+   "dog_id": "DS05:d021",
+   "original_id": "BET146",
+   "values": {
+    "habitus_score": 2,
+    "habitus_raw": "2+",
+    "habitus_class": "De_Co",
+    "anaemia_class": "Ht_S",
+    "wcc_class": "WCC_Hi",
+    "band_class": "BaN_H",
+    "left_shift_class": "L_shft",
+    "monocyte_class": "Mon_N",
+    "arc_class": "ARC_Ma",
+    "arc_class_2": "ARC_Hi",
+    "globulin_class": "Glo_N",
+    "illness_class": "DI_1"
+   }
+  },
+  {
+   "dog_id": "DS05:d008",
+   "original_id": "BET147",
+   "values": {
+    "habitus_score": 1,
+    "habitus_raw": "1+",
+    "habitus_class": "De_Co",
+    "anaemia_class": "Ht_Mo",
+    "wcc_class": "WCC_N",
+    "band_class": "BaN_H",
+    "left_shift_class": "L_shft",
+    "monocyte_class": "Mon_Hi",
+    "arc_class": "ARC_In",
+    "arc_class_2": "ARC_N",
+    "globulin_class": "Glo_N",
+    "illness_class": "DI_1"
+   }
+  },
+  {
+   "dog_id": "DS05:d130",
+   "original_id": "BET148",
+   "values": {
+    "habitus_score": 1,
+    "habitus_raw": "1+",
+    "habitus_class": "De_Co",
+    "anaemia_class": "Ht_S",
+    "wcc_class": "WCC_Lo",
+    "band_class": "BaN_H",
+    "left_shift_class": "none",
+    "monocyte_class": "Mon_N",
+    "arc_class": "ARC_In",
+    "arc_class_2": "ARC_N",
+    "globulin_class": "Glo_N",
+    "illness_class": "DI_2"
+   }
+  },
+  {
+   "dog_id": "DS05:d087",
+   "original_id": "BET149",
+   "values": {
+    "habitus_score": 2,
+    "habitus_raw": "2+",
+    "habitus_class": "De_Co",
+    "anaemia_class": "Ht_VS",
+    "wcc_class": "WCC_Lo",
+    "band_class": "BaN_N",
+    "left_shift_class": "none",
+    "monocyte_class": "Mon_N",
+    "arc_class": "ARC_Mi",
+    "arc_class_2": "ARC_Hi",
+    "globulin_class": "Glo_N",
+    "illness_class": "DI_1"
+   }
+  },
+  {
+   "dog_id": "DS05:d012",
+   "original_id": "BET150",
+   "values": {
+    "habitus_score": 0,
+    "habitus_raw": "COLLAPSED",
+    "habitus_class": "De_Co",
+    "anaemia_class": "Ht_Mo",
+    "wcc_class": "WCC_Lo",
+    "band_class": "BaN_H",
+    "left_shift_class": "L_shft",
+    "monocyte_class": "Mon_N",
+    "arc_class": "ARC_Mi",
+    "arc_class_2": "ARC_Hi",
+    "globulin_class": "Glo_N",
+    "illness_class": "DI_1"
+   }
+  },
+  {
+   "dog_id": "DS05:d105",
+   "original_id": "BET151",
+   "values": {
+    "habitus_score": 2,
+    "habitus_raw": "2+",
+    "habitus_class": "De_Co",
+    "anaemia_class": "Ht_S",
+    "wcc_class": "WCC_N",
+    "band_class": "BaN_N",
+    "left_shift_class": "none",
+    "monocyte_class": "Mon_N",
+    "arc_class": "ARC_Mi",
+    "arc_class_2": "ARC_N",
+    "globulin_class": "Glo_N",
+    "illness_class": "DI_1"
+   }
+  }
+ ]
+}

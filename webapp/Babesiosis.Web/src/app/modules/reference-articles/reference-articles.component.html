@@ -31,8 +31,10 @@
 </ng-template>
 
 <ng-template #categoryCell let-row>
-  @if (row.categoryName) {
-    <span class="fs-reference-articles__wrap">{{ row.categoryName }}</span>
+  @if (row.categoryLabel) {
+    <span class="fs-reference-articles__wrap" [title]="row.categoryName">
+      {{ row.categoryLabel }} <span class="fs-reference-articles__code">{{ row.categoryCode }}</span>
+    </span>
   } @else {
     <span class="fs-reference-articles__none">Uncategorised</span>
   }

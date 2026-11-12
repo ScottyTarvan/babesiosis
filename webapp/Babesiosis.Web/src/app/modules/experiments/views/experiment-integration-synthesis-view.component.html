@@ -1,0 +1,166 @@
+<div class="fs-integration">
+  @if (primary(); as p) {
+    <fs-card title="Answer across all packages"
+             [subtitle]="p.n_experiments + ' Done experiments · ' + p.n_findings + ' findings in 5 lines of explanation · synthesis of the package reports, no new test'">
+      <p class="fs-integration__question">{{ p.research_question }}</p>
+      <p class="fs-integration__answer">{{ p.overall_answer }}</p>
+
+      <div class="fs-integration__strip" role="list">
+        @for (v of p.verdicts; track v.key) {
+          <button type="button" role="listitem" class="fs-integration__tile"
+                  [class.fs-integration__tile--on]="selected() === v.key" (click)="pick(v.key)"
+                  [attr.aria-pressed]="selected() === v.key">
+            <span class="fs-integration__tile-label">{{ v.label }}</span>
+            <fs-badge variant="tonal" [intent]="verdictIntent(v.verdict)">{{ v.verdict_label }}</fs-badge>
+            <span class="fs-integration__tile-meta">{{ v.n_findings }} findings</span>
+          </button>
+        }
+      </div>
+      <p class="fs-integration__footnote">Click a line to show only its findings below; click again to show all. {{ p.caveat }}</p>
+    </fs-card>
+
+    <fs-card title="How strong is the evidence, line by line"
+             subtitle="Number of findings per line and strength class (hover a cell for the experiment codes) · one species per source · died includes euthanasia (Onderstepoort files)">
+      <div class="fs-integration__table">
+        <table class="fs-integration__matrix">
+          <thead>
+            <tr>
+              <th>Line</th>
+              <th>Verdict</th>
+              @for (s of strengthKeys; track s) {
+                <th [title]="strengthTitle(s)">{{ strengthLabel(s) }}</th>
+              }
+            </tr>
+          </thead>
+          <tbody>
+            @for (row of matrix(); track row.key) {
+              <tr>
+                <td class="fs-integration__strong">{{ row.label }}</td>
+                <td><fs-badge variant="tonal" [intent]="verdictIntent(row.verdict)">{{ row.verdictLabel }}</fs-badge></td>
+                @for (c of row.cells; track c.strength) {
+                  <td class="num fs-integration__cell" [class.fs-integration__cell--on]="c.n > 0"
+                      [style.--fs-cell-weight]="c.n" [title]="c.codes || 'none'">{{ c.n || '·' }}</td>
+                }
+              </tr>
+            }
+          </tbody>
+        </table>
+      </div>
+      <dl class="fs-integration__legend">
+        @for (s of p.strength_counts; track s.strength) {
+          <div><dt>{{ strengthLabel(s.strength) }} ({{ s.n }})</dt><dd>{{ s.label }}</dd></div>
+        }
+      </dl>
+    </fs-card>
+  } @else {
+    <fs-card title="Answer across all packages"><p class="fs-integration__footnote">This run stored no primary result.</p></fs-card>
+  }
+
+  @if (lines()) {
+    @for (l of shownLines(); track l.key) {
+      <fs-card [title]="l.label + ': ' + l.verdict_label" [subtitle]="'Packages ' + l.packages.join(', ') + ' · ' + l.question">
+        <p class="fs-integration__verdict">{{ l.verdict_text }}</p>
+        <div class="fs-integration__table">
+          <table class="fs-integration__findings">
+            <thead>
+              <tr>
+                <th>Experiment</th><th>What was asked</th><th>What was found</th><th>Effect (95% CI)</th><th>n</th>
+                <th>Independent sources</th><th>Could detect</th><th>Strength</th>
+              </tr>
+            </thead>
+            <tbody>
+              @for (f of l.findings; track f.code) {
+                <tr>
+                  <td class="num"><a [href]="link(f.code)">{{ f.code }}</a></td>
+                  <td>{{ f.asked }}</td>
+                  <td>{{ f.found }}</td>
+                  <td class="num-wrap">{{ f.effect }}</td>
+                  <td>{{ f.n }}</td>
+                  <td>{{ f.sources.join('; ') }}</td>
+                  <td>{{ f.detectable }}</td>
+                  <td><fs-badge variant="tonal" [intent]="strengthIntent(f.strength)" [title]="strengthTitle(f.strength)">{{ strengthLabel(f.strength) }}</fs-badge></td>
+                </tr>
+              }
+            </tbody>
+          </table>
+        </div>
+      </fs-card>
+    }
+  } @else {
+    <fs-card title="Findings by line"><p class="fs-integration__footnote">This run stored no findings.</p></fs-card>
+  }
+
+  <fs-card title="Independent dog-level sources after the linkage audit"
+           subtitle="SV-07: DS03 natural dogs are S-CB050 dogs (SRC-A); DS03 experimental dogs are the DS02 Beagles (SRC-B). Count sources, not files or articles">
+    @if (sources(); as rows) {
+      <div class="fs-integration__table">
+        <table>
+          <thead><tr><th>Source</th><th>Files</th><th>Species</th><th>Setting</th><th>Outcome label</th><th>Used by</th></tr></thead>
+          <tbody>
+            @for (s of rows; track s.source) {
+              <tr><td class="num">{{ s.source }}</td><td>{{ s.files }}</td><td>{{ s.species }}</td><td>{{ s.setting }}</td>
+                <td>{{ s.outcome }}</td><td>{{ s.used_by }}</td></tr>
+            }
+          </tbody>
+        </table>
+      </div>
+      <p class="fs-integration__footnote">
+        B. rossi natural infection with an outcome contrast comes from SRC-A (death) and SRC-C (complicated), both counted with
+        Onderstepoort; DS05 (SRC-F) is the only B. rossi source from elsewhere and has no hard outcome. B. canis has two sources (SRC-D, SRC-O).
+      </p>
+    } @else {
+      <p class="fs-integration__footnote">No source table stored.</p>
+    }
+  </fs-card>
+
+  <fs-card title="Candidates to measure in a new cohort" subtitle="Leads, not predictors: why each one is not more than a lead">
+    @if (candidates(); as rows) {
+      <div class="fs-integration__table">
+        <table>
+          <thead><tr><th>Candidate</th><th>Experiments</th><th>Evidence</th><th>Why it is not a predictor</th></tr></thead>
+          <tbody>
+            @for (c of rows; track c.name) {
+              <tr><td class="fs-integration__strong">{{ c.name }}</td><td class="num-wrap">{{ c.codes }}</td><td>{{ c.evidence }}</td>
+                <td>{{ c.why_not_predictor }}</td></tr>
+            }
+          </tbody>
+        </table>
+      </div>
+    } @else {
+      <p class="fs-integration__footnote">No candidates stored.</p>
+    }
+  </fs-card>
+
+  <fs-card title="Data layer, extraction and linkage" subtitle="The shared foundations every line rests on">
+    @if (foundations(); as rows) {
+      <ul class="fs-integration__list">
+        @for (f of rows; track f.code) {
+          <li><a [href]="link(f.code)">{{ f.code }}</a>: {{ f.found }}</li>
+        }
+      </ul>
+    } @else {
+      <p class="fs-integration__footnote">No foundations stored.</p>
+    }
+  </fs-card>
+
+  <fs-card title="Decisions for the user" subtitle="Merged from every package report, de-duplicated, with the package(s) that raised each · none has been acted on">
+    @if (decisions(); as rows) {
+      <div class="fs-integration__table">
+        <table>
+          <thead><tr><th>#</th><th>Decision</th><th>Kind</th><th>Raised by</th></tr></thead>
+          <tbody>
+            @for (d of rows; track $index) {
+              <tr><td class="num">{{ $index + 1 }}</td><td>{{ d.decision }}</td><td>{{ d.kind }}</td><td class="num-wrap">{{ d.raised_by }}</td></tr>
+            }
+          </tbody>
+        </table>
+      </div>
+    } @else {
+      <p class="fs-integration__footnote">No decisions stored.</p>
+    }
+  </fs-card>
+
+  <fs-card title="Combined exposure log" subtitle="Every outcomes file each package opened, from its exposure.md · SV-INT opened none">
+    <fs-data-grid [data]="exposureRows()" [columns]="exposureColumns" keyExpr="id" noDataText="No exposure entries stored." />
+  </fs-card>
+</div>

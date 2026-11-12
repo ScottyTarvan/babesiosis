@@ -1,0 +1,1177 @@
+{
+ "experiment": {
+  "code": "SV-04-02-response-size-balance",
+  "name": "Is severe babesiosis a larger cytokine response or a shifted one? Perturbation count and MCP-1/IL-8 balance in B. rossi and B. canis",
+  "description": "Is severity the size of the inflammatory response (more analytes outside the healthy range) or its balance (MCP-1 high relative to IL-8)? Hypothesis: size predicts a higher perturbation count in severe dogs in both files; balance predicts a same-sign shift in the balance index.",
+  "method": "cytokine_conflict",
+  "dataset": null,
+  "parameters": {
+   "package": "SV-04",
+   "role": "descriptive",
+   "datasets": [
+    "S-CB050",
+    "S-CB017",
+    "DS02"
+   ],
+   "independent_sources": [
+    "SRC-A",
+    "SRC-D",
+    "SRC-B"
+   ],
+   "spec_sha256": "22c7da5db7ad2e3ee20189dddf790bb63ae12a5b670baf849c69f9de89914742",
+   "seed": 20261112,
+   "n_bootstrap": 2000,
+   "n_permutations": 10000,
+   "families": "2 families of 2 (one per file), BH",
+   "inputs_sha256": {
+    "S-CB050.features.json": "fedde71e230325695e0866bd362d932a83904dc50de7883003dc6431cff9460f",
+    "S-CB017.features.json": "6ed00495a7296cb9e3a87e5132cfa0f7a6a798068e9c9e811c9efdcada088cac",
+    "DS02.features.json": "12475e823e588af20e8bec2df5164979c158bdbbb86ddfb96a32afe8aad83e2d",
+    "S-CB050.outcomes.json": "d2657b5321d1dd8528d8e363a8bf621398df32b538301d68df81976562f2d813",
+    "S-CB017.outcomes.json": "11f98f2bae04842d46d493e00246d8dc275da2a7bcc307188f8002ead6f4f046"
+   },
+   "versions": {
+    "python": "3.12.12",
+    "numpy": "2.3.4"
+   },
+   "selection": {
+    "S-CB050": "cohort 1 (cytokines measured): infected 97, controls 15",
+    "S-CB017": "infected day 1 (31), controls 16; day 7 (30) in check C2",
+    "DS02": "5 Beagles; cytokines on days -1, 0, 1, 2, 3, 4, 6, 8; treatment after the day-4 sample"
+   }
+  },
+  "script": "/experiments/SV-04/scripts/analyse.py",
+  "script_version": "9756f9a0ca42",
+  "run_utc": "2026-11-12T06:35:21Z",
+  "n_subjects": 128,
+  "n_variables": 6,
+  "n_tests": 4,
+  "summary": "Pre-stated rule gives 'balance': the balance index (MCP-1 percentile minus IL-8 percentile) is higher in severe dogs in both files (Cliff's delta +0.32, +0.02 to +0.60, n 12 vs 85; +0.44, +0.07 to +0.78, n 18 vs 13), while the perturbation count is higher only in complicated B. canis (+0.71) and not in B. rossi deaths (+0.04). 2 of 4 tests passed BH q < 0.05."
+ },
+ "associations": [],
+ "cluster_assignments": [],
+ "results": [
+  {
+   "kind": "primary_result",
+   "title": "Size and balance of the response by severity",
+   "sort_order": 1,
+   "payload": {
+    "label": "Perturbation count (T1) and balance index (T2), severe minus non-severe",
+    "statistic": "Cliff's delta",
+    "verdict": "balance",
+    "headline": "Verdict by the pre-stated rule: balance. Severe dogs have MCP-1 high relative to IL-8 in both files; only complicated B. canis dogs also have more analytes outside the healthy range.",
+    "independent_sources": 2,
+    "sources": [
+     "S-CB050 (SRC-A, B. rossi, Onderstepoort)",
+     "S-CB017 (SRC-D, B. canis, Zagreb)"
+    ],
+    "rows": [
+     {
+      "label": "S-CB050 · T1 perturbation count",
+      "estimate": 0.035294,
+      "ci_low": -0.220588,
+      "ci_high": 0.30598,
+      "p": 0.842216,
+      "q": 0.842216,
+      "n_a": 12,
+      "n_b": 85,
+      "a_label": "died",
+      "b_label": "survived",
+      "median_a": 1.0,
+      "median_b": 1.0,
+      "hl_log2": null,
+      "hl_low": null,
+      "hl_high": null,
+      "mean_a": 1.416667,
+      "mean_b": 1.376471
+     },
+     {
+      "label": "S-CB050 · T2 balance index (MCP-1 minus IL-8 percentile)",
+      "estimate": 0.320588,
+      "ci_low": 0.021544,
+      "ci_high": 0.599044,
+      "p": 0.069593,
+      "q": 0.139186,
+      "n_a": 12,
+      "n_b": 85,
+      "a_label": "died",
+      "b_label": "survived",
+      "median_a": 25.257732,
+      "median_b": 1.030928,
+      "hl_log2": null,
+      "hl_low": null,
+      "hl_high": null,
+      "mean_a": 19.415808,
+      "mean_b": -2.741055
+     },
+     {
+      "label": "S-CB017 · T1 perturbation count",
+      "estimate": 0.713675,
+      "ci_low": 0.42735,
+      "ci_high": 0.918803,
+      "p": 0.0001,
+      "q": 0.0002,
+      "n_a": 18,
+      "n_b": 13,
+      "a_label": "complicated",
+      "b_label": "uncomplicated",
+      "median_a": 4.0,
+      "median_b": 3.0,
+      "hl_log2": null,
+      "hl_low": null,
+      "hl_high": null,
+      "mean_a": 4.111111,
+      "mean_b": 2.692308
+     },
+     {
+      "label": "S-CB017 · T2 balance index (MCP-1 minus IL-8 percentile)",
+      "estimate": 0.444444,
+      "ci_low": 0.068162,
+      "ci_high": 0.777778,
+      "p": 0.038096,
+      "q": 0.038096,
+      "n_a": 18,
+      "n_b": 13,
+      "a_label": "complicated",
+      "b_label": "uncomplicated",
+      "median_a": 6.451613,
+      "median_b": -19.354839,
+      "hl_log2": null,
+      "hl_low": null,
+      "hl_high": null,
+      "mean_a": 13.978495,
+      "mean_b": -19.354839
+     }
+    ],
+    "caveats": [
+     "Descriptive re-analysis of already-seen files.",
+     "One species per source.",
+     "Died includes euthanasia for poor prognosis (Onderstepoort)."
+    ]
+   }
+  },
+  {
+   "kind": "perturbation_distribution",
+   "title": "Perturbation count by severity",
+   "sort_order": 2,
+   "payload": {
+    "files": [
+     {
+      "file": "S-CB050",
+      "species": "B. rossi",
+      "severe": "died",
+      "nonsevere": "survived",
+      "counts_severe": [
+       0,
+       7,
+       5,
+       0,
+       0,
+       0,
+       0
+      ],
+      "counts_nonsevere": [
+       10,
+       38,
+       34,
+       1,
+       2,
+       0,
+       0
+      ],
+      "outside_severe": {
+       "il2": 0,
+       "il8": 5,
+       "il10": 0,
+       "il18": 0,
+       "gmcsf": 0,
+       "mcp1": 12
+      },
+      "outside_nonsevere": {
+       "il2": 2,
+       "il8": 42,
+       "il10": 2,
+       "il18": 1,
+       "gmcsf": 3,
+       "mcp1": 67
+      }
+     },
+     {
+      "file": "S-CB017",
+      "species": "B. canis",
+      "severe": "complicated",
+      "nonsevere": "uncomplicated",
+      "counts_severe": [
+       0,
+       0,
+       0,
+       4,
+       9,
+       4,
+       1
+      ],
+      "counts_nonsevere": [
+       0,
+       1,
+       5,
+       4,
+       3,
+       0,
+       0
+      ],
+      "outside_severe": {
+       "il2": 13,
+       "il8": 18,
+       "il10": 18,
+       "il18": 3,
+       "gmcsf": 16,
+       "mcp1": 6
+      },
+      "outside_nonsevere": {
+       "il2": 7,
+       "il8": 13,
+       "il10": 12,
+       "il18": 0,
+       "gmcsf": 3,
+       "mcp1": 0
+      }
+     }
+    ],
+    "footnote": "Number of the 6 analytes outside the [min, max] range of that file's own healthy controls (S-CB050 n 15, S-CB017 n 16). One species per source."
+   }
+  },
+  {
+   "kind": "balance_points",
+   "title": "Balance index against perturbation count",
+   "sort_order": 3,
+   "payload": {
+    "files": [
+     {
+      "file": "S-CB050",
+      "species": "B. rossi",
+      "severe": "died",
+      "nonsevere": "survived",
+      "points": [
+       {
+        "perturbation": 2,
+        "balance": 63.917526,
+        "severe": 0
+       },
+       {
+        "perturbation": 0,
+        "balance": -78.350515,
+        "severe": 0
+       },
+       {
+        "perturbation": 1,
+        "balance": 2.061856,
+        "severe": 0
+       },
+       {
+        "perturbation": 1,
+        "balance": 0.0,
+        "severe": 0
+       },
+       {
+        "perturbation": 2,
+        "balance": 39.175258,
+        "severe": 0
+       },
+       {
+        "perturbation": 1,
+        "balance": -37.113402,
+        "severe": 0
+       },
+       {
+        "perturbation": 1,
+        "balance": -31.958763,
+        "severe": 0
+       },
+       {
+        "perturbation": 2,
+        "balance": 49.484536,
+        "severe": 0
+       },
+       {
+        "perturbation": 2,
+        "balance": 30.927835,
+        "severe": 0
+       },
+       {
+        "perturbation": 2,
+        "balance": 30.927835,
+        "severe": 0
+       },
+       {
+        "perturbation": 0,
+        "balance": -76.28866,
+        "severe": 0
+       },
+       {
+        "perturbation": 1,
+        "balance": -85.56701,
+        "severe": 0
+       },
+       {
+        "perturbation": 2,
+        "balance": 56.701031,
+        "severe": 1
+       },
+       {
+        "perturbation": 0,
+        "balance": -78.350515,
+        "severe": 0
+       },
+       {
+        "perturbation": 2,
+        "balance": -14.43299,
+        "severe": 0
+       },
+       {
+        "perturbation": 2,
+        "balance": 75.257732,
+        "severe": 0
+       },
+       {
+        "perturbation": 1,
+        "balance": -48.453608,
+        "severe": 0
+       },
+       {
+        "perturbation": 1,
+        "balance": -56.701031,
+        "severe": 0
+       },
+       {
+        "perturbation": 2,
+        "balance": 64.948454,
+        "severe": 0
+       },
+       {
+        "perturbation": 0,
+        "balance": -58.762887,
+        "severe": 0
+       },
+       {
+        "perturbation": 2,
+        "balance": 22.680412,
+        "severe": 1
+       },
+       {
+        "perturbation": 0,
+        "balance": -67.010309,
+        "severe": 0
+       },
+       {
+        "perturbation": 3,
+        "balance": 11.340206,
+        "severe": 0
+       },
+       {
+        "perturbation": 1,
+        "balance": -85.56701,
+        "severe": 0
+       },
+       {
+        "perturbation": 1,
+        "balance": 29.896907,
+        "severe": 0
+       },
+       {
+        "perturbation": 1,
+        "balance": 9.278351,
+        "severe": 0
+       },
+       {
+        "perturbation": 1,
+        "balance": -21.649485,
+        "severe": 0
+       },
+       {
+        "perturbation": 2,
+        "balance": 22.680412,
+        "severe": 0
+       },
+       {
+        "perturbation": 2,
+        "balance": 51.546392,
+        "severe": 0
+       },
+       {
+        "perturbation": 1,
+        "balance": -25.773196,
+        "severe": 0
+       },
+       {
+        "perturbation": 0,
+        "balance": -30.927835,
+        "severe": 0
+       },
+       {
+        "perturbation": 1,
+        "balance": -29.896907,
+        "severe": 0
+       },
+       {
+        "perturbation": 1,
+        "balance": -16.494845,
+        "severe": 0
+       },
+       {
+        "perturbation": 1,
+        "balance": 17.525773,
+        "severe": 1
+       },
+       {
+        "perturbation": 1,
+        "balance": -39.175258,
+        "severe": 0
+       },
+       {
+        "perturbation": 2,
+        "balance": 21.649485,
+        "severe": 0
+       },
+       {
+        "perturbation": 1,
+        "balance": -31.958763,
+        "severe": 1
+       },
+       {
+        "perturbation": 1,
+        "balance": -29.896907,
+        "severe": 0
+       },
+       {
+        "perturbation": 2,
+        "balance": 54.639175,
+        "severe": 0
+       },
+       {
+        "perturbation": 0,
+        "balance": -75.257732,
+        "severe": 0
+       },
+       {
+        "perturbation": 2,
+        "balance": 10.309278,
+        "severe": 0
+       },
+       {
+        "perturbation": 2,
+        "balance": 7.216495,
+        "severe": 0
+       },
+       {
+        "perturbation": 2,
+        "balance": -30.927835,
+        "severe": 0
+       },
+       {
+        "perturbation": 1,
+        "balance": 40.206186,
+        "severe": 0
+       },
+       {
+        "perturbation": 1,
+        "balance": 11.340206,
+        "severe": 0
+       },
+       {
+        "perturbation": 1,
+        "balance": -3.092784,
+        "severe": 0
+       },
+       {
+        "perturbation": 2,
+        "balance": 21.649485,
+        "severe": 0
+       },
+       {
+        "perturbation": 2,
+        "balance": 72.164948,
+        "severe": 0
+       },
+       {
+        "perturbation": 1,
+        "balance": 23.71134,
+        "severe": 0
+       },
+       {
+        "perturbation": 1,
+        "balance": -2.061856,
+        "severe": 0
+       },
+       {
+        "perturbation": 1,
+        "balance": -14.43299,
+        "severe": 0
+       },
+       {
+        "perturbation": 1,
+        "balance": 15.463918,
+        "severe": 0
+       },
+       {
+        "perturbation": 2,
+        "balance": 5.154639,
+        "severe": 0
+       },
+       {
+        "perturbation": 2,
+        "balance": 50.515464,
+        "severe": 0
+       },
+       {
+        "perturbation": 2,
+        "balance": 42.268041,
+        "severe": 1
+       },
+       {
+        "perturbation": 2,
+        "balance": -59.793814,
+        "severe": 0
+       },
+       {
+        "perturbation": 1,
+        "balance": 30.927835,
+        "severe": 0
+       },
+       {
+        "perturbation": 1,
+        "balance": 29.896907,
+        "severe": 1
+       },
+       {
+        "perturbation": 1,
+        "balance": 19.587629,
+        "severe": 1
+       },
+       {
+        "perturbation": 1,
+        "balance": 12.371134,
+        "severe": 0
+       },
+       {
+        "perturbation": 1,
+        "balance": 22.680412,
+        "severe": 1
+       },
+       {
+        "perturbation": 2,
+        "balance": 32.989691,
+        "severe": 0
+       },
+       {
+        "perturbation": 1,
+        "balance": 22.680412,
+        "severe": 0
+       },
+       {
+        "perturbation": 0,
+        "balance": -74.226804,
+        "severe": 0
+       },
+       {
+        "perturbation": 1,
+        "balance": 27.835052,
+        "severe": 1
+       },
+       {
+        "perturbation": 2,
+        "balance": 60.824742,
+        "severe": 0
+       },
+       {
+        "perturbation": 2,
+        "balance": -2.061856,
+        "severe": 0
+       },
+       {
+        "perturbation": 1,
+        "balance": -18.556701,
+        "severe": 0
+       },
+       {
+        "perturbation": 1,
+        "balance": -46.391753,
+        "severe": 0
+       },
+       {
+        "perturbation": 2,
+        "balance": 10.309278,
+        "severe": 0
+       },
+       {
+        "perturbation": 1,
+        "balance": -14.43299,
+        "severe": 0
+       },
+       {
+        "perturbation": 1,
+        "balance": -34.020619,
+        "severe": 0
+       },
+       {
+        "perturbation": 1,
+        "balance": -36.597938,
+        "severe": 0
+       },
+       {
+        "perturbation": 2,
+        "balance": 32.989691,
+        "severe": 0
+       },
+       {
+        "perturbation": 1,
+        "balance": -49.484536,
+        "severe": 0
+       },
+       {
+        "perturbation": 2,
+        "balance": -3.092784,
+        "severe": 0
+       },
+       {
+        "perturbation": 1,
+        "balance": 30.927835,
+        "severe": 0
+       },
+       {
+        "perturbation": 1,
+        "balance": -20.618557,
+        "severe": 0
+       },
+       {
+        "perturbation": 1,
+        "balance": 9.793814,
+        "severe": 0
+       },
+       {
+        "perturbation": 4,
+        "balance": 37.113402,
+        "severe": 0
+       },
+       {
+        "perturbation": 2,
+        "balance": -53.608247,
+        "severe": 1
+       },
+       {
+        "perturbation": 1,
+        "balance": 36.082474,
+        "severe": 0
+       },
+       {
+        "perturbation": 2,
+        "balance": -19.587629,
+        "severe": 0
+       },
+       {
+        "perturbation": 1,
+        "balance": 46.391753,
+        "severe": 1
+       },
+       {
+        "perturbation": 2,
+        "balance": 32.989691,
+        "severe": 1
+       },
+       {
+        "perturbation": 2,
+        "balance": 68.041237,
+        "severe": 0
+       },
+       {
+        "perturbation": 1,
+        "balance": -29.896907,
+        "severe": 0
+       },
+       {
+        "perturbation": 2,
+        "balance": 75.257732,
+        "severe": 0
+       },
+       {
+        "perturbation": 2,
+        "balance": -1.030928,
+        "severe": 0
+       },
+       {
+        "perturbation": 1,
+        "balance": 1.030928,
+        "severe": 0
+       },
+       {
+        "perturbation": 2,
+        "balance": 18.556701,
+        "severe": 0
+       },
+       {
+        "perturbation": 2,
+        "balance": 46.391753,
+        "severe": 0
+       },
+       {
+        "perturbation": 0,
+        "balance": -72.164948,
+        "severe": 0
+       },
+       {
+        "perturbation": 0,
+        "balance": -53.608247,
+        "severe": 0
+       },
+       {
+        "perturbation": 2,
+        "balance": -72.164948,
+        "severe": 0
+       },
+       {
+        "perturbation": 4,
+        "balance": 67.010309,
+        "severe": 0
+       },
+       {
+        "perturbation": 2,
+        "balance": 4.123711,
+        "severe": 0
+       }
+      ]
+     },
+     {
+      "file": "S-CB017",
+      "species": "B. canis",
+      "severe": "complicated",
+      "nonsevere": "uncomplicated",
+      "points": [
+       {
+        "perturbation": 4,
+        "balance": 0.0,
+        "severe": 1
+       },
+       {
+        "perturbation": 2,
+        "balance": -29.032258,
+        "severe": 0
+       },
+       {
+        "perturbation": 5,
+        "balance": 0.0,
+        "severe": 1
+       },
+       {
+        "perturbation": 1,
+        "balance": -38.709677,
+        "severe": 0
+       },
+       {
+        "perturbation": 4,
+        "balance": 96.774194,
+        "severe": 1
+       },
+       {
+        "perturbation": 4,
+        "balance": 19.354839,
+        "severe": 0
+       },
+       {
+        "perturbation": 3,
+        "balance": 37.096774,
+        "severe": 1
+       },
+       {
+        "perturbation": 3,
+        "balance": 12.903226,
+        "severe": 0
+       },
+       {
+        "perturbation": 4,
+        "balance": -32.258065,
+        "severe": 1
+       },
+       {
+        "perturbation": 2,
+        "balance": -29.032258,
+        "severe": 0
+       },
+       {
+        "perturbation": 3,
+        "balance": 22.580645,
+        "severe": 1
+       },
+       {
+        "perturbation": 5,
+        "balance": -43.548387,
+        "severe": 1
+       },
+       {
+        "perturbation": 4,
+        "balance": 6.451613,
+        "severe": 1
+       },
+       {
+        "perturbation": 4,
+        "balance": -22.580645,
+        "severe": 1
+       },
+       {
+        "perturbation": 4,
+        "balance": -67.741935,
+        "severe": 0
+       },
+       {
+        "perturbation": 4,
+        "balance": 32.258065,
+        "severe": 1
+       },
+       {
+        "perturbation": 3,
+        "balance": -32.258065,
+        "severe": 1
+       },
+       {
+        "perturbation": 2,
+        "balance": -12.903226,
+        "severe": 0
+       },
+       {
+        "perturbation": 5,
+        "balance": 22.580645,
+        "severe": 1
+       },
+       {
+        "perturbation": 3,
+        "balance": 0.0,
+        "severe": 1
+       },
+       {
+        "perturbation": 4,
+        "balance": 45.16129,
+        "severe": 1
+       },
+       {
+        "perturbation": 6,
+        "balance": 64.516129,
+        "severe": 1
+       },
+       {
+        "perturbation": 4,
+        "balance": 67.741935,
+        "severe": 1
+       },
+       {
+        "perturbation": 3,
+        "balance": -29.032258,
+        "severe": 0
+       },
+       {
+        "perturbation": 2,
+        "balance": -19.354839,
+        "severe": 0
+       },
+       {
+        "perturbation": 3,
+        "balance": -80.645161,
+        "severe": 0
+       },
+       {
+        "perturbation": 4,
+        "balance": 6.451613,
+        "severe": 1
+       },
+       {
+        "perturbation": 3,
+        "balance": 46.774194,
+        "severe": 0
+       },
+       {
+        "perturbation": 4,
+        "balance": -8.064516,
+        "severe": 0
+       },
+       {
+        "perturbation": 2,
+        "balance": -16.129032,
+        "severe": 0
+       },
+       {
+        "perturbation": 5,
+        "balance": -19.354839,
+        "severe": 1
+       }
+      ]
+     }
+    ],
+    "footnote": "Each point is one infected dog. Balance = percentile of MCP-1 minus percentile of IL-8 among the infected dogs of that file."
+   }
+  },
+  {
+   "kind": "score_sensitivity",
+   "title": "Sensitivity analyses",
+   "sort_order": 4,
+   "payload": {
+    "statistic": "Cliff's delta (severe minus non-severe)",
+    "groups": [
+     {
+      "key": "S-CB050",
+      "label": "S-CB050 · B. rossi · died vs survived",
+      "note": "Raw p only (not in a family).",
+      "rows": [
+       {
+        "label": "S1 z-score version (mean |z|)",
+        "estimate": 0.186275,
+        "ci_low": -0.088284,
+        "ci_high": 0.433382,
+        "p": 0.30447,
+        "q": null,
+        "n_a": 12,
+        "n_b": 85,
+        "a_label": "died",
+        "b_label": "survived",
+        "median_a": 1.451878,
+        "median_b": 1.345433,
+        "hl_log2": null,
+        "hl_low": null,
+        "hl_high": null
+       },
+       {
+        "label": "Analytes above the control range",
+        "estimate": 0.147059,
+        "ci_low": 0.0,
+        "ci_high": 0.314779,
+        "p": 0.315068,
+        "q": null,
+        "n_a": 12,
+        "n_b": 85,
+        "a_label": "died",
+        "b_label": "survived",
+        "median_a": 1.0,
+        "median_b": 1.0,
+        "hl_log2": null,
+        "hl_low": null,
+        "hl_high": null
+       },
+       {
+        "label": "Analytes below the control range",
+        "estimate": -0.078431,
+        "ci_low": -0.351961,
+        "ci_high": 0.230392,
+        "p": 0.755624,
+        "q": null,
+        "n_a": 12,
+        "n_b": 85,
+        "a_label": "died",
+        "b_label": "survived",
+        "median_a": 0.0,
+        "median_b": 0.0,
+        "hl_log2": null,
+        "hl_low": null,
+        "hl_high": null
+       },
+       {
+        "label": "T1 with floors at half the floor",
+        "estimate": 0.035294,
+        "ci_low": -0.232353,
+        "ci_high": 0.303015,
+        "p": 0.837716,
+        "q": null,
+        "n_a": 12,
+        "n_b": 85,
+        "a_label": "died",
+        "b_label": "survived",
+        "median_a": 1.0,
+        "median_b": 1.0,
+        "hl_log2": null,
+        "hl_low": null,
+        "hl_high": null
+       },
+       {
+        "label": "T2 with floors at half the floor",
+        "estimate": 0.320588,
+        "ci_low": 0.005833,
+        "ci_high": 0.594142,
+        "p": 0.071293,
+        "q": null,
+        "n_a": 12,
+        "n_b": 85,
+        "a_label": "died",
+        "b_label": "survived",
+        "median_a": 25.257732,
+        "median_b": 1.030928,
+        "hl_log2": null,
+        "hl_low": null,
+        "hl_high": null
+       },
+       {
+        "label": "S1 with floors at half the floor",
+        "estimate": 0.182353,
+        "ci_low": -0.072549,
+        "ci_high": 0.433382,
+        "p": 0.319068,
+        "q": null,
+        "n_a": 12,
+        "n_b": 85,
+        "a_label": "died",
+        "b_label": "survived",
+        "median_a": 1.426195,
+        "median_b": 1.326107,
+        "hl_log2": null,
+        "hl_low": null,
+        "hl_high": null
+       }
+      ]
+     },
+     {
+      "key": "S-CB017",
+      "label": "S-CB017 · B. canis · complicated vs uncomplicated",
+      "note": "Raw p only (not in a family).",
+      "rows": [
+       {
+        "label": "S1 z-score version (mean |z|)",
+        "estimate": 0.760684,
+        "ci_low": 0.487179,
+        "ci_high": 0.957265,
+        "p": 0.0001,
+        "q": null,
+        "n_a": 18,
+        "n_b": 13,
+        "a_label": "complicated",
+        "b_label": "uncomplicated",
+        "median_a": 4.460287,
+        "median_b": 2.614227,
+        "hl_log2": null,
+        "hl_low": null,
+        "hl_high": null
+       },
+       {
+        "label": "Analytes above the control range",
+        "estimate": 0.653846,
+        "ci_low": 0.358974,
+        "ci_high": 0.893162,
+        "p": 0.0007,
+        "q": null,
+        "n_a": 18,
+        "n_b": 13,
+        "a_label": "complicated",
+        "b_label": "uncomplicated",
+        "median_a": 4.0,
+        "median_b": 3.0,
+        "hl_log2": null,
+        "hl_low": null,
+        "hl_high": null
+       },
+       {
+        "label": "Analytes below the control range",
+        "estimate": 0.111111,
+        "ci_low": 0.0,
+        "ci_high": 0.277778,
+        "p": 0.49785,
+        "q": null,
+        "n_a": 18,
+        "n_b": 13,
+        "a_label": "complicated",
+        "b_label": "uncomplicated",
+        "median_a": 0.0,
+        "median_b": 0.0,
+        "hl_log2": null,
+        "hl_low": null,
+        "hl_high": null
+       },
+       {
+        "label": "T1 with floors at half the floor",
+        "estimate": 0.713675,
+        "ci_low": 0.440064,
+        "ci_high": 0.923184,
+        "p": 0.0003,
+        "q": null,
+        "n_a": 18,
+        "n_b": 13,
+        "a_label": "complicated",
+        "b_label": "uncomplicated",
+        "median_a": 4.0,
+        "median_b": 3.0,
+        "hl_log2": null,
+        "hl_low": null,
+        "hl_high": null
+       },
+       {
+        "label": "T2 with floors at half the floor",
+        "estimate": 0.444444,
+        "ci_low": 0.051068,
+        "ci_high": 0.786325,
+        "p": 0.035596,
+        "q": null,
+        "n_a": 18,
+        "n_b": 13,
+        "a_label": "complicated",
+        "b_label": "uncomplicated",
+        "median_a": 6.451613,
+        "median_b": -19.354839,
+        "hl_log2": null,
+        "hl_low": null,
+        "hl_high": null
+       },
+       {
+        "label": "S1 with floors at half the floor",
+        "estimate": 0.752137,
+        "ci_low": 0.470085,
+        "ci_high": 0.957265,
+        "p": 0.0004,
+        "q": null,
+        "n_a": 18,
+        "n_b": 13,
+        "a_label": "complicated",
+        "b_label": "uncomplicated",
+        "median_a": 4.42666,
+        "median_b": 2.62423,
+        "hl_log2": null,
+        "hl_low": null,
+        "hl_high": null
+       }
+      ]
+     }
+    ],
+    "footnote": "S1 uses analytes with under 20% floor values: S-CB050 IL-8, IL-10, IL-18, MCP-1; S-CB017 IL-2, IL-8, GM-CSF, MCP-1."
+   }
+  },
+  {
+   "kind": "interpretation",
+   "title": "Explanation and interpretation",
+   "sort_order": 9,
+   "payload": {
+    "sections": [
+     {
+      "heading": "Question",
+      "paragraphs": [
+       "Is severe disease a larger cytokine perturbation (size), or a shift in the balance of the response (MCP-1 relative to IL-8) at a similar size?"
+      ]
+     },
+     {
+      "heading": "What was done",
+      "paragraphs": [
+       "For each infected dog: the number of the 6 shared analytes outside its own file's healthy-control range (perturbation count), and the within-file percentile of MCP-1 minus that of IL-8 (balance index). Each was compared between severe and non-severe dogs with Cliff's delta (bootstrap CI by dog, permutation p, BH within each file, family of 2). Sensitivities: a z-score version for analytes with under 20% floor values, counts above and below the range separately, and floors at half the floor."
+      ]
+     },
+     {
+      "heading": "Result",
+      "paragraphs": [
+       "S-CB050 (B. rossi, died 12 vs survived 85): perturbation +0.04 (-0.22 to +0.31), mean 1.42 vs 1.38 analytes; balance +0.32 (+0.02 to +0.60), permutation p 0.070, q 0.139.",
+       "S-CB017 (B. canis, complicated 18 vs uncomplicated 13): perturbation +0.71 (+0.43 to +0.92), mean 4.11 vs 2.69, q < 0.001; balance +0.44 (+0.07 to +0.78), q 0.038.",
+       "Verdict by the pre-stated rule: balance. The balance shift has the same sign in both files, but in S-CB050 it is weak (the bootstrap interval only just excludes 0 and the permutation p is 0.070). It is carried by MCP-1, which is higher in severe dogs in both files; IL-8 itself does not differ (experiment SV-04-01). In B. canis, complicated dogs also have a larger perturbation, so size and balance both hold there; in B. rossi, dogs that died do not have more analytes out of range. 2 of 4 tests passed q < 0.05."
+      ]
+     },
+     {
+      "heading": "What this does not show",
+      "paragraphs": [
+       "The balance index is a rank difference of two analytes; it is not a validated measure of immune balance, and MCP-1 drives most of it here.",
+       "Control ranges come from 15 and 16 dogs, so 'outside the range' is a coarse threshold. S-CB017 controls include dogs given prophylactic imidocarb (inferred from the ID prefix).",
+       "The 'complicated' label of S-CB017 is defined partly by inflammation (SIRS), so a larger perturbation there is partly built into the label.",
+       "One species per source: the difference between files (size in B. canis, not in B. rossi) cannot be attributed to species. Died includes euthanasia for poor prognosis. Descriptive re-analysis."
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

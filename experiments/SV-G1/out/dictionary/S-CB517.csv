@@ -1,0 +1,15 @@
+harmonised_name,dataset_id,original_column,unit,conversion,note
+wbc,S-CB517,S1: WBC (x10^9/L),10^9/L,,ADVIA 2120.
+neut_seg,S-CB517,S1: NEUT (x10^9/L),10^9/L,,NEUT in the file; the article's Table 1 calls it the segmented neutrophil count. No band count in the file.
+lymph,S-CB517,S1: LYMPH (x10^9/L),10^9/L,,
+mono,S-CB517,S1: MONO (x10^9/L),10^9/L,,
+eos,S-CB517,S1: EOS (x10^9/L),10^9/L,,
+saa,S-CB517,S2: SAA (mg/L),mg/L,,"3001.0 occurs in 4 dogs: read as an above-range code (inferred; not documented). S-CB517:d023 has 3017.1, above that code, so the code is uncertain; only exact 3001.0 is flagged."
+crp,S-CB517,S2: CRP (mg/L),mg/L,,
+il2,S-CB517,S2: IL-2 (pg/mL),pg/mL,,Floor 3.4 per record; 50000.0 in S-CB517:d101 read as the upper limit.
+il6,S-CB517,S2: IL-6 (pg/mL),pg/mL,,Floor 3.6 per record; 50000.0 in S-CB517:d101 read as the upper limit.
+il8,S-CB517,S2: IL-8 (pg/mL),pg/mL,,No floor documented. The minimum 21.6 occurs in 3 dogs; not flagged.
+il10,S-CB517,S2: IL-10 (pg/mL),pg/mL,,Floor 8.4 per record.
+il18,S-CB517,S2: IL-18 (pg/mL),pg/mL,,Floor 5.7 per record; 50000.0 in S-CB517:d101 read as the upper limit.
+gmcsf,S-CB517,S2: GM-CSF (pg/mL),pg/mL,,Floor 9.1 per record; 50000.0 in S-CB517:d101 read as the upper limit.
+mcp1,S-CB517,S2: MCP-1 (pg/mL),pg/mL,,No floor documented.

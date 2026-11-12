@@ -1,0 +1,984 @@
+{
+ "schema_version": 1,
+ "id": "SY01",
+ "title": "Severe haemolytic anaemia",
+ "updated": "2026-11-12",
+ "definition": "Anaemia from intravascular and extravascular haemolysis caused by the parasite, usually with haemoglobinuria. In B. rossi studies, severe anaemia is a haematocrit below 0.15 L/L (15%), the level at which most dogs were transfused [R1][R2][R3].",
+ "definition_note": "Working definition confirmed, with two changes. The published limit for severe anaemia is a haematocrit below 0.15 L/L, not 'about' 0.15. Haemoglobinuria is common (84% of 320 B. rossi dogs) but is not part of any published definition [R4]. Jacobson judged the old split into 'severe' (anaemic) and 'complicated' disease artificial and proposed grouping dogs by severity and prognosis [R5].",
+ "key_points": [
+  "Severe anaemia (haematocrit below 0.15 L/L) was present in about a third of 320 B. rossi dogs, and in half of the admitted dogs of an older Onderstepoort series [R1][R2].",
+  "Severe anaemia alone did not reliably predict death: mortality was 14.2% with severe anaemia and 8 to 11% with moderate or mild anaemia [R1].",
+  "Transfusion is standard care. Onderstepoort clinicians used a haematocrit below 0.15 L/L as a guide and also considered collapse [R3].",
+  "No study has compared transfusion with no transfusion. The only randomised trial compared packed red cells with a haemoglobin-based oxygen carrier and found similar short-term effects [R6].",
+  "Measure glucose and lactate in every severely anaemic dog: hypoglycaemia and persistent hyperlactataemia were associated with death [R7][R8].",
+  "Screen blood donors for Babesia, preferably by PCR [R9]."
+ ],
+ "description": [
+  {
+   "heading": "What it is",
+   "text": "Babesia parasites live in red cells, and the anaemia comes from intravascular and extravascular haemolysis. In B. rossi the haemolysis can be fast enough to make the urine black and the plasma port-wine coloured [R4]. In B. rossi dogs the anaemia was normocytic and normochromic, and only mildly to moderately regenerative [R3]."
+  },
+  {
+   "heading": "How common, and in which dogs",
+   "text": "Of 320 B. rossi dogs, 35.6% were severely, 25.5% moderately and 22.1% mildly anaemic, and 15.7% had a normal haematocrit [R1]. B. canis causes mostly mild to moderate anaemia, and few of these dogs are transfused [R4]. Severely anaemic B. rossi dogs were young: mean age 0.83 years against 2.66 years in non-anaemic dogs [R2], and transfused dogs had a median age of 10 months against 21 months [R3]."
+  },
+  {
+   "heading": "When in the course of disease",
+   "text": "Dogs are usually anaemic when they present. In non-transfused B. rossi dogs the haematocrit fell further on day 1 after diminazene, then rose. On day 6 the median was 0.36 L/L without and 0.31 L/L with transfusion, still below the reference interval [R3]. Most B. rossi dogs that die do so in the first 24 h in hospital [R4]."
+  },
+  {
+   "heading": "Mechanism",
+   "text": "The marrow response is weaker than the haemolysis would predict. The absolute reticulocyte count was below 100 x 10^9/L in 61.9% of the B. rossi dogs tested [R1]. The marrow of fatal cases showed dyserythropoiesis and more stored iron [R10]. Tissue hypoxia is thought to drive much of the disease [R5]. In anaemic B. rossi dogs, central venous oxygen tension stayed low even after transfusion [R6]."
+  }
+ ],
+ "species_notes": [
+  {
+   "species": "B. rossi",
+   "note": "The most severe anaemia and the most transfusions. Almost all South African evidence is from this species, mainly from one hospital (Onderstepoort) [R1][R4]."
+  },
+  {
+   "species": "B. canis",
+   "note": "Mostly mild to moderate anaemia. In one series, haemoglobin was visible in the urine or blood in more than two thirds of cases [R4]."
+  },
+  {
+   "species": "B. vogeli",
+   "note": "The least pathogenic species; haemolytic anaemia is reported less often [R4]. One B. vogeli dog had no PCV rise after 15 mL/kg of packed red cells [R11]."
+  },
+  {
+   "species": "B. gibsoni",
+   "note": "Anaemia in over 80% of 60 dogs; just over 10% had a haematocrit below 0.20 L/L [R4]. A review gives a haematocrit below 15% with severe dyspnoea or tachypnoea as the indication for transfusion [R12]. For immune-mediated haemolysis, see SY02."
+  }
+ ],
+ "diagnosis": {
+  "criteria": [
+   {
+    "criterion": "Severe anaemia",
+    "threshold": "haematocrit below 0.15 L/L (15%)",
+    "basis": "babesiosis",
+    "note": "Used in 320 B. rossi dogs; about a third had it.",
+    "refs": [
+     "R1"
+    ]
+   },
+   {
+    "criterion": "Transfusion guide",
+    "threshold": "haematocrit below 0.15 L/L, or a collapsed dog",
+    "basis": "babesiosis",
+    "note": "A guideline at Onderstepoort, not a fixed rule: the clinical state also decided. A B. gibsoni review: below 15% with severe dyspnoea or tachypnoea.",
+    "refs": [
+     "R3",
+     "R12"
+    ]
+   },
+   {
+    "criterion": "Haemoconcentration (exclude)",
+    "threshold": "haematocrit above 0.55 L/L with haemolysis",
+    "basis": "babesiosis",
+    "note": "3 of 4 such B. rossi dogs died. See SY14.",
+    "refs": [
+     "R1"
+    ]
+   },
+   {
+    "criterion": "Hyperlactataemia",
+    "threshold": "above 5 mmol/L at admission; above 2.5 mmol/L at 8 to 24 h",
+    "basis": "babesiosis",
+    "note": "90 dogs with severe or complicated babesiosis. Converted from the source's units.",
+    "refs": [
+     "R7"
+    ]
+   },
+   {
+    "criterion": "Hypoglycaemia",
+    "threshold": "below 3.3 mmol/L",
+    "basis": "babesiosis",
+    "note": "Converted from the source's units. Present in 19.8% of admitted B. rossi dogs.",
+    "refs": [
+     "R7",
+     "R8"
+    ]
+   }
+  ],
+  "clinical_signs": [
+   {
+    "sign": "Pallor, weakness, collapse",
+    "note": "22.5% of 320 B. rossi dogs were collapsed at presentation. Collapsed dogs had a lower haematocrit.",
+    "refs": [
+     "R1"
+    ]
+   },
+   {
+    "sign": "Haemoglobinuria (red-brown to black urine)",
+    "note": "Present in 84% of 320 B. rossi dogs. Haemoglobin in urine can falsely raise the urine specific gravity.",
+    "refs": [
+     "R4",
+     "R1"
+    ]
+   },
+   {
+    "sign": "Haemoglobinaemia (port-wine plasma)",
+    "note": "A sign of rapid intravascular haemolysis, seen in the PCV tube.",
+    "refs": [
+     "R4"
+    ]
+   },
+   {
+    "sign": "Tachycardia, fever, depression, anorexia",
+    "note": "Found in 12 B. rossi dogs with a haematocrit of 0.10 to 0.20 L/L. Blood pressure was normal.",
+    "refs": [
+     "R6"
+    ]
+   },
+   {
+    "sign": "Icterus",
+    "note": "From haemolysis and liver injury (see SY06). Icterus was a risk factor for hypoglycaemia.",
+    "refs": [
+     "R4",
+     "R8"
+    ]
+   }
+  ],
+  "tests": [
+   {
+    "test": "PCV and total protein (microhaematocrit)",
+    "finding": "Grades the anaemia. Look at the colour of the plasma.",
+    "note": "Basic practice. The decision to transfuse rested on PCV and the clinical state.",
+    "refs": [
+     "R3",
+     "R4"
+    ]
+   },
+   {
+    "test": "Thin smear from ear-tip capillary blood",
+    "finding": "Parasites. Capillary parasitaemia was higher than venous parasitaemia.",
+    "note": "Capillary blood is the best sample for diagnosis.",
+    "refs": [
+     "R13"
+    ]
+   },
+   {
+    "test": "In-saline agglutination",
+    "finding": "Positive in 10.3% of 320 B. rossi dogs. It did not change the outcome or the haematocrit at admission.",
+    "note": "If positive, see SY02.",
+    "refs": [
+     "R1"
+    ]
+   },
+   {
+    "test": "Blood glucose",
+    "finding": "Hypoglycaemia in 19.8% of admitted dogs. Severe anaemia was a risk factor on univariate analysis.",
+    "note": "The authors advised measuring it in all inpatients, and always in collapsed dogs, puppies and dogs with severe anaemia, vomiting or icterus.",
+    "refs": [
+     "R8"
+    ]
+   },
+   {
+    "test": "Blood lactate, serial",
+    "finding": "Admission and 8 to 24 h values predicted death.",
+    "note": "See the criteria for the limits.",
+    "refs": [
+     "R7"
+    ]
+   },
+   {
+    "test": "Reticulocyte count",
+    "finding": "Usually a weak response at presentation.",
+    "note": "Analyser reticulocyte profiles can be spurious in large-form babesiosis. Check a stained smear.",
+    "refs": [
+     "R1",
+     "R14"
+    ]
+   },
+   {
+    "test": "DEA 1 blood typing and cross-match",
+    "finding": "Compatibility of donor and recipient.",
+    "note": "Type donor and recipient for DEA 1. Cross-match any dog that was transfused before.",
+    "refs": [
+     "R15",
+     "R16"
+    ]
+   }
+  ],
+  "differentials": [
+   {
+    "condition": "Secondary immune-mediated haemolytic anaemia (SY02)",
+    "distinguish": "Positive in-saline agglutination. Haemolysis that continues after antibabesial treatment.",
+    "refs": [
+     "R1"
+    ]
+   },
+   {
+    "condition": "Haemoconcentrated ('red') babesiosis (SY14)",
+    "distinguish": "A high haematocrit despite haemolysis, with multiple organ failure and a much higher mortality.",
+    "refs": [
+     "R1",
+     "R5"
+    ]
+   },
+   {
+    "condition": "Non-regenerative anaemia or marrow failure (SY04)",
+    "distinguish": "No reticulocyte response. In B. rossi a moderate response is expected by day 3 of treatment.",
+    "refs": [
+     "R3"
+    ]
+   },
+   {
+    "condition": "Ehrlichia canis co-infection",
+    "distinguish": "Look for morulae and test by PCR. A low neutrophil response in babesiosis can be mistaken for ehrlichiosis.",
+    "refs": [
+     "R3"
+    ]
+   },
+   {
+    "condition": "Collapse from hypoglycaemia",
+    "distinguish": "Measure glucose. Hypoglycaemia should be suspected in any dog with coma or neurological signs.",
+    "refs": [
+     "R8"
+    ]
+   }
+  ],
+  "grading": [
+   {
+    "grade": "Severe",
+    "criteria": "Haematocrit below 0.15 L/L.",
+    "refs": [
+     "R1"
+    ]
+   },
+   {
+    "grade": "Moderate",
+    "criteria": "Haematocrit 0.15 to 0.24 L/L.",
+    "refs": [
+     "R1"
+    ]
+   },
+   {
+    "grade": "Mild",
+    "criteria": "Haematocrit 0.25 to 0.36 L/L.",
+    "refs": [
+     "R1"
+    ]
+   }
+  ]
+ },
+ "approach": [
+  {
+   "step": 1,
+   "action": "Triage",
+   "detail": "Check for collapse, breathing pattern, mucous membranes and urine colour. Collapse at presentation was strongly associated with death [R1]. Measure PCV and total protein, make an ear-tip smear and measure glucose [R13][R8].",
+   "setting": "practice"
+  },
+  {
+   "step": 2,
+   "action": "Treat the parasite",
+   "detail": "Give antibabesial treatment at diagnosis (see TX00). Expect the haematocrit to fall further over the first day [R3].",
+   "setting": "practice"
+  },
+  {
+   "step": 3,
+   "action": "Decide on transfusion",
+   "detail": "Onderstepoort used a haematocrit below 0.15 L/L as a guide and also took collapse into account [R3]. Haematocrit alone did not predict death, so judge the whole dog [R1].",
+   "setting": "practice"
+  },
+  {
+   "step": 4,
+   "action": "Prepare the blood",
+   "detail": "Donors should test negative for Babesia, preferably by PCR [R9]. Type donor and recipient for DEA 1. Cross-match any dog transfused before [R15][R16]. Whole blood and packed red cells gave the same haematology results [R3].",
+   "setting": "practice"
+  },
+  {
+   "step": 5,
+   "action": "Give and monitor the transfusion",
+   "detail": "Calculate the volume (see the doses) and give it over about 4 h [R3][R6]. Record vital signs every 15 min for the first hour, then hourly [R15]. Recheck the PCV after the transfusion and daily [R3].",
+   "setting": "practice"
+  },
+  {
+   "step": 6,
+   "action": "Follow lactate and glucose",
+   "detail": "Repeat lactate at 8 to 24 h. A value above 2.5 mmol/L, or a fall of less than 50%, was associated with death [R7].",
+   "setting": "practice"
+  },
+  {
+   "step": 7,
+   "action": "Intensive care for high-risk dogs",
+   "detail": "Collapse, haemoconcentration, persistent hyperlactataemia and organ complications carried the highest mortality [R1][R7]. These dogs need intensive care; see SY11.",
+   "setting": "referral"
+  }
+ ],
+ "treatments": [
+  {
+   "name": "Packed red cell transfusion",
+   "class": "supportive",
+   "aim": "To restore oxygen-carrying capacity until the haemolysis stops and the marrow responds.",
+   "status": "standard",
+   "evidence_level": "A",
+   "independent_studies": 2,
+   "evidence_summary": "Standard care for severely anaemic B. rossi dogs at Onderstepoort [R3][R1]. Of 86 B. rossi dogs, 32 were transfused (median haematocrit 0.09 L/L) and 54 were not (0.28 L/L); 2 died in each group, but the groups were not randomised [R3]. A randomised trial in 12 B. rossi dogs found packed cells and a haemoglobin-based oxygen carrier gave similar blood gas, acid-base and blood pressure results [R6]. No trial compared transfusion with none.",
+   "doses": [
+    {
+     "drug": "packed red blood cells",
+     "dose": "20 mL/kg",
+     "route": "IV (central venous catheter)",
+     "frequency": "once, over 4 h",
+     "duration": "single dose",
+     "context": "B. rossi, haematocrit 0.10 to 0.20 L/L, randomised trial of 12 dogs",
+     "note": "Followed by lactated Ringer's solution.",
+     "refs": [
+      "R6"
+     ]
+    },
+    {
+     "drug": "packed red blood cells or whole blood",
+     "dose": "body weight (kg) x 90 x (25 - recipient PCV) / donor PCV, in mL",
+     "route": "IV",
+     "frequency": "once",
+     "duration": "",
+     "context": "B. rossi, 86 dogs, Onderstepoort protocol",
+     "note": "Target PCV 25%. PCV values in %. The same formula was used for whole blood and packed cells.",
+     "refs": [
+      "R3"
+     ]
+    },
+    {
+     "drug": "packed red blood cells",
+     "dose": "(desired PCV - recipient PCV) / unit PCV x 80 to 90 mL/kg x body weight (kg)",
+     "route": "IV",
+     "frequency": "once",
+     "duration": "",
+     "context": "general canine, veterinary manual",
+     "note": "80 to 90 mL/kg is the estimated blood volume of the dog. Rapid rates for unstable dogs, about 4 h for stable dogs; slower in heart or kidney disease.",
+     "refs": [
+      "R15"
+     ]
+    }
+   ],
+   "cautions": "Babesia is transmitted in donor blood [R9][R12]. The haematocrit of transfused dogs rose more slowly, possibly because donor cells were destroyed [R3]. Reactions include fever, haemolysis, circulatory overload and allergy; stop the transfusion if one is suspected [R15]. In 12 of 21 anaemic dogs, alloantibodies appeared within 4 days of a first transfusion [R16]. In a South African survey, most practices never cross-matched, and reactions were said to be rare [R17].",
+   "monitoring": "Vital signs every 15 min for the first hour, then hourly to the end, and again 15 min, 1 h and 24 h after. Some clinics first give 0.25 mL/kg over 15 min [R15]. Check the PCV after the transfusion and daily [R3].",
+   "availability": "",
+   "refs": [
+    "R3",
+    "R1",
+    "R6",
+    "R15",
+    "R9",
+    "R12",
+    "R16",
+    "R17"
+   ]
+  },
+  {
+   "name": "Fresh whole blood transfusion",
+   "class": "supportive",
+   "aim": "To restore oxygen-carrying capacity when packed cells are not available.",
+   "status": "standard",
+   "evidence_level": "B",
+   "independent_studies": 1,
+   "evidence_summary": "The Onderstepoort protocol allowed whole blood or packed red cells. In 86 B. rossi dogs, the type of product had no significant effect on any blood cell result over 6 days [R3][R1]. No babesiosis study compared outcomes between the two products.",
+   "doses": [
+    {
+     "drug": "whole blood",
+     "dose": "body weight (kg) x 90 x (25 - recipient PCV) / donor PCV, in mL",
+     "route": "IV",
+     "frequency": "once",
+     "duration": "",
+     "context": "B. rossi, 86 dogs, Onderstepoort protocol",
+     "note": "Target PCV 25%. PCV values in %.",
+     "refs": [
+      "R3"
+     ]
+    }
+   ],
+   "cautions": "Screen donors for Babesia, preferably by PCR [R9]. The same reaction risks as packed cells; circulatory overload is a risk with larger volumes [R15].",
+   "monitoring": "As for packed red cells [R15].",
+   "availability": "",
+   "refs": [
+    "R3",
+    "R1",
+    "R9",
+    "R15"
+   ]
+  },
+  {
+   "name": "Blood typing, cross-matching and donor screening",
+   "class": "supportive",
+   "aim": "To prevent haemolytic transfusion reactions and transmission of Babesia.",
+   "status": "standard",
+   "evidence_level": "D",
+   "independent_studies": 1,
+   "evidence_summary": "A veterinary manual advises DEA 1 typing of donors and recipients; DEA 1-positive dogs can receive DEA 1-negative cells, and dogs transfused more than 4 days before should be cross-matched [R15]. In 21 transfused anaemic dogs (not a babesiosis study), cross-matches became positive within 4 days in 12, so the authors advised a cross-match before every later transfusion [R16]. In 13 severely anaemic Indian dogs, 12 with B. gibsoni, all first donor-recipient pairs were compatible [R18]. DEA 1 type did not change the rate of Babesia infection in 200 Nigerian dogs [R19].",
+   "doses": [],
+   "cautions": "A compatible cross-match does not rule out a reaction [R16]. A DEA 1 weak-positive recipient should receive DEA 1-negative blood [R15].",
+   "monitoring": "",
+   "availability": "",
+   "refs": [
+    "R15",
+    "R16",
+    "R18",
+    "R19"
+   ]
+  },
+  {
+   "name": "Haemoglobin-based oxygen carrier",
+   "class": "supportive",
+   "aim": "To carry oxygen without donor red cells.",
+   "status": "proposed",
+   "evidence_level": "A",
+   "independent_studies": 1,
+   "evidence_summary": "In a randomised trial of 12 B. rossi dogs (haematocrit 0.10 to 0.20 L/L), Oxyglobin gave blood gas, acid-base and blood pressure results similar to packed cells. Dogs given packed cells regained demeanour and appetite sooner and had a higher arterial oxygen content at 72 h [R6].",
+   "doses": [
+    {
+     "drug": "Oxyglobin (HB-200)",
+     "dose": "20 mL/kg",
+     "route": "IV (central venous catheter)",
+     "frequency": "once, over 4 h",
+     "duration": "single dose",
+     "context": "B. rossi, haematocrit 0.10 to 0.20 L/L, randomised trial of 12 dogs",
+     "note": "Followed by lactated Ringer's solution.",
+     "refs": [
+      "R6"
+     ]
+    }
+   ],
+   "cautions": "Only 12 dogs and 72 h of follow-up. Survival was not reported in the abstract [R6].",
+   "monitoring": "Blood gas, blood pressure, demeanour and appetite were followed for 72 h in the trial [R6].",
+   "availability": "",
+   "refs": [
+    "R6"
+   ]
+  },
+  {
+   "name": "Oxygen supplementation",
+   "class": "supportive",
+   "aim": "To raise arterial oxygen content in anaemic hypoxia.",
+   "status": "proposed",
+   "evidence_level": "E",
+   "independent_studies": 0,
+   "evidence_summary": "A 1995 South African review debated the benefit of oxygen in anaemic hypoxia without a definitive recommendation [R20]. In anaemic B. rossi dogs, central venous oxygen tension stayed below normal for 72 h after either packed cells or an oxygen carrier [R6]. No study tested oxygen therapy for babesial anaemia.",
+   "doses": [],
+   "cautions": "No data in babesiosis. For hypoxaemia from lung injury, see SY08.",
+   "monitoring": "",
+   "availability": "",
+   "refs": [
+    "R20",
+    "R6"
+   ]
+  },
+  {
+   "name": "Intravenous crystalloid fluids",
+   "class": "supportive",
+   "aim": "To correct dehydration and support perfusion in the anaemic dog.",
+   "status": "proposed",
+   "evidence_level": "E",
+   "independent_studies": 0,
+   "evidence_summary": "Standard Onderstepoort care gave fluids as needed, with no fixed protocol for the anaemia [R1][R3]. Before treatment, anaemic B. rossi dogs had a hypoalbuminaemic alkalosis with a hyperchloraemic, dilutional acidosis [R6]. A 1995 review discussed the problems of fluid therapy in complicated disease, in particular oliguria, cerebral babesiosis and pulmonary oedema [R20]. No study tested a fluid strategy for babesial anaemia.",
+   "doses": [],
+   "cautions": "Circulatory overload during transfusion presents as new tachypnoea or cough within 24 h; slower rates are advised in heart or kidney disease [R15]. For fluids in complicated disease, see SY05, SY08 and SY10.",
+   "monitoring": "Respiratory rate and effort during and for 24 h after a transfusion [R15].",
+   "availability": "",
+   "refs": [
+    "R1",
+    "R3",
+    "R6",
+    "R20",
+    "R15"
+   ]
+  },
+  {
+   "name": "Haematinics (iron, vitamin B complex)",
+   "class": "adjunct",
+   "aim": "To support red cell production after haemolysis.",
+   "status": "proposed",
+   "evidence_level": "C",
+   "independent_studies": 1,
+   "evidence_summary": "Used with many other drugs in single case reports, with no measured effect; for example an oral haematinic syrup in a B. gibsoni dog [R21]. A 1995 review examined the rationale for haematinics without a definitive recommendation [R20]. Fatal B. rossi cases had more stored marrow iron, not less [R10]. No source gave a dose in mg/kg for babesiosis.",
+   "doses": [],
+   "cautions": "In a canine pneumonia model, intravenous iron was as toxic as old red cells. The author advised caution with intravenous iron in infected patients (level D) [R22].",
+   "monitoring": "",
+   "availability": "",
+   "refs": [
+    "R21",
+    "R20",
+    "R10",
+    "R22"
+   ]
+  }
+ ],
+ "prognosis": {
+  "text": "Most B. rossi dogs survive. In 320 dogs, 10.6% died, including dogs euthanased for a poor prognosis [R1]. Mortality in admitted cases was 12% in an earlier review [R5]. Severe anaemia raises the risk only a little. Collapse, haemoconcentration, hyperlactataemia and hypoglycaemia matter more [R1][R7].",
+  "indicators": [
+   {
+    "finding": "Severe anaemia (haematocrit below 0.15 L/L)",
+    "meaning": "Mortality was 14.2%, against 8% (moderate), 11.3% (mild) and 4% (normal haematocrit). Not a reliable predictor.",
+    "refs": [
+     "R1"
+    ]
+   },
+   {
+    "finding": "Collapse at presentation",
+    "meaning": "Odds ratio 8.36 for death. 24 of the 34 dogs that died had been collapsed.",
+    "refs": [
+     "R1"
+    ]
+   },
+   {
+    "finding": "Haematocrit above 0.55 L/L",
+    "meaning": "Odds ratio 32.7 for death; 3 of 4 died. See SY14.",
+    "refs": [
+     "R1"
+    ]
+   },
+   {
+    "finding": "Lactate above 5 mmol/L at admission, above 2.5 mmol/L at 8 to 24 h, or less than a 50% fall",
+    "meaning": "Associated with death. A value persistently above 4.4 mmol/L indicated a very poor prognosis.",
+    "refs": [
+     "R7"
+    ]
+   },
+   {
+    "finding": "Hypoglycaemia at admission",
+    "meaning": "Associated with death.",
+    "refs": [
+     "R7"
+    ]
+   },
+   {
+    "finding": "High parasitaemia",
+    "meaning": "Capillary and venous parasitaemias were higher in dogs that died.",
+    "refs": [
+     "R13"
+    ]
+   },
+   {
+    "finding": "Positive in-saline agglutination",
+    "meaning": "Did not change the outcome in B. rossi dogs.",
+    "refs": [
+     "R1"
+    ]
+   },
+   {
+    "finding": "Lower PCV and haemoglobin (Nigeria, species not identified)",
+    "meaning": "Lower in dogs that died, on univariate analysis only.",
+    "refs": [
+     "R23"
+    ]
+   }
+  ]
+ },
+ "related": [
+  {
+   "id": "TX00",
+   "why": "Antibabesial drugs and doses."
+  },
+  {
+   "id": "SY02",
+   "why": "Haemolysis that continues after treatment, positive agglutination, immunosuppression."
+  },
+  {
+   "id": "SY04",
+   "why": "Non-regenerative anaemia and marrow failure."
+  },
+  {
+   "id": "SY14",
+   "why": "Haemolysis with a high haematocrit."
+  },
+  {
+   "id": "SY05",
+   "why": "Kidney injury and haemoglobinuria."
+  },
+  {
+   "id": "SY11",
+   "why": "Triage and order of care in complicated disease."
+  }
+ ],
+ "evidence_gaps": [
+  "No trial compared transfusion with no transfusion, or different haematocrit triggers, in any Babesia species.",
+  "No study tested oxygen therapy, a fluid strategy or haematinics for babesial anaemia.",
+  "The rate of transfusion reactions in dogs with babesiosis is unknown. The only South African statement is from a survey of practices in 1993 [R17].",
+  "No DEA 1 prevalence for South African dogs was found in this search.",
+  "Recovery of the haematocrit after day 6 of treatment has not been described [R3].",
+  "In 1993, 96% of South African practices gave routine corticosteroids, vitamins or 'liver support' [R17]. No study of their effect on the anaemia was found.",
+  "Almost all the evidence is from B. rossi at one hospital; data for B. canis, B. vogeli and B. gibsoni anaemia management are few."
+ ],
+ "references": [
+  {
+   "ref": "R1",
+   "authors": "Leisewitz AL, Goddard A, Clift S, et al.",
+   "year": 2019,
+   "title": "A clinical and pathological description of 320 cases of naturally acquired Babesia rossi infection in dogs",
+   "journal": "Veterinary Parasitology",
+   "volume_pages": "271:22-30",
+   "doi": "10.1016/j.vetpar.2019.06.005",
+   "pmid": "31303199",
+   "url": "",
+   "article_id": "CB040",
+   "type": "cohort",
+   "species": "B. rossi",
+   "n_dogs": 320,
+   "read": "full text"
+  },
+  {
+   "ref": "R2",
+   "authors": "Reyers F, Leisewitz AL, Lobetti RG, et al.",
+   "year": 1998,
+   "title": "Canine babesiosis in South Africa: more than one disease. Does this serve as a model for falciparum malaria?",
+   "journal": "Annals of Tropical Medicine and Parasitology",
+   "volume_pages": "92(4):503-511",
+   "doi": "10.1080/00034989859474",
+   "pmid": "9683901",
+   "url": "",
+   "article_id": "",
+   "type": "cohort",
+   "species": "B. rossi",
+   "n_dogs": 662,
+   "read": "abstract"
+  },
+  {
+   "ref": "R3",
+   "authors": "Scheepers E, Leisewitz AL, Thompson PN, et al.",
+   "year": 2011,
+   "title": "Serial haematology results in transfused and non-transfused dogs naturally infected with Babesia rossi",
+   "journal": "Journal of the South African Veterinary Association",
+   "volume_pages": "82(3):136-143",
+   "doi": "10.4102/jsava.v82i3.51",
+   "pmid": "22332296",
+   "url": "",
+   "article_id": "CB418",
+   "type": "cohort",
+   "species": "B. rossi",
+   "n_dogs": 86,
+   "read": "full text"
+  },
+  {
+   "ref": "R4",
+   "authors": "Leisewitz AL, Mrljak V, Dear JD, et al.",
+   "year": 2023,
+   "title": "The diverse pathogenicity of various Babesia parasite species that infect dogs",
+   "journal": "Pathogens",
+   "volume_pages": "12(12):1437",
+   "doi": "10.3390/pathogens12121437",
+   "pmid": "38133320",
+   "url": "",
+   "article_id": "CB119",
+   "type": "review",
+   "species": "B. rossi, B. canis, B. vogeli, B. gibsoni",
+   "n_dogs": null,
+   "read": "full text"
+  },
+  {
+   "ref": "R5",
+   "authors": "Jacobson LS",
+   "year": 2006,
+   "title": "The South African form of severe and complicated canine babesiosis: clinical advances 1994-2004",
+   "journal": "Veterinary Parasitology",
+   "volume_pages": "138(1-2):126-139",
+   "doi": "10.1016/j.vetpar.2006.01.047",
+   "pmid": "16503090",
+   "url": "",
+   "article_id": "",
+   "type": "review",
+   "species": "B. rossi",
+   "n_dogs": null,
+   "read": "abstract"
+  },
+  {
+   "ref": "R6",
+   "authors": "Zambelli AB, Leisewitz AL",
+   "year": 2009,
+   "title": "A prospective, randomized comparison of Oxyglobin (HB-200) and packed red blood cell transfusion for canine babesiosis",
+   "journal": "Journal of Veterinary Emergency and Critical Care",
+   "volume_pages": "19(1):102-112",
+   "doi": "10.1111/j.1476-4431.2009.00386.x",
+   "pmid": "19691591",
+   "url": "",
+   "article_id": "CB368",
+   "type": "trial",
+   "species": "B. rossi",
+   "n_dogs": 12,
+   "read": "abstract"
+  },
+  {
+   "ref": "R7",
+   "authors": "Nel M, Lobetti RG, Keller N, et al.",
+   "year": 2004,
+   "title": "Prognostic value of blood lactate, blood glucose, and hematocrit in canine babesiosis",
+   "journal": "Journal of Veterinary Internal Medicine",
+   "volume_pages": "18(4):471-476",
+   "doi": "10.1892/0891-6640(2004)18<471:pvoblb>2.0.co;2",
+   "pmid": "15320582",
+   "url": "",
+   "article_id": "",
+   "type": "cohort",
+   "species": "B. rossi",
+   "n_dogs": 90,
+   "read": "abstract"
+  },
+  {
+   "ref": "R8",
+   "authors": "Keller N, Jacobson LS, Nel M, et al.",
+   "year": 2004,
+   "title": "Prevalence and risk factors of hypoglycemia in virulent canine babesiosis",
+   "journal": "Journal of Veterinary Internal Medicine",
+   "volume_pages": "18(3):265-270",
+   "doi": "10.1892/0891-6640(2004)18<265:parfoh>2.0.co;2",
+   "pmid": "15188810",
+   "url": "",
+   "article_id": "",
+   "type": "cohort",
+   "species": "B. rossi",
+   "n_dogs": 250,
+   "read": "abstract"
+  },
+  {
+   "ref": "R9",
+   "authors": "Köster LS, Lobetti RG, Kelly P",
+   "year": 2015,
+   "title": "Canine babesiosis: a perspective on clinical complications, biomarkers, and treatment",
+   "journal": "Veterinary Medicine: Research and Reports",
+   "volume_pages": "6:119-128",
+   "doi": "10.2147/VMRR.S60431",
+   "pmid": "30155438",
+   "url": "",
+   "article_id": "CB493",
+   "type": "review",
+   "species": "",
+   "n_dogs": null,
+   "read": "full text"
+  },
+  {
+   "ref": "R10",
+   "authors": "Bumby MM, Clift SJ, Hooijberg EH, et al.",
+   "year": 2024,
+   "title": "Cytological and histopathological bone marrow findings in dogs with natural Babesia rossi infection",
+   "journal": "Journal of the South African Veterinary Association",
+   "volume_pages": "95(2):156-166",
+   "doi": "10.36303/JSAVA.626",
+   "pmid": "39995030",
+   "url": "",
+   "article_id": "CB129",
+   "type": "case series",
+   "species": "B. rossi",
+   "n_dogs": 6,
+   "read": "abstract"
+  },
+  {
+   "ref": "R11",
+   "authors": "DeStefano IM, Wayne AS, Cudney SE, et al.",
+   "year": 2022,
+   "title": "Successful treatment of suspect Babesia-induced ARDS in a dog using lung-protective positive-pressure ventilation and neuromuscular blockade",
+   "journal": "Clinical Case Reports",
+   "volume_pages": "10(8):e6234",
+   "doi": "10.1002/ccr3.6234",
+   "pmid": "35957771",
+   "url": "",
+   "article_id": "CB102",
+   "type": "case report",
+   "species": "B. vogeli",
+   "n_dogs": 1,
+   "read": "full text"
+  },
+  {
+   "ref": "R12",
+   "authors": "Karasová M, Tóthová C, Grelová S, et al.",
+   "year": 2022,
+   "title": "The etiology, incidence, pathogenesis, diagnostics, and treatment of canine babesiosis caused by Babesia gibsoni infection",
+   "journal": "Animals",
+   "volume_pages": "12(6):739",
+   "doi": "10.3390/ani12060739",
+   "pmid": "35327136",
+   "url": "",
+   "article_id": "CB094",
+   "type": "review",
+   "species": "B. gibsoni",
+   "n_dogs": null,
+   "read": "full text"
+  },
+  {
+   "ref": "R13",
+   "authors": "Böhm M, Leisewitz AL, Thompson PN, et al.",
+   "year": 2006,
+   "title": "Capillary and venous Babesia canis rossi parasitaemias and their association with outcome of infection and circulatory compromise",
+   "journal": "Veterinary Parasitology",
+   "volume_pages": "141(1-2):18-29",
+   "doi": "10.1016/j.vetpar.2006.05.002",
+   "pmid": "16806713",
+   "url": "",
+   "article_id": "",
+   "type": "cohort",
+   "species": "B. rossi",
+   "n_dogs": 100,
+   "read": "abstract"
+  },
+  {
+   "ref": "R14",
+   "authors": "Piane L, Young KM, Giraud L, et al.",
+   "year": 2016,
+   "title": "Spurious reticulocyte profiles in dogs with large form babesiosis: a retrospective study",
+   "journal": "Veterinary Clinical Pathology",
+   "volume_pages": "45(4):598-603",
+   "doi": "10.1111/vcp.12396",
+   "pmid": "27701759",
+   "url": "",
+   "article_id": "CB538",
+   "type": "case series",
+   "species": "large Babesia (unnamed)",
+   "n_dogs": 92,
+   "read": "abstract"
+  },
+  {
+   "ref": "R15",
+   "authors": "Blois S",
+   "year": 2024,
+   "title": "Blood transfusions in animals (Merck Veterinary Manual; reviewed Nov 2024, modified Mar 2026)",
+   "journal": "Merck Veterinary Manual",
+   "volume_pages": "online",
+   "doi": "",
+   "pmid": "",
+   "url": "https://www.merckvetmanual.com/circulatory-system/blood-groups-and-blood-transfusions/blood-transfusions-in-animals",
+   "article_id": "",
+   "type": "textbook",
+   "species": "",
+   "n_dogs": null,
+   "read": "full text"
+  },
+  {
+   "ref": "R16",
+   "authors": "Herter L, Weingart C, Merten N, et al.",
+   "year": 2022,
+   "title": "Alloimmunization in dogs after transfusion: a serial cross-match study",
+   "journal": "Journal of Veterinary Internal Medicine",
+   "volume_pages": "36(5):1660-1668",
+   "doi": "10.1111/jvim.16521",
+   "pmid": "36161382",
+   "url": "",
+   "article_id": "",
+   "type": "cohort",
+   "species": "",
+   "n_dogs": 21,
+   "read": "abstract"
+  },
+  {
+   "ref": "R17",
+   "authors": "Collett MG",
+   "year": 2000,
+   "title": "Survey of canine babesiosis in South Africa",
+   "journal": "Journal of the South African Veterinary Association",
+   "volume_pages": "71(3):180-186",
+   "doi": "10.4102/jsava.v71i3.710",
+   "pmid": "11205168",
+   "url": "",
+   "article_id": "",
+   "type": "case series",
+   "species": "B. rossi",
+   "n_dogs": null,
+   "read": "abstract"
+  },
+  {
+   "ref": "R18",
+   "authors": "Mathews SM, Ajith Y, Madhavan Unny N, et al.",
+   "year": 2026,
+   "title": "Clinicopathological evaluation and molecular detection of haemoparasites in severely anaemic dogs referred for emergency blood transfusion",
+   "journal": "JIVA (Journal of the Indian Veterinary Association, Kerala)",
+   "volume_pages": "24(2):39-53",
+   "doi": "10.55296/jiva/24.2.2026.39-53",
+   "pmid": "",
+   "url": "",
+   "article_id": "CB315",
+   "type": "case series",
+   "species": "B. gibsoni",
+   "n_dogs": 13,
+   "read": "full text"
+  },
+  {
+   "ref": "R19",
+   "authors": "Adebayo OO, Takeet MI, Oyewusi IK, et al.",
+   "year": 2025,
+   "title": "Relationship between dog erythrocyte antigen (DEA) and susceptibility of dogs to babesiosis",
+   "journal": "BMC Veterinary Research",
+   "volume_pages": "21(1):684",
+   "doi": "10.1186/s12917-025-05117-9",
+   "pmid": "41291669",
+   "url": "",
+   "article_id": "CB143",
+   "type": "cohort",
+   "species": "Babesia spp.",
+   "n_dogs": 200,
+   "read": "full text"
+  },
+  {
+   "ref": "R20",
+   "authors": "Jacobson LS, Swan GE",
+   "year": 1995,
+   "title": "Supportive treatment of canine babesiosis",
+   "journal": "Journal of the South African Veterinary Association",
+   "volume_pages": "66(2):95-105",
+   "doi": "",
+   "pmid": "8544169",
+   "url": "",
+   "article_id": "",
+   "type": "review",
+   "species": "B. rossi",
+   "n_dogs": null,
+   "read": "abstract"
+  },
+  {
+   "ref": "R21",
+   "authors": "Halder B, Gupta AR",
+   "year": 2022,
+   "title": "Haemato-biochemical alteration and therapeutic management of canine babesiosis",
+   "journal": "Indian Journal of Animal Health",
+   "volume_pages": "61(2):379-382",
+   "doi": "10.36062/ijah.2022.05322",
+   "pmid": "",
+   "url": "",
+   "article_id": "CB221",
+   "type": "case report",
+   "species": "B. gibsoni",
+   "n_dogs": 1,
+   "read": "full text"
+  },
+  {
+   "ref": "R22",
+   "authors": "Klein HG",
+   "year": 2017,
+   "title": "The red cell storage lesion(s): of dogs and men",
+   "journal": "Blood Transfusion",
+   "volume_pages": "15(2):107-111",
+   "doi": "10.2450/2017.0306-16",
+   "pmid": "28263166",
+   "url": "",
+   "article_id": "",
+   "type": "review",
+   "species": "",
+   "n_dogs": null,
+   "read": "abstract"
+  },
+  {
+   "ref": "R23",
+   "authors": "Abakpa SAV, Mustapha EI, Mshelbwala FM, et al.",
+   "year": 2023,
+   "title": "Prevalence and role of anemia in mortalities of dogs with babesiosis",
+   "journal": "World's Veterinary Journal",
+   "volume_pages": "13(3):373-378",
+   "doi": "10.54203/scil.2023.wvj41",
+   "pmid": "",
+   "url": "",
+   "article_id": "CB238",
+   "type": "cohort",
+   "species": "Babesia spp. (smear)",
+   "n_dogs": 80,
+   "read": "full text"
+  }
+ ],
+ "search": {
+  "date": "2026-11-12",
+  "sources": [
+   "Local review: combined_set.csv (221 rows tagged haemolytic anaemia), article notes, full texts, ERY synthesis",
+   "PubMed",
+   "Europe PMC",
+   "Crossref",
+   "Merck Veterinary Manual",
+   "Journal of the South African Veterinary Association website"
+  ],
+  "note": "Case reports of transfusion from India, Brazil, Ukraine and Nigeria, and the reports on cryopreserved red cells, were not used: they add no dose or outcome beyond the cited studies. The AVHTM transfusion reaction consensus (2021) was read as an abstract only and is not cited; the guidance is cited from a veterinary manual. The antibabesial drugs are in TX00."
+ }
+}

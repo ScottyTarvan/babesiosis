@@ -1,0 +1,31 @@
+:host {
+  display: inline;
+}
+
+// A citation: a small link in the line of text, to the entry of the reference list.
+.fs-clinical-text__cite {
+  display: inline;
+  margin: 0 1px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  font: inherit;
+  font-size: 0.85em;
+  font-variant-numeric: tabular-nums;
+  color: rgb(var(--fs-color-primary));
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &:focus-visible {
+    outline: 2px solid rgb(var(--fs-color-primary));
+    outline-offset: 1px;
+    border-radius: 2px;
+  }
+
+  @media print {
+    color: inherit;
+  }
+}

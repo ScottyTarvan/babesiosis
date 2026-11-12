@@ -1,6 +1,6 @@
 # Core outputs and table fields
 
-Paths are relative to `core/`. Counts were taken on 2026-10-28; re-count before you quote them as current.
+Paths are relative to `core/`. Counts as of 2026-10-28.
 
 ## Core outputs (folder root)
 
@@ -11,10 +11,6 @@ Paths are relative to `core/`. Counts were taken on 2026-10-28; re-count before 
 | `cohorts.json` | JSON object | 38 | `CH##` → `{label, certainty, basis, members[]}`. `certainty` is `confirmed` or `probable`. |
 | `ids.json` | JSON object | 584 | Source key → `{id, filename, retired?, retired_reason?}` |
 | `articles/<ID>_<year>_<slug>.md` | Markdown | 481 | One appraisal note per article: a metadata table, then *Abstract-derived summary*, *Critical interpretation* (evidence type, authors' conclusion, reviewer interpretation, key limitations) and *Evidence basis*. |
-| `index.md` | Markdown | – | Rendered article index with counts per category |
-| `datasets.md` | Markdown | – | Rendered dataset catalogue, ranked, with one section per dataset (anchors `#ds01`, `#s-cb050`) |
-| `research-map.md` | Markdown | – | The synthesis: per-category maps, cross-cutting themes, human comparisons, cohorts, five research questions |
-| `search-log.md` | Markdown | – | Sources searched per round, queries, counts and the 61 unresolved records (23 from rounds 1–3, 38 from round 4) |
 
 ## `articles.jsonl` key fields
 

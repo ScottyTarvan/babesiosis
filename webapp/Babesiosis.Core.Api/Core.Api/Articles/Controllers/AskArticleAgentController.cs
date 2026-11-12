@@ -18,10 +18,11 @@ namespace Babesiosis.Core.Api.Articles.Controllers
 {
   /// <summary>
   /// Asks the article agent (Babesiosis.Agents) a question and shapes its answer for the web
-  /// app's AI agent screen. The agent searches the article embeddings and answers through an
-  /// OpenRouter model; this controller validates the request, turns configuration and
-  /// provider failures into coded errors, and resolves each citation's source link the same
-  /// way the Articles list does.
+  /// app's AI agent screen. The agent reads the articles, the experiments and the clinical
+  /// manual, and answers through an OpenRouter model; this controller validates the request,
+  /// turns configuration and provider failures into coded errors, resolves each article
+  /// citation's source link the same way the Articles list does, and passes on the experiments
+  /// and clinical pages the answer cites.
   /// </summary>
   public class AskArticleAgentController
   {
@@ -82,7 +83,13 @@ namespace Babesiosis.Core.Api.Articles.Controllers
           Role = "assistant",
           Content = answer.Answer,
           CreatedAt = DateTimeOffset.UtcNow,
-          Citations = await ToCitationsAsync(answer, cancellationToken)
+          Citations = await ToCitationsAsync(answer, cancellationToken),
+          Experiments = answer.Experiments
+            .Select(e => new ArticleAgentExperimentViewModel { Code = e.Code, ShortCode = e.ShortCode, Name = e.Name, Method = e.Method })
+            .ToList(),
+          ClinicalPages = answer.ClinicalPages
+            .Select(p => new ArticleAgentClinicalPageViewModel { Id = p.Id, Title = p.Title, Group = p.Group })
+            .ToList()
         },
         Conversation = answer.Conversation,
         Model = answer.Model,

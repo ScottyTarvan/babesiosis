@@ -1,0 +1,145 @@
+<div class="fs-meta">
+  @if (primary(); as p) {
+    <fs-card title="Meta experiment: what reached each tier"
+             [subtitle]="p.n_candidates + ' candidates · census of ' + p.n_census_rows + ' results (' + p.n_census_tests + ' with a p value, ' + p.n_census_pass + ' pass the screen) · ' + p.n_leads + ' research leads · descriptive: all labelled files were already seen'">
+      <p class="fs-meta__answer">{{ p.answer }}</p>
+      <div class="fs-meta__tiers" role="list">
+        @for (t of p.tier_counts; track t.tier) {
+          <div class="fs-meta__tier" role="listitem" [title]="t.definition">
+            <fs-badge variant="tonal" [intent]="tierIntent(t.tier)">Tier {{ t.tier }}</fs-badge>
+            <span class="fs-meta__tier-n">{{ t.n }}</span>
+            <span class="fs-meta__tier-label">{{ t.label }}</span>
+          </div>
+        }
+      </div>
+      <p class="fs-meta__footnote">{{ p.caveat }}</p>
+    </fs-card>
+  } @else {
+    <fs-card title="Meta experiment"><p class="fs-meta__footnote">This run stored no primary result.</p></fs-card>
+  }
+
+  <fs-card title="Research leads, in rank order"
+           subtitle="Things to measure, not predictors · tier, kind of finding, hypothesis, evidence, human counterpart and the next study">
+    @if (leads(); as rows) {
+      <div class="fs-meta__leads">
+        @for (l of rows; track l.rank) {
+          <article class="fs-meta__lead">
+            <header class="fs-meta__lead-head">
+              <span class="fs-meta__rank">{{ l.rank }}</span>
+              <fs-badge variant="tonal" [intent]="tierIntent(l.tier)">Tier {{ l.tier }}</fs-badge>
+              <span class="fs-meta__kind">{{ l.kind }}</span>
+              <span class="fs-meta__kind">· {{ l.candidates }}</span>
+            </header>
+            <p class="fs-meta__hyp">{{ l.hypothesis }}</p>
+            <dl class="fs-meta__dl">
+              <dt>Evidence</dt><dd>{{ l.evidence }}</dd>
+              <dt>Human counterpart</dt>
+              <dd>{{ l.human_counterpart }}
+                @for (d of l.human_doi; track d) {
+                  <a class="fs-meta__doi" [href]="doiLink(d)" target="_blank" rel="noopener">{{ d }}</a>
+                }
+                <span class="fs-meta__muted">Parallel new: {{ l.parallel_new }}</span>
+              </dd>
+              <dt>Would be refuted by</dt><dd>{{ l.refuted_by }}</dd>
+              <dt>Next study, existing data</dt><dd>{{ l.next_existing }}</dd>
+              <dt>Next study, new dogs</dt><dd>{{ l.next_new_dogs }}</dd>
+              <dt>Add to the minimum dataset</dt><dd>{{ l.minimum_dataset }}</dd>
+            </dl>
+          </article>
+        }
+      </div>
+    } @else {
+      <p class="fs-meta__footnote">This run stored no leads.</p>
+    }
+  </fs-card>
+
+  <fs-card title="Agreement between independent sources, by theme"
+           subtitle="One indicator per independent source · positive = more of the mechanism in the more severe dogs · Cliff's delta or Spearman rho · themes chosen after the results were seen · died includes euthanasia (Onderstepoort) · one species per source">
+    @if (themes(); as th) {
+      <div class="fs-meta__forest">
+        <div class="fs-meta__muted">Source and measure</div>
+        <svg class="fs-meta__axis" [attr.viewBox]="'0 0 ' + forest.width + ' 18'" aria-hidden="true">
+          @for (t of ticks; track t.v) {
+            <text [attr.x]="t.x" y="13" text-anchor="middle" class="fs-meta__tick">{{ t.label }}</text>
+          }
+        </svg>
+        <div class="fs-meta__muted">Effect (95% CI) · p</div>
+        @for (g of themeGroups(); track g.theme) {
+          <div class="fs-meta__theme">{{ g.theme }} {{ g.label }}</div>
+          @for (r of g.indicators; track r.id) {
+            <div class="fs-meta__flabel" [title]="r.measure + (r.circular ? ' · circular: ' + r.circular : '') + (r.known_driver ? ' · known: ' + r.known_driver : '')">
+              {{ r.source }} · {{ r.measure }}
+              @if (r.circular) {<span class="fs-meta__flag">circular</span>}
+              @if (r.known_driver) {<span class="fs-meta__flag fs-meta__flag--known">known</span>}
+            </div>
+            <svg class="fs-meta__mini" [attr.viewBox]="'0 0 ' + forest.width + ' ' + forest.height" role="img"
+                 [attr.aria-label]="r.source + ' ' + r.measure + ': ' + r.effectText">
+              <line [attr.x1]="zeroX" [attr.x2]="zeroX" y1="1" [attr.y2]="forest.height - 1" class="fs-meta__zero" />
+              @if (r.hasCi) {
+                <line [attr.x1]="r.x1" [attr.x2]="r.x2" [attr.y1]="forest.height / 2" [attr.y2]="forest.height / 2"
+                      [class]="r.strong ? 'fs-meta__ci fs-meta__ci--strong' : 'fs-meta__ci'" />
+              }
+              <circle [attr.cx]="r.x" [attr.cy]="forest.height / 2" r="5"
+                      [class]="r.circular ? 'fs-meta__dot fs-meta__dot--circ' : (r.strong ? 'fs-meta__dot fs-meta__dot--strong' : 'fs-meta__dot')">
+                <title>{{ r.effectText }}</title>
+              </circle>
+            </svg>
+            <div class="fs-meta__feffect">{{ r.effectText }} · n {{ r.n }}</div>
+          }
+          @for (c of g.combined; track c.species) {
+            <div class="fs-meta__combined">{{ combinedText(c) }}</div>
+          }
+          @if (g.literatureOnly) {
+            <div class="fs-meta__combined">No dog-level indicator: literature calls only.</div>
+          }
+          @if (g.literature) {
+            <div class="fs-meta__lit">Literature units that are not these dogs: {{ g.literature }}</div>
+          }
+        }
+      </div>
+      <p class="fs-meta__footnote">{{ th.footnote }}</p>
+    } @else {
+      <p class="fs-meta__footnote">This run stored no theme rows.</p>
+    }
+  </fs-card>
+
+  <fs-card title="Candidates and the attempt to refute each"
+           subtitle="Provisional tier from the screen; a refutation can only lower it · X rows show what was examined and why it was set aside">
+    @if (candidates(); as rows) {
+      <fs-data-grid [data]="rows" [columns]="candidateColumns" keyExpr="id" />
+    } @else {
+      <p class="fs-meta__footnote">This run stored no candidates.</p>
+    }
+    @if (refutationRows().length) {
+      <h4 class="fs-meta__h">Refutation attempts</h4>
+      <fs-data-grid [data]="refutationRows()" [columns]="refutationColumns" keyExpr="id" />
+    }
+  </fs-card>
+
+  <fs-card title="Result census"
+           subtitle="Every quantitative result and observation of the 23 experiments, read from the out/ files · each number checked at its file and line · filter by tier or experiment">
+    @if (census(); as all) {
+      <div class="fs-meta__filters">
+        <label>Tier
+          <select class="form-select form-select-sm" [value]="tierFilter()" (change)="setTier($any($event.target).value)">
+            <option value="">all</option>
+            <option value="A">A</option><option value="B">B</option><option value="C">C</option>
+            <option value="D">D</option><option value="X">X</option><option value="none">no candidate</option>
+          </select>
+        </label>
+        <label>Experiment
+          <select class="form-select form-select-sm" [value]="experimentFilter()" (change)="setExperiment($any($event.target).value)">
+            <option value="">all</option>
+            @for (e of experiments(); track e) {
+              <option [value]="e">{{ e }}</option>
+            }
+          </select>
+        </label>
+        <span class="fs-meta__muted">{{ censusRows().length }} of {{ all.length }} rows</span>
+      </div>
+      <fs-data-grid [data]="censusRows()" [columns]="censusColumns" keyExpr="row_id" noDataText="No census row matches the filter." />
+    } @else {
+      <p class="fs-meta__footnote">This run stored no census.</p>
+    }
+  </fs-card>
+</div>

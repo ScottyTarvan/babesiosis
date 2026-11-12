@@ -1,0 +1,123 @@
+<section class="fs-topic">
+  <nav class="fs-topic__switcher" aria-label="Topics">
+    @for (t of data()?.topics ?? []; track t.code) {
+      <a class="fs-topic__chip" [class.fs-topic__chip--active]="t.code === code()" [routerLink]="topicUrl(t.code)"
+         [title]="t.name + ' (' + t.articles + ' articles)'"
+         [attr.aria-current]="t.code === code() ? 'page' : null">{{ t.label }}</a>
+    }
+  </nav>
+
+  <fs-page-header icon="report-analytics" [title]="topic()?.label ?? code()"
+                  [subtitle]="topic() ? topic()!.code + ' · ' + topic()!.name : 'Topic'">
+    <fs-button variant="outline" intent="secondary" size="sm" icon="refresh"
+               [loading]="loading()" [disabled]="loading()"
+               (click)="reload()">Refresh</fs-button>
+  </fs-page-header>
+
+  @if (loadError(); as message) {
+    <fs-banner intent="danger">
+      {{ message }}
+      <fs-button fsBannerAction variant="ghost" intent="secondary" size="sm" (click)="reload()">Retry</fs-button>
+    </fs-banner>
+  }
+
+  @if (loading() && !data()) {
+    <div class="fs-topic__loading">
+      <fs-spinner size="md" intent="primary" ariaLabel="Loading the topic" />
+    </div>
+  } @else if (data(); as d) {
+    @if (question(); as q) {
+      <div class="fs-topic__question">
+        <span class="fs-topic__question-label">The question</span>
+        <fs-synthesis-text [markdown]="q.body" />
+      </div>
+    }
+
+    <div class="fs-topic__tiles">
+      @for (tile of tiles(); track tile.label) {
+        <fs-stat-card [label]="tile.label" [value]="tile.value" [subtitle]="tile.note" />
+      }
+    </div>
+
+    <div class="fs-topic__layout">
+      <div class="fs-topic__main">
+        <fs-card title="Synthesis" subtitle="The topic synthesis as written for the review, unedited.">
+          @if (!sections().length) {
+            <fs-empty-state icon="article" title="No synthesis loaded"
+                            subtitle="Run the console with --synthesis-only to load the topic syntheses." />
+          } @else {
+            <p class="fs-topic__provenance">
+              <fs-symbol name="help-circle" size="xs" />
+              <span>
+                From search/synthesis/{{ d.topic.code }}.md, loaded {{ d.synthesisLoadedAt | date: 'd MMM y, HH:mm' }}.
+                Topic labels are automatic (NLP, no human review). Counts quoted in the text were written earlier
+                and can differ from the live figures above.
+              </span>
+            </p>
+            @for (section of sections(); track section.key) {
+              <section class="fs-topic__section">
+                <h2 class="fs-topic__section-title">{{ section.heading }}</h2>
+                <fs-synthesis-text [markdown]="section.body" />
+              </section>
+            }
+          }
+        </fs-card>
+      </div>
+
+      <aside class="fs-topic__aside">
+        <fs-card title="Study design" [subtitle]="designSubtitle()">
+          <fs-breakdown-bars [rows]="d.designs" filterKey="studyType" [baseFilter]="{ category: d.topic.label }"
+                             [showIndependent]="true" />
+        </fs-card>
+
+        <fs-card title="Articles per period" subtitle="By publication year; the last band is six years, the last one partial.">
+          <div class="fs-topic__periods">
+            @for (p of periods(); track p.label) {
+              <div class="fs-topic__period">
+                <span class="fs-topic__heat" [attr.data-heat]="p.heat">{{ p.count }}</span>
+                <span class="fs-topic__period-label">{{ p.label }}</span>
+              </div>
+            }
+          </div>
+        </fs-card>
+      </aside>
+    </div>
+
+    <fs-card title="Articles in this topic" [subtitle]="d.articles.length + ' canine articles with ' + d.topic.label.toLowerCase() + ' as main topic, newest first.'">
+      <a fsCardTitleAside class="fs-topic__all" [routerLink]="articlesUrl" [queryParams]="gridParams()">Open in the article list</a>
+      @if (!d.articles.length) {
+        <fs-empty-state icon="article" title="No articles" subtitle="No canine article has this as its main topic." />
+      } @else {
+        <fs-data-grid [data]="d.articles" [columns]="columns()" keyExpr="code" noDataText="No articles." />
+      }
+    </fs-card>
+  }
+</section>
+
+<!-- The title opens the article at its source (publisher, PubMed or a landing page) in a new window. -->
+<ng-template #titleCell let-row>
+  @if (row.sourceUrl) {
+    <a class="fs-topic__link" [href]="row.sourceUrl" target="_blank" rel="noopener noreferrer"
+       title="Open the article at its source in a new window">
+      <span class="fs-topic__wrap">{{ row.title }}</span>
+      <fs-symbol name="external-link" size="xs" ariaLabel="Opens in a new window" />
+    </a>
+  } @else {
+    <span class="fs-topic__wrap">{{ row.title }}</span>
+  }
+  @if (row.abstractOnly) {
+    <span class="fs-topic__tag">abstract only</span>
+  }
+</ng-template>
+
+<ng-template #dogsCell let-row>
+  @if (row.infectedDogs != null) {
+    {{ row.infectedDogs }}@if (row.controls) {<span class="fs-topic__muted">, {{ row.controls }} controls</span>}
+  } @else {
+    <span class="fs-topic__muted">–</span>
+  }
+</ng-template>
+
+<ng-template #wrapCell let-value="value">
+  <span class="fs-topic__wrap">{{ value }}</span>
+</ng-template>

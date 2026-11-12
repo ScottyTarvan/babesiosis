@@ -1,0 +1,31 @@
+ref,section,statement,value,species,design,n_dogs,cohort_id,read,location,note
+R1,diagnosis,Liver damage defined by enzyme rise or bile acids with an abnormal enzyme; bilirubin excluded because of haemolysis,"ALT >80 U/L; ALP >380 U/L; GLDH >16 U/L; bile acids >30 µmol/L",B. rossi,retrospective cohort,91 (56 for organ analysis),,full text,Methods and Table 1,"Source: >2-fold rise in an enzyme; U/L at 25 °C"
+R1,description,Liver damage in 30 of 56 dogs (10 single + 8 double + 11 triple + 1 quadruple organ),30/56,B. rossi,retrospective cohort,56,,full text,Results and Figs 1-4,counted from figures
+R1,prognosis,Liver and muscle damage common but did not affect outcome; CNS and kidney did,,B. rossi,retrospective cohort,56,,full text,Results and Conclusions,mortality 45% includes 6 euthanased of 84
+R2,diagnosis,Bilirubin above reference in 130 of 230; reference interval,1-6.8 µmol/L; 56.5%,B. rossi,case series with outcome,320,,full text,Results and Table 3,
+R2,prognosis,Bilirubin above cut-off associated with death,>14.7 µmol/L; AUC 0.795; OR 1.23 per 50 µmol/L,B. rossi,case series with outcome,230 measured,,full text,"Results, Tables 1-3","Table 3: sens 87.5%, spec 76.3%; text gives 75% and 81.6% (= T4 row; likely transcription error). Sub-agent confirmed"
+R2,description,About 16% clinically icteric; bilirubin negatively correlated with Hct; icterus pre-hepatic and hepatic,16%,B. rossi,case series with outcome,320,,full text,Discussion,
+R3,description,Fatal livers: dilated spaces of Disse; cholestasis; Kupffer cell hypertrophy with haemosiderin; centrilobular necrosis; no fibrin thrombi,,B. rossi,necropsy series with controls,10 vs 4,CH04,full text,Results; special stains,7 died and 3 euthanised
+R3,diagnosis,Median ALT and bile acids in fatal cases,ALT 86.5 U/L; bile acids 22 µmol/L (p=0.109),B. rossi,necropsy series with controls,10,CH04,full text,Table 2,
+R4,diagnosis,AST above reference in 92.9%; AST/ALT ratio higher in azotaemic dogs,169/182; ratio 2.68 vs 1.08,B. canis,cross-sectional,182,CH34,full text,Results,
+R5,diagnosis,AST and AST/ALT higher in renal than pre-renal azotaemia,median ratio 3.28 vs 1.54,B. canis,observational,34,CH27,full text,Results,
+R6,treatment,NAC adjunct gave earlier improvement of anaemia CRP and hepatic injury by day 14,70 mg/kg PO once daily 14 days,B. gibsoni,randomised pilot trial,24,,abstract,Abstract Methods,"""70 mg/kg, PO, OD for 14 days"""
+R7,treatment,NAC adjunct improved antioxidant capacity and MCHC at day 21,70 mg/kg PO 5 days (frequency not stated),B. gibsoni,randomised trial,12,,abstract,Abstract,"""oral NAC (70 mg/kg for 5 days)"""
+R8,treatment,SAMe dose (chronic hepatitis consensus),20 mg/kg PO once daily; phytate salt 8-10 mg/kg,none (general canine),consensus guideline,,,full text,Table 19,"""20 mg/kg PO once a day on an empty stomach"""
+R8,treatment,Ursodeoxycholic acid dose,15 mg/kg PO once daily with food,none,consensus guideline,,,full text,Table 19,"""15 mg/kg once a day PO given with food"""
+R8,treatment,Silymarin native extract dose largely undefined,4-8 mg/kg/day in 2-3 doses,none,consensus guideline,,,full text,Table 19,"""Dose largely undefined: 4-8 mg/kg/d given 2-3 times a day"""
+R8,treatment,Vitamin E dose,10 IU/kg PO once daily max 400 IU,none,consensus guideline,,,full text,Table 19,"""10 IU/kg once a day PO not to exceed 400 IU"""
+R8,diagnosis,Hyperbilirubinaemia from hepatic cholestasis always comes with raised bile acids,,none,consensus guideline,,,full text,Diagnosis section,
+R9,description,Icterus seldom seen with haemolysis alone; hepatopathy not associated with poor outcome alone; delayed recovery,,B. rossi (review),narrative review,,,full text,Hepatopathy section,
+R10,description,Hyperbilirubinaemia 74.2%; ALT raised 21.3%,204/275; 53/249,B. canis,retrospective cohort,342,CH12,full text,Results and Table 2,
+R11,description,Hyperbilirubinaemia 78% at T0; normal in all but one at T1 (median day 15) and all by T2 (median day 32),18/23,B. canis,prospective cohort,23,CH11,full text,Results,
+R12,description,Jaundice 7.4%; ALP raised 30.6%; GGT 21.3%; bilirubinuria 2+/3+ in 13/22,,B. gibsoni,retrospective case series,108,,full text,Tables 2 5 6,
+R13,description,Acute hepatopathy with raised ALT in all 3; hepatomegaly on ultrasound; non-purulent hepatitis on biopsy in splenectomised dogs,,B. canis,experimental,3,,abstract,Abstract,
+R14,description,Severely anaemic dogs had hypoxic hepatic disease,,B. rossi (B. canis rossi),retrospective series,662,,abstract,Abstract,
+R15,diagnosis,Suspected hepatocellular damage ALT >=80 U/L; P5P adds about 4 U/L and did not change classification,ALT >=80 U/L (RI 17-47),Babesia sp. (South Africa),method comparison,105,,full text,Methods and Results,
+R16,prognosis,Bilirubin not different between survivors and non-survivors; icterus 6 of 15,21.25 vs 54.7 µmol/L (p=0.240),B. canis,survivor vs non-survivor study,15,CH21,full text,Table 1 and Results,
+R17,diagnosis,Icterus a univariate risk factor for hypoglycaemia; measure glucose in icteric dogs,,B. rossi (B. canis rossi),prospective cohort,250,,abstract,Abstract,
+R18,diagnosis,Icterus in 13 of 20 babesiosis dogs with pancreatitis,13/20,B. rossi,retrospective case series,20,,abstract,Abstract,
+R19,diagnosis,Leptospirosis causes cholestatic hepatopathy; kidney and liver signs usually together,,none,consensus guideline,,,full text,Pathogenesis and Table 1,
+R20,treatment,10x imidocarb overdose caused death from massive hepatic necrosis,10 times recommended dose,Babesia (suspected),case report,1,,abstract,Abstract,
+R21,treatment,Ademetionine after specific therapy; bilirubin and enzymes improved by day 7,20 mg/kg IV once daily 3-6 days,not stated (piroplasmosis),uncontrolled series,8,,abstract,Crossref abstract,"""20 mg/kg body weight once a day for 3-6 days"""

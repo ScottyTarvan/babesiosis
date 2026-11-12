@@ -14,6 +14,8 @@
   superAdminOnly?: boolean
   /** When true, only shown outside production (mirrors a dev-only route — see app-routing.module.ts). */
   devOnly?: boolean
+  /** When true, the item is not shown; its route still works by URL. */
+  hidden?: boolean
 }
 
 /**
@@ -25,14 +27,20 @@ export const MENU: MenuItem[] = [
   {
     key: 'home',
     icon: 'home',
-    label: 'Home',
+    label: 'Overview',
     link: '/home',
   },
   {
-    key: 'literature-review',
-    icon: 'clipboard-check',
-    label: 'Literature Review',
-    link: '/literature-review',
+    key: 'topics',
+    icon: 'report-analytics',
+    label: 'Topics',
+    link: '/topics',
+  },
+  {
+    key: 'gaps',
+    icon: 'list-search',
+    label: 'Gaps and questions',
+    link: '/gaps',
   },
   {
     key: 'reference-articles',
@@ -45,6 +53,12 @@ export const MENU: MenuItem[] = [
     icon: 'chart-dots-3',
     label: 'Experiments',
     link: '/experiments',
+  },
+  {
+    key: 'clinical',
+    icon: 'checkup-list',
+    label: 'Clinical',
+    link: '/clinical',
   },
   {
     key: 'ai-agent',

@@ -24,6 +24,8 @@ namespace Babesiosis.Core.Articles.Data
     public DbSet<ArticleCategory> ArticleCategories { get; set; }
     public DbSet<Term> Terms { get; set; }
     public DbSet<ArticleTerm> ArticleTerms { get; set; }
+    /// <summary>The narrative syntheses, split by heading (console --synthesis-only).</summary>
+    public DbSet<SynthesisSection> SynthesisSections { get; set; }
 
     // The tidied datasets and the experiments run over them (console --datasets-only).
     public DbSet<Dataset> Datasets { get; set; }
@@ -44,6 +46,7 @@ namespace Babesiosis.Core.Articles.Data
       modelBuilder.ApplyConfiguration(new ArticleCategoryConfig());
       modelBuilder.ApplyConfiguration(new TermConfig());
       modelBuilder.ApplyConfiguration(new ArticleTermConfig());
+      modelBuilder.ApplyConfiguration(new SynthesisSectionConfig());
 
       modelBuilder.ApplyConfiguration(new DatasetConfig());
       modelBuilder.ApplyConfiguration(new VariableConfig());

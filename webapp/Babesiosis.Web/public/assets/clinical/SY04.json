@@ -1,0 +1,344 @@
+{
+  "schema_version": 1,
+  "id": "SY04",
+  "title": "Poorly regenerative anaemia, pancytopenia and marrow disorders",
+  "updated": "2026-11-12",
+  "definition": "In canine babesiosis, the marrow problem is usually not marrow failure. It is an inadequate regenerative response: a low absolute reticulocyte count (ARC) for the degree of anaemia, with a hypercellular, dysplastic marrow [R1][R2]. Pancytopenia at presentation is common in B. canis and B. gibsoni and is mostly transient [R6][R9]. True marrow hypoplasia and haemophagocytic syndrome are rare and point to a co-infection or another cause [R10][R15].",
+  "definition_note": "Changed. The working definition (non-regenerative anaemia, pancytopenia or haemophagocytic syndrome) implied marrow failure. The only marrow study in B. rossi found a hypercellular marrow with ineffective erythropoiesis, not hypoplasia [R1]. No study found an aplastic marrow caused by Babesia alone. The page title was changed from 'Bone marrow failure' to match; the coordinator may restore it in index.json.",
+  "key_points": [
+    "A low ARC at presentation is expected: in B. rossi the ARC was not regenerative on day 0 and day 1 and rose by day 3 after diminazene [R3].",
+    "Do not call the anaemia non-regenerative before about 4 to 8 days of anaemia; regeneration needs that long to show [R1].",
+    "Automated analysers can count parasitised red cells as reticulocytes; check a manual count with new methylene blue on the smear [R13].",
+    "Pancytopenia was found in about 40 to 54% of dogs with acute B. canis and resolved with antibabesial treatment in most of them [R6][R7][R8].",
+    "Cytopenias that persist after effective treatment need a search for E. canis or Theileria, and a bone marrow aspirate and core biopsy [R15][R16].",
+    "Darbepoetin gave no benefit in B. gibsoni [R18]. Filgrastim and N-acetylcysteine were reported to help in small Indian studies, but the evidence is weak [R9][R20]."
+  ],
+  "description": [
+    {
+      "heading": "What it is",
+      "text": "Three different findings are grouped here. First, an inadequately regenerative anaemia: the ARC is too low for the haematocrit, although the marrow is active [R1][R2]. Second, bicytopenia or pancytopenia in the blood at presentation, mainly in B. canis and B. gibsoni [R6][R9]. Third, rare marrow disorders: haemophagocytic syndrome [R10], or marrow hypoplasia or myelofibrosis from a co-infection or a different piroplasm [R15][R16]."
+    },
+    {
+      "heading": "How common, and in which dogs",
+      "text": "In 103 dogs with B. rossi, the median ARC at presentation was 82 x10^9/L at a median haematocrit of 0.16 L/L (16%), lower than in dogs with IMHA at a similar haematocrit [R2]. In B. canis in Germany, pancytopenia was found in 19 of 46 dogs (41%) [R6], 135 of 342 dogs (39%) [R7] and 44 of 81 dogs (54%) [R8]. In one Indian referral clinic, 54 of 120 dogs with babesiosis were pancytopenic; the study dogs had B. gibsoni [R9]. Co-infection with E. canis was found in only 3 of 149 dogs with B. rossi in the Eastern Cape [R14]."
+    },
+    {
+      "heading": "When in the course of disease",
+      "text": "In experimental B. rossi, the ARC fell about 48 h after parasites appeared and rose after treatment [R2]. In natural B. rossi, the ARC was not regenerative on day 0 and day 1, moderately regenerative on day 3 and mildly regenerative on day 6 [R3]. In B. canis, the ARC was below 65 x10^9/L at admission and high 14 days after imidocarb [R4]. In another B. canis study, leukopenia resolved by about day 15 in 8 of 13 dogs, and 6 of 19 anaemic dogs had no reticulocytosis at day 15 or day 32 [R5]."
+    },
+    {
+      "heading": "Mechanism",
+      "text": "In fatal B. rossi, the marrow was hypercellular, with erythroid and myeloid hyperplasia, dysplastic metarubricytes, more macrophages with erythrophagocytosis and abundant stored iron [R1]. The authors conclude that dyserythropoiesis and inflammation, not a lack of iron or of marrow cells, explain the poor response [R1]. In vitro, serum from dogs with B. gibsoni delayed reticulocyte maturation [R17]. Serum erythropoietin was raised in most dogs with babesiosis in one study [R19]. Megakaryocytes were normal or increased, so the thrombocytopenia is peripheral [R1]."
+    }
+  ],
+  "species_notes": [
+    {
+      "species": "B. rossi",
+      "note": "Regeneration is mild to moderate, never marked, despite severe anaemia [R2][R3]. The marrow is hypercellular, not hypoplastic [R1]. Pancytopenia is not a feature of the South African studies; leukocytosis with a left shift is more common [R1][R3]."
+    },
+    {
+      "species": "B. canis",
+      "note": "Leukopenia, thrombocytopenia and pancytopenia are common at presentation and usually resolve within about 2 weeks of imidocarb [R5][R6]. Reticulocytosis appears by day 14 in most dogs [R4][R5]. In one dog, the counts took 5 months to return to normal [R24]."
+    },
+    {
+      "species": "B. gibsoni",
+      "note": "Pancytopenia was frequent in one Indian referral clinic [R9]. Non-regenerative anaemia was the entry criterion of the darbepoetin study [R18]. Parasite products delay reticulocyte maturation in vitro [R17]."
+    },
+    {
+      "species": "B. vulpes",
+      "note": "One splenectomised dog developed haemophagocytic syndrome and needed immunosuppression [R10]."
+    }
+  ],
+  "diagnosis": {
+    "criteria": [
+      {
+        "criterion": "Non-regenerative anaemia (absolute reticulocyte count)",
+        "threshold": "ARC below 60 x10^9/L in an anaemic dog",
+        "basis": "babesiosis",
+        "note": "Cut-off used in B. rossi [R3] and in B. gibsoni (below 60 000/µL with haematocrit below 0.30 L/L) [R18]. A B. canis study used below 65 x10^9/L [R4]. Interpret with the days of illness.",
+        "refs": ["R3", "R18", "R4"]
+      },
+      {
+        "criterion": "Weak or inadequate regeneration",
+        "threshold": "ARC above the reference interval but below 150 x10^9/L",
+        "basis": "babesiosis",
+        "note": "Used in the B. rossi marrow study, with a laboratory upper limit of 115 x10^9/L [R1].",
+        "refs": ["R1"]
+      },
+      {
+        "criterion": "Time before regeneration can be judged",
+        "threshold": "4 to 8 days after the onset of anaemia",
+        "basis": "general canine",
+        "note": "General haematology figure quoted in the B. rossi marrow study; late samples (10 to 14 days) can also mislead [R1]. In B. rossi the ARC rose by day 3 of treatment [R3].",
+        "refs": ["R1", "R3"]
+      },
+      {
+        "criterion": "Pancytopenia",
+        "threshold": "Anaemia, neutropenia or leukopenia, and thrombocytopenia together (below the laboratory reference intervals)",
+        "basis": "babesiosis",
+        "note": "Definition used in B. canis and B. gibsoni case series [R6][R5]. Bicytopenia is two lines low [R6].",
+        "refs": ["R6", "R5"]
+      },
+      {
+        "criterion": "Haemophagocytic syndrome",
+        "threshold": "Bicytopenia or pancytopenia, and more than 2% haemophagocytic macrophages in the marrow aspirate",
+        "basis": "general canine",
+        "note": "Criteria from a series of dogs of any cause [R11]. The B. vulpes case used 3% or more macrophages with phagocytosis of several cell lines [R10].",
+        "refs": ["R11", "R10"]
+      }
+    ],
+    "clinical_signs": [
+      { "sign": "Pale mucous membranes, lethargy, fever", "note": "Signs of the anaemia and the acute infection, not specific to a marrow problem [R4].", "refs": ["R4"] },
+      { "sign": "Petechiae, epistaxis or other bleeding", "note": "Uncommon in babesiosis; a bleeding tendency suggests chronic E. canis or theileriosis [R15][R16].", "refs": ["R15", "R16"] },
+      { "sign": "Fever, icterus, hepatomegaly or splenomegaly with persistent cytopenias", "note": "Signs reported in haemophagocytic syndrome in dogs [R11].", "refs": ["R11"] },
+      { "sign": "Anaemia that persists or returns after antibabesial treatment", "note": "Reason for referral in the B. vulpes case with haemophagocytic syndrome [R10].", "refs": ["R10"] }
+    ],
+    "tests": [
+      { "test": "CBC with blood smear and manual reticulocyte count", "finding": "Low ARC for the haematocrit; normocytic normochromic anaemia is usual [R3].", "note": "A new methylene blue manual count does not stain Babesia; fluorescent analysers can overcount reticulocytes [R13][R12].", "refs": ["R3", "R13", "R12"] },
+      { "test": "Repeat CBC and ARC", "finding": "Rising ARC by day 3 to 6 in B. rossi [R3] and by day 14 in B. canis [R4].", "note": "A rise confirms that the marrow responds; persistent cytopenias need further work-up [R5].", "refs": ["R3", "R4", "R5"] },
+      { "test": "PCR for Babesia species and for E. canis, Anaplasma and Theileria", "finding": "Identifies the species and any co-infection.", "note": "Co-infection was rare in B. rossi in the Eastern Cape [R14]; Theileria can cause anaemia and thrombocytopenia in South African dogs [R16].", "refs": ["R14", "R16"] },
+      { "test": "Coombs test or saline agglutination", "finding": "Negative in the B. rossi marrow study [R1] and in the B. vulpes haemophagocytic case [R10].", "note": "A positive test points to secondary IMHA (SY02).", "refs": ["R1", "R10"] },
+      { "test": "Bone marrow aspirate and core biopsy", "finding": "B. rossi: hypercellular, erythroid dysplasia, increased iron and macrophages [R1]. Haemophagocytic syndrome: macrophages engulfing blood cells [R10]. Theileria: myelofibrosis [R16]. Chronic E. canis: hypoplasia [R15].", "note": "Referral test. Take both aspirate and core [R11].", "refs": ["R1", "R10", "R16", "R15", "R11"] },
+      { "test": "Serum ferritin and triglycerides", "finding": "Both were raised in the B. vulpes dog with haemophagocytic syndrome [R10].", "note": "Single case; no threshold in dogs with babesiosis.", "refs": ["R10"] }
+    ],
+    "differentials": [
+      { "condition": "Pre-regenerative anaemia (sampled too early)", "distinguish": "Fewer than 4 days of anaemia; ARC rises on repeat sampling [R1][R3].", "refs": ["R1", "R3"] },
+      { "condition": "Spurious reticulocyte count", "distinguish": "Automated ARC higher than the manual count, no polychromasia, abnormal reticulocyte dot plot [R13][R12].", "refs": ["R13", "R12"] },
+      { "condition": "Chronic E. canis infection", "distinguish": "Bicytopenia or pancytopenia with marrow hypoplasia, bleeding and hypoalbuminaemia; positive E. canis serology or PCR [R15].", "refs": ["R15"] },
+      { "condition": "Theileriosis", "distinguish": "Theileria PCR positive, Babesia PCR negative; bleeding tendency; myelofibrosis on core biopsy in two dogs [R16].", "refs": ["R16"] },
+      { "condition": "Secondary immune-mediated haemolytic anaemia (SY02)", "distinguish": "Spherocytes, agglutination or positive Coombs test; usually a stronger reticulocyte response than babesiosis at the same haematocrit [R2].", "refs": ["R2"] },
+      { "condition": "Haemophagocytic syndrome from other causes", "distinguish": "Immune-mediated, neoplastic or idiopathic causes occur; marrow cytology and the response to treating the infection help [R11].", "refs": ["R11"] },
+      { "condition": "Thrombocytopenia from consumption or DIC (SY03)", "distinguish": "Megakaryocytes are adequate or increased in the marrow of B. rossi dogs [R1].", "refs": ["R1"] }
+    ],
+    "grading": [
+      { "grade": "Haematological score (B. canis)", "criteria": "1 point for mild, 2 for moderate and 3 for marked anaemia, thrombocytopenia and leukopenia; 3 extra points for pancytopenia; 1 point for leukocytosis. A research score, not validated for treatment decisions [R5][R7].", "refs": ["R5", "R7"] }
+    ]
+  },
+  "approach": [
+    { "step": 1, "action": "Classify the anaemia", "detail": "CBC, smear and a manual reticulocyte count. Record how many days the dog has been ill. Do not call it non-regenerative before about 4 days of anaemia [R1][R13].", "setting": "practice" },
+    { "step": 2, "action": "Treat the infection and the anaemia", "detail": "Give the antibabesial drug (TX00). Transfuse by the criteria in SY01. Transfusion corrected the anaemia but did not change the white cell or platelet response [R3].", "setting": "practice" },
+    { "step": 3, "action": "Look for a co-infection", "detail": "PCR for E. canis, Anaplasma and Theileria, above all when cytopenias are marked, there is bleeding, or the dog is from an E. canis area [R14][R15][R16].", "setting": "practice" },
+    { "step": 4, "action": "Repeat the CBC and ARC", "detail": "At day 3 to 6, and again at about day 14. Most dogs regenerate and their cytopenias resolve in this time [R3][R4][R5].", "setting": "practice" },
+    { "step": 5, "action": "Investigate persistent cytopenias", "detail": "If cytopenias persist after effective treatment, or anaemia stays non-regenerative, refer for a bone marrow aspirate and core biopsy [R10][R11][R16].", "setting": "referral" },
+    { "step": 6, "action": "Treat a confirmed marrow disorder", "detail": "Haemophagocytic syndrome: immunosuppression with continued antiprotozoal treatment, under specialist care [R10]. Co-infection: treat it (doxycycline for E. canis) [R23].", "setting": "referral" }
+  ],
+  "treatments": [
+    {
+      "name": "Antibabesial treatment alone",
+      "class": "antibabesial",
+      "aim": "Remove the parasite so that the marrow response and the blood counts recover.",
+      "status": "standard",
+      "evidence_level": "B",
+      "independent_studies": 3,
+      "evidence_summary": "In 86 dogs with B. rossi treated with diminazene, the ARC rose by day 3 [R3]. In 22 dogs with B. canis, anaemia was corrected and the ARC was high 14 days after imidocarb [R4]. In 23 dogs with B. canis, cytopenias improved by about day 15 and all survived; 6 of 19 anaemic dogs never showed reticulocytosis [R5]. One B. canis dog with pancytopenia took 5 months to normalise [R24]. Drugs and doses are in TX00.",
+      "doses": [],
+      "cautions": "No source gives a dose change for dogs with cytopenias. See TX00 for the drug cautions.",
+      "monitoring": "CBC and ARC at day 3 to 6 and at about day 14 [R3][R4][R5].",
+      "availability": "",
+      "refs": ["R3", "R4", "R5", "R24"]
+    },
+    {
+      "name": "Packed red cell or whole blood transfusion",
+      "class": "supportive",
+      "aim": "Correct severe anaemia while the marrow response develops.",
+      "status": "standard",
+      "evidence_level": "B",
+      "independent_studies": 1,
+      "evidence_summary": "In B. rossi, 32 transfused dogs were followed with 54 non-transfused dogs for 6 days. Transfusion corrected the anaemia but had no effect on white cell or platelet counts [R3]. The haematocrit rose more slowly in transfused dogs [R3]. Doses and triggers are in SY01.",
+      "doses": [],
+      "cautions": "A transfusion makes the next ARC harder to read [R3].",
+      "monitoring": "Haematocrit and ARC after transfusion [R3].",
+      "availability": "",
+      "refs": ["R3"]
+    },
+    {
+      "name": "Doxycycline for E. canis co-infection",
+      "class": "specific",
+      "aim": "Treat a concurrent E. canis infection that can cause pancytopenia and marrow hypoplasia.",
+      "status": "standard",
+      "evidence_level": "D",
+      "independent_studies": 1,
+      "evidence_summary": "No study tested doxycycline for cytopenias in dogs with babesiosis. In 6 dogs infected with E. canis through ticks, a 20-day course cleared PCR at day 28, but 5 dogs became positive again; after a 28-day course, 4 of 5 stayed negative for 3 months [R23]. Evidence from E. canis alone, not babesiosis. Co-infection was rare in B. rossi in the Eastern Cape [R14].",
+      "doses": [
+        {
+          "drug": "doxycycline (generic tablet)",
+          "dose": "10 mg/kg",
+          "route": "PO",
+          "frequency": "every 24 h",
+          "duration": "28 days",
+          "context": "E. canis, 6 experimentally infected dogs, South African trial",
+          "note": "Actual doses given were 10 to 11.7 mg/kg. A 20-day first course was followed by relapse in 5 of 6 dogs.",
+          "refs": ["R23"]
+        }
+      ],
+      "cautions": "Dogs with chronic E. canis and marrow hypoplasia all died in one series, whatever the treatment [R15].",
+      "monitoring": "PCR after the course; the study tested at day 28 and later [R23].",
+      "availability": "",
+      "refs": ["R23", "R14", "R15"]
+    },
+    {
+      "name": "Filgrastim (recombinant G-CSF)",
+      "class": "adjunct",
+      "aim": "Raise the neutrophil and white cell count in pancytopenic dogs.",
+      "status": "proposed",
+      "evidence_level": "B",
+      "independent_studies": 1,
+      "evidence_summary": "Retrospective comparison in 20 pancytopenic dogs with B. gibsoni in India, all on doxycycline, clindamycin and metronidazole. The 10 dogs given filgrastim had a higher white cell count on day 7; 3 of 10 dogs without filgrastim died, and none with it [R9]. Groups were not randomised. Not tested in B. rossi or B. canis.",
+      "doses": [
+        {
+          "drug": "filgrastim",
+          "dose": "10 µg/kg",
+          "route": "SC",
+          "frequency": "single dose (methods table); once daily (abstract)",
+          "duration": "",
+          "context": "B. gibsoni, 20 pancytopenic dogs, retrospective group comparison",
+          "note": "The paper is not consistent on the number of doses. Filgrastim is a human product.",
+          "refs": ["R9"]
+        }
+      ],
+      "cautions": "No adverse effects were reported in the study, which did not look for them systematically [R9].",
+      "monitoring": "White cell count; the study measured it on day 7 and day 28 [R9].",
+      "availability": "",
+      "refs": ["R9"]
+    },
+    {
+      "name": "N-acetylcysteine",
+      "class": "adjunct",
+      "aim": "Reduce oxidative injury and support recovery of red cells and platelets.",
+      "status": "proposed",
+      "evidence_level": "A",
+      "independent_studies": 3,
+      "evidence_summary": "In 32 pancytopenic dogs with haemoprotozoan disease (Babesia or Ehrlichia, species not reported by group), NAC with standard treatment gave higher haemoglobin and platelets at day 14 than standard treatment alone [R20]. In two small randomised trials in B. gibsoni (24 and 12 dogs), NAC gave faster recovery from anaemia [R21][R22]. The B. gibsoni trials did not select dogs with marrow failure.",
+      "doses": [
+        {
+          "drug": "N-acetylcysteine",
+          "dose": "15 mg/kg",
+          "route": "PO",
+          "frequency": "not stated",
+          "duration": "10 days",
+          "context": "Pancytopenic dogs with Babesia or Ehrlichia, 32 dogs, controlled study",
+          "note": "Dose translated from a rat model by body surface area. The discussion says 14 days.",
+          "refs": ["R20"]
+        },
+        {
+          "drug": "N-acetylcysteine",
+          "dose": "70 mg/kg",
+          "route": "PO",
+          "frequency": "once daily",
+          "duration": "14 days",
+          "context": "B. gibsoni, 24 dogs, randomised pilot trial",
+          "note": "With doxycycline, clindamycin and metronidazole.",
+          "refs": ["R21"]
+        },
+        {
+          "drug": "N-acetylcysteine",
+          "dose": "70 mg/kg",
+          "route": "PO",
+          "frequency": "not stated in the abstract",
+          "duration": "5 days",
+          "context": "B. gibsoni, 12 dogs, randomised trial",
+          "note": "Abstract only read.",
+          "refs": ["R22"]
+        }
+      ],
+      "cautions": "The three studies are small, from India, and do not report adverse effects in the parts read [R20][R21][R22].",
+      "monitoring": "CBC at day 14 to 28, as in the studies [R20][R21].",
+      "availability": "",
+      "refs": ["R20", "R21", "R22"]
+    },
+    {
+      "name": "Immunosuppression for haemophagocytic syndrome",
+      "class": "specific",
+      "aim": "Stop macrophage destruction of blood cells when haemophagocytic syndrome is confirmed.",
+      "status": "proposed",
+      "evidence_level": "C",
+      "independent_studies": 1,
+      "evidence_summary": "One splenectomised dog with B. vulpes and haemophagocytic syndrome received two immunosuppressive drugs, combined antiprotozoal drugs and three more transfusions. Platelets recovered quickly and the anaemia improved 10 days later; treatment was stopped without relapse [R10]. The drugs and doses are not in the abstract.",
+      "doses": [],
+      "cautions": "One group of authors warns that glucocorticoids predispose to secondary infection and gastrointestinal bleeding in haemoprotozoan disease [R20]. For immune-mediated haemolysis, see SY02.",
+      "monitoring": "CBC and Babesia PCR until negative [R10].",
+      "availability": "",
+      "refs": ["R10", "R20"]
+    },
+    {
+      "name": "Darbepoetin alfa",
+      "class": "adjunct",
+      "aim": "Stimulate red cell production in non-regenerative anaemia.",
+      "status": "no_benefit",
+      "evidence_level": "A",
+      "independent_studies": 1,
+      "evidence_summary": "In 20 dogs with B. gibsoni and non-regenerative anaemia, 10 received clindamycin and doxycycline for 3 weeks and 10 received the same plus darbepoetin. Both groups were in clinical remission within 10 days; haematology did not differ [R18]. Serum erythropoietin was already raised in most dogs with babesiosis [R19], and the B. rossi marrow was hypercellular [R1].",
+      "doses": [
+        {
+          "drug": "darbepoetin alfa",
+          "dose": "0.5 µg/kg",
+          "route": "not stated in the abstract",
+          "frequency": "once weekly",
+          "duration": "3 weeks",
+          "context": "B. gibsoni, 20 dogs, controlled comparison",
+          "note": "Dose used in the trial that found no benefit; not a recommendation.",
+          "refs": ["R18"]
+        }
+      ],
+      "cautions": "No benefit shown [R18].",
+      "monitoring": "",
+      "availability": "",
+      "refs": ["R18", "R19", "R1"]
+    }
+  ],
+  "prognosis": {
+    "text": "Cytopenias at presentation do not by themselves mean a poor outcome. In B. canis, 39 of 46 dogs survived [R6], and all 23 dogs of another study survived, with most cytopenias improved by day 15 [R5]. In B. rossi, regeneration usually begins within days of treatment [R3]. The outlook is poor when the marrow is hypoplastic from chronic E. canis [R15].",
+    "indicators": [
+      { "finding": "Rising ARC by day 3 to 14", "meaning": "The marrow is responding; expected course [R3][R4].", "refs": ["R3", "R4"] },
+      { "finding": "Persistent pancytopenia with marrow hypoplasia and E. canis", "meaning": "All 19 dogs in one series of chronic ehrlichiosis died [R15].", "refs": ["R15"] },
+      { "finding": "Haemophagocytic syndrome with an infectious cause", "meaning": "Better 1-month survival than immune-mediated or idiopathic haemophagocytic syndrome [R11].", "refs": ["R11"] },
+      { "finding": "Pancytopenia in B. gibsoni on triple therapy alone", "meaning": "3 of 10 dogs died in one series [R9].", "refs": ["R9"] }
+    ]
+  },
+  "related": [
+    { "id": "TX00", "why": "The antibabesial drugs and their doses." },
+    { "id": "SY01", "why": "Regenerative haemolytic anaemia and transfusion criteria and doses." },
+    { "id": "SY02", "why": "Secondary immune-mediated haemolytic anaemia and immunosuppression." },
+    { "id": "SY03", "why": "Thrombocytopenia, coagulopathy and DIC." },
+    { "id": "SY11", "why": "Leukopenia as a SIRS criterion and the order of care." }
+  ],
+  "evidence_gaps": [
+    "No study sampled the marrow of surviving dogs, or of dogs with B. canis or B. gibsoni; the only marrow study is of six fatal B. rossi cases.",
+    "No study tested antibiotic cover for neutropenic dogs with babesiosis; no source was found.",
+    "How much pancytopenia comes from co-infection with E. canis or Leishmania is unknown outside the Eastern Cape study.",
+    "No threshold of days after which a low ARC in babesiosis means true marrow failure was published.",
+    "The filgrastim and N-acetylcysteine studies are small, from India, and in B. gibsoni or mixed infections; none was done in B. rossi.",
+    "No dose of immunosuppressive drugs for haemophagocytic syndrome in babesiosis was found."
+  ],
+  "references": [
+    { "ref": "R1", "authors": "Bumby MM, Clift SJ, Hooijberg EH et al.", "year": 2024, "title": "Cytological and histopathological bone marrow findings in dogs with natural Babesia rossi infection", "journal": "Journal of the South African Veterinary Association", "volume_pages": "95(2):156-166", "doi": "10.36303/jsava.626", "pmid": "39995030", "url": "", "article_id": "CB129", "type": "case series", "species": "B. rossi", "n_dogs": 6, "read": "full text" },
+    { "ref": "R2", "authors": "Seejarim C, Rautenbach Y, Hooijberg EH et al.", "year": 2023, "title": "Regenerative response in dogs naturally and experimentally infected with Babesia rossi", "journal": "Veterinary Clinical Pathology", "volume_pages": "52(3):422-432", "doi": "10.1111/vcp.13228", "pmid": "37638541", "url": "", "article_id": "CB115", "type": "cohort", "species": "B. rossi", "n_dogs": 108, "read": "full text" },
+    { "ref": "R3", "authors": "Scheepers E, Leisewitz AL, Thompson PN et al.", "year": 2011, "title": "Serial haematology results in transfused and non-transfused dogs naturally infected with Babesia rossi", "journal": "Journal of the South African Veterinary Association", "volume_pages": "82(3):136-143", "doi": "10.4102/jsava.v82i3.51", "pmid": "22332296", "url": "", "article_id": "CB418", "type": "cohort", "species": "B. rossi", "n_dogs": 86, "read": "full text" },
+    { "ref": "R4", "authors": "Milanović Z, Ilić Božović A, Bojić-Trbojević Ž et al.", "year": 2024, "title": "Reticulocyte response in paired blood samples of Babesia canis infected young and adult dogs", "journal": "Macedonian Veterinary Review", "volume_pages": "47(1):13-21", "doi": "10.2478/macvetrev-2024-0011", "pmid": "", "url": "", "article_id": "CB251", "type": "cohort", "species": "B. canis", "n_dogs": 22, "read": "full text" },
+    { "ref": "R5", "authors": "Eisenecker CM, Moritz A, von Hohnhorst IM et al.", "year": 2026, "title": "Clinicopathological abnormalities and outcome of acute Babesia canis infections in 23 dogs treated with imidocarb dipropionate", "journal": "Current Research in Parasitology & Vector-Borne Diseases", "volume_pages": "10:100395", "doi": "10.1016/j.crpvbd.2026.100395", "pmid": "42375825", "url": "", "article_id": "CB148", "type": "cohort", "species": "B. canis", "n_dogs": 23, "read": "full text" },
+    { "ref": "R6", "authors": "Weingart C, Helm CS, Müller E et al.", "year": 2023, "title": "Autochthonous Babesia canis infections in 49 dogs in Germany", "journal": "Journal of Veterinary Internal Medicine", "volume_pages": "37(1):140-149", "doi": "10.1111/jvim.16611", "pmid": "36629833", "url": "", "article_id": "CB106", "type": "case series", "species": "B. canis", "n_dogs": 49, "read": "full text" },
+    { "ref": "R7", "authors": "von Hohnhorst IM, Moritz A, Eisenecker CM et al.", "year": 2025, "title": "Impact of levels of parasitemia and antibodies, acute-phase proteins, as well as stays abroad on hematological and biochemical parameters in 342 dogs with acute Babesia canis infection", "journal": "Parasites & Vectors", "volume_pages": "18(1):347", "doi": "10.1186/s13071-025-06997-4", "pmid": "40817086", "url": "", "article_id": "CB141", "type": "cohort", "species": "B. canis", "n_dogs": 342, "read": "full text" },
+    { "ref": "R8", "authors": "Seibert S, Rohrberg A, Stockinger A et al.", "year": 2022, "title": "Occurrence of canine babesiosis in dogs in the Rhine-Main area of Hesse, Germany - a case study of 81 dogs", "journal": "Tierärztliche Praxis Ausgabe K Kleintiere/Heimtiere", "volume_pages": "50(3):162-172", "doi": "10.1055/a-1704-6604", "pmid": "35790164", "url": "", "article_id": "CB099", "type": "case series", "species": "B. canis", "n_dogs": 81, "read": "abstract" },
+    { "ref": "R9", "authors": "Pothiappan P, Nagarajan B, Selvaraj P et al.", "year": 2020, "title": "Novel granulocytic colony stimulating factor based therapy for morbidity reduction in pancytopenic dogs with Babesia gibsoni", "journal": "Journal of Animal Research", "volume_pages": "10(2):199-204", "doi": "10.30954/2277-940x.02.2020.6", "pmid": "", "url": "", "article_id": "", "type": "case series", "species": "B. gibsoni", "n_dogs": 20, "read": "full text" },
+    { "ref": "R10", "authors": "Fernández Y, Luna MC, Fernández M et al.", "year": 2025, "title": "Successful treatment of a dog with a severe Babesia vulpes infection and associated haemophagocytic syndrome after splenectomy", "journal": "Topics in Companion Animal Medicine", "volume_pages": "69:101025", "doi": "10.1016/j.tcam.2025.101025", "pmid": "41274494", "url": "", "article_id": "CB132", "type": "case report", "species": "B. vulpes", "n_dogs": 1, "read": "abstract" },
+    { "ref": "R11", "authors": "Weiss DJ", "year": 2007, "title": "Hemophagocytic syndrome in dogs: 24 cases (1996-2005)", "journal": "Journal of the American Veterinary Medical Association", "volume_pages": "230(5):697-701", "doi": "10.2460/javma.230.5.697", "pmid": "17331054", "url": "", "article_id": "", "type": "case series", "species": "", "n_dogs": 24, "read": "abstract" },
+    { "ref": "R12", "authors": "Piane L, Young KM, Giraud L et al.", "year": 2016, "title": "Spurious reticulocyte profiles in dogs with large form babesiosis: a retrospective study", "journal": "Veterinary Clinical Pathology", "volume_pages": "45(4):598-603", "doi": "10.1111/vcp.12396", "pmid": "27701759", "url": "", "article_id": "CB538", "type": "case series", "species": "large Babesia", "n_dogs": 92, "read": "abstract" },
+    { "ref": "R13", "authors": "Piane L, Théron ML, Aumann M et al.", "year": 2016, "title": "Spurious reticulocyte profiles in a dog with babesiosis", "journal": "Veterinary Clinical Pathology", "volume_pages": "45(4):594-597", "doi": "10.1111/vcp.12395", "pmid": "27755775", "url": "", "article_id": "CB540", "type": "case report", "species": "large Babesia", "n_dogs": 1, "read": "abstract" },
+    { "ref": "R14", "authors": "Cloete HPP, Rautenbach Y, Leisewitz AL et al.", "year": 2024, "title": "Prevalence of co-infections with Ehrlichia spp. or Theileria spp. in dogs naturally infected with babesiosis in the Eastern Cape province", "journal": "Veterinary Parasitology: Regional Studies and Reports", "volume_pages": "54:101092", "doi": "10.1016/j.vprsr.2024.101092", "pmid": "39237242", "url": "", "article_id": "", "type": "cohort", "species": "B. rossi", "n_dogs": 150, "read": "abstract" },
+    { "ref": "R15", "authors": "Mylonakis ME, Koutinas AF, Breitschwerdt EB et al.", "year": 2004, "title": "Chronic canine ehrlichiosis (Ehrlichia canis): a retrospective study of 19 natural cases", "journal": "Journal of the American Animal Hospital Association", "volume_pages": "40(3):174-184", "doi": "10.5326/0400174", "pmid": "15131097", "url": "", "article_id": "", "type": "case series", "species": "", "n_dogs": 19, "read": "abstract" },
+    { "ref": "R16", "authors": "Rosa CT, Pazzi P, Nagel S et al.", "year": 2014, "title": "Theileriosis in six dogs in South Africa and its potential clinical significance", "journal": "Journal of the South African Veterinary Association", "volume_pages": "85(1):1114", "doi": "10.4102/jsava.v85i1.1114", "pmid": "25685903", "url": "", "article_id": "", "type": "case series", "species": "", "n_dogs": 6, "read": "abstract" },
+    { "ref": "R17", "authors": "Hossain MA, Yamato O, Kim G et al.", "year": 2007, "title": "Suppressive effect of culture supernatant of erythrocytes and serum from dogs infected with Babesia gibsoni on the morphological maturation of canine reticulocytes in vitro", "journal": "Journal of Veterinary Science", "volume_pages": "8(2):169-174", "doi": "10.4142/jvs.2007.8.2.169", "pmid": "17519571", "url": "", "article_id": "CB337", "type": "experimental", "species": "B. gibsoni", "n_dogs": null, "read": "abstract" },
+    { "ref": "R18", "authors": "Parvathy J, George A, Ambily VR et al.", "year": 2022, "title": "Comparative evaluation of darbepoetin therapy in non-regenerative anaemia associated with Babesia gibsoni infection in dogs", "journal": "Journal of Veterinary and Animal Sciences", "volume_pages": "53(4):716-724", "doi": "10.51966/jvas.2022.53.4.716-724", "pmid": "", "url": "", "article_id": "CB214", "type": "trial", "species": "B. gibsoni", "n_dogs": 20, "read": "abstract" },
+    { "ref": "R19", "authors": "Vinay YN, Chetan Kumar GK, Ananda KJ", "year": 2026, "title": "Serum erythropoietin levels in babesia affected dogs", "journal": "International Journal of Advanced Biochemistry Research", "volume_pages": "10(1):804-805", "doi": "10.33545/26174693.2026.v10.i1j.7099", "pmid": "", "url": "", "article_id": "CB297", "type": "case series", "species": "Babesia sp.", "n_dogs": 22, "read": "full text" },
+    { "ref": "R20", "authors": "Yadav N, Mondal D, Raja R et al.", "year": 2025, "title": "N-acetylcysteine enhances bone marrow activity in treating pancytopenia induced by canine hemoprotozoan diseases", "journal": "Veterinary Research Forum", "volume_pages": "16(1):1-10", "doi": "10.30466/vrf.2024.2033155.4328", "pmid": "40094059", "url": "", "article_id": "", "type": "trial", "species": "Babesia sp. and Ehrlichia", "n_dogs": 32, "read": "full text" },
+    { "ref": "R21", "authors": "Khan N, Sandilya A, Eregowda CG et al.", "year": 2026, "title": "N-acetylcysteine as an adjunct therapy ameliorates oxidative stress and attenuates anaemia, acute phase response and hepatic injury in clinical Babesia gibsoni infection in dogs - a pilot study", "journal": "Molecular Biology Reports", "volume_pages": "53(1):504", "doi": "10.1007/s11033-026-11689-y", "pmid": "41838252", "url": "", "article_id": "", "type": "trial", "species": "B. gibsoni", "n_dogs": 24, "read": "abstract" },
+    { "ref": "R22", "authors": "Mundassery AI, Latha RR, Kulangara V et al.", "year": 2025, "title": "Effect of N-acetylcysteine on oxidative stress and hematological recovery in dogs with Babesia gibsoni infection", "journal": "Acta Parasitologica", "volume_pages": "70(5):186", "doi": "10.1007/s11686-025-01122-y", "pmid": "40828450", "url": "", "article_id": "", "type": "trial", "species": "B. gibsoni", "n_dogs": 12, "read": "abstract" },
+    { "ref": "R23", "authors": "Fourie JJ, Horak I, Crafford D et al.", "year": 2015, "title": "The efficacy of a generic doxycycline tablet in the treatment of canine monocytic ehrlichiosis", "journal": "Journal of the South African Veterinary Association", "volume_pages": "86(1):1193", "doi": "10.4102/jsava.v86i1.1193", "pmid": "", "url": "", "article_id": "", "type": "trial", "species": "", "n_dogs": 6, "read": "full text" },
+    { "ref": "R24", "authors": "Van de Maele I, Savary-Bataille K, Gielen I et al.", "year": 2008, "title": "An unusual form of canine babesiosis", "journal": "Canadian Veterinary Journal", "volume_pages": "49(3):283-286", "doi": "", "pmid": "18390102", "url": "", "article_id": "CB351", "type": "case report", "species": "B. canis", "n_dogs": 1, "read": "abstract" }
+  ],
+  "search": {
+    "date": "2026-11-12",
+    "sources": ["local review", "PubMed", "Crossref", "publisher pages", "web"],
+    "note": "Local review (combined_set, disorder terms, article notes and full texts), PubMed searches for babesiosis with pancytopenia, bone marrow, non-regenerative anaemia, haemophagocytic syndrome and each candidate treatment, and web searches for co-infection treatment. The ACVIM ehrlichiosis consensus could not be opened (HTTP 403) and is not cited. Single case reports of cerebral or co-infected dogs with pancytopenia were left out."
+  }
+}

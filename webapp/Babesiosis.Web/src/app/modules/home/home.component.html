@@ -1,27 +1,146 @@
-<section class="fs-home">
-  <fs-page-header icon="home" title="Home"
-                  subtitle="Canine babesiosis scoping review" />
+<section class="fs-overview">
+  <fs-page-header icon="home" title="Canine babesiosis: 20 years of research"
+                  subtitle="A rapid scoping review of what has been studied in dogs with babesiosis, 23 October 2006 to 23 October 2026. Start here for the size and shape of the literature, then open a topic for what it found.">
+    <fs-button variant="outline" intent="secondary" size="sm" icon="refresh"
+               [loading]="loading()" [disabled]="loading()"
+               (click)="load()">Refresh</fs-button>
+  </fs-page-header>
 
-  <fs-banner intent="info">
-    This landing page is a placeholder. Its content will be built in a later phase.
-  </fs-banner>
+  @if (loadError(); as message) {
+    <fs-banner intent="danger">
+      {{ message }}
+      <fs-button fsBannerAction variant="ghost" intent="secondary" size="sm" (click)="load()">Retry</fs-button>
+    </fs-banner>
+  }
 
-  <fs-card title="Welcome" subtitle="Where to go from here">
-    <p class="fs-home__intro">
-      The application brings together the articles gathered for the scoping review, the
-      counts and charts drawn from them, the experiments run over the data, and an AI agent
-      that answers questions about the reviewed literature. Pick a screen below or use the
-      menu on the left.
-    </p>
-    <ul class="fs-home__screens">
-      @for (screen of screens; track screen.key) {
-        <li>
-          <a class="fs-home__screen" [routerLink]="screen.link">
-            <fs-symbol [name]="screen.icon ?? 'arrow-right'" size="sm" />
-            <span>{{ screen.label }}</span>
-          </a>
-        </li>
-      }
-    </ul>
-  </fs-card>
+  @if (loading() && !overview()) {
+    <div class="fs-overview__loading">
+      <fs-spinner size="md" intent="primary" ariaLabel="Loading the overview" />
+    </div>
+  } @else if (overview(); as o) {
+    @if (!o.summary.canineArticles) {
+      <fs-card>
+        <fs-empty-state icon="article" title="No canine articles yet"
+                        subtitle="The overview appears once articles are loaded." />
+      </fs-card>
+    } @else {
+      <div class="fs-overview__tiles">
+        @for (tile of tiles(); track tile.label) {
+          <fs-stat-card [label]="tile.label" [value]="tile.value" [subtitle]="tile.note" />
+        }
+      </div>
+
+      <fs-card class="fs-overview__caveats">
+        <div class="fs-overview__caveats-body">
+          <div class="fs-overview__caveats-title">Read every count on this site with four limits in mind</div>
+          <div class="fs-overview__caveats-list">
+            @for (caveat of caveats(); track caveat.title) {
+              <p><strong>{{ caveat.title }}</strong> {{ caveat.text }}</p>
+            }
+          </div>
+        </div>
+      </fs-card>
+
+      <fs-card title="Articles per year" [subtitle]="yearSubtitle()">
+        <fs-chart-bar orientation="vertical" [stacked]="true" [height]="240"
+                      [series]="yearSeries()" [categories]="yearCategories()" [colors]="yearColors()"
+                      [loading]="loading()" [empty]="!yearCategories().length"
+                      emptyMessage="No dated articles yet" />
+      </fs-card>
+
+      <fs-card title="Topics"
+               subtitle="One row per pathophysiology topic. Open a topic to read what its studies found, where they disagree and what is still unanswered. Period cells are darker where more articles were published.">
+        @if (!topicRows().length) {
+          <fs-empty-state icon="report-analytics" title="No topics yet" subtitle="Topics appear once categories are loaded." />
+        } @else {
+          <div class="fs-overview__scroll">
+            <div class="fs-topics" role="table" aria-label="Canine articles by topic">
+              <div class="fs-topics__row fs-topics__row--head" role="row">
+                <span role="columnheader">Topic</span>
+                <span role="columnheader">Articles with this as main topic</span>
+                <span role="columnheader" class="fs-topics__num">Independent sources</span>
+                <span role="columnheader" class="fs-topics__num">Also tagged (secondary)</span>
+                <span role="columnheader" class="fs-topics__periods">
+                  @for (p of o.periods; track p.label) {
+                    <span>{{ p.label }}</span>
+                  }
+                </span>
+                <span role="columnheader">Label not high-confidence</span>
+                <span role="columnheader" class="fs-topics__num">Abstract-only</span>
+              </div>
+              @for (t of topicRows(); track t.code) {
+                <div class="fs-topics__row" role="row">
+                  <span role="cell">
+                    <a class="fs-topics__name" [routerLink]="topicUrl(t.code)" [title]="t.name">
+                      {{ t.label }} <span class="fs-topics__code">{{ t.code }}</span>
+                    </a>
+                  </span>
+                  <span role="cell" class="fs-topics__bar-cell">
+                    <span class="fs-topics__bar" [style.width]="t.width"></span>
+                    <a class="fs-topics__count" [routerLink]="articlesUrl" [queryParams]="t.gridParams"
+                       [title]="'Open the ' + t.articles + ' ' + t.label + ' articles in the article list'">{{ t.articles }}</a>
+                  </span>
+                  <span role="cell" class="fs-topics__num"
+                        [title]="t.cohortArticles + ' articles share ' + t.cohorts + ' cohorts'">{{ t.independentSources }}</span>
+                  <span role="cell" class="fs-topics__num fs-topics__soft">+{{ t.secondaryTags }}</span>
+                  <span role="cell" class="fs-topics__periods">
+                    @for (c of t.cells; track $index) {
+                      <span class="fs-topics__heat" [attr.data-heat]="c.heat" [title]="c.tip">{{ c.count }}</span>
+                    }
+                  </span>
+                  <span role="cell" class="fs-topics__share">
+                    <span class="fs-topics__track"><span class="fs-topics__fill" [style.width]="t.notHighWidth"></span></span>
+                    <span class="fs-topics__share-text">{{ t.notHighConfidence }} of {{ t.articles }}</span>
+                  </span>
+                  <span role="cell" class="fs-topics__num fs-topics__soft"
+                        [title]="t.abstractOnly + ' of ' + t.articles + ' read as abstract only'">{{ t.abstractShare }}%</span>
+                </div>
+              }
+            </div>
+          </div>
+          <p class="fs-overview__footnote">
+            @if (weakestTopic(); as w) {
+              {{ w.label }} has the weakest labels ({{ w.notHighConfidence }} of {{ w.articles }} not high-confidence): treat its count as approximate.
+            }
+            @if (lastPeriod(); as p) {
+              The {{ p.label }} column covers {{ p.toYear - p.fromYear + 1 }} calendar years, the last one partial.
+            }
+            Click a count to open those articles in the article list.
+          </p>
+        }
+      </fs-card>
+
+      <div class="fs-overview__cards">
+        <fs-card title="Study design" subtitle="Canine articles by study design, with independent sources in brackets.">
+          <fs-breakdown-bars [rows]="o.designs" filterKey="studyType" [showIndependent]="true" />
+          <p class="fs-overview__footnote">Design is taken from each article's extracted inclusion and evidence type, not from human review.</p>
+        </fs-card>
+
+        <fs-card title="Babesia species" subtitle="Canine articles by Babesia species, and the share of each row published 2022–26.">
+          <fs-breakdown-bars [rows]="o.species" filterKey="species" aside="recent" />
+          <p class="fs-overview__footnote">{{ speciesFootnote() }}</p>
+        </fs-card>
+
+        <fs-card title="Country" [subtitle]="countrySubtitle()">
+          <fs-breakdown-bars [rows]="o.countries" filterKey="country" aside="note" />
+          <p class="fs-overview__footnote">Country is free text in the extraction, tidied by rule (text before the first bracket or separator, a few spellings merged).</p>
+        </fs-card>
+
+        <fs-card title="Infected dogs per primary study" [subtitle]="sizeSubtitle()">
+          <fs-breakdown-bars [rows]="o.sampleSizes" unit="studies" />
+          <p class="fs-overview__footnote">{{ sizeFootnote() }}</p>
+        </fs-card>
+      </div>
+
+      <fs-card class="fs-overview__next">
+        <div class="fs-overview__next-body">
+          <div>
+            <div class="fs-overview__next-title">Next: what is missing, and why some dogs get severe disease</div>
+            <div class="fs-overview__next-text">The gaps screen sets topics against study designs and lists the cross-cutting themes and candidate research questions.</div>
+          </div>
+          <a class="fs-overview__next-link" routerLink="/gaps">Open gaps and questions</a>
+        </div>
+      </fs-card>
+    }
+  }
 </section>

@@ -13,22 +13,37 @@ export const STUDY_TYPES = [
 ] as const;
 export type ArticleStudyType = (typeof STUDY_TYPES)[number];
 
-/** The Babesia species labels `ArticleClassification` assigns on the server, in display order. */
-export const SPECIES_GROUPS = ['B. canis', 'B. gibsoni', 'B. rossi', 'B. vogeli', 'Mixed / unspecified'] as const;
+/**
+ * The Babesia species labels `ArticleClassification` assigns on the server, in display
+ * order: one named species, Multiple species (two or more named), Other named species
+ * (vulpes, microti-like, conradae, negevi, Rangelia vitalii and similar) or Not identified in
+ * text read (the text appraised names no species; reviews with no single species are Multiple species).
+ */
+export const SPECIES_GROUPS = [
+  'B. canis', 'B. gibsoni', 'B. rossi', 'B. vogeli', 'Multiple species', 'Other named species', 'Not identified in text read',
+] as const;
 export type ArticleSpecies = (typeof SPECIES_GROUPS)[number];
 
 /** Mirrors `ArticleViewModel`: one row of the Articles list. */
 export interface ArticleViewModel {
   id: number;
+  /** Review code, e.g. CB001. */
+  code: string;
   /** ISO date (yyyy-MM-dd), the first day of the known period. */
   pubDate: string | null;
   pubDatePrecision: ArticleDatePrecision;
   /** The primary category's name; null when the article has none. */
   categoryName: string | null;
+  /** The primary category's code, e.g. REN; null when the article has none. */
+  categoryCode: string | null;
+  /** The primary category's short label, e.g. Kidney; null when the article has none. */
+  categoryLabel: string | null;
   /** Study type as the Evidence profile card classifies it; see `STUDY_TYPES`. */
   studyType: ArticleStudyType;
   /** Babesia species as the Evidence profile card classifies it; see `SPECIES_GROUPS`. */
   species: ArticleSpecies;
+  /** The study country, tidied; null when none is stated. */
+  country: string | null;
   journal: string | null;
   title: string;
   /** The article's one-sentence finding. */

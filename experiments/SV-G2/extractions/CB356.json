@@ -1,0 +1,20 @@
+{
+  "id": "CB356",
+  "text_used": "data/markdown/CB356.md",
+  "extracted_by": "claude-opus-5-5 SV-G2 batch B03",
+  "extracted_utc": "2026-11-12T00:00:00Z",
+  "schema_version": "v2",
+  "setting": "referral hospital",
+  "sample_timing": "not stated",
+  "article_notes": "Pulmonary perfusion scintigraphy in 14 hospitalised B. rossi dogs (smear diagnosis, OVAH) vs 9 healthy Beagle controls. All statistical comparisons (Table 1 general variables, Table 2 blood gas, radiographic and scintigraphic classes) are infected vs healthy. The infected dogs are classified per dog as severe uncomplicated (4), complicated (9) or unclassified (1), and one complicated dog died, but the authors make no comparison between these groups; per-dog scintigraphy and radiograph classes in Table 3 would need counting by the extractor, which is not allowed. Sample timing: scintigrams and blood gas were done after admission and after blood transfusion, under treatment; the delay relative to antibabesial treatment is not stated, so coded not stated.",
+  "skipped_infected_vs_healthy": 27,
+  "severity_definitions": [],
+  "associations": [],
+  "not_extracted": [
+    {
+      "what": "Radiographic and scintigraphic classes per dog by severity class (severe uncomplicated vs complicated; one non-survivor)",
+      "reason": "no per-group result",
+      "note": "Per-dog classes in Table 3 and severity class per dog in Results text; no group summary or test by severity is printed."
+    }
+  ]
+}

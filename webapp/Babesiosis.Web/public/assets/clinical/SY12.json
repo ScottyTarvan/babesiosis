@@ -1,0 +1,338 @@
+{
+  "schema_version": 1,
+  "id": "SY12",
+  "title": "Acute pancreatitis",
+  "updated": "2026-11-12",
+  "definition": "Acute inflammation of the exocrine pancreas in a dog with babesiosis. In practice it is a clinical diagnosis: compatible signs (anorexia, vomiting, cranial abdominal pain) plus an increased pancreas-specific lipase plus compatible ultrasound changes; only histology confirms it [R1][R3].",
+  "definition_note": "Working definition changed. The working text accepted raised lipase OR imaging. In babesiosis a raised lipase alone is not enough: 28% of B. rossi dogs had Spec cPL above 400 µg/L at admission, mostly without gastrointestinal signs [R2]. The page uses the clinical reference standard (signs and lipase and imaging) of the general canine literature [R3].",
+  "key_points": [
+    "Suspect pancreatitis when a dog with babesiosis has anorexia, vomiting, melaena or cranial abdominal pain, often 2 to 5 days after admission [R1].",
+    "A Spec cPL above 400 µg/L is common in B. rossi (28% at admission) and is higher in dogs with SIRS; on its own it does not prove clinical pancreatitis [R2].",
+    "In the one B. rossi series, 80% of dogs with pancreatitis had another complication, most often icterus, ARDS or IMHA; 4 of the 5 dogs that died had ARDS, renal failure or cerebral signs [R1].",
+    "No treatment for pancreatitis has been tested in dogs with babesiosis. All guidance is from general canine pancreatitis: fluids, analgesia, antiemetics and early feeding [R15].",
+    "Do not use NSAIDs. Antibiotics and acid suppressants are not routine: give them only for a shown infection or for gastrointestinal ulceration or bleeding [R15][R22]."
+  ],
+  "description": [
+    {
+      "heading": "What it is",
+      "text": "Acute pancreatitis was first reported as a complication of B. rossi babesiosis in 2000: 4 dogs with histological pancreatitis and 16 with probable pancreatitis on amylase and lipase [R1]. The lesions were peripancreatic fat necrosis, interstitial oedema, neutrophil infiltration and vascular thrombosis, often patchy within the gland [R1]. The authors proposed that the old 'gut form' of babesiosis may be pancreatitis [R1]."
+    },
+    {
+      "heading": "How common, and in which dogs",
+      "text": "In admitted B. rossi cases, histologically confirmed pancreatitis was at least 0.32% (4 of about 1245 dogs) [R1]. By Spec cPL, 24 of 87 B. rossi dogs (28%) were above 400 µg/L at admission [R2]. In B. canis, pancreatitis was reported in 33% of 31 dogs with complicated disease [R5], and 8 of 49 dogs had clinical and ultrasound signs [R6]. In B. gibsoni, 2 of 20 dogs (10%) had Spec cPL above 400 µg/L [R9]. Affected B. rossi dogs were mostly young and sexually intact (median age 3 years) [R1]."
+    },
+    {
+      "heading": "When in the course of disease",
+      "text": "In the B. rossi series the median time to diagnosis was 2.5 days after admission (range: day of admission to day 15) [R1]. The authors saw it as a delayed organ dysfunction: the first signs were often blamed on babesiosis itself [R1]. Spec cPL was above 400 µg/L in 32.5% of the 40 B. rossi dogs tested again on day 2 [R2]."
+    },
+    {
+      "heading": "Mechanism",
+      "text": "The mechanism is not known. Proposed causes are pancreatic ischaemia from anaemia, hypotension and haemoconcentration, with reperfusion injury after fluids or transfusion, and a cytokine-driven inflammatory response that may sustain the injury [R1]. Pancreatitis did not depend on the degree of anaemia at admission [R1]. Spec cPL rose with SIRS and band neutrophils, not with creatinine [R2]."
+    }
+  ],
+  "species_notes": [
+    {
+      "species": "B. rossi",
+      "note": "The best-studied species. Histological and probable pancreatitis in 20 dogs [R1]; Spec cPL above 400 µg/L in 28% at admission, linked to SIRS but not to death [R2]. Listed among findings with mortality above 30% in a review of the Onderstepoort work [R4]."
+    },
+    {
+      "species": "B. canis",
+      "note": "Pancreatitis in 33% of complicated cases in Hungary (diagnostic method not in the abstract) [R5]; increased DGGR lipase in 13 of 34 tested and clinical pancreatitis with ultrasound changes in 8 of 49 dogs in Germany [R6]; 5 of 14 SNAP cPL tests positive in Croatia, 4 of them in dogs with MODS [R7]. In 240 Austrian dogs, 40% of those with pancreatitis died [R8]."
+    },
+    {
+      "species": "B. gibsoni",
+      "note": "Spec cPL above 400 µg/L in 2 of 20 dogs, neither with vomiting or abdominal pain at first examination [R9]. Suspected drug-induced pancreatitis was reported in one dog after atovaquone-proguanil given for suspected B. gibsoni [R14]."
+    },
+    {
+      "species": "B. vogeli and others",
+      "note": "No reports of pancreatitis in B. vogeli, B. vulpes or B. conradae were found by a recent comparative review [R10]."
+    }
+  ],
+  "diagnosis": {
+    "criteria": [
+      {
+        "criterion": "Spec cPL (laboratory pancreas-specific lipase immunoassay)",
+        "threshold": "above 400 µg/L consistent with pancreatitis; 200 to 400 µg/L equivocal; below 200 µg/L reference interval",
+        "basis": "babesiosis",
+        "note": "Cut-offs used in 87 B. rossi dogs [R2] and 20 B. gibsoni dogs [R9]. In B. rossi a value above 400 µg/L was common and did not differ between dogs with and without gastrointestinal signs [R2]. Use with signs and imaging [R3].",
+        "refs": ["R2", "R9", "R3"]
+      },
+      {
+        "criterion": "Catalytic serum lipase and amylase (older criterion)",
+        "threshold": "lipase above 650 U/L and/or amylase above 3600 U/L (3500 U/L in the abstract and results); triolein lipase and PNP-heptaoside amylase methods",
+        "basis": "babesiosis",
+        "note": "Used for 'probable' pancreatitis in B. rossi; extra-pancreatic sources were not excluded. The cut-offs are method-specific; check your laboratory's method [R1]. Catalytic lipase assays, including DGGR, also detect non-pancreatic lipases [R13].",
+        "refs": ["R1", "R13"]
+      },
+      {
+        "criterion": "Clinical reference standard",
+        "threshold": "compatible signs plus increased pancreatic lipase plus compatible ultrasound or advanced imaging",
+        "basis": "general canine",
+        "note": "No single test is a gold standard; do not use an enzyme or an image alone [R3].",
+        "refs": ["R3"]
+      }
+    ],
+    "clinical_signs": [
+      { "sign": "Anorexia", "note": "All 20 B. rossi dogs with pancreatitis [R1].", "refs": ["R1"] },
+      { "sign": "Vomiting", "note": "88% of B. rossi dogs with pancreatitis [R1]. In 87 unselected B. rossi dogs, 17 vomited, and only 5 of the 20 dogs with any gastrointestinal sign had Spec cPL above 400 µg/L [R2].", "refs": ["R1", "R2"] },
+      { "sign": "Melaena", "note": "44%; haematemesis in 1 dog [R1].", "refs": ["R1"] },
+      { "sign": "Cranial abdominal pain", "note": "41% [R1]. A painful, swollen pancreas on ultrasound in 8 B. canis dogs [R6].", "refs": ["R1", "R6"] },
+      { "sign": "Diarrhoea, abdominal effusion, ileus", "note": "Diarrhoea 25%, effusion 12%, severe ileus in 1 dog [R1].", "refs": ["R1"] },
+      { "sign": "Icterus", "note": "65% of dogs with pancreatitis, more than in complicated babesiosis in general; may support the suspicion [R1].", "refs": ["R1"] }
+    ],
+    "tests": [
+      { "test": "SNAP cPL (patient-side)", "finding": "Abnormal when pancreatic lipase is at or above 200 µg/L.", "note": "Sensitivity 82% and specificity 59% in one emergency study; confirm a positive result with Spec cPL [R3]. Used in B. canis dogs [R7].", "refs": ["R3", "R7"] },
+      { "test": "Spec cPL (laboratory)", "finding": "Above 400 µg/L supports pancreatitis.", "note": "Haemolysis and lipaemia did not affect Spec cPL; severe icterus slightly decreased it [R11].", "refs": ["R11"] },
+      { "test": "Catalytic lipase (DGGR, v-LIP-P, triolein) and amylase", "finding": "Increased activity; correlates with Spec cPL in B. rossi (rs 0.74 to 0.78; the paper gives both) [R2].", "note": "Not specific for pancreatic lipase [R13]. Haemolysis and icterus changed the v-LIP-P slide result [R11]; haemolysis can lower lipase and raise amylase activity on some methods [R1]. One DGGR assay was not affected by haemolysis [R12].", "refs": ["R2", "R13", "R11", "R1", "R12"] },
+      { "test": "Abdominal ultrasound", "finding": "Enlarged, hypoechoic pancreas; hyperechoic peripancreatic fat; peripancreatic fluid [R3]. Hyperechoic peripancreatic fat in a B. rossi dog [R1].", "note": "One abnormality: sensitivity 89%, specificity 43%; all three: sensitivity 43%, specificity 92% (general canine) [R3]. Hypoalbuminaemia and portal hypertension can also cause pancreatic oedema [R3].", "refs": ["R3", "R1"] },
+      { "test": "Haematology and chemistry", "finding": "Spec cPL correlated with band neutrophils in B. rossi and B. gibsoni [R2][R9]. Raised ALT in 93% and hypokalaemia in 63% of B. rossi dogs with pancreatitis [R1].", "note": "Check potassium, albumin, creatinine and glucose; these also guide the other complications [R1].", "refs": ["R2", "R9", "R1"] }
+    ],
+    "differentials": [
+      { "condition": "Haemorrhagic gastroenteritis or other gut signs of babesiosis (SY13)", "distinguish": "Pancreatitis needs an increased pancreas-specific lipase and compatible ultrasound changes; vomiting alone is not enough [R2][R3].", "refs": ["R2", "R3"] },
+      { "condition": "Hepatopathy and icterus (SY06)", "distinguish": "Raised ALT and icterus occur in both; pancreatitis can add cholestatic and inflammatory liver injury [R1].", "refs": ["R1"] },
+      { "condition": "Acute kidney injury (SY05)", "distinguish": "Azotaemia raises amylase and catalytic lipase; in B. rossi Spec cPL did not correlate with creatinine [R2][R1].", "refs": ["R2", "R1"] },
+      { "condition": "SIRS without clinical pancreatitis (SY11)", "distinguish": "Spec cPL was higher in B. rossi dogs with SIRS; vasculitis-related leakage was not excluded [R2].", "refs": ["R2"] },
+      { "condition": "Co-infection with Ehrlichia canis", "distinguish": "Pancreatic lipase is also increased in monocytic ehrlichiosis and parvovirus enteritis [R3].", "refs": ["R3"] },
+      { "condition": "Splenic pain or infarction", "distinguish": "Splenomegaly was found in all 49 B. canis dogs and splenic infarction was suspected in 2; image the spleen and the pancreas [R6].", "refs": ["R6"] },
+      { "condition": "Drug-induced pancreatitis", "distinguish": "Reported after atovaquone-proguanil for suspected B. gibsoni (one dog, Babesia PCR negative at referral) [R14].", "refs": ["R14"] }
+    ],
+    "grading": []
+  },
+  "approach": [
+    { "step": 1, "action": "Suspect it", "detail": "Look for anorexia, vomiting, melaena or cranial abdominal pain, especially from day 2 to 5 of hospital care [R1].", "setting": "practice" },
+    { "step": 2, "action": "Treat the parasite and look for other complications", "detail": "Give antibabesial treatment (TX00). Check for ARDS, renal failure and cerebral signs: these drove the deaths in dogs with pancreatitis [R1].", "setting": "practice" },
+    { "step": 3, "action": "Measure pancreatic lipase", "detail": "SNAP cPL in practice; confirm a positive result with Spec cPL [R3]. Read a catalytic lipase with care in haemolysed or icteric serum [R11][R1].", "setting": "practice" },
+    { "step": 4, "action": "Image the abdomen", "detail": "Ultrasound for pancreatic enlargement, hypoechogenicity, hyperechoic fat and fluid; the more changes, the more specific [R3].", "setting": "practice" },
+    { "step": 5, "action": "Supportive care", "detail": "Tailored fluids, opioid analgesia, an antiemetic, and food within 48 hours, with a low-fat diet [R15][R16][R17][R19][R21].", "setting": "practice" },
+    { "step": 6, "action": "Avoid what does not help", "detail": "No NSAIDs. Antibiotics only for a shown infection; acid suppressants only for ulceration or bleeding [R15][R22].", "setting": "practice" },
+    { "step": 7, "action": "Consider referral", "detail": "Oesophagostomy tube feeding, regional abdominal blocks and fuzapladib were studied in referral and trial settings [R20][R16][R18].", "setting": "referral" }
+  ],
+  "treatments": [
+    {
+      "name": "Intravenous fluid therapy",
+      "class": "supportive",
+      "aim": "Restore and keep hydration and pancreatic perfusion without overhydration.",
+      "status": "standard",
+      "evidence_level": "E",
+      "independent_studies": 0,
+      "evidence_summary": "No study in babesiosis. A narrative review of canine pancreatitis calls fluid therapy tailored to the patient crucial, and warns against overhydration [R15]. All dogs in a pancreatitis drug trial received fluids [R18]. In B. rossi, reperfusion after fluids or transfusion was proposed, not shown, as a trigger [R1].",
+      "doses": [],
+      "cautions": "Dogs with babesiosis may have ARDS and acute kidney injury; overhydration is a risk [R15][R1]. See SY08, SY05 and SY10 for fluid choice and rates.",
+      "monitoring": "Hydration status and signs of overhydration [R15].",
+      "availability": "",
+      "refs": ["R15", "R18", "R1"]
+    },
+    {
+      "name": "Opioid analgesia (methadone)",
+      "class": "supportive",
+      "aim": "Control the abdominal pain of pancreatitis.",
+      "status": "standard",
+      "evidence_level": "D",
+      "independent_studies": 1,
+      "evidence_summary": "No study in babesiosis. A review of canine pancreatitis calls analgesics very important [R15]. In a pilot trial in 10 dogs with pancreatitis (no babesiosis), the control arm received methadone every 4 h with pain scoring; 2 of 5 needed rescue doses [R16].",
+      "doses": [
+        { "drug": "methadone", "dose": "0.2 mg/kg", "route": "IV", "frequency": "every 4 h", "duration": "72 h", "context": "Dogs with acute pancreatitis, not babesiosis; 5 dogs, pilot randomised trial", "note": "Rescue dose 0.1 to 0.2 mg/kg IV when the short-form Glasgow pain score was 6 or more.", "refs": ["R16"] }
+      ],
+      "cautions": "Opioids can slow gut transit. Delayed gastric emptying was seen in 4 of 5 dogs on methadone, but also in dogs given a non-opioid block, so the disease itself contributes [R16].",
+      "monitoring": "Pain score (short-form Glasgow) every 4 h [R16].",
+      "availability": "",
+      "refs": ["R15", "R16"]
+    },
+    {
+      "name": "Maropitant",
+      "class": "supportive",
+      "aim": "Control vomiting and nausea, and so allow early feeding.",
+      "status": "standard",
+      "evidence_level": "D",
+      "independent_studies": 1,
+      "evidence_summary": "No study in babesiosis. Antiemetics are required in canine pancreatitis to control vomiting and fluid loss and to help early feeding [R15]. All 61 dogs in the fuzapladib trial received maropitant as standard care [R18]. The dose is from the product label [R17].",
+      "doses": [
+        { "drug": "maropitant (as maropitant citrate)", "dose": "1 mg/kg", "route": "SC or IV", "frequency": "once daily", "duration": "up to 5 consecutive days", "context": "Product label (UK summary of product characteristics), vomiting in dogs", "note": "Give IV as a single bolus, not mixed with other fluids. Equals 1 mL per 10 kg of the 10 mg/mL solution.", "refs": ["R17"] }
+      ],
+      "cautions": "Metabolised in the liver: use with caution in hepatic disease, which is common in complicated babesiosis (SY06). Caution in cardiac disease; do not combine with calcium channel blockers. Injection pain is very common SC [R17].",
+      "monitoring": "Vomiting frequency and appetite daily; liver function during long treatment [R17].",
+      "availability": "",
+      "refs": ["R15", "R18", "R17"]
+    },
+    {
+      "name": "Ondansetron",
+      "class": "supportive",
+      "aim": "Second antiemetic for vomiting or nausea that persists.",
+      "status": "proposed",
+      "evidence_level": "D",
+      "independent_studies": 1,
+      "evidence_summary": "No study in babesiosis. In a pilot trial of dogs with acute pancreatitis, all 10 dogs needed ondansetron for vomiting or nausea [R16]. Its effect was not tested.",
+      "doses": [
+        { "drug": "ondansetron", "dose": "0.2 to 0.5 mg/kg", "route": "IV", "frequency": "every 8 h", "duration": "", "context": "Dogs with acute pancreatitis, not babesiosis; 10 dogs, pilot trial (concurrent treatment)", "note": "", "refs": ["R16"] }
+      ],
+      "cautions": "No caution specific to babesiosis was found.",
+      "monitoring": "Vomiting and signs of nausea daily [R16].",
+      "availability": "",
+      "refs": ["R16"]
+    },
+    {
+      "name": "Early enteral feeding with a low-fat diet",
+      "class": "supportive",
+      "aim": "Feed the gut early to shorten anorexia and reduce gastrointestinal intolerance.",
+      "status": "standard",
+      "evidence_level": "D",
+      "independent_studies": 2,
+      "evidence_summary": "No study in babesiosis. In 34 dogs with pancreatitis, food offered within 48 h gave a faster return to voluntary eating and less gastrointestinal intolerance (26% vs 60%) [R19]. In 10 dogs with severe pancreatitis, oesophagostomy tube feeding was well tolerated, with fewer complications than parenteral nutrition [R20]. Low-fat gastrointestinal diets are often advised at first [R21].",
+      "doses": [],
+      "cautions": "In a dog with several complications, the diet of the most life-threatening illness comes first [R21].",
+      "monitoring": "Daily food intake as a share of resting energy requirement, vomiting and regurgitation [R19][R20].",
+      "availability": "",
+      "refs": ["R19", "R20", "R21"]
+    },
+    {
+      "name": "Fuzapladib sodium",
+      "class": "specific",
+      "aim": "Block neutrophil activation and migration into the pancreas (LFA-1 activation inhibitor).",
+      "status": "proposed",
+      "evidence_level": "D",
+      "independent_studies": 1,
+      "evidence_summary": "No study in babesiosis. A masked, placebo-controlled trial in 61 dogs with presumptive acute pancreatitis (35 evaluable) found a greater fall in a clinical activity score at day 3; lipase, CRP, survival and hospital stay did not differ or were not studied [R18]. Licensed in Japan with US conditional approval [R15].",
+      "doses": [
+        { "drug": "fuzapladib sodium", "dose": "0.4 mg/kg", "route": "IV", "frequency": "once daily", "duration": "3 consecutive days", "context": "Dogs with presumptive acute pancreatitis, not babesiosis; 61 dogs, randomised controlled trial", "note": "Given as 0.1 mL/kg of the reconstituted solution over 15 s to 1 min.", "refs": ["R18"] }
+      ],
+      "cautions": "The trial excluded dogs with severe anaemia, systemic infection, multiorgan failure or whole blood transfusion, so there are no data in dogs like those with complicated babesiosis [R18]. Adverse events were similar in drug and placebo groups [R18].",
+      "monitoring": "Clinical activity score daily for 4 days in the trial [R18].",
+      "availability": "",
+      "refs": ["R18", "R15"]
+    },
+    {
+      "name": "Prednisolone",
+      "class": "adjunct",
+      "aim": "Reduce the inflammatory response of pancreatitis.",
+      "status": "proposed",
+      "evidence_level": "D",
+      "independent_studies": 1,
+      "evidence_summary": "No study in babesiosis. In a non-randomised study of 65 dogs with pancreatitis, prednisolone gave a faster fall in CRP and clinical score and lower mortality 1 month after discharge (11.3% vs 46.1%) [R23]. A 2024 review says more studies are needed before routine use [R15].",
+      "doses": [
+        { "drug": "prednisolone", "dose": "1 mg/kg/day", "route": "not stated in the abstract", "frequency": "daily", "duration": "", "context": "Dogs with suspected acute pancreatitis, not babesiosis; 45 treated dogs, non-randomised clinical study", "note": "Read from the abstract only.", "refs": ["R23"] }
+      ],
+      "cautions": "In B. rossi, 8 of 20 dogs had received corticosteroids before pancreatitis was found; the authors judged them unlikely to be the cause [R1]. For immunosuppression in IMHA see SY02.",
+      "monitoring": "CRP and clinical score were the outcomes followed [R23].",
+      "availability": "",
+      "refs": ["R23", "R15", "R1"]
+    },
+    {
+      "name": "Liposomal bupivacaine transversus abdominis plane (TAP) block",
+      "class": "adjunct",
+      "aim": "Regional analgesia that lowers the opioid dose.",
+      "status": "proposed",
+      "evidence_level": "D",
+      "independent_studies": 1,
+      "evidence_summary": "No study in babesiosis. In a pilot trial in 10 dogs with pancreatitis, dogs with the block needed less methadone over 72 h (0.18 vs 0.99 mg/kg) [R16]. Ultrasound-guided, under sedation.",
+      "doses": [
+        { "drug": "bupivacaine liposome injectable suspension", "dose": "5.3 mg/kg total, diluted with saline to 1 mL/kg", "route": "ultrasound-guided TAP block, 0.25 mL/kg at each of 4 sites", "frequency": "once", "duration": "single block", "context": "Dogs with acute pancreatitis, not babesiosis; 5 dogs, pilot randomised trial", "note": "Referral technique. Two of 5 dogs needed rescue methadone.", "refs": ["R16"] }
+      ],
+      "cautions": "Pilot data only. No data in thrombocytopenic dogs were found.",
+      "monitoring": "Pain score every 4 h [R16].",
+      "availability": "",
+      "refs": ["R16"]
+    },
+    {
+      "name": "Antibiotics, only for a shown or strongly suspected bacterial infection",
+      "class": "supportive",
+      "aim": "Treat aspiration pneumonia, bacterial translocation or another infection, not pancreatitis itself.",
+      "status": "proposed",
+      "evidence_level": "E",
+      "independent_studies": 0,
+      "evidence_summary": "No study in babesiosis. A 2024 review says antibiotics should not be used indiscriminately in canine pancreatitis [R15]. In the fuzapladib trial, antibiotics were often given by primary care vets although not routinely recommended [R18].",
+      "doses": [],
+      "cautions": "In B. rossi, band neutrophil counts rose with Spec cPL, so a left shift may reflect pancreatic inflammation [R2].",
+      "monitoring": "",
+      "availability": "",
+      "refs": ["R15", "R18", "R2"]
+    },
+    {
+      "name": "Acid suppressants, only for ulceration or bleeding",
+      "class": "supportive",
+      "aim": "Treat gastrointestinal ulceration or bleeding, not pancreatitis itself.",
+      "status": "proposed",
+      "evidence_level": "D",
+      "independent_studies": 1,
+      "evidence_summary": "An ACVIM consensus found no evidence that acid suppression helps dogs with pancreatitis unless there is gastrointestinal ulceration or erosion; a human placebo-controlled pantoprazole trial showed no benefit [R22]. In B. rossi pancreatitis, melaena was seen in 44% [R1].",
+      "doses": [
+        { "drug": "esomeprazole", "dose": "1 mg/kg", "route": "IV", "frequency": "every 12 h", "duration": "", "context": "One dog with acute pancreatitis and clinically evident gastrointestinal bleeding, not babesiosis; pilot trial", "note": "Twice-daily PPI dosing works better than once daily for ulcer treatment [R22].", "refs": ["R16"] }
+      ],
+      "cautions": "The consensus found no compelling evidence for routine use in pancreatitis or in critically ill patients without risk factors such as gastrointestinal bleeding or NSAID use [R22].",
+      "monitoring": "",
+      "availability": "",
+      "refs": ["R22", "R1", "R16"]
+    },
+    {
+      "name": "Non-steroidal anti-inflammatory drugs",
+      "class": "supportive",
+      "aim": "Analgesia (not advised in pancreatitis).",
+      "status": "harmful",
+      "evidence_level": "E",
+      "independent_studies": 0,
+      "evidence_summary": "A 2024 review of canine pancreatitis says NSAIDs should be avoided [R15]. NSAIDs are a risk factor for gastrointestinal ulceration [R22]. No study in babesiosis.",
+      "doses": [],
+      "cautions": "Many dogs with complicated babesiosis also have acute kidney injury (SY05) and thrombocytopenia (SY03).",
+      "monitoring": "",
+      "availability": "",
+      "refs": ["R15", "R22"]
+    }
+  ],
+  "prognosis": {
+    "text": "In the B. rossi series, 5 of 19 dogs with pancreatitis died (4 died, 1 euthanased; 26%), and 4 of these 5 had ARDS, renal failure or cerebral signs [R1]. In a larger B. rossi cohort, Spec cPL above 400 µg/L was not linked to death, but only 6 of 87 dogs died [R2]. In B. canis, 40% of dogs with pancreatitis died [R8]. Whether pancreatitis itself worsens the outcome, or marks severe multi-organ disease, is not known.",
+    "indicators": [
+      { "finding": "ARDS, renal failure or cerebral signs with pancreatitis", "meaning": "Present in 4 of 5 B. rossi dogs that died [R1].", "refs": ["R1"] },
+      { "finding": "Spec cPL above 400 µg/L at admission (B. rossi)", "meaning": "Not associated with death (3 of 6 non-survivors); higher in dogs with SIRS [R2].", "refs": ["R2"] },
+      { "finding": "Pancreatitis in B. canis", "meaning": "40% of 240-dog cohort cases with pancreatitis died [R8]; multiple complications carried 67% mortality in Hungary [R5].", "refs": ["R8", "R5"] },
+      { "finding": "Pancreatitis in B. rossi (review)", "meaning": "Listed with acidaemia, hyperlactataemia and other complications as associated with mortality above 30% [R4].", "refs": ["R4"] }
+    ]
+  },
+  "related": [
+    { "id": "TX00", "why": "The drugs against the parasite, including atovaquone-proguanil." },
+    { "id": "SY11", "why": "SIRS, multiple organ dysfunction and the order of care." },
+    { "id": "SY13", "why": "Vomiting and diarrhoea with no pancreatic cause." },
+    { "id": "SY06", "why": "Hepatopathy and icterus, which often occur with pancreatitis." },
+    { "id": "SY08", "why": "ARDS, the complication most linked to death in dogs with pancreatitis." },
+    { "id": "SY05", "why": "Acute kidney injury and its effect on lipase and amylase." },
+    { "id": "SY10", "why": "Shock and fluid therapy." },
+    { "id": "SY02", "why": "Glucocorticoids for secondary IMHA." }
+  ],
+  "evidence_gaps": [
+    "No treatment for pancreatitis has been tested in dogs with babesiosis; every dose on this page is from general canine pancreatitis or a product label.",
+    "Spec cPL has not been checked against histology or ultrasound in babesiosis, so the meaning of a high value without signs is unknown.",
+    "Systematic abdominal ultrasound has not been done in any babesiosis cohort.",
+    "It is not known whether pancreatitis changes survival independently of ARDS, renal failure and SIRS.",
+    "No source with a metoclopramide dose for dogs with pancreatitis was read in this run, so metoclopramide is not on the page.",
+    "Fuzapladib and other new drugs were tested in dogs without severe anaemia or systemic infection; their safety in babesiosis is unknown.",
+    "Plasma transfusion is not routinely advised in canine pancreatitis, and no study in babesiosis was found."
+  ],
+  "references": [
+    { "ref": "R1", "authors": "Möhr AJ, Lobetti RG, van der Lugt JJ", "year": 2000, "title": "Acute pancreatitis: a newly recognised potential complication of canine babesiosis", "journal": "Journal of the South African Veterinary Association", "volume_pages": "71(4):232-239", "doi": "10.4102/jsava.v71i4.721", "pmid": "11212934", "url": "", "article_id": "", "type": "case series", "species": "B. rossi", "n_dogs": 20, "read": "full text" },
+    { "ref": "R2", "authors": "Köster LS, Steiner JM, Suchodolski JS, Schoeman JP", "year": 2015, "title": "Serum canine pancreatic-specific lipase concentrations in dogs with naturally occurring Babesia rossi infection", "journal": "Journal of the South African Veterinary Association", "volume_pages": "86(1):E1-7", "doi": "10.4102/jsava.v86i1.1297", "pmid": "26304138", "url": "", "article_id": "CB508", "type": "cohort", "species": "B. rossi", "n_dogs": 87, "read": "full text" },
+    { "ref": "R3", "authors": "Cridge H, Twedt DC, Marolf AJ et al.", "year": 2021, "title": "Advances in the diagnosis of acute pancreatitis in dogs", "journal": "Journal of Veterinary Internal Medicine", "volume_pages": "35(6):2572-2587", "doi": "10.1111/jvim.16292", "pmid": "34751442", "url": "", "article_id": "", "type": "review", "species": "", "n_dogs": null, "read": "full text" },
+    { "ref": "R4", "authors": "Jacobson LS", "year": 2006, "title": "The South African form of severe and complicated canine babesiosis: clinical advances 1994-2004", "journal": "Veterinary Parasitology", "volume_pages": "138(1-2):126-139", "doi": "10.1016/j.vetpar.2006.01.047", "pmid": "16503090", "url": "", "article_id": "", "type": "review", "species": "B. rossi", "n_dogs": null, "read": "abstract" },
+    { "ref": "R5", "authors": "Máthé A, Vörös K, Papp L, Reiczigel J", "year": 2006, "title": "Clinical manifestations of canine babesiosis in Hungary (63 cases)", "journal": "Acta Veterinaria Hungarica", "volume_pages": "54(3):367-385", "doi": "10.1556/AVet.54.2006.3.7", "pmid": "17020140", "url": "", "article_id": "", "type": "case series", "species": "B. canis", "n_dogs": 63, "read": "abstract" },
+    { "ref": "R6", "authors": "Weingart C, Helm CS, Müller E et al.", "year": 2023, "title": "Autochthonous Babesia canis infections in 49 dogs in Germany", "journal": "Journal of Veterinary Internal Medicine", "volume_pages": "37(1):140-149", "doi": "10.1111/jvim.16611", "pmid": "36629833", "url": "", "article_id": "CB106", "type": "case series", "species": "B. canis", "n_dogs": 49, "read": "full text" },
+    { "ref": "R7", "authors": "Crnogaj M, Cerón JJ, Šmit I et al.", "year": 2017, "title": "Relation of antioxidant status at admission and disease severity and outcome in dogs naturally infected with Babesia canis canis", "journal": "BMC Veterinary Research", "volume_pages": "13(1):114", "doi": "10.1186/s12917-017-1020-9", "pmid": "28438201", "url": "", "article_id": "CB006", "type": "cohort", "species": "B. canis", "n_dogs": 40, "read": "full text" },
+    { "ref": "R8", "authors": "Strobl A, Künzel F, Tichy A, Leschnik M", "year": 2020, "title": "Complications and risk factors regarding the outcomes of canine babesiosis in Central Europe - A retrospective analysis of 240 cases", "journal": "Acta Veterinaria Hungarica", "volume_pages": "68(2):160-168", "doi": "10.1556/004.2020.00031", "pmid": "32877354", "url": "", "article_id": "CB061", "type": "cohort", "species": "B. canis", "n_dogs": 240, "read": "abstract" },
+    { "ref": "R9", "authors": "Masuda M, Otsuka-Yamasaki Y, Shiranaga N et al.", "year": 2019, "title": "Retrospective study on intercurrent pancreatitis with Babesia gibsoni infection in dogs", "journal": "Journal of Veterinary Medical Science", "volume_pages": "81(11):1558-1563", "doi": "10.1292/jvms.19-0280", "pmid": "31511445", "url": "", "article_id": "CB045", "type": "case series", "species": "B. gibsoni", "n_dogs": 20, "read": "full text" },
+    { "ref": "R10", "authors": "Leisewitz AL, Mrljak V, Dear JD, Birkenheuer A", "year": 2023, "title": "The diverse pathogenicity of various Babesia parasite species that infect dogs", "journal": "Pathogens", "volume_pages": "12(12):1437", "doi": "10.3390/pathogens12121437", "pmid": "38133320", "url": "", "article_id": "CB119", "type": "review", "species": "", "n_dogs": null, "read": "full text" },
+    { "ref": "R11", "authors": "Steiner JM, Gomez R, Suchodolski JS, Lidbury JA", "year": 2017, "title": "Specificity of, and influence of hemolysis, lipemia, and icterus on serum lipase activity as measured by the v-LIP-P slide", "journal": "Veterinary Clinical Pathology", "volume_pages": "46(3):508-515", "doi": "10.1111/vcp.12517", "pmid": "28636207", "url": "", "article_id": "", "type": "experimental", "species": "", "n_dogs": 58, "read": "abstract" },
+    { "ref": "R12", "authors": "Goodband EL, Serrano G, Constantino-Casas F et al.", "year": 2018, "title": "Validation of a commercial 1,2-o-dilauryl-rac-glycero glutaric acid-(6'-methylresorufin) ester lipase assay for diagnosis of canine pancreatitis", "journal": "Veterinary Record Open", "volume_pages": "5(1):e000270", "doi": "10.1136/vetreco-2017-000270", "pmid": "29868172", "url": "", "article_id": "", "type": "experimental", "species": "", "n_dogs": null, "read": "abstract" },
+    { "ref": "R13", "authors": "Lim SY, Xenoulis PG, Stavroulaki EM et al.", "year": 2020, "title": "The 1,2-o-dilauryl-rac-glycero-3-glutaric acid-(6'-methylresorufin) ester (DGGR) lipase assay in cats and dogs is not specific for pancreatic lipase", "journal": "Veterinary Clinical Pathology", "volume_pages": "49(4):607-613", "doi": "10.1111/vcp.12906", "pmid": "33111388", "url": "", "article_id": "", "type": "experimental", "species": "", "n_dogs": 6, "read": "abstract" },
+    { "ref": "R14", "authors": "Choi HI, Ko HY, Shin IS, Kim HJ", "year": 2019, "title": "Malarone® induced pancreatitis and alopecia in a dog: a case report", "journal": "BMC Veterinary Research", "volume_pages": "15(1):314", "doi": "10.1186/s12917-019-2056-9", "pmid": "31477120", "url": "", "article_id": "", "type": "case report", "species": "B. gibsoni", "n_dogs": 1, "read": "abstract" },
+    { "ref": "R15", "authors": "Lim SY, Cridge H, Twedt DC et al.", "year": 2024, "title": "Management of acute-onset pancreatitis in dogs: a Narrative Review", "journal": "Journal of the American Veterinary Medical Association", "volume_pages": "262(9):1231-1240", "doi": "10.2460/javma.24.02.0107", "pmid": "38838711", "url": "", "article_id": "", "type": "review", "species": "", "n_dogs": null, "read": "abstract" },
+    { "ref": "R16", "authors": "Angst M, Thibault CJ, Wang S, Cridge H", "year": 2026, "title": "Bupivacaine liposomal injectable suspension (Nocita) via transversus abdominis plane (TAP) block for management of pain in dogs with acute pancreatitis: a pilot study", "journal": "Animals", "volume_pages": "16(20):3272", "doi": "10.3390/ani16203272", "pmid": "42939203", "url": "", "article_id": "", "type": "trial", "species": "", "n_dogs": 10, "read": "full text" },
+    { "ref": "R17", "authors": "Zoetis UK Limited", "year": 2024, "title": "Cerenia 10 mg/ml solution for injection for dogs and cats: summary of product characteristics", "journal": "Veterinary Medicines Directorate, Product Information Database", "volume_pages": "", "doi": "", "pmid": "", "url": "https://www.vmd.defra.gov.uk/productInformationdatabase/files/SPC_Documents/SPC_2243303.PDF", "article_id": "", "type": "label", "species": "", "n_dogs": null, "read": "full text" },
+    { "ref": "R18", "authors": "Steiner JM, Lainesse C, Noshiro Y et al.", "year": 2023, "title": "Fuzapladib in a randomized controlled multicenter masked study in dogs with presumptive acute onset pancreatitis", "journal": "Journal of Veterinary Internal Medicine", "volume_pages": "37(6):2084-2092", "doi": "10.1111/jvim.16897", "pmid": "37811705", "url": "", "article_id": "", "type": "trial", "species": "", "n_dogs": 61, "read": "full text" },
+    { "ref": "R19", "authors": "Harris JP, Parnell NK, Griffith EH, Saker KE", "year": 2017, "title": "Retrospective evaluation of the impact of early enteral nutrition on clinical outcomes in dogs with pancreatitis: 34 cases (2010-2013)", "journal": "Journal of Veterinary Emergency and Critical Care", "volume_pages": "27(4):425-433", "doi": "10.1111/vec.12612", "pmid": "28510290", "url": "", "article_id": "", "type": "cohort", "species": "", "n_dogs": 34, "read": "abstract" },
+    { "ref": "R20", "authors": "Mansfield CS, James FE, Steiner JM et al.", "year": 2011, "title": "A pilot study to assess tolerability of early enteral nutrition via esophagostomy tube feeding in dogs with severe acute pancreatitis", "journal": "Journal of Veterinary Internal Medicine", "volume_pages": "25(3):419-425", "doi": "10.1111/j.1939-1676.2011.0703.x", "pmid": "21418318", "url": "", "article_id": "", "type": "trial", "species": "", "n_dogs": 10, "read": "abstract" },
+    { "ref": "R21", "authors": "Cridge H, Parker VJ, Kathrani A", "year": 2024, "title": "Nutritional management of pancreatitis and concurrent disease in dogs and cats", "journal": "Journal of the American Veterinary Medical Association", "volume_pages": "262(6):834-840", "doi": "10.2460/javma.23.11.0641", "pmid": "38569533", "url": "", "article_id": "", "type": "review", "species": "", "n_dogs": null, "read": "abstract" },
+    { "ref": "R22", "authors": "Marks SL, Kook PH, Papich MG et al.", "year": 2018, "title": "ACVIM consensus statement: Support for rational administration of gastrointestinal protectants to dogs and cats", "journal": "Journal of Veterinary Internal Medicine", "volume_pages": "32(6):1823-1840", "doi": "10.1111/jvim.15337", "pmid": "30378711", "url": "", "article_id": "", "type": "guideline", "species": "", "n_dogs": null, "read": "full text" },
+    { "ref": "R23", "authors": "Okanishi H, Nagata T, Nakane S, Watari T", "year": 2019, "title": "Comparison of initial treatment with and without corticosteroids for suspected acute pancreatitis in dogs", "journal": "Journal of Small Animal Practice", "volume_pages": "60(5):298-304", "doi": "10.1111/jsap.12994", "pmid": "30868606", "url": "", "article_id": "", "type": "cohort", "species": "", "n_dogs": 65, "read": "abstract" }
+  ],
+  "search": {
+    "date": "2026-11-12",
+    "sources": ["local review", "PubMed", "PubMed Central", "web", "product label"],
+    "note": "Local review (combined_set.csv, 41 term articles), PubMed for Babesia with pancreatitis (11 hits) and for canine pancreatitis treatment, diagnosis and assays. Left out: low-quality B. gibsoni series from India and Korea that used amylase and lipase only. The 2024 JAVMA review and the BSAVA formulary could not be read beyond the abstract, so no metoclopramide or buprenorphine dose is given."
+  }
+}

@@ -1,0 +1,127 @@
+<div class="fs-experiment-disease-space">
+  <fs-card title="Primary result" [subtitle]="primary()?.label ?? 'Disease-space map'">
+    @if (primary(); as p) {
+      <div class="fs-experiment-disease-space__headline">
+        <div class="fs-experiment-disease-space__stat">
+          <span class="fs-experiment-disease-space__stat-label">{{ p.statistic }}</span>
+          <span class="fs-experiment-disease-space__stat-value">{{ primaryEstimate() }}</span>
+        </div>
+        <div class="fs-experiment-disease-space__stat">
+          <span class="fs-experiment-disease-space__stat-label">95% interval</span>
+          <span class="fs-experiment-disease-space__stat-value fs-experiment-disease-space__stat-value--small">{{ primaryInterval() }}</span>
+        </div>
+        <div class="fs-experiment-disease-space__stat">
+          <span class="fs-experiment-disease-space__stat-label">n</span>
+          <span class="fs-experiment-disease-space__stat-value fs-experiment-disease-space__stat-value--small">{{ p.n }} {{ p.n_unit }}</span>
+        </div>
+        <div class="fs-experiment-disease-space__stat">
+          <span class="fs-experiment-disease-space__stat-label">Independent sources</span>
+          <span class="fs-experiment-disease-space__stat-value fs-experiment-disease-space__stat-value--small">{{ p.independent_sources }}</span>
+        </div>
+        @if (p.p !== null) {
+          <div class="fs-experiment-disease-space__stat">
+            <span class="fs-experiment-disease-space__stat-label">Permutation p · BH q</span>
+            <span class="fs-experiment-disease-space__stat-value fs-experiment-disease-space__stat-value--small">{{ primaryP() }} · {{ primaryQ() }}</span>
+          </div>
+        }
+      </div>
+      <p class="fs-experiment-disease-space__status">
+        <fs-badge variant="tonal" intent="warning">{{ p.status }}</fs-badge>
+      </p>
+      <p class="fs-experiment-disease-space__text">{{ p.headline }}</p>
+      @if (secondaryRows().length) {
+        <fs-data-grid [data]="secondaryRows()" [columns]="secondaryColumns" keyExpr="id" />
+      }
+      <p class="fs-experiment-disease-space__footnote">
+        Sources: {{ p.sources.join('; ') }}.
+        @if (p.expected_direction) { Expected direction: {{ p.expected_direction }}. }
+        One species (B. rossi), one country.
+      </p>
+    } @else {
+      <p class="fs-experiment-disease-space__footnote">This run stored no primary result.</p>
+    }
+  </fs-card>
+
+  @if (checks(); as c) {
+    <fs-card title="Construction and validity checks" subtitle="Does the pseudo-stage behave like a stage? A failed check means the stage score is not validated">
+      @for (set of c.sets; track set.construction) {
+        <h4 class="fs-experiment-disease-space__set">{{ set.construction }}</h4>
+        <ul class="fs-experiment-disease-space__checks">
+          @for (row of set.rows; track row.name) {
+            <li>
+              <fs-badge variant="tonal" [intent]="row.passed ? 'success' : 'danger'">{{ row.passed ? 'Passed' : 'Failed' }}</fs-badge>
+              <span><strong>{{ row.name }}.</strong> {{ row.detail }}</span>
+            </li>
+          }
+        </ul>
+      }
+    </fs-card>
+  }
+
+  <fs-card title="Disease space: haematocrit by reticulocytes"
+           subtitle="Beagle reference course (5 experimentally infected dogs, before treatment) and naturally infected dogs at admission">
+    @if (mapA(); as m) {
+      <fs-chart [options]="mapAOptions()" [height]="520" [empty]="!m.groups.length" emptyMessage="No points in this map" />
+      <p class="fs-experiment-disease-space__footnote">
+        {{ m.footnote }} The band is {{ m.within_band_distance }} spread units around the course; one spread unit is
+        {{ m.spread_sd_units.toFixed(2) }} SD of the Beagle samples. Hover a point for its pseudo-stage and distance.
+      </p>
+    } @else {
+      <p class="fs-experiment-disease-space__footnote">This run stored no map in this plane.</p>
+    }
+  </fs-card>
+
+  @if (mapB(); as m) {
+    <fs-card title="Disease space: haematocrit by band neutrophils" subtitle="Secondary plane (H3), DS02 and DS05 only">
+      <fs-chart [options]="mapBOptions()" [height]="460" />
+      <p class="fs-experiment-disease-space__footnote">{{ m.footnote }}</p>
+    </fs-card>
+  }
+
+  @if (histogram(); as h) {
+    <fs-card title="Pseudo-stage distribution" subtitle="Share of dogs in each tenth of the Beagle course (spec construction) · descriptive">
+      <fs-chart [options]="histogramOptions()" [height]="320" />
+      <p class="fs-experiment-disease-space__footnote">
+        The two end bins hold the dogs that project onto an end of the course, mostly because they are more anaemic than any Beagle before treatment.
+        DS03 and DS05 are different sources and settings; they are shown side by side, not compared by a test.
+      </p>
+    </fs-card>
+  }
+
+  @if (geometryRows().length) {
+    <fs-card title="Geometry by cohort" subtitle="Share within 2 spread units of the Beagle course and share on an end of it (Wilson 95% CI)">
+      <fs-data-grid [data]="geometryRows()" [columns]="geometryColumns" keyExpr="id" />
+    </fs-card>
+  }
+
+  @if (habitusRows().length) {
+    <fs-card title="Position on the map by habitus grade" subtitle="DS05 · spec construction · exploratory (DS05 already seen)">
+      <fs-data-grid [data]="habitusRows()" [columns]="habitusColumns" keyExpr="habitus" />
+    </fs-card>
+  }
+
+  @if (tests(); as t) {
+    <fs-card title="All tests" [subtitle]="t.correction + ' (family of ' + t.family_size + ') · S1 to S3 and V carry raw p only'">
+      @for (set of testSets(); track set.construction) {
+        <h4 class="fs-experiment-disease-space__set">{{ set.construction }}</h4>
+        <fs-data-grid [data]="set.rows" [columns]="testColumns" keyExpr="code" />
+      }
+      <p class="fs-experiment-disease-space__footnote">
+        Partial and plain Spearman rho; permutation p (10,000, Freedman-Lane for partial rho); 95% CI from 2,000 bootstrap resamples of dogs.
+        Higher habitus is brighter, so a negative rho means duller dogs further along or further away.
+      </p>
+    </fs-card>
+  }
+
+  @if (looSets().length) {
+    <fs-card title="Leave one Beagle out" subtitle="How much the course, and the primary result, depend on each of the 5 Beagles">
+      @for (set of looSets(); track set.construction) {
+        <h4 class="fs-experiment-disease-space__set">{{ set.construction }}</h4>
+        <fs-data-grid [data]="set.rows" [columns]="looColumns" keyExpr="left_out" />
+      }
+      <p class="fs-experiment-disease-space__footnote">
+        Rank agreement is the Spearman rho between the DS05 pseudo-stage (or distance) of the refit and of the full fit. A negative value means the refit reversed the order.
+      </p>
+    </fs-card>
+  }
+</div>

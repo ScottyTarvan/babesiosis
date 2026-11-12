@@ -1,0 +1,45 @@
+ref,section,statement,value,species,design,n_dogs,cohort_id,read,location,note
+R1,description,Hypoglycaemia (<3.3 mmol/L) in 9% of 250 B. rossi dogs; 19.8% of admitted,3.3 mmol/L,B. rossi,prospective cohort,250,,abstract,Abstract,Source <60 mg/dL; dissertation R9 gives mmol/L
+R1,diagnosis,Collapse and young age remained associated with hypoglycaemia; toy breeds and pregnant bitches not at higher risk,,B. rossi,prospective cohort,250,,abstract,Abstract,OR collapse 18 (95% CI 1.9-171)
+R1,diagnosis,"Measure glucose in all inpatients; mandatory in collapsed dogs, puppies, severe anaemia, vomiting, icterus",,B. rossi,prospective cohort,250,,abstract,Abstract conclusion,
+R9,description,"Severe hypoglycaemia 2.2 mmol/L or less in 16 dogs, 5 below 1 mmol/L; hyperglycaemia never above 15 mmol/L",2.2 mmol/L; 5.6 mmol/L,B. rossi,"dissertation, prospective cohort",250,,full text,Summary p. iii; Results p. 20,
+R9,diagnosis,"Only 2 hypoglycaemic dogs had seizures, both recovered after IV dextrose; 3 semi-comatose dogs had miosis that corrected after dextrose",,B. rossi,dissertation,250,,full text,Discussion 5.4,
+R9,treatment,50% dextrose 0.5 mL/kg IV bolus in a collapsed hypoglycaemic dog (glucose 2.65 mmol/L); response within 90 s,0.5 mL/kg of 50% dextrose IV,B. rossi,case in dissertation (video addendum),1,,full text,"Video clip page, p. 51","""An iv bolus of 50% dextrose was administered at 0.5ml/kg"""
+R9,diagnosis,"Stored blood loses glucose by glycolysis, worse in inflammation; NaF/oxalate tubes used",,,dissertation literature review,,,full text,Section 1.10,
+R2,description,"320 B. rossi dogs: 19.2% hypoglycaemic, 24.9% hyperglycaemic; 55.5% of 209 had lactate >2 mmol/L",3.3 and 5.5 mmol/L; 2 mmol/L,B. rossi,cohorts 2006-2016,320,overlaps earlier Onderstepoort cohorts,full text,Results,
+R2,prognosis,OR death with hypoglycaemia 3.47 (1.54-7.79),,B. rossi,cohort,320,,full text,Table 1; Results,
+R2,prognosis,"Lactate cut-off 4.1 mmol/L for death, sensitivity 75%, specificity 75%",4.1 mmol/L,B. rossi,cohort,209,,full text,Tables 2 and 3,
+R2,prognosis,"Cortisol cut-off 388 nmol/L (sens 87.5, spec 82.9); TT4 4.8 nmol/L (sens 75, spec 81.6)",388 nmol/L; 4.8 nmol/L,B. rossi,cohort,245,,full text,Table 3,
+R2,diagnosis,Median pH 7.429; mixed metabolic acidosis and respiratory alkalosis in 76%; expected pCO2 fall 0.7 mmHg per 1 mmol/L fall in HCO3,pCO2 >2 mmHg below expected,B. rossi,cohort,252,,full text,"Results, blood gas",source uses mEq/L for HCO3
+R2,diagnosis,Cerebral babesiosis defined with normal or raised glucose,,B. rossi,cohort,320,,full text,Results,
+R2,prognosis,34 of 320 (10.6%) died of the disease; euthanasia not stated,,B. rossi,cohort,320,,full text,Results,
+R3,description,Mixed metabolic acidosis and respiratory alkalosis in 31 of 34; hypoalbuminaemic alkalosis in all; dilutional acidosis 23 of 34; low SID mainly from hyperchloraemia; negative BE in all,,B. rossi,prospective case series,34,,abstract,Abstract,
+R4,prognosis,"Higher cortisol and ACTH, lower T4 and fT4 in the 7 dogs that died; TSH no different",,B. rossi,prospective cross-sectional,95,CH31,abstract,Abstract,
+R5,treatment,Basal and ACTH-stimulated cortisol high; absence of adrenal insufficiency,,B. rossi,prospective case-control,68,CH31,abstract,Abstract,5 microg/kg tetracosactrin IV was a test dose only
+R6,prognosis,"Hyperlactataemia 50%, hypoglycaemia 22.2% of 90; lactate >5 mmol/L at admission, >2.5 mmol/L at 8-24 h, or <50% fall associated with death",5.0 and 2.5 mmol/L,B. rossi,prospective cohort,90,,abstract,Abstract,"Source units mg/dL: >45, >22.5, persistently >40; glucose <59.4 mg/dL"
+R7,prognosis,Lactate >5 mmol/L at admission; >2.5 mmol/L or failure to fall to <50%; persistently >4.4 mmol/L; >4.4 at 24 h predicted death in every case,"5, 2.5, 4.4 mmol/L",B. rossi,narrative review (cites Nel 2004),,,full text,Prognosis section,
+R7,treatment,Fluid support with added potassium chloride; potassium often low in icteric dogs; miosis disappears after dextrose,,B. rossi,narrative review,,,full text,Laboratory findings; Treatment; Prognosis,
+R8,description,Negative glucose-lactate correlation; non-survivors differed; hypoglycaemia should be treated aggressively,,B. rossi,case series,20,,abstract,Abstract,
+R10,description,"Early B. canis: hypokalaemia 16/40, hypochloraemia 36/40, hyponatraemia 16/40, alkalaemia 24/40",,B. canis,case-control,40,,abstract,Abstract,
+R11,description,Experimental infection: cortisol peak and T4 nadir 96-144 h after infection; return towards baseline after treatment,,B. rossi,experimental,5,CH09,full text,Abstract; Results,
+R12,diagnosis,Acute illness can disturb thyroid tests up to 21 days of recovery; postpone testing,21 days,,prospective longitudinal (non-babesiosis),19,,full text,Abstract conclusions,
+R13,description,Insulin appropriately low in hypoglycaemic dogs; hyperinsulinaemia infrequent; other causes speculated,3.3 and 5.5 mmol/L,B. rossi,prospective cross-sectional,94,CH31,abstract,Abstract,
+R14,description,Half of 14 B. canis dogs had mixed disorders; acidosis from lactate and chloride; alkalosis from hypochloraemia and hypoalbuminaemia,,B. canis,case-control,14,,abstract,Abstract,
+R15,description,"Hyponatraemia, hypokalaemia, hyperchloraemia most prevalent in 70 B. canis dogs; azotaemic dogs had lower sodium",,B. canis,case series,70,,abstract,Abstract,
+R16,prognosis,"All 8 non-survivors hyperlactataemic (median 8.35 mmol/L); 6/7 survivors normal; 6 died, 2 euthanased",8.35 mmol/L,B. canis,case series,15,CH21,full text,Results,
+R17,description,"Low TT3, TT4, FT4 and TSH in 13 dogs vs 10 controls; IL-6 inversely related to T3",,B. canis,case-control,13,CH37,abstract,Abstract,
+R18,prognosis,Lactate among specific prognostic markers in B. gibsoni,,B. gibsoni,cohort,,,abstract,Abstract,108 dogs screened; babesiosis subset not stated in abstract
+R19,diagnosis,"Hypoglycaemic survivors: median temperature 37.2 C, last meal 36 h, collapsed 10/12; higher cortisol, lower T4",37.2 C,B. rossi,prospective cross-sectional,36,,full text,Table 1; Abstract,
+R20,diagnosis,Two veterinary glucometers read higher than the laboratory (95% limits up to +2.1 and +3.5 mmol/L); one affected by PCV,,,method comparison (non-babesiosis),,,abstract,Abstract,120 samples
+R21,diagnosis,"3 of 21 non-azotaemic B. canis dogs met SIADH criteria, linked with low MAP",,B. canis,case-control,29,,full text,Abstract; Results,
+R22,treatment,"50% dextrose 0.5 to 1 mL/kg, diluted at least 1:2 with saline, peripheral vein, over 5-10 min, repeat if persists",0.5 to 1 mL/kg of 50% dextrose IV,,narrative review (any cause),,,full text,Emergency management,"""0.5 to 1 mL/kg BW of 50% dextrose, diluted with saline"""
+R22,treatment,"2.5% to 5% dextrose in balanced crystalloid as CRI at maintenance rate, adjusted; glucose hourly, target 3.3-8.3 mmol/L",2.5% to 5% at maintenance rate,,narrative review,,,full text,Emergency management,"""2.5% to 5% dextrose diluted into a balanced crystalloid"""
+R22,treatment,Feed small frequent meals with complex carbohydrate when mentation is normal,,,narrative review,,,full text,Emergency management,
+R22,treatment,Excess dextrose: osmotic diuresis and dehydration; give slowly over 5-10 min,,,narrative review,,,full text,Emergency management,
+R23,treatment,Potassium IV not faster than 0.5 mEq/kg/h,0.5 mmol/kg/h,,conference proceedings (level E),,,full text,Treatment of hypokalaemia,"""should not be infused at a rate greater than 0.5 mEq/kg/hr"""
+R24,treatment,Balanced crystalloids preferred over 0.9% NaCl in sepsis; high-chloride fluids linked to AKI,,,narrative review (sepsis),,,full text,Fluid types: crystalloids,
+R25,treatment,Suggest against bicarbonate for hypoperfusion lactic acidaemia; suggest it for pH 7.2 or less with AKI (human),pH 7.2,,guideline (human),,,full text,Recommendations 71-72,
+R26,treatment,"Glucagon median bolus 50 ng/kg, median max CRI 15 ng/kg/min; mean 7 h to normoglycaemia; 7/9 insulinoma; 5/9 survived",50 ng/kg; 15 ng/kg/min,,retrospective case series (non-babesiosis),9,,abstract,Abstract,"""median bolus of glucagon was 50 ng/kg"""
+R27,description,B. rossi dogs presented with hypoalbuminaemic alkalosis and hyperchloraemic dilutional acidosis,,B. rossi,randomised trial (transfusion),12,,abstract,Abstract,
+R28,prognosis,Acidaemia associated with mortality above 30% vs 12% overall in admitted cases,,B. rossi,narrative review,,,abstract,Abstract,
+R29,treatment,No survival difference with hydrocortisone in 47 dogs with septic shock (treated group sicker),,,retrospective cohort (non-babesiosis),47,,abstract,Abstract,Dose not given in abstract

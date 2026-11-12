@@ -1,0 +1,1181 @@
+{
+  "schema_version": 1,
+  "id": "SY08",
+  "title": "Acute lung injury, ARDS and pulmonary oedema",
+  "updated": "2026-11-12",
+  "definition": "Non-cardiogenic, protein-rich pulmonary oedema with alveolar haemorrhage and interstitial inflammation in a dog with babesiosis, causing acute respiratory distress and impaired oxygenation [R1]. It is called ARDS when the dog meets the veterinary consensus criteria: a risk factor, onset within 1 week, diffuse infiltrates on imaging, heart failure and fluid overload ruled out, and a low oxygenation ratio [R2].",
+  "definition_note": "Working definition confirmed, with three changes. First, frothy or blood-tinged airway fluid is a late and often terminal sign, not a feature of every case [R1][R3]. Second, hypoxaemia is not universal: many dogs breathe fast with normal oxygenation [R3]. Third, the 2025 ARDSVet definitions replace the 2007 VetALI and VetARDS criteria and drop the term acute lung injury; the babesiosis papers used the older criteria or a PaO2 below 60 mmHg [R2][R4].",
+  "key_points": [
+    "Lung oedema is the most constant lesion in dogs that die of B. rossi, and lung injury was seen in just under two thirds of necropsies in a 320-dog series [R1][R3].",
+    "At admission, 18 of 98 B. rossi dogs had a PaO2 below 60 mmHg, and only 3 of them died; froth in the airways is mostly a terminal event [R3].",
+    "Fast breathing is common without lung injury: 31 of 34 dogs with severe B. rossi had low PaCO2 from mixed acid-base disorders, but only 3 were hypoxaemic [R5].",
+    "Rule out fluid overload and transfusion-related lung injury before you call it ARDS; the one ventilated survivor had received about 42 mL/kg of red cells and crystalloids before it became hypoxaemic [R6][R2].",
+    "No drug has been tested for this syndrome in babesiosis. Care is oxygen, careful fluids, treatment of the infection and anaemia, and ventilation where it is available [R6][R2].",
+    "In B. rossi, pulmonary oedema was linked to mortality above 30%, against 12% for all admitted dogs [R7]."
+  ],
+  "description": [
+    {
+      "heading": "What it is",
+      "text": "In fatal B. rossi infection, the lungs are heavy and wet, with frothy blood-stained fluid and multifocal haemorrhage. Histology shows protein-rich alveolar oedema, monocyte-macrophage infiltrates in alveolar walls and fibrin in about half of the dogs, with few neutrophils and no hyaline membranes [R1]. The pattern fits the veterinary ARDS criteria but only partly matches classic diffuse alveolar damage [R1]. Histology-confirmed ARDS was also reported with B. canis, together with cerebral babesiosis [R8]."
+    },
+    {
+      "heading": "How common, and in which dogs",
+      "text": "In 91 dogs with complicated babesiosis in South Africa, lung involvement was linked to high mortality, but it could not be separated statistically from other organ failures [R9]. In a Hungarian B. canis series of 63 dogs, ARDS was a rare complication (6%) [R10]. ARDS occurred in 6 of 20 South African dogs with babesiosis and pancreatitis [R11]. South African practitioners named shock lung as one of the most common complicated forms [R12]. All 6 fatal B. canis dogs in a necropsy series had pulmonary oedema and congestion [R13]."
+    },
+    {
+      "heading": "When in the course of disease",
+      "text": "Most B. rossi dogs that die do so within 24 hours of presentation, and severe oedema seems to be a terminal event [R1][R3]. A B. vogeli puppy became hypoxaemic 14 hours after admission, after transfusion and fluids, several weeks into its illness [R6]. The consensus requires new or worse respiratory distress within 1 week of the insult [R2]."
+    },
+    {
+      "heading": "Mechanism",
+      "text": "The lesion points to capillary leak driven by activated monocytes and macrophages and the cytokine storm of complicated disease, with endothelial activation in every fatal B. rossi case [R1]. Large-vessel thromboembolism was not found: perfusion scans of 14 hospitalised dogs did not differ from healthy dogs [R14]. Red cell aggregation in lung capillaries was seen with B. canis [R8]. Circulatory congestion, fluids and transfusion may add hydrostatic or transfusion-related oedema [R13][R6]."
+    }
+  ],
+  "species_notes": [
+    {
+      "species": "B. rossi",
+      "note": "The main South African data: necropsy series of 11 fatal dogs, blood gases in 98 dogs at admission, and a perfusion study. Hypoxaemia at admission is uncommon and often survived; oedema is constant at death [R1][R3][R14]."
+    },
+    {
+      "species": "B. canis",
+      "note": "One histology-confirmed ARDS with cerebral babesiosis (Scottish Terrier, died 6 hours after presentation) and oedema in all 6 fatal dogs of a necropsy series; ARDS 6% in a Hungarian series [R8][R13][R10]."
+    },
+    {
+      "species": "B. vogeli",
+      "note": "One 11-week-old puppy with suspected ARDS survived after 48 hours of ventilation. It also had ehrlichiosis and had received several transfusions [R6]."
+    },
+    {
+      "species": "B. gibsoni",
+      "note": "One dog developed non-cardiogenic pulmonary oedema with DIC and a bicavitary effusion and recovered (abstract only) [R15]."
+    }
+  ],
+  "diagnosis": {
+    "criteria": [
+      {
+        "criterion": "ARDSVet criteria that apply to all categories",
+        "threshold": "All of: a known or suspected risk factor; new or worse respiratory distress within 1 week; diffuse pulmonary infiltrates on radiographs, CT or lung ultrasound; left-sided heart failure and fluid overload ruled out",
+        "basis": "general canine",
+        "note": "2025 consensus for dogs and cats. Babesiosis is listed among reported canine risk factors, always with another risk factor such as SIRS or transfusion. Radiographs or CT are preferred; ultrasound by a trained operator if they are not available.",
+        "refs": [
+          "R2"
+        ]
+      },
+      {
+        "criterion": "Oxygenation, dog not intubated, on high-flow oxygen or on oxygen with a known FiO2",
+        "threshold": "Mild or moderate: PaO2:FiO2 above 100 and up to 300, or SpO2:FiO2 above 150 and up to 315 (SpO2 97% or lower). Severe: PaO2:FiO2 100 or lower, or SpO2:FiO2 150 or lower",
+        "basis": "general canine",
+        "note": "SpO2:FiO2 is not valid above 97% saturation and needs a good waveform. FiO2 is uncertain with masks and low-flow nasal oxygen. Above 1,000 m altitude the consensus multiplies the ratio by barometric pressure/760.",
+        "refs": [
+          "R2"
+        ]
+      },
+      {
+        "criterion": "At risk for ARDS",
+        "threshold": "PaO2:FiO2 300 or lower, or SpO2 below 88%, without all the other criteria",
+        "basis": "general canine",
+        "note": "For a hypoxaemic dog before imaging confirms infiltrates. Not for prognosis.",
+        "refs": [
+          "R2"
+        ]
+      },
+      {
+        "criterion": "Hypoxaemia on room air, as used in babesiosis studies",
+        "threshold": "PaO2 below 60 mmHg; one review adds an alveolar-arterial gradient above 15 mmHg on room air",
+        "basis": "babesiosis",
+        "note": "Used in a 320-dog B. rossi series, as an ARDS endpoint in experimental B. rossi infection, and in a review. Older than the ARDSVet ratios.",
+        "refs": [
+          "R3",
+          "R16",
+          "R4"
+        ]
+      }
+    ],
+    "clinical_signs": [
+      {
+        "sign": "Tachypnoea and increased effort that worsen after admission",
+        "note": "The ventilated survivor went from 36 to more than 100 breaths per minute 14 hours after admission [R6].",
+        "refs": [
+          "R6"
+        ]
+      },
+      {
+        "sign": "Serosanguineous or frothy, blood-tinged fluid from the airways or nostrils",
+        "note": "Described as a hallmark of ARDS in a review; at necropsy, tracheal froth marks severe terminal oedema [R4][R1].",
+        "refs": [
+          "R4",
+          "R1"
+        ]
+      },
+      {
+        "sign": "Collapse with abnormal breathing",
+        "note": "Proposed as a simple marker of severe disease in B. rossi [R7].",
+        "refs": [
+          "R7"
+        ]
+      },
+      {
+        "sign": "Neurological signs with dyspnoea",
+        "note": "ARDS can occur with cerebral babesiosis [R8].",
+        "refs": [
+          "R8"
+        ]
+      }
+    ],
+    "tests": [
+      {
+        "test": "Pulse oximetry, with the FiO2 known",
+        "finding": "SpO2 97% or lower allows an SpO2:FiO2 ratio; SpO2 below 88% marks a dog at risk",
+        "note": "Available in most practices. A normal SpO2 does not mean enough oxygen reaches the tissues in severe anaemia: B. rossi dogs had a normal PaO2 but less than half the normal oxygen content [R2][R14].",
+        "refs": [
+          "R2",
+          "R14"
+        ]
+      },
+      {
+        "test": "Thoracic radiographs",
+        "finding": "Diffuse interstitial to alveolar pattern",
+        "note": "Seen in the B. canis ARDS case and the ventilated B. vogeli survivor. Radiographs help to rule out heart failure but not alone [R8][R6][R2].",
+        "refs": [
+          "R8",
+          "R6",
+          "R2"
+        ]
+      },
+      {
+        "test": "Point-of-care lung and heart ultrasound",
+        "finding": "Bilateral confluent B-lines with a normal left atrium to aorta ratio",
+        "note": "B-lines are not specific for ARDS; a normal left atrium helps to exclude heart failure. Needs a trained operator [R6][R2].",
+        "refs": [
+          "R6",
+          "R2"
+        ]
+      },
+      {
+        "test": "Arterial blood gas",
+        "finding": "PaO2, alveolar-arterial gradient and PaCO2",
+        "note": "In 98 B. rossi dogs the median PaO2 was 91.4 mmHg and the median gradient 20.5 mmHg; most had a low PaCO2 [R3]. Arterial sampling may be unsafe with severe thrombocytopenia and coagulopathy [R6].",
+        "refs": [
+          "R3",
+          "R6"
+        ]
+      },
+      {
+        "test": "Fluid balance and body weight",
+        "finding": "Fluid given minus fluid lost, as a percentage of body weight",
+        "note": "Critically ill dogs gained a mean 12% fluid overload in hospital, and the odds of death rose with each percent [R17].",
+        "refs": [
+          "R17"
+        ]
+      },
+      {
+        "test": "Airway fluid from the endotracheal tube",
+        "finding": "High protein, neutrophilic",
+        "note": "Optional support for capillary leak [R2]. In the survivor the fluid total protein was 48 g/L against 56 g/L in blood [R6].",
+        "refs": [
+          "R2",
+          "R6"
+        ]
+      }
+    ],
+    "differentials": [
+      {
+        "condition": "Fast breathing from anaemia, acidosis, fever or pain with normal lungs",
+        "distinguish": "Normal SpO2 and PaO2, no infiltrates, low PaCO2. Mixed metabolic acidosis with respiratory alkalosis is the usual blood gas in severe B. rossi [R5][R14].",
+        "refs": [
+          "R5",
+          "R14"
+        ]
+      },
+      {
+        "condition": "Fluid overload",
+        "distinguish": "Positive fluid balance and weight gain; must be ruled out by history, examination and imaging before diagnosing ARDS [R2][R17].",
+        "refs": [
+          "R2",
+          "R17"
+        ]
+      },
+      {
+        "condition": "Cardiogenic oedema (SY09)",
+        "distinguish": "Left atrial enlargement on ultrasound or echocardiography [R2].",
+        "refs": [
+          "R2"
+        ]
+      },
+      {
+        "condition": "Transfusion-related lung injury",
+        "distinguish": "Onset during or after transfusion. Transfusion is a possible ARDS risk factor and could not be excluded in the ventilated survivor [R2][R6].",
+        "refs": [
+          "R2",
+          "R6"
+        ]
+      },
+      {
+        "condition": "Aspiration pneumonia",
+        "distinguish": "Vomiting or regurgitation, bacteria in airway fluid. A probable ARDS risk factor itself; it was considered but judged less likely in the survivor [R2][R6].",
+        "refs": [
+          "R2",
+          "R6"
+        ]
+      },
+      {
+        "condition": "Pulmonary thromboembolism",
+        "distinguish": "No wedge-shaped perfusion defects were found in 14 hospitalised dogs with babesiosis [R14].",
+        "refs": [
+          "R14"
+        ]
+      },
+      {
+        "condition": "Neurogenic oedema with cerebral babesiosis (SY07)",
+        "distinguish": "Seizures or coma; proposed for one fatal B. canis dog with seizures [R13].",
+        "refs": [
+          "R13"
+        ]
+      },
+      {
+        "condition": "Co-infection (ehrlichiosis) and pleural effusion",
+        "distinguish": "Serology or PCR; thoracic ultrasound. The survivor had ehrlichiosis; serosanguineous body-cavity effusions were seen in about half of B. rossi necropsies [R6][R3].",
+        "refs": [
+          "R6",
+          "R3"
+        ]
+      }
+    ],
+    "grading": [
+      {
+        "grade": "At risk",
+        "criteria": "PaO2:FiO2 300 or lower, or SpO2 below 88%, without all other criteria [R2].",
+        "refs": [
+          "R2"
+        ]
+      },
+      {
+        "grade": "Mild or moderate ARDS",
+        "criteria": "PaO2:FiO2 above 100 and up to 300, or SpO2:FiO2 above 150 and up to 315 [R2].",
+        "refs": [
+          "R2"
+        ]
+      },
+      {
+        "grade": "Severe ARDS",
+        "criteria": "PaO2:FiO2 100 or lower, or SpO2:FiO2 150 or lower [R2].",
+        "refs": [
+          "R2"
+        ]
+      }
+    ]
+  },
+  "approach": [
+    {
+      "step": 1,
+      "action": "Give oxygen and handle the dog gently",
+      "detail": "Flow-by, mask, nasal catheter or cage, chosen for the dog and the equipment [R18]. Place a pulse oximeter and note the FiO2 [R2].",
+      "setting": "practice"
+    },
+    {
+      "step": 2,
+      "action": "Decide whether the lungs are the problem",
+      "detail": "Check SpO2, auscultation, PCV and lactate. Take thoracic radiographs or scan the lungs when the dog is stable enough. A normal SpO2 with fast breathing points to anaemia or acidosis [R2][R5][R14].",
+      "setting": "practice"
+    },
+    {
+      "step": 3,
+      "action": "Review fluids and transfusions",
+      "detail": "Add up what was given and weigh the dog. Reduce or stop crystalloids if the balance is positive and oedema is suspected [R17][R2]. Watch for respiratory signs during and after each transfusion [R6].",
+      "setting": "practice"
+    },
+    {
+      "step": 4,
+      "action": "Treat the infection and the anaemia",
+      "detail": "Antibabesial treatment (TX00). In severely anaemic dogs, whole blood transfusion corrected hypoxaemia and acid-base disturbance (SY01) [R19].",
+      "setting": "practice"
+    },
+    {
+      "step": 5,
+      "action": "Refer if oxygenation stays poor",
+      "detail": "An SpO2:FiO2 ratio of 315 or less on oxygen, or rising effort, is ARDS range [R2]. High-flow nasal oxygen improved oxygenation in dogs that failed conventional oxygen [R20][R21].",
+      "setting": "referral"
+    },
+    {
+      "step": 6,
+      "action": "Mechanical ventilation with lung-protective settings",
+      "detail": "The only babesiosis survivor of severe hypoxaemia was ventilated with PEEP titrated to FiO2, deep sedation and neuromuscular blockade [R6]. In 58 ventilated dogs of mixed causes, survival was about one third [R22].",
+      "setting": "referral"
+    },
+    {
+      "step": 7,
+      "action": "Discuss prognosis with the owner early",
+      "detail": "Dogs with ARDS from any cause had a case fatality of 84%, and inability to ventilate often ends in euthanasia [R23][R24][R2].",
+      "setting": "practice"
+    }
+  ],
+  "treatments": [
+    {
+      "name": "Oxygen supplementation (flow-by, mask, nasal catheter, cage)",
+      "class": "supportive",
+      "aim": "Raise the inspired oxygen to correct hypoxaemia.",
+      "status": "standard",
+      "evidence_level": "C",
+      "independent_studies": 2,
+      "evidence_summary": "Used in the ventilated B. vogeli survivor (oxygen chamber at about 40% FiO2 before intubation) and in 6 fatal B. canis dogs; no study compared outcomes [R6][R13]. Delivery methods and the FiO2 they reach come from general veterinary reviews, not babesiosis [R18]. Oxygen for anaemic hypoxia in babesiosis was debated in an early South African review [R25].",
+      "doses": [
+        {
+          "drug": "oxygen by nasal catheter",
+          "dose": "50 to 150 mL/kg/min",
+          "route": "intranasal",
+          "frequency": "continuous",
+          "duration": "",
+          "context": "General veterinary review table; FiO2 about 30 to 60%",
+          "note": "In healthy dogs, 100 mL/kg/min through two catheters gave a mean FiO2 of 56%; 200 mL/kg/min gave 77% but caused distress (as cited in the review).",
+          "refs": [
+            "R18"
+          ]
+        },
+        {
+          "drug": "oxygen by face mask",
+          "dose": "1 to 6 L/min",
+          "route": "inhaled",
+          "frequency": "continuous",
+          "duration": "short term",
+          "context": "General veterinary review table; FiO2 about 35 to 55%",
+          "note": "Rebreathing at low flow; FiO2 depends on the fit.",
+          "refs": [
+            "R18"
+          ]
+        },
+        {
+          "drug": "oxygen flow-by",
+          "dose": "6 to 8 L/min",
+          "route": "inhaled",
+          "frequency": "continuous",
+          "duration": "short term",
+          "context": "General veterinary review table; FiO2 about 25 to 45%",
+          "note": "For triage and first stabilisation only.",
+          "refs": [
+            "R18"
+          ]
+        },
+        {
+          "drug": "oxygen cage",
+          "dose": "FiO2 21 to 60%",
+          "route": "inhaled",
+          "frequency": "continuous",
+          "duration": "",
+          "context": "General veterinary review table; B. vogeli survivor at about 40% FiO2",
+          "note": "FiO2 falls quickly when the door is opened.",
+          "refs": [
+            "R18",
+            "R6"
+          ]
+        }
+      ],
+      "cautions": "Low-flow methods give an uncertain FiO2 in a panting or open-mouthed dog, so SpO2:FiO2 ratios are less reliable [R2]. High nasal flows are poorly tolerated [R18].",
+      "monitoring": "SpO2 and respiratory rate and effort continuously; arterial blood gas where available [R2].",
+      "availability": "",
+      "refs": [
+        "R6",
+        "R13",
+        "R18",
+        "R25",
+        "R2"
+      ]
+    },
+    {
+      "name": "Red cell or whole blood transfusion for severe anaemia",
+      "class": "supportive",
+      "aim": "Restore oxygen content, which a normal PaO2 cannot correct in a severely anaemic dog.",
+      "status": "standard",
+      "evidence_level": "B",
+      "independent_studies": 1,
+      "evidence_summary": "In 6 severely affected dogs in South Africa (described as B. canis), all hypoxaemic at admission, fresh whole blood transfusion corrected the blood gas and acid-base disturbances (abstract only) [R19]. Hospitalised B. rossi dogs had a normal PaO2 but low oxygen content [R14]. Doses and products are on SY01.",
+      "doses": [],
+      "cautions": "Transfusion of blood products is a possible ARDS risk factor [R2]. The ventilated survivor became hypoxaemic after about 42 mL/kg of packed red cells over several transfusions; transfusion-related lung injury could not be excluded [R6].",
+      "monitoring": "Respiratory rate, SpO2 and temperature during and after each transfusion [R6].",
+      "availability": "",
+      "refs": [
+        "R19",
+        "R14",
+        "R2",
+        "R6"
+      ]
+    },
+    {
+      "name": "Conservative fluid therapy (avoid fluid overload)",
+      "class": "supportive",
+      "aim": "Avoid adding hydrostatic oedema to leaky lungs.",
+      "status": "proposed",
+      "evidence_level": "D",
+      "independent_studies": 1,
+      "evidence_summary": "No study in babesiosis. An early South African review set out the problems of fluid therapy in dogs with pulmonary oedema, including the use of hypertonic fluids (abstract only) [R25]. In 34 critically ill dogs from any cause, fluid overload was common and each percent of overload raised the odds of death [R17]. The ventilated B. vogeli survivor had received crystalloids at 75 mL/kg/day with transfusions before it became hypoxaemic [R6].",
+      "doses": [],
+      "cautions": "Many dogs with complicated babesiosis are also hypotensive or in kidney injury (SY10, SY05); fluid restriction must be weighed against perfusion. No source gives a fluid rate for this syndrome.",
+      "monitoring": "Body weight, fluid in and out, urine output, lung ultrasound or radiographs [R17][R2].",
+      "availability": "",
+      "refs": [
+        "R25",
+        "R17",
+        "R6",
+        "R2"
+      ]
+    },
+    {
+      "name": "High-flow nasal oxygen",
+      "class": "supportive",
+      "aim": "Give a reliable high FiO2 with some positive airway pressure to dogs failing conventional oxygen.",
+      "status": "proposed",
+      "evidence_level": "D",
+      "independent_studies": 2,
+      "evidence_summary": "No use in babesiosis was found. In 20 dogs failing conventional oxygen, median PaO2 rose from 60.8 to 135.6 mmHg; 6 failed and 9 survived [R20]. In 22 dogs, 45% responded and survived [R21]. Hypoxaemic respiratory failure of mixed causes.",
+      "doses": [
+        {
+          "drug": "high-flow nasal oxygen",
+          "dose": "more than 1 L/kg/min (or more than 30 L/min total)",
+          "route": "intranasal (prongs)",
+          "frequency": "continuous",
+          "duration": "",
+          "context": "ARDSVet consensus: flow at which the FiO2 is reliable",
+          "note": "Heated and humidified gas; FiO2 set 21 to 100%.",
+          "refs": [
+            "R2"
+          ]
+        },
+        {
+          "drug": "high-flow nasal oxygen",
+          "dose": "1 to 2 L/kg/min",
+          "route": "intranasal (prongs)",
+          "frequency": "continuous",
+          "duration": "",
+          "context": "Review, citing a study in which only these flows kept positive airway pressure in most dogs",
+          "note": "Devices deliver up to 60 L/min.",
+          "refs": [
+            "R18"
+          ]
+        }
+      ],
+      "cautions": "Pneumothorax occurred in 1 of 20 dogs [R20]. Needs a dedicated device and close nursing [R18].",
+      "monitoring": "SpO2:FiO2 ratio and respiratory rate hourly; failure means referral for ventilation [R2][R20].",
+      "availability": "",
+      "refs": [
+        "R20",
+        "R21",
+        "R2",
+        "R18"
+      ]
+    },
+    {
+      "name": "Mechanical ventilation with lung-protective settings",
+      "class": "supportive",
+      "aim": "Maintain oxygenation and rest the lungs while the cause is treated.",
+      "status": "proposed",
+      "evidence_level": "C",
+      "independent_studies": 1,
+      "evidence_summary": "One B. vogeli puppy with suspected ARDS (PaO2:FiO2 140) was ventilated for 48 hours with PEEP titrated to FiO2 from an adapted ARDSnet table, and was well at 3 months [R6]. In 58 ventilated dogs of mixed causes, survival was 32%, and 15% when PaO2:FiO2 stayed below 200 at 4 to 12 hours [R22]. Human evidence for ventilation strategy has not been tested in dogs [R6].",
+      "doses": [
+        {
+          "drug": "tidal volume",
+          "dose": "about 9.6 mL/kg",
+          "route": "volume-control ventilation",
+          "frequency": "set rate 15 to 25 breaths/min",
+          "duration": "48 h in this dog",
+          "context": "B. vogeli, 1 dog, case report",
+          "note": "Kept above human lung-protective volumes because of hypercapnia.",
+          "refs": [
+            "R6"
+          ]
+        },
+        {
+          "drug": "PEEP",
+          "dose": "5 to 24 cmH2O, raised with FiO2 (for example 10 cmH2O at FiO2 0.6)",
+          "route": "ventilator",
+          "frequency": "titrated",
+          "duration": "",
+          "context": "B. vogeli, 1 dog, adapted ARDSnet table",
+          "note": "Target SpO2 above 92%.",
+          "refs": [
+            "R6"
+          ]
+        }
+      ],
+      "cautions": "Arterial lines may be unsafe with thrombocytopenia and coagulopathy. The survivor needed noradrenaline for hypotension and antibiotics for bacteria in airway fluid [R6]. Ventilator-induced lung injury is a possible ARDS risk factor [R2].",
+      "monitoring": "SpO2, end-tidal CO2, compliance, blood gases; PaO2:FiO2 during ventilation predicts weaning [R6][R22].",
+      "availability": "",
+      "refs": [
+        "R6",
+        "R22",
+        "R2"
+      ]
+    },
+    {
+      "name": "Sedation and analgesia infusions for the ventilated dog",
+      "class": "supportive",
+      "aim": "Keep the ventilated dog deeply sedated and in time with the ventilator.",
+      "status": "proposed",
+      "evidence_level": "C",
+      "independent_studies": 1,
+      "evidence_summary": "Regimen of the one ventilated B. vogeli survivor; doses titrated to effect [R6]. No source on sedation of the awake, distressed dog with babesiosis was found.",
+      "doses": [
+        {
+          "drug": "fentanyl",
+          "dose": "5 to 10 µg/kg/h",
+          "route": "IV infusion",
+          "frequency": "continuous, titrated",
+          "duration": "during ventilation",
+          "context": "B. vogeli, 1 dog, case report",
+          "note": "",
+          "refs": [
+            "R6"
+          ]
+        },
+        {
+          "drug": "midazolam",
+          "dose": "0.1 to 1 mg/kg/h",
+          "route": "IV infusion",
+          "frequency": "continuous, titrated",
+          "duration": "during ventilation",
+          "context": "B. vogeli, 1 dog, case report",
+          "note": "",
+          "refs": [
+            "R6"
+          ]
+        },
+        {
+          "drug": "dexmedetomidine",
+          "dose": "1 µg/kg/h",
+          "route": "IV infusion",
+          "frequency": "continuous",
+          "duration": "during ventilation",
+          "context": "B. vogeli, 1 dog, case report",
+          "note": "Lowered to 0.5 µg/kg/h before extubation.",
+          "refs": [
+            "R6"
+          ]
+        },
+        {
+          "drug": "propofol",
+          "dose": "0.1 to 0.5 mg/kg/min",
+          "route": "IV infusion",
+          "frequency": "continuous, titrated",
+          "duration": "during ventilation",
+          "context": "B. vogeli, 1 dog, case report",
+          "note": "Added for ventilator dyssynchrony.",
+          "refs": [
+            "R6"
+          ]
+        },
+        {
+          "drug": "ketamine",
+          "dose": "0.5 mg/kg/h",
+          "route": "IV infusion",
+          "frequency": "continuous",
+          "duration": "a few hours",
+          "context": "B. vogeli, 1 dog, case report",
+          "note": "",
+          "refs": [
+            "R6"
+          ]
+        }
+      ],
+      "cautions": "The dog was hypotensive during ventilation and needed noradrenaline [R6].",
+      "monitoring": "Depth of sedation, blood pressure, ventilator synchrony [R6].",
+      "availability": "",
+      "refs": [
+        "R6"
+      ]
+    },
+    {
+      "name": "Neuromuscular blockade (atracurium)",
+      "class": "adjunct",
+      "aim": "Stop ventilator dyssynchrony in a deeply sedated, ventilated dog.",
+      "status": "proposed",
+      "evidence_level": "C",
+      "independent_studies": 1,
+      "evidence_summary": "In the ventilated B. vogeli puppy, oxygenation improved quickly after neuromuscular blockade was started, though hypercapnia persisted [R6].",
+      "doses": [
+        {
+          "drug": "atracurium",
+          "dose": "0.3 mg/kg",
+          "route": "IV",
+          "frequency": "once, then infusion",
+          "duration": "",
+          "context": "B. vogeli, 1 dog, case report",
+          "note": "Only with deep sedation and mechanical ventilation.",
+          "refs": [
+            "R6"
+          ]
+        },
+        {
+          "drug": "atracurium",
+          "dose": "6 to 9 µg/kg/min",
+          "route": "IV infusion",
+          "frequency": "continuous",
+          "duration": "until about 48 h of ventilation",
+          "context": "B. vogeli, 1 dog, case report",
+          "note": "",
+          "refs": [
+            "R6"
+          ]
+        }
+      ],
+      "cautions": "Sedation was not reduced during paralysis, to avoid awake paralysis; how to judge sedation depth in dogs is not settled [R6].",
+      "monitoring": "End-tidal CO2, SpO2, sedation depth [R6].",
+      "availability": "",
+      "refs": [
+        "R6"
+      ]
+    },
+    {
+      "name": "Furosemide",
+      "class": "supportive",
+      "aim": "Remove fluid when oedema from fluid overload or heart failure is suspected.",
+      "status": "proposed",
+      "evidence_level": "C",
+      "independent_studies": 1,
+      "evidence_summary": "Given, with other drugs, to some of 6 B. canis dogs that all died; no dose or effect was reported [R13]. No source tested furosemide for permeability oedema in babesiosis. Doses for cardiogenic oedema are on SY09.",
+      "doses": [],
+      "cautions": "No source found that states a dose for this syndrome.",
+      "monitoring": "Urine output, hydration, potassium.",
+      "availability": "",
+      "refs": [
+        "R13"
+      ]
+    },
+    {
+      "name": "Glucocorticoids (dexamethasone)",
+      "class": "adjunct",
+      "aim": "Damp the inflammatory lung injury.",
+      "status": "proposed",
+      "evidence_level": "C",
+      "independent_studies": 2,
+      "evidence_summary": "One dose was given to the ventilated B. vogeli survivor, together with many other treatments [R6]. Dexamethasone was also given to some of 6 fatal B. canis dogs [R13]. No study tested glucocorticoids for lung injury in babesiosis.",
+      "doses": [
+        {
+          "drug": "dexamethasone (Dexaject SP)",
+          "dose": "0.1 mg/kg",
+          "route": "IV",
+          "frequency": "once",
+          "duration": "single dose",
+          "context": "B. vogeli, 1 dog, case report",
+          "note": "Effect cannot be separated from the other treatments.",
+          "refs": [
+            "R6"
+          ]
+        }
+      ],
+      "cautions": "No evidence of benefit in this syndrome.",
+      "monitoring": "",
+      "availability": "",
+      "refs": [
+        "R6",
+        "R13"
+      ]
+    }
+  ],
+  "prognosis": {
+    "text": "Clinical pulmonary oedema in B. rossi carried a mortality above 30% [R7]. Yet hypoxaemia at admission was often survived [R3]. Fulminant oedema with froth seems to be a terminal event, and most fatal B. rossi dogs die within a day [R1]. ARDS from any cause in dogs is usually fatal, partly because ventilation is often not possible [R23][R24]. Survivors are reported with B. vogeli and B. gibsoni [R6][R15].",
+    "indicators": [
+      {
+        "finding": "Pulmonary oedema in B. rossi",
+        "meaning": "Mortality above 30%, against 12% for all admitted dogs [R7].",
+        "refs": [
+          "R7"
+        ]
+      },
+      {
+        "finding": "Lung involvement in complicated babesiosis (South Africa)",
+        "meaning": "High mortality, but not separable from other organ failures [R9].",
+        "refs": [
+          "R9"
+        ]
+      },
+      {
+        "finding": "PaO2 below 60 mmHg at admission (B. rossi)",
+        "meaning": "3 of 18 died; no difference between survivors and non-survivors [R3].",
+        "refs": [
+          "R3"
+        ]
+      },
+      {
+        "finding": "Frothy, blood-tinged airway fluid",
+        "meaning": "Severe, often terminal oedema [R1][R4].",
+        "refs": [
+          "R1",
+          "R4"
+        ]
+      },
+      {
+        "finding": "PaO2:FiO2 below 200 at 4 to 12 hours of ventilation",
+        "meaning": "Survival 15% in ventilated dogs of mixed causes [R22].",
+        "refs": [
+          "R22"
+        ]
+      },
+      {
+        "finding": "ARDS from any cause in dogs",
+        "meaning": "Case fatality 84% in 46 dogs; 2 of 24 dogs survived in another series [R23][R24].",
+        "refs": [
+          "R23",
+          "R24"
+        ]
+      }
+    ]
+  },
+  "related": [
+    {
+      "id": "TX00",
+      "why": "Antibabesial drugs."
+    },
+    {
+      "id": "SY01",
+      "why": "Transfusion for severe anaemia, and its volume."
+    },
+    {
+      "id": "SY11",
+      "why": "SIRS and multiple organ dysfunction, the usual setting of lung injury, and triage."
+    },
+    {
+      "id": "SY09",
+      "why": "Cardiogenic oedema and its treatment, including furosemide."
+    },
+    {
+      "id": "SY10",
+      "why": "Hypotension and fluid resuscitation, which must be balanced against oedema."
+    },
+    {
+      "id": "SY07",
+      "why": "Cerebral babesiosis, which can occur with ARDS."
+    },
+    {
+      "id": "SY12",
+      "why": "Pancreatitis, a risk factor for ARDS."
+    },
+    {
+      "id": "SY05",
+      "why": "Acute kidney injury, which limits fluid removal."
+    },
+    {
+      "id": "SY03",
+      "why": "Coagulopathy, which makes arterial sampling risky."
+    }
+  ],
+  "evidence_gaps": [
+    "No prospective study measured how often ARDSVet-defined ARDS occurs in B. rossi or B. canis, or when it starts.",
+    "No treatment for lung injury has been tested in dogs with babesiosis; only one ventilated survivor is reported.",
+    "No evidence was found for or against colloids, plasma, bronchodilators or furosemide for this syndrome.",
+    "No source was found on sedating the awake, distressed dog with babesiosis, so no dose is given for it.",
+    "It is not known whether fluid volume or transfusion volume in the first 24 hours predicts lung injury in babesiosis.",
+    "It is not known whether the lesion seen at necropsy is present in dogs that survive.",
+    "Lung ultrasound and SpO2:FiO2 ratios have not been studied in dogs with babesiosis, and severe anaemia may affect pulse oximetry."
+  ],
+  "references": [
+    {
+      "ref": "R1",
+      "authors": "Martin C, Clift S, Leisewitz A",
+      "year": 2023,
+      "title": "Lung pathology of natural Babesia rossi infection in dogs",
+      "journal": "Journal of the South African Veterinary Association",
+      "volume_pages": "94(1):59-69",
+      "doi": "10.36303/jsava.523",
+      "pmid": "37358318",
+      "url": "",
+      "article_id": "CB111",
+      "type": "case series",
+      "species": "B. rossi",
+      "n_dogs": 11,
+      "read": "full text"
+    },
+    {
+      "ref": "R2",
+      "authors": "Balakrishnan A, Silverstein DC, Bedenice D, et al.",
+      "year": 2025,
+      "title": "Acute Respiratory Distress Syndrome in Veterinary Medicine-The ARDSVet Definitions",
+      "journal": "Journal of Veterinary Emergency and Critical Care",
+      "volume_pages": "35(4):327-338",
+      "doi": "10.1111/vec.70016",
+      "pmid": "40838381",
+      "url": "",
+      "article_id": "",
+      "type": "guideline",
+      "species": "",
+      "n_dogs": null,
+      "read": "full text"
+    },
+    {
+      "ref": "R3",
+      "authors": "Leisewitz AL, Goddard A, Clift S, et al.",
+      "year": 2019,
+      "title": "A clinical and pathological description of 320 cases of naturally acquired Babesia rossi infection in dogs",
+      "journal": "Veterinary Parasitology",
+      "volume_pages": "271:22-30",
+      "doi": "10.1016/j.vetpar.2019.06.005",
+      "pmid": "31303199",
+      "url": "",
+      "article_id": "CB040",
+      "type": "cohort",
+      "species": "B. rossi",
+      "n_dogs": 320,
+      "read": "full text"
+    },
+    {
+      "ref": "R4",
+      "authors": "Köster LS, Lobetti RG, Kelly P",
+      "year": 2015,
+      "title": "Canine babesiosis: a perspective on clinical complications, biomarkers, and treatment",
+      "journal": "Veterinary Medicine: Research and Reports",
+      "volume_pages": "6:119-128",
+      "doi": "10.2147/vmrr.s60431",
+      "pmid": "30155438",
+      "url": "",
+      "article_id": "CB493",
+      "type": "review",
+      "species": "",
+      "n_dogs": null,
+      "read": "full text"
+    },
+    {
+      "ref": "R5",
+      "authors": "Leisewitz AL, Jacobson LS, de Morais HS, et al.",
+      "year": 2001,
+      "title": "The mixed acid-base disturbances of severe canine babesiosis",
+      "journal": "Journal of Veterinary Internal Medicine",
+      "volume_pages": "15(5):445-452",
+      "doi": "10.1892/0891-6640(2001)015<0445:tmados>2.3.co;2",
+      "pmid": "11596731",
+      "url": "",
+      "article_id": "",
+      "type": "case series",
+      "species": "B. rossi",
+      "n_dogs": 34,
+      "read": "abstract"
+    },
+    {
+      "ref": "R6",
+      "authors": "DeStefano IM, Wayne AS, Cudney SE, et al.",
+      "year": 2022,
+      "title": "Successful treatment of suspect Babesia-induced ARDS in a dog using lung-protective positive-pressure ventilation and neuromuscular blockade",
+      "journal": "Clinical Case Reports",
+      "volume_pages": "10(8):e6234",
+      "doi": "10.1002/ccr3.6234",
+      "pmid": "35957771",
+      "url": "",
+      "article_id": "CB102",
+      "type": "case report",
+      "species": "B. vogeli",
+      "n_dogs": 1,
+      "read": "full text"
+    },
+    {
+      "ref": "R7",
+      "authors": "Jacobson LS",
+      "year": 2006,
+      "title": "The South African form of severe and complicated canine babesiosis: clinical advances 1994-2004",
+      "journal": "Veterinary Parasitology",
+      "volume_pages": "138(1-2):126-139",
+      "doi": "10.1016/j.vetpar.2006.01.047",
+      "pmid": "16503090",
+      "url": "",
+      "article_id": "",
+      "type": "review",
+      "species": "B. rossi",
+      "n_dogs": null,
+      "read": "abstract"
+    },
+    {
+      "ref": "R8",
+      "authors": "Daste T, Lucas MN, Aumann M",
+      "year": 2013,
+      "title": "Cerebral babesiosis and acute respiratory distress syndrome in a dog",
+      "journal": "Journal of Veterinary Emergency and Critical Care",
+      "volume_pages": "23(6):615-623",
+      "doi": "10.1111/vec.12114",
+      "pmid": "24238090",
+      "url": "",
+      "article_id": "CB447",
+      "type": "case report",
+      "species": "B. canis",
+      "n_dogs": 1,
+      "read": "abstract"
+    },
+    {
+      "ref": "R9",
+      "authors": "Welzl C, Leisewitz AL, Jacobson LS, et al.",
+      "year": 2001,
+      "title": "Systemic inflammatory response syndrome and multiple-organ damage/dysfunction in complicated canine babesiosis",
+      "journal": "Journal of the South African Veterinary Association",
+      "volume_pages": "72(3):158-162",
+      "doi": "10.4102/jsava.v72i3.640",
+      "pmid": "11811704",
+      "url": "",
+      "article_id": "",
+      "type": "cohort",
+      "species": "",
+      "n_dogs": 91,
+      "read": "abstract"
+    },
+    {
+      "ref": "R10",
+      "authors": "Máthé A, Vörös K, Papp L, et al.",
+      "year": 2006,
+      "title": "Clinical manifestations of canine babesiosis in Hungary (63 cases)",
+      "journal": "Acta Veterinaria Hungarica",
+      "volume_pages": "54(3):367-385",
+      "doi": "10.1556/AVet.54.2006.3.7",
+      "pmid": "17020140",
+      "url": "",
+      "article_id": "",
+      "type": "case series",
+      "species": "B. canis",
+      "n_dogs": 63,
+      "read": "abstract"
+    },
+    {
+      "ref": "R11",
+      "authors": "Möhr AJ, Lobetti RG, van der Lugt JJ",
+      "year": 2000,
+      "title": "Acute pancreatitis: a newly recognised potential complication of canine babesiosis",
+      "journal": "Journal of the South African Veterinary Association",
+      "volume_pages": "71(4):232-239",
+      "doi": "10.4102/jsava.v71i4.721",
+      "pmid": "11212934",
+      "url": "",
+      "article_id": "",
+      "type": "case series",
+      "species": "",
+      "n_dogs": 20,
+      "read": "abstract"
+    },
+    {
+      "ref": "R12",
+      "authors": "Collett MG",
+      "year": 2000,
+      "title": "Survey of canine babesiosis in South Africa",
+      "journal": "Journal of the South African Veterinary Association",
+      "volume_pages": "71(3):180-186",
+      "doi": "10.4102/jsava.v71i3.710",
+      "pmid": "11205168",
+      "url": "",
+      "article_id": "",
+      "type": "review",
+      "species": "",
+      "n_dogs": null,
+      "read": "abstract"
+    },
+    {
+      "ref": "R13",
+      "authors": "Zygner W, Rodo A, Gójska-Zygner O, et al.",
+      "year": 2021,
+      "title": "Disorders in Blood Circulation As a Probable Cause of Death in Dogs Infected with Babesia Canis",
+      "journal": "Journal of Veterinary Research",
+      "volume_pages": "65(3):277-285",
+      "doi": "10.2478/jvetres-2021-0036",
+      "pmid": "34917839",
+      "url": "",
+      "article_id": "CB080",
+      "type": "case series",
+      "species": "B. canis",
+      "n_dogs": 6,
+      "read": "full text"
+    },
+    {
+      "ref": "R14",
+      "authors": "Sweers L, Kirberger RM, Leisewitz AL, et al.",
+      "year": 2008,
+      "title": "The scintigraphic evaluation of the pulmonary perfusion pattern of dogs hospitalised with babesiosis",
+      "journal": "Journal of the South African Veterinary Association",
+      "volume_pages": "79(2):76-83",
+      "doi": "10.4102/jsava.v79i2.248",
+      "pmid": "18846852",
+      "url": "",
+      "article_id": "CB356",
+      "type": "case series",
+      "species": "B. rossi",
+      "n_dogs": 14,
+      "read": "full text"
+    },
+    {
+      "ref": "R15",
+      "authors": "Almendros A, Burchell R",
+      "year": 2021,
+      "title": "Multiple complications in a dog infected with Babesia gibsoni",
+      "journal": "Veterinary Record Case Reports",
+      "volume_pages": "9(3):e126",
+      "doi": "10.1002/vrc2.126",
+      "pmid": "",
+      "url": "",
+      "article_id": "CB079",
+      "type": "case report",
+      "species": "B. gibsoni",
+      "n_dogs": 1,
+      "read": "abstract"
+    },
+    {
+      "ref": "R16",
+      "authors": "Atkinson BK, Thompson P, Van Zyl E, et al.",
+      "year": 2022,
+      "title": "Kinetics of the inflammatory response during experimental Babesia rossi infection of beagle dogs",
+      "journal": "Veterinary Parasitology",
+      "volume_pages": "306:109717",
+      "doi": "10.1016/j.vetpar.2022.109717",
+      "pmid": "35606218",
+      "url": "",
+      "article_id": "CB098",
+      "type": "experimental",
+      "species": "B. rossi",
+      "n_dogs": null,
+      "read": "full text"
+    },
+    {
+      "ref": "R17",
+      "authors": "Cavanagh AA, Sullivan LA, Hansen BD",
+      "year": 2016,
+      "title": "Retrospective evaluation of fluid overload and relationship to outcome in critically ill dogs",
+      "journal": "Journal of Veterinary Emergency and Critical Care",
+      "volume_pages": "26(4):578-586",
+      "doi": "10.1111/vec.12477",
+      "pmid": "27074594",
+      "url": "",
+      "article_id": "",
+      "type": "cohort",
+      "species": "",
+      "n_dogs": 49,
+      "read": "abstract"
+    },
+    {
+      "ref": "R18",
+      "authors": "Whitney J, Keir I",
+      "year": 2023,
+      "title": "Clinical review of high-flow nasal oxygen therapy in human and veterinary patients",
+      "journal": "Frontiers in Veterinary Science",
+      "volume_pages": "10:1070881",
+      "doi": "10.3389/fvets.2023.1070881",
+      "pmid": "36950541",
+      "url": "",
+      "article_id": "",
+      "type": "review",
+      "species": "",
+      "n_dogs": null,
+      "read": "full text"
+    },
+    {
+      "ref": "R19",
+      "authors": "Leisewitz AL, Guthrie AJ, Berry WL",
+      "year": 1996,
+      "title": "Evaluation of the effect of whole-blood transfusion on the oxygen status and acid-base balance of Babesia canis infected dogs using the oxygen status algorithm",
+      "journal": "Journal of the South African Veterinary Association",
+      "volume_pages": "67(1):20-26",
+      "doi": "",
+      "pmid": "8786612",
+      "url": "",
+      "article_id": "",
+      "type": "case series",
+      "species": "",
+      "n_dogs": 6,
+      "read": "abstract"
+    },
+    {
+      "ref": "R20",
+      "authors": "Frischer R, Daly J, Haggerty J, et al.",
+      "year": 2022,
+      "title": "High-flow nasal cannula improves hypoxemia in dogs failing conventional oxygen therapy",
+      "journal": "Journal of the American Veterinary Medical Association",
+      "volume_pages": "261(2):210-216",
+      "doi": "10.2460/javma.22.09.0400",
+      "pmid": "36322486",
+      "url": "",
+      "article_id": "",
+      "type": "trial",
+      "species": "",
+      "n_dogs": 20,
+      "read": "abstract"
+    },
+    {
+      "ref": "R21",
+      "authors": "Jagodich TA, Bersenas AME, Bateman SW, et al.",
+      "year": 2020,
+      "title": "High-flow nasal cannula oxygen therapy in acute hypoxemic respiratory failure in 22 dogs requiring oxygen support escalation",
+      "journal": "Journal of Veterinary Emergency and Critical Care",
+      "volume_pages": "30(4):364-375",
+      "doi": "10.1111/vec.12970",
+      "pmid": "32583614",
+      "url": "",
+      "article_id": "",
+      "type": "trial",
+      "species": "",
+      "n_dogs": 22,
+      "read": "abstract"
+    },
+    {
+      "ref": "R22",
+      "authors": "Bruchim Y, Aroch I, Sisso A, et al.",
+      "year": 2014,
+      "title": "A retrospective study of positive pressure ventilation in 58 dogs: indications, prognostic factors and outcome",
+      "journal": "Journal of Small Animal Practice",
+      "volume_pages": "55(6):314-319",
+      "doi": "10.1111/jsap.12211",
+      "pmid": "24697570",
+      "url": "",
+      "article_id": "",
+      "type": "cohort",
+      "species": "",
+      "n_dogs": 58,
+      "read": "abstract"
+    },
+    {
+      "ref": "R23",
+      "authors": "Boiron L, Hopper K, Borchers A",
+      "year": 2019,
+      "title": "Risk factors, characteristics, and outcomes of acute respiratory distress syndrome in dogs and cats: 54 cases",
+      "journal": "Journal of Veterinary Emergency and Critical Care",
+      "volume_pages": "29(2):173-179",
+      "doi": "10.1111/vec.12819",
+      "pmid": "30861281",
+      "url": "",
+      "article_id": "",
+      "type": "cohort",
+      "species": "",
+      "n_dogs": 46,
+      "read": "abstract"
+    },
+    {
+      "ref": "R24",
+      "authors": "Balakrishnan A, Drobatz KJ, Silverstein DC",
+      "year": 2017,
+      "title": "Retrospective evaluation of the prevalence, risk factors, management, outcome, and necropsy findings of acute lung injury and acute respiratory distress syndrome in dogs and cats: 29 cases (2011-2013)",
+      "journal": "Journal of Veterinary Emergency and Critical Care",
+      "volume_pages": "27(6):662-673",
+      "doi": "10.1111/vec.12648",
+      "pmid": "28873275",
+      "url": "",
+      "article_id": "",
+      "type": "cohort",
+      "species": "",
+      "n_dogs": 24,
+      "read": "abstract"
+    },
+    {
+      "ref": "R25",
+      "authors": "Jacobson LS, Swan GE",
+      "year": 1995,
+      "title": "Supportive treatment of canine babesiosis",
+      "journal": "Journal of the South African Veterinary Association",
+      "volume_pages": "66(2):95-105",
+      "doi": "",
+      "pmid": "8544169",
+      "url": "",
+      "article_id": "",
+      "type": "review",
+      "species": "",
+      "n_dogs": null,
+      "read": "abstract"
+    }
+  ],
+  "search": {
+    "date": "2026-11-12",
+    "sources": [
+      "local review",
+      "PubMed",
+      "Europe PMC",
+      "Crossref",
+      "web"
+    ],
+    "note": "Local review files (clinical treatment set, PUL synthesis, term mentions, article texts), then PubMed and Europe PMC for babesiosis with lung, ARDS, oedema, oxygen, ventilation, fluids and furosemide, and for canine ARDS, high-flow oxygen, ventilation and fluid overload. The transfusion reaction consensus (TRACS), the 2024 AAHA fluid guidelines and a triage review with sedation doses could not be read (paywall or bot check) and were left out."
+  }
+}

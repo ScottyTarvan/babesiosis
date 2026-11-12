@@ -1,0 +1,143 @@
+:host {
+  display: block;
+}
+
+.fs-evm {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.fs-evm__tiles {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+  gap: var(--fs-guide-space-3);
+  margin: 0 0 var(--fs-guide-space-3);
+
+  div {
+    padding: var(--fs-guide-space-2) var(--fs-guide-space-3);
+    border-radius: 6px;
+    background: rgb(var(--fs-color-fill-subtle));
+  }
+
+  dt {
+    font-size: 11px;
+    font-weight: 500;
+    color: rgb(var(--fs-color-ink-soft));
+  }
+
+  dd {
+    margin: 2px 0 0;
+    font-size: 20px;
+    font-variant-numeric: tabular-nums;
+
+    small {
+      font-size: 11px;
+      color: rgb(var(--fs-color-ink-soft));
+    }
+  }
+}
+
+.fs-evm__subhead {
+  margin: var(--fs-guide-space-3) 0 var(--fs-guide-space-2);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.fs-evm__lead {
+  margin: 0 0 var(--fs-guide-space-2);
+  font-size: 13px;
+}
+
+.fs-evm__bars {
+  overflow-x: auto;
+
+  svg {
+    display: block;
+    font-size: 11px;
+  }
+
+  .grid {
+    stroke: rgb(var(--fs-color-ink-soft));
+    stroke-opacity: 0.25;
+  }
+
+  .tick-label,
+  .sub,
+  .tag {
+    fill: rgb(var(--fs-color-ink-soft));
+    font-size: 10px;
+  }
+
+  .label {
+    fill: rgb(var(--fs-color-ink));
+  }
+
+  .seg {
+    &.h {
+      fill: rgb(var(--fs-color-chart-2));
+    }
+
+    &.l {
+      fill: rgb(var(--fs-color-chart-3));
+    }
+
+    &.n {
+      fill: rgb(var(--fs-color-ink-soft));
+      fill-opacity: 0.45;
+    }
+
+    &.x {
+      fill: rgb(var(--fs-color-chart-1));
+      fill-opacity: 0.5;
+    }
+  }
+}
+
+.fs-evm__axis {
+  margin: 0 0 var(--fs-guide-space-2);
+  font-size: 11px;
+  color: rgb(var(--fs-color-ink-soft));
+}
+
+.fs-evm__heat {
+  overflow-x: auto;
+
+  table {
+    border-collapse: collapse;
+    font-size: 12px;
+  }
+
+  th,
+  td {
+    padding: 4px 10px;
+    border-bottom: 1px solid rgb(var(--fs-color-ink-soft) / 0.2);
+    text-align: left;
+    color: rgb(var(--fs-color-ink));
+  }
+
+  th {
+    font-weight: 600;
+    color: rgb(var(--fs-color-ink-soft));
+  }
+
+  .num {
+    text-align: right;
+    font-variant-numeric: tabular-nums;
+
+    small {
+      color: rgb(var(--fs-color-ink-soft));
+    }
+  }
+
+  .cell {
+    min-width: 70px;
+    background: rgb(var(--fs-color-chart-1) / var(--a, 0));
+  }
+}
+
+.fs-evm__footnote {
+  margin: var(--fs-guide-space-2) 0 0;
+  font-size: 12px;
+  color: rgb(var(--fs-color-ink-soft));
+}

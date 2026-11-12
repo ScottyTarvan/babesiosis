@@ -1,0 +1,946 @@
+{
+  "schema_version": 1,
+  "id": "SY02",
+  "title": "Secondary immune-mediated haemolytic anaemia",
+  "updated": "2026-11-12",
+  "definition": "Anaemia with at least two markers of immune-mediated red cell destruction (marked spherocytosis, saline agglutination, positive direct antiglobulin test or flow cytometry), or agglutination that persists after washing, plus a sign of haemolysis, in a dog infected with Babesia [R1]. Babesiosis studies often use a positive in-saline agglutination test alone [R2][R3].",
+  "definition_note": "Changed. The working definition required haemolysis that goes on despite antibabesial treatment. The sources do not require this: most diagnoses are made at admission, before treatment [R3][R4]. Haemolysis that recurs after the parasite is cleared is a reported subset (case reports only) [R5][R6]. A positive Coombs test alone does not define the syndrome, because it is common in uncomplicated infection [R7][R8]. Evans syndrome (with immune thrombocytopenia) is described only in case reports [R9].",
+  "key_points": [
+    "A positive Coombs test is common in babesiosis and often clears with antibabesial treatment alone; on its own it does not prove secondary IMHA [R7][R8].",
+    "In B. rossi, about 1 in 10 dogs is in-saline agglutination positive at admission, and this did not change the anaemia or survival [R3].",
+    "Treat the parasite first (TX00). The ACVIM panel states that the immune drive stops once the infection is controlled [R1].",
+    "Suspect secondary IMHA when the haematocrit falls again, or agglutination and spherocytes persist, after the parasite is cleared; such dogs responded to prednisolone in case reports [R5][R6].",
+    "In B. gibsoni, IMHA is well documented and carries a worse survival than primary IMHA [R1][R10].",
+    "There is no controlled evidence that immunosuppression improves survival in babesiosis; most drug doses on this page come from the ACVIM guideline for IMHA of any cause (level D) [R11]."
+  ],
+  "description": [
+    {
+      "heading": "What it is",
+      "text": "Antibodies bind red cells; the cells agglutinate, or are partly phagocytosed into rigid spherocytes that are trapped and destroyed in the spleen [R1]. In babesiosis this sits on top of the haemolysis caused by the parasite itself (SY01). It is called secondary because it is triggered by the infection, in contrast to primary (idiopathic) IMHA, for which no cause is found [R1]."
+    },
+    {
+      "heading": "How common, and in which dogs",
+      "text": "B. rossi: 10.3% of 320 dogs at Onderstepoort were in-saline agglutination positive [R3]; 4 of 35 in a second cohort [R2]. B. canis: Coombs positive in 3 of 32 [R5] and 6 of 23 dogs [R8]. B. gibsoni (India): Coombs positive in 28, agglutination positive in 21 and spherocytes in 18 of 64 PCR-positive dogs [R4]. In an older series, 31 of 37 dogs with B. gibsoni or B. canis were Coombs positive [R7]."
+    },
+    {
+      "heading": "When in the course of disease",
+      "text": "Most positive tests are found at admission. In B. canis all Coombs tests were negative by a median of 15 days after imidocarb [R8]. A minority of dogs develop or keep immune haemolysis after treatment: one B. canis dog at day 11 with a negative PCR [R5], another at day 7 [R6]. In people with B. microti, warm autoimmune haemolysis appeared 2 to 4 weeks after the parasite was cleared, only in asplenic patients [R12]."
+    },
+    {
+      "heading": "Mechanism",
+      "text": "Parasite damage and oxidative injury to the red cell membrane expose hidden antigens, which the antibodies then target [R1]. In B. gibsoni, these antibodies did not bind undamaged red cells after the dogs recovered, which suggests the drive stops when the infection is controlled [R1]. B. vogeli caused red cell-bound IgG and IgM in most sick dogs; B. canis did not [R13]."
+    }
+  ],
+  "species_notes": [
+    {
+      "species": "B. rossi",
+      "note": "Agglutination-positive dogs had the same median haematocrit (0.19 L/L) as negative dogs (0.185 L/L), and positivity did not change survival [R3]. As cited in that paper, 88% of B. rossi dogs were Coombs positive in an earlier study, most without spherocytes or agglutination [R3]. The ACVIM panel rated the evidence that B. rossi causes IMHA as low [R1]."
+    },
+    {
+      "species": "B. canis",
+      "note": "Positive Coombs tests were few and transient [R5][R8]; flow cytometry found no red cell-bound antibody in 24 sick dogs [R13]. Post-treatment IMHA is reported in single dogs [R5][R6]."
+    },
+    {
+      "species": "B. vogeli",
+      "note": "Four of six sick dogs had red cell-bound antibodies by flow cytometry [R13]."
+    },
+    {
+      "species": "B. gibsoni",
+      "note": "High level of evidence that immune destruction contributes to the anaemia; screen every dog with IMHA for B. gibsoni, of any breed [R1]. Splenectomised dogs develop severe disease, and the review states that glucocorticoids are contraindicated after splenectomy [R14]."
+    }
+  ],
+  "diagnosis": {
+    "criteria": [
+      {
+        "criterion": "Anaemia",
+        "threshold": "haematocrit below the reference interval; use a spun PCV",
+        "basis": "general canine",
+        "note": "A calculated haematocrit can be wrong when agglutination is present.",
+        "refs": [
+          "R1"
+        ]
+      },
+      {
+        "criterion": "Markers of immune-mediated destruction",
+        "threshold": "at least 2 of: marked spherocytosis, positive saline agglutination, positive direct antiglobulin test, positive flow cytometry; or agglutination that persists after washing",
+        "basis": "general canine",
+        "note": "ACVIM criteria for a firm diagnosis, with at least 1 sign of haemolysis. In babesiosis, signs of haemolysis are almost always present, so they do not separate immune from parasite haemolysis.",
+        "refs": [
+          "R1"
+        ]
+      },
+      {
+        "criterion": "Spherocytosis",
+        "threshold": "5 or more spherocytes per x100 oil field supports IMHA; 3 to 4 may be consistent",
+        "basis": "general canine",
+        "note": "Count in the monolayer of a good smear. Stored blood contains spherocytes: interpret with care after transfusion.",
+        "refs": [
+          "R1"
+        ]
+      },
+      {
+        "criterion": "Saline agglutination test",
+        "threshold": "agglutination persists after 1 drop of blood is mixed with 4 drops of saline",
+        "basis": "general canine",
+        "note": "If equivocal, or with high total protein or strong rouleaux, wash the cells 3 times in saline at 1:4. Use saline between room temperature and 37 °C.",
+        "refs": [
+          "R1"
+        ]
+      },
+      {
+        "criterion": "Positive in-saline agglutination test",
+        "threshold": "positive at admission",
+        "basis": "babesiosis",
+        "note": "The definition of secondary IMHA in B. rossi studies at Onderstepoort.",
+        "refs": [
+          "R2",
+          "R3"
+        ]
+      },
+      {
+        "criterion": "Immune haemolysis after parasite clearance",
+        "threshold": "renewed fall in haematocrit with spherocytes, agglutination or a positive Coombs test, and a negative Babesia PCR",
+        "basis": "working",
+        "note": "No published threshold. Built from two case reports in B. canis.",
+        "refs": [
+          "R5",
+          "R6"
+        ]
+      }
+    ],
+    "clinical_signs": [
+      {
+        "sign": "Renewed fall in haematocrit after an initial recovery",
+        "note": "One B. canis dog went from 0.25 to 0.38 L/L (25 to 38%), then fell to 0.15 L/L (15%) on day 11.",
+        "refs": [
+          "R5"
+        ]
+      },
+      {
+        "sign": "Pale or icteric mucous membranes, haematuria, fever",
+        "note": "The presenting signs of B. gibsoni dogs screened for IMHA; the same signs occur without IMHA.",
+        "refs": [
+          "R15"
+        ]
+      },
+      {
+        "sign": "Clinical signs of reduced tissue oxygen delivery; high resting blood lactate",
+        "note": "The trigger for transfusion in the ACVIM guideline, rather than a fixed haematocrit.",
+        "refs": [
+          "R11"
+        ]
+      }
+    ],
+    "tests": [
+      {
+        "test": "Blood smear",
+        "finding": "Parasites; spherocytes; agglutinates",
+        "note": "Spherocytes and agglutinates on the smear led to the diagnosis at day 7 in a B. canis case.",
+        "refs": [
+          "R6",
+          "R1"
+        ]
+      },
+      {
+        "test": "Slide saline agglutination test",
+        "finding": "Persistent red cell clumping after dilution in saline",
+        "note": "Cheap and quick. Agglutination often disappears after washing: in one laboratory study it persisted in only 4 of 48 samples.",
+        "refs": [
+          "R1",
+          "R16"
+        ]
+      },
+      {
+        "test": "Reticulocyte count",
+        "finding": "Lower in B. rossi than in primary IMHA at the same haematocrit",
+        "note": "A weak regenerative response is typical of B. rossi and does not exclude IMHA.",
+        "refs": [
+          "R17",
+          "R1"
+        ]
+      },
+      {
+        "test": "Direct antiglobulin (Coombs) test",
+        "finding": "Positive in many infected dogs without clinical IMHA",
+        "note": "In-clinic gel and strip tests gave results similar to laboratory methods. A positive result alone is weak evidence in babesiosis.",
+        "refs": [
+          "R16",
+          "R7",
+          "R8"
+        ]
+      },
+      {
+        "test": "Babesia PCR",
+        "finding": "Confirms species; a negative PCR after treatment supports immune, not parasitic, haemolysis",
+        "note": "In B. canis, PCR was negative 14 days after imidocarb in all dogs. ACVIM advises PCR with serology in every dog with IMHA, and repeat PCR if negative and at risk.",
+        "refs": [
+          "R8",
+          "R1"
+        ]
+      },
+      {
+        "test": "Platelet count, bilirubin, urea",
+        "finding": "Platelets under 30 x 10^9/L argue against antithrombotics; high bilirubin and urea predict death in IMHA",
+        "note": "Thrombocytopenia with IMHA raises Evans syndrome; see SY03.",
+        "refs": [
+          "R11",
+          "R9"
+        ]
+      }
+    ],
+    "differentials": [
+      {
+        "condition": "Haemolysis by the parasite (SY01)",
+        "distinguish": "Stops with antibabesial treatment. Coombs positivity in B. canis cleared within about 2 weeks without immunosuppression.",
+        "refs": [
+          "R8",
+          "R7"
+        ]
+      },
+      {
+        "condition": "Primary IMHA with an undetected Babesia infection",
+        "distinguish": "Low parasitaemia, especially B. gibsoni, can be missed on a smear: test by PCR and serology before immunosuppression.",
+        "refs": [
+          "R1",
+          "R14"
+        ]
+      },
+      {
+        "condition": "Co-infection (Ehrlichia, Anaplasma, Bartonella, Leishmania, Dirofilaria)",
+        "distinguish": "These also cause Coombs-positive anaemia. Screen for them.",
+        "refs": [
+          "R1"
+        ]
+      },
+      {
+        "condition": "Haemolytic transfusion reaction",
+        "distinguish": "Spherocytes after transfusion may come from stored blood. Check the timing and cross-match.",
+        "refs": [
+          "R1",
+          "R11"
+        ]
+      },
+      {
+        "condition": "False agglutination (rouleaux, hyperproteinaemia)",
+        "distinguish": "Repeat after washing the cells 3 times in saline.",
+        "refs": [
+          "R1"
+        ]
+      }
+    ],
+    "grading": []
+  },
+  "approach": [
+    {
+      "step": 1,
+      "action": "Confirm the species and treat the parasite",
+      "detail": "Give the antibabesial drug first (TX00). Infection must be controlled before an immune process can be judged [R1].",
+      "setting": "practice"
+    },
+    {
+      "step": 2,
+      "action": "Measure and stabilise",
+      "detail": "Spun PCV, smear and saline agglutination at admission. Transfuse for signs of poor oxygen delivery, as in SY01; cross-match with care when agglutination is present [R11].",
+      "setting": "practice"
+    },
+    {
+      "step": 3,
+      "action": "Do not start immunosuppression on a positive Coombs test alone",
+      "detail": "Positive tests are common and usually clear with antibabesial treatment [R7][R8]. In B. rossi, agglutination at admission did not change survival [R3].",
+      "setting": "practice"
+    },
+    {
+      "step": 4,
+      "action": "Reassess at 7 to 14 days",
+      "detail": "Repeat PCV, smear and agglutination; PCR for clearance [R8]. A new fall in haematocrit with spherocytes or agglutination and a negative PCR suggests secondary IMHA [R5][R6].",
+      "setting": "practice"
+    },
+    {
+      "step": 5,
+      "action": "Consider a glucocorticoid",
+      "detail": "For persistent immune haemolysis after the parasite is controlled, or in B. gibsoni that does not respond to antibabesial treatment [R14][R5]. Keep the antibabesial course going.",
+      "setting": "practice"
+    },
+    {
+      "step": 6,
+      "action": "Refer refractory dogs",
+      "detail": "Unstable haematocrit or transfusion dependence after 7 days of a glucocorticoid: second drug, anticoagulant with monitoring, or IVIG [R11].",
+      "setting": "referral"
+    },
+    {
+      "step": 7,
+      "action": "Taper and monitor",
+      "detail": "Check PCV every 1 to 3 weeks and before each dose reduction; watch for relapse of the infection [R11].",
+      "setting": "practice"
+    }
+  ],
+  "treatments": [
+    {
+      "name": "Red cell transfusion",
+      "class": "supportive",
+      "aim": "Restore oxygen-carrying capacity while haemolysis is controlled.",
+      "status": "standard",
+      "evidence_level": "B",
+      "independent_studies": 1,
+      "evidence_summary": "Part of standard care in 320 B. rossi dogs, given as needed; agglutination status did not change outcome [R3]. For IMHA of any cause, ACVIM recommends packed red cells, ideally under 7 to 10 days old, when the dog shows signs of poor oxygen delivery (level D) [R11]. Volumes and triggers are on SY01.",
+      "doses": [],
+      "cautions": "Autoagglutination can interfere with blood typing and cross-matching [R11]. Older units were linked to more transfusion reactions and death in IMHA [R11].",
+      "monitoring": "PCV before and after transfusion; temperature and signs of reaction.",
+      "availability": "",
+      "refs": [
+        "R3",
+        "R11"
+      ]
+    },
+    {
+      "name": "Prednisolone or dexamethasone (glucocorticoid)",
+      "class": "specific",
+      "aim": "Reduce antibody-mediated red cell destruction.",
+      "status": "proposed",
+      "evidence_level": "A",
+      "independent_studies": 1,
+      "evidence_summary": "One small randomised trial in 18 B. gibsoni dogs with IMHA: antimicrobials alone, with prednisolone, or with prednisolone and azathioprine. Haematology improved in all three groups; all prednisolone-group dogs were Coombs negative after treatment [R15]. In a cohort, B. gibsoni dogs with IMHA on prednisolone or dexamethasone had worse survival than primary IMHA [R10]. Single B. canis dogs with post-treatment IMHA recovered on prednisolone [R5][R6]. General IMHA dosing is level D [R11].",
+      "doses": [
+        {
+          "drug": "prednisolone or prednisone",
+          "dose": "2 to 3 mg/kg/day (50 to 60 mg/m2/day for dogs over 25 kg)",
+          "route": "PO",
+          "frequency": "once daily or divided every 12 h",
+          "duration": "reduce to 2 mg/kg/day or less within 1 to 2 weeks if responding",
+          "context": "IMHA of any cause, consensus guideline",
+          "note": "Some panel members advise not more than 2 mg/kg/day.",
+          "refs": [
+            "R11"
+          ]
+        },
+        {
+          "drug": "prednisone",
+          "dose": "2 mg/kg",
+          "route": "PO",
+          "frequency": "every 24 h",
+          "duration": "",
+          "context": "B. gibsoni, narrative review",
+          "note": "Only if the dog does not respond to antiprotozoal treatment and disease is moderate to severe.",
+          "refs": [
+            "R14"
+          ]
+        },
+        {
+          "drug": "prednisolone",
+          "dose": "2 mg/kg, then 1 mg/kg, then 0.5 mg/kg",
+          "route": "PO",
+          "frequency": "every 12 h",
+          "duration": "5 days at each dose (15 days)",
+          "context": "B. gibsoni, 6 dogs, randomised trial",
+          "note": "Given with doxycycline, metronidazole and clindamycin for 21 days (TX00).",
+          "refs": [
+            "R15"
+          ]
+        },
+        {
+          "drug": "prednisolone",
+          "dose": "1 mg/kg",
+          "route": "PO",
+          "frequency": "every 12 h",
+          "duration": "",
+          "context": "B. gibsoni and primary IMHA, 55 dogs, cohort",
+          "note": "",
+          "refs": [
+            "R10"
+          ]
+        },
+        {
+          "drug": "prednisolone",
+          "dose": "0.6 mg/kg/day",
+          "route": "PO",
+          "frequency": "daily",
+          "duration": "haematocrit normal within 14 days",
+          "context": "B. canis, 1 dog with post-treatment IMHA, case series",
+          "note": "",
+          "refs": [
+            "R5"
+          ]
+        },
+        {
+          "drug": "dexamethasone",
+          "dose": "0.2 to 0.4 mg/kg/day",
+          "route": "IV",
+          "frequency": "daily",
+          "duration": "temporary, while the dog cannot take oral treatment",
+          "context": "IMHA of any cause, consensus guideline",
+          "note": "",
+          "refs": [
+            "R11"
+          ]
+        },
+        {
+          "drug": "dexamethasone sodium phosphate",
+          "dose": "0.2 mg/kg",
+          "route": "IV",
+          "frequency": "every 24 h",
+          "duration": "",
+          "context": "B. gibsoni and primary IMHA, 55 dogs, cohort",
+          "note": "Used as an alternative to prednisolone.",
+          "refs": [
+            "R10"
+          ]
+        }
+      ],
+      "cautions": "Glucocorticoids are contraindicated in splenectomised dogs with B. gibsoni [R14]. They may make other underlying diseases harder to detect, so the work-up for infection should be done quickly [R11]. Adverse effects include polyuria, polydipsia, panting, muscle loss and urinary infection [R11].",
+      "monitoring": "PCV every 1 to 3 weeks and before each dose change; spherocytes, agglutination and bilirubin periodically [R11]. When PCV stays above 0.30 L/L (30%) for 2 weeks, reduce by 25%, then 25% every 3 weeks; 3 to 6 months is typical for IMHA of any cause [R11].",
+      "availability": "",
+      "refs": [
+        "R15",
+        "R10",
+        "R5",
+        "R6",
+        "R14",
+        "R11"
+      ]
+    },
+    {
+      "name": "Azathioprine (second immunosuppressive drug)",
+      "class": "specific",
+      "aim": "Add a second immunosuppressant to limit glucocorticoid dose in severe or refractory disease.",
+      "status": "proposed",
+      "evidence_level": "A",
+      "independent_studies": 1,
+      "evidence_summary": "In the same trial, 6 B. gibsoni dogs got azathioprine with prednisolone and antimicrobials. Haematology improved, but ALT and ALP rose after treatment, unlike the other two groups [R15]. For IMHA of any cause, ACVIM suggests a second drug for severe disease or steroid failure, but its benefit is not established (level D) [R11].",
+      "doses": [
+        {
+          "drug": "azathioprine",
+          "dose": "2 mg/kg (or 50 mg/m2)",
+          "route": "PO",
+          "frequency": "every 24 h; after 2 to 3 weeks may go to every other day",
+          "duration": "",
+          "context": "IMHA of any cause, consensus guideline",
+          "note": "",
+          "refs": [
+            "R11"
+          ]
+        },
+        {
+          "drug": "azathioprine",
+          "dose": "2 mg/kg, then 1 mg/kg, then 0.5 mg/kg",
+          "route": "PO",
+          "frequency": "every 24 h",
+          "duration": "5 days at each dose (15 days)",
+          "context": "B. gibsoni, 6 dogs, randomised trial",
+          "note": "With prednisolone 1.5 mg/kg, then 1 mg/kg, then 0.5 mg/kg PO every 12 h, 5 days each.",
+          "refs": [
+            "R15"
+          ]
+        }
+      ],
+      "cautions": "Liver enzyme rise in the B. gibsoni trial [R15]. ACVIM advises against 3 or more immunosuppressants at once; stop the drug if myelosuppression occurs [R11].",
+      "monitoring": "ALT, ALP and a CBC before and during treatment [R15][R11].",
+      "availability": "",
+      "refs": [
+        "R15",
+        "R11"
+      ]
+    },
+    {
+      "name": "Ciclosporin or mycophenolate mofetil (second immunosuppressive drug)",
+      "class": "specific",
+      "aim": "Alternatives to azathioprine as the second drug.",
+      "status": "proposed",
+      "evidence_level": "D",
+      "independent_studies": 1,
+      "evidence_summary": "No study in babesiosis was found that reports these drugs with a source we could verify. ACVIM lists them as options for IMHA of any cause [R11].",
+      "doses": [
+        {
+          "drug": "ciclosporin",
+          "dose": "5 mg/kg",
+          "route": "PO",
+          "frequency": "every 12 h",
+          "duration": "",
+          "context": "IMHA of any cause, consensus guideline",
+          "note": "Adjust by drug monitoring if available.",
+          "refs": [
+            "R11"
+          ]
+        },
+        {
+          "drug": "mycophenolate mofetil",
+          "dose": "8 to 12 mg/kg",
+          "route": "PO",
+          "frequency": "every 12 h",
+          "duration": "",
+          "context": "IMHA of any cause, consensus guideline",
+          "note": "Do not combine with azathioprine.",
+          "refs": [
+            "R11"
+          ]
+        }
+      ],
+      "cautions": "Combinations raise the risk of opportunistic infection; infections may need the regimen changed [R11].",
+      "monitoring": "PCV every 1 to 3 weeks; drug levels for ciclosporin where available [R11].",
+      "availability": "",
+      "refs": [
+        "R11"
+      ]
+    },
+    {
+      "name": "Antithrombotic prophylaxis",
+      "class": "adjunct",
+      "aim": "Prevent thromboembolism, a main cause of death in IMHA.",
+      "status": "proposed",
+      "evidence_level": "D",
+      "independent_studies": 1,
+      "evidence_summary": "ACVIM recommends thromboprophylaxis for all dogs with IMHA except those with severe thrombocytopenia, preferring an anticoagulant [R11]. No data in babesiosis. Thrombocytopenia was present in all 49 dogs of one B. canis series [R5]; see SY03.",
+      "doses": [
+        {
+          "drug": "clopidogrel",
+          "dose": "1.1 to 4.0 mg/kg",
+          "route": "PO",
+          "frequency": "every 24 h",
+          "duration": "until remission and off prednisolone",
+          "context": "IMHA of any cause, consensus guideline",
+          "note": "A loading dose (about double, up to 10 mg/kg) may be given once.",
+          "refs": [
+            "R11"
+          ]
+        },
+        {
+          "drug": "rivaroxaban",
+          "dose": "1 to 2 mg/kg",
+          "route": "PO",
+          "frequency": "every 24 h",
+          "duration": "",
+          "context": "IMHA of any cause, consensus guideline",
+          "note": "Suggested starting dose.",
+          "refs": [
+            "R11"
+          ]
+        },
+        {
+          "drug": "unfractionated heparin",
+          "dose": "150 to 300 U/kg",
+          "route": "SC",
+          "frequency": "every 6 h",
+          "duration": "",
+          "context": "IMHA of any cause, consensus guideline",
+          "note": "Starting dose; adjust to anti-Xa or coagulation monitoring.",
+          "refs": [
+            "R11"
+          ]
+        },
+        {
+          "drug": "enoxaparin",
+          "dose": "0.8 to 1.0 mg/kg",
+          "route": "SC",
+          "frequency": "every 6 to 8 h",
+          "duration": "",
+          "context": "IMHA of any cause, consensus guideline",
+          "note": "Starting dose; anti-Xa monitoring may help.",
+          "refs": [
+            "R11"
+          ]
+        }
+      ],
+      "cautions": "Not recommended when platelets are under 30 x 10^9/L [R11].",
+      "monitoring": "Platelet count; anti-Xa activity for heparins where available [R11].",
+      "availability": "",
+      "refs": [
+        "R11"
+      ]
+    },
+    {
+      "name": "Human intravenous immunoglobulin (IVIG)",
+      "class": "specific",
+      "aim": "Rapid salvage blockade of red cell destruction.",
+      "status": "proposed",
+      "evidence_level": "D",
+      "independent_studies": 1,
+      "evidence_summary": "No data in babesiosis. In IMHA of any cause, studies showed no survival benefit; ACVIM allows it only as salvage after failure of 2 immunosuppressants [R11].",
+      "doses": [
+        {
+          "drug": "human intravenous immunoglobulin",
+          "dose": "0.5 to 1 g/kg",
+          "route": "IV",
+          "frequency": "single infusion",
+          "duration": "single dose",
+          "context": "IMHA of any cause, consensus guideline",
+          "note": "Salvage only; not for routine use.",
+          "refs": [
+            "R11"
+          ]
+        }
+      ],
+      "cautions": "Expensive and of limited availability; may raise thrombotic risk [R11].",
+      "monitoring": "PCV daily; signs of thrombosis.",
+      "availability": "",
+      "refs": [
+        "R11"
+      ]
+    },
+    {
+      "name": "Splenectomy",
+      "class": "specific",
+      "aim": "Remove the main site of red cell destruction in relapsing IMHA.",
+      "status": "harmful",
+      "evidence_level": "D",
+      "independent_studies": 2,
+      "evidence_summary": "ACVIM considers splenectomy for relapsing IMHA only after vector-borne infection has been exhaustively excluded [R11]. Splenectomised dogs develop severe B. gibsoni disease [R14]. In people, post-babesiosis autoimmune haemolysis occurred only in asplenic patients [R12].",
+      "doses": [],
+      "cautions": "ACVIM advises it only once vector-borne infection is excluded; splenectomised dogs with B. gibsoni have severe disease [R11][R14].",
+      "monitoring": "",
+      "availability": "",
+      "refs": [
+        "R11",
+        "R14",
+        "R12"
+      ]
+    }
+  ],
+  "prognosis": {
+    "text": "In B. rossi, agglutination at admission did not change survival [R3]. In B. gibsoni, IMHA was more often fatal than primary IMHA: of 55 dogs with either form, 40 died of IMHA within 60 days [R10]. Single B. canis dogs with post-treatment IMHA recovered on prednisolone [R5][R6]. In the B. rossi series, death included euthanasia [R3].",
+    "indicators": [
+      {
+        "finding": "Concurrent B. gibsoni infection in a dog with IMHA",
+        "meaning": "Higher risk of death than primary IMHA (hazard ratio 2.6).",
+        "refs": [
+          "R10"
+        ]
+      },
+      {
+        "finding": "Marked spherocytosis",
+        "meaning": "Higher risk of death in IMHA with or without B. gibsoni (hazard ratio 2.1).",
+        "refs": [
+          "R10"
+        ]
+      },
+      {
+        "finding": "In-saline agglutination in B. rossi",
+        "meaning": "No effect on survival or on admission haematocrit.",
+        "refs": [
+          "R3"
+        ]
+      },
+      {
+        "finding": "High bilirubin and high urea",
+        "meaning": "Independent predictors of death in IMHA of any cause.",
+        "refs": [
+          "R11"
+        ]
+      }
+    ]
+  },
+  "related": [
+    {
+      "id": "TX00",
+      "why": "The antibabesial drugs, which come first."
+    },
+    {
+      "id": "SY01",
+      "why": "Haemolysis by the parasite, and transfusion volumes."
+    },
+    {
+      "id": "SY03",
+      "why": "Thrombocytopenia and immune thrombocytopenia (Evans syndrome)."
+    },
+    {
+      "id": "SY04",
+      "why": "Non-regenerative anaemia and bone marrow failure."
+    },
+    {
+      "id": "SY11",
+      "why": "Complicated babesiosis and the order of care."
+    }
+  ],
+  "evidence_gaps": [
+    "No trial compares immunosuppression with no immunosuppression for survival in any Babesia species.",
+    "No study in B. rossi reports outcome by whether glucocorticoids were given.",
+    "There is no agreed definition of secondary IMHA in babesiosis, and no threshold for when to start immunosuppression.",
+    "Whether immunosuppression delays parasite clearance or causes relapse or a carrier state was not measured in any study found.",
+    "The only trial is small (6 dogs per group), from one centre, and reports haematology at 21 days, not survival.",
+    "Evans syndrome with babesiosis is known from case reports only.",
+    "No data on antithrombotic drugs, ciclosporin, mycophenolate or IVIG in dogs with babesiosis."
+  ],
+  "references": [
+    {
+      "ref": "R1",
+      "authors": "Garden OA, Kidd L, Mexas AM, et al.",
+      "year": 2019,
+      "title": "ACVIM consensus statement on the diagnosis of immune-mediated hemolytic anemia in dogs and cats",
+      "journal": "Journal of Veterinary Internal Medicine",
+      "volume_pages": "33(2):313-334",
+      "doi": "10.1111/jvim.15441",
+      "pmid": "30806491",
+      "url": "",
+      "article_id": "",
+      "type": "guideline",
+      "species": "",
+      "n_dogs": null,
+      "read": "full text"
+    },
+    {
+      "ref": "R2",
+      "authors": "Defauw P, Schoeman JP, Leisewitz AL, et al.",
+      "year": 2020,
+      "title": "Evaluation of acute kidney injury in dogs with complicated or uncomplicated Babesia rossi infection",
+      "journal": "Ticks and Tick-borne Diseases",
+      "volume_pages": "11(3):101406",
+      "doi": "10.1016/j.ttbdis.2020.101406",
+      "pmid": "32107174",
+      "url": "",
+      "article_id": "CB053",
+      "type": "cohort",
+      "species": "B. rossi",
+      "n_dogs": 35,
+      "read": "full text"
+    },
+    {
+      "ref": "R3",
+      "authors": "Leisewitz AL, Goddard A, Clift S, et al.",
+      "year": 2019,
+      "title": "A clinical and pathological description of 320 cases of naturally acquired Babesia rossi infection in dogs",
+      "journal": "Veterinary Parasitology",
+      "volume_pages": "271:22-30",
+      "doi": "10.1016/j.vetpar.2019.06.005",
+      "pmid": "31303199",
+      "url": "",
+      "article_id": "CB040",
+      "type": "cohort",
+      "species": "B. rossi",
+      "n_dogs": 320,
+      "read": "full text"
+    },
+    {
+      "ref": "R4",
+      "authors": "Soundarya TC, Anil Kumar MC, Kshama MA, et al.",
+      "year": 2024,
+      "title": "Diagnosis of immune mediated haemolytic anemia in dogs affected with B. gibsoni",
+      "journal": "International Journal of Advanced Biochemistry Research",
+      "volume_pages": "8(4S):547-549",
+      "doi": "10.33545/26174693.2024.v8.i4sg.1076",
+      "pmid": "",
+      "url": "",
+      "article_id": "CB248",
+      "type": "case series",
+      "species": "B. gibsoni",
+      "n_dogs": 64,
+      "read": "full text"
+    },
+    {
+      "ref": "R5",
+      "authors": "Weingart C, Helm CS, Müller E, et al.",
+      "year": 2023,
+      "title": "Autochthonous Babesia canis infections in 49 dogs in Germany",
+      "journal": "Journal of Veterinary Internal Medicine",
+      "volume_pages": "37(1):140-149",
+      "doi": "10.1111/jvim.16611",
+      "pmid": "36629833",
+      "url": "",
+      "article_id": "CB106",
+      "type": "case series",
+      "species": "B. canis",
+      "n_dogs": 49,
+      "read": "full text"
+    },
+    {
+      "ref": "R6",
+      "authors": "Zaoui A, Deshuillers P",
+      "year": 2025,
+      "title": "Un cas clinique classique de piroplasmose canine permettant d'illustrer la démarche diagnostique",
+      "journal": "Le Nouveau Praticien Vétérinaire canine & féline",
+      "volume_pages": "22(91):30-37",
+      "doi": "10.1051/npvcafe/2025035",
+      "pmid": "",
+      "url": "",
+      "article_id": "CB264",
+      "type": "case report",
+      "species": "B. canis",
+      "n_dogs": 1,
+      "read": "abstract"
+    },
+    {
+      "ref": "R7",
+      "authors": "Farwell GE, LeGrand EK, Cobb CC",
+      "year": 1982,
+      "title": "Clinical observations on Babesia gibsoni and Babesia canis infections in dogs",
+      "journal": "Journal of the American Veterinary Medical Association",
+      "volume_pages": "180(5):507-511",
+      "doi": "",
+      "pmid": "7061333",
+      "url": "",
+      "article_id": "",
+      "type": "case series",
+      "species": "B. gibsoni, B. canis",
+      "n_dogs": 46,
+      "read": "abstract"
+    },
+    {
+      "ref": "R8",
+      "authors": "Eisenecker CM, Moritz A, von Hohnhorst IM, et al.",
+      "year": 2026,
+      "title": "Clinicopathological abnormalities and outcome of acute Babesia canis infections in 23 dogs treated with imidocarb dipropionate",
+      "journal": "Current Research in Parasitology & Vector-Borne Diseases",
+      "volume_pages": "10:100395",
+      "doi": "10.1016/j.crpvbd.2026.100395",
+      "pmid": "42375825",
+      "url": "",
+      "article_id": "CB148",
+      "type": "cohort",
+      "species": "B. canis",
+      "n_dogs": 23,
+      "read": "full text"
+    },
+    {
+      "ref": "R9",
+      "authors": "Saravanan M, Selvaraj P, Yogeshpriya S, et al.",
+      "year": 2019,
+      "title": "Molecular diagnosis of Babesia canis infection with concurrent of Evans syndrome in a Labrador dog",
+      "journal": "International Journal of Current Microbiology and Applied Sciences",
+      "volume_pages": "8(12):2522-2526",
+      "doi": "10.20546/ijcmas.2019.812.295",
+      "pmid": "",
+      "url": "",
+      "article_id": "CB047",
+      "type": "case report",
+      "species": "B. canis",
+      "n_dogs": 1,
+      "read": "full text"
+    },
+    {
+      "ref": "R10",
+      "authors": "Bandaranayaka N, Dissanayake A, Jinadasa R, et al.",
+      "year": 2026,
+      "title": "Concurrent Babesia gibsoni infection as a negative prognostics indicator of survival in dogs diagnosed with immune-mediated hemolytic anemia: a prospective cohort study",
+      "journal": "Topics in Companion Animal Medicine",
+      "volume_pages": "73:101086",
+      "doi": "10.1016/j.tcam.2026.101086",
+      "pmid": "42448039",
+      "url": "",
+      "article_id": "CB153",
+      "type": "cohort",
+      "species": "B. gibsoni",
+      "n_dogs": 55,
+      "read": "abstract"
+    },
+    {
+      "ref": "R11",
+      "authors": "Swann JW, Garden OA, Fellman CL, et al.",
+      "year": 2019,
+      "title": "ACVIM consensus statement on the treatment of immune-mediated hemolytic anemia in dogs",
+      "journal": "Journal of Veterinary Internal Medicine",
+      "volume_pages": "33(3):1141-1172",
+      "doi": "10.1111/jvim.15463",
+      "pmid": "30847984",
+      "url": "",
+      "article_id": "",
+      "type": "guideline",
+      "species": "",
+      "n_dogs": null,
+      "read": "full text"
+    },
+    {
+      "ref": "R12",
+      "authors": "Woolley AE, Montgomery MW, Savage WJ, et al.",
+      "year": 2017,
+      "title": "Post-babesiosis warm autoimmune hemolytic anemia",
+      "journal": "New England Journal of Medicine",
+      "volume_pages": "376(10):939-946",
+      "doi": "10.1056/NEJMoa1612165",
+      "pmid": "28273010",
+      "url": "",
+      "article_id": "",
+      "type": "cohort",
+      "species": "B. microti (human)",
+      "n_dogs": null,
+      "read": "abstract"
+    },
+    {
+      "ref": "R13",
+      "authors": "Carli E, Tasca S, Trotta M, et al.",
+      "year": 2009,
+      "title": "Detection of erythrocyte binding IgM and IgG by flow cytometry in sick dogs with Babesia canis canis or Babesia canis vogeli infection",
+      "journal": "Veterinary Parasitology",
+      "volume_pages": "162(1-2):51-57",
+      "doi": "10.1016/j.vetpar.2009.02.002",
+      "pmid": "19269745",
+      "url": "",
+      "article_id": "",
+      "type": "case series",
+      "species": "B. canis, B. vogeli",
+      "n_dogs": 30,
+      "read": "abstract"
+    },
+    {
+      "ref": "R14",
+      "authors": "Karasová M, Tóthová C, Grelová S, et al.",
+      "year": 2022,
+      "title": "The etiology, incidence, pathogenesis, diagnostics, and treatment of canine babesiosis caused by Babesia gibsoni infection",
+      "journal": "Animals (Basel)",
+      "volume_pages": "12(6):739",
+      "doi": "10.3390/ani12060739",
+      "pmid": "35327136",
+      "url": "",
+      "article_id": "CB094",
+      "type": "review",
+      "species": "B. gibsoni",
+      "n_dogs": null,
+      "read": "full text"
+    },
+    {
+      "ref": "R15",
+      "authors": "Soundarya TC, Anil Kumar MC, Kshama MA, et al.",
+      "year": 2024,
+      "title": "Comparison of the efficacy of different therapeutic regimen for the treatment of IMHA caused by B. gibsoni in dogs",
+      "journal": "International Journal of Advanced Biochemistry Research",
+      "volume_pages": "8(4S):212-219",
+      "doi": "10.33545/26174693.2024.v8.i4sc.970",
+      "pmid": "",
+      "url": "",
+      "article_id": "CB247",
+      "type": "trial",
+      "species": "B. gibsoni",
+      "n_dogs": 18,
+      "read": "full text"
+    },
+    {
+      "ref": "R16",
+      "authors": "Idalan N, Zeitz JO, Weber CN, et al.",
+      "year": 2021,
+      "title": "Comparative study of immunohematological tests with canine blood samples submitted for a direct antiglobulin (Coombs') test",
+      "journal": "Canine Medicine and Genetics",
+      "volume_pages": "8(1):10",
+      "doi": "10.1186/s40575-021-00107-0",
+      "pmid": "34645506",
+      "url": "",
+      "article_id": "",
+      "type": "cohort",
+      "species": "",
+      "n_dogs": 154,
+      "read": "abstract"
+    },
+    {
+      "ref": "R17",
+      "authors": "Seejarim C, Rautenbach Y, Hooijberg EH, et al.",
+      "year": 2023,
+      "title": "Regenerative response in dogs naturally and experimentally infected with Babesia rossi",
+      "journal": "Veterinary Clinical Pathology",
+      "volume_pages": "52(3):422-432",
+      "doi": "10.1111/vcp.13228",
+      "pmid": "37638541",
+      "url": "",
+      "article_id": "CB115",
+      "type": "cohort",
+      "species": "B. rossi",
+      "n_dogs": 103,
+      "read": "abstract"
+    }
+  ],
+  "search": {
+    "date": "2026-11-12",
+    "sources": [
+      "local review",
+      "PubMed",
+      "Europe PMC",
+      "Crossref",
+      "web"
+    ],
+    "note": "Local IMHA-tagged treatment papers and term articles, PubMed and Europe PMC full texts of the ACVIM IMHA statements. Left out: single case reports with no DOI or PMID, a Chinese case report with no text, and the CURATIVE dosing paper (publisher blocked); the doses used are those restated in the ACVIM treatment statement."
+  }
+}

@@ -1,0 +1,129 @@
+{
+ "dataset_id": "DS04",
+ "outcomes": [
+  {
+   "name": "died",
+   "definition": "Fatal B. rossi case: died (7) or euthanised for a very grave prognosis (3) at OVAH (CB147); which dogs were euthanised is not in the files. 0 = healthy control (euthanised for welfare, not disease).",
+   "includes_euthanasia": true
+  },
+  {
+   "name": "death_timing",
+   "definition": "As written on the score sheet: died before treatment, died on admission, dead on arrival, died after treatment. Null for controls.",
+   "includes_euthanasia": true
+  }
+ ],
+ "records": [
+  {
+   "dog_id": "DS04:d007",
+   "original_id": "2",
+   "values": {
+    "died": 0,
+    "death_timing": null
+   }
+  },
+  {
+   "dog_id": "DS04:d002",
+   "original_id": "4",
+   "values": {
+    "died": 0,
+    "death_timing": null
+   }
+  },
+  {
+   "dog_id": "DS04:d001",
+   "original_id": "9",
+   "values": {
+    "died": 0,
+    "death_timing": null
+   }
+  },
+  {
+   "dog_id": "DS04:d010",
+   "original_id": "11",
+   "values": {
+    "died": 0,
+    "death_timing": null
+   }
+  },
+  {
+   "dog_id": "DS04:d003",
+   "original_id": "20",
+   "values": {
+    "died": 1,
+    "death_timing": "died before treatment"
+   }
+  },
+  {
+   "dog_id": "DS04:d013",
+   "original_id": "50",
+   "values": {
+    "died": 1,
+    "death_timing": "died before treatment"
+   }
+  },
+  {
+   "dog_id": "DS04:d011",
+   "original_id": "54",
+   "values": {
+    "died": 1,
+    "death_timing": "died after treatment"
+   }
+  },
+  {
+   "dog_id": "DS04:d005",
+   "original_id": "59",
+   "values": {
+    "died": 1,
+    "death_timing": "died after treatment"
+   }
+  },
+  {
+   "dog_id": "DS04:d009",
+   "original_id": "61",
+   "values": {
+    "died": 1,
+    "death_timing": "died after treatment"
+   }
+  },
+  {
+   "dog_id": "DS04:d014",
+   "original_id": "88",
+   "values": {
+    "died": 1,
+    "death_timing": "dead on arrival"
+   }
+  },
+  {
+   "dog_id": "DS04:d008",
+   "original_id": "91",
+   "values": {
+    "died": 1,
+    "death_timing": "died after treatment"
+   }
+  },
+  {
+   "dog_id": "DS04:d006",
+   "original_id": "106",
+   "values": {
+    "died": 1,
+    "death_timing": "died after treatment"
+   }
+  },
+  {
+   "dog_id": "DS04:d012",
+   "original_id": "110",
+   "values": {
+    "died": 1,
+    "death_timing": "died after treatment"
+   }
+  },
+  {
+   "dog_id": "DS04:d004",
+   "original_id": "117",
+   "values": {
+    "died": 1,
+    "death_timing": "died on admission"
+   }
+  }
+ ]
+}

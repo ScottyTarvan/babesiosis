@@ -1,0 +1,51 @@
+harmonised_name,dataset_id,original_column,unit,conversion,note
+temp_c,DS02,Clinical!T<day>,degC,,Rectal temperature.
+heart_rate,DS02,Clinical!P<day>,beats/min,,Dataset-specific name (not in the harmonised list). Pulse rate (CB101 supplementary table: pulse in bpm).
+resp_rate,DS02,Clinical!RR<day>,breaths/min,,Dataset-specific name (not in the harmonised list).
+mm_colour,DS02,Clinical!MM<day>,code,,"Dataset-specific name (not in the harmonised list). Notes sheet: 1 pale, 2 icteric, 3 normal, 4 congested."
+crt,DS02,Clinical!CRT<day>,s,,Dataset-specific name (not in the harmonised list). Capillary refill time; unit not given in the file (assumed seconds).
+femoral_pulse,DS02,Clinical!FP<day>,code,,"Dataset-specific name (not in the harmonised list). Notes sheet: 1 absent, 2 weak, 3 strong."
+appetite_score,DS02,Clinical!AP<day>,score 1-4,,Dataset-specific name (not in the harmonised list). Scale 1-4 per the DS01 supplementary table; direction not defined in the file.
+faecal_code,DS02,Clinical!FC<day>,code,,"Dataset-specific name (not in the harmonised list). Notes sheet: 1 diarrhoea, 2 normal, 3 firm."
+bp_sys,DS02,Clinical!BP(SYS)<day>,mmHg,,Dataset-specific name (not in the harmonised list).
+bp_dia,DS02,Clinical!BP(DIAS)<day>,mmHg,,Dataset-specific name (not in the harmonised list).
+bp_map,DS02,Clinical!BP(MAP)<day>,mmHg,,Dataset-specific name (not in the harmonised list).
+glucose,DS02,Clinical!GLC<day>,mmol/L,,Dataset-specific name (not in the harmonised list). Unit not given in the file; values 5-9 fit mmol/L.
+lactate_clinical,DS02,Clinical!LAC<day>,mmol/L,,Dataset-specific name (not in the harmonised list). Lactate on the Clinical sheet (probably a hand-held meter). The harmonised 'lactate' is the venous blood gas value.
+hb,DS02,Haematology!Hb<day>,g/L,,
+rbc,DS02,Haematology!RCC<day>,10^12/L,,
+hct,DS02,Haematology!HT<day>,L/L,,
+mcv,DS02,Haematology!MCV<day>,fL,,
+mch,DS02,Haematology!MCH<day>,pg,,Dataset-specific name (not in the harmonised list).
+mchc,DS02,Haematology!MCHC<day>,g/L,x10 (g/dL to g/L),Raw values about 33 are g/dL.
+rdw,DS02,Haematology!RDW<day>,%,,Dataset-specific name (not in the harmonised list).
+wbc,DS02,Haematology!WCC<day>,10^9/L,,
+neut_seg,DS02,Haematology!SNeut<day>,10^9/L,,
+neut_band,DS02,Haematology!BNeut<day>,10^9/L,,
+lymph,DS02,Haematology!Lymph<day>,10^9/L,,
+mono,DS02,Haematology!Mono<day>,10^9/L,,
+eos,DS02,Haematology!Eos<day>,10^9/L,,
+baso,DS02,Haematology!Baso<day>,10^9/L,,Dataset-specific name (not in the harmonised list).
+plt,DS02,Haematology!Plt<day>,10^9/L,,
+nrbc_per100wbc,DS02,Haematology!NRBC/100WBC<day>,per 100 WBC,,Dataset-specific name (not in the harmonised list).
+retic_pct,DS02,Haematology!Retic%<day>,%,,Days 1-8 only.
+arc,DS02,Haematology!Retic<day>,10^9/L,,Absolute reticulocyte count; unit not given in the file. The values equal the ARC (x10^9/L) of the same dogs in DS03.
+crp,DS02,Biochemistry!CRP<day>,mg/L,,Unit not given in the file (mg/L assumed). 10 is the reporting floor.
+albumin,DS02,Biochemistry!ALB<day>,g/L,,
+lactate,DS02,Venous blood gas!Lac<day>,mmol/L,,"Venous blood gas lactate, days 1-8."
+gmcsf,DS02,Cytokines!GM-CSF<day>,pg/mL,,Milliplex canine panel; unit pg/mL per CB098 (not in the file). 0 = below detection.
+ifng,DS02,Cytokines!INFg<day>,pg/mL,,Dataset-specific name (not in the harmonised list). 0 = below detection.
+kc,DS02,Cytokines!KC<day>,pg/mL,,0 = below detection.
+ip10,DS02,Cytokines!IP10<day>,pg/mL,,Dataset-specific name (not in the harmonised list). 0 = below detection.
+il2,DS02,Cytokines!IL2<day>,pg/mL,,0 = below detection.
+il6,DS02,Cytokines!IL6<day>,pg/mL,,0 = below detection.
+il7,DS02,Cytokines!IL7<day>,pg/mL,,Dataset-specific name (not in the harmonised list). 0 = below detection.
+il8,DS02,Cytokines!IL8<day>,pg/mL,,0 = below detection.
+il10,DS02,Cytokines!IL10<day>,pg/mL,,0 = below detection.
+il15,DS02,Cytokines!IL15<day>,pg/mL,,Dataset-specific name (not in the harmonised list). 0 = below detection.
+il18,DS02,Cytokines!IL18<day>,pg/mL,,0 = below detection.
+mcp1,DS02,Cytokines!MCP1<day>,pg/mL,,0 = below detection.
+tnfa,DS02,Cytokines!TNFa<day>,pg/mL,,Dataset-specific name (not in the harmonised list). 0 = below detection.
+parasitaemia_pct,DS02,Parasitaemias!D<day>,%,,Unit not given in the file (% parasitised red cells assumed).
+cfhb,DS02,Iron!CFHb<day>,mg/L,,Dataset-specific name (not in the harmonised list). Cell-free haemoglobin; unit not given in the file (mg/L is an assumption).
+dose_group,DS02,Exp group,low/high,"0 -> low, 1 -> high",Dataset-specific name (not in the harmonised list). Design variable.

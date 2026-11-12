@@ -1,0 +1,112 @@
+<div class="fs-experiment-signature">
+  <fs-card title="Primary result" [subtitle]="primary()?.label ?? 'Within-dog change per set'">
+    @if (primary(); as p) {
+      <div class="fs-experiment-signature__headline">
+        @for (s of p.sets; track s.set) {
+          <div class="fs-experiment-signature__stat">
+            <span class="fs-experiment-signature__stat-label">{{ s.label }} ({{ s.n_genes }} of {{ s.n_genes_fixed }} genes)</span>
+            <span class="fs-experiment-signature__stat-value">{{ s.positive }} of {{ s.n_dogs }}</span>
+            <span class="fs-experiment-signature__stat-sub">
+              dogs higher than D0 · beyond background {{ s.beyond_rise }} of {{ s.n_dogs }} · sign-test p {{ s.sign_test_p?.toFixed(3) ?? '–' }}
+            </span>
+            <span>
+              @if (s.in_family) {
+                <fs-badge variant="tonal" [intent]="intent(s)">{{ s.verdict?.signature_appears ? 'appears' : 'does not appear' }}</fs-badge>
+              } @else {
+                <fs-badge variant="tonal" intent="info">composition control</fs-badge>
+              }
+            </span>
+          </div>
+        }
+        <div class="fs-experiment-signature__stat">
+          <span class="fs-experiment-signature__stat-label">n</span>
+          <span class="fs-experiment-signature__stat-value fs-experiment-signature__stat-value--small">
+            {{ p.n_dogs }} dogs ({{ p.n_low }} low, {{ p.n_high }} high dose) · {{ p.n_samples }} samples
+          </span>
+        </div>
+        <div class="fs-experiment-signature__stat">
+          <span class="fs-experiment-signature__stat-label">Independent sources</span>
+          <span class="fs-experiment-signature__stat-value fs-experiment-signature__stat-value--small">{{ p.independent_sources }}</span>
+        </div>
+      </div>
+      @if (deltaChart(); as o) {
+        <fs-chart [options]="o" [height]="320" />
+      }
+      <fs-data-grid [data]="deltaRows()" [columns]="deltaColumns" keyExpr="id" />
+      <p class="fs-experiment-signature__footnote">
+        {{ p.note }} Sources: {{ p.sources.join('; ') }}. "Beyond background" means a background percentile ≥ 0.975 (rise) or ≤ 0.025 (fall).
+      </p>
+    } @else {
+      <p class="fs-experiment-signature__footnote">This run stored no primary result.</p>
+    }
+  </fs-card>
+
+  @for (c of dayCharts(); track c.set.set) {
+    <fs-card [title]="c.set.label + ' score by day'" [subtitle]="c.set.n_genes + ' genes; each Beagle (DS06), days 0 to 8'">
+      <fs-chart [options]="c.options" [height]="340" [empty]="!c.set.dogs.length" emptyMessage="No points for this set" />
+      <p class="fs-experiment-signature__footnote">
+        DS06, 5 Beagles, 1 source; exploratory. Days 6 and 8 follow treatment (about day 4) and are not analysed. The day 3 and day 4 libraries
+        collapse and shift to reticulocyte transcripts: read the erythroid control beside the other sets.
+      </p>
+    </fs-card>
+  } @empty {
+    <fs-card title="Set scores by day">
+      <p class="fs-experiment-signature__footnote">This run stored no trajectories.</p>
+    </fs-card>
+  }
+
+  @for (c of loadCharts(); track c.set.set) {
+    <fs-card [title]="c.set.label + ' score against parasitaemia'" subtitle="Pre-treatment samples; parasitaemia from DS02 under the working dog mapping">
+      <fs-chart [options]="c.options" [height]="320" />
+      <p class="fs-experiment-signature__footnote">
+        The DS06-to-DS02 mapping is probable for high_3 (dog 6) and unverified for the other four (SV-07); the alternative mapping swaps the two
+        dogs inside each dose group. Day 0 is pre-inoculation and plotted at 0%.
+      </p>
+    </fs-card>
+  }
+
+  @if (timingRows().length) {
+    <fs-card title="Timing against clinical deterioration" subtitle="First sampled day beyond the composition background, and the first day the DS02 habitus score fell below baseline">
+      <ul class="fs-experiment-signature__checks">
+        @for (v of verdictRows(); track v.set) {
+          <li>
+            <fs-badge variant="tonal" [intent]="v.before_deterioration_working ? 'success' : 'warning'">
+              {{ v.before_deterioration_working ? 'before' : 'not before' }}
+            </fs-badge>
+            <span>{{ v.set }}: risen before deterioration in at least one dog: working mapping {{ v.before_deterioration_working ? 'yes' : 'no' }},
+              alternative {{ v.before_deterioration_alternative ? 'yes' : 'no' }}. Earlier at the high dose: {{ v.earlier_at_high_dose ? 'yes' : 'no' }}.</span>
+          </li>
+        }
+      </ul>
+      <fs-data-grid [data]="timingRows()" [columns]="timingColumns" keyExpr="id" />
+      <p class="fs-experiment-signature__footnote">
+        DS06 samples only days 0, 1, 3 and 4 before treatment, so a rise can precede deterioration only at an earlier sampled day. Dose is aliased with dog.
+      </p>
+    </fs-card>
+  }
+
+  @if (checkRows().length) {
+    <fs-card title="Construct checks" subtitle="Within-dog Spearman rho of each score with a DS02 measure of the same dogs, pre-treatment (3 or 4 points per dog)">
+      <fs-data-grid [data]="checkRows()" [columns]="checkColumns" keyExpr="id" />
+      <p class="fs-experiment-signature__footnote">Descriptive only; 3 or 4 points per dog. Under both dog mappings.</p>
+    </fs-card>
+  }
+
+  @if (sensRows().length) {
+    <fs-card title="Sensitivity checks" subtitle="S1 day 3 as the last sample; S2 log2 upper-quartile CPM; S3 ranks without reticulocyte-shift genes; S4 leave one gene out">
+      <fs-data-grid [data]="sensRows()" [columns]="sensColumns" keyExpr="id" />
+    </fs-card>
+  }
+
+  @if (geneRows().length) {
+    <fs-card title="Gene mapping" [subtitle]="unmappedCount() + ' of ' + geneRows().length + ' fixed genes are not in the DS06 matrix'">
+      <fs-data-grid [data]="geneRows()" [columns]="geneColumns" keyExpr="id" />
+    </fs-card>
+  }
+
+  @if (libChart(); as o) {
+    <fs-card title="Library size per sample" subtitle="Sum of counts over the 12,362 genes; the tooltip gives the ALAS2 rank percentile">
+      <fs-chart [options]="o" [height]="300" />
+    </fs-card>
+  }
+</div>

@@ -1,0 +1,1 @@
+2026-11-12 | no dog-level outcomes file opened; inputs are published group results (SV-G2/associations_v2.csv, definitions_v2.csv) | spec 25f2cc933b6d7bc93b26ac90a1f973dd6523bc9b37df5f9a6d017ec47718a884

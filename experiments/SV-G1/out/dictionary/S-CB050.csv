@@ -1,0 +1,16 @@
+harmonised_name,dataset_id,original_column,unit,conversion,note
+sex,S-CB050,Gender,male/female,"Male -> male, Female -> female",Neuter status not recorded.
+age_months,S-CB050,Age (mos),months,,
+weight_kg,S-CB050,Weight (kg),kg,,
+wbc,S-CB050,WBC (x10^9/L),10^9/L,,ADVIA 2120.
+neut_seg,S-CB050,Neut Seg (x10^9/L),10^9/L,,
+neut_band,S-CB050,Neut Band (x10^9/L),10^9/L,,
+il2,S-CB050,IL-2 (pg/mL),pg/mL,,Floor 3.4 per record; 50001 in dog S-CB050:d125 read as the upper limit.
+il6,S-CB050,IL-6 (pg/mL),pg/mL,,Floor 3.6 per record; 50001 in dog S-CB050:d125 read as the upper limit.
+il8,S-CB050,IL-8 (pg/mL),pg/mL,,No floor documented. The minimum 21.6 occurs in 3 dogs; not flagged.
+il10,S-CB050,IL-10 (pg/mL),pg/mL,,Floor 8.4 per record.
+il18,S-CB050,IL-18 (pg/mL),pg/mL,,Floor 5.7 per record; 50001 in dog S-CB050:d125 read as the upper limit.
+gmcsf,S-CB050,GM-CSF (pg/mL),pg/mL,,Floor 9.1 per record; 50001 in dog S-CB050:d125 read as the upper limit.
+mcp1,S-CB050,MCP-1 (pg/mL),pg/mL,,No floor documented.
+mpxi,S-CB050,MPXI,index,,ADVIA neutrophil myeloperoxidase index (unitless).
+cohort,S-CB050,Case,1/2,"cases 1-97, 201-215 -> 1; cases 101-144, 216-220 -> 2",Dataset-specific name (not in the harmonised list). Collection series; cytokines only in cohort 1.

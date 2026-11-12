@@ -1,0 +1,334 @@
+{
+ "name": "second",
+ "reference": "extractions",
+ "other": "second",
+ "articles": 24,
+ "outcome_class": {
+  "jaccard_pooled": 0.958,
+  "articles_identical_sets": 23
+ },
+ "matched_pairs": 104,
+ "ref_keys": 109,
+ "other_keys": 104,
+ "coverage_ref_found_by_other": 0.954,
+ "coverage_other_found_by_ref": 1.0,
+ "direction_agreement": 0.981,
+ "significance_agreement": 0.99,
+ "both_agree": 0.971,
+ "significance_kappa": 0.985,
+ "per_article": [
+  {
+   "id": "CB006",
+   "classes_ref": [
+    "anaemia_grade",
+    "complicated",
+    "mortality",
+    "organ_dysfunction"
+   ],
+   "classes_other": [
+    "anaemia_grade",
+    "complicated",
+    "mortality",
+    "organ_dysfunction"
+   ],
+   "keys_ref": 20,
+   "keys_other": 20,
+   "matched": 20,
+   "same_direction": 20,
+   "same_significance": 20
+  },
+  {
+   "id": "CB050",
+   "classes_ref": [
+    "mortality"
+   ],
+   "classes_other": [
+    "mortality"
+   ],
+   "keys_ref": 5,
+   "keys_other": 5,
+   "matched": 5,
+   "same_direction": 5,
+   "same_significance": 4
+  },
+  {
+   "id": "CB077",
+   "classes_ref": [],
+   "classes_other": [],
+   "keys_ref": 0,
+   "keys_other": 0,
+   "matched": 0,
+   "same_direction": 0,
+   "same_significance": 0
+  },
+  {
+   "id": "CB098",
+   "classes_ref": [
+    "mortality",
+    "parasitaemia_level"
+   ],
+   "classes_other": [
+    "mortality"
+   ],
+   "keys_ref": 10,
+   "keys_other": 5,
+   "matched": 5,
+   "same_direction": 5,
+   "same_significance": 5
+  },
+  {
+   "id": "CB106",
+   "classes_ref": [
+    "mortality"
+   ],
+   "classes_other": [
+    "mortality"
+   ],
+   "keys_ref": 2,
+   "keys_other": 2,
+   "matched": 2,
+   "same_direction": 2,
+   "same_significance": 2
+  },
+  {
+   "id": "CB110",
+   "classes_ref": [],
+   "classes_other": [],
+   "keys_ref": 0,
+   "keys_other": 0,
+   "matched": 0,
+   "same_direction": 0,
+   "same_significance": 0
+  },
+  {
+   "id": "CB149",
+   "classes_ref": [
+    "complicated",
+    "mortality"
+   ],
+   "classes_other": [
+    "complicated",
+    "mortality"
+   ],
+   "keys_ref": 2,
+   "keys_other": 2,
+   "matched": 2,
+   "same_direction": 0,
+   "same_significance": 2
+  },
+  {
+   "id": "CB178",
+   "classes_ref": [
+    "anaemia_grade",
+    "mortality"
+   ],
+   "classes_other": [
+    "anaemia_grade",
+    "mortality"
+   ],
+   "keys_ref": 5,
+   "keys_other": 5,
+   "matched": 5,
+   "same_direction": 5,
+   "same_significance": 5
+  },
+  {
+   "id": "CB199",
+   "classes_ref": [],
+   "classes_other": [],
+   "keys_ref": 0,
+   "keys_other": 0,
+   "matched": 0,
+   "same_direction": 0,
+   "same_significance": 0
+  },
+  {
+   "id": "CB213",
+   "classes_ref": [],
+   "classes_other": [],
+   "keys_ref": 0,
+   "keys_other": 0,
+   "matched": 0,
+   "same_direction": 0,
+   "same_significance": 0
+  },
+  {
+   "id": "CB226",
+   "classes_ref": [],
+   "classes_other": [],
+   "keys_ref": 0,
+   "keys_other": 0,
+   "matched": 0,
+   "same_direction": 0,
+   "same_significance": 0
+  },
+  {
+   "id": "CB227",
+   "classes_ref": [],
+   "classes_other": [],
+   "keys_ref": 0,
+   "keys_other": 0,
+   "matched": 0,
+   "same_direction": 0,
+   "same_significance": 0
+  },
+  {
+   "id": "CB244",
+   "classes_ref": [],
+   "classes_other": [],
+   "keys_ref": 0,
+   "keys_other": 0,
+   "matched": 0,
+   "same_direction": 0,
+   "same_significance": 0
+  },
+  {
+   "id": "CB279",
+   "classes_ref": [],
+   "classes_other": [],
+   "keys_ref": 0,
+   "keys_other": 0,
+   "matched": 0,
+   "same_direction": 0,
+   "same_significance": 0
+  },
+  {
+   "id": "CB336",
+   "classes_ref": [],
+   "classes_other": [],
+   "keys_ref": 0,
+   "keys_other": 0,
+   "matched": 0,
+   "same_direction": 0,
+   "same_significance": 0
+  },
+  {
+   "id": "CB356",
+   "classes_ref": [],
+   "classes_other": [],
+   "keys_ref": 0,
+   "keys_other": 0,
+   "matched": 0,
+   "same_direction": 0,
+   "same_significance": 0
+  },
+  {
+   "id": "CB376",
+   "classes_ref": [
+    "mortality",
+    "treatment_intensity"
+   ],
+   "classes_other": [
+    "mortality",
+    "treatment_intensity"
+   ],
+   "keys_ref": 2,
+   "keys_other": 2,
+   "matched": 2,
+   "same_direction": 2,
+   "same_significance": 2
+  },
+  {
+   "id": "CB418",
+   "classes_ref": [
+    "treatment_intensity"
+   ],
+   "classes_other": [
+    "treatment_intensity"
+   ],
+   "keys_ref": 13,
+   "keys_other": 13,
+   "matched": 13,
+   "same_direction": 13,
+   "same_significance": 13
+  },
+  {
+   "id": "CB440",
+   "classes_ref": [],
+   "classes_other": [],
+   "keys_ref": 0,
+   "keys_other": 0,
+   "matched": 0,
+   "same_direction": 0,
+   "same_significance": 0
+  },
+  {
+   "id": "CB492",
+   "classes_ref": [
+    "anaemia_grade",
+    "treatment_intensity"
+   ],
+   "classes_other": [
+    "anaemia_grade",
+    "treatment_intensity"
+   ],
+   "keys_ref": 6,
+   "keys_other": 6,
+   "matched": 6,
+   "same_direction": 6,
+   "same_significance": 6
+  },
+  {
+   "id": "CB508",
+   "classes_ref": [
+    "mortality",
+    "severity_grade"
+   ],
+   "classes_other": [
+    "mortality",
+    "severity_grade"
+   ],
+   "keys_ref": 2,
+   "keys_other": 2,
+   "matched": 2,
+   "same_direction": 2,
+   "same_significance": 2
+  },
+  {
+   "id": "CB517",
+   "classes_ref": [
+    "mortality"
+   ],
+   "classes_other": [
+    "mortality"
+   ],
+   "keys_ref": 17,
+   "keys_other": 17,
+   "matched": 17,
+   "same_direction": 17,
+   "same_significance": 17
+  },
+  {
+   "id": "CB536",
+   "classes_ref": [
+    "anaemia_grade",
+    "severity_grade",
+    "specific_complication"
+   ],
+   "classes_other": [
+    "anaemia_grade",
+    "severity_grade",
+    "specific_complication"
+   ],
+   "keys_ref": 13,
+   "keys_other": 13,
+   "matched": 13,
+   "same_direction": 13,
+   "same_significance": 13
+  },
+  {
+   "id": "CB537",
+   "classes_ref": [
+    "severity_grade"
+   ],
+   "classes_other": [
+    "severity_grade"
+   ],
+   "keys_ref": 12,
+   "keys_other": 12,
+   "matched": 12,
+   "same_direction": 12,
+   "same_significance": 12
+  }
+ ]
+}

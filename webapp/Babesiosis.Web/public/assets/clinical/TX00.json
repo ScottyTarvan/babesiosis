@@ -1,0 +1,1487 @@
+{
+  "schema_version": 1,
+  "id": "TX00",
+  "title": "Antibabesial treatment and persistence",
+  "updated": "2026-11-12",
+  "definition": "Antibabesial treatment means the drugs that act on the parasite itself; they are the base of treatment in every form of babesiosis, while supportive care treats the complications [R1][R2]. Persistence means infection that remains after treatment: a clinically normal carrier, a relapse, or treatment failure. It is common after treatment of the small Babesia species [R2][R3].",
+  "definition_note": "The working definition was confirmed. One distinction was added from the sources: clinical cure (signs resolve) and parasitological cure (blood PCR negative) are different end points, and most drugs give the first more reliably than the second [R3][R1].",
+  "key_points": [
+    "Know the species before you choose the drug: large Babesia (B. rossi, B. canis, B. vogeli) respond to diminazene or imidocarb; small Babesia (B. gibsoni, B. conradae, B. vulpes) are relatively resistant to these and are treated with atovaquone and azithromycin or a combination protocol [R2][R3].",
+    "In South Africa diminazene aceturate is the drug of first choice for B. rossi; Onderstepoort studies gave 3.5 mg/kg once [R4][R5]. Its safety margin is narrow, and a South African pharmacokinetic study advises no repeat within 21 days [R6][R1].",
+    "Imidocarb dipropionate is the reference drug for B. canis; the US label dose is 6.6 mg/kg, repeated after 14 days, and lower doses have been followed by treatment failure [R7][R8][R9].",
+    "Diminazene and trypan blue do not sterilise large Babesia infection; imidocarb at 7 to 7.5 mg/kg is reported to do so [R1].",
+    "Atovaquone with azithromycin cleared B. gibsoni below the PCR limit in 8 of 10 dogs in a placebo-controlled trial, but later case series report relapse with atovaquone-resistant cytochrome b mutants [R10][R11][R12].",
+    "Test of cure is by PCR, before treatment stops and about 2 months later, ideally twice at least 15 days apart; serology is not useful for follow-up [R3]."
+  ],
+  "description": [
+    {
+      "heading": "What it is",
+      "text": "The aromatic diamidines imidocarb and diminazene act well on the large Babesia species [R2][R4]. Atovaquone and buparvaquone (hydroxynaphthoquinones) act on the parasite cytochrome b and are used against small Babesia, usually with azithromycin [R2][R3]. Azithromycin, clindamycin, doxycycline and metronidazole have antiprotozoal effects; alone they reduce clinical signs but do not eliminate the infection [R3]. Trypan blue is an old drug that is still used in some parts of the world [R1]."
+    },
+    {
+      "heading": "How common, and in which dogs",
+      "text": "Every dog with confirmed babesiosis receives an antibabesial drug. Mildly to moderately affected dogs with large Babesia usually recover on the drug alone [R1]. In 320 dogs with B. rossi at Onderstepoort, all given diminazene 3.5 mg/kg and supportive care as needed, 10.6% died; this figure includes euthanasia [R5]. Persistence is mainly a problem of small Babesia: recurrence after treatment occurred in 11.8% of 145 dogs with B. gibsoni followed for 16 weeks [R13]."
+    },
+    {
+      "heading": "When in the course of disease",
+      "text": "Dogs with large Babesia usually improve within 1 to 7 days of treatment, faster than dogs with small Babesia; some take more than 15 days [R3]. In South African dogs with uncomplicated disease, the haematocrit fell by a mean maximum of 0.046 L/L, mostly at 6 to 12 hours after diminazene or trypan blue, before it rose [R14]. Carrier dogs may relapse later, when immunity falls: after splenectomy, immunosuppressive treatment or other illness [R3]."
+    },
+    {
+      "heading": "Mechanism",
+      "text": "Drugs that reduce parasitaemia without sterilising leave a carrier dog; in endemic areas this may maintain premunity, while in non-endemic areas sterilisation is preferred [R1]. Atovaquone binds cytochrome b. Point mutations in the cytochrome b gene, mainly M121I, are linked to relapse and non-remission after atovaquone with azithromycin [R11][R12]. Several cytochrome b mutations were also found in B. gibsoni that persisted after buparvaquone with azithromycin [R15]."
+    }
+  ],
+  "species_notes": [
+    {
+      "species": "B. rossi",
+      "note": "Diminazene is the drug of first choice in South Africa [R4]; 3.5 mg/kg was used in the Onderstepoort cohort [R5]. Imidocarb is also used [R16]. Neither diminazene nor trypan blue sterilises the infection [R1]."
+    },
+    {
+      "species": "B. canis",
+      "note": "Imidocarb is the treatment of choice in Europe [R3]. In 49 German dogs, most that were tested by PCR became negative after the first or second injection [R17]. In one case report the dog stayed PCR-positive after 2.0 and then 5.0 mg/kg and cleared only after two injections of 9.4 mg/kg [R9]."
+    },
+    {
+      "species": "B. vogeli",
+      "note": "The European review gives the same imidocarb regimen as for B. canis [R3]. Adult dogs often have mild or subclinical infection; puppies can be severely anaemic [R1]."
+    },
+    {
+      "species": "B. gibsoni",
+      "note": "Relatively resistant to the diamidines [R2]; imidocarb is not recommended [R4]. Atovaquone with azithromycin is first line, but relapse and resistance occur [R10][R11]. Parasitological cure is considered rare [R3]."
+    },
+    {
+      "species": "B. conradae",
+      "note": "Diminazene and imidocarb did not clear the infection in the first series [R18]. Treated dogs became PCR-negative after atovaquone with azithromycin [R19]."
+    },
+    {
+      "species": "B. vulpes",
+      "note": "In a randomised trial of 59 dogs, imidocarb gave the worst results; atovaquone or buparvaquone with azithromycin did better, but neither cleared PCR-detectable infection in all dogs [R20]."
+    }
+  ],
+  "diagnosis": {
+    "criteria": [
+      {
+        "criterion": "Parasites on a thin capillary blood smear",
+        "threshold": "Any parasitised red cell in a dog with compatible signs (B. rossi)",
+        "basis": "babesiosis",
+        "note": "B. rossi is so virulent that one parasitised cell confirms the diagnosis. Capillary (ear margin) smears show higher parasitaemia than venous blood.",
+        "refs": [
+          "R1"
+        ]
+      },
+      {
+        "criterion": "PCR on EDTA blood, with species identification",
+        "threshold": "Positive",
+        "basis": "babesiosis",
+        "note": "More sensitive than microscopy (about 50 parasites per mL against about 0.001% parasitaemia by smear) and identifies the species, which decides the drug.",
+        "refs": [
+          "R18",
+          "R3"
+        ]
+      },
+      {
+        "criterion": "Imidocarb treatment failure (B. canis)",
+        "threshold": "PCR still positive when checked about 14 days after treatment",
+        "basis": "babesiosis",
+        "note": "Proposed by the authors of one case report. If PCR stays positive after two injections, confirm the species by sequencing and look for co-infection and other disease.",
+        "refs": [
+          "R9"
+        ]
+      },
+      {
+        "criterion": "Test of cure (mainly small Babesia)",
+        "threshold": "Negative PCR before treatment stops and about 2 months after; two negative tests at least 15 days apart",
+        "basis": "babesiosis",
+        "note": "European review recommendation. A shelter study of B. gibsoni used two negative PCRs 30 days apart, at 30 and 60 days after treatment. Blood PCR does not prove clearance from the spleen.",
+        "refs": [
+          "R3",
+          "R21"
+        ]
+      },
+      {
+        "criterion": "Relapse",
+        "threshold": "Return of signs or haematological abnormality with a positive smear or PCR after an initial response",
+        "basis": "working",
+        "note": "No standard definition was found; each study used its own. This is a working definition for this page.",
+        "refs": [
+          "R13",
+          "R12"
+        ]
+      }
+    ],
+    "clinical_signs": [
+      {
+        "sign": "Expected response to treatment",
+        "note": "Large Babesia: clinical improvement usually within 24 to 48 h; small Babesia respond more slowly.",
+        "refs": [
+          "R3"
+        ]
+      },
+      {
+        "sign": "Persistent or chronic infection",
+        "note": "May be clinically silent, or show persistent anaemia, thrombocytopenia or hypergammaglobulinaemia; signs can return under stress, especially in splenectomised dogs.",
+        "refs": [
+          "R3"
+        ]
+      },
+      {
+        "sign": "Cholinergic signs after imidocarb",
+        "note": "Salivation, vomiting, diarrhoea, epiphora, nasal discharge and pain at injection; usually short-lived.",
+        "refs": [
+          "R3",
+          "R7"
+        ]
+      },
+      {
+        "sign": "Neurological signs after diminazene",
+        "note": "Ataxia, opisthotonus, seizures and nystagmus with overdose; also after repeated doses.",
+        "refs": [
+          "R18",
+          "R16"
+        ]
+      }
+    ],
+    "tests": [
+      {
+        "test": "Thin capillary blood smear (rapid Romanowsky stain)",
+        "finding": "Paired pyriform large Babesia, or single small ring forms (B. gibsoni)",
+        "note": "Cheap and immediate. Small forms need practice; low parasitaemia (B. vogeli, chronic infection) is easily missed. Search the feathered edge.",
+        "refs": [
+          "R1"
+        ]
+      },
+      {
+        "test": "PCR with species identification",
+        "finding": "Species and genotype; carrier state; test of cure",
+        "note": "Needed to choose the drug for small Babesia and to follow treatment. Blood PCR sensitivity is below 100%; splenic PCR is more conclusive but costly.",
+        "refs": [
+          "R3",
+          "R18"
+        ]
+      },
+      {
+        "test": "Serology (IFAT or ELISA)",
+        "finding": "Antibody to Babesia",
+        "note": "Shows exposure only. Healthy dogs in endemic areas can be positive, and B. gibsoni titres stay positive after treatment, so serology is not used to follow treatment.",
+        "refs": [
+          "R1",
+          "R3"
+        ]
+      },
+      {
+        "test": "Haematology and serum chemistry",
+        "finding": "Haematocrit, platelets, globulins, liver and kidney values",
+        "note": "Repeat until normal after treatment, especially in splenectomised dogs and with small Babesia.",
+        "refs": [
+          "R3"
+        ]
+      },
+      {
+        "test": "Cytochrome b genotyping (B. gibsoni)",
+        "finding": "M121I mutation",
+        "note": "Found in all samples from dogs that relapsed or did not remit after atovaquone with azithromycin in one study. Specialist or research laboratories.",
+        "refs": [
+          "R12"
+        ]
+      }
+    ],
+    "differentials": [
+      {
+        "condition": "Primary immune-mediated haemolytic anaemia",
+        "distinguish": "Babesiosis can be Coombs-positive and parasitaemia can be low. Examine a capillary smear and run PCR before starting immunosuppression.",
+        "refs": [
+          "R1"
+        ]
+      },
+      {
+        "condition": "Co-infection with Ehrlichia canis",
+        "distinguish": "Petechiae or epistaxis are rare in babesiosis alone and suggest Ehrlichia co-infection. Imidocarb did not clear experimental E. canis infection, so co-infection needs its own treatment.",
+        "refs": [
+          "R1",
+          "R22"
+        ]
+      },
+      {
+        "condition": "Mixed Babesia infection (B. gibsoni with B. vulpes)",
+        "distinguish": "Only PCR separates them; 15% of dogs with either piroplasm in one US laboratory series had both.",
+        "refs": [
+          "R23"
+        ]
+      },
+      {
+        "condition": "Diminazene neurotoxicity",
+        "distinguish": "Neurological signs after an overdose or a repeat dose; post-mortem lesions (cortical haemorrhage and oedema) resemble cerebral babesiosis.",
+        "refs": [
+          "R16",
+          "R6"
+        ]
+      },
+      {
+        "condition": "Treatment failure from the wrong species",
+        "distinguish": "A large-Babesia drug fails against small Babesia. Confirm the species by PCR and sequencing when a dog does not respond.",
+        "refs": [
+          "R9",
+          "R2"
+        ]
+      }
+    ],
+    "grading": []
+  },
+  "approach": [
+    {
+      "step": 1,
+      "action": "Confirm the infection and name the species",
+      "detail": "Thin capillary smear from the ear margin. Send PCR when the forms are small, the dog has travelled or was imported, or the response is poor [R1][R3].",
+      "setting": "practice"
+    },
+    {
+      "step": 2,
+      "action": "Weigh the dog and calculate the dose",
+      "detail": "Diminazene has a low therapeutic index; dose meticulously, especially in puppies [R1]. The South African label says never exceed the dose [R24].",
+      "setting": "practice"
+    },
+    {
+      "step": 3,
+      "action": "Large Babesia: give one antibabesial drug",
+      "detail": "B. rossi: diminazene aceturate 3.5 mg/kg IM or SC once [R1][R5]. B. canis or B. vogeli: imidocarb (see doses), with atropine or glycopyrrolate premedication against cholinergic signs [R3]. Do not repeat diminazene within 21 days [R6].",
+      "setting": "practice"
+    },
+    {
+      "step": 4,
+      "action": "Start supportive care at the same time",
+      "detail": "Mild to moderate cases usually need the drug only [R1]. Complicated cases need the care on the syndrome pages and usually referral (SY11).",
+      "setting": "referral"
+    },
+    {
+      "step": 5,
+      "action": "Small Babesia: atovaquone with azithromycin for 10 days",
+      "detail": "Give atovaquone with a fatty meal [R3]. Compounded atovaquone was effective in one shelter study [R21].",
+      "setting": "practice"
+    },
+    {
+      "step": 6,
+      "action": "Follow up and test for cure",
+      "detail": "Recheck haematology until normal. For B. canis, check PCR about 14 days after imidocarb [R9]. For small Babesia, PCR before stopping and about 2 months later [R3].",
+      "setting": "practice"
+    },
+    {
+      "step": 7,
+      "action": "Relapse or failure: re-evaluate before you repeat",
+      "detail": "Confirm the species, look for co-infection, splenectomy or immunosuppression [R9][R3]. After atovaquone failure in B. gibsoni, a different drug class (clindamycin, diminazene and imidocarb) has been used [R2][R12].",
+      "setting": "referral"
+    }
+  ],
+  "treatments": [
+    {
+      "name": "Diminazene aceturate",
+      "class": "antibabesial",
+      "aim": "Kill large Babesia quickly; first-line drug for B. rossi in South Africa.",
+      "status": "standard",
+      "evidence_level": "A",
+      "independent_studies": 3,
+      "evidence_summary": "Standard for B. rossi in South Africa [R4]; all 320 dogs in the Onderstepoort cohort received it [R5]. In a randomised comparison in 19 South African dogs with uncomplicated disease, diminazene and trypan blue did not differ in parasite clearance or haematocrit change [R14]. In 226 Croatian dogs with B. canis, signs regressed within 24 h after diminazene, but reinfection within 30 days was seen after diminazene and not after imidocarb [R25]. It does not sterilise infection [R1] and is less effective against B. gibsoni [R3].",
+      "doses": [
+        {
+          "drug": "diminazene aceturate",
+          "dose": "3.5 mg/kg",
+          "route": "IM or SC",
+          "frequency": "once",
+          "duration": "single dose",
+          "context": "Large Babesia; South African review table and the B. rossi cohort at Onderstepoort",
+          "note": "",
+          "refs": [
+            "R1",
+            "R5",
+            "R16"
+          ]
+        },
+        {
+          "drug": "diminazene (Berenil R.T.U., 70 mg/mL)",
+          "dose": "0.1 mL per 2 kg body mass",
+          "route": "IM or SC",
+          "frequency": "once",
+          "duration": "single injection",
+          "context": "South African product label, biliary fever in dogs",
+          "note": "The label states the dose as a volume, not in mg/kg. It says do not exceed the dose and do not repeat it.",
+          "refs": [
+            "R24"
+          ]
+        },
+        {
+          "drug": "diminazene aceturate",
+          "dose": "3 to 5 mg/kg",
+          "route": "not stated",
+          "frequency": "two applications 7 days apart",
+          "duration": "2 doses",
+          "context": "Review of B. gibsoni treatment, describing South African use for B. rossi",
+          "note": "Conflicts with the South African label (once, never repeat) and with the advice not to repeat within 21 days; given here because sources differ.",
+          "refs": [
+            "R4"
+          ]
+        }
+      ],
+      "cautions": "Narrow therapeutic index; dose meticulously, especially in puppies [R1]. Overdose causes injection-site pain and swelling, gastrointestinal signs and neurological signs [R18]. CNS toxicity can follow repeated doses because elimination is prolonged; lesions mimic cerebral babesiosis [R16]. A pharmacokinetic study at 4.2 mg/kg IM advises no repeat within 21 days [R6]; the review author notes some breeds and individuals may need a longer interval [R1].",
+      "monitoring": "Clinical response within 24 to 48 h; expect the haematocrit to fall for 6 to 12 h first [R14][R3]. Watch for neurological signs.",
+      "availability": "Registered in South Africa as Berenil R.T.U. (Reg. No. G2702, Act 36/1947), labelled to cure biliary fever in dogs [R24].",
+      "refs": [
+        "R4",
+        "R5",
+        "R14",
+        "R25",
+        "R1",
+        "R3",
+        "R16",
+        "R18",
+        "R6",
+        "R24"
+      ]
+    },
+    {
+      "name": "Imidocarb dipropionate",
+      "class": "antibabesial",
+      "aim": "Kill large Babesia, and at higher doses sterilise the infection; reference drug for B. canis.",
+      "status": "standard",
+      "evidence_level": "A",
+      "independent_studies": 4,
+      "evidence_summary": "Treatment of choice for B. canis and B. vogeli in Europe [R3]. In 342 German dogs with B. canis, nearly all treated dogs received imidocarb (median 3.3 mg/kg, range 1.7 to 6.8); 87.6% of dogs with known outcome had an uncomplicated course and 6.7% died [R8]. In 49 dogs, PCR became negative after the first injection in 19 and after the second in 15; 9 were still positive after at least one injection [R17]. In US dose studies, relapses were more frequent at 1 to 2 mg/kg [R7]. In B. vulpes it was the weakest of three regimens (8 of 17 relapsed) [R20]. Not recommended for B. gibsoni [R4].",
+      "doses": [
+        {
+          "drug": "imidocarb dipropionate",
+          "dose": "6.6 mg/kg",
+          "route": "IM or SC",
+          "frequency": "repeat after 14 days (two doses)",
+          "duration": "2 doses",
+          "context": "US product label (Imizol, 120 mg/mL), B. canis",
+          "note": "",
+          "refs": [
+            "R7"
+          ]
+        },
+        {
+          "drug": "imidocarb dipropionate",
+          "dose": "6.6 mg/kg",
+          "route": "IM or SC",
+          "frequency": "once; can be repeated after 15 days",
+          "duration": "1 or 2 doses",
+          "context": "B. canis and B. vogeli, European review",
+          "note": "The review suggests reconsidering the diagnosis rather than repeating if the response is poor.",
+          "refs": [
+            "R3"
+          ]
+        },
+        {
+          "drug": "imidocarb dipropionate",
+          "dose": "7.5 mg/kg",
+          "route": "IM",
+          "frequency": "once",
+          "duration": "single dose",
+          "context": "Large Babesia, reviews (South African authors)",
+          "note": "Reported to sterilise the infection.",
+          "refs": [
+            "R1",
+            "R16"
+          ]
+        },
+        {
+          "drug": "imidocarb dipropionate",
+          "dose": "7 mg/kg",
+          "route": "IM",
+          "frequency": "two doses 14 days apart",
+          "duration": "2 doses",
+          "context": "Large Babesia, reviews (South African authors)",
+          "note": "Reported to sterilise the infection.",
+          "refs": [
+            "R1",
+            "R16"
+          ]
+        },
+        {
+          "drug": "imidocarb dipropionate",
+          "dose": "5.0 to 6.6 mg/kg",
+          "route": "SC or IM",
+          "frequency": "twice, 2 to 3 weeks apart",
+          "duration": "2 doses",
+          "context": "B. canis and B. vogeli, OIE review",
+          "note": "",
+          "refs": [
+            "R18"
+          ]
+        }
+      ],
+      "cautions": "Pain at injection in nearly all dogs and injection-site swelling; transient vomiting [R7]. Cholinergic signs (salivation, vomiting, diarrhoea, epiphora) [R3]. Overdose is nephrotoxic [R3]; renal tubular or hepatic necrosis [R4] and massive liver necrosis [R16] are reported; one dog accidentally given 24 mg/kg died [R7]. In the label safety study, 9.9 mg/kg twice raised ALT and AST transiently [R7].",
+      "monitoring": "PCR about 14 days after treatment in B. canis [R9]. Haematology until normal [R3]. In azotaemic dogs one German clinic used lower doses (median 4 mg/kg) [R17]; no source tested dose adjustment.",
+      "availability": "",
+      "refs": [
+        "R3",
+        "R8",
+        "R17",
+        "R7",
+        "R20",
+        "R4",
+        "R1",
+        "R16",
+        "R18",
+        "R9"
+      ]
+    },
+    {
+      "name": "Atovaquone with azithromycin",
+      "class": "antibabesial",
+      "aim": "Reduce small Babesia below the PCR detection limit; first line for B. gibsoni, B. conradae and B. vulpes.",
+      "status": "standard",
+      "evidence_level": "A",
+      "independent_studies": 8,
+      "evidence_summary": "In a randomised placebo-controlled trial in 22 chronically infected dogs, 8 of 10 treated dogs had no detectable B. gibsoni DNA after treatment, against 0 of 11 on placebo [R10]. Compounded atovaquone cleared B. gibsoni in 39 of 42 dogs [R21]. Treated B. conradae dogs became PCR-negative [R19]; B. vulpes was undetectable at 90 days in 6 of 9 dogs [R23]. Relapse was frequent in Asia: 5 of 8 dogs [R11], 7 of 17 dogs [R12], and clearance in only 6 of 24 dogs in Hong Kong [R26]. In B. vulpes, 47% were still PCR-positive at 90 days [R20].",
+      "doses": [
+        {
+          "drug": "atovaquone + azithromycin",
+          "dose": "13.3 mg/kg + 10 mg/kg",
+          "route": "PO",
+          "frequency": "atovaquone every 8 h; azithromycin every 24 h",
+          "duration": "10 days",
+          "context": "B. gibsoni, review table; B. conradae study (12 dogs, about 8 treated; azithromycin 10 to 12.5 mg/kg)",
+          "note": "",
+          "refs": [
+            "R1",
+            "R19"
+          ]
+        },
+        {
+          "drug": "atovaquone + azithromycin",
+          "dose": "13.5 mg/kg + 10 mg/kg",
+          "route": "PO",
+          "frequency": "atovaquone every 8 h with fatty food; azithromycin every 24 h",
+          "duration": "10 days",
+          "context": "B. gibsoni, B. vulpes; European review, US case series and Spanish trial",
+          "note": "The Spanish trial abstract gives 13.3 mg/kg; the full text gives 13.5 mg/kg.",
+          "refs": [
+            "R3",
+            "R23",
+            "R20"
+          ]
+        },
+        {
+          "drug": "compounded atovaquone + azithromycin",
+          "dose": "13.4 mg/kg + 10 mg/kg",
+          "route": "PO",
+          "frequency": "atovaquone every 8 h with a fatty meal; azithromycin every 24 h",
+          "duration": "10 days",
+          "context": "B. gibsoni, 42 shelter dogs, prospective study",
+          "note": "",
+          "refs": [
+            "R21"
+          ]
+        }
+      ],
+      "cautions": "Give atovaquone with a fatty meal to aid absorption [R3]. Vomiting for 2 to 3 days in 23.5% of dogs in one trial [R20]; no adverse effects in the B. gibsoni trial [R10]. Relapse can select atovaquone-resistant cytochrome b mutants [R11][R12]. Atovaquone is costly and not registered in many European countries [R4].",
+      "monitoring": "PCR before stopping and about 2 months after treatment, or at 30 and 60 days [R3][R21].",
+      "availability": "",
+      "refs": [
+        "R10",
+        "R21",
+        "R19",
+        "R23",
+        "R11",
+        "R12",
+        "R26",
+        "R20",
+        "R1",
+        "R3",
+        "R4"
+      ]
+    },
+    {
+      "name": "Trypan blue",
+      "class": "antibabesial",
+      "aim": "Reduce large Babesia parasitaemia; an older alternative to diminazene.",
+      "status": "standard",
+      "evidence_level": "A",
+      "independent_studies": 1,
+      "evidence_summary": "In a randomised comparison in 19 South African dogs with mild to moderate uncomplicated disease, trypan blue and diminazene did not differ in parasite clearance or haematocrit change, and all dogs improved [R14]. A South African review lists it as effective but notes it is used only in some parts of the world and does not sterilise infection [R1]. An OIE review says it works in dogs with mild to moderate signs [R18].",
+      "doses": [
+        {
+          "drug": "trypan blue",
+          "dose": "10 mg/kg",
+          "route": "IV only",
+          "frequency": "once",
+          "duration": "single dose, followed by imidocarb or diminazene 1 week later",
+          "context": "Large Babesia, South African review table",
+          "note": "",
+          "refs": [
+            "R1"
+          ]
+        },
+        {
+          "drug": "trypan blue (1% solution)",
+          "dose": "10 mg/kg",
+          "route": "IV",
+          "frequency": "once",
+          "duration": "",
+          "context": "OIE review",
+          "note": "Give as a 1% solution because it irritates tissues.",
+          "refs": [
+            "R18"
+          ]
+        }
+      ],
+      "cautions": "Tissue irritant: strictly IV [R18][R1]. Does not sterilise the infection; its use outside endemic areas is discouraged [R1].",
+      "monitoring": "As for diminazene: expect an early haematocrit fall [R14].",
+      "availability": "",
+      "refs": [
+        "R14",
+        "R1",
+        "R18"
+      ]
+    },
+    {
+      "name": "Clindamycin, diminazene and imidocarb (CDI)",
+      "class": "antibabesial",
+      "aim": "Clear B. gibsoni, including atovaquone-resistant strains.",
+      "status": "proposed",
+      "evidence_level": "A",
+      "independent_studies": 1,
+      "evidence_summary": "In a non-randomised comparison in 30 dogs with B. gibsoni, 11 of 13 dogs on CDI recovered completely and 2 relapsed, against 9 of 17 recovered and 7 relapsed on atovaquone with azithromycin; treatment lasted longer with CDI (mean 41.7 against 23.3 days) [R12]. A review states it is used for atovaquone-resistant strains [R2]. Another review reports this trial as 11 of 13 without complete cure, which conflicts with the trial abstract [R4].",
+      "doses": [
+        {
+          "drug": "clindamycin + diminazene aceturate + imidocarb dipropionate",
+          "dose": "30 mg/kg + 3.5 mg/kg + 6 mg/kg",
+          "route": "clindamycin PO; diminazene IM; imidocarb SC",
+          "frequency": "clindamycin every 12 h; diminazene once; imidocarb once, 24 h after diminazene",
+          "duration": "",
+          "context": "B. gibsoni, regimen as cited in two reviews of the Taiwanese trial",
+          "note": "Primary paper read as abstract only; doses taken from the reviews. Mean therapy duration in recovered dogs was 41.7 days.",
+          "refs": [
+            "R18",
+            "R4"
+          ]
+        }
+      ],
+      "cautions": "Carries the cautions of both diamidines (see those rows). No safety data for the combination were found.",
+      "monitoring": "PCR during and after treatment [R12].",
+      "availability": "",
+      "refs": [
+        "R12",
+        "R2",
+        "R18",
+        "R4"
+      ]
+    },
+    {
+      "name": "Buparvaquone with azithromycin",
+      "class": "antibabesial",
+      "aim": "Alternative to atovaquone for small Babesia.",
+      "status": "proposed",
+      "evidence_level": "A",
+      "independent_studies": 2,
+      "evidence_summary": "In the Spanish randomised trial in B. vulpes, 88% of dogs on buparvaquone with azithromycin were clinically healthy at day 90, with no product-related adverse events; 68% were still PCR-positive at day 90 [R20]. In India, 8 of 12 dogs with B. gibsoni did not respond, and parasites carried several cytochrome b mutations [R15].",
+      "doses": [
+        {
+          "drug": "buparvaquone + azithromycin",
+          "dose": "5 mg/kg + 10 mg/kg",
+          "route": "buparvaquone IM; azithromycin PO",
+          "frequency": "buparvaquone 2 doses 48 h apart; azithromycin every 24 h",
+          "duration": "azithromycin 10 days",
+          "context": "B. vulpes, randomised trial (25 dogs in this arm) and European review",
+          "note": "",
+          "refs": [
+            "R20",
+            "R3"
+          ]
+        }
+      ],
+      "cautions": "Well tolerated in the trial [R20]. Possible resistance in B. gibsoni [R15].",
+      "monitoring": "PCR follow-up as for atovaquone [R3].",
+      "availability": "",
+      "refs": [
+        "R20",
+        "R15",
+        "R3"
+      ]
+    },
+    {
+      "name": "Atovaquone-proguanil (Malarone), azithromycin and artesunate",
+      "class": "antibabesial",
+      "aim": "Clear chronic B. gibsoni infection and prevent relapse.",
+      "status": "proposed",
+      "evidence_level": "A",
+      "independent_studies": 2,
+      "evidence_summary": "In 12 Pit Bull Terriers with B. gibsoni, all were PCR-negative by day 42 and stayed negative to day 720, with no adverse effects [R27]. In an Indian trial of 20 dogs, artesunate-atovaquone-azithromycin gave more sustained remission than doxycycline-clindamycin-metronidazole [R28]. A lactating bitch given this protocol cleared infection in 3 of 5 infected puppies through the milk [R29].",
+      "doses": [
+        {
+          "drug": "Malarone + azithromycin + artesunate",
+          "dose": "13.5 mg/kg + 10 mg/kg + 12.5 mg/kg",
+          "route": "PO",
+          "frequency": "each every 24 h",
+          "duration": "10 days",
+          "context": "B. gibsoni, 12 dogs, Slovak case series",
+          "note": "The paper does not say whether 13.5 mg/kg refers to atovaquone or to the whole product (250 mg atovaquone with 100 mg proguanil per tablet).",
+          "refs": [
+            "R27"
+          ]
+        }
+      ],
+      "cautions": "Proguanil causes digestive upset in dogs; one review prefers atovaquone alone [R4]. No adverse effects in the 12-dog series [R27].",
+      "monitoring": "PCR at 14-day intervals to day 56, then every 6 months in the series [R27].",
+      "availability": "",
+      "refs": [
+        "R27",
+        "R28",
+        "R29",
+        "R4"
+      ]
+    },
+    {
+      "name": "Clindamycin, metronidazole and doxycycline",
+      "class": "antibabesial",
+      "aim": "Antibiotic-only protocol for B. gibsoni, including after atovaquone failure.",
+      "status": "conflicting",
+      "evidence_level": "A",
+      "independent_studies": 3,
+      "evidence_summary": "Eliminated B. gibsoni from blood in 3 of 4 experimentally infected splenectomised dogs [R30]. After atovaquone with azithromycin failed, 7 of 8 dogs with recorded outcome became PCR-negative [R26]. In an Indian trial of 20 dogs, this protocol gave early improvement followed by recrudescence [R28].",
+      "doses": [
+        {
+          "drug": "clindamycin + metronidazole + doxycycline",
+          "dose": "25 mg/kg + 15 mg/kg + 5 mg/kg",
+          "route": "PO",
+          "frequency": "each every 12 h",
+          "duration": "",
+          "context": "B. gibsoni, experimental study (4 dogs) and review",
+          "note": "",
+          "refs": [
+            "R30",
+            "R16"
+          ]
+        },
+        {
+          "drug": "clindamycin + metronidazole + doxycycline",
+          "dose": "25 mg/kg + 15 mg/kg + 5 mg/kg",
+          "route": "PO",
+          "frequency": "clindamycin and metronidazole every 12 h; doxycycline every 24 h",
+          "duration": "30 to 90 days",
+          "context": "B. gibsoni after atovaquone failure, Hong Kong case series",
+          "note": "Duration was set by the clinician on PCR results.",
+          "refs": [
+            "R26"
+          ]
+        },
+        {
+          "drug": "clindamycin + metronidazole + doxycycline",
+          "dose": "11 mg/kg + 15 mg/kg + 5 mg/kg",
+          "route": "PO",
+          "frequency": "each every 12 h",
+          "duration": "",
+          "context": "B. gibsoni, European review",
+          "note": "Lower clindamycin dose than the other sources.",
+          "refs": [
+            "R3"
+          ]
+        }
+      ],
+      "cautions": "Adverse effects were not reported in the case series [R26]. Antibiotics alone do not reliably eliminate infection [R3].",
+      "monitoring": "PCR at about 1 and 2 to 4 months [R26].",
+      "availability": "",
+      "refs": [
+        "R30",
+        "R26",
+        "R28",
+        "R16",
+        "R3"
+      ]
+    },
+    {
+      "name": "Doxycycline, enrofloxacin and metronidazole, with or without diminazene",
+      "class": "antibabesial",
+      "aim": "Antibiotic protocol for B. gibsoni.",
+      "status": "proposed",
+      "evidence_level": "B",
+      "independent_studies": 1,
+      "evidence_summary": "In 40 dogs in Taiwan, 85.7% with diminazene and 83.3% without were judged effective (smear-negative and seven weeks in remission); diminazene did not add benefit. Efficacy was judged by blood smear, not PCR, and 6 dogs relapsed [R31].",
+      "doses": [
+        {
+          "drug": "doxycycline + enrofloxacin + metronidazole",
+          "dose": "7 to 10 mg/kg + 2 to 2.5 mg/kg + 5 to 15 mg/kg",
+          "route": "PO",
+          "frequency": "each every 12 h",
+          "duration": "6 weeks",
+          "context": "B. gibsoni, Taiwanese case series of 40 dogs",
+          "note": "",
+          "refs": [
+            "R31"
+          ]
+        },
+        {
+          "drug": "diminazene diaceturate (added in one group)",
+          "dose": "3 mg/kg",
+          "route": "IM",
+          "frequency": "every 7 days",
+          "duration": "two injections",
+          "context": "B. gibsoni, same series (28 dogs)",
+          "note": "Did not improve efficacy.",
+          "refs": [
+            "R31"
+          ]
+        }
+      ],
+      "cautions": "No adverse effects were reported [R31]. See diminazene cautions.",
+      "monitoring": "Smear-based follow-up in the study; PCR would be more sensitive [R31].",
+      "availability": "",
+      "refs": [
+        "R31"
+      ]
+    },
+    {
+      "name": "Low-dose diminazene followed by clindamycin",
+      "class": "antibabesial",
+      "aim": "Control acute B. gibsoni and prevent relapse with less diminazene toxicity.",
+      "status": "proposed",
+      "evidence_level": "E",
+      "independent_studies": 0,
+      "evidence_summary": "A review describes this regimen as used in Japan to reduce side effects and recurrence; it is not effective enough in splenectomised dogs [R4]. The primary study was not verified in this run.",
+      "doses": [
+        {
+          "drug": "diminazene aceturate, then clindamycin",
+          "dose": "2 mg/kg, then 25 mg/kg",
+          "route": "diminazene SC; clindamycin PO",
+          "frequency": "diminazene every 48 h for 3 injections; clindamycin every 12 h",
+          "duration": "clindamycin 21 days",
+          "context": "B. gibsoni, Japan, as described in a review",
+          "note": "",
+          "refs": [
+            "R4"
+          ]
+        }
+      ],
+      "cautions": "See diminazene cautions. Not recommended after splenectomy [R4].",
+      "monitoring": "",
+      "availability": "",
+      "refs": [
+        "R4"
+      ]
+    },
+    {
+      "name": "Tafenoquine",
+      "class": "antibabesial",
+      "aim": "New oral option for B. gibsoni.",
+      "status": "proposed",
+      "evidence_level": "B",
+      "independent_studies": 1,
+      "evidence_summary": "Eight dogs with B. gibsoni, one after diminazene failure, improved rapidly; two relapsed and improved after two more doses [R32].",
+      "doses": [
+        {
+          "drug": "tafenoquine",
+          "dose": "10 to 20 mg/kg",
+          "route": "PO",
+          "frequency": "day 0 and day 7",
+          "duration": "2 doses",
+          "context": "B. gibsoni, Japanese case series of 8 dogs",
+          "note": "",
+          "refs": [
+            "R32"
+          ]
+        }
+      ],
+      "cautions": "Adverse effects were not described in the abstract [R32].",
+      "monitoring": "Haematocrit and platelets [R32].",
+      "availability": "",
+      "refs": [
+        "R32"
+      ]
+    },
+    {
+      "name": "Doxycycline or clindamycin alone",
+      "class": "antibabesial",
+      "aim": "Reduce clinical signs when a specific drug is not available.",
+      "status": "proposed",
+      "evidence_level": "E",
+      "independent_studies": 0,
+      "evidence_summary": "A European review rates doxycycline efficacy as poor; it reduces the severity of B. canis and B. gibsoni disease. Clindamycin alone reduced signs and laboratory abnormalities in B. gibsoni. Neither eliminates the infection [R3].",
+      "doses": [
+        {
+          "drug": "doxycycline",
+          "dose": "10 mg/kg",
+          "route": "PO (sometimes IV)",
+          "frequency": "every 24 h, or 5 mg/kg every 12 h if vomiting",
+          "duration": "30 days",
+          "context": "B. canis and B. vogeli, European review",
+          "note": "",
+          "refs": [
+            "R3"
+          ]
+        },
+        {
+          "drug": "clindamycin",
+          "dose": "25 mg/kg",
+          "route": "PO",
+          "frequency": "every 12 h",
+          "duration": "14 days",
+          "context": "B. gibsoni, European review",
+          "note": "",
+          "refs": [
+            "R3"
+          ]
+        }
+      ],
+      "cautions": "Antibiotics alone will not eliminate infection; the review advises restricted use [R3].",
+      "monitoring": "",
+      "availability": "",
+      "refs": [
+        "R3"
+      ]
+    },
+    {
+      "name": "Phenamidine and pentamidine",
+      "class": "antibabesial",
+      "aim": "Older diamidines for large Babesia.",
+      "status": "proposed",
+      "evidence_level": "A",
+      "independent_studies": 1,
+      "evidence_summary": "In 226 Croatian dogs with B. canis, dogs given phenamidine improved more slowly than with diminazene, and reinfection within 30 days occurred, unlike after imidocarb [R25]. Pentamidine is listed among drugs used with varying success [R3]. No dose was stated in the sources read.",
+      "doses": [],
+      "cautions": "Only local injection-site inflammation was noted in the Croatian dogs [R25].",
+      "monitoring": "",
+      "availability": "",
+      "refs": [
+        "R25",
+        "R3"
+      ]
+    },
+    {
+      "name": "Atropine or glycopyrrolate before imidocarb",
+      "class": "adjunct",
+      "aim": "Prevent the cholinergic signs of imidocarb.",
+      "status": "standard",
+      "evidence_level": "E",
+      "independent_studies": 0,
+      "evidence_summary": "Reviews recommend premedication [R3][R4]; it was used in the Spanish imidocarb arm [R20]. No study tested its benefit.",
+      "doses": [
+        {
+          "drug": "atropine",
+          "dose": "0.05 mg/kg",
+          "route": "route not stated in the source",
+          "frequency": "once, before imidocarb",
+          "duration": "single dose",
+          "context": "Review of B. gibsoni treatment",
+          "note": "No source gave a glycopyrrolate dose.",
+          "refs": [
+            "R4"
+          ]
+        },
+        {
+          "drug": "atropine",
+          "dose": "0.02 mg/kg",
+          "route": "SC",
+          "frequency": "once, before imidocarb",
+          "duration": "single dose",
+          "context": "B. vulpes randomised trial, imidocarb arm (17 dogs)",
+          "note": "Interval before imidocarb not stated.",
+          "refs": [
+            "R20"
+          ]
+        }
+      ],
+      "cautions": "No adverse effects of premedication were reported in the sources read.",
+      "monitoring": "",
+      "availability": "",
+      "refs": [
+        "R3",
+        "R4",
+        "R20"
+      ]
+    }
+  ],
+  "prognosis": {
+    "text": "Most dogs treated for large Babesia recover: 85 to 90% survive overall, depending on the species and the level of care [R1]. Mortality, including euthanasia, was 10.6% in 320 dogs with B. rossi [R5] and 6.7% in 193 German dogs with B. canis and known outcome [R8]. With small Babesia, clinical cure is usual but parasitological cure is considered rare, and many dogs stay carriers [R3].",
+    "indicators": [
+      {
+        "finding": "Secondary IMHA, Rottweiler breed, red cell count below 2 x 10^12/L at diagnosis, or anaemia persisting beyond 20 days after treatment (B. gibsoni)",
+        "meaning": "Higher risk of recurrence (cumulative incidence 16% to 29%).",
+        "refs": [
+          "R13"
+        ]
+      },
+      {
+        "finding": "Concurrent haemoparasite infection (B. gibsoni)",
+        "meaning": "Higher disease-related mortality (25%).",
+        "refs": [
+          "R13"
+        ]
+      },
+      {
+        "finding": "Cytochrome b M121I mutation (B. gibsoni)",
+        "meaning": "Associated with relapse or non-remission after atovaquone with azithromycin.",
+        "refs": [
+          "R12"
+        ]
+      },
+      {
+        "finding": "Splenectomy or immunosuppressive treatment",
+        "meaning": "Carrier dogs may relapse; follow these dogs closely.",
+        "refs": [
+          "R3"
+        ]
+      },
+      {
+        "finding": "Imidocarb dose below the label range (B. canis)",
+        "meaning": "Failure after 2.0 and 5.0 mg/kg in one case report; the authors advise 6.6 mg/kg and PCR 14 days later.",
+        "refs": [
+          "R9"
+        ]
+      }
+    ]
+  },
+  "related": [
+    {
+      "id": "SY11",
+      "why": "Triage and the order of care in complicated disease."
+    },
+    {
+      "id": "SY01",
+      "why": "Transfusion and the haemolytic anaemia that the antibabesial drug does not correct at once."
+    },
+    {
+      "id": "SY02",
+      "why": "Immunosuppression can trigger relapse in carrier dogs."
+    },
+    {
+      "id": "SY07",
+      "why": "Diminazene neurotoxicity is a differential of cerebral babesiosis."
+    },
+    {
+      "id": "SY05",
+      "why": "No source gave antibabesial dose changes for kidney failure."
+    }
+  ],
+  "evidence_gaps": [
+    "No controlled trial of an antibabesial drug against B. rossi was found after the 1996 comparison of diminazene and trypan blue in 19 dogs.",
+    "How often B. rossi persists or relapses after diminazene has not been measured with PCR follow-up in the sources found.",
+    "No source gave a changed drug or dose for puppies, pregnant bitches or dogs with kidney or liver failure, beyond careful dosing in puppies; one case report treated infected puppies through the lactating dam.",
+    "The safety of giving two diamidines within 24 h (clindamycin, diminazene and imidocarb protocol) is not reported.",
+    "The dose of doxycycline for Ehrlichia canis co-infection was not verified in this run; use the ehrlichiosis guidance.",
+    "No source confirmed whether imidocarb, trypan blue, atovaquone or buparvaquone is registered or available in South Africa.",
+    "The primary Japanese study of low-dose diminazene followed by clindamycin could not be checked; its regimen is given here only from a review."
+  ],
+  "references": [
+    {
+      "ref": "R1",
+      "authors": "Schoeman JP",
+      "year": 2009,
+      "title": "Canine babesiosis",
+      "journal": "Onderstepoort Journal of Veterinary Research",
+      "volume_pages": "76(1):59-66",
+      "doi": "10.4102/ojvr.v76i1.66",
+      "pmid": "19967929",
+      "url": "",
+      "article_id": "CB371",
+      "type": "review",
+      "species": "B. rossi",
+      "n_dogs": null,
+      "read": "full text"
+    },
+    {
+      "ref": "R2",
+      "authors": "Baneth G",
+      "year": 2018,
+      "title": "Antiprotozoal treatment of canine babesiosis",
+      "journal": "Veterinary Parasitology",
+      "volume_pages": "254:58-63",
+      "doi": "10.1016/j.vetpar.2018.03.001",
+      "pmid": "29657012",
+      "url": "",
+      "article_id": "",
+      "type": "review",
+      "species": "",
+      "n_dogs": null,
+      "read": "abstract"
+    },
+    {
+      "ref": "R3",
+      "authors": "Solano-Gallego L, Sainz Á, Roura X, et al.",
+      "year": 2016,
+      "title": "A review of canine babesiosis: the European perspective",
+      "journal": "Parasites & Vectors",
+      "volume_pages": "9(1):336",
+      "doi": "10.1186/s13071-016-1596-0",
+      "pmid": "27289223",
+      "url": "",
+      "article_id": "CB533",
+      "type": "review",
+      "species": "B. canis, B. vogeli, B. gibsoni, B. vulpes",
+      "n_dogs": null,
+      "read": "full text"
+    },
+    {
+      "ref": "R4",
+      "authors": "Karasová M, Tóthová C, Grelová S, et al.",
+      "year": 2022,
+      "title": "The etiology, incidence, pathogenesis, diagnostics, and treatment of canine babesiosis caused by Babesia gibsoni infection",
+      "journal": "Animals (Basel)",
+      "volume_pages": "12(6):739",
+      "doi": "10.3390/ani12060739",
+      "pmid": "35327136",
+      "url": "",
+      "article_id": "CB094",
+      "type": "review",
+      "species": "B. gibsoni",
+      "n_dogs": null,
+      "read": "full text"
+    },
+    {
+      "ref": "R5",
+      "authors": "Leisewitz AL, Goddard A, Clift S, et al.",
+      "year": 2019,
+      "title": "A clinical and pathological description of 320 cases of naturally acquired Babesia rossi infection in dogs",
+      "journal": "Veterinary Parasitology",
+      "volume_pages": "271:22-30",
+      "doi": "10.1016/j.vetpar.2019.06.005",
+      "pmid": "31303199",
+      "url": "",
+      "article_id": "CB040",
+      "type": "cohort",
+      "species": "B. rossi",
+      "n_dogs": 320,
+      "read": "full text"
+    },
+    {
+      "ref": "R6",
+      "authors": "Miller DB, Swan GE, Lobetti RG, et al.",
+      "year": 2005,
+      "title": "The pharmacokinetics of diminazene aceturate after intramuscular administration in healthy dogs",
+      "journal": "Journal of the South African Veterinary Association",
+      "volume_pages": "76(3):146-150",
+      "doi": "10.4102/jsava.v76i3.416",
+      "pmid": "16300182",
+      "url": "",
+      "article_id": "",
+      "type": "experimental",
+      "species": "",
+      "n_dogs": 8,
+      "read": "abstract"
+    },
+    {
+      "ref": "R7",
+      "authors": "US Food and Drug Administration",
+      "year": 1997,
+      "title": "Freedom of Information Summary, NADA 141-071: Imizol (imidocarb dipropionate) for the treatment of babesiosis in dogs",
+      "journal": "FDA Center for Veterinary Medicine",
+      "volume_pages": "",
+      "doi": "",
+      "pmid": "",
+      "url": "https://animaldrugsatfda.fda.gov/adafda/app/search/public/document/downloadFoi/3635",
+      "article_id": "",
+      "type": "label",
+      "species": "B. canis",
+      "n_dogs": null,
+      "read": "full text"
+    },
+    {
+      "ref": "R8",
+      "authors": "Eisenecker CM, Moritz A, von Hohnhorst IM, et al.",
+      "year": 2026,
+      "title": "Retrospective analysis of anamnesis, clinical signs, therapy, and outcome in 342 dogs with acute Babesia canis infections in Germany",
+      "journal": "Current Research in Parasitology & Vector-Borne Diseases",
+      "volume_pages": "10:100407",
+      "doi": "10.1016/j.crpvbd.2026.100407",
+      "pmid": "42433610",
+      "url": "",
+      "article_id": "CB149",
+      "type": "cohort",
+      "species": "B. canis",
+      "n_dogs": 342,
+      "read": "full text"
+    },
+    {
+      "ref": "R9",
+      "authors": "Schäfer I, Baitis V, Strube C, et al.",
+      "year": 2026,
+      "title": "Treatment failure in a dog with acute Babesia canis infection using lower-range therapeutic doses of imidocarb dipropionate",
+      "journal": "Parasitology Research",
+      "volume_pages": "125(1)",
+      "doi": "10.1007/s00436-026-08664-8",
+      "pmid": "41843221",
+      "url": "",
+      "article_id": "",
+      "type": "case report",
+      "species": "B. canis",
+      "n_dogs": 1,
+      "read": "abstract"
+    },
+    {
+      "ref": "R10",
+      "authors": "Birkenheuer AJ, Levy MG, Breitschwerdt EB",
+      "year": 2004,
+      "title": "Efficacy of combined atovaquone and azithromycin for therapy of chronic Babesia gibsoni (Asian genotype) infections in dogs",
+      "journal": "Journal of Veterinary Internal Medicine",
+      "volume_pages": "18(4):494-498",
+      "doi": "10.1892/0891-6640(2004)18<494:eocaaa>2.0.co;2",
+      "pmid": "15320586",
+      "url": "",
+      "article_id": "",
+      "type": "trial",
+      "species": "B. gibsoni",
+      "n_dogs": 22,
+      "read": "abstract"
+    },
+    {
+      "ref": "R11",
+      "authors": "Sakuma M, Setoguchi A, Endo Y",
+      "year": 2009,
+      "title": "Possible emergence of drug-resistant variants of Babesia gibsoni in clinical cases treated with atovaquone and azithromycin",
+      "journal": "Journal of Veterinary Internal Medicine",
+      "volume_pages": "23(3):493-498",
+      "doi": "10.1111/j.1939-1676.2009.0300.x",
+      "pmid": "19645835",
+      "url": "",
+      "article_id": "CB361",
+      "type": "case series",
+      "species": "B. gibsoni",
+      "n_dogs": 8,
+      "read": "abstract"
+    },
+    {
+      "ref": "R12",
+      "authors": "Lin EC, Chueh LL, Lin CN, et al.",
+      "year": 2012,
+      "title": "The therapeutic efficacy of two antibabesial strategies against Babesia gibsoni",
+      "journal": "Veterinary Parasitology",
+      "volume_pages": "186(3-4):159-164",
+      "doi": "10.1016/j.vetpar.2011.11.073",
+      "pmid": "22222008",
+      "url": "",
+      "article_id": "CB422",
+      "type": "trial",
+      "species": "B. gibsoni",
+      "n_dogs": 30,
+      "read": "abstract"
+    },
+    {
+      "ref": "R13",
+      "authors": "Neelawala D, Dissanayake DRA, Prasada DVP, et al.",
+      "year": 2020,
+      "title": "Analysis of risk factors associated with recurrence of canine babesiosis caused by Babesia gibsoni",
+      "journal": "Comparative Immunology, Microbiology and Infectious Diseases",
+      "volume_pages": "74:101572",
+      "doi": "10.1016/j.cimid.2020.101572",
+      "pmid": "33341594",
+      "url": "",
+      "article_id": "CB067",
+      "type": "cohort",
+      "species": "B. gibsoni",
+      "n_dogs": 145,
+      "read": "abstract"
+    },
+    {
+      "ref": "R14",
+      "authors": "Jacobson LS, Reyers F, Berry WL, et al.",
+      "year": 1996,
+      "title": "Changes in haematocrit after treatment of uncomplicated canine babesiosis: a comparison between diminazene and trypan blue, and an evaluation of the influence of parasitaemia",
+      "journal": "Journal of the South African Veterinary Association",
+      "volume_pages": "67(2):77-82",
+      "doi": "",
+      "pmid": "8765067",
+      "url": "",
+      "article_id": "",
+      "type": "trial",
+      "species": "B. rossi (reported as B. canis)",
+      "n_dogs": 19,
+      "read": "abstract"
+    },
+    {
+      "ref": "R15",
+      "authors": "Rahman S, Panicker VP, Narayanan A, et al.",
+      "year": 2022,
+      "title": "Multiple point mutations in cytochrome b gene of Babesia gibsoni: a possible cause for buparvaquone resistance",
+      "journal": "Veterinary Parasitology",
+      "volume_pages": "312:109823",
+      "doi": "10.1016/j.vetpar.2022.109823",
+      "pmid": "36306628",
+      "url": "",
+      "article_id": "",
+      "type": "case series",
+      "species": "B. gibsoni",
+      "n_dogs": 12,
+      "read": "abstract"
+    },
+    {
+      "ref": "R16",
+      "authors": "Köster LS, Lobetti RG, Kelly P",
+      "year": 2015,
+      "title": "Canine babesiosis: a perspective on clinical complications, biomarkers, and treatment",
+      "journal": "Veterinary Medicine: Research and Reports",
+      "volume_pages": "6:119-128",
+      "doi": "10.2147/vmrr.s60431",
+      "pmid": "30155438",
+      "url": "",
+      "article_id": "CB493",
+      "type": "review",
+      "species": "B. rossi",
+      "n_dogs": null,
+      "read": "full text"
+    },
+    {
+      "ref": "R17",
+      "authors": "Weingart C, Helm CS, Müller E, et al.",
+      "year": 2023,
+      "title": "Autochthonous Babesia canis infections in 49 dogs in Germany",
+      "journal": "Journal of Veterinary Internal Medicine",
+      "volume_pages": "37(1):140-149",
+      "doi": "10.1111/jvim.16611",
+      "pmid": "36629833",
+      "url": "",
+      "article_id": "CB106",
+      "type": "cohort",
+      "species": "B. canis",
+      "n_dogs": 49,
+      "read": "full text"
+    },
+    {
+      "ref": "R18",
+      "authors": "Beugnet F, Moreau Y",
+      "year": 2015,
+      "title": "Babesiosis",
+      "journal": "Revue Scientifique et Technique (OIE)",
+      "volume_pages": "34(2):627-639",
+      "doi": "10.20506/rst.34.2.2385",
+      "pmid": "26601462",
+      "url": "",
+      "article_id": "CB507",
+      "type": "review",
+      "species": "",
+      "n_dogs": null,
+      "read": "full text"
+    },
+    {
+      "ref": "R19",
+      "authors": "Di Cicco MF, Downey ME, Beeler E, et al.",
+      "year": 2012,
+      "title": "Re-emergence of Babesia conradae and effective treatment of infected dogs with atovaquone and azithromycin",
+      "journal": "Veterinary Parasitology",
+      "volume_pages": "187(1-2):23-27",
+      "doi": "10.1016/j.vetpar.2012.01.006",
+      "pmid": "22305297",
+      "url": "",
+      "article_id": "",
+      "type": "trial",
+      "species": "B. conradae",
+      "n_dogs": 12,
+      "read": "abstract"
+    },
+    {
+      "ref": "R20",
+      "authors": "Checa R, Montoya A, Ortega N, et al.",
+      "year": 2017,
+      "title": "Efficacy, safety and tolerance of imidocarb dipropionate versus atovaquone or buparvaquone plus azithromycin used to treat sick dogs naturally infected with the Babesia microti-like piroplasm",
+      "journal": "Parasites & Vectors",
+      "volume_pages": "10(1):145",
+      "doi": "10.1186/s13071-017-2049-0",
+      "pmid": "28292316",
+      "url": "",
+      "article_id": "",
+      "type": "trial",
+      "species": "B. vulpes (B. microti-like)",
+      "n_dogs": 59,
+      "read": "full text"
+    },
+    {
+      "ref": "R21",
+      "authors": "Kirk SK, Levy JK, Crawford PC",
+      "year": 2017,
+      "title": "Efficacy of azithromycin and compounded atovaquone for treatment of Babesia gibsoni in dogs",
+      "journal": "Journal of Veterinary Internal Medicine",
+      "volume_pages": "31(4):1108-1112",
+      "doi": "10.1111/jvim.14777",
+      "pmid": "28625019",
+      "url": "",
+      "article_id": "",
+      "type": "cohort",
+      "species": "B. gibsoni",
+      "n_dogs": 42,
+      "read": "abstract"
+    },
+    {
+      "ref": "R22",
+      "authors": "Eddlestone SM, Neer TM, Gaunt SD, et al.",
+      "year": 2006,
+      "title": "Failure of imidocarb dipropionate to clear experimentally induced Ehrlichia canis infection in dogs",
+      "journal": "Journal of Veterinary Internal Medicine",
+      "volume_pages": "20(4):840-844",
+      "doi": "10.1892/0891-6640(2006)20[840:foidtc]2.0.co;2",
+      "pmid": "16955806",
+      "url": "",
+      "article_id": "",
+      "type": "experimental",
+      "species": "",
+      "n_dogs": 15,
+      "read": "abstract"
+    },
+    {
+      "ref": "R23",
+      "authors": "Barash NR, Thomas B, Birkenheuer AJ, et al.",
+      "year": 2019,
+      "title": "Prevalence of Babesia spp. and clinical characteristics of Babesia vulpes infections in North American dogs",
+      "journal": "Journal of Veterinary Internal Medicine",
+      "volume_pages": "33(5):2075-2081",
+      "doi": "10.1111/jvim.15560",
+      "pmid": "31334887",
+      "url": "",
+      "article_id": "CB042",
+      "type": "case series",
+      "species": "B. vulpes, B. gibsoni",
+      "n_dogs": 48,
+      "read": "full text"
+    },
+    {
+      "ref": "R24",
+      "authors": "MSD Animal Health South Africa",
+      "year": 2026,
+      "title": "Berenil R.T.U. (diminazene 70 mg/mL), Reg. No. G2702 (Act 36/1947): product page",
+      "journal": "MSD Animal Health South Africa",
+      "volume_pages": "",
+      "doi": "",
+      "pmid": "",
+      "url": "https://msd-animal-health.co.za/products/berenil-r-t-u",
+      "article_id": "",
+      "type": "label",
+      "species": "",
+      "n_dogs": null,
+      "read": "full text"
+    },
+    {
+      "ref": "R25",
+      "authors": "Torbica G, Bedrica L, Samardžija M, et al.",
+      "year": 2013,
+      "title": "Canine babesiosis treatment with three different medicines",
+      "journal": "Acta Veterinaria (Beograd)",
+      "volume_pages": "63(2-3):279-290",
+      "doi": "10.2298/avb1303279t",
+      "pmid": "",
+      "url": "",
+      "article_id": "CB442",
+      "type": "trial",
+      "species": "B. canis",
+      "n_dogs": 226,
+      "read": "abstract"
+    },
+    {
+      "ref": "R26",
+      "authors": "Almendros A, Burchell R, Wierenga J",
+      "year": 2020,
+      "title": "An alternative combination therapy with metronidazole, clindamycin and doxycycline for Babesia gibsoni (Asian genotype) in dogs in Hong Kong",
+      "journal": "Journal of Veterinary Medical Science",
+      "volume_pages": "82(9):1334-1340",
+      "doi": "10.1292/jvms.20-0209",
+      "pmid": "32759546",
+      "url": "",
+      "article_id": "",
+      "type": "case series",
+      "species": "B. gibsoni",
+      "n_dogs": 24,
+      "read": "full text"
+    },
+    {
+      "ref": "R27",
+      "authors": "Karasová M, Tóthová C, Víchová B, et al.",
+      "year": 2022,
+      "title": "Clinical efficacy and safety of Malarone, azithromycin and artesunate combination for treatment of Babesia gibsoni in naturally infected dogs",
+      "journal": "Animals (Basel)",
+      "volume_pages": "12(6):708",
+      "doi": "10.3390/ani12060708",
+      "pmid": "35327106",
+      "url": "",
+      "article_id": "",
+      "type": "case series",
+      "species": "B. gibsoni",
+      "n_dogs": 12,
+      "read": "full text"
+    },
+    {
+      "ref": "R28",
+      "authors": "Pati M, Patra RC, Jena GR, et al.",
+      "year": 2026,
+      "title": "Comparative therapeutic efficacy of artesunate-atovaquone-azithromycin and doxycycline-clindamycin-metronidazole regimens in dogs naturally infected with Babesia gibsoni",
+      "journal": "Veterinary Parasitology",
+      "volume_pages": "346:110830",
+      "doi": "10.1016/j.vetpar.2026.110830",
+      "pmid": "42289158",
+      "url": "",
+      "article_id": "",
+      "type": "trial",
+      "species": "B. gibsoni",
+      "n_dogs": 20,
+      "read": "abstract"
+    },
+    {
+      "ref": "R29",
+      "authors": "Karasová M, Blaňarová L, Tóthová C, et al.",
+      "year": 2024,
+      "title": "Successful transmammary treatment of Babesia gibsoni infection in newborn puppies after the administration of Malarone, azithromycin, and artesunate to a lactating dam",
+      "journal": "Pathogens",
+      "volume_pages": "13(7):562",
+      "doi": "10.3390/pathogens13070562",
+      "pmid": "39057789",
+      "url": "",
+      "article_id": "",
+      "type": "case report",
+      "species": "B. gibsoni",
+      "n_dogs": 9,
+      "read": "abstract"
+    },
+    {
+      "ref": "R30",
+      "authors": "Suzuki K, Wakabayashi H, Takahashi M, et al.",
+      "year": 2007,
+      "title": "A possible treatment strategy and clinical factors to estimate the treatment response in Babesia gibsoni infection",
+      "journal": "Journal of Veterinary Medical Science",
+      "volume_pages": "69(5):563-568",
+      "doi": "10.1292/jvms.69.563",
+      "pmid": "17551236",
+      "url": "",
+      "article_id": "CB336",
+      "type": "experimental",
+      "species": "B. gibsoni",
+      "n_dogs": 4,
+      "read": "full text"
+    },
+    {
+      "ref": "R31",
+      "authors": "Lin MY, Huang HP",
+      "year": 2010,
+      "title": "Use of a doxycycline-enrofloxacin-metronidazole combination with/without diminazene diaceturate to treat naturally occurring canine babesiosis caused by Babesia gibsoni",
+      "journal": "Acta Veterinaria Scandinavica",
+      "volume_pages": "52:27",
+      "doi": "10.1186/1751-0147-52-27",
+      "pmid": "20416095",
+      "url": "",
+      "article_id": "",
+      "type": "case series",
+      "species": "B. gibsoni",
+      "n_dogs": 40,
+      "read": "full text"
+    },
+    {
+      "ref": "R32",
+      "authors": "Iguchi A, Mochiduki Y, Akiyama H, et al.",
+      "year": 2025,
+      "title": "Efficacy of tafenoquine in dogs naturally infected with Babesia gibsoni",
+      "journal": "Journal of Veterinary Medical Science",
+      "volume_pages": "87(5):532-535",
+      "doi": "10.1292/jvms.24-0443",
+      "pmid": "40189309",
+      "url": "",
+      "article_id": "",
+      "type": "case series",
+      "species": "B. gibsoni",
+      "n_dogs": 8,
+      "read": "abstract"
+    }
+  ],
+  "search": {
+    "date": "2026-11-12",
+    "sources": [
+      "local review (combined_set.csv, article notes and texts)",
+      "PubMed",
+      "PubMed Central",
+      "Crossref",
+      "web (FDA, MSD Animal Health South Africa)"
+    ],
+    "note": "Searched for each candidate drug with canine babesiosis and each Babesia species, and for toxicity, resistance, relapse and test of cure. About 80 local treatment papers were screened; small single-centre case reports and non-PubMed regional trials without verifiable doses were left out. Some full texts were behind a paywall or a bot check and were read as abstracts."
+  }
+}

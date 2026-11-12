@@ -1,0 +1,146 @@
+<div class="fs-experiment-litx">
+  <fs-card title="Coverage of the extraction"
+           subtitle="Full-text tier A and B articles of the severity shortlist, extracted under schema v2 · counts are independent units (a cohort counts once)">
+    @if (overview(); as o) {
+      <dl class="fs-experiment-litx__tiles">
+        <div><dt>Articles extracted</dt><dd>{{ o.articles_extracted }} <small>of {{ o.articles_in_scope }}</small></dd></div>
+        <div><dt>Articles with severity rows</dt><dd>{{ o.articles_with_associations }}</dd></div>
+        <div><dt>Independent units with rows</dt><dd>{{ o.independent_units_with_associations }} <small>of {{ o.independent_units_in_scope }}</small></dd></div>
+        <div><dt>Severity definitions</dt><dd>{{ o.severity_definitions }}</dd></div>
+        <div><dt>Rows (marker × definition)</dt><dd>{{ o.association_rows }}</dd></div>
+        <div><dt>Canonical markers</dt><dd>{{ o.canonical_markers }} <small>{{ o.markers_in_2plus_units }} in ≥ 2 units</small></dd></div>
+        @if (secondAgreement(); as s) {
+          <div><dt>Second extraction: significance agreement</dt><dd>{{ s.significance_agreement ?? '–' }} <small>{{ s.matched_pairs }} pairs, {{ s.articles }} articles</small></dd></div>
+          <div><dt>Second extraction: coverage</dt><dd>{{ s.coverage_ref_found_by_other ?? '–' }}</dd></div>
+        }
+      </dl>
+      <p class="fs-experiment-litx__footnote">
+        Rows: {{ o.rows_significant }} significant, {{ o.rows_not_significant }} not significant, {{ o.rows_not_tested }} not tested.
+        Quotes verified in the article text (exact or near): {{ quoteText() }}. Rows with a number not found in the text: {{ o.rows_numbers_not_in_text }}.
+        {{ o.articles_without_associations }} articles reported nothing against severity. Descriptive extraction; no statistical test.
+      </p>
+    } @else {
+      <p class="fs-experiment-litx__footnote">This run stored no coverage summary.</p>
+    }
+  </fs-card>
+
+  <fs-card title="Markers and factors reported in the most independent units"
+           [subtitle]="'Top ' + topCount + ' by independent units · a unit can appear in more than one colour when its articles or definitions differ'">
+    @if (markers(); as m) {
+      <fs-chart [options]="markerChart()" [height]="markerChartHeight()" [empty]="!m.length" emptyMessage="No markers extracted" />
+      <p class="fs-experiment-litx__footnote">
+        Direction counts are not effect sizes, and markers reported only when significant inflate the coloured bars (selective reporting).
+        All species pooled here: species is aliased with source, setting and definition, so do not compare species from these counts.
+      </p>
+    } @else {
+      <p class="fs-experiment-litx__footnote">This run stored no marker table.</p>
+    }
+  </fs-card>
+
+  @if (markers()) {
+    <fs-card title="All markers and factors" [subtitle]="filteredMarkers().length + ' markers · sorted by independent units'">
+      <div class="fs-experiment-litx__filters">
+        <fs-text-input size="sm" placeholder="Filter by marker, class, outcome or species…" ariaLabel="Filter markers"
+                       [ngModel]="markerSearch()" (ngModelChange)="markerSearch.set($event)" />
+      </div>
+      <fs-data-grid [data]="filteredMarkers()" [columns]="markerColumns" keyExpr="marker" [pager]="pager" [pageSize]="15"
+                    noDataText="No markers match this filter." />
+    </fs-card>
+  }
+
+  <fs-card title="Host and parasite factors" subtitle="Signalment, history, treatment and parasitology factors tested against severity · independent units">
+    @if (factors(); as f) {
+      <fs-data-grid [data]="f.rows" [columns]="factorColumns" keyExpr="marker" [pager]="pager" [pageSize]="15"
+                    noDataText="No host or parasite factor was extracted." />
+      <h4 class="fs-experiment-litx__subhead">Parasite load: how it was measured</h4>
+      <fs-data-grid [data]="f.load_methods" [columns]="loadColumns" noDataText="No parasite load rows." />
+      <p class="fs-experiment-litx__footnote">Capillary smears give higher loads than venous smears; SV-02a uses the method as a moderator.</p>
+    } @else {
+      <p class="fs-experiment-litx__footnote">This run stored no host or parasite factor table.</p>
+    }
+  </fs-card>
+
+  <div class="fs-experiment-litx__grid">
+    <fs-card title="Records by species" subtitle="Article species from the review records · one species per source, never a species comparison">
+      @if (species(); as s) {
+        <fs-chart [options]="speciesChart()" [height]="300" [empty]="!s.length" emptyMessage="No species data" />
+      } @else {
+        <p class="fs-experiment-litx__footnote">This run stored no species table.</p>
+      }
+    </fs-card>
+    <fs-card title="Records by marker class" subtitle="Independent units, articles, canonical markers and rows">
+      @if (classes(); as c) {
+        <fs-data-grid [data]="c" [columns]="classColumns" keyExpr="marker_class" noDataText="No classes." />
+      } @else {
+        <p class="fs-experiment-litx__footnote">This run stored no class table.</p>
+      }
+    </fs-card>
+  </div>
+
+  <fs-card title="Severity definitions" subtitle="How the articles split dogs by severity · mortality definitions usually count euthanasia as death">
+    @if (definitions(); as d) {
+      <div class="fs-experiment-litx__grid">
+        <div>
+          <h4 class="fs-experiment-litx__subhead">Outcome classes</h4>
+          <fs-chart [options]="outcomeChart()" [height]="300" [empty]="!d.outcome_classes.length" emptyMessage="No definitions" />
+        </div>
+        <div>
+          <h4 class="fs-experiment-litx__subhead">Definition components</h4>
+          <fs-chart [options]="componentChart()" [height]="300" [empty]="!d.components.length" emptyMessage="No components" />
+        </div>
+      </div>
+      <p class="fs-experiment-litx__footnote">
+        Euthanasia in mortality definitions:
+        @for (e of d.mortality_euthanasia; track e.value) { {{ e.value }} {{ e.definitions }}@if (!$last) {, } }.
+        Setting (articles):
+        @for (e of d.settings; track e.value) { {{ e.value }} {{ e.articles }}@if (!$last) {, } }.
+        Sample timing (articles):
+        @for (e of d.sample_timing; track e.value) { {{ e.value }} {{ e.articles }}@if (!$last) {, } }.
+      </p>
+    } @else {
+      <p class="fs-experiment-litx__footnote">This run stored no definition summary.</p>
+    }
+  </fs-card>
+
+  <fs-card title="Records by cohort and independent unit"
+           [subtitle]="(units()?.cohorts ?? 0) + ' shared cohorts (CH…) from the review cohort file; other units are single articles'">
+    @if (units(); as u) {
+      <fs-data-grid [data]="u.rows" [columns]="unitColumns" keyExpr="independent_unit" [pager]="pager" [pageSize]="15"
+                    noDataText="No units." />
+    } @else {
+      <p class="fs-experiment-litx__footnote">This run stored no unit table.</p>
+    }
+  </fs-card>
+
+  <div class="fs-experiment-litx__grid">
+    <fs-card title="What could not be extracted" subtitle="Results against severity that the extractors could not take from the text">
+      @if (notExtracted(); as n) {
+        <ul class="fs-experiment-litx__list">
+          @for (r of n.reasons; track r.reason) {
+            <li><strong>{{ r.reason }}</strong>: {{ r.items }} items in {{ r.articles }} articles</li>
+          } @empty {
+            <li>Nothing recorded.</li>
+          }
+        </ul>
+        <p class="fs-experiment-litx__footnote">
+          Articles with no severity rows ({{ n.articles_without_associations.length }}):
+          @for (a of n.articles_without_associations; track a.id) { {{ a.id }}@if (!$last) {, } }.
+          @if (n.articles_missing.length) { Not extracted at all: {{ n.articles_missing.join(', ') }}. }
+        </p>
+      } @else {
+        <p class="fs-experiment-litx__footnote">This run stored no list of gaps.</p>
+      }
+    </fs-card>
+    <fs-card title="Agreement checks" subtitle="Rows matched on article, canonical marker and outcome class">
+      @if (agreementLines().length) {
+        <fs-data-grid [data]="agreementLines()" [columns]="agreementColumns" keyExpr="id" noDataText="No agreement check." />
+        <p class="fs-experiment-litx__footnote">
+          Coverage = share of one extraction's marker-by-outcome keys found by the other. Significance kappa is Cohen's kappa on matched pairs.
+          @if (agreement()?.resolutions) { {{ agreement()?.resolutions }} differences were reviewed against the text by the owner. }
+        </p>
+      } @else {
+        <p class="fs-experiment-litx__footnote">This run stored no agreement check.</p>
+      }
+    </fs-card>
+  </div>
+</div>

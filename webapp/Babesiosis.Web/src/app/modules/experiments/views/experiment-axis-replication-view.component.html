@@ -1,0 +1,154 @@
+<div class="fs-experiment-axis">
+  @if (!hasAny()) {
+    <fs-card title="Axis replication">
+      <p class="fs-experiment-axis__footnote">This run stored no result that this view can draw.</p>
+    </fs-card>
+  }
+
+  <!-- SV-09-01: residual axes in DS05 -->
+  @if (summary(); as s) {
+    <fs-card title="Primary result: residual axes in DS05"
+             [subtitle]="s.dataset + ' (' + s.source + '), n ' + s.n + ' dogs, 1 independent source · ' + s.retained + ' axes retained by parallel analysis'">
+      <div class="fs-experiment-axis__tiles">
+        @for (c of componentCards(); track c.title) {
+          <div class="fs-experiment-axis__tile">
+            <div class="fs-experiment-axis__tile-title">
+              {{ c.title }}
+              <fs-badge variant="tonal" [intent]="c.stable ? 'success' : 'warning'">{{ c.stable ? 'stable' : 'not stable' }}</fs-badge>
+            </div>
+            <div class="fs-experiment-axis__stats">
+              <div class="fs-experiment-axis__stat"><span class="fs-experiment-axis__label">Eigenvalue vs noise</span><span class="fs-experiment-axis__value">{{ c.eigen }} vs {{ c.pa }}</span></div>
+              <div class="fs-experiment-axis__stat"><span class="fs-experiment-axis__label">Residual variance</span><span class="fs-experiment-axis__value">{{ c.share }}</span></div>
+              <div class="fs-experiment-axis__stat"><span class="fs-experiment-axis__label">Bootstrap phi, median</span><span class="fs-experiment-axis__value fs-experiment-axis__value--small">{{ c.phi }}</span></div>
+              <div class="fs-experiment-axis__stat"><span class="fs-experiment-axis__label">Habitus, partial rho (95% CI)</span><span class="fs-experiment-axis__value fs-experiment-axis__value--small">{{ habitusText(c.habitus) }}</span></div>
+            </div>
+          </div>
+        }
+      </div>
+      <p class="fs-experiment-axis__footnote">{{ s.caveat }}. Habitus is a proxy (higher is brighter), not a hard outcome. Axes are directions of variation, not groups of dogs.</p>
+    </fs-card>
+
+    <div class="fs-experiment-axis__pair">
+      @if (scree(); as sc) {
+        <fs-card title="Eigenvalues against noise" subtitle="Horn's parallel analysis">
+          <fs-chart [options]="screeOptions()" [height]="300" />
+          <p class="fs-experiment-axis__footnote">{{ sc.caption }}</p>
+        </fs-card>
+      }
+      @if (loadings(); as l) {
+        <fs-card title="Loadings of the two axes" subtitle="DS05, after haematocrit and illness duration">
+          <fs-chart [options]="loadingOptions()" [height]="380" />
+          <p class="fs-experiment-axis__footnote">{{ l.caption }}</p>
+        </fs-card>
+      }
+    </div>
+
+    @if (sensitivity(); as se) {
+      <fs-card title="Sensitivity to the stage covariate" subtitle="Tucker phi of each axis against the primary analysis">
+        <fs-data-grid [data]="sensRows()" [columns]="sensColumns" keyExpr="id" />
+        <p class="fs-experiment-axis__footnote">{{ se.caption }}</p>
+      </fs-card>
+    }
+  }
+
+  <!-- SV-09-02: congruence -->
+  @if (congruence(); as cg) {
+    <fs-card title="Primary result: do the DS05 patterns recur?"
+             [subtitle]="nReplicated() + ' of ' + (verdicts()?.rows?.length ?? 0) + ' axis-by-block checks meet the replication rule · sources SRC-F against SRC-A (DS03 and S-CB050 are one source) and SRC-D'">
+      <div class="fs-experiment-axis__blocks">
+        @for (b of blockCards(); track b.key) {
+          <div class="fs-experiment-axis__tile">
+            <div class="fs-experiment-axis__tile-title">{{ b.title }}</div>
+            <div class="fs-experiment-axis__meta">{{ b.subtitle }}</div>
+            @for (c of b.comps; track c.label) {
+              <div class="fs-experiment-axis__stats">
+                <div class="fs-experiment-axis__stat"><span class="fs-experiment-axis__label">{{ c.label }}: phi (95% CI)</span><span class="fs-experiment-axis__value">{{ c.phi }}</span><span class="fs-experiment-axis__meta">{{ c.ci }}</span></div>
+                <div class="fs-experiment-axis__stat"><span class="fs-experiment-axis__label">Uniform baseline</span><span class="fs-experiment-axis__value fs-experiment-axis__value--small">{{ c.uniform }}</span></div>
+                <div class="fs-experiment-axis__stat"><span class="fs-experiment-axis__label">Label permutation p</span><span class="fs-experiment-axis__value fs-experiment-axis__value--small">{{ c.perm }}</span></div>
+                <fs-badge variant="tonal" [intent]="c.specific ? 'success' : c.testable ? 'danger' : 'warning'">{{ c.specific ? 'specific' : c.testable ? 'not specific' : 'specificity not testable' }}</fs-badge>
+              </div>
+            }
+            <fs-chart [options]="b.options" [height]="240" />
+            <div class="fs-experiment-axis__meta">Link to DS05 axes on {{ b.linkVars }}: {{ b.link }}</div>
+          </div>
+        }
+      </div>
+      <p class="fs-experiment-axis__footnote">{{ cg.caption }}</p>
+    </fs-card>
+    @if (verdicts(); as v) {
+      <fs-card title="Replication rule" subtitle="Stated in spec.md before any outcome file was opened">
+        <fs-data-grid [data]="verdictRows()" [columns]="verdictColumns" keyExpr="id" />
+        <p class="fs-experiment-axis__footnote">{{ v.rule }}</p>
+      </fs-card>
+    }
+  }
+
+  <!-- SV-09-03: axis score against outcomes -->
+  @if (outcome(); as o) {
+    <fs-card title="Primary result: axis score against death and complicated disease"
+             [subtitle]="'Axis ' + o.axis_component + ' (' + o.axis_status + ') · S-CB050 (SRC-A, B. rossi) and S-CB017 (SRC-D, B. canis): 2 independent sources, one species per source'">
+      <div class="fs-experiment-axis__tiles">
+        @for (h of headline(); track h.label) {
+          <div class="fs-experiment-axis__tile">
+            <div class="fs-experiment-axis__tile-title">{{ h.label }}</div>
+            <div class="fs-experiment-axis__stats">
+              <div class="fs-experiment-axis__stat"><span class="fs-experiment-axis__label">Cliff's delta</span><span class="fs-experiment-axis__value">{{ h.delta }}</span></div>
+              <div class="fs-experiment-axis__stat"><span class="fs-experiment-axis__label">95% interval</span><span class="fs-experiment-axis__value fs-experiment-axis__value--small">{{ h.ci }}</span></div>
+              <div class="fs-experiment-axis__stat"><span class="fs-experiment-axis__label">n</span><span class="fs-experiment-axis__value fs-experiment-axis__value--small">{{ h.n }}</span></div>
+              <div class="fs-experiment-axis__stat"><span class="fs-experiment-axis__label">p</span><span class="fs-experiment-axis__value fs-experiment-axis__value--small">{{ h.p }}</span></div>
+            </div>
+          </div>
+        }
+      </div>
+      <p class="fs-experiment-axis__status">
+        <fs-badge variant="tonal" [intent]="o.adds_beyond_bands ? 'success' : 'warning'">
+          {{ o.adds_beyond_bands ? 'Adds to band neutrophils' : 'Restates band neutrophils' }}
+        </fs-badge>
+      </p>
+      <div class="fs-experiment-axis__forest">
+        <div class="fs-experiment-axis__forest-labels" [style.padding-top.px]="22">
+          @for (r of forest().rows; track r.id) {
+            <div class="fs-experiment-axis__forest-label">{{ r.label }}</div>
+          }
+        </div>
+        <svg class="fs-experiment-axis__forest-svg" [attr.viewBox]="'-10 0 ' + (forestWidth + 20) + ' ' + forest().height"
+             preserveAspectRatio="none" [style.height.px]="forest().height" role="img" aria-label="Forest plot of Cliff's delta by analysis">
+          @for (t of forestTicks; track t.v) {
+            <line [attr.x1]="t.x" [attr.x2]="t.x" y1="16" [attr.y2]="forest().height - 4"
+                  [class]="t.v === 0 ? 'fs-experiment-axis__zero' : 'fs-experiment-axis__grid'" />
+            <text [attr.x]="t.x" y="11" text-anchor="middle" class="fs-experiment-axis__tick">{{ t.label }}</text>
+          }
+          @for (r of forest().rows; track r.id) {
+            <line [attr.x1]="r.x1" [attr.x2]="r.x2" [attr.y1]="r.y" [attr.y2]="r.y"
+                  [class]="r.strong ? 'fs-experiment-axis__ci fs-experiment-axis__ci--strong' : 'fs-experiment-axis__ci'" />
+            <circle [attr.cx]="r.x" [attr.cy]="r.y" r="5"
+                    [class]="r.strong ? 'fs-experiment-axis__dot fs-experiment-axis__dot--strong' : 'fs-experiment-axis__dot'">
+              <title>{{ r.label }}: {{ r.estimate }} ({{ r.interval }})</title>
+            </circle>
+          }
+        </svg>
+      </div>
+      <fs-data-grid [data]="outcomeRows()" [columns]="outcomeColumns" keyExpr="id" />
+      <p class="fs-experiment-axis__footnote">{{ o.caption }}</p>
+    </fs-card>
+
+    @if (stripCharts().length) {
+      <div class="fs-experiment-axis__pair">
+        @for (c of stripCharts(); track c.file) {
+          <fs-card [title]="'Axis score by label · ' + c.file" [subtitle]="c.file === 'S-CB050' ? 'B. rossi; died includes euthanasia for poor prognosis' : 'B. canis, day 1; WBC is part of the label'">
+            <fs-chart [options]="c.options" [height]="300" />
+          </fs-card>
+        }
+      </div>
+    } @else {
+      <p class="fs-experiment-axis__footnote">No score points were stored.</p>
+    }
+
+    @if (mcp1(); as m) {
+      <fs-card title="Axis score against MCP-1" subtitle="Descriptive; no outcome used">
+        <fs-data-grid [data]="mcpRows()" [columns]="mcpColumns" keyExpr="file" />
+        <p class="fs-experiment-axis__footnote">{{ m.caption }}</p>
+      </fs-card>
+    }
+  }
+</div>

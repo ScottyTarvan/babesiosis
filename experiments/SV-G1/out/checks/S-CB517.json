@@ -1,0 +1,1126 @@
+{
+ "dataset_id": "S-CB517",
+ "checks": [
+  {
+   "name": "infected and control rows",
+   "observed": [
+    97,
+    15
+   ],
+   "expected": [
+    97,
+    15
+   ],
+   "tolerance": 0.0,
+   "source": "data.md; CB517: 97 infected, 15 controls",
+   "pass": true
+  },
+  {
+   "name": "survived and died",
+   "observed": [
+    85,
+    12
+   ],
+   "expected": [
+    85,
+    12
+   ],
+   "tolerance": 0.0,
+   "source": "CB517: 85 survived, 12 died",
+   "pass": true
+  },
+  {
+   "name": "rows linked to S-CB050 by value",
+   "observed": 112,
+   "expected": 112,
+   "tolerance": 0.0,
+   "source": "this script",
+   "pass": true
+  },
+  {
+   "name": "value link equals the ID-implied S-CB050 case",
+   "observed": 112,
+   "expected": 112,
+   "tolerance": 0.0,
+   "source": "this script",
+   "pass": true
+  },
+  {
+   "name": "median WBC, controls",
+   "observed": 10.57,
+   "expected": 10.6,
+   "tolerance": 0.050000001,
+   "source": "CB517 full text, Table 1 median",
+   "pass": true
+  },
+  {
+   "name": "median WBC, infected",
+   "observed": 6.29,
+   "expected": 6.2,
+   "tolerance": 0.050000001,
+   "source": "CB517 full text, Table 1 median (S-CB050 WBC for the same dogs gives 6.22; see cleaning_notes FLAG WBC)",
+   "pass": false
+  },
+  {
+   "name": "median segmented neutrophils, infected",
+   "observed": 4.25,
+   "expected": 4.3,
+   "tolerance": 0.050000001,
+   "source": "CB517 full text, Table 1 median",
+   "pass": true
+  },
+  {
+   "name": "median lymphocytes, controls",
+   "observed": 2.08,
+   "expected": 2.1,
+   "tolerance": 0.050000001,
+   "source": "CB517 full text, Table 1 median",
+   "pass": true
+  },
+  {
+   "name": "median eosinophils, controls",
+   "observed": 0.73,
+   "expected": 0.7,
+   "tolerance": 0.050000001,
+   "source": "CB517 full text, Table 1 median",
+   "pass": true
+  },
+  {
+   "name": "median CRP, infected",
+   "observed": 111.3,
+   "expected": 111.3,
+   "tolerance": 0.050000001,
+   "source": "CB517 full text, Table 1 median",
+   "pass": true
+  },
+  {
+   "name": "median CRP, controls",
+   "observed": 2.6,
+   "expected": 2.6,
+   "tolerance": 0.050000001,
+   "source": "CB517 full text, Table 1 median",
+   "pass": true
+  },
+  {
+   "name": "median SAA, infected",
+   "observed": 933.4,
+   "expected": 933.4,
+   "tolerance": 0.050000001,
+   "source": "CB517 full text, Table 1 median",
+   "pass": true
+  },
+  {
+   "name": "median SAA, controls",
+   "observed": 14.1,
+   "expected": 14.1,
+   "tolerance": 0.050000001,
+   "source": "CB517 full text, Table 1 median",
+   "pass": true
+  },
+  {
+   "name": "median IL-8, infected",
+   "observed": 1066.3,
+   "expected": 1066.3,
+   "tolerance": 0.050000001,
+   "source": "CB517 full text, Table 1 median",
+   "pass": true
+  },
+  {
+   "name": "median IL-8, controls",
+   "observed": 3316.7,
+   "expected": 3316.7,
+   "tolerance": 0.050000001,
+   "source": "CB517 full text, Table 1 median",
+   "pass": true
+  },
+  {
+   "name": "median IL-10, infected",
+   "observed": 620.3,
+   "expected": 620.3,
+   "tolerance": 0.050000001,
+   "source": "CB517 full text, Table 1 median",
+   "pass": true
+  },
+  {
+   "name": "median IL-10, controls",
+   "observed": 44.6,
+   "expected": 44.6,
+   "tolerance": 0.050000001,
+   "source": "CB517 full text, Table 1 median",
+   "pass": true
+  },
+  {
+   "name": "median MCP-1, infected",
+   "observed": 544.2,
+   "expected": 544.2,
+   "tolerance": 0.050000001,
+   "source": "CB517 full text, Table 1 median",
+   "pass": true
+  },
+  {
+   "name": "median MCP-1, controls",
+   "observed": 211.7,
+   "expected": 211.7,
+   "tolerance": 0.050000001,
+   "source": "CB517 full text, Table 1 median",
+   "pass": true
+  },
+  {
+   "name": "median IL-6, non-survivors",
+   "observed": 643.85,
+   "expected": 643.9,
+   "tolerance": 0.050000001,
+   "source": "CB517 full text, Table 1 median",
+   "pass": true
+  },
+  {
+   "name": "median IL-6, survivors",
+   "observed": 84.1,
+   "expected": 84.1,
+   "tolerance": 0.050000001,
+   "source": "CB517 full text, Table 1 median",
+   "pass": true
+  }
+ ],
+ "n_dogs": 112,
+ "n_records": 112,
+ "floor_counts": {
+  "il2": 30,
+  "il6": 11,
+  "il8": 0,
+  "il10": 5,
+  "il18": 4,
+  "gmcsf": 28,
+  "mcp1": 0
+ },
+ "ceiling_cells": [
+  "Case19 saa",
+  "Case46 saa",
+  "Case61 saa",
+  "Case80 gmcsf",
+  "Case80 il18",
+  "Case80 il2",
+  "Case80 il6",
+  "Case92 saa"
+ ],
+ "scb050_comparison": {
+  "il2": {
+   "n_pairs": 112,
+   "n_equal": 111,
+   "n_within_1pct": 112,
+   "spearman_rho": 1.0,
+   "mismatches": [
+    {
+     "S-CB517": "S-CB517:d101",
+     "S-CB050": "S-CB050:d125",
+     "S-CB517_value": 50000.0,
+     "S-CB050_value": 50001.0
+    }
+   ]
+  },
+  "il6": {
+   "n_pairs": 112,
+   "n_equal": 111,
+   "n_within_1pct": 112,
+   "spearman_rho": 1.0,
+   "mismatches": [
+    {
+     "S-CB517": "S-CB517:d101",
+     "S-CB050": "S-CB050:d125",
+     "S-CB517_value": 50000.0,
+     "S-CB050_value": 50001.0
+    }
+   ]
+  },
+  "il8": {
+   "n_pairs": 112,
+   "n_equal": 112,
+   "n_within_1pct": 112,
+   "spearman_rho": 1.0,
+   "mismatches": []
+  },
+  "il10": {
+   "n_pairs": 112,
+   "n_equal": 112,
+   "n_within_1pct": 112,
+   "spearman_rho": 1.0,
+   "mismatches": []
+  },
+  "il18": {
+   "n_pairs": 112,
+   "n_equal": 111,
+   "n_within_1pct": 112,
+   "spearman_rho": 1.0,
+   "mismatches": [
+    {
+     "S-CB517": "S-CB517:d101",
+     "S-CB050": "S-CB050:d125",
+     "S-CB517_value": 50000.0,
+     "S-CB050_value": 50001.0
+    }
+   ]
+  },
+  "gmcsf": {
+   "n_pairs": 112,
+   "n_equal": 111,
+   "n_within_1pct": 112,
+   "spearman_rho": 1.0,
+   "mismatches": [
+    {
+     "S-CB517": "S-CB517:d101",
+     "S-CB050": "S-CB050:d125",
+     "S-CB517_value": 50000.0,
+     "S-CB050_value": 50001.0
+    }
+   ]
+  },
+  "mcp1": {
+   "n_pairs": 112,
+   "n_equal": 112,
+   "n_within_1pct": 112,
+   "spearman_rho": 1.0,
+   "mismatches": []
+  },
+  "wbc": {
+   "n_pairs": 112,
+   "n_equal": 88,
+   "n_within_1pct": 88,
+   "spearman_rho": 0.983041,
+   "mismatches": [
+    {
+     "S-CB517": "S-CB517:d005",
+     "S-CB050": "S-CB050:d013",
+     "S-CB517_value": 9.97,
+     "S-CB050_value": 8.98
+    },
+    {
+     "S-CB517": "S-CB517:d095",
+     "S-CB050": "S-CB050:d046",
+     "S-CB517_value": 5.27,
+     "S-CB050_value": 4.39
+    },
+    {
+     "S-CB517": "S-CB517:d096",
+     "S-CB050": "S-CB050:d023",
+     "S-CB517_value": 17.81,
+     "S-CB050_value": 15.22
+    },
+    {
+     "S-CB517": "S-CB517:d055",
+     "S-CB050": "S-CB050:d111",
+     "S-CB517_value": 3.31,
+     "S-CB050_value": 2.9
+    },
+    {
+     "S-CB517": "S-CB517:d006",
+     "S-CB050": "S-CB050:d153",
+     "S-CB517_value": 12.91,
+     "S-CB050_value": 11.22
+    },
+    {
+     "S-CB517": "S-CB517:d016",
+     "S-CB050": "S-CB050:d100",
+     "S-CB517_value": 19.73,
+     "S-CB050_value": 16.6
+    },
+    {
+     "S-CB517": "S-CB517:d076",
+     "S-CB050": "S-CB050:d005",
+     "S-CB517_value": 7.4,
+     "S-CB050_value": 6.73
+    },
+    {
+     "S-CB517": "S-CB517:d011",
+     "S-CB050": "S-CB050:d115",
+     "S-CB517_value": 16.1,
+     "S-CB050_value": 9.04
+    },
+    {
+     "S-CB517": "S-CB517:d091",
+     "S-CB050": "S-CB050:d097",
+     "S-CB517_value": 5.85,
+     "S-CB050_value": 5.32
+    },
+    {
+     "S-CB517": "S-CB517:d099",
+     "S-CB050": "S-CB050:d032",
+     "S-CB517_value": 23.83,
+     "S-CB050_value": 17.78
+    },
+    {
+     "S-CB517": "S-CB517:d042",
+     "S-CB050": "S-CB050:d132",
+     "S-CB517_value": 22.06,
+     "S-CB050_value": 11.49
+    },
+    {
+     "S-CB517": "S-CB517:d010",
+     "S-CB050": "S-CB050:d094",
+     "S-CB517_value": 4.48,
+     "S-CB050_value": 3.8
+    },
+    {
+     "S-CB517": "S-CB517:d051",
+     "S-CB050": "S-CB050:d050",
+     "S-CB517_value": 15.58,
+     "S-CB050_value": 13.67
+    },
+    {
+     "S-CB517": "S-CB517:d102",
+     "S-CB050": "S-CB050:d057",
+     "S-CB517_value": 7.7,
+     "S-CB050_value": 5.06
+    },
+    {
+     "S-CB517": "S-CB517:d078",
+     "S-CB050": "S-CB050:d126",
+     "S-CB517_value": 30.87,
+     "S-CB050_value": 23.93
+    },
+    {
+     "S-CB517": "S-CB517:d036",
+     "S-CB050": "S-CB050:d068",
+     "S-CB517_value": 31.88,
+     "S-CB050_value": 25.7
+    },
+    {
+     "S-CB517": "S-CB517:d108",
+     "S-CB050": "S-CB050:d080",
+     "S-CB517_value": 5.38,
+     "S-CB050_value": 1.8
+    },
+    {
+     "S-CB517": "S-CB517:d092",
+     "S-CB050": "S-CB050:d157",
+     "S-CB517_value": 5.25,
+     "S-CB050_value": 4.3
+    },
+    {
+     "S-CB517": "S-CB517:d046",
+     "S-CB050": "S-CB050:d083",
+     "S-CB517_value": 4.75,
+     "S-CB050_value": 4.31
+    },
+    {
+     "S-CB517": "S-CB517:d002",
+     "S-CB050": "S-CB050:d114",
+     "S-CB517_value": 26.35,
+     "S-CB050_value": 19.09
+    },
+    {
+     "S-CB517": "S-CB517:d008",
+     "S-CB050": "S-CB050:d087",
+     "S-CB517_value": 5.19,
+     "S-CB050_value": 4.12
+    },
+    {
+     "S-CB517": "S-CB517:d018",
+     "S-CB050": "S-CB050:d141",
+     "S-CB517_value": 5.49,
+     "S-CB050_value": 4.99
+    },
+    {
+     "S-CB517": "S-CB517:d059",
+     "S-CB050": "S-CB050:d074",
+     "S-CB517_value": 3.37,
+     "S-CB050_value": 3.06
+    },
+    {
+     "S-CB517": "S-CB517:d085",
+     "S-CB050": "S-CB050:d062",
+     "S-CB517_value": 13.95,
+     "S-CB050_value": 10.9
+    }
+   ],
+   "n_mismatch_where_scb050_wbc_equals_differential_plus_bands": 24
+  },
+  "neut_seg": {
+   "n_pairs": 112,
+   "n_equal": 112,
+   "n_within_1pct": 112,
+   "spearman_rho": 1.0,
+   "mismatches": []
+  },
+  "died_agreement": {
+   "n_pairs": 97,
+   "n_equal": 97,
+   "differ": []
+  },
+  "link": "112 of 112 rows linked by value (7 cytokines + WBC + segmented neutrophils; best match >= 7 of 9 equal values and at least 4 more than the next best; floor values make 3-4 chance matches common). The best value match is the case implied by the ID (CaseN -> S-CB050 case N; ControlK -> S-CB050 case 200+K) in 112 of 112 rows.",
+  "per_row": {
+   "Case1": {
+    "best_match_case": "1",
+    "id_implied_case": "1",
+    "matching_values_of_9": 9,
+    "next_best_of_9": 1
+   },
+   "Case2": {
+    "best_match_case": "2",
+    "id_implied_case": "2",
+    "matching_values_of_9": 9,
+    "next_best_of_9": 0
+   },
+   "Case3": {
+    "best_match_case": "3",
+    "id_implied_case": "3",
+    "matching_values_of_9": 9,
+    "next_best_of_9": 1
+   },
+   "Case4": {
+    "best_match_case": "4",
+    "id_implied_case": "4",
+    "matching_values_of_9": 9,
+    "next_best_of_9": 2
+   },
+   "Case5": {
+    "best_match_case": "5",
+    "id_implied_case": "5",
+    "matching_values_of_9": 9,
+    "next_best_of_9": 0
+   },
+   "Case6": {
+    "best_match_case": "6",
+    "id_implied_case": "6",
+    "matching_values_of_9": 9,
+    "next_best_of_9": 1
+   },
+   "Case7": {
+    "best_match_case": "7",
+    "id_implied_case": "7",
+    "matching_values_of_9": 9,
+    "next_best_of_9": 2
+   },
+   "Case8": {
+    "best_match_case": "8",
+    "id_implied_case": "8",
+    "matching_values_of_9": 8,
+    "next_best_of_9": 1
+   },
+   "Case9": {
+    "best_match_case": "9",
+    "id_implied_case": "9",
+    "matching_values_of_9": 9,
+    "next_best_of_9": 3
+   },
+   "Case10": {
+    "best_match_case": "10",
+    "id_implied_case": "10",
+    "matching_values_of_9": 8,
+    "next_best_of_9": 0
+   },
+   "Case11": {
+    "best_match_case": "11",
+    "id_implied_case": "11",
+    "matching_values_of_9": 8,
+    "next_best_of_9": 1
+   },
+   "Case12": {
+    "best_match_case": "12",
+    "id_implied_case": "12",
+    "matching_values_of_9": 9,
+    "next_best_of_9": 3
+   },
+   "Case13": {
+    "best_match_case": "13",
+    "id_implied_case": "13",
+    "matching_values_of_9": 9,
+    "next_best_of_9": 3
+   },
+   "Case14": {
+    "best_match_case": "14",
+    "id_implied_case": "14",
+    "matching_values_of_9": 9,
+    "next_best_of_9": 2
+   },
+   "Case15": {
+    "best_match_case": "15",
+    "id_implied_case": "15",
+    "matching_values_of_9": 9,
+    "next_best_of_9": 0
+   },
+   "Case16": {
+    "best_match_case": "16",
+    "id_implied_case": "16",
+    "matching_values_of_9": 9,
+    "next_best_of_9": 1
+   },
+   "Case17": {
+    "best_match_case": "17",
+    "id_implied_case": "17",
+    "matching_values_of_9": 9,
+    "next_best_of_9": 0
+   },
+   "Case18": {
+    "best_match_case": "18",
+    "id_implied_case": "18",
+    "matching_values_of_9": 8,
+    "next_best_of_9": 1
+   },
+   "Case19": {
+    "best_match_case": "19",
+    "id_implied_case": "19",
+    "matching_values_of_9": 9,
+    "next_best_of_9": 1
+   },
+   "Case20": {
+    "best_match_case": "20",
+    "id_implied_case": "20",
+    "matching_values_of_9": 9,
+    "next_best_of_9": 0
+   },
+   "Case21": {
+    "best_match_case": "21",
+    "id_implied_case": "21",
+    "matching_values_of_9": 9,
+    "next_best_of_9": 1
+   },
+   "Case22": {
+    "best_match_case": "22",
+    "id_implied_case": "22",
+    "matching_values_of_9": 8,
+    "next_best_of_9": 0
+   },
+   "Case23": {
+    "best_match_case": "23",
+    "id_implied_case": "23",
+    "matching_values_of_9": 9,
+    "next_best_of_9": 0
+   },
+   "Case24": {
+    "best_match_case": "24",
+    "id_implied_case": "24",
+    "matching_values_of_9": 8,
+    "next_best_of_9": 1
+   },
+   "Case25": {
+    "best_match_case": "25",
+    "id_implied_case": "25",
+    "matching_values_of_9": 9,
+    "next_best_of_9": 2
+   },
+   "Case26": {
+    "best_match_case": "26",
+    "id_implied_case": "26",
+    "matching_values_of_9": 9,
+    "next_best_of_9": 3
+   },
+   "Case27": {
+    "best_match_case": "27",
+    "id_implied_case": "27",
+    "matching_values_of_9": 9,
+    "next_best_of_9": 0
+   },
+   "Case28": {
+    "best_match_case": "28",
+    "id_implied_case": "28",
+    "matching_values_of_9": 9,
+    "next_best_of_9": 1
+   },
+   "Case29": {
+    "best_match_case": "29",
+    "id_implied_case": "29",
+    "matching_values_of_9": 9,
+    "next_best_of_9": 1
+   },
+   "Case30": {
+    "best_match_case": "30",
+    "id_implied_case": "30",
+    "matching_values_of_9": 9,
+    "next_best_of_9": 0
+   },
+   "Case31": {
+    "best_match_case": "31",
+    "id_implied_case": "31",
+    "matching_values_of_9": 9,
+    "next_best_of_9": 4
+   },
+   "Case32": {
+    "best_match_case": "32",
+    "id_implied_case": "32",
+    "matching_values_of_9": 9,
+    "next_best_of_9": 1
+   },
+   "Case33": {
+    "best_match_case": "33",
+    "id_implied_case": "33",
+    "matching_values_of_9": 9,
+    "next_best_of_9": 4
+   },
+   "Case34": {
+    "best_match_case": "34",
+    "id_implied_case": "34",
+    "matching_values_of_9": 8,
+    "next_best_of_9": 1
+   },
+   "Case35": {
+    "best_match_case": "35",
+    "id_implied_case": "35",
+    "matching_values_of_9": 8,
+    "next_best_of_9": 1
+   },
+   "Case36": {
+    "best_match_case": "36",
+    "id_implied_case": "36",
+    "matching_values_of_9": 8,
+    "next_best_of_9": 0
+   },
+   "Case37": {
+    "best_match_case": "37",
+    "id_implied_case": "37",
+    "matching_values_of_9": 8,
+    "next_best_of_9": 3
+   },
+   "Case38": {
+    "best_match_case": "38",
+    "id_implied_case": "38",
+    "matching_values_of_9": 9,
+    "next_best_of_9": 1
+   },
+   "Case39": {
+    "best_match_case": "39",
+    "id_implied_case": "39",
+    "matching_values_of_9": 9,
+    "next_best_of_9": 1
+   },
+   "Case40": {
+    "best_match_case": "40",
+    "id_implied_case": "40",
+    "matching_values_of_9": 9,
+    "next_best_of_9": 4
+   },
+   "Case41": {
+    "best_match_case": "41",
+    "id_implied_case": "41",
+    "matching_values_of_9": 9,
+    "next_best_of_9": 0
+   },
+   "Case42": {
+    "best_match_case": "42",
+    "id_implied_case": "42",
+    "matching_values_of_9": 9,
+    "next_best_of_9": 3
+   },
+   "Case43": {
+    "best_match_case": "43",
+    "id_implied_case": "43",
+    "matching_values_of_9": 8,
+    "next_best_of_9": 1
+   },
+   "Case44": {
+    "best_match_case": "44",
+    "id_implied_case": "44",
+    "matching_values_of_9": 9,
+    "next_best_of_9": 0
+   },
+   "Case45": {
+    "best_match_case": "45",
+    "id_implied_case": "45",
+    "matching_values_of_9": 9,
+    "next_best_of_9": 4
+   },
+   "Case46": {
+    "best_match_case": "46",
+    "id_implied_case": "46",
+    "matching_values_of_9": 9,
+    "next_best_of_9": 0
+   },
+   "Case47": {
+    "best_match_case": "47",
+    "id_implied_case": "47",
+    "matching_values_of_9": 9,
+    "next_best_of_9": 3
+   },
+   "Case48": {
+    "best_match_case": "48",
+    "id_implied_case": "48",
+    "matching_values_of_9": 8,
+    "next_best_of_9": 1
+   },
+   "Case49": {
+    "best_match_case": "49",
+    "id_implied_case": "49",
+    "matching_values_of_9": 9,
+    "next_best_of_9": 3
+   },
+   "Case50": {
+    "best_match_case": "50",
+    "id_implied_case": "50",
+    "matching_values_of_9": 9,
+    "next_best_of_9": 1
+   },
+   "Case51": {
+    "best_match_case": "51",
+    "id_implied_case": "51",
+    "matching_values_of_9": 9,
+    "next_best_of_9": 1
+   },
+   "Case52": {
+    "best_match_case": "52",
+    "id_implied_case": "52",
+    "matching_values_of_9": 9,
+    "next_best_of_9": 2
+   },
+   "Case53": {
+    "best_match_case": "53",
+    "id_implied_case": "53",
+    "matching_values_of_9": 8,
+    "next_best_of_9": 1
+   },
+   "Case54": {
+    "best_match_case": "54",
+    "id_implied_case": "54",
+    "matching_values_of_9": 9,
+    "next_best_of_9": 0
+   },
+   "Case55": {
+    "best_match_case": "55",
+    "id_implied_case": "55",
+    "matching_values_of_9": 8,
+    "next_best_of_9": 1
+   },
+   "Case56": {
+    "best_match_case": "56",
+    "id_implied_case": "56",
+    "matching_values_of_9": 9,
+    "next_best_of_9": 1
+   },
+   "Case57": {
+    "best_match_case": "57",
+    "id_implied_case": "57",
+    "matching_values_of_9": 9,
+    "next_best_of_9": 0
+   },
+   "Case58": {
+    "best_match_case": "58",
+    "id_implied_case": "58",
+    "matching_values_of_9": 9,
+    "next_best_of_9": 1
+   },
+   "Case59": {
+    "best_match_case": "59",
+    "id_implied_case": "59",
+    "matching_values_of_9": 9,
+    "next_best_of_9": 0
+   },
+   "Case60": {
+    "best_match_case": "60",
+    "id_implied_case": "60",
+    "matching_values_of_9": 9,
+    "next_best_of_9": 0
+   },
+   "Case61": {
+    "best_match_case": "61",
+    "id_implied_case": "61",
+    "matching_values_of_9": 8,
+    "next_best_of_9": 0
+   },
+   "Case62": {
+    "best_match_case": "62",
+    "id_implied_case": "62",
+    "matching_values_of_9": 9,
+    "next_best_of_9": 1
+   },
+   "Case63": {
+    "best_match_case": "63",
+    "id_implied_case": "63",
+    "matching_values_of_9": 9,
+    "next_best_of_9": 1
+   },
+   "Case64": {
+    "best_match_case": "64",
+    "id_implied_case": "64",
+    "matching_values_of_9": 9,
+    "next_best_of_9": 2
+   },
+   "Case65": {
+    "best_match_case": "65",
+    "id_implied_case": "65",
+    "matching_values_of_9": 8,
+    "next_best_of_9": 2
+   },
+   "Case66": {
+    "best_match_case": "66",
+    "id_implied_case": "66",
+    "matching_values_of_9": 9,
+    "next_best_of_9": 1
+   },
+   "Case67": {
+    "best_match_case": "67",
+    "id_implied_case": "67",
+    "matching_values_of_9": 8,
+    "next_best_of_9": 0
+   },
+   "Case68": {
+    "best_match_case": "68",
+    "id_implied_case": "68",
+    "matching_values_of_9": 9,
+    "next_best_of_9": 1
+   },
+   "Case69": {
+    "best_match_case": "69",
+    "id_implied_case": "69",
+    "matching_values_of_9": 9,
+    "next_best_of_9": 4
+   },
+   "Case70": {
+    "best_match_case": "70",
+    "id_implied_case": "70",
+    "matching_values_of_9": 9,
+    "next_best_of_9": 3
+   },
+   "Case71": {
+    "best_match_case": "71",
+    "id_implied_case": "71",
+    "matching_values_of_9": 9,
+    "next_best_of_9": 3
+   },
+   "Case72": {
+    "best_match_case": "72",
+    "id_implied_case": "72",
+    "matching_values_of_9": 9,
+    "next_best_of_9": 2
+   },
+   "Case73": {
+    "best_match_case": "73",
+    "id_implied_case": "73",
+    "matching_values_of_9": 9,
+    "next_best_of_9": 2
+   },
+   "Case74": {
+    "best_match_case": "74",
+    "id_implied_case": "74",
+    "matching_values_of_9": 9,
+    "next_best_of_9": 0
+   },
+   "Case75": {
+    "best_match_case": "75",
+    "id_implied_case": "75",
+    "matching_values_of_9": 9,
+    "next_best_of_9": 0
+   },
+   "Case76": {
+    "best_match_case": "76",
+    "id_implied_case": "76",
+    "matching_values_of_9": 9,
+    "next_best_of_9": 0
+   },
+   "Case77": {
+    "best_match_case": "77",
+    "id_implied_case": "77",
+    "matching_values_of_9": 9,
+    "next_best_of_9": 2
+   },
+   "Case78": {
+    "best_match_case": "78",
+    "id_implied_case": "78",
+    "matching_values_of_9": 9,
+    "next_best_of_9": 3
+   },
+   "Case79": {
+    "best_match_case": "79",
+    "id_implied_case": "79",
+    "matching_values_of_9": 9,
+    "next_best_of_9": 1
+   },
+   "Case80": {
+    "best_match_case": "80",
+    "id_implied_case": "80",
+    "matching_values_of_9": 9,
+    "next_best_of_9": 0
+   },
+   "Case81": {
+    "best_match_case": "81",
+    "id_implied_case": "81",
+    "matching_values_of_9": 8,
+    "next_best_of_9": 2
+   },
+   "Case82": {
+    "best_match_case": "82",
+    "id_implied_case": "82",
+    "matching_values_of_9": 8,
+    "next_best_of_9": 1
+   },
+   "Case83": {
+    "best_match_case": "83",
+    "id_implied_case": "83",
+    "matching_values_of_9": 8,
+    "next_best_of_9": 1
+   },
+   "Case84": {
+    "best_match_case": "84",
+    "id_implied_case": "84",
+    "matching_values_of_9": 8,
+    "next_best_of_9": 1
+   },
+   "Case85": {
+    "best_match_case": "85",
+    "id_implied_case": "85",
+    "matching_values_of_9": 8,
+    "next_best_of_9": 0
+   },
+   "Case86": {
+    "best_match_case": "86",
+    "id_implied_case": "86",
+    "matching_values_of_9": 9,
+    "next_best_of_9": 1
+   },
+   "Case87": {
+    "best_match_case": "87",
+    "id_implied_case": "87",
+    "matching_values_of_9": 9,
+    "next_best_of_9": 2
+   },
+   "Case88": {
+    "best_match_case": "88",
+    "id_implied_case": "88",
+    "matching_values_of_9": 9,
+    "next_best_of_9": 0
+   },
+   "Case89": {
+    "best_match_case": "89",
+    "id_implied_case": "89",
+    "matching_values_of_9": 9,
+    "next_best_of_9": 3
+   },
+   "Case90": {
+    "best_match_case": "90",
+    "id_implied_case": "90",
+    "matching_values_of_9": 9,
+    "next_best_of_9": 1
+   },
+   "Case91": {
+    "best_match_case": "91",
+    "id_implied_case": "91",
+    "matching_values_of_9": 9,
+    "next_best_of_9": 1
+   },
+   "Case92": {
+    "best_match_case": "92",
+    "id_implied_case": "92",
+    "matching_values_of_9": 8,
+    "next_best_of_9": 1
+   },
+   "Case93": {
+    "best_match_case": "93",
+    "id_implied_case": "93",
+    "matching_values_of_9": 8,
+    "next_best_of_9": 0
+   },
+   "Case94": {
+    "best_match_case": "94",
+    "id_implied_case": "94",
+    "matching_values_of_9": 9,
+    "next_best_of_9": 0
+   },
+   "Case95": {
+    "best_match_case": "95",
+    "id_implied_case": "95",
+    "matching_values_of_9": 9,
+    "next_best_of_9": 0
+   },
+   "Case96": {
+    "best_match_case": "96",
+    "id_implied_case": "96",
+    "matching_values_of_9": 9,
+    "next_best_of_9": 0
+   },
+   "Case97": {
+    "best_match_case": "97",
+    "id_implied_case": "97",
+    "matching_values_of_9": 9,
+    "next_best_of_9": 0
+   },
+   "Control1": {
+    "best_match_case": "201",
+    "id_implied_case": "201",
+    "matching_values_of_9": 9,
+    "next_best_of_9": 2
+   },
+   "Control2": {
+    "best_match_case": "202",
+    "id_implied_case": "202",
+    "matching_values_of_9": 9,
+    "next_best_of_9": 0
+   },
+   "Control3": {
+    "best_match_case": "203",
+    "id_implied_case": "203",
+    "matching_values_of_9": 9,
+    "next_best_of_9": 0
+   },
+   "Control4": {
+    "best_match_case": "204",
+    "id_implied_case": "204",
+    "matching_values_of_9": 9,
+    "next_best_of_9": 2
+   },
+   "Control5": {
+    "best_match_case": "205",
+    "id_implied_case": "205",
+    "matching_values_of_9": 9,
+    "next_best_of_9": 2
+   },
+   "Control6": {
+    "best_match_case": "206",
+    "id_implied_case": "206",
+    "matching_values_of_9": 9,
+    "next_best_of_9": 1
+   },
+   "Control7": {
+    "best_match_case": "207",
+    "id_implied_case": "207",
+    "matching_values_of_9": 9,
+    "next_best_of_9": 2
+   },
+   "Control8": {
+    "best_match_case": "208",
+    "id_implied_case": "208",
+    "matching_values_of_9": 9,
+    "next_best_of_9": 2
+   },
+   "Control9": {
+    "best_match_case": "209",
+    "id_implied_case": "209",
+    "matching_values_of_9": 9,
+    "next_best_of_9": 4
+   },
+   "Control10": {
+    "best_match_case": "210",
+    "id_implied_case": "210",
+    "matching_values_of_9": 9,
+    "next_best_of_9": 1
+   },
+   "Control11": {
+    "best_match_case": "211",
+    "id_implied_case": "211",
+    "matching_values_of_9": 9,
+    "next_best_of_9": 1
+   },
+   "Control12": {
+    "best_match_case": "212",
+    "id_implied_case": "212",
+    "matching_values_of_9": 9,
+    "next_best_of_9": 1
+   },
+   "Control13": {
+    "best_match_case": "213",
+    "id_implied_case": "213",
+    "matching_values_of_9": 9,
+    "next_best_of_9": 0
+   },
+   "Control14": {
+    "best_match_case": "214",
+    "id_implied_case": "214",
+    "matching_values_of_9": 9,
+    "next_best_of_9": 1
+   },
+   "Control15": {
+    "best_match_case": "215",
+    "id_implied_case": "215",
+    "matching_values_of_9": 9,
+    "next_best_of_9": 4
+   }
+  }
+ },
+ "n_failed": 1
+}

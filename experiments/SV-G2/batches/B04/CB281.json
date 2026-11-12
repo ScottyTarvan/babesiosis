@@ -1,0 +1,25 @@
+{
+  "id": "CB281",
+  "text_used": "data/markdown/CB281.en.md",
+  "extracted_by": "claude-opus-5-5 SV-G2 B04",
+  "extracted_utc": "2026-11-12T05:25:03Z",
+  "schema_version": "v2",
+  "setting": "referral hospital",
+  "sample_timing": "not stated",
+  "article_notes": "Romanian article (English translation used). 55 dogs with haemoparasitoses at a university emergency hospital: control (n=10, haemoparasitosis without IMHA, mild anaemia), group I (n=30, IMHA secondary to intracellular haemoparasites incl. B. canis, Anaplasma, Ehrlichia, Borrelia, Hepatozoon, Mycoplasma), group II (n=15, D. immitis). Only group I and group II summary haematology are printed; no control-group values and no test between groups (WBC in group II is said to be 'significantly higher' than control, without values or test, and is not Babesia). Mixed pathogens; B. canis dogs not reported separately. The statement that anaemia severity did not correlate with parasitaemia has no numbers or test.",
+  "skipped_infected_vs_healthy": 0,
+  "severity_definitions": [],
+  "associations": [],
+  "not_extracted": [
+    {
+      "what": "Haematology of group I (IMHA, severe anaemia) vs control (no IMHA)",
+      "reason": "no per-group result",
+      "note": "Control-group values not printed and no test; mixed haemoparasites, B. canis not separated."
+    },
+    {
+      "what": "Parasitaemia vs severity of anaemia ('did not correlate directly')",
+      "reason": "no per-group result",
+      "note": "Narrative statement only, no numbers or test; mixed haemoparasites."
+    }
+  ]
+}

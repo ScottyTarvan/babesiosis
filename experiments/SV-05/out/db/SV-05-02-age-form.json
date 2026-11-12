@@ -1,0 +1,1759 @@
+{
+ "experiment": {
+  "code": "SV-05-02-age-form",
+  "name": "Age group and the form of B. rossi disease: anaemia, left shift, cytokine perturbation and illness duration",
+  "description": "Is severe B. rossi disease anaemia-dominant in dogs under 12 months and inflammatory in older dogs? Haematocrit, band neutrophils, the SV-04 cytokine perturbation and days ill are compared by age group inside each source, side by side.",
+  "method": "age_sex_contrast",
+  "dataset": null,
+  "parameters": {
+   "package": "SV-05",
+   "role": "descriptive",
+   "datasets": [
+    "DS05",
+    "DS03",
+    "S-CB050"
+   ],
+   "independent_sources": [
+    "SRC-A",
+    "SRC-F"
+   ],
+   "spec_sha256": "dd68cbd66a738637cead48e9707a08a3c3fec84d5fd0286307d804b475e1782f",
+   "seed": 20261112,
+   "permutations": 10000,
+   "bootstrap": 2000,
+   "young_cut_months": 12.0,
+   "contrast": "young (< 12 months) minus adult (>= 12 months)",
+   "versions": {
+    "python": "3.12.12",
+    "numpy": "2.3.4",
+    "scipy": "1.16.3"
+   },
+   "family": "B (8 tests, BH)",
+   "inputs_from_other_packages": [
+    "/experiments/SV-04/out/perturbation.csv (column severe not used)"
+   ],
+   "linkage": "DS03 natural dogs counted as SRC-A (SV-07); DS03 not pooled with S-CB050",
+   "n_subjects_note": "DS05 149 + S-CB050 140; the 101 DS03 dogs with age are S-CB050 dogs and are not counted again"
+  },
+  "script": "/experiments/SV-05/scripts/analyse.py",
+  "script_version": "9b40901f8c1f",
+  "run_utc": "2026-11-12T15:15:23Z",
+  "n_subjects": 289,
+  "n_variables": 6,
+  "n_tests": 8,
+  "summary": "Form of disease by age group (young < 12 months minus adult): DS05 haematocrit HL -0.02 L/L (-0.04 to +0.01, n 55 vs 92); DS03 -0.06 (-0.10 to -0.03; same dogs as S-CB050); no adult excess of bands or perturbation. Verdict: Not supported. 1 of 8 tests q < 0.05."
+ },
+ "associations": [],
+ "cluster_assignments": [],
+ "results": [
+  {
+   "kind": "primary_result",
+   "title": "Primary analysis: is the form of disease different by age?",
+   "sort_order": 1,
+   "payload": {
+    "label": "Anaemia and inflammatory form by age group, inside each source",
+    "statistic": "Hodges-Lehmann difference, young minus adult",
+    "verdict": "Not supported",
+    "signals": {
+     "anaemia": false,
+     "inflammatory": false,
+     "risk": false,
+     "against": []
+    },
+    "independent_sources": 2,
+    "sources": [
+     "DS05 (SRC-F, B. rossi, Eastern Cape clinic, 2021)",
+     "DS03 natural (SRC-A: the same dogs as S-CB050, per SV-07)",
+     "S-CB050 (SRC-A, B. rossi, Onderstepoort, 2011-2014)"
+    ],
+    "rows": [
+     {
+      "id": "B1",
+      "test": "B1",
+      "label": "Haematocrit, DS05",
+      "dataset": "DS05",
+      "source": "SRC-F",
+      "measure": "haematocrit",
+      "effect_label": "HL difference, L/L",
+      "scale": "diff",
+      "null_value": 0,
+      "estimate": -0.02,
+      "ci_low": -0.04,
+      "ci_high": 0.01,
+      "n_young": 55,
+      "n_adult": 92,
+      "value_label": "median",
+      "young_value": 0.17,
+      "adult_value": 0.185,
+      "young_iqr": [
+       0.12,
+       0.27
+      ],
+      "adult_iqr": [
+       0.1375,
+       0.26
+      ],
+      "cliff": -0.120751,
+      "cliff_low": -0.323533,
+      "cliff_high": 0.076487,
+      "p": 0.222078,
+      "q": 0.267174,
+      "digits": 2,
+      "detectable_sd": 0.477518,
+      "note": ""
+     },
+     {
+      "id": "B2",
+      "test": "B2",
+      "label": "Haematocrit, DS03 natural",
+      "dataset": "DS03",
+      "source": "SRC-A",
+      "measure": "haematocrit",
+      "effect_label": "HL difference, L/L",
+      "scale": "diff",
+      "null_value": 0,
+      "estimate": -0.06,
+      "ci_low": -0.1,
+      "ci_high": -0.025,
+      "n_young": 41,
+      "n_adult": 60,
+      "value_label": "median",
+      "young_value": 0.14,
+      "adult_value": 0.2,
+      "young_iqr": [
+       0.11,
+       0.18
+      ],
+      "adult_iqr": [
+       0.13,
+       0.3225
+      ],
+      "cliff": -0.390244,
+      "cliff_low": -0.577683,
+      "cliff_high": -0.177602,
+      "p": 0.0009,
+      "q": 0.0072,
+      "digits": 2,
+      "detectable_sd": 0.567674,
+      "note": "DS03 natural dogs are S-CB050 dogs (SV-07): one source, not a replication"
+     },
+     {
+      "id": "B3",
+      "test": "B3",
+      "label": "Band neutrophils, DS05",
+      "dataset": "DS05",
+      "source": "SRC-F",
+      "measure": "band neutrophils",
+      "effect_label": "HL difference, 10^9/L",
+      "scale": "diff",
+      "null_value": 0,
+      "estimate": -0.1,
+      "ci_low": -0.20025,
+      "ci_high": 0.01,
+      "n_young": 55,
+      "n_adult": 92,
+      "value_label": "median",
+      "young_value": 0.23,
+      "adult_value": 0.34,
+      "young_iqr": [
+       0.085,
+       0.62
+      ],
+      "adult_iqr": [
+       0.1875,
+       0.9525
+      ],
+      "cliff": -0.170751,
+      "cliff_low": -0.368414,
+      "cliff_high": 0.031038,
+      "p": 0.080492,
+      "q": 0.214645,
+      "digits": 2,
+      "detectable_sd": 0.477518,
+      "note": ""
+     },
+     {
+      "id": "B4",
+      "test": "B4",
+      "label": "Band neutrophils, S-CB050",
+      "dataset": "S-CB050",
+      "source": "SRC-A",
+      "measure": "band neutrophils",
+      "effect_label": "HL difference, 10^9/L",
+      "scale": "diff",
+      "null_value": 0,
+      "estimate": 0.0,
+      "ci_low": -0.11,
+      "ci_high": 0.13,
+      "n_young": 50,
+      "n_adult": 90,
+      "value_label": "median",
+      "young_value": 0.36,
+      "adult_value": 0.34,
+      "young_iqr": [
+       0.1625,
+       0.695
+      ],
+      "adult_iqr": [
+       0.15,
+       0.8025
+      ],
+      "cliff": 0.004444,
+      "cliff_low": -0.1898,
+      "cliff_high": 0.193122,
+      "p": 0.967403,
+      "q": 0.967403,
+      "digits": 2,
+      "detectable_sd": 0.494156,
+      "note": ""
+     },
+     {
+      "id": "B5",
+      "test": "B5",
+      "label": "SV-04 perturbation count, S-CB050 cohort 1",
+      "dataset": "S-CB050",
+      "source": "SRC-A",
+      "measure": "cytokines outside control range",
+      "effect_label": "HL difference, count",
+      "scale": "diff",
+      "null_value": 0,
+      "estimate": 0.0,
+      "ci_low": -1.0,
+      "ci_high": 0.0,
+      "n_young": 33,
+      "n_adult": 63,
+      "value_label": "median",
+      "young_value": 1.0,
+      "adult_value": 1.0,
+      "young_iqr": [
+       1.0,
+       2.0
+      ],
+      "adult_iqr": [
+       1.0,
+       2.0
+      ],
+      "cliff": -0.138047,
+      "cliff_low": -0.367063,
+      "cliff_high": 0.094769,
+      "p": 0.233777,
+      "q": 0.267174,
+      "digits": 1,
+      "detectable_sd": 0.602025,
+      "note": ""
+     }
+    ],
+    "headline": "Verdict by the pre-stated rule: Not supported. The anaemia signal needed DS05 (the independent source) to show a lower haematocrit in young dogs: HL -0.02 L/L (-0.04 to +0.01), which includes 0. DS03 shows it (-0.06, -0.10 to -0.03), but DS03 dogs are S-CB050 dogs and healthy young controls also have a lower haematocrit (check C1). No adult excess of bands or cytokine perturbation. Young dogs presented about one day earlier (DS05, HL -1 day, Cliff's delta -0.23, -0.41 to -0.03; q 0.090).",
+    "caveats": [
+     "exploratory: S-CB050 and DS05 were seen before this plan.",
+     "DS03 natural dogs are S-CB050 dogs (SV-07): one source, not a replication.",
+     "Age stands in for prior exposure, breed and size, which are not recorded.",
+     "Healthy young dogs have a lower haematocrit than adults, so part of any young-adult difference is normal physiology."
+    ]
+   }
+  },
+  {
+   "kind": "contrasts",
+   "title": "Family B: form tests (BH over 8)",
+   "sort_order": 2,
+   "payload": {
+    "groups": [
+     {
+      "key": "anaemia",
+      "label": "Anaemia form (lower in young = negative)",
+      "note": "DS03 natural dogs are S-CB050 dogs (SV-07): one source, not a replication.",
+      "rows": [
+       {
+        "id": "B1",
+        "test": "B1",
+        "label": "Haematocrit, DS05",
+        "dataset": "DS05",
+        "source": "SRC-F",
+        "measure": "haematocrit",
+        "effect_label": "HL difference, L/L",
+        "scale": "diff",
+        "null_value": 0,
+        "estimate": -0.02,
+        "ci_low": -0.04,
+        "ci_high": 0.01,
+        "n_young": 55,
+        "n_adult": 92,
+        "value_label": "median",
+        "young_value": 0.17,
+        "adult_value": 0.185,
+        "young_iqr": [
+         0.12,
+         0.27
+        ],
+        "adult_iqr": [
+         0.1375,
+         0.26
+        ],
+        "cliff": -0.120751,
+        "cliff_low": -0.323533,
+        "cliff_high": 0.076487,
+        "p": 0.222078,
+        "q": 0.267174,
+        "digits": 2,
+        "detectable_sd": 0.477518,
+        "note": ""
+       },
+       {
+        "id": "B2",
+        "test": "B2",
+        "label": "Haematocrit, DS03 natural",
+        "dataset": "DS03",
+        "source": "SRC-A",
+        "measure": "haematocrit",
+        "effect_label": "HL difference, L/L",
+        "scale": "diff",
+        "null_value": 0,
+        "estimate": -0.06,
+        "ci_low": -0.1,
+        "ci_high": -0.025,
+        "n_young": 41,
+        "n_adult": 60,
+        "value_label": "median",
+        "young_value": 0.14,
+        "adult_value": 0.2,
+        "young_iqr": [
+         0.11,
+         0.18
+        ],
+        "adult_iqr": [
+         0.13,
+         0.3225
+        ],
+        "cliff": -0.390244,
+        "cliff_low": -0.577683,
+        "cliff_high": -0.177602,
+        "p": 0.0009,
+        "q": 0.0072,
+        "digits": 2,
+        "detectable_sd": 0.567674,
+        "note": "DS03 natural dogs are S-CB050 dogs (SV-07): one source, not a replication"
+       },
+       {
+        "id": "B6",
+        "test": "B6",
+        "label": "Severe anaemia (hct < 0.15), DS05",
+        "dataset": "DS05",
+        "source": "SRC-F",
+        "measure": "share with hct < 0.15 L/L",
+        "effect_label": "Difference in share",
+        "scale": "diff",
+        "null_value": 0,
+        "estimate": 0.102964,
+        "ci_low": -0.054317,
+        "ci_high": 0.260026,
+        "n_young": 55,
+        "n_adult": 92,
+        "value_label": "share",
+        "young_value": 0.418182,
+        "adult_value": 0.315217,
+        "events_young": 23,
+        "events_adult": 29,
+        "odds_ratio": 1.556593,
+        "or_low": 0.734132,
+        "or_high": 3.300149,
+        "cliff": null,
+        "cliff_low": null,
+        "cliff_high": null,
+        "p": 0.217446,
+        "q": 0.267174,
+        "digits": 2,
+        "note": ""
+       }
+      ]
+     },
+     {
+      "key": "inflammation",
+      "label": "Inflammatory form (higher in adults = negative)",
+      "note": "",
+      "rows": [
+       {
+        "id": "B3",
+        "test": "B3",
+        "label": "Band neutrophils, DS05",
+        "dataset": "DS05",
+        "source": "SRC-F",
+        "measure": "band neutrophils",
+        "effect_label": "HL difference, 10^9/L",
+        "scale": "diff",
+        "null_value": 0,
+        "estimate": -0.1,
+        "ci_low": -0.20025,
+        "ci_high": 0.01,
+        "n_young": 55,
+        "n_adult": 92,
+        "value_label": "median",
+        "young_value": 0.23,
+        "adult_value": 0.34,
+        "young_iqr": [
+         0.085,
+         0.62
+        ],
+        "adult_iqr": [
+         0.1875,
+         0.9525
+        ],
+        "cliff": -0.170751,
+        "cliff_low": -0.368414,
+        "cliff_high": 0.031038,
+        "p": 0.080492,
+        "q": 0.214645,
+        "digits": 2,
+        "detectable_sd": 0.477518,
+        "note": ""
+       },
+       {
+        "id": "B4",
+        "test": "B4",
+        "label": "Band neutrophils, S-CB050",
+        "dataset": "S-CB050",
+        "source": "SRC-A",
+        "measure": "band neutrophils",
+        "effect_label": "HL difference, 10^9/L",
+        "scale": "diff",
+        "null_value": 0,
+        "estimate": 0.0,
+        "ci_low": -0.11,
+        "ci_high": 0.13,
+        "n_young": 50,
+        "n_adult": 90,
+        "value_label": "median",
+        "young_value": 0.36,
+        "adult_value": 0.34,
+        "young_iqr": [
+         0.1625,
+         0.695
+        ],
+        "adult_iqr": [
+         0.15,
+         0.8025
+        ],
+        "cliff": 0.004444,
+        "cliff_low": -0.1898,
+        "cliff_high": 0.193122,
+        "p": 0.967403,
+        "q": 0.967403,
+        "digits": 2,
+        "detectable_sd": 0.494156,
+        "note": ""
+       },
+       {
+        "id": "B5",
+        "test": "B5",
+        "label": "SV-04 perturbation count, S-CB050 cohort 1",
+        "dataset": "S-CB050",
+        "source": "SRC-A",
+        "measure": "cytokines outside control range",
+        "effect_label": "HL difference, count",
+        "scale": "diff",
+        "null_value": 0,
+        "estimate": 0.0,
+        "ci_low": -1.0,
+        "ci_high": 0.0,
+        "n_young": 33,
+        "n_adult": 63,
+        "value_label": "median",
+        "young_value": 1.0,
+        "adult_value": 1.0,
+        "young_iqr": [
+         1.0,
+         2.0
+        ],
+        "adult_iqr": [
+         1.0,
+         2.0
+        ],
+        "cliff": -0.138047,
+        "cliff_low": -0.367063,
+        "cliff_high": 0.094769,
+        "p": 0.233777,
+        "q": 0.267174,
+        "digits": 1,
+        "detectable_sd": 0.602025,
+        "note": ""
+       },
+       {
+        "id": "B7",
+        "test": "B7",
+        "label": "Left shift (bands > 0.5), DS05",
+        "dataset": "DS05",
+        "source": "SRC-F",
+        "measure": "share with bands > 0.5 x10^9/L",
+        "effect_label": "Difference in share",
+        "scale": "diff",
+        "null_value": 0,
+        "estimate": -0.140316,
+        "ci_low": -0.283191,
+        "ci_high": 0.020459,
+        "n_young": 55,
+        "n_adult": 92,
+        "value_label": "share",
+        "young_value": 0.272727,
+        "adult_value": 0.413043,
+        "events_young": 15,
+        "events_adult": 38,
+        "odds_ratio": 0.53515,
+        "or_low": 0.239067,
+        "or_high": 1.158268,
+        "cliff": null,
+        "cliff_low": null,
+        "cliff_high": null,
+        "p": 0.110355,
+        "q": 0.22071,
+        "digits": 2,
+        "note": ""
+       }
+      ]
+     },
+     {
+      "key": "timing",
+      "label": "Presentation timing",
+      "note": "Do young dogs present earlier? (step 4)",
+      "rows": [
+       {
+        "id": "B8",
+        "test": "B8",
+        "label": "Illness duration before presentation, DS05",
+        "dataset": "DS05",
+        "source": "SRC-F",
+        "measure": "days ill",
+        "effect_label": "HL difference, days",
+        "scale": "diff",
+        "null_value": 0,
+        "estimate": -1.0,
+        "ci_low": -1.0,
+        "ci_high": 0.0,
+        "n_young": 55,
+        "n_adult": 92,
+        "value_label": "median",
+        "young_value": 3.0,
+        "adult_value": 4.0,
+        "young_iqr": [
+         2.0,
+         4.0
+        ],
+        "adult_iqr": [
+         3.0,
+         5.0
+        ],
+        "cliff": -0.225099,
+        "cliff_low": -0.412658,
+        "cliff_high": -0.03121,
+        "p": 0.022598,
+        "q": 0.090392,
+        "digits": 1,
+        "detectable_sd": 0.477518,
+        "note": ""
+       }
+      ]
+     }
+    ],
+    "footnote": "Young = under 12 months; every effect is young minus adult. DS05: SRC-F, 147 dogs with a CBC. DS03 natural: SRC-A (same dogs as S-CB050, SV-07). S-CB050: SRC-A. One species, two independent sources; contrasts are shown side by side, never pooled. exploratory: S-CB050 and DS05 were seen before this plan."
+   }
+  },
+  {
+   "kind": "secondary",
+   "title": "Secondary contrasts (no claim, not in a family)",
+   "sort_order": 3,
+   "payload": {
+    "groups": [
+     {
+      "key": "age",
+      "label": "Other age contrasts (young minus adult)",
+      "note": "",
+      "rows": [
+       {
+        "id": "balance",
+        "test": "balance",
+        "label": "SV-04 balance index (MCP-1 minus IL-8 percentile), S-CB050 cohort 1",
+        "dataset": "S-CB050",
+        "source": "SRC-A",
+        "measure": "balance",
+        "effect_label": "HL difference, points",
+        "scale": "diff",
+        "null_value": 0,
+        "estimate": -7.216495,
+        "ci_low": -31.456186,
+        "ci_high": 11.340206,
+        "n_young": 33,
+        "n_adult": 63,
+        "value_label": "median",
+        "young_value": -2.061856,
+        "adult_value": 9.793814,
+        "young_iqr": [
+         -46.391753,
+         30.927835
+        ],
+        "adult_iqr": [
+         -29.896907,
+         30.927835
+        ],
+        "cliff": -0.095238,
+        "cliff_low": -0.345899,
+        "cliff_high": 0.14727,
+        "p": 0.448555,
+        "q": null,
+        "digits": 1,
+        "detectable_sd": 0.602025,
+        "note": ""
+       },
+       {
+        "id": "z",
+        "test": "z",
+        "label": "SV-04 z-score perturbation, S-CB050 cohort 1",
+        "dataset": "S-CB050",
+        "source": "SRC-A",
+        "measure": "mean |z|",
+        "effect_label": "HL difference, SD",
+        "scale": "diff",
+        "null_value": 0,
+        "estimate": -0.165157,
+        "ci_low": -0.418474,
+        "ci_high": 0.092193,
+        "n_young": 33,
+        "n_adult": 63,
+        "value_label": "median",
+        "young_value": 1.22567,
+        "adult_value": 1.412618,
+        "young_iqr": [
+         0.848528,
+         1.671749
+        ],
+        "adult_iqr": [
+         1.038271,
+         1.951412
+        ],
+        "cliff": -0.153439,
+        "cliff_low": -0.400722,
+        "cliff_high": 0.096705,
+        "p": 0.213179,
+        "q": null,
+        "digits": 2,
+        "detectable_sd": 0.602025,
+        "note": ""
+       },
+       {
+        "id": "wbc",
+        "test": "wbc",
+        "label": "WBC, S-CB050",
+        "dataset": "S-CB050",
+        "source": "SRC-A",
+        "measure": "WBC",
+        "effect_label": "HL difference, 10^9/L",
+        "scale": "diff",
+        "null_value": 0,
+        "estimate": 0.245,
+        "ci_low": -0.8205,
+        "ci_high": 1.230125,
+        "n_young": 50,
+        "n_adult": 90,
+        "value_label": "median",
+        "young_value": 6.405,
+        "adult_value": 5.91,
+        "young_iqr": [
+         5.0375,
+         9.015
+        ],
+        "adult_iqr": [
+         4.7275,
+         10.87
+        ],
+        "cliff": 0.048222,
+        "cliff_low": -0.13845,
+        "cliff_high": 0.249778,
+        "p": 0.646735,
+        "q": null,
+        "digits": 2,
+        "detectable_sd": 0.494156,
+        "note": ""
+       },
+       {
+        "id": "seg",
+        "test": "seg",
+        "label": "Segmented neutrophils, S-CB050",
+        "dataset": "S-CB050",
+        "source": "SRC-A",
+        "measure": "segmented",
+        "effect_label": "HL difference, 10^9/L",
+        "scale": "diff",
+        "null_value": 0,
+        "estimate": 0.03,
+        "ci_low": -0.83,
+        "ci_high": 0.9,
+        "n_young": 50,
+        "n_adult": 90,
+        "value_label": "median",
+        "young_value": 4.055,
+        "adult_value": 4.04,
+        "young_iqr": [
+         3.0875,
+         5.72
+        ],
+        "adult_iqr": [
+         2.78,
+         6.7225
+        ],
+        "cliff": 0.007556,
+        "cliff_low": -0.187844,
+        "cliff_high": 0.220006,
+        "p": 0.938706,
+        "q": null,
+        "digits": 2,
+        "detectable_sd": 0.494156,
+        "note": ""
+       }
+      ]
+     },
+     {
+      "key": "sex",
+      "label": "Sex contrasts (male minus female)",
+      "note": "Sex differs between cases and controls in SRC-A.",
+      "rows": [
+       {
+        "id": "sex_hct",
+        "test": "sex_hct",
+        "label": "Haematocrit, male minus female, DS05",
+        "dataset": "DS05",
+        "source": "SRC-F",
+        "measure": "haematocrit",
+        "effect_label": "HL difference, L/L",
+        "scale": "diff",
+        "null_value": 0,
+        "estimate": 0.01,
+        "ci_low": -0.02,
+        "ci_high": 0.03,
+        "n_young": 82,
+        "n_adult": 65,
+        "value_label": "median",
+        "young_value": 0.185,
+        "adult_value": 0.16,
+        "young_iqr": [
+         0.1325,
+         0.26
+        ],
+        "adult_iqr": [
+         0.12,
+         0.26
+        ],
+        "cliff": 0.066792,
+        "cliff_low": -0.133405,
+        "cliff_high": 0.254606,
+        "p": 0.481652,
+        "q": null,
+        "digits": 2,
+        "detectable_sd": 0.465266,
+        "note": "",
+        "group_labels": [
+         "male",
+         "female"
+        ]
+       },
+       {
+        "id": "sex_band",
+        "test": "sex_band",
+        "label": "Band neutrophils, male minus female, DS05",
+        "dataset": "DS05",
+        "source": "SRC-F",
+        "measure": "bands",
+        "effect_label": "HL difference, 10^9/L",
+        "scale": "diff",
+        "null_value": 0,
+        "estimate": -0.03,
+        "ci_low": -0.14,
+        "ci_high": 0.09,
+        "n_young": 82,
+        "n_adult": 65,
+        "value_label": "median",
+        "young_value": 0.255,
+        "adult_value": 0.34,
+        "young_iqr": [
+         0.11,
+         1.1175
+        ],
+        "adult_iqr": [
+         0.19,
+         0.72
+        ],
+        "cliff": -0.052908,
+        "cliff_low": -0.244132,
+        "cliff_high": 0.126083,
+        "p": 0.588141,
+        "q": null,
+        "digits": 2,
+        "detectable_sd": 0.465266,
+        "note": "",
+        "group_labels": [
+         "male",
+         "female"
+        ]
+       }
+      ]
+     }
+    ],
+    "footnote": "Young = under 12 months; every effect is young minus adult. DS05: SRC-F, 147 dogs with a CBC. DS03 natural: SRC-A (same dogs as S-CB050, SV-07). S-CB050: SRC-A. One species, two independent sources; contrasts are shown side by side, never pooled. exploratory: S-CB050 and DS05 were seen before this plan."
+   }
+  },
+  {
+   "kind": "sensitivity",
+   "title": "Sensitivity checks S1 to S4",
+   "sort_order": 4,
+   "payload": {
+    "groups": [
+     {
+      "key": "S1",
+      "label": "S1: severe anaemia at hct < 0.20 (DS05)",
+      "note": "",
+      "rows": [
+       {
+        "id": "S1",
+        "test": "S1",
+        "label": "Severe anaemia (hct < 0.20), DS05",
+        "dataset": "DS05",
+        "source": "SRC-F",
+        "measure": "share with hct < 0.20",
+        "effect_label": "Difference in share",
+        "scale": "diff",
+        "null_value": 0,
+        "estimate": 0.060079,
+        "ci_low": -0.104595,
+        "ci_high": 0.217467,
+        "n_young": 55,
+        "n_adult": 92,
+        "value_label": "share",
+        "young_value": 0.581818,
+        "adult_value": 0.521739,
+        "events_young": 32,
+        "events_adult": 48,
+        "odds_ratio": 1.273256,
+        "or_low": 0.616833,
+        "or_high": 2.652204,
+        "cliff": null,
+        "cliff_low": null,
+        "cliff_high": null,
+        "p": 0.498754,
+        "q": null,
+        "digits": 2,
+        "note": ""
+       }
+      ]
+     },
+     {
+      "key": "S2",
+      "label": "S2: DS05 without the 3 E. canis co-infected dogs",
+      "note": "",
+      "rows": [
+       {
+        "id": "S2-B1",
+        "test": "S2-B1",
+        "label": "Haematocrit",
+        "dataset": "DS05",
+        "source": "SRC-F",
+        "measure": "haematocrit",
+        "effect_label": "HL difference, L/L",
+        "scale": "diff",
+        "null_value": 0,
+        "estimate": -0.02,
+        "ci_low": -0.04,
+        "ci_high": 0.01,
+        "n_young": 54,
+        "n_adult": 90,
+        "value_label": "median",
+        "young_value": 0.165,
+        "adult_value": 0.185,
+        "young_iqr": [
+         0.12,
+         0.27
+        ],
+        "adult_iqr": [
+         0.1325,
+         0.26
+        ],
+        "cliff": -0.122428,
+        "cliff_low": -0.316672,
+        "cliff_high": 0.076986,
+        "p": 0.218678,
+        "q": null,
+        "digits": 2,
+        "detectable_sd": 0.482247,
+        "note": ""
+       },
+       {
+        "id": "S2-B3",
+        "test": "S2-B3",
+        "label": "Band neutrophils",
+        "dataset": "DS05",
+        "source": "SRC-F",
+        "measure": "bands",
+        "effect_label": "HL difference, 10^9/L",
+        "scale": "diff",
+        "null_value": 0,
+        "estimate": -0.11,
+        "ci_low": -0.22,
+        "ci_high": 0.0,
+        "n_young": 54,
+        "n_adult": 90,
+        "value_label": "median",
+        "young_value": 0.22,
+        "adult_value": 0.34,
+        "young_iqr": [
+         0.0825,
+         0.53
+        ],
+        "adult_iqr": [
+         0.19,
+         0.885
+        ],
+        "cliff": -0.1893,
+        "cliff_low": -0.390751,
+        "cliff_high": 0.008668,
+        "p": 0.056394,
+        "q": null,
+        "digits": 2,
+        "detectable_sd": 0.482247,
+        "note": ""
+       },
+       {
+        "id": "S2-B6",
+        "test": "S2-B6",
+        "label": "Severe anaemia (hct < 0.15)",
+        "dataset": "DS05",
+        "source": "SRC-F",
+        "measure": "share",
+        "effect_label": "Difference in share",
+        "scale": "diff",
+        "null_value": 0,
+        "estimate": 0.103704,
+        "ci_low": -0.055855,
+        "ci_high": 0.262474,
+        "n_young": 54,
+        "n_adult": 90,
+        "value_label": "share",
+        "young_value": 0.425926,
+        "adult_value": 0.322222,
+        "events_young": 23,
+        "events_adult": 29,
+        "odds_ratio": 1.555705,
+        "or_low": 0.730335,
+        "or_high": 3.315111,
+        "cliff": null,
+        "cliff_low": null,
+        "cliff_high": null,
+        "p": 0.216295,
+        "q": null,
+        "digits": 2,
+        "note": ""
+       },
+       {
+        "id": "S2-B7",
+        "test": "S2-B7",
+        "label": "Left shift (bands > 0.5)",
+        "dataset": "DS05",
+        "source": "SRC-F",
+        "measure": "share",
+        "effect_label": "Difference in share",
+        "scale": "diff",
+        "null_value": 0,
+        "estimate": -0.151852,
+        "ci_low": -0.29426,
+        "ci_high": 0.00978,
+        "n_young": 54,
+        "n_adult": 90,
+        "value_label": "share",
+        "young_value": 0.259259,
+        "adult_value": 0.411111,
+        "events_young": 14,
+        "events_adult": 37,
+        "odds_ratio": 0.503723,
+        "or_low": 0.220443,
+        "or_high": 1.107652,
+        "cliff": null,
+        "cliff_low": null,
+        "cliff_high": null,
+        "p": 0.07388,
+        "q": null,
+        "digits": 2,
+        "note": ""
+       },
+       {
+        "id": "S2-B8",
+        "test": "S2-B8",
+        "label": "Illness duration",
+        "dataset": "DS05",
+        "source": "SRC-F",
+        "measure": "days",
+        "effect_label": "HL difference, days",
+        "scale": "diff",
+        "null_value": 0,
+        "estimate": -1.0,
+        "ci_low": -1.0,
+        "ci_high": 0.0,
+        "n_young": 54,
+        "n_adult": 90,
+        "value_label": "median",
+        "young_value": 3.0,
+        "adult_value": 4.0,
+        "young_iqr": [
+         2.0,
+         4.0
+        ],
+        "adult_iqr": [
+         3.0,
+         5.0
+        ],
+        "cliff": -0.265638,
+        "cliff_low": -0.441168,
+        "cliff_high": -0.07427,
+        "p": 0.006799,
+        "q": null,
+        "digits": 1,
+        "detectable_sd": 0.482247,
+        "note": ""
+       }
+      ]
+     },
+     {
+      "key": "S4",
+      "label": "S4: DS05 inside each sex",
+      "note": "",
+      "rows": [
+       {
+        "id": "S4-male-B1",
+        "test": "S4-male-B1",
+        "label": "Haematocrit, male",
+        "dataset": "DS05",
+        "source": "SRC-F",
+        "measure": "",
+        "effect_label": "HL difference, L/L",
+        "scale": "diff",
+        "null_value": 0,
+        "estimate": -0.03,
+        "ci_low": -0.07,
+        "ci_high": 0.0,
+        "n_young": 32,
+        "n_adult": 50,
+        "value_label": "median",
+        "young_value": 0.165,
+        "adult_value": 0.21,
+        "young_iqr": [
+         0.11,
+         0.2475
+        ],
+        "adult_iqr": [
+         0.1425,
+         0.26
+        ],
+        "cliff": -0.241875,
+        "cliff_low": -0.481328,
+        "cliff_high": 0.025625,
+        "p": 0.069493,
+        "q": null,
+        "digits": 2,
+        "detectable_sd": 0.634239,
+        "note": ""
+       },
+       {
+        "id": "S4-male-B3",
+        "test": "S4-male-B3",
+        "label": "Band neutrophils, male",
+        "dataset": "DS05",
+        "source": "SRC-F",
+        "measure": "",
+        "effect_label": "HL difference, 10^9/L",
+        "scale": "diff",
+        "null_value": 0,
+        "estimate": -0.11,
+        "ci_low": -0.27,
+        "ci_high": 0.03,
+        "n_young": 32,
+        "n_adult": 50,
+        "value_label": "median",
+        "young_value": 0.155,
+        "adult_value": 0.33,
+        "young_iqr": [
+         0.0775,
+         0.5875
+        ],
+        "adult_iqr": [
+         0.16,
+         1.24
+        ],
+        "cliff": -0.206875,
+        "cliff_low": -0.463156,
+        "cliff_high": 0.05,
+        "p": 0.118688,
+        "q": null,
+        "digits": 2,
+        "detectable_sd": 0.634239,
+        "note": ""
+       },
+       {
+        "id": "S4-female-B1",
+        "test": "S4-female-B1",
+        "label": "Haematocrit, female",
+        "dataset": "DS05",
+        "source": "SRC-F",
+        "measure": "",
+        "effect_label": "HL difference, L/L",
+        "scale": "diff",
+        "null_value": 0,
+        "estimate": 0.0,
+        "ci_low": -0.03,
+        "ci_high": 0.05,
+        "n_young": 23,
+        "n_adult": 42,
+        "value_label": "median",
+        "young_value": 0.17,
+        "adult_value": 0.16,
+        "young_iqr": [
+         0.125,
+         0.275
+        ],
+        "adult_iqr": [
+         0.12,
+         0.255
+        ],
+        "cliff": 0.031056,
+        "cliff_low": -0.272257,
+        "cliff_high": 0.33235,
+        "p": 0.837016,
+        "q": null,
+        "digits": 2,
+        "detectable_sd": 0.726732,
+        "note": ""
+       },
+       {
+        "id": "S4-female-B3",
+        "test": "S4-female-B3",
+        "label": "Band neutrophils, female",
+        "dataset": "DS05",
+        "source": "SRC-F",
+        "measure": "",
+        "effect_label": "HL difference, 10^9/L",
+        "scale": "diff",
+        "null_value": 0,
+        "estimate": -0.055,
+        "ci_low": -0.23,
+        "ci_high": 0.13,
+        "n_young": 23,
+        "n_adult": 42,
+        "value_label": "median",
+        "young_value": 0.33,
+        "adult_value": 0.345,
+        "young_iqr": [
+         0.14,
+         0.62
+        ],
+        "adult_iqr": [
+         0.1925,
+         0.78
+        ],
+        "cliff": -0.100414,
+        "cliff_low": -0.403778,
+        "cliff_high": 0.201889,
+        "p": 0.507149,
+        "q": null,
+        "digits": 2,
+        "detectable_sd": 0.726732,
+        "note": ""
+       }
+      ]
+     },
+     {
+      "key": "S3",
+      "label": "S3: age as a continuous variable (Spearman rho, positive = higher with age)",
+      "note": "",
+      "rows": [
+       {
+        "id": "S3-1",
+        "test": "S3-1",
+        "label": "Haematocrit, DS05",
+        "dataset": "DS05",
+        "source": "SRC-F",
+        "measure": "Spearman rho with age",
+        "effect_label": "Spearman rho",
+        "scale": "diff",
+        "null_value": 0,
+        "estimate": 0.148752,
+        "ci_low": -0.022938,
+        "ci_high": 0.307179,
+        "n_young": 147,
+        "n_adult": null,
+        "value_label": "n dogs",
+        "young_value": null,
+        "adult_value": null,
+        "cliff": null,
+        "cliff_low": null,
+        "cliff_high": null,
+        "p": null,
+        "q": null,
+        "digits": 2,
+        "note": "age continuous (S3); positive = higher with age"
+       },
+       {
+        "id": "S3-2",
+        "test": "S3-2",
+        "label": "Haematocrit, DS03 natural",
+        "dataset": "DS03",
+        "source": "SRC-A",
+        "measure": "Spearman rho with age",
+        "effect_label": "Spearman rho",
+        "scale": "diff",
+        "null_value": 0,
+        "estimate": 0.371354,
+        "ci_low": 0.182933,
+        "ci_high": 0.527964,
+        "n_young": 101,
+        "n_adult": null,
+        "value_label": "n dogs",
+        "young_value": null,
+        "adult_value": null,
+        "cliff": null,
+        "cliff_low": null,
+        "cliff_high": null,
+        "p": null,
+        "q": null,
+        "digits": 2,
+        "note": "age continuous (S3); positive = higher with age"
+       },
+       {
+        "id": "S3-3",
+        "test": "S3-3",
+        "label": "Band neutrophils, DS05",
+        "dataset": "DS05",
+        "source": "SRC-F",
+        "measure": "Spearman rho with age",
+        "effect_label": "Spearman rho",
+        "scale": "diff",
+        "null_value": 0,
+        "estimate": 0.10612,
+        "ci_low": -0.071404,
+        "ci_high": 0.272638,
+        "n_young": 147,
+        "n_adult": null,
+        "value_label": "n dogs",
+        "young_value": null,
+        "adult_value": null,
+        "cliff": null,
+        "cliff_low": null,
+        "cliff_high": null,
+        "p": null,
+        "q": null,
+        "digits": 2,
+        "note": "age continuous (S3); positive = higher with age"
+       },
+       {
+        "id": "S3-4",
+        "test": "S3-4",
+        "label": "Band neutrophils, S-CB050",
+        "dataset": "S-CB050",
+        "source": "SRC-A",
+        "measure": "Spearman rho with age",
+        "effect_label": "Spearman rho",
+        "scale": "diff",
+        "null_value": 0,
+        "estimate": 0.015257,
+        "ci_low": -0.149353,
+        "ci_high": 0.187469,
+        "n_young": 140,
+        "n_adult": null,
+        "value_label": "n dogs",
+        "young_value": null,
+        "adult_value": null,
+        "cliff": null,
+        "cliff_low": null,
+        "cliff_high": null,
+        "p": null,
+        "q": null,
+        "digits": 2,
+        "note": "age continuous (S3); positive = higher with age"
+       },
+       {
+        "id": "S3-5",
+        "test": "S3-5",
+        "label": "Perturbation count, S-CB050 cohort 1",
+        "dataset": "S-CB050",
+        "source": "SRC-A",
+        "measure": "Spearman rho with age",
+        "effect_label": "Spearman rho",
+        "scale": "diff",
+        "null_value": 0,
+        "estimate": 0.173006,
+        "ci_low": -0.02607,
+        "ci_high": 0.358926,
+        "n_young": 96,
+        "n_adult": null,
+        "value_label": "n dogs",
+        "young_value": null,
+        "adult_value": null,
+        "cliff": null,
+        "cliff_low": null,
+        "cliff_high": null,
+        "p": null,
+        "q": null,
+        "digits": 2,
+        "note": "age continuous (S3); positive = higher with age"
+       },
+       {
+        "id": "S3-6",
+        "test": "S3-6",
+        "label": "Illness duration, DS05",
+        "dataset": "DS05",
+        "source": "SRC-F",
+        "measure": "Spearman rho with age",
+        "effect_label": "Spearman rho",
+        "scale": "diff",
+        "null_value": 0,
+        "estimate": 0.19228,
+        "ci_low": 0.036755,
+        "ci_high": 0.338923,
+        "n_young": 147,
+        "n_adult": null,
+        "value_label": "n dogs",
+        "young_value": null,
+        "adult_value": null,
+        "cliff": null,
+        "cliff_low": null,
+        "cliff_high": null,
+        "p": null,
+        "q": null,
+        "digits": 2,
+        "note": "age continuous (S3); positive = higher with age"
+       }
+      ]
+     }
+    ],
+    "footnote": "Young = under 12 months; every effect is young minus adult. DS05: SRC-F, 147 dogs with a CBC. DS03 natural: SRC-A (same dogs as S-CB050, SV-07). S-CB050: SRC-A. One species, two independent sources; contrasts are shown side by side, never pooled. exploratory: S-CB050 and DS05 were seen before this plan."
+   }
+  },
+  {
+   "kind": "control_check",
+   "title": "Check C1: haematocrit by age in healthy controls (DS03 = S-CB050 controls)",
+   "sort_order": 5,
+   "payload": {
+    "n_young": 2,
+    "n_adult": 12,
+    "young_values": [
+     0.38,
+     0.39
+    ],
+    "median_adult": 0.545,
+    "range_adult": [
+     0.45,
+     0.59
+    ],
+    "footnote": "Healthy control dogs of DS03 (the S-CB050 controls). Only 2 are under 12 months, so this is a description: their haematocrit is below every adult control."
+   }
+  },
+  {
+   "kind": "age_profile",
+   "title": "Median by age band in each source (descriptive)",
+   "sort_order": 6,
+   "payload": {
+    "bands": [
+     "< 6",
+     "6-11",
+     "12-23",
+     "24-47",
+     "48-95",
+     "96+"
+    ],
+    "measures": [
+     {
+      "key": "hct",
+      "label": "Haematocrit (L/L)",
+      "series": [
+       {
+        "key": "hct_DS05",
+        "label": "Haematocrit, DS05 (SRC-F)",
+        "dataset": "DS05",
+        "points": [
+         {
+          "band": "< 6",
+          "n": 17,
+          "median": 0.13,
+          "q1": 0.1,
+          "q3": 0.2
+         },
+         {
+          "band": "6-11",
+          "n": 38,
+          "median": 0.18,
+          "q1": 0.13,
+          "q3": 0.27
+         },
+         {
+          "band": "12-23",
+          "n": 42,
+          "median": 0.19,
+          "q1": 0.1325,
+          "q3": 0.2725
+         },
+         {
+          "band": "24-47",
+          "n": 27,
+          "median": 0.21,
+          "q1": 0.14,
+          "q3": 0.255
+         },
+         {
+          "band": "48-95",
+          "n": 21,
+          "median": 0.16,
+          "q1": 0.13,
+          "q3": 0.26
+         },
+         {
+          "band": "96+",
+          "n": 2,
+          "median": 0.205,
+          "q1": 0.1875,
+          "q3": 0.2225
+         }
+        ]
+       },
+       {
+        "key": "hct_DS03",
+        "label": "Haematocrit, DS03 natural (SRC-A)",
+        "dataset": "DS03",
+        "points": [
+         {
+          "band": "< 6",
+          "n": 12,
+          "median": 0.145,
+          "q1": 0.0975,
+          "q3": 0.1625
+         },
+         {
+          "band": "6-11",
+          "n": 29,
+          "median": 0.14,
+          "q1": 0.11,
+          "q3": 0.2
+         },
+         {
+          "band": "12-23",
+          "n": 16,
+          "median": 0.195,
+          "q1": 0.13,
+          "q3": 0.285
+         },
+         {
+          "band": "24-47",
+          "n": 27,
+          "median": 0.19,
+          "q1": 0.12,
+          "q3": 0.305
+         },
+         {
+          "band": "48-95",
+          "n": 8,
+          "median": 0.155,
+          "q1": 0.14,
+          "q3": 0.2375
+         },
+         {
+          "band": "96+",
+          "n": 9,
+          "median": 0.44,
+          "q1": 0.26,
+          "q3": 0.48
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "key": "band",
+      "label": "Band neutrophils (10^9/L)",
+      "series": [
+       {
+        "key": "band_DS05",
+        "label": "Bands, DS05 (SRC-F)",
+        "dataset": "DS05",
+        "points": [
+         {
+          "band": "< 6",
+          "n": 17,
+          "median": 0.24,
+          "q1": 0.11,
+          "q3": 0.33
+         },
+         {
+          "band": "6-11",
+          "n": 38,
+          "median": 0.22,
+          "q1": 0.07,
+          "q3": 0.73
+         },
+         {
+          "band": "12-23",
+          "n": 42,
+          "median": 0.33,
+          "q1": 0.1925,
+          "q3": 0.8225
+         },
+         {
+          "band": "24-47",
+          "n": 27,
+          "median": 0.34,
+          "q1": 0.1,
+          "q3": 0.955
+         },
+         {
+          "band": "48-95",
+          "n": 21,
+          "median": 0.34,
+          "q1": 0.17,
+          "q3": 1.26
+         },
+         {
+          "band": "96+",
+          "n": 2,
+          "median": 1.515,
+          "q1": 0.8725,
+          "q3": 2.1575
+         }
+        ]
+       },
+       {
+        "key": "band_S-CB050",
+        "label": "Bands, S-CB050 (SRC-A)",
+        "dataset": "S-CB050",
+        "points": [
+         {
+          "band": "< 6",
+          "n": 15,
+          "median": 0.24,
+          "q1": 0.155,
+          "q3": 0.5
+         },
+         {
+          "band": "6-11",
+          "n": 35,
+          "median": 0.42,
+          "q1": 0.165,
+          "q3": 0.82
+         },
+         {
+          "band": "12-23",
+          "n": 26,
+          "median": 0.24,
+          "q1": 0.135,
+          "q3": 0.61
+         },
+         {
+          "band": "24-47",
+          "n": 35,
+          "median": 0.4,
+          "q1": 0.22,
+          "q3": 1.055
+         },
+         {
+          "band": "48-95",
+          "n": 20,
+          "median": 0.425,
+          "q1": 0.1725,
+          "q3": 1.8075
+         },
+         {
+          "band": "96+",
+          "n": 9,
+          "median": 0.18,
+          "q1": 0.12,
+          "q3": 0.37
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "key": "illness",
+      "label": "Illness duration (days)",
+      "series": [
+       {
+        "key": "illness_DS05",
+        "label": "Illness days, DS05 (SRC-F)",
+        "dataset": "DS05",
+        "points": [
+         {
+          "band": "< 6",
+          "n": 17,
+          "median": 2.0,
+          "q1": 2.0,
+          "q3": 3.0
+         },
+         {
+          "band": "6-11",
+          "n": 38,
+          "median": 3.0,
+          "q1": 2.0,
+          "q3": 5.0
+         },
+         {
+          "band": "12-23",
+          "n": 41,
+          "median": 4.0,
+          "q1": 3.0,
+          "q3": 7.0
+         },
+         {
+          "band": "24-47",
+          "n": 28,
+          "median": 3.5,
+          "q1": 2.0,
+          "q3": 5.0
+         },
+         {
+          "band": "48-95",
+          "n": 21,
+          "median": 4.0,
+          "q1": 3.0,
+          "q3": 4.0
+         },
+         {
+          "band": "96+",
+          "n": 2,
+          "median": 2.5,
+          "q1": 2.25,
+          "q3": 2.75
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    "footnote": "Median and interquartile range per age band (months). Descriptive, no test. DS03 natural dogs are S-CB050 dogs (SV-07): one source, not a replication."
+   }
+  },
+  {
+   "kind": "neuter_description",
+   "title": "Neuter status in DS05 (described, not tested)",
+   "sort_order": 7,
+   "payload": {
+    "n_neutered": 7,
+    "n_neutered_young": 0,
+    "sex_neutered": {
+     "male": 2,
+     "female": 5
+    },
+    "rows": [
+     {
+      "variable": "Age (months)",
+      "neutered": {
+       "n": 7,
+       "median": 48.0,
+       "min": 24.0,
+       "max": 144.0
+      },
+      "intact_adult": {
+       "n": 87,
+       "median": 24.0,
+       "min": 12.0,
+       "max": 108.0
+      }
+     },
+     {
+      "variable": "Weight (kg)",
+      "neutered": {
+       "n": 7,
+       "median": 16.4,
+       "min": 7.8,
+       "max": 29.5
+      },
+      "intact_adult": {
+       "n": 87,
+       "median": 20.5,
+       "min": 6.7,
+       "max": 55.0
+      }
+     },
+     {
+      "variable": "Haematocrit (L/L)",
+      "neutered": {
+       "n": 7,
+       "median": 0.24,
+       "min": 0.1,
+       "max": 0.45
+      },
+      "intact_adult": {
+       "n": 85,
+       "median": 0.18,
+       "min": 0.08,
+       "max": 0.42
+      }
+     },
+     {
+      "variable": "Band neutrophils (10^9/L)",
+      "neutered": {
+       "n": 7,
+       "median": 0.27,
+       "min": 0.0,
+       "max": 0.34
+      },
+      "intact_adult": {
+       "n": 85,
+       "median": 0.4,
+       "min": 0.0,
+       "max": 10.46
+      }
+     },
+     {
+      "variable": "Illness duration (days)",
+      "neutered": {
+       "n": 7,
+       "median": 2.0,
+       "min": 1.0,
+       "max": 4.0
+      },
+      "intact_adult": {
+       "n": 85,
+       "median": 4.0,
+       "min": 1.0,
+       "max": 30.0
+      }
+     }
+    ],
+    "footnote": "DS05 has 7 neutered dogs (5 female, 2 male), all adults: too few to test. Median (range) against intact adults. S-CB050 does not record neuter status."
+   }
+  },
+  {
+   "kind": "interpretation",
+   "title": "Explanation and interpretation",
+   "sort_order": 9,
+   "payload": {
+    "sections": [
+     {
+      "heading": "Question",
+      "paragraphs": [
+       "Is severe B. rossi disease anaemia-dominant in dogs under 12 months and inflammatory in older dogs? The package hypothesis is that age changes the form of disease more than the risk of death (the risk part is SV-05-01)."
+      ]
+     },
+     {
+      "heading": "What was done",
+      "paragraphs": [
+       "Inside each source, young dogs (under 12 months) were compared with adults on haematocrit (DS05, 55 vs 92; DS03 natural, 41 vs 60), band neutrophils (DS05; S-CB050, 50 vs 90), the SV-04 cytokine perturbation count (S-CB050 cohort 1, 33 vs 63), the share of dogs with severe anaemia and with a left shift (DS05) and days ill before presentation (DS05). Hodges-Lehmann differences with 2,000 bootstrap resamples of dogs, permutation p values (10,000), Benjamini-Hochberg over the 8 tests. A decision rule was written before the analysis. SV-07 found that the DS03 natural dogs are S-CB050 dogs, so DS03 is counted as the same source (SRC-A), never pooled and never called a replication; the independent sources are SRC-A and SRC-F (DS05). No outcome label is used in this experiment. S-CB050 and DS05 were seen before this plan, so the result is exploratory."
+      ]
+     },
+     {
+      "heading": "Result",
+      "paragraphs": [
+       "Verdict by the rule: Not supported. Haematocrit in young minus adult dogs: DS05 -0.02 L/L (-0.04 to +0.01, medians 0.17 vs 0.18), DS03 -0.06 (-0.10 to -0.03, medians 0.14 vs 0.20, q 0.007). The lower haematocrit of young dogs is clear only in the Onderstepoort dogs, and the two healthy young controls there are also below every adult control (check C1), so part of it is the normal age difference. Severe anaemia: 42% of young vs 32% of adult DS05 dogs (difference +0.10, -0.05 to +0.26).",
+       "No adult excess of inflammation: bands DS05 -0.10 (-0.20 to +0.01), S-CB050 +0.00 (-0.11 to +0.13); perturbation count Cliff's delta -0.14 (-0.37 to +0.09); left shift 27% vs 41% (-0.14, -0.28 to +0.02). DS05 points the hypothesised way (fewer bands in young dogs) but every interval includes 0.",
+       "Young dogs presented earlier: median 3 vs 4 days ill, HL -1 (-1 to +0), Cliff's delta -0.23 (-0.41 to -0.03), p 0.023, q 0.090. 1 of 8 tests pass q < 0.05 (DS03 haematocrit only). The 7 neutered DS05 dogs are all adults and are described, not tested."
+      ]
+     },
+     {
+      "heading": "What this does not show",
+      "paragraphs": [
+       "It does not show that age does not change the form of disease: each contrast could detect only a difference of about 0.5 SD or more. There is no outcome label in DS05 or DS03, so 'form of severe disease' is read from the whole infected population, not from the severe dogs. Age stands in for prior exposure, breed and size, which are not recorded. A between-source difference (DS03 against DS05) cannot be attributed to age: source, region, year and case mix differ."
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

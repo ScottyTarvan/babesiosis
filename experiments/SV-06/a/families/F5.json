@@ -1,0 +1,171 @@
+{
+  "family": "F5 Iron and hepcidin",
+  "agent_summary": "Ferritin is the one clear gap. Human evidence is strong (several sepsis cohorts, including a MIMIC-IV cohort of 718, link high ferritin to death). In dogs with babesiosis, ferritin was measured only in a 7-vs-7 seropositive case-control study (no difference) and in two case reports, and never against severity. A canine-specific ferritin immunoassay is in routine use. Hepcidin and serum iron/transferrin are not gaps, but the evidence is thin: hepcidin rests on one small Indian cohort (CH08, survivors vs non-survivors, probably confounded by species), and iron/transferrin has 4 units (CH08, CH12, CH07, CB112). One surprise: DS07 is the CB112 proteome, so its transferrin rows have already been tested by severity. Another: the local keyword list missed CB073 (CH07, lower iron in SIRS dogs) because that note says only 'iron'. No HU article bears on iron.",
+  "mechanisms": [
+    {
+      "mechanism_id": "F5-01",
+      "family": "F5 Iron and hepcidin",
+      "mechanism": "Hepcidin",
+      "added_by_agent": "no",
+      "human_conditions": ["malaria", "sepsis"],
+      "hu_articles": [],
+      "human_key_dois": [
+        "https://doi.org/10.3324/haematol.2021.279316",
+        "https://doi.org/10.3389/fimmu.2023.1110540",
+        "https://doi.org/10.1017/S0007114522000757",
+        "https://doi.org/10.1371/journal.pone.0078964"
+      ],
+      "human_n_studies": 2,
+      "human_grade": 2,
+      "human_direction": "mixed: raised by inflammation (higher in sepsis/septic shock; the hepcidin:ferritin ratio predicted septic-shock death, n=29), but suppressed in severe malarial anaemia compared with cerebral malaria (Kenyan children), so the direction depends on the phenotype",
+      "cb_confirmed": [
+        {"id": "CB202", "what": "serum hepcidin (canine-specific sandwich ELISA, Sincere Biotech), 14 non-survivors vs 18 survivors vs 32 controls; higher in non-survivors (P<0.01), AUC 0.984 at 32.32 ng/mL; DOI https://doi.org/10.18805/ijar.b-4222 (not indexed in PubMed)", "severity_contrast": true, "cohort": "CH08"}
+      ],
+      "cb_rejected": [
+        "CB236: review, names hepcidin-type iron restriction but has no canine measurement",
+        "CB286: CH08, explicitly no hepcidin data (keyword appears in its limitations)",
+        "CB115: hepcidin named in the discussion only (CH09 Beagles)",
+        "CB129: hepcidin named in the discussion only (bone marrow iron stain)",
+        "CB148: hepcidin named in the discussion of hypoferraemia only"
+      ],
+      "canine_pubmed": {
+        "queries": [
+          "(dog OR canine) AND babesi* AND hepcidin",
+          "(dog OR canine) AND hepcidin AND (validation OR assay OR ELISA OR mass spectrometry)",
+          "hepcidin AND (malaria OR sepsis) AND (severity OR mortality OR severe)",
+          "hepcidin AND (sepsis OR septic shock) AND (mortality OR survival OR outcome)",
+          "hepcidin AND severe malaria AND (children OR adults) AND (anaemia OR anemia)"
+        ],
+        "dog_babesiosis_dois": []
+      },
+      "canine_status": "severity_tested",
+      "canine_severity_units": 1,
+      "canine_assay": "validated",
+      "assay_evidence": [
+        "https://doi.org/10.1111/vcp.12872",
+        "https://doi.org/10.1016/j.rvsc.2023.104949",
+        "https://doi.org/10.1016/j.rvsc.2025.105862"
+      ],
+      "dog_genes": ["HAMP"],
+      "testable_now": "stored_samples_only",
+      "testable_detail": "Not in DS07 (no master protein; the mature peptide is 25 aa and is unlikely to be seen in shotgun serum proteomics), HAMP not in DS06 counts, not in DS02. Canine LC-MS/MS (hepcidin-25 alpha and beta isoforms, reference interval 5.3-36.4 ng/mL) could be run on archived serum such as DS07's.",
+      "gap": "no",
+      "notes": "The canine severity evidence is one unit only: a small single-centre cohort from a non-PubMed journal, with a cut-off derived in the same sample, a generic Chinese ELISA rather than the LC-MS/MS reference method, and mortality that depended strongly on species (mixed infections about 92%). The PubMed canine babesiosis search returned 0 records. A replication with LC-MS/MS in B. rossi or B. canis would add a lot of value, even though the rule-based gap is 'no'."
+    },
+    {
+      "mechanism_id": "F5-02",
+      "family": "F5 Iron and hepcidin",
+      "mechanism": "Ferritin (hyperferritinaemia)",
+      "added_by_agent": "no",
+      "human_conditions": ["sepsis", "malaria"],
+      "hu_articles": [],
+      "human_key_dois": [
+        "https://doi.org/10.1186/s12879-026-13418-z",
+        "https://doi.org/10.1097/INF.0000000000004916",
+        "https://doi.org/10.24911/SJP.106-1776661764",
+        "https://doi.org/10.1017/S0007114522000757"
+      ],
+      "human_n_studies": 4,
+      "human_grade": 3,
+      "human_direction": "higher in fatal sepsis/septic shock (MIMIC-IV n=718, OR 1.97 above 526 ng/mL; paediatric cohorts n=115 and n=123; septic shock n=79, https://doi.org/10.7759/cureus.115711); in malaria, ferritin is much higher in clinical than in asymptomatic infection (meta-analysis), but it is not independent of SOFA in some cohorts",
+      "cb_confirmed": [
+        {"id": "CB242", "what": "serum ferritin in 7 B. canis seropositive stray dogs vs 7 controls; no significant difference; authors state that no earlier babesiosis ferritin study exists", "severity_contrast": false, "cohort": "CH14"},
+        {"id": "CB132", "what": "case report, severe B. vulpes infection with hyperferritinaemia in a haemophagocytic picture; a single dog, no contrast", "severity_contrast": false, "cohort": null},
+        {"id": "CB454", "what": "case report, serum ferritin within the reference range (29.9 ng/mL); a single dog", "severity_contrast": false, "cohort": null}
+      ],
+      "cb_rejected": [
+        "CB039: ferritin used only as a gel size marker (12.2 nm) in lipoprotein electrophoresis",
+        "CB107: human babesiosis ferritin named in the discussion only",
+        "CB147: Perls stain for ferritin/haemosiderin in liver tissue; not circulating ferritin",
+        "CB286: ferritin named as a usual iron index but not measured"
+      ],
+      "canine_pubmed": {
+        "queries": [
+          "(dog OR canine) AND babesi* AND (ferritin OR \"serum iron\" OR transferrin OR \"iron binding\" OR iron)",
+          "(dog OR canine) AND ferritin AND (validation OR assay OR ELISA OR immunoassay)",
+          "canine ferritin[Title] AND (assay OR immunoassay OR validation OR ELISA OR immunoturbidimetric)",
+          "ferritin[Title] AND (sepsis[Title] OR septic[Title] OR malaria[Title]) AND (mortality OR prognosis OR severe)"
+        ],
+        "dog_babesiosis_dois": ["https://doi.org/10.36483/vanvetj.1292352"]
+      },
+      "canine_status": "measured_no_severity",
+      "canine_severity_units": 0,
+      "canine_assay": "validated",
+      "assay_evidence": [
+        "https://doi.org/10.1016/j.rvsc.2016.09.003",
+        "https://doi.org/10.3390/biom16070997",
+        "https://doi.org/10.1016/j.rvsc.2025.105993"
+      ],
+      "dog_genes": ["FTL", "FTH1"],
+      "testable_now": "public_file",
+      "testable_detail": "Only DS06 whole-blood RNA-seq has FTL (ENSCAFG00000003861) and FTH1 (ENSCAFG00000015901, ENSCAFG00000030465). This is leukocyte/reticulocyte gene expression, not circulating ferritin protein, and it covers 5 experimental Beagles (time course, not a severity contrast). There is no ferritin master protein in DS07 and nothing in DS02. Serum ferritin itself would need stored samples (stored_samples_only for the protein).",
+      "gap": "yes",
+      "notes": "The 'validated' grade rests on a canine-specific ferritin immunoassay with published canine use in leishmaniosis, cardiac disease and fracture studies. This PubMed pass found no formal method-validation paper. CB132 raises haemophagocytosis/hyperferritinaemia as a lead for severe disease, which parallels human hyperinflammation."
+    },
+    {
+      "mechanism_id": "F5-03",
+      "family": "F5 Iron and hepcidin",
+      "mechanism": "Serum iron and transferrin (iron restriction)",
+      "added_by_agent": "no",
+      "human_conditions": ["sepsis"],
+      "hu_articles": [],
+      "human_key_dois": [
+        "https://doi.org/10.3138/cim-2024-2672",
+        "https://doi.org/10.1007/s00011-025-02178-2",
+        "https://doi.org/10.3389/fimmu.2023.1110540"
+      ],
+      "human_n_studies": 2,
+      "human_grade": 2,
+      "human_direction": "lower transferrin goes with death in sepsis (burn sepsis n=943, univariable). Higher, not lower, serum iron independently predicted 60-day death in septic ICU patients (n=133), so hypoferraemia itself is not a consistent severity marker in humans",
+      "cb_confirmed": [
+        {"id": "CB202", "what": "serum iron lower and TIBC higher in 14 non-survivors vs 18 survivors", "severity_contrast": true, "cohort": "CH08"},
+        {"id": "CB286", "what": "serum iron lower and TIBC/UIBC higher in 58 anaemic vs 50 non-anaemic infected dogs (anaemia grade); one unit with CB202", "severity_contrast": true, "cohort": "CH08"},
+        {"id": "CB141", "what": "serum iron decreased in 51% of 280 B. canis dogs; Spearman rho -0.306 with haematological severity score (HES)", "severity_contrast": true, "cohort": "CH12"},
+        {"id": "CB073", "what": "lower serum iron in SIRS vs SIRS-free B. canis dogs (n=54); not in the local keyword hits (note says 'iron' only)", "severity_contrast": true, "cohort": "CH07"},
+        {"id": "CB112", "what": "TMT serum proteomics: transferrin E2QZQ1 (log2FC -0.25) and J9P430 (-0.09) lower in 14 complicated vs 18 uncomplicated B. rossi dogs; this is the DS07 data", "severity_contrast": true, "cohort": null},
+        {"id": "CB148", "what": "hypoferraemia in 61% of 23 B. canis dogs at T0, normalising after treatment; over time only", "severity_contrast": false, "cohort": "CH11"},
+        {"id": "CB089", "what": "serum iron lower in Feb-May vs other seasons (63 dogs); seasonal, not severity", "severity_contrast": false, "cohort": "CH07"},
+        {"id": "CB117", "what": "2-DE proteomics: serotransferrin spots more abundant in B. canis infected vs healthy dogs", "severity_contrast": false, "cohort": null},
+        {"id": "CB177", "what": "higher UIBC, lower transferrin saturation in infected dogs (two age groups) vs controls", "severity_contrast": false, "cohort": null},
+        {"id": "CB214", "what": "serum iron and transferrin saturation higher than controls in non-regenerative anaemia groups (abstract)", "severity_contrast": false, "cohort": null},
+        {"id": "CB242", "what": "iron higher, TIBC not different in 7 seropositive vs 7 controls", "severity_contrast": false, "cohort": "CH14"},
+        {"id": "CB353", "what": "blood iron lower in 10 B. gibsoni dogs vs 6 controls", "severity_contrast": false, "cohort": null},
+        {"id": "CB295", "what": "TIBC reported in a B. gibsoni case series table; no contrast", "severity_contrast": false, "cohort": null}
+      ],
+      "cb_rejected": [
+        "CB039: transferrin not measured (lipoprotein study)",
+        "CB178: beta-globulin rise attributed to transferrin in the discussion only",
+        "CB206: transferrin saturation cited from the literature in the discussion",
+        "CB241: transferrin saturation cited from the literature in the discussion (no iron data)",
+        "CB232: transferrin listed as a negative acute phase protein in the discussion",
+        "CB454: case report, a single high serum iron value; no contrast"
+      ],
+      "canine_pubmed": {
+        "queries": [
+          "(dog OR canine) AND babesi* AND (ferritin OR \"serum iron\" OR transferrin OR \"iron binding\" OR iron)",
+          "(\"transferrin saturation\" OR \"serum iron\" OR transferrin) AND (sepsis OR septic) AND (mortality OR \"28-day\") AND (cohort OR MIMIC)",
+          "(hepcidin[Title] OR \"serum iron\"[Title] OR \"iron parameters\"[Title] OR transferrin[Title]) AND (sepsis OR critically ill) AND mortality"
+        ],
+        "dog_babesiosis_dois": [
+          "https://doi.org/10.1016/j.vetpar.2021.109366",
+          "https://doi.org/10.1186/s13071-025-06997-4",
+          "https://doi.org/10.1007/s00484-021-02228-4",
+          "https://doi.org/10.1016/j.rvsc.2007.09.001",
+          "https://doi.org/10.1038/s41598-023-37312-9"
+        ]
+      },
+      "canine_status": "severity_tested",
+      "canine_severity_units": 4,
+      "canine_assay": "used_in_dogs",
+      "assay_evidence": [
+        "https://doi.org/10.1186/s13071-025-06997-4",
+        "https://doi.org/10.1038/s41598-023-37312-9"
+      ],
+      "dog_genes": ["TF", "TFRC"],
+      "testable_now": "public_file",
+      "testable_detail": "DS07 master TF E2QZQ1 (33% coverage) and J9P430 (23%), TFRC F1PEN6 (8%); TFRC A0A0A0RBT6 and Q9GLD3 are master_candidate only (with a note). DS06 TFRC (ENSCAFG00000012941; gene expression, not protein). DS02 has no iron variables. DS07 is the CB112 dataset, so its transferrin severity contrast is already published.",
+      "gap": "no",
+      "notes": "Serum iron and TIBC are generic colourimetric chemistry run on standard analysers (Roche Cobas in CH12), so the grade is used_in_dogs rather than a formal canine validation. Units: CH08 (CB202+CB286), CH12 (CB141), CH07 (CB073), CB112. The canine direction (lower iron and lower transferrin with severity) matches inflammatory hypoferraemia. Human sepsis data are inconsistent on serum iron. Transferrin saturation was never tested against severity in dogs."
+    }
+  ]
+}

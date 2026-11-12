@@ -62,7 +62,8 @@ export class FsShellSidebar {
     return MENU.filter((item) =>
       (!item.adminOnly || admin)
       && (!item.superAdminOnly || superAdmin)
-      && (!item.devOnly || isDevMode()));
+      && (!item.devOnly || isDevMode())
+      && !item.hidden);
   });
 
   /**

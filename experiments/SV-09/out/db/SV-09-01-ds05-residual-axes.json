@@ -1,0 +1,368 @@
+{
+ "experiment": {
+  "code": "SV-09-01-ds05-residual-axes",
+  "dataset": null,
+  "method": "axis_replication",
+  "script": "/experiments/SV-09/scripts/analyse.py",
+  "script_version": "e7f758a51299",
+  "run_utc": "2026-11-12T15:53:33Z",
+  "name": "Residual phenotype axes in DS05 after anaemia and illness duration (B. rossi, Eastern Cape)",
+  "description": "After haematocrit and time since onset are removed, do admission blood counts in B. rossi still vary along a few reproducible axes? Hypothesis: at least one stable axis remains beyond noise.",
+  "parameters": {
+   "package": "SV-09",
+   "role": "descriptive",
+   "datasets": [
+    "DS05"
+   ],
+   "independent_sources": [
+    "SRC-F"
+   ],
+   "spec_sha256": "3f98321b72ecfae1a89a27c8e932118c3b9b4e841144ec8a343515f604118270",
+   "seed": 20261112,
+   "n_bootstrap": 2000,
+   "n_permutations": 10000,
+   "n_parallel_analysis": 1000,
+   "versions": {
+    "python": "3.12.12",
+    "numpy": "2.3.4",
+    "scipy": "1.16.3"
+   },
+   "stage_covariate": "log(illness_days + 1) (owner-reported); SV-01 pseudo-stage failed validation and is used only in sensitivities S2 and S3",
+   "experiment": "step 1",
+   "variables": [
+    "mcv",
+    "mchc",
+    "rdw",
+    "arc",
+    "nrbc_per100wbc",
+    "neut_seg",
+    "neut_band",
+    "lymph",
+    "mono",
+    "plt",
+    "albumin",
+    "globulin"
+   ]
+  },
+  "n_subjects": 140,
+  "n_variables": 12,
+  "n_tests": 2,
+  "summary": "Two residual axes after haematocrit and illness duration in DS05 (n 140): parallel analysis retains 2 components (eigenvalues 3.10 and 1.92 vs 95th percentile 1.64 and 1.46); both are bootstrap-stable (median phi 0.99, 0.96). Axis 2 (leukocytes up, regeneration down) relates to habitus, partial rho -0.26 (-0.40 to -0.10); axis 1 does not (-0.03). 2 descriptive tests, 1 with p < 0.05."
+ },
+ "associations": [],
+ "cluster_assignments": [],
+ "results": [
+  {
+   "kind": "axis_summary",
+   "title": "Retained residual axes",
+   "sort_order": 1,
+   "payload": {
+    "n": 140,
+    "dataset": "DS05",
+    "source": "SRC-F",
+    "retained": 2,
+    "components": [
+     {
+      "component": 1,
+      "eigenvalue": 3.105,
+      "pa_95": 1.642,
+      "retained": true,
+      "var_explained": 0.259,
+      "boot_phi_median": 0.988,
+      "boot_phi_p5": 0.964,
+      "stable": true
+     },
+     {
+      "component": 2,
+      "eigenvalue": 1.922,
+      "pa_95": 1.461,
+      "retained": true,
+      "var_explained": 0.16,
+      "boot_phi_median": 0.961,
+      "boot_phi_p5": 0.883,
+      "stable": true
+     }
+    ],
+    "caveat": "DS05 (SRC-F, B. rossi, Eastern Cape clinic); exploratory: DS05 is on the already-seen list"
+   }
+  },
+  {
+   "kind": "scree",
+   "title": "Eigenvalues against parallel analysis",
+   "sort_order": 2,
+   "payload": {
+    "points": [
+     {
+      "component": 1,
+      "eigenvalue": 3.105,
+      "pa_95": 1.642
+     },
+     {
+      "component": 2,
+      "eigenvalue": 1.922,
+      "pa_95": 1.461
+     },
+     {
+      "component": 3,
+      "eigenvalue": 1.288,
+      "pa_95": 1.336
+     },
+     {
+      "component": 4,
+      "eigenvalue": 1.021,
+      "pa_95": 1.235
+     },
+     {
+      "component": 5,
+      "eigenvalue": 0.9,
+      "pa_95": 1.146
+     },
+     {
+      "component": 6,
+      "eigenvalue": 0.775,
+      "pa_95": 1.068
+     },
+     {
+      "component": 7,
+      "eigenvalue": 0.739,
+      "pa_95": 0.991
+     },
+     {
+      "component": 8,
+      "eigenvalue": 0.632,
+      "pa_95": 0.923
+     },
+     {
+      "component": 9,
+      "eigenvalue": 0.49,
+      "pa_95": 0.858
+     },
+     {
+      "component": 10,
+      "eigenvalue": 0.455,
+      "pa_95": 0.793
+     },
+     {
+      "component": 11,
+      "eigenvalue": 0.356,
+      "pa_95": 0.723
+     },
+     {
+      "component": 12,
+      "eigenvalue": 0.317,
+      "pa_95": 0.644
+     }
+    ],
+    "caption": "DS05, n 140; 1,000 column-permuted data sets, 95th percentile. DS05 (SRC-F, B. rossi, Eastern Cape clinic); exploratory: DS05 is on the already-seen list."
+   }
+  },
+  {
+   "kind": "loadings",
+   "title": "Loadings (structure coefficients) of the two axes",
+   "sort_order": 3,
+   "payload": {
+    "rows": [
+     {
+      "variable": "MCV",
+      "pc1": 0.374,
+      "pc2": -0.468
+     },
+     {
+      "variable": "MCHC",
+      "pc1": -0.335,
+      "pc2": 0.661
+     },
+     {
+      "variable": "RDW",
+      "pc1": 0.563,
+      "pc2": -0.307
+     },
+     {
+      "variable": "ARC",
+      "pc1": 0.518,
+      "pc2": -0.474
+     },
+     {
+      "variable": "nRBC",
+      "pc1": 0.595,
+      "pc2": -0.051
+     },
+     {
+      "variable": "Seg. neutrophils",
+      "pc1": 0.722,
+      "pc2": 0.342
+     },
+     {
+      "variable": "Band neutrophils",
+      "pc1": 0.646,
+      "pc2": 0.445
+     },
+     {
+      "variable": "Lymphocytes",
+      "pc1": 0.409,
+      "pc2": 0.462
+     },
+     {
+      "variable": "Monocytes",
+      "pc1": 0.567,
+      "pc2": 0.567
+     },
+     {
+      "variable": "Platelets",
+      "pc1": 0.514,
+      "pc2": -0.173
+     },
+     {
+      "variable": "Albumin",
+      "pc1": -0.147,
+      "pc2": 0.162
+     },
+     {
+      "variable": "Globulin",
+      "pc1": 0.448,
+      "pc2": -0.195
+     }
+    ],
+    "caption": "Correlation of each residualised variable with the axis score. Positive axis 1: leukocytes, regeneration, platelets and globulin together. Axis 2: leukocytes and MCHC against MCV, ARC and RDW."
+   }
+  },
+  {
+   "kind": "sensitivity",
+   "title": "Do the axes depend on the stage covariate?",
+   "sort_order": 4,
+   "payload": {
+    "rows": [
+     {
+      "analysis": "S1_hct_only",
+      "component": 1,
+      "phi": 0.999
+     },
+     {
+      "analysis": "S1_hct_only",
+      "component": 2,
+      "phi": 0.998
+     },
+     {
+      "analysis": "S2_spec_pseudo_stage",
+      "component": 1,
+      "phi": 0.995
+     },
+     {
+      "analysis": "S2_spec_pseudo_stage",
+      "component": 2,
+      "phi": 0.936
+     },
+     {
+      "analysis": "S3_time_anchored_stage",
+      "component": 1,
+      "phi": 0.999
+     },
+     {
+      "analysis": "S3_time_anchored_stage",
+      "component": 2,
+      "phi": 0.999
+     },
+     {
+      "analysis": "S4_spearman",
+      "component": 1,
+      "phi": 0.999
+     },
+     {
+      "analysis": "S4_spearman",
+      "component": 2,
+      "phi": 0.997
+     },
+     {
+      "analysis": "S5_no_conditioning",
+      "component": 1,
+      "phi": 0.985
+     },
+     {
+      "analysis": "S5_no_conditioning",
+      "component": 2,
+      "phi": 0.995
+     }
+    ],
+    "raw_corr": [
+     {
+      "component": 1,
+      "rho_hct": -0.04,
+      "rho_illness_days": -0.049
+     },
+     {
+      "component": 2,
+      "rho_hct": -0.0,
+      "rho_illness_days": 0.014
+     }
+    ],
+    "caption": "Tucker phi of each axis against the primary analysis. S2 and S3 use SV-01 pseudo-stage, which failed validation."
+   }
+  },
+  {
+   "kind": "habitus",
+   "title": "Axis scores against habitus grade (descriptive)",
+   "sort_order": 5,
+   "payload": {
+    "rows": [
+     {
+      "component": 1,
+      "n": 140,
+      "partial_rho": -0.032,
+      "ci": [
+       -0.209,
+       0.134
+      ],
+      "p": 0.703
+     },
+     {
+      "component": 2,
+      "n": 140,
+      "partial_rho": -0.257,
+      "ci": [
+       -0.404,
+       -0.096
+      ],
+      "p": 0.0031
+     }
+    ],
+    "caption": "Partial Spearman rho given haematocrit and illness duration; higher habitus is brighter. DS05 is already seen; habitus is a proxy, not a hard outcome."
+   }
+  },
+  {
+   "kind": "interpretation",
+   "title": "Explanation and interpretation",
+   "sort_order": 9,
+   "payload": {
+    "sections": [
+     {
+      "heading": "Question",
+      "paragraphs": [
+       "After the anaemia axis and the stage of disease are removed, is there a further axis along which B. rossi dogs differ at admission?"
+      ]
+     },
+     {
+      "heading": "What was done",
+      "paragraphs": [
+       "DS05 B. rossi dogs with complete counts (n 140, SRC-F). Twelve variables (MCV, MCHC, RDW, ARC, nRBC, segmented and band neutrophils, lymphocytes, monocytes, platelets, albumin, globulin), log where skewed, regressed on haematocrit, haematocrit squared and log illness duration; principal components of the residual correlations; Horn's parallel analysis; 2,000 bootstraps of dogs with Procrustes alignment.",
+       "Deviation D1: the package file asks to remove SV-01 pseudo-stage. SV-01 reports that score failed validation and is unstable, so owner-reported illness duration was used instead, and the two SV-01 pseudo-stage versions were run as sensitivities."
+      ]
+     },
+     {
+      "heading": "Result",
+      "paragraphs": [
+       "Two axes exceed noise. Axis 1 (26% of residual variance) moves leukocytes, regeneration (ARC, RDW, nRBC), platelets and globulin together. Axis 2 (16%) sets leukocytes and MCHC against MCV, ARC and RDW: an inflammatory-against-regenerative balance at a given haematocrit.",
+       "Both are stable (bootstrap median phi 0.99 and 0.96; 5th percentile 0.96 and 0.88) and do not depend on the stage covariate (phi at least 0.94 across S1 to S4). They are uncorrelated with haematocrit and illness duration by construction.",
+       "Axis 2 relates to habitus: partial rho -0.26 (-0.40 to -0.10), p 0.003, n 140; duller dogs score higher (more leukocytes, less regeneration for their haematocrit). Axis 1 does not (-0.03, -0.21 to +0.13)."
+      ]
+     },
+     {
+      "heading": "What this does not show",
+      "paragraphs": [
+       "DS05 is already seen (habitus with monocytes and band neutrophils was screened before), so the habitus link is exploratory. Habitus is a proxy, not death. One clinic, one species. The axes are directions of variation, not groups of dogs and not subtypes; no score predicts anything. Whether they recur in other files is experiment SV-09-02."
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

@@ -1,0 +1,18 @@
+harmonised_name,dataset_id,original_column,unit,conversion,note
+breed,S-CB516,Breed,text,,
+age_months,S-CB516,Age (Y= Year; Mo=months),months,years x 12 + months (from text),
+sex,S-CB516,Sex,male/female,,From the sex/neuter cell.
+neuter,S-CB516,Sex,intact/neutered,gelded or neutered -> neutered,Missing for 2 dogs.
+weight_kg,S-CB516,Body weight [kg],kg,,
+travel_location,S-CB516,Assumed location of infection based on travel history,text,,Dataset-specific name (not in the harmonised list). Place of infection assumed from travel history.
+travel_abroad,S-CB516,Assumed location of infection based on travel history,0/1,1 if a foreign country is named,Dataset-specific name (not in the harmonised list).
+sign_lethargy,S-CB516,Apathy / Lethargy,0/1,,Dataset-specific name (not in the harmonised list). Present in all 15 dogs (no information).
+sign_pale_mm,S-CB516,Pale mucous membranes,0/1,,Dataset-specific name (not in the harmonised list). Present in all 15 dogs (no information).
+sign_pigmenturia,S-CB516,Pigmenturia,0/1,,Dataset-specific name (not in the harmonised list).
+sign_icterus,S-CB516,Icterus,0/1,,Dataset-specific name (not in the harmonised list).
+sign_fever,S-CB516,Fieber,0/1,,"Dataset-specific name (not in the harmonised list). Fever flag; threshold not stated (raw header 'Fieber', German for fever)."
+temp_c,S-CB516,Body temeprature [°C],degC,,Body temperature.
+sign_anorexia,S-CB516,Anorexia,0/1,,Dataset-specific name (not in the harmonised list).
+sign_vomiting,S-CB516,Vomiting,0/1,,Dataset-specific name (not in the harmonised list).
+sign_water_hammer_pulse,S-CB516,Water hammer pulse,0/1,,Dataset-specific name (not in the harmonised list).
+sign_epistaxis,S-CB516,Epistaxis,0/1,,Dataset-specific name (not in the harmonised list).

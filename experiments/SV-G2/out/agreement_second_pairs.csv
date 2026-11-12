@@ -1,0 +1,110 @@
+id,marker,outcome_class,in_ref,in_other,dir_ref,dir_other,sig_ref,sig_other,same_direction,same_significance
+CB006,Catalase,anaemia_grade,True,True,lower_in_severe,lower_in_severe,no,no,True,True
+CB006,Catalase,complicated,True,True,lower_in_severe,lower_in_severe,no,no,True,True
+CB006,Catalase,mortality,True,True,negative_association,negative_association,yes,yes,True,True
+CB006,Catalase,organ_dysfunction,True,True,lower_in_severe,lower_in_severe,yes,yes,True,True
+CB006,Glutathione / glutathione peroxidase,anaemia_grade,True,True,lower_in_severe,lower_in_severe,no,no,True,True
+CB006,Glutathione / glutathione peroxidase,complicated,True,True,lower_in_severe,lower_in_severe,no,no,True,True
+CB006,Glutathione / glutathione peroxidase,mortality,True,True,negative_association,negative_association,yes,yes,True,True
+CB006,Glutathione / glutathione peroxidase,organ_dysfunction,True,True,lower_in_severe,lower_in_severe,yes,yes,True,True
+CB006,Malondialdehyde / TBARS,anaemia_grade,True,True,higher_in_severe,higher_in_severe,yes,yes,True,True
+CB006,Malondialdehyde / TBARS,complicated,True,True,lower_in_severe,lower_in_severe,no,no,True,True
+CB006,Malondialdehyde / TBARS,mortality,True,True,positive_association,positive_association,yes,yes,True,True
+CB006,Malondialdehyde / TBARS,organ_dysfunction,True,True,higher_in_severe,higher_in_severe,yes,yes,True,True
+CB006,Superoxide dismutase,anaemia_grade,True,True,lower_in_severe,lower_in_severe,yes,yes,True,True
+CB006,Superoxide dismutase,complicated,True,True,lower_in_severe,lower_in_severe,no,no,True,True
+CB006,Superoxide dismutase,mortality,True,True,negative_association,negative_association,yes,yes,True,True
+CB006,Superoxide dismutase,organ_dysfunction,True,True,lower_in_severe,lower_in_severe,yes,yes,True,True
+CB006,Total antioxidant capacity,anaemia_grade,True,True,no_difference,no_difference,no,no,True,True
+CB006,Total antioxidant capacity,complicated,True,True,higher_in_severe,higher_in_severe,no,no,True,True
+CB006,Total antioxidant capacity,mortality,True,True,positive_association,positive_association,yes,yes,True,True
+CB006,Total antioxidant capacity,organ_dysfunction,True,True,higher_in_severe,higher_in_severe,no,no,True,True
+CB050,Age,mortality,True,True,no_difference,no_difference,no,no,True,True
+CB050,Band neutrophils,mortality,True,True,higher_in_severe,higher_in_severe,yes,yes,True,True
+CB050,Myeloperoxidase / MPXI,mortality,True,True,higher_in_severe,higher_in_severe,no,no,True,True
+CB050,Neutrophil count,mortality,True,True,higher_in_severe,higher_in_severe,yes,yes,True,True
+CB050,Sex / neuter status,mortality,True,True,not_stated,not_stated,not_tested,unclear,True,False
+CB098,Band neutrophils,mortality,True,True,more_frequent_in_severe,more_frequent_in_severe,not_tested,not_tested,True,True
+CB098,Blood pressure,mortality,True,True,lower_in_severe,lower_in_severe,not_tested,not_tested,True,True
+CB098,Body temperature,mortality,True,True,lower_in_severe,lower_in_severe,not_tested,not_tested,True,True
+CB098,Body temperature,parasitaemia_level,True,False,positive_association,,no,,,
+CB098,C-reactive protein,parasitaemia_level,True,False,positive_association,,no,,,
+CB098,IL-10,parasitaemia_level,True,False,positive_association,,yes,,,
+CB098,IL-6,mortality,True,True,higher_in_severe,higher_in_severe,not_tested,not_tested,True,True
+CB098,KC-like (CXCL1),parasitaemia_level,True,False,positive_association,,yes,,,
+CB098,MCP-1 (CCL2),mortality,True,True,higher_in_severe,higher_in_severe,not_tested,not_tested,True,True
+CB098,Neutrophil count,parasitaemia_level,True,False,negative_association,,yes,,,
+CB106,Creatinine,mortality,True,True,not_stated,not_stated,not_tested,not_tested,True,True
+CB106,SIRS status,mortality,True,True,not_stated,not_stated,not_tested,not_tested,True,True
+CB149,Travel / import history,complicated,True,True,less_frequent_in_severe,mixed,not_tested,not_tested,False,True
+CB149,Travel / import history,mortality,True,True,more_frequent_in_severe,mixed,not_tested,not_tested,False,True
+CB178,Albumin,anaemia_grade,True,True,lower_in_severe,lower_in_severe,yes,yes,True,True
+CB178,Albumin:globulin ratio,anaemia_grade,True,True,lower_in_severe,lower_in_severe,yes,yes,True,True
+CB178,Red blood cell count,mortality,True,True,more_frequent_in_severe,more_frequent_in_severe,not_tested,not_tested,True,True
+CB178,Serum protein electrophoresis fractions,anaemia_grade,True,True,higher_in_severe,higher_in_severe,yes,yes,True,True
+CB178,Total protein,anaemia_grade,True,True,lower_in_severe,lower_in_severe,no,no,True,True
+CB376,C-reactive protein,mortality,True,True,positive_association,higher_in_severe,no,no,True,True
+CB376,C-reactive protein,treatment_intensity,True,True,no_difference,no_difference,no,no,True,True
+CB418,Age,treatment_intensity,True,True,lower_in_severe,lower_in_severe,yes,yes,True,True
+CB418,Band neutrophils,treatment_intensity,True,True,higher_in_severe,higher_in_severe,yes,yes,True,True
+CB418,Body weight / body condition,treatment_intensity,True,True,lower_in_severe,lower_in_severe,no,no,True,True
+CB418,Breed,treatment_intensity,True,True,not_stated,not_stated,not_tested,not_tested,True,True
+CB418,Eosinophil count,treatment_intensity,True,True,no_difference,no_difference,no,no,True,True
+CB418,Haematocrit/PCV,treatment_intensity,True,True,lower_in_severe,lower_in_severe,yes,yes,True,True
+CB418,Lymphocyte count,treatment_intensity,True,True,no_difference,no_difference,no,no,True,True
+CB418,Monocyte count,treatment_intensity,True,True,no_difference,no_difference,no,no,True,True
+CB418,Neutrophil count,treatment_intensity,True,True,no_difference,no_difference,no,no,True,True
+CB418,Platelet count,treatment_intensity,True,True,no_difference,no_difference,no,no,True,True
+CB418,Reticulocytes,treatment_intensity,True,True,higher_in_severe,higher_in_severe,yes,yes,True,True
+CB418,Sex / neuter status,treatment_intensity,True,True,no_difference,no_difference,no,no,True,True
+CB418,White blood cell count,treatment_intensity,True,True,no_difference,no_difference,no,no,True,True
+CB492,Age,anaemia_grade,True,True,no_difference,no_difference,no,no,True,True
+CB492,Body temperature,anaemia_grade,True,True,negative_association,negative_association,yes,yes,True,True
+CB492,Breed,anaemia_grade,True,True,no_difference,no_difference,no,no,True,True
+CB492,Haematocrit/PCV,treatment_intensity,True,True,lower_in_severe,lower_in_severe,unclear,unclear,True,True
+CB492,Parasite species or genotype,anaemia_grade,True,True,mixed,mixed,no,no,True,True
+CB492,Treatment factors,treatment_intensity,True,True,more_frequent_in_severe,more_frequent_in_severe,yes,yes,True,True
+CB508,"Pancreatic enzymes (lipase, amylase, cPLI)",mortality,True,True,no_difference,no_difference,no,no,True,True
+CB508,"Pancreatic enzymes (lipase, amylase, cPLI)",severity_grade,True,True,higher_in_severe,higher_in_severe,yes,yes,True,True
+CB517,Age,mortality,True,True,no_difference,no_difference,no,no,True,True
+CB517,Body weight / body condition,mortality,True,True,no_difference,no_difference,no,no,True,True
+CB517,C-reactive protein,mortality,True,True,higher_in_severe,higher_in_severe,no,no,True,True
+CB517,Eosinophil count,mortality,True,True,no_difference,no_difference,no,no,True,True
+CB517,GM-CSF,mortality,True,True,higher_in_severe,higher_in_severe,no,no,True,True
+CB517,IL-10,mortality,True,True,higher_in_severe,higher_in_severe,no,no,True,True
+CB517,IL-18,mortality,True,True,higher_in_severe,higher_in_severe,no,no,True,True
+CB517,IL-2,mortality,True,True,higher_in_severe,higher_in_severe,no,no,True,True
+CB517,IL-6,mortality,True,True,higher_in_severe,higher_in_severe,yes,yes,True,True
+CB517,IL-8 (CXCL8),mortality,True,True,higher_in_severe,higher_in_severe,no,no,True,True
+CB517,Lymphocyte count,mortality,True,True,higher_in_severe,higher_in_severe,no,no,True,True
+CB517,MCP-1 (CCL2),mortality,True,True,higher_in_severe,higher_in_severe,yes,yes,True,True
+CB517,Monocyte count,mortality,True,True,higher_in_severe,higher_in_severe,no,no,True,True
+CB517,Neutrophil count,mortality,True,True,lower_in_severe,lower_in_severe,no,no,True,True
+CB517,Serum amyloid A,mortality,True,True,higher_in_severe,higher_in_severe,no,no,True,True
+CB517,Sex / neuter status,mortality,True,True,no_difference,no_difference,no,no,True,True
+CB517,White blood cell count,mortality,True,True,higher_in_severe,higher_in_severe,no,no,True,True
+CB536,ALP,specific_complication,True,True,higher_in_severe,higher_in_severe,yes,yes,True,True
+CB536,ALT,specific_complication,True,True,higher_in_severe,higher_in_severe,yes,yes,True,True
+CB536,AST,specific_complication,True,True,higher_in_severe,higher_in_severe,yes,yes,True,True
+CB536,Co-infection,anaemia_grade,True,True,no_difference,no_difference,no,no,True,True
+CB536,Co-infection,severity_grade,True,True,no_difference,no_difference,no,no,True,True
+CB536,Co-infection,specific_complication,True,True,less_frequent_in_severe,less_frequent_in_severe,no,no,True,True
+CB536,Creatinine,specific_complication,True,True,higher_in_severe,higher_in_severe,yes,yes,True,True
+CB536,Haematocrit/PCV,anaemia_grade,True,True,lower_in_severe,lower_in_severe,yes,yes,True,True
+CB536,Haemoglobin,anaemia_grade,True,True,lower_in_severe,lower_in_severe,yes,yes,True,True
+CB536,Platelet count,anaemia_grade,True,True,higher_in_severe,higher_in_severe,no,no,True,True
+CB536,Red blood cell count,anaemia_grade,True,True,lower_in_severe,lower_in_severe,yes,yes,True,True
+CB536,Urea,specific_complication,True,True,higher_in_severe,higher_in_severe,yes,yes,True,True
+CB536,White blood cell count,anaemia_grade,True,True,higher_in_severe,higher_in_severe,yes,yes,True,True
+CB537,ALP,severity_grade,True,True,higher_in_severe,higher_in_severe,not_tested,not_tested,True,True
+CB537,Age,severity_grade,True,True,mixed,mixed,not_tested,not_tested,True,True
+CB537,Bilirubin,severity_grade,True,True,higher_in_severe,higher_in_severe,not_tested,not_tested,True,True
+CB537,Creatinine,severity_grade,True,True,higher_in_severe,higher_in_severe,not_tested,not_tested,True,True
+CB537,Glucose,severity_grade,True,True,lower_in_severe,lower_in_severe,not_tested,not_tested,True,True
+CB537,Haematocrit/PCV,severity_grade,True,True,lower_in_severe,lower_in_severe,not_tested,not_tested,True,True
+CB537,Haemoglobin,severity_grade,True,True,lower_in_severe,lower_in_severe,not_tested,not_tested,True,True
+CB537,Parasitaemia,severity_grade,True,True,higher_in_severe,positive_association,not_tested,not_tested,True,True
+CB537,Platelet count,severity_grade,True,True,lower_in_severe,lower_in_severe,not_tested,not_tested,True,True
+CB537,Red blood cell count,severity_grade,True,True,lower_in_severe,lower_in_severe,not_tested,not_tested,True,True
+CB537,Urea,severity_grade,True,True,higher_in_severe,higher_in_severe,not_tested,not_tested,True,True
+CB537,White blood cell count,severity_grade,True,True,higher_in_severe,higher_in_severe,not_tested,not_tested,True,True

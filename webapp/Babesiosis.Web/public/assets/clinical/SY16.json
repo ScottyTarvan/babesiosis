@@ -1,0 +1,1024 @@
+{
+  "schema_version": 1,
+  "id": "SY16",
+  "title": "Metabolic and endocrine derangements",
+  "updated": "2026-11-12",
+  "definition": "Disturbances of glucose, lactate, acid-base balance, electrolytes and the adrenal and thyroid axes in a dog with babesiosis. The clinically important ones are hypoglycaemia (glucose below 3.3 mmol/L), hyperlactataemia (lactate above 2 mmol/L), and a mixed metabolic acidosis with respiratory alkalosis [R1][R2][R3].",
+  "definition_note": "Working definition confirmed, with changes. These are markers of severe disease, not one syndrome: they occur together in collapsed, severely anaemic dogs. The cortisol and thyroxine changes are an adaptive stress response and a non-thyroidal illness pattern, not adrenal or thyroid disease [R4][R5]. Hypoglycaemia is the only one with a direct, proven treatment.",
+  "key_points": [
+    "Measure glucose in every admitted dog; it is essential in collapsed dogs, puppies under 6 months and dogs with severe anaemia, vomiting or icterus [R1].",
+    "About 1 in 5 admitted B. rossi dogs is hypoglycaemic, often severely, and many show only collapse, not seizures [R1][R2].",
+    "A collapsed or obtunded dog with a low glucose may look like cerebral babesiosis; treat the glucose first and reassess [R1][R2].",
+    "Lactate that does not fall by half within 8 to 16 hours, or stays above 4.4 mmol/L, predicts death better than one admission value [R6][R7].",
+    "High cortisol and low thyroxine mark severe disease and death; they are not a reason to give steroids or thyroid hormone [R4][R5].",
+    "Mixed acid-base disorders are the rule in severe B. rossi disease; bicarbonate has no tested role [R3][R2]."
+  ],
+  "description": [
+    {
+      "heading": "What it is",
+      "text": "A group of laboratory changes of severe babesiosis. Hypoglycaemia, hyperlactataemia, metabolic acidosis with respiratory alkalosis, low potassium and sodium, high cortisol and low thyroxine all cluster in collapsed, severely anaemic dogs [R2][R3][R8]. In B. rossi, glucose and lactate are inversely related, and dogs that die often have low glucose and high lactate together [R8][R2]."
+    },
+    {
+      "heading": "How common, and in which dogs",
+      "text": "B. rossi, Onderstepoort: hypoglycaemia below 3.3 mmol/L in 9% of 250 dogs at presentation and 19.8% of admitted dogs; 16 had 2.2 mmol/L or less [R1][R9]. In 320 B. rossi dogs, 19.2% were hypoglycaemic, 24.9% hyperglycaemic and 55.5% of 209 had lactate above 2 mmol/L [R2]. Collapse was the strongest risk factor for hypoglycaemia; young age, severe anaemia, icterus and vomiting also raised the risk; toy breeds and pregnant bitches did not [R1]. B. canis: hypokalaemia in 16 of 40 dogs and hypochloraemia in 36 of 40 in early disease [R10]."
+    },
+    {
+      "heading": "When in the course of disease",
+      "text": "The changes are present at admission, before treatment [R1][R2]. In experimental B. rossi infection of 5 dogs, cortisol rose and thyroxine fell as parasitaemia rose, with peaks at 96 to 144 hours after infection, and both moved back towards baseline after diminazene treatment [R11]. Thyroid values in acutely ill dogs of other causes can stay abnormal for up to 21 days of recovery [R12]."
+    },
+    {
+      "heading": "Mechanism",
+      "text": "Hypoglycaemia is not caused by excess insulin: insulin was appropriately low in most hypoglycaemic B. rossi dogs [R13]. High glucose use by anaerobic glycolysis in severe anaemia, depleted liver glycogen and poor gluconeogenesis are suggested, not proven [R13][R9]. Lactate comes from tissue hypoxia. The acid-base picture mixes lactic and hyperchloraemic acidosis with hypoalbuminaemic alkalosis and respiratory alkalosis, so pH and bicarbonate alone mislead [R3][R14]."
+    }
+  ],
+  "species_notes": [
+    {
+      "species": "B. rossi",
+      "note": "Almost all glucose, lactate, cortisol and thyroid outcome data come from Onderstepoort B. rossi cohorts, which overlap; treat them as about three independent sources [R1][R2][R4][R6]."
+    },
+    {
+      "species": "B. canis",
+      "note": "Electrolyte and acid-base series from Poland and Croatia: hyponatraemia, hypokalaemia, chloride changes in both directions, and mixed disorders in half of 14 dogs [R10][R15][R14]. In 15 Swiss dogs, all 8 non-survivors had hyperlactataemia (median 8.35 mmol/L) [R16]. Low T3, T4 and TSH were found in 13 dogs [R17]."
+    },
+    {
+      "species": "B. gibsoni",
+      "note": "In an Indian series, lactate was one of the markers that predicted death [R18]. No glucose or endocrine treatment data were found."
+    }
+  ],
+  "diagnosis": {
+    "criteria": [
+      {
+        "criterion": "Hypoglycaemia",
+        "threshold": "glucose below 3.3 mmol/L; severe at 2.2 mmol/L or less",
+        "basis": "babesiosis",
+        "note": "Used in the B. rossi studies [R1][R2][R9].",
+        "refs": [
+          "R1",
+          "R2",
+          "R9"
+        ]
+      },
+      {
+        "criterion": "Hyperglycaemia",
+        "threshold": "glucose above 5.5 mmol/L (5.6 mmol/L in one study)",
+        "basis": "babesiosis",
+        "note": "Common, never severe in 250 B. rossi dogs; not a reliable marker of severity [R2][R9].",
+        "refs": [
+          "R2",
+          "R9"
+        ]
+      },
+      {
+        "criterion": "Hyperlactataemia",
+        "threshold": "lactate above 2 mmol/L (2.5 mmol/L in one study); above 5 mmol/L at admission is high risk",
+        "basis": "babesiosis",
+        "note": "The original thresholds were published in other units; the mmol/L values are those of a South African review [R6][R7][R2].",
+        "refs": [
+          "R6",
+          "R7",
+          "R2"
+        ]
+      },
+      {
+        "criterion": "Lactate failing to clear",
+        "threshold": "above 2.5 mmol/L at 8, 16 or 24 h, or less than 50% fall within 8 to 16 h",
+        "basis": "babesiosis",
+        "note": "Serial measurements in 90 dogs with severe or complicated babesiosis [R6][R7].",
+        "refs": [
+          "R6",
+          "R7"
+        ]
+      },
+      {
+        "criterion": "Mixed acid-base disorder",
+        "threshold": "pCO2 more than 2 mmHg below that expected for the fall in bicarbonate",
+        "basis": "babesiosis",
+        "note": "Expected fall: 0.7 mmHg pCO2 for each 1 mmol/L fall in bicarbonate; met in 76% of B. rossi dogs tested [R2].",
+        "refs": [
+          "R2"
+        ]
+      }
+    ],
+    "clinical_signs": [
+      {
+        "sign": "Collapse, weakness, stupor",
+        "note": "Most hypoglycaemic dogs present collapsed; only 2 of 23 had seizures [R1][R9].",
+        "refs": [
+          "R1",
+          "R9"
+        ]
+      },
+      {
+        "sign": "Miosis in a semi-comatose dog",
+        "note": "Seen in 3 hypoglycaemic dogs and corrected at once with dextrose [R9][R7].",
+        "refs": [
+          "R9",
+          "R7"
+        ]
+      },
+      {
+        "sign": "Low body temperature",
+        "note": "Hypoglycaemic surviving B. rossi dogs had a lower median temperature (37.2 °C) [R19].",
+        "refs": [
+          "R19"
+        ]
+      },
+      {
+        "sign": "Tachypnoea with low pCO2",
+        "note": "Inappropriate hypocapnia in 31 of 34 severe B. rossi dogs [R3].",
+        "refs": [
+          "R3"
+        ]
+      }
+    ],
+    "tests": [
+      {
+        "test": "Blood glucose (glucometer or dipstick)",
+        "finding": "Low in about 20% of admitted B. rossi dogs [R1].",
+        "note": "Use an instant method so treatment is not delayed [R9]. Veterinary glucometers read higher than the laboratory, by up to 2 to 3.5 mmol/L; one meter was affected by PCV [R20].",
+        "refs": [
+          "R9",
+          "R1",
+          "R20"
+        ]
+      },
+      {
+        "test": "Blood lactate (hand-held meter)",
+        "finding": "Raised in about half of admitted dogs; repeat at 8 and 16 h [R6][R2].",
+        "note": "Serial values carry more prognostic weight than one value [R6].",
+        "refs": [
+          "R6",
+          "R2"
+        ]
+      },
+      {
+        "test": "Sodium, potassium, chloride",
+        "finding": "Low potassium and sodium are common; chloride may be high or low [R10][R15].",
+        "note": "Potassium is often low in icteric dogs [R7]. In B. canis, 3 of 21 non-azotaemic dogs met criteria for inappropriate ADH secretion, linked to low blood pressure [R21].",
+        "refs": [
+          "R10",
+          "R15",
+          "R7",
+          "R21"
+        ]
+      },
+      {
+        "test": "Blood gas with anion gap and albumin",
+        "finding": "Mixed metabolic acidosis and respiratory alkalosis; negative base excess in all of 34 severe dogs [R3].",
+        "note": "Median pH was normal (7.43) in 320 dogs, so a normal pH does not exclude a severe disorder [R2].",
+        "refs": [
+          "R3",
+          "R2"
+        ]
+      },
+      {
+        "test": "Cortisol, thyroxine",
+        "finding": "Cortisol high and T4 low in dogs that die [R4][R2].",
+        "note": "Research and prognosis only. Do thyroid tests for hypothyroidism after recovery, not in acute illness [R12].",
+        "refs": [
+          "R4",
+          "R2",
+          "R12"
+        ]
+      }
+    ],
+    "differentials": [
+      {
+        "condition": "Cerebral babesiosis",
+        "distinguish": "Cerebral babesiosis is defined with a normal or high glucose; correct hypoglycaemia first and reassess (SY07) [R2][R1].",
+        "refs": [
+          "R2",
+          "R1"
+        ]
+      },
+      {
+        "condition": "Severe anaemia or hypotension",
+        "distinguish": "Both can cause collapse and altered mentation with a normal glucose (SY01, SY10) [R9].",
+        "refs": [
+          "R9"
+        ]
+      },
+      {
+        "condition": "Spurious hypoglycaemia",
+        "distinguish": "Glucose falls in stored blood through glycolysis, more so in inflammatory states; use a fluoride oxalate tube for laboratory samples [R9].",
+        "refs": [
+          "R9"
+        ]
+      },
+      {
+        "condition": "Acute kidney injury",
+        "distinguish": "Azotaemia with low sodium and low T3 points to renal involvement (SY05) [R15][R17].",
+        "refs": [
+          "R15",
+          "R17"
+        ]
+      }
+    ],
+    "grading": []
+  },
+  "approach": [
+    {
+      "step": 1,
+      "action": "Measure glucose at admission",
+      "detail": "In every admitted dog, and always in collapsed dogs, puppies, and dogs with severe anaemia, vomiting or icterus [R1]. Treat borderline meter values as possibly low [R20].",
+      "setting": "practice"
+    },
+    {
+      "step": 2,
+      "action": "Treat hypoglycaemia at once",
+      "detail": "Diluted 50% dextrose IV, then a dextrose infusion. Recheck glucose hourly until stable [R22][R9].",
+      "setting": "practice"
+    },
+    {
+      "step": 3,
+      "action": "Measure lactate, then repeat",
+      "detail": "At admission and again at 8 and 16 h. A lactate that does not halve is a warning sign (SY11 for triage) [R6][R7].",
+      "setting": "practice"
+    },
+    {
+      "step": 4,
+      "action": "Check electrolytes and add potassium",
+      "detail": "Add potassium chloride to fluids when potassium is low, at no more than 0.5 mmol/kg/h [R23]. Prefer a balanced crystalloid [R24].",
+      "setting": "practice"
+    },
+    {
+      "step": 5,
+      "action": "Treat the cause of acidosis",
+      "detail": "Acidosis is driven by hypoxia and hypoperfusion; treat anaemia and perfusion (SY01, SY10). Bicarbonate is not indicated for lactic acidosis [R25][R3].",
+      "setting": "practice"
+    },
+    {
+      "step": 6,
+      "action": "Blood gas and full acid-base analysis",
+      "detail": "Where available, to detect mixed disorders that pH alone hides [R2][R3].",
+      "setting": "referral"
+    },
+    {
+      "step": 7,
+      "action": "Refer refractory hypoglycaemia",
+      "detail": "If glucose will not stay up on dextrose, glucagon infusion has been used in other causes [R26].",
+      "setting": "referral"
+    }
+  ],
+  "treatments": [
+    {
+      "name": "Dextrose bolus and infusion",
+      "class": "specific",
+      "aim": "Correct hypoglycaemia quickly and keep glucose in range.",
+      "status": "standard",
+      "evidence_level": "C",
+      "independent_studies": 1,
+      "evidence_summary": "No trial. In the Onderstepoort B. rossi study, 2 hypoglycaemic dogs with seizures recovered fully after IV dextrose, 3 lost their miosis at once, and one collapsed dog responded within 90 seconds of a dextrose bolus [R9]. The authors of B. rossi studies recommend aggressive treatment [R8][R1]. Doses for the infusion come from a general canine review (level D/E) [R22].",
+      "doses": [
+        {
+          "drug": "dextrose 50%",
+          "dose": "0.5 mL/kg",
+          "route": "IV bolus",
+          "frequency": "once",
+          "duration": "single dose",
+          "context": "B. rossi, 1 collapsed dog, case in a dissertation",
+          "note": "Glucose 2.65 mmol/L; given while a transfusion was started.",
+          "refs": [
+            "R9"
+          ]
+        },
+        {
+          "drug": "dextrose 50%",
+          "dose": "0.5 to 1 mL/kg",
+          "route": "IV, peripheral vein, slowly over 5 to 10 min",
+          "frequency": "repeat if hypoglycaemia persists",
+          "duration": "",
+          "context": "General canine review, any cause",
+          "note": "Dilute at least 1:2 with saline to reduce phlebitis and haemolysis.",
+          "refs": [
+            "R22"
+          ]
+        },
+        {
+          "drug": "dextrose in a balanced crystalloid",
+          "dose": "2.5% to 5% solution, at maintenance fluid rate",
+          "route": "IV constant rate infusion",
+          "frequency": "continuous",
+          "duration": "until glucose is stable",
+          "context": "General canine review, any cause",
+          "note": "Adjust the rate to the glucose. Target glucose 3.3 to 8.3 mmol/L, checked hourly.",
+          "refs": [
+            "R22"
+          ]
+        }
+      ],
+      "cautions": "Excess dextrose can cause osmotic diuresis and dehydration; give boluses slowly [R22]. Strong solutions irritate veins [R22].",
+      "monitoring": "Glucose hourly until stable on the infusion [R22]. Recurrence after treatment was not reported in babesiosis.",
+      "availability": "",
+      "refs": [
+        "R9",
+        "R8",
+        "R1",
+        "R22"
+      ]
+    },
+    {
+      "name": "Potassium chloride in intravenous fluids",
+      "class": "supportive",
+      "aim": "Correct hypokalaemia.",
+      "status": "standard",
+      "evidence_level": "E",
+      "independent_studies": 0,
+      "evidence_summary": "Hypokalaemia is common: 40% of 40 early B. canis dogs [R10], and frequent in 70 B. canis dogs [R15]; in B. rossi it is often low in icteric dogs [R7]. A South African review lists added potassium chloride as part of fluid support [R7]. No study tested supplementation in babesiosis. The rate limit is from a general canine source [R23].",
+      "doses": [
+        {
+          "drug": "potassium chloride",
+          "dose": "not more than 0.5 mmol/kg/h",
+          "route": "IV, in fluids",
+          "frequency": "continuous",
+          "duration": "",
+          "context": "General canine and feline medicine, proceedings (level E)",
+          "note": "This is a maximum rate, not a dose. The source states it in milliequivalents, equal to mmol for potassium. No table of amounts by serum potassium was verified.",
+          "refs": [
+            "R23"
+          ]
+        }
+      ],
+      "cautions": "Faster infusion risks iatrogenic hyperkalaemia and cardiac effects [R23].",
+      "monitoring": "Potassium at least daily while on supplemented fluids; no babesiosis source states a schedule.",
+      "availability": "",
+      "refs": [
+        "R10",
+        "R15",
+        "R7",
+        "R23"
+      ]
+    },
+    {
+      "name": "Early feeding",
+      "class": "supportive",
+      "aim": "Keep glucose up once the dog can eat.",
+      "status": "proposed",
+      "evidence_level": "E",
+      "independent_studies": 0,
+      "evidence_summary": "A general canine review suggests small frequent meals with complex carbohydrate after the dextrose bolus once mentation is normal [R22]. Hypoglycaemic surviving B. rossi dogs had gone a median 36 hours since their last meal [R19]. Not tested in babesiosis.",
+      "doses": [],
+      "cautions": "Only when the dog can swallow safely [R22].",
+      "monitoring": "Glucose before and after meals while the infusion is reduced.",
+      "availability": "",
+      "refs": [
+        "R22",
+        "R19"
+      ]
+    },
+    {
+      "name": "Balanced crystalloid as the fluid of choice",
+      "class": "supportive",
+      "aim": "Avoid adding a hyperchloraemic acidosis.",
+      "status": "proposed",
+      "evidence_level": "D",
+      "independent_studies": 1,
+      "evidence_summary": "Severe B. rossi and B. canis babesiosis already has a hyperchloraemic, dilutional acidosis component [R3][R27][R14]. A review of fluid therapy in canine and feline sepsis prefers balanced crystalloids over 0.9% sodium chloride, based mainly on human trials [R24]. No fluid comparison exists in babesiosis. Volumes are on SY10.",
+      "doses": [],
+      "cautions": "High-chloride fluids are linked to kidney injury in human sepsis [R24].",
+      "monitoring": "Chloride, sodium and acid-base status daily where available.",
+      "availability": "",
+      "refs": [
+        "R3",
+        "R27",
+        "R14",
+        "R24"
+      ]
+    },
+    {
+      "name": "Glucagon infusion for refractory hypoglycaemia",
+      "class": "adjunct",
+      "aim": "Raise glucose when dextrose fails.",
+      "status": "proposed",
+      "evidence_level": "D",
+      "independent_studies": 1,
+      "evidence_summary": "In 9 dogs with hypoglycaemia that did not respond to dextrose, 7 with insulinoma, glucose rose in all on glucagon; 5 survived [R26]. Not used in babesiosis, where insulin is low and liver glycogen may be depleted [R13].",
+      "doses": [
+        {
+          "drug": "glucagon",
+          "dose": "50 ng/kg bolus, then infusion up to 15 ng/kg/min",
+          "route": "IV",
+          "frequency": "bolus once, then continuous",
+          "duration": "mean 7 h to normoglycaemia",
+          "context": "9 dogs, mostly insulinoma, retrospective series",
+          "note": "Both values are medians from the series.",
+          "refs": [
+            "R26"
+          ]
+        }
+      ],
+      "cautions": "Effect may be less if liver glycogen is depleted, as suggested in babesiosis [R13].",
+      "monitoring": "Glucose hourly [R22].",
+      "availability": "",
+      "refs": [
+        "R26",
+        "R13",
+        "R22"
+      ]
+    },
+    {
+      "name": "Sodium bicarbonate for metabolic acidosis",
+      "class": "supportive",
+      "aim": "Raise blood pH.",
+      "status": "no_benefit",
+      "evidence_level": "D",
+      "independent_studies": 1,
+      "evidence_summary": "Not studied in babesiosis. Acidaemia marks a high mortality group in B. rossi [R28], but the acidosis is mixed with alkalosis and the median pH is normal [R3][R2]. In human septic shock with lactic acidosis, trials showed no haemodynamic benefit and the guideline suggests against it; it is suggested only for pH 7.2 or less with acute kidney injury [R25].",
+      "doses": [],
+      "cautions": "No canine babesiosis dose or indication was found [R25].",
+      "monitoring": "Blood gas, sodium and ionised calcium if it is given.",
+      "availability": "",
+      "refs": [
+        "R28",
+        "R3",
+        "R2",
+        "R25"
+      ]
+    },
+    {
+      "name": "Hydrocortisone or other glucocorticoids for adrenal insufficiency",
+      "class": "adjunct",
+      "aim": "Replace cortisol in presumed critical-illness adrenal insufficiency.",
+      "status": "no_benefit",
+      "evidence_level": "D",
+      "independent_studies": 1,
+      "evidence_summary": "B. rossi dogs had high basal and ACTH-stimulated cortisol, with no evidence of adrenal insufficiency, and the highest cortisol in dogs that died [R5][R4]. In 47 dogs with septic shock of other causes, survival did not differ with hydrocortisone [R29]. No babesiosis study tested glucocorticoids for this purpose. Steroids for immune-mediated haemolysis are on SY02.",
+      "doses": [],
+      "cautions": "No indication shown; cortisol is already high in severe B. rossi disease [R4].",
+      "monitoring": "",
+      "availability": "",
+      "refs": [
+        "R5",
+        "R4",
+        "R29"
+      ]
+    }
+  ],
+  "prognosis": {
+    "text": "In 320 B. rossi dogs, 34 (10.6%) died of the disease; the paper does not say whether euthanased dogs are included [R2]. Hypoglycaemia, high and persistent lactate, acidaemia, high cortisol and low thyroxine are all linked with death, but no single marker was an independent predictor [R2][R28].",
+    "indicators": [
+      {
+        "finding": "Hypoglycaemia at admission",
+        "meaning": "Odds of death 3.47 times higher in B. rossi [R2]; linked with death in 90 dogs [R6].",
+        "refs": [
+          "R2",
+          "R6"
+        ]
+      },
+      {
+        "finding": "Admission lactate above 5 mmol/L, or above 4.1 mmol/L",
+        "meaning": "Higher mortality; 4.1 mmol/L gave 75% sensitivity and specificity for death [R7][R2].",
+        "refs": [
+          "R7",
+          "R2"
+        ]
+      },
+      {
+        "finding": "Lactate rising or falling by less than 50% in 8 to 16 h, or persistently above 4.4 mmol/L",
+        "meaning": "Strong predictor of death; above 4.4 mmol/L at 24 h predicted death in every case [R6][R7].",
+        "refs": [
+          "R6",
+          "R7"
+        ]
+      },
+      {
+        "finding": "Cortisol above 388 nmol/L or total T4 below 4.8 nmol/L",
+        "meaning": "Cut-offs for death in B. rossi (cortisol 87.5% sensitive, 82.9% specific); not validated [R2][R4].",
+        "refs": [
+          "R2",
+          "R4"
+        ]
+      },
+      {
+        "finding": "Acidaemia",
+        "meaning": "Mortality above 30% in admitted B. rossi dogs, against 12% overall [R28].",
+        "refs": [
+          "R28"
+        ]
+      },
+      {
+        "finding": "Hyperlactataemia in B. canis",
+        "meaning": "Present in all 8 of 8 non-survivors (6 died, 2 euthanased) and 1 of 7 survivors [R16].",
+        "refs": [
+          "R16"
+        ]
+      }
+    ]
+  },
+  "related": [
+    {
+      "id": "TX00",
+      "why": "The drugs against the parasite."
+    },
+    {
+      "id": "SY07",
+      "why": "Cerebral babesiosis: hypoglycaemia is its main differential."
+    },
+    {
+      "id": "SY10",
+      "why": "Shock and hypotension: fluid volumes and the cause of hyperlactataemia."
+    },
+    {
+      "id": "SY11",
+      "why": "Triage and the order of care: lactate and glucose as triage values."
+    },
+    {
+      "id": "SY01",
+      "why": "Severe anaemia, which drives hypoglycaemia and lactate."
+    },
+    {
+      "id": "SY05",
+      "why": "Acute kidney injury and its electrolyte changes."
+    },
+    {
+      "id": "SY02",
+      "why": "Glucocorticoids for immune-mediated haemolysis."
+    }
+  ],
+  "evidence_gaps": [
+    "No study reports how often hypoglycaemia recurs after dextrose in babesiosis, or the best infusion rate.",
+    "No study of lactate-guided treatment in babesiosis.",
+    "No trial of bicarbonate, potassium or fluid type in babesiosis.",
+    "No study tested thyroid hormone in dogs with babesiosis or other non-thyroidal illness; no source supports giving it.",
+    "No study tested glucocorticoids for adrenal insufficiency in babesiosis; adrenal insufficiency was not found.",
+    "No data on insulin for hyperglycaemia in babesiosis.",
+    "Almost no glucose, lactate or endocrine data for B. gibsoni and B. vogeli."
+  ],
+  "references": [
+    {
+      "ref": "R1",
+      "authors": "Keller N, Jacobson LS, Nel M, et al.",
+      "year": 2004,
+      "title": "Prevalence and risk factors of hypoglycemia in virulent canine babesiosis",
+      "journal": "Journal of Veterinary Internal Medicine",
+      "volume_pages": "18(3):265-270",
+      "doi": "10.1892/0891-6640(2004)18<265:parfoh>2.0.co;2",
+      "pmid": "15188810",
+      "url": "",
+      "article_id": "",
+      "type": "cohort",
+      "species": "B. rossi",
+      "n_dogs": 250,
+      "read": "abstract"
+    },
+    {
+      "ref": "R2",
+      "authors": "Leisewitz AL, Goddard A, Clift S, et al.",
+      "year": 2019,
+      "title": "A clinical and pathological description of 320 cases of naturally acquired Babesia rossi infection in dogs",
+      "journal": "Veterinary Parasitology",
+      "volume_pages": "271:22-30",
+      "doi": "10.1016/j.vetpar.2019.06.005",
+      "pmid": "31303199",
+      "url": "",
+      "article_id": "CB040",
+      "type": "cohort",
+      "species": "B. rossi",
+      "n_dogs": 320,
+      "read": "full text"
+    },
+    {
+      "ref": "R3",
+      "authors": "Leisewitz AL, Jacobson LS, de Morais HS, et al.",
+      "year": 2001,
+      "title": "The mixed acid-base disturbances of severe canine babesiosis",
+      "journal": "Journal of Veterinary Internal Medicine",
+      "volume_pages": "15(5):445-452",
+      "doi": "10.1892/0891-6640(2001)015<0445:tmados>2.3.co;2",
+      "pmid": "11596731",
+      "url": "",
+      "article_id": "",
+      "type": "case series",
+      "species": "B. rossi",
+      "n_dogs": 34,
+      "read": "abstract"
+    },
+    {
+      "ref": "R4",
+      "authors": "Schoeman JP, Rees P, Herrtage ME",
+      "year": 2007,
+      "title": "Endocrine predictors of mortality in canine babesiosis caused by Babesia canis rossi",
+      "journal": "Veterinary Parasitology",
+      "volume_pages": "148(2):75-82",
+      "doi": "10.1016/j.vetpar.2007.06.010",
+      "pmid": "17614201",
+      "url": "",
+      "article_id": "CB338",
+      "type": "cohort",
+      "species": "B. rossi",
+      "n_dogs": 95,
+      "read": "abstract"
+    },
+    {
+      "ref": "R5",
+      "authors": "Schoeman JP, Herrtage ME",
+      "year": 2008,
+      "title": "Adrenal response to the low dose ACTH stimulation test and the cortisol-to-adrenocorticotrophic hormone ratio in canine babesiosis",
+      "journal": "Veterinary Parasitology",
+      "volume_pages": "154(3-4):205-213",
+      "doi": "10.1016/j.vetpar.2008.03.023",
+      "pmid": "18468798",
+      "url": "",
+      "article_id": "CB352",
+      "type": "cohort",
+      "species": "B. rossi",
+      "n_dogs": 68,
+      "read": "abstract"
+    },
+    {
+      "ref": "R6",
+      "authors": "Nel M, Lobetti RG, Keller N, et al.",
+      "year": 2004,
+      "title": "Prognostic value of blood lactate, blood glucose, and hematocrit in canine babesiosis",
+      "journal": "Journal of Veterinary Internal Medicine",
+      "volume_pages": "18(4):471-476",
+      "doi": "10.1892/0891-6640(2004)18<471:pvoblb>2.0.co;2",
+      "pmid": "15320582",
+      "url": "",
+      "article_id": "",
+      "type": "cohort",
+      "species": "B. rossi",
+      "n_dogs": 90,
+      "read": "abstract"
+    },
+    {
+      "ref": "R7",
+      "authors": "Schoeman JP",
+      "year": 2009,
+      "title": "Canine babesiosis",
+      "journal": "Onderstepoort Journal of Veterinary Research",
+      "volume_pages": "76(1):59-66",
+      "doi": "10.4102/ojvr.v76i1.66",
+      "pmid": "",
+      "url": "",
+      "article_id": "CB380",
+      "type": "review",
+      "species": "",
+      "n_dogs": null,
+      "read": "full text"
+    },
+    {
+      "ref": "R8",
+      "authors": "Jacobson LS, Lobetti RG",
+      "year": 2005,
+      "title": "Glucose, lactate, and pyruvate concentrations in dogs with babesiosis",
+      "journal": "American Journal of Veterinary Research",
+      "volume_pages": "66(2):244-250",
+      "doi": "10.2460/ajvr.2005.66.244",
+      "pmid": "15757122",
+      "url": "",
+      "article_id": "",
+      "type": "case series",
+      "species": "B. rossi",
+      "n_dogs": 20,
+      "read": "abstract"
+    },
+    {
+      "ref": "R9",
+      "authors": "Keller N",
+      "year": 2004,
+      "title": "Hypoglycaemia in virulent canine babesiosis: prevalence and risk factors (MMedVet dissertation, University of Pretoria)",
+      "journal": "University of Pretoria repository (UPSpace)",
+      "volume_pages": "",
+      "doi": "",
+      "pmid": "",
+      "url": "https://repository.up.ac.za/handle/2263/23003",
+      "article_id": "",
+      "type": "cohort",
+      "species": "B. rossi",
+      "n_dogs": 250,
+      "read": "full text"
+    },
+    {
+      "ref": "R10",
+      "authors": "Adaszek Ł, Górna M, Winiarczyk S",
+      "year": 2012,
+      "title": "Electrolyte level and blood pH in dogs infected by various 18S RNA strains of Babaesia canis canis on the early stage of babesiosis",
+      "journal": "Berliner und Münchener Tierärztliche Wochenschrift",
+      "volume_pages": "125(1-2):45-51",
+      "doi": "",
+      "pmid": "22372324",
+      "url": "",
+      "article_id": "CB423",
+      "type": "case series",
+      "species": "B. canis",
+      "n_dogs": 40,
+      "read": "abstract"
+    },
+    {
+      "ref": "R11",
+      "authors": "van Zyl E, Leisewitz AL, Atkinson BK, et al.",
+      "year": 2023,
+      "title": "Serial changes in the concentrations of cortisol and thyroid hormones in Beagle dogs infected with Babesia rossi",
+      "journal": "Ticks and Tick-borne Diseases",
+      "volume_pages": "14(2):102107",
+      "doi": "10.1016/j.ttbdis.2022.102107",
+      "pmid": "36535203",
+      "url": "",
+      "article_id": "CB105",
+      "type": "experimental",
+      "species": "B. rossi",
+      "n_dogs": 5,
+      "read": "full text"
+    },
+    {
+      "ref": "R12",
+      "authors": "Corsini A, Del Baldo F, Lunetta F, et al.",
+      "year": 2024,
+      "title": "Total thyroxine, triiodothyronine, and thyrotropin concentrations during acute nonthyroidal illness and recovery in dogs",
+      "journal": "Journal of Veterinary Internal Medicine",
+      "volume_pages": "38(3):1345-1352",
+      "doi": "10.1111/jvim.17059",
+      "pmid": "38654457",
+      "url": "",
+      "article_id": "",
+      "type": "cohort",
+      "species": "",
+      "n_dogs": 19,
+      "read": "full text"
+    },
+    {
+      "ref": "R13",
+      "authors": "Rees P, Schoeman JP",
+      "year": 2008,
+      "title": "Plasma insulin concentrations in hypoglycaemic dogs with Babesia canis rossi infection",
+      "journal": "Veterinary Parasitology",
+      "volume_pages": "152(1-2):60-66",
+      "doi": "10.1016/j.vetpar.2007.11.017",
+      "pmid": "18164550",
+      "url": "",
+      "article_id": "CB340",
+      "type": "cohort",
+      "species": "B. rossi",
+      "n_dogs": 94,
+      "read": "abstract"
+    },
+    {
+      "ref": "R14",
+      "authors": "Torti M, Kuleš J, Matijatko V, et al.",
+      "year": 2020,
+      "title": "Acid-base status in canine babesiosis caused by Babesia canis",
+      "journal": "Veterinarski Arhiv",
+      "volume_pages": "90(6):603-610",
+      "doi": "10.24099/vet.arhiv.1230",
+      "pmid": "",
+      "url": "",
+      "article_id": "CB068",
+      "type": "case series",
+      "species": "B. canis",
+      "n_dogs": 14,
+      "read": "abstract"
+    },
+    {
+      "ref": "R15",
+      "authors": "Zygner W, Gójska-Zygner O, Wędrychowicz H",
+      "year": 2012,
+      "title": "Strong monovalent electrolyte imbalances in serum of dogs infected with Babesia canis",
+      "journal": "Ticks and Tick-borne Diseases",
+      "volume_pages": "3(2):107-113",
+      "doi": "10.1016/j.ttbdis.2012.02.002",
+      "pmid": "22463923",
+      "url": "",
+      "article_id": "CB431",
+      "type": "case series",
+      "species": "B. canis",
+      "n_dogs": 70,
+      "read": "abstract"
+    },
+    {
+      "ref": "R16",
+      "authors": "Eichenberger RM, Riond B, Willi B, et al.",
+      "year": 2016,
+      "title": "Prognostic markers in acute Babesia canis infections",
+      "journal": "Journal of Veterinary Internal Medicine",
+      "volume_pages": "30(1):174-182",
+      "doi": "10.1111/jvim.13822",
+      "pmid": "26727465",
+      "url": "",
+      "article_id": "CB516",
+      "type": "case series",
+      "species": "B. canis",
+      "n_dogs": 15,
+      "read": "full text"
+    },
+    {
+      "ref": "R17",
+      "authors": "Zygner W, Gójska-Zygner O, Bąska P, et al.",
+      "year": 2015,
+      "title": "Low T3 syndrome in canine babesiosis associated with increased serum IL-6 concentration and azotaemia",
+      "journal": "Veterinary Parasitology",
+      "volume_pages": "211(1-2):23-27",
+      "doi": "10.1016/j.vetpar.2015.04.023",
+      "pmid": "25976636",
+      "url": "",
+      "article_id": "CB503",
+      "type": "case series",
+      "species": "B. canis",
+      "n_dogs": 13,
+      "read": "abstract"
+    },
+    {
+      "ref": "R18",
+      "authors": "Kandasamy R, Venkatasubramanian L, Loganathasamy K, et al.",
+      "year": 2021,
+      "title": "Prognostic markers and their discriminant score in predicting the outcome of Babesia gibsoni infection",
+      "journal": "Veterinary Record",
+      "volume_pages": "188(5):e29",
+      "doi": "10.1002/vetr.29",
+      "pmid": "33666974",
+      "url": "",
+      "article_id": "",
+      "type": "cohort",
+      "species": "B. gibsoni",
+      "n_dogs": null,
+      "read": "abstract"
+    },
+    {
+      "ref": "R19",
+      "authors": "Schoeman JP, Herrtage ME",
+      "year": 2007,
+      "title": "The response of the pituitary-adrenal and pituitary-thyroidal axes to the plasma glucose perturbations in Babesia canis rossi babesiosis",
+      "journal": "Journal of the South African Veterinary Association",
+      "volume_pages": "78(4):215-220",
+      "doi": "10.4102/jsava.v78i4.326",
+      "pmid": "18507221",
+      "url": "",
+      "article_id": "CB342",
+      "type": "case series",
+      "species": "B. rossi",
+      "n_dogs": 36,
+      "read": "full text"
+    },
+    {
+      "ref": "R20",
+      "authors": "Wolfenden G, James FE, Hung LHT, et al.",
+      "year": 2022,
+      "title": "Comparative accuracy of two veterinary-calibrated point-of-care glucometres for measurement of blood glucose concentration in dogs",
+      "journal": "Journal of Small Animal Practice",
+      "volume_pages": "63(7):512-519",
+      "doi": "10.1111/jsap.13491",
+      "pmid": "35347740",
+      "url": "",
+      "article_id": "",
+      "type": "cohort",
+      "species": "",
+      "n_dogs": null,
+      "read": "abstract"
+    },
+    {
+      "ref": "R21",
+      "authors": "Gójska-Zygner O, Bartosik J, Górski P, et al.",
+      "year": 2019,
+      "title": "Hyponatraemia and syndrome of inappropriate antidiuretic hormone secretion in non-azotaemic dogs with babesiosis associated with decreased arterial blood pressure",
+      "journal": "Journal of Veterinary Research",
+      "volume_pages": "63(3):339-344",
+      "doi": "10.2478/jvetres-2019-0045",
+      "pmid": "31572813",
+      "url": "",
+      "article_id": "CB044",
+      "type": "case series",
+      "species": "B. canis",
+      "n_dogs": 29,
+      "read": "full text"
+    },
+    {
+      "ref": "R22",
+      "authors": "Idowu O, Heading K",
+      "year": 2018,
+      "title": "Hypoglycemia in dogs: causes, management, and diagnosis",
+      "journal": "Canadian Veterinary Journal",
+      "volume_pages": "59(6):642-649",
+      "doi": "",
+      "pmid": "29910479",
+      "url": "",
+      "article_id": "",
+      "type": "review",
+      "species": "",
+      "n_dogs": null,
+      "read": "full text"
+    },
+    {
+      "ref": "R23",
+      "authors": "DiBartola SP",
+      "year": 2010,
+      "title": "Disorders of potassium (Proceedings)",
+      "journal": "dvm360 (conference proceedings)",
+      "volume_pages": "",
+      "doi": "",
+      "pmid": "",
+      "url": "https://www.dvm360.com/view/disorders-potassium-proceedings",
+      "article_id": "",
+      "type": "textbook",
+      "species": "",
+      "n_dogs": null,
+      "read": "full text"
+    },
+    {
+      "ref": "R24",
+      "authors": "Montealegre F, Lyons BM",
+      "year": 2021,
+      "title": "Fluid therapy in dogs and cats with sepsis",
+      "journal": "Frontiers in Veterinary Science",
+      "volume_pages": "8:622127",
+      "doi": "10.3389/fvets.2021.622127",
+      "pmid": "33718468",
+      "url": "",
+      "article_id": "",
+      "type": "review",
+      "species": "",
+      "n_dogs": null,
+      "read": "full text"
+    },
+    {
+      "ref": "R25",
+      "authors": "Evans L, Rhodes A, Alhazzani W, et al.",
+      "year": 2021,
+      "title": "Surviving sepsis campaign: international guidelines for management of sepsis and septic shock 2021",
+      "journal": "Intensive Care Medicine",
+      "volume_pages": "47(11):1181-1247",
+      "doi": "10.1007/s00134-021-06506-y",
+      "pmid": "34599691",
+      "url": "",
+      "article_id": "",
+      "type": "guideline",
+      "species": "",
+      "n_dogs": null,
+      "read": "full text"
+    },
+    {
+      "ref": "R26",
+      "authors": "Datte K, Guillaumin J, Barrett S, et al.",
+      "year": 2016,
+      "title": "Retrospective evaluation of the use of glucagon infusion as adjunctive therapy for hypoglycemia in dogs: 9 cases (2005-2014)",
+      "journal": "Journal of Veterinary Emergency and Critical Care",
+      "volume_pages": "26(6):775-781",
+      "doi": "10.1111/vec.12513",
+      "pmid": "27541206",
+      "url": "",
+      "article_id": "",
+      "type": "case series",
+      "species": "",
+      "n_dogs": 9,
+      "read": "abstract"
+    },
+    {
+      "ref": "R27",
+      "authors": "Zambelli AB, Leisewitz AL",
+      "year": 2009,
+      "title": "A prospective, randomized comparison of Oxyglobin (HB-200) and packed red blood cell transfusion for canine babesiosis",
+      "journal": "Journal of Veterinary Emergency and Critical Care",
+      "volume_pages": "19(1):102-112",
+      "doi": "10.1111/j.1476-4431.2009.00386.x",
+      "pmid": "19691591",
+      "url": "",
+      "article_id": "CB368",
+      "type": "trial",
+      "species": "B. rossi",
+      "n_dogs": 12,
+      "read": "abstract"
+    },
+    {
+      "ref": "R28",
+      "authors": "Jacobson LS",
+      "year": 2006,
+      "title": "The South African form of severe and complicated canine babesiosis: clinical advances 1994-2004",
+      "journal": "Veterinary Parasitology",
+      "volume_pages": "138(1-2):126-139",
+      "doi": "10.1016/j.vetpar.2006.01.047",
+      "pmid": "16503090",
+      "url": "",
+      "article_id": "",
+      "type": "review",
+      "species": "B. rossi",
+      "n_dogs": null,
+      "read": "abstract"
+    },
+    {
+      "ref": "R29",
+      "authors": "Summers AM, Culler C, Yaxley PE, et al.",
+      "year": 2021,
+      "title": "Retrospective evaluation of the use of hydrocortisone for treatment of suspected critical illness-related corticosteroid insufficiency (CIRCI) in dogs with septic shock (2010-2017): 47 cases",
+      "journal": "Journal of Veterinary Emergency and Critical Care",
+      "volume_pages": "31(3):371-379",
+      "doi": "10.1111/vec.13037",
+      "pmid": "33599090",
+      "url": "",
+      "article_id": "",
+      "type": "cohort",
+      "species": "",
+      "n_dogs": 47,
+      "read": "abstract"
+    }
+  ],
+  "search": {
+    "date": "2026-11-12",
+    "sources": [
+      "local review",
+      "PubMed",
+      "Europe PMC",
+      "Crossref",
+      "web"
+    ],
+    "note": "Local MET synthesis, combined treatment set and article texts; PubMed and Europe PMC for babesiosis with glucose, lactate, acid-base, electrolytes, cortisol and thyroid, and for each candidate treatment. AAHA fluid therapy guidelines (2013, 2024) could not be read (access blocked), so no potassium sliding scale is given. Keller, Nel, Jacobson and Leisewitz 2001 journal papers were read as abstracts only; the Keller dissertation was read in full."
+  }
+}

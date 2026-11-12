@@ -1,0 +1,190 @@
+<div class="fs-experiment-cytokine">
+  <fs-card title="Primary result" [subtitle]="primary()?.label ?? 'Cytokine contrasts'">
+    @if (primary(); as p) {
+      <p class="fs-experiment-cytokine__status">
+        <fs-badge variant="tonal" [intent]="verdictIntent()">Verdict: {{ p.verdict }}</fs-badge>
+        <span class="fs-experiment-cytokine__meta">{{ p.statistic }} · {{ p.independent_sources }} independent sources</span>
+      </p>
+      <div class="fs-experiment-cytokine__primary">
+        @for (r of primaryRows(); track r.label) {
+          <div class="fs-experiment-cytokine__effect">
+            <div class="fs-experiment-cytokine__effect-label">{{ r.label }}</div>
+            <div class="fs-experiment-cytokine__headline">
+              <div class="fs-experiment-cytokine__stat">
+                <span class="fs-experiment-cytokine__stat-label">{{ p.statistic }}</span>
+                <span class="fs-experiment-cytokine__stat-value">{{ r.estimate }}</span>
+              </div>
+              <div class="fs-experiment-cytokine__stat">
+                <span class="fs-experiment-cytokine__stat-label">95% interval</span>
+                <span class="fs-experiment-cytokine__stat-value fs-experiment-cytokine__stat-value--small">{{ r.interval }}</span>
+              </div>
+              <div class="fs-experiment-cytokine__stat">
+                <span class="fs-experiment-cytokine__stat-label">n</span>
+                <span class="fs-experiment-cytokine__stat-value fs-experiment-cytokine__stat-value--small">{{ r.n }}</span>
+              </div>
+              <div class="fs-experiment-cytokine__stat">
+                <span class="fs-experiment-cytokine__stat-label">Permutation p · BH q</span>
+                <span class="fs-experiment-cytokine__stat-value fs-experiment-cytokine__stat-value--small">{{ r.p }} · {{ r.q }}</span>
+              </div>
+            </div>
+            <div class="fs-experiment-cytokine__footnote">
+              {{ r.centre }}@if (r.definition) { · severity = {{ r.definition }} }
+              · interval {{ r.excludesZero ? 'excludes 0' : 'includes 0' }}
+            </div>
+          </div>
+        }
+      </div>
+      <p class="fs-experiment-cytokine__text">{{ p.headline }}</p>
+      @if (p.ds02; as d) {
+        <div class="fs-experiment-cytokine__rules">
+          <span class="fs-experiment-cytokine__stat-label">DS02 rules for an IL-8 reversal</span>
+          <fs-badge variant="tonal" [intent]="d.r1 ? 'success' : 'danger'">R1 same direction: {{ d.r1 ? 'met' : 'not met' }}</fs-badge>
+          <fs-badge variant="tonal" [intent]="d.r2 ? 'success' : 'danger'">R2 beyond daily change: {{ d.r2 ? 'met' : 'not met' }}</fs-badge>
+          <fs-badge variant="tonal" [intent]="d.r3 ? 'success' : 'danger'">R3 larger rise in high dose: {{ d.r3 ? 'met' : 'not met' }}</fs-badge>
+        </div>
+        <p class="fs-experiment-cytokine__footnote">{{ d.text }}.</p>
+      }
+      <p class="fs-experiment-cytokine__footnote">
+        Sources: {{ p.sources.join('; ') }}. {{ p.caveats.join(' ') }}
+      </p>
+    } @else {
+      <p class="fs-experiment-cytokine__footnote">This run stored no primary result.</p>
+    }
+  </fs-card>
+
+  <ng-template #forest let-groups="groups" let-payload="payload">
+    @for (g of groups; track g.key) {
+      <h4 class="fs-experiment-cytokine__set">{{ g.label }}</h4>
+      <div class="fs-experiment-cytokine__forest">
+        <div class="fs-experiment-cytokine__forest-labels" [style.padding-top.px]="22">
+          @for (r of g.rows; track r.id) {
+            <div class="fs-experiment-cytokine__forest-label">{{ r.label }}</div>
+          }
+        </div>
+        <svg class="fs-experiment-cytokine__forest-svg" [attr.viewBox]="'-10 0 ' + (forestWidth + 20) + ' ' + g.height"
+             preserveAspectRatio="none" [style.height.px]="g.height" role="img"
+             [attr.aria-label]="'Forest plot of Cliff\'s delta: ' + g.label">
+          @for (t of forestTicks; track t.v) {
+            <line [attr.x1]="t.x" [attr.x2]="t.x" y1="16" [attr.y2]="g.height - 4"
+                  [class]="t.v === 0 ? 'fs-experiment-cytokine__zero' : 'fs-experiment-cytokine__grid'" />
+            <text [attr.x]="t.x" y="11" text-anchor="middle" class="fs-experiment-cytokine__tick">{{ t.label }}</text>
+          }
+          @for (r of g.rows; track r.id) {
+            <line [attr.x1]="r.x1" [attr.x2]="r.x2" [attr.y1]="r.y" [attr.y2]="r.y"
+                  [class]="r.excludesZero ? 'fs-experiment-cytokine__ci fs-experiment-cytokine__ci--strong' : 'fs-experiment-cytokine__ci'" />
+            <circle [attr.cx]="r.x" [attr.cy]="r.y" r="5"
+                    [class]="r.excludesZero ? 'fs-experiment-cytokine__dot fs-experiment-cytokine__dot--strong' : 'fs-experiment-cytokine__dot'">
+              <title>{{ r.label }}: {{ r.estimate }} ({{ r.interval }})</title>
+            </circle>
+          }
+        </svg>
+      </div>
+      @if (g.note) {
+        <p class="fs-experiment-cytokine__footnote">{{ g.note }}</p>
+      }
+      <fs-data-grid [data]="g.rows" [columns]="forestColumns" keyExpr="id" />
+    }
+    @if (payload?.footnote) {
+      <p class="fs-experiment-cytokine__footnote">
+        {{ payload.footnote }} A filled dot marks an interval that excludes 0; -1 to +1 is the full range of Cliff's delta.
+      </p>
+    }
+  </ng-template>
+
+  @if (contrasts().length) {
+    <fs-card title="Six shared analytes by severity, inside each file"
+             subtitle="Cliff's delta, severe minus non-severe · positive = higher in severe · S-CB050 and S-CB017 · one species per source">
+      <ng-container *ngTemplateOutlet="forest; context: { groups: contrasts(), payload: contrastsPayload() }" />
+    </fs-card>
+  }
+
+  @if (ds02(); as d) {
+    <fs-card title="DS02: cytokine course of the 5 Beagles around treatment"
+             subtitle="B. rossi, experimental infection, SRC-B · within-dog series · descriptive, no test (4 dogs after treatment)">
+      <div class="fs-experiment-cytokine__tabs" role="tablist">
+        @for (a of ds02Analytes(); track a.key) {
+          <button type="button" class="btn btn-sm" role="tab"
+                  [class.btn-primary]="a.key === selectedAnalyte()" [class.btn-outline-secondary]="a.key !== selectedAnalyte()"
+                  [attr.aria-selected]="a.key === selectedAnalyte()" (click)="selectAnalyte(a.key)">{{ a.label }}</button>
+        }
+      </div>
+      @if (ds02Selected(); as s) {
+        <fs-chart [options]="ds02Options()" [height]="380" />
+        <p class="fs-experiment-cytokine__footnote">
+          {{ s.label }} change from day 4 to day 6 (log2):
+          @for (c of s.changes; track c.dog; let last = $last) { {{ c.dog }} {{ c.change >= 0 ? '+' : '' }}{{ c.change.toFixed(2) }}{{ last ? '.' : ',' }} }
+          {{ d.footnote }}
+        </p>
+      }
+    </fs-card>
+  }
+
+  @if (ds02DecisionRows().length) {
+    <fs-card title="DS02: decision rules R1 to R3, by analyte"
+             subtitle="Fixed in spec.md before any outcome was opened · the IL-8 row decides; the other rows are context">
+      <fs-data-grid [data]="ds02DecisionRows()" [columns]="ds02DecisionColumns" keyExpr="analyte" />
+      <p class="fs-experiment-cytokine__footnote">
+        R1: every dog with a day-6 sample changes in the same direction from day 4. R2: the median |log2 change| exceeds the median day-to-day change before treatment.
+        R3: the high-dose (sicker) dogs rise more than the low-dose dogs, which a reversal of a within-file contrast would need.
+      </p>
+    </fs-card>
+  }
+
+  @if (infected().length) {
+    <fs-card title="Infected dogs against healthy controls (deviation D1)"
+             subtitle="Cliff's delta, infected minus controls · added after the outcome lock, uses no outcome · one species per source">
+      <ng-container *ngTemplateOutlet="forest; context: { groups: infected(), payload: infectedPayload() }" />
+    </fs-card>
+  }
+
+  @if (definitionRows().length) {
+    <fs-card title="Check C1: does IL-8 move with WBC?" subtitle="The S-CB017 'complicated' label uses SIRS criteria, which include WBC">
+      <fs-data-grid [data]="definitionRows()" [columns]="definitionColumns" keyExpr="file" />
+      <p class="fs-experiment-cytokine__footnote">{{ definition()?.footnote }} Died includes euthanasia for poor prognosis (S-CB050).</p>
+    </fs-card>
+  }
+
+  @if (floorRows().length) {
+    <fs-card title="Sensitivity S2: floors at half the floor" subtitle="Every value at an assay floor replaced by half the floor">
+      <fs-data-grid [data]="floorRows()" [columns]="floorColumns" keyExpr="id" />
+      <p class="fs-experiment-cytokine__footnote">{{ floors()?.footnote }}</p>
+    </fs-card>
+  }
+
+  @if (perturbationCharts().length) {
+    <fs-card title="Perturbation count by severity"
+             subtitle="Analytes (of 6) outside the range of the file's own healthy controls · descriptive re-analysis · one species per source">
+      <div class="fs-experiment-cytokine__pair">
+        @for (c of perturbationCharts(); track c.file) {
+          <div>
+            <h4 class="fs-experiment-cytokine__set">{{ c.title }}</h4>
+            <fs-chart [options]="c.options" [height]="300" />
+            <fs-data-grid [data]="c.outside" [columns]="c.columns" keyExpr="analyte" />
+          </div>
+        }
+      </div>
+      <p class="fs-experiment-cytokine__footnote">{{ perturbation()?.footnote }} Died includes euthanasia for poor prognosis (S-CB050).</p>
+    </fs-card>
+  }
+
+  @if (balanceCharts().length) {
+    <fs-card title="Balance index against perturbation count"
+             subtitle="One point per infected dog · balance = within-file percentile of MCP-1 minus that of IL-8">
+      <div class="fs-experiment-cytokine__pair">
+        @for (c of balanceCharts(); track c.file) {
+          <div>
+            <h4 class="fs-experiment-cytokine__set">{{ c.title }}</h4>
+            <fs-chart [options]="c.options" [height]="320" />
+          </div>
+        }
+      </div>
+      <p class="fs-experiment-cytokine__footnote">{{ balance()?.footnote }} Points are spread a little sideways so that equal counts stay visible.</p>
+    </fs-card>
+  }
+
+  @if (scoreSens().length) {
+    <fs-card title="Sensitivity analyses" subtitle="Cliff's delta, severe minus non-severe · raw p only">
+      <ng-container *ngTemplateOutlet="forest; context: { groups: scoreSens(), payload: scoreSensPayload() }" />
+    </fs-card>
+  }
+</div>

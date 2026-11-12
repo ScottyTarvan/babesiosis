@@ -1,0 +1,76 @@
+:host {
+  display: block;
+}
+
+.fs-experiment-litx {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.fs-experiment-litx__tiles {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+  gap: var(--fs-guide-space-3);
+  margin: 0;
+
+  div {
+    padding: var(--fs-guide-space-2) var(--fs-guide-space-3);
+    border-radius: 6px;
+    background: rgb(var(--fs-color-fill-subtle));
+  }
+
+  dt {
+    font-size: 11px;
+    font-weight: 500;
+    color: rgb(var(--fs-color-ink-soft));
+  }
+
+  dd {
+    margin: 2px 0 0;
+    font-size: 20px;
+    font-variant-numeric: tabular-nums;
+
+    small {
+      font-size: 11px;
+      color: rgb(var(--fs-color-ink-soft));
+    }
+  }
+}
+
+.fs-experiment-litx__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 16px;
+  min-width: 0;
+}
+
+.fs-experiment-litx__subhead {
+  margin: var(--fs-guide-space-3) 0 var(--fs-guide-space-2);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.fs-experiment-litx__filters {
+  display: flex;
+  margin-bottom: var(--fs-guide-space-3);
+
+  fs-text-input {
+    flex: 1 1 260px;
+    max-width: 380px;
+  }
+}
+
+.fs-experiment-litx__list {
+  margin: 0;
+  padding-left: 18px;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.fs-experiment-litx__footnote {
+  margin: var(--fs-guide-space-2) 0 0;
+  font-size: 11px;
+  line-height: 1.4;
+  color: rgb(var(--fs-color-ink-soft));
+}

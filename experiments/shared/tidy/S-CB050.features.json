@@ -1,0 +1,3764 @@
+{
+ "dataset_id": "S-CB050",
+ "independent_source": "SRC-A",
+ "species": "B. rossi",
+ "built_from": [
+  {
+   "file": "/core/data/raw/S-CB050/PMC7040022_supplementaryFiles.zip!Table_1.DOCX",
+   "sha256": "ec02b1d7a08f23d477886e1bd2083828a8457cd57df8983964236c9f17a8fb03"
+  }
+ ],
+ "variables": [
+  {
+   "name": "sex",
+   "unit": "male/female",
+   "original": "Gender",
+   "floor": null,
+   "ceiling": null
+  },
+  {
+   "name": "age_months",
+   "unit": "months",
+   "original": "Age (mos)",
+   "floor": null,
+   "ceiling": null
+  },
+  {
+   "name": "weight_kg",
+   "unit": "kg",
+   "original": "Weight (kg)",
+   "floor": null,
+   "ceiling": null
+  },
+  {
+   "name": "wbc",
+   "unit": "10^9/L",
+   "original": "WBC (x10^9/L)",
+   "floor": null,
+   "ceiling": null
+  },
+  {
+   "name": "neut_seg",
+   "unit": "10^9/L",
+   "original": "Neut Seg (x10^9/L)",
+   "floor": null,
+   "ceiling": null
+  },
+  {
+   "name": "neut_band",
+   "unit": "10^9/L",
+   "original": "Neut Band (x10^9/L)",
+   "floor": null,
+   "ceiling": null
+  },
+  {
+   "name": "il2",
+   "unit": "pg/mL",
+   "original": "IL-2 (pg/mL)",
+   "floor": 3.4,
+   "ceiling": 50001.0
+  },
+  {
+   "name": "il6",
+   "unit": "pg/mL",
+   "original": "IL-6 (pg/mL)",
+   "floor": 3.6,
+   "ceiling": 50001.0
+  },
+  {
+   "name": "il8",
+   "unit": "pg/mL",
+   "original": "IL-8 (pg/mL)",
+   "floor": null,
+   "ceiling": null
+  },
+  {
+   "name": "il10",
+   "unit": "pg/mL",
+   "original": "IL-10 (pg/mL)",
+   "floor": 8.4,
+   "ceiling": null
+  },
+  {
+   "name": "il18",
+   "unit": "pg/mL",
+   "original": "IL-18 (pg/mL)",
+   "floor": 5.7,
+   "ceiling": 50001.0
+  },
+  {
+   "name": "gmcsf",
+   "unit": "pg/mL",
+   "original": "GM-CSF (pg/mL)",
+   "floor": 9.1,
+   "ceiling": 50001.0
+  },
+  {
+   "name": "mcp1",
+   "unit": "pg/mL",
+   "original": "MCP-1 (pg/mL)",
+   "floor": null,
+   "ceiling": null
+  },
+  {
+   "name": "mpxi",
+   "unit": "index",
+   "original": "MPXI",
+   "floor": null,
+   "ceiling": null
+  },
+  {
+   "name": "cohort",
+   "unit": "1/2",
+   "original": "derived from Case number (package step 4)",
+   "floor": null,
+   "ceiling": null
+  }
+ ],
+ "records": [
+  {
+   "dog_id": "S-CB050:d136",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "sex": "male",
+    "age_months": 24.0,
+    "wbc": 4.83,
+    "neut_seg": 3.14,
+    "neut_band": 0.43,
+    "il2": 20.3,
+    "il6": 53.5,
+    "il8": 79.5,
+    "il10": 532.2,
+    "il18": 57.0,
+    "gmcsf": 27.5,
+    "mcp1": 791.4,
+    "mpxi": 32.3,
+    "cohort": 1
+   },
+   "censored": {}
+  },
+  {
+   "dog_id": "S-CB050:d098",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "sex": "female",
+    "age_months": 24.0,
+    "weight_kg": 14.4,
+    "wbc": 16.33,
+    "neut_seg": 10.45,
+    "neut_band": 2.29,
+    "il2": 31.9,
+    "il6": 62.9,
+    "il8": 6186.0,
+    "il10": 244.1,
+    "il18": 66.3,
+    "gmcsf": 29.2,
+    "mcp1": 314.5,
+    "mpxi": 19.8,
+    "cohort": 1
+   },
+   "censored": {}
+  },
+  {
+   "dog_id": "S-CB050:d081",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "sex": "male",
+    "age_months": 72.0,
+    "weight_kg": 11.0,
+    "wbc": 5.64,
+    "neut_seg": 4.4,
+    "neut_band": 0.34,
+    "il2": 617.3,
+    "il6": 569.1,
+    "il8": 1393.2,
+    "il10": 437.3,
+    "il18": 1766.6,
+    "gmcsf": 492.9,
+    "mcp1": 667.0,
+    "mpxi": 16.9,
+    "cohort": 1
+   },
+   "censored": {}
+  },
+  {
+   "dog_id": "S-CB050:d034",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "sex": "male",
+    "age_months": 15.0,
+    "weight_kg": 11.0,
+    "wbc": 4.11,
+    "neut_seg": 3.04,
+    "neut_band": 0.08,
+    "il2": 3.4,
+    "il6": 28.1,
+    "il8": 125.7,
+    "il10": 4762.5,
+    "il18": 32.4,
+    "gmcsf": 15.6,
+    "mcp1": 315.5,
+    "mpxi": 27.4,
+    "cohort": 1
+   },
+   "censored": {
+    "il2": "floor"
+   }
+  },
+  {
+   "dog_id": "S-CB050:d140",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "sex": "female",
+    "age_months": 48.0,
+    "wbc": 4.46,
+    "neut_seg": 2.99,
+    "neut_band": 0.04,
+    "il2": 69.7,
+    "il6": 138.4,
+    "il8": 45.1,
+    "il10": 1167.5,
+    "il18": 339.1,
+    "gmcsf": 133.4,
+    "mcp1": 519.8,
+    "mpxi": 31.7,
+    "cohort": 1
+   },
+   "censored": {}
+  },
+  {
+   "dog_id": "S-CB050:d061",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "sex": "male",
+    "age_months": 36.0,
+    "weight_kg": 22.8,
+    "wbc": 17.61,
+    "neut_seg": 12.33,
+    "neut_band": 1.58,
+    "il2": 13.1,
+    "il6": 26.5,
+    "il8": 1310.4,
+    "il10": 391.5,
+    "il18": 29.9,
+    "gmcsf": 13.9,
+    "mcp1": 348.5,
+    "mpxi": 34.2,
+    "cohort": 1
+   },
+   "censored": {}
+  },
+  {
+   "dog_id": "S-CB050:d008",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "sex": "female",
+    "age_months": 19.0,
+    "wbc": 11.09,
+    "neut_seg": 5.77,
+    "neut_band": 0.22,
+    "il2": 12.2,
+    "il6": 21.8,
+    "il8": 687.2,
+    "il10": 1833.6,
+    "il18": 48.7,
+    "gmcsf": 18.2,
+    "mcp1": 198.9,
+    "mpxi": 21.7,
+    "cohort": 1
+   },
+   "censored": {}
+  },
+  {
+   "dog_id": "S-CB050:d013",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "sex": "male",
+    "age_months": 12.0,
+    "wbc": 8.98,
+    "neut_seg": 5.75,
+    "neut_band": 0.0,
+    "il2": 29.2,
+    "il6": 121.1,
+    "il8": 133.4,
+    "il10": 370.2,
+    "il18": 129.5,
+    "gmcsf": 61.0,
+    "mcp1": 673.0,
+    "mpxi": 35.3,
+    "cohort": 1
+   },
+   "censored": {}
+  },
+  {
+   "dog_id": "S-CB050:d082",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "sex": "male",
+    "age_months": 7.0,
+    "wbc": 5.82,
+    "neut_seg": 3.72,
+    "neut_band": 0.17,
+    "il2": 3.4,
+    "il6": 28.1,
+    "il8": 21.6,
+    "il10": 4756.6,
+    "il18": 22.3,
+    "gmcsf": 9.1,
+    "mcp1": 424.1,
+    "mpxi": 32.8,
+    "cohort": 1
+   },
+   "censored": {
+    "il2": "floor",
+    "gmcsf": "floor"
+   }
+  },
+  {
+   "dog_id": "S-CB050:d046",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "sex": "female",
+    "age_months": 24.0,
+    "wbc": 4.39,
+    "neut_seg": 2.33,
+    "neut_band": 0.31,
+    "il2": 92.4,
+    "il6": 128.9,
+    "il8": 141.1,
+    "il10": 1535.9,
+    "il18": 231.9,
+    "gmcsf": 159.8,
+    "mcp1": 527.6,
+    "mpxi": 33.6,
+    "cohort": 1
+   },
+   "censored": {}
+  },
+  {
+   "dog_id": "S-CB050:d023",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "sex": "male",
+    "age_months": 4.0,
+    "weight_kg": 8.4,
+    "wbc": 15.22,
+    "neut_seg": 9.59,
+    "neut_band": 2.28,
+    "il2": 22.0,
+    "il6": 133.7,
+    "il8": 5488.8,
+    "il10": 332.5,
+    "il18": 48.7,
+    "gmcsf": 25.0,
+    "mcp1": 293.9,
+    "mpxi": 33.9,
+    "cohort": 1
+   },
+   "censored": {}
+  },
+  {
+   "dog_id": "S-CB050:d116",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "sex": "female",
+    "age_months": 10.0,
+    "weight_kg": 26.0,
+    "wbc": 6.63,
+    "neut_seg": 4.77,
+    "neut_band": 0.07,
+    "il2": 3.4,
+    "il6": 29.7,
+    "il8": 8748.6,
+    "il10": 432.4,
+    "il18": 17.3,
+    "gmcsf": 9.1,
+    "mcp1": 262.6,
+    "mpxi": 18.6,
+    "cohort": 1
+   },
+   "censored": {
+    "il2": "floor",
+    "gmcsf": "floor"
+   }
+  },
+  {
+   "dog_id": "S-CB050:d017",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "sex": "male",
+    "age_months": 79.0,
+    "weight_kg": 40.4,
+    "wbc": 16.64,
+    "neut_seg": 9.48,
+    "neut_band": 1.66,
+    "il2": 3.4,
+    "il6": 25.0,
+    "il8": 21.6,
+    "il10": 951.5,
+    "il18": 5.7,
+    "gmcsf": 9.1,
+    "mcp1": 620.7,
+    "mpxi": 22.7,
+    "cohort": 1
+   },
+   "censored": {
+    "il2": "floor",
+    "il18": "floor",
+    "gmcsf": "floor"
+   }
+  },
+  {
+   "dog_id": "S-CB050:d128",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "sex": "female",
+    "age_months": 6.0,
+    "weight_kg": 6.8,
+    "wbc": 21.06,
+    "neut_seg": 17.06,
+    "neut_band": 0.42,
+    "il2": 3.4,
+    "il6": 39.3,
+    "il8": 3561.9,
+    "il10": 334.2,
+    "il18": 18.5,
+    "gmcsf": 9.1,
+    "mcp1": 198.2,
+    "mpxi": 25.2,
+    "cohort": 1
+   },
+   "censored": {
+    "il2": "floor",
+    "gmcsf": "floor"
+   }
+  },
+  {
+   "dog_id": "S-CB050:d145",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "sex": "male",
+    "age_months": 20.0,
+    "weight_kg": 15.0,
+    "wbc": 6.66,
+    "neut_seg": 4.33,
+    "neut_band": 0.13,
+    "il2": 45.2,
+    "il6": 171.4,
+    "il8": 2404.1,
+    "il10": 8189.7,
+    "il18": 169.3,
+    "gmcsf": 110.4,
+    "mcp1": 613.6,
+    "mpxi": 29.4,
+    "cohort": 1
+   },
+   "censored": {}
+  },
+  {
+   "dog_id": "S-CB050:d044",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "sex": "male",
+    "age_months": 9.0,
+    "weight_kg": 29.8,
+    "wbc": 7.79,
+    "neut_seg": 6.15,
+    "neut_band": 0.31,
+    "il2": 2529.7,
+    "il6": 9315.4,
+    "il8": 292.9,
+    "il10": 437.3,
+    "il18": 745.1,
+    "gmcsf": 1039.9,
+    "mcp1": 1854.0,
+    "mpxi": 28.5,
+    "cohort": 1
+   },
+   "censored": {}
+  },
+  {
+   "dog_id": "S-CB050:d101",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "sex": "male",
+    "age_months": 12.0,
+    "weight_kg": 35.0,
+    "wbc": 6.36,
+    "neut_seg": 3.24,
+    "neut_band": 0.19,
+    "il2": 135.9,
+    "il6": 268.3,
+    "il8": 3376.8,
+    "il10": 381.7,
+    "il18": 163.4,
+    "gmcsf": 85.3,
+    "mcp1": 415.9,
+    "mpxi": 20.0,
+    "cohort": 1
+   },
+   "censored": {}
+  },
+  {
+   "dog_id": "S-CB050:d111",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "sex": "male",
+    "age_months": 12.0,
+    "weight_kg": 4.1,
+    "wbc": 2.9,
+    "neut_seg": 1.39,
+    "neut_band": 0.17,
+    "il2": 34.5,
+    "il6": 56.6,
+    "il8": 3117.8,
+    "il10": 1134.8,
+    "il18": 86.2,
+    "gmcsf": 19.0,
+    "mcp1": 358.5,
+    "mpxi": 17.7,
+    "cohort": 1
+   },
+   "censored": {}
+  },
+  {
+   "dog_id": "S-CB050:d105",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "sex": "female",
+    "age_months": 53.0,
+    "weight_kg": 33.0,
+    "wbc": 8.54,
+    "neut_seg": 4.36,
+    "neut_band": 2.56,
+    "il2": 34.5,
+    "il6": 94.4,
+    "il8": 57.3,
+    "il10": 811.8,
+    "il18": 52.3,
+    "gmcsf": 40.3,
+    "mcp1": 742.1,
+    "mpxi": 14.0,
+    "cohort": 1
+   },
+   "censored": {}
+  },
+  {
+   "dog_id": "S-CB050:d149",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "sex": "female",
+    "age_months": 6.0,
+    "weight_kg": 10.4,
+    "wbc": 7.87,
+    "neut_seg": 4.09,
+    "neut_band": 0.31,
+    "il2": 74.2,
+    "il6": 165.1,
+    "il8": 2313.8,
+    "il10": 128.7,
+    "il18": 124.8,
+    "gmcsf": 112.4,
+    "mcp1": 293.5,
+    "mpxi": 17.7,
+    "cohort": 1
+   },
+   "censored": {}
+  },
+  {
+   "dog_id": "S-CB050:d052",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "sex": "female",
+    "age_months": 2.0,
+    "wbc": 5.78,
+    "neut_seg": 3.47,
+    "neut_band": 0.46,
+    "il2": 53.4,
+    "il6": 86.5,
+    "il8": 791.8,
+    "il10": 1590.3,
+    "il18": 82.7,
+    "gmcsf": 62.3,
+    "mcp1": 657.1,
+    "mpxi": 25.7,
+    "cohort": 1
+   },
+   "censored": {}
+  },
+  {
+   "dog_id": "S-CB050:d153",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "sex": "male",
+    "age_months": 10.0,
+    "weight_kg": 25.0,
+    "wbc": 11.22,
+    "neut_seg": 8.53,
+    "neut_band": 1.01,
+    "il2": 19.4,
+    "il6": 55.1,
+    "il8": 2577.1,
+    "il10": 162.7,
+    "il18": 43.7,
+    "gmcsf": 20.7,
+    "mcp1": 211.4,
+    "mpxi": 16.8,
+    "cohort": 1
+   },
+   "censored": {}
+  },
+  {
+   "dog_id": "S-CB050:d112",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "sex": "male",
+    "age_months": 32.0,
+    "weight_kg": 10.8,
+    "wbc": 3.73,
+    "neut_seg": 2.54,
+    "neut_band": 0.45,
+    "il2": 2389.8,
+    "il6": 6718.3,
+    "il8": 5639.0,
+    "il10": 12786.5,
+    "il18": 2249.8,
+    "gmcsf": 2920.8,
+    "mcp1": 5950.5,
+    "mpxi": 28.7,
+    "cohort": 1
+   },
+   "censored": {}
+  },
+  {
+   "dog_id": "S-CB050:d100",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "sex": "male",
+    "age_months": 84.0,
+    "weight_kg": 65.0,
+    "wbc": 16.6,
+    "neut_seg": 10.62,
+    "neut_band": 1.83,
+    "il2": 53.4,
+    "il6": 64.5,
+    "il8": 10065.4,
+    "il10": 628.8,
+    "il18": 97.9,
+    "gmcsf": 75.9,
+    "mcp1": 307.0,
+    "mpxi": 16.1,
+    "cohort": 1
+   },
+   "censored": {}
+  },
+  {
+   "dog_id": "S-CB050:d071",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "sex": "female",
+    "age_months": 3.0,
+    "weight_kg": 10.4,
+    "wbc": 7.44,
+    "neut_seg": 2.98,
+    "neut_band": 0.0,
+    "il2": 3.4,
+    "il6": 18.6,
+    "il8": 857.8,
+    "il10": 412.8,
+    "il18": 16.0,
+    "gmcsf": 9.1,
+    "mcp1": 769.0,
+    "mpxi": 14.9,
+    "cohort": 1
+   },
+   "censored": {
+    "il2": "floor",
+    "gmcsf": "floor"
+   }
+  },
+  {
+   "dog_id": "S-CB050:d124",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "sex": "male",
+    "age_months": 3.0,
+    "weight_kg": 11.4,
+    "wbc": 7.38,
+    "neut_seg": 4.72,
+    "neut_band": 0.07,
+    "il2": 3.4,
+    "il6": 29.7,
+    "il8": 1964.7,
+    "il10": 969.7,
+    "il18": 32.4,
+    "gmcsf": 9.1,
+    "mcp1": 800.2,
+    "mpxi": 20.3,
+    "cohort": 1
+   },
+   "censored": {
+    "il2": "floor",
+    "gmcsf": "floor"
+   }
+  },
+  {
+   "dog_id": "S-CB050:d024",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "sex": "male",
+    "age_months": 7.0,
+    "weight_kg": 14.0,
+    "wbc": 4.63,
+    "neut_seg": 2.64,
+    "neut_band": 0.14,
+    "il2": 136.8,
+    "il6": 241.8,
+    "il8": 834.7,
+    "il10": 851.2,
+    "il18": 110.8,
+    "gmcsf": 119.9,
+    "mcp1": 330.1,
+    "mpxi": 17.4,
+    "cohort": 1
+   },
+   "censored": {}
+  },
+  {
+   "dog_id": "S-CB050:d113",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "sex": "male",
+    "age_months": 12.0,
+    "weight_kg": 13.4,
+    "wbc": 5.19,
+    "neut_seg": 3.32,
+    "neut_band": 0.26,
+    "il2": 273.2,
+    "il6": 495.8,
+    "il8": 171.9,
+    "il10": 3019.6,
+    "il18": 306.1,
+    "gmcsf": 204.4,
+    "mcp1": 459.5,
+    "mpxi": 21.8,
+    "cohort": 1
+   },
+   "censored": {}
+  },
+  {
+   "dog_id": "S-CB050:d099",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "sex": "female",
+    "age_months": 84.0,
+    "weight_kg": 30.0,
+    "wbc": 5.9,
+    "neut_seg": 4.78,
+    "neut_band": 0.06,
+    "il2": 37.2,
+    "il6": 99.1,
+    "il8": 21.6,
+    "il10": 555.2,
+    "il18": 31.2,
+    "gmcsf": 43.7,
+    "mcp1": 563.7,
+    "mpxi": 17.0,
+    "cohort": 1
+   },
+   "censored": {}
+  },
+  {
+   "dog_id": "S-CB050:d025",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "sex": "male",
+    "age_months": 48.0,
+    "weight_kg": 49.6,
+    "wbc": 4.29,
+    "neut_seg": 1.89,
+    "neut_band": 0.69,
+    "il2": 39.9,
+    "il6": 77.1,
+    "il8": 1097.2,
+    "il10": 607.5,
+    "il18": 67.5,
+    "gmcsf": 54.6,
+    "mcp1": 372.3,
+    "mpxi": 28.2,
+    "cohort": 1
+   },
+   "censored": {}
+  },
+  {
+   "dog_id": "S-CB050:d014",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "sex": "male",
+    "age_months": 7.0,
+    "weight_kg": 16.6,
+    "wbc": 5.78,
+    "neut_seg": 3.76,
+    "neut_band": 0.23,
+    "il2": 3.4,
+    "il6": 3.6,
+    "il8": 880.8,
+    "il10": 906.2,
+    "il18": 24.8,
+    "gmcsf": 9.1,
+    "mcp1": 323.7,
+    "mpxi": 16.5,
+    "cohort": 1
+   },
+   "censored": {
+    "il2": "floor",
+    "il6": "floor",
+    "gmcsf": "floor"
+   }
+  },
+  {
+   "dog_id": "S-CB050:d109",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "sex": "female",
+    "age_months": 48.0,
+    "weight_kg": 20.0,
+    "wbc": 6.07,
+    "neut_seg": 4.49,
+    "neut_band": 0.18,
+    "il2": 84.2,
+    "il6": 121.1,
+    "il8": 3610.1,
+    "il10": 470.0,
+    "il18": 166.9,
+    "gmcsf": 75.9,
+    "mcp1": 555.9,
+    "mpxi": 17.3,
+    "cohort": 1
+   },
+   "censored": {}
+  },
+  {
+   "dog_id": "S-CB050:d161",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "sex": "male",
+    "age_months": 18.0,
+    "weight_kg": 32.0,
+    "wbc": 6.08,
+    "neut_seg": 3.71,
+    "neut_band": 0.0,
+    "il2": 3.4,
+    "il6": 3.6,
+    "il8": 256.7,
+    "il10": 781.8,
+    "il18": 24.8,
+    "gmcsf": 9.1,
+    "mcp1": 203.3,
+    "mpxi": 15.9,
+    "cohort": 1
+   },
+   "censored": {
+    "il2": "floor",
+    "il6": "floor",
+    "gmcsf": "floor"
+   }
+  },
+  {
+   "dog_id": "S-CB050:d005",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "sex": "male",
+    "age_months": 4.0,
+    "weight_kg": 18.4,
+    "wbc": 6.73,
+    "neut_seg": 4.04,
+    "neut_band": 0.54,
+    "il2": 363.9,
+    "il6": 1925.9,
+    "il8": 2737.8,
+    "il10": 3702.9,
+    "il18": 981.2,
+    "gmcsf": 640.5,
+    "mcp1": 1665.1,
+    "mpxi": 27.4,
+    "cohort": 1
+   },
+   "censored": {}
+  },
+  {
+   "dog_id": "S-CB050:d115",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "sex": "male",
+    "age_months": 32.0,
+    "weight_kg": 33.0,
+    "wbc": 9.04,
+    "neut_seg": 4.7,
+    "neut_band": 2.35,
+    "il2": 15.9,
+    "il6": 73.2,
+    "il8": 4610.1,
+    "il10": 961.2,
+    "il18": 36.6,
+    "gmcsf": 9.1,
+    "mcp1": 527.4,
+    "mpxi": 20.6,
+    "cohort": 1
+   },
+   "censored": {
+    "gmcsf": "floor"
+   }
+  },
+  {
+   "dog_id": "S-CB050:d097",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "sex": "male",
+    "age_months": 28.0,
+    "weight_kg": 9.0,
+    "wbc": 5.32,
+    "neut_seg": 2.77,
+    "neut_band": 1.38,
+    "il2": 164.7,
+    "il6": 218.2,
+    "il8": 447.3,
+    "il10": 228.5,
+    "il18": 587.9,
+    "gmcsf": 263.8,
+    "mcp1": 544.2,
+    "mpxi": 23.8,
+    "cohort": 1
+   },
+   "censored": {}
+  },
+  {
+   "dog_id": "S-CB050:d032",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "sex": "male",
+    "age_months": 35.0,
+    "weight_kg": 13.0,
+    "wbc": 17.78,
+    "neut_seg": 11.02,
+    "neut_band": 3.2,
+    "il2": 3.4,
+    "il6": 788.0,
+    "il8": 2627.9,
+    "il10": 303.5,
+    "il18": 5.7,
+    "gmcsf": 9.1,
+    "mcp1": 500.0,
+    "mpxi": 11.0,
+    "cohort": 1
+   },
+   "censored": {
+    "il2": "floor",
+    "il18": "floor",
+    "gmcsf": "floor"
+   }
+  },
+  {
+   "dog_id": "S-CB050:d077",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "sex": "male",
+    "age_months": 24.0,
+    "weight_kg": 25.8,
+    "wbc": 5.6,
+    "neut_seg": 3.47,
+    "neut_band": 0.5,
+    "il2": 14.0,
+    "il6": 19.9,
+    "il8": 754.1,
+    "il10": 93.2,
+    "il18": 45.1,
+    "gmcsf": 20.3,
+    "mcp1": 230.8,
+    "mpxi": 19.2,
+    "cohort": 1
+   },
+   "censored": {}
+  },
+  {
+   "dog_id": "S-CB050:d158",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "sex": "female",
+    "age_months": 96.0,
+    "weight_kg": 37.0,
+    "wbc": 5.91,
+    "neut_seg": 5.44,
+    "neut_band": 0.12,
+    "il2": 103.4,
+    "il6": 229.1,
+    "il8": 111.4,
+    "il10": 512.8,
+    "il18": 142.1,
+    "gmcsf": 117.6,
+    "mcp1": 700.6,
+    "mpxi": 22.3,
+    "cohort": 1
+   },
+   "censored": {}
+  },
+  {
+   "dog_id": "S-CB050:d072",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "sex": "male",
+    "age_months": 23.0,
+    "weight_kg": 8.0,
+    "wbc": 5.19,
+    "neut_seg": 3.22,
+    "neut_band": 0.16,
+    "il2": 3.4,
+    "il6": 3.6,
+    "il8": 5693.8,
+    "il10": 197.4,
+    "il18": 22.7,
+    "gmcsf": 9.1,
+    "mcp1": 322.9,
+    "mpxi": 13.7,
+    "cohort": 1
+   },
+   "censored": {
+    "il2": "floor",
+    "il6": "floor",
+    "gmcsf": "floor"
+   }
+  },
+  {
+   "dog_id": "S-CB050:d120",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "sex": "female",
+    "age_months": 24.0,
+    "weight_kg": 7.2,
+    "wbc": 3.68,
+    "neut_seg": 2.28,
+    "neut_band": 0.26,
+    "il2": 43.3,
+    "il6": 57.4,
+    "il8": 101.0,
+    "il10": 169.7,
+    "il18": 80.6,
+    "gmcsf": 44.3,
+    "mcp1": 360.7,
+    "mpxi": 25.4,
+    "cohort": 1
+   },
+   "censored": {}
+  },
+  {
+   "dog_id": "S-CB050:d135",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "sex": "male",
+    "age_months": 144.0,
+    "weight_kg": 18.2,
+    "wbc": 5.91,
+    "neut_seg": 4.43,
+    "neut_band": 0.0,
+    "il2": 3.4,
+    "il6": 3.6,
+    "il8": 686.4,
+    "il10": 938.4,
+    "il18": 33.1,
+    "gmcsf": 9.1,
+    "mcp1": 485.0,
+    "mpxi": 17.2,
+    "cohort": 1
+   },
+   "censored": {
+    "il2": "floor",
+    "il6": "floor",
+    "gmcsf": "floor"
+   }
+  },
+  {
+   "dog_id": "S-CB050:d132",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "sex": "male",
+    "age_months": 8.0,
+    "weight_kg": 22.0,
+    "wbc": 11.49,
+    "neut_seg": 4.25,
+    "neut_band": 3.91,
+    "il2": 15.0,
+    "il6": 540.6,
+    "il8": 9608.0,
+    "il10": 97.3,
+    "il18": 43.6,
+    "gmcsf": 18.5,
+    "mcp1": 687.8,
+    "mpxi": 14.1,
+    "cohort": 1
+   },
+   "censored": {}
+  },
+  {
+   "dog_id": "S-CB050:d154",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "sex": "female",
+    "age_months": 96.0,
+    "weight_kg": 3.0,
+    "wbc": 6.22,
+    "neut_seg": 4.48,
+    "neut_band": 0.12,
+    "il2": 26.9,
+    "il6": 143.4,
+    "il8": 1066.3,
+    "il10": 889.4,
+    "il18": 49.5,
+    "gmcsf": 22.0,
+    "mcp1": 1484.3,
+    "mpxi": 25.8,
+    "cohort": 1
+   },
+   "censored": {}
+  },
+  {
+   "dog_id": "S-CB050:d092",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "sex": "male",
+    "age_months": 120.0,
+    "weight_kg": 54.0,
+    "wbc": 6.21,
+    "neut_seg": 4.04,
+    "neut_band": 0.37,
+    "il2": 3.4,
+    "il6": 3.6,
+    "il8": 50.1,
+    "il10": 140.8,
+    "il18": 31.4,
+    "gmcsf": 9.1,
+    "mcp1": 327.5,
+    "mpxi": 26.7,
+    "cohort": 1
+   },
+   "censored": {
+    "il2": "floor",
+    "il6": "floor",
+    "gmcsf": "floor"
+   }
+  },
+  {
+   "dog_id": "S-CB050:d123",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "sex": "male",
+    "age_months": 9.0,
+    "weight_kg": 28.0,
+    "wbc": 6.43,
+    "neut_seg": 4.31,
+    "neut_band": 0.32,
+    "il2": 261.5,
+    "il6": 520.5,
+    "il8": 838.1,
+    "il10": 276.1,
+    "il18": 396.1,
+    "gmcsf": 296.3,
+    "mcp1": 459.4,
+    "mpxi": 15.2,
+    "cohort": 1
+   },
+   "censored": {}
+  },
+  {
+   "dog_id": "S-CB050:d047",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "sex": "male",
+    "age_months": 78.0,
+    "weight_kg": 9.2,
+    "wbc": 3.06,
+    "neut_seg": 1.53,
+    "neut_band": 0.12,
+    "il2": 3.4,
+    "il6": 29.6,
+    "il8": 60.5,
+    "il10": 1799.5,
+    "il18": 31.4,
+    "gmcsf": 9.1,
+    "mcp1": 402.1,
+    "mpxi": 21.4,
+    "cohort": 1
+   },
+   "censored": {
+    "il2": "floor",
+    "gmcsf": "floor"
+   }
+  },
+  {
+   "dog_id": "S-CB050:d094",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "sex": "male",
+    "age_months": 11.0,
+    "weight_kg": 19.8,
+    "wbc": 3.8,
+    "neut_seg": 1.06,
+    "neut_band": 1.44,
+    "il2": 16.0,
+    "il6": 94.1,
+    "il8": 229.1,
+    "il10": 2191.9,
+    "il18": 35.7,
+    "gmcsf": 17.9,
+    "mcp1": 1470.9,
+    "mpxi": 21.2,
+    "cohort": 1
+   },
+   "censored": {}
+  },
+  {
+   "dog_id": "S-CB050:d103",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "sex": "male",
+    "age_months": 20.0,
+    "weight_kg": 15.6,
+    "wbc": 12.88,
+    "neut_seg": 11.08,
+    "neut_band": 0.9,
+    "il2": 3.4,
+    "il6": 46.2,
+    "il8": 1188.0,
+    "il10": 325.5,
+    "il18": 22.7,
+    "gmcsf": 9.1,
+    "mcp1": 883.9,
+    "mpxi": 25.5,
+    "cohort": 1
+   },
+   "censored": {
+    "il2": "floor",
+    "gmcsf": "floor"
+   }
+  },
+  {
+   "dog_id": "S-CB050:d064",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "sex": "male",
+    "age_months": 35.0,
+    "weight_kg": 33.2,
+    "wbc": 33.12,
+    "neut_seg": 20.53,
+    "neut_band": 2.65,
+    "il2": 766.1,
+    "il6": 549.5,
+    "il8": 1054.8,
+    "il10": 656.7,
+    "il18": 1097.0,
+    "gmcsf": 410.1,
+    "mcp1": 535.0,
+    "mpxi": 15.9,
+    "cohort": 1
+   },
+   "censored": {}
+  },
+  {
+   "dog_id": "S-CB050:d110",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "sex": "female",
+    "age_months": 21.0,
+    "weight_kg": 4.4,
+    "wbc": 5.18,
+    "neut_seg": 3.06,
+    "neut_band": 0.41,
+    "il2": 98.0,
+    "il6": 159.7,
+    "il8": 1851.5,
+    "il10": 78.0,
+    "il18": 97.8,
+    "gmcsf": 94.9,
+    "mcp1": 539.8,
+    "mpxi": 17.3,
+    "cohort": 1
+   },
+   "censored": {}
+  },
+  {
+   "dog_id": "S-CB050:d091",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "sex": "female",
+    "age_months": 18.0,
+    "weight_kg": 36.0,
+    "wbc": 11.36,
+    "neut_seg": 9.09,
+    "neut_band": 0.11,
+    "il2": 17.6,
+    "il6": 35.7,
+    "il8": 859.5,
+    "il10": 176.5,
+    "il18": 28.8,
+    "gmcsf": 19.8,
+    "mcp1": 651.8,
+    "mpxi": 16.6,
+    "cohort": 1
+   },
+   "censored": {}
+  },
+  {
+   "dog_id": "S-CB050:d050",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "sex": "male",
+    "age_months": 54.0,
+    "weight_kg": 14.2,
+    "wbc": 13.67,
+    "neut_seg": 7.11,
+    "neut_band": 2.32,
+    "il2": 36.6,
+    "il6": 74.0,
+    "il8": 300.8,
+    "il10": 150.1,
+    "il18": 25.3,
+    "gmcsf": 26.7,
+    "mcp1": 395.4,
+    "mpxi": 20.6,
+    "cohort": 1
+   },
+   "censored": {}
+  },
+  {
+   "dog_id": "S-CB050:d043",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "sex": "male",
+    "age_months": 10.0,
+    "wbc": 8.25,
+    "neut_seg": 4.95,
+    "neut_band": 0.58,
+    "il2": 86.6,
+    "il6": 391.4,
+    "il8": 682.4,
+    "il10": 776.3,
+    "il18": 128.7,
+    "gmcsf": 133.1,
+    "mcp1": 1218.0,
+    "mpxi": 27.8,
+    "cohort": 1
+   },
+   "censored": {}
+  },
+  {
+   "dog_id": "S-CB050:d057",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "sex": "female",
+    "age_months": 6.0,
+    "weight_kg": 3.0,
+    "wbc": 5.06,
+    "neut_seg": 3.14,
+    "neut_band": 0.71,
+    "il2": 652.4,
+    "il6": 1022.3,
+    "il8": 776.2,
+    "il10": 366.9,
+    "il18": 734.3,
+    "gmcsf": 515.3,
+    "mcp1": 1017.1,
+    "mpxi": 27.0,
+    "cohort": 1
+   },
+   "censored": {}
+  },
+  {
+   "dog_id": "S-CB050:d070",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "sex": "female",
+    "weight_kg": 7.0,
+    "wbc": 10.01,
+    "neut_seg": 7.01,
+    "neut_band": 1.0,
+    "il2": 23.7,
+    "il6": 48.8,
+    "il8": 9135.9,
+    "il10": 633.5,
+    "il18": 46.2,
+    "gmcsf": 24.2,
+    "mcp1": 426.6,
+    "mpxi": 13.6,
+    "cohort": 1
+   },
+   "censored": {}
+  },
+  {
+   "dog_id": "S-CB050:d059",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "sex": "male",
+    "age_months": 4.0,
+    "weight_kg": 13.8,
+    "wbc": 6.16,
+    "neut_seg": 4.74,
+    "neut_band": 0.06,
+    "il2": 1342.2,
+    "il6": 2300.3,
+    "il8": 1361.0,
+    "il10": 1931.6,
+    "il18": 616.1,
+    "gmcsf": 568.0,
+    "mcp1": 1424.2,
+    "mpxi": 19.5,
+    "cohort": 1
+   },
+   "censored": {}
+  },
+  {
+   "dog_id": "S-CB050:d127",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "sex": "male",
+    "age_months": 12.0,
+    "weight_kg": 21.6,
+    "wbc": 14.75,
+    "neut_seg": 11.21,
+    "neut_band": 1.77,
+    "il2": 21.4,
+    "il6": 971.5,
+    "il8": 1295.9,
+    "il10": 830.9,
+    "il18": 26.2,
+    "gmcsf": 16.0,
+    "mcp1": 1284.0,
+    "mpxi": 22.8,
+    "cohort": 1
+   },
+   "censored": {}
+  },
+  {
+   "dog_id": "S-CB050:d108",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "sex": "male",
+    "age_months": 4.0,
+    "weight_kg": 8.0,
+    "wbc": 4.62,
+    "neut_seg": 3.42,
+    "neut_band": 0.18,
+    "il2": 55.6,
+    "il6": 341.3,
+    "il8": 1662.4,
+    "il10": 2183.4,
+    "il18": 236.9,
+    "gmcsf": 133.7,
+    "mcp1": 1194.7,
+    "mpxi": 21.4,
+    "cohort": 1
+   },
+   "censored": {}
+  },
+  {
+   "dog_id": "S-CB050:d033",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "sex": "male",
+    "age_months": 40.0,
+    "weight_kg": 7.5,
+    "wbc": 2.3,
+    "neut_seg": 1.59,
+    "neut_band": 0.07,
+    "il2": 38.9,
+    "il6": 82.8,
+    "il8": 880.2,
+    "il10": 1934.4,
+    "il18": 101.4,
+    "gmcsf": 93.8,
+    "mcp1": 619.1,
+    "mpxi": 26.8,
+    "cohort": 1
+   },
+   "censored": {}
+  },
+  {
+   "dog_id": "S-CB050:d126",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "sex": "male",
+    "age_months": 37.0,
+    "weight_kg": 26.2,
+    "wbc": 23.93,
+    "neut_seg": 16.99,
+    "neut_band": 1.91,
+    "il2": 992.9,
+    "il6": 2110.0,
+    "il8": 1907.6,
+    "il10": 330.5,
+    "il18": 1338.8,
+    "gmcsf": 733.9,
+    "mcp1": 1380.2,
+    "mpxi": 29.9,
+    "cohort": 1
+   },
+   "censored": {}
+  },
+  {
+   "dog_id": "S-CB050:d104",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "sex": "female",
+    "age_months": 5.0,
+    "weight_kg": 17.8,
+    "wbc": 24.67,
+    "neut_seg": 17.27,
+    "neut_band": 2.47,
+    "il2": 25.2,
+    "il6": 92.9,
+    "il8": 685.8,
+    "il10": 130.6,
+    "il18": 35.7,
+    "gmcsf": 19.2,
+    "mcp1": 690.7,
+    "mpxi": 21.6,
+    "cohort": 1
+   },
+   "censored": {}
+  },
+  {
+   "dog_id": "S-CB050:d148",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "sex": "female",
+    "age_months": 38.0,
+    "weight_kg": 21.6,
+    "wbc": 4.75,
+    "neut_seg": 3.14,
+    "neut_band": 0.0,
+    "il2": 1606.2,
+    "il6": 3022.4,
+    "il8": 2323.8,
+    "il10": 1378.0,
+    "il18": 2800.2,
+    "gmcsf": 736.4,
+    "mcp1": 1523.7,
+    "mpxi": 16.7,
+    "cohort": 1
+   },
+   "censored": {}
+  },
+  {
+   "dog_id": "S-CB050:d084",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "sex": "female",
+    "age_months": 56.0,
+    "weight_kg": 28.2,
+    "wbc": 20.49,
+    "neut_seg": 10.86,
+    "neut_band": 2.25,
+    "il2": 13.7,
+    "il6": 35.7,
+    "il8": 4005.7,
+    "il10": 105.3,
+    "il18": 31.4,
+    "gmcsf": 19.8,
+    "mcp1": 283.1,
+    "mpxi": 21.1,
+    "cohort": 1
+   },
+   "censored": {}
+  },
+  {
+   "dog_id": "S-CB050:d068",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "sex": "female",
+    "age_months": 72.0,
+    "weight_kg": 27.0,
+    "wbc": 25.7,
+    "neut_seg": 16.96,
+    "neut_band": 1.8,
+    "il2": 3.4,
+    "il6": 74.0,
+    "il8": 1047.4,
+    "il10": 309.0,
+    "il18": 20.1,
+    "gmcsf": 9.1,
+    "mcp1": 826.3,
+    "mpxi": 26.1,
+    "cohort": 1
+   },
+   "censored": {
+    "il2": "floor",
+    "gmcsf": "floor"
+   }
+  },
+  {
+   "dog_id": "S-CB050:d002",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "sex": "female",
+    "age_months": 132.0,
+    "weight_kg": 5.8,
+    "wbc": 3.86,
+    "neut_seg": 2.7,
+    "neut_band": 0.23,
+    "il2": 375.3,
+    "il6": 663.3,
+    "il8": 362.2,
+    "il10": 48.8,
+    "il18": 865.6,
+    "gmcsf": 410.1,
+    "mcp1": 1318.8,
+    "mpxi": 20.5,
+    "cohort": 1
+   },
+   "censored": {}
+  },
+  {
+   "dog_id": "S-CB050:d080",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "sex": "female",
+    "age_months": 3.0,
+    "weight_kg": 4.6,
+    "wbc": 1.8,
+    "neut_seg": 0.14,
+    "neut_band": 0.22,
+    "il2": 29.0,
+    "il6": 516.7,
+    "il8": 11817.4,
+    "il10": 1117.3,
+    "il18": 51.5,
+    "gmcsf": 33.7,
+    "mcp1": 1819.9,
+    "mpxi": 19.2,
+    "cohort": 1
+   },
+   "censored": {}
+  },
+  {
+   "dog_id": "S-CB050:d117",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "sex": "female",
+    "age_months": 9.0,
+    "weight_kg": 24.2,
+    "wbc": 9.78,
+    "neut_seg": 5.77,
+    "neut_band": 0.78,
+    "il2": 3.4,
+    "il6": 26.6,
+    "il8": 2598.3,
+    "il10": 754.5,
+    "il18": 44.4,
+    "gmcsf": 24.2,
+    "mcp1": 568.8,
+    "mpxi": 19.1,
+    "cohort": 1
+   },
+   "censored": {
+    "il2": "floor"
+   }
+  },
+  {
+   "dog_id": "S-CB050:d156",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "sex": "male",
+    "age_months": 9.0,
+    "weight_kg": 5.2,
+    "wbc": 6.21,
+    "neut_seg": 3.35,
+    "neut_band": 0.56,
+    "il2": 3.4,
+    "il6": 3.6,
+    "il8": 3300.5,
+    "il10": 219.8,
+    "il18": 22.7,
+    "gmcsf": 9.1,
+    "mcp1": 418.5,
+    "mpxi": 19.3,
+    "cohort": 1
+   },
+   "censored": {
+    "il2": "floor",
+    "il6": "floor",
+    "gmcsf": "floor"
+   }
+  },
+  {
+   "dog_id": "S-CB050:d012",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "sex": "female",
+    "age_months": 11.0,
+    "weight_kg": 12.0,
+    "wbc": 7.35,
+    "neut_seg": 4.63,
+    "neut_band": 0.51,
+    "il2": 3.4,
+    "il6": 3.6,
+    "il8": 239.4,
+    "il10": 141.4,
+    "il18": 20.9,
+    "gmcsf": 9.1,
+    "mcp1": 396.8,
+    "mpxi": 23.3,
+    "cohort": 1
+   },
+   "censored": {
+    "il2": "floor",
+    "il6": "floor",
+    "gmcsf": "floor"
+   }
+  },
+  {
+   "dog_id": "S-CB050:d004",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "sex": "male",
+    "age_months": 4.0,
+    "weight_kg": 12.6,
+    "wbc": 7.85,
+    "neut_seg": 5.57,
+    "neut_band": 0.31,
+    "il2": 3.4,
+    "il6": 3.6,
+    "il8": 4811.9,
+    "il10": 653.4,
+    "il18": 15.7,
+    "gmcsf": 9.1,
+    "mcp1": 740.3,
+    "mpxi": 8.7,
+    "cohort": 1
+   },
+   "censored": {
+    "il2": "floor",
+    "il6": "floor",
+    "gmcsf": "floor"
+   }
+  },
+  {
+   "dog_id": "S-CB050:d007",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "sex": "male",
+    "age_months": 42.0,
+    "weight_kg": 23.2,
+    "wbc": 16.8,
+    "neut_seg": 12.26,
+    "neut_band": 0.34,
+    "il2": 3.4,
+    "il6": 53.8,
+    "il8": 2391.7,
+    "il10": 491.0,
+    "il18": 14.8,
+    "gmcsf": 9.1,
+    "mcp1": 434.7,
+    "mpxi": 18.7,
+    "cohort": 1
+   },
+   "censored": {
+    "il2": "floor",
+    "gmcsf": "floor"
+   }
+  },
+  {
+   "dog_id": "S-CB050:d065",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "sex": "male",
+    "age_months": 96.0,
+    "weight_kg": 40.0,
+    "wbc": 5.87,
+    "neut_seg": 3.52,
+    "neut_band": 0.18,
+    "il2": 3.4,
+    "il6": 38.4,
+    "il8": 1377.2,
+    "il10": 875.1,
+    "il18": 33.1,
+    "gmcsf": 19.8,
+    "mcp1": 362.6,
+    "mpxi": 16.0,
+    "cohort": 1
+   },
+   "censored": {
+    "il2": "floor"
+   }
+  },
+  {
+   "dog_id": "S-CB050:d073",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "sex": "male",
+    "age_months": 36.0,
+    "weight_kg": 20.0,
+    "wbc": 4.37,
+    "neut_seg": 2.84,
+    "neut_band": 0.0,
+    "il2": 35.9,
+    "il6": 84.1,
+    "il8": 30.5,
+    "il10": 510.9,
+    "il18": 66.0,
+    "gmcsf": 63.4,
+    "mcp1": 455.3,
+    "mpxi": 20.4,
+    "cohort": 1
+   },
+   "censored": {}
+  },
+  {
+   "dog_id": "S-CB050:d160",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "sex": "male",
+    "age_months": 18.0,
+    "weight_kg": 50.0,
+    "wbc": 12.73,
+    "neut_seg": 6.87,
+    "neut_band": 0.64,
+    "il2": 61.7,
+    "il6": 110.5,
+    "il8": 4437.8,
+    "il10": 304.0,
+    "il18": 115.9,
+    "gmcsf": 82.0,
+    "mcp1": 424.4,
+    "mpxi": 12.1,
+    "cohort": 1
+   },
+   "censored": {}
+  },
+  {
+   "dog_id": "S-CB050:d009",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "sex": "male",
+    "age_months": 24.0,
+    "weight_kg": 12.0,
+    "wbc": 6.34,
+    "neut_seg": 3.49,
+    "neut_band": 0.32,
+    "il2": 27.5,
+    "il6": 41.0,
+    "il8": 410.0,
+    "il10": 365.2,
+    "il18": 72.4,
+    "gmcsf": 42.5,
+    "mcp1": 368.1,
+    "mpxi": 22.9,
+    "cohort": 1
+   },
+   "censored": {}
+  },
+  {
+   "dog_id": "S-CB050:d037",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "sex": "male",
+    "age_months": 13.0,
+    "weight_kg": 29.4,
+    "wbc": 36.0,
+    "neut_seg": 24.48,
+    "neut_band": 5.76,
+    "il2": 16.0,
+    "il6": 401.0,
+    "il8": 1118.4,
+    "il10": 340.4,
+    "il18": 32.3,
+    "gmcsf": 16.0,
+    "mcp1": 1253.8,
+    "cohort": 1
+   },
+   "censored": {}
+  },
+  {
+   "dog_id": "S-CB050:d010",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "sex": "female",
+    "age_months": 7.0,
+    "weight_kg": 31.6,
+    "wbc": 7.14,
+    "neut_seg": 5.14,
+    "neut_band": 0.0,
+    "il2": 3.4,
+    "il6": 13.5,
+    "il8": 3029.1,
+    "il10": 251.1,
+    "il18": 20.9,
+    "gmcsf": 9.1,
+    "mcp1": 587.2,
+    "mpxi": 21.2,
+    "cohort": 1
+   },
+   "censored": {
+    "il2": "floor",
+    "gmcsf": "floor"
+   }
+  },
+  {
+   "dog_id": "S-CB050:d159",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "sex": "male",
+    "age_months": 108.0,
+    "weight_kg": 35.6,
+    "wbc": 4.69,
+    "neut_seg": 2.81,
+    "neut_band": 0.47,
+    "il2": 22.9,
+    "il6": 61.2,
+    "il8": 1377.2,
+    "il10": 620.3,
+    "il18": 41.8,
+    "gmcsf": 21.7,
+    "mcp1": 709.0,
+    "mpxi": 13.2,
+    "cohort": 1
+   },
+   "censored": {}
+  },
+  {
+   "dog_id": "S-CB050:d125",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "sex": "female",
+    "age_months": 8.0,
+    "weight_kg": 28.2,
+    "wbc": 6.29,
+    "neut_seg": 3.96,
+    "neut_band": 0.0,
+    "il2": 50001.0,
+    "il6": 50001.0,
+    "il8": 1677.8,
+    "il10": 937.2,
+    "il18": 50001.0,
+    "gmcsf": 50001.0,
+    "mcp1": 7974.3,
+    "mpxi": 20.5,
+    "cohort": 1
+   },
+   "censored": {
+    "il2": "ceiling",
+    "il6": "ceiling",
+    "il18": "ceiling",
+    "gmcsf": "ceiling"
+   }
+  },
+  {
+   "dog_id": "S-CB050:d157",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "sex": "female",
+    "age_months": 29.0,
+    "weight_kg": 12.8,
+    "wbc": 4.3,
+    "neut_seg": 1.94,
+    "neut_band": 0.73,
+    "il2": 3.4,
+    "il6": 13.8,
+    "il8": 8861.0,
+    "il10": 576.8,
+    "il18": 22.5,
+    "gmcsf": 9.1,
+    "mcp1": 472.9,
+    "mpxi": 8.9,
+    "cohort": 1
+   },
+   "censored": {
+    "il2": "floor",
+    "gmcsf": "floor"
+   }
+  },
+  {
+   "dog_id": "S-CB050:d083",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "sex": "male",
+    "age_months": 24.0,
+    "weight_kg": 38.0,
+    "wbc": 4.31,
+    "neut_seg": 3.15,
+    "neut_band": 0.3,
+    "il2": 546.3,
+    "il6": 860.0,
+    "il8": 840.0,
+    "il10": 837.5,
+    "il18": 1625.4,
+    "gmcsf": 720.2,
+    "mcp1": 927.9,
+    "mpxi": 11.2,
+    "cohort": 1
+   },
+   "censored": {}
+  },
+  {
+   "dog_id": "S-CB050:d114",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "sex": "male",
+    "age_months": 96.0,
+    "weight_kg": 19.0,
+    "wbc": 19.09,
+    "neut_seg": 13.55,
+    "neut_band": 3.25,
+    "il2": 16.0,
+    "il6": 91.2,
+    "il8": 36889.7,
+    "il10": 747.9,
+    "il18": 53.0,
+    "gmcsf": 69.8,
+    "mcp1": 1021.6,
+    "mpxi": 25.6,
+    "cohort": 1
+   },
+   "censored": {}
+  },
+  {
+   "dog_id": "S-CB050:d087",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "sex": "female",
+    "age_months": 9.0,
+    "wbc": 4.12,
+    "neut_seg": 0.91,
+    "neut_band": 0.99,
+    "il2": 28.2,
+    "il6": 1122.4,
+    "il8": 1008.4,
+    "il10": 2680.1,
+    "il18": 47.4,
+    "gmcsf": 29.3,
+    "mcp1": 1690.2,
+    "mpxi": 25.6,
+    "cohort": 1
+   },
+   "censored": {}
+  },
+  {
+   "dog_id": "S-CB050:d141",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "sex": "male",
+    "age_months": 36.0,
+    "weight_kg": 18.6,
+    "wbc": 4.99,
+    "neut_seg": 3.79,
+    "neut_band": 0.4,
+    "il2": 165.5,
+    "il6": 499.7,
+    "il8": 242.6,
+    "il10": 867.6,
+    "il18": 182.3,
+    "gmcsf": 113.1,
+    "mcp1": 563.1,
+    "mpxi": 18.6,
+    "cohort": 1
+   },
+   "censored": {}
+  },
+  {
+   "dog_id": "S-CB050:d134",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "sex": "male",
+    "age_months": 96.0,
+    "weight_kg": 38.0,
+    "wbc": 5.69,
+    "neut_seg": 4.04,
+    "neut_band": 0.11,
+    "il2": 174.1,
+    "il6": 835.5,
+    "il8": 385.3,
+    "il10": 1240.4,
+    "il18": 471.2,
+    "gmcsf": 257.2,
+    "mcp1": 1815.7,
+    "mpxi": 19.9,
+    "cohort": 1
+   },
+   "censored": {}
+  },
+  {
+   "dog_id": "S-CB050:d139",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "sex": "male",
+    "age_months": 12.0,
+    "weight_kg": 20.0,
+    "wbc": 13.08,
+    "neut_seg": 8.24,
+    "neut_band": 1.05,
+    "il2": 3.4,
+    "il6": 910.9,
+    "il8": 7450.7,
+    "il10": 4571.4,
+    "il18": 19.1,
+    "gmcsf": 9.1,
+    "mcp1": 664.7,
+    "mpxi": 20.5,
+    "cohort": 1
+   },
+   "censored": {
+    "il2": "floor",
+    "gmcsf": "floor"
+   }
+  },
+  {
+   "dog_id": "S-CB050:d118",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "sex": "male",
+    "age_months": 36.0,
+    "weight_kg": 9.0,
+    "wbc": 3.34,
+    "neut_seg": 2.47,
+    "neut_band": 0.2,
+    "il2": 1256.8,
+    "il6": 2690.7,
+    "il8": 68.8,
+    "il10": 357.1,
+    "il18": 1792.4,
+    "gmcsf": 1181.5,
+    "mcp1": 1283.0,
+    "mpxi": 28.2,
+    "cohort": 1
+   },
+   "censored": {}
+  },
+  {
+   "dog_id": "S-CB050:d051",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "sex": "female",
+    "age_months": 24.0,
+    "weight_kg": 25.6,
+    "wbc": 6.38,
+    "neut_seg": 4.72,
+    "neut_band": 0.06,
+    "il2": 3.4,
+    "il6": 3.6,
+    "il8": 321.9,
+    "il10": 768.5,
+    "il18": 20.2,
+    "gmcsf": 9.1,
+    "mcp1": 365.7,
+    "mpxi": 19.5,
+    "cohort": 1
+   },
+   "censored": {
+    "il2": "floor",
+    "il6": "floor",
+    "gmcsf": "floor"
+   }
+  },
+  {
+   "dog_id": "S-CB050:d058",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "sex": "male",
+    "age_months": 12.0,
+    "weight_kg": 14.2,
+    "wbc": 5.56,
+    "neut_seg": 3.06,
+    "neut_band": 0.78,
+    "il2": 2716.1,
+    "il6": 3599.7,
+    "il8": 2287.5,
+    "il10": 2840.3,
+    "il18": 4936.7,
+    "gmcsf": 2446.3,
+    "mcp1": 707.6,
+    "mpxi": 29.2,
+    "cohort": 1
+   },
+   "censored": {}
+  },
+  {
+   "dog_id": "S-CB050:d107",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "sex": "female",
+    "age_months": 36.0,
+    "weight_kg": 6.6,
+    "wbc": 4.72,
+    "neut_seg": 2.55,
+    "neut_band": 0.47,
+    "il2": 112.4,
+    "il6": 135.0,
+    "il8": 551.6,
+    "il10": 1669.9,
+    "il18": 175.9,
+    "gmcsf": 127.1,
+    "mcp1": 537.9,
+    "mpxi": 26.9,
+    "cohort": 1
+   },
+   "censored": {}
+  },
+  {
+   "dog_id": "S-CB050:d074",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "sex": "male",
+    "age_months": 3.0,
+    "weight_kg": 8.6,
+    "wbc": 3.06,
+    "neut_seg": 0.92,
+    "neut_band": 0.24,
+    "il2": 3.4,
+    "il6": 47.2,
+    "il8": 314.0,
+    "il10": 1673.6,
+    "il18": 23.7,
+    "gmcsf": 13.0,
+    "mcp1": 732.0,
+    "mpxi": 21.1,
+    "cohort": 1
+   },
+   "censored": {
+    "il2": "floor"
+   }
+  },
+  {
+   "dog_id": "S-CB050:d062",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "sex": "male",
+    "age_months": 6.0,
+    "weight_kg": 20.2,
+    "wbc": 10.9,
+    "neut_seg": 6.0,
+    "neut_band": 0.98,
+    "il2": 34.7,
+    "il6": 60.5,
+    "il8": 5686.1,
+    "il10": 313.4,
+    "il18": 66.8,
+    "gmcsf": 38.2,
+    "mcp1": 325.8,
+    "mpxi": 19.0,
+    "cohort": 1
+   },
+   "censored": {}
+  },
+  {
+   "dog_id": "S-CB050:d029",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "sex": "male",
+    "age_months": 11.0,
+    "weight_kg": 55.0,
+    "wbc": 13.94,
+    "neut_seg": 7.81,
+    "neut_band": 0.14,
+    "il2": 27.2,
+    "il6": 53.2,
+    "il8": 1252.4,
+    "il10": 325.9,
+    "il18": 56.1,
+    "gmcsf": 33.4,
+    "mcp1": 149.6,
+    "mpxi": 21.8,
+    "cohort": 1
+   },
+   "censored": {}
+  },
+  {
+   "dog_id": "S-CB050:d096",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "sex": "female",
+    "age_months": 10.0,
+    "weight_kg": 20.0,
+    "wbc": 3.62,
+    "neut_seg": 2.24,
+    "neut_band": 0.04,
+    "il2": 445.6,
+    "il6": 469.4,
+    "il8": 27723.4,
+    "il10": 846.9,
+    "il18": 680.7,
+    "gmcsf": 302.9,
+    "mcp1": 391.9,
+    "mpxi": 12.8,
+    "cohort": 1
+   },
+   "censored": {}
+  },
+  {
+   "dog_id": "S-CB050:d093",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "sex": "male",
+    "age_months": 36.0,
+    "weight_kg": 10.0,
+    "wbc": 3.58,
+    "neut_seg": 1.0,
+    "neut_band": 0.14,
+    "il2": 13768.3,
+    "il6": 19018.6,
+    "il8": 567.5,
+    "il10": 1519.2,
+    "il18": 4052.2,
+    "gmcsf": 6412.9,
+    "mcp1": 2450.5,
+    "mpxi": 19.6,
+    "cohort": 1
+   },
+   "censored": {}
+  },
+  {
+   "dog_id": "S-CB050:d150",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "sex": "male",
+    "age_months": 12.0,
+    "weight_kg": 28.8,
+    "wbc": 6.67,
+    "neut_seg": 4.54,
+    "neut_band": 0.13,
+    "il2": 14.1,
+    "il6": 102.9,
+    "il8": 804.6,
+    "il10": 140.0,
+    "il18": 39.7,
+    "gmcsf": 18.7,
+    "mcp1": 501.9,
+    "mpxi": 18.5,
+    "cohort": 1
+   },
+   "censored": {}
+  },
+  {
+   "dog_id": "S-CB050:d035",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "sex": "male",
+    "age_months": 23.0,
+    "weight_kg": 19.3,
+    "wbc": 6.27,
+    "neut_seg": 4.45,
+    "neut_band": 0.5,
+    "mpxi": 10.9,
+    "cohort": 2
+   },
+   "censored": {}
+  },
+  {
+   "dog_id": "S-CB050:d089",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "sex": "male",
+    "age_months": 11.0,
+    "weight_kg": 28.6,
+    "wbc": 5.03,
+    "neut_seg": 3.07,
+    "neut_band": 0.15,
+    "mpxi": 7.6,
+    "cohort": 2
+   },
+   "censored": {}
+  },
+  {
+   "dog_id": "S-CB050:d147",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "sex": "female",
+    "age_months": 9.0,
+    "weight_kg": 11.8,
+    "wbc": 6.38,
+    "neut_seg": 4.47,
+    "neut_band": 0.57,
+    "mpxi": 18.3,
+    "cohort": 2
+   },
+   "censored": {}
+  },
+  {
+   "dog_id": "S-CB050:d095",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "sex": "male",
+    "age_months": 9.0,
+    "weight_kg": 4.7,
+    "wbc": 5.3,
+    "neut_seg": 1.86,
+    "neut_band": 1.38,
+    "mpxi": 13.3,
+    "cohort": 2
+   },
+   "censored": {}
+  },
+  {
+   "dog_id": "S-CB050:d031",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "sex": "female",
+    "age_months": 48.0,
+    "weight_kg": 18.0,
+    "wbc": 7.14,
+    "neut_seg": 5.43,
+    "neut_band": 0.43,
+    "mpxi": 14.0,
+    "cohort": 2
+   },
+   "censored": {}
+  },
+  {
+   "dog_id": "S-CB050:d129",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "sex": "male",
+    "age_months": 43.0,
+    "weight_kg": 9.8,
+    "wbc": 5.27,
+    "neut_seg": 3.27,
+    "neut_band": 0.0,
+    "mpxi": 15.8,
+    "cohort": 2
+   },
+   "censored": {}
+  },
+  {
+   "dog_id": "S-CB050:d106",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "sex": "male",
+    "age_months": 60.0,
+    "weight_kg": 7.4,
+    "wbc": 2.55,
+    "neut_seg": 1.89,
+    "neut_band": 0.15,
+    "mpxi": 21.0,
+    "cohort": 2
+   },
+   "censored": {}
+  },
+  {
+   "dog_id": "S-CB050:d152",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "sex": "male",
+    "age_months": 24.0,
+    "weight_kg": 11.6,
+    "wbc": 11.63,
+    "neut_seg": 6.28,
+    "neut_band": 2.44,
+    "mpxi": 15.8,
+    "cohort": 2
+   },
+   "censored": {}
+  },
+  {
+   "dog_id": "S-CB050:d027",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "sex": "male",
+    "age_months": 36.0,
+    "weight_kg": 32.0,
+    "wbc": 6.01,
+    "neut_seg": 4.39,
+    "neut_band": 0.24,
+    "mpxi": 16.5,
+    "cohort": 2
+   },
+   "censored": {}
+  },
+  {
+   "dog_id": "S-CB050:d137",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "sex": "female",
+    "age_months": 6.0,
+    "weight_kg": 23.0,
+    "wbc": 6.53,
+    "neut_seg": 3.85,
+    "neut_band": 0.33,
+    "mpxi": 21.0,
+    "cohort": 2
+   },
+   "censored": {}
+  },
+  {
+   "dog_id": "S-CB050:d018",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "sex": "male",
+    "age_months": 9.0,
+    "weight_kg": 18.6,
+    "wbc": 5.58,
+    "neut_seg": 3.29,
+    "neut_band": 1.28,
+    "mpxi": 11.4,
+    "cohort": 2
+   },
+   "censored": {}
+  },
+  {
+   "dog_id": "S-CB050:d078",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "sex": "female",
+    "age_months": 3.0,
+    "weight_kg": 8.8,
+    "wbc": 23.6,
+    "neut_seg": 20.53,
+    "neut_band": 0.24,
+    "mpxi": 17.3,
+    "cohort": 2
+   },
+   "censored": {}
+  },
+  {
+   "dog_id": "S-CB050:d133",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "sex": "male",
+    "age_months": 18.0,
+    "weight_kg": 6.8,
+    "wbc": 1.99,
+    "neut_seg": 0.44,
+    "neut_band": 0.52,
+    "mpxi": 17.3,
+    "cohort": 2
+   },
+   "censored": {}
+  },
+  {
+   "dog_id": "S-CB050:d048",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "sex": "male",
+    "age_months": 19.0,
+    "weight_kg": 23.8,
+    "wbc": 4.75,
+    "neut_seg": 2.76,
+    "neut_band": 0.81,
+    "mpxi": 19.7,
+    "cohort": 2
+   },
+   "censored": {}
+  },
+  {
+   "dog_id": "S-CB050:d079",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "sex": "female",
+    "age_months": 5.0,
+    "weight_kg": 5.8,
+    "wbc": 3.2,
+    "neut_seg": 2.37,
+    "neut_band": 0.13,
+    "mpxi": 22.8,
+    "cohort": 2
+   },
+   "censored": {}
+  },
+  {
+   "dog_id": "S-CB050:d063",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "sex": "male",
+    "age_months": 6.0,
+    "weight_kg": 12.7,
+    "wbc": 6.36,
+    "neut_seg": 4.07,
+    "neut_band": 0.13,
+    "mpxi": 18.8,
+    "cohort": 2
+   },
+   "censored": {}
+  },
+  {
+   "dog_id": "S-CB050:d020",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "sex": "male",
+    "age_months": 36.0,
+    "weight_kg": 14.6,
+    "wbc": 10.21,
+    "neut_seg": 7.66,
+    "neut_band": 0.31,
+    "mpxi": 7.6,
+    "cohort": 2
+   },
+   "censored": {}
+  },
+  {
+   "dog_id": "S-CB050:d011",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "sex": "male",
+    "age_months": 24.0,
+    "weight_kg": 14.7,
+    "wbc": 11.5,
+    "neut_seg": 5.87,
+    "neut_band": 0.69,
+    "mpxi": 11.1,
+    "cohort": 2
+   },
+   "censored": {}
+  },
+  {
+   "dog_id": "S-CB050:d131",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "sex": "male",
+    "age_months": 48.0,
+    "weight_kg": 31.6,
+    "wbc": 5.02,
+    "neut_seg": 2.81,
+    "neut_band": 0.25,
+    "mpxi": 15.0,
+    "cohort": 2
+   },
+   "censored": {}
+  },
+  {
+   "dog_id": "S-CB050:d130",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "sex": "male",
+    "age_months": 72.0,
+    "weight_kg": 10.6,
+    "wbc": 7.56,
+    "neut_seg": 5.14,
+    "neut_band": 0.3,
+    "mpxi": 13.9,
+    "cohort": 2
+   },
+   "censored": {}
+  },
+  {
+   "dog_id": "S-CB050:d088",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "sex": "female",
+    "age_months": 10.0,
+    "weight_kg": 3.4,
+    "wbc": 4.2,
+    "neut_seg": 1.76,
+    "neut_band": 0.59,
+    "mpxi": 12.7,
+    "cohort": 2
+   },
+   "censored": {}
+  },
+  {
+   "dog_id": "S-CB050:d086",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "sex": "female",
+    "age_months": 10.0,
+    "weight_kg": 7.8,
+    "wbc": 3.9,
+    "neut_seg": 2.65,
+    "neut_band": 0.39,
+    "mpxi": 10.8,
+    "cohort": 2
+   },
+   "censored": {}
+  },
+  {
+   "dog_id": "S-CB050:d066",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "sex": "female",
+    "age_months": 4.0,
+    "weight_kg": 3.6,
+    "wbc": 3.76,
+    "neut_seg": 3.24,
+    "neut_band": 0.25,
+    "mpxi": 14.1,
+    "cohort": 2
+   },
+   "censored": {}
+  },
+  {
+   "dog_id": "S-CB050:d036",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "sex": "male",
+    "age_months": 18.0,
+    "weight_kg": 6.4,
+    "wbc": 3.63,
+    "neut_seg": 2.87,
+    "neut_band": 0.15,
+    "mpxi": 13.2,
+    "cohort": 2
+   },
+   "censored": {}
+  },
+  {
+   "dog_id": "S-CB050:d022",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "sex": "male",
+    "age_months": 72.0,
+    "weight_kg": 6.2,
+    "wbc": 5.8,
+    "neut_seg": 2.32,
+    "neut_band": 0.99,
+    "mpxi": 5.6,
+    "cohort": 2
+   },
+   "censored": {}
+  },
+  {
+   "dog_id": "S-CB050:d001",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "sex": "male",
+    "age_months": 30.0,
+    "weight_kg": 30.6,
+    "wbc": 103.55,
+    "neut_seg": 67.31,
+    "neut_band": 21.75,
+    "mpxi": 6.4,
+    "cohort": 2
+   },
+   "censored": {}
+  },
+  {
+   "dog_id": "S-CB050:d039",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "sex": "male",
+    "age_months": 9.0,
+    "weight_kg": 45.6,
+    "wbc": 21.6,
+    "neut_seg": 15.12,
+    "neut_band": 0.86,
+    "mpxi": 23.7,
+    "cohort": 2
+   },
+   "censored": {}
+  },
+  {
+   "dog_id": "S-CB050:d085",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "sex": "female",
+    "age_months": 23.0,
+    "weight_kg": 20.0,
+    "wbc": 9.94,
+    "neut_seg": 8.35,
+    "neut_band": 0.4,
+    "mpxi": 20.3,
+    "cohort": 2
+   },
+   "censored": {}
+  },
+  {
+   "dog_id": "S-CB050:d056",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "sex": "male",
+    "age_months": 29.0,
+    "weight_kg": 21.0,
+    "wbc": 8.81,
+    "neut_seg": 5.81,
+    "neut_band": 0.44,
+    "mpxi": 16.2,
+    "cohort": 2
+   },
+   "censored": {}
+  },
+  {
+   "dog_id": "S-CB050:d021",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "sex": "female",
+    "age_months": 36.0,
+    "weight_kg": 6.5,
+    "wbc": 1.12,
+    "neut_seg": 0.66,
+    "neut_band": 0.09,
+    "mpxi": 13.0,
+    "cohort": 2
+   },
+   "censored": {}
+  },
+  {
+   "dog_id": "S-CB050:d028",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "sex": "male",
+    "age_months": 60.0,
+    "weight_kg": 34.0,
+    "wbc": 14.36,
+    "neut_seg": 9.19,
+    "neut_band": 2.87,
+    "mpxi": 17.7,
+    "cohort": 2
+   },
+   "censored": {}
+  },
+  {
+   "dog_id": "S-CB050:d019",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "sex": "male",
+    "age_months": 10.0,
+    "weight_kg": 26.7,
+    "wbc": 5.2,
+    "neut_seg": 3.95,
+    "neut_band": 0.16,
+    "mpxi": 9.6,
+    "cohort": 2
+   },
+   "censored": {}
+  },
+  {
+   "dog_id": "S-CB050:d142",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "sex": "female",
+    "age_months": 30.0,
+    "weight_kg": 29.0,
+    "wbc": 7.11,
+    "neut_seg": 4.55,
+    "neut_band": 0.36,
+    "mpxi": 19.9,
+    "cohort": 2
+   },
+   "censored": {}
+  },
+  {
+   "dog_id": "S-CB050:d067",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "sex": "female",
+    "age_months": 18.0,
+    "weight_kg": 6.0,
+    "wbc": 9.63,
+    "neut_seg": 8.28,
+    "neut_band": 0.1,
+    "mpxi": 19.8,
+    "cohort": 2
+   },
+   "censored": {}
+  },
+  {
+   "dog_id": "S-CB050:d102",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "sex": "female",
+    "age_months": 12.0,
+    "weight_kg": 10.6,
+    "wbc": 5.14,
+    "neut_seg": 2.26,
+    "neut_band": 0.26,
+    "mpxi": 26.4,
+    "cohort": 2
+   },
+   "censored": {}
+  },
+  {
+   "dog_id": "S-CB050:d016",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "sex": "male",
+    "age_months": 3.0,
+    "weight_kg": 11.5,
+    "wbc": 9.27,
+    "neut_seg": 7.05,
+    "neut_band": 0.65,
+    "mpxi": 20.6,
+    "cohort": 2
+   },
+   "censored": {}
+  },
+  {
+   "dog_id": "S-CB050:d069",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "sex": "male",
+    "age_months": 42.0,
+    "weight_kg": 5.6,
+    "wbc": 5.4,
+    "neut_seg": 2.16,
+    "neut_band": 0.54,
+    "mpxi": 13.9,
+    "cohort": 2
+   },
+   "censored": {}
+  },
+  {
+   "dog_id": "S-CB050:d144",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "sex": "male",
+    "age_months": 91.0,
+    "weight_kg": 9.8,
+    "wbc": 5.19,
+    "neut_seg": 2.39,
+    "neut_band": 0.42,
+    "mpxi": 15.1,
+    "cohort": 2
+   },
+   "censored": {}
+  },
+  {
+   "dog_id": "S-CB050:d003",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "sex": "male",
+    "age_months": 10.0,
+    "weight_kg": 2.6,
+    "wbc": 4.9,
+    "neut_seg": 2.65,
+    "neut_band": 0.39,
+    "mpxi": 8.9,
+    "cohort": 2
+   },
+   "censored": {}
+  },
+  {
+   "dog_id": "S-CB050:d155",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "sex": "male",
+    "age_months": 84.0,
+    "weight_kg": 8.6,
+    "wbc": 4.04,
+    "neut_seg": 2.1,
+    "neut_band": 0.0,
+    "mpxi": 14.5,
+    "cohort": 2
+   },
+   "censored": {}
+  },
+  {
+   "dog_id": "S-CB050:d121",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "sex": "male",
+    "age_months": 11.0,
+    "weight_kg": 11.6,
+    "wbc": 9.59,
+    "neut_seg": 7.1,
+    "neut_band": 0.48,
+    "mpxi": 2.5,
+    "cohort": 2
+   },
+   "censored": {}
+  },
+  {
+   "dog_id": "S-CB050:d138",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "sex": "male",
+    "age_months": 8.0,
+    "weight_kg": 12.6,
+    "wbc": 12.81,
+    "neut_seg": 7.69,
+    "neut_band": 2.18,
+    "mpxi": 6.9,
+    "cohort": 2
+   },
+   "censored": {}
+  },
+  {
+   "dog_id": "S-CB050:d026",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "sex": "female",
+    "age_months": 24.0,
+    "weight_kg": 6.8,
+    "wbc": 4.47,
+    "neut_seg": 2.99,
+    "neut_band": 0.18,
+    "mpxi": 13.3,
+    "cohort": 2
+   },
+   "censored": {}
+  },
+  {
+   "dog_id": "S-CB050:d090",
+   "group": "infected",
+   "timepoint": "admission",
+   "day": null,
+   "values": {
+    "sex": "male",
+    "age_months": 20.0,
+    "weight_kg": 8.8,
+    "wbc": 4.84,
+    "neut_seg": 1.94,
+    "neut_band": 0.19,
+    "mpxi": 13.6,
+    "cohort": 2
+   },
+   "censored": {}
+  },
+  {
+   "dog_id": "S-CB050:d054",
+   "group": "control",
+   "timepoint": "single",
+   "day": null,
+   "values": {
+    "sex": "male",
+    "age_months": 24.0,
+    "weight_kg": 40.6,
+    "wbc": 14.07,
+    "neut_seg": 9.29,
+    "neut_band": 0.0,
+    "il2": 12.2,
+    "il6": 42.4,
+    "il8": 1655.3,
+    "il10": 8.4,
+    "il18": 34.9,
+    "gmcsf": 18.2,
+    "mcp1": 115.0,
+    "mpxi": 19.9,
+    "cohort": 1
+   },
+   "censored": {
+    "il10": "floor"
+   }
+  },
+  {
+   "dog_id": "S-CB050:d045",
+   "group": "control",
+   "timepoint": "single",
+   "day": null,
+   "values": {
+    "sex": "female",
+    "age_months": 84.0,
+    "weight_kg": 34.0,
+    "wbc": 8.58,
+    "neut_seg": 5.83,
+    "neut_band": 0.0,
+    "il2": 227.3,
+    "il6": 291.7,
+    "il8": 7898.4,
+    "il10": 401.3,
+    "il18": 851.9,
+    "gmcsf": 387.7,
+    "mcp1": 278.9,
+    "mpxi": 19.2,
+    "cohort": 1
+   },
+   "censored": {}
+  },
+  {
+   "dog_id": "S-CB050:d015",
+   "group": "control",
+   "timepoint": "single",
+   "day": null,
+   "values": {
+    "sex": "female",
+    "age_months": 72.0,
+    "weight_kg": 31.0,
+    "wbc": 7.8,
+    "neut_seg": 4.91,
+    "neut_band": 0.0,
+    "il2": 4162.6,
+    "il6": 4393.4,
+    "il8": 1528.1,
+    "il10": 19.5,
+    "il18": 5241.0,
+    "gmcsf": 2501.7,
+    "mcp1": 334.0,
+    "mpxi": 20.7,
+    "cohort": 1
+   },
+   "censored": {}
+  },
+  {
+   "dog_id": "S-CB050:d055",
+   "group": "control",
+   "timepoint": "single",
+   "day": null,
+   "values": {
+    "sex": "male",
+    "age_months": 84.0,
+    "weight_kg": 23.6,
+    "wbc": 12.22,
+    "neut_seg": 8.55,
+    "neut_band": 0.24,
+    "il2": 3.4,
+    "il6": 16.1,
+    "il8": 837.3,
+    "il10": 1015.8,
+    "il18": 15.7,
+    "gmcsf": 16.6,
+    "mcp1": 20.9,
+    "mpxi": 20.0,
+    "cohort": 1
+   },
+   "censored": {
+    "il2": "floor"
+   }
+  },
+  {
+   "dog_id": "S-CB050:d053",
+   "group": "control",
+   "timepoint": "single",
+   "day": null,
+   "values": {
+    "sex": "female",
+    "age_months": 24.0,
+    "weight_kg": 30.0,
+    "wbc": 11.6,
+    "neut_seg": 5.8,
+    "neut_band": 0.0,
+    "il2": 16.0,
+    "il6": 43.6,
+    "il8": 2930.3,
+    "il10": 56.6,
+    "il18": 32.3,
+    "gmcsf": 27.4,
+    "mcp1": 234.5,
+    "mpxi": 12.5,
+    "cohort": 1
+   },
+   "censored": {}
+  },
+  {
+   "dog_id": "S-CB050:d122",
+   "group": "control",
+   "timepoint": "single",
+   "day": null,
+   "values": {
+    "sex": "female",
+    "age_months": 84.0,
+    "wbc": 8.05,
+    "neut_seg": 5.31,
+    "neut_band": 0.08,
+    "il2": 34.3,
+    "il6": 68.9,
+    "il8": 3769.1,
+    "il10": 280.9,
+    "il18": 43.6,
+    "gmcsf": 21.1,
+    "mcp1": 208.6,
+    "mpxi": 21.9,
+    "cohort": 1
+   },
+   "censored": {}
+  },
+  {
+   "dog_id": "S-CB050:d076",
+   "group": "control",
+   "timepoint": "single",
+   "day": null,
+   "values": {
+    "sex": "female",
+    "age_months": 48.0,
+    "weight_kg": 15.0,
+    "wbc": 8.99,
+    "neut_seg": 4.14,
+    "neut_band": 0.0,
+    "il2": 13.1,
+    "il6": 23.4,
+    "il8": 4063.1,
+    "il10": 6612.4,
+    "il18": 24.8,
+    "gmcsf": 9.1,
+    "mcp1": 174.2,
+    "mpxi": 16.0,
+    "cohort": 1
+   },
+   "censored": {
+    "gmcsf": "floor"
+   }
+  },
+  {
+   "dog_id": "S-CB050:d060",
+   "group": "control",
+   "timepoint": "single",
+   "day": null,
+   "values": {
+    "sex": "female",
+    "age_months": 64.0,
+    "weight_kg": 8.8,
+    "wbc": 10.57,
+    "neut_seg": 7.5,
+    "neut_band": 0.11,
+    "il2": 405.5,
+    "il6": 663.1,
+    "il8": 4886.1,
+    "il10": 8.4,
+    "il18": 367.1,
+    "gmcsf": 9.1,
+    "mcp1": 275.3,
+    "mpxi": 20.4,
+    "cohort": 1
+   },
+   "censored": {
+    "il10": "floor",
+    "gmcsf": "floor"
+   }
+  },
+  {
+   "dog_id": "S-CB050:d042",
+   "group": "control",
+   "timepoint": "single",
+   "day": null,
+   "values": {
+    "sex": "male",
+    "age_months": 78.0,
+    "weight_kg": 35.0,
+    "wbc": 4.72,
+    "neut_seg": 3.12,
+    "neut_band": 0.0,
+    "il2": 3.4,
+    "il6": 3.6,
+    "il8": 1291.1,
+    "il10": 8.4,
+    "il18": 5.7,
+    "gmcsf": 9.1,
+    "mcp1": 94.5,
+    "mpxi": 19.1,
+    "cohort": 1
+   },
+   "censored": {
+    "il2": "floor",
+    "il6": "floor",
+    "il10": "floor",
+    "il18": "floor",
+    "gmcsf": "floor"
+   }
+  },
+  {
+   "dog_id": "S-CB050:d151",
+   "group": "control",
+   "timepoint": "single",
+   "day": null,
+   "values": {
+    "sex": "female",
+    "age_months": 84.0,
+    "weight_kg": 27.0,
+    "wbc": 10.84,
+    "neut_seg": 7.59,
+    "neut_band": 0.11,
+    "il2": 12.2,
+    "il6": 26.5,
+    "il8": 6033.5,
+    "il10": 30.5,
+    "il18": 33.7,
+    "gmcsf": 34.5,
+    "mcp1": 103.8,
+    "mpxi": 17.7,
+    "cohort": 1
+   },
+   "censored": {}
+  },
+  {
+   "dog_id": "S-CB050:d040",
+   "group": "control",
+   "timepoint": "single",
+   "day": null,
+   "values": {
+    "sex": "male",
+    "age_months": 18.0,
+    "weight_kg": 65.0,
+    "wbc": 7.86,
+    "neut_seg": 3.54,
+    "neut_band": 0.24,
+    "il2": 937.0,
+    "il6": 1355.5,
+    "il8": 1261.0,
+    "il10": 8.4,
+    "il18": 1393.5,
+    "gmcsf": 783.3,
+    "mcp1": 270.7,
+    "mpxi": 13.5,
+    "cohort": 1
+   },
+   "censored": {
+    "il10": "floor"
+   }
+  },
+  {
+   "dog_id": "S-CB050:d146",
+   "group": "control",
+   "timepoint": "single",
+   "day": null,
+   "values": {
+    "sex": "male",
+    "age_months": 3.0,
+    "weight_kg": 9.0,
+    "wbc": 17.23,
+    "neut_seg": 8.96,
+    "neut_band": 0.17,
+    "il2": 19.0,
+    "il6": 29.7,
+    "il8": 5810.5,
+    "il10": 135.9,
+    "il18": 53.1,
+    "gmcsf": 21.8,
+    "mcp1": 211.7,
+    "mpxi": 10.0,
+    "cohort": 1
+   },
+   "censored": {}
+  },
+  {
+   "dog_id": "S-CB050:d143",
+   "group": "control",
+   "timepoint": "single",
+   "day": null,
+   "values": {
+    "sex": "female",
+    "age_months": 3.0,
+    "weight_kg": 8.0,
+    "wbc": 13.28,
+    "neut_seg": 6.11,
+    "neut_band": 0.0,
+    "il2": 168.2,
+    "il6": 189.3,
+    "il8": 3998.5,
+    "il10": 95.5,
+    "il18": 264.1,
+    "gmcsf": 166.3,
+    "mcp1": 321.2,
+    "mpxi": 10.4,
+    "cohort": 1
+   },
+   "censored": {}
+  },
+  {
+   "dog_id": "S-CB050:d030",
+   "group": "control",
+   "timepoint": "single",
+   "day": null,
+   "values": {
+    "sex": "female",
+    "age_months": 27.0,
+    "weight_kg": 29.0,
+    "wbc": 8.39,
+    "neut_seg": 4.2,
+    "neut_band": 0.08,
+    "il2": 54.0,
+    "il6": 348.3,
+    "il8": 3316.7,
+    "il10": 8.4,
+    "il18": 420.1,
+    "gmcsf": 125.8,
+    "mcp1": 222.6,
+    "mpxi": 15.2,
+    "cohort": 1
+   },
+   "censored": {
+    "il10": "floor"
+   }
+  },
+  {
+   "dog_id": "S-CB050:d006",
+   "group": "control",
+   "timepoint": "single",
+   "day": null,
+   "values": {
+    "sex": "female",
+    "age_months": 24.0,
+    "weight_kg": 23.0,
+    "wbc": 11.46,
+    "neut_seg": 5.5,
+    "neut_band": 0.0,
+    "il2": 3.4,
+    "il6": 3.6,
+    "il8": 1767.2,
+    "il10": 44.6,
+    "il18": 5.7,
+    "gmcsf": 9.1,
+    "mcp1": 160.3,
+    "mpxi": 17.5,
+    "cohort": 1
+   },
+   "censored": {
+    "il2": "floor",
+    "il6": "floor",
+    "il18": "floor",
+    "gmcsf": "floor"
+   }
+  },
+  {
+   "dog_id": "S-CB050:d049",
+   "group": "control",
+   "timepoint": "single",
+   "day": null,
+   "values": {
+    "sex": "male",
+    "age_months": 76.0,
+    "weight_kg": 30.9,
+    "wbc": 7.68,
+    "neut_seg": 5.22,
+    "neut_band": 0.0,
+    "mpxi": 8.5,
+    "cohort": 2
+   },
+   "censored": {}
+  },
+  {
+   "dog_id": "S-CB050:d119",
+   "group": "control",
+   "timepoint": "single",
+   "day": null,
+   "values": {
+    "sex": "female",
+    "age_months": 72.0,
+    "weight_kg": 35.0,
+    "wbc": 10.84,
+    "neut_seg": 6.83,
+    "neut_band": 0.11,
+    "mpxi": 18.7,
+    "cohort": 2
+   },
+   "censored": {}
+  },
+  {
+   "dog_id": "S-CB050:d041",
+   "group": "control",
+   "timepoint": "single",
+   "day": null,
+   "values": {
+    "sex": "female",
+    "age_months": 44.0,
+    "weight_kg": 30.0,
+    "wbc": 14.43,
+    "neut_seg": 7.5,
+    "neut_band": 0.0,
+    "mpxi": 14.0,
+    "cohort": 2
+   },
+   "censored": {}
+  },
+  {
+   "dog_id": "S-CB050:d038",
+   "group": "control",
+   "timepoint": "single",
+   "day": null,
+   "values": {
+    "sex": "male",
+    "age_months": 24.0,
+    "weight_kg": 20.0,
+    "wbc": 9.21,
+    "neut_seg": 5.16,
+    "neut_band": 0.0,
+    "mpxi": 11.1,
+    "cohort": 2
+   },
+   "censored": {}
+  },
+  {
+   "dog_id": "S-CB050:d075",
+   "group": "control",
+   "timepoint": "single",
+   "day": null,
+   "values": {
+    "sex": "female",
+    "age_months": 42.0,
+    "weight_kg": 25.0,
+    "wbc": 8.25,
+    "neut_seg": 5.78,
+    "neut_band": 0.0,
+    "mpxi": 15.8,
+    "cohort": 2
+   },
+   "censored": {}
+  }
+ ],
+ "cleaning_notes": [
+  "Source: one Word table, 161 data rows; decimal commas read as decimal points.",
+  "Status -> group (Infected -> infected, Control -> control). Outcome (Survived/Died) -> outcomes file 'died'; controls have Outcome 'Control' and died = null.",
+  "Original case numbers are kept only in the outcomes file (original_id); dog_id is neutral.",
+  "Gender holds only Male or Female: sex is recorded, neuter status is not in the file (no neuter variable).",
+  "values.cohort: 1 for cases 1-97 and controls 201-215 (Oct 2011 - Apr 2013, cytokines measured); 2 for cases 101-144 and controls 216-220 (2014, no cytokine columns). Cohort is confounded with assay availability and year.",
+  "Cohort 1 has 97 infected dogs in the file; the article reports 96. The article reports 140 infected in total; the file has 141. dog S-CB050:d037 has no MPXI, which may explain the published n of 140/96 for MPXI analyses (inferred, not stated).",
+  "Cytokine floors (record; the article sets values below the detection limit to the minimum detectable concentration): IL-2 3.4, IL-6 3.6, IL-10 8.4, IL-18 5.7, GM-CSF 9.1. Values equal to the floor are flagged censored = floor. Counts at floor: il2 30, il6 11, il10 5, il18 4, gmcsf 28.",
+  "Ceiling: dog S-CB050:d125 has 50001.0 in IL-2, IL-6, IL-18 and GM-CSF, read as an above-range code; kept as 50001.0 and flagged censored = ceiling (dog S-CB050:d125 gmcsf; dog S-CB050:d125 il18; dog S-CB050:d125 il2; dog S-CB050:d125 il6). S-CB517 gives the same cells as 50000.0.",
+  "IL-8 and MCP-1 have no documented floor; IL-8 has its minimum 21.6 in 3 dogs, which may be an undocumented floor (not flagged).",
+  "Missing (null): age in dog S-CB050:d070; weight in 10 dogs; MPXI in dog S-CB050:d037; all 7 cytokines in cohort 2 (49 dogs).",
+  "Blood was taken at presentation before treatment (article full text). Infected: timepoint admission; controls: single.",
+  "Never pool with S-CB517 (same dogs: cases 1-97 and controls 201-215) or with DS04 (at least 3 shared dogs, data.md).",
+  "Died includes euthanasia for poor prognosis (article full text); the label is only in the outcomes file.",
+  "No value was changed. Floating-point noise was rounded to 10 decimals."
+ ]
+}

@@ -1,0 +1,265 @@
+{
+  "family": "F4 VWF, ADAMTS13, thromboinflammation",
+  "agent_summary": "The only real gap in this family is the VWF/ADAMTS13 axis: one small study (CB446, 12 dogs vs 10 controls) measured VWF in dogs with babesiosis, without a severity contrast, and no study has measured ADAMTS13. Canine assays exist for both (VWF:Ag ELISA, ADAMTS13 activity ELISA), but neither protein is a master protein in DS07, so testing needs stored plasma. Only DS06 has them, as whole-blood gene expression. Fibrinolytic shutdown (PAI-1, alpha-2-antiplasmin) and the anticoagulant pathway (antithrombin, protein C, thrombomodulin) have already been tested against severity: 2 and 4 independent units. Most of the 70 F4-04 keyword hits only mention DIC. Surprises: alpha-2-antiplasmin rose in survivors but not in non-survivors (CB145); PAI-1 and TAFI were low at admission in B. canis, so consumption, not shutdown (CB004); and soluble EPCR (added) was measured once in uncomplicated cases only.",
+  "mechanisms": [
+    {
+      "mechanism_id": "F4-01",
+      "family": "F4 VWF, ADAMTS13, thromboinflammation",
+      "mechanism": "VWF antigen, ultra-large multimers and ADAMTS13 (ratio)",
+      "added_by_agent": "no",
+      "human_conditions": ["malaria"],
+      "hu_articles": ["HU009", "HU017"],
+      "human_key_dois": [
+        "https://doi.org/10.1371/journal.ppat.1000349",
+        "https://doi.org/10.3390/medicina61040767",
+        "https://doi.org/10.1007/s11033-026-13115-9",
+        "https://doi.org/10.1186/s12936-019-3040-3"
+      ],
+      "human_n_studies": 4,
+      "human_grade": 3,
+      "human_direction": "VWF antigen, VWF activity and ultra-large multimers higher in severe and cerebral malaria; ADAMTS13 activity lower, so the VWF/ADAMTS13 ratio is higher in severe disease",
+      "cb_confirmed": [
+        {"id": "CB446", "what": "VWF (canine ELISA; the note reports it as activity) lower in 12 infected dogs (Babesia sp.) than in 10 controls before treatment; FVIII unchanged; no severity grading", "severity_contrast": false, "cohort": null}
+      ],
+      "cb_rejected": [
+        "CB385: title only (VWF antigen, FVIII and fibrinogen in canine babesiosis); no abstract or text, not in articles.jsonl and not found in PubMed, so cannot be confirmed",
+        "CB278: review; cites a B. gibsoni study (Narayani et al. 2021) that measured VWF and propeptide before and after therapy, with no severity contrast; the primary study was not found in PubMed",
+        "CB028, CB493: reviews restating CB446",
+        "CB145: VWF named in the discussion only, not measured"
+      ],
+      "canine_pubmed": {
+        "queries": [
+          "(dog OR canine) AND babesi* AND (von Willebrand OR VWF OR ADAMTS13)",
+          "(babesiosis OR babesia) AND dogs AND (von Willebrand factor antigen OR factor VIII OR propeptide)",
+          "(dog OR canine) AND ADAMTS13 AND (activity OR assay OR ELISA)",
+          "canine von Willebrand factor antigen ELISA validation dogs",
+          "malaria AND (von Willebrand factor OR ADAMTS13) AND (severe OR mortality OR death)"
+        ],
+        "dog_babesiosis_dois": ["https://doi.org/10.1111/jvim.12146"]
+      },
+      "canine_status": "measured_no_severity",
+      "canine_severity_units": 0,
+      "canine_assay": "validated",
+      "assay_evidence": [
+        "https://doi.org/10.1177/1040638714523609",
+        "https://doi.org/10.1111/vcp.70052",
+        "https://doi.org/10.1111/jvim.12146"
+      ],
+      "dog_genes": ["VWF", "ADAMTS13"],
+      "testable_now": "public_file",
+      "testable_detail": "Not in DS07 (no master or candidate). DS06 has ENSCAFG00000015228_VWF and ENSCAFG00000019776_ADAMTS13, but this is whole-blood gene expression, a weak proxy (plasma VWF comes from endothelium and megakaryocytes, ADAMTS13 from the liver). A plasma test needs stored citrated plasma (VWF:Ag ELISA, ADAMTS13 activity ELISA).",
+      "gap": "yes",
+      "notes": "Canine VWF:Ag ELISAs are standard in von Willebrand disease testing; the validation (Can J Vet Res 2008, PMC2568046) has no DOI. ADAMTS13 has never been measured in canine babesiosis. In the one canine study, VWF fell (consumption?) where it rises in human malaria. The direction may differ between species."
+    },
+    {
+      "mechanism_id": "F4-02",
+      "family": "F4 VWF, ADAMTS13, thromboinflammation",
+      "mechanism": "Platelet activation (soluble P-selectin, platelet factor 4)",
+      "added_by_agent": "no",
+      "human_conditions": ["malaria", "sepsis"],
+      "hu_articles": [],
+      "human_key_dois": [
+        "https://doi.org/10.3233/DMA-2011-0763",
+        "https://doi.org/10.1177/1177271916684823",
+        "https://doi.org/10.1093/jpids/piz082",
+        "https://doi.org/10.1016/j.chom.2008.07.003"
+      ],
+      "human_n_studies": 1,
+      "human_grade": 1,
+      "human_direction": "plasma CXCL4/PF4 higher in fatal cerebral malaria (one small Ghanaian cohort, 12 deaths); soluble P-selectin only a non-significant trend with 30-day mortality in 313 SIRS patients; PF4 drives experimental cerebral malaria in mice",
+      "cb_confirmed": [
+        {"id": "CB504", "what": "platelet and leukocyte surface P-selectin (CD62P) and platelet-monocyte aggregates by flow cytometry, 36 B. rossi dogs (29 survived, 7 died) vs 15 controls; survivors vs non-survivors not different (underpowered)", "severity_contrast": true, "cohort": "CH03"},
+        {"id": "CB513", "what": "platelet indices (MPV, plateletcrit) as indirect activation markers, 96 B. rossi dogs by outcome", "severity_contrast": true, "cohort": "CH03"},
+        {"id": "CB034", "what": "TEG platelet mapping (AA/ADP responses), 13 complicated B. rossi dogs vs 5 controls; no outcome contrast", "severity_contrast": false, "cohort": null}
+      ],
+      "cb_rejected": [
+        "CB145: 'platelet activation' inferred from MPV, no direct marker (CH03)",
+        "CB393, CB166, CB282, CB270: platelet indices only; activation inferred, not measured",
+        "CB439, CB129, CB516: activation discussed as an explanation, not measured",
+        "CB028, CB107: reviews (CB107 cites the PF4 malaria work)",
+        "CB112: keyword hit in the proteome text; PF4 and SELP were not reported as measured"
+      ],
+      "canine_pubmed": {
+        "queries": [
+          "(dog OR canine) AND babesi* AND (P-selectin OR platelet factor 4 OR CXCL4 OR platelet activation OR thromboxane)",
+          "(dog OR canine) AND (soluble P-selectin OR platelet factor 4) AND (ELISA OR validation OR assay)",
+          "(malaria OR sepsis) AND (soluble P-selectin OR platelet factor 4) AND (severe OR mortality OR outcome)",
+          "falciparum malaria AND (P-selectin OR CXCL4 OR platelet factor 4) AND (cerebral OR fatal OR severe)",
+          "(sepsis OR septic shock) AND (P-selectin[Title] OR platelet factor 4[Title]) AND (mortality OR survival OR non-survivors)"
+        ],
+        "dog_babesiosis_dois": [
+          "https://doi.org/10.1016/j.tvjl.2015.05.008",
+          "https://doi.org/10.1111/vcp.12306",
+          "https://doi.org/10.1111/vcp.12689"
+        ]
+      },
+      "canine_status": "severity_tested",
+      "canine_severity_units": 1,
+      "canine_assay": "used_in_dogs",
+      "assay_evidence": ["https://doi.org/10.1016/j.tvjl.2015.05.008"],
+      "dog_genes": ["SELP", "PF4", "PPBP"],
+      "testable_now": "public_file",
+      "testable_detail": "DS06 has ENSCAFG00000015180_SELP and ENSCAFG00000031174_PPBP (whole-blood expression; platelet transcripts). DS07: PPBP J9P346 is master_candidate only (14% coverage), so it does not count. No soluble P-selectin or PF4 in DS02.",
+      "gap": "no",
+      "notes": "Gap 'no' only because cell-surface CD62P was compared by outcome (CB504, CH03, 7 deaths). Soluble P-selectin and PF4/CXCL4 have never been measured in canine babesiosis, and no canine validation of a soluble assay was found. Human evidence is thin (grade 1)."
+    },
+    {
+      "mechanism_id": "F4-03",
+      "family": "F4 VWF, ADAMTS13, thromboinflammation",
+      "mechanism": "Fibrinolytic shutdown (PAI-1, alpha-2-antiplasmin)",
+      "added_by_agent": "no",
+      "human_conditions": ["sepsis", "malaria"],
+      "hu_articles": [],
+      "human_key_dois": [
+        "https://doi.org/10.3389/fimmu.2018.01218",
+        "https://doi.org/10.1177/20587384211048561",
+        "https://doi.org/10.1016/j.thromres.2013.09.030"
+      ],
+      "human_n_studies": 18,
+      "human_grade": 3,
+      "human_direction": "PAI-1 higher in non-survivors and in more severe sepsis (meta-analysis of 18 studies, 4467 patients); PAI-1 high and tPA low in falciparum malaria",
+      "cb_confirmed": [
+        {"id": "CB004", "what": "PAI-1, TAFI (canine ELISA) and plasminogen in 30 B. canis dogs; complicated (11) vs uncomplicated (19) compared; PAI-1 and TAFI low at admission (consumption), TAFI higher in complicated", "severity_contrast": true, "cohort": null},
+        {"id": "CB145", "what": "alpha-2-antiplasmin and plasminogen activity, TEG LY60/CL60, D-dimer; 97 B. rossi dogs, 85 survivors vs 12 non-survivors; alpha-2-AP raised in survivors only, TEG lysis not different by outcome", "severity_contrast": true, "cohort": "CH03"},
+        {"id": "CB439", "what": "TEG including lysis, 19 uncomplicated B. rossi dogs vs 10 controls", "severity_contrast": false, "cohort": "CH36"},
+        {"id": "CB034", "what": "TEG platelet mapping, complicated vs controls", "severity_contrast": false, "cohort": null},
+        {"id": "CB476", "what": "alpha-2-antiplasmin among proteomic spots, B. canis vs controls, pooled 2DE", "severity_contrast": false, "cohort": "CH22"},
+        {"id": "CB019", "what": "alpha-2-antiplasmin phosphosite in the serum phosphoproteome, infected vs controls", "severity_contrast": false, "cohort": null}
+      ],
+      "cb_rejected": [
+        "CB028, CB259, CB493, CB107: reviews restating CB004/CB439",
+        "CB111, CB199, CB220: 'fibrinolysis' named, PAI-1/alpha-2-AP not measured",
+        "CB112: fibrinolysis GO terms enriched in proteome; individual PAI-1/alpha-2-AP contrast not confirmed"
+      ],
+      "canine_pubmed": {
+        "queries": [
+          "(dog OR canine) AND babesi* AND (fibrinolysis OR plasminogen OR antiplasmin OR PAI-1 OR thromboelastography)",
+          "(dog OR canine) AND (PAI-1 OR plasminogen activator inhibitor OR antiplasmin) AND (assay OR ELISA OR validation) AND (sepsis OR plasma)",
+          "(malaria OR sepsis) AND (plasminogen activator inhibitor-1 OR PAI-1) AND (mortality OR severe OR fatal)",
+          "(PAI-1 OR plasminogen activator inhibitor) AND sepsis AND (meta-analysis OR prospective) AND mortality AND predict",
+          "falciparum malaria AND (PAI-1 OR plasminogen activator inhibitor OR fibrinolysis) AND severe"
+        ],
+        "dog_babesiosis_dois": [
+          "https://doi.org/10.1186/s12917-017-0995-6",
+          "https://doi.org/10.3389/fvets.2026.1712262",
+          "https://doi.org/10.1111/jvim.12016",
+          "https://doi.org/10.1111/vcp.12689"
+        ]
+      },
+      "canine_status": "severity_tested",
+      "canine_severity_units": 2,
+      "canine_assay": "validated",
+      "assay_evidence": [
+        "https://doi.org/10.1186/s12917-017-0995-6",
+        "https://doi.org/10.3389/fvets.2026.1712262"
+      ],
+      "dog_genes": ["SERPINE1", "SERPINF2", "PLG"],
+      "testable_now": "public_file",
+      "testable_detail": "DS07 masters: PLG F1Q421 (28%) and Q6JDI3 (17%), SERPINF2 E2R4V3 (26%); SERPINF2 A0A5F4CB96 is master_candidate. PAI-1 (SERPINE1) not in DS07. DS06 has SERPINE1 and SERPINF2 (expression).",
+      "gap": "no",
+      "notes": "Canine-specific PAI-1 ELISA (CB004) and chromogenic alpha-2-AP activity (CB145) used. Directions conflict with the human 'shutdown' picture: in B. canis, PAI-1 is low at admission; in B. rossi, alpha-2-AP is high only in survivors. tPA-modified TEG has not been used in babesiosis."
+    },
+    {
+      "mechanism_id": "F4-04",
+      "family": "F4 VWF, ADAMTS13, thromboinflammation",
+      "mechanism": "Protein C, antithrombin and thrombomodulin (anticoagulant failure)",
+      "added_by_agent": "no",
+      "human_conditions": ["sepsis", "malaria", "babesiosis"],
+      "hu_articles": ["HU007", "HU009"],
+      "human_key_dois": [
+        "https://doi.org/10.1186/s40560-026-00862-x",
+        "https://doi.org/10.1016/j.thromres.2025.109537",
+        "https://doi.org/10.1016/j.thromres.2013.09.030",
+        "https://doi.org/10.1086/319742"
+      ],
+      "human_n_studies": 4,
+      "human_grade": 3,
+      "human_direction": "low antithrombin and protein C activity with higher mortality, organ failure and DIC in sepsis; protein C, protein S and AT low in falciparum malaria; DIC goes with severe human babesiosis",
+      "cb_confirmed": [
+        {"id": "CB438", "what": "antithrombin and protein C activity, 72 B. rossi dogs, 13 non-survivors vs 59 survivors; protein C lower in non-survivors, AT not different", "severity_contrast": true, "cohort": null},
+        {"id": "CB145", "what": "antithrombin activity, 97 B. rossi dogs; lower in non-survivors than survivors (p=0.005)", "severity_contrast": true, "cohort": "CH03"},
+        {"id": "CB004", "what": "soluble thrombomodulin (canine ELISA), 30 B. canis dogs; complicated vs uncomplicated compared (difference not significant in SV-G2 extraction)", "severity_contrast": true, "cohort": null},
+        {"id": "CB112", "what": "protein C (serum proteome, TMT LC-MS/MS) lower in complicated than uncomplicated B. rossi", "severity_contrast": true, "cohort": null},
+        {"id": "CB011", "what": "AT III, protein C, APC, EPCR, TAT; 25 uncomplicated B. canis dogs vs 10 controls", "severity_contrast": false, "cohort": "CH22"},
+        {"id": "CB374", "what": "AT III activity and TAT, 30 B. canis dogs vs 29 controls, days 0-3", "severity_contrast": false, "cohort": null},
+        {"id": "CB439", "what": "antithrombin, 19 uncomplicated B. rossi dogs vs 10 controls", "severity_contrast": false, "cohort": "CH36"},
+        {"id": "CB333", "what": "protein C activity before vs after therapy (abstract, no numbers)", "severity_contrast": false, "cohort": null},
+        {"id": "CB476", "what": "antithrombin-III among proteomic spots, infected vs controls", "severity_contrast": false, "cohort": "CH22"}
+      ],
+      "cb_rejected": [
+        "CB199 (CH13): DIC markers (SFMC, FDP, fibrinogen), no AT/PC/TM",
+        "CB005, CB079, CB038, CB047 and most of the remaining ~55 note/text hits: 'DIC' or 'disseminated intravascular coagulation' as a complication or in the discussion only",
+        "CB028, CB259, CB493, CB107, CB278: reviews"
+      ],
+      "canine_pubmed": {
+        "queries": [
+          "(dog OR canine) AND babesi* AND (antithrombin OR protein C OR thrombomodulin)",
+          "(dog OR canine) AND (protein C OR antithrombin OR thrombomodulin) AND (sepsis OR SIRS) AND (survival OR outcome)",
+          "(sepsis OR malaria) AND (protein C OR antithrombin OR thrombomodulin) AND (mortality OR severe) AND meta-analysis",
+          "(protein C[Title] OR antithrombin[Title]) AND (sepsis OR septic shock) AND (mortality OR outcome) AND (deficiency OR levels OR activity)",
+          "falciparum malaria AND (protein C OR antithrombin OR thrombomodulin) AND (severe OR cerebral OR fatal)"
+        ],
+        "dog_babesiosis_dois": [
+          "https://doi.org/10.1016/j.tvjl.2012.09.009",
+          "https://doi.org/10.3389/fvets.2026.1712262",
+          "https://doi.org/10.1186/s12917-017-0995-6",
+          "https://doi.org/10.1038/s41598-023-37312-9",
+          "https://doi.org/10.1016/j.cimid.2017.06.001",
+          "https://doi.org/10.1556/AVet.57.2009.2.10",
+          "https://doi.org/10.1111/jvim.12016"
+        ]
+      },
+      "canine_status": "severity_tested",
+      "canine_severity_units": 4,
+      "canine_assay": "validated",
+      "assay_evidence": [
+        "https://doi.org/10.1016/j.tvjl.2012.09.009",
+        "https://doi.org/10.1186/s12917-017-0995-6",
+        "https://doi.org/10.15654/TPK-150284"
+      ],
+      "dog_genes": ["PROC", "SERPINC1", "THBD"],
+      "testable_now": "public_file",
+      "testable_detail": "DS07 masters: SERPINC1 E2RES2 (antithrombin-III, 18%) and PROC Q28278 (4% coverage, low); other PROC entries are master_candidate. THBD not in DS07 or DS06. DS06 has SERPINC1 (expression).",
+      "gap": "no",
+      "notes": "Well covered: 4 independent units (CB438, CB145/CH03, CB004, CB112) compared AT, protein C or TM by severity. Protein C (CB438, CB112) and AT (CB145) are lower in severe or fatal disease. In CB438 AT did not differ, so AT results are mixed."
+    },
+    {
+      "mechanism_id": "F4-11",
+      "family": "F4 VWF, ADAMTS13, thromboinflammation",
+      "mechanism": "Soluble endothelial protein C receptor (sEPCR) shedding",
+      "added_by_agent": "yes",
+      "human_conditions": ["malaria", "sepsis"],
+      "hu_articles": [],
+      "human_key_dois": [
+        "https://doi.org/10.3390/diagnostics12020524",
+        "https://doi.org/10.1093/infdis/jiac461",
+        "https://doi.org/10.1186/s13054-018-2179-6"
+      ],
+      "human_n_studies": 2,
+      "human_grade": 2,
+      "human_direction": "sEPCR higher in severe and cerebral malaria and in children who died (Benin); higher and rising in non-survivors of pneumococcal septic shock (278 patients)",
+      "cb_confirmed": [
+        {"id": "CB011", "what": "EPCR by canine-specific ELISA, 25 uncomplicated B. canis dogs vs 10 controls; only APC differed in the PC pathway", "severity_contrast": false, "cohort": "CH22"}
+      ],
+      "cb_rejected": [],
+      "canine_pubmed": {
+        "queries": [
+          "(dog OR canine) AND (endothelial protein C receptor OR EPCR OR PROCR)",
+          "(endothelial protein C receptor OR EPCR) AND (malaria OR sepsis) AND (soluble OR plasma) AND (severe OR cerebral OR mortality)"
+        ],
+        "dog_babesiosis_dois": ["https://doi.org/10.1016/j.cimid.2017.06.001"]
+      },
+      "canine_status": "measured_no_severity",
+      "canine_severity_units": 0,
+      "canine_assay": "validated",
+      "assay_evidence": ["https://doi.org/10.1016/j.cimid.2017.06.001"],
+      "dog_genes": ["PROCR"],
+      "testable_now": "public_file",
+      "testable_detail": "DS06 has ENSCAFG00000007945_PROCR (whole-blood expression, not shed plasma protein). Not found in DS07 B_Proteins.txt descriptions. Plasma sEPCR needs stored samples (canine ELISA as in CB011).",
+      "gap": "yes",
+      "notes": "Added because EPCR loss and shedding link coagulation to sequestration in falciparum malaria (PfEMP1 binds EPCR). No Babesia ligand for EPCR is known, so the transfer rests on sepsis-type shedding rather than parasite binding. The two Benin papers may share a cohort, so they are counted as one. 'Validated' rests on a canine-specific kit (CB011), not on a formal validation study.",
+      "keywords": ["endothelial protein C receptor", "\\bEPCR\\b", "\\bsEPCR\\b", "PROCR"],
+      "ds07_desc": ["Endothelial protein C receptor"]
+    }
+  ]
+}

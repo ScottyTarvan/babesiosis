@@ -1,0 +1,37 @@
+ref,section,statement,value,species,design,n_dogs,cohort_id,read,location,note
+R1,description,Two dogs with rhabdomyolysis: muscle pain and caramel urine with acute renal failure; muscle pain and tremors with neurological signs and pulmonary oedema (died; muscle necrosis at necropsy),,B. rossi,case report,2,,abstract,Abstract,Three more dogs with pigmenturia had mildly raised muscle enzymes without obvious muscle damage
+R1,description,Proposed mechanism: inflammatory cytokines and nitric oxide,,B. rossi,case report,2,,abstract,Abstract,
+R2,diagnosis,Muscle damage defined as CK above 5 times the upper reference limit,CK above 300 U/L at 25 °C,B. rossi (reported as B. canis),retrospective cohort,91 (56 assessed for organ damage),,full text,Methods; Table 1,"Text says '>300 µmol/l', Table 1 says '>300 U/l, 25°C'; the table unit was used"
+R2,description,20 of 56 dogs assessed had muscle damage (2 single-organ; 6 of 13 double; 10 of 12 triple; 2 of 2 quadruple),20/56,B. rossi,retrospective cohort,56,,full text,Results; Figs 1 to 4,Counts summed from the figures
+R2,description,Muscle damage rose steeply with the number of organs involved: late or bystander event,,B. rossi,retrospective cohort,56,,full text,Discussion,
+R2,prognosis,Liver and muscle damage did not affect outcome; CNS involvement 57 times the chance of death; renal 5-fold,,B. rossi,retrospective cohort,84 with outcome,,full text,Results; Abstract,"Renal involvement = creatinine >150 µmol/l without dehydration"
+R2,prognosis,Mortality 45%: 32 died and 6 euthanased of 84 with known outcome,38/84,B. rossi,retrospective cohort,84,,full text,Results,Death includes euthanasia
+R2,diagnosis,No difference in CK between dogs given IV trypan blue and IM diminazene aceturate,,B. rossi,retrospective cohort,56,,full text,Methods; Results,
+R2,diagnosis,24 of 91 samples excluded for massive haemoglobinaemia and 8 for lipaemia; discolouration score 3 or more excluded,,B. rossi,retrospective cohort,91,,full text,Methods; Results,
+R3,diagnosis,Muscular involvement criterion CPK above 600 U/L; 7 of 11 complicated dogs,CK above 600 U/L; 7/11,B. canis,prospective cohort,30,,full text,Methods (Animals),Zagreb; treated with imidocarb
+R4,diagnosis,Muscular involvement criterion CPK above 600 U/L; 7 of 11 complicated dogs,CK above 600 U/L; 7/11,B. canis canis,prospective cohort,40,,full text,Methods table; Results,Zagreb 2017; may overlap with R3 (no cohort_id)
+R12,description,Muscular involvement in 2 of 7 complicated dogs,CK above 600 IU/L; 2/7,B. canis,cohort,35,CH33,full text,Methods; Results,
+R13,description,CK above reference (200 U/L) in 107 dogs of 236 tested; median 173.4 U/L; range 27 to 5214 U/L,107/236,B. canis,retrospective cohort,342,CH12,full text,Table 2,The paper gives 107 (31.3%) using 342 as denominator
+R14,description,Mild elevation of CK in the majority of 23 dogs with large Babesia,,large Babesia (B. canis),case series,23,,abstract,Abstract,Local article BG011 (background)
+R15,description,Authors state clinical rhabdomyolysis has never been described in B. canis,,B. canis,cohort,34,CH27,full text,Discussion,
+R15,diagnosis,Raised AST and AST/ALT ratio linked to renal azotaemia,,B. canis,cohort,34,CH27,full text,Abstract; Discussion,
+R10,description,Rhabdomyolysis listed as a recently identified complication of B. rossi,,B. rossi,review,,,abstract,Abstract,
+R11,description,Rhabdomyolysis is rare; muscle pain tremors pigmenturia; may come with AKI cerebral babesiosis ARDS,,mainly B. rossi,review,,,full text,Section Rhabdomyolysis,Local CB493
+R5,diagnosis,Haemoglobinuria: red plasma and anaemia; CK not markedly raised. Myoglobinuria: plasma not red; CK very high; supernatant coloured; pellet not red,,general canine,textbook,,,full text,Urinalysis: chemical constituents; heme section,Brown urine may be methaemoglobin
+R6,diagnosis,Most human studies define rhabdomyolysis as CK above 5 times the upper limit; severe from 5000 to 15000 U/L,CK above 5 x upper limit,human,systematic review,,,full text,Data synthesis: Definition,
+R6,diagnosis,Dipstick heme reacts with both haemoglobin and myoglobin; myoglobinuria if heme positive with few red cells,,human,systematic review,,,full text,Laboratory work-up,
+R6,treatment,Hyperkalaemia only electrolyte needing rapid correction; avoid calcium for hypocalcaemia; watch phosphate and calcium,,human,systematic review,,,full text,Treatment of electrolyte abnormalities,
+R6,treatment,Bicarbonate: no study compared with fluids alone; risk of paradoxical intracellular acidosis and volume overload,,human,systematic review,,,full text,Bicarbonate for prevention of AKI,
+R6,treatment,Mannitol: volume depletion and worse pre-renal azotaemia; avoid in anuria,,human,systematic review,,,full text,Mannitol,
+R6,treatment,CRRT clears myoglobin; mortality unchanged,,human,systematic review,,,full text,Continuous renal replacement therapy,
+R6,prognosis,AKI incidence 10 to 55% in rhabdomyolysis,10 to 55%,human,systematic review,,,full text,Background,
+R7,treatment,LRS bolus then infusion in a dog with amphetamine rhabdomyolysis (CK peak 181900 U/L); no AKI; discharged day 5,10 mL/kg IV bolus; then 5 mL/kg/h IV,dog (no Babesia),case report,1,,full text,Case presentation,"Quote: '10 mL/kg bolus of intravenous (IV) lactated Ringers solution (LRS) followed by a rate of 5 mL/kg/hr'"
+R7,diagnosis,Urine sediment would have allowed assessment of casts; differentials of pigmenturia include bilirubinuria,,dog (no Babesia),case report,1,,full text,Case presentation; Discussion,
+R8,treatment,Early vs late fluids and crystalloids vs colloids (weak; very low/low quality); against mannitol loop diuretics any diuretic routine bicarbonate any alkalinisation routine RRT,,human,clinical practice guideline (GRADE),,,abstract,Abstract,
+R9,treatment,Opioids mainstay in ICU; titrate from 10 to 20% of the recommended dose; NSAIDs withheld until volume cardiovascular and renal status stabilised,,dogs and cats,guideline protocol sheet,,,full text,Emergency and critical care sheet,No dose table in the sheet
+R16,diagnosis,ER sled dogs CK median 46125 vs 1743 U/L; healthy dogs may exceed 10000 U/L; ER dogs over 30000 U/L; potassium median 3.5 in ER dogs,CK above 30000 U/L; K 3.5 mmol/L,dog (no Babesia),observational cohort,19,,abstract,Abstract,Source unit for potassium: mEq/L (equal to mmol/L for K)
+R17,diagnosis,Rhabdomyolysis with CK 32856 U/L without myoglobinuria or EMG change,CK 32856 U/L,dog (no Babesia),case report,1,,abstract,Abstract,Source wrote 32.856 U/L (European decimal mark)
+R18,diagnosis,Serum myoglobin and CK strongly correlated (R = 0.91),,dog (no Babesia),observational cohort,17,,abstract,Abstract,
+R19,diagnosis,Seizures caused rhabdomyolysis and renal tubular necrosis in a dog,,dog (no Babesia),case report,1,,abstract,Abstract,
+R20,treatment,Crush rhabdomyolysis with myoglobinuria and AKI managed with intermittent haemodialysis; full recovery,,dog (no Babesia),case report,1,,abstract,Abstract,
+R21,treatment,Fenoldopam worsened renal injury vs saline in glycerol-induced rhabdomyolysis model,0.1 to 1.0 µg/kg/min IV,dog (experimental),experimental controlled study,10,,abstract,Abstract,"Quote: 'intravenous fenoldopam (0.1-1.0 microg kg(-1) min(-1))'"

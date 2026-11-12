@@ -1,10 +1,43 @@
 import { ChatCitationViewModel } from 'app/modules/ai-agent/viewmodels/chat-message.viewmodel';
 
-/** A review code as the agent cites it, e.g. CB024 (the server's `ArticleCode` regex). */
-const ARTICLE_CODE = /\b[A-Z]{2}\d{3}\b/g;
+/**
+ * A review code as the agent cites it, e.g. CB024 (the server's `ArticleCode` regex).
+ * `S-CB050` is a dataset code, not a citation of the article CB050.
+ */
+const ARTICLE_CODE = String.raw`(?<!\bS-)\b[A-Z]{2}\d{3}\b`;
 
-/** A bracketed group holding at least one code: [CB001], [CB001, CB024], [CB004 Results]. */
-const CITATION_GROUP = /\[([^\]\[]*\b[A-Z]{2}\d{3}\b[^\]\[]*)\](?!\()/g;
+/** A bracketed group that is not a Markdown link: [CB001], [CB001, CB024], [CB004 Results], [SY05]. */
+const BRACKET_GROUP = /\[([^\]\[]+)\](?!\()/g;
+
+/**
+ * A source inside the app that an answer cites by code: an experiment
+ * (`[SV-05-01-age-death]`) or a page of the clinical manual (`[SY05]`).
+ */
+export interface AgentAppLink {
+  /** The code as the agent cites it. */
+  code: string;
+  /** Other spellings the agent may use, e.g. the short form `SV-05-01`. */
+  aliases?: readonly string[];
+  /** Where the source is shown in the app, relative to the base href, e.g. `experiments/SV-05-01-age-death`. */
+  href: string;
+  /** The tooltip: the experiment's name or the page's title. */
+  title: string;
+}
+
+/** Options for {@link renderAgentMarkdown}. */
+export interface MarkdownRenderOptions {
+  /**
+   * The experiments and clinical pages the answer cites. A citation of one becomes a link
+   * that opens in a new tab, so the conversation stays on screen.
+   */
+  appLinks?: readonly AgentAppLink[];
+  /**
+   * Renders a link whose target is not http(s), such as `[CB001](articles/CB001_….md)`,
+   * and returns the HTML to put in its place. It must escape what it inserts
+   * (`escapeHtml`). Without it such links are left as written.
+   */
+  resolveLink?: (label: string, href: string) => string;
+}
 
 /**
  * Renders an agent answer (Markdown) to HTML for `[innerHTML]`.
@@ -16,11 +49,17 @@ const CITATION_GROUP = /\[([^\]\[]*\b[A-Z]{2}\d{3}\b[^\]\[]*)\](?!\()/g;
  *
  * Citations such as `[CB024]` become links to the article's source when the
  * server resolved one, so a claim can be checked in one click. Codes the server
- * did not resolve (not in the database) stay as plain text.
+ * did not resolve (not in the database) stay as plain text. Citations of an
+ * experiment or a clinical manual page (`options.appLinks`) become links to
+ * their screen in the app.
  */
-export function renderAgentMarkdown(markdown: string, citations: readonly ChatCitationViewModel[] = []): string {
-  const byCode = new Map(citations.map(c => [c.code.toUpperCase(), c]));
-  const inline = (text: string) => renderInline(text, byCode);
+export function renderAgentMarkdown(
+  markdown: string,
+  citations: readonly ChatCitationViewModel[] = [],
+  options: MarkdownRenderOptions = {},
+): string {
+  const sources = citationSources(citations, options.appLinks ?? []);
+  const inline = (text: string) => renderInline(text, sources, options);
 
   const out: string[] = [];
   let paragraph: string[] = [];
@@ -145,7 +184,7 @@ function renderTable(rows: string[], inline: (text: string) => string): string {
  * in slots, so the emphasis rules never reach inside them; everything else is
  * escaped before emphasis is applied.
  */
-function renderInline(text: string, byCode: Map<string, ChatCitationViewModel>): string {
+function renderInline(text: string, sources: CitationSources, options: MarkdownRenderOptions): string {
   const slots: string[] = [];
   const park = (html: string) => `\u0000${slots.push(html) - 1}\u0000`;
 
@@ -153,7 +192,14 @@ function renderInline(text: string, byCode: Map<string, ChatCitationViewModel>):
   s = s.replace(/`([^`]+)`/g, (_, code: string) => park(`<code>${escapeHtml(code)}</code>`));
   s = s.replace(/\[([^\]]+)\]\((https?:\/\/[^\s)]+)\)/g, (_, label: string, url: string) =>
     park(`<a href="${escapeHtml(url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(label)}</a>`));
-  s = s.replace(CITATION_GROUP, (_, inner: string) => park(renderCitationGroup(inner, byCode)));
+  const resolveLink = options.resolveLink;
+  if (resolveLink) {
+    s = s.replace(/\[([^\]]+)\]\(([^\s)]+)\)/g, (_, label: string, href: string) => park(resolveLink(label, href)));
+  }
+  s = s.replace(BRACKET_GROUP, (whole: string, inner: string) => {
+    const html = renderCitationGroup(inner, sources);
+    return html === null ? whole : park(html);
+  });
 
   s = escapeHtml(s);
   s = s.replace(/\*\*(?=\S)(.+?)(?<=\S)\*\*/g, '<strong>$1</strong>');
@@ -164,16 +210,61 @@ function renderInline(text: string, byCode: Map<string, ChatCitationViewModel>):
   return s.replace(/\u0000(\d+)\u0000/g, (_, i: string) => slots[Number(i)]);
 }
 
-function renderCitationGroup(inner: string, byCode: Map<string, ChatCitationViewModel>): string {
+/** What a code inside a bracketed group can cite. */
+interface CitationSources {
+  articles: Map<string, ChatCitationViewModel>;
+  /** Experiments and clinical pages, by code and by alias. */
+  app: Map<string, AgentAppLink>;
+  /** Matches an app code or alias (longest first), or something shaped like an article code. */
+  pattern: RegExp;
+}
+
+function citationSources(citations: readonly ChatCitationViewModel[], appLinks: readonly AgentAppLink[]): CitationSources {
+  const app = new Map<string, AgentAppLink>();
+  for (const link of appLinks) {
+    for (const code of [link.code, ...(link.aliases ?? [])]) {
+      if (code && !app.has(code)) {
+        app.set(code, link);
+      }
+    }
+  }
+
+  // Longest first, and not inside a longer code: SV-05-01 must not match in SV-05-01-age-death.
+  const codes = [...app.keys()].sort((a, b) => b.length - a.length).map(escapeRegExp);
+  const appCode = codes.length ? String.raw`(?<![\w-])(?:${codes.join('|')})(?![\w-])|` : '';
+
+  return {
+    articles: new Map(citations.map(c => [c.code.toUpperCase(), c])),
+    app,
+    pattern: new RegExp(appCode + ARTICLE_CODE, 'g'),
+  };
+}
+
+/** The group as HTML, or null when it holds no code and so is not a citation. */
+function renderCitationGroup(inner: string, sources: CitationSources): string | null {
   let html = '';
   let last = 0;
-  for (const match of inner.matchAll(ARTICLE_CODE)) {
+  let found = false;
+  for (const match of inner.matchAll(sources.pattern)) {
+    found = true;
     html += escapeHtml(inner.slice(last, match.index));
-    html += renderCitation(match[0], byCode.get(match[0]));
+    const appLink = sources.app.get(match[0]);
+    html += appLink ? renderAppLink(match[0], appLink) : renderCitation(match[0], sources.articles.get(match[0]));
     last = match.index! + match[0].length;
+  }
+  if (!found) {
+    return null;
   }
   html += escapeHtml(inner.slice(last));
   return `<span class="agent-cite">[${html}]</span>`;
+}
+
+function renderAppLink(code: string, link: AgentAppLink): string {
+  return `<a href="${escapeHtml(link.href)}" target="_blank" rel="noopener" title="${escapeHtml(link.title)}">${escapeHtml(code)}</a>`;
+}
+
+function escapeRegExp(text: string): string {
+  return text.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 }
 
 function renderCitation(code: string, citation: ChatCitationViewModel | undefined): string {
@@ -187,7 +278,7 @@ function renderCitation(code: string, citation: ChatCitationViewModel | undefine
   return `<abbr title="${title}">${code}</abbr>`;
 }
 
-function escapeHtml(text: string): string {
+export function escapeHtml(text: string): string {
   return text
     .replace(/&/g, '&amp;')
     .replace(/</g, '&lt;')

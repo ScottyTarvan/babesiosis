@@ -1,0 +1,12 @@
+family,test,dataset,source,measure,n_young,n_adult,young_value,adult_value,effect,estimate,ci_low,ci_high,cliff_delta,cliff_low,cliff_high,p,q
+A,A1,S-CB050,SRC-A,died (incl. euthanasia),50,90,0.12,0.1,odds_ratio,1.225439,0.33575,4.151919,,,,0.778337,0.784822
+A,A2,S-CB050,SRC-A,"died, stratified by sex (MH)",50,90,,,odds_ratio_mh,1.237859,0.405967,3.774435,,,,0.784822,0.784822
+A,A3,S-CB050,SRC-A,"age months, died minus survived",15,125,29.0,20.0,hl_months,-1.0,-8.0,17.0,-0.044267,-0.392533,0.305147,0.779822,0.784822
+B,B1,DS05,SRC-F,haematocrit L/L,55,92,0.17,0.185,hl,-0.02,-0.04,0.01,-0.120751,-0.323533,0.076487,0.222078,0.267174
+B,B2,DS03,"SRC-A (same dogs as S-CB050, SV-07)",haematocrit L/L,41,60,0.14,0.2,hl,-0.06,-0.1,-0.025,-0.390244,-0.577683,-0.177602,0.0009,0.0072
+B,B3,DS05,SRC-F,band neutrophils 10^9/L,55,92,0.23,0.34,hl,-0.1,-0.20025,0.01,-0.170751,-0.368414,0.031038,0.080492,0.214645
+B,B4,S-CB050,SRC-A,band neutrophils 10^9/L,50,90,0.36,0.34,hl,0.0,-0.11,0.13,0.004444,-0.1898,0.193122,0.967403,0.967403
+B,B5,S-CB050,SRC-A,SV-04 perturbation count (cohort 1),33,63,1.0,1.0,hl,0.0,-1.0,0.0,-0.138047,-0.367063,0.094769,0.233777,0.267174
+B,B6,DS05,SRC-F,severe anaemia hct < 0.15,55,92,0.418182,0.315217,difference_in_share,0.102964,-0.054317,0.260026,,,,0.217446,0.267174
+B,B7,DS05,SRC-F,left shift bands > 0.5,55,92,0.272727,0.413043,difference_in_share,-0.140316,-0.283191,0.020459,,,,0.110355,0.22071
+B,B8,DS05,SRC-F,illness duration days,55,92,3.0,4.0,hl,-1.0,-1.0,0.0,-0.225099,-0.412658,-0.03121,0.022598,0.090392

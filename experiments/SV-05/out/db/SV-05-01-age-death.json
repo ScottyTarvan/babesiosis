@@ -1,0 +1,334 @@
+{
+ "experiment": {
+  "code": "SV-05-01-age-death",
+  "name": "Age group and death in B. rossi (S-CB050): dogs under 12 months against older dogs",
+  "description": "Do dogs under 12 months die of B. rossi babesiosis more or less often than older dogs, and does sex change that? The package hypothesis is that age changes the form of severe disease more than the overall risk.",
+  "method": "age_sex_contrast",
+  "dataset": null,
+  "parameters": {
+   "package": "SV-05",
+   "role": "descriptive",
+   "datasets": [
+    "S-CB050"
+   ],
+   "independent_sources": [
+    "SRC-A"
+   ],
+   "spec_sha256": "dd68cbd66a738637cead48e9707a08a3c3fec84d5fd0286307d804b475e1782f",
+   "seed": 20261112,
+   "permutations": 10000,
+   "bootstrap": 2000,
+   "young_cut_months": 12.0,
+   "contrast": "young (< 12 months) minus adult (>= 12 months)",
+   "versions": {
+    "python": "3.12.12",
+    "numpy": "2.3.4",
+    "scipy": "1.16.3"
+   },
+   "tests": [
+    "A1 Fisher exact",
+    "A2 MH stratified by sex, permutation within sex",
+    "A3 age by outcome"
+   ],
+   "family": "A (3 tests, BH)",
+   "outcome": "died, includes euthanasia for poor prognosis"
+  },
+  "script": "/experiments/SV-05/scripts/analyse.py",
+  "script_version": "9b40901f8c1f",
+  "run_utc": "2026-11-12T15:15:23Z",
+  "n_subjects": 140,
+  "n_variables": 3,
+  "n_tests": 3,
+  "summary": "S-CB050: 6 of 50 dogs under 12 months died against 9 of 90 older dogs, odds ratio 1.23 (95% CI 0.34 to 4.15, Fisher p 0.778); sex-stratified MH OR 1.24 (0.41 to 3.77). Only an OR of about 3.7 or more (or 0.28 or less) was detectable. 0 of 3 tests q < 0.05."
+ },
+ "associations": [],
+ "cluster_assignments": [],
+ "results": [
+  {
+   "kind": "primary_result",
+   "title": "Primary analysis: death by age group (A1)",
+   "sort_order": 1,
+   "payload": {
+    "label": "S-CB050, 140 infected dogs with an age (1 has none), death by age group",
+    "statistic": "Odds ratio, young over adult",
+    "verdict": "No age difference detectable",
+    "independent_sources": 1,
+    "sources": [
+     "S-CB050 (SRC-A, B. rossi, Onderstepoort, 2011-2014)"
+    ],
+    "rows": [
+     {
+      "id": "A1",
+      "test": "A1",
+      "label": "Death, young vs adult",
+      "dataset": "S-CB050",
+      "source": "SRC-A",
+      "measure": "died (incl. euthanasia)",
+      "effect_label": "Odds ratio",
+      "scale": "ratio",
+      "null_value": 1,
+      "estimate": 1.225439,
+      "ci_low": 0.33575,
+      "ci_high": 4.151919,
+      "n_young": 50,
+      "n_adult": 90,
+      "value_label": "share died",
+      "young_value": 0.12,
+      "adult_value": 0.1,
+      "events_young": 6,
+      "events_adult": 9,
+      "cliff": null,
+      "cliff_low": null,
+      "cliff_high": null,
+      "p": 0.778337,
+      "q": 0.784822,
+      "digits": 2,
+      "note": "Fisher exact; conditional MLE OR with exact interval. Detectable at 80% power: OR >= 3.67 or <= 0.28",
+      "group_labels": null
+     }
+    ],
+    "headline": "12% of young dogs and 10% of adults died. The interval (0.34 to 4.15) is wide: with 15 deaths only an odds ratio of about 3.7 or more, or 0.28 or less, could be detected. A null result here is not evidence of equal risk.",
+    "caveats": [
+     "died includes euthanasia for poor prognosis (Onderstepoort).",
+     "exploratory: S-CB050 and DS05 were seen before this plan.",
+     "Age stands in for prior exposure, breed and size, which are not recorded.",
+     "Neuter status is not recorded in S-CB050."
+    ]
+   }
+  },
+  {
+   "kind": "contrasts",
+   "title": "Family A: risk tests (BH over 3)",
+   "sort_order": 2,
+   "payload": {
+    "groups": [
+     {
+      "key": "risk",
+      "label": "Death and age, S-CB050",
+      "note": "",
+      "rows": [
+       {
+        "id": "A1",
+        "test": "A1",
+        "label": "Death, young vs adult",
+        "dataset": "S-CB050",
+        "source": "SRC-A",
+        "measure": "died (incl. euthanasia)",
+        "effect_label": "Odds ratio",
+        "scale": "ratio",
+        "null_value": 1,
+        "estimate": 1.225439,
+        "ci_low": 0.33575,
+        "ci_high": 4.151919,
+        "n_young": 50,
+        "n_adult": 90,
+        "value_label": "share died",
+        "young_value": 0.12,
+        "adult_value": 0.1,
+        "events_young": 6,
+        "events_adult": 9,
+        "cliff": null,
+        "cliff_low": null,
+        "cliff_high": null,
+        "p": 0.778337,
+        "q": 0.784822,
+        "digits": 2,
+        "note": "Fisher exact; conditional MLE OR with exact interval. Detectable at 80% power: OR >= 3.67 or <= 0.28",
+        "group_labels": null
+       },
+       {
+        "id": "A2",
+        "test": "A2",
+        "label": "Death, young vs adult, stratified by sex",
+        "dataset": "S-CB050",
+        "source": "SRC-A",
+        "measure": "died (incl. euthanasia)",
+        "effect_label": "Odds ratio",
+        "scale": "ratio",
+        "null_value": 1,
+        "estimate": 1.237859,
+        "ci_low": 0.405967,
+        "ci_high": 3.774435,
+        "n_young": 50,
+        "n_adult": 90,
+        "value_label": "share died",
+        "young_value": 0.12,
+        "adult_value": 0.1,
+        "events_young": 6,
+        "events_adult": 9,
+        "cliff": null,
+        "cliff_low": null,
+        "cliff_high": null,
+        "p": 0.784822,
+        "q": 0.784822,
+        "digits": 2,
+        "note": "Mantel-Haenszel OR, RGB interval; p from 10,000 permutations within sex (6 young deaths observed, 5.35 expected)",
+        "group_labels": null
+       },
+       {
+        "id": "A3",
+        "test": "A3",
+        "label": "Age in months, died minus survived",
+        "dataset": "S-CB050",
+        "source": "SRC-A",
+        "measure": "age months",
+        "effect_label": "HL difference, months",
+        "scale": "diff",
+        "null_value": 0,
+        "estimate": -1.0,
+        "ci_low": -8.0,
+        "ci_high": 17.0,
+        "n_young": 15,
+        "n_adult": 125,
+        "value_label": "median months",
+        "young_value": 29.0,
+        "adult_value": 20.0,
+        "young_iqr": [
+         7.5,
+         36.5
+        ],
+        "adult_iqr": [
+         10.0,
+         36.0
+        ],
+        "cliff": -0.044267,
+        "cliff_low": -0.392533,
+        "cliff_high": 0.305147,
+        "p": 0.779822,
+        "q": 0.784822,
+        "digits": 1,
+        "note": "groups are died (first) and survived (second), not age groups",
+        "group_labels": [
+         "died",
+         "survived"
+        ]
+       }
+      ]
+     }
+    ],
+    "footnote": "S-CB050, SRC-A, B. rossi. died includes euthanasia for poor prognosis (Onderstepoort). exploratory: S-CB050 and DS05 were seen before this plan."
+   }
+  },
+  {
+   "kind": "strata",
+   "title": "Death by age group within each sex (A2)",
+   "sort_order": 3,
+   "payload": {
+    "rows": [
+     {
+      "stratum": "female",
+      "deaths_young": 3,
+      "n_young": 21,
+      "deaths_adult": 2,
+      "n_adult": 26,
+      "or": 1.970401,
+      "or_low": 0.203233,
+      "or_high": 25.914239,
+      "p": 0.644054
+     },
+     {
+      "stratum": "male",
+      "deaths_young": 3,
+      "n_young": 29,
+      "deaths_adult": 7,
+      "n_adult": 64,
+      "or": 0.940185,
+      "or_low": 0.145403,
+      "or_high": 4.537898,
+      "p": 1.0
+     }
+    ],
+    "sex_contrast": {
+     "deaths_male": 10,
+     "n_male": 93,
+     "deaths_female": 5,
+     "n_female": 47,
+     "or": 1.011962,
+     "or_low": 0.292035,
+     "or_high": 4.023325,
+     "p": 1.0
+    },
+    "footnote": "Odds ratio young over adult in each sex, conditional MLE with exact interval. The sex contrast (male over female) is secondary and not in the family. Sex differs between cases and controls in SRC-A; no control is used."
+   }
+  },
+  {
+   "kind": "age_bands",
+   "title": "Deaths by age band (descriptive)",
+   "sort_order": 4,
+   "payload": {
+    "rows": [
+     {
+      "band": "< 6",
+      "n": 15,
+      "died": 3,
+      "share": 0.2
+     },
+     {
+      "band": "6-11",
+      "n": 35,
+      "died": 3,
+      "share": 0.085714
+     },
+     {
+      "band": "12-23",
+      "n": 26,
+      "died": 1,
+      "share": 0.038462
+     },
+     {
+      "band": "24-47",
+      "n": 35,
+      "died": 5,
+      "share": 0.142857
+     },
+     {
+      "band": "48-95",
+      "n": 20,
+      "died": 3,
+      "share": 0.15
+     },
+     {
+      "band": "96+",
+      "n": 9,
+      "died": 0,
+      "share": 0.0
+     }
+    ],
+    "footnote": "S-CB050, 140 infected dogs. Descriptive, no test. died includes euthanasia for poor prognosis (Onderstepoort)."
+   }
+  },
+  {
+   "kind": "interpretation",
+   "title": "Explanation and interpretation",
+   "sort_order": 9,
+   "payload": {
+    "sections": [
+     {
+      "heading": "Question",
+      "paragraphs": [
+       "Do dogs under 12 months die of B. rossi babesiosis more or less often than older dogs? This is step 1 of SV-05, whose hypothesis is that age changes the form of severe disease (anaemia in young dogs, inflammation in adults) more than it changes the risk of death."
+      ]
+     },
+     {
+      "heading": "What was done",
+      "paragraphs": [
+       "S-CB050 (Onderstepoort, SRC-A) has 141 infected dogs, 1 without an age: 50 under 12 months and 90 older. Death (which includes euthanasia for poor prognosis) by age group was tested with Fisher's exact test (A1), then stratified by sex with a Mantel-Haenszel odds ratio and a permutation test within sex (A2), and age in months was compared between dogs that died and survived (A3). Benjamini-Hochberg over the 3 tests. The spec was frozen before the outcome file was opened, but the age medians by outcome had been seen, so this step is exploratory."
+      ]
+     },
+     {
+      "heading": "Result",
+      "paragraphs": [
+       "6 of 50 young dogs (12%) and 9 of 90 adults (10%) died: odds ratio 1.23 (95% CI 0.34 to 4.15), p 0.778. Within sex: females 1.97 (0.20 to 25.91), males 0.94 (0.15 to 4.54); pooled 1.24 (0.41 to 3.77), p 0.785. Dogs that died were not older: median 29 against 20 months, Hodges-Lehmann difference -1 months (-8 to +17), Cliff's delta -0.04 (-0.39 to +0.31). 0 of 3 tests pass q < 0.05. Death by sex (secondary): 10 of 93 males, 5 of 47 females, OR 1.01 (0.29 to 4.02)."
+      ]
+     },
+     {
+      "heading": "What this does not show",
+      "paragraphs": [
+       "It does not show that age has no effect on risk: with 15 deaths only an odds ratio of about 3.7 or more (or 0.28 or less) was detectable. One source only; age stands in for prior exposure, breed and size, which are not recorded, and neuter status is not in the file. The 'died' label includes euthanasia for poor prognosis, which can depend on cost and owner decisions."
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

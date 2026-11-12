@@ -1,0 +1,451 @@
+{
+ "experiment": {
+  "code": "SV-09-02-axis-congruence",
+  "dataset": null,
+  "method": "axis_replication",
+  "script": "/experiments/SV-09/scripts/analyse.py",
+  "script_version": "e7f758a51299",
+  "run_utc": "2026-11-12T15:53:33Z",
+  "name": "Do the DS05 residual axes recur in other files? Tucker congruence by shared variable block",
+  "description": "Does the correlation pattern of the DS05 residual axes recur in DS03 (red cells), S-CB050 (leukocytes) and S-CB017 (B. canis leukocytes and platelets)? Hypothesis: at least one axis recurs with congruence of 0.85 or more and a pattern more specific than chance.",
+  "parameters": {
+   "package": "SV-09",
+   "role": "replication",
+   "datasets": [
+    "DS05",
+    "DS03",
+    "S-CB050",
+    "S-CB017"
+   ],
+   "independent_sources": [
+    "SRC-F",
+    "SRC-A",
+    "SRC-D"
+   ],
+   "spec_sha256": "3f98321b72ecfae1a89a27c8e932118c3b9b4e841144ec8a343515f604118270",
+   "seed": 20261112,
+   "n_bootstrap": 2000,
+   "n_permutations": 10000,
+   "n_parallel_analysis": 1000,
+   "versions": {
+    "python": "3.12.12",
+    "numpy": "2.3.4",
+    "scipy": "1.16.3"
+   },
+   "stage_covariate": "log(illness_days + 1) (owner-reported); SV-01 pseudo-stage failed validation and is used only in sensitivities S2 and S3",
+   "experiment": "step 2",
+   "note": "DS03 natural dogs are S-CB050 dogs (SV-07): the two B. rossi targets are one source"
+  },
+  "n_subjects": 422,
+  "n_variables": 9,
+  "n_tests": 4,
+  "summary": "No DS05 residual axis meets the replication rule (0 of 6 axis-by-block checks replicated). Block patterns recur (phi 0.99 DS03 red cell, n 103; 1.00 S-CB050 leukocytes, n 141) but cannot be shown specific with 3 variables; in the one testable block (S-CB017, B. canis, n 31) phi 0.99 is no better than a uniform pattern (0.98; label-permutation p 0.075)."
+ },
+ "associations": [],
+ "cluster_assignments": [],
+ "results": [
+  {
+   "kind": "congruence",
+   "title": "Congruence of DS05 and target block patterns",
+   "sort_order": 1,
+   "payload": {
+    "blocks": [
+     {
+      "key": "red_cell",
+      "target": "DS03",
+      "target_label": "DS03 natural infection (SRC-A)",
+      "species": "B. rossi",
+      "variables": [
+       "mchc",
+       "retic_pct",
+       "arc"
+      ],
+      "conditioning": "haematocrit, haematocrit²",
+      "n_ds05": 147,
+      "n_target": 103,
+      "components": [
+       {
+        "component": 1,
+        "phi": 0.993,
+        "ci": [
+         0.974,
+         1.0
+        ],
+        "perm_p": 0.1667,
+        "n_perms": 6,
+        "uniform_phi": 0.402,
+        "specificity_testable": false,
+        "var_explained_ds05": 0.749,
+        "var_explained_target": 0.832
+       }
+      ],
+      "loadings": [
+       {
+        "variable": "mchc",
+        "label": "MCHC",
+        "ds05": [
+         -0.618
+        ],
+        "target": [
+         -0.815
+        ]
+       },
+       {
+        "variable": "retic_pct",
+        "label": "Reticulocytes %",
+        "ds05": [
+         0.971
+        ],
+        "target": [
+         0.963
+        ]
+       },
+       {
+        "variable": "arc",
+        "label": "ARC",
+        "ds05": [
+         0.961
+        ],
+        "target": [
+         0.952
+        ]
+       }
+      ],
+      "link": [
+       {
+        "component": 1,
+        "variables": [
+         "mchc",
+         "arc"
+        ],
+        "phi": 1.0
+       },
+       {
+        "component": 2,
+        "variables": [
+         "mchc",
+         "arc"
+        ],
+        "phi": -0.93
+       }
+      ]
+     },
+     {
+      "key": "leukocyte_platelet",
+      "target": "S-CB017",
+      "target_label": "S-CB017 day 1 (SRC-D)",
+      "species": "B. canis",
+      "variables": [
+       "neut_seg",
+       "neut_band",
+       "lymph",
+       "mono",
+       "plt"
+      ],
+      "conditioning": "haematocrit, haematocrit²",
+      "n_ds05": 147,
+      "n_target": 31,
+      "components": [
+       {
+        "component": 1,
+        "phi": 0.994,
+        "ci": [
+         0.855,
+         0.998
+        ],
+        "perm_p": 0.075,
+        "n_perms": 120,
+        "uniform_phi": 0.976,
+        "specificity_testable": true,
+        "var_explained_ds05": 0.482,
+        "var_explained_target": 0.427
+       },
+       {
+        "component": 2,
+        "phi": 0.769,
+        "ci": [
+         0.166,
+         0.928
+        ],
+        "perm_p": 0.0167,
+        "n_perms": 120,
+        "uniform_phi": 0.144,
+        "specificity_testable": true,
+        "var_explained_ds05": 0.184,
+        "var_explained_target": 0.269
+       }
+      ],
+      "loadings": [
+       {
+        "variable": "neut_seg",
+        "label": "Seg. neutrophils",
+        "ds05": [
+         0.832,
+         -0.083
+        ],
+        "target": [
+         0.829,
+         0.056
+        ]
+       },
+       {
+        "variable": "neut_band",
+        "label": "Band neutrophils",
+        "ds05": [
+         0.774,
+         -0.053
+        ],
+        "target": [
+         0.59,
+         0.502
+        ]
+       },
+       {
+        "variable": "lymph",
+        "label": "Lymphocytes",
+        "ds05": [
+         0.634,
+         -0.16
+        ],
+        "target": [
+         0.613,
+         -0.522
+        ]
+       },
+       {
+        "variable": "mono",
+        "label": "Monocytes",
+        "ds05": [
+         0.761,
+         -0.174
+        ],
+        "target": [
+         0.744,
+         -0.448
+        ]
+       },
+       {
+        "variable": "plt",
+        "label": "Platelets",
+        "ds05": [
+         0.372,
+         0.924
+        ],
+        "target": [
+         0.413,
+         0.784
+        ]
+       }
+      ],
+      "link": [
+       {
+        "component": 1,
+        "variables": [
+         "neut_seg",
+         "neut_band",
+         "lymph",
+         "mono",
+         "plt"
+        ],
+        "phi": 0.982
+       },
+       {
+        "component": 2,
+        "variables": [
+         "neut_seg",
+         "neut_band",
+         "lymph",
+         "mono",
+         "plt"
+        ],
+        "phi": 0.885
+       }
+      ]
+     },
+     {
+      "key": "leukocyte",
+      "target": "S-CB050",
+      "target_label": "S-CB050 infected (SRC-A)",
+      "species": "B. rossi",
+      "variables": [
+       "wbc",
+       "neut_seg",
+       "neut_band"
+      ],
+      "conditioning": "none",
+      "n_ds05": 147,
+      "n_target": 141,
+      "components": [
+       {
+        "component": 1,
+        "phi": 0.999,
+        "ci": [
+         0.992,
+         1.0
+        ],
+        "perm_p": 0.1667,
+        "n_perms": 6,
+        "uniform_phi": 0.993,
+        "specificity_testable": false,
+        "var_explained_ds05": 0.83,
+        "var_explained_target": 0.779
+       }
+      ],
+      "loadings": [
+       {
+        "variable": "wbc",
+        "label": "WBC",
+        "ds05": [
+         0.973
+        ],
+        "target": [
+         0.972
+        ]
+       },
+       {
+        "variable": "neut_seg",
+        "label": "Seg. neutrophils",
+        "ds05": [
+         0.933
+        ],
+        "target": [
+         0.922
+        ]
+       },
+       {
+        "variable": "neut_band",
+        "label": "Band neutrophils",
+        "ds05": [
+         0.819
+        ],
+        "target": [
+         0.736
+        ]
+       }
+      ],
+      "link": [
+       {
+        "component": 1,
+        "variables": [
+         "neut_seg",
+         "neut_band"
+        ],
+        "phi": 1.0
+       },
+       {
+        "component": 2,
+        "variables": [
+         "neut_seg",
+         "neut_band"
+        ],
+        "phi": 0.981
+       }
+      ]
+     }
+    ],
+    "caption": "Tucker phi with 2,000-bootstrap 95% intervals (dogs resampled in both files). Uniform: phi of the target pattern with equal loadings. Label permutation: exact, over all orderings of the target variables. DS03 and S-CB050 are one source (SRC-A, SV-07); S-CB017 is B. canis (one species per source)."
+   }
+  },
+  {
+   "kind": "verdicts",
+   "title": "Replication rule by axis and block",
+   "sort_order": 2,
+   "payload": {
+    "rows": [
+     {
+      "component": 1,
+      "block": "red_cell",
+      "R1": true,
+      "R2": true,
+      "R3": true,
+      "R4": null,
+      "verdict": "congruent but not specific"
+     },
+     {
+      "component": 1,
+      "block": "leukocyte_platelet",
+      "R1": true,
+      "R2": true,
+      "R3": true,
+      "R4": false,
+      "verdict": "not replicated"
+     },
+     {
+      "component": 1,
+      "block": "leukocyte",
+      "R1": true,
+      "R2": true,
+      "R3": true,
+      "R4": null,
+      "verdict": "congruent but not specific"
+     },
+     {
+      "component": 2,
+      "block": "red_cell",
+      "R1": true,
+      "R2": true,
+      "R3": true,
+      "R4": null,
+      "verdict": "congruent but not specific"
+     },
+     {
+      "component": 2,
+      "block": "leukocyte_platelet",
+      "R1": true,
+      "R2": true,
+      "R3": true,
+      "R4": false,
+      "verdict": "not replicated"
+     },
+     {
+      "component": 2,
+      "block": "leukocyte",
+      "R1": true,
+      "R2": true,
+      "R3": true,
+      "R4": null,
+      "verdict": "congruent but not specific"
+     }
+    ],
+    "rule": "R1 retained and stable; R2 axis maps onto the block (|phi| >= 0.85); R3 phi >= 0.85, lower bound >= 0.70; R4 label-permutation p <= 0.05 and above the uniform baseline (only with 4 or more variables)."
+   }
+  },
+  {
+   "kind": "interpretation",
+   "title": "Explanation and interpretation",
+   "sort_order": 9,
+   "payload": {
+    "sections": [
+     {
+      "heading": "Question",
+      "paragraphs": [
+       "Do the two DS05 residual axes recur in files from other sources, or are they specific to one clinic?"
+      ]
+     },
+     {
+      "heading": "What was done",
+      "paragraphs": [
+       "For each target, the variables shared with DS05 form a block: red cells in DS03 natural infection (MCHC, reticulocytes, ARC; n 103), leukocytes and platelets in S-CB017 day 1 (B. canis; segmented and band neutrophils, lymphocytes, monocytes, platelets; n 31), and leukocytes in S-CB050 (WBC, segmented and band neutrophils; n 141). Both files were residualised on haematocrit where the target has it (not S-CB050). The block's principal components were compared by Tucker's phi, with bootstrap intervals, a uniform-pattern baseline and an exact label permutation.",
+       "SV-07 found that DS03 natural dogs are S-CB050 dogs, so the two B. rossi targets are one source (SRC-A), not two replications. Both are independent of DS05 (SRC-F)."
+      ]
+     },
+     {
+      "heading": "Result",
+      "paragraphs": [
+       "DS03 red cell block: phi 0.99 (+0.97 to +1.00); the pattern (MCHC against reticulocytes and ARC) is far from uniform (0.40) but with 3 variables the smallest possible permutation p is 1/6, so specificity cannot be tested. The pattern is close to arithmetic: reticulocytes have a low MCHC.",
+       "S-CB050 leukocyte block: phi 1.00 (+0.99 to +1.00), but a uniform pattern gives 0.99: three counts that are parts of one another load together in any file.",
+       "S-CB017 block, the only one where specificity is testable: component 1 phi 0.99 (+0.85 to +1.00), uniform 0.98, label-permutation p 0.075 (120 orderings): not specific. Component 2 (platelets against the leukocytes) phi 0.77 (+0.17 to +0.93), p 0.017, below the 0.85 threshold.",
+       "By the rule stated in advance, 0 of 6 axis-by-block checks replicate and 4 are congruent but not specific. Also, the shared blocks hold at most two of the step-1 variables in the B. rossi files, so they cannot tell axis 1 from axis 2: both map onto each block."
+      ]
+     },
+     {
+      "heading": "What this does not show",
+      "paragraphs": [
+       "A negative result here is mostly a limit of the files: the targets share 3 to 5 variables with DS05, too few to recover a 12-variable axis. It does not show that the DS05 axes are clinic-specific. The S-CB017 comparison crosses species and source (one species per source), so a failure there cannot be read as a species difference. No subtype and no predictive score."
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

@@ -1,6 +1,6 @@
 <section class="fs-ai-agent">
   <fs-page-header icon="sparkles" title="AI Agent"
-                  subtitle="Ask questions about the reviewed articles">
+                  subtitle="Ask about the reviewed articles, the experiments and the clinical manual">
     <fs-button variant="outline" intent="secondary" size="sm" icon="refresh"
                [disabled]="messages().length === 0 && !draft() && !error()"
                (click)="clear()">New conversation</fs-button>
@@ -38,8 +38,30 @@
               <div class="fs-ai-agent__bubble">{{ message.content }}</div>
             }
 
-            @if (message.citations?.length) {
-              <ul class="fs-ai-agent__citations" aria-label="Articles cited">
+            @if (message.citations?.length || message.experiments?.length || message.clinicalPages?.length) {
+              <ul class="fs-ai-agent__citations" aria-label="Sources cited">
+                @for (page of message.clinicalPages; track page.id) {
+                  <li>
+                    <fs-badge variant="tonal" intent="success">{{ page.id }}</fs-badge>
+                    <a class="fs-ai-agent__citation-title" [href]="clinicalHref(page.id)"
+                       target="_blank" rel="noopener" [title]="page.title">
+                      {{ page.title }}
+                      <fs-symbol name="external-link" size="xs" ariaLabel="Opens in a new window" />
+                    </a>
+                    <span class="fs-ai-agent__citation-extra">Clinical manual</span>
+                  </li>
+                }
+                @for (experiment of message.experiments; track experiment.code) {
+                  <li>
+                    <fs-badge variant="tonal" intent="info">{{ experiment.shortCode || experiment.code }}</fs-badge>
+                    <a class="fs-ai-agent__citation-title" [href]="experimentHref(experiment.code)"
+                       target="_blank" rel="noopener" [title]="experiment.name">
+                      {{ experiment.name }}
+                      <fs-symbol name="external-link" size="xs" ariaLabel="Opens in a new window" />
+                    </a>
+                    <span class="fs-ai-agent__citation-extra">Experiment</span>
+                  </li>
+                }
                 @for (citation of message.citations; track citation.articleId) {
                   <li>
                     <fs-badge variant="tonal" intent="primary">{{ citation.code }}</fs-badge>
@@ -68,20 +90,20 @@
           </article>
         } @empty {
           <fs-empty-state icon="message-2" title="Start a conversation"
-                          subtitle="Ask about findings, methods or gaps across the articles. Answers cite the articles they draw on." />
+                          subtitle="Ask about findings and gaps in the articles, the experiments and their results, or a clinical syndrome and its diagnosis and treatment. Answers cite the sources they draw on." />
         }
 
         @if (thinking()) {
           <div class="fs-ai-agent__thinking" role="status">
             <span class="fs-ai-agent__dots" aria-hidden="true"><span></span><span></span><span></span></span>
-            Searching the articles and writing an answer…
+            Reading the sources and writing an answer…
           </div>
         }
       </div>
 
       <form class="fs-ai-agent__composer" (ngSubmit)="send()">
         <fs-textarea name="draft" [rows]="3" [invalid]="tooLong()"
-                     placeholder="Ask about the articles…"
+                     placeholder="Ask about the articles, the experiments or the clinical manual…"
                      [ngModel]="draft()" (ngModelChange)="draft.set($event)"
                      (keydown.control.enter)="send()" (keydown.meta.enter)="send()" />
         <div class="fs-ai-agent__composer-actions">
@@ -118,9 +140,23 @@
 
       <fs-card title="What the agent reads">
         <p class="fs-ai-agent__note">
-          The agent searches the articles loaded to the database: their abstracts, extracted
-          findings and categories, and the papers' own text where it is held. Every claim cites
-          the article it comes from, so each answer can be checked against the source.
+          <strong>Articles.</strong> The articles loaded to the database: their abstracts,
+          extracted findings and categories, and the papers' own text where it is held.
+        </p>
+        <p class="fs-ai-agent__note">
+          <strong>Experiments.</strong> The analyses on the Experiments screen: what each one
+          asked, how it was run, its results and its interpretation. They are this project's
+          own work on small samples, not peer-reviewed findings.
+        </p>
+        <p class="fs-ai-agent__note">
+          <strong>Clinical manual.</strong> The pages on the Clinical screen: each syndrome's
+          definition, diagnosis, treatments with doses and evidence levels, and prognosis. The
+          manual is compiled by AI agents and is not peer reviewed: check every dose against the
+          product label before use.
+        </p>
+        <p class="fs-ai-agent__note">
+          Every claim cites the article, experiment or manual page it comes from, so each
+          answer can be checked against the source.
         </p>
         <p class="fs-ai-agent__note">
           <strong>Fast</strong>, <strong>Balanced</strong> and <strong>Thorough</strong> pick

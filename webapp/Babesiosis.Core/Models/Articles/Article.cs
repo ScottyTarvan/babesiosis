@@ -46,6 +46,11 @@ namespace Babesiosis.Core.Models.Articles
     public string EvidenceType { get; set; }
     public string Host { get; set; }
     public string Country { get; set; }
+    /// <summary>
+    /// Country tidied from <see cref="Country"/> (computed, persisted column): the text before the
+    /// first "(", ";", "," or "/", with a few spellings merged. Null when no country is stated.
+    /// </summary>
+    public string CountryNormalised { get; set; }
     public string SpeciesSummary { get; set; }
     /// <summary>JSON array of {name, status, method}.</summary>
     public string Species { get; set; }
@@ -56,6 +61,10 @@ namespace Babesiosis.Core.Models.Articles
 
     // Category. Null when the source has no category code or holds free text instead of one.
     public int? PrimaryCategoryId { get; set; }
+    /// <summary>"high" or "low" from the NLP category step; null when NLP found no category (computed from source_json).</summary>
+    public string CategoryConfidence { get; set; }
+    /// <summary>"nlp", or "agent (NLP found no category)" for a fallback label (computed from source_json).</summary>
+    public string CategorySource { get; set; }
 
     // Narrative, from the article .md file
     public string OneSentenceFinding { get; set; }

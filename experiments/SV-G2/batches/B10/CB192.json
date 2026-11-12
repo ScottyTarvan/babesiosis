@@ -1,0 +1,20 @@
+{
+  "id": "CB192",
+  "text_used": "data/markdown/CB192.en.md",
+  "extracted_by": "claude-opus-5-5 SV-G2 batch B10",
+  "extracted_utc": "2026-11-12T05:26:35Z",
+  "article_notes": "Ukrainian descriptive study (English translation used) of 620 dogs with acute babesiosis (B. canis by smear) at a university clinic. Poikilocyte types are described by month and asserted to reflect organ damage or DIC, but no comparison of poikilocytes (or parasitaemia) with severity or outcome groups is reported. Lethality is given by seasonal wave (about 7% vs up to 15%) without any marker per group.",
+  "skipped_infected_vs_healthy": 0,
+  "severity_definitions": [],
+  "associations": [],
+  "schema_version": "v2",
+  "setting": "referral hospital",
+  "sample_timing": "not stated",
+  "not_extracted": [
+    {
+      "what": "Poikilocyte types (acanthocytes, schizocytes, echinocytes, stomatocytes) as markers of complications and DIC",
+      "reason": "no per-group result",
+      "note": "Asserted from monthly figures (Figs 2, 5); not compared with severity groups"
+    }
+  ]
+}

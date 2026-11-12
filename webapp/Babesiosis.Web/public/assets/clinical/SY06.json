@@ -1,0 +1,914 @@
+{
+  "schema_version": 1,
+  "id": "SY06",
+  "title": "Hepatopathy and icterus",
+  "updated": "2026-11-12",
+  "definition": "Hyperbilirubinaemia and icterus in canine babesiosis come from haemolysis together with secondary liver injury (hypoxic centrilobular damage, cholestasis and an activated macrophage response) [R1][R2][R3]. In B. rossi, liver damage was defined as a more than 2-fold rise in ALT, ALP or GLDH, or bile acids above 30 µmol/L with at least one abnormal enzyme; bilirubin was left out because haemolysis raises it [R1].",
+  "definition_note": "Changed. The working definition asked for icterus beyond what haemolysis explains. No source gives a test that separates the haemolytic and the hepatic part of the bilirubin in a dog with babesiosis, so the page defines hepatopathy by enzymes and bile acids, and treats icterus as a sign with both causes. Histology in fatal B. rossi points to secondary liver injury, not primary liver failure.",
+  "key_points": [
+    "In B. rossi, bilirubin was above the reference interval in 56.5% of 230 dogs and 16% were clinically icteric [R2].",
+    "Liver damage by enzyme criteria was the most common organ involvement in complicated B. rossi babesiosis, but it did not change the outcome [R1].",
+    "A total bilirubin above 14.7 µmol/L at admission was associated with death in B. rossi; the odds of death rose 1.23-fold for each 50 µmol/L [R2].",
+    "Fatal B. rossi livers show cholestasis, centrilobular necrosis and haemosiderin-laden Kupffer cells, which the authors attribute to haemolysis and hypoxia [R3].",
+    "Raised AST is not a liver-specific sign in babesiosis: in B. canis it rose with renal azotaemia [R4][R5].",
+    "No hepatoprotective drug was tested in B. rossi. NAC was tested in two small B. gibsoni trials; other liver drugs rest on a chronic hepatitis consensus [R6][R7][R8]."
+  ],
+  "description": [
+    {
+      "heading": "What it is",
+      "text": "Icterus is a classical sign of complicated babesiosis. A review notes that icterus is seldom seen when haemolysis is the only problem, and calls the combination of bilirubinaemia, pigmenturia and icterus a hepatopathy [R9]. In 320 B. rossi dogs, bilirubin correlated negatively with haematocrit, which points to a pre-hepatic cause, but the authors judged icterus to be both pre-hepatic and hepatic [R2]."
+    },
+    {
+      "heading": "How common, and in which dogs",
+      "text": "B. rossi: hyperbilirubinaemia in 56.5% of 230 dogs, clinical icterus in about 16% [R2]; liver damage in 30 of 56 dogs with complicated disease, alone or with other organs [R1]. B. canis: hyperbilirubinaemia in 74.2% of 275 dogs, ALT raised in 21.3% [R10] and hyperbilirubinaemia in 78% of 23 dogs [R11]. B. gibsoni: jaundice in 7.4% of 108 dogs, ALP raised in 30.6% and GGT in 21.3% [R12]."
+    },
+    {
+      "heading": "When in the course of disease",
+      "text": "Bilirubin is high at diagnosis and falls with treatment. In 23 B. canis dogs treated with imidocarb, bilirubin was normal in all but one dog at the second visit (median day 15) and in all dogs by about day 32 [R11]. In B. rossi, dogs with hepatopathy may recover more slowly [R9]. Acute hepatopathy with raised ALT developed in all three dogs experimentally infected with B. canis [R13]."
+    },
+    {
+      "heading": "Mechanism",
+      "text": "In 10 fatal B. rossi cases, the liver showed dilated spaces of Disse, bile stasis, hypertrophic Kupffer cells with haemosiderin and bile, mononuclear infiltrates and centrilobular necrosis, with no fibrin thrombi; the authors attribute the damage to haemolysis and hypoxia amplified by macrophage activation [R3]. An earlier Onderstepoort series linked severe anaemia with hypoxic hepatic disease [R14]. In experimental B. canis, biopsies of splenectomised dogs showed acute non-purulent hepatitis [R13]."
+    }
+  ],
+  "species_notes": [
+    {
+      "species": "B. rossi",
+      "note": "The only species with liver histology from natural cases and with a prognostic bilirubin cut-off [R3][R2]. Liver damage was common in complicated cases but did not predict death [R1]."
+    },
+    {
+      "species": "B. canis",
+      "note": "Hyperbilirubinaemia in three of four dogs at diagnosis, with mild enzyme rises [R10][R11]. AST was above reference in 92.9% of 182 dogs, and the AST/ALT ratio rose with azotaemia, so part of the AST may come from the kidney [R4][R5]."
+    },
+    {
+      "species": "B. gibsoni",
+      "note": "Jaundice is less common; ALP, GGT and bilirubinuria are the usual findings [R12]. The two NAC trials were in B. gibsoni [R6][R7]."
+    }
+  ],
+  "diagnosis": {
+    "criteria": [
+      {
+        "criterion": "Hyperbilirubinaemia",
+        "threshold": "total bilirubin above 6.8 µmol/L (reference 1 to 6.8 µmol/L)",
+        "basis": "babesiosis",
+        "note": "Onderstepoort reference interval used in 320 B. rossi dogs. Haemolysis alone raises bilirubin, so this does not prove liver injury.",
+        "refs": [
+          "R2"
+        ]
+      },
+      {
+        "criterion": "Liver damage (enzymes)",
+        "threshold": "ALT above 80 U/L, ALP above 380 U/L or GLDH above 16 U/L (more than 2-fold rise)",
+        "basis": "babesiosis",
+        "note": "Used in 56 B. rossi dogs with complicated disease. The authors call the criteria sensitive but not specific.",
+        "refs": [
+          "R1"
+        ]
+      },
+      {
+        "criterion": "Liver dysfunction (bile acids)",
+        "threshold": "fasting bile acids above 30 µmol/L with at least one abnormal liver enzyme",
+        "basis": "babesiosis",
+        "note": "Same B. rossi study. Samples with heavy haemoglobin or lipaemic discolouration were excluded.",
+        "refs": [
+          "R1"
+        ]
+      },
+      {
+        "criterion": "Suspected hepatocellular damage",
+        "threshold": "ALT 80 U/L or more (reference 17 to 47 U/L)",
+        "basis": "babesiosis",
+        "note": "Used in 105 dogs with babesiosis (species not identified, South Africa); 14 dogs met it.",
+        "refs": [
+          "R15"
+        ]
+      },
+      {
+        "criterion": "Bilirubin with prognostic meaning",
+        "threshold": "total bilirubin above 14.7 µmol/L at admission",
+        "basis": "babesiosis",
+        "note": "B. rossi, 230 dogs; AUC 0.795. Table 3 gives sensitivity 87.5% and specificity 76.3%; the text gives 75% and 81.6%, the values of the T4 row, probably a transcription error.",
+        "refs": [
+          "R2"
+        ]
+      }
+    ],
+    "clinical_signs": [
+      {
+        "sign": "Icterus",
+        "note": "About 16% of B. rossi dogs [R2], 6 of 15 B. canis dogs [R16], 7.4% of B. gibsoni dogs [R12].",
+        "refs": [
+          "R2",
+          "R16",
+          "R12"
+        ]
+      },
+      {
+        "sign": "Pigmenturia",
+        "note": "Haemoglobinuria and bilirubinuria both colour the urine. In B. gibsoni, bilirubinuria was the common finding on urinalysis [R12].",
+        "refs": [
+          "R12",
+          "R9"
+        ]
+      },
+      {
+        "sign": "Hepatomegaly",
+        "note": "Seen on ultrasound in experimental B. canis [R13]; a review lists hepatomegaly and splenomegaly as the most consistent ultrasound findings in B. canis [R9].",
+        "refs": [
+          "R13",
+          "R9"
+        ]
+      },
+      {
+        "sign": "Collapse, vomiting or neurological signs in an icteric dog",
+        "note": "Icterus was a risk factor for hypoglycaemia in B. rossi (univariate). Check glucose [R17].",
+        "refs": [
+          "R17"
+        ]
+      }
+    ],
+    "tests": [
+      {
+        "test": "Haematocrit with serum colour and total bilirubin",
+        "finding": "Bilirubin falls as haematocrit rises: negative correlation in B. rossi and B. canis.",
+        "note": "A review notes that icterus is seldom seen with haemolysis alone [R9].",
+        "refs": [
+          "R2",
+          "R11",
+          "R9"
+        ]
+      },
+      {
+        "test": "ALT and ALP",
+        "finding": "Mild to moderate rises. Median ALT 86.5 U/L in fatal B. rossi cases.",
+        "note": "Leaving pyridoxal-5-phosphate out of the ALT assay lowered ALT by about 4 U/L on average and did not change the classification of liver damage.",
+        "refs": [
+          "R3",
+          "R15",
+          "R10"
+        ]
+      },
+      {
+        "test": "AST and the AST/ALT ratio",
+        "finding": "AST rises often, more than ALT.",
+        "note": "In B. canis, the AST/ALT ratio was higher with azotaemia and higher still with renal azotaemia. AST is therefore a poor liver marker in an azotaemic dog.",
+        "refs": [
+          "R4",
+          "R5"
+        ]
+      },
+      {
+        "test": "Blood glucose",
+        "finding": "Hypoglycaemia is more likely in icteric, collapsed or young dogs.",
+        "note": "Measure in every admitted dog; see SY16.",
+        "refs": [
+          "R17"
+        ]
+      },
+      {
+        "test": "Urine dipstick",
+        "finding": "Bilirubinuria 2+ or 3+ in 13 of 22 B. gibsoni dogs with urinalysis.",
+        "note": "",
+        "refs": [
+          "R12"
+        ]
+      },
+      {
+        "test": "Fasting bile acids",
+        "finding": "Median 22 µmol/L in fatal B. rossi cases (not significantly different from 4 controls).",
+        "note": "In liver disease with cholestasis, bile acids are always raised, so they add little in an icteric dog. Severe haemoglobinaemia can make samples unusable.",
+        "refs": [
+          "R3",
+          "R8",
+          "R1"
+        ]
+      },
+      {
+        "test": "Abdominal ultrasound",
+        "finding": "Hepatomegaly with diffuse changes in experimental B. canis.",
+        "note": "Also checks the pancreas and the biliary tract. Usually a referral test.",
+        "refs": [
+          "R13"
+        ]
+      }
+    ],
+    "differentials": [
+      {
+        "condition": "Haemolysis alone (uncomplicated or severe anaemia)",
+        "distinguish": "Bilirubin correlates negatively with haematocrit; icterus is seldom seen with haemolysis alone.",
+        "refs": [
+          "R2",
+          "R9"
+        ]
+      },
+      {
+        "condition": "Secondary immune-mediated haemolytic anaemia (SY02)",
+        "distinguish": "Haemolysis and icterus continue after the parasite is cleared. See SY02.",
+        "refs": [
+          "R18"
+        ]
+      },
+      {
+        "condition": "Acute pancreatitis (SY12)",
+        "distinguish": "13 of 20 babesiosis dogs with pancreatitis were icteric. Vomiting, abdominal pain, high lipase. See SY12.",
+        "refs": [
+          "R18"
+        ]
+      },
+      {
+        "condition": "Leptospirosis",
+        "distinguish": "Cholestatic hepatopathy, usually with acute kidney injury; no parasites on the smear. Kidney and liver signs usually occur together.",
+        "refs": [
+          "R19"
+        ]
+      },
+      {
+        "condition": "Imidocarb overdose",
+        "distinguish": "Massive hepatic necrosis killed a dog given 10 times the dose within about a day. Check the dose given.",
+        "refs": [
+          "R20"
+        ]
+      },
+      {
+        "condition": "Acute kidney injury raising AST (SY05)",
+        "distinguish": "High AST/ALT ratio with azotaemia; ALT and ALP not proportionally raised.",
+        "refs": [
+          "R5"
+        ]
+      }
+    ],
+    "grading": []
+  },
+  "approach": [
+    {
+      "step": 1,
+      "action": "Measure haematocrit, total bilirubin and glucose",
+      "detail": "Relate icterus to the degree of anaemia. Bilirubin above 14.7 µmol/L marks a sicker B. rossi dog [R2]. Icteric dogs are at risk of hypoglycaemia [R17].",
+      "setting": "practice"
+    },
+    {
+      "step": 2,
+      "action": "Treat the parasite at the correct dose",
+      "detail": "Antibabesial drugs are in TX00. An accurate weight and dose matter: a 10-fold overdose caused fatal hepatic necrosis [R20].",
+      "setting": "practice"
+    },
+    {
+      "step": 3,
+      "action": "Correct anaemic hypoxia",
+      "detail": "The liver lesions of fatal B. rossi are attributed to haemolysis and hypoxia [R3]. Transfuse by the criteria of SY01.",
+      "setting": "practice"
+    },
+    {
+      "step": 4,
+      "action": "Run ALT, ALP, urea and creatinine",
+      "detail": "ALT and ALP show liver damage [R1]. Read AST with the creatinine: it rises with renal azotaemia [R5].",
+      "setting": "practice"
+    },
+    {
+      "step": 5,
+      "action": "Look for other causes of icterus",
+      "detail": "Pancreatitis (SY12), immune-mediated haemolysis (SY02) and, in an azotaemic dog, leptospirosis [R18][R19].",
+      "setting": "practice"
+    },
+    {
+      "step": 6,
+      "action": "Re-check bilirubin as the dog recovers",
+      "detail": "In treated B. canis, bilirubin was normal in almost all dogs by about two weeks [R11]. Persistent or rising icterus suggests another cause or complication.",
+      "setting": "practice"
+    },
+    {
+      "step": 7,
+      "action": "Refer for imaging and further liver tests",
+      "detail": "Ultrasound, bile acids and coagulation tests if icterus persists after the anaemia is corrected, or if the dog has signs of liver failure [R13][R8].",
+      "setting": "referral"
+    }
+  ],
+  "treatments": [
+    {
+      "name": "Correct the anaemia and hypoxia (transfusion and supportive care)",
+      "class": "supportive",
+      "aim": "Remove the hypoxic and haemolytic drive of the liver injury.",
+      "status": "standard",
+      "evidence_level": "E",
+      "independent_studies": 0,
+      "evidence_summary": "No study measured the effect of transfusion on the liver in babesiosis. The rationale is the histology of fatal B. rossi, which the authors attribute to haemolysis and hypoxia [R3], and the link between severe anaemia and hypoxic hepatic disease in an Onderstepoort series [R14]. Transfusion criteria and doses are on SY01.",
+      "doses": [],
+      "cautions": "See SY01 for transfusion reactions.",
+      "monitoring": "Haematocrit and bilirubin while in hospital.",
+      "availability": "",
+      "refs": [
+        "R3",
+        "R14"
+      ]
+    },
+    {
+      "name": "N-acetylcysteine",
+      "class": "adjunct",
+      "aim": "Restore glutathione and reduce oxidative injury to red cells and the liver.",
+      "status": "proposed",
+      "evidence_level": "A",
+      "independent_studies": 2,
+      "evidence_summary": "Two small randomised trials in B. gibsoni, both as an add-on to doxycycline, clindamycin and metronidazole. In 24 outpatient dogs, NAC for 14 days gave earlier improvement of anaemia, CRP and liver injury markers by day 14 [R6]. In 12 dogs, NAC for 5 days improved antioxidant capacity and MCHC at day 21; lower bilirubin was a non-significant trend [R7]. Not tested in B. rossi or B. canis. Both read as abstracts.",
+      "doses": [
+        {
+          "drug": "N-acetylcysteine",
+          "dose": "70 mg/kg",
+          "route": "PO",
+          "frequency": "once daily",
+          "duration": "14 days",
+          "context": "B. gibsoni, 24 dogs, randomised pilot trial",
+          "note": "Adjunct to doxycycline, clindamycin and metronidazole.",
+          "refs": [
+            "R6"
+          ]
+        },
+        {
+          "drug": "N-acetylcysteine",
+          "dose": "70 mg/kg",
+          "route": "PO",
+          "frequency": "not stated in the abstract",
+          "duration": "5 days",
+          "context": "B. gibsoni, 12 dogs, randomised trial",
+          "note": "Frequency not given in the abstract; full text not read.",
+          "refs": [
+            "R7"
+          ]
+        }
+      ],
+      "cautions": "No adverse effects are reported in the abstracts. Small samples, short follow-up, one region (India).",
+      "monitoring": "Haematocrit, bilirubin and ALT at the start and after 1 to 2 weeks, as in the trials [R6][R7].",
+      "availability": "",
+      "refs": [
+        "R6",
+        "R7"
+      ]
+    },
+    {
+      "name": "S-adenosylmethionine (ademetionine)",
+      "class": "adjunct",
+      "aim": "Hepatoprotection by raising hepatic glutathione.",
+      "status": "proposed",
+      "evidence_level": "B",
+      "independent_studies": 1,
+      "evidence_summary": "One uncontrolled Ukrainian series: 8 dogs with acute piroplasmosis (species not stated) received IV ademetionine after antibabesial treatment; bilirubin and liver enzymes improved by day 7 and the drug was well tolerated [R21]. No control group. The oral dose comes from an ACVIM consensus on chronic hepatitis, not babesiosis [R8].",
+      "doses": [
+        {
+          "drug": "ademetionine 1,4-butanedisulfonate",
+          "dose": "20 mg/kg",
+          "route": "IV",
+          "frequency": "once daily",
+          "duration": "3 to 6 days",
+          "context": "Piroplasmosis (species not stated), 8 dogs, uncontrolled series",
+          "note": "Given after the antibabesial drug.",
+          "refs": [
+            "R21"
+          ]
+        },
+        {
+          "drug": "S-adenosylmethionine (stabilised salt)",
+          "dose": "20 mg/kg",
+          "route": "PO",
+          "frequency": "once daily, on an empty stomach",
+          "duration": "",
+          "context": "ACVIM consensus on canine chronic hepatitis, not babesiosis",
+          "note": "Use stabilised salts only (butanedisulfonate, tosylate, phytate). Phytate salt: 8 to 10 mg/kg once daily, a lower dose without published pharmacological data.",
+          "refs": [
+            "R8"
+          ]
+        }
+      ],
+      "cautions": "Use products with known bioavailability [R8].",
+      "monitoring": "Bilirubin and liver enzymes after about one week [R21].",
+      "availability": "",
+      "refs": [
+        "R21",
+        "R8"
+      ]
+    },
+    {
+      "name": "Ursodeoxycholic acid",
+      "class": "adjunct",
+      "aim": "Choleretic and antioxidant support for cholestasis.",
+      "status": "proposed",
+      "evidence_level": "E",
+      "independent_studies": 0,
+      "evidence_summary": "Not tested in babesiosis. Cholestasis is present in fatal B. rossi livers [R3]. The dose is from the ACVIM chronic hepatitis consensus, which states that efficacy evidence for hepatoprotectants in dogs is lacking [R8].",
+      "doses": [
+        {
+          "drug": "ursodeoxycholic acid",
+          "dose": "15 mg/kg",
+          "route": "PO",
+          "frequency": "once daily, with food",
+          "duration": "",
+          "context": "ACVIM consensus on canine chronic hepatitis, not babesiosis",
+          "note": "",
+          "refs": [
+            "R8"
+          ]
+        }
+      ],
+      "cautions": "Rare nausea and diarrhoea [R8].",
+      "monitoring": "Bilirubin and ALP.",
+      "availability": "",
+      "refs": [
+        "R3",
+        "R8"
+      ]
+    },
+    {
+      "name": "Silymarin (milk thistle)",
+      "class": "adjunct",
+      "aim": "Antioxidant and anti-inflammatory hepatoprotection.",
+      "status": "proposed",
+      "evidence_level": "E",
+      "independent_studies": 0,
+      "evidence_summary": "Not tested in babesiosis. The consensus calls the dose largely undefined [R8].",
+      "doses": [
+        {
+          "drug": "silymarin (native extract)",
+          "dose": "4 to 8 mg/kg per day",
+          "route": "PO",
+          "frequency": "divided, 2 to 3 times a day",
+          "duration": "",
+          "context": "ACVIM consensus on canine chronic hepatitis, not babesiosis",
+          "note": "Dose described as largely undefined.",
+          "refs": [
+            "R8"
+          ]
+        }
+      ],
+      "cautions": "Inhibits cytochrome P450 enzymes and P-glycoprotein: watch for drug interactions [R8].",
+      "monitoring": "",
+      "availability": "",
+      "refs": [
+        "R8"
+      ]
+    },
+    {
+      "name": "Vitamin E (alpha-tocopherol)",
+      "class": "adjunct",
+      "aim": "Protect against lipid peroxidation.",
+      "status": "proposed",
+      "evidence_level": "E",
+      "independent_studies": 0,
+      "evidence_summary": "Not tested in babesiosis. Dose from the ACVIM chronic hepatitis consensus [R8].",
+      "doses": [
+        {
+          "drug": "alpha-tocopherol",
+          "dose": "10 IU/kg",
+          "route": "PO",
+          "frequency": "once daily, with food",
+          "duration": "",
+          "context": "ACVIM consensus on canine chronic hepatitis, not babesiosis",
+          "note": "Not more than 400 IU per dog.",
+          "refs": [
+            "R8"
+          ]
+        }
+      ],
+      "cautions": "Overdose can impair vitamin K activity [R8].",
+      "monitoring": "",
+      "availability": "",
+      "refs": [
+        "R8"
+      ]
+    },
+    {
+      "name": "Imidocarb dipropionate overdose (avoid)",
+      "class": "supportive",
+      "aim": "Avoid drug-induced liver necrosis.",
+      "status": "harmful",
+      "evidence_level": "C",
+      "independent_studies": 1,
+      "evidence_summary": "A dog given 10 times the recommended imidocarb dose for suspected babesiosis collapsed and died within about a day; death was due to massive hepatic necrosis [R20]. A review repeats the warning [R9]. No source reports liver injury at the label dose. Correct doses are on TX00.",
+      "doses": [],
+      "cautions": "The fatal case followed a 10-fold dosing error [R20].",
+      "monitoring": "ALT and bilirubin if an overdose is suspected.",
+      "availability": "",
+      "refs": [
+        "R20",
+        "R9"
+      ]
+    }
+  ],
+  "prognosis": {
+    "text": "Liver involvement is common but, alone, carries a better outlook than kidney, lung or brain involvement [R1][R9]. In B. rossi, high bilirubin was associated with death, but no single test predicted death independently [R2]. Mortality in these series includes euthanasia.",
+    "indicators": [
+      {
+        "finding": "Total bilirubin above 14.7 µmol/L (B. rossi)",
+        "meaning": "Associated with death (AUC 0.795); odds of death 1.23 times higher for each 50 µmol/L.",
+        "refs": [
+          "R2"
+        ]
+      },
+      {
+        "finding": "Liver damage by enzymes, as the only complication (B. rossi)",
+        "meaning": "Did not change the outcome; CNS and kidney involvement did.",
+        "refs": [
+          "R1"
+        ]
+      },
+      {
+        "finding": "Hepatopathy with other complications",
+        "meaning": "Recovery may be slower.",
+        "refs": [
+          "R9"
+        ]
+      },
+      {
+        "finding": "Bilirubin in B. canis",
+        "meaning": "Median 54.7 µmol/L in non-survivors and 21.25 µmol/L in survivors; the difference was not significant in 15 dogs.",
+        "refs": [
+          "R16"
+        ]
+      }
+    ]
+  },
+  "related": [
+    {
+      "id": "TX00",
+      "why": "Antibabesial drugs and their doses."
+    },
+    {
+      "id": "SY01",
+      "why": "Severe haemolytic anaemia and transfusion: the main driver of icterus."
+    },
+    {
+      "id": "SY02",
+      "why": "Immune-mediated haemolysis as a cause of persistent icterus."
+    },
+    {
+      "id": "SY05",
+      "why": "Acute kidney injury, which raises AST and occurs with liver damage."
+    },
+    {
+      "id": "SY11",
+      "why": "Complicated disease and multiple organ dysfunction."
+    },
+    {
+      "id": "SY12",
+      "why": "Pancreatitis as a cause of cholestasis and icterus."
+    },
+    {
+      "id": "SY16",
+      "why": "Hypoglycaemia, more likely in icteric dogs."
+    }
+  ],
+  "evidence_gaps": [
+    "No study separated haemolytic from hepatic bilirubin in babesiosis, with fractionated bilirubin, bile acids and histology over time.",
+    "No hepatoprotective drug was tested in B. rossi or B. canis; the NAC trials were small, in B. gibsoni, and read as abstracts.",
+    "Ursodeoxycholic acid, silymarin and vitamin E doses come from a chronic hepatitis consensus, not from dogs with babesiosis.",
+    "No evidence was found on vitamin K, lactulose for hepatic encephalopathy, or nutrition in dogs with babesiosis.",
+    "Liver histology exists only for fatal B. rossi cases and a few experimental B. canis dogs; survivors were not studied.",
+    "The bilirubin cut-off of 14.7 µmol/L was not validated in a second B. rossi population."
+  ],
+  "references": [
+    {
+      "ref": "R1",
+      "authors": "Welzl C, Leisewitz AL, Jacobson LS, et al.",
+      "year": 2001,
+      "title": "Systemic inflammatory response syndrome and multiple-organ damage/dysfunction in complicated canine babesiosis",
+      "journal": "Journal of the South African Veterinary Association",
+      "volume_pages": "72(3):158-162",
+      "doi": "10.4102/jsava.v72i3.640",
+      "pmid": "11811704",
+      "url": "",
+      "article_id": "",
+      "type": "cohort",
+      "species": "B. rossi",
+      "n_dogs": 91,
+      "read": "full text"
+    },
+    {
+      "ref": "R2",
+      "authors": "Leisewitz AL, Goddard A, Clift S, et al.",
+      "year": 2019,
+      "title": "A clinical and pathological description of 320 cases of naturally acquired Babesia rossi infection in dogs",
+      "journal": "Veterinary Parasitology",
+      "volume_pages": "271:22-30",
+      "doi": "10.1016/j.vetpar.2019.06.005",
+      "pmid": "31303199",
+      "url": "",
+      "article_id": "CB040",
+      "type": "cohort",
+      "species": "B. rossi",
+      "n_dogs": 320,
+      "read": "full text"
+    },
+    {
+      "ref": "R3",
+      "authors": "Horrell H, Leisewitz A, Clift S",
+      "year": 2026,
+      "title": "Liver histopathology in dogs with naturally acquired Babesia rossi infection",
+      "journal": "Frontiers in Veterinary Science",
+      "volume_pages": "13:1765994",
+      "doi": "10.3389/fvets.2026.1765994",
+      "pmid": "42339097",
+      "url": "",
+      "article_id": "CB147",
+      "type": "case series",
+      "species": "B. rossi",
+      "n_dogs": 10,
+      "read": "full text"
+    },
+    {
+      "ref": "R4",
+      "authors": "Zygner W, Gójska-Zygner O, Norbury LJ, et al.",
+      "year": 2012,
+      "title": "Increased AST/ALT ratio in azotaemic dogs infected with Babesia canis",
+      "journal": "Polish Journal of Veterinary Sciences",
+      "volume_pages": "15(3):483-486",
+      "doi": "10.2478/v10181-012-0074-7",
+      "pmid": "23214368",
+      "url": "",
+      "article_id": "CB424",
+      "type": "cohort",
+      "species": "B. canis",
+      "n_dogs": 182,
+      "read": "full text"
+    },
+    {
+      "ref": "R5",
+      "authors": "Gójska-Zygner O, Karabowicz J, Bartosik J, et al.",
+      "year": 2022,
+      "title": "Association between increased the de Ritis quotient and renal azotaemia in canine babesiosis",
+      "journal": "Animals (Basel)",
+      "volume_pages": "12(5):626",
+      "doi": "10.3390/ani12050626",
+      "pmid": "35268195",
+      "url": "",
+      "article_id": "CB093",
+      "type": "cohort",
+      "species": "B. canis",
+      "n_dogs": 34,
+      "read": "full text"
+    },
+    {
+      "ref": "R6",
+      "authors": "Khan N, Sandilya A, Eregowda CG, et al.",
+      "year": 2026,
+      "title": "N-acetylcysteine as an adjunct therapy ameliorates oxidative stress and attenuates anaemia, acute phase response and hepatic injury in clinical Babesia gibsoni infection in dogs: a pilot study",
+      "journal": "Molecular Biology Reports",
+      "volume_pages": "53(1)",
+      "doi": "10.1007/s11033-026-11689-y",
+      "pmid": "41838252",
+      "url": "",
+      "article_id": "CB151",
+      "type": "trial",
+      "species": "B. gibsoni",
+      "n_dogs": 24,
+      "read": "abstract"
+    },
+    {
+      "ref": "R7",
+      "authors": "Mundassery AI, Latha RR, Kulangara V, et al.",
+      "year": 2025,
+      "title": "Effect of N-acetylcysteine on oxidative stress and hematological recovery in dogs with Babesia gibsoni infection",
+      "journal": "Acta Parasitologica",
+      "volume_pages": "70(5):186",
+      "doi": "10.1007/s11686-025-01122-y",
+      "pmid": "40828450",
+      "url": "",
+      "article_id": "CB142",
+      "type": "trial",
+      "species": "B. gibsoni",
+      "n_dogs": 12,
+      "read": "abstract"
+    },
+    {
+      "ref": "R8",
+      "authors": "Webster CRL, Center SA, Cullen JM, et al.",
+      "year": 2019,
+      "title": "ACVIM consensus statement on the diagnosis and treatment of chronic hepatitis in dogs",
+      "journal": "Journal of Veterinary Internal Medicine",
+      "volume_pages": "33(3):1173-1200",
+      "doi": "10.1111/jvim.15467",
+      "pmid": "30844094",
+      "url": "",
+      "article_id": "",
+      "type": "guideline",
+      "species": "",
+      "n_dogs": null,
+      "read": "full text"
+    },
+    {
+      "ref": "R9",
+      "authors": "Köster LS, Lobetti RG, Kelly P",
+      "year": 2015,
+      "title": "Canine babesiosis: a perspective on clinical complications, biomarkers, and treatment",
+      "journal": "Veterinary Medicine: Research and Reports",
+      "volume_pages": "6:119-128",
+      "doi": "10.2147/VMRR.S60431",
+      "pmid": "30155438",
+      "url": "",
+      "article_id": "CB493",
+      "type": "review",
+      "species": "B. rossi",
+      "n_dogs": null,
+      "read": "full text"
+    },
+    {
+      "ref": "R10",
+      "authors": "von Hohnhorst IM, Moritz A, Eisenecker CM, et al.",
+      "year": 2025,
+      "title": "Impact of levels of parasitemia and antibodies, acute-phase proteins, as well as stays abroad on hematological and biochemical parameters in 342 dogs with acute Babesia canis infection",
+      "journal": "Parasites & Vectors",
+      "volume_pages": "18(1):347",
+      "doi": "10.1186/s13071-025-06997-4",
+      "pmid": "40817086",
+      "url": "",
+      "article_id": "CB141",
+      "type": "cohort",
+      "species": "B. canis",
+      "n_dogs": 342,
+      "read": "full text"
+    },
+    {
+      "ref": "R11",
+      "authors": "Eisenecker CM, Moritz A, von Hohnhorst IM, et al.",
+      "year": 2026,
+      "title": "Clinicopathological abnormalities and outcome of acute Babesia canis infections in 23 dogs treated with imidocarb dipropionate",
+      "journal": "Current Research in Parasitology & Vector-Borne Diseases",
+      "volume_pages": "10:100395",
+      "doi": "10.1016/j.crpvbd.2026.100395",
+      "pmid": "42375825",
+      "url": "",
+      "article_id": "CB148",
+      "type": "cohort",
+      "species": "B. canis",
+      "n_dogs": 23,
+      "read": "full text"
+    },
+    {
+      "ref": "R12",
+      "authors": "Chan K, Bęczkowski PM, Almendros A",
+      "year": 2025,
+      "title": "Clinical and clinicopathological features of 108 dogs infected with Babesia gibsoni in Hong Kong",
+      "journal": "Animals (Basel)",
+      "volume_pages": "15(5):645",
+      "doi": "10.3390/ani15050645",
+      "pmid": "40075928",
+      "url": "",
+      "article_id": "CB134",
+      "type": "case series",
+      "species": "B. gibsoni",
+      "n_dogs": 108,
+      "read": "full text"
+    },
+    {
+      "ref": "R13",
+      "authors": "Máthé A, Vörös K, Németh T, et al.",
+      "year": 2006,
+      "title": "Clinicopathological changes and effect of imidocarb therapy in dogs experimentally infected with Babesia canis",
+      "journal": "Acta Veterinaria Hungarica",
+      "volume_pages": "54(1):19-33",
+      "doi": "10.1556/AVet.54.2006.1.3",
+      "pmid": "16613023",
+      "url": "",
+      "article_id": "",
+      "type": "experimental",
+      "species": "B. canis",
+      "n_dogs": 3,
+      "read": "abstract"
+    },
+    {
+      "ref": "R14",
+      "authors": "Reyers F, Leisewitz AL, Lobetti RG, et al.",
+      "year": 1998,
+      "title": "Canine babesiosis in South Africa: more than one disease. Does this serve as a model for falciparum malaria?",
+      "journal": "Annals of Tropical Medicine and Parasitology",
+      "volume_pages": "92(4):503-511",
+      "doi": "",
+      "pmid": "9683901",
+      "url": "",
+      "article_id": "",
+      "type": "cohort",
+      "species": "B. rossi",
+      "n_dogs": 662,
+      "read": "abstract"
+    },
+    {
+      "ref": "R15",
+      "authors": "Myburgh EC, Goddard A",
+      "year": 2009,
+      "title": "The effect of pyridoxal-5-phosphate on serum alanine aminotransferase activity in dogs suffering from canine babesiosis",
+      "journal": "Onderstepoort Journal of Veterinary Research",
+      "volume_pages": "76(3):327-333",
+      "doi": "10.4102/ojvr.v76i3.38",
+      "pmid": "21105601",
+      "url": "",
+      "article_id": "CB378",
+      "type": "cohort",
+      "species": "Babesia sp. (South Africa)",
+      "n_dogs": 105,
+      "read": "full text"
+    },
+    {
+      "ref": "R16",
+      "authors": "Eichenberger RM, Riond B, Willi B, et al.",
+      "year": 2016,
+      "title": "Prognostic markers in acute Babesia canis infections",
+      "journal": "Journal of Veterinary Internal Medicine",
+      "volume_pages": "30(1):174-182",
+      "doi": "10.1111/jvim.13822",
+      "pmid": "26727465",
+      "url": "",
+      "article_id": "CB516",
+      "type": "cohort",
+      "species": "B. canis",
+      "n_dogs": 15,
+      "read": "full text"
+    },
+    {
+      "ref": "R17",
+      "authors": "Keller N, Jacobson LS, Nel M, et al.",
+      "year": 2004,
+      "title": "Prevalence and risk factors of hypoglycemia in virulent canine babesiosis",
+      "journal": "Journal of Veterinary Internal Medicine",
+      "volume_pages": "18(3):265-270",
+      "doi": "10.1892/0891-6640(2004)18<265:parfoh>2.0.co;2",
+      "pmid": "15188810",
+      "url": "",
+      "article_id": "",
+      "type": "cohort",
+      "species": "B. rossi",
+      "n_dogs": 250,
+      "read": "abstract"
+    },
+    {
+      "ref": "R18",
+      "authors": "Möhr AJ, Lobetti RG, van der Lugt JJ",
+      "year": 2000,
+      "title": "Acute pancreatitis: a newly recognised potential complication of canine babesiosis",
+      "journal": "Journal of the South African Veterinary Association",
+      "volume_pages": "71(4):232-239",
+      "doi": "10.4102/jsava.v71i4.721",
+      "pmid": "11212934",
+      "url": "",
+      "article_id": "",
+      "type": "case series",
+      "species": "B. rossi",
+      "n_dogs": 20,
+      "read": "abstract"
+    },
+    {
+      "ref": "R19",
+      "authors": "Sykes JE, Francey T, Schuller S, et al.",
+      "year": 2023,
+      "title": "Updated ACVIM consensus statement on leptospirosis in dogs",
+      "journal": "Journal of Veterinary Internal Medicine",
+      "volume_pages": "37(6):1966-1982",
+      "doi": "10.1111/jvim.16903",
+      "pmid": "37861061",
+      "url": "",
+      "article_id": "",
+      "type": "guideline",
+      "species": "",
+      "n_dogs": null,
+      "read": "full text"
+    },
+    {
+      "ref": "R20",
+      "authors": "Kock N, Kelly P",
+      "year": 1991,
+      "title": "Massive hepatic necrosis associated with accidental imidocarb dipropionate toxicosis in a dog",
+      "journal": "Journal of Comparative Pathology",
+      "volume_pages": "104(1):113-116",
+      "doi": "10.1016/s0021-9975(08)80093-x",
+      "pmid": "2019670",
+      "url": "",
+      "article_id": "",
+      "type": "case report",
+      "species": "",
+      "n_dogs": 1,
+      "read": "abstract"
+    },
+    {
+      "ref": "R21",
+      "authors": "Pyatnychko O, Zhyla M, Shkodyak N, et al.",
+      "year": 2022,
+      "title": "Efficiency of application of the drug \"Heptral-vet\" in the complex treatment of dogs with acute course of pyroplasmosis",
+      "journal": "Scientific and Technical Bulletin of State Scientific Research Control Institute of Veterinary Medical Products and Fodder Additives and Institute of Animal Biology",
+      "volume_pages": "23(1):131-136",
+      "doi": "10.36359/scivp.2022-23-1.19",
+      "pmid": "",
+      "url": "",
+      "article_id": "",
+      "type": "case series",
+      "species": "Babesia sp. (not stated)",
+      "n_dogs": 8,
+      "read": "abstract"
+    }
+  ],
+  "search": {
+    "date": "2026-11-12",
+    "sources": [
+      "local review",
+      "PubMed",
+      "Europe PMC",
+      "Crossref",
+      "publisher pages"
+    ],
+    "note": "Local clinical-treatment set (81 papers tagged hepatopathy, icterus or cholelithiasis), disorder terms, the MET synthesis, then PubMed and Crossref for liver findings, hepatoprotectants and antibabesial drug toxicity. Left out: single case reports, proprietary products without a dose in the abstract (an ornithine-arginine product, a succinate infusion, plasmapheresis), and a prednisolone-related cholelithiasis case."
+  }
+}

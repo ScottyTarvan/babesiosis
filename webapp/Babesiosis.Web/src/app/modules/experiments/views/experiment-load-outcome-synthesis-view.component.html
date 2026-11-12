@@ -1,0 +1,110 @@
+<div class="fs-experiment-load">
+  <fs-card title="Primary analysis: can load by outcome be pooled?"
+           subtitle="Published contrasts from the SV-G2 extraction · pooling only with ≥ 3 independent units sharing species, outcome class and definition · never across species">
+    @if (cells(); as c) {
+      <dl class="fs-experiment-load__tiles">
+        <div><dt>Pooled cells</dt><dd>{{ c.pooled.length }} <small>of {{ c.cells.length }} cells</small></dd></div>
+        <div><dt>Largest cell</dt><dd>{{ count('max_units_in_cell') }} <small>units (rule needs 3)</small></dd></div>
+        <div><dt>Units with load vs outcome</dt><dd>{{ c.load_units }} <small>of {{ count('units_with_severity_rows') }} units with severity rows</small></dd></div>
+        <div><dt>Significantly higher load in severe</dt><dd>{{ count('significant_higher_in_severe') }} <small>of {{ c.load_units }} units</small></dd></div>
+        <div>
+          <dt>B. canis died vs survived (CB516)</dt>
+          <dd>g {{ fmt(c.primary.effect) }} <small>({{ fmt(c.primary.ci_lo) }} to {{ fmt(c.primary.ci_hi) }}), {{ c.primary.n_severe }} vs {{ c.primary.n_comparison }} dogs</small></dd>
+        </div>
+        <div><dt>Detectable in that unit</dt><dd>{{ fmt(c.primary.detectable, 1) }} <small>SD at 80% power</small></dd></div>
+      </dl>
+      <fs-data-grid [data]="c.cells" [columns]="cellColumns" noDataText="No cells." />
+      <p class="fs-experiment-load__footnote">
+        No cell reached the pooling rule, so there is no pooled effect: a lack of data, not evidence for resistance or tolerance.
+        The g of CB516 is on log load, from medians and ranges (Hozo and Wan conversions); death includes euthanasia.
+        Species groups: {{ c.species_groups.join(', ') }} · one species per source, so species are not compared. No hypothesis test.
+      </p>
+    } @else {
+      <p class="fs-experiment-load__footnote">This run stored no pooling summary.</p>
+    }
+  </fs-card>
+
+  <fs-card title="Effect in each unit with computable numbers"
+           subtitle="Point and 95% interval · dashed line: group sizes assumed (equal split) · different measures are kept in separate panels">
+    @if (forest().length) {
+      @for (p of forest(); track p.title) {
+        <h4 class="fs-experiment-load__subhead">{{ p.title }}</h4>
+        <div class="fs-experiment-load__forest">
+          <svg [attr.viewBox]="'0 0 ' + svgWidth + ' ' + p.height" [attr.width]="svgWidth" [attr.height]="p.height" role="img"
+               [attr.aria-label]="p.title">
+            <line class="zero" [attr.x1]="p.zero" [attr.x2]="p.zero" y1="12" [attr.y2]="p.height - 26" />
+            @for (t of p.ticks; track t.x) {
+              <line class="tick" [attr.x1]="t.x" [attr.x2]="t.x" [attr.y1]="p.height - 26" [attr.y2]="p.height - 21" />
+              <text class="tick-label" [attr.x]="t.x" [attr.y]="p.height - 9" text-anchor="middle">{{ t.label }}</text>
+            }
+            @for (l of p.lines; track l.key) {
+              <text class="label" x="0" [attr.y]="l.y - 3">{{ l.label }}</text>
+              <text class="sub" x="0" [attr.y]="l.y + 10">{{ l.sub }}</text>
+              <line class="ci" [class.dashed]="l.dashed" [attr.x1]="l.x1" [attr.x2]="l.x2" [attr.y1]="l.y" [attr.y2]="l.y" />
+              <circle class="point" [attr.cx]="l.cx" [attr.cy]="l.y" r="5" />
+              <text class="value" [attr.x]="panelLeft + panelWidth + 8" [attr.y]="l.y + 4">{{ l.value }}</text>
+            }
+          </svg>
+        </div>
+        <p class="fs-experiment-load__axis">{{ p.axis }}</p>
+      }
+      <p class="fs-experiment-load__footnote">
+        CB141 (B. canis, 342-dog laboratory cohort): the antibody and load correlations use different subsets (166 and 222 dogs) and the
+        score is built from blood counts, so they are shown side by side, not compared formally. CB220 is a late (jaundiced) vs early
+        (anaemic) form: stage and severity are mixed.
+      </p>
+    } @else {
+      <p class="fs-experiment-load__footnote">This run stored no unit effects.</p>
+    }
+  </fs-card>
+
+  <fs-card title="Direction table: load against outcome, by unit"
+           subtitle="Every load row that compares load with a severity or outcome definition · load method and sample timing are the moderators">
+    @if (table(); as t) {
+      <fs-data-grid [data]="t" [columns]="tableColumns" keyExpr="article" noDataText="No load rows." />
+      <p class="fs-experiment-load__footnote">
+        Most loads are one smear at admission, often with the site not stated (capillary loads run higher than venous).
+        Measurement error in load flattens differences and can imitate tolerance.
+      </p>
+    } @else {
+      <p class="fs-experiment-load__footnote">This run stored no direction table.</p>
+    }
+  </fs-card>
+
+  <fs-card title="Severe disease at low load, protection at unchanged load"
+           subtitle="Discordant results, listed separately · from the SV-G2 rows and a keyword screen of the appraisal notes">
+    @if (lowLoad(); as l) {
+      <fs-data-grid [data]="l.rows" [columns]="lowColumns" [pager]="pager" [pageSize]="10" noDataText="No items." />
+      <p class="fs-experiment-load__footnote">
+        Note screen: {{ l.note_hits }} notes matched, {{ l.note_hits_included }} kept after reading. Most items are case-level, survey
+        or review statements without a comparison group: they show that discordant dogs exist, not how common they are. Statements are
+        paraphrased.
+      </p>
+    } @else {
+      <p class="fs-experiment-load__footnote">This run stored no list.</p>
+    }
+  </fs-card>
+
+  <fs-card title="Damage by load group (groups defined by load)"
+           subtitle="The inverse question: is damage worse in the high-load group? · worse/better is the agent's reading of each marker">
+    @if (damage(); as d) {
+      <fs-data-grid [data]="d.units" [columns]="damageUnitColumns" keyExpr="unit" noDataText="No units." />
+      <h4 class="fs-experiment-load__subhead">All markers</h4>
+      <fs-data-grid [data]="d.rows" [columns]="damageColumns" [pager]="pager" [pageSize]="10" noDataText="No rows." />
+      <p class="fs-experiment-load__footnote">
+        CB241: 4 vs 4 dogs, mean ± m printed with tests only against healthy controls; very large g values are flagged as implausible
+        (read them as direction). CH09 correlations pool serial samples of 5 experimental Beagles.
+      </p>
+    } @else {
+      <p class="fs-experiment-load__footnote">This run stored no damage table.</p>
+    }
+  </fs-card>
+
+  <fs-card title="Sensitivity checks" subtitle="Assumed group sizes, and the experimental dose contrast that was excluded from the primary set">
+    @if (sensitivity(); as s) {
+      <fs-data-grid [data]="s" [columns]="sensitivityColumns" noDataText="No checks." />
+    } @else {
+      <p class="fs-experiment-load__footnote">This run stored no sensitivity checks.</p>
+    }
+  </fs-card>
+</div>

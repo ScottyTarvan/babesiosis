@@ -1,0 +1,12 @@
+candidate,named_accessions,named_status,quantity_accession,quantity_description,quantity_gene,coverage_pct,unique_peptides,psms,same_abundances_as_named,check,in_family
+Haemoglobin beta,P60524,IsMasterProtein,P60524,Hemoglobin subunit beta,HBB,45,6,135,True,master,True
+Haemoglobin alpha,P60529,IsMasterProteinCandidate,J9NXL3,Uncharacterized protein,LOC100855558,31,2,63,True,fails: candidate only; group master has no stated identity,False
+Haptoglobin,P19006;G1K2D9,IsMasterProteinCandidate;IsMasterProteinCandidate,A0A5F4DB38,Peptidase S1 domain-containing protein,LOC479668,17,6,152,True,candidate only; group master has the same gene symbol,True
+Lactoferrin,F1PR54,IsMasterProtein,F1PR54,Lactotransferrin,LTF,6,3,95,True,master,True
+S100A8,C0LQL0;J9P8S3,IsMasterProtein;IsMasterProteinCandidate,C0LQL0,Protein S100,S100A8,9,1,13,True,master,True
+Histone H4,L7N0L3;J9NRV0;F2Z4N2,IsMasterProtein;IsMasterProteinCandidate;IsMasterProteinCandidate,L7N0L3,Histone H4,H4C7,11,1,2,True,master,True
+Alpha-2-antiplasmin,E2R4V3;A0A5F4CB96,IsMasterProtein;IsMasterProteinCandidate,E2R4V3,Serpin family F member 2,SERPINF2,26,8,79,True,master,True
+Protein C,Q28278;J9NVK0;A0A5F4CZ73,IsMasterProtein;IsMasterProteinCandidate;IsMasterProteinCandidate,Q28278,Vitamin K-dependent protein C,PROC,4,2,5,True,master,True
+Antithrombin,E2RES2,IsMasterProtein,E2RES2,Antithrombin-III,SERPINC1,18,7,98,True,master,True
+Complement factor H,A0A5F4BVG1;E2RK21;A0A5F4CHF6;J9NTL7;A0A5F4CLV4;A0A5F4BYC6,IsMasterProtein;IsMasterProteinCandidate;IsMasterProteinCandidate;IsMasterProteinCandidate;IsMasterProteinCandidate;IsMasterProteinCandidate,A0A5F4BVG1,Uncharacterized protein,CFH,15,13,164,True,master,True
+CD14,A0A1S7J0A8,IsMasterProtein,A0A1S7J0A8,Monocyte differentiation antigen CD14,607076,11,4,34,True,master,True

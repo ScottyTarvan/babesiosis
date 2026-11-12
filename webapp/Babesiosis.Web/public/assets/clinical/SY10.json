@@ -1,0 +1,1144 @@
+{
+  "schema_version": 1,
+  "id": "SY10",
+  "title": "Shock and hypotension",
+  "updated": "2026-11-12",
+  "definition": "Shock in canine babesiosis is circulatory failure with poor tissue perfusion: arterial hypotension, clinical collapse, or both, often with hyperlactataemia [R1][R2][R3]. It is mainly a vasodilatory (hyperdynamic) shock on a background of anaemia, seen in complicated B. rossi and B. canis infection [R2][R4].",
+  "definition_note": "Working definition confirmed, with changes. No study uses the same blood pressure cut-off; each set its own [R1][R5]. Collapse at presentation is the practical marker with outcome data [R3][R6]. Severely anaemic dogs can be tachycardic but normotensive [R7], so anaemia alone is not shock. Reviews name a peracute form, but no study reports it as a separate group [R2]. Hypotension that does not respond to fluid, with organ failure, is reported as 'septic shock' in babesiosis [R8]; the inflammatory response as a whole is on SY11.",
+  "key_points": [
+    "Hypotension is the most frequent blood pressure change in babesiosis and rises with severity: 5 of 10 complicated B. rossi cases, 2 of 10 severe uncomplicated and 0 of 10 mild cases [R1].",
+    "Collapse at presentation is the strongest bedside sign: 72 of 320 B. rossi dogs could not stand, and they made up 24 of the 34 deaths [R3].",
+    "Measure lactate on arrival and again at 8 and 16 h: in B. rossi, admission lactate above 5 mmol/L, or lactate that stays above 2.5 mmol/L or does not fall by half, was linked with death [R9].",
+    "No fluid, vasopressor or steroid has been compared with standard care in dogs with babesiosis; the doses on this page come from general canine critical care [R10].",
+    "Give fluid in small boluses and reassess after each: fluid boluses raised mortality in African children with severe febrile illness (57% with malaria) [R11], and liberal fluid caused lung oedema in adults with severe malaria [R12].",
+    "Hypotension that does not respond to fluid was fatal in all 10 dogs with babesiosis that had it in one Croatian clinic [R8]."
+  ],
+  "description": [
+    {
+      "heading": "What it is",
+      "text": "Dogs with severe and complicated babesiosis often arrive collapsed and in clinical shock [R2][R13]. Arterial pressures fall as severity rises, in B. rossi [R1] and in B. canis [R4][R5]. A low pulse pressure was found in 7 of 10 complicated B. rossi cases [R1]. Reviews compare the shock with the hyperdynamic phase of septic shock [R2]. Severe anaemia adds a lack of oxygen-carrying capacity: B. rossi dogs with a haematocrit of 0.10 to 0.20 L/L (10 to 20%) had a normotensive tachycardia before transfusion [R7]."
+    },
+    {
+      "heading": "How common, and in which dogs",
+      "text": "At Onderstepoort, 72 of 320 dogs with B. rossi (22.5%) could not stand at presentation [R3], and 21 of 100 dogs had a clinically compromised circulation [R6]. In B. canis, a mean arterial pressure (MAP) below 80 mmHg was found in 7 of 48 dogs in Poland [R5], and a systolic pressure below 100 mmHg in 3 of 49 dogs in Germany [R14]. In a Croatian clinic, 10 of 86 admitted dogs met the authors' criteria for septic shock with refractory hypotension [R8]."
+    },
+    {
+      "heading": "When in the course of disease",
+      "text": "Shock is present on arrival: in these studies, pressure and lactate were measured before any treatment [R1][R3]. In one Onderstepoort database, 8 of 20 deaths occurred before or at admission, and the treated dogs that died did so within 24 h [R3]. Dogs with refractory hypotension died 1 to 4 days after admission [R8]."
+    },
+    {
+      "heading": "Mechanism",
+      "text": "A review proposes vasodilation, fluid loss through leaky vessels, dehydration and myocardial depression [R2]. In B. canis, serum TNF-alpha correlated inversely with arterial pressure [R15], and aldosterone rose in some hypotensive dogs, a response the authors judged insufficient [R16]. Hyperlactataemia went with collapse and hypoglycaemia [R17]. In adults with severe malaria, lactic acidosis followed parasite sequestration in small vessels, not low blood volume, and fluid did not correct it [R12]. A Ukrainian group reported a low circulating blood volume by dye dilution, in dogs whose Babesia species was not identified [R18]."
+    }
+  ],
+  "species_notes": [
+    {
+      "species": "B. rossi",
+      "note": "Most of the data. Hypotension rises with severity [R1]; collapse and lactate predict death [R3][R9]. Adrenal insufficiency was not found [R19]."
+    },
+    {
+      "species": "B. canis",
+      "note": "Complicated cases had lower pressures than uncomplicated cases (MAP 60 versus 116 mmHg, abstract values) [R4]. Hypotension went with azotaemia [R5]. All 8 non-survivors of 15 dogs had hyperlactataemia [R20]."
+    },
+    {
+      "species": "Species not identified",
+      "note": "The Ukrainian shock and infusion studies [R18][R21], the Croatian septic shock series (species not stated in the abstract) [R8] and the Indian echocardiography series [R22] did not name the species. No blood pressure data were found for B. gibsoni or B. vogeli."
+    }
+  ],
+  "diagnosis": {
+    "criteria": [
+      {
+        "criterion": "Hypotension (B. rossi study definition)",
+        "threshold": "More than 3 SD below the mean of healthy controls (controls: systolic 151 ± 11 mmHg, MAP 107 ± 10 mmHg)",
+        "basis": "babesiosis",
+        "note": "30 dogs with B. rossi and 10 healthy controls, South Africa. Method not given in the abstract.",
+        "refs": [
+          "R1"
+        ]
+      },
+      {
+        "criterion": "Hypotension (B. canis study definition)",
+        "threshold": "MAP below 80 mmHg (oscillometric)",
+        "basis": "babesiosis",
+        "note": "48 dogs with B. canis, Poland, measured at the first visit before treatment.",
+        "refs": [
+          "R5"
+        ]
+      },
+      {
+        "criterion": "Hypotension (B. canis study definition)",
+        "threshold": "Systolic pressure below 100 mmHg",
+        "basis": "babesiosis",
+        "note": "49 dogs with B. canis, Germany; median systolic 119 mmHg (range 90 to 180).",
+        "refs": [
+          "R14"
+        ]
+      },
+      {
+        "criterion": "Collapse",
+        "threshold": "Unable to stand unaided at presentation",
+        "basis": "babesiosis",
+        "note": "320 dogs with B. rossi. The marker with the strongest outcome data.",
+        "refs": [
+          "R3"
+        ]
+      },
+      {
+        "criterion": "Hyperlactataemia",
+        "threshold": "Above 2.5 mmol/L [R9]; above 2 mmol/L [R3]",
+        "basis": "babesiosis",
+        "note": "B. rossi. The source of the 2.5 mmol/L cut-off gave it as 22.5 mg per 100 mL.",
+        "refs": [
+          "R9",
+          "R3"
+        ]
+      },
+      {
+        "criterion": "Septic shock (consensus, dogs with sepsis from any cause)",
+        "threshold": "Impaired perfusion despite adequate fluid resuscitation: hyperlactataemia, persistent hypotension, progressive organ dysfunction",
+        "basis": "general canine",
+        "note": "The 2026 consensus gives no numeric cut-off for dogs. Babesiosis is not bacterial sepsis; the label is used for babesiosis by one group [R8].",
+        "refs": [
+          "R23",
+          "R8"
+        ]
+      },
+      {
+        "criterion": "Resolution of hypotension (study end point)",
+        "threshold": "Systolic above 90 mmHg or MAP above 65 mmHg, sustained for at least 4 h",
+        "basis": "general canine",
+        "note": "End point of a study of 47 dogs with septic shock; not a guideline target.",
+        "refs": [
+          "R24"
+        ]
+      },
+      {
+        "criterion": "Shock index (heart rate divided by systolic pressure)",
+        "threshold": "No validated cut-off; 1.43 ± 0.3 in dogs with babesiosis and shock versus 0.76 ± 0.2 in healthy dogs",
+        "basis": "babesiosis",
+        "note": "30 dogs, Ukraine, Babesia species not identified.",
+        "refs": [
+          "R18"
+        ]
+      }
+    ],
+    "clinical_signs": [
+      {
+        "sign": "Collapse, unable to stand",
+        "note": "22.5% of 320 B. rossi dogs; odds ratio for death 8.36 [R3].",
+        "refs": [
+          "R3"
+        ]
+      },
+      {
+        "sign": "Low rectal temperature",
+        "note": "Lower in collapsed dogs and in dogs that died; odds of death rose 1.39 times for each 1 °C decrease [R3].",
+        "refs": [
+          "R3"
+        ]
+      },
+      {
+        "sign": "Tachycardia",
+        "note": "Pulse 122 versus 86 beats/min in healthy dogs [R18]; also present in severely anaemic dogs with normal pressure [R7].",
+        "refs": [
+          "R18",
+          "R7"
+        ]
+      },
+      {
+        "sign": "Weak pulse, low pulse pressure",
+        "note": "Low pulse pressure in 7 of 10 complicated B. rossi cases [R1].",
+        "refs": [
+          "R1"
+        ]
+      },
+      {
+        "sign": "Mucous membrane colour",
+        "note": "Did not relate to arterial pressure in B. rossi; pale membranes do not show whether the dog is hypotensive [R1].",
+        "refs": [
+          "R1"
+        ]
+      },
+      {
+        "sign": "Abnormal breathing",
+        "note": "Proposed with collapse as a simple severity marker for B. rossi [R13]; see SY08 for lung injury.",
+        "refs": [
+          "R13"
+        ]
+      }
+    ],
+    "tests": [
+      {
+        "test": "Arterial blood pressure (oscillometric or Doppler)",
+        "finding": "Low systolic, diastolic and mean pressures in complicated disease [R1][R5].",
+        "note": "One reading at admission was used in the studies; serial readings are recommended [R4].",
+        "refs": [
+          "R1",
+          "R5",
+          "R4"
+        ]
+      },
+      {
+        "test": "Blood lactate (hand-held analyser)",
+        "finding": "Above 2 mmol/L in 55.5% of 209 B. rossi dogs; median 4.3 mmol/L in dogs that died [R3].",
+        "note": "Repeat at 8 and 16 h; the trend predicts outcome better than one value [R9]. A hand-held analyser was used in B. canis [R20].",
+        "refs": [
+          "R3",
+          "R9",
+          "R20"
+        ]
+      },
+      {
+        "test": "Blood glucose",
+        "finding": "Hypoglycaemia (below 3.3 mmol/L) in 19.2% of 317 B. rossi dogs; glucose and lactate correlated inversely [R3].",
+        "note": "Hypoglycaemia was linked with collapse and hyperlactataemia [R17]. Treatment is on SY16.",
+        "refs": [
+          "R3",
+          "R17"
+        ]
+      },
+      {
+        "test": "Haematocrit",
+        "finding": "Separates anaemic dogs from haemoconcentrated dogs: haematocrit above 0.55 L/L in 4 of 320 B. rossi dogs, 3 of whom died [R3].",
+        "note": "Haemoconcentration is on SY14; anaemia on SY01.",
+        "refs": [
+          "R3"
+        ]
+      },
+      {
+        "test": "Urea and creatinine",
+        "finding": "Pressures correlated inversely with creatinine and urea in B. canis [R5]; creatinine above 106 µmol/L had an odds ratio for death of 7.55 in B. rossi [R3].",
+        "note": "Acute kidney injury is on SY05.",
+        "refs": [
+          "R5",
+          "R3"
+        ]
+      },
+      {
+        "test": "Venous or arterial blood gas",
+        "finding": "Mixed metabolic acidosis and respiratory alkalosis in 31 of 34 severe B. rossi cases; 82% were hyperlactataemic [R25].",
+        "note": "Base excess was negative in all 34 dogs [R25].",
+        "refs": [
+          "R25"
+        ]
+      },
+      {
+        "test": "Echocardiography (referral)",
+        "finding": "Diastolic dysfunction was common in an Indian series and went with higher mortality [R22].",
+        "note": "Cardiac dysfunction is on SY09.",
+        "refs": [
+          "R22"
+        ]
+      }
+    ],
+    "differentials": [
+      {
+        "condition": "Severe anaemia without hypotension",
+        "distinguish": "Tachycardia with normal pressure and a haematocrit of 0.10 to 0.20 L/L (10 to 20%) [R7]. Treat the anaemia (SY01).",
+        "refs": [
+          "R7"
+        ]
+      },
+      {
+        "condition": "Hypoglycaemia",
+        "distinguish": "Collapse or cerebral signs with blood glucose below 3.3 mmol/L [R3]. Measure glucose in every collapsed dog (SY16).",
+        "refs": [
+          "R3"
+        ]
+      },
+      {
+        "condition": "Cerebral babesiosis",
+        "distinguish": "Acute cerebral signs with normal or high glucose; all 6 such dogs died [R3]. See SY07.",
+        "refs": [
+          "R3"
+        ]
+      },
+      {
+        "condition": "Cardiac dysfunction",
+        "distinguish": "Myocardial injury and arrhythmias are reported in babesiosis [R2]; echocardiography shows systolic or diastolic dysfunction [R22]. See SY09.",
+        "refs": [
+          "R2",
+          "R22"
+        ]
+      },
+      {
+        "condition": "Haemoconcentration (red biliary)",
+        "distinguish": "High haematocrit despite haemolysis; not explained by dehydration [R3]. See SY14.",
+        "refs": [
+          "R3"
+        ]
+      },
+      {
+        "condition": "Co-infection",
+        "distinguish": "The Onderstepoort series excluded dogs with B. vogeli, Ehrlichia canis or Theileria by PCR, so their effect on shock is not known [R3].",
+        "refs": [
+          "R3"
+        ]
+      }
+    ],
+    "grading": []
+  },
+  "approach": [
+    {
+      "step": 1,
+      "action": "Triage on arrival",
+      "detail": "Note whether the dog can stand, and measure heart rate, pulse, rectal temperature, arterial pressure, lactate, glucose and haematocrit before treatment [R3][R9].",
+      "setting": "practice"
+    },
+    {
+      "step": 2,
+      "action": "Correct hypoglycaemia",
+      "detail": "Hypoglycaemia is common in collapsed dogs and raises the odds of death [R3]. Doses are on SY16.",
+      "setting": "practice"
+    },
+    {
+      "step": 3,
+      "action": "Start the antibabesial drug",
+      "detail": "Standard care in the Onderstepoort series included diminazene, transfusion and intravenous fluid [R3]. Drugs and doses are on TX00.",
+      "setting": "practice"
+    },
+    {
+      "step": 4,
+      "action": "Give small crystalloid boluses if perfusion is poor",
+      "detail": "Balanced isotonic crystalloid, 10 to 15 mL/kg at a time, with reassessment after each bolus [R10]. Avoid liberal volumes: bolus fluid raised mortality in febrile African children [R11] and caused lung oedema in adults with malaria [R12].",
+      "setting": "practice"
+    },
+    {
+      "step": 5,
+      "action": "Transfuse the anaemic dog",
+      "detail": "In a severely anaemic, tachycardic dog, the missing part is oxygen-carrying capacity. Packed red cells improved acid-base status and pressure in B. rossi [R7]. Transfusion guidance is on SY01.",
+      "setting": "practice"
+    },
+    {
+      "step": 6,
+      "action": "Repeat lactate at 8 and 16 h",
+      "detail": "Lactate that stays above 2.5 mmol/L, or falls by less than half, predicted death in B. rossi [R9].",
+      "setting": "practice"
+    },
+    {
+      "step": 7,
+      "action": "Refer persistent hypotension",
+      "detail": "Hypotension that persists after fluid is an indication for a vasopressor infusion [R10]; the canine consensus defines septic shock as impaired perfusion despite adequate fluid [R23]. Refractory hypotension carried a very high mortality [R8].",
+      "setting": "referral"
+    },
+    {
+      "step": 8,
+      "action": "Watch for lung oedema and kidney injury",
+      "detail": "Fluid loading can worsen lung oedema [R12], and low pressure went with azotaemia [R5]. See SY08 and SY05.",
+      "setting": "referral"
+    }
+  ],
+  "treatments": [
+    {
+      "name": "Isotonic crystalloid bolus",
+      "class": "supportive",
+      "aim": "Restore circulating volume and perfusion in a dog that is hypovolaemic or dehydrated.",
+      "status": "standard",
+      "evidence_level": "D",
+      "independent_studies": 2,
+      "evidence_summary": "Intravenous crystalloid is part of standard care in B. rossi [R3] and B. canis (45 of 49 dogs in Germany) [R14], and a review advises it for dehydrated or hypovolaemic dogs [R26]. It was never compared with other fluids or with no bolus in babesiosis. In 3141 African children with severe febrile illness (57% with malaria), boluses of 20 to 40 mL/kg raised 48-hour mortality (relative risk 1.45) [R11]. In 28 adults with severe malaria, liberal saline did not improve acid-base status or kidney function, and 8 developed lung oedema [R12]. Evidence for the dose is a canine sepsis review (level E) [R10].",
+      "doses": [
+        {
+          "drug": "balanced isotonic crystalloid (for example lactated Ringer's solution)",
+          "dose": "10 to 15 mL/kg",
+          "route": "IV",
+          "frequency": "bolus, repeated after reassessment",
+          "duration": "",
+          "context": "Dogs and cats with sepsis and hypoperfusion, without heart disease; narrative review",
+          "note": "Not tested in babesiosis. The review prefers balanced solutions to 0.9% saline.",
+          "refs": [
+            "R10"
+          ]
+        }
+      ],
+      "cautions": "Lung oedema is a complication of babesiosis (SY08) and was made worse by fluid loading in malaria [R12]. Fluid boluses increased mortality in African children with severe febrile illness [R11]. Signs of fluid overload include weight gain, serous nasal discharge, rising respiratory rate and effort, and effusions [R10].",
+      "monitoring": "Reassess after each bolus for fluid responsiveness, and check fluid needs every 4 to 6 h by examination and body weight [R10]. Lactate at 8 and 16 h [R9].",
+      "availability": "",
+      "refs": [
+        "R3",
+        "R14",
+        "R26",
+        "R11",
+        "R12",
+        "R10",
+        "R9"
+      ]
+    },
+    {
+      "name": "Packed red cell transfusion",
+      "class": "supportive",
+      "aim": "Restore oxygen-carrying capacity in the anaemic dog in shock.",
+      "status": "standard",
+      "evidence_level": "A",
+      "independent_studies": 1,
+      "evidence_summary": "In a randomised trial in 12 dogs with B. rossi and a haematocrit of 0.10 to 0.20 L/L (10 to 20%), packed red cells and a haemoglobin-based oxygen carrier gave similar improvements in blood gas, acid-base status and pressure; dogs given packed cells regained demeanour and appetite faster [R7]. There was no group without transfusion. Transfusion was part of standard care in the Onderstepoort series [R3]. Indications and products are on SY01.",
+      "doses": [
+        {
+          "drug": "packed red blood cells",
+          "dose": "20 mL/kg",
+          "route": "IV (central venous catheter in the trial)",
+          "frequency": "once, over 4 h",
+          "duration": "single transfusion",
+          "context": "B. rossi, 12 dogs (8 to 25 kg), randomised trial",
+          "note": "Followed by lactated Ringer's solution in the trial. See SY01 for transfusion guidance.",
+          "refs": [
+            "R7"
+          ]
+        }
+      ],
+      "cautions": "Central venous oxygen tension stayed below normal in both groups over 72 h, so transfusion did not fully restore tissue oxygenation [R7].",
+      "monitoring": "Haematocrit, heart rate, arterial pressure and lactate [R7][R9].",
+      "availability": "",
+      "refs": [
+        "R7",
+        "R3",
+        "R9"
+      ]
+    },
+    {
+      "name": "Noradrenaline (norepinephrine) infusion",
+      "class": "supportive",
+      "aim": "Restore vascular tone and arterial pressure when hypotension persists after fluid.",
+      "status": "proposed",
+      "evidence_level": "E",
+      "independent_studies": 0,
+      "evidence_summary": "No study of noradrenaline in dogs with babesiosis was found. A review of fluid therapy in canine and feline sepsis names noradrenaline as the vasopressor of choice when hypotension persists after fluid, and says early use improved haemodynamics [R10]. The canine sepsis consensus defines septic shock by impaired perfusion despite adequate fluid [R23]. Its use in babesiosis is extrapolated.",
+      "doses": [
+        {
+          "drug": "noradrenaline (norepinephrine)",
+          "dose": "0.1 to 1 µg/kg/min",
+          "route": "IV constant rate infusion",
+          "frequency": "continuous, titrated to arterial pressure",
+          "duration": "",
+          "context": "Dogs and cats with septic shock; narrative review",
+          "note": "Not tested in babesiosis. Give only after fluid resuscitation.",
+          "refs": [
+            "R10"
+          ]
+        }
+      ],
+      "cautions": "Use only after fluid resuscitation [R10]. In dogs with septic shock, all responded at first to vasopressors, but sustained resolution of hypotension took hours [R24].",
+      "monitoring": "Arterial pressure continuously; a septic shock study used systolic above 90 mmHg or MAP above 65 mmHg for 4 h as resolution [R24]. Lactate and urine output.",
+      "availability": "",
+      "refs": [
+        "R10",
+        "R23",
+        "R24"
+      ]
+    },
+    {
+      "name": "Dopamine infusion",
+      "class": "supportive",
+      "aim": "Support contractility and pressure in a dog with systolic dysfunction.",
+      "status": "proposed",
+      "evidence_level": "C",
+      "independent_studies": 1,
+      "evidence_summary": "In an Indian series of 92 dogs with intraerythrocytic parasites and SIRS, sepsis or septic shock, dogs with systolic dysfunction on echocardiography were given dopamine; its effect was not reported separately [R22]. Only 2 dogs had systolic dysfunction alone and 5 had both systolic and diastolic dysfunction [R22]. A canine sepsis review prefers noradrenaline as the vasopressor [R10]. See SY09.",
+      "doses": [
+        {
+          "drug": "dopamine",
+          "dose": "10 µg/kg/min",
+          "route": "IV constant rate infusion",
+          "frequency": "continuous",
+          "duration": "",
+          "context": "Babesia species not identified, India, case series; given for systolic dysfunction",
+          "note": "Effect not reported. Cardiac use is on SY09.",
+          "refs": [
+            "R22"
+          ]
+        }
+      ],
+      "cautions": "No safety data in babesiosis. Arrhythmias are reported in babesiosis [R2].",
+      "monitoring": "The series did not describe monitoring [R22]. Ventricular arrhythmias in babesiosis go with myocardial injury [R2].",
+      "availability": "",
+      "refs": [
+        "R22",
+        "R10",
+        "R2"
+      ]
+    },
+    {
+      "name": "Hypertonic saline bolus",
+      "class": "supportive",
+      "aim": "Rapid small-volume expansion of the circulating volume.",
+      "status": "proposed",
+      "evidence_level": "D",
+      "independent_studies": 1,
+      "evidence_summary": "Not studied in babesiosis. In a randomised trial in 23 dogs with gastric dilatation-volvulus and shock, 7.5% saline was compared with hydroxyethyl starch; both caused a tendency to hypocoagulability on thromboelastometry [R27]. The trial measured haemostasis, not survival.",
+      "doses": [
+        {
+          "drug": "sodium chloride 7.5%",
+          "dose": "4 mL/kg",
+          "route": "IV",
+          "frequency": "bolus; the abstract states 'every 15 minutes'",
+          "duration": "",
+          "context": "Dogs with gastric dilatation-volvulus and shock, 10 dogs in this arm, randomised trial",
+          "note": "Abstract only; the number of boluses is not given in the abstract. Not tested in babesiosis.",
+          "refs": [
+            "R27"
+          ]
+        }
+      ],
+      "cautions": "Hypocoagulability after the bolus [R27] matters in babesiosis with coagulopathy (SY03).",
+      "monitoring": "The trial measured coagulation times, fibrinogen and thromboelastometry after the bolus [R27].",
+      "availability": "",
+      "refs": [
+        "R27"
+      ]
+    },
+    {
+      "name": "Dextran 40 (rheopolyglucin), alone or with dipyridamole",
+      "class": "supportive",
+      "aim": "Expand circulating volume and reduce red cell and platelet aggregation.",
+      "status": "proposed",
+      "evidence_level": "A",
+      "independent_studies": 1,
+      "evidence_summary": "Level A by design only. One Ukrainian group (one cohort published twice) treated dogs with acute babesiosis and shock, species not identified. In 30 dogs, rheopolyglucin restored blood volume and pressure better than a sorbitol-lactate crystalloid, which reduced aggregation better [R18]. In 100 dogs, a dextran-dipyridamole mixture restored the measured values for 48 h and worked better than either drug alone [R21]. End points were laboratory and pressure values; survival was not reported.",
+      "doses": [
+        {
+          "drug": "rheopolyglucin (10% dextran, molecular weight 30000 to 40000, in 0.9% sodium chloride)",
+          "dose": "5 mL/kg",
+          "route": "IV drip",
+          "frequency": "once a day",
+          "duration": "3 days",
+          "context": "Babesia species not identified, 15 dogs per arm, Ukraine, comparison of two infusions",
+          "note": "The authors advise it in the first hours, then combined with the crystalloid.",
+          "refs": [
+            "R18"
+          ]
+        },
+        {
+          "drug": "rheosorbilact (sorbitol and sodium lactate crystalloid)",
+          "dose": "5 mL/kg",
+          "route": "IV drip",
+          "frequency": "once a day",
+          "duration": "3 days",
+          "context": "Babesia species not identified, 15 dogs per arm, Ukraine, comparison of two infusions",
+          "note": "",
+          "refs": [
+            "R18"
+          ]
+        },
+        {
+          "drug": "rheopolyglucin with dipyridamole, as one infusion mixture",
+          "dose": "5 mL/kg of the mixture",
+          "route": "IV infusion",
+          "frequency": "not stated in the abstract",
+          "duration": "",
+          "context": "Babesia species not identified, 100 dogs, Ukraine, trial",
+          "note": "Abstract only. The abstract gives 45 mg dextran and 2.5 mg dipyridamole per kg; this does not match 5 mL/kg of a 10% solution. Check the full text before use.",
+          "refs": [
+            "R21"
+          ]
+        }
+      ],
+      "cautions": "No adverse effects were reported [R18]. Dextran is a synthetic colloid; the kidney harm data in dogs are for hydroxyethyl starch, not dextran [R28].",
+      "monitoring": "The studies measured arterial pressure, shock index, haematocrit and blood volume at 24, 48 and 72 h [R18].",
+      "availability": "",
+      "refs": [
+        "R18",
+        "R21",
+        "R28"
+      ]
+    },
+    {
+      "name": "Hydroxyethyl starch",
+      "class": "supportive",
+      "aim": "Expand circulating volume with a synthetic colloid.",
+      "status": "harmful",
+      "evidence_level": "D",
+      "independent_studies": 1,
+      "evidence_summary": "In a cohort of 422 dogs in intensive care, 10% hydroxyethyl starch was an independent risk factor for death or acute kidney injury (adjusted odds ratio 1.98; number needed to harm 6) [R28]. A canine sepsis review does not recommend synthetic colloids [R10]. In the Indian babesiosis series, 6% starch at 5 mL/kg/h was given for diastolic dysfunction, with no outcome reported by treatment [R22].",
+      "doses": [],
+      "cautions": "Risk of acute kidney injury and death [R28]; kidney injury is already a complication of babesiosis (SY05). Starch caused a tendency to hypocoagulability in dogs with gastric dilatation-volvulus [R27].",
+      "monitoring": "The cohort defined kidney injury as a twofold rise in creatinine, or oliguria or anuria for 12 h or more [R28].",
+      "availability": "",
+      "refs": [
+        "R28",
+        "R10",
+        "R22",
+        "R27"
+      ]
+    },
+    {
+      "name": "Hydrocortisone",
+      "class": "adjunct",
+      "aim": "Treat suspected corticosteroid insufficiency in vasopressor-dependent shock.",
+      "status": "no_benefit",
+      "evidence_level": "D",
+      "independent_studies": 1,
+      "evidence_summary": "Not tested in babesiosis. In 47 dogs with septic shock, the 21 given hydrocortisone were sicker at baseline, took longer to reach sustained resolution of hypotension (8.5 versus 4 h), and had no better survival (14.3% versus 34.6%, not significant) [R24]. In 68 dogs with B. rossi, the ACTH stimulation test found no adrenal insufficiency; cortisol was highest in dogs that died [R19]. High cortisol also predicted death in 320 B. rossi dogs [R3].",
+      "doses": [],
+      "cautions": "No dose is given: the sources read did not state one.",
+      "monitoring": "",
+      "availability": "",
+      "refs": [
+        "R24",
+        "R19",
+        "R3"
+      ]
+    }
+  ],
+  "prognosis": {
+    "text": "Shock marks the dogs most likely to die. In 320 B. rossi dogs, collapse at presentation had an odds ratio for death of 8.36; overall 10.6% died (the source did not separate euthanasia) [R3]. A compromised circulation was linked with death in 100 B. rossi dogs [R6]. Arterial pressure itself did not differ between survivors and non-survivors in 30 B. rossi dogs [R1]. All 10 dogs with refractory hypotension and organ failure died, against 2.6% of the other admitted dogs [R8].",
+    "indicators": [
+      {
+        "finding": "Collapse at presentation",
+        "meaning": "Odds ratio for death 8.36 in B. rossi; 24 of 34 deaths were in collapsed dogs [R3].",
+        "refs": [
+          "R3"
+        ]
+      },
+      {
+        "finding": "Admission lactate above 5 mmol/L",
+        "meaning": "Linked with death in 90 dogs with severe or complicated B. rossi [R9].",
+        "refs": [
+          "R9"
+        ]
+      },
+      {
+        "finding": "Lactate above 2.5 mmol/L at 8, 16 or 24 h, or a fall of less than 50% in 8 to 16 h",
+        "meaning": "Linked with death; lactate persistently above 4.4 mmol/L meant a very poor prognosis [R9].",
+        "refs": [
+          "R9"
+        ]
+      },
+      {
+        "finding": "Lactate above 3.95 mmol/L (B. canis)",
+        "meaning": "Separated all 8 non-survivors from 7 survivors in a small Swiss series; 2 of the non-survivors were euthanised [R20].",
+        "refs": [
+          "R20"
+        ]
+      },
+      {
+        "finding": "Refractory hypotension with organ dysfunction",
+        "meaning": "10 of 10 dogs died within 4 days [R8].",
+        "refs": [
+          "R8"
+        ]
+      },
+      {
+        "finding": "High parasitaemia with compromised circulation",
+        "meaning": "Dogs with a compromised circulation had higher parasitaemias and were more likely to die [R6].",
+        "refs": [
+          "R6"
+        ]
+      },
+      {
+        "finding": "Low rectal temperature",
+        "meaning": "Odds of death rose 1.39 times for each 1 °C decrease [R3].",
+        "refs": [
+          "R3"
+        ]
+      }
+    ]
+  },
+  "related": [
+    {
+      "id": "TX00",
+      "why": "The drugs against the parasite."
+    },
+    {
+      "id": "SY11",
+      "why": "Complicated disease, SIRS and multiple organ dysfunction; triage and order of care."
+    },
+    {
+      "id": "SY01",
+      "why": "Severe anaemia and transfusion."
+    },
+    {
+      "id": "SY16",
+      "why": "Hypoglycaemia and lactate as metabolic problems."
+    },
+    {
+      "id": "SY08",
+      "why": "Lung oedema, a risk of fluid loading."
+    },
+    {
+      "id": "SY05",
+      "why": "Acute kidney injury after hypotension."
+    },
+    {
+      "id": "SY09",
+      "why": "Cardiac dysfunction and inotropes."
+    },
+    {
+      "id": "SY14",
+      "why": "Haemoconcentration."
+    },
+    {
+      "id": "SY03",
+      "why": "Coagulopathy, relevant to colloids and hypertonic saline."
+    }
+  ],
+  "evidence_gaps": [
+    "No trial has compared fluid types, volumes or end points in dogs with babesiosis.",
+    "No vasopressor (noradrenaline, vasopressin) has been tested in babesiosis; no canine dose source for vasopressin was read in this run.",
+    "No data were found on oxygen therapy in shocked dogs with babesiosis.",
+    "Blood volume has not been measured in B. rossi; the only blood volume data come from dogs whose Babesia species was not identified.",
+    "There is no validated blood pressure cut-off for babesiosis, and measurement methods differ between studies.",
+    "Whether hyperlactataemia in babesiosis reflects poor perfusion or other causes, as parasite sequestration does in human malaria, is not known.",
+    "Hypertonic saline, albumin and corticosteroids have not been studied in babesiosis.",
+    "No shock data were found for B. gibsoni or B. vogeli."
+  ],
+  "references": [
+    {
+      "ref": "R1",
+      "authors": "Jacobson LS, Lobetti RG, Vaughan-Scott T",
+      "year": 2000,
+      "title": "Blood pressure changes in dogs with babesiosis",
+      "journal": "Journal of the South African Veterinary Association",
+      "volume_pages": "71(1):14-20",
+      "doi": "10.4102/jsava.v71i1.670",
+      "pmid": "10949511",
+      "url": "",
+      "article_id": "",
+      "type": "cohort",
+      "species": "B. rossi",
+      "n_dogs": 30,
+      "read": "abstract"
+    },
+    {
+      "ref": "R2",
+      "authors": "Köster LS, Lobetti RG, Kelly P",
+      "year": 2015,
+      "title": "Canine babesiosis: a perspective on clinical complications, biomarkers, and treatment",
+      "journal": "Veterinary Medicine: Research and Reports",
+      "volume_pages": "6:119-128",
+      "doi": "10.2147/VMRR.S60431",
+      "pmid": "30155438",
+      "url": "",
+      "article_id": "CB493",
+      "type": "review",
+      "species": "",
+      "n_dogs": null,
+      "read": "full text"
+    },
+    {
+      "ref": "R3",
+      "authors": "Leisewitz AL, Goddard A, Clift S, et al.",
+      "year": 2019,
+      "title": "A clinical and pathological description of 320 cases of naturally acquired Babesia rossi infection in dogs",
+      "journal": "Veterinary Parasitology",
+      "volume_pages": "271:22-30",
+      "doi": "10.1016/j.vetpar.2019.06.005",
+      "pmid": "31303199",
+      "url": "",
+      "article_id": "CB040",
+      "type": "cohort",
+      "species": "B. rossi",
+      "n_dogs": 320,
+      "read": "full text"
+    },
+    {
+      "ref": "R4",
+      "authors": "Torti M, Čerlek M, Matijatko V, et al.",
+      "year": 2014,
+      "title": "Arterial blood pressure values in dogs naturally infected with Babesia canis",
+      "journal": "Veterinarski arhiv",
+      "volume_pages": "84(6):563-574",
+      "doi": "",
+      "pmid": "",
+      "url": "https://hrcak.srce.hr/en/130254",
+      "article_id": "CB487",
+      "type": "cohort",
+      "species": "B. canis",
+      "n_dogs": 30,
+      "read": "abstract"
+    },
+    {
+      "ref": "R5",
+      "authors": "Zygner W, Gójska-Zygner O",
+      "year": 2014,
+      "title": "Association between decreased blood pressure and azotaemia in canine babesiosis",
+      "journal": "Polish Journal of Veterinary Sciences",
+      "volume_pages": "17(1):173-175",
+      "doi": "10.2478/pjvs-2014-0024",
+      "pmid": "24724487",
+      "url": "",
+      "article_id": "CB463",
+      "type": "cohort",
+      "species": "B. canis",
+      "n_dogs": 48,
+      "read": "full text"
+    },
+    {
+      "ref": "R6",
+      "authors": "Böhm M, Leisewitz AL, Thompson PN, et al.",
+      "year": 2006,
+      "title": "Capillary and venous Babesia canis rossi parasitaemias and their association with outcome of infection and circulatory compromise",
+      "journal": "Veterinary Parasitology",
+      "volume_pages": "141(1-2):18-29",
+      "doi": "10.1016/j.vetpar.2006.05.002",
+      "pmid": "16806713",
+      "url": "",
+      "article_id": "",
+      "type": "cohort",
+      "species": "B. rossi",
+      "n_dogs": 100,
+      "read": "abstract"
+    },
+    {
+      "ref": "R7",
+      "authors": "Zambelli AB, Leisewitz AL",
+      "year": 2009,
+      "title": "A prospective, randomized comparison of Oxyglobin (HB-200) and packed red blood cell transfusion for canine babesiosis",
+      "journal": "Journal of Veterinary Emergency and Critical Care",
+      "volume_pages": "19(1):102-112",
+      "doi": "10.1111/j.1476-4431.2009.00386.x",
+      "pmid": "19691591",
+      "url": "",
+      "article_id": "CB368",
+      "type": "trial",
+      "species": "B. rossi",
+      "n_dogs": 12,
+      "read": "abstract"
+    },
+    {
+      "ref": "R8",
+      "authors": "Matijatko V, Kis I, Torti M, et al.",
+      "year": 2009,
+      "title": "Septic shock in canine babesiosis",
+      "journal": "Veterinary Parasitology",
+      "volume_pages": "162(3-4):263-270",
+      "doi": "10.1016/j.vetpar.2009.03.011",
+      "pmid": "19345507",
+      "url": "",
+      "article_id": "CB372",
+      "type": "case series",
+      "species": "",
+      "n_dogs": 86,
+      "read": "abstract"
+    },
+    {
+      "ref": "R9",
+      "authors": "Nel M, Lobetti RG, Keller N, et al.",
+      "year": 2004,
+      "title": "Prognostic value of blood lactate, blood glucose, and hematocrit in canine babesiosis",
+      "journal": "Journal of Veterinary Internal Medicine",
+      "volume_pages": "18(4):471-476",
+      "doi": "10.1892/0891-6640(2004)18<471:pvoblb>2.0.co;2",
+      "pmid": "15320582",
+      "url": "",
+      "article_id": "",
+      "type": "cohort",
+      "species": "B. rossi",
+      "n_dogs": 90,
+      "read": "abstract"
+    },
+    {
+      "ref": "R10",
+      "authors": "Montealegre F, Lyons BM",
+      "year": 2021,
+      "title": "Fluid therapy in dogs and cats with sepsis",
+      "journal": "Frontiers in Veterinary Science",
+      "volume_pages": "8:622127",
+      "doi": "10.3389/fvets.2021.622127",
+      "pmid": "33718468",
+      "url": "",
+      "article_id": "",
+      "type": "review",
+      "species": "",
+      "n_dogs": null,
+      "read": "full text"
+    },
+    {
+      "ref": "R11",
+      "authors": "Maitland K, Kiguli S, Opoka RO, et al.",
+      "year": 2011,
+      "title": "Mortality after fluid bolus in African children with severe infection",
+      "journal": "New England Journal of Medicine",
+      "volume_pages": "364(26):2483-2495",
+      "doi": "10.1056/NEJMoa1101549",
+      "pmid": "21615299",
+      "url": "",
+      "article_id": "",
+      "type": "trial",
+      "species": "",
+      "n_dogs": null,
+      "read": "abstract"
+    },
+    {
+      "ref": "R12",
+      "authors": "Hanson JP, Lam SW, Mohanty S, et al.",
+      "year": 2013,
+      "title": "Fluid resuscitation of adults with severe falciparum malaria: effects on acid-base status, renal function, and extravascular lung water",
+      "journal": "Critical Care Medicine",
+      "volume_pages": "41(4):972-981",
+      "doi": "10.1097/CCM.0b013e31827466d2",
+      "pmid": "23324951",
+      "url": "",
+      "article_id": "",
+      "type": "cohort",
+      "species": "",
+      "n_dogs": null,
+      "read": "abstract"
+    },
+    {
+      "ref": "R13",
+      "authors": "Jacobson LS",
+      "year": 2006,
+      "title": "The South African form of severe and complicated canine babesiosis: clinical advances 1994-2004",
+      "journal": "Veterinary Parasitology",
+      "volume_pages": "138(1-2):126-139",
+      "doi": "10.1016/j.vetpar.2006.01.047",
+      "pmid": "16503090",
+      "url": "",
+      "article_id": "",
+      "type": "review",
+      "species": "B. rossi",
+      "n_dogs": null,
+      "read": "abstract"
+    },
+    {
+      "ref": "R14",
+      "authors": "Weingart C, Helm CS, Müller E, et al.",
+      "year": 2023,
+      "title": "Autochthonous Babesia canis infections in 49 dogs in Germany",
+      "journal": "Journal of Veterinary Internal Medicine",
+      "volume_pages": "37(1):140-149",
+      "doi": "10.1111/jvim.16611",
+      "pmid": "36629833",
+      "url": "",
+      "article_id": "CB106",
+      "type": "case series",
+      "species": "B. canis",
+      "n_dogs": 49,
+      "read": "full text"
+    },
+    {
+      "ref": "R15",
+      "authors": "Zygner W, Gójska-Zygner O, Bąska P, et al.",
+      "year": 2014,
+      "title": "Increased concentration of serum TNF alpha and its correlations with arterial blood pressure and indices of renal damage in dogs infected with Babesia canis",
+      "journal": "Parasitology Research",
+      "volume_pages": "113(4):1499-1503",
+      "doi": "10.1007/s00436-014-3792-1",
+      "pmid": "24553975",
+      "url": "",
+      "article_id": "CB473",
+      "type": "cohort",
+      "species": "B. canis",
+      "n_dogs": 11,
+      "read": "full text"
+    },
+    {
+      "ref": "R16",
+      "authors": "Gójska-Zygner O, Zygner W",
+      "year": 2014,
+      "title": "Hyperaldosteronism and its association with hypotension and azotaemia in canine babesiosis",
+      "journal": "Veterinary Quarterly",
+      "volume_pages": "35(1):37-42",
+      "doi": "10.1080/01652176.2014.981765",
+      "pmid": "25347616",
+      "url": "",
+      "article_id": "CB485",
+      "type": "cohort",
+      "species": "B. canis",
+      "n_dogs": 14,
+      "read": "abstract"
+    },
+    {
+      "ref": "R17",
+      "authors": "Jacobson LS, Lobetti RG",
+      "year": 2005,
+      "title": "Glucose, lactate, and pyruvate concentrations in dogs with babesiosis",
+      "journal": "American Journal of Veterinary Research",
+      "volume_pages": "66(2):244-250",
+      "doi": "10.2460/ajvr.2005.66.244",
+      "pmid": "15757122",
+      "url": "",
+      "article_id": "",
+      "type": "cohort",
+      "species": "",
+      "n_dogs": 20,
+      "read": "abstract"
+    },
+    {
+      "ref": "R18",
+      "authors": "Dubova OA, Feshchenko DV, Goralska IY, et al.",
+      "year": 2020,
+      "title": "Plasma replacement solutions in the intensive care unit of shock for acute spontaneous canine babesiosis",
+      "journal": "Scientific Messenger of LNU of Veterinary Medicine and Biotechnologies. Series: Veterinary Sciences",
+      "volume_pages": "22(99):38-44",
+      "doi": "10.32718/nvlvet9906",
+      "pmid": "",
+      "url": "",
+      "article_id": "CB200",
+      "type": "trial",
+      "species": "",
+      "n_dogs": 30,
+      "read": "full text"
+    },
+    {
+      "ref": "R19",
+      "authors": "Schoeman JP, Herrtage ME",
+      "year": 2008,
+      "title": "Adrenal response to the low dose ACTH stimulation test and the cortisol-to-adrenocorticotrophic hormone ratio in canine babesiosis",
+      "journal": "Veterinary Parasitology",
+      "volume_pages": "154(3-4):205-213",
+      "doi": "10.1016/j.vetpar.2008.03.023",
+      "pmid": "18468798",
+      "url": "",
+      "article_id": "CB352",
+      "type": "cohort",
+      "species": "B. rossi",
+      "n_dogs": 68,
+      "read": "abstract"
+    },
+    {
+      "ref": "R20",
+      "authors": "Eichenberger RM, Riond B, Willi B, et al.",
+      "year": 2016,
+      "title": "Prognostic markers in acute Babesia canis infections",
+      "journal": "Journal of Veterinary Internal Medicine",
+      "volume_pages": "30(1):174-182",
+      "doi": "10.1111/jvim.13822",
+      "pmid": "26727465",
+      "url": "",
+      "article_id": "CB516",
+      "type": "case series",
+      "species": "B. canis",
+      "n_dogs": 15,
+      "read": "full text"
+    },
+    {
+      "ref": "R21",
+      "authors": "Dubova O, Kovalova L, Dubovyi A, et al.",
+      "year": 2022,
+      "title": "Shock status and anti-shock infusion therapy in canine acute spontaneous babesiosis",
+      "journal": "The Thai Journal of Veterinary Medicine",
+      "volume_pages": "52(1):135-143",
+      "doi": "10.56808/2985-1130.3198",
+      "pmid": "",
+      "url": "",
+      "article_id": "CB217",
+      "type": "trial",
+      "species": "",
+      "n_dogs": 100,
+      "read": "abstract"
+    },
+    {
+      "ref": "R22",
+      "authors": "Gowtham RM, Gowri B, Kavitha S, et al.",
+      "year": 2024,
+      "title": "Transthoracic echocardiographic assessment of cardiac dysfunction in dogs with babesiosis",
+      "journal": "Indian Journal of Canine Practice",
+      "volume_pages": "16(2):110-114",
+      "doi": "10.29005/ijcp.2024.16.2.110-114",
+      "pmid": "",
+      "url": "",
+      "article_id": "CB263",
+      "type": "case series",
+      "species": "",
+      "n_dogs": 92,
+      "read": "full text"
+    },
+    {
+      "ref": "R23",
+      "authors": "Goggs R, Cortellini S, DeClue AE, et al.",
+      "year": 2026,
+      "title": "Septic shock and prognosis in dogs and cats with sepsis: consensus definition and clinical criteria",
+      "journal": "Journal of Veterinary Emergency and Critical Care",
+      "volume_pages": "36(4):470-488",
+      "doi": "10.1111/vec.70130",
+      "pmid": "42438321",
+      "url": "",
+      "article_id": "",
+      "type": "guideline",
+      "species": "",
+      "n_dogs": null,
+      "read": "full text"
+    },
+    {
+      "ref": "R24",
+      "authors": "Summers AM, Culler C, Yaxley PE, et al.",
+      "year": 2021,
+      "title": "Retrospective evaluation of the use of hydrocortisone for treatment of suspected critical illness-related corticosteroid insufficiency (CIRCI) in dogs with septic shock (2010-2017): 47 cases",
+      "journal": "Journal of Veterinary Emergency and Critical Care",
+      "volume_pages": "31(3):371-379",
+      "doi": "10.1111/vec.13037",
+      "pmid": "33599090",
+      "url": "",
+      "article_id": "",
+      "type": "cohort",
+      "species": "",
+      "n_dogs": 47,
+      "read": "abstract"
+    },
+    {
+      "ref": "R25",
+      "authors": "Leisewitz AL, Jacobson LS, de Morais HS, et al.",
+      "year": 2001,
+      "title": "The mixed acid-base disturbances of severe canine babesiosis",
+      "journal": "Journal of Veterinary Internal Medicine",
+      "volume_pages": "15(5):445-452",
+      "doi": "10.1892/0891-6640(2001)015<0445:tmados>2.3.co;2",
+      "pmid": "11596731",
+      "url": "",
+      "article_id": "",
+      "type": "cohort",
+      "species": "B. rossi",
+      "n_dogs": 34,
+      "read": "abstract"
+    },
+    {
+      "ref": "R26",
+      "authors": "Solano-Gallego L, Sainz Á, Roura X, et al.",
+      "year": 2016,
+      "title": "A review of canine babesiosis: the European perspective",
+      "journal": "Parasites & Vectors",
+      "volume_pages": "9:336",
+      "doi": "10.1186/s13071-016-1596-0",
+      "pmid": "27289223",
+      "url": "",
+      "article_id": "CB533",
+      "type": "review",
+      "species": "",
+      "n_dogs": null,
+      "read": "full text"
+    },
+    {
+      "ref": "R27",
+      "authors": "Borrelli A, Giunti M, Calipa S, et al.",
+      "year": 2021,
+      "title": "Assessment of hemostasis in dogs with gastric-dilation-volvulus, during resuscitation with hydroxyethyl starch (130/0.4) or hypertonic saline (7.5%)",
+      "journal": "Journal of Veterinary Emergency and Critical Care",
+      "volume_pages": "31(6):698-707",
+      "doi": "10.1111/vec.13148",
+      "pmid": "34657371",
+      "url": "",
+      "article_id": "",
+      "type": "trial",
+      "species": "",
+      "n_dogs": 23,
+      "read": "abstract"
+    },
+    {
+      "ref": "R28",
+      "authors": "Hayes G, Benedicenti L, Mathews K",
+      "year": 2016,
+      "title": "Retrospective cohort study on the incidence of acute kidney injury and death following hydroxyethyl starch (HES 10% 250/0.5/5:1) administration in dogs (2007-2010)",
+      "journal": "Journal of Veterinary Emergency and Critical Care",
+      "volume_pages": "26(1):35-40",
+      "doi": "10.1111/vec.12412",
+      "pmid": "26587795",
+      "url": "",
+      "article_id": "",
+      "type": "cohort",
+      "species": "",
+      "n_dogs": 422,
+      "read": "abstract"
+    }
+  ],
+  "search": {
+    "date": "2026-11-12",
+    "sources": [
+      "local review",
+      "PubMed",
+      "Europe PMC",
+      "web"
+    ],
+    "note": "Searched the local review (treatment set, disorder terms, full texts) and PubMed and Europe PMC for canine babesiosis with hypotension, blood pressure, shock, lactate, collapse and each candidate treatment, then canine sepsis fluid and vasopressor sources and human malaria fluid trials. The 2024 AAHA fluid therapy guidelines could not be opened (access blocked) and are not cited. Organ failures after shock are on the organ pages."
+  }
+}

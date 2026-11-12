@@ -1,0 +1,25 @@
+{
+  "id": "CB336",
+  "text_used": "data/markdown/CB336.md",
+  "extracted_by": "claude-opus-5-5 blind second extraction S3",
+  "extracted_utc": "2026-11-12T00:00:00Z",
+  "schema_version": "v2",
+  "setting": "experimental",
+  "sample_timing": "mixed",
+  "article_notes": "Four splenectomised dogs experimentally infected with B. gibsoni (PCR confirmed) and treated with diminazene and then clindamycin, metronidazole and doxycycline; case-by-case serial description. The only statistics are within-dog Pearson correlations of PLT and of CRP with PCV during the recovery phase after starting combination therapy (Figs 2 and 3). These are serial changes during treatment (treatment response), not a comparison between severity or outcome groups, and the coefficients are printed only in the figures; not extracted (see not_extracted). Dog 3 relapsed and was euthanised, but no marker is compared between it and the others. Dog 4 showed no clinical abnormality until splenectomy (n=1, descriptive).",
+  "skipped_infected_vs_healthy": 0,
+  "severity_definitions": [],
+  "associations": [],
+  "not_extracted": [
+    {
+      "what": "Within-dog correlation of platelet count with PCV during the recovery phase (significant in 2 of 4 dogs)",
+      "reason": "figure only",
+      "note": "Serial correlation during treatment in single dogs (treatment response); r and P values only in Fig. 2. Would not be a severity association even with numbers."
+    },
+    {
+      "what": "Within-dog inverse correlation of plasma CRP with PCV during the recovery phase (significant in all 4 dogs)",
+      "reason": "figure only",
+      "note": "Serial correlation during treatment in single dogs (treatment response); r and P values only in Fig. 3. Would not be a severity association even with numbers."
+    }
+  ]
+}

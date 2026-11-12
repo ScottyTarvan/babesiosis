@@ -1,0 +1,5145 @@
+{
+ "spec_sha256": "a23e9c00852211c91cf0b3789b50d1f1fb870579180ab955acb3f71bab6ab8e1",
+ "script_sha256": "01362624de84b0d531348470ffe25805b48876dfb05bd61f468862e58240b39a",
+ "inputs": {
+  "DS07.features.json": "e847f243e8ef13dd0ab32a67cbb0b7fe3f69ddb487fedb62dc1d444f189e006b",
+  "DS07.outcomes.json": "596e092a2b3df0f95057347467d9d48295703a77b0fef62df2391e6db5eb5962"
+ },
+ "seed": 20261112,
+ "n_perm": 10000,
+ "n_boot": 2000,
+ "numpy": "2.3.4",
+ "n_comp": 14,
+ "n_unc": 18,
+ "n_ctrl": 20,
+ "family_size": 10,
+ "n_tested": 9,
+ "plex_layout": {
+  "B1": {
+   "complicated": 2,
+   "uncomplicated": 1,
+   "control": 2
+  },
+  "B2": {
+   "complicated": 2,
+   "uncomplicated": 1,
+   "control": 2
+  },
+  "B3": {
+   "complicated": 1,
+   "uncomplicated": 2,
+   "control": 2
+  },
+  "B4": {
+   "complicated": 1,
+   "uncomplicated": 2,
+   "control": 2
+  },
+  "B5": {
+   "complicated": 1,
+   "uncomplicated": 2,
+   "control": 2
+  },
+  "B6": {
+   "complicated": 1,
+   "uncomplicated": 2,
+   "control": 2
+  },
+  "B7": {
+   "complicated": 1,
+   "uncomplicated": 3,
+   "control": 1
+  },
+  "B8": {
+   "complicated": 1,
+   "uncomplicated": 2,
+   "control": 2
+  },
+  "B9": {
+   "complicated": 2,
+   "uncomplicated": 1,
+   "control": 2
+  },
+  "B10": {
+   "complicated": 2,
+   "uncomplicated": 1,
+   "control": 2
+  },
+  "B11": {
+   "complicated": 0,
+   "uncomplicated": 1,
+   "control": 1
+  }
+ },
+ "positive_controls_consistent": true,
+ "mechanism_hits_q05": [],
+ "family_hits_q05": [],
+ "candidates": [
+  {
+   "key": "hbb",
+   "protein": "Haemoglobin beta",
+   "accession": "P60524",
+   "mechanism": "F1-01 cell-free haemoglobin",
+   "in_family": true,
+   "role": "mechanism",
+   "expected_direction": "higher",
+   "n_comp": 14,
+   "n_unc": 18,
+   "n_ctrl": 20,
+   "frac_comp": 1.0,
+   "frac_unc": 1.0,
+   "coverage_rule": "full",
+   "presence_fisher_p": null,
+   "plexes_observed": [
+    "B1",
+    "B10",
+    "B11",
+    "B2",
+    "B3",
+    "B4",
+    "B5",
+    "B6",
+    "B7",
+    "B8",
+    "B9"
+   ],
+   "tested": true,
+   "delta": 0.4762,
+   "delta_lo": 0.0871,
+   "delta_hi": 0.8177,
+   "hl_log2": 1.1735,
+   "hl_lo": 0.0835,
+   "hl_hi": 2.4175,
+   "p_stratified": 0.0192,
+   "p_unstratified": 0.0216,
+   "delta_unstratified": 0.4762,
+   "median_comp": 0.3487,
+   "median_unc": -1.2563,
+   "median_ctrl": -1.3077,
+   "sd_infected": 1.3315,
+   "hl_sd_units": 0.881,
+   "lopo_min": 0.4135,
+   "lopo_max": 0.5385,
+   "lopo_sign_change": false,
+   "delta_infected_vs_control": 0.2266,
+   "p_infected_vs_control": 0.05179,
+   "rho_with_hbb": 1.0,
+   "n_rho": 32,
+   "detectable_sd_a05": 1.0,
+   "detectable_sd_a005": 1.3,
+   "q_bh": 0.1325
+  },
+  {
+   "key": "hp",
+   "protein": "Haptoglobin (group master A0A5F4DB38)",
+   "accession": "A0A5F4DB38",
+   "mechanism": "F1-03 haptoglobin depletion",
+   "in_family": true,
+   "role": "mechanism",
+   "expected_direction": "lower",
+   "n_comp": 14,
+   "n_unc": 18,
+   "n_ctrl": 20,
+   "frac_comp": 1.0,
+   "frac_unc": 1.0,
+   "coverage_rule": "full",
+   "presence_fisher_p": null,
+   "plexes_observed": [
+    "B1",
+    "B10",
+    "B11",
+    "B2",
+    "B3",
+    "B4",
+    "B5",
+    "B6",
+    "B7",
+    "B8",
+    "B9"
+   ],
+   "tested": true,
+   "delta": 0.0833,
+   "delta_lo": -0.3413,
+   "delta_hi": 0.4683,
+   "hl_log2": 0.0867,
+   "hl_lo": -0.4972,
+   "hl_hi": 0.8552,
+   "p_stratified": 0.71393,
+   "p_unstratified": 0.70793,
+   "delta_unstratified": 0.0833,
+   "median_comp": -0.2186,
+   "median_unc": -0.2855,
+   "median_ctrl": -0.4049,
+   "sd_infected": 0.9897,
+   "hl_sd_units": 0.088,
+   "lopo_min": 0.0048,
+   "lopo_max": 0.1394,
+   "lopo_sign_change": false,
+   "delta_infected_vs_control": 0.1641,
+   "p_infected_vs_control": 0.32907,
+   "rho_with_hbb": 0.584,
+   "n_rho": 32,
+   "detectable_sd_a05": 1.0,
+   "detectable_sd_a005": 1.3,
+   "q_bh": 0.89241
+  },
+  {
+   "key": "ltf",
+   "protein": "Lactoferrin",
+   "accession": "F1PR54",
+   "mechanism": "F3-03 neutrophil granule proteins",
+   "in_family": true,
+   "role": "positive_control",
+   "expected_direction": "higher",
+   "n_comp": 14,
+   "n_unc": 17,
+   "n_ctrl": 19,
+   "frac_comp": 1.0,
+   "frac_unc": 0.944,
+   "coverage_rule": "full",
+   "presence_fisher_p": null,
+   "plexes_observed": [
+    "B1",
+    "B10",
+    "B2",
+    "B3",
+    "B4",
+    "B5",
+    "B6",
+    "B7",
+    "B8",
+    "B9"
+   ],
+   "tested": true,
+   "delta": 0.4202,
+   "delta_lo": 0.0082,
+   "delta_hi": 0.8067,
+   "hl_log2": 0.5127,
+   "hl_lo": 0.0154,
+   "hl_hi": 0.8513,
+   "p_stratified": 0.0265,
+   "p_unstratified": 0.05249,
+   "delta_unstratified": 0.4202,
+   "median_comp": 0.2877,
+   "median_unc": -0.3511,
+   "median_ctrl": -0.4481,
+   "sd_infected": 0.5856,
+   "hl_sd_units": 0.875,
+   "lopo_min": 0.3333,
+   "lopo_max": 0.5179,
+   "lopo_sign_change": false,
+   "delta_infected_vs_control": 0.4363,
+   "p_infected_vs_control": 0.0078,
+   "rho_with_hbb": 0.539,
+   "n_rho": 31,
+   "detectable_sd_a05": 1.01,
+   "detectable_sd_a005": 1.32,
+   "q_bh": 0.1325
+  },
+  {
+   "key": "s100a8",
+   "protein": "S100A8",
+   "accession": "C0LQL0",
+   "mechanism": "F3-03/F3-12 neutrophil granule proteins, calprotectin",
+   "in_family": true,
+   "role": "mechanism",
+   "expected_direction": "higher",
+   "n_comp": 10,
+   "n_unc": 16,
+   "n_ctrl": 16,
+   "frac_comp": 0.714,
+   "frac_unc": 0.889,
+   "coverage_rule": "full",
+   "presence_fisher_p": null,
+   "plexes_observed": [
+    "B10",
+    "B11",
+    "B2",
+    "B3",
+    "B4",
+    "B5",
+    "B6",
+    "B7",
+    "B8"
+   ],
+   "tested": true,
+   "delta": 0.425,
+   "delta_lo": -0.1,
+   "delta_hi": 0.925,
+   "hl_log2": 0.6476,
+   "hl_lo": -0.0907,
+   "hl_hi": 1.0674,
+   "p_stratified": 0.11769,
+   "p_unstratified": 0.08099,
+   "delta_unstratified": 0.425,
+   "median_comp": 0.4695,
+   "median_unc": -0.2686,
+   "median_ctrl": -0.1449,
+   "sd_infected": 0.5369,
+   "hl_sd_units": 1.206,
+   "lopo_min": 0.2667,
+   "lopo_max": 0.5873,
+   "lopo_sign_change": false,
+   "delta_infected_vs_control": 0.0072,
+   "p_infected_vs_control": 0.9778,
+   "rho_with_hbb": 0.398,
+   "n_rho": 26,
+   "detectable_sd_a05": 1.13,
+   "detectable_sd_a005": 1.47,
+   "q_bh": 0.29423
+  },
+  {
+   "key": "h4",
+   "protein": "Histone H4",
+   "accession": "L7N0L3",
+   "mechanism": "F3-02 extracellular histones",
+   "in_family": true,
+   "role": "mechanism",
+   "expected_direction": "higher",
+   "n_comp": 4,
+   "n_unc": 2,
+   "n_ctrl": 4,
+   "frac_comp": 0.286,
+   "frac_unc": 0.111,
+   "coverage_rule": "low coverage",
+   "presence_fisher_p": 0.3649425287356322,
+   "plexes_observed": [
+    "B1",
+    "B9"
+   ],
+   "tested": false,
+   "q_bh": null
+  },
+  {
+   "key": "serpinf2",
+   "protein": "Alpha-2-antiplasmin (SERPINF2)",
+   "accession": "E2R4V3",
+   "mechanism": "F4-03 fibrinolytic shutdown",
+   "in_family": true,
+   "role": "mechanism",
+   "expected_direction": "higher",
+   "n_comp": 14,
+   "n_unc": 18,
+   "n_ctrl": 20,
+   "frac_comp": 1.0,
+   "frac_unc": 1.0,
+   "coverage_rule": "full",
+   "presence_fisher_p": null,
+   "plexes_observed": [
+    "B1",
+    "B10",
+    "B11",
+    "B2",
+    "B3",
+    "B4",
+    "B5",
+    "B6",
+    "B7",
+    "B8",
+    "B9"
+   ],
+   "tested": true,
+   "delta": 0.0952,
+   "delta_lo": -0.3254,
+   "delta_hi": 0.4843,
+   "hl_log2": 0.03,
+   "hl_lo": -0.1163,
+   "hl_hi": 0.2767,
+   "p_stratified": 0.56854,
+   "p_unstratified": 0.65633,
+   "delta_unstratified": 0.0952,
+   "median_comp": 0.034,
+   "median_unc": 0.0503,
+   "median_ctrl": -0.056,
+   "sd_infected": 0.2455,
+   "hl_sd_units": 0.122,
+   "lopo_min": -0.0392,
+   "lopo_max": 0.2212,
+   "lopo_sign_change": true,
+   "delta_infected_vs_control": 0.2203,
+   "p_infected_vs_control": 0.13959,
+   "rho_with_hbb": -0.239,
+   "n_rho": 32,
+   "detectable_sd_a05": 1.0,
+   "detectable_sd_a005": 1.3,
+   "q_bh": 0.89241
+  },
+  {
+   "key": "proc",
+   "protein": "Protein C",
+   "accession": "Q28278",
+   "mechanism": "F4-04 anticoagulant consumption",
+   "in_family": true,
+   "role": "mechanism",
+   "expected_direction": "lower",
+   "n_comp": 7,
+   "n_unc": 9,
+   "n_ctrl": 9,
+   "frac_comp": 0.5,
+   "frac_unc": 0.5,
+   "coverage_rule": "low coverage",
+   "presence_fisher_p": 1.0,
+   "plexes_observed": [
+    "B10",
+    "B2",
+    "B5",
+    "B6",
+    "B7"
+   ],
+   "tested": true,
+   "delta": 0.0159,
+   "delta_lo": -0.5556,
+   "delta_hi": 0.6825,
+   "hl_log2": 0.0254,
+   "hl_lo": -0.4269,
+   "hl_hi": 0.395,
+   "p_stratified": 1.0,
+   "p_unstratified": 1.0,
+   "delta_unstratified": 0.0159,
+   "median_comp": 0.3595,
+   "median_unc": 0.184,
+   "median_ctrl": 0.0881,
+   "sd_infected": 0.3838,
+   "hl_sd_units": 0.066,
+   "lopo_min": -0.2222,
+   "lopo_max": 0.1905,
+   "lopo_sign_change": true,
+   "delta_infected_vs_control": 0.0972,
+   "p_infected_vs_control": 0.61884,
+   "rho_with_hbb": 0.509,
+   "n_rho": 16,
+   "detectable_sd_a05": 1.41,
+   "detectable_sd_a005": 1.84,
+   "q_bh": 1.0
+  },
+  {
+   "key": "serpinc1",
+   "protein": "Antithrombin (SERPINC1)",
+   "accession": "E2RES2",
+   "mechanism": "F4-04 anticoagulant consumption",
+   "in_family": true,
+   "role": "mechanism",
+   "expected_direction": "lower",
+   "n_comp": 14,
+   "n_unc": 18,
+   "n_ctrl": 20,
+   "frac_comp": 1.0,
+   "frac_unc": 1.0,
+   "coverage_rule": "full",
+   "presence_fisher_p": null,
+   "plexes_observed": [
+    "B1",
+    "B10",
+    "B11",
+    "B2",
+    "B3",
+    "B4",
+    "B5",
+    "B6",
+    "B7",
+    "B8",
+    "B9"
+   ],
+   "tested": true,
+   "delta": -0.0754,
+   "delta_lo": -0.4644,
+   "delta_hi": 0.3413,
+   "hl_log2": -0.0329,
+   "hl_lo": -0.1813,
+   "hl_hi": 0.0881,
+   "p_stratified": 0.71393,
+   "p_unstratified": 0.72803,
+   "delta_unstratified": -0.0754,
+   "median_comp": -0.1657,
+   "median_unc": -0.1723,
+   "median_ctrl": 0.0861,
+   "sd_infected": 0.1971,
+   "hl_sd_units": -0.167,
+   "lopo_min": -0.1814,
+   "lopo_max": 0.024,
+   "lopo_sign_change": true,
+   "delta_infected_vs_control": -0.6719,
+   "p_infected_vs_control": 0.0001,
+   "rho_with_hbb": -0.119,
+   "n_rho": 32,
+   "detectable_sd_a05": 1.0,
+   "detectable_sd_a005": 1.3,
+   "q_bh": 0.89241
+  },
+  {
+   "key": "cfh",
+   "protein": "Complement factor H",
+   "accession": "A0A5F4BVG1",
+   "mechanism": "F7-12 complement regulation",
+   "in_family": true,
+   "role": "mechanism",
+   "expected_direction": "none stated",
+   "n_comp": 14,
+   "n_unc": 18,
+   "n_ctrl": 20,
+   "frac_comp": 1.0,
+   "frac_unc": 1.0,
+   "coverage_rule": "full",
+   "presence_fisher_p": null,
+   "plexes_observed": [
+    "B1",
+    "B10",
+    "B11",
+    "B2",
+    "B3",
+    "B4",
+    "B5",
+    "B6",
+    "B7",
+    "B8",
+    "B9"
+   ],
+   "tested": true,
+   "delta": -0.119,
+   "delta_lo": -0.5159,
+   "delta_hi": 0.2938,
+   "hl_log2": -0.0255,
+   "hl_lo": -0.1236,
+   "hl_hi": 0.0658,
+   "p_stratified": 0.61394,
+   "p_unstratified": 0.58394,
+   "delta_unstratified": -0.119,
+   "median_comp": -0.0373,
+   "median_unc": 0.0293,
+   "median_ctrl": 0.0433,
+   "sd_infected": 0.1212,
+   "hl_sd_units": -0.21,
+   "lopo_min": -0.2549,
+   "lopo_max": 0.0196,
+   "lopo_sign_change": true,
+   "delta_infected_vs_control": -0.1734,
+   "p_infected_vs_control": 0.28747,
+   "rho_with_hbb": -0.034,
+   "n_rho": 32,
+   "detectable_sd_a05": 1.0,
+   "detectable_sd_a005": 1.3,
+   "q_bh": 0.89241
+  },
+  {
+   "key": "cd14",
+   "protein": "CD14",
+   "accession": "A0A1S7J0A8",
+   "mechanism": "F7-05 monocyte activation",
+   "in_family": true,
+   "role": "positive_control",
+   "expected_direction": "higher",
+   "n_comp": 14,
+   "n_unc": 18,
+   "n_ctrl": 20,
+   "frac_comp": 1.0,
+   "frac_unc": 1.0,
+   "coverage_rule": "full",
+   "presence_fisher_p": null,
+   "plexes_observed": [
+    "B1",
+    "B10",
+    "B11",
+    "B2",
+    "B3",
+    "B4",
+    "B5",
+    "B6",
+    "B7",
+    "B8",
+    "B9"
+   ],
+   "tested": true,
+   "delta": 0.4206,
+   "delta_lo": 0.0514,
+   "delta_hi": 0.7421,
+   "hl_log2": 0.1764,
+   "hl_lo": 0.0112,
+   "hl_hi": 0.3482,
+   "p_stratified": 0.07269,
+   "p_unstratified": 0.0431,
+   "delta_unstratified": 0.4206,
+   "median_comp": 0.4163,
+   "median_unc": 0.2332,
+   "median_ctrl": -0.2543,
+   "sd_infected": 0.2807,
+   "hl_sd_units": 0.628,
+   "lopo_min": 0.3137,
+   "lopo_max": 0.5288,
+   "lopo_sign_change": false,
+   "delta_infected_vs_control": 0.8344,
+   "p_infected_vs_control": 0.0001,
+   "rho_with_hbb": 0.458,
+   "n_rho": 32,
+   "detectable_sd_a05": 1.0,
+   "detectable_sd_a005": 1.3,
+   "q_bh": 0.2423
+  },
+  {
+   "key": "hba",
+   "protein": "Haemoglobin alpha (group master J9NXL3)",
+   "accession": "J9NXL3",
+   "mechanism": "F1-01 cell-free haemoglobin",
+   "in_family": false,
+   "role": "secondary",
+   "expected_direction": "higher",
+   "n_comp": 14,
+   "n_unc": 18,
+   "n_ctrl": 20,
+   "frac_comp": 1.0,
+   "frac_unc": 1.0,
+   "coverage_rule": "full",
+   "presence_fisher_p": null,
+   "plexes_observed": [
+    "B1",
+    "B10",
+    "B11",
+    "B2",
+    "B3",
+    "B4",
+    "B5",
+    "B6",
+    "B7",
+    "B8",
+    "B9"
+   ],
+   "tested": true,
+   "delta": 0.4722,
+   "delta_lo": 0.0871,
+   "delta_hi": 0.8095,
+   "hl_log2": 1.4803,
+   "hl_lo": 0.2263,
+   "hl_hi": 2.7088,
+   "p_stratified": 0.0279,
+   "p_unstratified": 0.0234,
+   "delta_unstratified": 0.4722,
+   "median_comp": 0.3985,
+   "median_unc": -1.6284,
+   "median_ctrl": -1.6575,
+   "sd_infected": 1.5329,
+   "hl_sd_units": 0.966,
+   "lopo_min": 0.4069,
+   "lopo_max": 0.5769,
+   "lopo_sign_change": false,
+   "delta_infected_vs_control": 0.2203,
+   "p_infected_vs_control": 0.0495,
+   "rho_with_hbb": 0.952,
+   "n_rho": 32,
+   "detectable_sd_a05": 1.0,
+   "detectable_sd_a005": 1.3,
+   "q_bh": null
+  }
+ ],
+ "dog_values": [
+  {
+   "protein": "hbb",
+   "dog_id": "DS07:d001",
+   "plex": "B8",
+   "group": "complicated",
+   "value": -2.258425
+  },
+  {
+   "protein": "hbb",
+   "dog_id": "DS07:d002",
+   "plex": "B5",
+   "group": "uncomplicated",
+   "value": -0.826233
+  },
+  {
+   "protein": "hbb",
+   "dog_id": "DS07:d003",
+   "plex": "B3",
+   "group": "complicated",
+   "value": -1.289827
+  },
+  {
+   "protein": "hbb",
+   "dog_id": "DS07:d004",
+   "plex": "B6",
+   "group": "uncomplicated",
+   "value": -1.965784
+  },
+  {
+   "protein": "hbb",
+   "dog_id": "DS07:d005",
+   "plex": "B9",
+   "group": "complicated",
+   "value": 0.601221
+  },
+  {
+   "protein": "hbb",
+   "dog_id": "DS07:d006",
+   "plex": "B8",
+   "group": "uncomplicated",
+   "value": -1.625934
+  },
+  {
+   "protein": "hbb",
+   "dog_id": "DS07:d007",
+   "plex": "B10",
+   "group": "control",
+   "value": -0.696658
+  },
+  {
+   "protein": "hbb",
+   "dog_id": "DS07:d008",
+   "plex": "B2",
+   "group": "uncomplicated",
+   "value": 0.605968
+  },
+  {
+   "protein": "hbb",
+   "dog_id": "DS07:d009",
+   "plex": "B2",
+   "group": "complicated",
+   "value": 1.661294
+  },
+  {
+   "protein": "hbb",
+   "dog_id": "DS07:d010",
+   "plex": "B8",
+   "group": "control",
+   "value": -1.56918
+  },
+  {
+   "protein": "hbb",
+   "dog_id": "DS07:d011",
+   "plex": "B6",
+   "group": "control",
+   "value": -1.498179
+  },
+  {
+   "protein": "hbb",
+   "dog_id": "DS07:d012",
+   "plex": "B10",
+   "group": "uncomplicated",
+   "value": -1.139236
+  },
+  {
+   "protein": "hbb",
+   "dog_id": "DS07:d013",
+   "plex": "B2",
+   "group": "complicated",
+   "value": -0.518701
+  },
+  {
+   "protein": "hbb",
+   "dog_id": "DS07:d014",
+   "plex": "B7",
+   "group": "control",
+   "value": -1.046921
+  },
+  {
+   "protein": "hbb",
+   "dog_id": "DS07:d015",
+   "plex": "B3",
+   "group": "control",
+   "value": -1.289827
+  },
+  {
+   "protein": "hbb",
+   "dog_id": "DS07:d016",
+   "plex": "B11",
+   "group": "control",
+   "value": -1.45799
+  },
+  {
+   "protein": "hbb",
+   "dog_id": "DS07:d017",
+   "plex": "B4",
+   "group": "control",
+   "value": -2.040972
+  },
+  {
+   "protein": "hbb",
+   "dog_id": "DS07:d018",
+   "plex": "B4",
+   "group": "complicated",
+   "value": 0.096262
+  },
+  {
+   "protein": "hbb",
+   "dog_id": "DS07:d019",
+   "plex": "B7",
+   "group": "complicated",
+   "value": 1.776946
+  },
+  {
+   "protein": "hbb",
+   "dog_id": "DS07:d020",
+   "plex": "B10",
+   "group": "complicated",
+   "value": 1.473008
+  },
+  {
+   "protein": "hbb",
+   "dog_id": "DS07:d021",
+   "plex": "B3",
+   "group": "uncomplicated",
+   "value": 1.010064
+  },
+  {
+   "protein": "hbb",
+   "dog_id": "DS07:d022",
+   "plex": "B4",
+   "group": "uncomplicated",
+   "value": -1.703689
+  },
+  {
+   "protein": "hbb",
+   "dog_id": "DS07:d023",
+   "plex": "B6",
+   "group": "complicated",
+   "value": -1.800877
+  },
+  {
+   "protein": "hbb",
+   "dog_id": "DS07:d024",
+   "plex": "B5",
+   "group": "control",
+   "value": -0.91866
+  },
+  {
+   "protein": "hbb",
+   "dog_id": "DS07:d025",
+   "plex": "B1",
+   "group": "complicated",
+   "value": 2.186184
+  },
+  {
+   "protein": "hbb",
+   "dog_id": "DS07:d026",
+   "plex": "B1",
+   "group": "control",
+   "value": -0.42082
+  },
+  {
+   "protein": "hbb",
+   "dog_id": "DS07:d027",
+   "plex": "B7",
+   "group": "uncomplicated",
+   "value": -0.962969
+  },
+  {
+   "protein": "hbb",
+   "dog_id": "DS07:d028",
+   "plex": "B5",
+   "group": "control",
+   "value": -0.988504
+  },
+  {
+   "protein": "hbb",
+   "dog_id": "DS07:d029",
+   "plex": "B7",
+   "group": "uncomplicated",
+   "value": -0.595097
+  },
+  {
+   "protein": "hbb",
+   "dog_id": "DS07:d030",
+   "plex": "B9",
+   "group": "uncomplicated",
+   "value": -1.373327
+  },
+  {
+   "protein": "hbb",
+   "dog_id": "DS07:d031",
+   "plex": "B10",
+   "group": "control",
+   "value": -1.265345
+  },
+  {
+   "protein": "hbb",
+   "dog_id": "DS07:d032",
+   "plex": "B10",
+   "group": "complicated",
+   "value": -1.09234
+  },
+  {
+   "protein": "hbb",
+   "dog_id": "DS07:d033",
+   "plex": "B5",
+   "group": "complicated",
+   "value": 1.768502
+  },
+  {
+   "protein": "hbb",
+   "dog_id": "DS07:d034",
+   "plex": "B1",
+   "group": "complicated",
+   "value": 0.799087
+  },
+  {
+   "protein": "hbb",
+   "dog_id": "DS07:d035",
+   "plex": "B1",
+   "group": "uncomplicated",
+   "value": -0.284546
+  },
+  {
+   "protein": "hbb",
+   "dog_id": "DS07:d036",
+   "plex": "B9",
+   "group": "control",
+   "value": -1.351074
+  },
+  {
+   "protein": "hbb",
+   "dog_id": "DS07:d037",
+   "plex": "B6",
+   "group": "uncomplicated",
+   "value": -1.625934
+  },
+  {
+   "protein": "hbb",
+   "dog_id": "DS07:d038",
+   "plex": "B4",
+   "group": "uncomplicated",
+   "value": -1.841663
+  },
+  {
+   "protein": "hbb",
+   "dog_id": "DS07:d039",
+   "plex": "B8",
+   "group": "control",
+   "value": -1.564905
+  },
+  {
+   "protein": "hbb",
+   "dog_id": "DS07:d040",
+   "plex": "B1",
+   "group": "control",
+   "value": -0.411195
+  },
+  {
+   "protein": "hbb",
+   "dog_id": "DS07:d041",
+   "plex": "B2",
+   "group": "control",
+   "value": -0.971431
+  },
+  {
+   "protein": "hbb",
+   "dog_id": "DS07:d042",
+   "plex": "B9",
+   "group": "control",
+   "value": -1.481969
+  },
+  {
+   "protein": "hbb",
+   "dog_id": "DS07:d043",
+   "plex": "B5",
+   "group": "uncomplicated",
+   "value": -0.438307
+  },
+  {
+   "protein": "hbb",
+   "dog_id": "DS07:d044",
+   "plex": "B3",
+   "group": "control",
+   "value": -1.595097
+  },
+  {
+   "protein": "hbb",
+   "dog_id": "DS07:d045",
+   "plex": "B2",
+   "group": "control",
+   "value": -0.894322
+  },
+  {
+   "protein": "hbb",
+   "dog_id": "DS07:d046",
+   "plex": "B3",
+   "group": "uncomplicated",
+   "value": -1.816037
+  },
+  {
+   "protein": "hbb",
+   "dog_id": "DS07:d047",
+   "plex": "B11",
+   "group": "uncomplicated",
+   "value": -1.608232
+  },
+  {
+   "protein": "hbb",
+   "dog_id": "DS07:d048",
+   "plex": "B6",
+   "group": "control",
+   "value": -1.795859
+  },
+  {
+   "protein": "hbb",
+   "dog_id": "DS07:d049",
+   "plex": "B7",
+   "group": "uncomplicated",
+   "value": 0.03984
+  },
+  {
+   "protein": "hbb",
+   "dog_id": "DS07:d050",
+   "plex": "B8",
+   "group": "uncomplicated",
+   "value": -2.300448
+  },
+  {
+   "protein": "hbb",
+   "dog_id": "DS07:d051",
+   "plex": "B9",
+   "group": "complicated",
+   "value": -1.09234
+  },
+  {
+   "protein": "hbb",
+   "dog_id": "DS07:d052",
+   "plex": "B4",
+   "group": "control",
+   "value": -1.325539
+  },
+  {
+   "protein": "hp",
+   "dog_id": "DS07:d001",
+   "plex": "B8",
+   "group": "complicated",
+   "value": -0.599462
+  },
+  {
+   "protein": "hp",
+   "dog_id": "DS07:d002",
+   "plex": "B5",
+   "group": "uncomplicated",
+   "value": 0.658097
+  },
+  {
+   "protein": "hp",
+   "dog_id": "DS07:d003",
+   "plex": "B3",
+   "group": "complicated",
+   "value": -1.107803
+  },
+  {
+   "protein": "hp",
+   "dog_id": "DS07:d004",
+   "plex": "B6",
+   "group": "uncomplicated",
+   "value": -1.867752
+  },
+  {
+   "protein": "hp",
+   "dog_id": "DS07:d005",
+   "plex": "B9",
+   "group": "complicated",
+   "value": 0.195348
+  },
+  {
+   "protein": "hp",
+   "dog_id": "DS07:d006",
+   "plex": "B8",
+   "group": "uncomplicated",
+   "value": 0.129613
+  },
+  {
+   "protein": "hp",
+   "dog_id": "DS07:d007",
+   "plex": "B10",
+   "group": "control",
+   "value": -0.467932
+  },
+  {
+   "protein": "hp",
+   "dog_id": "DS07:d008",
+   "plex": "B2",
+   "group": "uncomplicated",
+   "value": 0.58111
+  },
+  {
+   "protein": "hp",
+   "dog_id": "DS07:d009",
+   "plex": "B2",
+   "group": "complicated",
+   "value": 0.642471
+  },
+  {
+   "protein": "hp",
+   "dog_id": "DS07:d010",
+   "plex": "B8",
+   "group": "control",
+   "value": -1.547932
+  },
+  {
+   "protein": "hp",
+   "dog_id": "DS07:d011",
+   "plex": "B6",
+   "group": "control",
+   "value": 0.701327
+  },
+  {
+   "protein": "hp",
+   "dog_id": "DS07:d012",
+   "plex": "B10",
+   "group": "uncomplicated",
+   "value": -0.500218
+  },
+  {
+   "protein": "hp",
+   "dog_id": "DS07:d013",
+   "plex": "B2",
+   "group": "complicated",
+   "value": -1.029146
+  },
+  {
+   "protein": "hp",
+   "dog_id": "DS07:d014",
+   "plex": "B7",
+   "group": "control",
+   "value": -0.02327
+  },
+  {
+   "protein": "hp",
+   "dog_id": "DS07:d015",
+   "plex": "B3",
+   "group": "control",
+   "value": -1.761213
+  },
+  {
+   "protein": "hp",
+   "dog_id": "DS07:d016",
+   "plex": "B11",
+   "group": "control",
+   "value": 0.360645
+  },
+  {
+   "protein": "hp",
+   "dog_id": "DS07:d017",
+   "plex": "B4",
+   "group": "control",
+   "value": -0.537424
+  },
+  {
+   "protein": "hp",
+   "dog_id": "DS07:d018",
+   "plex": "B4",
+   "group": "complicated",
+   "value": -0.852042
+  },
+  {
+   "protein": "hp",
+   "dog_id": "DS07:d019",
+   "plex": "B7",
+   "group": "complicated",
+   "value": 0.16221
+  },
+  {
+   "protein": "hp",
+   "dog_id": "DS07:d020",
+   "plex": "B10",
+   "group": "complicated",
+   "value": 0.732052
+  },
+  {
+   "protein": "hp",
+   "dog_id": "DS07:d021",
+   "plex": "B3",
+   "group": "uncomplicated",
+   "value": 0.596458
+  },
+  {
+   "protein": "hp",
+   "dog_id": "DS07:d022",
+   "plex": "B4",
+   "group": "uncomplicated",
+   "value": -2.32916
+  },
+  {
+   "protein": "hp",
+   "dog_id": "DS07:d023",
+   "plex": "B6",
+   "group": "complicated",
+   "value": -0.790859
+  },
+  {
+   "protein": "hp",
+   "dog_id": "DS07:d024",
+   "plex": "B5",
+   "group": "control",
+   "value": -0.055891
+  },
+  {
+   "protein": "hp",
+   "dog_id": "DS07:d025",
+   "plex": "B1",
+   "group": "complicated",
+   "value": 1.208517
+  },
+  {
+   "protein": "hp",
+   "dog_id": "DS07:d026",
+   "plex": "B1",
+   "group": "control",
+   "value": -0.481969
+  },
+  {
+   "protein": "hp",
+   "dog_id": "DS07:d027",
+   "plex": "B7",
+   "group": "uncomplicated",
+   "value": 1.312665
+  },
+  {
+   "protein": "hp",
+   "dog_id": "DS07:d028",
+   "plex": "B5",
+   "group": "control",
+   "value": -1.314733
+  },
+  {
+   "protein": "hp",
+   "dog_id": "DS07:d029",
+   "plex": "B7",
+   "group": "uncomplicated",
+   "value": -0.905088
+  },
+  {
+   "protein": "hp",
+   "dog_id": "DS07:d030",
+   "plex": "B9",
+   "group": "uncomplicated",
+   "value": 0.465713
+  },
+  {
+   "protein": "hp",
+   "dog_id": "DS07:d031",
+   "plex": "B10",
+   "group": "control",
+   "value": 0.402722
+  },
+  {
+   "protein": "hp",
+   "dog_id": "DS07:d032",
+   "plex": "B10",
+   "group": "complicated",
+   "value": -1.434403
+  },
+  {
+   "protein": "hp",
+   "dog_id": "DS07:d033",
+   "plex": "B5",
+   "group": "complicated",
+   "value": 1.119024
+  },
+  {
+   "protein": "hp",
+   "dog_id": "DS07:d034",
+   "plex": "B1",
+   "group": "complicated",
+   "value": 0.228973
+  },
+  {
+   "protein": "hp",
+   "dog_id": "DS07:d035",
+   "plex": "B1",
+   "group": "uncomplicated",
+   "value": 0.659011
+  },
+  {
+   "protein": "hp",
+   "dog_id": "DS07:d036",
+   "plex": "B9",
+   "group": "control",
+   "value": -0.852042
+  },
+  {
+   "protein": "hp",
+   "dog_id": "DS07:d037",
+   "plex": "B6",
+   "group": "uncomplicated",
+   "value": -0.358454
+  },
+  {
+   "protein": "hp",
+   "dog_id": "DS07:d038",
+   "plex": "B4",
+   "group": "uncomplicated",
+   "value": -2.132894
+  },
+  {
+   "protein": "hp",
+   "dog_id": "DS07:d039",
+   "plex": "B8",
+   "group": "control",
+   "value": -0.28279
+  },
+  {
+   "protein": "hp",
+   "dog_id": "DS07:d040",
+   "plex": "B1",
+   "group": "control",
+   "value": -1.526992
+  },
+  {
+   "protein": "hp",
+   "dog_id": "DS07:d041",
+   "plex": "B2",
+   "group": "control",
+   "value": -0.341903
+  },
+  {
+   "protein": "hp",
+   "dog_id": "DS07:d042",
+   "plex": "B9",
+   "group": "control",
+   "value": 0.347099
+  },
+  {
+   "protein": "hp",
+   "dog_id": "DS07:d043",
+   "plex": "B5",
+   "group": "uncomplicated",
+   "value": -0.664288
+  },
+  {
+   "protein": "hp",
+   "dog_id": "DS07:d044",
+   "plex": "B3",
+   "group": "control",
+   "value": -0.168123
+  },
+  {
+   "protein": "hp",
+   "dog_id": "DS07:d045",
+   "plex": "B2",
+   "group": "control",
+   "value": 0.102994
+  },
+  {
+   "protein": "hp",
+   "dog_id": "DS07:d046",
+   "plex": "B3",
+   "group": "uncomplicated",
+   "value": -1.494109
+  },
+  {
+   "protein": "hp",
+   "dog_id": "DS07:d047",
+   "plex": "B11",
+   "group": "uncomplicated",
+   "value": -1.029146
+  },
+  {
+   "protein": "hp",
+   "dog_id": "DS07:d048",
+   "plex": "B6",
+   "group": "control",
+   "value": -2.164884
+  },
+  {
+   "protein": "hp",
+   "dog_id": "DS07:d049",
+   "plex": "B7",
+   "group": "uncomplicated",
+   "value": -0.212568
+  },
+  {
+   "protein": "hp",
+   "dog_id": "DS07:d050",
+   "plex": "B8",
+   "group": "uncomplicated",
+   "value": 0.614474
+  },
+  {
+   "protein": "hp",
+   "dog_id": "DS07:d051",
+   "plex": "B9",
+   "group": "complicated",
+   "value": -0.778432
+  },
+  {
+   "protein": "hp",
+   "dog_id": "DS07:d052",
+   "plex": "B4",
+   "group": "control",
+   "value": -0.965784
+  },
+  {
+   "protein": "ltf",
+   "dog_id": "DS07:d001",
+   "plex": "B8",
+   "group": "complicated",
+   "value": -1.217591
+  },
+  {
+   "protein": "ltf",
+   "dog_id": "DS07:d002",
+   "plex": "B5",
+   "group": "uncomplicated",
+   "value": -0.158429
+  },
+  {
+   "protein": "ltf",
+   "dog_id": "DS07:d003",
+   "plex": "B3",
+   "group": "complicated",
+   "value": 0.320773
+  },
+  {
+   "protein": "ltf",
+   "dog_id": "DS07:d004",
+   "plex": "B6",
+   "group": "uncomplicated",
+   "value": 0.476122
+  },
+  {
+   "protein": "ltf",
+   "dog_id": "DS07:d005",
+   "plex": "B9",
+   "group": "complicated",
+   "value": 0.238787
+  },
+  {
+   "protein": "ltf",
+   "dog_id": "DS07:d006",
+   "plex": "B8",
+   "group": "uncomplicated",
+   "value": -0.72738
+  },
+  {
+   "protein": "ltf",
+   "dog_id": "DS07:d007",
+   "plex": "B10",
+   "group": "control",
+   "value": -0.362158
+  },
+  {
+   "protein": "ltf",
+   "dog_id": "DS07:d008",
+   "plex": "B2",
+   "group": "uncomplicated",
+   "value": 0.558757
+  },
+  {
+   "protein": "ltf",
+   "dog_id": "DS07:d009",
+   "plex": "B2",
+   "group": "complicated",
+   "value": -0.265345
+  },
+  {
+   "protein": "ltf",
+   "dog_id": "DS07:d010",
+   "plex": "B8",
+   "group": "control",
+   "value": -0.070967
+  },
+  {
+   "protein": "ltf",
+   "dog_id": "DS07:d011",
+   "plex": "B6",
+   "group": "control",
+   "value": -0.899695
+  },
+  {
+   "protein": "ltf",
+   "dog_id": "DS07:d012",
+   "plex": "B10",
+   "group": "uncomplicated",
+   "value": 0.069015
+  },
+  {
+   "protein": "ltf",
+   "dog_id": "DS07:d013",
+   "plex": "B2",
+   "group": "complicated",
+   "value": 0.144046
+  },
+  {
+   "protein": "ltf",
+   "dog_id": "DS07:d014",
+   "plex": "B7",
+   "group": "control",
+   "value": -1.465938
+  },
+  {
+   "protein": "ltf",
+   "dog_id": "DS07:d015",
+   "plex": "B3",
+   "group": "control",
+   "value": 0.195348
+  },
+  {
+   "protein": "ltf",
+   "dog_id": "DS07:d016",
+   "plex": "B11",
+   "group": "control",
+   "value": null
+  },
+  {
+   "protein": "ltf",
+   "dog_id": "DS07:d017",
+   "plex": "B4",
+   "group": "control",
+   "value": 0.437228
+  },
+  {
+   "protein": "ltf",
+   "dog_id": "DS07:d018",
+   "plex": "B4",
+   "group": "complicated",
+   "value": 0.946357
+  },
+  {
+   "protein": "ltf",
+   "dog_id": "DS07:d019",
+   "plex": "B7",
+   "group": "complicated",
+   "value": 0.553852
+  },
+  {
+   "protein": "ltf",
+   "dog_id": "DS07:d020",
+   "plex": "B10",
+   "group": "complicated",
+   "value": 0.648926
+  },
+  {
+   "protein": "ltf",
+   "dog_id": "DS07:d021",
+   "plex": "B3",
+   "group": "uncomplicated",
+   "value": 0.519039
+  },
+  {
+   "protein": "ltf",
+   "dog_id": "DS07:d022",
+   "plex": "B4",
+   "group": "uncomplicated",
+   "value": -0.463947
+  },
+  {
+   "protein": "ltf",
+   "dog_id": "DS07:d023",
+   "plex": "B6",
+   "group": "complicated",
+   "value": 0.254594
+  },
+  {
+   "protein": "ltf",
+   "dog_id": "DS07:d024",
+   "plex": "B5",
+   "group": "control",
+   "value": -0.21927
+  },
+  {
+   "protein": "ltf",
+   "dog_id": "DS07:d025",
+   "plex": "B1",
+   "group": "complicated",
+   "value": 0.54893
+  },
+  {
+   "protein": "ltf",
+   "dog_id": "DS07:d026",
+   "plex": "B1",
+   "group": "control",
+   "value": -0.150401
+  },
+  {
+   "protein": "ltf",
+   "dog_id": "DS07:d027",
+   "plex": "B7",
+   "group": "uncomplicated",
+   "value": -0.403542
+  },
+  {
+   "protein": "ltf",
+   "dog_id": "DS07:d028",
+   "plex": "B5",
+   "group": "control",
+   "value": -0.215915
+  },
+  {
+   "protein": "ltf",
+   "dog_id": "DS07:d029",
+   "plex": "B7",
+   "group": "uncomplicated",
+   "value": -0.171368
+  },
+  {
+   "protein": "ltf",
+   "dog_id": "DS07:d030",
+   "plex": "B9",
+   "group": "uncomplicated",
+   "value": -0.562772
+  },
+  {
+   "protein": "ltf",
+   "dog_id": "DS07:d031",
+   "plex": "B10",
+   "group": "control",
+   "value": -0.168123
+  },
+  {
+   "protein": "ltf",
+   "dog_id": "DS07:d032",
+   "plex": "B10",
+   "group": "complicated",
+   "value": 0.520045
+  },
+  {
+   "protein": "ltf",
+   "dog_id": "DS07:d033",
+   "plex": "B5",
+   "group": "complicated",
+   "value": 0.108357
+  },
+  {
+   "protein": "ltf",
+   "dog_id": "DS07:d034",
+   "plex": "B1",
+   "group": "complicated",
+   "value": 1.187134
+  },
+  {
+   "protein": "ltf",
+   "dog_id": "DS07:d035",
+   "plex": "B1",
+   "group": "uncomplicated",
+   "value": -0.192645
+  },
+  {
+   "protein": "ltf",
+   "dog_id": "DS07:d036",
+   "plex": "B9",
+   "group": "control",
+   "value": -0.746616
+  },
+  {
+   "protein": "ltf",
+   "dog_id": "DS07:d037",
+   "plex": "B6",
+   "group": "uncomplicated",
+   "value": 0.67717
+  },
+  {
+   "protein": "ltf",
+   "dog_id": "DS07:d038",
+   "plex": "B4",
+   "group": "uncomplicated",
+   "value": -0.382702
+  },
+  {
+   "protein": "ltf",
+   "dog_id": "DS07:d039",
+   "plex": "B8",
+   "group": "control",
+   "value": -0.937878
+  },
+  {
+   "protein": "ltf",
+   "dog_id": "DS07:d040",
+   "plex": "B1",
+   "group": "control",
+   "value": -0.448115
+  },
+  {
+   "protein": "ltf",
+   "dog_id": "DS07:d041",
+   "plex": "B2",
+   "group": "control",
+   "value": -0.456009
+  },
+  {
+   "protein": "ltf",
+   "dog_id": "DS07:d042",
+   "plex": "B9",
+   "group": "control",
+   "value": -0.200913
+  },
+  {
+   "protein": "ltf",
+   "dog_id": "DS07:d043",
+   "plex": "B5",
+   "group": "uncomplicated",
+   "value": -0.356606
+  },
+  {
+   "protein": "ltf",
+   "dog_id": "DS07:d044",
+   "plex": "B3",
+   "group": "control",
+   "value": -0.76366
+  },
+  {
+   "protein": "ltf",
+   "dog_id": "DS07:d045",
+   "plex": "B2",
+   "group": "control",
+   "value": -0.614845
+  },
+  {
+   "protein": "ltf",
+   "dog_id": "DS07:d046",
+   "plex": "B3",
+   "group": "uncomplicated",
+   "value": -0.510457
+  },
+  {
+   "protein": "ltf",
+   "dog_id": "DS07:d047",
+   "plex": "B11",
+   "group": "uncomplicated",
+   "value": null
+  },
+  {
+   "protein": "ltf",
+   "dog_id": "DS07:d048",
+   "plex": "B6",
+   "group": "control",
+   "value": -0.694321
+  },
+  {
+   "protein": "ltf",
+   "dog_id": "DS07:d049",
+   "plex": "B7",
+   "group": "uncomplicated",
+   "value": -0.351074
+  },
+  {
+   "protein": "ltf",
+   "dog_id": "DS07:d050",
+   "plex": "B8",
+   "group": "uncomplicated",
+   "value": -0.83908
+  },
+  {
+   "protein": "ltf",
+   "dog_id": "DS07:d051",
+   "plex": "B9",
+   "group": "complicated",
+   "value": -0.962969
+  },
+  {
+   "protein": "ltf",
+   "dog_id": "DS07:d052",
+   "plex": "B4",
+   "group": "control",
+   "value": -0.492079
+  },
+  {
+   "protein": "s100a8",
+   "dog_id": "DS07:d001",
+   "plex": "B8",
+   "group": "complicated",
+   "value": -0.405451
+  },
+  {
+   "protein": "s100a8",
+   "dog_id": "DS07:d002",
+   "plex": "B5",
+   "group": "uncomplicated",
+   "value": -0.732165
+  },
+  {
+   "protein": "s100a8",
+   "dog_id": "DS07:d003",
+   "plex": "B3",
+   "group": "complicated",
+   "value": -0.531156
+  },
+  {
+   "protein": "s100a8",
+   "dog_id": "DS07:d004",
+   "plex": "B6",
+   "group": "uncomplicated",
+   "value": -0.118727
+  },
+  {
+   "protein": "s100a8",
+   "dog_id": "DS07:d005",
+   "plex": "B9",
+   "group": "complicated",
+   "value": null
+  },
+  {
+   "protein": "s100a8",
+   "dog_id": "DS07:d006",
+   "plex": "B8",
+   "group": "uncomplicated",
+   "value": -0.200913
+  },
+  {
+   "protein": "s100a8",
+   "dog_id": "DS07:d007",
+   "plex": "B10",
+   "group": "control",
+   "value": 0.200379
+  },
+  {
+   "protein": "s100a8",
+   "dog_id": "DS07:d008",
+   "plex": "B2",
+   "group": "uncomplicated",
+   "value": 0.240009
+  },
+  {
+   "protein": "s100a8",
+   "dog_id": "DS07:d009",
+   "plex": "B2",
+   "group": "complicated",
+   "value": 0.50284
+  },
+  {
+   "protein": "s100a8",
+   "dog_id": "DS07:d010",
+   "plex": "B8",
+   "group": "control",
+   "value": 1.060739
+  },
+  {
+   "protein": "s100a8",
+   "dog_id": "DS07:d011",
+   "plex": "B6",
+   "group": "control",
+   "value": -0.295128
+  },
+  {
+   "protein": "s100a8",
+   "dog_id": "DS07:d012",
+   "plex": "B10",
+   "group": "uncomplicated",
+   "value": -0.434403
+  },
+  {
+   "protein": "s100a8",
+   "dog_id": "DS07:d013",
+   "plex": "B2",
+   "group": "complicated",
+   "value": -0.662004
+  },
+  {
+   "protein": "s100a8",
+   "dog_id": "DS07:d014",
+   "plex": "B7",
+   "group": "control",
+   "value": -0.54372
+  },
+  {
+   "protein": "s100a8",
+   "dog_id": "DS07:d015",
+   "plex": "B3",
+   "group": "control",
+   "value": -0.046921
+  },
+  {
+   "protein": "s100a8",
+   "dog_id": "DS07:d016",
+   "plex": "B11",
+   "group": "control",
+   "value": -0.02034
+  },
+  {
+   "protein": "s100a8",
+   "dog_id": "DS07:d017",
+   "plex": "B4",
+   "group": "control",
+   "value": 0.126973
+  },
+  {
+   "protein": "s100a8",
+   "dog_id": "DS07:d018",
+   "plex": "B4",
+   "group": "complicated",
+   "value": 0.645241
+  },
+  {
+   "protein": "s100a8",
+   "dog_id": "DS07:d019",
+   "plex": "B7",
+   "group": "complicated",
+   "value": 0.436162
+  },
+  {
+   "protein": "s100a8",
+   "dog_id": "DS07:d020",
+   "plex": "B10",
+   "group": "complicated",
+   "value": 0.78576
+  },
+  {
+   "protein": "s100a8",
+   "dog_id": "DS07:d021",
+   "plex": "B3",
+   "group": "uncomplicated",
+   "value": -0.039488
+  },
+  {
+   "protein": "s100a8",
+   "dog_id": "DS07:d022",
+   "plex": "B4",
+   "group": "uncomplicated",
+   "value": -0.311148
+  },
+  {
+   "protein": "s100a8",
+   "dog_id": "DS07:d023",
+   "plex": "B6",
+   "group": "complicated",
+   "value": -0.074001
+  },
+  {
+   "protein": "s100a8",
+   "dog_id": "DS07:d024",
+   "plex": "B5",
+   "group": "control",
+   "value": -0.039488
+  },
+  {
+   "protein": "s100a8",
+   "dog_id": "DS07:d025",
+   "plex": "B1",
+   "group": "complicated",
+   "value": null
+  },
+  {
+   "protein": "s100a8",
+   "dog_id": "DS07:d026",
+   "plex": "B1",
+   "group": "control",
+   "value": null
+  },
+  {
+   "protein": "s100a8",
+   "dog_id": "DS07:d027",
+   "plex": "B7",
+   "group": "uncomplicated",
+   "value": -0.09234
+  },
+  {
+   "protein": "s100a8",
+   "dog_id": "DS07:d028",
+   "plex": "B5",
+   "group": "control",
+   "value": -0.242977
+  },
+  {
+   "protein": "s100a8",
+   "dog_id": "DS07:d029",
+   "plex": "B7",
+   "group": "uncomplicated",
+   "value": -0.226004
+  },
+  {
+   "protein": "s100a8",
+   "dog_id": "DS07:d030",
+   "plex": "B9",
+   "group": "uncomplicated",
+   "value": null
+  },
+  {
+   "protein": "s100a8",
+   "dog_id": "DS07:d031",
+   "plex": "B10",
+   "group": "control",
+   "value": -0.325539
+  },
+  {
+   "protein": "s100a8",
+   "dog_id": "DS07:d032",
+   "plex": "B10",
+   "group": "complicated",
+   "value": 1.532068
+  },
+  {
+   "protein": "s100a8",
+   "dog_id": "DS07:d033",
+   "plex": "B5",
+   "group": "complicated",
+   "value": 0.828632
+  },
+  {
+   "protein": "s100a8",
+   "dog_id": "DS07:d034",
+   "plex": "B1",
+   "group": "complicated",
+   "value": null
+  },
+  {
+   "protein": "s100a8",
+   "dog_id": "DS07:d035",
+   "plex": "B1",
+   "group": "uncomplicated",
+   "value": null
+  },
+  {
+   "protein": "s100a8",
+   "dog_id": "DS07:d036",
+   "plex": "B9",
+   "group": "control",
+   "value": null
+  },
+  {
+   "protein": "s100a8",
+   "dog_id": "DS07:d037",
+   "plex": "B6",
+   "group": "uncomplicated",
+   "value": -0.017417
+  },
+  {
+   "protein": "s100a8",
+   "dog_id": "DS07:d038",
+   "plex": "B4",
+   "group": "uncomplicated",
+   "value": -0.526992
+  },
+  {
+   "protein": "s100a8",
+   "dog_id": "DS07:d039",
+   "plex": "B8",
+   "group": "control",
+   "value": -0.498179
+  },
+  {
+   "protein": "s100a8",
+   "dog_id": "DS07:d040",
+   "plex": "B1",
+   "group": "control",
+   "value": null
+  },
+  {
+   "protein": "s100a8",
+   "dog_id": "DS07:d041",
+   "plex": "B2",
+   "group": "control",
+   "value": -0.254978
+  },
+  {
+   "protein": "s100a8",
+   "dog_id": "DS07:d042",
+   "plex": "B9",
+   "group": "control",
+   "value": null
+  },
+  {
+   "protein": "s100a8",
+   "dog_id": "DS07:d043",
+   "plex": "B5",
+   "group": "uncomplicated",
+   "value": -0.438307
+  },
+  {
+   "protein": "s100a8",
+   "dog_id": "DS07:d044",
+   "plex": "B3",
+   "group": "control",
+   "value": -0.032094
+  },
+  {
+   "protein": "s100a8",
+   "dog_id": "DS07:d045",
+   "plex": "B2",
+   "group": "control",
+   "value": 0.237564
+  },
+  {
+   "protein": "s100a8",
+   "dog_id": "DS07:d046",
+   "plex": "B3",
+   "group": "uncomplicated",
+   "value": -0.362158
+  },
+  {
+   "protein": "s100a8",
+   "dog_id": "DS07:d047",
+   "plex": "B11",
+   "group": "uncomplicated",
+   "value": -0.314733
+  },
+  {
+   "protein": "s100a8",
+   "dog_id": "DS07:d048",
+   "plex": "B6",
+   "group": "control",
+   "value": -0.45799
+  },
+  {
+   "protein": "s100a8",
+   "dog_id": "DS07:d049",
+   "plex": "B7",
+   "group": "uncomplicated",
+   "value": -0.362158
+  },
+  {
+   "protein": "s100a8",
+   "dog_id": "DS07:d050",
+   "plex": "B8",
+   "group": "uncomplicated",
+   "value": 0.060739
+  },
+  {
+   "protein": "s100a8",
+   "dog_id": "DS07:d051",
+   "plex": "B9",
+   "group": "complicated",
+   "value": null
+  },
+  {
+   "protein": "s100a8",
+   "dog_id": "DS07:d052",
+   "plex": "B4",
+   "group": "control",
+   "value": -0.432455
+  },
+  {
+   "protein": "h4",
+   "dog_id": "DS07:d001",
+   "plex": "B8",
+   "group": "complicated",
+   "value": null
+  },
+  {
+   "protein": "h4",
+   "dog_id": "DS07:d002",
+   "plex": "B5",
+   "group": "uncomplicated",
+   "value": null
+  },
+  {
+   "protein": "h4",
+   "dog_id": "DS07:d003",
+   "plex": "B3",
+   "group": "complicated",
+   "value": null
+  },
+  {
+   "protein": "h4",
+   "dog_id": "DS07:d004",
+   "plex": "B6",
+   "group": "uncomplicated",
+   "value": null
+  },
+  {
+   "protein": "h4",
+   "dog_id": "DS07:d005",
+   "plex": "B9",
+   "group": "complicated",
+   "value": 0.595504
+  },
+  {
+   "protein": "h4",
+   "dog_id": "DS07:d006",
+   "plex": "B8",
+   "group": "uncomplicated",
+   "value": null
+  },
+  {
+   "protein": "h4",
+   "dog_id": "DS07:d007",
+   "plex": "B10",
+   "group": "control",
+   "value": null
+  },
+  {
+   "protein": "h4",
+   "dog_id": "DS07:d008",
+   "plex": "B2",
+   "group": "uncomplicated",
+   "value": null
+  },
+  {
+   "protein": "h4",
+   "dog_id": "DS07:d009",
+   "plex": "B2",
+   "group": "complicated",
+   "value": null
+  },
+  {
+   "protein": "h4",
+   "dog_id": "DS07:d010",
+   "plex": "B8",
+   "group": "control",
+   "value": null
+  },
+  {
+   "protein": "h4",
+   "dog_id": "DS07:d011",
+   "plex": "B6",
+   "group": "control",
+   "value": null
+  },
+  {
+   "protein": "h4",
+   "dog_id": "DS07:d012",
+   "plex": "B10",
+   "group": "uncomplicated",
+   "value": null
+  },
+  {
+   "protein": "h4",
+   "dog_id": "DS07:d013",
+   "plex": "B2",
+   "group": "complicated",
+   "value": null
+  },
+  {
+   "protein": "h4",
+   "dog_id": "DS07:d014",
+   "plex": "B7",
+   "group": "control",
+   "value": null
+  },
+  {
+   "protein": "h4",
+   "dog_id": "DS07:d015",
+   "plex": "B3",
+   "group": "control",
+   "value": null
+  },
+  {
+   "protein": "h4",
+   "dog_id": "DS07:d016",
+   "plex": "B11",
+   "group": "control",
+   "value": null
+  },
+  {
+   "protein": "h4",
+   "dog_id": "DS07:d017",
+   "plex": "B4",
+   "group": "control",
+   "value": null
+  },
+  {
+   "protein": "h4",
+   "dog_id": "DS07:d018",
+   "plex": "B4",
+   "group": "complicated",
+   "value": null
+  },
+  {
+   "protein": "h4",
+   "dog_id": "DS07:d019",
+   "plex": "B7",
+   "group": "complicated",
+   "value": null
+  },
+  {
+   "protein": "h4",
+   "dog_id": "DS07:d020",
+   "plex": "B10",
+   "group": "complicated",
+   "value": null
+  },
+  {
+   "protein": "h4",
+   "dog_id": "DS07:d021",
+   "plex": "B3",
+   "group": "uncomplicated",
+   "value": null
+  },
+  {
+   "protein": "h4",
+   "dog_id": "DS07:d022",
+   "plex": "B4",
+   "group": "uncomplicated",
+   "value": null
+  },
+  {
+   "protein": "h4",
+   "dog_id": "DS07:d023",
+   "plex": "B6",
+   "group": "complicated",
+   "value": null
+  },
+  {
+   "protein": "h4",
+   "dog_id": "DS07:d024",
+   "plex": "B5",
+   "group": "control",
+   "value": null
+  },
+  {
+   "protein": "h4",
+   "dog_id": "DS07:d025",
+   "plex": "B1",
+   "group": "complicated",
+   "value": 0.263034
+  },
+  {
+   "protein": "h4",
+   "dog_id": "DS07:d026",
+   "plex": "B1",
+   "group": "control",
+   "value": 0.24732
+  },
+  {
+   "protein": "h4",
+   "dog_id": "DS07:d027",
+   "plex": "B7",
+   "group": "uncomplicated",
+   "value": null
+  },
+  {
+   "protein": "h4",
+   "dog_id": "DS07:d028",
+   "plex": "B5",
+   "group": "control",
+   "value": null
+  },
+  {
+   "protein": "h4",
+   "dog_id": "DS07:d029",
+   "plex": "B7",
+   "group": "uncomplicated",
+   "value": null
+  },
+  {
+   "protein": "h4",
+   "dog_id": "DS07:d030",
+   "plex": "B9",
+   "group": "uncomplicated",
+   "value": 0.342555
+  },
+  {
+   "protein": "h4",
+   "dog_id": "DS07:d031",
+   "plex": "B10",
+   "group": "control",
+   "value": null
+  },
+  {
+   "protein": "h4",
+   "dog_id": "DS07:d032",
+   "plex": "B10",
+   "group": "complicated",
+   "value": null
+  },
+  {
+   "protein": "h4",
+   "dog_id": "DS07:d033",
+   "plex": "B5",
+   "group": "complicated",
+   "value": null
+  },
+  {
+   "protein": "h4",
+   "dog_id": "DS07:d034",
+   "plex": "B1",
+   "group": "complicated",
+   "value": -0.403542
+  },
+  {
+   "protein": "h4",
+   "dog_id": "DS07:d035",
+   "plex": "B1",
+   "group": "uncomplicated",
+   "value": -0.312939
+  },
+  {
+   "protein": "h4",
+   "dog_id": "DS07:d036",
+   "plex": "B9",
+   "group": "control",
+   "value": 0.03984
+  },
+  {
+   "protein": "h4",
+   "dog_id": "DS07:d037",
+   "plex": "B6",
+   "group": "uncomplicated",
+   "value": null
+  },
+  {
+   "protein": "h4",
+   "dog_id": "DS07:d038",
+   "plex": "B4",
+   "group": "uncomplicated",
+   "value": null
+  },
+  {
+   "protein": "h4",
+   "dog_id": "DS07:d039",
+   "plex": "B8",
+   "group": "control",
+   "value": null
+  },
+  {
+   "protein": "h4",
+   "dog_id": "DS07:d040",
+   "plex": "B1",
+   "group": "control",
+   "value": 0.149259
+  },
+  {
+   "protein": "h4",
+   "dog_id": "DS07:d041",
+   "plex": "B2",
+   "group": "control",
+   "value": null
+  },
+  {
+   "protein": "h4",
+   "dog_id": "DS07:d042",
+   "plex": "B9",
+   "group": "control",
+   "value": -0.312939
+  },
+  {
+   "protein": "h4",
+   "dog_id": "DS07:d043",
+   "plex": "B5",
+   "group": "uncomplicated",
+   "value": null
+  },
+  {
+   "protein": "h4",
+   "dog_id": "DS07:d044",
+   "plex": "B3",
+   "group": "control",
+   "value": null
+  },
+  {
+   "protein": "h4",
+   "dog_id": "DS07:d045",
+   "plex": "B2",
+   "group": "control",
+   "value": null
+  },
+  {
+   "protein": "h4",
+   "dog_id": "DS07:d046",
+   "plex": "B3",
+   "group": "uncomplicated",
+   "value": null
+  },
+  {
+   "protein": "h4",
+   "dog_id": "DS07:d047",
+   "plex": "B11",
+   "group": "uncomplicated",
+   "value": null
+  },
+  {
+   "protein": "h4",
+   "dog_id": "DS07:d048",
+   "plex": "B6",
+   "group": "control",
+   "value": null
+  },
+  {
+   "protein": "h4",
+   "dog_id": "DS07:d049",
+   "plex": "B7",
+   "group": "uncomplicated",
+   "value": null
+  },
+  {
+   "protein": "h4",
+   "dog_id": "DS07:d050",
+   "plex": "B8",
+   "group": "uncomplicated",
+   "value": null
+  },
+  {
+   "protein": "h4",
+   "dog_id": "DS07:d051",
+   "plex": "B9",
+   "group": "complicated",
+   "value": 1.105008
+  },
+  {
+   "protein": "h4",
+   "dog_id": "DS07:d052",
+   "plex": "B4",
+   "group": "control",
+   "value": null
+  },
+  {
+   "protein": "serpinf2",
+   "dog_id": "DS07:d001",
+   "plex": "B8",
+   "group": "complicated",
+   "value": 0.094912
+  },
+  {
+   "protein": "serpinf2",
+   "dog_id": "DS07:d002",
+   "plex": "B5",
+   "group": "uncomplicated",
+   "value": -0.215915
+  },
+  {
+   "protein": "serpinf2",
+   "dog_id": "DS07:d003",
+   "plex": "B3",
+   "group": "complicated",
+   "value": 0.007196
+  },
+  {
+   "protein": "serpinf2",
+   "dog_id": "DS07:d004",
+   "plex": "B6",
+   "group": "uncomplicated",
+   "value": -0.015958
+  },
+  {
+   "protein": "serpinf2",
+   "dog_id": "DS07:d005",
+   "plex": "B9",
+   "group": "complicated",
+   "value": 0.060739
+  },
+  {
+   "protein": "serpinf2",
+   "dog_id": "DS07:d006",
+   "plex": "B8",
+   "group": "uncomplicated",
+   "value": -0.015958
+  },
+  {
+   "protein": "serpinf2",
+   "dog_id": "DS07:d007",
+   "plex": "B10",
+   "group": "control",
+   "value": -0.279284
+  },
+  {
+   "protein": "serpinf2",
+   "dog_id": "DS07:d008",
+   "plex": "B2",
+   "group": "uncomplicated",
+   "value": -0.354759
+  },
+  {
+   "protein": "serpinf2",
+   "dog_id": "DS07:d009",
+   "plex": "B2",
+   "group": "complicated",
+   "value": -0.212568
+  },
+  {
+   "protein": "serpinf2",
+   "dog_id": "DS07:d010",
+   "plex": "B8",
+   "group": "control",
+   "value": 0.10165
+  },
+  {
+   "protein": "serpinf2",
+   "dog_id": "DS07:d011",
+   "plex": "B6",
+   "group": "control",
+   "value": -0.072483
+  },
+  {
+   "protein": "serpinf2",
+   "dog_id": "DS07:d012",
+   "plex": "B10",
+   "group": "uncomplicated",
+   "value": -0.035047
+  },
+  {
+   "protein": "serpinf2",
+   "dog_id": "DS07:d013",
+   "plex": "B2",
+   "group": "complicated",
+   "value": -0.268817
+  },
+  {
+   "protein": "serpinf2",
+   "dog_id": "DS07:d014",
+   "plex": "B7",
+   "group": "control",
+   "value": -0.096962
+  },
+  {
+   "protein": "serpinf2",
+   "dog_id": "DS07:d015",
+   "plex": "B3",
+   "group": "control",
+   "value": -0.026205
+  },
+  {
+   "protein": "serpinf2",
+   "dog_id": "DS07:d016",
+   "plex": "B11",
+   "group": "control",
+   "value": 0.115033
+  },
+  {
+   "protein": "serpinf2",
+   "dog_id": "DS07:d017",
+   "plex": "B4",
+   "group": "control",
+   "value": -0.161653
+  },
+  {
+   "protein": "serpinf2",
+   "dog_id": "DS07:d018",
+   "plex": "B4",
+   "group": "complicated",
+   "value": -0.179515
+  },
+  {
+   "protein": "serpinf2",
+   "dog_id": "DS07:d019",
+   "plex": "B7",
+   "group": "complicated",
+   "value": -0.039488
+  },
+  {
+   "protein": "serpinf2",
+   "dog_id": "DS07:d020",
+   "plex": "B10",
+   "group": "complicated",
+   "value": 0.621056
+  },
+  {
+   "protein": "serpinf2",
+   "dog_id": "DS07:d021",
+   "plex": "B3",
+   "group": "uncomplicated",
+   "value": 0.480265
+  },
+  {
+   "protein": "serpinf2",
+   "dog_id": "DS07:d022",
+   "plex": "B4",
+   "group": "uncomplicated",
+   "value": 0.042644
+  },
+  {
+   "protein": "serpinf2",
+   "dog_id": "DS07:d023",
+   "plex": "B6",
+   "group": "complicated",
+   "value": 0.428678
+  },
+  {
+   "protein": "serpinf2",
+   "dog_id": "DS07:d024",
+   "plex": "B5",
+   "group": "control",
+   "value": -0.018878
+  },
+  {
+   "protein": "serpinf2",
+   "dog_id": "DS07:d025",
+   "plex": "B1",
+   "group": "complicated",
+   "value": -0.177882
+  },
+  {
+   "protein": "serpinf2",
+   "dog_id": "DS07:d026",
+   "plex": "B1",
+   "group": "control",
+   "value": -0.078564
+  },
+  {
+   "protein": "serpinf2",
+   "dog_id": "DS07:d027",
+   "plex": "B7",
+   "group": "uncomplicated",
+   "value": -0.309359
+  },
+  {
+   "protein": "serpinf2",
+   "dog_id": "DS07:d028",
+   "plex": "B5",
+   "group": "control",
+   "value": -0.081614
+  },
+  {
+   "protein": "serpinf2",
+   "dog_id": "DS07:d029",
+   "plex": "B7",
+   "group": "uncomplicated",
+   "value": 0.097611
+  },
+  {
+   "protein": "serpinf2",
+   "dog_id": "DS07:d030",
+   "plex": "B9",
+   "group": "uncomplicated",
+   "value": -0.182786
+  },
+  {
+   "protein": "serpinf2",
+   "dog_id": "DS07:d031",
+   "plex": "B10",
+   "group": "control",
+   "value": -0.001443
+  },
+  {
+   "protein": "serpinf2",
+   "dog_id": "DS07:d032",
+   "plex": "B10",
+   "group": "complicated",
+   "value": 0.392867
+  },
+  {
+   "protein": "serpinf2",
+   "dog_id": "DS07:d033",
+   "plex": "B5",
+   "group": "complicated",
+   "value": -0.051399
+  },
+  {
+   "protein": "serpinf2",
+   "dog_id": "DS07:d034",
+   "plex": "B1",
+   "group": "complicated",
+   "value": 0.196607
+  },
+  {
+   "protein": "serpinf2",
+   "dog_id": "DS07:d035",
+   "plex": "B1",
+   "group": "uncomplicated",
+   "value": 0.248535
+  },
+  {
+   "protein": "serpinf2",
+   "dog_id": "DS07:d036",
+   "plex": "B9",
+   "group": "control",
+   "value": 0.017209
+  },
+  {
+   "protein": "serpinf2",
+   "dog_id": "DS07:d037",
+   "plex": "B6",
+   "group": "uncomplicated",
+   "value": 0.064883
+  },
+  {
+   "protein": "serpinf2",
+   "dog_id": "DS07:d038",
+   "plex": "B4",
+   "group": "uncomplicated",
+   "value": 0.064883
+  },
+  {
+   "protein": "serpinf2",
+   "dog_id": "DS07:d039",
+   "plex": "B8",
+   "group": "control",
+   "value": 0.141433
+  },
+  {
+   "protein": "serpinf2",
+   "dog_id": "DS07:d040",
+   "plex": "B1",
+   "group": "control",
+   "value": -0.07552
+  },
+  {
+   "protein": "serpinf2",
+   "dog_id": "DS07:d041",
+   "plex": "B2",
+   "group": "control",
+   "value": -0.106249
+  },
+  {
+   "protein": "serpinf2",
+   "dog_id": "DS07:d042",
+   "plex": "B9",
+   "group": "control",
+   "value": -0.09234
+  },
+  {
+   "protein": "serpinf2",
+   "dog_id": "DS07:d043",
+   "plex": "B5",
+   "group": "uncomplicated",
+   "value": -0.207561
+  },
+  {
+   "protein": "serpinf2",
+   "dog_id": "DS07:d044",
+   "plex": "B3",
+   "group": "control",
+   "value": -0.205896
+  },
+  {
+   "protein": "serpinf2",
+   "dog_id": "DS07:d045",
+   "plex": "B2",
+   "group": "control",
+   "value": -0.039488
+  },
+  {
+   "protein": "serpinf2",
+   "dog_id": "DS07:d046",
+   "plex": "B3",
+   "group": "uncomplicated",
+   "value": 0.421156
+  },
+  {
+   "protein": "serpinf2",
+   "dog_id": "DS07:d047",
+   "plex": "B11",
+   "group": "uncomplicated",
+   "value": 0.104337
+  },
+  {
+   "protein": "serpinf2",
+   "dog_id": "DS07:d048",
+   "plex": "B6",
+   "group": "control",
+   "value": 0.144046
+  },
+  {
+   "protein": "serpinf2",
+   "dog_id": "DS07:d049",
+   "plex": "B7",
+   "group": "uncomplicated",
+   "value": 0.05797
+  },
+  {
+   "protein": "serpinf2",
+   "dog_id": "DS07:d050",
+   "plex": "B8",
+   "group": "uncomplicated",
+   "value": 0.069015
+  },
+  {
+   "protein": "serpinf2",
+   "dog_id": "DS07:d051",
+   "plex": "B9",
+   "group": "complicated",
+   "value": 0.356144
+  },
+  {
+   "protein": "serpinf2",
+   "dog_id": "DS07:d052",
+   "plex": "B4",
+   "group": "control",
+   "value": -0.038006
+  },
+  {
+   "protein": "proc",
+   "dog_id": "DS07:d001",
+   "plex": "B8",
+   "group": "complicated",
+   "value": null
+  },
+  {
+   "protein": "proc",
+   "dog_id": "DS07:d002",
+   "plex": "B5",
+   "group": "uncomplicated",
+   "value": 1.189666
+  },
+  {
+   "protein": "proc",
+   "dog_id": "DS07:d003",
+   "plex": "B3",
+   "group": "complicated",
+   "value": null
+  },
+  {
+   "protein": "proc",
+   "dog_id": "DS07:d004",
+   "plex": "B6",
+   "group": "uncomplicated",
+   "value": 0.085425
+  },
+  {
+   "protein": "proc",
+   "dog_id": "DS07:d005",
+   "plex": "B9",
+   "group": "complicated",
+   "value": null
+  },
+  {
+   "protein": "proc",
+   "dog_id": "DS07:d006",
+   "plex": "B8",
+   "group": "uncomplicated",
+   "value": null
+  },
+  {
+   "protein": "proc",
+   "dog_id": "DS07:d007",
+   "plex": "B10",
+   "group": "control",
+   "value": 0.069015
+  },
+  {
+   "protein": "proc",
+   "dog_id": "DS07:d008",
+   "plex": "B2",
+   "group": "uncomplicated",
+   "value": 0.183963
+  },
+  {
+   "protein": "proc",
+   "dog_id": "DS07:d009",
+   "plex": "B2",
+   "group": "complicated",
+   "value": 0.492622
+  },
+  {
+   "protein": "proc",
+   "dog_id": "DS07:d010",
+   "plex": "B8",
+   "group": "control",
+   "value": null
+  },
+  {
+   "protein": "proc",
+   "dog_id": "DS07:d011",
+   "plex": "B6",
+   "group": "control",
+   "value": 0.012926
+  },
+  {
+   "protein": "proc",
+   "dog_id": "DS07:d012",
+   "plex": "B10",
+   "group": "uncomplicated",
+   "value": -0.017417
+  },
+  {
+   "protein": "proc",
+   "dog_id": "DS07:d013",
+   "plex": "B2",
+   "group": "complicated",
+   "value": -0.242977
+  },
+  {
+   "protein": "proc",
+   "dog_id": "DS07:d014",
+   "plex": "B7",
+   "group": "control",
+   "value": 0.453122
+  },
+  {
+   "protein": "proc",
+   "dog_id": "DS07:d015",
+   "plex": "B3",
+   "group": "control",
+   "value": null
+  },
+  {
+   "protein": "proc",
+   "dog_id": "DS07:d016",
+   "plex": "B11",
+   "group": "control",
+   "value": null
+  },
+  {
+   "protein": "proc",
+   "dog_id": "DS07:d017",
+   "plex": "B4",
+   "group": "control",
+   "value": null
+  },
+  {
+   "protein": "proc",
+   "dog_id": "DS07:d018",
+   "plex": "B4",
+   "group": "complicated",
+   "value": null
+  },
+  {
+   "protein": "proc",
+   "dog_id": "DS07:d019",
+   "plex": "B7",
+   "group": "complicated",
+   "value": 0.516015
+  },
+  {
+   "protein": "proc",
+   "dog_id": "DS07:d020",
+   "plex": "B10",
+   "group": "complicated",
+   "value": 0.359521
+  },
+  {
+   "protein": "proc",
+   "dog_id": "DS07:d021",
+   "plex": "B3",
+   "group": "uncomplicated",
+   "value": null
+  },
+  {
+   "protein": "proc",
+   "dog_id": "DS07:d022",
+   "plex": "B4",
+   "group": "uncomplicated",
+   "value": null
+  },
+  {
+   "protein": "proc",
+   "dog_id": "DS07:d023",
+   "plex": "B6",
+   "group": "complicated",
+   "value": 0.123004
+  },
+  {
+   "protein": "proc",
+   "dog_id": "DS07:d024",
+   "plex": "B5",
+   "group": "control",
+   "value": 1.136191
+  },
+  {
+   "protein": "proc",
+   "dog_id": "DS07:d025",
+   "plex": "B1",
+   "group": "complicated",
+   "value": null
+  },
+  {
+   "protein": "proc",
+   "dog_id": "DS07:d026",
+   "plex": "B1",
+   "group": "control",
+   "value": null
+  },
+  {
+   "protein": "proc",
+   "dog_id": "DS07:d027",
+   "plex": "B7",
+   "group": "uncomplicated",
+   "value": 0.097611
+  },
+  {
+   "protein": "proc",
+   "dog_id": "DS07:d028",
+   "plex": "B5",
+   "group": "control",
+   "value": 0.989139
+  },
+  {
+   "protein": "proc",
+   "dog_id": "DS07:d029",
+   "plex": "B7",
+   "group": "uncomplicated",
+   "value": 0.23634
+  },
+  {
+   "protein": "proc",
+   "dog_id": "DS07:d030",
+   "plex": "B9",
+   "group": "uncomplicated",
+   "value": null
+  },
+  {
+   "protein": "proc",
+   "dog_id": "DS07:d031",
+   "plex": "B10",
+   "group": "control",
+   "value": 0.088142
+  },
+  {
+   "protein": "proc",
+   "dog_id": "DS07:d032",
+   "plex": "B10",
+   "group": "complicated",
+   "value": -0.194295
+  },
+  {
+   "protein": "proc",
+   "dog_id": "DS07:d033",
+   "plex": "B5",
+   "group": "complicated",
+   "value": 0.681674
+  },
+  {
+   "protein": "proc",
+   "dog_id": "DS07:d034",
+   "plex": "B1",
+   "group": "complicated",
+   "value": null
+  },
+  {
+   "protein": "proc",
+   "dog_id": "DS07:d035",
+   "plex": "B1",
+   "group": "uncomplicated",
+   "value": null
+  },
+  {
+   "protein": "proc",
+   "dog_id": "DS07:d036",
+   "plex": "B9",
+   "group": "control",
+   "value": null
+  },
+  {
+   "protein": "proc",
+   "dog_id": "DS07:d037",
+   "plex": "B6",
+   "group": "uncomplicated",
+   "value": 0.259423
+  },
+  {
+   "protein": "proc",
+   "dog_id": "DS07:d038",
+   "plex": "B4",
+   "group": "uncomplicated",
+   "value": null
+  },
+  {
+   "protein": "proc",
+   "dog_id": "DS07:d039",
+   "plex": "B8",
+   "group": "control",
+   "value": null
+  },
+  {
+   "protein": "proc",
+   "dog_id": "DS07:d040",
+   "plex": "B1",
+   "group": "control",
+   "value": null
+  },
+  {
+   "protein": "proc",
+   "dog_id": "DS07:d041",
+   "plex": "B2",
+   "group": "control",
+   "value": -0.087733
+  },
+  {
+   "protein": "proc",
+   "dog_id": "DS07:d042",
+   "plex": "B9",
+   "group": "control",
+   "value": null
+  },
+  {
+   "protein": "proc",
+   "dog_id": "DS07:d043",
+   "plex": "B5",
+   "group": "uncomplicated",
+   "value": 0.903038
+  },
+  {
+   "protein": "proc",
+   "dog_id": "DS07:d044",
+   "plex": "B3",
+   "group": "control",
+   "value": null
+  },
+  {
+   "protein": "proc",
+   "dog_id": "DS07:d045",
+   "plex": "B2",
+   "group": "control",
+   "value": -0.182786
+  },
+  {
+   "protein": "proc",
+   "dog_id": "DS07:d046",
+   "plex": "B3",
+   "group": "uncomplicated",
+   "value": null
+  },
+  {
+   "protein": "proc",
+   "dog_id": "DS07:d047",
+   "plex": "B11",
+   "group": "uncomplicated",
+   "value": null
+  },
+  {
+   "protein": "proc",
+   "dog_id": "DS07:d048",
+   "plex": "B6",
+   "group": "control",
+   "value": 0.27262
+  },
+  {
+   "protein": "proc",
+   "dog_id": "DS07:d049",
+   "plex": "B7",
+   "group": "uncomplicated",
+   "value": 0.090853
+  },
+  {
+   "protein": "proc",
+   "dog_id": "DS07:d050",
+   "plex": "B8",
+   "group": "uncomplicated",
+   "value": null
+  },
+  {
+   "protein": "proc",
+   "dog_id": "DS07:d051",
+   "plex": "B9",
+   "group": "complicated",
+   "value": null
+  },
+  {
+   "protein": "proc",
+   "dog_id": "DS07:d052",
+   "plex": "B4",
+   "group": "control",
+   "value": null
+  },
+  {
+   "protein": "serpinc1",
+   "dog_id": "DS07:d001",
+   "plex": "B8",
+   "group": "complicated",
+   "value": -0.390245
+  },
+  {
+   "protein": "serpinc1",
+   "dog_id": "DS07:d002",
+   "plex": "B5",
+   "group": "uncomplicated",
+   "value": -0.334607
+  },
+  {
+   "protein": "serpinc1",
+   "dog_id": "DS07:d003",
+   "plex": "B3",
+   "group": "complicated",
+   "value": -0.477944
+  },
+  {
+   "protein": "serpinc1",
+   "dog_id": "DS07:d004",
+   "plex": "B6",
+   "group": "uncomplicated",
+   "value": 0.112367
+  },
+  {
+   "protein": "serpinc1",
+   "dog_id": "DS07:d005",
+   "plex": "B9",
+   "group": "complicated",
+   "value": -0.171368
+  },
+  {
+   "protein": "serpinc1",
+   "dog_id": "DS07:d006",
+   "plex": "B8",
+   "group": "uncomplicated",
+   "value": 0.034216
+  },
+  {
+   "protein": "serpinc1",
+   "dog_id": "DS07:d007",
+   "plex": "B10",
+   "group": "control",
+   "value": -0.011588
+  },
+  {
+   "protein": "serpinc1",
+   "dog_id": "DS07:d008",
+   "plex": "B2",
+   "group": "uncomplicated",
+   "value": -0.187707
+  },
+  {
+   "protein": "serpinc1",
+   "dog_id": "DS07:d009",
+   "plex": "B2",
+   "group": "complicated",
+   "value": -0.166503
+  },
+  {
+   "protein": "serpinc1",
+   "dog_id": "DS07:d010",
+   "plex": "B8",
+   "group": "control",
+   "value": 0.227741
+  },
+  {
+   "protein": "serpinc1",
+   "dog_id": "DS07:d011",
+   "plex": "B6",
+   "group": "control",
+   "value": -0.017417
+  },
+  {
+   "protein": "serpinc1",
+   "dog_id": "DS07:d012",
+   "plex": "B10",
+   "group": "uncomplicated",
+   "value": -0.422752
+  },
+  {
+   "protein": "serpinc1",
+   "dog_id": "DS07:d013",
+   "plex": "B2",
+   "group": "complicated",
+   "value": 0.258217
+  },
+  {
+   "protein": "serpinc1",
+   "dog_id": "DS07:d014",
+   "plex": "B7",
+   "group": "control",
+   "value": 0.130931
+  },
+  {
+   "protein": "serpinc1",
+   "dog_id": "DS07:d015",
+   "plex": "B3",
+   "group": "control",
+   "value": -0.093879
+  },
+  {
+   "protein": "serpinc1",
+   "dog_id": "DS07:d016",
+   "plex": "B11",
+   "group": "control",
+   "value": 0.109695
+  },
+  {
+   "protein": "serpinc1",
+   "dog_id": "DS07:d017",
+   "plex": "B4",
+   "group": "control",
+   "value": 0.16092
+  },
+  {
+   "protein": "serpinc1",
+   "dog_id": "DS07:d018",
+   "plex": "B4",
+   "group": "complicated",
+   "value": -0.136062
+  },
+  {
+   "protein": "serpinc1",
+   "dog_id": "DS07:d019",
+   "plex": "B7",
+   "group": "complicated",
+   "value": -0.195946
+  },
+  {
+   "protein": "serpinc1",
+   "dog_id": "DS07:d020",
+   "plex": "B10",
+   "group": "complicated",
+   "value": 0.085425
+  },
+  {
+   "protein": "serpinc1",
+   "dog_id": "DS07:d021",
+   "plex": "B3",
+   "group": "uncomplicated",
+   "value": -0.205896
+  },
+  {
+   "protein": "serpinc1",
+   "dog_id": "DS07:d022",
+   "plex": "B4",
+   "group": "uncomplicated",
+   "value": -0.195946
+  },
+  {
+   "protein": "serpinc1",
+   "dog_id": "DS07:d023",
+   "plex": "B6",
+   "group": "complicated",
+   "value": -0.107803
+  },
+  {
+   "protein": "serpinc1",
+   "dog_id": "DS07:d024",
+   "plex": "B5",
+   "group": "control",
+   "value": -0.036526
+  },
+  {
+   "protein": "serpinc1",
+   "dog_id": "DS07:d025",
+   "plex": "B1",
+   "group": "complicated",
+   "value": -0.164884
+  },
+  {
+   "protein": "serpinc1",
+   "dog_id": "DS07:d026",
+   "plex": "B1",
+   "group": "control",
+   "value": 0.032806
+  },
+  {
+   "protein": "serpinc1",
+   "dog_id": "DS07:d027",
+   "plex": "B7",
+   "group": "uncomplicated",
+   "value": -0.227692
+  },
+  {
+   "protein": "serpinc1",
+   "dog_id": "DS07:d028",
+   "plex": "B5",
+   "group": "control",
+   "value": 0.129613
+  },
+  {
+   "protein": "serpinc1",
+   "dog_id": "DS07:d029",
+   "plex": "B7",
+   "group": "uncomplicated",
+   "value": -0.15682
+  },
+  {
+   "protein": "serpinc1",
+   "dog_id": "DS07:d030",
+   "plex": "B9",
+   "group": "uncomplicated",
+   "value": -0.058894
+  },
+  {
+   "protein": "serpinc1",
+   "dog_id": "DS07:d031",
+   "plex": "B10",
+   "group": "control",
+   "value": 0.055196
+  },
+  {
+   "protein": "serpinc1",
+   "dog_id": "DS07:d032",
+   "plex": "B10",
+   "group": "complicated",
+   "value": -0.291592
+  },
+  {
+   "protein": "serpinc1",
+   "dog_id": "DS07:d033",
+   "plex": "B5",
+   "group": "complicated",
+   "value": -0.296899
+  },
+  {
+   "protein": "serpinc1",
+   "dog_id": "DS07:d034",
+   "plex": "B1",
+   "group": "complicated",
+   "value": -0.054392
+  },
+  {
+   "protein": "serpinc1",
+   "dog_id": "DS07:d035",
+   "plex": "B1",
+   "group": "uncomplicated",
+   "value": -0.258425
+  },
+  {
+   "protein": "serpinc1",
+   "dog_id": "DS07:d036",
+   "plex": "B9",
+   "group": "control",
+   "value": 0.020058
+  },
+  {
+   "protein": "serpinc1",
+   "dog_id": "DS07:d037",
+   "plex": "B6",
+   "group": "uncomplicated",
+   "value": 0.192825
+  },
+  {
+   "protein": "serpinc1",
+   "dog_id": "DS07:d038",
+   "plex": "B4",
+   "group": "uncomplicated",
+   "value": -0.021804
+  },
+  {
+   "protein": "serpinc1",
+   "dog_id": "DS07:d039",
+   "plex": "B8",
+   "group": "control",
+   "value": 0.186501
+  },
+  {
+   "protein": "serpinc1",
+   "dog_id": "DS07:d040",
+   "plex": "B1",
+   "group": "control",
+   "value": 0.255803
+  },
+  {
+   "protein": "serpinc1",
+   "dog_id": "DS07:d041",
+   "plex": "B2",
+   "group": "control",
+   "value": 0.059355
+  },
+  {
+   "protein": "serpinc1",
+   "dog_id": "DS07:d042",
+   "plex": "B9",
+   "group": "control",
+   "value": 0.02432
+  },
+  {
+   "protein": "serpinc1",
+   "dog_id": "DS07:d043",
+   "plex": "B5",
+   "group": "uncomplicated",
+   "value": -0.118727
+  },
+  {
+   "protein": "serpinc1",
+   "dog_id": "DS07:d044",
+   "plex": "B3",
+   "group": "control",
+   "value": 0.092207
+  },
+  {
+   "protein": "serpinc1",
+   "dog_id": "DS07:d045",
+   "plex": "B2",
+   "group": "control",
+   "value": 0.079975
+  },
+  {
+   "protein": "serpinc1",
+   "dog_id": "DS07:d046",
+   "plex": "B3",
+   "group": "uncomplicated",
+   "value": 0.286881
+  },
+  {
+   "protein": "serpinc1",
+   "dog_id": "DS07:d047",
+   "plex": "B11",
+   "group": "uncomplicated",
+   "value": 0.155749
+  },
+  {
+   "protein": "serpinc1",
+   "dog_id": "DS07:d048",
+   "plex": "B6",
+   "group": "control",
+   "value": 0.125651
+  },
+  {
+   "protein": "serpinc1",
+   "dog_id": "DS07:d049",
+   "plex": "B7",
+   "group": "uncomplicated",
+   "value": -0.244685
+  },
+  {
+   "protein": "serpinc1",
+   "dog_id": "DS07:d050",
+   "plex": "B8",
+   "group": "uncomplicated",
+   "value": -0.45799
+  },
+  {
+   "protein": "serpinc1",
+   "dog_id": "DS07:d051",
+   "plex": "B9",
+   "group": "complicated",
+   "value": -0.153607
+  },
+  {
+   "protein": "serpinc1",
+   "dog_id": "DS07:d052",
+   "plex": "B4",
+   "group": "control",
+   "value": 0.204141
+  },
+  {
+   "protein": "cfh",
+   "dog_id": "DS07:d001",
+   "plex": "B8",
+   "group": "complicated",
+   "value": -0.093879
+  },
+  {
+   "protein": "cfh",
+   "dog_id": "DS07:d002",
+   "plex": "B5",
+   "group": "uncomplicated",
+   "value": 0.045443
+  },
+  {
+   "protein": "cfh",
+   "dog_id": "DS07:d003",
+   "plex": "B3",
+   "group": "complicated",
+   "value": -0.051399
+  },
+  {
+   "protein": "cfh",
+   "dog_id": "DS07:d004",
+   "plex": "B6",
+   "group": "uncomplicated",
+   "value": 0.128293
+  },
+  {
+   "protein": "cfh",
+   "dog_id": "DS07:d005",
+   "plex": "B9",
+   "group": "complicated",
+   "value": 0.055196
+  },
+  {
+   "protein": "cfh",
+   "dog_id": "DS07:d006",
+   "plex": "B8",
+   "group": "uncomplicated",
+   "value": -0.058894
+  },
+  {
+   "protein": "cfh",
+   "dog_id": "DS07:d007",
+   "plex": "B10",
+   "group": "control",
+   "value": 0.16092
+  },
+  {
+   "protein": "cfh",
+   "dog_id": "DS07:d008",
+   "plex": "B2",
+   "group": "uncomplicated",
+   "value": 0.141433
+  },
+  {
+   "protein": "cfh",
+   "dog_id": "DS07:d009",
+   "plex": "B2",
+   "group": "complicated",
+   "value": -0.02327
+  },
+  {
+   "protein": "cfh",
+   "dog_id": "DS07:d010",
+   "plex": "B8",
+   "group": "control",
+   "value": 0.086784
+  },
+  {
+   "protein": "cfh",
+   "dog_id": "DS07:d011",
+   "plex": "B6",
+   "group": "control",
+   "value": 0.086784
+  },
+  {
+   "protein": "cfh",
+   "dog_id": "DS07:d012",
+   "plex": "B10",
+   "group": "uncomplicated",
+   "value": 0.235114
+  },
+  {
+   "protein": "cfh",
+   "dog_id": "DS07:d013",
+   "plex": "B2",
+   "group": "complicated",
+   "value": -0.090803
+  },
+  {
+   "protein": "cfh",
+   "dog_id": "DS07:d014",
+   "plex": "B7",
+   "group": "control",
+   "value": 0.027154
+  },
+  {
+   "protein": "cfh",
+   "dog_id": "DS07:d015",
+   "plex": "B3",
+   "group": "control",
+   "value": -0.132894
+  },
+  {
+   "protein": "cfh",
+   "dog_id": "DS07:d016",
+   "plex": "B11",
+   "group": "control",
+   "value": 0.090853
+  },
+  {
+   "protein": "cfh",
+   "dog_id": "DS07:d017",
+   "plex": "B4",
+   "group": "control",
+   "value": -0.038006
+  },
+  {
+   "protein": "cfh",
+   "dog_id": "DS07:d018",
+   "plex": "B4",
+   "group": "complicated",
+   "value": 0.031395
+  },
+  {
+   "protein": "cfh",
+   "dog_id": "DS07:d019",
+   "plex": "B7",
+   "group": "complicated",
+   "value": 0.064883
+  },
+  {
+   "protein": "cfh",
+   "dog_id": "DS07:d020",
+   "plex": "B10",
+   "group": "complicated",
+   "value": -0.096962
+  },
+  {
+   "protein": "cfh",
+   "dog_id": "DS07:d021",
+   "plex": "B3",
+   "group": "uncomplicated",
+   "value": -0.242977
+  },
+  {
+   "protein": "cfh",
+   "dog_id": "DS07:d022",
+   "plex": "B4",
+   "group": "uncomplicated",
+   "value": -0.026205
+  },
+  {
+   "protein": "cfh",
+   "dog_id": "DS07:d023",
+   "plex": "B6",
+   "group": "complicated",
+   "value": -0.007232
+  },
+  {
+   "protein": "cfh",
+   "dog_id": "DS07:d024",
+   "plex": "B5",
+   "group": "control",
+   "value": 0.048236
+  },
+  {
+   "protein": "cfh",
+   "dog_id": "DS07:d025",
+   "plex": "B1",
+   "group": "complicated",
+   "value": -0.08467
+  },
+  {
+   "protein": "cfh",
+   "dog_id": "DS07:d026",
+   "plex": "B1",
+   "group": "control",
+   "value": 0.049631
+  },
+  {
+   "protein": "cfh",
+   "dog_id": "DS07:d027",
+   "plex": "B7",
+   "group": "uncomplicated",
+   "value": -0.118727
+  },
+  {
+   "protein": "cfh",
+   "dog_id": "DS07:d028",
+   "plex": "B5",
+   "group": "control",
+   "value": -0.017417
+  },
+  {
+   "protein": "cfh",
+   "dog_id": "DS07:d029",
+   "plex": "B7",
+   "group": "uncomplicated",
+   "value": -0.077041
+  },
+  {
+   "protein": "cfh",
+   "dog_id": "DS07:d030",
+   "plex": "B9",
+   "group": "uncomplicated",
+   "value": -0.140826
+  },
+  {
+   "protein": "cfh",
+   "dog_id": "DS07:d031",
+   "plex": "B10",
+   "group": "control",
+   "value": 0.125651
+  },
+  {
+   "protein": "cfh",
+   "dog_id": "DS07:d032",
+   "plex": "B10",
+   "group": "complicated",
+   "value": -0.064917
+  },
+  {
+   "protein": "cfh",
+   "dog_id": "DS07:d033",
+   "plex": "B5",
+   "group": "complicated",
+   "value": 0.206643
+  },
+  {
+   "protein": "cfh",
+   "dog_id": "DS07:d034",
+   "plex": "B1",
+   "group": "complicated",
+   "value": -0.153607
+  },
+  {
+   "protein": "cfh",
+   "dog_id": "DS07:d035",
+   "plex": "B1",
+   "group": "uncomplicated",
+   "value": 0.22033
+  },
+  {
+   "protein": "cfh",
+   "dog_id": "DS07:d036",
+   "plex": "B9",
+   "group": "control",
+   "value": 0.119024
+  },
+  {
+   "protein": "cfh",
+   "dog_id": "DS07:d037",
+   "plex": "B6",
+   "group": "uncomplicated",
+   "value": 0.104337
+  },
+  {
+   "protein": "cfh",
+   "dog_id": "DS07:d038",
+   "plex": "B4",
+   "group": "uncomplicated",
+   "value": -0.150401
+  },
+  {
+   "protein": "cfh",
+   "dog_id": "DS07:d039",
+   "plex": "B8",
+   "group": "control",
+   "value": 0.064883
+  },
+  {
+   "protein": "cfh",
+   "dog_id": "DS07:d040",
+   "plex": "B1",
+   "group": "control",
+   "value": -0.074001
+  },
+  {
+   "protein": "cfh",
+   "dog_id": "DS07:d041",
+   "plex": "B2",
+   "group": "control",
+   "value": -0.125006
+  },
+  {
+   "protein": "cfh",
+   "dog_id": "DS07:d042",
+   "plex": "B9",
+   "group": "control",
+   "value": 0.067639
+  },
+  {
+   "protein": "cfh",
+   "dog_id": "DS07:d043",
+   "plex": "B5",
+   "group": "uncomplicated",
+   "value": -0.200913
+  },
+  {
+   "protein": "cfh",
+   "dog_id": "DS07:d044",
+   "plex": "B3",
+   "group": "control",
+   "value": -0.120294
+  },
+  {
+   "protein": "cfh",
+   "dog_id": "DS07:d045",
+   "plex": "B2",
+   "group": "control",
+   "value": 0.020058
+  },
+  {
+   "protein": "cfh",
+   "dog_id": "DS07:d046",
+   "plex": "B3",
+   "group": "uncomplicated",
+   "value": 0.025738
+  },
+  {
+   "protein": "cfh",
+   "dog_id": "DS07:d047",
+   "plex": "B11",
+   "group": "uncomplicated",
+   "value": 0.032806
+  },
+  {
+   "protein": "cfh",
+   "dog_id": "DS07:d048",
+   "plex": "B6",
+   "group": "control",
+   "value": -0.010134
+  },
+  {
+   "protein": "cfh",
+   "dog_id": "DS07:d049",
+   "plex": "B7",
+   "group": "uncomplicated",
+   "value": 0.082703
+  },
+  {
+   "protein": "cfh",
+   "dog_id": "DS07:d050",
+   "plex": "B8",
+   "group": "uncomplicated",
+   "value": 0.075875
+  },
+  {
+   "protein": "cfh",
+   "dog_id": "DS07:d051",
+   "plex": "B9",
+   "group": "complicated",
+   "value": 0.084064
+  },
+  {
+   "protein": "cfh",
+   "dog_id": "DS07:d052",
+   "plex": "B4",
+   "group": "control",
+   "value": 0.038436
+  },
+  {
+   "protein": "cd14",
+   "dog_id": "DS07:d001",
+   "plex": "B8",
+   "group": "complicated",
+   "value": 0.263034
+  },
+  {
+   "protein": "cd14",
+   "dog_id": "DS07:d002",
+   "plex": "B5",
+   "group": "uncomplicated",
+   "value": 0.364012
+  },
+  {
+   "protein": "cd14",
+   "dog_id": "DS07:d003",
+   "plex": "B3",
+   "group": "complicated",
+   "value": 0.221568
+  },
+  {
+   "protein": "cd14",
+   "dog_id": "DS07:d004",
+   "plex": "B6",
+   "group": "uncomplicated",
+   "value": -0.052895
+  },
+  {
+   "protein": "cd14",
+   "dog_id": "DS07:d005",
+   "plex": "B9",
+   "group": "complicated",
+   "value": 0.632268
+  },
+  {
+   "protein": "cd14",
+   "dog_id": "DS07:d006",
+   "plex": "B8",
+   "group": "uncomplicated",
+   "value": 0.422233
+  },
+  {
+   "protein": "cd14",
+   "dog_id": "DS07:d007",
+   "plex": "B10",
+   "group": "control",
+   "value": -0.586406
+  },
+  {
+   "protein": "cd14",
+   "dog_id": "DS07:d008",
+   "plex": "B2",
+   "group": "uncomplicated",
+   "value": 0.503858
+  },
+  {
+   "protein": "cd14",
+   "dog_id": "DS07:d009",
+   "plex": "B2",
+   "group": "complicated",
+   "value": 0.457332
+  },
+  {
+   "protein": "cd14",
+   "dog_id": "DS07:d010",
+   "plex": "B8",
+   "group": "control",
+   "value": 0.071763
+  },
+  {
+   "protein": "cd14",
+   "dog_id": "DS07:d011",
+   "plex": "B6",
+   "group": "control",
+   "value": -0.199255
+  },
+  {
+   "protein": "cd14",
+   "dog_id": "DS07:d012",
+   "plex": "B10",
+   "group": "uncomplicated",
+   "value": -0.232769
+  },
+  {
+   "protein": "cd14",
+   "dog_id": "DS07:d013",
+   "plex": "B2",
+   "group": "complicated",
+   "value": 0.168642
+  },
+  {
+   "protein": "cd14",
+   "dog_id": "DS07:d014",
+   "plex": "B7",
+   "group": "control",
+   "value": -0.318326
+  },
+  {
+   "protein": "cd14",
+   "dog_id": "DS07:d015",
+   "plex": "B3",
+   "group": "control",
+   "value": -0.008682
+  },
+  {
+   "protein": "cd14",
+   "dog_id": "DS07:d016",
+   "plex": "B11",
+   "group": "control",
+   "value": -0.104697
+  },
+  {
+   "protein": "cd14",
+   "dog_id": "DS07:d017",
+   "plex": "B4",
+   "group": "control",
+   "value": -0.093879
+  },
+  {
+   "protein": "cd14",
+   "dog_id": "DS07:d018",
+   "plex": "B4",
+   "group": "complicated",
+   "value": 0.681674
+  },
+  {
+   "protein": "cd14",
+   "dog_id": "DS07:d019",
+   "plex": "B7",
+   "group": "complicated",
+   "value": 0.375178
+  },
+  {
+   "protein": "cd14",
+   "dog_id": "DS07:d020",
+   "plex": "B10",
+   "group": "complicated",
+   "value": 0.858379
+  },
+  {
+   "protein": "cd14",
+   "dog_id": "DS07:d021",
+   "plex": "B3",
+   "group": "uncomplicated",
+   "value": 0.342555
+  },
+  {
+   "protein": "cd14",
+   "dog_id": "DS07:d022",
+   "plex": "B4",
+   "group": "uncomplicated",
+   "value": 0.221568
+  },
+  {
+   "protein": "cd14",
+   "dog_id": "DS07:d023",
+   "plex": "B6",
+   "group": "complicated",
+   "value": 0.088142
+  },
+  {
+   "protein": "cd14",
+   "dog_id": "DS07:d024",
+   "plex": "B5",
+   "group": "control",
+   "value": -0.347399
+  },
+  {
+   "protein": "cd14",
+   "dog_id": "DS07:d025",
+   "plex": "B1",
+   "group": "complicated",
+   "value": 0.543991
+  },
+  {
+   "protein": "cd14",
+   "dog_id": "DS07:d026",
+   "plex": "B1",
+   "group": "control",
+   "value": -0.880976
+  },
+  {
+   "protein": "cd14",
+   "dog_id": "DS07:d027",
+   "plex": "B7",
+   "group": "uncomplicated",
+   "value": -0.494109
+  },
+  {
+   "protein": "cd14",
+   "dog_id": "DS07:d028",
+   "plex": "B5",
+   "group": "control",
+   "value": 0.107018
+  },
+  {
+   "protein": "cd14",
+   "dog_id": "DS07:d029",
+   "plex": "B7",
+   "group": "uncomplicated",
+   "value": 0.777367
+  },
+  {
+   "protein": "cd14",
+   "dog_id": "DS07:d030",
+   "plex": "B9",
+   "group": "uncomplicated",
+   "value": 0.168642
+  },
+  {
+   "protein": "cd14",
+   "dog_id": "DS07:d031",
+   "plex": "B10",
+   "group": "control",
+   "value": -0.325539
+  },
+  {
+   "protein": "cd14",
+   "dog_id": "DS07:d032",
+   "plex": "B10",
+   "group": "complicated",
+   "value": 0.469886
+  },
+  {
+   "protein": "cd14",
+   "dog_id": "DS07:d033",
+   "plex": "B5",
+   "group": "complicated",
+   "value": 0.515006
+  },
+  {
+   "protein": "cd14",
+   "dog_id": "DS07:d034",
+   "plex": "B1",
+   "group": "complicated",
+   "value": 0.266637
+  },
+  {
+   "protein": "cd14",
+   "dog_id": "DS07:d035",
+   "plex": "B1",
+   "group": "uncomplicated",
+   "value": 0.454176
+  },
+  {
+   "protein": "cd14",
+   "dog_id": "DS07:d036",
+   "plex": "B9",
+   "group": "control",
+   "value": -0.081614
+  },
+  {
+   "protein": "cd14",
+   "dog_id": "DS07:d037",
+   "plex": "B6",
+   "group": "uncomplicated",
+   "value": 0.074505
+  },
+  {
+   "protein": "cd14",
+   "dog_id": "DS07:d038",
+   "plex": "B4",
+   "group": "uncomplicated",
+   "value": 0.196607
+  },
+  {
+   "protein": "cd14",
+   "dog_id": "DS07:d039",
+   "plex": "B8",
+   "group": "control",
+   "value": 0.480265
+  },
+  {
+   "protein": "cd14",
+   "dog_id": "DS07:d040",
+   "plex": "B1",
+   "group": "control",
+   "value": -0.746616
+  },
+  {
+   "protein": "cd14",
+   "dog_id": "DS07:d041",
+   "plex": "B2",
+   "group": "control",
+   "value": -1.148801
+  },
+  {
+   "protein": "cd14",
+   "dog_id": "DS07:d042",
+   "plex": "B9",
+   "group": "control",
+   "value": -0.067939
+  },
+  {
+   "protein": "cd14",
+   "dog_id": "DS07:d043",
+   "plex": "B5",
+   "group": "uncomplicated",
+   "value": -0.004335
+  },
+  {
+   "protein": "cd14",
+   "dog_id": "DS07:d044",
+   "plex": "B3",
+   "group": "control",
+   "value": -0.086201
+  },
+  {
+   "protein": "cd14",
+   "dog_id": "DS07:d045",
+   "plex": "B2",
+   "group": "control",
+   "value": -0.78339
+  },
+  {
+   "protein": "cd14",
+   "dog_id": "DS07:d046",
+   "plex": "B3",
+   "group": "uncomplicated",
+   "value": 0.282143
+  },
+  {
+   "protein": "cd14",
+   "dog_id": "DS07:d047",
+   "plex": "B11",
+   "group": "uncomplicated",
+   "value": 0.244887
+  },
+  {
+   "protein": "cd14",
+   "dog_id": "DS07:d048",
+   "plex": "B6",
+   "group": "control",
+   "value": -0.309359
+  },
+  {
+   "protein": "cd14",
+   "dog_id": "DS07:d049",
+   "plex": "B7",
+   "group": "uncomplicated",
+   "value": 0.166073
+  },
+  {
+   "protein": "cd14",
+   "dog_id": "DS07:d050",
+   "plex": "B8",
+   "group": "uncomplicated",
+   "value": 0.597412
+  },
+  {
+   "protein": "cd14",
+   "dog_id": "DS07:d051",
+   "plex": "B9",
+   "group": "complicated",
+   "value": 0.343692
+  },
+  {
+   "protein": "cd14",
+   "dog_id": "DS07:d052",
+   "plex": "B4",
+   "group": "control",
+   "value": -0.878321
+  },
+  {
+   "protein": "hba",
+   "dog_id": "DS07:d001",
+   "plex": "B8",
+   "group": "complicated",
+   "value": -2.083141
+  },
+  {
+   "protein": "hba",
+   "dog_id": "DS07:d002",
+   "plex": "B5",
+   "group": "uncomplicated",
+   "value": -1.204233
+  },
+  {
+   "protein": "hba",
+   "dog_id": "DS07:d003",
+   "plex": "B3",
+   "group": "complicated",
+   "value": -2.058894
+  },
+  {
+   "protein": "hba",
+   "dog_id": "DS07:d004",
+   "plex": "B6",
+   "group": "uncomplicated",
+   "value": -3.237864
+  },
+  {
+   "protein": "hba",
+   "dog_id": "DS07:d005",
+   "plex": "B9",
+   "group": "complicated",
+   "value": 0.669934
+  },
+  {
+   "protein": "hba",
+   "dog_id": "DS07:d006",
+   "plex": "B8",
+   "group": "uncomplicated",
+   "value": -1.994241
+  },
+  {
+   "protein": "hba",
+   "dog_id": "DS07:d007",
+   "plex": "B10",
+   "group": "control",
+   "value": -0.994241
+  },
+  {
+   "protein": "hba",
+   "dog_id": "DS07:d008",
+   "plex": "B2",
+   "group": "uncomplicated",
+   "value": 0.568519
+  },
+  {
+   "protein": "hba",
+   "dog_id": "DS07:d009",
+   "plex": "B2",
+   "group": "complicated",
+   "value": 1.468844
+  },
+  {
+   "protein": "hba",
+   "dog_id": "DS07:d010",
+   "plex": "B8",
+   "group": "control",
+   "value": -1.666576
+  },
+  {
+   "protein": "hba",
+   "dog_id": "DS07:d011",
+   "plex": "B6",
+   "group": "control",
+   "value": -1.9771
+  },
+  {
+   "protein": "hba",
+   "dog_id": "DS07:d012",
+   "plex": "B10",
+   "group": "uncomplicated",
+   "value": -1.603841
+  },
+  {
+   "protein": "hba",
+   "dog_id": "DS07:d013",
+   "plex": "B2",
+   "group": "complicated",
+   "value": -0.529073
+  },
+  {
+   "protein": "hba",
+   "dog_id": "DS07:d014",
+   "plex": "B7",
+   "group": "control",
+   "value": -1.703689
+  },
+  {
+   "protein": "hba",
+   "dog_id": "DS07:d015",
+   "plex": "B3",
+   "group": "control",
+   "value": -1.888969
+  },
+  {
+   "protein": "hba",
+   "dog_id": "DS07:d016",
+   "plex": "B11",
+   "group": "control",
+   "value": -1.717857
+  },
+  {
+   "protein": "hba",
+   "dog_id": "DS07:d017",
+   "plex": "B4",
+   "group": "control",
+   "value": -1.680382
+  },
+  {
+   "protein": "hba",
+   "dog_id": "DS07:d018",
+   "plex": "B4",
+   "group": "complicated",
+   "value": 0.126973
+  },
+  {
+   "protein": "hba",
+   "dog_id": "DS07:d019",
+   "plex": "B7",
+   "group": "complicated",
+   "value": 2.005759
+  },
+  {
+   "protein": "hba",
+   "dog_id": "DS07:d020",
+   "plex": "B10",
+   "group": "complicated",
+   "value": 1.368489
+  },
+  {
+   "protein": "hba",
+   "dog_id": "DS07:d021",
+   "plex": "B3",
+   "group": "uncomplicated",
+   "value": 0.970854
+  },
+  {
+   "protein": "hba",
+   "dog_id": "DS07:d022",
+   "plex": "B4",
+   "group": "uncomplicated",
+   "value": -1.53952
+  },
+  {
+   "protein": "hba",
+   "dog_id": "DS07:d023",
+   "plex": "B6",
+   "group": "complicated",
+   "value": -2.643856
+  },
+  {
+   "protein": "hba",
+   "dog_id": "DS07:d024",
+   "plex": "B5",
+   "group": "control",
+   "value": -0.867752
+  },
+  {
+   "protein": "hba",
+   "dog_id": "DS07:d025",
+   "plex": "B1",
+   "group": "complicated",
+   "value": 2.447315
+  },
+  {
+   "protein": "hba",
+   "dog_id": "DS07:d026",
+   "plex": "B1",
+   "group": "control",
+   "value": -0.413115
+  },
+  {
+   "protein": "hba",
+   "dog_id": "DS07:d027",
+   "plex": "B7",
+   "group": "uncomplicated",
+   "value": -1.662004
+  },
+  {
+   "protein": "hba",
+   "dog_id": "DS07:d028",
+   "plex": "B5",
+   "group": "control",
+   "value": -1.231075
+  },
+  {
+   "protein": "hba",
+   "dog_id": "DS07:d029",
+   "plex": "B7",
+   "group": "uncomplicated",
+   "value": -1.070967
+  },
+  {
+   "protein": "hba",
+   "dog_id": "DS07:d030",
+   "plex": "B9",
+   "group": "uncomplicated",
+   "value": -1.943416
+  },
+  {
+   "protein": "hba",
+   "dog_id": "DS07:d031",
+   "plex": "B10",
+   "group": "control",
+   "value": -1.603841
+  },
+  {
+   "protein": "hba",
+   "dog_id": "DS07:d032",
+   "plex": "B10",
+   "group": "complicated",
+   "value": -1.289827
+  },
+  {
+   "protein": "hba",
+   "dog_id": "DS07:d033",
+   "plex": "B5",
+   "group": "complicated",
+   "value": 1.637378
+  },
+  {
+   "protein": "hba",
+   "dog_id": "DS07:d034",
+   "plex": "B1",
+   "group": "complicated",
+   "value": 0.870266
+  },
+  {
+   "protein": "hba",
+   "dog_id": "DS07:d035",
+   "plex": "B1",
+   "group": "uncomplicated",
+   "value": -0.732165
+  },
+  {
+   "protein": "hba",
+   "dog_id": "DS07:d036",
+   "plex": "B9",
+   "group": "control",
+   "value": -1.648372
+  },
+  {
+   "protein": "hba",
+   "dog_id": "DS07:d037",
+   "plex": "B6",
+   "group": "uncomplicated",
+   "value": -2.058894
+  },
+  {
+   "protein": "hba",
+   "dog_id": "DS07:d038",
+   "plex": "B4",
+   "group": "uncomplicated",
+   "value": -1.652901
+  },
+  {
+   "protein": "hba",
+   "dog_id": "DS07:d039",
+   "plex": "B8",
+   "group": "control",
+   "value": -1.846843
+  },
+  {
+   "protein": "hba",
+   "dog_id": "DS07:d040",
+   "plex": "B1",
+   "group": "control",
+   "value": -0.332789
+  },
+  {
+   "protein": "hba",
+   "dog_id": "DS07:d041",
+   "plex": "B2",
+   "group": "control",
+   "value": -0.99137
+  },
+  {
+   "protein": "hba",
+   "dog_id": "DS07:d042",
+   "plex": "B9",
+   "group": "control",
+   "value": -1.810966
+  },
+  {
+   "protein": "hba",
+   "dog_id": "DS07:d043",
+   "plex": "B5",
+   "group": "uncomplicated",
+   "value": -0.239566
+  },
+  {
+   "protein": "hba",
+   "dog_id": "DS07:d044",
+   "plex": "B3",
+   "group": "control",
+   "value": -2.293359
+  },
+  {
+   "protein": "hba",
+   "dog_id": "DS07:d045",
+   "plex": "B2",
+   "group": "control",
+   "value": -0.940645
+  },
+  {
+   "protein": "hba",
+   "dog_id": "DS07:d046",
+   "plex": "B3",
+   "group": "uncomplicated",
+   "value": -2.522841
+  },
+  {
+   "protein": "hba",
+   "dog_id": "DS07:d047",
+   "plex": "B11",
+   "group": "uncomplicated",
+   "value": -2.224317
+  },
+  {
+   "protein": "hba",
+   "dog_id": "DS07:d048",
+   "plex": "B6",
+   "group": "control",
+   "value": -2.599462
+  },
+  {
+   "protein": "hba",
+   "dog_id": "DS07:d049",
+   "plex": "B7",
+   "group": "uncomplicated",
+   "value": -0.115597
+  },
+  {
+   "protein": "hba",
+   "dog_id": "DS07:d050",
+   "plex": "B8",
+   "group": "uncomplicated",
+   "value": -2.171368
+  },
+  {
+   "protein": "hba",
+   "dog_id": "DS07:d051",
+   "plex": "B9",
+   "group": "complicated",
+   "value": -1.207561
+  },
+  {
+   "protein": "hba",
+   "dog_id": "DS07:d052",
+   "plex": "B4",
+   "group": "control",
+   "value": -1.526992
+  }
+ ],
+ "lopo": [
+  {
+   "protein": "hbb",
+   "plex_left_out": "B1",
+   "delta": 0.4216
+  },
+  {
+   "protein": "hbb",
+   "plex_left_out": "B10",
+   "delta": 0.4608
+  },
+  {
+   "protein": "hbb",
+   "plex_left_out": "B11",
+   "delta": 0.4622
+  },
+  {
+   "protein": "hbb",
+   "plex_left_out": "B2",
+   "delta": 0.4706
+  },
+  {
+   "protein": "hbb",
+   "plex_left_out": "B3",
+   "delta": 0.5385
+  },
+  {
+   "protein": "hbb",
+   "plex_left_out": "B4",
+   "delta": 0.4135
+  },
+  {
+   "protein": "hbb",
+   "plex_left_out": "B5",
+   "delta": 0.4712
+  },
+  {
+   "protein": "hbb",
+   "plex_left_out": "B6",
+   "delta": 0.5192
+  },
+  {
+   "protein": "hbb",
+   "plex_left_out": "B7",
+   "delta": 0.4872
+  },
+  {
+   "protein": "hbb",
+   "plex_left_out": "B8",
+   "delta": 0.5385
+  },
+  {
+   "protein": "hbb",
+   "plex_left_out": "B9",
+   "delta": 0.4706
+  },
+  {
+   "protein": "hp",
+   "plex_left_out": "B1",
+   "delta": 0.0441
+  },
+  {
+   "protein": "hp",
+   "plex_left_out": "B10",
+   "delta": 0.0735
+  },
+  {
+   "protein": "hp",
+   "plex_left_out": "B11",
+   "delta": 0.0504
+  },
+  {
+   "protein": "hp",
+   "plex_left_out": "B2",
+   "delta": 0.1176
+  },
+  {
+   "protein": "hp",
+   "plex_left_out": "B3",
+   "delta": 0.1106
+  },
+  {
+   "protein": "hp",
+   "plex_left_out": "B4",
+   "delta": 0.0048
+  },
+  {
+   "protein": "hp",
+   "plex_left_out": "B5",
+   "delta": 0.0625
+  },
+  {
+   "protein": "hp",
+   "plex_left_out": "B6",
+   "delta": 0.0625
+  },
+  {
+   "protein": "hp",
+   "plex_left_out": "B7",
+   "delta": 0.1231
+  },
+  {
+   "protein": "hp",
+   "plex_left_out": "B8",
+   "delta": 0.1394
+  },
+  {
+   "protein": "hp",
+   "plex_left_out": "B9",
+   "delta": 0.1324
+  },
+  {
+   "protein": "ltf",
+   "plex_left_out": "B1",
+   "delta": 0.3333
+  },
+  {
+   "protein": "ltf",
+   "plex_left_out": "B10",
+   "delta": 0.3438
+  },
+  {
+   "protein": "ltf",
+   "plex_left_out": "B2",
+   "delta": 0.5
+  },
+  {
+   "protein": "ltf",
+   "plex_left_out": "B3",
+   "delta": 0.4256
+  },
+  {
+   "protein": "ltf",
+   "plex_left_out": "B4",
+   "delta": 0.3333
+  },
+  {
+   "protein": "ltf",
+   "plex_left_out": "B5",
+   "delta": 0.3846
+  },
+  {
+   "protein": "ltf",
+   "plex_left_out": "B6",
+   "delta": 0.5179
+  },
+  {
+   "protein": "ltf",
+   "plex_left_out": "B7",
+   "delta": 0.3407
+  },
+  {
+   "protein": "ltf",
+   "plex_left_out": "B8",
+   "delta": 0.4872
+  },
+  {
+   "protein": "ltf",
+   "plex_left_out": "B9",
+   "delta": 0.5104
+  },
+  {
+   "protein": "s100a8",
+   "plex_left_out": "B10",
+   "delta": 0.2667
+  },
+  {
+   "protein": "s100a8",
+   "plex_left_out": "B11",
+   "delta": 0.4267
+  },
+  {
+   "protein": "s100a8",
+   "plex_left_out": "B2",
+   "delta": 0.5333
+  },
+  {
+   "protein": "s100a8",
+   "plex_left_out": "B3",
+   "delta": 0.5873
+  },
+  {
+   "protein": "s100a8",
+   "plex_left_out": "B4",
+   "delta": 0.3492
+  },
+  {
+   "protein": "s100a8",
+   "plex_left_out": "B5",
+   "delta": 0.3016
+  },
+  {
+   "protein": "s100a8",
+   "plex_left_out": "B6",
+   "delta": 0.4286
+  },
+  {
+   "protein": "s100a8",
+   "plex_left_out": "B7",
+   "delta": 0.3675
+  },
+  {
+   "protein": "s100a8",
+   "plex_left_out": "B8",
+   "delta": 0.5397
+  },
+  {
+   "protein": "serpinf2",
+   "plex_left_out": "B1",
+   "delta": 0.1176
+  },
+  {
+   "protein": "serpinf2",
+   "plex_left_out": "B10",
+   "delta": -0.0392
+  },
+  {
+   "protein": "serpinf2",
+   "plex_left_out": "B11",
+   "delta": 0.1176
+  },
+  {
+   "protein": "serpinf2",
+   "plex_left_out": "B2",
+   "delta": 0.1863
+  },
+  {
+   "protein": "serpinf2",
+   "plex_left_out": "B3",
+   "delta": 0.2212
+  },
+  {
+   "protein": "serpinf2",
+   "plex_left_out": "B4",
+   "delta": 0.1538
+  },
+  {
+   "protein": "serpinf2",
+   "plex_left_out": "B5",
+   "delta": 0.0577
+  },
+  {
+   "protein": "serpinf2",
+   "plex_left_out": "B6",
+   "delta": 0.0481
+  },
+  {
+   "protein": "serpinf2",
+   "plex_left_out": "B7",
+   "delta": 0.1077
+  },
+  {
+   "protein": "serpinf2",
+   "plex_left_out": "B8",
+   "delta": 0.0865
+  },
+  {
+   "protein": "serpinf2",
+   "plex_left_out": "B9",
+   "delta": 0.0
+  },
+  {
+   "protein": "proc",
+   "plex_left_out": "B10",
+   "delta": 0.05
+  },
+  {
+   "protein": "proc",
+   "plex_left_out": "B2",
+   "delta": 0.1
+  },
+  {
+   "protein": "proc",
+   "plex_left_out": "B5",
+   "delta": 0.1905
+  },
+  {
+   "protein": "proc",
+   "plex_left_out": "B6",
+   "delta": -0.0476
+  },
+  {
+   "protein": "proc",
+   "plex_left_out": "B7",
+   "delta": -0.2222
+  },
+  {
+   "protein": "serpinc1",
+   "plex_left_out": "B1",
+   "delta": -0.1422
+  },
+  {
+   "protein": "serpinc1",
+   "plex_left_out": "B10",
+   "delta": -0.1324
+  },
+  {
+   "protein": "serpinc1",
+   "plex_left_out": "B11",
+   "delta": -0.0294
+  },
+  {
+   "protein": "serpinc1",
+   "plex_left_out": "B2",
+   "delta": -0.1814
+  },
+  {
+   "protein": "serpinc1",
+   "plex_left_out": "B3",
+   "delta": 0.024
+  },
+  {
+   "protein": "serpinc1",
+   "plex_left_out": "B4",
+   "delta": -0.0769
+  },
+  {
+   "protein": "serpinc1",
+   "plex_left_out": "B5",
+   "delta": -0.0529
+  },
+  {
+   "protein": "serpinc1",
+   "plex_left_out": "B6",
+   "delta": -0.0048
+  },
+  {
+   "protein": "serpinc1",
+   "plex_left_out": "B7",
+   "delta": -0.1282
+  },
+  {
+   "protein": "serpinc1",
+   "plex_left_out": "B8",
+   "delta": -0.0337
+  },
+  {
+   "protein": "serpinc1",
+   "plex_left_out": "B9",
+   "delta": -0.0735
+  },
+  {
+   "protein": "cfh",
+   "plex_left_out": "B1",
+   "delta": 0.0196
+  },
+  {
+   "protein": "cfh",
+   "plex_left_out": "B10",
+   "delta": -0.0196
+  },
+  {
+   "protein": "cfh",
+   "plex_left_out": "B11",
+   "delta": -0.1008
+  },
+  {
+   "protein": "cfh",
+   "plex_left_out": "B2",
+   "delta": -0.049
+  },
+  {
+   "protein": "cfh",
+   "plex_left_out": "B3",
+   "delta": -0.1731
+  },
+  {
+   "protein": "cfh",
+   "plex_left_out": "B4",
+   "delta": -0.1923
+  },
+  {
+   "protein": "cfh",
+   "plex_left_out": "B5",
+   "delta": -0.2404
+  },
+  {
+   "protein": "cfh",
+   "plex_left_out": "B6",
+   "delta": -0.0288
+  },
+  {
+   "protein": "cfh",
+   "plex_left_out": "B7",
+   "delta": -0.2
+  },
+  {
+   "protein": "cfh",
+   "plex_left_out": "B8",
+   "delta": -0.0769
+  },
+  {
+   "protein": "cfh",
+   "plex_left_out": "B9",
+   "delta": -0.2549
+  },
+  {
+   "protein": "cd14",
+   "plex_left_out": "B1",
+   "delta": 0.4412
+  },
+  {
+   "protein": "cd14",
+   "plex_left_out": "B10",
+   "delta": 0.3137
+  },
+  {
+   "protein": "cd14",
+   "plex_left_out": "B11",
+   "delta": 0.4118
+  },
+  {
+   "protein": "cd14",
+   "plex_left_out": "B2",
+   "delta": 0.4951
+  },
+  {
+   "protein": "cd14",
+   "plex_left_out": "B3",
+   "delta": 0.4663
+  },
+  {
+   "protein": "cd14",
+   "plex_left_out": "B4",
+   "delta": 0.351
+  },
+  {
+   "protein": "cd14",
+   "plex_left_out": "B5",
+   "delta": 0.375
+  },
+  {
+   "protein": "cd14",
+   "plex_left_out": "B6",
+   "delta": 0.4231
+  },
+  {
+   "protein": "cd14",
+   "plex_left_out": "B7",
+   "delta": 0.4359
+  },
+  {
+   "protein": "cd14",
+   "plex_left_out": "B8",
+   "delta": 0.5288
+  },
+  {
+   "protein": "cd14",
+   "plex_left_out": "B9",
+   "delta": 0.3676
+  },
+  {
+   "protein": "hba",
+   "plex_left_out": "B1",
+   "delta": 0.4069
+  },
+  {
+   "protein": "hba",
+   "plex_left_out": "B10",
+   "delta": 0.4461
+  },
+  {
+   "protein": "hba",
+   "plex_left_out": "B11",
+   "delta": 0.4496
+  },
+  {
+   "protein": "hba",
+   "plex_left_out": "B2",
+   "delta": 0.4461
+  },
+  {
+   "protein": "hba",
+   "plex_left_out": "B3",
+   "delta": 0.5769
+  },
+  {
+   "protein": "hba",
+   "plex_left_out": "B4",
+   "delta": 0.4375
+  },
+  {
+   "protein": "hba",
+   "plex_left_out": "B5",
+   "delta": 0.4663
+  },
+  {
+   "protein": "hba",
+   "plex_left_out": "B6",
+   "delta": 0.5385
+  },
+  {
+   "protein": "hba",
+   "plex_left_out": "B7",
+   "delta": 0.4615
+  },
+  {
+   "protein": "hba",
+   "plex_left_out": "B8",
+   "delta": 0.524
+  },
+  {
+   "protein": "hba",
+   "plex_left_out": "B9",
+   "delta": 0.4559
+  }
+ ]
+}

@@ -1,0 +1,419 @@
+{
+ "dataset_id": "DS04",
+ "checks": [
+  {
+   "name": "dogs",
+   "observed": 14,
+   "expected": 14,
+   "tolerance": 0.0,
+   "source": "data.md: 10 fatal + 4 controls",
+   "pass": true
+  },
+  {
+   "name": "fatal cases",
+   "observed": 10,
+   "expected": 10,
+   "tolerance": 0.0,
+   "source": "data.md; CB147 note",
+   "pass": true
+  },
+  {
+   "name": "controls",
+   "observed": 4,
+   "expected": 4,
+   "tolerance": 0.0,
+   "source": "data.md; CB147 note",
+   "pass": true
+  },
+  {
+   "name": "feature records (4 single + 10 admission + 10 necropsy)",
+   "observed": 24,
+   "expected": 24,
+   "tolerance": 0.0,
+   "source": "design of this file",
+   "pass": true
+  },
+  {
+   "name": "haematology copies identical (data rows)",
+   "observed": true,
+   "expected": true,
+   "tolerance": 0.0,
+   "source": "the two 'stats for haematology' files",
+   "pass": true
+  },
+  {
+   "name": "median RBC, fatal cases",
+   "observed": 2.1,
+   "expected": 2.1,
+   "tolerance": 0.0,
+   "source": "CB147 full text, Results/Hematology: median 2.1 x10^12/L",
+   "pass": true
+  },
+  {
+   "name": "median haematocrit, fatal cases",
+   "observed": 0.2,
+   "expected": 0.2,
+   "tolerance": 0.0,
+   "source": "CB147 full text: median 0.2 L/L",
+   "pass": true
+  },
+  {
+   "name": "median platelets, fatal cases",
+   "observed": 40.5,
+   "expected": 40.5,
+   "tolerance": 1e-09,
+   "source": "CB147 full text: median 40.5 x10^9/L",
+   "pass": true
+  },
+  {
+   "name": "median ALT, fatal cases",
+   "observed": 86.5,
+   "expected": 86.5,
+   "tolerance": 1e-09,
+   "source": "CB147 Table 2: ALT 86.5 U/L",
+   "pass": true
+  },
+  {
+   "name": "median ALT, controls",
+   "observed": 21.4,
+   "expected": 21.4,
+   "tolerance": 1e-09,
+   "source": "CB147 Table 2: ALT 21.4 U/L",
+   "pass": true
+  },
+  {
+   "name": "median urea, fatal cases (zeros as missing)",
+   "observed": 28.3,
+   "expected": 28.3,
+   "tolerance": 1e-09,
+   "source": "CB147 Table 2: urea 28.3 mmol/L",
+   "pass": true
+  },
+  {
+   "name": "median pre-prandial bile acids, fatal cases (zeros as missing)",
+   "observed": 22.0,
+   "expected": 22,
+   "tolerance": 1e-09,
+   "source": "CB147 Table 2: bile acids 22 umol/L",
+   "pass": true
+  },
+  {
+   "name": "median albumin, fatal cases",
+   "observed": 19.549999999999997,
+   "expected": 19.6,
+   "tolerance": 0.051,
+   "source": "CB147 Table 2: albumin 19.6 g/L",
+   "pass": true
+  },
+  {
+   "name": "median TSP, controls",
+   "observed": 51.3,
+   "expected": 51.3,
+   "tolerance": 1e-09,
+   "source": "CB147 Table 2: TSP 51.3 g/L",
+   "pass": true
+  },
+  {
+   "name": "fatal cases female",
+   "observed": 1,
+   "expected": 1,
+   "tolerance": 0.0,
+   "source": "CB147 full text: one female, nine males",
+   "pass": true
+  },
+  {
+   "name": "controls female",
+   "observed": 3,
+   "expected": 3,
+   "tolerance": 0.0,
+   "source": "CB147 full text: three females, one male",
+   "pass": true
+  },
+  {
+   "name": "mean age, controls (months)",
+   "observed": 18.25,
+   "expected": 18.3,
+   "tolerance": 0.051,
+   "source": "CB147 full text: mean 18.3 months",
+   "pass": true
+  },
+  {
+   "name": "median age, controls (months)",
+   "observed": 15.5,
+   "expected": 15.5,
+   "tolerance": 1e-09,
+   "source": "CB147 full text: median 15.5 months",
+   "pass": true
+  },
+  {
+   "name": "mean weight, controls (kg)",
+   "observed": 13.625,
+   "expected": 13.6,
+   "tolerance": 0.051,
+   "source": "CB147 full text: mean 13.6 kg",
+   "pass": true
+  },
+  {
+   "name": "median weight, controls (kg)",
+   "observed": 12.5,
+   "expected": 12.5,
+   "tolerance": 1e-09,
+   "source": "CB147 full text: median 12.5 kg",
+   "pass": true
+  },
+  {
+   "name": "mean weight, fatal cases (kg; 8 with a weight)",
+   "observed": 28.85,
+   "expected": 28.9,
+   "tolerance": 0.051,
+   "source": "CB147 full text: mean 28.9 kg",
+   "pass": true
+  },
+  {
+   "name": "median weight, fatal cases (kg; 8 with a weight)",
+   "observed": 32.3,
+   "expected": 34,
+   "tolerance": 1e-09,
+   "source": "CB147 full text: median 34 kg",
+   "pass": false
+  },
+  {
+   "name": "mean age, fatal cases (months)",
+   "observed": 55.0,
+   "expected": 52.8,
+   "tolerance": 0.051,
+   "source": "CB147 full text: mean 52.8 months",
+   "pass": false
+  },
+  {
+   "name": "median age, fatal cases (months)",
+   "observed": 42.0,
+   "expected": 50,
+   "tolerance": 1e-09,
+   "source": "CB147 full text: median 50 months",
+   "pass": false
+  },
+  {
+   "name": "IHC field-level medians (all fields of the group), fatal cases, vs CB147 Table 3 (18 marker-zones): mismatches",
+   "observed": [],
+   "expected": [],
+   "tolerance": 0.0,
+   "source": "CB147 full text, Table 3 (median per HPF, infected)",
+   "pass": true
+  },
+  {
+   "name": "IHC field-level medians (all fields of the group), controls, vs CB147 Table 3 (18 marker-zones): mismatches",
+   "observed": [],
+   "expected": [],
+   "tolerance": 0.0,
+   "source": "CB147 full text, Table 3 (median per HPF, controls)",
+   "pass": true
+  },
+  {
+   "name": "S-CB147 Table_2 per-case IHC values equal the per-dog field means (rounded to 0.1): mismatches",
+   "observed": [
+    "case 106 cd3 pt: S-CB147 14.5, mean of fields here 9.67",
+    "case 20 iba1 cl: S-CB147 7.3, mean of fields here 11.0"
+   ],
+   "expected": [],
+   "tolerance": 0.0,
+   "source": "S-CB147 Table_2.DOCX, 180 values",
+   "pass": false
+  },
+  {
+   "name": "IHC per-dog means vs authors' Sheet1 averages: mismatches",
+   "observed": [
+    "case 20 CV Iba-1: fields [11.0, 11.0, None], Sheet1 7.33",
+    "case 106 PT CD3: fields [7.0, 7.0, 15.0], Sheet1 14.5"
+   ],
+   "expected": [],
+   "tolerance": 0.0,
+   "source": "Stats Tables.xlsx / Sheet1",
+   "pass": false
+  },
+  {
+   "name": "S-CB050 linkage: rows matching cases 126, 127, 131 by WBC/seg/band are cases 50, 54, 59 under the join",
+   "observed": [
+    [
+     "50"
+    ],
+    [
+     "54"
+    ],
+    [
+     "59"
+    ]
+   ],
+   "expected": [
+    [
+     "50"
+    ],
+    [
+     "54"
+    ],
+    [
+     "59"
+    ]
+   ],
+   "tolerance": 0.0,
+   "source": "data.md linkage facts; S-CB050 Table_1.DOCX",
+   "pass": true
+  },
+  {
+   "name": "S-CB050 age/weight of cases 126, 127, 131 equal DS04 signalment of the joined cases",
+   "observed": [
+    [
+     30.0,
+     30.6
+    ],
+    [
+     9.0,
+     45.6
+    ],
+    [
+     60.0,
+     34.0
+    ]
+   ],
+   "expected": [
+    [
+     30.0,
+     30.6
+    ],
+    [
+     9.0,
+     45.6
+    ],
+    [
+     60.0,
+     34.0
+    ]
+   ],
+   "tolerance": 0.0,
+   "source": "S-CB050 Table_1.DOCX vs DS04 score sheets",
+   "pass": true
+  }
+ ],
+ "n_dogs": 14,
+ "n_records": 24,
+ "s_cb050_linkage": {
+  "126": {
+   "wbc_seg_band": [
+    103.55,
+    67.31,
+    21.75
+   ],
+   "s050_age_months": 30.0,
+   "s050_weight_kg": 30.6,
+   "ds04_case_by_join": [
+    "50"
+   ],
+   "ds04_signalment_of_that_case": [
+    [
+     30,
+     30.6
+    ]
+   ]
+  },
+  "127": {
+   "wbc_seg_band": [
+    21.6,
+    15.12,
+    0.86
+   ],
+   "s050_age_months": 9.0,
+   "s050_weight_kg": 45.6,
+   "ds04_case_by_join": [
+    "54"
+   ],
+   "ds04_signalment_of_that_case": [
+    [
+     9,
+     45.6
+    ]
+   ]
+  },
+  "131": {
+   "wbc_seg_band": [
+    14.36,
+    9.19,
+    2.87
+   ],
+   "s050_age_months": 60.0,
+   "s050_weight_kg": 34.0,
+   "ds04_case_by_join": [
+    "59"
+   ],
+   "ds04_signalment_of_that_case": [
+    [
+     60,
+     34.0
+    ]
+   ]
+  }
+ },
+ "thesis_ihc_medians_that_differ_from_the_data": {
+  "infected": [
+   "ihc_cd3_mz: 45.5 vs 47.0",
+   "ihc_cd3_pt: 12.0 vs 9.0",
+   "ihc_cd20_cl: 11.5 vs 9.5",
+   "ihc_cd20_pt: 4.0 vs 5.0",
+   "ihc_cd204_mz: 125.5 vs 132.5",
+   "ihc_iba1_cl: 12.0 vs 11.5",
+   "ihc_iba1_mz: 142.5 vs 145.0",
+   "ihc_iba1_pt: 11.0 vs 11.5",
+   "ihc_mac387_cl: 16.0 vs 17.0",
+   "ihc_mac387_mz: 192.0 vs 189.0",
+   "ihc_mac387_pt: 23.0 vs 26.5",
+   "ihc_mum1_cl: 4.5 vs 3.5",
+   "ihc_mum1_pt: 3.5 vs 2.5"
+  ],
+  "controls": [
+   "ihc_cd20_cl: 1.5 vs 1.0",
+   "ihc_cd20_mz: 4.5 vs 4.0",
+   "ihc_cd20_pt: 1.0 vs 1.5",
+   "ihc_cd204_cl: 4.5 vs 5.0",
+   "ihc_cd204_mz: 69.0 vs 71.0",
+   "ihc_iba1_cl: 6.0 vs 5.5"
+  ]
+ },
+ "check_sources": [
+  {
+   "file": "/core/data/raw/S-CB147/PMC13283813_supplementaryFiles.zip!Table_2.DOCX",
+   "sha256": "fea8d14e273500f5511b8007192c291276c6dc58ceed79af78bd04087653196b"
+  },
+  {
+   "file": "/core/data/raw/S-CB050/PMC7040022_supplementaryFiles.zip!Table_1.DOCX",
+   "sha256": "ec02b1d7a08f23d477886e1bd2083828a8457cd57df8983964236c9f17a8fb03"
+  },
+  {
+   "file": "/core/data/raw/DS04/all tables from thesis.docx",
+   "sha256": "64dff05245fda772b08e8e55f8d4ca9da6936156fba5ce02bc629bd97dffe264"
+  },
+  {
+   "file": "/core/data/raw/DS04/stats for haematology (1).xlsx",
+   "sha256": "2c412fa74367d2efc959efd50f992ef8b451596e71ca56c563c851e1ace8eace"
+  }
+ ],
+ "haematology_join": {
+  "rule": "row order of the haematology sheets = case order of the IHC sheet in Stats Tables.xlsx",
+  "rows_to_cases": [
+   "2",
+   "4",
+   "9",
+   "11",
+   "50",
+   "20",
+   "117",
+   "110",
+   "54",
+   "59",
+   "91",
+   "61",
+   "88",
+   "106"
+  ],
+  "confidence": "high for fatal cases (3 of 10 confirmed by S-CB050 values and signalment; bilirubin consistent with recorded icterus); moderate for controls (order only)"
+ },
+ "n_failed": 5
+}

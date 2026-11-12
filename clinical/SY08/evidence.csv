@@ -1,0 +1,45 @@
+ref,section,statement,value,species,design,n_dogs,cohort_id,read,location,note
+R1,description,"Fatal B. rossi lungs: protein-rich alveolar oedema, haemorrhage, monocyte-macrophage infiltrates; fibrin in about half; few neutrophils; no hyaline membranes",fibrin in just over half of 11,B. rossi,necropsy series with IHC,11,CH04,full text,Abstract; Results; Conclusion,
+R1,description,Most fatal B. rossi dogs die within 24 h of presentation; alveolar oedema accompanied every death,24 h,B. rossi,necropsy series,11,CH04,full text,Abstract,
+R1,description,Endothelial activation present in all fatal cases,11/11,B. rossi,necropsy series,11,CH04,full text,"Discussion: mild 27.3%, moderate 54.5%, severe 18.2%",
+R1,description,Lesion meets veterinary ARDS criteria but only partly matches diffuse alveolar damage,,B. rossi,necropsy series,11,CH04,full text,Abstract; Conclusion,
+R2,diagnosis,"ARDSVet: risk factor, onset within 1 week, diffuse infiltrates on CT, radiographs or ultrasound, exclude L-CHF and fluid overload",within 1 week,,consensus,,,full text,Table 3,
+R2,diagnosis,"Non-intubated, on HFNO or known FiO2: mild/moderate PaO2:FiO2 >100 and <=300 or SpO2:FiO2 >150 and <=315; severe <=100 or <=150",SpO2 <=97%,,consensus,,,full text,Section 2.4.3.3c; Table 3,labels confirmed in Europe PMC XML
+R2,diagnosis,At risk: PaO2:FiO2 <=300 or SpO2 <88% without other criteria,,,consensus,,,full text,Section 2.4.3.3d,
+R2,diagnosis,Altitude >1000 m: ratio x barometric pressure/760,1000 m,,consensus,,,full text,Table 3 footnote e,
+R2,treatment,HFNO >1 L/kg/min or >30 L/min gives a reliable FiO2,1 L/kg/min; 30 L/min,,consensus,,,full text,Sections 2.4.2.2 and 2.4.3.3c,
+R2,description,Babesiosis listed as a canine ARDS risk factor; all babesiosis cases had another risk factor such as SIRS or transfusion; transfusion and ventilator-induced lung injury are possible risk factors,,,consensus,,,full text,Section 2.4.1.2.1; Table 2,
+R3,diagnosis,"Admission arterial gas before oxygen: PaO2 <60 mmHg in 18/98, 3 died; median PaO2 91.4 mmHg; median AaDO2 20.5 mmHg; most PaCO2 <31 mmHg",18/98; 91.4 mmHg; 20.5 mmHg,B. rossi,cohort,320,,full text,"Results, blood gas paragraph",
+R3,description,Acute lung injury in just under two thirds of necropsies (25 necropsies); serosanguineous body-cavity effusions in about half,,B. rossi,cohort,25 necropsies,,full text,"Results, necropsy; Discussion",
+R3,prognosis,Fulminant oedema possibly agonal; admission gases may not reflect terminal moments,,B. rossi,cohort,320,,full text,Discussion,
+R4,diagnosis,"Review defines ARDS as PaO2 <60 mmHg and A-a gradient >15 mmHg on room air, with blood-tinged froth from nostrils",PaO2 <60 mmHg; A-a >15 mmHg,mainly B. rossi,review,,,full text,ARDS section,
+R5,diagnosis,31/34 severe B. rossi dogs had inappropriate hypocapnia; hypoxaemia in 3; mixed metabolic acidosis with respiratory alkalosis in 31/34,31/34; 3/34,B. rossi,case series,34,,abstract,Abstract,PaCO2 <10 mm Hg in 12/34
+R6,treatment,Puppy hypoxaemic 14 h after admission; oxygen chamber about 40% FiO2; intubated; ventilated 48 h; well at 3 months,FiO2 about 40%,B. vogeli,case report,1,,full text,Examination and treatment; Outcome,
+R6,treatment,"Packed red cells 15, 14 and 13 mL/kg before hypoxaemia (about 42 mL/kg); lactated Ringer solution 75 mL/kg/day",42 mL/kg; 75 mL/kg/day,B. vogeli,case report,1,,full text,Clinical history; Examination,source: IV fluids ... at 75 ml/kg/day
+R6,treatment,"Fentanyl 5-10 µg/kg/h, midazolam 0.1-1 mg/kg/h, dexmedetomidine 1 µg/kg/h (later 0.5)",as stated,B. vogeli,case report,1,,full text,Examination and treatment,"fentanyl ... at 5-10 mcg/kg/hr, midazolam ... at 0.1-1 mg/kg/hr"
+R6,treatment,Ketamine 0.5 mg/kg/h for a few hours; propofol 0.1-0.5 mg/kg/min,as stated,B. vogeli,case report,1,,full text,Examination and treatment,ketamine ... at 0.5 mg/kg/hr and propofol at 0.1-0.5 mg/kg/min
+R6,treatment,Atracurium 0.3 mg/kg IV then 6-9 µg/kg/min; stopped at 48 h,as stated,B. vogeli,case report,1,,full text,Examination and treatment,"atracurium ... 0.3 mg/kg IV, followed by a CRI (6-9 mcg/kg/min)"
+R6,treatment,Dexamethasone (Dexaject SP) 0.1 mg/kg IV once,0.1 mg/kg,B. vogeli,case report,1,,full text,Examination and treatment,0.1 mg/kg dexamethasone (Dexaject SP ...) IV once
+R6,treatment,Tidal volume 55 mL (about 9.6 mL/kg); set rate 15-25/min; PEEP from adapted ARDSnet table (5 to 18-24 cmH2O; 10 at FiO2 0.6); target SpO2 >92%,9.6 mL/kg,B. vogeli,case report,1,,full text,Tables 3 and 4; Discussion,
+R6,diagnosis,Bilateral confluent B-lines with normal LA:Ao; mixed interstitial-alveolar pattern; airway fluid TP 48 g/L vs blood 56 g/L; PaO2:FiO2 140,48 vs 56 g/L,B. vogeli,case report,1,,full text,Examination; Table 3,source units 4.8 g/dL and 5.6 g/dL
+R6,diagnosis,Arterial sampling avoided because of thrombocytopenia and coagulopathy; TRALI and aspiration considered; ehrlichiosis co-infection,,B. vogeli,case report,1,,full text,Examination; Discussion,
+R7,prognosis,B. rossi pulmonary oedema associated with mortality above 30% vs 12% overall for admitted dogs,30%; 12%,B. rossi,review,,,abstract,Abstract,
+R8,description,"Scottish Terrier, B. canis canis, diffuse interstitial/alveolar pattern, died 6 h after presentation; cerebral babesiosis and ARDS at necropsy; erythrocyte aggregation in lungs",6 h,B. canis,case report,1,,abstract,Abstract,
+R9,prognosis,"91 complicated cases; lung involvement associated with high mortality, not evaluable statistically owing to co-linearity",,not stated,cohort,91,,abstract,Abstract,
+R10,description,ARDS 6% among complications in 63 B. canis dogs in Hungary,6%,B. canis,case series,63,,abstract,Abstract,
+R11,description,ARDS in 6 of 20 dogs with babesiosis and pancreatitis,6/20,not stated,case series,20,,abstract,Abstract,
+R12,description,Practitioner survey named pulmonary babesiosis or shock lung among the most prevalent complicated forms,,not stated,survey,,,abstract,Abstract,
+R13,description,"6 fatal B. canis dogs: pulmonary oedema and congestion in all; some received fluids, furosemide, dopamine, dexamethasone, oxygen (no doses)",6/6,B. canis,case series,6,CH27,full text,"Methods; Results, lungs",
+R14,diagnosis,No wedge-shaped perfusion defects in 14 hospitalised dogs; PaO2 similar to controls (78.4 vs 80.5 mmHg); oxygen content 8.77 vs 21.28 mL/dL,P = 1.00,B. rossi (suspected),case-control,14,,full text,Results; Table 2,
+R15,description,"B. gibsoni dog with DIC, non-cardiogenic pulmonary oedema and bicavitary effusion recovered",,B. gibsoni,case report,1,,abstract,Abstract,
+R16,diagnosis,Experimental B. rossi: treatment endpoint included ARDS with PaO2 <60 mmHg,PaO2 <60 mmHg,B. rossi,experimental,,CH09,full text,Methods,
+R17,diagnosis,Critically ill dogs: mean fluid overload 12.1%; OR for death 1.08 per percent,12.1%; OR 1.08,,cohort,49,,abstract,Abstract,
+R18,treatment,Oxygen delivery table: nasal catheter 50-150 mL/kg/min FiO2 30-60%; mask 1-6 L/min 35-55%; flow-by 6-8 L/min 25-45%; cage 21-60%; HFNOT 10-60 L/min,as stated,,review,,,full text,Table 1,
+R18,treatment,Bilateral nasal 100 mL/kg/min mean FiO2 56%; 200 mL/kg/min 77% with distress (citing Dunphy 2002); HFNOT 1-2 L/kg/min kept positive airway pressure,as stated,,review,,,full text,Low-flow section; HFNOT veterinary section,secondary citation
+R19,treatment,"Fresh whole blood transfusion reversed blood-gas and acid-base derangements in 6 severely affected dogs, all hypoxaemic at admission",6 dogs,described as B. canis (South Africa),case series,6,,abstract,Abstract,
+R20,treatment,HFNC in 20 dogs failing conventional oxygen: PaO2 60.8 to 135.6 mmHg; 6 failed; 9 survived; 1 pneumothorax,as stated,,prospective trial,20,,abstract,Abstract,
+R21,treatment,HFNC in 22 dogs: 45% responded and survived,45%,,prospective sequential trial,22,,abstract,Abstract,
+R22,prognosis,PPV in 58 dogs: survival 32%; PaO2:FiO2 <200 at 4-12 h survival 15%,32%; 15%,,retrospective cohort,58,,abstract,Abstract,
+R23,prognosis,ARDS dogs case fatality 84%; 49% ventilated,84%,,retrospective,46,,abstract,Abstract,
+R24,prognosis,VetALI/VetARDS: 2 of 24 dogs survived; multiple transfusions in 4/24; high euthanasia rate,2/24,,retrospective,24,,abstract,Abstract,
+R25,treatment,"Review discusses problems of fluid therapy with pulmonary oedema, hypertonic fluids, oxygen in anaemic hypoxia, glucocorticoids",,not stated,review,,,abstract,Abstract,

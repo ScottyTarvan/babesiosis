@@ -13,7 +13,7 @@
 | DOI | not assigned |
 | PMID / PMCID | not indexed |
 | Corrections / retractions | not checked (not in PubMed) |
-| Babesia species | unspecified (species and diagnostic method not reported in abstract) |
+| Babesia species | B. canis (suspected: blood smear, Fig. 1, full text) |
 | Host | domestic dog (Labrador, 3-5 years) |
 | Country / setting | not reported in abstract (Ukrainian journal; setting not confirmed) |
 | Study design | descriptive case series with clinicopathological profile |

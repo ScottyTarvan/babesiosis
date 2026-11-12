@@ -1,0 +1,71 @@
+{
+  "id": "CB035",
+  "text_used": "data/markdown/CB035.md",
+  "extracted_by": "claude-opus-5-5 SV-G2 B01",
+  "extracted_utc": "2026-11-12",
+  "schema_version": "v2",
+  "setting": "referral hospital",
+  "sample_timing": "not stated",
+  "article_notes": "Prospective OVAH study, 34 B. rossi dogs (PCR/RLB) and 24 healthy controls. The only severity analysis is 25(OH)D against an author-built clinical severity score (Table 2). Table 2 row label appears to be a copy error (see row note). Sex, age and weight in Table 2 are covariates of 25(OH)D, not tested against severity, so not extracted. ALT, creatinine and time since last meal were tested against 25(OH)D, not against severity. Samples taken on admission; timing relative to treatment not stated.",
+  "skipped_infected_vs_healthy": 1,
+  "severity_definitions": [
+    {
+      "key": "S1",
+      "outcome_class": "severity_grade",
+      "complication": null,
+      "label": "clinical severity score (0-12)",
+      "definition": "Author-built cumulative score, 1 point each for: basal cortisol > 275 nmol/L, ACTH > 20 pg/mL, T4 < 2.8 nmol/L, albumin < 20, potassium < 3.6 mmol/L, phosphate > 1.94 mmol/L, creatinine > 133 umol/L, bile acids >= 55 umol/L, glucose < 3.3 mmol/L, icterus, band cells > 10%, body temperature < 37.8 C (maximum 12). 'other' covers the endocrine, electrolyte, albumin, band-cell and hypothermia items. Observed range 0-10, median 2 (n = 34).",
+      "severe_group": null,
+      "comparison_group": null,
+      "quote": "The severity of the babesiosis cases was scored using the following parameters, with each criteria receiving a score of 1:",
+      "components": [
+        "score",
+        "renal",
+        "hepatic or icterus",
+        "hypoglycaemia",
+        "other"
+      ],
+      "euthanasia_included": "not applicable",
+      "definition_source": "author-defined (criteria drawn from Bohm et al., Keller et al., Nel et al., Schoeman et al.)",
+      "follow_up_horizon": null
+    }
+  ],
+  "associations": [
+    {
+      "specimen": "serum",
+      "timepoint": "admission",
+      "species": "B. rossi",
+      "species_confirmation": "PCR or sequencing",
+      "subgroup": null,
+      "n_total": 34,
+      "n_severe": null,
+      "n_comparison": null,
+      "statistic": "linear model of 25(OH)D on severity score: estimate −4.09, SE 1.06, t −3.86",
+      "p_value": "< 0.0001",
+      "effect_type": "other",
+      "effect_value": "−4.09",
+      "effect_ci": null,
+      "cutoff": null,
+      "sensitivity": null,
+      "specificity": null,
+      "adjusted_for": "age, body weight, sex",
+      "source_type": "table",
+      "confidence": "medium",
+      "note": "In Table 2 the row is labelled 'Babesiosis (reference = healthy control)', apparently copied from Table 1; the table title and Results text say this model tests disease severity in infected dogs only, so the row is read as the severity-score coefficient (25(OH)D falls about 4.09 nmol/L per score point). Abstract and Discussion also report an inverse correlation with the clinical severity score.",
+      "severe_value": null,
+      "comparison_value": null,
+      "summary_type": null,
+      "load_method": null,
+      "marker_as_reported": "serum 25-hydroxyvitamin D (25[OH]D) (nmol/L)",
+      "marker": "Vitamin D (25-hydroxyvitamin D)",
+      "marker_class": "endocrine",
+      "severity_key": "S1",
+      "analysis": "multivariable_regression",
+      "direction": "negative_association",
+      "significant": "yes",
+      "quote": "| Babesiosis (reference = healthy control) | −4.09 | 1.06 | −3.86 | < 0.0001 |",
+      "location": "Table 2 (linear model of 25(OH)D in dogs with babesiosis); Results para 2"
+    }
+  ],
+  "not_extracted": []
+}

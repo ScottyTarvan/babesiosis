@@ -1,0 +1,125 @@
+<div class="fs-experiment-age">
+  <fs-card title="Primary result" [subtitle]="primary()?.label ?? 'Age contrasts'">
+    @if (primary(); as p) {
+      <p class="fs-experiment-age__status">
+        <fs-badge variant="tonal" [intent]="verdictIntent()">Verdict: {{ p.verdict }}</fs-badge>
+        @if (p.signals; as s) {
+          <fs-badge variant="tonal" [intent]="s.anaemia ? 'success' : 'info'">Anaemia form in young: {{ s.anaemia ? 'yes' : 'no' }}</fs-badge>
+          <fs-badge variant="tonal" [intent]="s.inflammatory ? 'success' : 'info'">Inflammatory form in adults: {{ s.inflammatory ? 'yes' : 'no' }}</fs-badge>
+          <fs-badge variant="tonal" [intent]="s.risk ? 'warning' : 'info'">Risk of death differs: {{ s.risk ? 'yes' : 'no' }}</fs-badge>
+        }
+        <span class="fs-experiment-age__meta">{{ p.statistic }} · {{ p.independent_sources }} independent source{{ p.independent_sources === 1 ? '' : 's' }}</span>
+      </p>
+      <div class="fs-experiment-age__primary">
+        @for (r of primaryRows(); track r.id) {
+          <div class="fs-experiment-age__effect">
+            <div class="fs-experiment-age__effect-label">{{ r.label }} <span class="fs-experiment-age__meta">{{ r.source }}</span></div>
+            <div class="fs-experiment-age__stat-value">{{ r.effect }}</div>
+            <div class="fs-experiment-age__footnote">
+              n {{ r.n }} · {{ r.values }} · p {{ r.p }} · q {{ r.q }} · interval {{ r.excludesNull ? 'excludes' : 'includes' }} no difference
+            </div>
+          </div>
+        }
+      </div>
+      <p class="fs-experiment-age__text">{{ p.headline }}</p>
+      <p class="fs-experiment-age__footnote">Sources: {{ p.sources.join('; ') }}. {{ p.caveats.join(' ') }}</p>
+    } @else {
+      <p class="fs-experiment-age__footnote">This run stored no primary result.</p>
+    }
+  </fs-card>
+
+  <ng-template #groupsTpl let-groups="groups" let-payload="payload">
+    @for (g of groups; track g.key) {
+      <h4 class="fs-experiment-age__set">{{ g.label }}</h4>
+      <div class="fs-experiment-age__forest">
+        @for (r of g.rows; track r.id) {
+          <div class="fs-experiment-age__forest-label" [title]="r.label">{{ r.label }}</div>
+          <svg class="fs-experiment-age__mini" [attr.viewBox]="'0 0 ' + mini.width + ' ' + mini.height" role="img"
+               [attr.aria-label]="r.label + ': ' + r.effect">
+            <line [attr.x1]="mini.width / 2" [attr.x2]="mini.width / 2" y1="2" [attr.y2]="mini.height - 2" class="fs-experiment-age__zero" />
+            <line [attr.x1]="r.x1" [attr.x2]="r.x2" [attr.y1]="mini.height / 2" [attr.y2]="mini.height / 2"
+                  [class]="r.excludesNull ? 'fs-experiment-age__ci fs-experiment-age__ci--strong' : 'fs-experiment-age__ci'" />
+            <circle [attr.cx]="r.x" [attr.cy]="mini.height / 2" r="4.5"
+                    [class]="r.excludesNull ? 'fs-experiment-age__dot fs-experiment-age__dot--strong' : 'fs-experiment-age__dot'">
+              <title>{{ r.effect }}</title>
+            </circle>
+          </svg>
+          <div class="fs-experiment-age__forest-effect">{{ r.effect }}</div>
+        }
+      </div>
+      @if (g.note) {
+        <p class="fs-experiment-age__footnote">{{ g.note }}</p>
+      }
+      <fs-data-grid [data]="g.rows" [columns]="rowColumns" keyExpr="id" />
+    }
+    @if (payload?.footnote) {
+      <p class="fs-experiment-age__footnote">
+        {{ payload.footnote }} Each interval plot has its own scale, centred on no difference (dashed line: 0, or an odds ratio of 1 on a log scale).
+        A filled dot marks an interval that excludes no difference.
+      </p>
+    }
+  </ng-template>
+
+  @if (contrasts().length) {
+    <fs-card title="Contrasts, inside each source, side by side"
+             subtitle="Young (under 12 months) minus or over adult · B. rossi · never pooled across sources · exploratory">
+      <ng-container *ngTemplateOutlet="groupsTpl; context: { groups: contrasts(), payload: contrastsPayload() }" />
+    </fs-card>
+  }
+
+  @if (strata(); as s) {
+    <fs-card title="Death by age group inside each sex" subtitle="S-CB050, SRC-A · died includes euthanasia for poor prognosis · exploratory">
+      <fs-data-grid [data]="strataRows()" [columns]="strataColumns" keyExpr="stratum" />
+      <p class="fs-experiment-age__text">{{ sexText() }}</p>
+      <p class="fs-experiment-age__footnote">{{ s.footnote }}</p>
+    </fs-card>
+  }
+
+  @if (bands(); as b) {
+    <fs-card title="Share of dogs that died, by age band" subtitle="S-CB050, 140 dogs · died includes euthanasia for poor prognosis · descriptive">
+      <fs-chart [options]="bandOptions()" [height]="300" />
+      <p class="fs-experiment-age__footnote">{{ b.footnote }} Bar labels: deaths / dogs in the band.</p>
+    </fs-card>
+  }
+
+  @if (profile(); as p) {
+    <fs-card title="Medians by age band in each source" subtitle="DS05 (SRC-F), DS03 natural and S-CB050 (SRC-A, the same dogs) · descriptive">
+      <div class="fs-experiment-age__tabs" role="tablist">
+        @for (m of profileMeasures(); track m.key) {
+          <button type="button" class="btn btn-sm" role="tab"
+                  [class.btn-primary]="m.key === profileSelected()?.key" [class.btn-outline-secondary]="m.key !== profileSelected()?.key"
+                  [attr.aria-selected]="m.key === profileSelected()?.key" (click)="selectMeasure(m.key)">{{ m.label }}</button>
+        }
+      </div>
+      <fs-chart [options]="profileOptions()" [height]="320" />
+      <fs-data-grid [data]="profileRows()" [columns]="profileColumns()" keyExpr="band" />
+      <p class="fs-experiment-age__footnote">{{ p.footnote }}</p>
+    </fs-card>
+  }
+
+  @if (control(); as c) {
+    <fs-card title="Check C1: haematocrit by age in healthy controls" subtitle="DS03 controls (= S-CB050 controls), SRC-A · described, not tested">
+      <p class="fs-experiment-age__text">{{ controlText() }}</p>
+      <p class="fs-experiment-age__footnote">{{ c.footnote }}</p>
+    </fs-card>
+  }
+
+  @if (secondary().length) {
+    <fs-card title="Secondary contrasts" subtitle="Not in a test family · no claim · exploratory">
+      <ng-container *ngTemplateOutlet="groupsTpl; context: { groups: secondary(), payload: secondaryPayload() }" />
+    </fs-card>
+  }
+
+  @if (sensitivity().length) {
+    <fs-card title="Sensitivity checks" subtitle="S1 threshold, S2 co-infections removed, S3 age continuous, S4 inside each sex">
+      <ng-container *ngTemplateOutlet="groupsTpl; context: { groups: sensitivity(), payload: sensitivityPayload() }" />
+    </fs-card>
+  }
+
+  @if (neuter(); as n) {
+    <fs-card title="Neuter status" subtitle="DS05, SRC-F · {{ n.n_neutered }} neutered dogs · described, not tested">
+      <fs-data-grid [data]="neuterRows()" [columns]="neuterColumns" keyExpr="variable" />
+      <p class="fs-experiment-age__footnote">{{ n.footnote }}</p>
+    </fs-card>
+  }
+</div>

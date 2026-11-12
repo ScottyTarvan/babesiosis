@@ -1,0 +1,90 @@
+:host {
+  display: block;
+}
+
+.fs-breakdown-bars {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  // Rows lay out by the card's width, not the window's: the cards sit two abreast on wide screens.
+  container-type: inline-size;
+}
+
+.fs-breakdown-bars__row {
+  display: grid;
+  grid-template-columns: minmax(96px, 11rem) minmax(96px, 1fr);
+  gap: 10px;
+  align-items: center;
+  min-height: 28px;
+  font-size: 13.5px;
+
+  .fs-breakdown-bars--aside & {
+    grid-template-columns: minmax(96px, 11rem) minmax(96px, 1fr) minmax(72px, 10rem);
+  }
+}
+
+// Narrow card: label and bar side by side, the aside on its own line under the bar.
+@container (max-width: 520px) {
+  .fs-breakdown-bars__row,
+  .fs-breakdown-bars--aside .fs-breakdown-bars__row {
+    grid-template-columns: minmax(84px, 9rem) minmax(0, 1fr);
+  }
+
+  .fs-breakdown-bars__aside {
+    grid-column: 2;
+    margin-top: -4px;
+  }
+}
+
+.fs-breakdown-bars__label {
+  overflow-wrap: anywhere;
+  color: rgb(var(--fs-color-ink));
+}
+
+.fs-breakdown-bars__link {
+  color: rgb(var(--fs-color-primary-fg));
+  text-decoration: none;
+
+  &:hover,
+  &:focus-visible {
+    text-decoration: underline;
+  }
+}
+
+.fs-breakdown-bars__measure {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+}
+
+// The bar's width is relative to the largest row; the count always sits after it.
+.fs-breakdown-bars__bar {
+  flex: 0 1 auto;
+  max-width: calc(100% - 5.5rem);
+  height: 14px;
+  border-radius: 0 4px 4px 0;
+  background: rgb(var(--fs-color-primary));
+}
+
+.fs-breakdown-bars__bar--unknown {
+  background: rgb(var(--fs-color-ink-soft) / 0.45);
+}
+
+.fs-breakdown-bars__count {
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  color: rgb(var(--fs-color-ink-strong));
+}
+
+.fs-breakdown-bars__muted {
+  font-size: 12.5px;
+  font-variant-numeric: tabular-nums;
+  color: rgb(var(--fs-color-ink-soft));
+}
+
+.fs-breakdown-bars__aside {
+  font-size: 12.5px;
+  font-variant-numeric: tabular-nums;
+  color: rgb(var(--fs-color-ink-soft));
+}

@@ -1,0 +1,30 @@
+<div class="fs-breakdown-bars" [class.fs-breakdown-bars--aside]="aside() !== 'none'" role="list">
+  @for (row of view(); track row.label) {
+    <div class="fs-breakdown-bars__row" role="listitem" [title]="row.tip">
+      @if (row.queryParams) {
+        <a class="fs-breakdown-bars__label fs-breakdown-bars__link" [routerLink]="articlesUrl" [queryParams]="row.queryParams"
+           [attr.aria-label]="'Open the ' + row.articles + ' ' + row.label + ' articles in the article list'">{{ row.label }}</a>
+      } @else {
+        <span class="fs-breakdown-bars__label">{{ row.label }}</span>
+      }
+      <span class="fs-breakdown-bars__measure">
+        <span class="fs-breakdown-bars__bar" [class.fs-breakdown-bars__bar--unknown]="row.isUnknown"
+              [style.width]="row.width"></span>
+        <span class="fs-breakdown-bars__count">{{ row.articles }}</span>
+        @if (showIndependent() && row.independentSources != null) {
+          <span class="fs-breakdown-bars__muted">({{ row.independentSources }})</span>
+        }
+      </span>
+      @switch (aside()) {
+        @case ('recent') {
+          <span class="fs-breakdown-bars__aside">
+            @if (row.recentShare != null) { {{ row.recentShare }}% recent }
+          </span>
+        }
+        @case ('note') {
+          <span class="fs-breakdown-bars__aside">{{ row.note }}</span>
+        }
+      }
+    </div>
+  }
+</div>

@@ -1,6 +1,10 @@
 # Database (SQL Server)
 
-`../console/Babesiosis.Console` (from `core/`) loads `articles.jsonl` and the `articles/*.md` notes, then the papers' own text from `data/markdown/`, then the terms from `data/terms/`, into SQL Server. The schema is in `Database/schema.sql`; the search procedures are installed by `Database/Setup-SemanticSearch.ps1`. The `babesiosis-local-db` MCP server connects to it. The database has no datasets or NLP concepts.
+`/console/Babesiosis.Console` loads `articles.jsonl` and the `articles/*.md` notes, then the papers' own text from `data/markdown/`, then the terms from `data/terms/`, into SQL Server. The schema is in `Database/schema.sql`; the search procedures are installed by `Database/Setup-SemanticSearch.ps1`. The `babesiosis-local-db` MCP server connects to it. The `data/syndromes/` NLP concepts are not loaded.
+
+If the database disagrees with `articles.jsonl`, the file is correct.
+
+## Articles, text and terms
 
 - `dbo.category`: the 11 category codes.
 - `dbo.article`: one row per article. `article_code` is the article ID. The note sections are split into `abstract_summary`, `authors_conclusion`, `reviewer_interpretation`, `key_limitations` and `evidence_basis`. `species`, `dataset_ids` and `source_json` are JSON columns. `embedding` is `VECTOR(1536)`. `has_full_text`, `text_source` (`abstract` / `jats_xml` / `pdf`), `text_quality`, `text_flags`, `text_language`, `text_translated` and `text_word_count` describe the paper's own text in `dbo.article_section`.
@@ -12,29 +16,6 @@
 
 Copyright: `data/fulltext/` and `data/markdown/` are git-ignored, and `dbo.article_section` holds the same text. Do not expose the table, or the agent's section and full-text tools, to anonymous users. `AppSettings:AiAgents:FullText = false` turns those tools off.
 
-The database is only as current as the last loader run. If it disagrees with `articles.jsonl`, the file is correct.
-
 ## Datasets and experiments
 
-Loaded from `data/tidy/*.json` and `data/experiments/*.json` by `Babesiosis.Console --datasets-only` (DatasetLoader, then ExperimentLoader). Rebuild: run the tidy script, run the experiment script, then the console. The web app reads these tables on its Experiments screen (`/experiments/<code>`, endpoints `experiments-list-get` and `experiments-detail-get`); the screen renders the `interpretation` result as the note under the visuals, so every experiment script should write one.
-
-- `dbo.dataset`: one row per tidied dataset (`dataset_code` = `DS05`), linked to `dbo.article` by `article_code`, with `source_sha256` from the manifest and the cleaning `notes` (JSON).
-- `dbo.variable`: the variable dictionary per dataset (`variable_code`, `name`, `unit`, `data_type` N/O/C/D/T, `domain`, `derived`, `derived_from` JSON, `include_default`, `ref_low`, `ref_high`, `levels` JSON). `canonical_code` is empty until a second dataset is mapped to the same measurements.
-- `dbo.subject`: one row per animal (`subject_code` = `BET001`), with `group_label` and `outcome_label` where the dataset has them.
-- `dbo.observation`: long table, one row per subject × variable × `time_point` (`''` for single-visit data); `value_num`, `value_text` or `value_date`.
-- `dbo.experiment`: one row per run (`experiment_code` = `EXP01-DS05-pairwise`), `method`, `parameters` JSON, script hash, counts and a plain-text `summary`.
-- `dbo.association`: one row per tested pair (`variable_a_id`, `variable_b_id`, `test`, `estimate`, `estimate_label`, `n`, `p_value`, `p_adjusted`, `significant`, `trivial`, `direction`, `detail` JSON). Filter `trivial = 0` for findings; `IX_association_experiment` covers sorting by `p_adjusted`.
-- `dbo.cluster_assignment`: subject-level groupings or labels from clustering and anomaly runs (`cluster_label`, `score` = silhouette for EXP02, combined anomaly rank score 0 to 1 for EXP06 with labels `outlier` / `typical`); first filled by `EXP02-DS05-clustering` (148 dogs, two Ward groups). The JSON fields are `subject_code`, `cluster_label`, `score`.
-- `dbo.experiment_result`: the full method-specific outputs as JSON (`result_kind` = `spearman_matrix`, `variable_clusters`, `top_associations`, `run_notes` for EXP01; `pca_axes`, `cluster_summary`, `cluster_stability`, `cluster_crosstabs`, `run_notes` for EXP02; `anomaly_scores`, `top_outliers`, `score_agreement`, `run_notes` for EXP06; every run also writes `interpretation`), for heatmaps and cluster views. Methods without a dedicated web view are shown as formatted JSON.
-
-Example: the strongest non-trivial findings of a run.
-
-```sql
-SELECT va.name AS a, vb.name AS b, x.test, x.estimate_label, x.estimate, x.n, x.p_adjusted, x.direction
-FROM dbo.association AS x
-JOIN dbo.experiment AS e ON e.experiment_id = x.experiment_id
-JOIN dbo.variable AS va ON va.variable_id = x.variable_a_id
-JOIN dbo.variable AS vb ON vb.variable_id = x.variable_b_id
-WHERE e.experiment_code = 'EXP01-DS05-pairwise' AND x.significant = 1 AND x.trivial = 0
-ORDER BY x.p_adjusted, ABS(x.estimate) DESC;
-```
+Tables `dbo.dataset`, `dbo.variable`, `dbo.subject`, `dbo.observation`, `dbo.experiment`, `dbo.association`, `dbo.cluster_assignment` and `dbo.experiment_result` exist. `Babesiosis.Console --datasets-only` fills the first four from `data/tidy/*.json`; that folder was deleted on 2026-11-12, so they are empty. The experiment tables are written by each experiment package: by its own writer, or by this loader from a load file `/experiments/<package>/out/db/<code>.json` (row content and steps: `/experiments/run-instructions.md`). New experiments use `dbo.experiment` and `dbo.experiment_result` only, with no dataset link. Column definitions are in `Database/schema.sql`. The web app reads these tables on its Experiments screen (`/experiments/<code>`), and its AI agent reads `dbo.experiment` and `dbo.experiment_result` to answer questions ([ai-agent.md](ai-agent.md)).

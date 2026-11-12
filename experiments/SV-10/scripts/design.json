@@ -1,0 +1,104 @@
+{
+ "memos": [
+  {
+   "memo": "parasite_genotype",
+   "code": "SV-10-01-parasite-genotype",
+   "name": "Design memo: does Babesia rossi genotype (BrEMA1, or genome-wide) change the outcome?",
+   "short_title": "parasite genotype",
+   "description": "Does the genotype of the infecting B. rossi change the risk of complicated disease once host age, days sick and parasite load are allowed for? The design replicates the BrEMA1 genotype link of CB379 (2009, never retested) and adds a genome-wide parasite association using the 2025 B. rossi assembly.",
+   "question": "Does the BrEMA1 genotype of the infecting B. rossi (genotype19 against all others) change the odds of complicated disease, adjusted for age, days sick and parasite load? CB379 linked four genotypes to poor prognosis, but those four cover 90% of its 141 isolates and no genotype-by-outcome table was published.",
+   "recommended_scenario": "Genotype19, freq 0.35 in uncomplicated, OR 2.5",
+   "detects": "an adjusted OR of 2.5 for genotype19 (35% of uncomplicated infections)",
+   "basis": "Design A (targeted BrEMA1 amplicon sequencing from one pre-treatment EDTA sample, Firth logistic regression adjusted for age, log days sick and log load) at 40% complicated disease and 15% loss. Death needs about 545 enrolled dogs and is secondary. Design B (genome-wide) is hypothesis-generating: in 610 dogs it detects only OR of about 5 per gene.",
+   "what_was_done": "A sub-agent read the CB379 appraisal note and abstract, searched the local notes and PubMed for BrEMA1 follow-up, B. rossi population genetics, the 2025 genome and parasite association designs (Plasmodium, B. bovis), and drafted the memo; the package agent set the sample-size scenarios.",
+   "cohort_basis": "complicated",
+   "assumptions": [
+    {"label": "Genotype19 among uncomplicated infections", "value": "0.35 (0.25 to 0.45)", "source": "CB379: genotype19 in 36.2% of 141 isolates (abstract)"},
+    {"label": "Complicated disease among enrolled dogs", "value": "0.40 (0.30 to 0.50)", "source": "assumption, research notes"},
+    {"label": "Death among enrolled dogs", "value": "0.11", "source": "S-CB050 15 of 140 (SV-05); includes euthanasia for poor prognosis"},
+    {"label": "R² of genotype with age, days sick, load", "value": "0.20", "source": "assumption"},
+    {"label": "Loss (failed amplification, mixed genotypes, follow-up)", "value": "15%", "source": "assumption"},
+    {"label": "Design B thresholds", "value": "1.6e-5 genes; 1.7e-6 SNPs", "source": "3,098 annotated genes (10.1186/s12864-025-11495-z); 30,000 common SNPs assumed"}
+   ],
+   "gaps": [
+    {"package": "SV-02a", "gap": "No B. rossi unit reports parasite load against a clinical outcome; load cannot be pooled", "answer": "Capillary and qPCR load measured in every dog, used as a covariate"},
+    {"package": "SV-03", "gap": "Every replicated B. rossi signal comes from one hospital (Onderstepoort)", "answer": "Multi-site enrolment; site kept in the model so parasite population structure is not read as virulence"},
+    {"package": "SV-05", "gap": "Age against death: only OR of about 3.7 or more detectable with 15 deaths", "answer": "Age is a fixed covariate; the primary outcome (complicated disease, 40%) gives about 3.6 times the events of death"},
+    {"package": "SV-01", "gap": "No validated stage axis in natural cases", "answer": "Days sick recorded and adjusted for, so genotype is not confused with late presentation"}
+   ],
+   "caveat": "B. rossi only; no B. canis or B. gibsoni numbers. Genotype groups found by Design B are hypotheses, not subtypes. CB379's original 2x2 table could not be read (abstract only), so the exposure contrast is re-defined, not replicated as published.",
+   "does_not_show": [
+    "It analyses no data: every number is a planning assumption or a power calculation.",
+    "It cannot show that a genotype causes severe disease: genotype may mark a parasite population, a region or a season.",
+    "It does not cover B. canis or B. gibsoni; the sample sizes must be re-run for another species."
+   ]
+  },
+  {
+   "memo": "host_genetics",
+   "code": "SV-10-02-host-genetics",
+   "name": "Design memo: within-breed host genetics of severe canine babesiosis (pit bull-type dogs, B. rossi)",
+   "short_title": "within-breed host genetics",
+   "description": "Do host gene variants (DEA 1, haptoglobin, cytokine promoter SNPs, TLR4/MYD88, DLA class II, or a genome-wide scan) differ between severe and mild B. rossi infection within one breed? A PubMed search found no canine study of host genotype against babesiosis severity, so the memo proposes a within-breed case-control study nested in a multi-centre cohort.",
+   "question": "Within pit bull-type dogs with B. rossi, do severe and mild cases differ in DEA 1 status or other candidate host loci, and does a within-breed SNP-array scan find a locus? No canine study has genotyped dogs against babesiosis severity (280 PubMed records screened).",
+   "recommended_scenario": "DEA 1 positive, freq 0.50 in mild, OR 3",
+   "detects": "an OR of 3 for DEA 1 status (50% positive in mild dogs) at alpha 0.0025 (20 candidates); the same dogs detect an allelic OR of about 3 genome-wide",
+   "basis": "About 14 hospital-years at about 10 severe pit bull-type cases per hospital per year (for example 5 hospitals for 3 years). OR 2 needs 330 to 500 severe dogs and OR 1.5 more than 900: not feasible in one breed. The primary analysis is not adjusted for load (load may be a mediator); a secondary analysis adjusts for load, days sick and parasite strain.",
+   "what_was_done": "A sub-agent ran 13 PubMed queries and 5 known-item lookups (365 hits, 280 unique records screened by title and abstract, about 41 relevant; one broad 742-hit query not screened record by record), reviewed the candidate loci, counted breeds in the DS05 raw file (no outcome label), and drafted the memo; the package agent set the sample-size scenarios.",
+   "assumptions": [
+    {"label": "Severe share of pit bull-type B. rossi cases", "value": "0.30 (0.20 to 0.40)", "source": "assumption, research notes"},
+    {"label": "DEA 1 positive in mild pit bull-type dogs", "value": "0.50 (0.40 to 0.60)", "source": "Onderstepoort mixed-breed dogs 48% (10.4102/jsava.v73i2.555); no pit bull figure found"},
+    {"label": "DLA haplotype carrier frequency", "value": "0.15 to 0.30", "source": "assumption"},
+    {"label": "Candidate tests", "value": "20 (alpha 0.0025)", "source": "DEA 1, haptoglobin 2, cytokine SNPs 8, TLR4/MYD88 2, DLA 7"},
+    {"label": "Genome-wide threshold", "value": "5e-7", "source": "Bonferroni on about 100,000 SNPs after quality control"},
+    {"label": "Relatedness inflation", "value": "1.15", "source": "assumption for a within-breed mixed model"},
+    {"label": "Pit bull-type among B. rossi cases", "value": "25 of 150", "source": "DS05 breed counts (one clinic)"}
+   ],
+   "gaps": [
+    {"package": "data.md", "gap": "Host genetics or breed against a hard outcome cannot be studied with the public files", "answer": "New genotyped case-control set with a locked outcome list"},
+    {"package": "SV-05", "gap": "Breed not tested; breed tracks weight and age in DS05; S-CB050 has no breed", "answer": "One breed, matched on hospital and month, adjusted for age and days sick"},
+    {"package": "SV-05", "gap": "Only OR >= 3.7 detectable for host factors with 15 deaths", "answer": "142 severe dogs per arm detect OR 3 at alpha 0.0025"},
+    {"package": "SV-03", "gap": "Every replicated B. rossi signal is from one hospital", "answer": "Three or more South African hospitals"}
+   ],
+   "caveat": "Pit bull-type is owner-reported and not a closed breed in South Africa: breed membership must be confirmed by genotype. A null result rules out only large effects. No polygenic score, no prediction, no clustering into subtypes.",
+   "does_not_show": [
+    "It analyses no data: every number is a planning assumption or a power calculation.",
+    "It cannot detect odds ratios below about 3 at a feasible size; most complex-trait host effects are smaller.",
+    "Results in pit bull-type dogs with B. rossi need not hold in other breeds or other Babesia species."
+   ]
+  },
+  {
+   "memo": "minimum_dataset",
+   "code": "SV-10-03-minimum-dataset",
+   "name": "Design memo: a prospective minimum dataset for canine babesiosis severity",
+   "short_title": "prospective minimum dataset",
+   "description": "Which items must one prospective cohort record so that the questions the finished packages could not answer (load against outcome, tolerance, stage, age and neuter status, replication outside Onderstepoort) become answerable? The memo fixes an outcome set built from SV-03's definition map, load, days sick, antibody status, signalment, a pre-treatment sample and stored plasma, with a sample size.",
+   "question": "What is the smallest set of items, samples and dogs that would let one prospective B. rossi cohort answer the questions the existing public files could not?",
+   "recommended_scenario": "Continuous exposure (log load or a marker), OR 1.5 per SD, death 11%, R2 0.2",
+   "detects": "an OR of 1.5 per SD of log load or a marker for death, adjusted (R² 0.2); an OR of about 2 for a binary host factor such as age (559 needed)",
+   "basis": "Recommended target 610 B. rossi dogs (about 67 deaths) at three or more sites, at least 200 of them outside Onderstepoort; those 200 can replicate an Onderstepoort marker difference of about 0.65 SD. A load x antibody interaction of the same size needs about 4 times the main-effect n, so tolerance stays hypothesis-generating. About three years at three sites the size of S-CB050 cohort 1 (97 dogs in 18 months).",
+   "what_was_done": "The package agent read the result and next-step sections of the SV-01, SV-02, SV-03, SV-04, SV-05 and SV-07 reports and SV-03's definition-map tables, listed each unanswered question with the item that would answer it, and set the sample-size scenarios. SV-06a's ranked mechanism list was not ready, so the stored-plasma panel covers its seven mechanism families.",
+   "assumptions": [
+    {"label": "Death by day 7", "value": "0.11", "source": "S-CB050 15 of 140 (SV-05); recorded separately from euthanasia in the new cohort"},
+    {"label": "Severe outcome set", "value": "0.30", "source": "assumption; check in the first 100 dogs"},
+    {"label": "R² of the exposure with the covariates", "value": "0.20", "source": "assumption"},
+    {"label": "Young dogs (< 12 months)", "value": "0.35", "source": "S-CB050: 50 of 140 (SV-05)"},
+    {"label": "Enrolment rate per site", "value": "about 65 dogs per year", "source": "S-CB050 cohort 1: 97 dogs Oct 2011 to Apr 2013 (SV-07)"}
+   ],
+   "gaps": [
+    {"package": "SV-02a", "gap": "No species x outcome cell of published load contrasts reaches 3 independent units", "answer": "Smear and qPCR load with outcome for every dog"},
+    {"package": "SV-02b", "gap": "Tolerance measurable only in 5 experimental Beagles", "answer": "Load, damage markers and antibody status in the same pre-treatment sample"},
+    {"package": "SV-01", "gap": "Pseudo-stage failed validation; natural dogs lie past the Beagle course", "answer": "Days sick with owner certainty; second sample at 24 h"},
+    {"package": "SV-03", "gap": "0 of 423 marker cells reach 3 units; 78 definitions; marker in its own definition in 38 of 504 rows", "answer": "One outcome set stored as components, so any definition can be rebuilt and circular markers removed"},
+    {"package": "SV-04", "gap": "IL-8 files differ in sampling time relative to treatment", "answer": "Sample before the first antibabesial dose with times recorded"},
+    {"package": "SV-05", "gap": "Only OR >= 3.7 detectable for age; neuter status not recorded", "answer": "About 67 deaths; neuter status and age at neutering recorded"},
+    {"package": "SV-07", "gap": "DS03 natural cohorts are S-CB050 dogs under new numbers", "answer": "One permanent dog ID and a register of sub-studies"}
+   ],
+   "caveat": "B. rossi numbers; species stays a site-level variable and is never compared across sites. Associations with intervals only: no prediction, no risk score. Treatment effects cannot be estimated.",
+   "does_not_show": [
+    "It analyses no data: every number is a planning assumption or a power calculation.",
+    "It does not estimate treatment effects or support prediction.",
+    "The stored-plasma panel is not yet ranked: SV-06a was still running."
+   ]
+  }
+ ]
+}

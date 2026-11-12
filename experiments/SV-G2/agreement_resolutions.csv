@@ -1,0 +1,7 @@
+id,marker,outcome_class,difference,resolution,changed_primary
+CB050,Sex / neuter status,mortality,"significance not_tested vs unclear","Text: the P = 0.028 test is across controls, survivors and non-survivors; no survivor vs non-survivor test. Primary not_tested kept",no
+CB098,Body temperature,mortality,"row only in second extraction","Text (Discussion, authors' own data) reports a 2.8 C drop in the one dog that died; row added to primary under S2",yes
+CB098,"KC-like, IL-10, neutrophils, CRP, temperature",parasitaemia_level,"rows only in primary","Authors call parasitaemia an indicator of severity; primary rows kept, flagged in report as load-defined severity",no
+CB106,SIRS status,mortality,"marker Clinical severity score vs SIRS status","SIRS is not a severity score; primary recoded to SIRS status (new canonical marker)",yes
+CB149,Travel / import history,"mortality; complicated","direction more/less frequent vs mixed","Primary has one row per history category (travel 15% vs imported 0%), second one row with mixed; both readings consistent with text. Primary kept",no
+CB517,Sex / neuter status,mortality,"direction less_frequent vs no_difference (both not significant)","No numbers by outcome; primary direction set to no_difference",yes

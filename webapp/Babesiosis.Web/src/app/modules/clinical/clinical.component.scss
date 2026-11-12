@@ -1,0 +1,563 @@
+:host {
+  display: block;
+}
+
+.fs-clinical {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+// The rail sits beside the page on wide screens and above it on narrow ones.
+// It is sticky inside the shell's scrolling content, so a long page scrolls
+// under a rail that stays in reach.
+.fs-clinical__layout {
+  display: grid;
+  grid-template-columns: 320px minmax(0, 1fr);
+  gap: 16px;
+  align-items: start;
+
+  @media (max-width: 1100px) {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+// ---- Rail -----------------------------------------------------------------
+
+.fs-clinical__panel {
+  position: sticky;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  // 160px: the shell top bar, the page header and a margin.
+  max-height: calc(100vh - 160px);
+  min-height: 0;
+
+  @media (max-width: 1100px) {
+    position: static;
+    max-height: 420px;
+  }
+
+  fs-card {
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+  }
+}
+
+.fs-clinical__panel-head {
+  display: flex;
+  flex-direction: column;
+  gap: var(--fs-guide-space-1);
+  padding: var(--fs-guide-space-3) var(--fs-guide-space-3) var(--fs-guide-space-2);
+  border-bottom: 1px solid rgb(var(--fs-color-line));
+}
+
+.fs-clinical__panel-count {
+  font-size: 11px;
+  color: rgb(var(--fs-color-ink-soft));
+}
+
+.fs-clinical__panel-body {
+  padding: var(--fs-guide-space-3);
+}
+
+.fs-clinical__loading {
+  display: flex;
+  justify-content: center;
+  padding: var(--fs-guide-space-6);
+}
+
+.fs-clinical__nav {
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow-y: auto;
+  padding: var(--fs-guide-space-2) 0;
+}
+
+.fs-clinical__group + .fs-clinical__group {
+  margin-top: var(--fs-guide-space-3);
+}
+
+// The same rail as the Experiments screen: a group heading, then one bordered
+// box for each page with space between the boxes.
+.fs-clinical__group-title {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  margin: 0;
+  padding: var(--fs-guide-space-1) var(--fs-guide-space-3);
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1.4;
+  letter-spacing: 0.02em;
+  color: rgb(var(--fs-color-ink-soft));
+  text-transform: uppercase;
+}
+
+.fs-clinical__group-code {
+  color: rgb(var(--fs-color-ink-strong));
+}
+
+.fs-clinical__group-name {
+  flex: 1 1 auto;
+  min-width: 0;
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+.fs-clinical__items {
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--fs-guide-space-2);
+  padding: var(--fs-guide-space-1) var(--fs-guide-space-3) var(--fs-guide-space-2);
+
+  > li {
+    border: 1px solid rgb(var(--fs-color-ink-soft) / 0.45);
+    border-radius: 6px;
+    overflow: hidden;
+  }
+}
+
+.fs-clinical__item {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  width: 100%;
+  padding: var(--fs-guide-space-3) var(--fs-guide-space-3);
+  border: 0;
+  border-left: 3px solid transparent;
+  background: transparent;
+  text-align: left;
+  font: inherit;
+  color: rgb(var(--fs-color-ink));
+  cursor: pointer;
+
+  &:hover {
+    background: rgb(var(--fs-color-fill-hover));
+  }
+
+  &:focus-visible {
+    outline: 2px solid rgb(var(--fs-color-primary));
+    outline-offset: -2px;
+  }
+}
+
+.fs-clinical__item--selected {
+  border-left-color: rgb(var(--fs-color-primary));
+  background: rgb(var(--fs-color-fill-selected));
+
+  .fs-clinical__item-name {
+    color: rgb(var(--fs-color-ink-strong));
+  }
+}
+
+// A page that is not written is dimmed, and says so in words.
+.fs-clinical__item--unwritten .fs-clinical__item-name {
+  color: rgb(var(--fs-color-ink-soft));
+}
+
+.fs-clinical__item-name {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.35;
+}
+
+.fs-clinical__item-foot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  font-size: 11px;
+  color: rgb(var(--fs-color-ink-soft));
+}
+
+.fs-clinical__item-code {
+  font-family: var(--fs-guide-font-mono, ui-monospace, monospace);
+}
+
+// ---- Page -----------------------------------------------------------------
+
+.fs-clinical__detail {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  min-width: 0;
+  // The reading column: long lines are hard to read at the cage side.
+  max-width: 1040px;
+  font-size: 14px;
+  line-height: 1.55;
+  color: rgb(var(--fs-color-ink));
+
+  p {
+    margin: 0 0 var(--fs-guide-space-2);
+  }
+
+  h4 {
+    margin: var(--fs-guide-space-4) 0 var(--fs-guide-space-2);
+    font-size: 13px;
+    font-weight: 600;
+    color: rgb(var(--fs-color-ink-strong));
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+}
+
+.fs-clinical__header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--fs-guide-space-2) var(--fs-guide-space-4);
+  margin-bottom: var(--fs-guide-space-3);
+}
+
+.fs-clinical__title {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.25;
+  color: rgb(var(--fs-color-ink-strong));
+  text-wrap: balance;
+}
+
+.fs-clinical__tags {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.fs-clinical__updated,
+.fs-clinical__soft {
+  font-size: 12px;
+  color: rgb(var(--fs-color-ink-soft));
+}
+
+.fs-clinical__definition {
+  font-size: 15px;
+  color: rgb(var(--fs-color-ink-strong));
+}
+
+.fs-clinical__strong {
+  font-weight: 600;
+  color: rgb(var(--fs-color-ink-strong));
+}
+
+.fs-clinical__key-points {
+  margin-top: var(--fs-guide-space-3);
+  padding: var(--fs-guide-space-3) var(--fs-guide-space-4);
+  border-left: 3px solid rgb(var(--fs-color-primary));
+  border-radius: var(--fs-radius-md);
+  background: rgb(var(--fs-color-primary) / 0.07);
+
+  h3 {
+    margin: 0 0 var(--fs-guide-space-2);
+    font-size: 13px;
+    font-weight: 600;
+    color: rgb(var(--fs-color-ink-strong));
+  }
+
+  ul {
+    margin: 0;
+    padding-left: 1.2em;
+  }
+
+  li + li {
+    margin-top: 4px;
+  }
+}
+
+.fs-clinical__list {
+  margin: 0;
+  padding-left: 1.2em;
+
+  li + li {
+    margin-top: 6px;
+  }
+}
+
+// Term and meaning pairs: the species notes and the legend.
+.fs-clinical__pairs {
+  margin: 0;
+
+  > div {
+    display: grid;
+    grid-template-columns: minmax(110px, 160px) minmax(0, 1fr);
+    gap: var(--fs-guide-space-3);
+    padding: 6px 0;
+    border-top: 1px solid rgb(var(--fs-color-line));
+
+    &:first-child {
+      border-top: 0;
+    }
+  }
+
+  dt {
+    font-weight: 600;
+    color: rgb(var(--fs-color-ink-strong));
+  }
+
+  dd {
+    margin: 0;
+  }
+}
+
+// ---- Tables ---------------------------------------------------------------
+
+// A wide table scrolls inside its own box, never the page.
+.fs-clinical__table-wrap {
+  overflow-x: auto;
+  margin-bottom: var(--fs-guide-space-2);
+}
+
+.fs-clinical__table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+
+  th,
+  td {
+    padding: 8px 10px;
+    border-bottom: 1px solid rgb(var(--fs-color-line));
+    text-align: left;
+    vertical-align: top;
+  }
+
+  thead th {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    white-space: nowrap;
+    color: rgb(var(--fs-color-ink-soft));
+  }
+
+  tbody th {
+    min-width: 120px;
+    font-weight: 600;
+    color: rgb(var(--fs-color-ink-strong));
+  }
+
+  tbody tr:last-child th,
+  tbody tr:last-child td {
+    border-bottom: 0;
+  }
+}
+
+.fs-clinical__table--doses {
+  min-width: 640px;
+  font-variant-numeric: tabular-nums;
+
+  td:nth-child(2) {
+    white-space: nowrap;
+  }
+}
+
+.fs-clinical__dose-note {
+  display: block;
+  margin-top: 2px;
+  font-size: 12px;
+  color: rgb(var(--fs-color-ink-soft));
+}
+
+// ---- Approach -------------------------------------------------------------
+
+.fs-clinical__steps {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  > li {
+    display: grid;
+    grid-template-columns: 28px minmax(0, 1fr);
+    gap: var(--fs-guide-space-3);
+    padding: var(--fs-guide-space-2) 0;
+    break-inside: avoid;
+  }
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.fs-clinical__step-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: rgb(var(--fs-color-primary) / 0.12);
+  font-size: 13px;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  color: rgb(var(--fs-color-primary));
+}
+
+.fs-clinical__step-action {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  color: rgb(var(--fs-color-ink-strong));
+}
+
+// ---- Treatments -----------------------------------------------------------
+
+// One box for each treatment. The left edge repeats the status colour; the
+// status is always also a badge with the word.
+.fs-clinical__treatment {
+  padding: var(--fs-guide-space-3) var(--fs-guide-space-4);
+  border: 1px solid rgb(var(--fs-color-line));
+  border-left: 4px solid rgb(var(--fs-color-ink-soft) / 0.5);
+  border-radius: var(--fs-radius-md);
+  break-inside: avoid;
+
+  & + & {
+    margin-top: var(--fs-guide-space-3);
+  }
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.fs-clinical__treatment--standard {
+  border-left-color: rgb(var(--fs-color-success-fg));
+}
+
+.fs-clinical__treatment--proposed {
+  border-left-color: rgb(var(--fs-color-info-fg));
+}
+
+.fs-clinical__treatment--conflicting {
+  border-left-color: rgb(var(--fs-color-warning-fg));
+}
+
+.fs-clinical__treatment--harmful {
+  border-left-color: rgb(var(--fs-color-danger-fg));
+}
+
+.fs-clinical__treatment-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--fs-guide-space-2) var(--fs-guide-space-4);
+  margin-bottom: var(--fs-guide-space-2);
+
+  h4 {
+    margin: 0;
+    font-size: 15px;
+  }
+}
+
+// ---- References -----------------------------------------------------------
+
+.fs-clinical__references {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  > li {
+    display: grid;
+    grid-template-columns: 32px minmax(0, 1fr);
+    gap: var(--fs-guide-space-2);
+    padding: var(--fs-guide-space-2) var(--fs-guide-space-2);
+    border-radius: var(--fs-radius-md);
+    break-inside: avoid;
+
+    // The entry a citation link has opened.
+    &:focus {
+      outline: 2px solid rgb(var(--fs-color-primary));
+      outline-offset: -2px;
+      background: rgb(var(--fs-color-primary) / 0.07);
+    }
+  }
+}
+
+.fs-clinical__ref-number {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+  color: rgb(var(--fs-color-ink-soft));
+}
+
+.fs-clinical__ref-text {
+  margin-bottom: 4px;
+  overflow-wrap: anywhere;
+}
+
+.fs-clinical__link {
+  color: rgb(var(--fs-color-primary));
+  text-decoration: none;
+
+  &:hover,
+  &:focus-visible {
+    text-decoration: underline;
+  }
+}
+
+.fs-clinical__ref-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+// The address of a reference is printed, because paper has no links.
+.fs-clinical__ref-url {
+  display: none;
+}
+
+.fs-clinical__legend {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--fs-guide-space-4);
+  margin-top: var(--fs-guide-space-4);
+
+  @media (max-width: 800px) {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+// ---- Print ----------------------------------------------------------------
+// The shell's menu and top bar are hidden for print in src/styles.scss.
+
+@media print {
+  .fs-clinical__page-header,
+  .fs-clinical__panel,
+  .fs-clinical__related-card {
+    display: none;
+  }
+
+  .fs-clinical__layout {
+    display: block;
+  }
+
+  .fs-clinical__detail {
+    max-width: none;
+    font-size: 11pt;
+  }
+
+  .fs-clinical__table-wrap {
+    overflow: visible;
+  }
+
+  .fs-clinical__table--doses {
+    min-width: 0;
+  }
+
+  .fs-clinical__ref-url {
+    display: inline;
+    font-weight: 400;
+    overflow-wrap: anywhere;
+  }
+}

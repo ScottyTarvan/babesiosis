@@ -63,3 +63,34 @@ html[data-bs-theme="dark"],
   --fs-color-category-10: 176 113  46;
   --fs-color-category-11: 185 104 204;
 }
+
+// ---------------------------------------------------------------------------
+// Print. The shell is a fixed-height frame whose content area scrolls, so a
+// page would print as one clipped screen. For paper the menu and the top bar
+// are removed and the content flows at its full height. The Clinical manual
+// (/clinical) is the screen made to be printed; the rule applies to every screen.
+// ---------------------------------------------------------------------------
+@media print {
+  html,
+  body,
+  app-root,
+  fs-shell,
+  .fs-shell,
+  .fs-shell__main,
+  .fs-shell__content {
+    display: block !important;
+    height: auto !important;
+    overflow: visible !important;
+  }
+
+  .fs-shell__sidebar,
+  fs-shell-topbar,
+  .fs-shell__drawer-backdrop,
+  fs-toast-container {
+    display: none !important;
+  }
+
+  .fs-shell__content {
+    padding: 0 !important;
+  }
+}

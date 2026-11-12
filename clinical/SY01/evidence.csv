@@ -1,0 +1,51 @@
+ref,section,statement,value,species,design,n_dogs,cohort_id,read,location,note
+R1,description,Severity distribution of anaemia in 320 B. rossi dogs,"severe 35.6%, moderate 25.5%, mild 22.1%, normal 15.7%",B. rossi,cohort (3 pooled datasets),320,,full text,"Results, anaemia paragraph",severe Hct<0.15 L/L; moderate 0.15-0.24; mild 0.25-0.36
+R1,prognosis,Mortality by anaemia grade,"14.2% severe, 8% moderate, 11.3% mild, 4% normal",B. rossi,cohort,320,,full text,Results,authors: anaemia not a reliable predictor of death; death includes euthanasia
+R1,prognosis,Haemoconcentration and death,"Hct >0.55 L/L: OR 32.7, 3/4 died",B. rossi,cohort,320,,full text,"Results, Table 1",
+R1,prognosis,Collapse at presentation and death,OR 8.36; 72/320 collapsed; 24/34 deaths collapsed,B. rossi,cohort,320,,full text,Results,collapsed dogs had lower Hct
+R1,prognosis,Overall mortality,34/320 (10.6%),B. rossi,cohort,320,,full text,Results,death or euthanasia due to poor prognosis
+R1,diagnosis,In-saline agglutination positive rate and effect,10.3%; no effect on outcome or admission Hct,B. rossi,cohort,320,,full text,Discussion,
+R1,description,Weak reticulocyte response,ARC <100 x10^9/L in 70/113 (61.9%),B. rossi,cohort,113,,full text,Results,
+R1,diagnosis,Haemoglobinuria falsely raises urine SG,,B. rossi,cohort,320,,full text,"Discussion, renal",
+R1,treatment,"Standard Onderstepoort care: diminazene, transfusion with packed red cells or whole blood and IV fluids as needed",,B. rossi,cohort,320,,full text,Methods,
+R2,definition,Severe anaemia limit and moderate grade in older data,severe <0.15 L/L; moderate 0.15-0.29 L/L,B. rossi,retrospective survey,662,,abstract,abstract; grading as cited in the full text of CB378,"limits seen only as cited in CB378, so not used on the page; abstract gives 50% severe, 32% moderate, 18% non-anaemic among hospitalised"
+R2,description,Age of severely anaemic vs non-anaemic dogs,mean 0.83 vs 2.66 years,B. rossi,retrospective survey,662,,abstract,abstract,
+R3,diagnosis,Transfusion guideline at Onderstepoort,PCV <15% as guideline; clinical status (collapsed or not) also used,B. rossi,prospective cohort,86,,full text,Materials and methods,"quote: 'As a general guideline, dogs with PCV of <15 % were transfused'"
+R3,treatment,Transfusion volume formula,"BW (kg) x 90 x (25 - PCV patient) / PCV donor, mL",B. rossi,prospective cohort,86,,full text,Materials and methods,quote: 'body weight (kg) x 90 x {(PCV desired (25 %) - PCV patient)/(PCV donor)}'
+R3,treatment,Whole blood vs packed cells: no effect on blood cell results,P > 0.09,B. rossi,prospective cohort,86,,full text,"Results, regression",
+R3,treatment,Transfused vs non-transfused groups,median Hct 0.09 vs 0.28 L/L; 2 deaths in each group,B. rossi,prospective cohort,86,,full text,Results,not randomised; transfused dogs younger (median 10 vs 21 months)
+R3,description,Hct course after diminazene,day 1 fall (non-transfused); day 6 median 0.36 (non-transfused) and 0.31 L/L (transfused),B. rossi,prospective cohort,86,,full text,"Results, Fig 1; Discussion",
+R3,treatment,Slower Hct rise in transfused dogs possibly from destruction of transfused cells,,B. rossi,prospective cohort,86,,full text,Discussion,authors' hypothesis
+R3,diagnosis,Neutropenia may be mistaken for E. canis infection,,B. rossi,prospective cohort,86,,full text,Discussion,
+R3,description,"Anaemia normocytic normochromic, mildly to moderately regenerative; moderate regeneration by day 3",,B. rossi,prospective cohort,86,,full text,"Abstract, Results",
+R4,description,Haemoglobinuria at presentation,269/320 (84%),B. rossi,review,,,full text,Table 1; anaemia section,
+R4,description,Black urine and port-wine plasma in rapid haemolysis,,B. rossi,review,,,full text,Haemolysis paragraph,
+R4,description,"Species differences in anaemia (B. canis mild-moderate, few transfused; B. vogeli least pathogenic; B. gibsoni anaemia >80% of 60, just over 10% Hct <20%)",,multiple,review,,,full text,Table 1; Conclusion,
+R4,description,Most B. rossi deaths in the first 24 h of hospitalisation,,B. rossi,review,,,full text,"Table 1, mortality row",
+R5,definition,Severe vs complicated split artificial; half of admitted cases severely anaemic; mortality 12% of admitted; tissue hypoxia major role,12%,B. rossi,review,,,abstract,abstract,
+R6,treatment,pRBC dose in trial,20 mL/kg over 4 h via central venous catheter,B. rossi,randomised trial,12,,abstract,Methods (abstract),quote: 'receive either 20 mL/kg of Oxyglobin or pRBCT over 4 hours'
+R6,treatment,Oxyglobin dose in trial,20 mL/kg over 4 h via central venous catheter,B. rossi,randomised trial,12,,abstract,Methods (abstract),same quote; followed by lactated Ringer's solution
+R6,treatment,"Outcome: similar blood gas, acid-base, BP; pRBC faster habitus and appetite; higher CaO2 at 72 h; central venous PO2 persistently subnormal",,B. rossi,randomised trial,12,,abstract,Results (abstract),Hct at entry 0.1-0.2 L/L
+R6,diagnosis,"Presentation: hypoalbuminaemic alkalosis, hyperchloraemic dilutional acidosis, normotensive tachycardia, pyrexia, depression, anorexia",,B. rossi,randomised trial,12,,abstract,Results (abstract),
+R7,diagnosis,Hyperlactataemia limits,"admission >5 mmol/L; >2.5 mmol/L at 8, 16, 24 h; <50% fall; persistent >4.4 mmol/L very poor",B. rossi (B. canis rossi),prospective cohort,90,,abstract,abstract,"source units >22.5, >45 and >40 mg/dL; converted by dividing by 9.01"
+R7,diagnosis,Hypoglycaemia limit and association with death,<3.3 mmol/L,B. rossi,prospective cohort,90,,abstract,abstract,source unit <59.4 mg/dL; converted by dividing by 18
+R8,diagnosis,Hypoglycaemia prevalence and risk factors,9% of 250; 19.8% of admitted; severe anaemia a univariate risk factor,B. rossi,prospective cohort,250,,abstract,abstract,"source unit <60 mg/dL; measure in collapsed dogs, puppies, severe anaemia, vomiting, icterus"
+R9,treatment,"Donors should be negative for Babesia, preferably by PCR; Babesia transmitted in whole blood",,Babesia spp.,review,,,full text,Prophylaxis,
+R10,description,"Fatal B. rossi marrow: dyserythropoiesis, increased iron content",,B. rossi,case series with controls,6,CH04,abstract,abstract (Europe PMC),
+R11,description,No PCV improvement after 15 mL/kg pRBC over 4 h; further 13 mL/kg over 6 h,PCV 13% after transfusion,B. vogeli,case report,1,,full text,Case presentation,
+R12,diagnosis,Transfusion indicated with severe anaemia (Hct <15%) and severe dyspnoea or tachypnoea; parasitaemia not a criterion,Hct <15%,B. gibsoni,review,,,full text,"Treatment, supportive care",
+R12,treatment,Transmission via transfusion; screen donors by PCR or smear,,B. gibsoni,review,,,full text,Transmission; treatment,
+R13,diagnosis,Capillary parasitaemia higher than venous; capillary sample best; higher parasitaemia in dogs that died,median 0.61% vs 0.14%,B. rossi,observational cohort,100,,abstract,abstract,
+R14,diagnosis,Spurious analyser reticulocyte profiles in large-form babesiosis,,large Babesia,retrospective,92,,abstract,note and title,
+R15,treatment,"Volume formula with blood volume 80-90 mL/kg; rapid rates if unstable, about 4 h if stable; slower in cardiac or renal disease",(desired PCV - recipient PCV)/unit PCV x BV x BW,general canine,textbook (Merck Vet Manual),,,full text,Blood transfusions in animals page,"reviewed Nov 2024, modified Mar 2026"
+R15,diagnosis,DEA 1 typing of donors and recipients; DEA 1-positive may receive DEA 1-negative; weak-positive recipients get DEA 1-negative; major cross-match >4 days after any transfusion,,general canine,textbook,,,full text,same page,
+R15,treatment,"Monitoring: vital signs every 15 min in first hour, hourly to end, then 15 min, 1 h, 24 h after; test dose 0.25 mL/kg over 15 min (general)",0.25 mL/kg over 15 min,general,textbook,,,full text,same page,"test dose stated generally, not dog-specific"
+R15,treatment,"Reactions: febrile non-haemolytic, acute haemolytic, TACO (new tachypnoea or cough within 24 h), allergic; stop transfusion",,general canine,textbook,,,full text,same page,
+R16,treatment,Positive cross-match within 4 days in 12/21; cross-match before every later transfusion,12/21,general canine (anaemia of several types),prospective observational,21,,abstract,abstract,
+R17,treatment,"Most SA practices never cross-matched; reactions rare; 96% used routine supportive treatment (corticosteroids, vitamins, liver support)",96%,B. rossi (SA practice),questionnaire survey (1993),,,abstract,abstract,157 responding practices
+R18,treatment,All first donor-recipient pairs cross-match compatible,13 pairs; 12/13 B. gibsoni,B. gibsoni,prospective observational,13,,full text,"Results, Discussion",
+R19,treatment,DEA 1 type not associated with Babesia infection,63.0% vs 60.3% PCR-positive; 63.5% DEA 1-positive,Babesia spp.,cross-sectional,200,,full text,Results,Nigeria
+R20,treatment,Review debated oxygen in anaemic hypoxia; problems of fluid therapy in complicated disease; rationale of haematinics examined; no definitive recommendations,,B. rossi,review,,,abstract,abstract,
+R21,treatment,Oral haematinic syrup used with antimicrobials in one B. gibsoni dog,"5 mL daily PO (product volume, not per kg)",B. gibsoni,case report,1,,full text,Treatment,not a metric per-kg dose; not placed in the dose table
+R22,treatment,IV iron toxicity similar to old red cells in canine pneumonia model; caution in infected patients,,"none (canine model, not babesiosis)",review of experimental studies,,,abstract,abstract,level D caution
+R23,prognosis,"Lower PCV, Hb, RBC in non-survivors (univariate)",18/80 died,Babesia spp. (smear),cohort,80,,full text,note; Results,species not identified

@@ -1,0 +1,20 @@
+{
+  "id": "CB445",
+  "text_used": "data/markdown/CB445.md",
+  "extracted_by": "claude-opus-5-5 SV-G2 B11",
+  "extracted_utc": "2026-11-12T00:00:00Z",
+  "schema_version": "v2",
+  "setting": "mixed",
+  "sample_timing": "not stated",
+  "article_notes": "Cross-sectional PCR/serology survey of 372 dogs on St Kitts (teaching hospital and free community clinics). Table 1 tabulates, for each infection category (B. vogeli only, B. vogeli with E. canis, B. gibsoni only, etc.), the proportion of dogs with signs of a tick-borne disease and with laboratory abnormalities. These are per-exposure-group descriptive proportions in largely subclinical carriers, with no test and no severity or outcome grouping of babesiosis cases; not extracted as severity rows (see not_extracted). E. canis copy number vs clinical signs concerns E. canis, not Babesia.",
+  "skipped_infected_vs_healthy": 0,
+  "severity_definitions": [],
+  "associations": [],
+  "not_extracted": [
+    {
+      "what": "Signs of tick-borne disease and laboratory abnormalities by Babesia species and by co-infection with E. canis (Table 1)",
+      "reason": "other",
+      "note": "Descriptive proportions per infection category in mostly subclinical dogs; 'signs of a tick-borne disease' is not a babesiosis severity definition, no test, and small cells (e.g. 1/12, 2/8). Not extracted as a severity association."
+    }
+  ]
+}

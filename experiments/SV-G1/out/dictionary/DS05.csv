@@ -1,0 +1,43 @@
+harmonised_name,dataset_id,original_column,unit,conversion,note
+sex,DS05,SEX,male/female,"MALE ... -> male, FEMALE ... -> female",
+neuter,DS05,SEX,intact/neutered,SPAYED or CASTRATED -> neutered,
+breed,DS05,BREED,text,title case,
+age_months,DS05,AGE,months,,
+weight_kg,DS05,WEIGHT,kg,,
+complaint_codes,DS05,PRIMARY COMPLAINT,text,,"Dataset-specific name (not in the harmonised list). Owner complaint codes as recorded, separated by '/' (IA inappetance, L lethargy, HgUr haemoglobinuria, WL weight loss, V vomiting, D diarrhoea)."
+illness_days,DS05,DUR/ ILLNESS,days,,Owner-reported. 'UNKNOWN' (2 dogs) stored as null.
+temp_c,DS05,TEMP,degC,,
+heart_rate,DS05,PULSE,beats/min,,Dataset-specific name (not in the harmonised list). Pulse rate.
+resp_rate,DS05,RESP,breaths/min,,Dataset-specific name (not in the harmonised list). 'P+' (panting) stored as null; see panting.
+mucous_membranes,DS05,MUCOUS MEMBRANES,text,,Dataset-specific name (not in the harmonised list). Free text as recorded.
+lymph_node_score,DS05,PERIPHERAL LYMPHNODES,score 0-2,,"Dataset-specific name (not in the harmonised list). 0 none palpable, 1 one to three nodes palpable, 2 more than three nodes palpable (summary rows of the sheet)."
+ticks,DS05,TICKS,0/1,,"Dataset-specific name (not in the harmonised list). 1 present, 0 absent."
+hb,DS05,Haemoglobin,g/L,,
+rbc,DS05,RCC,10^12/L,,
+hct,DS05,Haematocrit,L/L,,
+mcv,DS05,MCV,fL,,
+mch,DS05,MCH,pg,,Dataset-specific name (not in the harmonised list).
+mchc,DS05,MCHC,g/L,x10 (g/dL to g/L),The units row gives g/dL.
+rdw,DS05,RCDW,%,,Dataset-specific name (not in the harmonised list). RCDW in the file.
+wbc,DS05,WCC,10^9/L,,
+neut_seg,DS05,Seg Neutrophil,10^9/L,,
+neut_band,DS05,Band Neutrophil,10^9/L,,
+lymph,DS05,Lymphocyte,10^9/L,,
+mono,DS05,Monocyte,10^9/L,,
+eos,DS05,Eosinophil,10^9/L,,
+baso,DS05,Basophil,10^9/L,,Dataset-specific name (not in the harmonised list).
+other_cells,DS05,Other,10^9/L,,Dataset-specific name (not in the harmonised list). 'Other' cells in the differential.
+plt,DS05,Platelet Count,10^9/L,,
+nrbc_per100wbc,DS05,NRBC/100WBC,per 100 WBC,,Dataset-specific name (not in the harmonised list).
+retic_pct,DS05,Reticulocyte %,%,,
+arc,DS05,ARC,10^9/L,,
+tsp,DS05,Total Serum Protein,g/L,,Total serum protein.
+albumin,DS05,Albumin,g/L,,
+globulin,DS05,Globulin,g/L,,Calculated by the authors (total protein - albumin).
+pcr_b_rossi,DS05,B. rossi,0/1,,Dataset-specific name (not in the harmonised list). qPCR result.
+pcr_b_vogeli,DS05,B. vogeli,0/1,,Dataset-specific name (not in the harmonised list). qPCR result.
+pcr_e_canis,DS05,E. canis,0/1,,Dataset-specific name (not in the harmonised list). qPCR result.
+pcr_t_equi,DS05,T. equi,0/1,,Dataset-specific name (not in the harmonised list). qPCR result.
+date_collected,DS05,Date collected,date,DD/MM/YYYY -> YYYY-MM-DD,Dataset-specific name (not in the harmonised list).
+season,DS05,Season,text,Su/Au/Wi/Sp -> summer/autumn/winter/spring,"Dataset-specific name (not in the harmonised list). Southern-hemisphere season, as coded by the authors."
+panting,DS05,RESP,0/1,'P+' -> 1,Dataset-specific name (not in the harmonised list).

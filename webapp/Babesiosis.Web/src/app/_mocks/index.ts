@@ -11,8 +11,6 @@ import {
   platformMcpTokensSearchMock,
 } from 'app/_mocks/handlers/platform-mcp-tokens.mock';
 import { jobsBackgroundGetMock } from 'app/_mocks/handlers/jobs-background-get.mock';
-import { reviewCategoryYearCountsGetMock } from 'app/_mocks/handlers/review-category-year-counts-get.mock';
-import { reviewListGetMock } from 'app/_mocks/handlers/review-list-get.mock';
 
 /**
  * Central mock registry. Add new endpoint mocks here as you encounter
@@ -35,6 +33,4 @@ export const mockRegistrations: MockRegistration[] = [
   platformMcpTokensSearchMock,
   platformMcpTokensCreateMock,
   platformMcpTokensRevokeMock,
-  reviewCategoryYearCountsGetMock,
-  reviewListGetMock,
 ];

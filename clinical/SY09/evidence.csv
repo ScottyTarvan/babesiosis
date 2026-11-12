@@ -1,0 +1,32 @@
+ref,section,statement,value,species,design,n_dogs,cohort_id,read,location,note
+R1,description,Cardiac lesions in fatal cases: pericardial effusion; epicardial/endocardial haemorrhage; multifocal necrosis; inflammation; fibrin microthrombi; mostly left ventricle,,B. rossi (South Africa; reported as B. canis),narrative review,,,full text,Cardiac pathology section p6,
+R1,description,Necrosis of acute type (about 12 h to 4 days),12 h to 4 days,B. rossi,narrative review,,,full text,Cardiac pathology p6,
+R1,description,Mechanism: tachycardia shortens diastole and coronary flow; anaemic hypoxia; inflammation; microthrombi; myocardial depression contributes to hypotension,,B. rossi,narrative review,,,full text,Pathophysiology p6-7,
+R1,treatment,Recommends careful IV fluids; troponin measurement; arrhythmia control; positive inotropic support; strict cage rest; oxygen; diuretics,,B. rossi,narrative review,,,full text,Therapeutic recommendations p7,No drugs or doses named
+R1,diagnosis,VPCs on ECG specific but not sensitive for myocardial damage; CK-MB not heart-specific in dogs; cTnT less sensitive than cTnI,,B. rossi,narrative review,,,full text,Cardiac assessment p5,
+R2,diagnosis,cTnI higher in complicated and IMHA groups and in 3 non-survivors; VPCs associated with high troponin; other ECG changes not linked to severity,mean 9.9 µg/L complicated; 22.17 µg/L non-survivors; controls below detection,B. rossi (virulent SA babesiosis),case-control,43 (34 babesiosis + 9 controls),,abstract,Abstract,Source units ng/mL (= µg/L)
+R3,diagnosis,ECG in 121 dogs: SA block or arrest 7%; VPCs 7%; low R 23%; large T 42%; sinus bradycardia and irregular rhythm more common in non-survivors; low R matched pericardial effusion,7%; 23%,B. rossi,cohort with necropsy (16),121,,abstract,Abstract,
+R4,diagnosis,Bradycardia and irregular rhythm appear poor prognostic; ECG has limited value except ventricular arrhythmia; cTnI higher in dogs dying with lesions,,mixed (mainly B. rossi),narrative review,,,full text,Haemodynamic and cardiovascular changes section,
+R5,description,Troponin I raised in 19 of 50 B. canis dogs; 2 deaths had very high troponin and CK-MB; increased fractional shortening in 24%,19/50; FS up in 24%,B. canis,case-control,70 (50 + 20 controls),,abstract,Abstract,
+R6,diagnosis,Severe normovolaemic anaemia increases FS; EF and heart rate in beagles,Hct about 0.15 L/L,none (experimental anaemia),experimental,11,,abstract,Abstract,Source Hct 15.3%
+R7,description,Fatal European babesiosis: haemorrhage and pericardial effusion; leukostasis; oedema; necrosis; myocarditis,,B. canis (European),necropsy series,not stated,,abstract,Abstract,
+R8,description,31 of 92 dogs (34%) had echocardiographic dysfunction: 2 systolic; 24 diastolic; 5 both,31/92,Babesia sp. (smear),case series,92,CH18,full text,Results and discussion,
+R8,diagnosis,Diastolic dysfunction graded by human ASE 2009 criteria (E' below 8 cm/s),E' < 8 cm/s,Babesia sp.,case series,92,CH18,full text,Results and discussion,
+R8,prognosis,Mortality 74% (23/31) with dysfunction vs 31.1% (19/61) without; table gives 23 non-survivors in total (inconsistent); low E' high E/E' and EPSS higher in non-survivors,74% vs 31%,Babesia sp.,case series,92,CH18,full text,Results; Table 2; Conclusion,Internal counts disagree
+R8,treatment,Dopamine CRI for systolic dysfunction,10 µg/kg/min IV CRI,Babesia sp.,case series,7 treated,CH18,full text,Materials and methods,"""dopamine (10 ug/kg/min, CRI, IV)"""
+R8,treatment,HES 6% for diastolic dysfunction,5 mL/kg/h IV,Babesia sp.,case series,29 treated,CH18,full text,Materials and methods,"""Hydroxyethyl starch 6%, 5 ml/kg/hr, IV"""
+R9,description,Six fatal B. canis dogs with cardiomyocyte necrosis and circulatory disorders,,B. canis,necropsy series,6,CH27,full text,Results,
+R10,diagnosis,NT-proBNP medians 246; 650; 638 vs 106 pmol/L controls; cTnI medians 0.39; 0.4; 1.45 µg/L; detection limit 0.2; only complicated group differed from controls,see value,B. rossi (suspected),case-control,60 (45 + 15 controls),,abstract,Abstract,Source units pmol/l and ng/ml
+R11,description,hs-cTnI and hs-cTnT higher in 15 B. canis dogs than 10 controls,0.4265 vs 0.1112 ng/mL (cTnI),B. canis,case-control,25,CH15,full text,Table 1,
+R12,description,ECG abnormal in 108 of 465 haemoparasite dogs; tachycardia 44.4%; atrial standstill 16.6%; VPC 7.4%; one VF; one paroxysmal VT,108/465,B. gibsoni mainly; pooled with E. canis,cross-sectional survey,465,,full text,Results; Table 6,
+R13,diagnosis,Hyperkalaemia in 2 complicated dogs; hypokalaemia uncommon,2/9,B. rossi,case-control,40,,abstract,Abstract,
+R14,treatment,Lidocaine bolus dogs,2 mg/kg IV over about 1 min to effect; max cumulative 8 mg/kg over about 30 min,dogs any cause,formulary,,,full text,Lidocaine section,"""cumulative dose of 8 mg/kg over ~30 minutes"""
+R14,treatment,Lidocaine CRI dogs,25 to 75 µg/kg/min,dogs any cause,formulary,,,full text,Lidocaine section,"""CRI (25–75 mcg/kg/min)"""
+R14,treatment,Hypokalaemia impairs lidocaine; toxicity CNS signs; fast bolus hypotension,,dogs any cause,formulary,,,full text,Lidocaine section,
+R15,diagnosis,E. canis raises cTnI; correlated with anaemia severity,,E. canis (dogs),cohort,210,,abstract,Abstract,
+R16,treatment,Furosemide acute CHF,2 mg/kg IV or IM then hourly until signs improve; max 8 mg/kg over 4 h,dogs MMVD CHF,consensus guideline,,,full text,Section 6.5.2,"""Furosemide 2 mg/kg administered IV"""
+R16,treatment,Furosemide CRI,0.66 to 1 mg/kg/h,dogs MMVD CHF,consensus guideline,,,full text,Section 6.5.2,"""constant rate infusion (CRI) at a dosage of 0.66-1 mg/kg/hour"""
+R16,treatment,Pimobendan,0.25 to 0.3 mg/kg PO every 12 h,dogs MMVD CHF,consensus guideline,,,full text,Section 6.5.2,"""Pimobendan, 0.25-0.3 mg/kg administered PO q12h"""
+R16,treatment,Dobutamine,2.5 to 10 µg/kg/min CRI start 2.5,dogs MMVD CHF,consensus guideline,,,full text,Section 6.5.2,"""2.5-10 μg/kg/min as a CRI, starting at 2.5 μg/kg/min"""
+R16,treatment,Oxygen by cage or nasal cannula if needed,,dogs MMVD CHF,consensus guideline,,,full text,Section 6.5.2,
+R17,treatment,HES associated with death or AKI in ICU dogs after adjustment (OR 1.98),OR 1.98,dogs any cause,retrospective cohort,422,,abstract,Abstract,

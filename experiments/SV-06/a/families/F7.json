@@ -1,0 +1,347 @@
+{
+  "family": "F7 Immune regulation and tolerance",
+  "agent_summary": "IL-10/TNF is not a gap: 5 independent canine units compared IL-10 or TNF by severity or outcome (CH03, CB037, CH23, CB109, CH37). No dog study reported the IL-10/TNF ratio itself; DS02 has both cytokines. Soluble CD14 (CB112, complicated > uncomplicated, which is DS07 itself) and suPAR (CB004, complicated vs uncomplicated B. canis, no difference) are also already severity-tested. The real gaps are regulatory T cells / PD-1 (never measured in canine babesiosis; CB008 measured only CD3/CD4/CD8/B cells), monocyte DLA class II (only whole-blood transcripts in CB082/DS06), soluble TREM-1 (no canine soluble assay found) and complement factor H (added; only in proteomics, CB019 pools and DS07 master A0A5F4BVG1, never reported by severity). One surprise: the DS07 factor H masters are labelled 'Uncharacterized protein ... GN=CFH', so a description-prefix match on 'Complement factor H' will miss them; match on GN=CFH.",
+  "mechanisms": [
+    {
+      "mechanism_id": "F7-01",
+      "family": "F7 Immune regulation and tolerance",
+      "mechanism": "IL-10 and the IL-10/TNF balance",
+      "added_by_agent": "no",
+      "human_conditions": ["malaria", "sepsis"],
+      "hu_articles": ["HU004"],
+      "human_key_dois": [
+        "https://doi.org/10.1186/s40249-023-01059-2",
+        "https://doi.org/10.1128/CVI.00533-16",
+        "https://doi.org/10.1179/2047773212Y.0000000069",
+        "https://doi.org/10.1684/ecn.2010.0208"
+      ],
+      "human_n_studies": 4,
+      "human_grade": 3,
+      "human_direction": "IL-10 and TNF both higher in severe and fatal malaria; a low IL-10/TNF ratio (inadequate IL-10 for the TNF level) goes with severe disease",
+      "cb_confirmed": [
+        {"id": "CB517", "what": "serum IL-10 by canine multiplex, 12 non-survivors vs 85 survivors, B. rossi, before treatment; IL-10 higher in infected than controls, not different by outcome; TNF not measured", "severity_contrast": true, "cohort": "CH03"},
+        {"id": "CB050", "what": "same CH03 dogs; IL-10 correlated with MPXI, survivors vs non-survivors analysis", "severity_contrast": true, "cohort": "CH03"},
+        {"id": "CB037", "what": "11 serum cytokines, 23 critically ill vs 32 relatively well and 9 died vs 46 survived, B. rossi; IL-10 and TNF differed among groups, TNF higher in non-survivors", "severity_contrast": true, "cohort": null},
+        {"id": "CB017", "what": "serum IL-10, 18 complicated vs 13 uncomplicated B. canis, day 1 and day 7; no difference; TNF not measured", "severity_contrast": true, "cohort": "CH23"},
+        {"id": "CB109", "what": "IL-10 mRNA in blood, severe ('Babesia 2') vs mild ('Babesia 1') B. canis; no difference reported", "severity_contrast": true, "cohort": null},
+        {"id": "CB473", "what": "serum TNF by canine ELISA in 11 B. canis dogs; correlated with lower blood pressure and with renal indices (severity correlates)", "severity_contrast": true, "cohort": "CH37"},
+        {"id": "CB098", "what": "IL-10 and TNF kinetics in 5 experimental B. rossi Beagles (high vs low dose); IL-10 correlated with parasitaemia; this is DS02", "severity_contrast": false, "cohort": "CH09"},
+        {"id": "CB101", "what": "data article of CB098 (DS02), 13 cytokines including IL-10 and TNF", "severity_contrast": false, "cohort": "CH09"},
+        {"id": "CB075", "what": "TNF and IFN-gamma transcripts, B. vogeli and mixed infection vs healthy police dogs", "severity_contrast": false, "cohort": null},
+        {"id": "CB298", "what": "TNF transcript higher in infected than healthy dogs (B. vogeli / E. canis)", "severity_contrast": false, "cohort": null}
+      ],
+      "cb_rejected": [
+        "CB107, CB157, CB236, CB514, CB028: reviews, no measurement",
+        "CB503: CH37 cohort row hit only (thyroid paper)",
+        "CB019, CB040, CB046, CB066, CB071, CB080, CB081, CB082, CB094, CB111, CB115, CB119, CB126, CB129, CB137, CB145, CB147, CB202, CB259, CB294, CB376, CB411, CB414, CB418, CB440, CB441, CB493: text mentions only (discussion, background or other markers); CB145 is CH03 anyway"
+      ],
+      "canine_pubmed": {
+        "queries": [
+          "(dog OR canine) AND babesi* AND (IL-10 OR interleukin-10 OR TNF OR \"tumor necrosis factor\")",
+          "(dog OR canine) AND (sepsis OR SIRS) AND (IL-10 OR TNF) AND (mortality OR survival)",
+          "falciparum malaria severe IL-10 TNF ratio",
+          "sepsis IL-10 TNF ratio mortality"
+        ],
+        "dog_babesiosis_dois": [
+          "https://doi.org/10.1371/journal.pone.0150113",
+          "https://doi.org/10.1111/pim.12630",
+          "https://doi.org/10.1371/journal.pone.0190474",
+          "https://doi.org/10.1038/s41598-023-29011-2",
+          "https://doi.org/10.1007/s00436-014-3792-1",
+          "https://doi.org/10.3389/fvets.2020.00072",
+          "https://doi.org/10.1016/j.vetpar.2022.109717",
+          "https://doi.org/10.14202/vetworld.2021.903-912",
+          "https://doi.org/10.1016/j.rvsc.2025.105629"
+        ]
+      },
+      "canine_status": "severity_tested",
+      "canine_severity_units": 5,
+      "canine_assay": "validated",
+      "assay_evidence": [
+        "https://doi.org/10.1371/journal.pone.0150113",
+        "https://doi.org/10.1007/s00436-014-3792-1"
+      ],
+      "dog_genes": ["IL10", "TNF"],
+      "testable_now": "public_file",
+      "testable_detail": "DS02 IL-10 and TNF-alpha (5 experimental Beagles; ratio computable); DS06 IL10 and TNF gene expression (whole-blood RNA, not circulating protein); not in DS07",
+      "gap": "no",
+      "notes": "Units: CH03, CB037, CH23, CB109 (mRNA), CH37 (TNF correlations only). Only CB037 measured both IL-10 and TNF in one severity contrast; no dog study reported the IL-10/TNF ratio, so the ratio is a narrow sub-gap that DS02 can address descriptively. Results mixed: IL-10 raised by infection but not by outcome in CH03 or CH23 (SV-04).",
+      "keywords": [],
+      "ds07_desc": []
+    },
+    {
+      "mechanism_id": "F7-02",
+      "family": "F7 Immune regulation and tolerance",
+      "mechanism": "Regulatory T cells and T-cell exhaustion (PD-1, PD-L1)",
+      "added_by_agent": "no",
+      "human_conditions": ["malaria", "sepsis"],
+      "hu_articles": [],
+      "human_key_dois": [
+        "https://doi.org/10.1371/journal.ppat.1000402",
+        "https://doi.org/10.1371/journal.ppat.1000364",
+        "https://doi.org/10.1186/cc10112",
+        "https://doi.org/10.5847/wjem.j.1920-8642.2023.041"
+      ],
+      "human_n_studies": 4,
+      "human_grade": 3,
+      "human_direction": "Tregs expanded in severe malaria in proportion to parasite burden; higher PD-1 / PD-L1 on T cells and antigen-presenting cells goes with organ dysfunction, secondary infection and death in sepsis",
+      "cb_confirmed": [],
+      "cb_rejected": [
+        "CB098, CB282, CB516, CB241: 'exhaustion' used in discussion or as a clinical sign, not measured",
+        "CB107, CB414, CB517: Tregs mentioned in background or review text only",
+        "CB008 (CH03): flow cytometry of CD3, CD4, CD8 and B cells by complicated vs uncomplicated; no CD25, FoxP3 or PD-1 (not a keyword hit, checked as the nearest study)"
+      ],
+      "canine_pubmed": {
+        "queries": [
+          "(dog OR canine) AND babesi* AND (regulatory T cells OR FoxP3 OR PD-1 OR PD-L1 OR CTLA-4 OR exhaustion)",
+          "(dog OR canine) AND babesi* AND (lymphocyte OR T cell) AND (CD4 OR CD8)",
+          "(dog OR canine) AND FoxP3 AND regulatory T cells AND (peripheral blood) AND flow cytometry AND (infection OR leishmaniasis OR sepsis)",
+          "(dog OR canine) AND (PD-1 OR PD-L1) AND (ELISA OR assay OR expression) AND (infection OR sepsis)",
+          "(malaria OR sepsis) AND (regulatory T cells OR PD-1) AND (severity OR mortality) AND cohort",
+          "falciparum malaria regulatory T cells FoxP3 severe malaria"
+        ],
+        "dog_babesiosis_dois": []
+      },
+      "canine_status": "none",
+      "canine_severity_units": 0,
+      "canine_assay": "used_in_dogs",
+      "assay_evidence": [
+        "https://doi.org/10.1292/jvms.13-0586",
+        "https://doi.org/10.1016/j.rvsc.2013.08.005",
+        "https://doi.org/10.1016/j.cimid.2018.12.002"
+      ],
+      "dog_genes": ["FOXP3", "PDCD1", "CD274", "CTLA4"],
+      "testable_now": "public_file",
+      "testable_detail": "DS06 FOXP3, PDCD1, CD274, CTLA4 gene expression (whole-blood RNA of 5 Beagles, not cell counts or protein); no DS07 or DS02 variable. Treg counts need fresh blood flow cytometry; stored serum cannot measure them.",
+      "gap": "yes",
+      "notes": "PubMed returned 0 dog babesiosis studies. Canine Treg flow (CD4+CD25+FoxP3+) and PD-1/PD-L1 used in canine sepsis model and leishmaniasis with cross-reactive or canine antibodies, without formal validation.",
+      "keywords": [],
+      "ds07_desc": []
+    },
+    {
+      "mechanism_id": "F7-03",
+      "family": "F7 Immune regulation and tolerance",
+      "mechanism": "Monocyte deactivation (HLA-DR / DLA class II expression)",
+      "added_by_agent": "no",
+      "human_conditions": ["sepsis", "malaria"],
+      "hu_articles": [],
+      "human_key_dois": [
+        "https://doi.org/10.1007/s00134-006-0204-8",
+        "https://doi.org/10.1111/pim.12319"
+      ],
+      "human_n_studies": 3,
+      "human_grade": 3,
+      "human_direction": "low and persistently low monocyte HLA-DR goes with death and secondary infection in septic shock; monocyte activation markers including HLA-DR altered in children with malaria",
+      "cb_confirmed": [
+        {"id": "CB082", "what": "whole-blood RNA-seq over time in 5 experimental B. rossi Beagles; MHC class II genes downregulated (transcripts, not monocyte surface expression); dose groups only", "severity_contrast": false, "cohort": "CH09"}
+      ],
+      "cb_rejected": [
+        "CB050: 'immunoparalysis' discussed as an interpretation, not measured",
+        "CB414: review text"
+      ],
+      "canine_pubmed": {
+        "queries": [
+          "(dog OR canine) AND babesi* AND (MHC class II OR DLA-DR OR monocyte OR TREM-1 OR suPAR OR urokinase receptor OR CD14 OR presepsin)",
+          "(dog OR canine) AND (MHC class II OR DLA-DR) AND monocytes AND (sepsis OR flow cytometry)",
+          "monocytic HLA-DR sepsis mortality meta-analysis",
+          "monocytic HLA-DR sepsis mortality",
+          "malaria monocyte HLA-DR expression severe"
+        ],
+        "dog_babesiosis_dois": ["https://doi.org/10.1186/s12864-021-07889-4"]
+      },
+      "canine_status": "measured_no_severity",
+      "canine_severity_units": 0,
+      "canine_assay": "used_in_dogs",
+      "assay_evidence": [
+        "https://doi.org/10.1177/10406387251415418",
+        "https://doi.org/10.1111/j.1365-2249.2006.03206.x",
+        "https://doi.org/10.1016/j.vetimm.2017.06.007"
+      ],
+      "dog_genes": ["DLA-DRA", "DLA-DRB1", "CD74"],
+      "testable_now": "public_file",
+      "testable_detail": "DS06 DLA-DRA and CD74 gene expression (whole-blood RNA, not monocyte surface DLA-DR; DLA-DRB1 absent); not in DS07 or DS02. Surface DLA-DR needs fresh-blood flow cytometry.",
+      "gap": "yes",
+      "notes": "Measured_no_severity rests only on transcript-level data (CB082). No canine monocyte DLA-DR flow study in babesiosis or by outcome found; canine CD14+ MHCII flow exists (haematological disorders, leishmaniasis).",
+      "keywords": [],
+      "ds07_desc": []
+    },
+    {
+      "mechanism_id": "F7-04",
+      "family": "F7 Immune regulation and tolerance",
+      "mechanism": "Soluble TREM-1 and suPAR",
+      "added_by_agent": "no",
+      "human_conditions": ["malaria", "sepsis"],
+      "hu_articles": ["HU009", "HU010"],
+      "human_key_dois": [
+        "https://doi.org/10.1093/infdis/jiaf327",
+        "https://doi.org/10.1093/infdis/jiad561",
+        "https://doi.org/10.1016/j.tmaid.2023.102608",
+        "https://doi.org/10.1097/SHK.0000000000001434"
+      ],
+      "human_n_studies": 5,
+      "human_grade": 3,
+      "human_direction": "higher suPAR and sTREM-1 in severe malaria and in those who die; suPAR prognostic in sepsis (meta-analysis)",
+      "cb_confirmed": [
+        {"id": "CB004", "what": "plasma suPAR by canine ELISA, 11 complicated vs 19 uncomplicated B. canis at admission and day 6; raised vs healthy, not different by complication (p 0.55 and 0.98)", "severity_contrast": true, "cohort": null}
+      ],
+      "cb_rejected": [
+        "CB469: abstract-only conference record of the same Zagreb suPAR study as CB004 (same markers and design); not counted separately",
+        "CB028, CB107: reviews citing CB004",
+        "CB112: suPAR only in discussion"
+      ],
+      "canine_pubmed": {
+        "queries": [
+          "(dog OR canine) AND babesi* AND (MHC class II OR DLA-DR OR monocyte OR TREM-1 OR suPAR OR urokinase receptor OR CD14 OR presepsin)",
+          "(dog OR canine) AND (TREM-1 OR sTREM-1)",
+          "(dog OR canine) AND (suPAR OR urokinase receptor) AND (ELISA OR plasma OR serum)",
+          "(dog OR canine) AND (suPAR OR \"soluble urokinase\") AND (sepsis OR SIRS OR inflammation)",
+          "(suPAR OR sTREM-1) AND malaria AND (mortality OR severe)",
+          "suPAR sepsis mortality meta-analysis"
+        ],
+        "dog_babesiosis_dois": ["https://doi.org/10.1186/s12917-017-0995-6"]
+      },
+      "canine_status": "severity_tested",
+      "canine_severity_units": 1,
+      "canine_assay": "validated",
+      "assay_evidence": [
+        "https://doi.org/10.1186/s12917-017-0995-6",
+        "https://doi.org/10.1186/s12917-016-0929-8"
+      ],
+      "dog_genes": ["TREM1", "PLAUR"],
+      "testable_now": "public_file",
+      "testable_detail": "DS06 TREM1 and PLAUR gene expression (whole-blood RNA, not soluble protein); not in DS07 or DS02",
+      "gap": "no",
+      "notes": "Status is driven by suPAR (one unit, B. canis, null). sTREM-1 has never been measured in dogs with babesiosis and no canine soluble TREM-1 assay was found; it is split out as F7-11. A B. rossi suPAR by outcome study does not exist.",
+      "keywords": [],
+      "ds07_desc": []
+    },
+    {
+      "mechanism_id": "F7-05",
+      "family": "F7 Immune regulation and tolerance",
+      "mechanism": "Soluble CD14 (presepsin)",
+      "added_by_agent": "no",
+      "human_conditions": ["sepsis"],
+      "hu_articles": [],
+      "human_key_dois": [
+        "https://doi.org/10.2147/TCRM.S198735",
+        "https://doi.org/10.1186/s41512-023-00152-2"
+      ],
+      "human_n_studies": 3,
+      "human_grade": 3,
+      "human_direction": "higher presepsin (sCD14-ST) predicts death in sepsis (meta-analyses); no malaria severity cohort found",
+      "cb_confirmed": [
+        {"id": "CB112", "what": "serum CD14 by TMT LC-MS/MS, 14 complicated vs 18 uncomplicated B. rossi; higher in complicated (FDR about 1e-6, log2FC 0.18); this is the DS07 dataset", "severity_contrast": true, "cohort": null}
+      ],
+      "cb_rejected": [
+        "CB414: CD14 mentioned in a review of canine immunology"
+      ],
+      "canine_pubmed": {
+        "queries": [
+          "(dog OR canine) AND babesi* AND (MHC class II OR DLA-DR OR monocyte OR TREM-1 OR suPAR OR urokinase receptor OR CD14 OR presepsin)",
+          "(dog OR canine) AND (presepsin OR soluble CD14 OR sCD14)",
+          "(dog OR canine) AND (soluble CD14 OR sCD14) AND (ELISA OR serum OR plasma)",
+          "presepsin sepsis mortality meta-analysis"
+        ],
+        "dog_babesiosis_dois": ["https://doi.org/10.1038/s41598-023-37312-9"]
+      },
+      "canine_status": "severity_tested",
+      "canine_severity_units": 1,
+      "canine_assay": "used_in_dogs",
+      "assay_evidence": ["https://doi.org/10.1038/s41598-023-37312-9"],
+      "dog_genes": ["CD14"],
+      "testable_now": "public_file",
+      "testable_detail": "DS07 master A0A1S7J0A8 (Monocyte differentiation antigen CD14, GN=607076, 11% coverage); not in DS06 (CD14 not found) or DS02",
+      "gap": "no",
+      "notes": "Only measured by untargeted proteomics (total CD14, not the presepsin fragment); no canine sCD14 or presepsin immunoassay found in PubMed. Part b re-tests the same DS07 data, so it is not independent confirmation.",
+      "keywords": [],
+      "ds07_desc": []
+    },
+    {
+      "mechanism_id": "F7-11",
+      "family": "F7 Immune regulation and tolerance",
+      "mechanism": "Soluble TREM-1 (split from F7-04)",
+      "added_by_agent": "yes",
+      "human_conditions": ["malaria", "sepsis"],
+      "hu_articles": [],
+      "human_key_dois": [
+        "https://doi.org/10.1093/infdis/jiad561",
+        "https://doi.org/10.1038/s41598-026-61032-5",
+        "https://doi.org/10.1016/j.tmaid.2023.102608",
+        "https://doi.org/10.1038/s41598-025-98154-1"
+      ],
+      "human_n_studies": 4,
+      "human_grade": 3,
+      "human_direction": "higher sTREM-1 in severe malaria and best single predictor of death in African children with severe malaria",
+      "cb_confirmed": [],
+      "cb_rejected": [],
+      "canine_pubmed": {
+        "queries": [
+          "(dog OR canine) AND (TREM-1 OR sTREM-1)",
+          "(dog OR canine) AND babesi* AND (MHC class II OR DLA-DR OR monocyte OR TREM-1 OR suPAR OR urokinase receptor OR CD14 OR presepsin)",
+          "(suPAR OR sTREM-1) AND malaria AND (mortality OR severe)"
+        ],
+        "dog_babesiosis_dois": []
+      },
+      "canine_status": "none",
+      "canine_severity_units": 0,
+      "canine_assay": "used_in_dogs",
+      "assay_evidence": ["https://doi.org/10.1016/j.dci.2011.03.021"],
+      "dog_genes": ["TREM1"],
+      "testable_now": "public_file",
+      "testable_detail": "DS06 TREM1 gene expression (whole-blood RNA, not soluble protein); not in DS07 or DS02",
+      "gap": "yes",
+      "notes": "Canine evidence is TREM-1 expression and function on canine neutrophils only; no canine soluble TREM-1 immunoassay found, so a serum test would need a cross-reactive kit to be validated first.",
+      "keywords": ["TREM-1", "sTREM-1", "TREM1", "triggering receptor expressed on myeloid cells"],
+      "ds07_desc": ["Triggering receptor expressed on myeloid cells 1"]
+    },
+    {
+      "mechanism_id": "F7-12",
+      "family": "F7 Immune regulation and tolerance",
+      "mechanism": "Complement regulation (complement factor H)",
+      "added_by_agent": "yes",
+      "human_conditions": ["malaria"],
+      "hu_articles": [],
+      "human_key_dois": [
+        "https://doi.org/10.1093/ofid/ofy166",
+        "https://doi.org/10.1038/s41564-019-0474-x",
+        "https://doi.org/10.1093/jleuko/qiag063",
+        "https://doi.org/10.1111/cmi.12535"
+      ],
+      "human_n_studies": 2,
+      "human_grade": 2,
+      "human_direction": "higher plasma factor H in severe than uncomplicated falciparum malaria (149 Gambian children) and linked to higher parasite multiplication rate; parasite blood stages bind factor H to evade complement",
+      "cb_confirmed": [
+        {"id": "CB019", "what": "serum phosphoproteome, pooled 10 B. canis vs 10 healthy; complement factor H phosphopeptides relatively higher in the babesiosis pool", "severity_contrast": false, "cohort": null},
+        {"id": "CB112", "what": "factor H quantified in the DS07 TMT dataset (complicated vs uncomplicated B. rossi), but not among the 21 differential proteins and no factor H result reported", "severity_contrast": false, "cohort": null}
+      ],
+      "cb_rejected": [
+        "CB107: factor H in review text only"
+      ],
+      "canine_pubmed": {
+        "queries": [
+          "(dog OR canine) AND babesi* AND (factor H OR complement)",
+          "(dog OR canine) AND (complement factor H) AND (serum OR plasma OR assay)",
+          "Plasmodium falciparum factor H severe malaria"
+        ],
+        "dog_babesiosis_dois": [
+          "https://doi.org/10.1371/journal.pone.0207245",
+          "https://doi.org/10.1038/s41598-023-37312-9"
+        ]
+      },
+      "canine_status": "measured_no_severity",
+      "canine_severity_units": 0,
+      "canine_assay": "used_in_dogs",
+      "assay_evidence": [
+        "https://doi.org/10.1371/journal.pone.0207245",
+        "https://doi.org/10.1016/j.jprot.2020.104049"
+      ],
+      "dog_genes": ["CFH"],
+      "testable_now": "public_file",
+      "testable_detail": "DS07 master A0A5F4BVG1 (GN=CFH, 15% coverage; described as 'Uncharacterized protein', so match on GN=CFH, not the description) plus master candidates E2RK21, A0A5F4CHF6, J9NTL7, A0A5F4CLV4, A0A5F4BYC6; DS06 CFH not checked by reference_lookup; not in DS02",
+      "gap": "yes",
+      "notes": "Measured in dogs only by mass spectrometry; no canine factor H immunoassay found. CB112's global test implicitly covered factor H but reported nothing, so an explicit DS07 test (part b) would be the first severity contrast. Human evidence comes from one Gambian group (two papers, overlapping children) plus a Ghanaian FHR-1 genetic cohort.",
+      "keywords": ["factor H", "complement factor H", "\\bCFH\\b", "FHR-1"],
+      "ds07_desc": ["Complement factor H"]
+    }
+  ]
+}

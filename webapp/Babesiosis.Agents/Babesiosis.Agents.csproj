@@ -14,4 +14,15 @@
     <ProjectReference Include="..\Babesiosis.Core\Babesiosis.Core.csproj" />
   </ItemGroup>
 
+  <!--
+    The clinical manual: the page files that the web app's Clinical screen draws
+    (format: /clinical/content-format.md). They are embedded so that the agent's clinical tools
+    read the same pages in every deployment. Rebuild this project after a page changes.
+  -->
+  <ItemGroup>
+    <EmbeddedResource Include="..\Babesiosis.Web\public\assets\clinical\*.json"
+                      Link="Clinical\Pages\%(Filename)%(Extension)"
+                      LogicalName="Babesiosis.Agents.Clinical.Pages.%(Filename)%(Extension)" />
+  </ItemGroup>
+
 </Project>

@@ -1,0 +1,1367 @@
+{
+ "experiment": {
+  "code": "SV-02-02-beagle-reaction-norms",
+  "name": "Damage against parasite load in each of the 5 experimentally infected Beagles (DS02, B. rossi)",
+  "description": "Do the 5 Beagles infected with B. rossi lose haematocrit, lactate balance and habitus along one shared line against log parasitaemia, or do dogs at the same load differ in damage? The package hypothesis is that dogs differ more in damage per parasite (tolerance) than in load (resistance); here it can only be described, not tested.",
+  "method": "reaction_norm",
+  "dataset": null,
+  "parameters": {
+   "package": "SV-02",
+   "part": "b",
+   "role": "descriptive",
+   "datasets": [
+    "DS02"
+   ],
+   "independent_sources": [
+    "SRC-B"
+   ],
+   "linked_files_not_used": [
+    "DS01",
+    "DS03 experimental dogs",
+    "DS06"
+   ],
+   "spec_sha256": "0b44ffb3d1dab6e244c2d6f441a6bd747c890010d8d4009e92b6587bb2ac7724",
+   "seed": 20261112,
+   "load_offset_pct": 0.01,
+   "matched_loads_pct": [
+    1.0,
+    5.0
+   ],
+   "margins": {
+    "hct_drop": 0.03,
+    "lactate": 0.5,
+    "habitus_loss": 1.0
+   },
+   "window": "pre-treatment, days 1-4 and day_4_1",
+   "versions": {
+    "python": "3.12.12",
+    "numpy": "2.3.4",
+    "scipy": "1.16.3"
+   },
+   "inputs": {
+    "experiments/shared/tidy/DS02.features.json": "12475e823e588af20e8bec2df5164979c158bdbbb86ddfb96a32afe8aad83e2d",
+    "experiments/shared/tidy/DS02.outcomes.json": "26831fd671b6168a9228852823d73150cb48896d309f395c9a91858c4506dd67",
+    "experiments/SV-02/b/spec.md": "0b44ffb3d1dab6e244c2d6f441a6bd747c890010d8d4009e92b6587bb2ac7724"
+   }
+  },
+  "script": "/experiments/SV-02/b/scripts/analyse.py",
+  "script_version": "1bf46a0285b8",
+  "run_utc": "2026-11-12T15:15:25Z",
+  "n_subjects": 5,
+  "n_variables": 4,
+  "n_tests": 0,
+  "summary": "Descriptive, 5 B. rossi Beagles (2 low dose, 3 high dose), 1 source. Damage at matched load did not separate the dose groups: lactate at 5% parasitaemia 1.14 (low dose, n 1) vs 1.19 to 1.44 mmol/L (high dose); readings 2 of 3 'one shared norm', 1 'cannot tell' (haematocrit), 0 'different norms'. No hypothesis tests (0 of 0)."
+ },
+ "associations": [],
+ "cluster_assignments": [],
+ "results": [
+  {
+   "kind": "primary_result",
+   "title": "Primary result: reading of the reaction norms",
+   "sort_order": 1,
+   "payload": {
+    "label": "Reaction norms: damage against log parasitaemia, before treatment (DS02)",
+    "headline": "At a matched parasitaemia of 5% the low-dose damage lay inside the spec margin of the three high-dose Beagles: venous lactate 1.14 vs 1.19 to 1.44 mmol/L and habitus loss 1.00 vs 1.19 to 1.87 points (only 1 low-dose dog reached 5%); at 1% lactate was 0.96 to 1.17 vs 1.20 to 1.52 mmol/L. The groups differed in how far load rose before treatment (peak 6.81% low dose vs 35.0 to 59.8% high dose), not in damage per parasite.",
+    "status": "2 of 3 one shared norm · 1 cannot tell · 0 different norms",
+    "verdict": "does not meet the spec's rule for counting against the hypothesis: 2 of 3 measures read 'one shared norm', 1 'cannot tell' and 0 'different norms'; no measure shows different norms",
+    "n_dogs": 5,
+    "n_low": 2,
+    "n_high": 3,
+    "n_points": 22,
+    "independent_sources": 1,
+    "sources": [
+     "SRC-B (DS02; DS03 experimental dogs and DS06 are the same 5 Beagles)"
+    ],
+    "readings": [
+     {
+      "measure": "hct_drop",
+      "label": "Haematocrit drop from baseline",
+      "unit": "L/L",
+      "reading": "cannot tell",
+      "same_sign": false,
+      "low_inside_high_1pct": true,
+      "low_inside_high_5pct": true,
+      "separate_1pct": false,
+      "separate_5pct": false,
+      "residual_outlier_dog": null,
+      "n_low_5pct": 1,
+      "n_high_5pct": 3,
+      "margin": 0.03,
+      "low_at_1pct": "-0.009 to 0.006",
+      "high_at_1pct": "-0.075 to 0.001",
+      "low_at_5pct": "-0.014",
+      "high_at_5pct": "-0.039 to 0.051"
+     },
+     {
+      "measure": "lactate",
+      "label": "Venous lactate",
+      "unit": "mmol/L",
+      "reading": "one shared norm",
+      "same_sign": true,
+      "low_inside_high_1pct": true,
+      "low_inside_high_5pct": true,
+      "separate_1pct": false,
+      "separate_5pct": false,
+      "residual_outlier_dog": null,
+      "n_low_5pct": 1,
+      "n_high_5pct": 3,
+      "margin": 0.5,
+      "low_at_1pct": "0.96 to 1.17",
+      "high_at_1pct": "1.20 to 1.52",
+      "low_at_5pct": "1.14",
+      "high_at_5pct": "1.19 to 1.44"
+     },
+     {
+      "measure": "habitus_loss",
+      "label": "Habitus loss (4 minus score)",
+      "unit": "points",
+      "reading": "one shared norm",
+      "same_sign": true,
+      "low_inside_high_1pct": true,
+      "low_inside_high_5pct": true,
+      "separate_1pct": false,
+      "separate_5pct": false,
+      "residual_outlier_dog": null,
+      "n_low_5pct": 1,
+      "n_high_5pct": 3,
+      "margin": 1.0,
+      "low_at_1pct": "0.59 to 0.71",
+      "high_at_1pct": "0.00 to 1.16",
+      "low_at_5pct": "1.00",
+      "high_at_5pct": "1.19 to 1.87"
+     }
+    ]
+   }
+  },
+  {
+   "kind": "reaction_norms",
+   "title": "Damage against log parasitaemia, by dog",
+   "sort_order": 2,
+   "payload": {
+    "charts": [
+     {
+      "measure": "hct_drop",
+      "label": "Haematocrit drop from baseline",
+      "unit": "L/L",
+      "offset": 0.01,
+      "dogs": [
+       {
+        "dog": "d001 (dog 3)",
+        "dose_group": "low",
+        "died": 0,
+        "points": [
+         {
+          "x": -2.0,
+          "y": 0.03,
+          "timepoint": "day_1",
+          "parasitaemia_pct": 0.0
+         },
+         {
+          "x": -2.0,
+          "y": -0.01,
+          "timepoint": "day_2",
+          "parasitaemia_pct": 0.0
+         },
+         {
+          "x": -0.958607,
+          "y": 0.03,
+          "timepoint": "day_3",
+          "parasitaemia_pct": 0.1
+         },
+         {
+          "x": 0.664642,
+          "y": -0.01,
+          "timepoint": "day_4",
+          "parasitaemia_pct": 4.61
+         },
+         {
+          "x": 0.833784,
+          "y": -0.03,
+          "timepoint": "day_4_1",
+          "parasitaemia_pct": 6.81
+         }
+        ],
+        "fit": [
+         {
+          "x": -2.0,
+          "y": 0.017962
+         },
+         {
+          "x": 0.833784,
+          "y": -0.016621499935999998
+         }
+        ]
+       },
+       {
+        "dog": "d002 (dog 5)",
+        "dose_group": "high",
+        "died": 0,
+        "points": [
+         {
+          "x": -1.221849,
+          "y": 0.045,
+          "timepoint": "day_1",
+          "parasitaemia_pct": 0.05
+         },
+         {
+          "x": 0.029384,
+          "y": -0.025,
+          "timepoint": "day_2",
+          "parasitaemia_pct": 1.06
+         },
+         {
+          "x": 1.044932,
+          "y": 0.035,
+          "timepoint": "day_3",
+          "parasitaemia_pct": 11.08
+         },
+         {
+          "x": 1.776774,
+          "y": 0.105,
+          "timepoint": "day_4",
+          "parasitaemia_pct": 59.8
+         }
+        ],
+        "fit": [
+         {
+          "x": -1.221849,
+          "y": 0.007202957781000004
+         },
+         {
+          "x": 1.776774,
+          "y": 0.067568237394
+         }
+        ]
+       },
+       {
+        "dog": "d003 (dog 6)",
+        "dose_group": "high",
+        "died": 1,
+        "points": [
+         {
+          "x": -1.221849,
+          "y": -0.075,
+          "timepoint": "day_1",
+          "parasitaemia_pct": 0.05
+         },
+         {
+          "x": 0.003461,
+          "y": -0.075,
+          "timepoint": "day_2",
+          "parasitaemia_pct": 0.998
+         },
+         {
+          "x": 1.170848,
+          "y": -0.015,
+          "timepoint": "day_3",
+          "parasitaemia_pct": 14.81
+         },
+         {
+          "x": 1.658488,
+          "y": 0.225,
+          "timepoint": "day_4",
+          "parasitaemia_pct": 45.54
+         }
+        ],
+        "fit": [
+         {
+          "x": -1.221849,
+          "y": -0.123329998652
+         },
+         {
+          "x": 1.658488,
+          "y": 0.121924936224
+         }
+        ]
+       },
+       {
+        "dog": "d004 (dog 4)",
+        "dose_group": "high",
+        "died": 0,
+        "points": [
+         {
+          "x": -1.221849,
+          "y": -0.03,
+          "timepoint": "day_1",
+          "parasitaemia_pct": 0.05
+         },
+         {
+          "x": -0.154902,
+          "y": -0.01,
+          "timepoint": "day_2",
+          "parasitaemia_pct": 0.69
+         },
+         {
+          "x": 0.829304,
+          "y": 0.06,
+          "timepoint": "day_3",
+          "parasitaemia_pct": 6.74
+         },
+         {
+          "x": 1.543571,
+          "y": 0.09,
+          "timepoint": "day_4",
+          "parasitaemia_pct": 34.95
+         }
+        ],
+        "fit": [
+         {
+          "x": -1.221849,
+          "y": -0.040122285926000006
+         },
+         {
+          "x": 1.543571,
+          "y": 0.087015133154
+         }
+        ]
+       },
+       {
+        "dog": "d005 (dog 2)",
+        "dose_group": "low",
+        "died": 0,
+        "points": [
+         {
+          "x": -2.0,
+          "y": -0.02,
+          "timepoint": "day_1",
+          "parasitaemia_pct": 0.0
+         },
+         {
+          "x": -2.0,
+          "y": -0.04,
+          "timepoint": "day_2",
+          "parasitaemia_pct": 0.0
+         },
+         {
+          "x": -1.221849,
+          "y": -0.03,
+          "timepoint": "day_3",
+          "parasitaemia_pct": 0.05
+         },
+         {
+          "x": 0.499687,
+          "y": 0.0,
+          "timepoint": "day_4",
+          "parasitaemia_pct": 3.15
+         },
+         {
+          "x": 0.673942,
+          "y": 0.01,
+          "timepoint": "day_4_1",
+          "parasitaemia_pct": 4.71
+         }
+        ],
+        "fit": [
+         {
+          "x": -2.0,
+          "y": -0.032968
+         },
+         {
+          "x": 0.673942,
+          "y": 0.005146369268
+         }
+        ]
+       }
+      ],
+      "pooled": [
+       {
+        "x": -2.0,
+        "y": -0.037065
+       },
+       {
+        "x": 1.776774,
+        "y": 0.06266071747
+       }
+      ],
+      "pooled_slope": 0.026405,
+      "matched_loads_pct": [
+       1.0,
+       5.0
+      ],
+      "footnote": "DS02, 5 B. rossi Beagles, 22 pre-treatment dog-days (days 1 to 4 and the extra low-dose day-4 sample). x = log10(parasitaemia % + 0.01); lines are per-dog OLS fits; dashed line is the pooled fit, which ignores repeated measures. Descriptive; one source; dose and dog are aliased."
+     },
+     {
+      "measure": "lactate",
+      "label": "Venous lactate",
+      "unit": "mmol/L",
+      "offset": 0.01,
+      "dogs": [
+       {
+        "dog": "d001 (dog 3)",
+        "dose_group": "low",
+        "died": 0,
+        "points": [
+         {
+          "x": -2.0,
+          "y": 1.08,
+          "timepoint": "day_1",
+          "parasitaemia_pct": 0.0
+         },
+         {
+          "x": -2.0,
+          "y": 1.04,
+          "timepoint": "day_2",
+          "parasitaemia_pct": 0.0
+         },
+         {
+          "x": -0.958607,
+          "y": 0.71,
+          "timepoint": "day_3",
+          "parasitaemia_pct": 0.1
+         },
+         {
+          "x": 0.833784,
+          "y": 1.17,
+          "timepoint": "day_4_1",
+          "parasitaemia_pct": 6.81
+         }
+        ],
+        "fit": [
+         {
+          "x": -2.0,
+          "y": 0.9675159999999999
+         },
+         {
+          "x": 0.833784,
+          "y": 1.06253277752
+         }
+        ]
+       },
+       {
+        "dog": "d002 (dog 5)",
+        "dose_group": "high",
+        "died": 0,
+        "points": [
+         {
+          "x": -1.221849,
+          "y": 0.61,
+          "timepoint": "day_1",
+          "parasitaemia_pct": 0.05
+         },
+         {
+          "x": 0.029384,
+          "y": 1.54,
+          "timepoint": "day_2",
+          "parasitaemia_pct": 1.06
+         },
+         {
+          "x": 1.044932,
+          "y": 1.39,
+          "timepoint": "day_3",
+          "parasitaemia_pct": 11.08
+         },
+         {
+          "x": 1.776774,
+          "y": 6.56,
+          "timepoint": "day_4",
+          "parasitaemia_pct": 59.8
+         }
+        ],
+        "fit": [
+         {
+          "x": -1.221849,
+          "y": -0.13548351280899973
+         },
+         {
+          "x": 1.776774,
+          "y": 4.7613907897339995
+         }
+        ]
+       },
+       {
+        "dog": "d003 (dog 6)",
+        "dose_group": "high",
+        "died": 1,
+        "points": [
+         {
+          "x": -1.221849,
+          "y": 0.89,
+          "timepoint": "day_1",
+          "parasitaemia_pct": 0.05
+         },
+         {
+          "x": 0.003461,
+          "y": 1.2,
+          "timepoint": "day_2",
+          "parasitaemia_pct": 0.998
+         },
+         {
+          "x": 1.170848,
+          "y": 1.25,
+          "timepoint": "day_3",
+          "parasitaemia_pct": 14.81
+         },
+         {
+          "x": 1.658488,
+          "y": 7.5,
+          "timepoint": "day_4",
+          "parasitaemia_pct": 45.54
+         }
+        ],
+        "fit": [
+         {
+          "x": -1.221849,
+          "y": -0.055633307338000204
+         },
+         {
+          "x": 1.658488,
+          "y": 4.847742948656
+         }
+        ]
+       },
+       {
+        "dog": "d004 (dog 4)",
+        "dose_group": "high",
+        "died": 0,
+        "points": [
+         {
+          "x": -1.221849,
+          "y": 1.03,
+          "timepoint": "day_1",
+          "parasitaemia_pct": 0.05
+         },
+         {
+          "x": -0.154902,
+          "y": 1.23,
+          "timepoint": "day_2",
+          "parasitaemia_pct": 0.69
+         },
+         {
+          "x": 0.829304,
+          "y": 1.18,
+          "timepoint": "day_3",
+          "parasitaemia_pct": 6.74
+         },
+         {
+          "x": 1.543571,
+          "y": 3.05,
+          "timepoint": "day_4",
+          "parasitaemia_pct": 34.95
+         }
+        ],
+        "fit": [
+         {
+          "x": -1.221849,
+          "y": 0.73397045608
+         },
+         {
+          "x": 1.543571,
+          "y": 2.40450536968
+         }
+        ]
+       },
+       {
+        "dog": "d005 (dog 2)",
+        "dose_group": "low",
+        "died": 0,
+        "points": [
+         {
+          "x": -2.0,
+          "y": 0.57,
+          "timepoint": "day_1",
+          "parasitaemia_pct": 0.0
+         },
+         {
+          "x": -2.0,
+          "y": 1.36,
+          "timepoint": "day_2",
+          "parasitaemia_pct": 0.0
+         },
+         {
+          "x": -1.221849,
+          "y": 0.9,
+          "timepoint": "day_3",
+          "parasitaemia_pct": 0.05
+         },
+         {
+          "x": 0.673942,
+          "y": 1.31,
+          "timepoint": "day_4_1",
+          "parasitaemia_pct": 4.71
+         }
+        ],
+        "fit": [
+         {
+          "x": -2.0,
+          "y": 0.921114
+         },
+         {
+          "x": 0.673942,
+          "y": 1.273972734204
+         }
+        ]
+       }
+      ],
+      "pooled": [
+       {
+        "x": -2.0,
+        "y": 0.26759
+       },
+       {
+        "x": 1.776774,
+        "y": 3.47669598393
+       }
+      ],
+      "pooled_slope": 0.849695,
+      "matched_loads_pct": [
+       1.0,
+       5.0
+      ],
+      "footnote": "DS02, 5 B. rossi Beagles, 20 pre-treatment dog-days (days 1 to 4 and the extra low-dose day-4 sample). x = log10(parasitaemia % + 0.01); lines are per-dog OLS fits; dashed line is the pooled fit, which ignores repeated measures. Descriptive; one source; dose and dog are aliased."
+     },
+     {
+      "measure": "habitus_loss",
+      "label": "Habitus loss (4 minus score)",
+      "unit": "points",
+      "offset": 0.01,
+      "dogs": [
+       {
+        "dog": "d001 (dog 3)",
+        "dose_group": "low",
+        "died": 0,
+        "points": [
+         {
+          "x": -2.0,
+          "y": 0.0,
+          "timepoint": "day_1",
+          "parasitaemia_pct": 0.0
+         },
+         {
+          "x": -2.0,
+          "y": 0.0,
+          "timepoint": "day_2",
+          "parasitaemia_pct": 0.0
+         },
+         {
+          "x": -0.958607,
+          "y": 0.0,
+          "timepoint": "day_3",
+          "parasitaemia_pct": 0.1
+         },
+         {
+          "x": 0.664642,
+          "y": 1.0,
+          "timepoint": "day_4",
+          "parasitaemia_pct": 4.61
+         },
+         {
+          "x": 0.833784,
+          "y": 1.0,
+          "timepoint": "day_4_1",
+          "parasitaemia_pct": 6.81
+         }
+        ],
+        "fit": [
+         {
+          "x": -2.0,
+          "y": -0.092109
+         },
+         {
+          "x": 0.833784,
+          "y": 0.974076725944
+         }
+        ]
+       },
+       {
+        "dog": "d002 (dog 5)",
+        "dose_group": "high",
+        "died": 0,
+        "points": [
+         {
+          "x": -1.221849,
+          "y": 0.0,
+          "timepoint": "day_1",
+          "parasitaemia_pct": 0.05
+         },
+         {
+          "x": 0.029384,
+          "y": 1.0,
+          "timepoint": "day_2",
+          "parasitaemia_pct": 1.06
+         },
+         {
+          "x": 1.044932,
+          "y": 2.0,
+          "timepoint": "day_3",
+          "parasitaemia_pct": 11.08
+         },
+         {
+          "x": 1.776774,
+          "y": 2.0,
+          "timepoint": "day_4",
+          "parasitaemia_pct": 59.8
+         }
+        ],
+        "fit": [
+         {
+          "x": -1.221849,
+          "y": 0.08361942694000002
+         },
+         {
+          "x": 1.776774,
+          "y": 2.23045357756
+         }
+        ]
+       },
+       {
+        "dog": "d003 (dog 6)",
+        "dose_group": "high",
+        "died": 1,
+        "points": [
+         {
+          "x": -1.221849,
+          "y": 0.0,
+          "timepoint": "day_1",
+          "parasitaemia_pct": 0.05
+         },
+         {
+          "x": 0.003461,
+          "y": 0.0,
+          "timepoint": "day_2",
+          "parasitaemia_pct": 0.998
+         },
+         {
+          "x": 1.170848,
+          "y": 2.0,
+          "timepoint": "day_3",
+          "parasitaemia_pct": 14.81
+         },
+         {
+          "x": 1.658488,
+          "y": 3.0,
+          "timepoint": "day_4",
+          "parasitaemia_pct": 45.54
+         }
+        ],
+        "fit": [
+         {
+          "x": -1.221849,
+          "y": -0.4851260496579999
+         },
+         {
+          "x": 1.658488,
+          "y": 2.5911948404959997
+         }
+        ]
+       },
+       {
+        "dog": "d004 (dog 4)",
+        "dose_group": "high",
+        "died": 0,
+        "points": [
+         {
+          "x": -1.221849,
+          "y": 0.0,
+          "timepoint": "day_1",
+          "parasitaemia_pct": 0.05
+         },
+         {
+          "x": -0.154902,
+          "y": 1.0,
+          "timepoint": "day_2",
+          "parasitaemia_pct": 0.69
+         },
+         {
+          "x": 0.829304,
+          "y": 2.0,
+          "timepoint": "day_3",
+          "parasitaemia_pct": 6.74
+         },
+         {
+          "x": 1.543571,
+          "y": 2.0,
+          "timepoint": "day_4",
+          "parasitaemia_pct": 34.95
+         }
+        ],
+        "fit": [
+         {
+          "x": -1.221849,
+          "y": 0.11589376888900005
+         },
+         {
+          "x": 1.543571,
+          "y": 2.248140440269
+         }
+        ]
+       },
+       {
+        "dog": "d005 (dog 2)",
+        "dose_group": "low",
+        "died": 0,
+        "points": [
+         {
+          "x": -2.0,
+          "y": 0.0,
+          "timepoint": "day_1",
+          "parasitaemia_pct": 0.0
+         },
+         {
+          "x": -2.0,
+          "y": 0.0,
+          "timepoint": "day_2",
+          "parasitaemia_pct": 0.0
+         },
+         {
+          "x": -1.221849,
+          "y": 0.0,
+          "timepoint": "day_3",
+          "parasitaemia_pct": 0.05
+         },
+         {
+          "x": 0.499687,
+          "y": 1.0,
+          "timepoint": "day_4",
+          "parasitaemia_pct": 3.15
+         },
+         {
+          "x": 0.673942,
+          "y": 0.0,
+          "timepoint": "day_4_1",
+          "parasitaemia_pct": 4.71
+         }
+        ],
+        "fit": [
+         {
+          "x": -2.0,
+          "y": -0.025253000000000025
+         },
+         {
+          "x": 0.673942,
+          "y": 0.480742392544
+         }
+        ]
+       }
+      ],
+      "pooled": [
+       {
+        "x": -2.0,
+        "y": -0.33560500000000004
+       },
+       {
+        "x": 1.776774,
+        "y": 2.0182354045340003
+       }
+      ],
+      "pooled_slope": 0.623241,
+      "matched_loads_pct": [
+       1.0,
+       5.0
+      ],
+      "footnote": "DS02, 5 B. rossi Beagles, 22 pre-treatment dog-days (days 1 to 4 and the extra low-dose day-4 sample). x = log10(parasitaemia % + 0.01); lines are per-dog OLS fits; dashed line is the pooled fit, which ignores repeated measures. Descriptive; one source; dose and dog are aliased."
+     }
+    ]
+   }
+  },
+  {
+   "kind": "dog_slopes",
+   "title": "Per-dog slopes, matched-load damage and peak",
+   "sort_order": 3,
+   "payload": {
+    "rows": [
+     {
+      "dog": "d001 (dog 3)",
+      "original_id": "dog 3",
+      "dose_group": "low",
+      "died": 0,
+      "measure": "hct_drop",
+      "measure_label": "Haematocrit drop from baseline",
+      "unit": "L/L",
+      "n_points": 5,
+      "slope": -0.012204,
+      "ci_low": -0.039886,
+      "ci_high": 0.015478,
+      "theil_sen": -0.015011,
+      "damage_at_1pct": 0.006272,
+      "damage_at_5pct": -0.014162,
+      "peak_parasitaemia_pct": 6.81,
+      "peak_timepoint": "day_4_1",
+      "damage_at_peak": -0.03,
+      "mean_residual": 0.004528
+     },
+     {
+      "dog": "d001 (dog 3)",
+      "original_id": "dog 3",
+      "dose_group": "low",
+      "died": 0,
+      "measure": "lactate",
+      "measure_label": "Venous lactate",
+      "unit": "mmol/L",
+      "n_points": 4,
+      "slope": 0.03353,
+      "ci_low": -0.412038,
+      "ci_high": 0.479098,
+      "theil_sen": 0.03176,
+      "damage_at_1pct": 0.957126,
+      "damage_at_5pct": 1.135624,
+      "peak_parasitaemia_pct": 6.81,
+      "peak_timepoint": "day_4_1",
+      "damage_at_peak": 1.17,
+      "mean_residual": -0.090769
+     },
+     {
+      "dog": "d001 (dog 3)",
+      "original_id": "dog 3",
+      "dose_group": "low",
+      "died": 0,
+      "measure": "habitus_loss",
+      "measure_label": "Habitus loss (4 minus score)",
+      "unit": "points",
+      "n_points": 5,
+      "slope": 0.376241,
+      "ci_low": 0.150656,
+      "ci_high": 0.601827,
+      "theil_sen": 0.352885,
+      "damage_at_1pct": 0.593211,
+      "damage_at_5pct": 1.0,
+      "peak_parasitaemia_pct": 6.81,
+      "peak_timepoint": "day_4_1",
+      "damage_at_peak": 1.0,
+      "mean_residual": -0.079572
+     },
+     {
+      "dog": "d002 (dog 5)",
+      "original_id": "dog 5",
+      "dose_group": "high",
+      "died": 0,
+      "measure": "hct_drop",
+      "measure_label": "Haematocrit drop from baseline",
+      "unit": "L/L",
+      "n_points": 4,
+      "slope": 0.020131,
+      "ci_low": -0.088219,
+      "ci_high": 0.128482,
+      "theil_sen": 0.039545,
+      "damage_at_1pct": -0.023598,
+      "damage_at_5pct": 0.014611,
+      "peak_parasitaemia_pct": 59.8,
+      "peak_timepoint": "day_4",
+      "damage_at_peak": 0.105,
+      "mean_residual": 0.0135
+     },
+     {
+      "dog": "d002 (dog 5)",
+      "original_id": "dog 5",
+      "dose_group": "high",
+      "died": 0,
+      "measure": "lactate",
+      "measure_label": "Venous lactate",
+      "unit": "mmol/L",
+      "n_points": 4,
+      "slope": 1.633041,
+      "ci_low": -2.340211,
+      "ci_high": 5.606294,
+      "theil_sen": 1.363756,
+      "damage_at_1pct": 1.521372,
+      "damage_at_5pct": 1.440972,
+      "peak_parasitaemia_pct": 59.8,
+      "peak_timepoint": "day_4",
+      "damage_at_peak": 6.56,
+      "mean_residual": 0.21193
+     },
+     {
+      "dog": "d002 (dog 5)",
+      "original_id": "dog 5",
+      "dose_group": "high",
+      "died": 0,
+      "measure": "habitus_loss",
+      "measure_label": "Habitus loss (4 minus score)",
+      "unit": "points",
+      "n_points": 4,
+      "slope": 0.71594,
+      "ci_low": 0.198929,
+      "ci_high": 1.232951,
+      "theil_sen": 0.733092,
+      "damage_at_1pct": 0.97997,
+      "damage_at_5pct": 1.660189,
+      "peak_parasitaemia_pct": 59.8,
+      "peak_timepoint": "day_4",
+      "damage_at_peak": 2.0,
+      "mean_residual": 0.085271
+     },
+     {
+      "dog": "d003 (dog 6)",
+      "original_id": "dog 6",
+      "dose_group": "high",
+      "died": 1,
+      "measure": "hct_drop",
+      "measure_label": "Haematocrit drop from baseline",
+      "unit": "L/L",
+      "n_points": 4,
+      "slope": 0.085148,
+      "ci_low": -0.131583,
+      "ci_high": 0.301879,
+      "theil_sen": 0.077776,
+      "damage_at_1pct": -0.074956,
+      "damage_at_5pct": -0.039208,
+      "peak_parasitaemia_pct": 45.54,
+      "peak_timepoint": "day_4",
+      "damage_at_peak": 0.225,
+      "mean_residual": -0.01138
+     },
+     {
+      "dog": "d003 (dog 6)",
+      "original_id": "dog 6",
+      "dose_group": "high",
+      "died": 1,
+      "measure": "lactate",
+      "measure_label": "Venous lactate",
+      "unit": "mmol/L",
+      "n_points": 4,
+      "slope": 1.702362,
+      "ci_low": -3.806115,
+      "ci_high": 7.210839,
+      "theil_sen": 1.273934,
+      "damage_at_1pct": 1.200037,
+      "damage_at_5pct": 1.229826,
+      "peak_parasitaemia_pct": 45.54,
+      "peak_timepoint": "day_4",
+      "damage_at_peak": 7.5,
+      "mean_residual": 0.400816
+     },
+     {
+      "dog": "d003 (dog 6)",
+      "original_id": "dog 6",
+      "dose_group": "high",
+      "died": 1,
+      "measure": "habitus_loss",
+      "measure_label": "Habitus loss (4 minus score)",
+      "unit": "points",
+      "n_points": 4,
+      "slope": 1.068042,
+      "ci_low": -0.354559,
+      "ci_high": 2.490643,
+      "theil_sen": 1.377386,
+      "damage_at_1pct": 0.001475,
+      "damage_at_5pct": 1.193052,
+      "peak_parasitaemia_pct": 45.54,
+      "peak_timepoint": "day_4",
+      "damage_at_peak": 3.0,
+      "mean_residual": 0.088121
+     },
+     {
+      "dog": "d004 (dog 4)",
+      "original_id": "dog 4",
+      "dose_group": "high",
+      "died": 0,
+      "measure": "hct_drop",
+      "measure_label": "Haematocrit drop from baseline",
+      "unit": "L/L",
+      "n_points": 4,
+      "slope": 0.045974,
+      "ci_low": 0.013198,
+      "ci_high": 0.07875,
+      "theil_sen": 0.043635,
+      "damage_at_1pct": 0.001324,
+      "damage_at_5pct": 0.050792,
+      "peak_parasitaemia_pct": 34.95,
+      "peak_timepoint": "day_4",
+      "damage_at_peak": 0.09,
+      "mean_residual": 0.005179
+     },
+     {
+      "dog": "d004 (dog 4)",
+      "original_id": "dog 4",
+      "dose_group": "high",
+      "died": 0,
+      "measure": "lactate",
+      "measure_label": "Venous lactate",
+      "unit": "mmol/L",
+      "n_points": 4,
+      "slope": 0.60408,
+      "ci_low": -0.965752,
+      "ci_high": 2.173913,
+      "theil_sen": 0.45895,
+      "damage_at_1pct": 1.221911,
+      "damage_at_5pct": 1.186577,
+      "peak_parasitaemia_pct": 34.95,
+      "peak_timepoint": "day_4",
+      "damage_at_peak": 3.05,
+      "mean_residual": -0.556081
+     },
+     {
+      "dog": "d004 (dog 4)",
+      "original_id": "dog 4",
+      "dose_group": "high",
+      "died": 0,
+      "measure": "habitus_loss",
+      "measure_label": "Habitus loss (4 minus score)",
+      "unit": "points",
+      "n_points": 4,
+      "slope": 0.771039,
+      "ci_low": 0.168236,
+      "ci_high": 1.373842,
+      "theil_sen": 0.830236,
+      "damage_at_1pct": 1.161779,
+      "damage_at_5pct": 1.868456,
+      "peak_parasitaemia_pct": 34.95,
+      "peak_timepoint": "day_4",
+      "damage_at_peak": 2.0,
+      "mean_residual": 0.183917
+     },
+     {
+      "dog": "d005 (dog 2)",
+      "original_id": "dog 2",
+      "dose_group": "low",
+      "died": 0,
+      "measure": "hct_drop",
+      "measure_label": "Haematocrit drop from baseline",
+      "unit": "L/L",
+      "n_points": 5,
+      "slope": 0.014254,
+      "ci_low": 0.001871,
+      "ci_high": 0.026636,
+      "theil_sen": 0.016002,
+      "damage_at_1pct": -0.008632,
+      "damage_at_5pct": null,
+      "peak_parasitaemia_pct": 4.71,
+      "peak_timepoint": "day_4_1",
+      "damage_at_peak": 0.01,
+      "mean_residual": -0.010367
+     },
+     {
+      "dog": "d005 (dog 2)",
+      "original_id": "dog 2",
+      "dose_group": "low",
+      "died": 0,
+      "measure": "lactate",
+      "measure_label": "Venous lactate",
+      "unit": "mmol/L",
+      "n_points": 4,
+      "slope": 0.131962,
+      "ci_low": -0.670808,
+      "ci_high": 0.934732,
+      "theil_sen": 0.216269,
+      "damage_at_1pct": 1.165182,
+      "damage_at_5pct": null,
+      "peak_parasitaemia_pct": 4.71,
+      "peak_timepoint": "day_4_1",
+      "damage_at_peak": 1.31,
+      "mean_residual": 0.034104
+     },
+     {
+      "dog": "d005 (dog 2)",
+      "original_id": "dog 2",
+      "dose_group": "low",
+      "died": 0,
+      "measure": "habitus_loss",
+      "measure_label": "Habitus loss (4 minus score)",
+      "unit": "points",
+      "n_points": 5,
+      "slope": 0.189232,
+      "ci_low": -0.329848,
+      "ci_high": 0.708312,
+      "theil_sen": 0.0,
+      "damage_at_1pct": 0.712254,
+      "damage_at_5pct": null,
+      "peak_parasitaemia_pct": 4.71,
+      "peak_timepoint": "day_4_1",
+      "damage_at_peak": 0.0,
+      "mean_residual": -0.206274
+     }
+    ]
+   }
+  },
+  {
+   "kind": "sensitivity",
+   "title": "Sensitivity checks",
+   "sort_order": 4,
+   "payload": {
+    "rows": [
+     {
+      "check": "offset_0.001",
+      "measure": "hct_drop",
+      "measure_label": "Haematocrit drop from baseline",
+      "reading": "cannot tell",
+      "primary_reading": "cannot tell",
+      "n_dogs": 5,
+      "slope_min": -0.007849,
+      "slope_max": 0.082581,
+      "n_negative_slopes": 1
+     },
+     {
+      "check": "offset_0.001",
+      "measure": "lactate",
+      "measure_label": "Venous lactate",
+      "reading": "one shared norm",
+      "primary_reading": "one shared norm",
+      "n_dogs": 5,
+      "slope_min": 0.006907,
+      "slope_max": 1.651131,
+      "n_negative_slopes": 0
+     },
+     {
+      "check": "offset_0.001",
+      "measure": "habitus_loss",
+      "measure_label": "Habitus loss (4 minus score)",
+      "reading": "one shared norm",
+      "primary_reading": "one shared norm",
+      "n_dogs": 5,
+      "slope_min": 0.133755,
+      "slope_max": 1.037531,
+      "n_negative_slopes": 0
+     },
+     {
+      "check": "offset_0.1",
+      "measure": "hct_drop",
+      "measure_label": "Haematocrit drop from baseline",
+      "reading": "cannot tell",
+      "primary_reading": "cannot tell",
+      "n_dogs": 5,
+      "slope_min": -0.020956,
+      "slope_max": 0.10204,
+      "n_negative_slopes": 1
+     },
+     {
+      "check": "offset_0.1",
+      "measure": "lactate",
+      "measure_label": "Venous lactate",
+      "reading": "one shared norm",
+      "primary_reading": "one shared norm",
+      "n_dogs": 5,
+      "slope_min": 0.096791,
+      "slope_max": 2.040297,
+      "n_negative_slopes": 0
+     },
+     {
+      "check": "offset_0.1",
+      "measure": "habitus_loss",
+      "measure_label": "Habitus loss (4 minus score)",
+      "reading": "one shared norm",
+      "primary_reading": "one shared norm",
+      "n_dogs": 5,
+      "slope_min": 0.291443,
+      "slope_max": 1.266504,
+      "n_negative_slopes": 0
+     },
+     {
+      "check": "positive_load_only",
+      "measure": "hct_drop",
+      "measure_label": "Haematocrit drop from baseline",
+      "reading": "cannot tell",
+      "primary_reading": "cannot tell",
+      "n_dogs": 5,
+      "slope_min": -0.029223,
+      "slope_max": 0.082276,
+      "n_negative_slopes": 1
+     },
+     {
+      "check": "positive_load_only",
+      "measure": "lactate",
+      "measure_label": "Venous lactate",
+      "reading": "one shared norm",
+      "primary_reading": "one shared norm",
+      "n_dogs": 5,
+      "slope_min": 0.207695,
+      "slope_max": 1.645046,
+      "n_negative_slopes": 0
+     },
+     {
+      "check": "positive_load_only",
+      "measure": "habitus_loss",
+      "measure_label": "Habitus loss (4 minus score)",
+      "reading": "one shared norm",
+      "primary_reading": "one shared norm",
+      "n_dogs": 5,
+      "slope_min": 0.226744,
+      "slope_max": 1.0339,
+      "n_negative_slopes": 0
+     },
+     {
+      "check": "clinical_lactate",
+      "measure": "lactate",
+      "measure_label": "Venous lactate",
+      "reading": "cannot tell",
+      "primary_reading": "one shared norm",
+      "n_dogs": 5,
+      "slope_min": -0.048071,
+      "slope_max": 0.566871,
+      "n_negative_slopes": 1
+     },
+     {
+      "check": "hct_raw_value",
+      "measure": "hct_drop",
+      "measure_label": "Haematocrit drop from baseline",
+      "reading": "cannot tell",
+      "primary_reading": "cannot tell",
+      "n_dogs": 5,
+      "slope_min": -0.085148,
+      "slope_max": 0.012204,
+      "n_negative_slopes": 4
+     },
+     {
+      "check": "without_dog_that_died",
+      "measure": "hct_drop",
+      "measure_label": "Haematocrit drop from baseline",
+      "reading": "cannot tell",
+      "primary_reading": "cannot tell",
+      "n_dogs": 4,
+      "slope_min": -0.012204,
+      "slope_max": 0.045974,
+      "n_negative_slopes": 1
+     },
+     {
+      "check": "without_dog_that_died",
+      "measure": "lactate",
+      "measure_label": "Venous lactate",
+      "reading": "one shared norm",
+      "primary_reading": "one shared norm",
+      "n_dogs": 4,
+      "slope_min": 0.03353,
+      "slope_max": 1.633041,
+      "n_negative_slopes": 0
+     },
+     {
+      "check": "without_dog_that_died",
+      "measure": "habitus_loss",
+      "measure_label": "Habitus loss (4 minus score)",
+      "reading": "one shared norm",
+      "primary_reading": "one shared norm",
+      "n_dogs": 4,
+      "slope_min": 0.189232,
+      "slope_max": 0.771039,
+      "n_negative_slopes": 0
+     }
+    ]
+   }
+  },
+  {
+   "kind": "interpretation",
+   "title": "Explanation and interpretation",
+   "sort_order": 9,
+   "payload": {
+    "sections": [
+     {
+      "heading": "Question",
+      "paragraphs": [
+       "SV-02 asks whether dogs with babesiosis differ more in the damage they suffer at a given parasite load (tolerance) than in the load itself (resistance). Part b looks inside one experiment: 5 Beagles infected with B. rossi (2 low dose, 3 high dose). Does every dog lose health along the same line of damage against log parasitaemia (one shared reaction norm), or do dogs at the same load differ?"
+      ]
+     },
+     {
+      "heading": "What was done",
+      "paragraphs": [
+       "For each dog, the pre-treatment samples with a parasitaemia value (days 1 to 4, and the extra day-4 sample of the low-dose dogs; 22 dog-days) were plotted as three health measures against log10(parasitaemia % + 0.01): the drop of haematocrit from the dog's own baseline (days -1 and 0), venous lactate, and habitus loss (4 minus the daily habitus score). Each dog got an OLS slope with its 95% interval and a Theil-Sen slope, and its damage was interpolated at a common load of 1% and 5% where its series spanned that load. A reading rule written in the spec before the habitus values were opened labels each measure 'one shared norm', 'different norms' or 'cannot tell'. There is no hypothesis test.",
+       "Clarifications of the spec: when a 'different norms' criterion and the 'shared norm' criterion both hold, 'different norms' wins (it did not arise); venous lactate is analysed as measured, as the spec's variable list says, so the baseline sentence for lactate was not applied. Before the spec was written a format probe printed the 'died' value of two dogs; no habitus value was seen."
+      ]
+     },
+     {
+      "heading": "Result",
+      "paragraphs": [
+       "At a matched parasitaemia of 5% the low-dose damage lay inside the spec margin of the three high-dose Beagles: venous lactate 1.14 vs 1.19 to 1.44 mmol/L and habitus loss 1.00 vs 1.19 to 1.87 points (only 1 low-dose dog reached 5%); at 1% lactate was 0.96 to 1.17 vs 1.20 to 1.52 mmol/L. The groups differed in how far load rose before treatment (peak 6.81% low dose vs 35.0 to 59.8% high dose), not in damage per parasite.",
+       "Readings: venous lactate 'one shared norm', habitus 'one shared norm', haematocrit 'cannot tell'. Haematocrit cannot be read because the slopes do not share a sign: low-dose d001 (dog 3) has slope -0.012 L/L per log10 unit, the other dogs 0.014 to 0.085. Haematocrit fell only at loads the low-dose dogs never reached before treatment. Only 1 low-dose dog reached 5%; the other peaked at 4.71%.",
+       "So the result does not meet the spec's rule for counting against the hypothesis: 2 of 3 measures read 'one shared norm', 1 'cannot tell' and 0 'different norms'; no measure shows different norms. In these 5 dogs damage followed load; nothing here suggests that one dog tolerated a given load better than another at the loads where they overlap. The low-dose values sit at or just below the low end of the high-dose range; if that is real, it points to dose or time since inoculation, not to a dog that tolerates more.",
+       "The dog that died (d003 (dog 6), high dose) had the most damage at its peak load of 45.5%: haematocrit drop 0.225 L/L, lactate 7.50 mmol/L and habitus loss 3, against 0.090 to 0.105 L/L, 3.05 to 6.56 mmol/L and 2.00 in the other high-dose dogs at peaks of 35.0 to 59.8%. Its mean residual from the pooled line was not twice that of every other dog, so the spec's rule does not call it a different norm. It is one dog on one day, and it was not treated.",
+       "Sensitivity: 13 of 14 checks (other offsets, positive loads only, clinical lactate, raw haematocrit, leaving out the dog that died) give the same reading as the primary analysis."
+      ]
+     },
+     {
+      "heading": "What this does not show",
+      "paragraphs": [
+       "Five dogs from one experiment (1 independent source) cannot measure how much dogs differ in tolerance, and the per-dog intervals have 1 or 2 residual degrees of freedom. Dose and dog are aliased, and at a matched load a high-dose dog is about one day earlier after inoculation than a low-dose dog. Treatment at about 96 h (high dose) and 108 h (low dose) cut the low-dose series at 5 to 7% parasitaemia, so the norms overlap only at low loads, where there was little damage to compare. Error in a single smear flattens slopes; peripheral parasitaemia may understate sequestered parasites. The damage-load relation is not linear in log load (flat, then a rise above about 10%), so the slopes are rough summaries; the matched-load values carry the reading. Nothing here applies to natural infection, other species, or the DS03 and DS06 files, which hold the same dogs."
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

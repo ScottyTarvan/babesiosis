@@ -1,0 +1,20 @@
+{
+  "id": "CB356",
+  "text_used": "data/markdown/CB356.md",
+  "extracted_by": "claude-opus-5-5 SV-G2 blind second extraction S1",
+  "extracted_utc": "2026-11-12T05:26:52Z",
+  "schema_version": "v2",
+  "setting": "referral hospital",
+  "sample_timing": "mixed",
+  "skipped_infected_vs_healthy": 13,
+  "article_notes": "Nothing extracted. 14 hospitalised dogs with smear-diagnosed babesiosis (B. canis rossi implied; Onderstepoort OVAH) vs 9 healthy Beagle controls. All tests compare infected with healthy dogs: body weight, 10 arterial blood gas variables (Mann-Whitney), radiographic and adapted PISA-PED scintigraphic classes (Fisher); counted as infected vs healthy. Infected dogs were classed as severe uncomplicated (4), complicated (9: icterus 7, IMHA 1, haemoconcentration 1) or unclassifiable (1), and one dog died, but no result is compared between these groups. Blood gases and scintigrams were taken after admission and usually after blood transfusion and antibabesial treatment (timing relative to treatment varies).",
+  "not_extracted": [
+    {
+      "what": "Radiographic and scintigraphic class by severity class (complicated vs severe uncomplicated) and in the one non-survivor",
+      "reason": "no per-group result",
+      "note": "Per-dog classes are in Table 3 and the severity class of each dog is in the Results text, but the authors give no per-group summary or test; counts would have to be derived."
+    }
+  ],
+  "severity_definitions": [],
+  "associations": []
+}

@@ -1,0 +1,88 @@
+:host {
+  display: block;
+}
+
+.fs-experiment-data-layer {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.fs-experiment-data-layer__totals {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: var(--fs-guide-space-3);
+  margin: 0 0 var(--fs-guide-space-4);
+
+  div {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  dt {
+    font-size: 11px;
+    font-weight: 500;
+    color: rgb(var(--fs-color-ink-soft));
+  }
+
+  dd {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 600;
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+.fs-experiment-data-layer__heatmap {
+  min-width: 0;
+  overflow-x: auto;
+}
+
+.fs-experiment-data-layer__footnote {
+  margin: var(--fs-guide-space-2) 0 0;
+  font-size: 11px;
+  line-height: 1.4;
+  color: rgb(var(--fs-color-ink-soft));
+}
+
+.fs-experiment-data-layer__list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--fs-guide-space-2);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 13px;
+  line-height: 1.45;
+
+  fs-badge {
+    margin-right: 4px;
+  }
+}
+
+.fs-experiment-data-layer__subhead {
+  margin: var(--fs-guide-space-4) 0 var(--fs-guide-space-2);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.fs-experiment-data-layer__pre {
+  max-height: 320px;
+  margin: 0;
+  padding: var(--fs-guide-space-3);
+  overflow: auto;
+  font-size: 11px;
+  line-height: 1.4;
+  white-space: pre-wrap;
+  border-radius: 4px;
+  background: rgb(var(--fs-color-fill-subtle));
+  color: rgb(var(--fs-color-ink));
+}
+
+// The heatmap tooltip is rendered by Apex outside this component's view.
+:host ::ng-deep .fs-experiment-data-layer__tip {
+  padding: 6px 8px;
+  font-size: 12px;
+  line-height: 1.4;
+}

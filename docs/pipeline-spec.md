@@ -1,51 +1,8 @@
----
-title: "Canine babesiosis pathophysiology review: article acquisition and processing pipeline"
-doc_type: technical_specification
-status: work_to_date
-review_window: { start: 2006-10-23, end: 2026-10-23 }
-search_runs:
-  - { rounds: [r1, r2, r3], date: 2026-10-23, window: [2016-10-23, 2026-10-23] }
-  - { rounds: [r4], date: 2026-10-27, window: [2006-10-23, 2016-10-22] }
-counts_taken: 2026-11-04
-counts_source: structured files in core/
-companion: pipeline-spec.html
-paths: relative to core/ unless stated
----
+# Pipeline specification: article acquisition and processing
 
-# Canine babesiosis pathophysiology review: article acquisition and processing pipeline
+Stages S1–S16 in run order, with the criteria and the counts of each. Paths are relative to `core/`. Counts were taken on 2026-11-04 from the structured files. Each stage is `script` (deterministic Python) or `agent` (LLM agents, not deterministic). Grep for a stage heading (`## S4.`); do not read the whole file.
 
-## Reading notes for agents
-
-- **Paths:** all paths are relative to `core/` unless stated.
-- **Counts:** taken on 2026-11-04 from the structured files. Where a count could not be checked, the text says so.
-- **Source of truth:** structured files (`articles.jsonl`, `datasets.jsonl`, `cohorts.json`, `ids.json`). Do not count or filter from the rendered reports (`index.md`, `datasets.md`, `research-map.md`, `search-log.md`).
-- **Stage IDs:** S1–S16 are in run order. Each stage is tagged `script` (deterministic Python), `agent` (LLM agents, not deterministic) or both.
-- **ID prefixes:** `CB` = included canine article, `HU` = human comparator, `BG` = background paper. Cohort IDs are `CH01`–`CH38`.
-
-## Contents
-
-- [0. Scope and status](#0-scope-and-status)
-- [Pipeline overview](#pipeline-overview)
-- [S1. Database search](#s1-database-search)
-- [S2. Supplementary discovery](#s2-supplementary-discovery)
-- [S3. Merge and deduplication](#s3-merge-and-deduplication)
-- [S4. Title/abstract screening](#s4-titleabstract-screening)
-- [S5. Stable IDs and extraction packets](#s5-stable-ids-and-extraction-packets)
-- [S6. Full-text retrieval](#s6-full-text-retrieval)
-- [S7. Markdown conversion](#s7-markdown-conversion)
-- [S8. Translation](#s8-translation)
-- [S9. Extraction, appraisal and retirement](#s9-extraction-appraisal-and-retirement)
-- [S10. Cohort linkage](#s10-cohort-linkage)
-- [S11. Dataset discovery, download and assessment](#s11-dataset-discovery-download-and-assessment)
-- [S12. NLP concept extraction](#s12-nlp-concept-extraction)
-- [S13. Article categorisation](#s13-article-categorisation)
-- [S14. Marker–severity associations](#s14-markerseverity-associations)
-- [S15. Synthesis and reports](#s15-synthesis-and-reports)
-- [S16. Database load and semantic search](#s16-database-load-and-semantic-search)
-- [Data products](#data-products)
-- [Limitations and open items](#limitations-and-open-items)
-
----
+Not repeated here: ID schemes, category codes and dataset status codes ([ids-and-codes.md](ids-and-codes.md)); field lists ([core-tables.md](core-tables.md)); the database ([database.md](database.md)); script options (`scripts/README.md`).
 
 ## 0. Scope and status
 
@@ -54,39 +11,6 @@ The work is a **rapid scoping review** of the pathophysiology of canine babesios
 The review is not an exhaustive systematic review. Screening and extraction were done by LLM agents against written criteria, with a second-screener check. There was no duplicate human screening and no formal risk-of-bias assessment.
 
 The window was searched in two parts: rounds 1–3 cover 2016-10-23 to 2026-10-23, and round 4 covers 2006-10-23 to 2016-10-22. All four rounds are complete: searched, screened, extracted, cohort-linked, mapped to datasets, run through the NLP and synthesised.
-
-### Key figures
-
-| Metric | Value |
-|---|---:|
-| Candidate records screened (4 rounds) | 3,028 |
-| Passed to extraction | 540 |
-| Canine articles included (CB) | 444 |
-| Supporting papers | 37 (27 HU, 10 BG) |
-| Full texts retrieved and converted (all 481 live articles) | 251 |
-| Full texts retrieved for CB articles | 230 of 444 (52%) |
-| Dataset records | 57 |
-| Dataset files downloaded | 92 |
-| Shared-cohort groups | 38 |
-| Pathophysiology categories | 11 |
-
-### Category codes
-
-| Code | Category |
-|---|---|
-| `ERY` | Erythrocyte injury, haemolysis, anaemia, immune-mediated processes |
-| `INF` | Inflammation, innate and adaptive immunity, immunopathology |
-| `END` | Endothelium, microcirculation, perfusion, tissue hypoxia |
-| `COA` | Coagulation, platelets, immunothrombosis, DIC |
-| `REN` | Renal injury and renal function |
-| `PUL` | Pulmonary injury and gas exchange |
-| `CAR` | Cardiac injury and haemodynamics |
-| `MET` | Hepatic, metabolic, endocrine and acid–base disturbances |
-| `OXO` | Oxidative stress, host–parasite interaction, omics, virulence |
-| `SEV` | Multisystem clinical phenotype, severity and outcome |
-| `NEU` | Neurological and cerebral disease |
-
----
 
 ## Pipeline overview
 
@@ -445,25 +369,7 @@ Each article that passed screening goes through a three-step pipeline. Round 4 f
 
 `scripts/retire_ids.py` then retires every `exclude_fulltext` and `unverifiable` ID in `ids.json` with the reason (cut to 300 characters).
 
-### Record fields (groups)
-
-| Group | Fields |
-|---|---|
-| Bibliographic | `title`, `authors[]`, `journal`, `volume_issue_pages`, `doi`, `pmid`, `pmcid`, `language`, `corrections` |
-| Dates | `first_pub_date`, `online_date`, `issue_date`, `date_note` |
-| Study | `species[]` `{name, status, method}` (status `confirmed` / `suspected` / `mixed` / `unspecified`), `host`, `country`, `design`, `sample_size`, `n_infected_dogs`, `n_controls` |
-| Appraisal | `evidence_type` (descriptive, associational, prognostic, mechanistic (experimental), review), `one_sentence_finding`, agent `primary_category` and `secondary_tags` |
-| Data leads | `data_availability_statement`, `dataset_leads[]`, `supplement_checked`, `repository_checked` |
-| Cohort | `cohort_description`, `related_publications[]` (inputs to S10) |
-| Provenance | `source_links[]`, `access_date`, `verification_notes` |
-
-The **appraisal note** has a metadata table, then these sections:
-
-- *Abstract-derived summary*
-- *Critical interpretation* (evidence type, authors' conclusion, reviewer interpretation, key limitations)
-- *Evidence basis*
-
-Most notes are abstract-level appraisals, not risk-of-bias assessments.
+The record fields are listed in [core-tables.md](core-tables.md). `dataset_leads[]`, `cohort_description` and `related_publications[]` (inputs to S10 and S11) stay in `search/extraction_records.jsonl`. `evidence_type` is one of descriptive, associational, prognostic, mechanistic (experimental) or review. Most notes are abstract-level appraisals, not risk-of-bias assessments.
 
 ### Included articles
 
@@ -539,17 +445,7 @@ Download criteria:
   They also recorded granularity, n, groups, time points, features, outcomes, missingness, suitable questions and limitations.
 - `scripts/build_datasets.py` and `render_datasets.py` assign priority ranks and independent-source groups (`SRC-A` to `SRC-O`; records with the same letter share animals), then write `datasets.jsonl` and `datasets.md`.
 
-### Status scale
-
-| Code | Meaning | Dataset records | CB articles |
-|---|---|---:|---:|
-| 1 | Public download verified | 35 | 32 |
-| 2 | Public record verified; file retrieval unverified | 12 | 1 |
-| 3 | Request-only or controlled access | 10 | 10 |
-| 4 | Not located after documented checks | — | 210 |
-| 5 | Not assessed or access blocked (no full text) | — | 191 |
-
-Of the 35 status-1 records, 21 hold dog-level or sample-level data from 15 independent sources. The other 14 hold summary statistics or protein lists only. Every verified dataset is small for its number of features, so `datasets.md` advises against predictive ML.
+Status codes 1–5 are defined in [ids-and-codes.md](ids-and-codes.md#dataset-status-codes). CB articles by code: 1 = 32, 2 = 1, 3 = 10, 4 = 210, 5 = 191.
 
 ---
 
@@ -586,14 +482,7 @@ Of the 35 status-1 records, 21 hold dog-level or sample-level data from 15 indep
 
 ### Outputs
 
-| Output | Rows | Grain |
-|---|---:|---|
-| `data/syndromes/mentions.jsonl` | 239,733 | One per mention: section, sentence, mention, abbreviation, CUI, score, negation |
-| `data/syndromes/article_concepts.csv` | 20,745 | Article × concept; `in_results_or_case` = studied, not only mentioned |
-| `data/syndromes/concept_summary.csv` | 4,243 | One per CUI, article counts split by full text and abstract only |
-| `data/terms/<ID>.json` | 481 files | Per-article terms: mentions, negated and affirmed counts, sections, surface forms, best score. 1,215 distinct concepts, 35,408 mentions, median 14 terms per article (run 2026-10-30) |
-
-> **Checkout note.** The `data/syndromes/` folder is not in this checkout (`C:\Workspaces\Babesiosis\core`). Its row counts above are taken from `core/CLAUDE.md` (counted 2026-10-28) and were not re-counted. The `data/terms/` figures were counted on 2026-11-04.
+`data/syndromes/` (`mentions.jsonl`, `article_concepts.csv`, `concept_summary.csv`) and `data/terms/<ID>.json`; the files are described in [nlp-and-severity.md](nlp-and-severity.md). The `data/terms/` run of 2026-10-30 has 1,215 distinct concepts, 35,408 mentions and a median of 14 terms per article. `data/syndromes/` is not in every checkout; its counts were last taken on 2026-10-28.
 
 ---
 
@@ -643,32 +532,9 @@ The review's categories come from the NLP, with no human review (since 2026-10-2
    - Mentioned: other categories with studied + mentioned ≥ `MENTIONED_MIN` = 4.0.
 6. **Study aim:** keyword rules on the title, then the abstract's objective sentence. The codes are PREV, DIAG, BIOM, CLIN, CASE, TRT, PREVN, EXP, MOL and REV.
 
-### Parameters
+### Result
 
-| Constant | Value |
-|---|---:|
-| UMLS linker threshold (S12) | 0.85 |
-| `MIN_LINK` | 0.9 |
-| `MARGIN` | 1.5 |
-| `SEV_SPREAD` | 0.6 |
-| `SECONDARY` | 0.35 |
-| `MENTIONED_MIN` | 4.0 |
-
-### Result (444 CB articles, primary category)
-
-| Category | Articles |
-|---|---:|
-| ERY | 96 |
-| INF | 91 |
-| SEV | 59 |
-| MET | 50 |
-| COA | 40 |
-| REN | 40 |
-| OXO | 21 |
-| CAR | 18 |
-| END | 14 |
-| NEU | 8 |
-| PUL | 7 |
+The primary-category distribution of the 444 CB articles is in [nlp-and-severity.md](nlp-and-severity.md#categories).
 
 - NLP category: 428 articles (284 high confidence, 144 low). Agent fallback (NLP found no category): 16.
 - The NLP and the agents agree on the primary category for 238 of 444 articles (54%). Neither is a gold standard.
@@ -724,13 +590,7 @@ Which markers were tested against clinical severity or outcome, and with what re
 - `scripts/build_search_log.py` writes `search-log.md`; `build_outputs.py` writes `articles.jsonl` and `index.md`.
 - `scripts/validate.py` checks syntax, duplicate IDs, scope labels, links and anchors, category totals, dataset-status consistency, checksums and absolute paths.
 
-Rebuild sequence:
-
-```bash
-python -I scripts/build_datasets.py && python -I scripts/render_datasets.py && python -I scripts/build_outputs.py \
- && python -I scripts/export_article_terms.py && python -I scripts/assemble_research_map.py \
- && python -I scripts/build_search_log.py && python -I scripts/validate.py
-```
+The rebuild sequence is at the end of `scripts/README.md`.
 
 ---
 
@@ -738,34 +598,11 @@ python -I scripts/build_datasets.py && python -I scripts/render_datasets.py && p
 
 **Type:** script
 
-| Item | Value |
-|---|---|
-| Loader | `console/Babesiosis.Console` (.NET), `dotnet run -- --dry-run`, then `dotnet run` |
-| Inputs | `articles.jsonl` and the `articles/*.md` notes. The database holds articles only: no datasets, NLP concepts or full texts |
-| Schema | `dbo.category` (11 codes); `dbo.article` (note sections split into columns, JSON columns, `embedding VECTOR(1536)`); `dbo.article_category` (secondary and comparator tags) |
+`console/Babesiosis.Console` (.NET) loads the articles, notes, article text, terms, tidy datasets and experiments into SQL Server. Tables, search procedures and loader flags are in [database.md](database.md).
 
-- **Embeddings:** Azure OpenAI `text-embedding-3-small`, 1,536 dimensions. The text embedded is title, one-sentence finding, summary, authors' conclusion, interpretation, limitations and relevance.
-- **Change detection:** content hash = SHA-256(model + embedding text). Only new or changed articles are embedded again; a changed article that is not re-embedded has its stale vector cleared.
-- **Search:** `EXEC dbo.search_articles @question, @top, @category_code, @from_year, @to_year, @max_distance`, by cosine distance. A distance under about 0.6 is usually on topic.
-- The database is only as current as the last loader run. If it disagrees with `articles.jsonl`, the file is correct. *Row counts were not checked against the file for this document.*
-
----
-
-## Data products
-
-| File | Rows | Use |
-|---|---:|---|
-| `articles.jsonl` | 481 | Main article table: CB 444, HU 27, BG 10 |
-| `articles/<ID>_*.md` | 481 | Appraisal note per article |
-| `datasets.jsonl` | 57 | Main dataset table, with status, scores and limitations |
-| `cohorts.json` | 38 | Shared-animal groups |
-| `ids.json` | 584 | Source key → ID registry (103 retired) |
-| `data/fulltext_status.jsonl` | 547 | Retrieval state (481 live and 66 retired IDs) |
-| `data/markdown_report.jsonl` | 540 | Conversion front matter as a table |
-| `data/manifest.jsonl` | 92 | Downloaded dataset files with SHA-256 |
-| `data/terms/<ID>.json` | 481 | Per-article disorder terms |
-| `data/severity/associations.csv` | 275 | Marker–severity rows (pilot, 10 articles) |
-| `index.md`, `datasets.md`, `research-map.md`, `search-log.md` | — | Rendered reports. Do not count or filter from them |
+- **Embeddings:** Azure OpenAI `text-embedding-3-small`, 1,536 dimensions. For an article, the text embedded is title, one-sentence finding, summary, authors' conclusion, interpretation, limitations and relevance.
+- **Change detection:** content hash = SHA-256(model + embedding text). Only new or changed rows are embedded again; a changed row that is not re-embedded has its stale vector cleared.
+- If the database disagrees with `articles.jsonl`, the file is correct.
 
 ---
 
@@ -786,13 +623,5 @@ python -I scripts/build_datasets.py && python -I scripts/render_datasets.py && p
 | Item | State |
 |---|---|
 | Severity association extraction for the 196-article shortlist | Pilot only (10 articles) |
-| `data/syndromes/` outputs (mentions, concepts, category map) | Missing from this checkout; `articles.jsonl` categories were built from them on 2026-10-28 |
 | 61 unresolved records (23 from r1–3, 38 from r4) | Listed in `search-log.md`; not counted |
-| Database row counts against `articles.jsonl` | Not checked for this document |
 | Status 2 and 3 datasets (22 records) | File retrieval unverified or request-only; not pursued |
-
----
-
-## Sources
-
-`core/CLAUDE.md`, `core/scripts/README.md`, `core/search-log.md`, `core/search/r4/screening_criteria.md`, `core/search/r4/EXTRACTION_GUIDE.md`, `core/search/r4/PIPELINE.md`, script docstrings and constants, and the structured files (re-counted 2026-11-04). The counts reflect the files at that date.

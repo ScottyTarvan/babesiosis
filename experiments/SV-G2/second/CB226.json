@@ -1,0 +1,20 @@
+{
+  "id": "CB226",
+  "text_used": "data/markdown/CB226.en.md",
+  "extracted_by": "claude-opus-5-5 SV-G2 second extraction S2",
+  "extracted_utc": "2026-11-12T00:00:00Z",
+  "schema_version": "v2",
+  "setting": "primary clinic",
+  "sample_timing": "not stated",
+  "article_notes": "Descriptive Ukrainian clinic series of 36 dogs with babesiosis (B. canis named in the introduction, smear diagnosis). Only frequencies of clinical signs and whole-group mean laboratory values are reported; no grouping by severity or outcome and no statistical comparison. A single qualitative remark that eosinophilia occurs in a severe course has no numbers or group sizes. Nothing extractable against severity. English text is an LLM translation from Ukrainian.",
+  "skipped_infected_vs_healthy": 0,
+  "severity_definitions": [],
+  "associations": [],
+  "not_extracted": [
+    {
+      "what": "Statement that eosinophilia develops in a severe course (and leucopenia in a chronic course)",
+      "reason": "no per-group result",
+      "note": "Qualitative remark only; no severity groups, counts or values."
+    }
+  ]
+}

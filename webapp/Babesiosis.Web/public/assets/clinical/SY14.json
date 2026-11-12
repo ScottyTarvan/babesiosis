@@ -1,0 +1,752 @@
+{
+  "schema_version": 1,
+  "id": "SY14",
+  "title": "Haemoconcentration (\"red biliary\")",
+  "updated": "2026-11-12",
+  "definition": "Haemoconcentration (\"red biliary\") is a haematocrit that is high, or within the reference interval but too high for the degree of haemolysis, in a dog with intravascular haemolysis (haemoglobinuria or haemoglobinaemia) [R1][R2]. It is a rare complication, described almost only in B. rossi infection, with a high mortality [R3][R4].",
+  "definition_note": "Working definition confirmed in substance, with three changes. No single threshold exists: 0.37, 0.47 and 0.55 L/L are all in use [R2][R1][R3]. A 'normal' haematocrit that is inappropriate for the haemolysis is included [R1]. The sources link it mainly to acute kidney injury and cerebral signs; a direct link with lung oedema was not documented in any study [R1][R5].",
+  "key_points": [
+    "Suspect it in any dog with haemoglobinuria whose haematocrit is high or normal; a haematocrit above 0.55 L/L gave an odds ratio for death of 32.7 in 320 B. rossi dogs [R3].",
+    "It is rare: 4 of 320 dogs (1.3%) in the largest B. rossi cohort and 3 of 35 in another [R3][R2].",
+    "It is thought to be plasma loss through leaky endothelium, not simple dehydration, and it comes with organ failure, mainly kidney and brain [R3][R1][R5].",
+    "No treatment was ever tested in haemoconcentrated dogs; all fluid advice on this page is level D or E [R6][R7].",
+    "In human severe malaria, liberal fluid loading did not correct acidosis or kidney function and was followed by lung oedema; give fluids in small boluses and reassess after each [R8][R9][R7].",
+    "Reported mortality is above 30% in referral data and usually above 80% in a practitioner survey [R4][R10]."
+  ],
+  "description": [
+    {
+      "heading": "What it is",
+      "text": "A dog with obvious intravascular haemolysis whose haematocrit is above the reference interval, or normal when it should be low [R1][R2]. South African practitioners call it 'red' biliary [R10]. Reviews class it as a complication of complicated babesiosis, beside acute kidney injury, cerebral babesiosis and ARDS [R1][R5][R11]."
+    },
+    {
+      "heading": "How common, and in which dogs",
+      "text": "In a 1993 survey, 94 of 155 South African practices (60.6%) had seen 'red' biliary [R10]. In a hospital series of 662 B. rossi cases, 18% of hospitalised dogs were not anaemic and were often polycythaemic [R12]. In recent Onderstepoort cohorts it was 4 of 320 dogs (1.3%) and 3 of 35 dogs [R3][R2]. It was present in 2 of 20 dogs with babesial pancreatitis [R13]. Practitioners linked it to Staffordshire bull terriers, an unverified observation [R10]."
+    },
+    {
+      "heading": "When in the course of disease",
+      "text": "In the cohorts it was found at admission, in samples taken before any treatment [R3][R2]. An experimental B. rossi infection model used it as a criterion to stop the experiment and treat [R14]."
+    },
+    {
+      "heading": "Mechanism",
+      "text": "The cause is not known. The 320-dog cohort found that it was not explained by significant dehydration, that it always came with multiple organ failure, and proposed plasma loss through an excessively permeable endothelium [R3]. Reviews describe vasculitis and a shift of fluid from the vessels to the tissues [R1][R5]. Non-anaemic dogs had severe azotaemia, electrolyte changes and a weak leucocyte response, which the authors read as an overwhelming inflammatory response rather than haemolytic disease [R12]."
+    }
+  ],
+  "species_notes": [
+    {
+      "species": "B. rossi",
+      "note": "All primary data on this page are from B. rossi in South Africa [R3][R2][R12][R15]. A review that compares the Babesia species of dogs describes it as a rare form of B. rossi disease with a very poor prognosis [R16]. South African papers before about 2006 name the parasite B. canis; B. rossi is inferred from the place."
+    },
+    {
+      "species": "B. canis",
+      "note": "A European review lists haemoconcentration among complications and attributes such complications mainly to B. rossi [R17]. No B. canis case series with haemoconcentration was found."
+    },
+    {
+      "species": "B. gibsoni, B. vogeli",
+      "note": "No report of the syndrome was found."
+    }
+  ],
+  "diagnosis": {
+    "criteria": [
+      {
+        "criterion": "Haematocrit with intravascular haemolysis",
+        "threshold": "above 0.55 L/L (55%)",
+        "basis": "babesiosis",
+        "note": "Highest Hct category in 320 B. rossi dogs (3 of 4 died); same cut-off used in an experimental B. rossi model as an end point.",
+        "refs": [
+          "R3",
+          "R14"
+        ]
+      },
+      {
+        "criterion": "Haematocrit with severe haemolysis",
+        "threshold": "above 0.47 L/L (47%)",
+        "basis": "babesiosis",
+        "note": "Threshold given in a review of complicated babesiosis; no study behind the number was cited.",
+        "refs": [
+          "R1"
+        ]
+      },
+      {
+        "criterion": "Haematocrit with macroscopic haemoglobinuria or haemoglobinaemia",
+        "threshold": "above 0.37 L/L (37%)",
+        "basis": "babesiosis",
+        "note": "Definition used in a prospective study of 35 B. rossi dogs; 3 met it at admission.",
+        "refs": [
+          "R2"
+        ]
+      },
+      {
+        "criterion": "Haematocrit inappropriate for the haemolysis",
+        "threshold": "within the reference interval despite obvious haemolysis",
+        "basis": "babesiosis",
+        "note": "Described in a review as carrying a very high mortality; no number is given, so this is a clinical judgement.",
+        "refs": [
+          "R1"
+        ]
+      }
+    ],
+    "clinical_signs": [
+      {
+        "sign": "Red-brown urine or pink plasma",
+        "note": "Macroscopic haemoglobinuria or haemoglobinaemia is part of the definition.",
+        "refs": [
+          "R2"
+        ]
+      },
+      {
+        "sign": "Neurological signs, oliguria or anuria, dyspnoea",
+        "note": "Signs of the organ failures that accompany it: cerebral babesiosis, acute kidney injury, lung injury.",
+        "refs": [
+          "R1",
+          "R18",
+          "R5"
+        ]
+      },
+      {
+        "sign": "Collapse",
+        "note": "Collapse at admission gave an odds ratio for death of 8.36 in B. rossi; not reported separately for haemoconcentrated dogs.",
+        "refs": [
+          "R3"
+        ]
+      }
+    ],
+    "tests": [
+      {
+        "test": "Packed cell volume (microhaematocrit) at admission",
+        "finding": "High, or normal in a dog with haemoglobinuria.",
+        "note": "Take it before fluids or transfusion. In 19 treated uncomplicated cases the Hct fell in every dog, by a mean maximum of 0.046 L/L, most often at 6 or 12 h.",
+        "refs": [
+          "R3",
+          "R19"
+        ]
+      },
+      {
+        "test": "Urine and plasma colour",
+        "finding": "Haemoglobinuria, haemoglobinaemia.",
+        "note": "Confirms intravascular haemolysis.",
+        "refs": [
+          "R2"
+        ]
+      },
+      {
+        "test": "Serum creatinine and urine specific gravity",
+        "finding": "Creatinine above 150 µmol/L without clinical dehydration marked renal involvement in one series; USG of 1.030 or more was read as prerenal azotaemia in another.",
+        "note": "Serum urea is raised in many B. rossi dogs for non-renal reasons; do not use it to diagnose kidney failure.",
+        "refs": [
+          "R18",
+          "R2",
+          "R15"
+        ]
+      },
+      {
+        "test": "Blood glucose and neurological examination",
+        "finding": "Cerebral babesiosis was defined as acute cerebral signs with normal or high glucose.",
+        "note": "Rules out hypoglycaemia as the cause of neurological signs.",
+        "refs": [
+          "R3"
+        ]
+      },
+      {
+        "test": "Arterial blood gas or pulse oximetry, thoracic radiographs",
+        "finding": "PaO2 below 60 mmHg, or A-a gradient above 15 mmHg on room air, or radiographic oedema, marked lung involvement.",
+        "note": "Arterial gas needs referral equipment.",
+        "refs": [
+          "R18"
+        ]
+      }
+    ],
+    "differentials": [
+      {
+        "condition": "Dehydration from vomiting, diarrhoea or poor intake",
+        "distinguish": "History of fluid loss. In B. rossi the haemoconcentration was not explained by significant dehydration. Concentrated urine (USG 1.030 or more) fits a prerenal cause.",
+        "refs": [
+          "R3",
+          "R2"
+        ]
+      },
+      {
+        "condition": "Early or uncomplicated babesiosis before the anaemia shows",
+        "distinguish": "No organ failure; the haematocrit falls after treatment. A normal haematocrit with marked haemoglobinuria is not reassuring.",
+        "refs": [
+          "R19",
+          "R1"
+        ]
+      },
+      {
+        "condition": "Acute pancreatitis with gut fluid loss (SY12)",
+        "distinguish": "Vomiting, abdominal pain; it can occur together with haemoconcentration.",
+        "refs": [
+          "R13"
+        ]
+      },
+      {
+        "condition": "Cerebral babesiosis, acute kidney injury, ARDS",
+        "distinguish": "These are companions of haemoconcentration, not alternatives: look for them in every haemoconcentrated dog.",
+        "refs": [
+          "R1",
+          "R18"
+        ]
+      }
+    ],
+    "grading": []
+  },
+  "approach": [
+    {
+      "step": 1,
+      "action": "Measure PCV and look at urine and plasma",
+      "detail": "Do it on arrival, before fluids. A high PCV, or a normal PCV with haemoglobinuria, means haemoconcentration [R1][R2].",
+      "setting": "practice"
+    },
+    {
+      "step": 2,
+      "action": "Look for organ failure",
+      "detail": "Check mentation, glucose, creatinine, urine output, USG, respiratory rate and SpO2. Haemoconcentration came with organ failure in every case of the large cohort [R3][R18].",
+      "setting": "practice"
+    },
+    {
+      "step": 3,
+      "action": "Give the antibabesial drug",
+      "detail": "Standard antibabesial treatment, as in TX00. The cohort dogs received diminazene aceturate [R3].",
+      "setting": "practice"
+    },
+    {
+      "step": 4,
+      "action": "Give fluids in small boluses and reassess",
+      "detail": "Isotonic crystalloid, starting with about one quarter of a shock volume, then reassess heart rate, CRT and blood pressure after each bolus [R7]. Avoid liberal loading: in human malaria it was followed by lung oedema [R8].",
+      "setting": "practice"
+    },
+    {
+      "step": 5,
+      "action": "Watch for fluid overload and falling urine output",
+      "detail": "Respiratory rate and effort, lung sounds, body weight, urine output and PCV. If a central line is in place, a CVP above 10 cmH2O suggests volume overload [R7].",
+      "setting": "practice"
+    },
+    {
+      "step": 6,
+      "action": "Refer early for intensive care",
+      "detail": "Reviews describe these dogs as needing early, aggressive and intensive therapy; some need assisted ventilation [R11][R5].",
+      "setting": "referral"
+    }
+  ],
+  "treatments": [
+    {
+      "name": "Isotonic crystalloid in small titrated boluses",
+      "class": "supportive",
+      "aim": "Restore perfusion without adding to fluid leak into lungs and brain.",
+      "status": "proposed",
+      "evidence_level": "E",
+      "independent_studies": 0,
+      "evidence_summary": "No study tested fluids in haemoconcentrated dogs. A review recommends crystalloid and colloid support for complicated babesiosis [R5]. An older review discusses the problems of fluids in dogs with oliguria, cerebral signs or lung oedema [R6]. In a 1993 survey, 44% of South African practices used Ringer's lactate in complicated cases [R10]. The dose below is a general emergency textbook rule, not tested in babesiosis [R7].",
+      "doses": [
+        {
+          "drug": "isotonic crystalloid",
+          "dose": "one quarter of the shock volume (shock volume 90 mL/kg)",
+          "route": "IV",
+          "frequency": "initial volume, then titrate to response",
+          "duration": "",
+          "context": "Dogs in hypovolaemic or haemorrhagic shock; emergency textbook, not babesiosis",
+          "note": "Reassess heart rate, CRT and blood pressure after each bolus. No source gives a rate for haemoconcentrated dogs.",
+          "refs": [
+            "R7"
+          ]
+        }
+      ],
+      "cautions": "Fluid loading can worsen lung oedema when vessels leak [R8][R9]. In complicated babesiosis with acute kidney injury or ARDS, volume expansion may be harmful [R5].",
+      "monitoring": "Heart rate, CRT, blood pressure, urine output and PCV after each bolus. CVP should not rise by more than 5 cmH2O in 24 h [R7].",
+      "availability": "",
+      "refs": [
+        "R10",
+        "R5",
+        "R6",
+        "R7",
+        "R8",
+        "R9"
+      ]
+    },
+    {
+      "name": "Hypertonic saline",
+      "class": "supportive",
+      "aim": "Expand plasma volume with a small volume of fluid.",
+      "status": "proposed",
+      "evidence_level": "E",
+      "independent_studies": 0,
+      "evidence_summary": "A 1995 review of supportive treatment considered hypertonic fluids for complicated babesiosis; only the abstract was read and it gives no dose [R6]. No study in dogs with babesiosis. The dose below is from an emergency textbook for head trauma and haemorrhagic shock [R7].",
+      "doses": [
+        {
+          "drug": "sodium chloride 7%",
+          "dose": "4 mL/kg",
+          "route": "IV",
+          "frequency": "single bolus",
+          "duration": "",
+          "context": "Dogs with head trauma or haemorrhagic shock; emergency textbook, not babesiosis",
+          "note": "The textbook says to give it with another crystalloid or colloid, because its effect is short. The source is not consistent: one passage prints 0.7% at 4 mL/kg (taken as a misprint for 7%), and another gives 7.5% at 3 to 5 mL/kg IV over 10 to 15 minutes. Check the concentration on the product before use.",
+          "refs": [
+            "R7"
+          ]
+        }
+      ],
+      "cautions": "The textbook advises against it in interstitial dehydration [R7]. No safety data in babesiosis.",
+      "monitoring": "Heart rate, CRT and blood pressure after the bolus [R7].",
+      "availability": "",
+      "refs": [
+        "R6",
+        "R7"
+      ]
+    },
+    {
+      "name": "Liberal (large-volume) fluid loading",
+      "class": "supportive",
+      "aim": "Correct apparent hypovolaemia quickly.",
+      "status": "harmful",
+      "evidence_level": "D",
+      "independent_studies": 2,
+      "evidence_summary": "Not studied in dogs. In 28 adults with severe falciparum malaria, liberal saline did not improve acidosis or kidney function; lung water rose in 17 of 22, and 8 developed lung oedema, of whom 5 died [R8]. In a trial of 3141 febrile African children (57% with malaria), fluid boluses raised 48-hour mortality (relative risk 1.45 against no bolus) [R9]. Human malaria evidence only.",
+      "doses": [],
+      "cautions": "Lung oedema can develop while the patient is still hypovolaemic or euvolaemic [R8].",
+      "monitoring": "Respiratory rate, SpO2, lung sounds [R8].",
+      "availability": "",
+      "refs": [
+        "R8",
+        "R9"
+      ]
+    },
+    {
+      "name": "Synthetic colloid (hydroxyethyl starch)",
+      "class": "supportive",
+      "aim": "Hold fluid in the vessels when plasma leaks.",
+      "status": "harmful",
+      "evidence_level": "D",
+      "independent_studies": 1,
+      "evidence_summary": "A review recommends colloid support in complicated babesiosis, with no data [R5]. In 180 ICU dogs given 10% HES 250/0.5 compared with 242 ICU dogs, HES was an independent risk factor for death or acute kidney injury (adjusted odds ratio 1.98, number needed to harm 6) [R20]. Not studied in babesiosis.",
+      "doses": [
+        {
+          "drug": "hydroxyethyl starch",
+          "dose": "5 to 10 mL/kg",
+          "route": "IV",
+          "frequency": "bolus over 10 to 15 min, then reassess",
+          "duration": "",
+          "context": "Dogs in shock; emergency textbook, not babesiosis",
+          "note": "Shown for completeness. A later dog cohort linked HES to death and kidney injury.",
+          "refs": [
+            "R7"
+          ]
+        }
+      ],
+      "cautions": "Risk of acute kidney injury and death in dogs [R20]; acute kidney injury already complicates many haemoconcentrated dogs [R1].",
+      "monitoring": "Creatinine and urine output [R20].",
+      "availability": "",
+      "refs": [
+        "R1",
+        "R5",
+        "R7",
+        "R20"
+      ]
+    }
+  ],
+  "prognosis": {
+    "text": "Poor. In 320 B. rossi dogs, 3 of 4 with a haematocrit above 0.55 L/L died (deaths include euthanasia), against 14.2% of severely anaemic dogs [R3]. Referral data put mortality above 30% [R4]; practitioners reported it usually above 80% [R10]. Of 3 haemoconcentrated dogs in another study, 2 recovered and 1 with acute renal failure died [R15]. Death comes mainly from the organ failures that come with it [R18][R5].",
+    "indicators": [
+      {
+        "finding": "Haematocrit above 0.55 L/L",
+        "meaning": "Odds ratio for death 32.7 (95% CI 3.12 to 344), from only 4 dogs.",
+        "refs": [
+          "R3"
+        ]
+      },
+      {
+        "finding": "Cerebral signs",
+        "meaning": "Odds ratio for death 62.4; all 6 cerebral cases in the 320-dog cohort died.",
+        "refs": [
+          "R3"
+        ]
+      },
+      {
+        "finding": "Creatinine above 106 µmol/L, urea above 20 mmol/L",
+        "meaning": "Odds ratios for death 7.55 and 30.95 in B. rossi.",
+        "refs": [
+          "R3"
+        ]
+      },
+      {
+        "finding": "Renal or CNS involvement in complicated cases",
+        "meaning": "Renal involvement gave a 5-fold and CNS involvement a 57-fold higher risk of death than other complications.",
+        "refs": [
+          "R18"
+        ]
+      }
+    ]
+  },
+  "related": [
+    {
+      "id": "TX00",
+      "why": "The drugs against the parasite."
+    },
+    {
+      "id": "SY05",
+      "why": "Acute kidney injury, which often comes with haemoconcentration."
+    },
+    {
+      "id": "SY07",
+      "why": "Cerebral babesiosis, which often comes with haemoconcentration."
+    },
+    {
+      "id": "SY08",
+      "why": "Lung oedema and ARDS, the main risk of fluid overload."
+    },
+    {
+      "id": "SY10",
+      "why": "Shock and hypotension, and fluid resuscitation in general."
+    },
+    {
+      "id": "SY11",
+      "why": "Complicated disease, triage and the order of care."
+    },
+    {
+      "id": "SY12",
+      "why": "Acute pancreatitis, a differential and a companion complication."
+    }
+  ],
+  "evidence_gaps": [
+    "No treatment of any kind was tested in haemoconcentrated dogs; the fluid advice is extrapolated.",
+    "No source gives a fluid rate, an end point or a fluid type for haemoconcentrated dogs.",
+    "No evidence was found for or against plasma transfusion in this syndrome.",
+    "No source addresses red cell transfusion in a haemoconcentrated dog that later becomes anaemic.",
+    "The haematocrit threshold differs between sources (0.37, 0.47, 0.55 L/L) and none was validated against outcome except in 4 dogs.",
+    "No study measured total protein, albumin or plasma volume in haemoconcentrated dogs, so plasma leak versus dehydration is not proven.",
+    "No primary report of the syndrome was found for B. canis, B. gibsoni or B. vogeli.",
+    "The link with lung oedema rests on review statements, not on data."
+  ],
+  "references": [
+    {
+      "ref": "R1",
+      "authors": "Köster LS, Lobetti RG, Kelly P",
+      "year": 2015,
+      "title": "Canine babesiosis: a perspective on clinical complications, biomarkers, and treatment",
+      "journal": "Veterinary Medicine: Research and Reports",
+      "volume_pages": "6:119-128",
+      "doi": "10.2147/VMRR.S60431",
+      "pmid": "30155438",
+      "url": "",
+      "article_id": "CB493",
+      "type": "review",
+      "species": "",
+      "n_dogs": null,
+      "read": "full text"
+    },
+    {
+      "ref": "R2",
+      "authors": "Defauw P, Schoeman JP, Leisewitz AL, et al.",
+      "year": 2020,
+      "title": "Evaluation of acute kidney injury in dogs with complicated or uncomplicated Babesia rossi infection",
+      "journal": "Ticks and Tick-borne Diseases",
+      "volume_pages": "11(3):101406",
+      "doi": "10.1016/j.ttbdis.2020.101406",
+      "pmid": "32107174",
+      "url": "",
+      "article_id": "CB053",
+      "type": "cohort",
+      "species": "B. rossi",
+      "n_dogs": 35,
+      "read": "full text"
+    },
+    {
+      "ref": "R3",
+      "authors": "Leisewitz AL, Goddard A, Clift S, et al.",
+      "year": 2019,
+      "title": "A clinical and pathological description of 320 cases of naturally acquired Babesia rossi infection in dogs",
+      "journal": "Veterinary Parasitology",
+      "volume_pages": "271:22-30",
+      "doi": "10.1016/j.vetpar.2019.06.005",
+      "pmid": "31303199",
+      "url": "",
+      "article_id": "CB040",
+      "type": "cohort",
+      "species": "B. rossi",
+      "n_dogs": 320,
+      "read": "full text"
+    },
+    {
+      "ref": "R4",
+      "authors": "Jacobson LS",
+      "year": 2006,
+      "title": "The South African form of severe and complicated canine babesiosis: clinical advances 1994-2004",
+      "journal": "Veterinary Parasitology",
+      "volume_pages": "138(1-2):126-139",
+      "doi": "10.1016/j.vetpar.2006.01.047",
+      "pmid": "16503090",
+      "url": "",
+      "article_id": "",
+      "type": "review",
+      "species": "B. rossi",
+      "n_dogs": null,
+      "read": "abstract"
+    },
+    {
+      "ref": "R5",
+      "authors": "Schoeman JP",
+      "year": 2009,
+      "title": "Canine babesiosis",
+      "journal": "Onderstepoort Journal of Veterinary Research",
+      "volume_pages": "76(1):59-66",
+      "doi": "10.4102/ojvr.v76i1.66",
+      "pmid": "19967929",
+      "url": "",
+      "article_id": "CB371",
+      "type": "review",
+      "species": "B. rossi",
+      "n_dogs": null,
+      "read": "full text"
+    },
+    {
+      "ref": "R6",
+      "authors": "Jacobson LS, Swan GE",
+      "year": 1995,
+      "title": "Supportive treatment of canine babesiosis",
+      "journal": "Journal of the South African Veterinary Association",
+      "volume_pages": "66(2):95-105",
+      "doi": "",
+      "pmid": "8544169",
+      "url": "",
+      "article_id": "",
+      "type": "review",
+      "species": "",
+      "n_dogs": null,
+      "read": "abstract"
+    },
+    {
+      "ref": "R7",
+      "authors": "Mazzaferro EM, Ford RB",
+      "year": 2012,
+      "title": "Emergency Care. In: Kirk & Bistner's Handbook of Veterinary Procedures and Emergency Treatment",
+      "journal": "Elsevier Saunders",
+      "volume_pages": "1-294",
+      "doi": "10.1016/B978-1-4377-0798-4.00001-3",
+      "pmid": "",
+      "url": "",
+      "article_id": "",
+      "type": "textbook",
+      "species": "",
+      "n_dogs": null,
+      "read": "full text"
+    },
+    {
+      "ref": "R8",
+      "authors": "Hanson JP, Lam SWK, Mohanty S, et al.",
+      "year": 2013,
+      "title": "Fluid resuscitation of adults with severe falciparum malaria: effects on acid-base status, renal function, and extravascular lung water",
+      "journal": "Critical Care Medicine",
+      "volume_pages": "41(4):972-981",
+      "doi": "10.1097/CCM.0b013e31827466d2",
+      "pmid": "23324951",
+      "url": "",
+      "article_id": "",
+      "type": "cohort",
+      "species": "",
+      "n_dogs": null,
+      "read": "abstract"
+    },
+    {
+      "ref": "R9",
+      "authors": "Maitland K, Kiguli S, Opoka RO, et al.",
+      "year": 2011,
+      "title": "Mortality after fluid bolus in African children with severe infection",
+      "journal": "New England Journal of Medicine",
+      "volume_pages": "364(26):2483-2495",
+      "doi": "10.1056/NEJMoa1101549",
+      "pmid": "21615299",
+      "url": "",
+      "article_id": "",
+      "type": "trial",
+      "species": "",
+      "n_dogs": null,
+      "read": "abstract"
+    },
+    {
+      "ref": "R10",
+      "authors": "Collett MG",
+      "year": 2000,
+      "title": "Survey of canine babesiosis in South Africa",
+      "journal": "Journal of the South African Veterinary Association",
+      "volume_pages": "71(3):180-186",
+      "doi": "10.4102/jsava.v71i3.710",
+      "pmid": "11205168",
+      "url": "",
+      "article_id": "",
+      "type": "case series",
+      "species": "B. rossi",
+      "n_dogs": null,
+      "read": "full text"
+    },
+    {
+      "ref": "R11",
+      "authors": "Irwin PJ",
+      "year": 2009,
+      "title": "Canine babesiosis: from molecular taxonomy to control",
+      "journal": "Parasites & Vectors",
+      "volume_pages": "2(Suppl 1):S4",
+      "doi": "10.1186/1756-3305-2-S1-S4",
+      "pmid": "19426443",
+      "url": "",
+      "article_id": "CB373",
+      "type": "review",
+      "species": "",
+      "n_dogs": null,
+      "read": "full text"
+    },
+    {
+      "ref": "R12",
+      "authors": "Reyers F, Leisewitz AL, Lobetti RG, et al.",
+      "year": 1998,
+      "title": "Canine babesiosis in South Africa: more than one disease. Does this serve as a model for falciparum malaria?",
+      "journal": "Annals of Tropical Medicine and Parasitology",
+      "volume_pages": "92(4):503-511",
+      "doi": "",
+      "pmid": "9683901",
+      "url": "",
+      "article_id": "",
+      "type": "cohort",
+      "species": "B. rossi",
+      "n_dogs": 662,
+      "read": "abstract"
+    },
+    {
+      "ref": "R13",
+      "authors": "Möhr AJ, Lobetti RG, van der Lugt JJ",
+      "year": 2000,
+      "title": "Acute pancreatitis: a newly recognised potential complication of canine babesiosis",
+      "journal": "Journal of the South African Veterinary Association",
+      "volume_pages": "71(4):232-239",
+      "doi": "10.4102/jsava.v71i4.721",
+      "pmid": "11212934",
+      "url": "",
+      "article_id": "",
+      "type": "case series",
+      "species": "B. rossi",
+      "n_dogs": 20,
+      "read": "abstract"
+    },
+    {
+      "ref": "R14",
+      "authors": "Atkinson BK, Thompson P, Van Zyl E, et al.",
+      "year": 2022,
+      "title": "The dataset for the inflammatory response during experimental infection and treatment of dogs with Babesia rossi",
+      "journal": "Data in Brief",
+      "volume_pages": "45:108475",
+      "doi": "10.1016/j.dib.2022.108475",
+      "pmid": "36164305",
+      "url": "",
+      "article_id": "CB101",
+      "type": "experimental",
+      "species": "B. rossi",
+      "n_dogs": 6,
+      "read": "full text"
+    },
+    {
+      "ref": "R15",
+      "authors": "de Scally MP, Leisewitz AL, Lobetti RG, Thompson PN",
+      "year": 2006,
+      "title": "The elevated serum urea:creatinine ratio in canine babesiosis in South Africa is not of renal origin",
+      "journal": "Journal of the South African Veterinary Association",
+      "volume_pages": "77(4):175-178",
+      "doi": "10.4102/jsava.v77i4.373",
+      "pmid": "17458340",
+      "url": "",
+      "article_id": "CB325",
+      "type": "cohort",
+      "species": "B. rossi",
+      "n_dogs": 25,
+      "read": "full text"
+    },
+    {
+      "ref": "R16",
+      "authors": "Leisewitz AL, Mrljak V, Dear JD, Birkenheuer A",
+      "year": 2023,
+      "title": "The diverse pathogenicity of various Babesia parasite species that infect dogs",
+      "journal": "Pathogens",
+      "volume_pages": "12(12):1437",
+      "doi": "10.3390/pathogens12121437",
+      "pmid": "38133320",
+      "url": "",
+      "article_id": "CB119",
+      "type": "review",
+      "species": "",
+      "n_dogs": null,
+      "read": "full text"
+    },
+    {
+      "ref": "R17",
+      "authors": "Solano-Gallego L, Sainz Á, Roura X, et al.",
+      "year": 2016,
+      "title": "A review of canine babesiosis: the European perspective",
+      "journal": "Parasites & Vectors",
+      "volume_pages": "9:336",
+      "doi": "10.1186/s13071-016-1596-0",
+      "pmid": "27289223",
+      "url": "",
+      "article_id": "CB533",
+      "type": "review",
+      "species": "B. canis",
+      "n_dogs": null,
+      "read": "full text"
+    },
+    {
+      "ref": "R18",
+      "authors": "Welzl C, Leisewitz AL, Jacobson LS, et al.",
+      "year": 2001,
+      "title": "Systemic inflammatory response syndrome and multiple-organ damage/dysfunction in complicated canine babesiosis",
+      "journal": "Journal of the South African Veterinary Association",
+      "volume_pages": "72(3):158-162",
+      "doi": "10.4102/jsava.v72i3.640",
+      "pmid": "11811704",
+      "url": "",
+      "article_id": "",
+      "type": "cohort",
+      "species": "B. rossi",
+      "n_dogs": 91,
+      "read": "full text"
+    },
+    {
+      "ref": "R19",
+      "authors": "Jacobson LS, Reyers F, Berry WL, Viljoen E",
+      "year": 1996,
+      "title": "Changes in haematocrit after treatment of uncomplicated canine babesiosis: a comparison between diminazene and trypan blue, and an evaluation of the influence of parasitaemia",
+      "journal": "Journal of the South African Veterinary Association",
+      "volume_pages": "67(2):77-82",
+      "doi": "",
+      "pmid": "8765067",
+      "url": "",
+      "article_id": "",
+      "type": "trial",
+      "species": "B. rossi",
+      "n_dogs": 19,
+      "read": "abstract"
+    },
+    {
+      "ref": "R20",
+      "authors": "Hayes G, Benedicenti L, Mathews K",
+      "year": 2016,
+      "title": "Retrospective cohort study on the incidence of acute kidney injury and death following hydroxyethyl starch (HES 10% 250/0.5/5:1) administration in dogs (2007-2010)",
+      "journal": "Journal of Veterinary Emergency and Critical Care",
+      "volume_pages": "26(1):35-40",
+      "doi": "10.1111/vec.12412",
+      "pmid": "26587795",
+      "url": "",
+      "article_id": "",
+      "type": "cohort",
+      "species": "",
+      "n_dogs": 422,
+      "read": "abstract"
+    }
+  ],
+  "search": {
+    "date": "2026-11-12",
+    "sources": [
+      "local review",
+      "PubMed",
+      "Europe PMC",
+      "Crossref",
+      "web"
+    ],
+    "note": "PubMed and Europe PMC searches for haemoconcentration or red biliary with babesiosis returned 4 and about 20 relevant records; all South African primary data were read. No treatment study of the syndrome exists, so fluid advice comes from a veterinary emergency textbook and human malaria trials. The 2024 AAHA fluid guideline and the full text of Jacobson 2006 could not be reached."
+  }
+}

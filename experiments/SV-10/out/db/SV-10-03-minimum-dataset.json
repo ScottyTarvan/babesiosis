@@ -1,0 +1,786 @@
+{
+ "experiment": {
+  "code": "SV-10-03-minimum-dataset",
+  "name": "Design memo: a prospective minimum dataset for canine babesiosis severity",
+  "description": "Which items must one prospective cohort record so that the questions the finished packages could not answer (load against outcome, tolerance, stage, age and neuter status, replication outside Onderstepoort) become answerable? The memo fixes an outcome set built from SV-03's definition map, load, days sick, antibody status, signalment, a pre-treatment sample and stored plasma, with a sample size.",
+  "method": "study_design",
+  "dataset": null,
+  "parameters": {
+   "package": "SV-10",
+   "role": "descriptive",
+   "datasets": [],
+   "independent_sources": [],
+   "spec_sha256": "37d9c576a99cb40c7ce4cc73280a70d5fd416bec85b75f9fd7e78f813dd529f1",
+   "seed": null,
+   "memo": "/experiments/SV-10/out/memo_minimum_dataset.md",
+   "power": 0.8,
+   "death_proportion": 0.11,
+   "severe_proportion": 0.3,
+   "recommended_scenario": "Continuous exposure (log load or a marker), OR 1.5 per SD, death 11%, R2 0.2"
+  },
+  "script": "/experiments/SV-10/scripts/power.py",
+  "script_version": "9507f20d0e18",
+  "run_utc": "2026-11-12T15:32:58Z",
+  "n_subjects": 0,
+  "n_variables": 0,
+  "n_tests": 0,
+  "summary": "The recommended scenario (Continuous exposure (log load or a marker), OR 1.5 per SD, death 11%, R2 0.2) needs 68 severe and 543 mild dogs (610 in all), from a cohort of about 610 enrolled dogs. It detects an OR of 1.5 per SD of log load or a marker for death, adjusted (R² 0.2); an OR of about 2 for a binary host factor such as age (559 needed). No data analysed; 10 sample-size scenarios; 0 tests."
+ },
+ "associations": [],
+ "cluster_assignments": [],
+ "results": [
+  {
+   "kind": "primary_result",
+   "title": "Recommended design and sample size",
+   "sort_order": 1,
+   "payload": {
+    "memo_title": "prospective minimum dataset",
+    "question": "What is the smallest set of items, samples and dogs that would let one prospective B. rossi cohort answer the questions the existing public files could not?",
+    "recommendation": {
+     "design": "Prospective cohort, logistic regression adjusted for age, days sick and antibody status",
+     "scenario": "Continuous exposure (log load or a marker), OR 1.5 per SD, death 11%, R2 0.2",
+     "n_total": 610,
+     "n_cases": 68,
+     "n_controls": 543,
+     "cohort_needed": 610,
+     "detects": "an OR of 1.5 per SD of log load or a marker for death, adjusted (R² 0.2); an OR of about 2 for a binary host factor such as age (559 needed)",
+     "basis": "Recommended target 610 B. rossi dogs (about 67 deaths) at three or more sites, at least 200 of them outside Onderstepoort; those 200 can replicate an Onderstepoort marker difference of about 0.65 SD. A load x antibody interaction of the same size needs about 4 times the main-effect n, so tolerance stays hypothesis-generating. About three years at three sites the size of S-CB050 cohort 1 (97 dogs in 18 months)."
+    },
+    "assumptions": [
+     {
+      "label": "Death by day 7",
+      "value": "0.11",
+      "source": "S-CB050 15 of 140 (SV-05); recorded separately from euthanasia in the new cohort"
+     },
+     {
+      "label": "Severe outcome set",
+      "value": "0.30",
+      "source": "assumption; check in the first 100 dogs"
+     },
+     {
+      "label": "R² of the exposure with the covariates",
+      "value": "0.20",
+      "source": "assumption"
+     },
+     {
+      "label": "Young dogs (< 12 months)",
+      "value": "0.35",
+      "source": "S-CB050: 50 of 140 (SV-05)"
+     },
+     {
+      "label": "Enrolment rate per site",
+      "value": "about 65 dogs per year",
+      "source": "S-CB050 cohort 1: 97 dogs Oct 2011 to Apr 2013 (SV-07)"
+     }
+    ],
+    "gaps": [
+     {
+      "package": "SV-02a",
+      "gap": "No species x outcome cell of published load contrasts reaches 3 independent units",
+      "answer": "Smear and qPCR load with outcome for every dog"
+     },
+     {
+      "package": "SV-02b",
+      "gap": "Tolerance measurable only in 5 experimental Beagles",
+      "answer": "Load, damage markers and antibody status in the same pre-treatment sample"
+     },
+     {
+      "package": "SV-01",
+      "gap": "Pseudo-stage failed validation; natural dogs lie past the Beagle course",
+      "answer": "Days sick with owner certainty; second sample at 24 h"
+     },
+     {
+      "package": "SV-03",
+      "gap": "0 of 423 marker cells reach 3 units; 78 definitions; marker in its own definition in 38 of 504 rows",
+      "answer": "One outcome set stored as components, so any definition can be rebuilt and circular markers removed"
+     },
+     {
+      "package": "SV-04",
+      "gap": "IL-8 files differ in sampling time relative to treatment",
+      "answer": "Sample before the first antibabesial dose with times recorded"
+     },
+     {
+      "package": "SV-05",
+      "gap": "Only OR >= 3.7 detectable for age; neuter status not recorded",
+      "answer": "About 67 deaths; neuter status and age at neutering recorded"
+     },
+     {
+      "package": "SV-07",
+      "gap": "DS03 natural cohorts are S-CB050 dogs under new numbers",
+      "answer": "One permanent dog ID and a register of sub-studies"
+     }
+    ],
+    "caveat": "B. rossi numbers; species stays a site-level variable and is never compared across sites. Associations with intervals only: no prediction, no risk score. Treatment effects cannot be estimated."
+   }
+  },
+  {
+   "kind": "sample_size",
+   "title": "Sample-size scenarios",
+   "sort_order": 2,
+   "payload": {
+    "rows": [
+     {
+      "memo": "minimum_dataset",
+      "scenario": "Binary host factor (e.g. age < 12 months), 35% exposed, death 11%, OR 2",
+      "design": "Prospective cohort, death as outcome, all enrolled dogs",
+      "exposure_freq_controls": 0.35,
+      "exposure_freq_cases": null,
+      "odds_ratio": 2.0,
+      "alpha": 0.05,
+      "power": 0.8,
+      "r2_covariates": 0.0,
+      "controls_per_case": null,
+      "n_cases": 79,
+      "n_controls": 480,
+      "n_total": 559,
+      "cohort_needed": 559,
+      "cohort_basis": "all enrolled dogs",
+      "note": "Risk 0.198 exposed vs 0.11 unexposed; SV-05 could detect only OR >= 3.7 with 15 deaths",
+      "recommended": false
+     },
+     {
+      "memo": "minimum_dataset",
+      "scenario": "Binary host factor (e.g. age < 12 months), 35% exposed, death 11%, OR 2.5",
+      "design": "Prospective cohort, death as outcome, all enrolled dogs",
+      "exposure_freq_controls": 0.35,
+      "exposure_freq_cases": null,
+      "odds_ratio": 2.5,
+      "alpha": 0.05,
+      "power": 0.8,
+      "r2_covariates": 0.0,
+      "controls_per_case": null,
+      "n_cases": 46,
+      "n_controls": 251,
+      "n_total": 297,
+      "cohort_needed": 297,
+      "cohort_basis": "all enrolled dogs",
+      "note": "Risk 0.236 exposed vs 0.11 unexposed; SV-05 could detect only OR >= 3.7 with 15 deaths",
+      "recommended": false
+     },
+     {
+      "memo": "minimum_dataset",
+      "scenario": "Binary host factor (e.g. age < 12 months), 35% exposed, death 11%, OR 3",
+      "design": "Prospective cohort, death as outcome, all enrolled dogs",
+      "exposure_freq_controls": 0.35,
+      "exposure_freq_cases": null,
+      "odds_ratio": 3.0,
+      "alpha": 0.05,
+      "power": 0.8,
+      "r2_covariates": 0.0,
+      "controls_per_case": null,
+      "n_cases": 33,
+      "n_controls": 163,
+      "n_total": 195,
+      "cohort_needed": 195,
+      "cohort_basis": "all enrolled dogs",
+      "note": "Risk 0.270 exposed vs 0.11 unexposed; SV-05 could detect only OR >= 3.7 with 15 deaths",
+      "recommended": false
+     },
+     {
+      "memo": "minimum_dataset",
+      "scenario": "Continuous exposure (log load or a marker), OR 1.5 per SD, death 11%, R2 0.2",
+      "design": "Prospective cohort, logistic regression adjusted for age, days sick and antibody status",
+      "exposure_freq_controls": null,
+      "exposure_freq_cases": null,
+      "odds_ratio": 1.5,
+      "alpha": 0.05,
+      "power": 0.8,
+      "r2_covariates": 0.2,
+      "controls_per_case": null,
+      "n_cases": 68,
+      "n_controls": 543,
+      "n_total": 610,
+      "cohort_needed": 610,
+      "cohort_basis": "all enrolled dogs",
+      "note": "Load x antibody interaction of the same size needs about 4 times this n",
+      "recommended": true
+     },
+     {
+      "memo": "minimum_dataset",
+      "scenario": "Continuous exposure (log load or a marker), OR 2 per SD, death 11%, R2 0.2",
+      "design": "Prospective cohort, logistic regression adjusted for age, days sick and antibody status",
+      "exposure_freq_controls": null,
+      "exposure_freq_cases": null,
+      "odds_ratio": 2.0,
+      "alpha": 0.05,
+      "power": 0.8,
+      "r2_covariates": 0.2,
+      "controls_per_case": null,
+      "n_cases": 23,
+      "n_controls": 186,
+      "n_total": 209,
+      "cohort_needed": 209,
+      "cohort_basis": "all enrolled dogs",
+      "note": "Load x antibody interaction of the same size needs about 4 times this n",
+      "recommended": false
+     },
+     {
+      "memo": "minimum_dataset",
+      "scenario": "Continuous exposure (log load or a marker), OR 1.5 per SD, severe outcome set 30%, R2 0.2",
+      "design": "Prospective cohort, logistic regression adjusted for age, days sick and antibody status",
+      "exposure_freq_controls": null,
+      "exposure_freq_cases": null,
+      "odds_ratio": 1.5,
+      "alpha": 0.05,
+      "power": 0.8,
+      "r2_covariates": 0.2,
+      "controls_per_case": null,
+      "n_cases": 86,
+      "n_controls": 199,
+      "n_total": 285,
+      "cohort_needed": 285,
+      "cohort_basis": "all enrolled dogs",
+      "note": "Load x antibody interaction of the same size needs about 4 times this n",
+      "recommended": false
+     },
+     {
+      "memo": "minimum_dataset",
+      "scenario": "Continuous exposure (log load or a marker), OR 2 per SD, severe outcome set 30%, R2 0.2",
+      "design": "Prospective cohort, logistic regression adjusted for age, days sick and antibody status",
+      "exposure_freq_controls": null,
+      "exposure_freq_cases": null,
+      "odds_ratio": 2.0,
+      "alpha": 0.05,
+      "power": 0.8,
+      "r2_covariates": 0.2,
+      "controls_per_case": null,
+      "n_cases": 30,
+      "n_controls": 69,
+      "n_total": 98,
+      "cohort_needed": 98,
+      "cohort_basis": "all enrolled dogs",
+      "note": "Load x antibody interaction of the same size needs about 4 times this n",
+      "recommended": false
+     },
+     {
+      "memo": "minimum_dataset",
+      "scenario": "Marker replication outside Onderstepoort, died vs survived, 0.5 SD, rank test",
+      "design": "Second B. rossi cohort (not Onderstepoort), death as outcome",
+      "exposure_freq_controls": null,
+      "exposure_freq_cases": null,
+      "odds_ratio": null,
+      "alpha": 0.05,
+      "power": 0.8,
+      "r2_covariates": 0.0,
+      "controls_per_case": 8.09,
+      "n_cases": 37,
+      "n_controls": 299,
+      "n_total": 336,
+      "cohort_needed": 336,
+      "cohort_basis": "all enrolled dogs at non-Onderstepoort sites",
+      "note": "Standardised difference; ARE 0.955 for the rank test",
+      "recommended": false
+     },
+     {
+      "memo": "minimum_dataset",
+      "scenario": "Marker replication outside Onderstepoort, died vs survived, 0.65 SD, rank test",
+      "design": "Second B. rossi cohort (not Onderstepoort), death as outcome",
+      "exposure_freq_controls": null,
+      "exposure_freq_cases": null,
+      "odds_ratio": null,
+      "alpha": 0.05,
+      "power": 0.8,
+      "r2_covariates": 0.0,
+      "controls_per_case": 8.09,
+      "n_cases": 22,
+      "n_controls": 177,
+      "n_total": 199,
+      "cohort_needed": 199,
+      "cohort_basis": "all enrolled dogs at non-Onderstepoort sites",
+      "note": "Standardised difference; ARE 0.955 for the rank test",
+      "recommended": false
+     },
+     {
+      "memo": "minimum_dataset",
+      "scenario": "Marker replication outside Onderstepoort, died vs survived, 0.8 SD, rank test",
+      "design": "Second B. rossi cohort (not Onderstepoort), death as outcome",
+      "exposure_freq_controls": null,
+      "exposure_freq_cases": null,
+      "odds_ratio": null,
+      "alpha": 0.05,
+      "power": 0.8,
+      "r2_covariates": 0.0,
+      "controls_per_case": 8.09,
+      "n_cases": 15,
+      "n_controls": 117,
+      "n_total": 132,
+      "cohort_needed": 132,
+      "cohort_basis": "all enrolled dogs at non-Onderstepoort sites",
+      "note": "Standardised difference; ARE 0.955 for the rank test",
+      "recommended": false
+     }
+    ],
+    "calibration": {
+     "source": "SV-05-01-age-death (S-CB050, 15 deaths, 125 survivors, young 44/125 among survivors)",
+     "cohort_framing_detectable_or": 3.66,
+     "cohort_framing_note": "groups = 50 young vs 90 adult, outcome risk 9/90 in adults (the SV-05 formula)",
+     "case_control_framing_detectable_or_above": 4.68,
+     "case_control_framing_detectable_or_below": 0.09,
+     "case_control_framing_note": "groups = 15 deaths vs 125 survivors, exposure young 44/125 in survivors (the memo formula)",
+     "sv05_reported": "about 3.7 or more, or 0.28 or less"
+    },
+    "death_proportion": 0.11,
+    "severe_proportion": 0.3,
+    "complicated_proportion": 0.4
+   }
+  },
+  {
+   "kind": "memo_sections",
+   "title": "Design memo",
+   "sort_order": 3,
+   "payload": {
+    "title": "Memo 3. A prospective minimum dataset for canine babesiosis severity",
+    "file": "out/memo_minimum_dataset.md",
+    "words": 2042,
+    "sections": [
+     {
+      "heading": "Status",
+      "blocks": [
+       {
+        "type": "p",
+        "text": "SV-10, design memo, draft 2026-11-12. Not sent to anyone. Sample sizes come from scripts/power.py (out/power.csv, memo minimum_dataset)."
+       }
+      ]
+     },
+     {
+      "heading": "1. Why a new dataset",
+      "blocks": [
+       {
+        "type": "p",
+        "text": "The finished packages ran into the same walls. Each wall is a variable that no public file records, or records in only one file:"
+       },
+       {
+        "type": "table",
+        "header": [
+         "Package",
+         "What it could not answer",
+         "The item that would have answered it"
+        ],
+        "rows": [
+         [
+          "SV-02a",
+          "Load against outcome at dog level: no species x outcome cell of published contrasts reaches 3 independent units; no B. rossi unit reports load against a clinical outcome",
+          "Quantified load (smear and qPCR) and outcome for each dog"
+         ],
+         [
+          "SV-02b",
+          "Tolerance (damage per parasite) in natural infection: only 5 experimental Beagles",
+          "Load, damage markers and antibody status in the same dog before treatment"
+         ],
+         [
+          "SV-01",
+          "Stage of disease: the pseudo-stage failed validation; natural dogs lie past the 5-dog Beagle course",
+          "Days sick, and a second sample at a fixed time after the first"
+         ],
+         [
+          "SV-03",
+          "0 of 423 marker x outcome x species cells reach 3 independent units; 78 severity definitions in 42 units; the marker is in its own definition in 38 of 504 tested rows. Every replicated B. rossi signal is from one hospital",
+          "One outcome set stored as components; a B. rossi site outside Onderstepoort"
+         ],
+         [
+          "SV-04",
+          "IL-8 by severity: the two dog-level files differ in sampling time (before treatment vs 6 to 8 h after imidocarb) and in definition",
+          "Sample before the first antibabesial dose, with the times recorded"
+         ],
+         [
+          "SV-05",
+          "Age against death: with 15 deaths only OR of about 3.7 or more is detectable; neuter status not recorded in S-CB050",
+          "Enough deaths, and neuter status with age at neutering"
+         ],
+         [
+          "SV-07",
+          "Dogs re-used across files under new numbers (DS03 natural cohorts are S-CB050 dogs)",
+          "One permanent dog ID and a register of every sub-study that uses the dog"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "heading": "2. Design",
+      "blocks": [
+       {
+        "type": "p",
+        "text": "A prospective, multi-centre cohort of client-owned dogs with acute babesiosis confirmed by PCR, enrolled at presentation and followed to day 28."
+       },
+       {
+        "type": "ul",
+        "items": [
+         "Sites. At least three. One may be Onderstepoort, but at least two B. rossi sites must be outside it (SV-03). A B. canis site in Europe can use the same protocol; species stays a site-level variable and is never compared across sites as a species effect (rule 6).",
+         "Eligibility. Smear or PCR positive, species confirmed by PCR, no antibabesial drug in the previous 28 days, owner consent. Co-infections (Ehrlichia canis, Hepatozoon) tested by PCR and kept, not excluded.",
+         "Consecutive enrolment. All eligible dogs, mild ones included. A referral-only cohort over-samples severe cases; record whether the dog was referred.",
+         "Timing. Sample 1 before the first antibabesial dose. Sample 2 at 24 h (± 2 h) after it. Sample 3 at day 3 if still hospitalised. Day 28 follow-up by visit or telephone."
+        ]
+       }
+      ]
+     },
+     {
+      "heading": "3. The minimum dataset",
+      "blocks": [
+       {
+        "type": "h3",
+        "text": "3.1 Outcome set (built from the SV-03 definition map)"
+       },
+       {
+        "type": "p",
+        "text": "Record every component as a measured value or a yes/no with its time. Do not record only a composite. This lets any published definition be rebuilt, and lets a marker be removed from the definition when it is the marker under study (the SV-03 circularity problem)."
+       },
+       {
+        "type": "table",
+        "header": [
+         "Component",
+         "SV-03 units using it",
+         "What to record"
+        ],
+        "rows": [
+         [
+          "Death",
+          "20",
+          "Date and time; spontaneous death and euthanasia as separate fields, with the reason for euthanasia (poor prognosis, cost, other). The Onderstepoort files merge them; the new file must not"
+         ],
+         [
+          "Renal",
+          "14",
+          "Creatinine and urea at each sample; urine output; anuria or oliguria"
+         ],
+         [
+          "Anaemia grade",
+          "13",
+          "Haematocrit at each sample; transfusion (yes/no, volume, time)"
+         ],
+         [
+          "Hepatic or icterus",
+          "11",
+          "Total bilirubin; icterus score"
+         ],
+         [
+          "Cerebral",
+          "7",
+          "Modified Glasgow coma scale"
+         ],
+         [
+          "Collapse",
+          "6",
+          "Collapse at presentation (yes/no)"
+         ],
+         [
+          "Pulmonary",
+          "6",
+          "Respiratory rate; SpO2 or PaO2; thoracic imaging if done"
+         ],
+         [
+          "Hypoglycaemia",
+          "4",
+          "Glucose at each sample"
+         ],
+         [
+          "Rhabdomyolysis, MODS, SIRS",
+          "4, 4, 3",
+          "Creatine kinase; temperature, heart rate, respiratory rate, WBC (SIRS criteria)"
+         ],
+         [
+          "Haemoconcentration",
+          "3",
+          "Haematocrit with total protein"
+         ],
+         [
+          "Hyperlactataemia, shock",
+          "1, 2",
+          "Lactate; systolic blood pressure"
+         ]
+        ]
+       },
+       {
+        "type": "p",
+        "text": "Primary outcome (pre-registered): death or euthanasia for poor prognosis by day 7. Secondary: the count of organ complications on fixed thresholds (written into the protocol before enrolment), and death by day 28. Treatment intensity (transfusion, days in hospital) is recorded but is not an outcome, because cost and owner choice drive it."
+       },
+       {
+        "type": "h3",
+        "text": "3.2 Exposures and covariates"
+       },
+       {
+        "type": "table",
+        "header": [
+         "Item",
+         "How",
+         "Why"
+        ],
+        "rows": [
+         [
+          "Parasite load, capillary",
+          "Ear-tip smear; parasitised red cells per 1,000 counted by one trained reader per site; 10% double-read blind",
+          "SV-02a: no dog-level load and outcome in B. rossi"
+         ],
+         [
+          "Parasite load, qPCR",
+          "EDTA blood, species-specific qPCR with a standard curve, copies per µL, one central laboratory",
+          "Smear load is coarse at low parasitaemia and differs between capillary and venous blood"
+         ],
+         [
+          "Days sick",
+          "Owner-reported date of the first sign (lethargy, anorexia, red urine), with the owner's certainty (sure / within 1 day / unsure); known tick exposure date",
+          "SV-01: no time axis in natural cases. Illness duration exists only in DS05, which has no outcome"
+         ],
+         [
+          "Antibody status",
+          "IFAT titre at sample 1 and at day 14 to 28",
+          "CB141: antibody correlated with less severe disease (rho -0.65) in the cohort where load did (rho 0.35); the strongest lead for a tolerance modifier"
+         ],
+         [
+          "Signalment",
+          "Breed (FCI name or \"mixed\"), date of birth, sex, neuter status and age at neutering, weight, body condition score",
+          "SV-05 could not test neuter status; CB125 reports RR 0.72 for gonadectomy (10.1016/j.prevetmed.2024.106293)"
+         ],
+         [
+          "History",
+          "Earlier babesiosis episodes, tick prophylaxis, vaccination, drugs in the previous 14 days",
+          "Earlier exposure changes immunity"
+         ],
+         [
+          "Treatment",
+          "Drug, dose and time of each antibabesial dose; fluids; transfusion",
+          "Sample timing relative to treatment (SV-04)"
+         ]
+        ]
+       },
+       {
+        "type": "h3",
+        "text": "3.3 Samples and storage"
+       },
+       {
+        "type": "table",
+        "header": [
+         "Sample",
+         "Volume",
+         "Use"
+        ],
+        "rows": [
+         [
+          "EDTA whole blood",
+          "2 mL; CBC, smear, then 0.5 mL frozen at -80 °C",
+          "qPCR; parasite genotyping and genome sequencing (memo 1)"
+         ],
+         [
+          "Buffy coat or EDTA pellet",
+          "from the same tube",
+          "Host DNA for DEA 1, haptoglobin, DLA and SNP array (memo 2)"
+         ],
+         [
+          "Citrate plasma",
+          "8 aliquots of 0.25 mL, double-spun, at -80 °C within 2 h",
+          "Coagulation, VWF, ADAMTS13, fibrinolysis"
+         ],
+         [
+          "Serum and heparin plasma",
+          "8 aliquots each, at -80 °C within 2 h",
+          "Cytokines (MCP-1, IL-8: SV-04), cortisol and thyroid hormones (SV-03), haptoglobin, haemopexin, cell-free haemoglobin, hepcidin, ferritin, angiopoietin-2, syndecan-1, cell-free DNA and nucleosomes"
+         ],
+         [
+          "RNA tube (optional)",
+          "2.5 mL at sample 1",
+          "Host transcriptome against the Beagle signatures (SV-08)"
+         ]
+        ]
+       },
+       {
+        "type": "p",
+        "text": "Freeze-thaw cycles and time to freezer are logged per aliquot. Haemolysed samples are flagged, not discarded, because haemolysis is part of the disease."
+       },
+       {
+        "type": "p",
+        "text": "Stored-plasma panel. SV-06a (human-to-dog mechanism transfer) was still running when this memo was written, so its ranked list could not be used. The panel above covers its seven mechanism families (haemolysis and haem scavenging; endothelium and glycocalyx; neutrophils and NETs; VWF and thromboinflammation; iron and hepcidin; endocrine and metabolic; immune regulation). The aliquot count (8 per matrix) leaves room for the top-ranked assays when SV-06a reports. This is an open question for the coordinator."
+       },
+       {
+        "type": "h3",
+        "text": "3.4 Identity and linkage"
+       },
+       {
+        "type": "ul",
+        "items": [
+         "One permanent study ID per dog, never re-used or re-numbered, and one per episode for re-infections.",
+         "A register of every sub-study that uses a dog's data or samples. SV-07 found that DS03's natural cohorts are S-CB050 dogs under new numbers; this must not happen again.",
+         "Release a de-identified dog-level file with a data dictionary at publication."
+        ]
+       }
+      ]
+     },
+     {
+      "heading": "4. Sample size",
+      "blocks": [
+       {
+        "type": "p",
+        "text": "Normal approximations, two-sided alpha 0.05, power 0.8, death 11% (S-CB050: 15 of 140; died includes euthanasia for poor prognosis). Formula check: the cohort formula gives a detectable OR of 3.66 for the S-CB050 age contrast, which matches SV-05's \"about 3.7\"."
+       },
+       {
+        "type": "table",
+        "header": [
+         "Scenario",
+         "Design",
+         "Severe (cases)",
+         "Mild (controls)",
+         "Total analysed",
+         "Cohort to enrol"
+        ],
+        "rows": [
+         [
+          "Binary host factor (e.g. age < 12 months), 35% exposed, death 11%, OR 2",
+          "Prospective cohort, death as outcome, all enrolled dogs",
+          "79",
+          "480",
+          "559",
+          "559 (all enrolled dogs)"
+         ],
+         [
+          "Binary host factor (e.g. age < 12 months), 35% exposed, death 11%, OR 2.5",
+          "Prospective cohort, death as outcome, all enrolled dogs",
+          "46",
+          "251",
+          "297",
+          "297 (all enrolled dogs)"
+         ],
+         [
+          "Binary host factor (e.g. age < 12 months), 35% exposed, death 11%, OR 3",
+          "Prospective cohort, death as outcome, all enrolled dogs",
+          "33",
+          "163",
+          "195",
+          "195 (all enrolled dogs)"
+         ],
+         [
+          "Continuous exposure (log load or a marker), OR 1.5 per SD, death 11%, R2 0.2 (recommended)",
+          "Prospective cohort, logistic regression adjusted for age, days sick and antibody status",
+          "68",
+          "543",
+          "610",
+          "610 (all enrolled dogs)"
+         ],
+         [
+          "Continuous exposure (log load or a marker), OR 2 per SD, death 11%, R2 0.2",
+          "Prospective cohort, logistic regression adjusted for age, days sick and antibody status",
+          "23",
+          "186",
+          "209",
+          "209 (all enrolled dogs)"
+         ],
+         [
+          "Continuous exposure (log load or a marker), OR 1.5 per SD, severe outcome set 30%, R2 0.2",
+          "Prospective cohort, logistic regression adjusted for age, days sick and antibody status",
+          "86",
+          "199",
+          "285",
+          "285 (all enrolled dogs)"
+         ],
+         [
+          "Continuous exposure (log load or a marker), OR 2 per SD, severe outcome set 30%, R2 0.2",
+          "Prospective cohort, logistic regression adjusted for age, days sick and antibody status",
+          "30",
+          "69",
+          "98",
+          "98 (all enrolled dogs)"
+         ],
+         [
+          "Marker replication outside Onderstepoort, died vs survived, 0.5 SD, rank test",
+          "Second B. rossi cohort (not Onderstepoort), death as outcome",
+          "37",
+          "299",
+          "336",
+          "336 (all enrolled dogs at non-Onderstepoort sites)"
+         ],
+         [
+          "Marker replication outside Onderstepoort, died vs survived, 0.65 SD, rank test",
+          "Second B. rossi cohort (not Onderstepoort), death as outcome",
+          "22",
+          "177",
+          "199",
+          "199 (all enrolled dogs at non-Onderstepoort sites)"
+         ],
+         [
+          "Marker replication outside Onderstepoort, died vs survived, 0.8 SD, rank test",
+          "Second B. rossi cohort (not Onderstepoort), death as outcome",
+          "15",
+          "117",
+          "132",
+          "132 (all enrolled dogs at non-Onderstepoort sites)"
+         ]
+        ]
+       },
+       {
+        "type": "p",
+        "text": "Recommendation. Enrol **610 B. rossi dogs** (about 67 deaths) over at least three sites, with at least 200 outside Onderstepoort. This detects an OR of 1.5 per SD for a continuous exposure such as log load, an OR of about 2 for a binary host factor such as age (559 needed), and replicates an Onderstepoort marker difference of 0.5 SD at the non-Onderstepoort sites only if they reach about 340 dogs together; with 200 dogs they can replicate only about 0.65 SD. A load x antibody interaction of the same size as the main effect needs about four times the main-effect n, so the tolerance question is a secondary, hypothesis-generating analysis even at 610. S-CB050 cohort 1 enrolled 97 dogs in 18 months at one hospital, so 610 dogs is about three years at three sites of that size."
+       },
+       {
+        "type": "p",
+        "text": "The same cohort supplies the nested case-control sets of memo 1 (parasite genotype) and memo 2 (host genetics): with a severe outcome set of about 30%, 610 dogs give about 183 severe and 427 mild dogs. Memo 1's primary BrEMA1 contrast needs about 229 enrolled dogs and its death contrast about 545, so both fit; a within-breed host GWAS does not (memo 2) and needs a breed-focused extension."
+       }
+      ]
+     },
+     {
+      "heading": "5. What this design cannot do",
+      "blocks": [
+       {
+        "type": "ul",
+        "items": [
+         "It cannot estimate treatment effects: treatment is not randomised.",
+         "It does not support prediction; the analyses are associations with effect sizes and intervals, pre-registered, with no risk score.",
+         "It does not compare species, unless one site enrols two species under the same protocol.",
+         "Days sick is owner-reported and will be noisy; it is a covariate, not a stage."
+        ]
+       }
+      ]
+     },
+     {
+      "heading": "6. Open questions",
+      "blocks": [
+       {
+        "type": "ul",
+        "items": [
+         "Which mechanisms to assay first from stored plasma: waits for SV-06a's ranked list.",
+         "Whether the severe outcome set is about 30% of enrolled dogs: to be checked in the first 100 dogs; the sample sizes of memos 1 and 2 scale with it.",
+         "Whether the composite thresholds should follow one published definition (for example the Onderstepoort complication criteria) or a new consensus; a user decision before enrolment."
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "kind": "interpretation",
+   "title": "Explanation and interpretation",
+   "sort_order": 9,
+   "payload": {
+    "sections": [
+     {
+      "heading": "Question",
+      "paragraphs": [
+       "What is the smallest set of items, samples and dogs that would let one prospective B. rossi cohort answer the questions the existing public files could not?"
+      ]
+     },
+     {
+      "heading": "What was done",
+      "paragraphs": [
+       "The package agent read the result and next-step sections of the SV-01, SV-02, SV-03, SV-04, SV-05 and SV-07 reports and SV-03's definition-map tables, listed each unanswered question with the item that would answer it, and set the sample-size scenarios. SV-06a's ranked mechanism list was not ready, so the stored-plasma panel covers its seven mechanism families.",
+       "Sample sizes: 10 scenarios from scripts/power.py (normal approximations, power 0.8, two-sided). Formula check: the cohort formula gives a detectable OR of 3.66 for the S-CB050 age contrast; SV-05 reported about 3.7 or more, or 0.28 or less."
+      ]
+     },
+     {
+      "heading": "Result",
+      "paragraphs": [
+       "The recommended scenario (Continuous exposure (log load or a marker), OR 1.5 per SD, death 11%, R2 0.2) needs 68 severe and 543 mild dogs (610 in all), from a cohort of about 610 enrolled dogs. It detects an OR of 1.5 per SD of log load or a marker for death, adjusted (R² 0.2); an OR of about 2 for a binary host factor such as age (559 needed).",
+       "Recommended target 610 B. rossi dogs (about 67 deaths) at three or more sites, at least 200 of them outside Onderstepoort; those 200 can replicate an Onderstepoort marker difference of about 0.65 SD. A load x antibody interaction of the same size needs about 4 times the main-effect n, so tolerance stays hypothesis-generating. About three years at three sites the size of S-CB050 cohort 1 (97 dogs in 18 months).",
+       "Across the scenarios the total ranges from 98 to 610 dogs."
+      ]
+     },
+     {
+      "heading": "What this does not show",
+      "paragraphs": [
+       "It analyses no data: every number is a planning assumption or a power calculation.",
+       "It does not estimate treatment effects or support prediction.",
+       "The stored-plasma panel is not yet ranked: SV-06a was still running."
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

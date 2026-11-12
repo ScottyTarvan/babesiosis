@@ -1,0 +1,79 @@
+@let l = lead();
+<article class="fs-lead" [attr.aria-label]="'Lead ' + l.rank + ': ' + l.short_name">
+  <header class="fs-lead__head">
+    <span class="fs-lead__rank">{{ l.rank }}</span>
+    <fs-badge variant="tonal" [intent]="tierIntent(l.tier)">Tier {{ l.tier }}</fs-badge>
+    <span class="fs-lead__kind">{{ l.kind }} · {{ l.candidate_id }} · refutation: {{ l.refutation_verdict }}</span>
+  </header>
+  <h3 class="fs-lead__hyp">{{ l.hypothesis }}</h3>
+
+  <section class="fs-lead__block">
+    <h4 class="fs-lead__h">Canine evidence</h4>
+    @if (rows().length) {
+      <div class="fs-lead__forest">
+        <div class="fs-lead__muted">Source and measure</div>
+        <svg class="fs-lead__axis" [attr.viewBox]="'0 0 ' + fw + ' 16'" aria-hidden="true">
+          @for (t of ticks; track t.v) {
+            <text [attr.x]="t.x" y="12" text-anchor="middle" class="fs-lead__tick">{{ t.label }}</text>
+          }
+        </svg>
+        <div class="fs-lead__muted">Effect (95% CI)</div>
+        @for (r of rows(); track r.id) {
+          <div class="fs-lead__flabel" [title]="r.measure">{{ r.source }} · {{ r.measure }}
+            @if (r.circular) {<span class="fs-lead__flag">circular</span>}
+          </div>
+          <svg class="fs-lead__mini" [attr.viewBox]="'0 0 ' + fw + ' ' + fh" role="img" [attr.aria-label]="r.source + ': ' + r.text">
+            <line [attr.x1]="zeroX" [attr.x2]="zeroX" y1="1" [attr.y2]="fh - 1" class="fs-lead__zero" />
+            @if (r.hasCi) {
+              <line [attr.x1]="r.x1" [attr.x2]="r.x2" [attr.y1]="fh / 2" [attr.y2]="fh / 2"
+                    [class]="r.strong ? 'fs-lead__ci fs-lead__ci--strong' : 'fs-lead__ci'" />
+            }
+            <circle [attr.cx]="r.x" [attr.cy]="fh / 2" r="5" [class]="r.strong ? 'fs-lead__dot fs-lead__dot--strong' : 'fs-lead__dot'">
+              <title>{{ r.text }} · p {{ r.p }}</title>
+            </circle>
+          </svg>
+          <div class="fs-lead__feffect">{{ r.text }}</div>
+        }
+      </div>
+      <p class="fs-lead__combined">{{ l.combined }}</p>
+      <p class="fs-lead__note">Positive = higher in the more severe dogs (Cliff's delta or Spearman rho). Exploratory: already-seen files; died includes euthanasia.</p>
+    } @else {
+      <div class="fs-lead__nodata" role="note">
+        <strong>No canine data against severity.</strong>
+        <span>{{ l.canine_line }}</span>
+      </div>
+    }
+  </section>
+
+  <section class="fs-lead__block">
+    <h4 class="fs-lead__h">Human counterpart · {{ agreeCount() }} of {{ l.human.length }} records agree</h4>
+    <div class="fs-lead__chips">
+      @for (h of l.human; track h.doi) {
+        <a class="fs-lead__chip" [class.fs-lead__chip--against]="!h.agrees" [href]="doiLink(h.doi)" target="_blank" rel="noopener"
+           [title]="h.claim">
+          <span class="fs-lead__chip-mark" aria-hidden="true">{{ h.agrees ? '✓' : '✗' }}</span>
+          {{ h.disease }}<span class="fs-lead__chip-state">{{ h.agrees ? 'agrees' : 'does not agree' }}</span>
+        </a>
+      }
+    </div>
+  </section>
+
+  <dl class="fs-lead__items">
+    <div><dt>Would be refuted by</dt><dd>{{ l.refuted_short }}</dd></div>
+    <div><dt>Next study, existing data</dt><dd>{{ l.existing_short }}</dd></div>
+    <div><dt>Next study, new dogs</dt><dd>{{ l.new_short }}</dd></div>
+    <div><dt>Add to the minimum dataset</dt><dd>{{ l.md_short }}</dd></div>
+  </dl>
+
+  <details class="fs-lead__details">
+    <summary>Details</summary>
+    <dl class="fs-lead__long">
+      <dt>Evidence</dt><dd>{{ l.evidence }}</dd>
+      <dt>Human counterpart</dt><dd>{{ l.human_counterpart }} · parallel new: {{ l.parallel_new }}</dd>
+      <dt>Would be refuted by</dt><dd>{{ l.refuted_by }}</dd>
+      <dt>Next study, existing data</dt><dd>{{ l.next_existing }}</dd>
+      <dt>Next study, new dogs</dt><dd>{{ l.next_new_dogs }}</dd>
+      <dt>Add to the minimum dataset</dt><dd>{{ l.minimum_dataset }}</dd>
+    </dl>
+  </details>
+</article>

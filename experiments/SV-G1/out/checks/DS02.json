@@ -1,0 +1,68 @@
+{
+ "dataset_id": "DS02",
+ "checks": [
+  {
+   "name": "infected dogs (3 high dose + 2 low dose)",
+   "observed": [
+    3,
+    2
+   ],
+   "expected": [
+    3,
+    2
+   ],
+   "tolerance": 0.0,
+   "source": "data.md; CB098 note",
+   "pass": true
+  },
+  {
+   "name": "feature records (dog-days)",
+   "observed": 51,
+   "expected": 51,
+   "tolerance": 0.0,
+   "source": "internal",
+   "pass": true
+  },
+  {
+   "name": "parasitaemia first detected on day 1 in all high-dose dogs",
+   "observed": [
+    1.0
+   ],
+   "expected": [
+    1.0
+   ],
+   "tolerance": 0.0,
+   "source": "CB098 note: detected day 1 high dose",
+   "pass": true
+  },
+  {
+   "name": "parasitaemia first detected on day 3 in all low-dose dogs",
+   "observed": [
+    3.0
+   ],
+   "expected": [
+    3.0
+   ],
+   "tolerance": 0.0,
+   "source": "CB098 note: detected day 3 low dose",
+   "pass": true
+  },
+  {
+   "name": "one high-dose dog has no data after day 4",
+   "observed": [
+    1,
+    true
+   ],
+   "expected": [
+    1,
+    true
+   ],
+   "tolerance": 0.0,
+   "source": "CB101 note: one high-dose dog died on day 4",
+   "pass": true
+  }
+ ],
+ "n_dogs": 5,
+ "n_records": 51,
+ "n_failed": 0
+}
