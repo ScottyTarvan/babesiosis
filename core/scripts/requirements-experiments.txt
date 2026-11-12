@@ -1,6 +1,0 @@
-numpy>=2.0
-# EXP02 (experiment_clustering.py) and EXP06 need scipy and scikit-learn and must run in .venv-nlp (.venv has numpy only)
-scipy>=1.13
-scikit-learn>=1.5
-# optional: UMAP figure coordinates in EXP02 (falls back to the first two principal components)
-# umap-learn
