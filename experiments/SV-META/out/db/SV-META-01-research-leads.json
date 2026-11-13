@@ -50,11 +50,11 @@
   },
   "script": "/experiments/SV-META/scripts/themes.py",
   "script_version": "beeaaae1f656",
-  "run_utc": "2026-11-12T19:48:14Z",
+  "run_utc": "2026-11-13T05:06:04Z",
   "n_subjects": 0,
   "n_variables": 15,
   "n_tests": 14,
-  "summary": "0 candidates reached tier A, 0 tier B, 1 tier C, 6 tier D and 22 were rejected (X), out of 29 candidates. No candidate reached tier A or B: no single result is a new, non-circular severity finding. The strongest convergent theme that is not a known driver is the monocyte theme (T02: circulating monocyte count, with CD14 and CCL2): 4 of 4 B. rossi sources in the expected direction, Stouffer Z 3.94, BH q 0.00016 over 8 themes, leave-one-source-out max p 0.011. 8 B. rossi theme tests, 4 with BH q < 0.05 (two of them known drivers: neutrophils and anaemia; one fails leave-one-source-out)."
+  "summary": "0 of 29 candidates reached tier A or B (1 C, 6 D, 22 X). Tier C: higher circulating monocyte count in more severe B. rossi disease, 4 of 4 sources, Stouffer Z 3.94, BH q 0.00016 over 8 themes chosen after the results; 4 of 8 theme tests q < 0.05, two of them known drivers."
  },
  "associations": [],
  "cluster_assignments": [],

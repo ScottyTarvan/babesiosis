@@ -10,7 +10,7 @@ env/py/Scripts/python.exe -I scripts/census.py        # out/census_raw.csv
 env/py/Scripts/python.exe -I scripts/check_census.py  # stops if a number is not at its cited file and line
 env/py/Scripts/python.exe -I scripts/themes.py        # out/themes.csv, out/theme_indicators.json (seed 20261112, about 15 s)
 env/py/Scripts/python.exe -I scripts/screen.py        # out/census.csv, candidates.csv, refutation.csv, leads.csv, tiers.json
-env/py/Scripts/python.exe -I scripts/build_load.py    # out/db/SV-META-01-research-leads.json
+env/py/Scripts/python.exe -I scripts/build_load.py    # out/evidence_map.csv, out/db/SV-META-01-research-leads.json
 ```
 
 `themes.py` stops if `spec.md` changed after the lock. `screen.py` stops if a census row that passes the screen has no candidate, or if

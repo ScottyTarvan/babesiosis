@@ -43,7 +43,7 @@ const W = 760;
 const H = 460;
 const PAD = { left: 70, right: 24, top: 18, bottom: 58 };
 /** Vertical spacing of marks that share an (x, y) cell, horizontal spacing inside the not-assessed band (px). */
-const STACK_DY = 17;
+const STACK_DY = 19;
 const STACK_DX = 12;
 
 /**

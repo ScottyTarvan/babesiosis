@@ -267,9 +267,11 @@ load = {
         "n_subjects": 0,
         "n_variables": len({t["theme"] for t in themes}),
         "n_tests": len([t for t in themes if t["row_type"] == "combined"]),
-        "summary": first + (" " + t02_text if t02_text else "") + (
-            f" {len(combined)} B. rossi theme tests, {sum(1 for t in combined if float(t['q_themes']) < 0.05)} with BH q < 0.05 "
-            "(two of them known drivers: neutrophils and anaemia; one fails leave-one-source-out)."),
+        "summary": (f"{cnt['A'] + cnt['B']} of {len(cands)} candidates reached tier A or B ({cnt['C']} C, {cnt['D']} D, {cnt['X']} X). "
+                    + (f"Tier C: higher circulating monocyte count in more severe B. rossi disease, {t02['sources_in_direction']} sources, "
+                       f"Stouffer Z {float(t02['oriented_effect']):.2f}, BH q {float(t02['q_themes']):.2g} over {m_themes} themes chosen after "
+                       f"the results; {sum(1 for t in combined if float(t['q_themes']) < 0.05)} of {len(combined)} theme tests q < 0.05, "
+                       "two of them known drivers." if t02 else "")),
     },
     "associations": [],
     "cluster_assignments": [],

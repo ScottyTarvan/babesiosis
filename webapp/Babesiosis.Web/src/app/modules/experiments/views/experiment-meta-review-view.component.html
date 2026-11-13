@@ -1,58 +1,48 @@
 <div class="fs-meta">
   @if (primary(); as p) {
-    <fs-card title="Meta experiment: what reached each tier"
-             [subtitle]="p.n_candidates + ' candidates · census of ' + p.n_census_rows + ' results (' + p.n_census_tests + ' with a p value, ' + p.n_census_pass + ' pass the screen) · ' + p.n_leads + ' research leads · descriptive: all labelled files were already seen'">
-      <p class="fs-meta__answer">{{ p.answer }}</p>
-      <div class="fs-meta__tiers" role="list">
+    <div class="fs-meta__headline">
+      <p class="fs-meta__answer">{{ p.headline }}</p>
+      <div class="fs-meta__tiers" role="list" aria-label="Candidates by tier">
         @for (t of p.tier_counts; track t.tier) {
           <div class="fs-meta__tier" role="listitem" [title]="t.definition">
-            <fs-badge variant="tonal" [intent]="tierIntent(t.tier)">Tier {{ t.tier }}</fs-badge>
+            <fs-badge variant="tonal" [intent]="tierIntent(t.tier)">{{ t.tier }}</fs-badge>
             <span class="fs-meta__tier-n">{{ t.n }}</span>
             <span class="fs-meta__tier-label">{{ t.label }}</span>
           </div>
         }
       </div>
-      <p class="fs-meta__footnote">{{ p.caveat }}</p>
-    </fs-card>
+    </div>
   } @else {
     <fs-card title="Meta experiment"><p class="fs-meta__footnote">This run stored no primary result.</p></fs-card>
   }
 
-  <fs-card title="Research leads, in rank order"
-           subtitle="Things to measure, not predictors · tier, kind of finding, hypothesis, evidence, human counterpart and the next study">
-    @if (leads(); as rows) {
-      <div class="fs-meta__leads">
-        @for (l of rows; track l.rank) {
-          <article class="fs-meta__lead">
-            <header class="fs-meta__lead-head">
-              <span class="fs-meta__rank">{{ l.rank }}</span>
-              <fs-badge variant="tonal" [intent]="tierIntent(l.tier)">Tier {{ l.tier }}</fs-badge>
-              <span class="fs-meta__kind">{{ l.kind }}</span>
-              <span class="fs-meta__kind">· {{ l.candidates }}</span>
-            </header>
-            <p class="fs-meta__hyp">{{ l.hypothesis }}</p>
-            <dl class="fs-meta__dl">
-              <dt>Evidence</dt><dd>{{ l.evidence }}</dd>
-              <dt>Human counterpart</dt>
-              <dd>{{ l.human_counterpart }}
-                @for (d of l.human_doi; track d) {
-                  <a class="fs-meta__doi" [href]="doiLink(d)" target="_blank" rel="noopener">{{ d }}</a>
-                }
-                <span class="fs-meta__muted">Parallel new: {{ l.parallel_new }}</span>
-              </dd>
-              <dt>Would be refuted by</dt><dd>{{ l.refuted_by }}</dd>
-              <dt>Next study, existing data</dt><dd>{{ l.next_existing }}</dd>
-              <dt>Next study, new dogs</dt><dd>{{ l.next_new_dogs }}</dd>
-              <dt>Add to the minimum dataset</dt><dd>{{ l.minimum_dataset }}</dd>
-            </dl>
-          </article>
-        }
+  <fs-card title="Evidence map of the candidates"
+           [subtitle]="(primary()?.n_candidates ?? 0) + ' candidates · canine evidence against human evidence · colour = tier · not a score'">
+    @if (evidenceMap(); as em) {
+      <div class="fs-meta__map-tools">
+        <button type="button" class="btn btn-sm btn-outline-secondary" [attr.aria-pressed]="showRejected()" (click)="toggleRejected()">
+          {{ showRejected() ? 'Hide' : 'Show' }} rejected candidates ({{ rejectedCount() }})
+        </button>
       </div>
+      <fs-meta-evidence-map [data]="em" [activeId]="activeLead()?.candidate_id ?? null" [showRejected]="showRejected()"
+                            (pick)="selectLead($event)" />
     } @else {
-      <p class="fs-meta__footnote">This run stored no leads.</p>
+      <p class="fs-meta__footnote">This run stored no evidence map.</p>
     }
   </fs-card>
 
+  @if (activeLead(); as lead) {
+    <section class="fs-meta__leads" aria-label="Research leads">
+      <fs-tabs [tabs]="leadTabs()" [active]="lead.candidate_id" variant="line" size="sm" ariaLabel="Research leads in rank order"
+               (tabChange)="selectLead($event)" />
+      <fs-meta-lead-card [lead]="lead" />
+    </section>
+  } @else {
+    <fs-card title="Research leads"><p class="fs-meta__footnote">This run stored no leads.</p></fs-card>
+  }
+
+  <details class="fs-meta__section">
+    <summary>Agreement between independent sources, by theme</summary>
   <fs-card title="Agreement between independent sources, by theme"
            subtitle="One indicator per independent source · positive = more of the mechanism in the more severe dogs · Cliff's delta or Spearman rho · themes chosen after the results were seen · died includes euthanasia (Onderstepoort) · one species per source">
     @if (themes(); as th) {
@@ -103,6 +93,10 @@
     }
   </fs-card>
 
+  </details>
+
+  <details class="fs-meta__section">
+    <summary>Candidates and the attempt to refute each</summary>
   <fs-card title="Candidates and the attempt to refute each"
            subtitle="Provisional tier from the screen; a refutation can only lower it · X rows show what was examined and why it was set aside">
     @if (candidates(); as rows) {
@@ -116,6 +110,10 @@
     }
   </fs-card>
 
+  </details>
+
+  <details class="fs-meta__section">
+    <summary>Result census</summary>
   <fs-card title="Result census"
            subtitle="Every quantitative result and observation of the 23 experiments, read from the out/ files · each number checked at its file and line · filter by tier or experiment">
     @if (census(); as all) {
@@ -142,4 +140,5 @@
       <p class="fs-meta__footnote">This run stored no census.</p>
     }
   </fs-card>
+  </details>
 </div>
