@@ -41,8 +41,7 @@
 }
 
 .fs-meta__tier-label,
-.fs-meta__muted,
-.fs-meta__kind {
+.fs-meta__muted {
   font-size: 12px;
   color: rgb(var(--fs-color-ink-soft));
 }
@@ -54,65 +53,11 @@
   color: rgb(var(--fs-color-ink-soft));
 }
 
-.fs-meta__leads {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(420px, 1fr));
-  gap: var(--fs-guide-space-3);
-}
 
-.fs-meta__lead {
-  padding: 12px 14px;
-  border: 1px solid rgb(var(--fs-color-ink-soft) / 0.25);
-  border-radius: 8px;
-  background: rgb(var(--fs-color-surface));
-}
 
-.fs-meta__lead-head {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 8px;
-  margin-bottom: 6px;
-}
 
-.fs-meta__rank {
-  font-size: 18px;
-  font-weight: 600;
-  color: rgb(var(--fs-color-ink));
-}
 
-.fs-meta__hyp {
-  margin: 0 0 8px;
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 1.45;
-  color: rgb(var(--fs-color-ink));
-}
 
-.fs-meta__dl {
-  display: grid;
-  grid-template-columns: 150px 1fr;
-  gap: 4px 10px;
-  margin: 0;
-  font-size: 12px;
-  line-height: 1.45;
-
-  dt {
-    font-weight: 600;
-    color: rgb(var(--fs-color-ink-soft));
-  }
-
-  dd {
-    margin: 0;
-    color: rgb(var(--fs-color-ink));
-  }
-}
-
-.fs-meta__doi {
-  margin-left: 6px;
-  white-space: nowrap;
-  color: rgb(var(--fs-color-primary));
-}
 
 .fs-meta__forest {
   display: grid;
@@ -246,4 +191,81 @@
   select {
     min-width: 160px;
   }
+}
+
+.fs-meta__headline {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px 20px;
+  padding: 12px 16px;
+  border: 1px solid rgb(var(--fs-color-ink-soft) / 0.25);
+  border-radius: 8px;
+  background: rgb(var(--fs-color-surface));
+
+  .fs-meta__answer {
+    margin: 0;
+    flex: 1 1 320px;
+    font-size: 15px;
+    font-weight: 600;
+  }
+
+  .fs-meta__tiers {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin: 0;
+  }
+
+  .fs-meta__tier {
+    flex-direction: row;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 10px;
+  }
+
+  .fs-meta__tier-n {
+    font-size: 16px;
+  }
+}
+
+.fs-meta__map-tools {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 4px;
+}
+
+.fs-meta__leads {
+  min-width: 0;
+}
+
+.fs-meta__section {
+  > summary {
+    padding: 8px 12px;
+    border: 1px solid rgb(var(--fs-color-ink-soft) / 0.25);
+    border-radius: 8px;
+    background: rgb(var(--fs-color-surface));
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(var(--fs-color-ink));
+    cursor: pointer;
+  }
+
+  &[open] > summary {
+    margin-bottom: 8px;
+  }
+}
+
+// Keep the tab row inside the page on a narrow screen: the host is constrained, the library's nav scrolls (overflow-x: auto).
+:host,
+.fs-meta {
+  min-width: 0;
+  max-width: 100%;
+}
+
+.fs-meta__leads > fs-tabs {
+  display: block;
+  min-width: 0;
+  max-width: 100%;
+  overflow: hidden;
 }

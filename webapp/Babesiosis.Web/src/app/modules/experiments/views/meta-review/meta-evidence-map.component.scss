@@ -2,9 +2,16 @@
   display: block;
 }
 
+.fs-emap__scroll {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+// Keep the labels readable on a phone: below 560 px the map scrolls sideways inside its own box instead of shrinking.
 .fs-emap__svg {
   display: block;
   width: 100%;
+  min-width: 560px;
   max-width: 900px;
   height: auto;
 }

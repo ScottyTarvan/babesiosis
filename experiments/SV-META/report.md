@@ -183,8 +183,41 @@ The screen-rejected candidates (X01 to X20) carry their screen reason as their r
 5. Not a lead but worth noting: the K02 refutation left a weak, uncorrected signal that a higher reticulocyte count at a given
    haematocrit goes with a brighter dog in DS05 (rho +0.18, p 0.03). It could be tested in the DS03–S-CB050 join (SV-05/SV-09 decision 9).
 
+### 4.5 Evidence map (second run, 2026-11-13)
+
+The page draws the 29 candidates on an evidence map. It is a map of evidence, not a score: no probability, no ranking value. Every
+position and colour is written by `scripts/build_load.py` to `out/evidence_map.csv` and to the payload `evidence_map`, by these rules:
+
+- **Horizontal: canine evidence.** A candidate that was tier D before refutation (a gap lead) is at **0**: no canine data against
+  severity (this includes K03 and K04, whose weak DS07 and Beagle data the refutation set aside). A theme-level candidate
+  (`x_from_theme` in `candidates.json`: K01, K02, X01, X04 to X10, X15, X18) is at the number of non-circular indicators of its theme,
+  any species, whose oriented effect is above zero (`out/themes.csv`). Any other candidate is at the number of distinct independent
+  sources among its census rows that pass the statistical screen (`out/census.csv`).
+- **Vertical: human evidence.** The number of verified human records whose direction agrees, from the `human_counterpart` list of the
+  candidate's refutation file (`refutation/K*.json`). Records on dogs with another disease, and records the refutation marked as not
+  verified, are not counted. A dashed ring marks a candidate with at least one disagreeing human record. Candidates rejected at the screen
+  had no refutation attempt and sit in a "not assessed" band below zero.
+- **Colour: final tier.** Leads (the 7 of `out/leads.csv`) are large and labelled with rank and short name; rejected candidates (X)
+  are hidden at the start and dimmed when shown.
+- **Overlap.** Marks with the same position get slots (leads first, by rank, then by id); the page spreads them by a fixed step.
+- **Labels.** The short labels and the short card items are editorial text in `scripts/candidates.json` (`short_label`, `short_name`,
+  `refuted_short`, `existing_short`, `new_short`, `md_short`, `canine_line`); the chip label of a human record is the first disease
+  keyword found in its claim text (rule in `build_load.py`).
+
+Positions (x, y): K01 Monocytes (5, 4, mixed); K04 NETs and degranulation (0, 4, mixed); K03 cell-free haemoglobin (0, 4); K05
+angiopoietin-2 (0, 4); K06 VWF and ADAMTS13 (0, 3); K08 ferritin (0, 4); K09 kynurenine (0, 5). Refuted: K02 (1, 5), K07 (0, 1, mixed).
+
 ## Software and outputs
 
 Python 3.12.12 (uv 0.10.4), numpy 2.3.4, scipy 1.16.3; Claude sub-agents for the refutation attempts; .NET console loader (way B);
-Angular view `experiment-meta-review-view.component.*`. Outputs: `out/census.csv`, `out/themes.csv`, `out/leads.csv`,
-`out/refutation.csv`, `out/candidates.csv`, `out/theme_indicators.json`, `out/tiers.json`, `out/db/SV-META-01-research-leads.json`.
+Angular view `experiment-meta-review-view.component.*` with `views/meta-review/meta-evidence-map.component.*` and
+`views/meta-review/meta-lead-card.component.*`. Outputs: `out/census.csv`, `out/themes.csv`, `out/leads.csv`, `out/refutation.csv`,
+`out/candidates.csv`, `out/evidence_map.csv`, `out/theme_indicators.json`, `out/tiers.json`, `out/db/SV-META-01-research-leads.json`
+(8 results: `primary_result`, `evidence_map`, `leads`, `themes`, `candidates`, `refutation`, `census`, `interpretation`).
+
+**Second run, 2026-11-13 (presentation only).** On user feedback that the page was text-heavy, the view was redesigned: a one-line
+headline with tier tiles, the evidence map (section 4.5), one tab per lead with only the selected lead's card (a forest plot of the
+theme indicators, or a "no canine data" note for a gap lead; human records as chips; long text behind a closed Details), and the
+supporting tables in closed sections. `build_load.py` gained the evidence map, the compact lead fields, a shorter summary and a shorter
+interpretation. No analysis changed: every tier, effect and lead is the same, and `out/` rebuilt from empty gives the same CSV files
+as the first run (the load file differs only in `run_utc` and the new payload fields).

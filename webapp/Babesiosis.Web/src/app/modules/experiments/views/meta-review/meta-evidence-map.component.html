@@ -1,4 +1,5 @@
 <div class="fs-emap">
+  <div class="fs-emap__scroll">
   <svg class="fs-emap__svg" [attr.viewBox]="'0 0 ' + w + ' ' + h" role="img"
        aria-label="Evidence map: canine evidence against human evidence for each candidate, coloured by tier">
     <!-- gap column (x = 0) and not-assessed band (below y = 0) -->
@@ -38,6 +39,7 @@
       </g>
     }
   </svg>
+  </div>
 
   <div class="fs-emap__legend">
     @for (t of tierLegend; track t) {
